@@ -9,53 +9,25 @@ from datetime import datetime
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
-try:
-    import trafilatura
-except ImportError:
-    raise SystemExit(
-        "找不到 trafilatura。\n"
-        "GitHub Actions 請先執行：pip install trafilatura"
-    )
+import trafilatura
 
-
-# =========================================================
-# 基本設定
-# =========================================================
 
 HN_API = "https://hacker-news.firebaseio.com/v0"
-
 TAIPEI_TZ = ZoneInfo("Asia/Taipei")
 
 OUTPUT_DIR = Path("output")
 
-# 每一期至少幾則情報
 TARGET_STORIES = 10
-
-# 至少幾篇必須成功取得全文
 MIN_FULLTEXT = 3
-
-# 每個 HN 原生分類先抓多少候選
 CANDIDATES_PER_FEED = 60
-
-# 同一網域最多出現幾篇
 MAX_PER_DOMAIN = 2
-
-# 為了找足夠全文，最多檢查多少篇候選
 MAX_ARTICLE_ATTEMPTS = 40
 
 USER_AGENT = (
-    "Mozilla/5.0 "
-    "(Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 "
-    "(KHTML, like Gecko) "
-    "Chrome/152 Safari/537.36 "
-    "HN-Kobo-Intelligence/1.0"
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/152.0 Safari/537.36"
 )
-
-
-# =========================================================
-# Hacker News 原生資訊來源
-# =========================================================
 
 HN_FEEDS = {
     "Best": "beststories",
@@ -66,12 +38,8 @@ HN_FEEDS = {
 }
 
 
-# =========================================================
-# HTTP
-# =========================================================
-
 def get_json(url, timeout=20):
-    request = urllib.request.Request(
+    req = urllib.request.Request(
         url,
         headers={
             "User-Agent": USER_AGENT,
@@ -79,300 +47,213 @@ def get_json(url, timeout=20):
         },
     )
 
-    with urllib.request.urlopen(
-        request,
-        timeout=timeout
-    ) as response:
-        return json.loads(
-            response.read().decode("utf-8")
-        )
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        return json.loads(response.read().decode("utf-8"))
 
 
 def download_html(url, timeout=25):
-    request = urllib.request.Request(
+    req = urllib.request.Request(
         url,
         headers={
             "User-Agent": USER_AGENT,
             "Accept": (
-                "text/html,application/xhtml+xml,"
-                "application/xml;q=0.9,*/*;q=0.8"
+                "text/html,application/xhtml+xml,application/xml;"
+                "q=0.9,*/*;q=0.8"
             ),
+            "Accept-Language": "en-US,en;q=0.9",
         },
     )
 
-    with urllib.request.urlopen(
-        request,
-        timeout=timeout
-    ) as response:
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            content_type = response.headers.get("Content-Type", "").lower()
 
-        content_type = response.headers.get(
-            "Content-Type",
-            ""
-        ).lower()
+            if (
+                "text/html" not in content_type
+                and "application/xhtml+xml" not in content_type
+            ):
+                return None
 
-        if (
-            "text/html" not in content_type
-            and
-            "application/xhtml+xml" not in content_type
-        ):
-            return None
+            raw = response.read()
 
-        raw = response.read()
+            charset = response.headers.get_content_charset() or "utf-8"
 
-        charset = response.headers.get_content_charset()
+            try:
+                return raw.decode(charset, errors="replace")
+            except LookupError:
+                return raw.decode("utf-8", errors="replace")
 
-        if not charset:
-            charset = "utf-8"
-
-        try:
-            return raw.decode(
-                charset,
-                errors="replace"
-            )
-        except LookupError:
-            return raw.decode(
-                "utf-8",
-                errors="replace"
-            )
+    except (
+        urllib.error.HTTPError,
+        urllib.error.URLError,
+        TimeoutError,
+        ValueError,
+    ):
+        return None
 
 
-# =========================================================
-# HN 資料
-# =========================================================
+def fetch_feed(endpoint):
+    url = f"{HN_API}/{endpoint}.json"
+    data = get_json(url)
 
-def fetch_feed(feed_name):
-    endpoint = HN_FEEDS[feed_name]
+    if not isinstance(data, list):
+        return []
 
-    print(f"取得 HN {feed_name}...")
-
-    ids = get_json(
-        f"{HN_API}/{endpoint}.json"
-    )
-
-    return ids[:CANDIDATES_PER_FEED]
+    return data[:CANDIDATES_PER_FEED]
 
 
 def fetch_story(story_id):
     try:
-        story = get_json(
-            f"{HN_API}/item/{story_id}.json"
-        )
-
-        if not story:
-            return None
-
-        if story.get("type") != "story":
-            return None
-
-        if story.get("deleted"):
-            return None
-
-        if story.get("dead"):
-            return None
-
-        return story
-
-    except Exception as exc:
-        print(
-            f"讀取 Story {story_id} 失敗：{exc}"
-        )
+        data = get_json(f"{HN_API}/item/{story_id}.json")
+    except Exception:
         return None
 
+    if not data:
+        return None
 
-# =========================================================
-# 候選合併
-# =========================================================
+    if data.get("type") != "story":
+        return None
+
+    if data.get("dead") or data.get("deleted"):
+        return None
+
+    return data
+
 
 def collect_candidates():
-    """
-    不使用主題式個人化。
+    feed_story_ids = {}
 
-    只使用 Hacker News 自己提供的：
-    Best / Top / New / Show / Ask
+    for feed_name, endpoint in HN_FEEDS.items():
+        print(f"Fetching HN feed: {feed_name}")
+        ids = fetch_feed(endpoint)
+        feed_story_ids[feed_name] = ids
+        time.sleep(0.2)
 
-    並保留 Story 在各 feed 的排名。
-    """
+    story_map = {}
 
-    candidates = {}
-
-    for feed_name in HN_FEEDS:
-
-        try:
-            ids = fetch_feed(feed_name)
-
-        except Exception as exc:
-            print(
-                f"{feed_name} 取得失敗：{exc}"
-            )
-            continue
-
-        for position, story_id in enumerate(
-            ids,
-            start=1
-        ):
-
-            if story_id not in candidates:
-                candidates[story_id] = {
+    for feed_name, ids in feed_story_ids.items():
+        for position, story_id in enumerate(ids, start=1):
+            if story_id not in story_map:
+                story_map[story_id] = {
                     "id": story_id,
                     "feeds": {},
                 }
 
-            candidates[story_id]["feeds"][
-                feed_name
-            ] = position
+            story_map[story_id]["feeds"][feed_name] = position
 
-    print(
-        f"合併去重後候選："
-        f"{len(candidates)} 則"
+    candidates = []
+
+    for story_id, info in story_map.items():
+        story = fetch_story(story_id)
+
+        if not story:
+            continue
+
+        story["feeds"] = info["feeds"]
+
+        positions = list(info["feeds"].values())
+
+        story["_best_native_rank"] = min(positions)
+        story["_feed_count"] = len(info["feeds"])
+
+        candidates.append(story)
+
+        time.sleep(0.08)
+
+    candidates.sort(
+        key=lambda s: (
+            s["_best_native_rank"],
+            -s["_feed_count"],
+            -s.get("score", 0),
+        )
     )
 
-    # 這裡不是主題評分。
-    # 單純使用 HN 自己各排行榜的位置。
-    def ranking(item):
-
-        feed_positions = item[
-            "feeds"
-        ].values()
-
-        best_position = min(
-            feed_positions
-        )
-
-        feed_count = len(
-            item["feeds"]
-        )
-
-        return (
-            best_position,
-            -feed_count,
-        )
-
-    return sorted(
-        candidates.values(),
-        key=ranking,
-    )
+    return candidates
 
 
-# =========================================================
-# 網域
-# =========================================================
-
-def get_domain(story):
-
-    url = story.get("url")
-
+def get_domain(url):
     if not url:
         return "news.ycombinator.com"
 
     try:
-        domain = urlparse(
-            url
-        ).netloc.lower()
+        parsed = urlparse(url)
+        domain = parsed.netloc.lower()
+        domain = re.sub(r"^www\.", "", domain)
 
-        if domain.startswith("www."):
-            domain = domain[4:]
-
-        return (
-            domain
-            or "unknown"
-        )
-
+        return domain or "news.ycombinator.com"
     except Exception:
         return "unknown"
 
 
-# =========================================================
-# 文字清理
-# =========================================================
-
-def clean_hn_text(value):
-
-    if not value:
-        return ""
-
-    value = html.unescape(
-        value
-    )
-
-    value = re.sub(
-        r"<p>",
-        "\n\n",
-        value,
-        flags=re.I,
-    )
-
-    value = re.sub(
-        r"<[^>]+>",
-        "",
-        value,
-    )
-
-    value = re.sub(
-        r"\n{3,}",
-        "\n\n",
-        value,
-    )
-
-    return value.strip()
-
-
-def text_to_html(text):
-
+def clean_hn_text(text):
     if not text:
         return ""
 
-    paragraphs = re.split(
-        r"\n\s*\n",
-        text.strip(),
+    text = html.unescape(text)
+
+    text = re.sub(
+        r"<p>",
+        "\n\n",
+        text,
+        flags=re.IGNORECASE,
     )
 
-    result = []
+    text = re.sub(
+        r"<br\s*/?>",
+        "\n",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    text = re.sub(
+        r"<a\s+href=['\"]([^'\"]+)['\"][^>]*>(.*?)</a>",
+        r"\2 (\1)",
+        text,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+
+    text = re.sub(r"<[^>]+>", "", text)
+
+    text = re.sub(r"\n{3,}", "\n\n", text)
+
+    return text.strip()
+
+
+def text_to_html(text):
+    if not text:
+        return ""
+
+    paragraphs = re.split(r"\n\s*\n", text.strip())
+
+    blocks = []
 
     for paragraph in paragraphs:
-
         paragraph = paragraph.strip()
 
         if not paragraph:
             continue
 
-        escaped = html.escape(
-            paragraph
-        )
+        paragraph = html.escape(paragraph)
+        paragraph = paragraph.replace("\n", "<br>")
 
-        escaped = escaped.replace(
-            "\n",
-            "<br>"
-        )
+        blocks.append(f"<p>{paragraph}</p>")
 
-        result.append(
-            f"<p>{escaped}</p>"
-        )
+    return "\n".join(blocks)
 
-    return "\n".join(
-        result
-    )
-
-
-# =========================================================
-# 抓外部文章全文
-# =========================================================
 
 def extract_full_article(url):
-
     if not url:
         return None
 
+    source_html = download_html(url)
+
+    if not source_html:
+        return None
+
     try:
-
-        raw_html = download_html(
-            url
-        )
-
-        if not raw_html:
-            return None
-
-        article_text = trafilatura.extract(
-            raw_html,
+        extracted = trafilatura.extract(
+            source_html,
+            url=url,
             include_comments=False,
             include_tables=True,
             include_links=False,
@@ -380,669 +261,476 @@ def extract_full_article(url):
             favor_precision=True,
             deduplicate=True,
         )
-
-        if not article_text:
-            return None
-
-        article_text = article_text.strip()
-
-        # 太短的內容不視為「全文」
-        if len(article_text) < 1000:
-            return None
-
-        return article_text
-
-    except (
-        urllib.error.HTTPError,
-        urllib.error.URLError,
-        TimeoutError,
-    ) as exc:
-
-        print(
-            f"文章下載失敗 {url}：{exc}"
-        )
-
+    except Exception:
         return None
 
-    except Exception as exc:
-
-        print(
-            f"文章解析失敗 {url}：{exc}"
-        )
-
+    if not extracted:
         return None
 
+    extracted = extracted.strip()
 
-# =========================================================
-# 選本期文章
-# =========================================================
+    if len(extracted) < 1000:
+        return None
 
-def select_stories(candidate_meta):
+    return extracted
 
+
+def select_stories(candidates):
     selected = []
 
-    selected_ids = set()
-
     domain_counts = {}
-
     fulltext_count = 0
-
     article_attempts = 0
 
-    # -----------------------------------------------------
-    # 第一輪：
-    # 優先建立 10 個不同情報項目，
-    # 並同步嘗試取得全文
-    # -----------------------------------------------------
+    used_ids = set()
 
-    for meta in candidate_meta:
-
-        if (
-            len(selected) >= TARGET_STORIES
-            and
-            fulltext_count >= MIN_FULLTEXT
-        ):
+    for story in candidates:
+        if len(selected) >= TARGET_STORIES:
             break
 
-        story = fetch_story(
-            meta["id"]
-        )
-
-        if not story:
-            continue
-
-        story_id = story["id"]
-
-        if story_id in selected_ids:
-            continue
-
-        domain = get_domain(
-            story
-        )
-
-        # 同網站避免過度集中
-        if (
-            domain_counts.get(
-                domain,
-                0
-            )
-            >= MAX_PER_DOMAIN
-        ):
-            continue
-
-        story["hn_feeds"] = meta[
-            "feeds"
-        ]
-
-        story["domain"] = domain
-
-        story[
-            "full_article"
-        ] = None
-
         url = story.get("url")
+        domain = get_domain(url)
 
-        # Ask HN 通常沒有外部網址
-        if (
-            url
-            and
-            article_attempts
-            < MAX_ARTICLE_ATTEMPTS
-        ):
+        if domain_counts.get(domain, 0) >= MAX_PER_DOMAIN:
+            continue
 
+        story_copy = dict(story)
+
+        fulltext = None
+
+        if url and article_attempts < MAX_ARTICLE_ATTEMPTS:
             article_attempts += 1
 
             print(
-                f"嘗試抓全文："
-                f"{story.get('title', '')}"
+                f"Trying article {article_attempts}: "
+                f"{story.get('title', '')[:70]}"
             )
 
-            full_article = (
-                extract_full_article(
-                    url
-                )
-            )
+            fulltext = extract_full_article(url)
 
-            if full_article:
+        if fulltext:
+            story_copy["fulltext"] = fulltext
+            story_copy["content_type"] = "fulltext"
+            fulltext_count += 1
 
-                story[
-                    "full_article"
-                ] = full_article
+        else:
+            hn_text = clean_hn_text(story.get("text", ""))
 
-                fulltext_count += 1
-
-                print(
-                    "  ✓ 全文成功 "
-                    f"({len(full_article)} 字元)"
-                )
-
+            if hn_text:
+                story_copy["fulltext"] = hn_text
+                story_copy["content_type"] = "hntext"
             else:
-                print(
-                    "  × 未取得有效全文"
-                )
+                story_copy["fulltext"] = ""
+                story_copy["content_type"] = "reference"
 
-            # 稍微禮貌一點，不高速打網站
-            time.sleep(0.4)
+        selected.append(story_copy)
+        used_ids.add(story["id"])
 
-        selected.append(
-            story
-        )
-
-        selected_ids.add(
-            story_id
-        )
-
-        domain_counts[
-            domain
-        ] = (
-            domain_counts.get(
-                domain,
-                0
-            )
-            + 1
-        )
-
-    # -----------------------------------------------------
-    # 如果已經 10 篇，但全文仍不足 3 篇，
-    # 繼續尋找可取得全文的候選，
-    # 並加入本期。
-    #
-    # 所以最終可能 > 10 篇。
-    # -----------------------------------------------------
+        domain_counts[domain] = domain_counts.get(domain, 0) + 1
 
     if fulltext_count < MIN_FULLTEXT:
-
-        print(
-            f"目前只有 "
-            f"{fulltext_count} 篇全文，"
-            "繼續尋找..."
-        )
-
-        for meta in candidate_meta:
-
+        for story in candidates:
             if fulltext_count >= MIN_FULLTEXT:
                 break
 
             if article_attempts >= MAX_ARTICLE_ATTEMPTS:
                 break
 
-            story_id = meta[
-                "id"
-            ]
-
-            if story_id in selected_ids:
+            if story["id"] in used_ids:
                 continue
 
-            story = fetch_story(
-                story_id
-            )
-
-            if not story:
-                continue
-
-            url = story.get(
-                "url"
-            )
+            url = story.get("url")
 
             if not url:
                 continue
 
-            domain = get_domain(
-                story
-            )
+            domain = get_domain(url)
 
-            if (
-                domain_counts.get(
-                    domain,
-                    0
-                )
-                >= MAX_PER_DOMAIN
-            ):
+            if domain_counts.get(domain, 0) >= MAX_PER_DOMAIN:
                 continue
 
             article_attempts += 1
 
             print(
-                f"補抓全文："
-                f"{story.get('title', '')}"
+                f"Extra full-text attempt {article_attempts}: "
+                f"{story.get('title', '')[:70]}"
             )
 
-            full_article = (
-                extract_full_article(
-                    url
-                )
-            )
+            fulltext = extract_full_article(url)
 
-            if not full_article:
-                time.sleep(0.4)
+            if not fulltext:
                 continue
 
-            story[
-                "hn_feeds"
-            ] = meta["feeds"]
+            story_copy = dict(story)
+            story_copy["fulltext"] = fulltext
+            story_copy["content_type"] = "fulltext"
 
-            story[
-                "domain"
-            ] = domain
+            selected.append(story_copy)
+            used_ids.add(story["id"])
 
-            story[
-                "full_article"
-            ] = full_article
-
-            selected.append(
-                story
-            )
-
-            selected_ids.add(
-                story_id
-            )
-
-            domain_counts[
-                domain
-            ] = (
-                domain_counts.get(
-                    domain,
-                    0
-                )
-                + 1
-            )
-
+            domain_counts[domain] = domain_counts.get(domain, 0) + 1
             fulltext_count += 1
 
-            print(
-                "  ✓ 補抓成功"
-            )
-
-            time.sleep(0.4)
-
-    print()
-    print(
-        f"本期共收錄："
-        f"{len(selected)} 則"
-    )
-
-    print(
-        f"其中全文："
-        f"{fulltext_count} 篇"
-    )
-
     if fulltext_count < MIN_FULLTEXT:
-
         print(
-            "警告：受網站阻擋、付費牆或"
-            "動態網頁影響，本次未達 "
-            f"{MIN_FULLTEXT} 篇全文。"
+            f"WARNING: only {fulltext_count} full-text articles found. "
+            "Some sources may block automated extraction."
         )
 
     return selected
 
 
-# =========================================================
-# HTML
-# =========================================================
+def build_feed_line(feeds):
+    if not feeds:
+        return ""
 
-def build_story_html(
-    story,
-    number,
-):
-
-    title = html.escape(
-        story.get(
-            "title",
-            "(No title)",
-        )
-    )
-
-    score = story.get(
-        "score",
-        0
-    )
-
-    comments = story.get(
-        "descendants",
-        0
-    )
-
-    author = html.escape(
-        story.get(
-            "by",
-            "unknown",
-        )
-    )
-
-    domain = html.escape(
-        story.get(
-            "domain",
-            "",
-        )
-    )
-
-    story_id = story[
-        "id"
+    order = [
+        "Best",
+        "Top",
+        "New",
+        "Show HN",
+        "Ask HN",
     ]
 
+    parts = []
+
+    for name in order:
+        if name in feeds:
+            parts.append(f"{name} #{feeds[name]}")
+
+    return " · ".join(parts)
+
+
+def build_story_html(story, index):
+    title = html.escape(story.get("title", "Untitled"))
+
+    url = story.get("url")
+
     hn_url = (
-        "https://news.ycombinator.com/"
-        f"item?id={story_id}"
+        f"https://news.ycombinator.com/item?id={story['id']}"
     )
 
-    original_url = (
-        story.get("url")
-        or hn_url
+    domain = html.escape(get_domain(url))
+
+    score = story.get("score", 0)
+
+    comments = story.get("descendants", 0)
+
+    author = html.escape(story.get("by", ""))
+
+    feed_line = html.escape(
+        build_feed_line(story.get("feeds", {}))
     )
 
-    original_url_escaped = (
-        html.escape(
-            original_url,
+    content_type = story.get(
+        "content_type",
+        "reference",
+    )
+
+    if content_type == "fulltext":
+        badge = "FULL TEXT"
+        section_title = "Article"
+    elif content_type == "hntext":
+        badge = "HN TEXT"
+        section_title = "Discussion text"
+    else:
+        badge = "REFERENCE"
+        section_title = ""
+
+    content = story.get("fulltext", "")
+
+    content_html = text_to_html(content)
+
+    link_lines = []
+
+    if url:
+        safe_url = html.escape(
+            url,
             quote=True,
         )
-    )
 
-    hn_url_escaped = html.escape(
-        hn_url,
-        quote=True,
-    )
-
-    feeds = []
-
-    for feed_name, position in sorted(
-        story.get(
-            "hn_feeds",
-            {}
-        ).items()
-    ):
-
-        feeds.append(
-            f"{html.escape(feed_name)} "
-            f"#{position}"
+        link_lines.append(
+            f'<a href="{safe_url}">'
+            "Original article"
+            "</a>"
         )
 
-    feeds_text = " · ".join(
-        feeds
+    link_lines.append(
+        f'<a href="{html.escape(hn_url, quote=True)}">'
+        "HN discussion"
+        "</a>"
     )
 
-    # -----------------------------------------------------
-    # 正文
-    # -----------------------------------------------------
+    links_html = " · ".join(link_lines)
 
-    full_article = story.get(
-        "full_article"
-    )
+    body_html = ""
 
-    if full_article:
-
-        content_section = f"""
-        <section class="article-content">
-
-            <h3>文章全文</h3>
-
-            <div class="fulltext">
-                {text_to_html(full_article)}
-            </div>
-
-        </section>
+    if content_html:
+        body_html = f"""
+        <div class="article-body">
+            {content_html}
+        </div>
         """
 
-        fulltext_badge = (
-            '<span class="badge full">'
-            "FULL TEXT"
-            "</span>"
-        )
-
-    else:
-
-        hn_text = clean_hn_text(
-            story.get(
-                "text",
-                ""
-            )
-        )
-
-        if hn_text:
-
-            content_section = f"""
-            <section class="article-content">
-
-                <h3>HN 原始內容</h3>
-
-                {text_to_html(hn_text)}
-
-            </section>
-            """
-
-        else:
-
-            content_section = """
-            <section class="article-content">
-
-                <p class="notice">
-                此來源未能自動擷取完整正文。
-                可由下方 Original Article
-                開啟原始網站。
-                </p>
-
-            </section>
-            """
-
-        fulltext_badge = (
-            '<span class="badge reference">'
-            "REFERENCE"
-            "</span>"
-        )
-
     return f"""
-    <article class="story">
+    <section class="story">
 
         <div class="story-number">
-            {number:02d}
+            {index:02d}
         </div>
 
         <h2>{title}</h2>
 
-        <div class="badges">
-            {fulltext_badge}
+        <div class="badge">
+            {badge}
         </div>
 
         <div class="meta">
-
             <strong>{score}</strong> points
             ·
             <strong>{comments}</strong> comments
             ·
-            by {author}
-
-            <br>
-
-            Source:
-            <strong>{domain}</strong>
-
-            <br>
-
-            HN:
-            {feeds_text}
-
+            {author}
         </div>
 
-        {content_section}
+        <div class="source">
+            {domain}
+        </div>
+
+        <div class="feeds">
+            {feed_line}
+        </div>
 
         <div class="links">
-
-            <a href="{original_url_escaped}">
-                Original Article
-            </a>
-
-            ·
-
-            <a href="{hn_url_escaped}">
-                HN Discussion
-            </a>
-
+            {links_html}
         </div>
 
-    </article>
+        {
+            f'<h3>{section_title}</h3>'
+            if section_title and content_html
+            else ''
+        }
+
+        {body_html}
+
+    </section>
     """
 
 
-def build_html(
-    stories,
-    generated_time,
-    issue_name,
-):
-
-    fulltext_count = sum(
+def build_html(stories, generated_at):
+    full_count = sum(
         1
         for story in stories
-        if story.get(
-            "full_article"
+        if story.get("content_type") == "fulltext"
+    )
+
+    issue_period = (
+        "AM"
+        if generated_at.hour < 12
+        else "PM"
+    )
+
+    issue_name = (
+        f"{generated_at:%Y-%m-%d}-{issue_period}"
+    )
+
+    story_blocks = "\n".join(
+        build_story_html(story, i)
+        for i, story in enumerate(
+            stories,
+            start=1,
         )
     )
 
-    story_blocks = []
-
-    for index, story in enumerate(
-        stories,
-        start=1,
-    ):
-
-        story_blocks.append(
-            build_story_html(
-                story,
-                index,
-            )
-        )
-
     return f"""<!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 
 <head>
 
-<meta charset="UTF-8">
+<meta charset="utf-8">
 
 <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    content="width=device-width, initial-scale=1"
 >
 
 <title>
-HN Intelligence {html.escape(issue_name)}
+HN Intelligence {issue_name}
 </title>
 
 <style>
 
+html {{
+    margin: 0;
+    padding: 0;
+}}
+
 body {{
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 32px 24px 80px 24px;
+    margin: 0;
+    padding: 0.45em 0.55em;
 
     font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Arial,
-        sans-serif;
+        serif;
 
-    line-height: 1.7;
+    line-height: 1.42;
 
-    background: #fff;
-    color: #111;
+    text-align: left;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
 }}
 
 header {{
-    padding-bottom: 32px;
-    border-bottom: 2px solid #111;
-    margin-bottom: 40px;
+    margin: 0 0 1.2em 0;
+    padding: 0;
 }}
 
 h1 {{
-    font-size: 2.2rem;
-    line-height: 1.2;
-    margin-bottom: 12px;
+    margin: 0 0 0.2em 0;
+
+    padding: 0;
+
+    font-size: 1.45em;
+
+    line-height: 1.15;
+}}
+
+.issue {{
+    margin: 0.15em 0 0.4em 0;
+
+    font-size: 1.05em;
+
+    font-weight: bold;
 }}
 
 .summary {{
-    font-size: 1.05rem;
+    margin-top: 0.7em;
+
+    padding-top: 0.5em;
+
+    border-top: 1px solid #777;
+
+    line-height: 1.45;
+}}
+
+.summary div {{
+    margin: 0.12em 0;
 }}
 
 .story {{
-    padding-bottom: 56px;
-    margin-bottom: 56px;
-    border-bottom: 1px solid #999;
+    margin: 0;
+
+    padding: 0.9em 0 1.05em 0;
+
+    border-top: 1px solid #888;
+
+    page-break-before: auto;
+
+    break-before: auto;
+
+    page-break-inside: auto;
+
+    break-inside: auto;
 }}
 
 .story-number {{
-    font-size: 0.95rem;
+    margin: 0 0 0.22em 0;
+
+    font-size: 0.9em;
+
     font-weight: bold;
-    margin-bottom: 8px;
 }}
 
 h2 {{
-    font-size: 1.55rem;
-    line-height: 1.35;
-    margin-top: 0;
-}}
+    margin: 0 0 0.35em 0;
 
-h3 {{
-    font-size: 1.15rem;
-    margin-top: 32px;
-}}
+    padding: 0;
 
-.meta {{
-    margin: 16px 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}}
+    font-size: 1.25em;
 
-.badges {{
-    margin: 10px 0;
+    line-height: 1.2;
 }}
 
 .badge {{
     display: inline-block;
-    border: 1px solid #111;
-    padding: 3px 8px;
-    font-size: 0.75rem;
+
+    margin: 0.1em 0 0.55em 0;
+
+    padding: 0.08em 0.32em;
+
+    border: 1px solid #777;
+
+    font-size: 0.72em;
+
     font-weight: bold;
 }}
 
-.article-content {{
-    margin-top: 28px;
+.meta,
+.source,
+.feeds,
+.links {{
+    margin: 0.14em 0;
+
+    font-size: 0.86em;
+
+    line-height: 1.35;
 }}
 
-.fulltext p {{
-    margin: 1.1em 0;
-    text-align: left;
-}}
-
-.notice {{
-    border-left: 4px solid #555;
-    padding-left: 14px;
+.source {{
+    font-weight: bold;
 }}
 
 .links {{
-    margin-top: 32px;
-    padding-top: 16px;
-    border-top: 1px dotted #999;
+    margin-bottom: 0.7em;
 }}
 
 a {{
-    color: #000;
+    color: inherit;
+
     text-decoration: underline;
 }}
 
-@media (max-width: 600px) {{
+h3 {{
+    margin: 0.65em 0 0.35em 0;
 
+    padding: 0;
+
+    font-size: 1em;
+
+    line-height: 1.2;
+}}
+
+.article-body {{
+    margin: 0;
+
+    padding: 0;
+}}
+
+.article-body p {{
+    margin: 0 0 0.72em 0;
+
+    padding: 0;
+
+    line-height: 1.45;
+
+    orphans: 2;
+
+    widows: 2;
+}}
+
+strong {{
+    font-weight: bold;
+}}
+
+@media screen {{
     body {{
-        padding: 20px 16px 60px 16px;
-    }}
+        max-width: 48em;
 
-    h1 {{
-        font-size: 1.8rem;
-    }}
+        margin-left: auto;
 
-    h2 {{
-        font-size: 1.35rem;
+        margin-right: auto;
     }}
-
 }}
 
 </style>
@@ -1053,41 +741,40 @@ a {{
 
 <header>
 
-<h1>
-HN Kobo Intelligence
-</h1>
+    <h1>
+        HN Intelligence
+    </h1>
 
-<div class="summary">
+    <div class="issue">
+        {issue_name}
+    </div>
 
-<strong>
-{html.escape(issue_name)}
-</strong>
+    <div class="summary">
 
-<br>
+        <div>
+            Generated:
+            {generated_at:%Y-%m-%d %H:%M}
+            Asia/Taipei
+        </div>
 
-Generated:
-{html.escape(generated_time)}
+        <div>
+            Sources:
+            Best · Top · New · Show HN · Ask HN
+        </div>
 
-<br><br>
+        <div>
+            Stories:
+            <strong>{len(stories)}</strong>
+            ·
+            Full:
+            <strong>{full_count}</strong>
+        </div>
 
-HN Sources:
-Best · Top · New · Show HN · Ask HN
-
-<br>
-
-Stories:
-<strong>{len(stories)}</strong>
-
-<br>
-
-Full Articles:
-<strong>{fulltext_count}</strong>
-
-</div>
+    </div>
 
 </header>
 
-{''.join(story_blocks)}
+{story_blocks}
 
 </body>
 
@@ -1095,14 +782,7 @@ Full Articles:
 """
 
 
-# =========================================================
-# 永不覆蓋歷史檔案
-# =========================================================
-
-def get_unique_output_path(
-    now,
-):
-
+def get_unique_output_path(generated_at):
     OUTPUT_DIR.mkdir(
         parents=True,
         exist_ok=True,
@@ -1110,12 +790,12 @@ def get_unique_output_path(
 
     period = (
         "AM"
-        if now.hour < 12
+        if generated_at.hour < 12
         else "PM"
     )
 
     base_name = (
-        f"{now:%Y-%m-%d}-{period}"
+        f"{generated_at:%Y-%m-%d}-{period}"
     )
 
     path = (
@@ -1126,12 +806,9 @@ def get_unique_output_path(
     if not path.exists():
         return path
 
-    # 如果同一期手動重跑，
-    # 不覆寫，而是 AM-2、AM-3...
     counter = 2
 
     while True:
-
         candidate = (
             OUTPUT_DIR
             / f"{base_name}-{counter}.html"
@@ -1143,102 +820,73 @@ def get_unique_output_path(
         counter += 1
 
 
-# =========================================================
-# Main
-# =========================================================
-
 def main():
-
-    print(
-        "================================"
-    )
-
-    print(
-        "HN Kobo Intelligence"
-    )
-
-    print(
-        "================================"
-    )
-
-    now = datetime.now(
+    generated_at = datetime.now(
         TAIPEI_TZ
     )
 
     print(
-        "台灣時間：",
-        now.strftime(
-            "%Y-%m-%d %H:%M:%S"
-        ),
+        "Generated at:",
+        generated_at.isoformat(),
     )
 
-    candidate_meta = (
-        collect_candidates()
+    print(
+        "Collecting Hacker News candidates..."
+    )
+
+    candidates = collect_candidates()
+
+    print(
+        f"Candidates collected: {len(candidates)}"
+    )
+
+    print(
+        "Selecting stories and extracting articles..."
     )
 
     stories = select_stories(
-        candidate_meta
+        candidates
     )
 
     if len(stories) < TARGET_STORIES:
-
         raise RuntimeError(
-            "取得的有效情報不足 "
-            f"{TARGET_STORIES} 則。"
+            f"Only {len(stories)} stories selected; "
+            f"expected at least {TARGET_STORIES}."
         )
 
-    output_path = (
-        get_unique_output_path(
-            now
-        )
-    )
-
-    issue_name = (
-        output_path.stem
-    )
-
-    generated_time = (
-        now.strftime(
-            "%Y-%m-%d %H:%M "
-            "Asia/Taipei"
-        )
-    )
-
-    document = build_html(
+    output_html = build_html(
         stories,
-        generated_time,
-        issue_name,
+        generated_at,
     )
 
-    # 使用 x 模式：
-    # 就算程式邏輯出錯，
-    # 也禁止覆寫現有檔案。
+    output_path = get_unique_output_path(
+        generated_at
+    )
+
     with open(
         output_path,
         "x",
         encoding="utf-8",
-    ) as file:
+    ) as f:
+        f.write(output_html)
 
-        file.write(
-            document
-        )
-
-    print()
-    print(
-        "================================"
+    full_count = sum(
+        1
+        for story in stories
+        if story.get("content_type")
+        == "fulltext"
     )
 
     print(
-        "完成：",
-        output_path
+        f"Written: {output_path}"
     )
 
     print(
-        "歷史檔案未覆寫。"
+        f"Stories: {len(stories)}"
     )
 
     print(
-        "================================"
+        f"Full-text articles: {full_count}"
     )
 
 
