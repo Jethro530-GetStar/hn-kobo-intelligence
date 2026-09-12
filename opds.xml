@@ -5,14 +5,11 @@
   xmlns:opds="http://opds-spec.org/2010/catalog"
 >
 
-  <id>
-    tag:jethro530-getstar.github.io,2026:
-    hn-kobo-intelligence
-  </id>
+  <id>tag:jethro530-getstar.github.io,2026:hn-kobo-intelligence</id>
 
   <title>HN Intelligence</title>
 
-  <updated>2026-09-12T04:30:38Z</updated>
+  <updated>2026-09-12T05:54:04Z</updated>
 
   <author>
     <name>HN Intelligence</name>
@@ -33,15 +30,37 @@
 
   <entry>
 
-    <title>2026 09 12 PM</title>
+    <title>2026-09-12 PM #2</title>
 
-    <id>tag:jethro530-getstar.github.io,2026-09-12:hn-kobo-intelligence/2026-09-12-PM.html</id>
+    <id>tag:jethro530-getstar.github.io,2026-09-12:hn-kobo-intelligence/2026-09-12-PM-2.html</id>
 
-    <updated>2026-09-12T18:00:00Z</updated>
+    <updated>2026-09-12T10:00:00Z</updated>
 
     <summary type="text">
       Hacker News intelligence digest:
-      2026 09 12 PM
+      2026-09-12 PM #2
+    </summary>
+
+    <link
+      rel="http://opds-spec.org/acquisition"
+      href="https://jethro530-getstar.github.io/hn-kobo-intelligence/output/2026-09-12-PM-2.html"
+      type="text/html"
+    />
+
+  </entry>
+
+
+  <entry>
+
+    <title>2026-09-12 PM</title>
+
+    <id>tag:jethro530-getstar.github.io,2026-09-12:hn-kobo-intelligence/2026-09-12-PM.html</id>
+
+    <updated>2026-09-12T10:00:00Z</updated>
+
+    <summary type="text">
+      Hacker News intelligence digest:
+      2026-09-12 PM
     </summary>
 
     <link
@@ -55,15 +74,15 @@
 
   <entry>
 
-    <title>2026 09 12 AM 2</title>
+    <title>2026-09-12 AM #2</title>
 
     <id>tag:jethro530-getstar.github.io,2026-09-12:hn-kobo-intelligence/2026-09-12-AM-2.html</id>
 
-    <updated>2026-09-12T06:00:00Z</updated>
+    <updated>2026-09-11T22:00:00Z</updated>
 
     <summary type="text">
       Hacker News intelligence digest:
-      2026 09 12 AM 2
+      2026-09-12 AM #2
     </summary>
 
     <link
@@ -77,15 +96,15 @@
 
   <entry>
 
-    <title>2026 09 12 AM</title>
+    <title>2026-09-12 AM</title>
 
     <id>tag:jethro530-getstar.github.io,2026-09-12:hn-kobo-intelligence/2026-09-12-AM.html</id>
 
-    <updated>2026-09-12T06:00:00Z</updated>
+    <updated>2026-09-11T22:00:00Z</updated>
 
     <summary type="text">
       Hacker News intelligence digest:
-      2026 09 12 AM
+      2026-09-12 AM
     </summary>
 
     <link

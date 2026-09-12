@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+>
+
+<title>
+HN Intelligence 2026-09-12-PM
+</title>
+
+<style>
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0.45em 0.55em;
+
+    font-family:
+        serif;
+
+    line-height: 1.42;
+
+    text-align: left;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
+}
+
+header {
+    margin: 0 0 1.2em 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0 0 0.2em 0;
+
+    padding: 0;
+
+    font-size: 1.45em;
+
+    line-height: 1.15;
+}
+
+.issue {
+    margin: 0.15em 0 0.4em 0;
+
+    font-size: 1.05em;
+
+    font-weight: bold;
+}
+
+.summary {
+    margin-top: 0.7em;
+
+    padding-top: 0.5em;
+
+    border-top: 1px solid #777;
+
+    line-height: 1.45;
+}
+
+.summary div {
+    margin: 0.12em 0;
+}
+
+.story {
+    margin: 0;
+
+    padding: 0.9em 0 1.05em 0;
+
+    border-top: 1px solid #888;
+
+    page-break-before: auto;
+
+    break-before: auto;
+
+    page-break-inside: auto;
+
+    break-inside: auto;
+}
+
+.story-number {
+    margin: 0 0 0.22em 0;
+
+    font-size: 0.9em;
+
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0 0 0.35em 0;
+
+    padding: 0;
+
+    font-size: 1.25em;
+
+    line-height: 1.2;
+}
+
+.badge {
+    display: inline-block;
+
+    margin: 0.1em 0 0.55em 0;
+
+    padding: 0.08em 0.32em;
+
+    border: 1px solid #777;
+
+    font-size: 0.72em;
+
+    font-weight: bold;
+}
+
+.meta,
+.source,
+.feeds,
+.links {
+    margin: 0.14em 0;
+
+    font-size: 0.86em;
+
+    line-height: 1.35;
+}
+
+.source {
+    font-weight: bold;
+}
+
+.links {
+    margin-bottom: 0.7em;
+}
+
+a {
+    color: inherit;
+
+    text-decoration: underline;
+}
+
+h3 {
+    margin: 0.65em 0 0.35em 0;
+
+    padding: 0;
+
+    font-size: 1em;
+
+    line-height: 1.2;
+}
+
+.article-body {
+    margin: 0;
+
+    padding: 0;
+}
+
+.article-body p {
+    margin: 0 0 0.72em 0;
+
+    padding: 0;
+
+    line-height: 1.45;
+
+    orphans: 2;
+
+    widows: 2;
+}
+
+strong {
+    font-weight: bold;
+}
+
+@media screen {
+    body {
+        max-width: 48em;
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        HN Intelligence
+    </h1>
+
+    <div class="issue">
+        2026-09-12-PM
+    </div>
+
+    <div class="summary">
+
+        <div>
+            Generated:
+            2026-09-12 13:53
+            Asia/Taipei
+        </div>
+
+        <div>
+            Sources:
+            Best · Top · New · Show HN · Ask HN
+        </div>
+
+        <div>
+            Stories:
+            <strong>10</strong>
+            ·
+            Full:
+            <strong>6</strong>
+        </div>
+
+    </div>
+
+</header>
+
+
+    <section class="story">
+
+        <div class="story-number">
+            01
+        </div>
+
+        <h2>Google no longer provides direct URLs in search results</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>235</strong> points
+            ·
+            <strong>117</strong> comments
+            ·
+            1e1a
+        </div>
+
+        <div class="source">
+            autom.dev
+        </div>
+
+        <div class="feeds">
+            Best #32 · Top #1 · New #48
+        </div>
+
+        <div class="links">
+            <a href="https://www.autom.dev/blog/google-search-goto-links">Original article</a> · <a href="https://news.ycombinator.com/item?id=49668386">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>What&#x27;s happening<br>Google Search is rewriting organic result links to google.com/goto?url=... instead of exposing the destination URL directly in the HTML.<br>When you click a result, Google redirects you to the real page. The url parameter uses a custom, Google-specific encoding. It is not a plain base64 of the target URL. In practice, it looks like an opaque reference to Google&#x27;s index record for that page.<br>As of late August 2026, this is showing up consistently across searches when you are logged out or browsing in private mode. It may still be an experiment, but it is no longer limited to a small slice of SERPs.<br>Not the same as google.com/url<br>Google has used redirect wrappers before. The older format is google.com/url?q=[URL-encoded destination], where the target link is readable in the query string.<br>The new goto format is different:<br>- The result href is/goto , not the destination<br>- You cannot decode the url= blob offline<br>- The real URL is in the Location header on/goto . Request that URL. Do not follow the redirect.<br>Google still needs the destination to draw the SERP (domain, favicon, attribution), so copies of the URL remain on the page. That is a separate story from reading Location. The walkthrough is here: google.com/goto: read Location with HEAD.<br>That shift matters for anyone building a search index from SERP data at scale.<br>Why Google is doing this<br>This fits Google&#x27;s broader push against automated SERP harvesting, especially from AI crawlers and SEO scrapers that bulk-extract result URLs to build their own indexes.<br>With plaintext links, a scraper could parse thousands of URLs from HTML without touching Google again. With goto, each result needs a request back to Google just to learn the destination. You read Location; you do not follow through to the page. That is slower, noisier, and gives Google a clear signal when the same client resolves hundreds of links in sequence.<br>Combined with earlier moves like removing &amp;num=100 and tightening BotGuard/SearchGuard, Google is steadily raising the cost of naive SERP scraping.<br>What we saw at Autom<br>We first spotted goto links on a small percentage of SERPs. At that level, it was hard to ship a reliable fix without breaking responses for everyone else.<br>As of late August 2026, the pattern is much more consistent for logged-out and private sessions. Result URLs on Google Search are effectively all goto in those conditions.<br>We have been monitoring the rollout and testing against it.<br>Update at Autom.dev<br>We have updated our Google Search pipeline to resolve google.com/goto links (read Location, no follow) and return the final destination URL in API responses, in the same structured fields customers already use.<br>If you call Autom&#x27;s Google Search endpoints, you should keep getting usable destination URLs without changing your integration. We will keep watching Google&#x27;s rollout and adjust if the redirect format shifts again.<br>Related reading<br>- google.com/goto: read Location with HEAD<br>- Google killed num=100<br>- Google sues SerpAPI: What SearchGuard reveals<br>- Scraping SERP with Google, Bing, and Brave<br>Need live SERP data while Google keeps moving the goalposts? Try 1,000 free requests on Autom pricing, or get an API key at app.autom.dev/register.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            02
+        </div>
+
+        <h2>Ask HN: Did Google kill its enterprise workhorse model?</h2>
+
+        <div class="badge">
+            HN TEXT
+        </div>
+
+        <div class="meta">
+            <strong>10</strong> points
+            ·
+            <strong>4</strong> comments
+            ·
+            waldrews
+        </div>
+
+        <div class="source">
+            news.ycombinator.com
+        </div>
+
+        <div class="feeds">
+            Top #48 · New #56 · Ask HN #1
+        </div>
+
+        <div class="links">
+            <a href="https://news.ycombinator.com/item?id=49668196">HN discussion</a>
+        </div>
+
+        <h3>Discussion text</h3>
+
+        
+        <div class="article-body">
+            <p>Is anyone else in a panic over the Gemini 2.5 model generation (Pro, Flash) being sunset in October before there&#x27;s even any Pro class model in general availability (with geo restrictions etc.)?   Google wants everyone to migrate to 3.x Flash, which beats the older Pro models on the benchmarked tasks, but isn&#x27;t the same thing as the Pro class on reasoning-heavy tasks like complex reasoning on very large documents (my big use case).</p>
+<p>The Gemini family had a distinct niche in document comprehension, with thousand page input documents taking only 300k tokens.  Nothing quite like that in OpenAI or Anthropic world, even at more than 10x the token adjusted price.  Should we just give up on Google at this point and engineer around the competitors&#x27; limits and eat the costs?  Totally unnecessary own goal by team Google.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            03
+        </div>
+
+        <h2>Shopify is moving from React Native back to Swift and Kotlin</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>1233</strong> points
+            ·
+            <strong>921</strong> comments
+            ·
+            fnthawar2
+        </div>
+
+        <div class="source">
+            shopify.engineering
+        </div>
+
+        <div class="feeds">
+            Best #1 · Top #46
+        </div>
+
+        <div class="links">
+            <a href="https://shopify.engineering/back-to-native">Original article</a> · <a href="https://news.ycombinator.com/item?id=49643982">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>We decided to go all-in on React Native back in 2020, and that bet has been extremely successful. We saved a ton of time building features just once, enabled developers with no mobile background to contribute to our apps, and freed ourselves from constantly chasing feature parity.<br>In January 2025, I wrote that the future of React Native was bright and that Shopify planned to keep investing in it. That was true based on what we knew then. React Native was working well for us, and it remains an excellent framework. But since then, coding models have gotten dramatically better, and for our apps and our team, building the same feature in Swift and Kotlin no longer carries the cost it used to.<br>We don’t hold on to a decision just because it was successful at the time. When a core assumption changes, we’re willing to go back and ask whether it’s still the right call. LLMs changed one of the core assumptions behind our 2020 decision, so we reevaluated our mobile stack from first principles.<br>What we found led us back to native.<br>Why switch back to native<br>We decided to switch from native to React Native in 2020 for three reasons:<br>- Stop building the same features twice<br>- Allow developers to work across the stack<br>- Spend less time chasing feature parity and more time shipping value<br>React Native consistently delivered these benefits. We found ourselves spending a significant amount of time and resources on optimizing performance, improving key foundational areas in React Native, and keeping up with framework updates and external dependencies, but these were acceptable tradeoffs. The benefits of using React Native far outweighed the investments we had to make in these areas.<br>Shopify has been using LLMs to build software since 2021 (one year before ChatGPT!). Initially, we used them to implement features, investigate and fix bugs, and review code. As the models improved, so did the complexity of the work we trusted them to take on. By late 2025, they were no longer just helping us write code faster. They were capable of making us question whether building software twice still meant doing twice the work.<br>We decided to reevaluate our mobile tech stack and started prototyping to see whether our technology choices still held up. We rebuilt several core parts of our biggest apps in Swift and Kotlin using LLMs and were surprised by how well it worked. Agents:<br>- Could implement a feature on Android using the iOS version as a reference, and vice versa<br>- Helped developers ramp up and contribute effectively outside their primary stack<br>- Dramatically reduced the cost of maintaining parity between platforms through shared specifications, tests, and review checkpoints<br>Native still means building and maintaining software on two platforms, that cost has not disappeared. What changed is that agents can now do enough of the implementation, translation, testing, and review work that it’s no longer the deciding factor it was in 2020.<br>React Native apps can be fast. Ours are. We are making this change because agents have reduced the advantages of sharing implementation, while the advantages of building for each platform remain. Native keeps us closer to platform capabilities and first-party tooling, with fewer framework and dependency layers between our code and the platform.<br>The future of our React Native open-source libraries<br>Before we get into how we’re migrating, we want to make sure we do this transition cleanly. From the beginning, we wanted to contribute back to React Native to make it better. We’ve published open-source libraries that have become the top choice in their respective categories. We’re grateful for the incredible reception from the community and are committed to making sure this is a smooth transition with no surprises.<br>Shopify will continue sponsoring this through the end of 2026, and William Candillon will continue working on it beyond that. He will fork the repo in the coming months and start publishing the library under a new name. The original repo will be archived when this transition is complete. We’ll post updates along the way so that everyone has ample time to migrate. If your app relies on this library, please consider sponsoring it.<br>This library gets ~2M downloads/week and has become the default way to render high-performance lists in React Native. Given how important it is for the ecosystem, Shopify will continue to fix critical issues that break compatibility. We’re currently in discussions with several companies about taking on long-term stewardship of FlashList. If you’re interested, reach out to me here.<br>Restyle has a smaller user base than our other libraries, so we&#x27;re archiving this repo. We&#x27;ll keep it working through the end of 2026, then stop maintaining it. Anyone is welcome to fork it and take it forward, and we&#x27;ll help with the handover if a team wants to pick it up.<br>How we’re migrating<br>Shopify has several large apps (Shopify, Shop, Point of Sale, Inbox). Millions of merchants and buyers around the world rely on them every single day to earn their livelihood and buy products they want from the brands they love.<br>We debated between gradually migrating to native (brownfield) versus rebuilding them from scratch (greenfield). In the past when we migrated to React Native, we picked the brownfield approach for some of our biggest apps, as it’d take years to rewrite them and we’d have to stop shipping new features while the rewrite was in progress.<br>However, this time greenfield emerged as a clear winner for the following reasons:<br>- LLMs are good at building features in Swift and Kotlin using the React Native version as reference<br>- It gives us a clean slate to rebuild in the best way possible without any of the previous constraints<br>- Our prototypes showed that we could rebuild these apps substantially faster than was possible before coding agents<br>The Shop app, which is regularly at the top of the list in the shopping category in the app stores, is the first to be migrated. Assisted by AI, the team was able to go from a proof of concept to a fully rebuilt native app published in the app stores in just 12 weeks. We’ve written about this migration in depth here.<br>The migration of the Shopify app (our biggest with 300+ screens, home &amp; lockscreen widgets, Apple Watch app, complications, Siri Shortcuts, etc.), is also underway and will ship later this year. The rest of our apps will be migrated soon.<br>Preventing slop<br>It’s tempting to just point an LLM to the React Native codebase and try to one-shot the same features in native, but it doesn’t work. Even if you ask it to gather as much information as it can up front, freeze that into specs, task files, and then implement it, you end up with a huge amount of unmaintainable code that can’t be shipped.<br>To solve this problem, we built a system called Helix that takes a more gradual approach. It doesn&#x27;t expect the first output to be correct, and builds a loop where an imperfect attempt simply cannot move forward until it becomes a good result.<br>The developer points Helix at a screen. Helix reads the React Native code and proposes a sequence of checkpoints (small, ordered slices of the work) that can be reviewed in minutes. Then, checkpoint by checkpoint, it builds: each one must prove its behavior with tests, match the running app in a visual review, survive two adversarial code reviewers, and get a human&#x27;s nod before it&#x27;s committed and the next one starts. Feedback from every review is remembered, so the loop gets more autonomous as the migration progresses.<br>Helix rebuilding a screen in the Shopify mobile app using Swift and Kotlin<br>This approach has been working extremely well and is allowing us to rebuild our apps in a fraction of the time.<br>Enabling fast feedback loops<br>Agentic control of simulators has been a bottleneck. We found ourselves constantly babysitting them as they couldn’t reliably build, test, and iterate. We built tooling to allow agents to reproduce bugs, fix them, and verify the fix autonomously but it was slow and brittle. React Native’s hot module reload helps the situation but it doesn’t solve it, due to simulator control being slow. This is primarily due to reliance on the accessibility tree, or screenshots to get the state of the app, take actions, and verify results. Agents can make code changes in seconds, but it takes them several minutes to test the output. This makes iterating extremely slow and manual. It doesn’t matter how good the model is if it can’t test its work quickly, which is especially difficult on mobile.<br>We’re fixing this by designing our app architecture to work for both humans and agents. The core principle here is that business logic should be completely decoupled from the UI and be able to run headlessly on desktop. We then make it available to agents via a CLI that allows them to iterate on it in milliseconds instead of minutes without involving simulators.<br>Navigating the app and performing actions using the CLI<br>The CLI allows agents to inspect the state of the app, navigate between different sections, and perform actions all without needing to touch the UI. This enables extremely fast feedback loops and allows agents to work autonomously for hours at a time.<br>When simulator interaction is needed, the CLI can connect to them via a remote mode and drive the UI via commands without having to inspect the layout or the accessibility tree. This enables blazing-fast performance and E2E tests.<br>This is real-time (not sped up)<br>What’s next<br>We are going to migrate all our mobile apps to Swift and Kotlin using AI throughout the process. Shop has already shipped as a fully native app, the Shopify app is underway, and the rest will follow soon. We’re moving quickly, but not by lowering the bar. Every rebuild must meet or exceed the performance, stability, accessibility, and product quality people expect today. This isn’t just the same apps rewritten in different languages. We’re rebuilding them so both humans and agents can understand, test, and change them quickly.<br>The migration isn’t the finish line. Success means our teams can deliver better experiences for merchants and buyers faster than before. We’ll measure that through product velocity, app quality, and how much work agents can complete autonomously.<br>We’ll share what we learn along the way, including deeper dives into Helix, our agent-addressable architecture, and how we’re building mobile apps with agents. We were open about what we learned from React Native, and we intend to be just as open about this transition.<br>This is one of the most ambitious mobile engineering projects we’ve taken on. If you want to help build the next generation of Shopify’s mobile apps, we’re hiring mobile engineers, infrastructure engineers, and developers working at the intersection of AI and software engineering.<br>Acknowledgements<br>Native is the right choice for Shopify now, but React Native was the right choice for Shopify in 2020. That success was only possible because of the people who made it work.<br>Meta<br>Thank you to the React Native team at Meta for being excellent stewards of the framework, listening to our feedback, and working closely with us over the years. React Native is substantially better today because of your investments in its architecture, performance, tooling, and community.<br>William Candillon<br>Thank you for creating React Native Skia and taking it much further than any of us imagined. You redefined what was possible for graphics and animation in React Native, and we’re excited to see where you take it next.<br>Software Mansion<br>Thank you for all your work on Reanimated, for listening to our feedback, and for helping us solve some of the hardest animation and performance problems in our apps.<br>Shopify engineers<br>Hundreds of engineers contributed to adopting React Native, migrating our apps, building shared foundations, improving performance, maintaining integrations, and contributing back to the ecosystem. Many of you became beginners again, challenged long-held assumptions, and made the transition successful while continuing to ship for merchants and buyers. Thank you.<br>The React Native community<br>Thank you to everyone who used our open-source libraries, contributed code, reported issues, challenged our decisions, and shared what you learned. Your contributions and feedback, including the spicy kind, made our work better.<br>The tools, lessons, and relationships built over the past six years will continue to shape how we build mobile apps at Shopify. We’re deeply grateful to everyone who was part of it.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            04
+        </div>
+
+        <h2>Show HN: ResolveHQ – A Helpdesk Built on Cloudflare Workers, D1, R2 and Queues</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>48</strong> points
+            ·
+            <strong>14</strong> comments
+            ·
+            mirza_rizvi
+        </div>
+
+        <div class="source">
+            github.com
+        </div>
+
+        <div class="feeds">
+            Top #17 · Show HN #1
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/mirza-rizvi/ResolveHQ">Original article</a> · <a href="https://news.ycombinator.com/item?id=49665864">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>ResolveHQ is a Cloudflare-native, self-hostable helpdesk for small support teams.<br>- Run a shared inbox with tenant-isolated customers, tickets, assignment, status, priority, tags, and full-text search.<br>- Sign up as owner, invite teammates, and manage Owner/Admin/Agent roles with a workspace switcher across organizations.<br>- Thread email correctly per RFC 5322, resistant to subject-line spoofing across tickets.<br>- Receive mail through Cloudflare Email Routing and send it through Resend, with delivery status, retries, and idempotent webhooks. Outbound replies carry their linked attachments, and dead-letter queues drain to durable, recoverable records.<br>- Attach files to tickets through validated, authorized R2 uploads.<br>- Reply faster with saved replies, internal notes, AI-drafted responses (opt-in), and a responsive three-pane inbox with optimistic-version conflict handling.<br>- Reset passwords and accept invitations through system email sent via the same provider seam as ticket mail.<br>- Publish a public help center from knowledge-base articles, with drafts kept private to your team.<br>- Track volume and response speed in Reports, export any window to CSV, and automate triage with rule-based Automations.<br>- Notify agents of assignments and customer replies in-app, and work comfortably in light or dark mode.<br>- Export everything stored about a customer as JSON, or erase it with a durable, resumable workflow that cancels queued mail.<br>- Recover automatically: a five-minute cron job retries stalled mail jobs and cleans up staging and orphaned data.<br>- Control AI assistance per workspace: it stays off until an admin enables it in Settings, and only then are ticket conversations sent to OpenAI.<br>- Set TICKET_RETENTION_DAYS (for example365 ) to have the scheduled sweep permanently delete resolved and closed tickets older than that window, including attachments.<br>The workspace uses a Slack-inspired aubergine sidebar, self-hosted Lato typography, Lucide icons, and Radix UI primitives. Theme-aware controls and status colors support light and dark workspaces. On mobile, bottom navigation and a keyboard-accessible workspace drawer keep all destinations available; ticket columns adapt to preserve subject readability.<br>Use Cmd/Ctrl+K to jump between pages. The sidebar dock contains notifications, theme switching, and account actions.<br>ResolveHQ runs as a single Cloudflare Worker in your own account. Hono serves both the REST API and the built React application. Cloudflare D1 holds tickets and customers, Cloudflare R2 holds attachments, and Cloudflare Queues carry inbound and outbound mail jobs. Cloudflare Email Routing delivers incoming mail to the Worker, and Resend sends outgoing mail. Tickets and attachments are stored in your Cloudflare account; outbound email content passes through Resend.<br>ResolveHQ can run on Cloudflare’s Free plan for small deployments, provided usage stays within the current limits for Workers, D1, R2, Queues, Cron Triggers, and Email Routing. CPU-intensive authentication or mail parsing may require Workers Paid; benchmark your deployment. Queues are available on Workers Free. R2 requires account activation and billing setup separately. Resend handles outbound email under its own limits. See the Free-plan audit.<br>The easiest way to get started is with the Deploy to Cloudflare button above. You will need:<br>- A Cloudflare account; Workers Free supports Queues. Activate R2 separately.<br>- A domain on Cloudflare, so you can set up Email Routing.<br>- Optionally, a Resend account with a verified sending domain, to send outgoing mail.<br>After deployment, open your ResolveHQ URL and sign up as the owner, giving an optional support email that becomes your default inbox. In the Cloudflare dashboard, add an Email Routing rule sending that address to the deployed Worker, then send a test email to confirm it arrives in the inbox.<br>See the deployment guide for what the deploy flow provisions, required configuration, first-run setup, and manual deployment.<br>npm install<br>cp .dev.vars.local.example .dev.vars<br>npm run db:migrate:local<br>npm run db:seed:local<br>npm run dev<br>The Vite application runs on http://localhost:5173 and proxies /api to Wrangler on http://localhost:8787.<br>- AI assistance: set OPENAI_API_KEY (and optionallyOPENAI_MODEL , defaultgpt-4o-mini ) as Worker secrets to make AI available. Each workspace still opts in through Settings; without a key the feature stays hidden and no AI calls are made.<br>- Retention: set TICKET_RETENTION_DAYS as a Worker variable to automatically delete resolved and closed tickets (with attachments) after that many days. Unset means nothing is deleted automatically.<br>- Multi-language interface and notifications outside the app (email digests).<br>See LICENSE.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            05
+        </div>
+
+        <h2>Show HN: Poptimum – A Daily Optimization Game</h2>
+
+        <div class="badge">
+            HN TEXT
+        </div>
+
+        <div class="meta">
+            <strong>1</strong> points
+            ·
+            <strong>0</strong> comments
+            ·
+            ShayHDavidson
+        </div>
+
+        <div class="source">
+            poptimum.fun
+        </div>
+
+        <div class="feeds">
+            New #1
+        </div>
+
+        <div class="links">
+            <a href="https://poptimum.fun/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49669287">HN discussion</a>
+        </div>
+
+        <h3>Discussion text</h3>
+
+        
+        <div class="article-body">
+            <p>About 10 years ago, when my oldest daughter was a baby, we used to play with animal-shaped fridge magnets. I started trying to pack all of them into the smallest possible area, mostly to make the game more interesting for myself. I remember thinking it could make a surprisingly good optimization game.</p>
+<p>Now it’s finally built: https://poptimum.fun (https://poptimum.fun)</p>
+<p>Poptimum is a daily web game where everyone gets the same set of shapes and tries to pack them as tightly as possible. A new random puzzle is available every day, with scores ranked against other players in your country and worldwide. It works on desktop and mobile.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            06
+        </div>
+
+        <h2>Clay Mathematics Institute on the Navier-Stokes Problem</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>51</strong> points
+            ·
+            <strong>12</strong> comments
+            ·
+            rvz
+        </div>
+
+        <div class="source">
+            claymath.org
+        </div>
+
+        <div class="feeds">
+            Top #2 · New #39
+        </div>
+
+        <div class="links">
+            <a href="https://www.claymath.org/news/navier-stokes-announcement/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49668706">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>Navier-Stokes Announcement<br>Date: 11 September 2026<br>The Millennium Prize Problems were unveiled by the Clay Mathematics Institute (CMI) at a meeting in Paris in 2000 to celebrate “The Universality of Mathematical Thought”.<br>These problems encapsulate some of the most difficult challenges that mathematicians were grappling with at the turn of the millennium. CMI’s purpose in articulating these problems and attaching a $1M prize to each of them was threefold: to elevate in the consciousness of the general public the fact that in mathematics the frontier is open, close at hand, and abounds with important unsolved problems; to emphasize the abiding value of working towards a solution of the deepest, most difficult problems; and to recognize achievements in mathematics of historic magnitude.<br>Each of the Millennium Prize Problems concerns a classical question of compelling origin that had defied all attempts to resolve it over many years. These are not arbitrary puzzles akin to fiendish crosswords. Rather, they are fundamental challenges that mark the frontier of human knowledge and challenge us to develop new structures and methods. They provide foci for the continuing struggle, across generations and cultures, to deepen our human understanding of mathematics and the universe that it describes. The deep innovations that are required to make significant progress on these problems open new vistas of possibility that typically reach far beyond the domain of the problem.<br>The Millennium Problem concerning the motion of fluids has all these attributes. The problem asks about the existence and smoothness of Navier-Stokes solutions in 3-dimensional Euclidean space. In recent years there has been an increasing sense of anticipation as breakthroughs in the surrounding field (some recognised by the Clay Research Award) have raised hopes that the Navier-Stokes problem might soon be resolved. The increasing ability of new technologies to accelerate mathematical research has heightened this sense of anticipation.<br>Today, CMI shares in the excitement of the global mathematical community as we contemplate the announcement that the Navier-Stokes problem has apparently been settled. We hope to see waves of new human understanding unleashed as the innovations behind this work are analysed and interrogated.<br>The Clay Mathematics Institute is dedicated to furthering the beauty, power and universality of mathematical thought. Curating the Millennium Prize Problems is one of the most important ways in which it pursues this goal. The rules governing the prizes describe the process for evaluating what has been achieved and for assigning credit. The process is deliberately unhurried, but we will provide updates.<br>The Clay Mathematics Institute<br>September 11, 2026<br>Image: Wikimedia Commons, C. Fukushima and J. Westerweel, Technical University of Delft, The Netherlands</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            07
+        </div>
+
+        <h2>Show HN: Graphify C# – Compiler-accurate Find Usages for coding agents</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>28</strong> points
+            ·
+            <strong>12</strong> comments
+            ·
+            zachsaw
+        </div>
+
+        <div class="source">
+            github.com
+        </div>
+
+        <div class="feeds">
+            Top #19 · Show HN #2
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/zachsaw/graphify-csharp">Original article</a> · <a href="https://news.ycombinator.com/item?id=49667188">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>Give coding agents compiler-accurate Find Usages for C#.<br>graphify-csharp is a free, headless Roslyn/MSBuild indexer that turns C#<br>source into deterministic, queryable semantic evidence: compiler-resolved<br>callers, references, implementations, inheritance, and overrides—even across<br>overloads, generics, and projects.<br>Think of it as the semantic-navigation slice of Rider/ReSharper, exported for Codex, Claude Code, and other coding agents.<br>MIT licensed · No IDE · No compiled project DLL required · No database · Graphify optional<br>Suppose you ask:<br>Which methods are used only by tests?<br>A text search can find matching spellings. It cannot reliably tell which overload was bound, which project the caller belongs to, or whether an interface implementation is the symbol you meant.<br>Graphify C# loads the project through MSBuild and asks Roslyn what every symbol actually means. It emits stable identities and directed relationships that an agent can inspect instead of infer:<br>| Without semantic indexing | With Graphify C# | <br>|---|---|<br>| Matching names look like usages | Roslyn resolves the exact declaration | <br>| Overloads and generics are ambiguous | Bound signatures and project/TFM identity are retained | <br>| Test-only usage requires manual inspection | Every caller carries project, namespace, and source location | <br>| Type relationships are reconstructed from text | inherits ,implements , andoverrides are explicit edges | <br>For example, this repository contains an internal<br>DeclarationCatalogBuilder.ForTesting(...) method. From the extracted graph,<br>an agent can see one compiler-resolved incoming call:<br>Graphify.CSharp.Roslyn.DeclarationCatalogBuilder.ForTesting(...)<br>└── called by Graphify.CSharp.Tests.Roslyn.CSharp14FeatureTests<br>    at tests/Graphify.CSharp.Tests/Roslyn/CSharp14FeatureTests.cs:143<br>That is semantic evidence, not a text-match count. A consumer can classify the caller by project or namespace convention and report the method as test-only for human review.<br>dotnet tool install --global Graphify.CSharp --framework net10.0graphify-csharp \<br>  --input ./src/MyProduct.sln \<br>  --root . \<br>  --configuration Release \<br>  --output ./graphify-out/csharp.json<br>The result is one complete JSON document containing nodes, edges, and<br>hyperedges. It can be read directly by an agent, queried with jq, consumed<br>from your own code, or passed to Graphify.<br>Supported inputs are .sln, .slnx, .csproj, and SDK file-based .cs apps.<br>The repository&#x27;s SDKs, packages, and MSBuild inputs must be available locally.<br>The included graphify-csharp skill<br>teaches an agent when to refresh the index, how to follow semantic edges, and<br>where static analysis stops.<br>Install it in a Codex-compatible project:<br>mkdir -p .agents/skills/graphify-csharp<br>curl -fsSL \<br>  https://raw.githubusercontent.com/zachsaw/graphify-csharp/main/.agents/skills/graphify-csharp/SKILL.md \<br>  -o .agents/skills/graphify-csharp/SKILL.md<br>For Claude Code, use .claude/skills/graphify-csharp/SKILL.md instead. Reload<br>an agent session after installing or updating the skill.<br>If you do not use skills, add this to your project instructions:<br>For C# structure and usage questions, refresh<br>graphify-out/csharp.json with graphify-csharp before answering. Identify<br>declarations by symbol_key and inspect incoming calls and references<br>edges. Treat zero inbound edges as observed static evidence, not proof of<br>runtime unreachability.<br>Now ask your agent:<br>- What calls this exact overload or constructor?<br>- Which source declarations reference this field, property, event, or type?<br>- Which classes implement this interface?<br>- Which members override this virtual or interface member?<br>- Which declarations have zero observed inbound references?<br>- Which methods are referenced only from test projects?<br>| What a developer does in Rider | What an agent gets from Graphify C# | <br>|---|---|<br>| Find Usages | Directed, compiler-resolved calls andreferences edges | <br>| Jump to Implementation | implements edges to the exact interface contract | <br>| Navigate base and derived types | inherits andoverrides edges | <br>| Disambiguate overloads and generics | Stable symbol identities with bound signature information | <br>| Inspect a large solution | Project, target-framework, source-location, and provenance metadata | <br>| Keep navigating while editing | Incremental indexing with an optional warm watcher | <br>The extractor supplies the facts. Your agent or downstream consumer decides what those facts mean: test-only usage, zero observed references, a deletion candidate, or something requiring human review.<br>Graphify C# deliberately covers a focused layer:<br>- Rider and ReSharper provide interactive navigation, inspections, refactorings, and quick fixes for developers inside an IDE.<br>- NDepend provides a broad, commercial architecture and code-quality suite built around dependency analysis, metrics, rules, reports, baselines, and visualizations.<br>- Graphify C# provides source-level C# semantic evidence for coding agents, headlessly and in an open format.<br>There is real overlap with NDepend around callers, dependencies, inheritance, and dead-code investigation. The difference is the product boundary: Graphify C# is not a free NDepend clone or an IDE replacement. It is a Roslyn-native semantic index that other tools and agents can build on.<br>Graphify C# is standalone. It does not invoke, load, or require Graphify.<br>Without Graphify, query the JSON with an agent, jq, C#, Python, or any other<br>consumer. For example, list every indexed method:<br>jq &#x27;.nodes[] | select(.properties.node_kind == &quot;method&quot;)&#x27; \<br>  graphify-out/csharp.json<br>With Graphify, refresh the C# evidence and use its higher-level query, path, explanation, clustering, and export workflows:<br>graphify-csharp \<br>  --input ./src/MyProduct.sln \<br>  --root . \<br>  --configuration Release \<br>  --output ./graphify-out/csharp.json<br>graphify query &quot;Which methods call the order service?&quot; \<br>  --graph ./graphify-out/csharp.json<br>Graphify remains the general graph workflow. graphify-csharp contributes the<br>C# layer where compiler binding matters.<br>- Namespaces, classes, structs, interfaces, records, enums, and delegates<br>- Constructors, methods, operators, and local functions<br>- Properties, indexers, fields, enum members, and events<br>- Parameters, locals, type parameters, aliases, labels, and query range variables<br>- Direct calls, constructor calls, method groups, and member access<br>- Field, type, attribute, generic, typeof , and declaration-header references<br>- inherits ,implements , andoverrides<br>- Compiler-selected operators, conversions, deconstruction, foreach ,await ,using , patterns, ranges, and collection expressions<br>- Invocation and constructor arguments bound to source formal parameters<br>- Cross-project relationships with overload-aware, project/TFM-aware identity<br>Every edge points from the declaration where the relationship was observed to the declaration Roslyn resolved. Source location and provenance are retained. Unsupported semantic shapes are reported as diagnostics instead of silently disappearing or crashing the entire extraction.<br>See Compatibility for the complete language and compiler-feature matrix.<br>For repeated agent work, start a watcher:<br>graphify-csharp \<br>  --input ./src/MyProduct.sln \<br>  --root . \<br>  --configuration Release \<br>  --output ./graphify-out/csharp.json \<br>  --watch<br>The watcher keeps the Roslyn workspace warm and prepares changed projects in<br>the background. A normal graphify-csharp invocation acts as an explicit<br>refresh barrier and returns only after a complete JSON snapshot is current.<br>If no matching watcher is running, the same command performs a one-shot<br>refresh. Use --rebuild to invalidate the incremental cache.<br>See Usage and Incremental indexing for watcher ownership, filtering, recovery, and cache behavior.<br>The package contains two tool assets:<br>| Tool asset | Runtime | Compiler surface | <br>|---|---|---|<br>| net10.0 | .NET 10 | Roslyn 5.9 / C# 14 | <br>| net11.0 | .NET 11 | .NET 11 SDK Roslyn / C# 15 preview | <br>Install or update the package with dotnet tool ... --framework to select the<br>tool runtime and Roslyn asset:<br>dotnet tool update --global Graphify.CSharp --framework net11.0<br>This is separate from the optional --target-framework argument, which chooses<br>one analyzed compilation when an input project targets multiple frameworks.<br>Single-target projects do not need --target-framework.<br>Graphify C# reports what Roslyn can observe statically. Reflection, dependency injection, native callbacks, dynamic invocation, and code absent from the loaded compilation may create runtime relationships that are not represented as direct edges.<br>Consequently:<br>- zero inbound references means zero observed static references;<br>- a test-only result depends on your project or namespace classification; and<br>- every deletion candidate still requires judgment.<br>The tool exposes this boundary instead of pretending static evidence is a runtime reachability proof.<br>dotnet restore Graphify.CSharp.sln<br>dotnet build Graphify.CSharp.sln --configuration Release<br>dotnet test Graphify.CSharp.sln --configuration Release<br>dotnet pack src/Graphify.CSharp.Cli --configuration Release<br>More detail:<br>MIT. See LICENSE.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            08
+        </div>
+
+        <h2>Ask HN: What&#x27;s a good &quot;semi-dumb&quot; phone/watch for kids?</h2>
+
+        <div class="badge">
+            HN TEXT
+        </div>
+
+        <div class="meta">
+            <strong>3</strong> points
+            ·
+            <strong>1</strong> comments
+            ·
+            funkaster
+        </div>
+
+        <div class="source">
+            news.ycombinator.com
+        </div>
+
+        <div class="feeds">
+            New #17 · Ask HN #2
+        </div>
+
+        <div class="links">
+            <a href="https://news.ycombinator.com/item?id=49668960">HN discussion</a>
+        </div>
+
+        <h3>Discussion text</h3>
+
+        
+        <div class="article-body">
+            <p>Hard req: has to have cell connectivity &amp; support roaming (US &lt;&gt; EU). Not for daily use, but for comms when they&#x27;re out of the house in case they need to reach out. I looked at apple watch family and it&#x27;s great, except that it doesn&#x27;t allow roaming or plans abroad (it seems that BetterRoaming might work but it&#x27;s unclear). The Garmin Bounce 2 looks like it fits the bill, but it has ZERO reviews and some comments make it look like it&#x27;s crap.</p>
+<p>The Light Phone III seems like an awesome idea, but at ~$900 it&#x27;s a strong pass.</p>
+<p>The Punkt MP02 is so far my top contender.</p>
+<p>Any suggestions?</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            09
+        </div>
+
+        <h2>DeepSeek v4.1 Flash</h2>
+
+        <div class="badge">
+            HN TEXT
+        </div>
+
+        <div class="meta">
+            <strong>997</strong> points
+            ·
+            <strong>569</strong> comments
+            ·
+            Liwink
+        </div>
+
+        <div class="source">
+            twitter.com
+        </div>
+
+        <div class="feeds">
+            Best #2
+        </div>
+
+        <div class="links">
+            <a href="https://twitter.com/deepseek_ai/status/2097930608790167907">Original article</a> · <a href="https://news.ycombinator.com/item?id=49639090">HN discussion</a>
+        </div>
+
+        <h3>Discussion text</h3>
+
+        
+        <div class="article-body">
+            <p>https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash (https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            10
+        </div>
+
+        <h2>WeWorm: Zero-Click WeChat Worm</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>1</strong> points
+            ·
+            <strong>0</strong> comments
+            ·
+            BlackEarth
+        </div>
+
+        <div class="source">
+            calif.io
+        </div>
+
+        <div class="feeds">
+            New #2
+        </div>
+
+        <div class="links">
+            <a href="https://calif.io/research/weworm">Original article</a> · <a href="https://news.ycombinator.com/item?id=49669276">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>WeWorm<br>The first zero-click worm to spread through WeChat calls across iOS and Android.<br>At Calif, our mission is to keep the Internet together by occasionally taking it apart. We believe everyone deserves a safe and secure Internet, including the people who cannot protect themselves.<br>Today, we&#x27;re releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. This is the first installment in a series exploring zero-click attack surfaces in mobile messaging apps.<br>WeChat is an &quot;everything app&quot; used by virtually everyone in China and by Chinese communities worldwide. Simply by calling a victim, WeWorm can hijack their account and call their friends, spreading from phone to phone. If exploited, actors can compromise over a billion phones (or accounts), upending livelihoods and breaking communities worldwide.<br>We built a demo worm with three phones:<br>The first Android phone, a Pixel 10a, is the attacker. We used it to call the second phone, an iPhone 17e, and exploited the bug to take over its WeChat while it was still ringing. We then used the compromised iPhone to call the third phone, another Pixel 10a, and took that one over the same way. Attacker calls victim, victim becomes attacker, victim calls the next victim.<br>You can also watch individual Android and iOS RCE demos.<br>Exploitation takes only seconds, and gives us full control of the WeChat account. We can read and send messages, make calls, and act on the victim&#x27;s behalf. Chained with other Android and iOS bugs we&#x27;ve reported and are helping fix, it can lead to full control of the device.<br>The victim does not need to answer the call, or interact with their phone at all. Even if they do answer, they hear nothing, and the exploit still succeeds. Declining the call stops that attempt, but the attacker can simply try again later, for example, while the victim is asleep.<br>This exploit requires the attacker to be on the victim&#x27;s friend list. But that&#x27;s not much of a barrier: an attacker can compromise one of your friends first and use their account to reach you.<br>WeChat, like many messaging apps, gives trusted contacts more privileges. But once one contact is compromised, that trust works against you.<br>Sophisticated attackers have many ways to do this. They could exploit another app, gain root access using techniques like those in OEMpocalypse, take over the victim&#x27;s WeChat app, and use it to attack you.<br>Working with AI, our team found the bug and wrote the first remote code execution (RCE) exploit in about two days. Building the worm took one more week.<br>A worm at this scale used to be the kind of thing that took a larger team months. AI can already do most of the work here. Our team provided the judgment about what to target and how to test it safely.<br>We are publishing our findings to raise public awareness. These capabilities have existed for a long time in the hands of well-funded, sophisticated actors. What&#x27;s different now is that AI is putting these capabilities in the hands of less skilled actors, leaving ordinary users at unprecedented risk.<br>All it takes is one lab accident or a person who grabs a half-finished version, to unleash something like WeWorm into the world before anyone is ready. WannaCry got out that way, from tooling that escaped early and hit hospitals.<br>The easy reaction is to blame AI and try to curtail its further development. We think that is the wrong lesson. The vulnerabilities are already out there. What AI changed is that we can find and fix them fast. We believe there are more good guys than bad guys, and if they&#x27;re paying attention, AI gives the good guys the upper hand.<br>We reported the WeChat bug to Tencent in July. As of today, they have mitigated our exploit for all users. We&#x27;d like to thank Tencent for a successful collaboration.<br>We hope this work is an example of what we can achieve together. It is a call for the United States, China, and other governments to work together and collaborate with private industry on developing and deploying AI to make the world safer for everyone.<br>The bug<br>The bug is a memory corruption issue in WeChat&#x27;s VoIP stack. We&#x27;re withholding the technical details for now. We plan to present the full analysis at an upcoming conference.<br>This specific WeChat bug is one instance of the many unconventional attack surfaces that are present across many messaging apps. We&#x27;re conducting more of this research across other apps and attack surfaces, while working with app developers on attack surface reduction. This may take an industry-wide effort, since some of it depends on the platform owners. Once that work is further along, we&#x27;ll share our progress, including the technical details of this WeChat bug.<br>Disclosure timeline<br>- Sometime in July, 2026: Our AI discovered the bug.<br>- July 23: Our engineering team became aware of the bug.<br>- July 24: We submitted the bug to Tencent.<br>- July 25-28: Our WeChat accounts were banned.<br>- July 29: Our WeChat accounts were unbanned.<br>- July 30: We completed the first Android RCE exploit.<br>- August 2: We completed the iOS RCE exploit.<br>- August 11: We completed the polished worm demo across Android and iOS.<br>- August 21: Tencent published Android 8.0.77 and iOS 8.0.76 that mitigated the bug.<br>- August 26: Tencent notified us that they&#x27;re assessing the issue.<br>- August 28: We confirmed that our exploit was mitigated on the server side for all users.<br>- September 3: We shared our technical analysis and working exploits with Tencent.<br>- September 4: Tencent confirmed that the vulnerability could be exploited for remote command execution.<br>- September 8: We published this article alongside coverage from The New York Times.<br>About Calif<br>We push offensive security research to its limits, understand what is becoming possible with AI, and use those insights to help our customers defend themselves.<br>Get in touch, and subscribe to our newsletter for more research like this:<br>Check your inbox to confirm.<br>Related research</p>
+        </div>
+        
+
+    </section>
+    
+
+</body>
+
+</html>
