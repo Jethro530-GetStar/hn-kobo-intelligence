@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-12 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-12 PM · Generated 2026-09-12 14:04 CST</div><div class="issue-sub">Stories 10 · Full 7</div><div class="issue-sub">Sources: autom.dev, claymath.org, fzakaria.com, github.com, news.ycombinator.com, shopify.engineering, theguardian.com, twitter.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Google no longer provides direct URLs in search results
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    245 points ·
+    126 comments ·
+    1e1a
+  </div>
+
+  <div class="meta">
+    autom.dev
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #31 · New #55
+  </div>
+
+  <div class="links">
+    <a href="https://www.autom.dev/blog/google-search-goto-links">Original article</a> · <a href="https://news.ycombinator.com/item?id=49668386">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">What&#x27;s happening<br>Google Search is rewriting organic result links to google.com/goto?url=... instead of exposing the destination URL directly in the HTML.<br>When you click a result, Google redirects you to the real page. The url parameter uses a custom, Google-specific encoding. It is not a plain base64 of the target URL. In practice, it looks like an opaque reference to Google&#x27;s index record for that page.<br>As of late August 2026, this is showing up consistently across searches when you are logged out or browsing in private mode. It may still be an experiment, but it is no longer limited to a small slice of SERPs.<br>Not the same as google.com/url<br>Google has used redirect wrappers before. The older format is google.com/url?q=[URL-encoded destination], where the target link is readable in the query string.<br>The new goto format is different:<br>- The result href is/goto , not the destination<br>- You cannot decode the url= blob offline<br>- The real URL is in the Location header on/goto . Request that URL. Do not follow the redirect.<br>Google still needs the destination to draw the SERP (domain, favicon, attribution), so copies of the URL remain on the page. That is a separate story from reading Location. The walkthrough is here: google.com/goto: read Location with HEAD.<br>That shift matters for anyone building a search index from SERP data at scale.<br>Why Google is doing this<br>This fits Google&#x27;s broader push against automated SERP harvesting, especially from AI crawlers and SEO scrapers that bulk-extract result URLs to build their own indexes.<br>With plaintext links, a scraper could parse thousands of URLs from HTML without touching Google again. With goto, each result needs a request back to Google just to learn the destination. You read Location; you do not follow through to the page. That is slower, noisier, and gives Google a clear signal when the same client resolves hundreds of links in sequence.<br>Combined with earlier moves like removing &amp;num=100 and tightening BotGuard/SearchGuard, Google is steadily raising the cost of naive SERP scraping.<br>What we saw at Autom<br>We first spotted goto links on a small percentage of SERPs. At that level, it was hard to ship a reliable fix without breaking responses for everyone else.<br>As of late August 2026, the pattern is much more consistent for logged-out and private sessions. Result URLs on Google Search are effectively all goto in those conditions.<br>We have been monitoring the rollout and testing against it.<br>Update at Autom.dev<br>We have updated our Google Search pipeline to resolve google.com/goto links (read Location, no follow) and return the final destination URL in API responses, in the same structured fields customers already use.<br>If you call Autom&#x27;s Google Search endpoints, you should keep getting usable destination URLs without changing your integration. We will keep watching Google&#x27;s rollout and adjust if the redirect format shifts again.<br>Related reading<br>- google.com/goto: read Location with HEAD<br>- Google killed num=100<br>- Google sues SerpAPI: What SearchGuard reveals<br>- Scraping SERP with Google, Bing, and Brave<br>Need live SERP data while Google keeps moving the goalposts? Try 1,000 free requests on Autom pricing, or get an API key at app.autom.dev/register.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Shopify is moving from React Native back to Swift and Kotlin
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1233 points ·
+    921 comments ·
+    fnthawar2
+  </div>
+
+  <div class="meta">
+    shopify.engineering
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #45
+  </div>
+
+  <div class="links">
+    <a href="https://shopify.engineering/back-to-native">Original article</a> · <a href="https://news.ycombinator.com/item?id=49643982">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We decided to go all-in on React Native back in 2020, and that bet has been extremely successful. We saved a ton of time building features just once, enabled developers with no mobile background to contribute to our apps, and freed ourselves from constantly chasing feature parity.<br>In January 2025, I wrote that the future of React Native was bright and that Shopify planned to keep investing in it. That was true based on what we knew then. React Native was working well for us, and it remains an excellent framework. But since then, coding models have gotten dramatically better, and for our apps and our team, building the same feature in Swift and Kotlin no longer carries the cost it used to.<br>We don’t hold on to a decision just because it was successful at the time. When a core assumption changes, we’re willing to go back and ask whether it’s still the right call. LLMs changed one of the core assumptions behind our 2020 decision, so we reevaluated our mobile stack from first principles.<br>What we found led us back to native.<br>Why switch back to native<br>We decided to switch from native to React Native in 2020 for three reasons:<br>- Stop building the same features twice<br>- Allow developers to work across the stack<br>- Spend less time chasing feature parity and more time shipping value<br>React Native consistently delivered these benefits. We found ourselves spending a significant amount of time and resources on optimizing performance, improving key foundational areas in React Native, and keeping up with framework updates and external dependencies, but these were acceptable tradeoffs. The benefits of using React Native far outweighed the investments we had to make in these areas.<br>Shopify has been using LLMs to build software since 2021 (one year before ChatGPT!). Initially, we used them to implement features, investigate and fix bugs, and review code. As the models improved, so did the complexity of the work we trusted them to take on. By late 2025, they were no longer just helping us write code faster. They were capable of making us question whether building software twice still meant doing twice the work.<br>We decided to reevaluate our mobile tech stack and started prototyping to see whether our technology choices still held up. We rebuilt several core parts of our biggest apps in Swift and Kotlin using LLMs and were surprised by how well it worked. Agents:<br>- Could implement a feature on Android using the iOS version as a reference, and vice versa<br>- Helped developers ramp up and contribute effectively outside their primary stack<br>- Dramatically reduced the cost of maintaining parity between platforms through shared specifications, tests, and review checkpoints<br>Native still means building and maintaining software on two platforms, that cost has not disappeared. What changed is that agents can now do enough of the implementation, translation, testing, and review work that it’s no longer the deciding factor it was in 2020.<br>React Native apps can be fast. Ours are. We are making this change because agents have reduced the advantages of sharing implementation, while the advantages of building for each platform remain. Native keeps us closer to platform capabilities and first-party tooling, with fewer framework and dependency layers between our code and the platform.<br>The future of our React Native open-source libraries<br>Before we get into how we’re migrating, we want to make sure we do this transition cleanly. From the beginning, we wanted to contribute back to React Native to make it better. We’ve published open-source libraries that have become the top choice in their respective categories. We’re grateful for the incredible reception from the community and are committed to making sure this is a smooth transition with no surprises.<br>Shopify will continue sponsoring this through the end of 2026, and William Candillon will continue working on it beyond that. He will fork the repo in the coming months and start publishing the library under a new name. The original repo will be archived when this transition is complete. We’ll post updates along the way so that everyone has ample time to migrate. If your app relies on this library, please consider sponsoring it.<br>This library gets ~2M downloads/week and has become the default way to render high-performance lists in React Native. Given how important it is for the ecosystem, Shopify will continue to fix critical issues that break compatibility. We’re currently in discussions with several companies about taking on long-term stewardship of FlashList. If you’re interested, reach out to me here.<br>Restyle has a smaller user base than our other libraries, so we&#x27;re archiving this repo. We&#x27;ll keep it working through the end of 2026, then stop maintaining it. Anyone is welcome to fork it and take it forward, and we&#x27;ll help with the handover if a team wants to pick it up.<br>How we’re migrating<br>Shopify has several large apps (Shopify, Shop, Point of Sale, Inbox). Millions of merchants and buyers around the world rely on them every single day to earn their livelihood and buy products they want from the brands they love.<br>We debated between gradually migrating to native (brownfield) versus rebuilding them from scratch (greenfield). In the past when we migrated to React Native, we picked the brownfield approach for some of our biggest apps, as it’d take years to rewrite them and we’d have to stop shipping new features while the rewrite was in progress.<br>However, this time greenfield emerged as a clear winner for the following reasons:<br>- LLMs are good at building features in Swift and Kotlin using the React Native version as reference<br>- It gives us a clean slate to rebuild in the best way possible without any of the previous constraints<br>- Our prototypes showed that we could rebuild these apps substantially faster than was possible before coding agents<br>The Shop app, which is regularly at the top of the list in the shopping category in the app stores, is the first to be migrated. Assisted by AI, the team was able to go from a proof of concept to a fully rebuilt native app published in the app stores in just 12 weeks. We’ve written about this migration in depth here.<br>The migration of the Shopify app (our biggest with 300+ screens, home &amp; lockscreen widgets, Apple Watch app, complications, Siri Shortcuts, etc.), is also underway and will ship later this year. The rest of our apps will be migrated soon.<br>Preventing slop<br>It’s tempting to just point an LLM to the React Native codebase and try to one-shot the same features in native, but it doesn’t work. Even if you ask it to gather as much information as it can up front, freeze that into specs, task files, and then implement it, you end up with a huge amount of unmaintainable code that can’t be shipped.<br>To solve this problem, we built a system called Helix that takes a more gradual approach. It doesn&#x27;t expect the first output to be correct, and builds a loop where an imperfect attempt simply cannot move forward until it becomes a good result.<br>The developer points Helix at a screen. Helix reads the React Native code and proposes a sequence of checkpoints (small, ordered slices of the work) that can be reviewed in minutes. Then, checkpoint by checkpoint, it builds: each one must prove its behavior with tests, match the running app in a visual review, survive two adversarial code reviewers, and get a human&#x27;s nod before it&#x27;s committed and the next one starts. Feedback from every review is remembered, so the loop gets more autonomous as the migration progresses.<br>Helix rebuilding a screen in the Shopify mobile app using Swift and Kotlin<br>This approach has been working extremely well and is allowing us to rebuild our apps in a fraction of the time.<br>Enabling fast feedback loops<br>Agentic control of simulators has been a bottleneck. We found ourselves constantly babysitting them as they couldn’t reliably build, test, and iterate. We built tooling to allow agents to reproduce bugs, fix them, and verify the fix autonomously but it was slow and brittle. React Native’s hot module reload helps the situation but it doesn’t solve it, due to simulator control being slow. This is primarily due to reliance on the accessibility tree, or screenshots to get the state of the app, take actions, and verify results. Agents can make code changes in seconds, but it takes them several minutes to test the output. This makes iterating extremely slow and manual. It doesn’t matter how good the model is if it can’t test its work quickly, which is especially difficult on mobile.<br>We’re fixing this by designing our app architecture to work for both humans and agents. The core principle here is that business logic should be completely decoupled from the UI and be able to run headlessly on desktop. We then make it available to agents via a CLI that allows them to iterate on it in milliseconds instead of minutes without involving simulators.<br>Navigating the app and performing actions using the CLI<br>The CLI allows agents to inspect the state of the app, navigate between different sections, and perform actions all without needing to touch the UI. This enables extremely fast feedback loops and allows agents to work autonomously for hours at a time.<br>When simulator interaction is needed, the CLI can connect to them via a remote mode and drive the UI via commands without having to inspect the layout or the accessibility tree. This enables blazing-fast performance and E2E tests.<br>This is real-time (not sped up)<br>What’s next<br>We are going to migrate all our mobile apps to Swift and Kotlin using AI throughout the process. Shop has already shipped as a fully native app, the Shopify app is underway, and the rest will follow soon. We’re moving quickly, but not by lowering the bar. Every rebuild must meet or exceed the performance, stability, accessibility, and product quality people expect today. This isn’t just the same apps rewritten in different languages. We’re rebuilding them so both humans and agents can understand, test, and change them quickly.<br>The migration isn’t the finish line. Success means our teams can deliver better experiences for merchants and buyers faster than before. We’ll measure that through product velocity, app quality, and how much work agents can complete autonomously.<br>We’ll share what we learn along the way, including deeper dives into Helix, our agent-addressable architecture, and how we’re building mobile apps with agents. We were open about what we learned from React Native, and we intend to be just as open about this transition.<br>This is one of the most ambitious mobile engineering projects we’ve taken on. If you want to help build the next generation of Shopify’s mobile apps, we’re hiring mobile engineers, infrastructure engineers, and developers working at the intersection of AI and software engineering.<br>Acknowledgements<br>Native is the right choice for Shopify now, but React Native was the right choice for Shopify in 2020. That success was only possible because of the people who made it work.<br>Meta<br>Thank you to the React Native team at Meta for being excellent stewards of the framework, listening to our feedback, and working closely with us over the years. React Native is substantially better today because of your investments in its architecture, performance, tooling, and community.<br>William Candillon<br>Thank you for creating React Native Skia and taking it much further than any of us imagined. You redefined what was possible for graphics and animation in React Native, and we’re excited to see where you take it next.<br>Software Mansion<br>Thank you for all your work on Reanimated, for listening to our feedback, and for helping us solve some of the hardest animation and performance problems in our apps.<br>Shopify engineers<br>Hundreds of engineers contributed to adopting React Native, migrating our apps, building shared foundations, improving performance, maintaining integrations, and contributing back to the ecosystem. Many of you became beginners again, challenged long-held assumptions, and made the transition successful while continuing to ship for merchants and buyers. Thank you.<br>The React Native community<br>Thank you to everyone who used our open-source libraries, contributed code, reported issues, challenged our decisions, and shared what you learned. Your contributions and feedback, including the spicy kind, made our work better.<br>The tools, lessons, and relationships built over the past six years will continue to shape how we build mobile apps at Shopify. We’re deeply grateful to everyone who was part of it.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: ResolveHQ – A Helpdesk Built on Cloudflare Workers, D1, R2 and Queues
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    48 points ·
+    14 comments ·
+    mirza_rizvi
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #17
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/mirza-rizvi/ResolveHQ">Original article</a> · <a href="https://news.ycombinator.com/item?id=49665864">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">ResolveHQ is a Cloudflare-native, self-hostable helpdesk for small support teams.<br>- Run a shared inbox with tenant-isolated customers, tickets, assignment, status, priority, tags, and full-text search.<br>- Sign up as owner, invite teammates, and manage Owner/Admin/Agent roles with a workspace switcher across organizations.<br>- Thread email correctly per RFC 5322, resistant to subject-line spoofing across tickets.<br>- Receive mail through Cloudflare Email Routing and send it through Resend, with delivery status, retries, and idempotent webhooks. Outbound replies carry their linked attachments, and dead-letter queues drain to durable, recoverable records.<br>- Attach files to tickets through validated, authorized R2 uploads.<br>- Reply faster with saved replies, internal notes, AI-drafted responses (opt-in), and a responsive three-pane inbox with optimistic-version conflict handling.<br>- Reset passwords and accept invitations through system email sent via the same provider seam as ticket mail.<br>- Publish a public help center from knowledge-base articles, with drafts kept private to your team.<br>- Track volume and response speed in Reports, export any window to CSV, and automate triage with rule-based Automations.<br>- Notify agents of assignments and customer replies in-app, and work comfortably in light or dark mode.<br>- Export everything stored about a customer as JSON, or erase it with a durable, resumable workflow that cancels queued mail.<br>- Recover automatically: a five-minute cron job retries stalled mail jobs and cleans up staging and orphaned data.<br>- Control AI assistance per workspace: it stays off until an admin enables it in Settings, and only then are ticket conversations sent to OpenAI.<br>- Set TICKET_RETENTION_DAYS (for example365 ) to have the scheduled sweep permanently delete resolved and closed tickets older than that window, including attachments.<br>The workspace uses a Slack-inspired aubergine sidebar, self-hosted Lato typography, Lucide icons, and Radix UI primitives. Theme-aware controls and status colors support light and dark workspaces. On mobile, bottom navigation and a keyboard-accessible workspace drawer keep all destinations available; ticket columns adapt to preserve subject readability.<br>Use Cmd/Ctrl+K to jump between pages. The sidebar dock contains notifications, theme switching, and account actions.<br>ResolveHQ runs as a single Cloudflare Worker in your own account. Hono serves both the REST API and the built React application. Cloudflare D1 holds tickets and customers, Cloudflare R2 holds attachments, and Cloudflare Queues carry inbound and outbound mail jobs. Cloudflare Email Routing delivers incoming mail to the Worker, and Resend sends outgoing mail. Tickets and attachments are stored in your Cloudflare account; outbound email content passes through Resend.<br>ResolveHQ can run on Cloudflare’s Free plan for small deployments, provided usage stays within the current limits for Workers, D1, R2, Queues, Cron Triggers, and Email Routing. CPU-intensive authentication or mail parsing may require Workers Paid; benchmark your deployment. Queues are available on Workers Free. R2 requires account activation and billing setup separately. Resend handles outbound email under its own limits. See the Free-plan audit.<br>The easiest way to get started is with the Deploy to Cloudflare button above. You will need:<br>- A Cloudflare account; Workers Free supports Queues. Activate R2 separately.<br>- A domain on Cloudflare, so you can set up Email Routing.<br>- Optionally, a Resend account with a verified sending domain, to send outgoing mail.<br>After deployment, open your ResolveHQ URL and sign up as the owner, giving an optional support email that becomes your default inbox. In the Cloudflare dashboard, add an Email Routing rule sending that address to the deployed Worker, then send a test email to confirm it arrives in the inbox.<br>See the deployment guide for what the deploy flow provisions, required configuration, first-run setup, and manual deployment.<br>npm install<br>cp .dev.vars.local.example .dev.vars<br>npm run db:migrate:local<br>npm run db:seed:local<br>npm run dev<br>The Vite application runs on http://localhost:5173 and proxies /api to Wrangler on http://localhost:8787.<br>- AI assistance: set OPENAI_API_KEY (and optionallyOPENAI_MODEL , defaultgpt-4o-mini ) as Worker secrets to make AI available. Each workspace still opts in through Settings; without a key the feature stays hidden and no AI calls are made.<br>- Retention: set TICKET_RETENTION_DAYS as a Worker variable to automatically delete resolved and closed tickets (with attachments) after that many days. Unset means nothing is deleted automatically.<br>- Multi-language interface and notifications outside the app (email digests).<br>See LICENSE.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: Did Google kill its enterprise workhorse model?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    10 points ·
+    4 comments ·
+    waldrews
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #50
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49668196">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Is anyone else in a panic over the Gemini 2.5 model generation (Pro, Flash) being sunset in October before there&#x27;s even any Pro class model in general availability (with geo restrictions etc.)? Google wants everyone to migrate to 3.x Flash, which beats the older Pro models on the benchmarked tasks, but isn&#x27;t the same thing as the Pro class on reasoning-heavy tasks like complex reasoning on very large documents (my big use case).<br>The Gemini family had a distinct niche in document comprehension, with thousand page input documents taking only 300k tokens. Nothing quite like that in OpenAI or Anthropic world, even at more than 10x the token adjusted price. Should we just give up on Google at this point and engineer around the competitors&#x27; limits and eat the costs? Totally unnecessary own goal by team Google.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Russian developers used Claude to build &#x27;kamikaze&#x27; attack drone software
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    warrenmiller
+  </div>
+
+  <div class="meta">
+    theguardian.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.theguardian.com/world/2026/sep/12/ukraine-war-briefing-russian-developers-used-ai-to-build-kamikaze-attack-drone-software-anthropic-says">Original article</a> · <a href="https://news.ycombinator.com/item?id=49669350">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">-<br>A small team of likely freelance developers in Russia used AI chatbot Claude to develop software for an autonomous swarm of first-person-view “kamikaze” attack drones, including terminal guidance, target selection and coordination between multiple aircraft, according to Anthropic, the company that developed Claude. In a 154-page report describing how bad actors used its Claude AI system for state-sponsored surveillance and propaganda operations, Anthropic said the drone swarm was programmed to pick its own targets and crash into them to detonate, without a human making the final call. In their programming, the freelance team repeatedly picked a location in Ukraine’s Donetsk region as their target and used VPNs to circumvent Anthropic’s geographic blocks. Small drones have become a central weapon in the war in Ukraine.<br>-<br>Anthropic also found that cybercriminals and state-backed hackers are increasingly using AI to orchestrate and execute large portions of cyber-attacks, including in attacks targeting officials in Ukraine. One hacking group allegedly ran phishing, hotel wifi hijacking and WhatsApp-takeover operations against targets in the Ukrainian government, military and diplomatic sectors, using AI at nearly every stage, Anthropic said. The group’s tradecraft was consistent with Russia-based threat actor Midnight Blizzard, which the US government has previously linked to Russia’s SVR foreign intelligence service, Reuters reported. The Russian embassy in Washington did not immediately respond to a request for comment. The group allegedly used AI to build a system that automatically detected when its malware was flagged by security defences and rewrote the code until it evaded detection.<br>-<br>The Anthropic report comes as petrol stations in Kyiv have been hit by jet-powered drones in a wave of targeted Russian attacks as the bombardment of Ukraine’s capital enters a new phase of intensity. At least two people were killed and 12 injured in strikes on two petrol stations on Friday morning, according to the city’s mayor, Vitali Klitschko. The rush-hour strikes follow a similar attack on a petrol station on Thursday. All three strikes targeted petrol stations operated by Ukrnafta, a state-owned oil and natural gas extraction company. A list of 18 petrol stations in Kyiv expected to be hit by Russian drones started circulating on Telegram on Wednesday. The three struck so far were on the list.<br>-<br>Russian president Vladimir Putin has blamed the west for the conflict in Ukraine because of what he said was its constant pressure on Moscow and its attempts to “drag” Ukraine into the Nato alliance. Speaking to reporters before the BRICS summit in India, Putin said “everything happening in Europe right now is basically the result of system errors by … the western globalists in politics, security, and economics”. After a Russia-friendly president was forced to flee Ukraine in 2014, he said the West “immediately set the goal of dragging Ukraine into Nato. And this ultimately turned out to be the main reason for today’s tragic events in Ukraine”. He said people in Europe understood what was going on, which explained why they were voting for far-right parties such as the AfD in the German state of Saxony-Anhalt.<br>-<br>A Russian official will attend a G20 energy meeting in Houston next week, a White House official said on Friday. Last month, the US welcomed Russian finance minister Anton Siluanov to a meeting of G20 countries in North Carolina, upsetting European officials because it was the first time Russia’s finance minister had attended the forum in person since Russia invaded Ukraine in 2022. The meeting comes as European Union efforts to become independent from Russian oil and gas are faltering, as it heads into winter with low gas stocks, its auditors said this month.<br>-<br>The US House of Representatives is expected to take up a tough Russian sanctions package next week, although prospects of passage are uncertain despite the bill receiving overwhelming support in the Senate. The bill is designed to add pressure on Putin to negotiate an end to Russia’s war with Ukraine. However, several top Democratic lawmakers are worried the measure dramatically expands president Donald Trump’s tariff authority, and he would use that new power to go after US allies.<br>-<br>Three people were killed in Russian strikes in southeastern Ukraine’s Dnipropetrovsk and Zaporizhzhia regions and in Kharkiv in the northeast, according to the governors of those regions. Russia has for two weeks been carrying out almost constant attacks with faster jet-powered drones that have killed a number of Kyiv residents and disrupted daily life in Ukraine’s capital.<br>-<br>Ukraine also carried out drone attacks on Russia, killing two people in the Tula region overnight and one on Friday in the Kursk region, local officials said.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Clay Mathematics Institute on the Navier-Stokes Problem
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    54 points ·
+    20 comments ·
+    rvz
+  </div>
+
+  <div class="meta">
+    claymath.org
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · New #46
+  </div>
+
+  <div class="links">
+    <a href="https://www.claymath.org/news/navier-stokes-announcement/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49668706">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Navier-Stokes Announcement<br>Date: 11 September 2026<br>The Millennium Prize Problems were unveiled by the Clay Mathematics Institute (CMI) at a meeting in Paris in 2000 to celebrate “The Universality of Mathematical Thought”.<br>These problems encapsulate some of the most difficult challenges that mathematicians were grappling with at the turn of the millennium. CMI’s purpose in articulating these problems and attaching a $1M prize to each of them was threefold: to elevate in the consciousness of the general public the fact that in mathematics the frontier is open, close at hand, and abounds with important unsolved problems; to emphasize the abiding value of working towards a solution of the deepest, most difficult problems; and to recognize achievements in mathematics of historic magnitude.<br>Each of the Millennium Prize Problems concerns a classical question of compelling origin that had defied all attempts to resolve it over many years. These are not arbitrary puzzles akin to fiendish crosswords. Rather, they are fundamental challenges that mark the frontier of human knowledge and challenge us to develop new structures and methods. They provide foci for the continuing struggle, across generations and cultures, to deepen our human understanding of mathematics and the universe that it describes. The deep innovations that are required to make significant progress on these problems open new vistas of possibility that typically reach far beyond the domain of the problem.<br>The Millennium Problem concerning the motion of fluids has all these attributes. The problem asks about the existence and smoothness of Navier-Stokes solutions in 3-dimensional Euclidean space. In recent years there has been an increasing sense of anticipation as breakthroughs in the surrounding field (some recognised by the Clay Research Award) have raised hopes that the Navier-Stokes problem might soon be resolved. The increasing ability of new technologies to accelerate mathematical research has heightened this sense of anticipation.<br>Today, CMI shares in the excitement of the global mathematical community as we contemplate the announcement that the Navier-Stokes problem has apparently been settled. We hope to see waves of new human understanding unleashed as the innovations behind this work are analysed and interrogated.<br>The Clay Mathematics Institute is dedicated to furthering the beauty, power and universality of mathematical thought. Curating the Millennium Prize Problems is one of the most important ways in which it pursues this goal. The rules governing the prizes describe the process for evaluating what has been achieved and for assigning credit. The process is deliberately unhurried, but we will provide updates.<br>The Clay Mathematics Institute<br>September 11, 2026<br>Image: Wikimedia Commons, C. Fukushima and J. Westerweel, Technical University of Delft, The Netherlands</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: Graphify C# – Compiler-accurate Find Usages for coding agents
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    28 points ·
+    12 comments ·
+    zachsaw
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #19
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/zachsaw/graphify-csharp">Original article</a> · <a href="https://news.ycombinator.com/item?id=49667188">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Give coding agents compiler-accurate Find Usages for C#.<br>graphify-csharp is a free, headless Roslyn/MSBuild indexer that turns C#<br>source into deterministic, queryable semantic evidence: compiler-resolved<br>callers, references, implementations, inheritance, and overrides—even across<br>overloads, generics, and projects.<br>Think of it as the semantic-navigation slice of Rider/ReSharper, exported for Codex, Claude Code, and other coding agents.<br>MIT licensed · No IDE · No compiled project DLL required · No database · Graphify optional<br>Suppose you ask:<br>Which methods are used only by tests?<br>A text search can find matching spellings. It cannot reliably tell which overload was bound, which project the caller belongs to, or whether an interface implementation is the symbol you meant.<br>Graphify C# loads the project through MSBuild and asks Roslyn what every symbol actually means. It emits stable identities and directed relationships that an agent can inspect instead of infer:<br>| Without semantic indexing | With Graphify C# |<br>|---|---|<br>| Matching names look like usages | Roslyn resolves the exact declaration |<br>| Overloads and generics are ambiguous | Bound signatures and project/TFM identity are retained |<br>| Test-only usage requires manual inspection | Every caller carries project, namespace, and source location |<br>| Type relationships are reconstructed from text | inherits ,implements , andoverrides are explicit edges |<br>For example, this repository contains an internal<br>DeclarationCatalogBuilder.ForTesting(...) method. From the extracted graph,<br>an agent can see one compiler-resolved incoming call:<br>Graphify.CSharp.Roslyn.DeclarationCatalogBuilder.ForTesting(...)<br>└── called by Graphify.CSharp.Tests.Roslyn.CSharp14FeatureTests<br>at tests/Graphify.CSharp.Tests/Roslyn/CSharp14FeatureTests.cs:143<br>That is semantic evidence, not a text-match count. A consumer can classify the caller by project or namespace convention and report the method as test-only for human review.<br>dotnet tool install --global Graphify.CSharp --framework net10.0graphify-csharp \<br>--input ./src/MyProduct.sln \<br>--root . \<br>--configuration Release \<br>--output ./graphify-out/csharp.json<br>The result is one complete JSON document containing nodes, edges, and<br>hyperedges. It can be read directly by an agent, queried with jq, consumed<br>from your own code, or passed to Graphify.<br>Supported inputs are .sln, .slnx, .csproj, and SDK file-based .cs apps.<br>The repository&#x27;s SDKs, packages, and MSBuild inputs must be available locally.<br>The included graphify-csharp skill<br>teaches an agent when to refresh the index, how to follow semantic edges, and<br>where static analysis stops.<br>Install it in a Codex-compatible project:<br>mkdir -p .agents/skills/graphify-csharp<br>curl -fsSL \<br>https://raw.githubusercontent.com/zachsaw/graphify-csharp/main/.agents/skills/graphify-csharp/SKILL.md \<br>-o .agents/skills/graphify-csharp/SKILL.md<br>For Claude Code, use .claude/skills/graphify-csharp/SKILL.md instead. Reload<br>an agent session after installing or updating the skill.<br>If you do not use skills, add this to your project instructions:<br>For C# structure and usage questions, refresh<br>graphify-out/csharp.json with graphify-csharp before answering. Identify<br>declarations by symbol_key and inspect incoming calls and references<br>edges. Treat zero inbound edges as observed static evidence, not proof of<br>runtime unreachability.<br>Now ask your agent:<br>- What calls this exact overload or constructor?<br>- Which source declarations reference this field, property, event, or type?<br>- Which classes implement this interface?<br>- Which members override this virtual or interface member?<br>- Which declarations have zero observed inbound references?<br>- Which methods are referenced only from test projects?<br>| What a developer does in Rider | What an agent gets from Graphify C# |<br>|---|---|<br>| Find Usages | Directed, compiler-resolved calls andreferences edges |<br>| Jump to Implementation | implements edges to the exact interface contract |<br>| Navigate base and derived types | inherits andoverrides edges |<br>| Disambiguate overloads and generics | Stable symbol identities with bound signature information |<br>| Inspect a large solution | Project, target-framework, source-location, and provenance metadata |<br>| Keep navigating while editing | Incremental indexing with an optional warm watcher |<br>The extractor supplies the facts. Your agent or downstream consumer decides what those facts mean: test-only usage, zero observed references, a deletion candidate, or something requiring human review.<br>Graphify C# deliberately covers a focused layer:<br>- Rider and ReSharper provide interactive navigation, inspections, refactorings, and quick fixes for developers inside an IDE.<br>- NDepend provides a broad, commercial architecture and code-quality suite built around dependency analysis, metrics, rules, reports, baselines, and visualizations.<br>- Graphify C# provides source-level C# semantic evidence for coding agents, headlessly and in an open format.<br>There is real overlap with NDepend around callers, dependencies, inheritance, and dead-code investigation. The difference is the product boundary: Graphify C# is not a free NDepend clone or an IDE replacement. It is a Roslyn-native semantic index that other tools and agents can build on.<br>Graphify C# is standalone. It does not invoke, load, or require Graphify.<br>Without Graphify, query the JSON with an agent, jq, C#, Python, or any other<br>consumer. For example, list every indexed method:<br>jq &#x27;.nodes[] | select(.properties.node_kind == &quot;method&quot;)&#x27; \<br>graphify-out/csharp.json<br>With Graphify, refresh the C# evidence and use its higher-level query, path, explanation, clustering, and export workflows:<br>graphify-csharp \<br>--input ./src/MyProduct.sln \<br>--root . \<br>--configuration Release \<br>--output ./graphify-out/csharp.json<br>graphify query &quot;Which methods call the order service?&quot; \<br>--graph ./graphify-out/csharp.json<br>Graphify remains the general graph workflow. graphify-csharp contributes the<br>C# layer where compiler binding matters.<br>- Namespaces, classes, structs, interfaces, records, enums, and delegates<br>- Constructors, methods, operators, and local functions<br>- Properties, indexers, fields, enum members, and events<br>- Parameters, locals, type parameters, aliases, labels, and query range variables<br>- Direct calls, constructor calls, method groups, and member access<br>- Field, type, attribute, generic, typeof , and declaration-header references<br>- inherits ,implements , andoverrides<br>- Compiler-selected operators, conversions, deconstruction, foreach ,await ,using , patterns, ranges, and collection expressions<br>- Invocation and constructor arguments bound to source formal parameters<br>- Cross-project relationships with overload-aware, project/TFM-aware identity<br>Every edge points from the declaration where the relationship was observed to the declaration Roslyn resolved. Source location and provenance are retained. Unsupported semantic shapes are reported as diagnostics instead of silently disappearing or crashing the entire extraction.<br>See Compatibility for the complete language and compiler-feature matrix.<br>For repeated agent work, start a watcher:<br>graphify-csharp \<br>--input ./src/MyProduct.sln \<br>--root . \<br>--configuration Release \<br>--output ./graphify-out/csharp.json \<br>--watch<br>The watcher keeps the Roslyn workspace warm and prepares changed projects in<br>the background. A normal graphify-csharp invocation acts as an explicit<br>refresh barrier and returns only after a complete JSON snapshot is current.<br>If no matching watcher is running, the same command performs a one-shot<br>refresh. Use --rebuild to invalidate the incremental cache.<br>See Usage and Incremental indexing for watcher ownership, filtering, recovery, and cache behavior.<br>The package contains two tool assets:<br>| Tool asset | Runtime | Compiler surface |<br>|---|---|---|<br>| net10.0 | .NET 10 | Roslyn 5.9 / C# 14 |<br>| net11.0 | .NET 11 | .NET 11 SDK Roslyn / C# 15 preview |<br>Install or update the package with dotnet tool ... --framework to select the<br>tool runtime and Roslyn asset:<br>dotnet tool update --global Graphify.CSharp --framework net11.0<br>This is separate from the optional --target-framework argument, which chooses<br>one analyzed compilation when an input project targets multiple frameworks.<br>Single-target projects do not need --target-framework.<br>Graphify C# reports what Roslyn can observe statically. Reflection, dependency injection, native callbacks, dynamic invocation, and code absent from the loaded compilation may create runtime relationships that are not represented as direct edges.<br>Consequently:<br>- zero inbound references means zero observed static references;<br>- a test-only result depends on your project or namespace classification; and<br>- every deletion candidate still requires judgment.<br>The tool exposes this boundary instead of pretending static evidence is a runtime reachability proof.<br>dotnet restore Graphify.CSharp.sln<br>dotnet build Graphify.CSharp.sln --configuration Release<br>dotnet test Graphify.CSharp.sln --configuration Release<br>dotnet pack src/Graphify.CSharp.Cli --configuration Release<br>More detail:<br>MIT. See LICENSE.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ask HN: What&#x27;s a good &quot;semi-dumb&quot; phone/watch for kids?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    1 comments ·
+    funkaster
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · New #24
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49668960">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hard req: has to have cell connectivity &amp; support roaming (US &lt;&gt; EU). Not for daily use, but for comms when they&#x27;re out of the house in case they need to reach out. I looked at apple watch family and it&#x27;s great, except that it doesn&#x27;t allow roaming or plans abroad (it seems that BetterRoaming might work but it&#x27;s unclear). The Garmin Bounce 2 looks like it fits the bill, but it has ZERO reviews and some comments make it look like it&#x27;s crap.<br>The Light Phone III seems like an awesome idea, but at ~$900 it&#x27;s a strong pass.<br>The Punkt MP02 is so far my top contender.<br>Any suggestions?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    DeepSeek v4.1 Flash
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    997 points ·
+    569 comments ·
+    Liwink
+  </div>
+
+  <div class="meta">
+    twitter.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://twitter.com/deepseek_ai/status/2097930608790167907">Original article</a> · <a href="https://news.ycombinator.com/item?id=49639090">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    A Nix store is three functions
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    Tomte
+  </div>
+
+  <div class="meta">
+    fzakaria.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://fzakaria.com/2026/09/11/a-nix-store-is-three-functions">Original article</a> · <a href="https://news.ycombinator.com/item?id=49669346">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">While building trynix I needed somewhere to host a store-path that did not exist on cache.nixos.org.11I was also waiting for @domenkozar to enable CORS on cache.nixos.org so I could use it. I wanted to demonstrate that non-Nixpkgs store paths could be booted just as easily.<br>The only requirement seemed to be a lenient Cross-Origin Resource Sharing (CORS) policy, access-control-allow-origin: *, because the fetch happens in JavaScript.<br>Turns out that GitHub Pages sets that header on every file it<br>serves. 😈 I committed the output of nix copy --to file:// to my Git repository and voilà, I have a free Nix substituter.<br>I seem to be late to the party on this discovery. tomberek’s github-store is a cache assembled out of GitHub release assets.22In order to be a Nix binary cache, the nar/ prefix is stripped from the URL field in the narinfo, because GitHub releases are a flat namespace.<br>$ B=https://github.com/tomberek/github-store/releases/latest/download<br>$ curl -sL $B/nix-cache-info<br>StoreDir: /nix/store<br>$ curl -sL $B/1zy01hjzwvvia6h9dq5xar88v77fgh9x.narinfo<br>StorePath: /nix/store/1zy01hjzwvvia6h9dq5xar88v77fgh9x-glibc-2.38-44<br>URL: 0hkyywarmj4frwvs6p4lz4yl6z5q5halphswlqksh7lbkn4r75si.nar.xz<br>Compression: xz<br>FileHash: sha256:0hkyywarmj4frwvs6p4lz4yl6z5q5halphswlqksh7lbkn4r75si<br>FileSize: 6514112<br>NarHash: sha256:1ikxmc8yxzmm9vzzaa313w9yzrrgm0p6cgscy8arq3z32kynpi94<br>NarSize: 30244048<br>References: 1zy01hjzwvvia6h9dq5xar88v77fgh9x-glibc-2.38-44 a3n1vq6fxkpk5jv4wmqa1kpd3jzqhml9-libidn2-2.3.4 …<br>Deriver: 3fd7s6gjwi6rxfqw00bjq9ghnvazvnnn-glibc-2.38-44.drv<br>Sig: cache.nixos.org-1:YWkvHMXyvOw1iqWblEdvju+OZbGOvwYXyjyRUxuXluFq17xwJFSzHb0HrIuRr9BXYjV6GxfmGGv+ckVNvAOpDQ==<br>$ curl -sL $B/0hkyywarmj4frwvs6p4lz4yl6z5q5halphswlqksh7lbkn4r75si.nar.xz | wc -c<br>6514112<br>GitHub Pages or Releases are a static file server. It has no idea what Nix is. If a humble file server can be a Nix binary cache, what else could we use?<br>§The interface<br>Turns out that in order to be a Nix binary cache, you must implement only three simple functions. The Nix client does not care what medium you use to implement them although HTTP is the most common and included by default in CppNix33You can write a Nix plugin to implement a new protocol if you wanted. .<br>GET  nix-cache-info                →  StoreDir: /nix/store<br>GET  &lt;32-char store hash&gt;.narinfo  →  metadata naming an archive<br>GET  &lt;the narinfo&#x27;s URL field&gt;     →  the compressed archive<br>That’s it.<br>Anything that can answer those three requests can be used as a remote Nix store.44We will see that that they must not all be all on the same medium, protocol or domain even!<br>§What about the signatures!?<br>The reason we can be this careless about transport is that Nix does not trust it. A narinfo’s signature (Sig) field covers StorePath, NarHash, NarSize and References. It does not cover URL, FileHash, FileSize or Compression.<br>Once the archive is fetched, Nix decompresses it and checks that the NarHash matches.<br>This is the special sauce of how packages that were signed by cache.nixos.org can be fetched from any other binary cache as an intermediary, and the signature still validates.<br>The URL field does not even have to be on the same host as the narinfo. It can be anywhere on the internet, and it can be a different protocol than HTTP. Nix does not care. The only thing that matters is that the archive fetched from URL has the same NarHash as the narinfo.<br>§Alternative Stores<br>For protocols that are not included by default in the Nix client, you can always write an HTTP proxy that translates the three functions to whatever medium you want.<br>In research for this post, I found a few interesting ones.<br>gachix: puts the archives in git’s object database. Git content-addresses and delta-compresses blobs already, so the store dedupes itself; the author reports roughly 82% smaller than the equivalent plain cache.<br>DNS: I wrote a proof-of-concept that puts the narinfo and 4 KiB slices of the archive in TXT records. The narinfo is small enough to fit on one record but the archive needs to be chunked.<br>pastebin: a pastebin can hold the narinfo and the archive. The narinfo is small enough to fit on one paste, but the archive needs to be chunked. Many pastebins have an expiry policy which acts as a natural garbage collector.<br>nixcache-oci: uses an OCI registry to store Nix archives.<br>infinite storage glitch: encodes data within a video and uploads it to YouTube.<br>§npm<br>“Everything is available on npm” – Some person on the internet<br>Unsurprisingly, npm is a great binary cache and it has some interesting properties for release management we can abuse.<br>nix copy --to file:// emits a directory and npm publishes directories: a match made in heaven. 💑<br>Let’s walk through a small hello example.<br>packages.${system}.default = pkgs.hello.overrideAttrs (old: {<br>pname = &quot;hello-npm&quot;;<br># The upstream test suite greps for the original greeting.<br>doCheck = false;<br>postPatch = (old.postPatch or &quot;&quot;) + &#x27;&#x27;<br>substituteInPlace src/hello.c \<br>--replace-fail &#x27;Hello, world!&#x27; &#x27;Hello from the npm registry!&#x27;<br>&#x27;&#x27;;<br>});<br>It is dynamically linked against glibc, so the closure is five paths and roughly ~36 MiB:<br>$ nix path-info -rSh result<br>/nix/store/yh8rykx8wakl1ccn8rc351f6r2wbg4cn-libunistring-1.4.2	   2.0 MiB<br>/nix/store/nga9d6m9iplygw3iqghk2g840nz7b0gy-libidn2-2.3.8     	   2.3 MiB<br>/nix/store/ssvq1r0xd8f7paf6zqgpfql1a4drwhy2-xgcc-15.3.0-libgcc	 193.0 KiB<br>/nix/store/n51dhmdbik1kfrsm62j5knavmigwrl1a-glibc-2.42-84     	  36.0 MiB<br>/nix/store/3ssib4ic89qw7x1gha10s6mdf42fk15v-hello-npm-2.12.3  	  36.2 MiB<br>We copy it to a local cache, signed with our own key, and add the one file<br>npm needs (package.json):<br>$ nix key generate-secret --key-name hello-npm-1 &gt; cache-key.sec<br>$ nix key convert-secret-to-public &lt; cache-key.sec &gt; cache-key.pub<br>$ nix copy --to &quot;file://$PWD/cache?secret-key=$PWD/cache-key.sec&quot; .#<br>$ cd cache &amp;&amp; rm -rf log build-trace-v2 &amp;&amp; npm init --scope=@fzakaria -y<br>npm publish then dutifully packages our complete closure for us:<br>$ npm publish --access public<br>npm notice 606B   3ssib4ic89qw7x1gha10s6mdf42fk15v.narinfo<br>npm notice 767B   n51dhmdbik1kfrsm62j5knavmigwrl1a.narinfo<br>npm notice 7.3MB  nar/06fsxd8j9ck4ls5b8xj4r4zk2642xzxzmdj6bl93zfwcm4pqzx0z.nar.xz<br>npm notice 467.5kB nar/1asdj56kfpvbqh8bpg5wns4v0yd1p3ldl6p2swv6nfwfdgvbwklc.nar.xz<br>npm notice 21B    nix-cache-info<br>npm notice name: @fzakaria/hello-nix-cache<br>npm notice version: 1.0.0<br>npm notice package size: 8.0 MB   total files: 12<br>@fzakaria/hello-nix-cache<br>is now a real package on the public npm registry.<br>It is now a substituter you can point Nix at directly:<br>$ nix copy --from https://unpkg.com/@fzakaria/hello-nix-cache@latest/ \<br>--to ./npmstore \<br>--trusted-public-keys &#x27;hello-npm-1:u4SntZm2u3sob9zBw2OG6yePvJGoRRQUk00LQh4pnKA=&#x27; \<br>/nix/store/3ssib4ic89qw7x1gha10s6mdf42fk15v-hello-npm-2.12.3<br>copying 5 paths...<br>copying path &#x27;/nix/store/ssvq1r0xd8f7paf6zqgpfql1a4drwhy2-xgcc-15.3.0-libgcc&#x27; from &#x27;https://unpkg.com/@fzakaria/hello-nix-cache@latest&#x27;...<br>copying path &#x27;/nix/store/n51dhmdbik1kfrsm62j5knavmigwrl1a-glibc-2.42-84&#x27; from &#x27;https://unpkg.com/@fzakaria/hello-nix-cache@latest&#x27;...<br>copying path &#x27;/nix/store/3ssib4ic89qw7x1gha10s6mdf42fk15v-hello-npm-2.12.3&#x27; from &#x27;https://unpkg.com/@fzakaria/hello-nix-cache@latest&#x27;...<br>$ bwrap --ro-bind ./npmstore/nix/store /nix/store --proc /proc --dev /dev \<br>/nix/store/3ssib4ic89qw7x1gha10s6mdf42fk15v-hello-npm-2.12.3/bin/hello<br>Hello from the npm registry!<br>Note<br>We have to use bwrap to run the binary because ./npmstore is a chroot store and all the<br>are still under /nix/store. If we had relocatable binaries we could run it directly.<br>That is Nix fetching the complete closure from npm and running it. 🤯 We can distribute Nix packages to non-Nix users, let the infection spread!<br>As an added bonus, similar to Nixpkg and NixOS we can get nice “channel” semantics by using npm’s dist-tags. The latest tag is mutable and points to the latest version, while each version is immutable and points to a specific store path.<br>$ npm dist-tag add @fzakaria/hello-nix-cache@1.0.5 staging<br>$ npm dist-tag add @fzakaria/hello-nix-cache@1.0.4 production<br>The major downside of this approach is that npm ahs no incremental publishing. Every version is a whole tarball, so fifty closures sharing glibc upload glibc fifty times.<br>We could fix that by publishing each store path as a separate package, and then having a small index package that points at them. Each store path would then be uploaded exactly once.<br>I won’t build that though as it’s not in good faith to the npm ecosystem.<br>What other store implementations can we find?</div>
+</div>
+
+</div>
+
+</body>
+</html>
