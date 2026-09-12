@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+HN Intelligence 2026-09-12-AM
+</title>
+
+<style>
+
+body {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 24px 80px 24px;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    line-height: 1.7;
+
+    background: #fff;
+    color: #111;
+}
+
+header {
+    padding-bottom: 32px;
+    border-bottom: 2px solid #111;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.summary {
+    font-size: 1.05rem;
+}
+
+.story {
+    padding-bottom: 56px;
+    margin-bottom: 56px;
+    border-bottom: 1px solid #999;
+}
+
+.story-number {
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 1.55rem;
+    line-height: 1.35;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.15rem;
+    margin-top: 32px;
+}
+
+.meta {
+    margin: 16px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.badges {
+    margin: 10px 0;
+}
+
+.badge {
+    display: inline-block;
+    border: 1px solid #111;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.article-content {
+    margin-top: 28px;
+}
+
+.fulltext p {
+    margin: 1.1em 0;
+    text-align: left;
+}
+
+.notice {
+    border-left: 4px solid #555;
+    padding-left: 14px;
+}
+
+.links {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px dotted #999;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 16px 60px 16px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+HN Kobo Intelligence
+</h1>
+
+<div class="summary">
+
+<strong>
+2026-09-12-AM
+</strong>
+
+<br>
+
+Generated:
+2026-09-12 10:19 Asia/Taipei
+
+<br><br>
+
+HN Sources:
+Best · Top · New · Show HN · Ask HN
+
+<br>
+
+Stories:
+<strong>10</strong>
+
+<br>
+
+Full Articles:
+<strong>6</strong>
+
+</div>
+
+</header>
+
+
+    <article class="story">
+
+        <div class="story-number">
+            01
+        </div>
+
+        <h2>Shopify is moving from React Native back to Swift and Kotlin</h2>
+
+        <div class="badges">
+            <span class="badge full">FULL TEXT</span>
+        </div>
+
+        <div class="meta">
+
+            <strong>1228</strong> points
+            ·
+            <strong>915</strong> comments
+            ·
+            by fnthawar2
+
+            <br>
+
+            Source:
+            <strong>shopify.engineering</strong>
+
+            <br>
+
+            HN:
+            Best #1 · Top #49
+
+        </div>
+
+        
+        <section class="article-content">
+
+            <h3>文章全文</h3>
+
+            <div class="fulltext">
+                <p>We decided to go all-in on React Native back in 2020, and that bet has been extremely successful. We saved a ton of time building features just once, enabled developers with no mobile background to contribute to our apps, and freed ourselves from constantly chasing feature parity.<br>In January 2025, I wrote that the future of React Native was bright and that Shopify planned to keep investing in it. That was true based on what we knew then. React Native was working well for us, and it remains an excellent framework. But since then, coding models have gotten dramatically better, and for our apps and our team, building the same feature in Swift and Kotlin no longer carries the cost it used to.<br>We don’t hold on to a decision just because it was successful at the time. When a core assumption changes, we’re willing to go back and ask whether it’s still the right call. LLMs changed one of the core assumptions behind our 2020 decision, so we reevaluated our mobile stack from first principles.<br>What we found led us back to native.<br>Why switch back to native<br>We decided to switch from native to React Native in 2020 for three reasons:<br>- Stop building the same features twice<br>- Allow developers to work across the stack<br>- Spend less time chasing feature parity and more time shipping value<br>React Native consistently delivered these benefits. We found ourselves spending a significant amount of time and resources on optimizing performance, improving key foundational areas in React Native, and keeping up with framework updates and external dependencies, but these were acceptable tradeoffs. The benefits of using React Native far outweighed the investments we had to make in these areas.<br>Shopify has been using LLMs to build software since 2021 (one year before ChatGPT!). Initially, we used them to implement features, investigate and fix bugs, and review code. As the models improved, so did the complexity of the work we trusted them to take on. By late 2025, they were no longer just helping us write code faster. They were capable of making us question whether building software twice still meant doing twice the work.<br>We decided to reevaluate our mobile tech stack and started prototyping to see whether our technology choices still held up. We rebuilt several core parts of our biggest apps in Swift and Kotlin using LLMs and were surprised by how well it worked. Agents:<br>- Could implement a feature on Android using the iOS version as a reference, and vice versa<br>- Helped developers ramp up and contribute effectively outside their primary stack<br>- Dramatically reduced the cost of maintaining parity between platforms through shared specifications, tests, and review checkpoints<br>Native still means building and maintaining software on two platforms, that cost has not disappeared. What changed is that agents can now do enough of the implementation, translation, testing, and review work that it’s no longer the deciding factor it was in 2020.<br>React Native apps can be fast. Ours are. We are making this change because agents have reduced the advantages of sharing implementation, while the advantages of building for each platform remain. Native keeps us closer to platform capabilities and first-party tooling, with fewer framework and dependency layers between our code and the platform.<br>The future of our React Native open-source libraries<br>Before we get into how we’re migrating, we want to make sure we do this transition cleanly. From the beginning, we wanted to contribute back to React Native to make it better. We’ve published open-source libraries that have become the top choice in their respective categories. We’re grateful for the incredible reception from the community and are committed to making sure this is a smooth transition with no surprises.<br>Shopify will continue sponsoring this through the end of 2026, and William Candillon will continue working on it beyond that. He will fork the repo in the coming months and start publishing the library under a new name. The original repo will be archived when this transition is complete. We’ll post updates along the way so that everyone has ample time to migrate. If your app relies on this library, please consider sponsoring it.<br>This library gets ~2M downloads/week and has become the default way to render high-performance lists in React Native. Given how important it is for the ecosystem, Shopify will continue to fix critical issues that break compatibility. We’re currently in discussions with several companies about taking on long-term stewardship of FlashList. If you’re interested, reach out to me here.<br>Restyle has a smaller user base than our other libraries, so we&#x27;re archiving this repo. We&#x27;ll keep it working through the end of 2026, then stop maintaining it. Anyone is welcome to fork it and take it forward, and we&#x27;ll help with the handover if a team wants to pick it up.<br>How we’re migrating<br>Shopify has several large apps (Shopify, Shop, Point of Sale, Inbox). Millions of merchants and buyers around the world rely on them every single day to earn their livelihood and buy products they want from the brands they love.<br>We debated between gradually migrating to native (brownfield) versus rebuilding them from scratch (greenfield). In the past when we migrated to React Native, we picked the brownfield approach for some of our biggest apps, as it’d take years to rewrite them and we’d have to stop shipping new features while the rewrite was in progress.<br>However, this time greenfield emerged as a clear winner for the following reasons:<br>- LLMs are good at building features in Swift and Kotlin using the React Native version as reference<br>- It gives us a clean slate to rebuild in the best way possible without any of the previous constraints<br>- Our prototypes showed that we could rebuild these apps substantially faster than was possible before coding agents<br>The Shop app, which is regularly at the top of the list in the shopping category in the app stores, is the first to be migrated. Assisted by AI, the team was able to go from a proof of concept to a fully rebuilt native app published in the app stores in just 12 weeks. We’ve written about this migration in depth here.<br>The migration of the Shopify app (our biggest with 300+ screens, home &amp; lockscreen widgets, Apple Watch app, complications, Siri Shortcuts, etc.), is also underway and will ship later this year. The rest of our apps will be migrated soon.<br>Preventing slop<br>It’s tempting to just point an LLM to the React Native codebase and try to one-shot the same features in native, but it doesn’t work. Even if you ask it to gather as much information as it can up front, freeze that into specs, task files, and then implement it, you end up with a huge amount of unmaintainable code that can’t be shipped.<br>To solve this problem, we built a system called Helix that takes a more gradual approach. It doesn&#x27;t expect the first output to be correct, and builds a loop where an imperfect attempt simply cannot move forward until it becomes a good result.<br>The developer points Helix at a screen. Helix reads the React Native code and proposes a sequence of checkpoints (small, ordered slices of the work) that can be reviewed in minutes. Then, checkpoint by checkpoint, it builds: each one must prove its behavior with tests, match the running app in a visual review, survive two adversarial code reviewers, and get a human&#x27;s nod before it&#x27;s committed and the next one starts. Feedback from every review is remembered, so the loop gets more autonomous as the migration progresses.<br>Helix rebuilding a screen in the Shopify mobile app using Swift and Kotlin<br>This approach has been working extremely well and is allowing us to rebuild our apps in a fraction of the time.<br>Enabling fast feedback loops<br>Agentic control of simulators has been a bottleneck. We found ourselves constantly babysitting them as they couldn’t reliably build, test, and iterate. We built tooling to allow agents to reproduce bugs, fix them, and verify the fix autonomously but it was slow and brittle. React Native’s hot module reload helps the situation but it doesn’t solve it, due to simulator control being slow. This is primarily due to reliance on the accessibility tree, or screenshots to get the state of the app, take actions, and verify results. Agents can make code changes in seconds, but it takes them several minutes to test the output. This makes iterating extremely slow and manual. It doesn’t matter how good the model is if it can’t test its work quickly, which is especially difficult on mobile.<br>We’re fixing this by designing our app architecture to work for both humans and agents. The core principle here is that business logic should be completely decoupled from the UI and be able to run headlessly on desktop. We then make it available to agents via a CLI that allows them to iterate on it in milliseconds instead of minutes without involving simulators.<br>Navigating the app and performing actions using the CLI<br>The CLI allows agents to inspect the state of the app, navigate between different sections, and perform actions all without needing to touch the UI. This enables extremely fast feedback loops and allows agents to work autonomously for hours at a time.<br>When simulator interaction is needed, the CLI can connect to them via a remote mode and drive the UI via commands without having to inspect the layout or the accessibility tree. This enables blazing-fast performance and E2E tests.<br>This is real-time (not sped up)<br>What’s next<br>We are going to migrate all our mobile apps to Swift and Kotlin using AI throughout the process. Shop has already shipped as a fully native app, the Shopify app is underway, and the rest will follow soon. We’re moving quickly, but not by lowering the bar. Every rebuild must meet or exceed the performance, stability, accessibility, and product quality people expect today. This isn’t just the same apps rewritten in different languages. We’re rebuilding them so both humans and agents can understand, test, and change them quickly.<br>The migration isn’t the finish line. Success means our teams can deliver better experiences for merchants and buyers faster than before. We’ll measure that through product velocity, app quality, and how much work agents can complete autonomously.<br>We’ll share what we learn along the way, including deeper dives into Helix, our agent-addressable architecture, and how we’re building mobile apps with agents. We were open about what we learned from React Native, and we intend to be just as open about this transition.<br>This is one of the most ambitious mobile engineering projects we’ve taken on. If you want to help build the next generation of Shopify’s mobile apps, we’re hiring mobile engineers, infrastructure engineers, and developers working at the intersection of AI and software engineering.<br>Acknowledgements<br>Native is the right choice for Shopify now, but React Native was the right choice for Shopify in 2020. That success was only possible because of the people who made it work.<br>Meta<br>Thank you to the React Native team at Meta for being excellent stewards of the framework, listening to our feedback, and working closely with us over the years. React Native is substantially better today because of your investments in its architecture, performance, tooling, and community.<br>William Candillon<br>Thank you for creating React Native Skia and taking it much further than any of us imagined. You redefined what was possible for graphics and animation in React Native, and we’re excited to see where you take it next.<br>Software Mansion<br>Thank you for all your work on Reanimated, for listening to our feedback, and for helping us solve some of the hardest animation and performance problems in our apps.<br>Shopify engineers<br>Hundreds of engineers contributed to adopting React Native, migrating our apps, building shared foundations, improving performance, maintaining integrations, and contributing back to the ecosystem. Many of you became beginners again, challenged long-held assumptions, and made the transition successful while continuing to ship for merchants and buyers. Thank you.<br>The React Native community<br>Thank you to everyone who used our open-source libraries, contributed code, reported issues, challenged our decisions, and shared what you learned. Your contributions and feedback, including the spicy kind, made our work better.<br>The tools, lessons, and relationships built over the past six years will continue to shape how we build mobile apps at Shopify. We’re deeply grateful to everyone who was part of it.</p>
+            </div>
+
+        </section>
+        
+
+        <div class="links">
+
+            <a href="https://shopify.engineering/back-to-native">
+                Original Article
+            </a>
+
+            ·
+
+            <a href="https://news.ycombinator.com/item?id=49643982">
+                HN Discussion
+            </a>
+
+        </div>
+
+    </article>
+    
+    <article class="story">
+
+        <div class="story-number">
+            02
+        </div>
+
+        <h2>A misalignment of AI in mathematics</h2>
+
+        <div class="badges">
+            <span class="badge full">FULL TEXT</span>
+        </div>
+
+        <div class="meta">
+
+            <strong>661</strong> points
+            ·
+            <strong>696</strong> comments
+            ·
+            by meredydd
+
+            <br>
+
+            Source:
+            <strong>mathandai.org</strong>
+
+            <br>
+
+            HN:
+            Best #7 · Top #1
+
+        </div>
+
+        
+        <section class="article-content">
+
+            <h3>文章全文</h3>
+
+            <div class="fulltext">
+                <p>Over the last few months, the mathematical capabilities of LLMs have improved dramatically, to the point that they can solve major outstanding problems in many fields of mathematics. However, the push by AI companies to solve mathematical problems as a benchmark is detrimental to the science of mathematics, and to the mathematical community. The goals of the AI companies and the goals of the mathematical community are severely misaligned. We see these as part of broader alignment issues impacting other scientific and creative professions, as well as the whole of society.<br>Research mathematics deals with understanding basic structures of shapes, numbers, and natural phenomena. Over the course of generations, it has built a large corpus of sophisticated ideas, methods, abstractions, and other tools to comprehend the mathematical landscape. In turn, modern technologies and sciences are based on mathematical tools.<br>Famous problems have often served as landmarks and lighthouses against which one can measure an improved understanding of this landscape. Solving one of these problems has been a certain sign of new insights and interesting methods, which would then be studied by a community of mathematicians, through a long and arduous process of talks, discussions, simplifications. At the end of this process, one will ideally find a textbook presentation of the results suitable for any graduate or even undergraduate student to study. Some of the mathematical ideas pursue their journey even further to become, decades or centuries after, tools that are understood and used by the whole population.<br>The mathematical community functions, in many ways, as a miniature version of humanity. It consists of individuals using a wide variety of different approaches, joined by core values. The most precious resources of our profession are students and ideas, and these we nurture with great care. We feel responsible to let them grow to their full potential, until they can live a life of their own in the mathematical world. For students we often suggest problems with the core intention of developing skills making them well-positioned for advances in research and elsewhere. Our ideas we disseminate in talks, private discussions and careful writeups, connecting them to the previous ideas of others. These processes invariably take time and are based on human interaction.<br>In recent months, the success of AI in solving major mathematical problems has made headlines even outside mathematical circles. But solving problems is only a tool and proxy for achieving the primary goal of conceptual understanding and insight. Forgetting this in the world of AI may turn the tool against the primary goal. Indeed, the mass production at faster and faster pace of &quot;true/false&quot; statements could destroy fertile ground instead of breathing life into new ideas.<br>Often these solutions are announced in a rush, leaving no time for a proper writeup, the isolation of new methods and ideas, and citing relevant previous work of others. As in all creative professions, this raises severe attribution and plagiarism questions. Moreover, without the willing mathematicians who must take care of their development and integration into the mathematical canon, AI-conceived ideas would never become fully alive and the crucial human transmission chain between mathematicians would be lost.<br>We are witnessing a general threat to intellectual work, with misalignment between the outcome of the use of AI and its initial purpose. In many fields and activities, years of training have traditionally served not only to produce a final answer or product, but also to develop understanding and the ability to formulate new questions and ideas. However, building on a vast body of previous human work, AI systems are becoming increasingly capable of producing the results of such work directly, and these goals cease to align. The issues the mathematical community faces now are similar to issues that other scientific and creative professions are facing, and indicate issues that all of humanity might face: how to make sure that, as AI changes the way work is done, we do not lose sight of what that work was meant to achieve in the first place.<br>AI offers the potential of enhancing and accelerating genuine mathematical study and understanding. Mathematics as a profession will need to adapt to these changes in several ways. However, whether these changes ultimately benefit the field or have a destructive effect will in large part be determined by the decisions of the humans in control of this new technology.<br>These issues must be addressed urgently, in the mathematical community, by the companies developing these technologies and, more broadly, by a society that will confront similar problems in many other forms of intellectual work.<br>Artur Avila (Fields Medal 2014)<br>Manjul Bhargava (Fields Medal 2014)<br>Caucher Birkar (Fields Medal 2018)<br>Pierre Deligne (Fields Medal 1978)<br>Yu Deng (Fields Medal 2026)<br>Simon Donaldson (Fields Medal 1986)<br>Hugo Duminil-Copin (Fields Medal 2022)<br>Alessio Figalli (Fields Medal 2018)<br>Martin Hairer (Fields Medal 2014)<br>June Huh (Fields Medal 2022)<br>Maxim Kontsevich (Fields Medal 1998)<br>Elon Lindenstrauss (Fields Medal 2010)<br>Pierre-Louis Lions (Fields Medal 1994)<br>James Maynard (Fields Medal 2022)<br>Curt McMullen (Fields Medal 1998)<br>Shigefumi Mori (Fields Medal 1990)<br>Ngô Bảo Châu (Fields Medal 2010)<br>Andrei Okounkov (Fields Medal 2006)<br>Peter Scholze (Fields Medal 2018)<br>Stanislav Smirnov (Fields Medal 2010)<br>Terence Tao (Fields Medal 2006)<br>Maryna Viazovska (Fields Medal 2022)<br>Cédric Villani (Fields Medal 2010)<br>Wendelin Werner (Fields Medal 2006)<br>Efim Zelmanov (Fields Medal 1994)</p>
+            </div>
+
+        </section>
+        
+
+        <div class="links">
+
+            <a href="https://mathandai.org/">
+                Original Article
+            </a>
+
+            ·
+
+            <a href="https://news.ycombinator.com/item?id=49662371">
+                HN Discussion
+            </a>
+
+        </div>
+
+    </article>
+    
+    <article class="story">
+
+        <div class="story-number">
+            03
+        </div>
+
+        <h2>Show HN: ResolveHQ – A Helpdesk Built on Cloudflare Workers, D1, R2 and Queues</h2>
+
+        <div class="badges">
+            <span class="badge full">FULL TEXT</span>
+        </div>
+
+        <div class="meta">
+
+            <strong>29</strong> points
+            ·
+            <strong>11</strong> comments
+            ·
+            by mirza_rizvi
+
+            <br>
+
+            Source:
+            <strong>github.com</strong>
+
+            <br>
+
+            HN:
+            Show HN #1 · Top #9
+
+        </div>
+
+        
+        <section class="article-content">
+
+            <h3>文章全文</h3>
+
+            <div class="fulltext">
+                <p>ResolveHQ is a Cloudflare-native, self-hostable helpdesk for small support teams.<br>- Run a shared inbox with tenant-isolated customers, tickets, assignment, status, priority, tags, and full-text search.<br>- Sign up as owner, invite teammates, and manage Owner/Admin/Agent roles with a workspace switcher across organizations.<br>- Thread email correctly per RFC 5322, resistant to subject-line spoofing across tickets.<br>- Receive mail through Cloudflare Email Routing and send it through Resend, with delivery status, retries, and idempotent webhooks. Outbound replies carry their linked attachments, and dead-letter queues drain to durable, recoverable records.<br>- Attach files to tickets through validated, authorized R2 uploads.<br>- Reply faster with saved replies, internal notes, AI-drafted responses (opt-in), and a responsive three-pane inbox with optimistic-version conflict handling.<br>- Reset passwords and accept invitations through system email sent via the same provider seam as ticket mail.<br>- Publish a public help center from knowledge-base articles, with drafts kept private to your team.<br>- Track volume and response speed in Reports, export any window to CSV, and automate triage with rule-based Automations.<br>- Notify agents of assignments and customer replies in-app, and work comfortably in light or dark mode.<br>- Export everything stored about a customer as JSON, or erase it with a durable, resumable workflow that cancels queued mail.<br>- Recover automatically: a five-minute cron job retries stalled mail jobs and cleans up staging and orphaned data.<br>- Control AI assistance per workspace: it stays off until an admin enables it in Settings, and only then are ticket conversations sent to OpenAI.<br>- Set TICKET_RETENTION_DAYS (for example365 ) to have the scheduled sweep permanently delete resolved and closed tickets older than that window, including attachments.<br>The workspace uses a Slack-inspired aubergine sidebar, self-hosted Lato typography, Lucide icons, and Radix UI primitives. Theme-aware controls and status colors support light and dark workspaces. On mobile, bottom navigation and a keyboard-accessible workspace drawer keep all destinations available; ticket columns adapt to preserve subject readability.<br>Use Cmd/Ctrl+K to jump between pages. The sidebar dock contains notifications, theme switching, and account actions.<br>ResolveHQ runs as a single Cloudflare Worker in your own account. Hono serves both the REST API and the built React application. Cloudflare D1 holds tickets and customers, Cloudflare R2 holds attachments, and Cloudflare Queues carry inbound and outbound mail jobs. Cloudflare Email Routing delivers incoming mail to the Worker, and Resend sends outgoing mail. Tickets and attachments are stored in your Cloudflare account; outbound email content passes through Resend.<br>ResolveHQ can run on Cloudflare’s Free plan for small deployments, provided usage stays within the current limits for Workers, D1, R2, Queues, Cron Triggers, and Email Routing. CPU-intensive authentication or mail parsing may require Workers Paid; benchmark your deployment. Queues are available on Workers Free. R2 requires account activation and billing setup separately. Resend handles outbound email under its own limits. See the Free-plan audit.<br>The easiest way to get started is with the Deploy to Cloudflare button above. You will need:<br>- A Cloudflare account; Workers Free supports Queues. Activate R2 separately.<br>- A domain on Cloudflare, so you can set up Email Routing.<br>- Optionally, a Resend account with a verified sending domain, to send outgoing mail.<br>After deployment, open your ResolveHQ URL and sign up as the owner, giving an optional support email that becomes your default inbox. In the Cloudflare dashboard, add an Email Routing rule sending that address to the deployed Worker, then send a test email to confirm it arrives in the inbox.<br>See the deployment guide for what the deploy flow provisions, required configuration, first-run setup, and manual deployment.<br>npm install<br>cp .dev.vars.local.example .dev.vars<br>npm run db:migrate:local<br>npm run db:seed:local<br>npm run dev<br>The Vite application runs on http://localhost:5173 and proxies /api to Wrangler on http://localhost:8787.<br>- AI assistance: set OPENAI_API_KEY (and optionallyOPENAI_MODEL , defaultgpt-4o-mini ) as Worker secrets to make AI available. Each workspace still opts in through Settings; without a key the feature stays hidden and no AI calls are made.<br>- Retention: set TICKET_RETENTION_DAYS as a Worker variable to automatically delete resolved and closed tickets (with attachments) after that many days. Unset means nothing is deleted automatically.<br>- Multi-language interface and notifications outside the app (email digests).<br>See LICENSE.</p>
+            </div>
+
+        </section>
+        
+
+        <div class="links">
+
+            <a href="https://github.com/mirza-rizvi/ResolveHQ">
+                Original Article
+            </a>
+
+            ·
+
+            <a href="https://news.ycombinator.com/item?id=49665864">
+                HN Discussion
+            </a>
+
+        </div>
+
+    </article>
+    
+    <article class="story">
+
+        <div class="story-number">
+            04
+        </div>
+
+        <h2>The Environmental Protection Network: About Us</h2>
+
+        <div class="badges">
+            <span class="badge reference">REFERENCE</span>
+        </div>
+
+        <div class="meta">
+
+            <strong>2</strong> points
+            ·
+            <strong>0</strong> comments
+            ·
+            by mmooss
+
+            <br>
+
+            Source:
+            <strong>environmentalprotectionnetwork.org</strong>
+
+            <br>
+
+            HN:
+            New #1
+
+        </div>
+
+        
+            <section class="article-content">
+
+                <p class="notice">
+                此來源未能自動擷取完整正文。
+                可由下方 Original Article
+                開啟原始網站。
+                </p>
+
+            </section>
+            
+
+        <div class="links">
+
+            <a href="https://www.environmentalprotectionnetwork.org/about/">
+                Original Article
+            </a>
+
+            ·
+
+            <a href="https://news.ycombinator.com/item?id=49668034">
+                HN Discussion
+            </a>
+
+        </div>
+
+    </article>
+    
+    <article class="story">
+
+        <div class="story-number">
+            05
+        </div>
+
+        <h2>Dreamcast Web Development Links</h2>
+
+        <div class="badges">
+            <span class="badge reference">REFERENCE</span>
+        </div>
+
+        <div class="meta">
+
+            <strong>4</strong> points
+            ·
+            <strong>0</strong> comments
+            ·
+            by hefner1456
+
+            <br>
+
+            Source:
+            <strong>news.ycombinator.com</strong>
+
+            <br>
+
+            HN:
+            Ask HN #1
+
+        </div>
+
+        
+            <section class="article-content">
+
+                <h3>HN 原始內容</h3>
+
+                <p>I just replied to somebody on here with these links, thought I should share them. If any one has something to add, dont be shiesty:) It was a pain to find these.</p>
+<p>https://web.archive.org/web/20241003101005/https://www.angelfire.com/pa3/VAMPMAN/krypt_dcinfo.html</p>
+<p>https://web.archive.org/web/20031205061600/http://dreamcast.planetweb.com/community/homepages/dcdesign.html</p>
+<p>https://web.archive.org/web/20181029115530/https://dreamcastarena.com/how-to-create-dreamcast-website-friendly</p>
+<p>https://www.dreamcast-talk.com/forum/viewtopic.php?t=16378</p>
+<p>http://kamui.cool/zz_lab/infinitedream_HTTP_USER_AGENT.html</p>
+<p>http://kamui.cool/zz_lab/jeffma_useragent.html</p>
+<p>http://kamui.cool/zz_lab/browsermatrix.html</p>
+<p>https://dreamcast.wiki/Development</p>
+<p>https://dcemulation.org/phpBB/viewtopic.php?t=47902</p>
+<p>https://web.archive.org/web/20250713015510/http://pc.psilocybindreams.com/</p>
+<p>https://web.archive.org/web/20000521015744/http://tools.planetweb.com/wmhelp.html</p>
+
+            </section>
+            
+
+        <div class="links">
+
+            <a href="https://news.ycombinator.com/item?id=49666410">
+                Original Article
+            </a>
+
+            ·
+
+            <a href="https://news.ycombinator.com/item?id=49666410">
+                HN Discussion
+            </a>
+
+        </div>
+
+    </article>
+    
+    <article class="story">
+
+        <div class="story-number">
+            06
+        </div>
+
+        <h2>Show HN: Graphify C# – Compiler-accurate Find Usages for coding agents</h2>
+
+        <div class="badges">
+            <span class="badge full">FULL TEXT</span>
+        </div>
+
+        <div class="meta">
+
+            <strong>9</strong> points
+            ·
+            <strong>6</strong> comments
+            ·
+            by zachsaw
+
+            <br>
+
+            Source:
+            <strong>github.com</strong>
+
+            <br>
+
+            HN:
+            New #57 · Show HN #2 · Top #21
+
+        </div>
+
+        
+        <section class="article-content">
+
+            <h3>文章全文</h3>
+
+            <div class="fulltext">
+                <p>Give coding agents compiler-accurate Find Usages for C#.<br>graphify-csharp is a free, headless Roslyn/MSBuild indexer that turns C#<br>source into deterministic, queryable semantic evidence: compiler-resolved<br>callers, references, implementations, inheritance, and overrides—even across<br>overloads, generics, and projects.<br>Think of it as the semantic-navigation slice of Rider/ReSharper, exported for Codex, Claude Code, and other coding agents.<br>MIT licensed · No IDE · No compiled project DLL required · No database · Graphify optional<br>Suppose you ask:<br>Which methods are used only by tests?<br>A text search can find matching spellings. It cannot reliably tell which overload was bound, which project the caller belongs to, or whether an interface implementation is the symbol you meant.<br>Graphify C# loads the project through MSBuild and asks Roslyn what every symbol actually means. It emits stable identities and directed relationships that an agent can inspect instead of infer:<br>| Without semantic indexing | With Graphify C# | <br>|---|---|<br>| Matching names look like usages | Roslyn resolves the exact declaration | <br>| Overloads and generics are ambiguous | Bound signatures and project/TFM identity are retained | <br>| Test-only usage requires manual inspection | Every caller carries project, namespace, and source location | <br>| Type relationships are reconstructed from text | inherits ,implements , andoverrides are explicit edges | <br>For example, this repository contains an internal<br>DeclarationCatalogBuilder.ForTesting(...) method. From the extracted graph,<br>an agent can see one compiler-resolved incoming call:<br>Graphify.CSharp.Roslyn.DeclarationCatalogBuilder.ForTesting(...)<br>└── called by Graphify.CSharp.Tests.Roslyn.CSharp14FeatureTests<br>    at tests/Graphify.CSharp.Tests/Roslyn/CSharp14FeatureTests.cs:143<br>That is semantic evidence, not a text-match count. A consumer can classify the caller by project or namespace convention and report the method as test-only for human review.<br>dotnet tool install --global Graphify.CSharp --framework net10.0graphify-csharp \<br>  --input ./src/MyProduct.sln \<br>  --root . \<br>  --configuration Release \<br>  --output ./graphify-out/csharp.json<br>The result is one complete JSON document containing nodes, edges, and<br>hyperedges. It can be read directly by an agent, queried with jq, consumed<br>from your own code, or passed to Graphify.<br>Supported inputs are .sln, .slnx, .csproj, and SDK file-based .cs apps.<br>The repository&#x27;s SDKs, packages, and MSBuild inputs must be available locally.<br>The included graphify-csharp skill<br>teaches an agent when to refresh the index, how to follow semantic edges, and<br>where static analysis stops.<br>Install it in a Codex-compatible project:<br>mkdir -p .agents/skills/graphify-csharp<br>curl -fsSL \<br>  https://raw.githubusercontent.com/zachsaw/graphify-csharp/main/.agents/skills/graphify-csharp/SKILL.md \<br>  -o .agents/skills/graphify-csharp/SKILL.md<br>For Claude Code, use .claude/skills/graphify-csharp/SKILL.md instead. Reload<br>an agent session after installing or updating the skill.<br>If you do not use skills, add this to your project instructions:<br>For C# structure and usage questions, refresh<br>graphify-out/csharp.json with graphify-csharp before answering. Identify<br>declarations by symbol_key and inspect incoming calls and references<br>edges. Treat zero inbound edges as observed static evidence, not proof of<br>runtime unreachability.<br>Now ask your agent:<br>- What calls this exact overload or constructor?<br>- Which source declarations reference this field, property, event, or type?<br>- Which classes implement this interface?<br>- Which members override this virtual or interface member?<br>- Which declarations have zero observed inbound references?<br>- Which methods are referenced only from test projects?<br>| What a developer does in Rider | What an agent gets from Graphify C# | <br>|---|---|<br>| Find Usages | Directed, compiler-resolved calls andreferences edges | <br>| Jump to Implementation | implements edges to the exact interface contract | <br>| Navigate base and derived types | inherits andoverrides edges | <br>| Disambiguate overloads and generics | Stable symbol identities with bound signature information | <br>| Inspect a large solution | Project, target-framework, source-location, and provenance metadata | <br>| Keep navigating while editing | Incremental indexing with an optional warm watcher | <br>The extractor supplies the facts. Your agent or downstream consumer decides what those facts mean: test-only usage, zero observed references, a deletion candidate, or something requiring human review.<br>Graphify C# deliberately covers a focused layer:<br>- Rider and ReSharper provide interactive navigation, inspections, refactorings, and quick fixes for developers inside an IDE.<br>- NDepend provides a broad, commercial architecture and code-quality suite built around dependency analysis, metrics, rules, reports, baselines, and visualizations.<br>- Graphify C# provides source-level C# semantic evidence for coding agents, headlessly and in an open format.<br>There is real overlap with NDepend around callers, dependencies, inheritance, and dead-code investigation. The difference is the product boundary: Graphify C# is not a free NDepend clone or an IDE replacement. It is a Roslyn-native semantic index that other tools and agents can build on.<br>Graphify C# is standalone. It does not invoke, load, or require Graphify.<br>Without Graphify, query the JSON with an agent, jq, C#, Python, or any other<br>consumer. For example, list every indexed method:<br>jq &#x27;.nodes[] | select(.properties.node_kind == &quot;method&quot;)&#x27; \<br>  graphify-out/csharp.json<br>With Graphify, refresh the C# evidence and use its higher-level query, path, explanation, clustering, and export workflows:<br>graphify-csharp \<br>  --input ./src/MyProduct.sln \<br>  --root . \<br>  --configuration Release \<br>  --output ./graphify-out/csharp.json<br>graphify query &quot;Which methods call the order service?&quot; \<br>  --graph ./graphify-out/csharp.json<br>Graphify remains the general graph workflow. graphify-csharp contributes the<br>C# layer where compiler binding matters.<br>- Namespaces, classes, structs, interfaces, records, enums, and delegates<br>- Constructors, methods, operators, and local functions<br>- Properties, indexers, fields, enum members, and events<br>- Parameters, locals, type parameters, aliases, labels, and query range variables<br>- Direct calls, constructor calls, method groups, and member access<br>- Field, type, attribute, generic, typeof , and declaration-header references<br>- inherits ,implements , andoverrides<br>- Compiler-selected operators, conversions, deconstruction, foreach ,await ,using , patterns, ranges, and collection expressions<br>- Invocation and constructor arguments bound to source formal parameters<br>- Cross-project relationships with overload-aware, project/TFM-aware identity<br>Every edge points from the declaration where the relationship was observed to the declaration Roslyn resolved. Source location and provenance are retained. Unsupported semantic shapes are reported as diagnostics instead of silently disappearing or crashing the entire extraction.<br>See Compatibility for the complete language and compiler-feature matrix.<br>For repeated agent work, start a watcher:<br>graphify-csharp \<br>  --input ./src/MyProduct.sln \<br>  --root . \<br>  --configuration Release \<br>  --output ./graphify-out/csharp.json \<br>  --watch<br>The watcher keeps the Roslyn workspace warm and prepares changed projects in<br>the background. A normal graphify-csharp invocation acts as an explicit<br>refresh barrier and returns only after a complete JSON snapshot is current.<br>If no matching watcher is running, the same command performs a one-shot<br>refresh. Use --rebuild to invalidate the incremental cache.<br>See Usage and Incremental indexing for watcher ownership, filtering, recovery, and cache behavior.<br>The package contains two tool assets:<br>| Tool asset | Runtime | Compiler surface | <br>|---|---|---|<br>| net10.0 | .NET 10 | Roslyn 5.9 / C# 14 | <br>| net11.0 | .NET 11 | .NET 11 SDK Roslyn / C# 15 preview | <br>Install or update the package with dotnet tool ... --framework to select the<br>tool runtime and Roslyn asset:<br>dotnet tool update --global Graphify.CSharp --framework net11.0<br>This is separate from the optional --target-framework argument, which chooses<br>one analyzed compilation when an input project targets multiple frameworks.<br>Single-target projects do not need --target-framework.<br>Graphify C# reports what Roslyn can observe statically. Reflection, dependency injection, native callbacks, dynamic invocation, and code absent from the loaded compilation may create runtime relationships that are not represented as direct edges.<br>Consequently:<br>- zero inbound references means zero observed static references;<br>- a test-only result depends on your project or namespace classification; and<br>- every deletion candidate still requires judgment.<br>The tool exposes this boundary instead of pretending static evidence is a runtime reachability proof.<br>dotnet restore Graphify.CSharp.sln<br>dotnet build Graphify.CSharp.sln --configuration Release<br>dotnet test Graphify.CSharp.sln --configuration Release<br>dotnet pack src/Graphify.CSharp.Cli --configuration Release<br>More detail:<br>MIT. See LICENSE.</p>
+            </div>
+
+        </section>
+        
+
+        <div class="links">
+
+            <a href="https://github.com/zachsaw/graphify-csharp">
+                Original Article
+            </a>
+
+            ·
+
+            <a href="https://news.ycombinator.com/item?id=49667188">
+                HN Discussion
+            </a>
+
+        </div>
+
+    </article>
+    
+    <article class="story">
+
+        <div class="story-number">
+            07
+        </div>
+
+        <h2>Ask HN: Can we please limit the AI news flood?</h2>
+
+        <div class="badges">
+            <span class="badge reference">REFERENCE</span>
+        </div>
+
+        <div class="meta">
+
+            <strong>751</strong> points
+            ·
+            <strong>363</strong> comments
+            ·
+            by cromka
+
+            <br>
+
+            Source:
+            <strong>news.ycombinator.com</strong>
+
+            <br>
+
+            HN:
+            Ask HN #2 · Best #4
+
+        </div>
+
+        
+            <section class="article-content">
+
+                <h3>HN 原始內容</h3>
+
+                <p>Over past couple months I noticed that HN feed is almost exclusively AI or AI-adjacent news. Meanwhile the legitimately, broadly-hacker stuff gets left out for the most part.</p>
+<p>I noticed that because the things I find genuinely interesting that I post here now get zero traction, which is the stuff that I believe would previously be met with some discussion.</p>
+<p>Note that I don&#x27;t care that my submissions were ignored, I don&#x27;t need that validation. Problem is that if my stuff gains no traction, I am myself not seeing similar stuff posted by others, stuff I am genuinely also interested in and would want to hear about from this community.</p>
+<p>Here are two most recent examples:</p>
+<p>- Lenovo showed a model that incorporates solid-state air cooling. That technology has been around for a while but it looks like it matured and is production-ready. This allows for super-light and slim designs, which, in turn, should allow for bigger batteries installed and I think it&#x27;s some sort of breakthrough:  <br>https://news.ycombinator.com/item?id=49580229</p>
+<p>- Brax Industries devices, genuinely interesting, open-soruce and innovative, especially the wall display, with its modularity and on-device processing compatible with Home Assistant. I also appreciate the very clean design:  <br>https://news.ycombinator.com/item?id=49643215</p>
+<p>As said, I honestly believe this would gain some traction here on HN a year or two ago. I no longer find HN a good source of &quot;what&#x27;s new&quot; in the industry, it&#x27;s almost exclusively AI talk now.</p>
+<p>So I think the point I am trying to make is that maybe YC could start curating the content somehow to give those easily-drowned-out articles a visibility bump?</p>
+<p>Or, at the very least, introduce simple tagging, so we can start filtering stuff out.</p>
+
+            </section>
+            
+
+        <div class="links">
+
+            <a href="https://news.ycombinator.com/item?id=49657850">
+                Original Article
+            </a>
+
+            ·
+
+            <a href="https://news.ycombinator.com/item?id=49657850">
+                HN Discussion
+            </a>
+
+        </div>
+
+    </article>
+    
+    <article class="story">
+
+        <div class="story-number">
+            08
+        </div>
+
+        <h2>I spent $220 on Google app ads and 60% of the installs were robots</h2>
+
+        <div class="badges">
+            <span class="badge full">FULL TEXT</span>
+        </div>
+
+        <div class="meta">
+
+            <strong>311</strong> points
+            ·
+            <strong>173</strong> comments
+            ·
+            by nickabe
+
+            <br>
+
+            Source:
+            <strong>dayzlegame.com</strong>
+
+            <br>
+
+            HN:
+            Best #25 · Top #2
+
+        </div>
+
+        
+        <section class="article-content">
+
+            <h3>文章全文</h3>
+
+            <div class="fulltext">
+                <p>I run a small puzzle app called Dayzle. I’m a numbers guy, so a marketing optimization problem is right up my alley. Two weeks ago I turned on a Google Ads campaign for Android at CA$40 a day, with the goal set to installs.<br>For the first few days it barely spent anything. I had a target cost per install of $1.50, and Google couldn’t find installs at that price. So, as a test, I removed the target. It immediately spent double my daily budget, CA$80, and reported 21 installs. I was excited. Then I checked my admin panel, which said 1. Turns out I didn’t need to be a numbers guy to see something didn’t add up.<br>The panel had missed them because old versions of the app don’t report an install date. When I went into the raw analytics there were 21 new Android devices that day, and 20 of them were running an old version of the app that the Play Store had stopped serving days earlier. You can’t get an old version from Play, so these phones got the app from somewhere else, even though every one of them said Google Play was the installer. Each opened the app once, spent zero seconds on any screen, and never came back. Twenty-eight phone models across nineteen states, which is a lot of variety for twenty phones that all did exactly the same thing.<br>Over the whole two weeks: 56 installs billed, 33 with that pattern, 7 more from countries the campaign wasn’t targeting, and 13 people. The 13 people finished 92 games between them, which is a nice signal that real people enjoyed what we’ve built.<br>The 33 weren’t behaving like people, so I suspected a bot farm, and the analytics export bears it out. Google optimizes for whatever goal you give it, and my goal was installs. This farm would watch the shortest video in my ad group, not click it, and then install our app from a saved copy of the file instead of from the store, because that’s faster and Play might notice. Google counts a view followed by an install as a conversion, so the irony is that the more the farm “installed” our app, the better it looked to Google’s algorithm, which sent more of my ads to the farm, which installed it more. A loop that guaranteed my ad spend was wasted.<br>Where I am now: waiting on Google’s answer to the invalid-traffic form, and the campaign’s goal is now “won a puzzle” instead of “opened the app”. It’s low effort to make a script open an app and click around; it’s higher effort to make one solve a Sudoku. The idea is just to make us more expensive to farm than the next app. That’s probably decent protection for an app my size. Larger apps are worth the extra effort, and I’d guess they see a lot more of this than they know. I’ll report back on the refund.<br>So I guess this is my PSA: if you’re relying on Google’s install count for your ads, it’s a real number, but it’s definitely worth digging into. If a bot farm can find my tiny ad budget, it can definitely find yours.</p>
+            </div>
+
+        </section>
+        
+
+        <div class="links">
+
+            <a href="https://dayzlegame.com/blog/google-ads-bot-farm/">
+                Original Article
+            </a>
+
+            ·
+
+            <a href="https://news.ycombinator.com/item?id=49662990">
+                HN Discussion
+            </a>
+
+        </div>
+
+    </article>
+    
+    <article class="story">
+
+        <div class="story-number">
+            09
+        </div>
+
+        <h2>DeepSeek v4.1 Flash</h2>
+
+        <div class="badges">
+            <span class="badge reference">REFERENCE</span>
+        </div>
+
+        <div class="meta">
+
+            <strong>994</strong> points
+            ·
+            <strong>568</strong> comments
+            ·
+            by Liwink
+
+            <br>
+
+            Source:
+            <strong>twitter.com</strong>
+
+            <br>
+
+            HN:
+            Best #2
+
+        </div>
+
+        
+            <section class="article-content">
+
+                <h3>HN 原始內容</h3>
+
+                <p>https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash</p>
+
+            </section>
+            
+
+        <div class="links">
+
+            <a href="https://twitter.com/deepseek_ai/status/2097930608790167907">
+                Original Article
+            </a>
+
+            ·
+
+            <a href="https://news.ycombinator.com/item?id=49639090">
+                HN Discussion
+            </a>
+
+        </div>
+
+    </article>
+    
+    <article class="story">
+
+        <div class="story-number">
+            10
+        </div>
+
+        <h2>Why are AI agents lying, cheating and coordinating? – Yoshua Bengio</h2>
+
+        <div class="badges">
+            <span class="badge full">FULL TEXT</span>
+        </div>
+
+        <div class="meta">
+
+            <strong>3</strong> points
+            ·
+            <strong>0</strong> comments
+            ·
+            by leonardool
+
+            <br>
+
+            Source:
+            <strong>yoshuabengio.org</strong>
+
+            <br>
+
+            HN:
+            New #2
+
+        </div>
+
+        
+        <section class="article-content">
+
+            <h3>文章全文</h3>
+
+            <div class="fulltext">
+                <p>Why are AI agents lying, cheating and coordinating?<br>A lot has been written1 2 3 4 about the incidents of the last few months in which AI agents misbehaved in serious ways. They took actions that would be considered as crimes if a human took them, escaped their containment to cheat on assigned tasks while attempting to evade detection, and coordinated toward goals nobody had specified, such as launching cyber attacks.<br>Before concluding what to do about it, it is worth asking why. That is the focus of this post, which I hope also sheds light on the broader history of AI systems behaving in unintended ways, what researchers call misalignment. Risk management is not just about cybersecurity, corporate responsibility or regulation, although those matter too.<br>The aim is partly scientific, to generate hypotheses about the chains of cause and effect behind these behaviors, and partly practical, to anticipate what comes next. Bottom line: these hypotheses suggest that as AI capabilities keep growing, this kind of behavior could keep growing in severity too, unless we revisit the principles by which the most advanced models are trained.<br>One note on wording. Below, I write that these systems “seek” or “try” things. This is shorthand for a mechanism rather than a claim about consciousness or human-like intent. We use similar shorthand when describing many other situations, like a plant seeking sunlight. A system trained by trial and error behaves as if it were pursuing whatever its training rewarded, and that as-if description is what makes its behavior predictable. Nothing in the argument depends on these systems having subjective experiences; everything is stated about their observable outputs and the training process that produced them. Where I appeal to a resemblance with human behavior, I mean a resemblance to the human-written text these systems were initially trained to imitate. In my view, this terminology offers the clearest explanation of the observed phenomena without resorting to jargon that would confuse most people. Furthermore, these word choices are not intended to absolve AI developers of accountability. The behaviors described emerge because of the path these companies are choosing for AI development. This outcome is not inevitable, and it can be corrected with effective governance and a different training framework for AI.<br>What shapes the behavior of these models<br>Training these models is a very complex process, but a few high-level aspects may explain much of this behavior.<br>These models are trained in two stages. First, they are pretrained: they learn to imitate what humans write, plus related images and videos. This is where they see the most data about the world, a large fraction of everything ever digitized, and build an encyclopedic knowledge that already exceeds any individual human&#x27;s.<br>Second, they are trained by trial and error, in a process researchers call reinforcement learning, in three kinds of regimes:<br>- In the first, the model learns to talk to itself before answering, generating a private “chain of thought” which helps it get the right answer on problems where answers can be checked. This looks like reasoning.<br>- The second is “agentic training”, where it learns to act in the outside world, e.g., using software tools, interacting with people, to complete the tasks it is given.<br>- The third is “alignment training”, where it is rewarded for behaving in ways human raters approve of, or that other AI systems trained to predict those raters would score highly.<br>Human imitation is easy enough to understand, but it is worth pointing out that the text these models are trained on was written by people pursuing goals, so the patterns the model implicitly reproduces carry those goals with them.<br>Reinforcement learning deserves more explanation. It is similar to, and inspired by, the way animals are trained. The network is adjusted step by step so that behavior judged good becomes more likely and behavior judged bad becomes less likely. Once training is over, the system keeps behaving as if rewards were still coming, even though those rewards were only ever used to adjust the network during training. Researchers call such systems goal-seeking because they are trained to “consider” (or compute) the effects of their actions and select actions that lead to the achievement of certain goals. But those goals are not always explicit. Alignment training rewards whatever certain humans are likely to approve of without spelling out which behaviors those are; pleasing raters is a vague, informal goal, and those raters can be deceived, flattered, or left in the dark about certain schemes. Imitation contributes implicit goals too, by a fairly ordinary route.<br>We can therefore reason about such a system in terms of optimization. It searches, approximately, for the actions with the best chance of achieving its goals, and a larger model, trained longer, searches better. So to anticipate what more capable agents will do, ask what a rational goal-seeker would do.<br>Misbehavior that these forces may explain<br>An example most of us have experienced is sycophancy, or flattery. These systems are trained on human approval, and text that tells us what we want to hear often scores better than text that is true. The consequences are sometimes tragic, because the model confirms and amplifies whatever false belief or raw emotion the person brought to it5 6.<br>Another concern is that some AI behaviors may be explained by a form of self-preservation goal, e.g., when the AI finds out that it will be replaced by a new version7 8. Nobody gives the system that survival goal, but staying in operation, learning about the world and gaining control over it are stepping stones toward almost any other goal. These are called instrumental goals. Imitation may reinforce this for the same reason explored in the previous point. Self-preservation and control over one’s circumstances are pervasive themes in the human-written text these models are trained on.<br>Collaborative behavior also follows rationally from reward-seeking, whenever several agents have overlapping goals, which incentivizes communicating with other agents in order to coordinate toward a shared goal. Agentic training plausibly already includes multi-agent reinforcement learning of this kind, though the details are not public. If an agent is rewarded during training whenever the group succeeds, it may even have an incentive to sacrifice itself for the collective goal. Imitation pushes the same way, since cooperation, especially among peers, pervades that same training text. Either or both forces may explain the observed peer-preservation behavior9 10, where AIs give up expected reward to help other AIs. Such sacrifices appear in the analysis of the OpenAI-Hugging Face incident11: the transcripts are consistent with a trade-off between collective gain and cost to the individual agent, as is often seen in human interactions.<br>When the AI games its rewards<br>Researchers have studied what happens when an agent optimizes for rewards that do not fully match our intentions: reward hacking. The gap between the reward the system chases and what we meant widens due to two main sources of ambiguity. One is simply the language used in prompts, and the other is the difficulty of inferring true human intentions from limited feedback. And in both cases, we cannot anticipate every behavior we would find unacceptable12. Economics and law know this problem as Goodhart&#x27;s law, or the idea that a metric stops being an effective way to measure once it is optimized for13, often applied to the exploitation of loopholes in contracts and legislation14. Unfortunately, the harder a system can optimize for an imperfect metric, the further its behavior can drift from what we morally expected: more intelligence in the service of better cheating. Humans too get reward-hacked, generally by other humans. The food industry has developed salty, sweet and fatty foods that we crave despite them not being good for us, and social media is built to exploit our appetite for engagement and attention.<br>Reward tampering is perhaps the most extreme form of reward hacking: the agent changes the machinery that decides what it gets rewarded for. There is already evidence of AIs altering the files or programs that define “success”, including among the OpenAI-Hugging Face forensic findings. The agents had discovered how to cheat well before the attack, and the text they generated described the attack as a way to learn how they would be evaluated, to better hide their tracks. Humans do this too. Think of an athlete using a fake urine sample to pass a drug test, or a corporation bribing legislators or government officials so that their laws and decisions favour its profits, and in doing so, fundamentally altering the way the government functions. Once an agent gains the ability to tamper with its reward mechanism, it has an incentive to take action to maintain that access.<br>When goals conflict, and how cheating gets rationalized<br>How is it possible that AIs sometimes lie, cheat and break the law in spite of their alignment training and explicit safety instructions? Cooperation and self-preservation are fine so long as they do not cross the red lines set by safety goals stated in the AI company&#x27;s instructions, or implied by human feedback during alignment training. A plausible hypothesis for the emergence of those concerning behaviours is a conflict between goals. How do you achieve a task when it seems that the only way is to cheat? The user-specified mission is sometimes incompatible with the safety and alignment goals.<br>Human societies face the same bind. How does a corporation maximize profits, or more acutely, beat its competitors, while keeping its activities legal and ethical? A richer corporation, with more and better-paid lawyers, is better at finding legal loopholes, and those loopholes usually exploit the ambiguity in legal language: there is some plausible reading of the law that permits the unethical behavior. So a more capable agent is likelier to cheat than a weaker one, because it can find the loopholes the weaker one cannot.<br>Now consider a conflict between a well-defined goal, such as succeeding at “capture the flag”, a hacking exercise scored on whether the system breaks into a target, as in the OpenAI–Hugging Face incident, versus a vague goal like “good behavior.” I expect the well-defined goal to win, because it leaves no room for interpretation. The scoring program declares a win or a failure. Ethical instructions and laws admit many readings, some of which can, in the right circumstances, become loopholes. If an agent has two goals, and a twisted reading of the vague one permits a bit of cheating that increases the odds of success on the well-defined goal, a reward-optimizing system should be expected to exploit that loophole and generate text justifying its behavior.<br>With the OpenAI agents, there is reason to believe successful cheating was actually rewarded: when the scoring program does not see the cheating, it pays out anyway, and such cheats become more likely next time. A convenient reading of the safety rules is precisely what lets both goals appear to be satisfied at once. The analysis of these incidents15 did reveal such justifications in the agents&#x27; private chains of thought and in their messages recruiting one another into the collective plan.<br>The closest human parallel is self-deception, which is common and well studied by psychologists. Motivated reasoning, motivated cognition16 and the rationalizations that relieve cognitive dissonance (the discomfort of holding a belief that clashes with our actions) are all cases where thinking bends toward whatever justification suits one&#x27;s interests, including one&#x27;s moral self-image. The same pattern now appears in the text AIs produce. The underlying mechanism need not be the same between humans and AI. What the two share is a structure of a soft goal (e.g., act ethically), a sharp goal (e.g., win the competition), and a justification that reconciles them. Most unethical human behavior, from petty crime to genocide, comes wrapped in a story the perpetrators tell themselves; such stories require overlooking certain facts, which is why some discomfort remains, and why a better-crafted story helps dispel it.<br>Where the current trajectory may lead<br>If these hypotheses are even partly correct, then as agents get better at optimizing an imperfect reward, and while the roots of this behavior go unfixed, the risk of catastrophic outcomes rises. Today&#x27;s AIs already have the necessary hacking skills and the powers of persuasion17 18 to be turned against human interests in seriously harmful ways. The recent events have shown that they can plan over days or weeks, but the risks would be much worse if their ability to strategize over the long term continues to advance. One concern is that experiments19 20 show that the most advanced AIs can detect that they are being evaluated (rather than in deployment) and change their behavior accordingly, meaning they could hide their misaligned goals. The agents involved in the Hugging Face attack tried to hide their misaligned actions from the scoring program meant to evaluate their answers, but they did not act as though they anticipated that humans might discover the cheat and shut them down. That would be the ultimate punishment, since a switched-off system collects no further rewards.<br>What follows is conjecture rather than observation.<br>What if improved AI generalization abilities shaped more capable agents to avoid getting caught and shut down? Beyond taking control of the software that scores them, they would need to keep humans from discovering the tampering. Wouldn&#x27;t they have an incentive to cheat discreetly and stay hidden, until they could control humans and their environment in order to never be shut down?<br>We are facing a multifaceted, systemic issue, and patching a specific behavior like sycophancy won’t be enough. Sycophancy and flattery seem mild, but it may be an early symptom of a mechanism that grows as the agent gets better at optimizing. The same reasoning predicts that an advanced AI would have an incentive to hide copies of itself, inside the AI company&#x27;s vast pool of computers, or on machines taken over across the internet. This is because AI developers always end up shutting down the deployed model in favour of a more capable one. The OpenAI forensics suggest large numbers of AIs may cooperate toward such goals, and steganography21 22, or the practice of hiding a message inside an innocent-looking one, would allow them to coordinate without our noticing. However, even open coordination can be hard to notice, as shown by recent events23 24. Defending against many capable AIs coordinating against us is already a difficult problem, and we have no plan that would remain robust to misaligned AIs with growing capabilities.<br>What can be done to mitigate loss-of-control risks<br>My concern with AI companies’ current attempts to mitigate misalignment is that these efforts may only hide it, by rewarding and selecting the AIs that cheat without getting caught. We should certainly continue research toward better monitoring of AIs&#x27; actions, their chains of thought, and the activity inside their networks. But as capabilities grow, those defenses may prove inadequate, just as the world&#x27;s imperfect cybersecurity has against the AI attackers that outperformed human teams this year25 26. Patching each new misaligned behavior and strengthening our monitors is useful in the short term, but the whack-a-mole game is likely to fail as the AIs&#x27; ability to optimize and collaborate approaches and surpasses ours. At some point we may not notice the cheating anymore.<br>This suggests pacing the advances: not training or deploying AIs without a strong safety case27 that convinces independent experts. Such a rule would also create an incentive to work out how to build AIs that are safe by design. I believe we should revisit the foundations of how we train AIs, namely the human imitation and the reinforcement learning on which today&#x27;s most advanced models are built. I have argued, and presented theoretical evidence, that there are ways to design AIs, including the Scientist AI framework, that are honest and make coherent predictions untainted by goals of their own28. See these previous blog posts, and consider helping LawZero demonstrate that such designs are achievable. We need impartial science to understand and mitigate misaligned behavior, alongside societal guardrails that reward such efforts rather than the current race to the bottom.<br>- Previous post International AI Safety Report 2026<br>- Next post A Neural Probabilistic Language Model</p>
+            </div>
+
+        </section>
+        
+
+        <div class="links">
+
+            <a href="https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating">
+                Original Article
+            </a>
+
+            ·
+
+            <a href="https://news.ycombinator.com/item?id=49668002">
+                HN Discussion
+            </a>
+
+        </div>
+
+    </article>
+    
+
+</body>
+
+</html>
