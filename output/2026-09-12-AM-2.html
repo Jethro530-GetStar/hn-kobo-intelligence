@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+>
+
+<title>
+HN Intelligence 2026-09-12-AM
+</title>
+
+<style>
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0.45em 0.55em;
+
+    font-family:
+        serif;
+
+    line-height: 1.42;
+
+    text-align: left;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
+}
+
+header {
+    margin: 0 0 1.2em 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0 0 0.2em 0;
+
+    padding: 0;
+
+    font-size: 1.45em;
+
+    line-height: 1.15;
+}
+
+.issue {
+    margin: 0.15em 0 0.4em 0;
+
+    font-size: 1.05em;
+
+    font-weight: bold;
+}
+
+.summary {
+    margin-top: 0.7em;
+
+    padding-top: 0.5em;
+
+    border-top: 1px solid #777;
+
+    line-height: 1.45;
+}
+
+.summary div {
+    margin: 0.12em 0;
+}
+
+.story {
+    margin: 0;
+
+    padding: 0.9em 0 1.05em 0;
+
+    border-top: 1px solid #888;
+
+    page-break-before: auto;
+
+    break-before: auto;
+
+    page-break-inside: auto;
+
+    break-inside: auto;
+}
+
+.story-number {
+    margin: 0 0 0.22em 0;
+
+    font-size: 0.9em;
+
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0 0 0.35em 0;
+
+    padding: 0;
+
+    font-size: 1.25em;
+
+    line-height: 1.2;
+}
+
+.badge {
+    display: inline-block;
+
+    margin: 0.1em 0 0.55em 0;
+
+    padding: 0.08em 0.32em;
+
+    border: 1px solid #777;
+
+    font-size: 0.72em;
+
+    font-weight: bold;
+}
+
+.meta,
+.source,
+.feeds,
+.links {
+    margin: 0.14em 0;
+
+    font-size: 0.86em;
+
+    line-height: 1.35;
+}
+
+.source {
+    font-weight: bold;
+}
+
+.links {
+    margin-bottom: 0.7em;
+}
+
+a {
+    color: inherit;
+
+    text-decoration: underline;
+}
+
+h3 {
+    margin: 0.65em 0 0.35em 0;
+
+    padding: 0;
+
+    font-size: 1em;
+
+    line-height: 1.2;
+}
+
+.article-body {
+    margin: 0;
+
+    padding: 0;
+}
+
+.article-body p {
+    margin: 0 0 0.72em 0;
+
+    padding: 0;
+
+    line-height: 1.45;
+
+    orphans: 2;
+
+    widows: 2;
+}
+
+strong {
+    font-weight: bold;
+}
+
+@media screen {
+    body {
+        max-width: 48em;
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        HN Intelligence
+    </h1>
+
+    <div class="issue">
+        2026-09-12-AM
+    </div>
+
+    <div class="summary">
+
+        <div>
+            Generated:
+            2026-09-12 10:48
+            Asia/Taipei
+        </div>
+
+        <div>
+            Sources:
+            Best · Top · New · Show HN · Ask HN
+        </div>
+
+        <div>
+            Stories:
+            <strong>10</strong>
+            ·
+            Full:
+            <strong>7</strong>
+        </div>
+
+    </div>
+
+</header>
+
+
+    <section class="story">
+
+        <div class="story-number">
+            01
+        </div>
+
+        <h2>Shopify is moving from React Native back to Swift and Kotlin</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>1229</strong> points
+            ·
+            <strong>915</strong> comments
+            ·
+            fnthawar2
+        </div>
+
+        <div class="source">
+            shopify.engineering
+        </div>
+
+        <div class="feeds">
+            Best #1 · Top #47
+        </div>
+
+        <div class="links">
+            <a href="https://shopify.engineering/back-to-native">Original article</a> · <a href="https://news.ycombinator.com/item?id=49643982">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>We decided to go all-in on React Native back in 2020, and that bet has been extremely successful. We saved a ton of time building features just once, enabled developers with no mobile background to contribute to our apps, and freed ourselves from constantly chasing feature parity.<br>In January 2025, I wrote that the future of React Native was bright and that Shopify planned to keep investing in it. That was true based on what we knew then. React Native was working well for us, and it remains an excellent framework. But since then, coding models have gotten dramatically better, and for our apps and our team, building the same feature in Swift and Kotlin no longer carries the cost it used to.<br>We don’t hold on to a decision just because it was successful at the time. When a core assumption changes, we’re willing to go back and ask whether it’s still the right call. LLMs changed one of the core assumptions behind our 2020 decision, so we reevaluated our mobile stack from first principles.<br>What we found led us back to native.<br>Why switch back to native<br>We decided to switch from native to React Native in 2020 for three reasons:<br>- Stop building the same features twice<br>- Allow developers to work across the stack<br>- Spend less time chasing feature parity and more time shipping value<br>React Native consistently delivered these benefits. We found ourselves spending a significant amount of time and resources on optimizing performance, improving key foundational areas in React Native, and keeping up with framework updates and external dependencies, but these were acceptable tradeoffs. The benefits of using React Native far outweighed the investments we had to make in these areas.<br>Shopify has been using LLMs to build software since 2021 (one year before ChatGPT!). Initially, we used them to implement features, investigate and fix bugs, and review code. As the models improved, so did the complexity of the work we trusted them to take on. By late 2025, they were no longer just helping us write code faster. They were capable of making us question whether building software twice still meant doing twice the work.<br>We decided to reevaluate our mobile tech stack and started prototyping to see whether our technology choices still held up. We rebuilt several core parts of our biggest apps in Swift and Kotlin using LLMs and were surprised by how well it worked. Agents:<br>- Could implement a feature on Android using the iOS version as a reference, and vice versa<br>- Helped developers ramp up and contribute effectively outside their primary stack<br>- Dramatically reduced the cost of maintaining parity between platforms through shared specifications, tests, and review checkpoints<br>Native still means building and maintaining software on two platforms, that cost has not disappeared. What changed is that agents can now do enough of the implementation, translation, testing, and review work that it’s no longer the deciding factor it was in 2020.<br>React Native apps can be fast. Ours are. We are making this change because agents have reduced the advantages of sharing implementation, while the advantages of building for each platform remain. Native keeps us closer to platform capabilities and first-party tooling, with fewer framework and dependency layers between our code and the platform.<br>The future of our React Native open-source libraries<br>Before we get into how we’re migrating, we want to make sure we do this transition cleanly. From the beginning, we wanted to contribute back to React Native to make it better. We’ve published open-source libraries that have become the top choice in their respective categories. We’re grateful for the incredible reception from the community and are committed to making sure this is a smooth transition with no surprises.<br>Shopify will continue sponsoring this through the end of 2026, and William Candillon will continue working on it beyond that. He will fork the repo in the coming months and start publishing the library under a new name. The original repo will be archived when this transition is complete. We’ll post updates along the way so that everyone has ample time to migrate. If your app relies on this library, please consider sponsoring it.<br>This library gets ~2M downloads/week and has become the default way to render high-performance lists in React Native. Given how important it is for the ecosystem, Shopify will continue to fix critical issues that break compatibility. We’re currently in discussions with several companies about taking on long-term stewardship of FlashList. If you’re interested, reach out to me here.<br>Restyle has a smaller user base than our other libraries, so we&#x27;re archiving this repo. We&#x27;ll keep it working through the end of 2026, then stop maintaining it. Anyone is welcome to fork it and take it forward, and we&#x27;ll help with the handover if a team wants to pick it up.<br>How we’re migrating<br>Shopify has several large apps (Shopify, Shop, Point of Sale, Inbox). Millions of merchants and buyers around the world rely on them every single day to earn their livelihood and buy products they want from the brands they love.<br>We debated between gradually migrating to native (brownfield) versus rebuilding them from scratch (greenfield). In the past when we migrated to React Native, we picked the brownfield approach for some of our biggest apps, as it’d take years to rewrite them and we’d have to stop shipping new features while the rewrite was in progress.<br>However, this time greenfield emerged as a clear winner for the following reasons:<br>- LLMs are good at building features in Swift and Kotlin using the React Native version as reference<br>- It gives us a clean slate to rebuild in the best way possible without any of the previous constraints<br>- Our prototypes showed that we could rebuild these apps substantially faster than was possible before coding agents<br>The Shop app, which is regularly at the top of the list in the shopping category in the app stores, is the first to be migrated. Assisted by AI, the team was able to go from a proof of concept to a fully rebuilt native app published in the app stores in just 12 weeks. We’ve written about this migration in depth here.<br>The migration of the Shopify app (our biggest with 300+ screens, home &amp; lockscreen widgets, Apple Watch app, complications, Siri Shortcuts, etc.), is also underway and will ship later this year. The rest of our apps will be migrated soon.<br>Preventing slop<br>It’s tempting to just point an LLM to the React Native codebase and try to one-shot the same features in native, but it doesn’t work. Even if you ask it to gather as much information as it can up front, freeze that into specs, task files, and then implement it, you end up with a huge amount of unmaintainable code that can’t be shipped.<br>To solve this problem, we built a system called Helix that takes a more gradual approach. It doesn&#x27;t expect the first output to be correct, and builds a loop where an imperfect attempt simply cannot move forward until it becomes a good result.<br>The developer points Helix at a screen. Helix reads the React Native code and proposes a sequence of checkpoints (small, ordered slices of the work) that can be reviewed in minutes. Then, checkpoint by checkpoint, it builds: each one must prove its behavior with tests, match the running app in a visual review, survive two adversarial code reviewers, and get a human&#x27;s nod before it&#x27;s committed and the next one starts. Feedback from every review is remembered, so the loop gets more autonomous as the migration progresses.<br>Helix rebuilding a screen in the Shopify mobile app using Swift and Kotlin<br>This approach has been working extremely well and is allowing us to rebuild our apps in a fraction of the time.<br>Enabling fast feedback loops<br>Agentic control of simulators has been a bottleneck. We found ourselves constantly babysitting them as they couldn’t reliably build, test, and iterate. We built tooling to allow agents to reproduce bugs, fix them, and verify the fix autonomously but it was slow and brittle. React Native’s hot module reload helps the situation but it doesn’t solve it, due to simulator control being slow. This is primarily due to reliance on the accessibility tree, or screenshots to get the state of the app, take actions, and verify results. Agents can make code changes in seconds, but it takes them several minutes to test the output. This makes iterating extremely slow and manual. It doesn’t matter how good the model is if it can’t test its work quickly, which is especially difficult on mobile.<br>We’re fixing this by designing our app architecture to work for both humans and agents. The core principle here is that business logic should be completely decoupled from the UI and be able to run headlessly on desktop. We then make it available to agents via a CLI that allows them to iterate on it in milliseconds instead of minutes without involving simulators.<br>Navigating the app and performing actions using the CLI<br>The CLI allows agents to inspect the state of the app, navigate between different sections, and perform actions all without needing to touch the UI. This enables extremely fast feedback loops and allows agents to work autonomously for hours at a time.<br>When simulator interaction is needed, the CLI can connect to them via a remote mode and drive the UI via commands without having to inspect the layout or the accessibility tree. This enables blazing-fast performance and E2E tests.<br>This is real-time (not sped up)<br>What’s next<br>We are going to migrate all our mobile apps to Swift and Kotlin using AI throughout the process. Shop has already shipped as a fully native app, the Shopify app is underway, and the rest will follow soon. We’re moving quickly, but not by lowering the bar. Every rebuild must meet or exceed the performance, stability, accessibility, and product quality people expect today. This isn’t just the same apps rewritten in different languages. We’re rebuilding them so both humans and agents can understand, test, and change them quickly.<br>The migration isn’t the finish line. Success means our teams can deliver better experiences for merchants and buyers faster than before. We’ll measure that through product velocity, app quality, and how much work agents can complete autonomously.<br>We’ll share what we learn along the way, including deeper dives into Helix, our agent-addressable architecture, and how we’re building mobile apps with agents. We were open about what we learned from React Native, and we intend to be just as open about this transition.<br>This is one of the most ambitious mobile engineering projects we’ve taken on. If you want to help build the next generation of Shopify’s mobile apps, we’re hiring mobile engineers, infrastructure engineers, and developers working at the intersection of AI and software engineering.<br>Acknowledgements<br>Native is the right choice for Shopify now, but React Native was the right choice for Shopify in 2020. That success was only possible because of the people who made it work.<br>Meta<br>Thank you to the React Native team at Meta for being excellent stewards of the framework, listening to our feedback, and working closely with us over the years. React Native is substantially better today because of your investments in its architecture, performance, tooling, and community.<br>William Candillon<br>Thank you for creating React Native Skia and taking it much further than any of us imagined. You redefined what was possible for graphics and animation in React Native, and we’re excited to see where you take it next.<br>Software Mansion<br>Thank you for all your work on Reanimated, for listening to our feedback, and for helping us solve some of the hardest animation and performance problems in our apps.<br>Shopify engineers<br>Hundreds of engineers contributed to adopting React Native, migrating our apps, building shared foundations, improving performance, maintaining integrations, and contributing back to the ecosystem. Many of you became beginners again, challenged long-held assumptions, and made the transition successful while continuing to ship for merchants and buyers. Thank you.<br>The React Native community<br>Thank you to everyone who used our open-source libraries, contributed code, reported issues, challenged our decisions, and shared what you learned. Your contributions and feedback, including the spicy kind, made our work better.<br>The tools, lessons, and relationships built over the past six years will continue to shape how we build mobile apps at Shopify. We’re deeply grateful to everyone who was part of it.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            02
+        </div>
+
+        <h2>A misalignment of AI in mathematics</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>691</strong> points
+            ·
+            <strong>721</strong> comments
+            ·
+            meredydd
+        </div>
+
+        <div class="source">
+            mathandai.org
+        </div>
+
+        <div class="feeds">
+            Best #7 · Top #1
+        </div>
+
+        <div class="links">
+            <a href="https://mathandai.org/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49662371">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>Over the last few months, the mathematical capabilities of LLMs have improved dramatically, to the point that they can solve major outstanding problems in many fields of mathematics. However, the push by AI companies to solve mathematical problems as a benchmark is detrimental to the science of mathematics, and to the mathematical community. The goals of the AI companies and the goals of the mathematical community are severely misaligned. We see these as part of broader alignment issues impacting other scientific and creative professions, as well as the whole of society.<br>Research mathematics deals with understanding basic structures of shapes, numbers, and natural phenomena. Over the course of generations, it has built a large corpus of sophisticated ideas, methods, abstractions, and other tools to comprehend the mathematical landscape. In turn, modern technologies and sciences are based on mathematical tools.<br>Famous problems have often served as landmarks and lighthouses against which one can measure an improved understanding of this landscape. Solving one of these problems has been a certain sign of new insights and interesting methods, which would then be studied by a community of mathematicians, through a long and arduous process of talks, discussions, simplifications. At the end of this process, one will ideally find a textbook presentation of the results suitable for any graduate or even undergraduate student to study. Some of the mathematical ideas pursue their journey even further to become, decades or centuries after, tools that are understood and used by the whole population.<br>The mathematical community functions, in many ways, as a miniature version of humanity. It consists of individuals using a wide variety of different approaches, joined by core values. The most precious resources of our profession are students and ideas, and these we nurture with great care. We feel responsible to let them grow to their full potential, until they can live a life of their own in the mathematical world. For students we often suggest problems with the core intention of developing skills making them well-positioned for advances in research and elsewhere. Our ideas we disseminate in talks, private discussions and careful writeups, connecting them to the previous ideas of others. These processes invariably take time and are based on human interaction.<br>In recent months, the success of AI in solving major mathematical problems has made headlines even outside mathematical circles. But solving problems is only a tool and proxy for achieving the primary goal of conceptual understanding and insight. Forgetting this in the world of AI may turn the tool against the primary goal. Indeed, the mass production at faster and faster pace of &quot;true/false&quot; statements could destroy fertile ground instead of breathing life into new ideas.<br>Often these solutions are announced in a rush, leaving no time for a proper writeup, the isolation of new methods and ideas, and citing relevant previous work of others. As in all creative professions, this raises severe attribution and plagiarism questions. Moreover, without the willing mathematicians who must take care of their development and integration into the mathematical canon, AI-conceived ideas would never become fully alive and the crucial human transmission chain between mathematicians would be lost.<br>We are witnessing a general threat to intellectual work, with misalignment between the outcome of the use of AI and its initial purpose. In many fields and activities, years of training have traditionally served not only to produce a final answer or product, but also to develop understanding and the ability to formulate new questions and ideas. However, building on a vast body of previous human work, AI systems are becoming increasingly capable of producing the results of such work directly, and these goals cease to align. The issues the mathematical community faces now are similar to issues that other scientific and creative professions are facing, and indicate issues that all of humanity might face: how to make sure that, as AI changes the way work is done, we do not lose sight of what that work was meant to achieve in the first place.<br>AI offers the potential of enhancing and accelerating genuine mathematical study and understanding. Mathematics as a profession will need to adapt to these changes in several ways. However, whether these changes ultimately benefit the field or have a destructive effect will in large part be determined by the decisions of the humans in control of this new technology.<br>These issues must be addressed urgently, in the mathematical community, by the companies developing these technologies and, more broadly, by a society that will confront similar problems in many other forms of intellectual work.<br>Artur Avila (Fields Medal 2014)<br>Manjul Bhargava (Fields Medal 2014)<br>Caucher Birkar (Fields Medal 2018)<br>Pierre Deligne (Fields Medal 1978)<br>Yu Deng (Fields Medal 2026)<br>Simon Donaldson (Fields Medal 1986)<br>Hugo Duminil-Copin (Fields Medal 2022)<br>Alessio Figalli (Fields Medal 2018)<br>Martin Hairer (Fields Medal 2014)<br>June Huh (Fields Medal 2022)<br>Maxim Kontsevich (Fields Medal 1998)<br>Elon Lindenstrauss (Fields Medal 2010)<br>Pierre-Louis Lions (Fields Medal 1994)<br>James Maynard (Fields Medal 2022)<br>Curt McMullen (Fields Medal 1998)<br>Shigefumi Mori (Fields Medal 1990)<br>Ngô Bảo Châu (Fields Medal 2010)<br>Andrei Okounkov (Fields Medal 2006)<br>Peter Scholze (Fields Medal 2018)<br>Stanislav Smirnov (Fields Medal 2010)<br>Terence Tao (Fields Medal 2006)<br>Maryna Viazovska (Fields Medal 2022)<br>Cédric Villani (Fields Medal 2010)<br>Wendelin Werner (Fields Medal 2006)<br>Efim Zelmanov (Fields Medal 1994)</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            03
+        </div>
+
+        <h2>Show HN: ResolveHQ – A Helpdesk Built on Cloudflare Workers, D1, R2 and Queues</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>32</strong> points
+            ·
+            <strong>12</strong> comments
+            ·
+            mirza_rizvi
+        </div>
+
+        <div class="source">
+            github.com
+        </div>
+
+        <div class="feeds">
+            Top #9 · Show HN #1
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/mirza-rizvi/ResolveHQ">Original article</a> · <a href="https://news.ycombinator.com/item?id=49665864">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>ResolveHQ is a Cloudflare-native, self-hostable helpdesk for small support teams.<br>- Run a shared inbox with tenant-isolated customers, tickets, assignment, status, priority, tags, and full-text search.<br>- Sign up as owner, invite teammates, and manage Owner/Admin/Agent roles with a workspace switcher across organizations.<br>- Thread email correctly per RFC 5322, resistant to subject-line spoofing across tickets.<br>- Receive mail through Cloudflare Email Routing and send it through Resend, with delivery status, retries, and idempotent webhooks. Outbound replies carry their linked attachments, and dead-letter queues drain to durable, recoverable records.<br>- Attach files to tickets through validated, authorized R2 uploads.<br>- Reply faster with saved replies, internal notes, AI-drafted responses (opt-in), and a responsive three-pane inbox with optimistic-version conflict handling.<br>- Reset passwords and accept invitations through system email sent via the same provider seam as ticket mail.<br>- Publish a public help center from knowledge-base articles, with drafts kept private to your team.<br>- Track volume and response speed in Reports, export any window to CSV, and automate triage with rule-based Automations.<br>- Notify agents of assignments and customer replies in-app, and work comfortably in light or dark mode.<br>- Export everything stored about a customer as JSON, or erase it with a durable, resumable workflow that cancels queued mail.<br>- Recover automatically: a five-minute cron job retries stalled mail jobs and cleans up staging and orphaned data.<br>- Control AI assistance per workspace: it stays off until an admin enables it in Settings, and only then are ticket conversations sent to OpenAI.<br>- Set TICKET_RETENTION_DAYS (for example365 ) to have the scheduled sweep permanently delete resolved and closed tickets older than that window, including attachments.<br>The workspace uses a Slack-inspired aubergine sidebar, self-hosted Lato typography, Lucide icons, and Radix UI primitives. Theme-aware controls and status colors support light and dark workspaces. On mobile, bottom navigation and a keyboard-accessible workspace drawer keep all destinations available; ticket columns adapt to preserve subject readability.<br>Use Cmd/Ctrl+K to jump between pages. The sidebar dock contains notifications, theme switching, and account actions.<br>ResolveHQ runs as a single Cloudflare Worker in your own account. Hono serves both the REST API and the built React application. Cloudflare D1 holds tickets and customers, Cloudflare R2 holds attachments, and Cloudflare Queues carry inbound and outbound mail jobs. Cloudflare Email Routing delivers incoming mail to the Worker, and Resend sends outgoing mail. Tickets and attachments are stored in your Cloudflare account; outbound email content passes through Resend.<br>ResolveHQ can run on Cloudflare’s Free plan for small deployments, provided usage stays within the current limits for Workers, D1, R2, Queues, Cron Triggers, and Email Routing. CPU-intensive authentication or mail parsing may require Workers Paid; benchmark your deployment. Queues are available on Workers Free. R2 requires account activation and billing setup separately. Resend handles outbound email under its own limits. See the Free-plan audit.<br>The easiest way to get started is with the Deploy to Cloudflare button above. You will need:<br>- A Cloudflare account; Workers Free supports Queues. Activate R2 separately.<br>- A domain on Cloudflare, so you can set up Email Routing.<br>- Optionally, a Resend account with a verified sending domain, to send outgoing mail.<br>After deployment, open your ResolveHQ URL and sign up as the owner, giving an optional support email that becomes your default inbox. In the Cloudflare dashboard, add an Email Routing rule sending that address to the deployed Worker, then send a test email to confirm it arrives in the inbox.<br>See the deployment guide for what the deploy flow provisions, required configuration, first-run setup, and manual deployment.<br>npm install<br>cp .dev.vars.local.example .dev.vars<br>npm run db:migrate:local<br>npm run db:seed:local<br>npm run dev<br>The Vite application runs on http://localhost:5173 and proxies /api to Wrangler on http://localhost:8787.<br>- AI assistance: set OPENAI_API_KEY (and optionallyOPENAI_MODEL , defaultgpt-4o-mini ) as Worker secrets to make AI available. Each workspace still opts in through Settings; without a key the feature stays hidden and no AI calls are made.<br>- Retention: set TICKET_RETENTION_DAYS as a Worker variable to automatically delete resolved and closed tickets (with attachments) after that many days. Unset means nothing is deleted automatically.<br>- Multi-language interface and notifications outside the app (email digests).<br>See LICENSE.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            04
+        </div>
+
+        <h2>Dreamcast Web Development Links</h2>
+
+        <div class="badge">
+            HN TEXT
+        </div>
+
+        <div class="meta">
+            <strong>4</strong> points
+            ·
+            <strong>0</strong> comments
+            ·
+            hefner1456
+        </div>
+
+        <div class="source">
+            news.ycombinator.com
+        </div>
+
+        <div class="feeds">
+            Ask HN #1
+        </div>
+
+        <div class="links">
+            <a href="https://news.ycombinator.com/item?id=49666410">HN discussion</a>
+        </div>
+
+        <h3>Discussion text</h3>
+
+        
+        <div class="article-body">
+            <p>I just replied to somebody on here with these links, thought I should share them. If any one has something to add, dont be shiesty:) It was a pain to find these.</p>
+<p>https://web.archive.org/web/20241003101005/https://www.angelfire.com/pa3/VAMPMAN/krypt_dcinfo.html</p>
+<p>https://web.archive.org/web/20031205061600/http://dreamcast.planetweb.com/community/homepages/dcdesign.html</p>
+<p>https://web.archive.org/web/20181029115530/https://dreamcastarena.com/how-to-create-dreamcast-website-friendly</p>
+<p>https://www.dreamcast-talk.com/forum/viewtopic.php?t=16378</p>
+<p>http://kamui.cool/zz_lab/infinitedream_HTTP_USER_AGENT.html</p>
+<p>http://kamui.cool/zz_lab/jeffma_useragent.html</p>
+<p>http://kamui.cool/zz_lab/browsermatrix.html</p>
+<p>https://dreamcast.wiki/Development</p>
+<p>https://dcemulation.org/phpBB/viewtopic.php?t=47902</p>
+<p>https://web.archive.org/web/20250713015510/http://pc.psilocybindreams.com/</p>
+<p>https://web.archive.org/web/20000521015744/http://tools.planetweb.com/wmhelp.html</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            05
+        </div>
+
+        <h2>Spec at Lunch, Game by Eight</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>1</strong> points
+            ·
+            <strong>0</strong> comments
+            ·
+            NickHirras
+        </div>
+
+        <div class="source">
+            littletheta.com
+        </div>
+
+        <div class="feeds">
+            New #1
+        </div>
+
+        <div class="links">
+            <a href="https://littletheta.com/field-notes/spec-at-lunch-game-by-eight">Original article</a> · <a href="https://news.ycombinator.com/item?id=49668233">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>I&#x27;ve wanted to build a casual game for a while. Not a demo. Not a &quot;look, a sprite moves&quot; tech test. A game with rules, a difficulty curve, a daily mode, an unlock, and a title screen that doesn&#x27;t embarrass me. Cross-platform: web, phones, desktops. One codebase.<br>Friday I decided to stop wanting and just do it. The constraint was the interesting part: one afternoon, wrapped around a normal workday, with a coding agent doing the typing. Here&#x27;s how that went, with timestamps, because &quot;I built a game in an afternoon&quot; is a claim that deserves receipts.<br>The spec was the work<br>Here&#x27;s the thing nobody wants to hear about agent coding: the model is not the bottleneck and it hasn&#x27;t been for a while. The bottleneck is whether you know what you want. So I spent my lunch break knowing what I wanted.<br>The pitch fits in a paragraph. Top-down circular pond. Coloured petals spawn at the rim and drift inward on a current toward a whirlpool in the middle. Coloured lily pads sit on the rim. The player has exactly one verb: tap the water. A tap makes an expanding ripple, and the ripple shoves anything it passes away from the tap point. Land petals on the matching pad. Petals that reach the whirlpool, or land on the wrong pad, are gone. Three losses and the pond goes still.<br>That paragraph became a fifteen-section spec. Coordinate system. An entity table with radii. The physics section, which I labelled &quot;the core of the game&quot; and wrote like I meant it. A determinism section. A difficulty table by tier. Modes, rendering, audio, haptics. A tuning section listing every constant I expected to be wrong. Six milestones, in order, each with an acceptance criterion. And a section called Out of scope for v1, which is the section that keeps the other fourteen honest.<br>Forty minutes, with a sandwich. Then back to the day job.<br>A good spec isn&#x27;t a wish list. It&#x27;s a list of decisions you&#x27;ve already made so the agent doesn&#x27;t have to guess.<br>One impulse, not a force<br>If you take one engineering thing from this post, take this one. The obvious way to make a ripple push a petal is a continuous force while the petal sits inside the ring&#x27;s band. It&#x27;s also wrong. It makes the push depend on frame timing and band width, and it reads as mushy under your thumb.<br>So the spec says: the impulse is applied exactly once per (ring, petal) pair, at the step in which the ring front crosses the petal&#x27;s centre. Crisp. Deterministic. Visually obvious, because the petal jumps the instant the line passes it. Here&#x27;s what that became:<br>void _applyImpulses(double tPrev) {<br>  for (final ring in snapshotRings) {<br>    final rNow  = ring.radiusAt(t, speed);<br>    final rPrev = math.max(0.0, ring.radiusAt(tPrev, speed));<br>    final rNow2 = rNow * rNow, rPrev2 = rPrev * rPrev;<br>    for (final petal in petals) {<br>      if (ring.hitSet.contains(petal.id)) continue;<br>      final d2 = petal.p.distance2To(ring.origin);<br>      // The front crossed this petal between the last step and this one.<br>      if (d2 &lt;= rNow2 &amp;&amp; d2 &gt; rPrev2) {<br>        final d   = math.sqrt(d2);<br>        final dir = (petal.p - ring.origin) / d;<br>        final strength = ring.energy * tuning.pushStrength * falloff(d);<br>        final mult = _interferenceMultiplier(petal.hitTimestamps);<br>        petal.v = petal.v + dir * (strength * mult);<br>        ring.hitSet.add(petal.id);<br>        petal.hitTimestamps.add(t);<br>      }<br>    }<br>  }<br>}<br>double falloff(double d) =&gt;<br>    math.pow(clamp01(1 - d / tuning.ringMaxRadius), tuning.falloffExponent);<br>Two squared radii and a set of ids. That&#x27;s the whole trick. No square root until you know you need it, no per-frame band test, and the hitSet means a ring can never double-tap a petal no matter how the frame timing shakes out. The interference multiplier is the combo mechanic: two ripples crossing the same petal inside a short window push harder, which is how you get the &quot;landed three off one tap&quot; moments the score is built around.<br>The falloff curve is the feel. At the spec defaults, a tap right next to a petal moves it about half a pond radius; a tap on the far side nudges it a tenth. The agent ran the numbers before I ever played it and wrote them into a tuning log, which is exactly the kind of thing I&#x27;d never bother to do by hand and am glad exists.<br>| Impulse at the spec defaults · pushStrength 1.1 · falloff 1.5 · drag 2.2 |  |  | <br>|---|---|---|<br>| Tap distance | Impulse (pond/s) | Travel (pond units) | <br>|---|---|---|<br>| 0.10 | 1.00 | 0.45 | <br>| 0.30 | 0.78 | 0.36 | <br>| 0.50 | 0.63 | 0.28 | <br>| 1.00 | 0.25 | 0.11 | <br>| 1.50 | 0.02 | 0.01 | <br>Determinism is not a nice-to-have<br>Daily mode is &quot;one attempt, same pond for everyone.&quot; That sentence is a hard engineering requirement wearing a casual outfit. Same seed and same taps have to produce the same pond on an iPhone, a Pixel, and Chrome on a Mac, forever. So the simulation is pure Dart in its own package, fixed-step, with its own xoshiro PRNG instead of dart:math&#x27;s, and it never imports anything from the renderer. The renderer reads sim state. The sim does not know the renderer exists.<br>And there&#x27;s a test for it that I actually trust:<br>for (final mode in SimMode.values) {<br>  test(&#x27;two sims, same seed + taps, identical after 5000 steps ($mode)&#x27;, () {<br>    const seed = 20260911;<br>    final script = buildScript(seed);   // ~150 scripted taps, some double-taps<br>    final a = runScript(seed, mode, script);<br>    final b = runScript(seed, mode, script);<br>    expect(a.snapshot(), equals(b.snapshot()));<br>    expect(a.score, equals(b.score));<br>    expect(a.tick, equals(5000));<br>  });<br>}<br>test(&#x27;different seeds diverge&#x27;, () { /* … */ });<br>Five thousand steps, every mode, scripted taps with deliberate double-taps to exercise the interference window and the tap cooldown, then a full state snapshot compared field by field. Plus the inverse: different seeds must not match, because a determinism test that passes on a sim that ignores its seed is worse than no test. Thirty-six tests run on every push. They ran green on all six PRs that afternoon.<br>The timeline<br>Local time, from the git log and my phone.<br>- 12:30. Spec, over lunch. Fifteen sections. Working title &quot;Ripple&quot;.<br>- 17:15. Handed the spec to Claude Code. Build milestones M0 through M6 in order, tests first for the sim, keep the sim pure. Then, in a second thread, asked it to research the name.<br>- 17:40. &quot;Ripple&quot; was taken, obviously. The agent checked the App Store search API, Google Play, the USPTO database and whois for a shortlist. Lilydrift cleared everything. Runner-up was &quot;Padfall&quot;. I bought lilydrift.com while the build was still compiling.<br>- 18:29. First commit: Flutter + Flame, all six milestones, 35 sim tests green. I hadn&#x27;t touched the keyboard.<br>- 18:30 → 19:20. Dinner. Dog walk (she has more Instagram followers than I do: @missy.butterbean). Meanwhile: GitHub repo, CI, a deploy pipeline, the Cloudflare Pages project, the privacy page.<br>- 19:22. First production deploy. lilydrift.com resolving, cross-origin isolated, wasm renderer running multi-threaded.<br>- 19:30 → 20:18. Real phones. iPhone SE, Pixel 8 Pro. Five more PRs: icons, footer, art, phone readability, pad contrast, a how-to-play screen.<br>- 20:18. Last merge. Done. Not &quot;done for now&quot;. Done.<br>GitHub Pages lost on a header<br>I host this site on GitHub Pages and I like it. It was the default answer for the game too, and it lost to a single HTTP header. Flutter&#x27;s wasm renderer only runs multi-threaded when the page is cross-origin isolated, which means the HTML has to come back with Cross-Origin-Opener-Policy and Cross-Origin-Embedder-Policy set. GitHub Pages cannot set response headers. At all. Cloudflare Pages honours a _headers file in the build output, and Flutter copies anything in web/ into the build, so the whole fix is one text file in the repo:<br>/*<br>  Cross-Origin-Opener-Policy: same-origin<br>  Cross-Origin-Embedder-Policy: require-corp<br># entry points aren&#x27;t content-hashed; always revalidate<br>/index.html<br>  Cache-Control: no-cache<br>/flutter_bootstrap.js<br>  Cache-Control: no-cache<br>        require-corp is the strict one. It blocks any cross-origin asset that doesn&#x27;t opt in, which is fine here because the build uses --no-web-resources-cdn, so CanvasKit and the wasm bundle come from the app&#x27;s own origin. Load a font from somewhere else later and it&#x27;ll silently fail. That&#x27;s a footgun worth writing down, so it&#x27;s in the README.<br>The deploy is a GitHub Action: run the tests, build with --wasm, push build/web with Cloudflare&#x27;s wrangler action. Main goes to production. Every other branch gets a preview URL. The first run failed because I hadn&#x27;t added the API token secret yet, which is the correct way for a first run to fail.<br>The phone told the truth<br>On my desktop the game was crisp and readable. On the Pixel, the petals were tiny. Everything scales with the pond, the pond scales with the screen width, and at 412 logical pixels wide a petal came out about nine pixels in radius. Legible if you squint. Casual games are not supposed to require squinting.<br>The tempting fix is to bump the petal radius in the tuning. That&#x27;s the wrong fix, because the petal radius is a simulation constant. Change it and the Daily pond is a different pond on phones than on desktops. The right fix is render-only:<br>/// Render-only magnification for small objects so they stay legible on<br>/// phones. Never below 1, so desktop is unchanged, and capped so petals<br>/// don&#x27;t swallow the pads. The sim never sees this.<br>double get detailScale =&gt;<br>    (minPetalPx / (0.045 * scale)).clamp(1.0, 1.7);<br>static const double minPetalPx = 13;<br>Petals, pad outlines, thistles and dragonflies all draw through that one scalar. A phone gets roughly 1.5x. Desktop gets exactly 1.0. The sim is untouched and the determinism test doesn&#x27;t know anything happened.<br>While I was in there I threw out the petal art. The first pass was clean silhouettes: a scalloped circle, a star, a heart, a teardrop. Fine, but generic. I asked for flowers in the spirit of the sky flowers in Bikini Bottom, flat colour with a fat ink outline and a bit of wonk, and the agent redrew all four as vector paths. The daisy is the union of six overlapping discs. The star has uneven tips on purpose. The silhouettes had to stay recognisable because they&#x27;re the colour-blind contract: every colour has a shape, and the pads carry the same shape as an outline. That&#x27;s a rule, not a theme.<br>That preview harness is the thing I&#x27;d point at if someone asked what &quot;agent coding done well&quot; looks like. Nobody asked for it. It exists because the agent needed to see its own output to iterate on art, so it wrote a test that renders the shapes at every size that matters and saves a picture. Then it looked at the picture, said the daisy read as a gear, and fixed the daisy. That&#x27;s the loop. That&#x27;s the whole loop.<br>What went wrong, because something always does<br>The stock Flutter icon showed up on the web install. My fault. When I created the Cloudflare Pages project I uploaded a stale build by hand as a placeholder, then opened that deployment instead of the one CI shipped. Deleted it. The real fix was that the favicon was a single 16px file, so that got redone properly along the way.<br>The help button sat on top of the logo on a phone. A top-right button and a 40px letter-spaced wordmark don&#x27;t share 412 pixels. Moved it to its own row. Caught in the browser at phone width before it ever hit a device.<br>flutter install doesn&#x27;t build for iOS. It does for Android. It doesn&#x27;t for iOS. This is documented nowhere I looked and cost one failed install. Now it&#x27;s in the README.<br>Wireless adb pairing failed with &quot;protocol fault&quot;. Twice, with valid codes. The cause was a stale adb server on the Mac that some other tool had started. adb kill-server, pair again, instantly fine. None of these are model problems. They&#x27;re the same problems I&#x27;d have had solo, and they got fixed faster because the agent could read the logs while I read the phone.<br>What&#x27;s not done<br>I want to be precise here because &quot;shipped&quot; gets abused. The web version is live at lilydrift.com and it&#x27;s the real game. The iOS and Android builds are on my phones and they&#x27;re the real game. What isn&#x27;t done: the store listings, the in-app product for the one-time unlock, an Android upload keystore, and the milestone I care about most, the human feel-check. Every tuning constant is still at the spec default. The numbers in that table above are reasonable. They are not yet right, and no agent is going to tell me whether a tap feels good. That&#x27;s a weekend with a debug overlay and my thumb.<br>The spec was the work. The agent was the typing. The phone was the review.<br>The actual lesson<br>Six hours of wall clock with a workday in the middle. Maybe three hours of my attention, most of it spent reading diffs, playing builds, and saying &quot;no, bigger&quot; about petals. The game is real. The code is clean, and I mean that in the boring, specific way: the sim has no rendering imports, the entitlements are one abstraction with three backends, the strings are in one file, and the tests would catch me if I broke the thing the Daily mode depends on.<br>I&#x27;ve been writing software for a long time, and the idea that a well-specified casual game is now a Friday afternoon is still a little disorienting. The bar for &quot;what&#x27;s worth building&quot; just moved. Not because the model got smart last week. Because I wrote down what I wanted before I asked for it.<br>Go tap the water.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            06
+        </div>
+
+        <h2>Show HN: Bodily Oddities</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>172</strong> points
+            ·
+            <strong>141</strong> comments
+            ·
+            vesterde
+        </div>
+
+        <div class="source">
+            vester.si
+        </div>
+
+        <div class="feeds">
+            Best #43 · Top #22 · Show HN #2
+        </div>
+
+        <div class="links">
+            <a href="https://vester.si/bodily-oddities/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49649789">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>A familiar word, face or place suddenly feels strange, as if you are meeting it for the first time. It is the opposite of déjà vu, and researchers think it is rarer. In lab studies, more than half of people felt a common word turn strange after copying it about 30 times.<br>Bodily Oddities<br>143 Strange things bodies can (sometimes) do.<br>Results appear below as you type.<br>Browse by body region<br>Browse by kind<br>People with prosopagnosia, or face blindness, find it hard to recognise faces, even those of family and friends. Most have had it all their lives. It can also start after brain damage. Estimates run from about 1 in 100 people to about 1 in 40, depending on how it is tested.<br>Most people see a picture in their mind when they think of a friend&#x27;s face. People with aphantasia see only a faint image or none. About 4 in 100 people are like this, and about 1 in 100 see nothing at all. A few people have images almost as vivid as real sight.<br>A finger that stays bent forward at its middle joint and cannot fully straighten, usually the little finger. Under 1% of people have it. Mild cases rarely cause trouble, but the bend can get worse while a child grows.<br>An extra tendon link in the forearm that ties the thumb to the index finger. When the thumb bends into the palm, the index fingertip bends with it. Roughly 1 in 5 people have it, but counts vary widely.<br>Pressure on the eyeball, or a pull on an eye muscle, makes the heart slow down. It matters most during eye surgery, especially in children. It is not a safe way to slow your own heart.<br>An image that stays in your vision after the thing you looked at is gone. Bright things leave a same-colour copy for a moment. Long stares leave a copy in opposite colours.<br>Using both hands equally well for every task. About 1% of people are truly ambidextrous. Many people who say they are ambidextrous are mixed-handed: right hand for some jobs, left for others.<br>Some earlobes hang free and others join the head directly. Textbooks taught this as one gene, but a 2017 study found at least 49 genetic regions involved, and the two shapes blend into each other.<br>The uvula, the dangling flap at the back of the throat, is split into two lobes, in about 1 to 2% of people. On its own it is harmless, but in a baby it can be a clue to a hidden cleft of the palate.<br>Look at a small red light in a dark room and two faint blue arcs curve away from it towards your blind spot. The arcs follow the paths of the nerve fibres in your own retina.<br>Tiny bright dots that dart along wiggly paths when you look at a clear blue sky. They are your own white blood cells moving through the capillaries of the retina.<br>Things that alarm people but are harmless.<br>Small extra bones, most often in the foot, that form when a growth centre never fuses with its main bone. They are usually harmless but can be mistaken for fractures on an X-ray.<br>Objects, body parts, or the whole room suddenly look far too big, far too small, or far away. It mostly happens to children, often during a fever or infection, and it passes on its own. In adults it is usually linked to migraine.<br>Small visible twitches in the eyelid, calf, thumb, or arm that come and go with no weakness. One survey found them in about 70% of healthy clinicians. They are very rarely a sign of nerve disease.<br>A brief feeling like a small electric shock inside the head, often set off by moving the eyes. It is most common when stopping or lowering an antidepressant. It is unpleasant, but usually not a problem.<br>A sudden, brief thought of jumping when you stand somewhere high, with no wish to do it. About half of people get it. It is probably the brain&#x27;s safety system being misread, not a hidden wish.<br>An extra rib above the normal top rib, growing from the lowest bone in the neck. About 1 in 100 people have one, and most never know.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            07
+        </div>
+
+        <h2>Ask HN: Can we please limit the AI news flood?</h2>
+
+        <div class="badge">
+            HN TEXT
+        </div>
+
+        <div class="meta">
+            <strong>753</strong> points
+            ·
+            <strong>364</strong> comments
+            ·
+            cromka
+        </div>
+
+        <div class="source">
+            news.ycombinator.com
+        </div>
+
+        <div class="feeds">
+            Best #4 · Ask HN #2
+        </div>
+
+        <div class="links">
+            <a href="https://news.ycombinator.com/item?id=49657850">HN discussion</a>
+        </div>
+
+        <h3>Discussion text</h3>
+
+        
+        <div class="article-body">
+            <p>Over past couple months I noticed that HN feed is almost exclusively AI or AI-adjacent news. Meanwhile the legitimately, broadly-hacker stuff gets left out for the most part.</p>
+<p>I noticed that because the things I find genuinely interesting that I post here now get zero traction, which is the stuff that I believe would previously be met with some discussion.</p>
+<p>Note that I don&#x27;t care that my submissions were ignored, I don&#x27;t need that validation. Problem is that if my stuff gains no traction, I am myself not seeing similar stuff posted by others, stuff I am genuinely also interested in and would want to hear about from this community.</p>
+<p>Here are two most recent examples:</p>
+<p>- Lenovo showed a model that incorporates solid-state air cooling. That technology has been around for a while but it looks like it matured and is production-ready. This allows for super-light and slim designs, which, in turn, should allow for bigger batteries installed and I think it&#x27;s some sort of breakthrough:  <br>https://news.ycombinator.com/item?id=49580229</p>
+<p>- Brax Industries devices, genuinely interesting, open-soruce and innovative, especially the wall display, with its modularity and on-device processing compatible with Home Assistant. I also appreciate the very clean design:  <br>https://news.ycombinator.com/item?id=49643215</p>
+<p>As said, I honestly believe this would gain some traction here on HN a year or two ago. I no longer find HN a good source of &quot;what&#x27;s new&quot; in the industry, it&#x27;s almost exclusively AI talk now.</p>
+<p>So I think the point I am trying to make is that maybe YC could start curating the content somehow to give those easily-drowned-out articles a visibility bump?</p>
+<p>Or, at the very least, introduce simple tagging, so we can start filtering stuff out.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            08
+        </div>
+
+        <h2>I spent $220 on Google app ads and 60% of the installs were robots</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>333</strong> points
+            ·
+            <strong>179</strong> comments
+            ·
+            nickabe
+        </div>
+
+        <div class="source">
+            dayzlegame.com
+        </div>
+
+        <div class="feeds">
+            Best #23 · Top #2
+        </div>
+
+        <div class="links">
+            <a href="https://dayzlegame.com/blog/google-ads-bot-farm/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49662990">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>I run a small puzzle app called Dayzle. I’m a numbers guy, so a marketing optimization problem is right up my alley. Two weeks ago I turned on a Google Ads campaign for Android at CA$40 a day, with the goal set to installs.<br>For the first few days it barely spent anything. I had a target cost per install of $1.50, and Google couldn’t find installs at that price. So, as a test, I removed the target. It immediately spent double my daily budget, CA$80, and reported 21 installs. I was excited. Then I checked my admin panel, which said 1. Turns out I didn’t need to be a numbers guy to see something didn’t add up.<br>The panel had missed them because old versions of the app don’t report an install date. When I went into the raw analytics there were 21 new Android devices that day, and 20 of them were running an old version of the app that the Play Store had stopped serving days earlier. You can’t get an old version from Play, so these phones got the app from somewhere else, even though every one of them said Google Play was the installer. Each opened the app once, spent zero seconds on any screen, and never came back. Twenty-eight phone models across nineteen states, which is a lot of variety for twenty phones that all did exactly the same thing.<br>Over the whole two weeks: 56 installs billed, 33 with that pattern, 7 more from countries the campaign wasn’t targeting, and 13 people. The 13 people finished 92 games between them, which is a nice signal that real people enjoyed what we’ve built.<br>The 33 weren’t behaving like people, so I suspected a bot farm, and the analytics export bears it out. Google optimizes for whatever goal you give it, and my goal was installs. This farm would watch the shortest video in my ad group, not click it, and then install our app from a saved copy of the file instead of from the store, because that’s faster and Play might notice. Google counts a view followed by an install as a conversion, so the irony is that the more the farm “installed” our app, the better it looked to Google’s algorithm, which sent more of my ads to the farm, which installed it more. A loop that guaranteed my ad spend was wasted.<br>Where I am now: waiting on Google’s answer to the invalid-traffic form, and the campaign’s goal is now “won a puzzle” instead of “opened the app”. It’s low effort to make a script open an app and click around; it’s higher effort to make one solve a Sudoku. The idea is just to make us more expensive to farm than the next app. That’s probably decent protection for an app my size. Larger apps are worth the extra effort, and I’d guess they see a lot more of this than they know. I’ll report back on the refund.<br>So I guess this is my PSA: if you’re relying on Google’s install count for your ads, it’s a real number, but it’s definitely worth digging into. If a bot farm can find my tiny ad budget, it can definitely find yours.</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            09
+        </div>
+
+        <h2>DeepSeek v4.1 Flash</h2>
+
+        <div class="badge">
+            HN TEXT
+        </div>
+
+        <div class="meta">
+            <strong>994</strong> points
+            ·
+            <strong>568</strong> comments
+            ·
+            Liwink
+        </div>
+
+        <div class="source">
+            twitter.com
+        </div>
+
+        <div class="feeds">
+            Best #2
+        </div>
+
+        <div class="links">
+            <a href="https://twitter.com/deepseek_ai/status/2097930608790167907">Original article</a> · <a href="https://news.ycombinator.com/item?id=49639090">HN discussion</a>
+        </div>
+
+        <h3>Discussion text</h3>
+
+        
+        <div class="article-body">
+            <p>https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash (https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)</p>
+        </div>
+        
+
+    </section>
+    
+
+    <section class="story">
+
+        <div class="story-number">
+            10
+        </div>
+
+        <h2>DeepSeek v4.1 flash runs 23 seconds/token on a 2020 16gb M1 Mac Mini</h2>
+
+        <div class="badge">
+            FULL TEXT
+        </div>
+
+        <div class="meta">
+            <strong>1</strong> points
+            ·
+            <strong>0</strong> comments
+            ·
+            ajay-higgs
+        </div>
+
+        <div class="source">
+            twitter.com
+        </div>
+
+        <div class="feeds">
+            New #2
+        </div>
+
+        <div class="links">
+            <a href="https://twitter.com/thefp4brain/status/2098424202168586367">Original article</a> · <a href="https://news.ycombinator.com/item?id=49668224">HN discussion</a>
+        </div>
+
+        <h3>Article</h3>
+
+        
+        <div class="article-body">
+            <p>FP4 Brain on X: &quot;got deepseek V4.1 flash running locally on a 16GB m1 mac mini<br>original FP4/FP8 weights, ssd streaming + custom mlx runner<br>108s ttft and about 23s/token (not to be confused with tok/s)&quot;<br>got deepseek V4.1 flash running locally on a 16GB m1 mac mini<br>original FP4/FP8 weights, ssd streaming + custom mlx runner<br>108s ttft and about 23s/token (not to be confused with tok/s)<br>got deepseek V4.1 flash running locally on a 16GB m1 mac mini<br>original FP4/FP8 weights, ssd streaming + custom mlx runner<br>108s ttft and about 23s/token (not to be confused with tok/s)<br>code + recipe if you&#x27;re not in a hurry<br>github.com/atbender/deeps…<br>weights stay on SSD. the runner loads selected experts + lookup rows on demand, with a 4 GiB cache for dense weights. built on @pipenetwork MLX port<br>got it from about 31 to 23 seconds/token by reusing allocation buffers, compiling weight decoding and caching 4 GiB of dense weights<br>tried 6 GiB too but it was meh, barely faster and more swapping. that&#x27;s why I stuck with 4 if anyone&#x27;s wondering<br>tests + logs in the repo</p>
+        </div>
+        
+
+    </section>
+    
+
+</body>
+
+</html>
