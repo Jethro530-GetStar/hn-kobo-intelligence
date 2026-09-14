@@ -9,7 +9,7 @@
 
   <title>HN Intelligence</title>
 
-  <updated>2026-09-13T21:37:46Z</updated>
+  <updated>2026-09-14T09:39:45Z</updated>
 
   <author>
     <name>HN Intelligence</name>
@@ -26,6 +26,28 @@
     href="https://jethro530-getstar.github.io/hn-kobo-intelligence/opds.xml"
     type="application/atom+xml;profile=opds-catalog;kind=acquisition"
   />
+
+
+  <entry>
+
+    <title>2026-09-14 PM</title>
+
+    <id>tag:jethro530-getstar.github.io,2026-09-14:hn-kobo-intelligence/2026-09-14-PM.html</id>
+
+    <updated>2026-09-14T10:00:00Z</updated>
+
+    <summary type="text">
+      Hacker News intelligence digest:
+      2026-09-14 PM
+    </summary>
+
+    <link
+      rel="http://opds-spec.org/acquisition"
+      href="https://jethro530-getstar.github.io/hn-kobo-intelligence/output/2026-09-14-PM.html"
+      type="text/html"
+    />
+
+  </entry>
 
 
   <entry>
