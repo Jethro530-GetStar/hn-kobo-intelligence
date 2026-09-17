@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-17 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-17 PM · Generated 2026-09-17 17:38 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: attalambda.com, developer.nvidia.com, github.com, gowers.wordpress.com, netflix.com, news.ycombinator.com, orbit-hop.sjoerdvanderhoorn.chatgpt.site, servo.org, typesafe.ai</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2158 points ·
+    243 comments ·
+    arnemunthekaas
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Show HN #1 · Top #22
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/arnegiacomo/fugleramme">Original article</a> · <a href="https://news.ycombinator.com/item?id=49711544">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">E-ink bird frame for Raspberry Pi - real-time bird detection by audio, fully local AI, rendered as real, hand-cut 1800s bird illustrations.</div>
+<div class="para">Sorry about the dirty window - squirrels have been stealing the bird food.<br>Note<br>Still in early development: expect the odd bug and a few unpolished edges, with plenty more features to come.<br>Live on fugleramme.arnegiacomo.dev running from my kitchen window and displaying the actual birds currently heard in my garden (Bergen, Norway).<br>Hardware, install and operations docs: arnegiacomo.dev/fugleramme<br>BirdNET-Go listens on a mic and handles the classifier. Fugleramme polls its api, matches each species to an illustration, then packs them onto a page, and redraws only when the birds change - on an Inky Impression e-ink panel, and as a web kiosk serving the same view. There&#x27;s an admin page that lets you configure what to show, and automatic updates and such.<br>If you already run BirdNET-Go, point the frame at it instead - on the same machine or anywhere else reachable from your network.<br>Tip<br>The e-ink panel is not required, although it&#x27;s recommended for the intended experience. Without one, Fugleramme runs web-only - show the kiosk on a display over HDMI, or open it from any device on the network.<br>A Raspberry Pi 5, an Inky Impression 13.3&quot; (Spectra 6), a mic and an A4 frame. Full parts list, recommendations and alternatives: Hardware.<br>Half the point of this project is showing off some amazing public-domain natural-history illustrations. Over 800 cut-outs covering more than 400 species, every one taken from a real plate and hand-curated for this project (no art is AI-generated, though some has been retouched with AI).<br>Each detected species is matched to its illustration, background-removed, and packed onto a textured paper page with the larger birds toward the centre, sized by body mass. An empty window shows a bare perch.<br>The plates are Scandinavian, British and central European, so the Nordics, the British Isles and Germany are best covered. Elsewhere not so much (yet). Broader European and North American coverage is in the works!<br>Species coverage has a searchable list of all currently supported species. See Adding artwork for manual cutout steps.<br>| No detections | A few visitors | A full garden |<br>|---|---|---|<br>The look came from a WWF Verdens naturfond poster by Axel Thorenfeldt hanging on my wall, the live-frame idea from AvianVisitors that I saw on Instagram, and the detection from BirdNET-Go - I wanted a version of that poster showing the actual birds in my garden.<br>Similar projects:<br>- AvianVisitors - BirdNET-Pi, AI-generated illustrations and photo cutouts<br>- inky-bird-frame - BirdNET, field-journal illustrations on an Inky panel<br>- HABirdDashboard - BirdNET-Go, a collage card for Home Assistant<br>- belkins-birdnet - BirdNET-Pi, AI-generated kachō-e style illustrations<br>- featherframe - BirdNET-Pi, Audubon plates on an ESP32 e-ink panel<br>- birdframe - BirdNET-Go, several art styles on a Samsung Frame TV<br>Fugleramme shares no code or art with them.<br>uv sync                                       # set up venv<br>uv run fugleramme-fake-detector               # stand-in BirdNET-Go on :8090<br>uv run fugleramme-dev                         # start service on :8080 with hot-reload<br>The fake detector&#x27;s flags, and working against a real station instead: Running it without a Pi.<br>From the pi (assuming you have the hardware up and running):<br>curl -fsSL https://raw.githubusercontent.com/arnegiacomo/fugleramme/main/install.sh | bash<br>Asks where BirdNET-Go should live and which ports to use, clones the repo, installs the required deps, and starts the frame as a systemd service. NB! Will probably require a reboot on a fresh system.<br>From a blank SD card, see the full install guide.<br>docker run -d -p 8080:8080 -v fugleramme:/data \<br>-e FUGLERAMME_DETECTOR_URL=http://birdnet.local:8080 \<br>ghcr.io/arnegiacomo/fugleramme<br>Or build the image from a checkout:<br>docker build -t fugleramme .<br>docker run --rm -p 8080:8080 -v fugleramme:/data \<br>-e FUGLERAMME_DETECTOR_URL=http://birdnet.local:8080 fugleramme<br>Kiosk on :8080, admin on :8080/admin, everything it persists in /data.<br>On a Linux box with a USB mic, this brings up BirdNET-Go alongside it:<br>curl -fsSL https://raw.githubusercontent.com/arnegiacomo/fugleramme/main/examples/docker-compose.yml -o docker-compose.yml<br>docker compose up -d<br>See Container for more info.<br>Contributions are very welcome and encouraged - fixes, docs and artwork most of all. Thanks to everyone who has contributed so far ❤️<br>- Something is broken - a bug report<br>- A question, an idea, or a frame you have built - the FAQ first, then Discussions<br>- A fix, a doc change, or a bird you have cut - open a PR, no issue needed<br>See Contributing for more info.<br>- Code: MIT - see LICENSE .<br>- Detection (BirdNET-Go, installed separately as a container): CC BY-NC-SA 4.0, non-commercial only. BirdNET model by the Cornell Lab of Ornithology and Chemnitz University of Technology, taxonomy data powered by eBird.org.<br>- Bird images: each style folder carries its own terms and sources, and its<br>manifest links the plate every file was cut from. classic is<br>CC BY-SA 4.0 - seeassets/artwork/classic/ATTRIBUTION.md .<br>- Label fonts (assets/fonts/ ): SIL OFL 1.1 - seeassets/fonts/ATTRIBUTION.md .<br>- Bird sizes (assets/bird_sizes.csv ): body mass from AVONET (Tobias et al.<br>2022, Ecology Letters, doi:10.1111/ele.13898),<br>CC BY 4.0.<br>- BirdNET scientific-name aliases (assets/birdnet_aliases.json ):<br>OpenFauna&#x27;s compiled taxonomic alias<br>map, CC BY-SA 4.0 - seeassets/ATTRIBUTION.md .<br>- Docs search (docs/assets/fuse.min.js ): Fuse.js by<br>Kiro Risk, Apache 2.0.<br>Questions and ideas about the project belong in Discussions. For anything else, you can reach me through arnegiacomo.dev. I&#x27;ve built a few of these frames, but I currently don&#x27;t have the capacity to build them for others.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    One Year of Sponsored Servo Development
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    49 points ·
+    19 comments ·
+    AshleysBrain
+  </div>
+
+  <div class="meta">
+    servo.org
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · New #42
+  </div>
+
+  <div class="links">
+    <a href="https://servo.org/blog/2026/09/15/one-year-of-sponsorship/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49737849">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Last September, the Servo project announced that long-time maintainer Josh Bowman-Matthews (@jdm) would work part-time on improving the Servo contributor experience, entirely funded by the monthly donations on OpenCollective and GitHub. In his own words, here is a look back over the past year!<br>First of all, I am enormously grateful to everyone who financially supports Servo, as those donations have enabled me to devote significant time to a project that I care a lot about. Some highlights from that funded work that I’m proud of:<br>- I nominated 8 new maintainers<br>- I reviewed 1150 pull requests<br>- I filed 114 issues targeted at newer contributors (92% of them have been fixed)<br>- I wrote new documentation about borrow hazards, experimental features, the AI policy, finding things to do, and fixing stable and intermittent test failures<br>On top of that, I spent time diagnosing unexpected failures in others’ PRs and fixed numerous intermittent test failures that made merging PRs more difficult for everyone.<br>A few pieces of work from this period that stand out to me:<br>- supporting a large scale rewrite of Servo’s JS engine integration to address intermittent panics related to garbage collection—I reviewed lots of pull requests, but also filed many issues that enabled the work addressing the panics to be spread across many other contributors<br>- getting tagged in to help understand test failures, uncovering our broken window.open behaviour, and eventually making a lot of flaky tests more stable<br>- supporting another contributor’s grant proposal to work on Servo that was approved!<br>This role I’ve carved out means a lot to me—I’ve found a healthy balance that allows me to spend time with my family as well as make meaningful contributions to Servo, and I get to spend a lot of time looking for ways to make the project more accessible for others. A big thank you to everybody supporting the project and my work; each individual monthly donation makes a big difference! I’m excited to see what’s possible in the coming year.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Ask HN: What are you working on? (September 2026)
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    372 points ·
+    1179 comments ·
+    david927
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49686380">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">What are you working on? What have you been curious about lately?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Show HN: I vibe-coded a platformer you play by physically turning and jumping
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    sjoerdvdhoorn
+  </div>
+
+  <div class="meta">
+    orbit-hop.sjoerdvanderhoorn.chatgpt.site
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://orbit-hop.sjoerdvanderhoorn.chatgpt.site">Original article</a> · <a href="https://news.ycombinator.com/item?id=49738380">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In Orbit Hop, you control a hero with your body: turn to walk, jump to leap, and crouch to duck under obstacles. Explore three 3D platforming levels with branching paths, moving platforms, coins, enemies, and power-ups before taking on the Lava King.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Introducing System One Models and Jev
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1821 points ·
+    479 comments ·
+    albelfio
+  </div>
+
+  <div class="meta">
+    typesafe.ai
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #45
+  </div>
+
+  <div class="links">
+    <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">Original article</a> · <a href="https://news.ycombinator.com/item?id=49717558">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Introducing System One Models &amp; Jev<br>Diogo Almeida, founder, TypeSafe<br>Models have been superhuman at chat for years, so where is all the automation?<br>This has been my driving question for the last four years. At OpenAI, I helped build the methods that made language models useful at following instructions and talking with people. That work ended up as the research behind ChatGPT. At the time, I thought maybe chat models would lead to AGI, but despite the hype it became obvious to me that there was something really big missing.<br>After two years in stealth, countless technical challenges, and research breakthroughs… I am beyond excited to announce that today, TypeSafe AI is releasing our first System One Model: a new class of frontier models built to make fast, structured decisions that software can use directly.<br>We built a new stack entirely focused on automation: with a new model architecture, parallel sampler for maximum efficiency, and training method we call Reinforcement Learning for Calibrated Decisions (RLCD).<br>Our first public model is Jev, available today in early access. Jev achieves similar levels of intelligence on System One tasks compared to existing LLMs, while being two orders of magnitude faster and more efficient. While Jev gives up string generation, it’s optimized for structured outputs and can’t hallucinate.<br>Think of Jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out.<br>Extraordinary claims require extraordinary evidence so see below for the receipts. 💅<br>Frontiers, Old and New<br>|  | Existing LLMs | System One + Jev |<br>|---|---|---|<br>| Optimized with | Reinforcement Learning with Human Feedback (RLHF) / Reinforcement Learning with Verifiable Rewards (RLVR) | Reinforcement Learning for Calibrated Decisions (RLCD) |<br>| Optimizes for | Human preference: writeups and chat responses that human raters prefer. Verifiable rewards: outputs that can be programmatically verified. | Calibrated decisions: answers with epistemically honest probabilities on System One tasks. |<br>| Inputs | Unstructured data (e.g. text) with an emphasis on sequential messages. | Unstructured data (e.g. text) with an emphasis on structured program state. |<br>| Outputs | Strings / generated text. Strings are flexible and can be anything: chat responses, code, hallucinations, refusals, or even type-safe structured values. To be used by software, responses need to be parsed + validated. There is also always some risk that the AI goes off the rails. | Type-safe structured values. Possible outputs and structure are defined in advance. The model never makes type errors. All answers are accompanied with calibrated probabilities and confidence scores. |<br>| Sampling | Sequential. Generates one token at a time, each conditioned on the last. | Parallel. Generates all outputs in a single query. Incredibly efficient and hardware-aware. |<br>| Cost | Input tokens: from $0.20 to $10 / MTok. Output tokens: ~5x more expensive than input tokens. | Input tokens: $0.042 / MTok ($42 per billion tokens). Output tokens: FREE (too cheap to meter). |<br>| Speed | End-to-end response time is 3 to 329 seconds for frontier models. Fast enough for interfacing with humans, but a big bottleneck when integrated in code. | End-to-end response time is 70ms-500ms for TypeSafe. This can range from 40x-200x faster for the same levels of frontier intelligence for System One shaped queries. |<br>| Confidence | Even if prompted for a confidence estimate, models tend to be overconfident and inconsistent. If a model can do a task 95% of the time but doesn’t say when it’s in the 5%, it can’t automate that task. | Always communicates confidence and uncertainty with every output. Calibrated: higher confidence means higher accuracy. More consistent: returns similar answers for similar inputs. |<br>| Use cases | Human-in-the-loop tasks (chatbots, copilots, coding agents). General and powerful, but requires human oversight because their freedom also means they might go off the rails. Verifiable problems (math proofs, kernel optimization). When correctness can be checked cheaply and automatically, LLMs can generate, test, and iterate until they find something that works. Demos. The flexibility of strings allows it to be incredible for quickly making prototypes that only work sometimes. | AI-Powered Workflows / smart if-statements. Structured outputs slot into ordinary software as fuzzy decision rules: classify, route, score, extract, or branch where hand-written logic is too brittle. The surrounding code constrains their freedom, making them easier to compose into reliable systems. Map-reducing over big data. Turn petabytes of data into features and insights. Real-time applications. 100ms speeds means you can use AI in your applications where UX is critical. Verify everything. Score, judge, verify, guardrail, and detect jailbreaks of LLM prompts, reasoning traces, and/or outputs. |<br>Evidence / Technical Results<br>We love skeptics, and are skeptics ourselves.<br>There are some claims you can easily verify:<br>- Speed per call: We truly are that fast, though our published evals are generally run from our laptops on the West Coast (this is where our service is currently based).<br>- Cost per call: We make our pricing transparent. We can’t prove it isn’t subsidized; we’ll need the long-term to prove the sustainability of our pricing (which we expect to go down, not up).<br>- No type errors: This would be an easy thing to falsify with just a single counter-example, but it is mathematically impossible.<br>For our bolder claims, we want to provide as much nuance as we can.<br>Side-by-side demonstration<br>Our side-by-side demo shows a key difference between our models and LLMs: Jev outputs all probabilities in parallel instead of autoregressively generating by token. Strings are extremely powerful and general, but costly. “Giving up” strings actually gives us a lot of superpowers!<br>Nuance<br>- For people with early access to TypeSafe, here is the actual query.<br>- The query is highly simplified and questions were chosen to have descriptive, human-readable keys so that the output on the screen is understandable.<br>- The state is also a short, dense, and detailed paragraph, to emphasize the difference in sampling methodology. The relatively shorter input paints our model in an advantageous light.<br>- For the keen eyed, for the recorded run, the only disagreement with GPT-5.6 Terra is on “Churn likelihood level”. The actual answer seems genuinely ambiguous to us.<br>- We used GPT-5.6 Terra with default reasoning for this example, because we’ve found it to be the most comparable at intelligence to Jev on average.<br>- Fun fact: a similar demo was what convinced us to go all-in in the direction of System One Models!<br>Workflow evals<br>We made a new type of evaluation to measure how well AI works within code. We don’t optimize for a ground truth classification or allow the harness and model to change (potentially allowing for overfitting via harness engineering). Instead, we assume there is a correct compute graph (a “workflow” represented in code) and use the predictions of the largest, smartest, and most expensive external models as reference probabilities.<br>Rephrased: every model gets the same workflow. We test how they compare to the average of the smartest models (in this case, Astra and Fable).<br>Jev is off the charts – owning the Pareto frontier for almost 2 orders of magnitude. We also compare to models with a generated prompt doing all the logic in their chain-of-thought, but this tends to do significantly worse than using the workflow itself.<br>Note that the calls here are significantly more complex than the side-by-side demonstration above. That’s because they’re more representative of the types of production workloads needed for true business automation. Below is the simplest of the 4 workflows we’re publishing:<br>The most reliable real-world workflows tend to have many independent, decomposed questions, with fine-grained behavior that’s dependent on probabilities instead of discrete decisions. The end result is discrete branching, but how we get to a final answer involves a lot of domain-specific engineering that needs to be done highly consistently.<br>See our workflow evals site for all the details: examples, disagreements, full queries, and each workflow.<br>Nuance<br>- This is where the claims of 193.6x faster, 444.6x cheaper on our home page comes from, and we expect that these are on the higher end of real world gains.<br>- These content of these workflows were not deliberately chosen nor constructed to make our model look good, and are not in our training distribution. However, they were made by individuals on our model capabilities team, so some bias could exist.<br>- We use the average of GPT-6 Astra and Fable 5.1 as the reference answer, which biases answers towards OpenAI and Anthropic’s models. We likely underestimate the relative performance of our model and DeepSeek’s models.<br>- The LLMs use our System One LLM wrapper, which constrains LLMs to output structured decisions compatible with our API. We have found this to be the most accurate way to get decisions from LLMs, but this tends to be slower and more expensive than giving decisions without probabilities.<br>Hallucination and Type-safety<br>Hallucination and type-safety are intrinsically related, and we think the latter is table stakes for automation. Having a hallucinated tool call is inconvenient in an agent, but is an absolute deal-breaker if it’s part of a system with latency guarantees or it’s buried several layers deep in a dependency chain. Existing models, no matter how smart, still hallucinate and have type errors.<br>Nuance<br>- The numbers for LLMs are from OpenRouter i.e., there almost certainly is bias here: more complex queries might be routed to better models.<br>- Our number is not empirical. Schema matching is guaranteed, thus we can confidently add 0% into the plots.<br>Fun Demos<br>Perhaps the most exciting part of our work is enabling new use cases. We have a lot more to show you, but here are a couple of the team’s favorites:<br>Doom<br>We love how this doomo doomonstrates real-time intelligence and what can be doone with code + AI. The engineer behind it was worried about making 10 queries a second (which ends up costing ~$7/hour), but the rest of us agreed that was lower than expected! This is so fun we intend to not only release an in-depth walkthrough, but also host some events to hack on this.<br>Nuance<br>- The demo is on structured state as a data structure with text, not on images (yet…)<br>- A non-AI doom bot could play better, but we wanted a bot that was reactive to different representations of game state, and most importantly… following instructions was cool as heck!<br>Wikiracing<br>The objective of the game is to start on one Wikipedia page and reach a specific other Wikipedia page using only links you come across while traversing. Each step can mean choosing between hundreds to thousands of links! It’s a great playground for demonstrating not just intelligence-per-second, but also the compounding benefits of not hallucinating with high-cardinality choices.<br>Nuance<br>- As far as we know, it was completely random that both the 2nd and 3rd challenges started with “Rubber Duck.” The author only noticed when the team pointed it out.<br>- Our speedups here tend to be a lot less than in previous demos. That’s because this is against the non-reasoning modes of the models (except Astra which was set to the lowest reasoning setting). This is also why Jev tended to finish in fewer steps (a sign of greater intelligence). This was to make the demo more bearable to watch. The LLMs look much worse at this task than with reasoning enabled.<br>- Jev supports a cardinality up to 255. For the higher cardinality choices, we do a 2 stage-system of scoring independently then making an explicit choice, hence the occassional slowdown.<br>What’s next<br>We’re still in Jev’s early days. We have a lot more in the pipeline and are so excited to keep on shipping 🔥.<br>Today, we are opening early access and bringing developers off the waitlist as quickly as we can. We want to hear which decisions you need to automate, where Jev works, and where it falls short. Tell us what sci-fi you want to build!!<br>We started TypeSafe because we believe that AI needs an interface software could depend on. We can&#x27;t wait to see new use cases continuously diffuse through the community and economy.<br>We Give A FAQ<br>∵ ⩆<br>⩆ ∵</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Nvidia announces native GPU programming in Rust
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    680 points ·
+    263 comments ·
+    nonmaskable
+  </div>
+
+  <div class="meta">
+    developer.nvidia.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #4
+  </div>
+
+  <div class="links">
+    <a href="https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49724881">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In September 2026, NVIDIA announced it is leaning into native GPU programming in Rust. CUDA C++ and CUDA Python are mature, enterprise-grade toolchains, and NVIDIA will be growing and maturing CUDA Rust into 2027 and beyond<br>The systems layer of AI spans inference engines, serving infrastructure, drivers, and agent runtimes, and it churns constantly as models and techniques change. More and more of it is written in Rust, which catches whole classes of bugs at compile time without giving up performance.<br>NVIDIA is part of that shift for the same reason. The Nova Linux driver is written in Rust. NVIDIA Dynamo is built on a Rust core. NVTX has Rust bindings.<br>The GPU kernel is the exception. You can launch kernels from Rust, but the kernel itself often has to be written in another language.<br>NVIDIA CUDA Rust closes that gap. GPU kernels can be written in Rust, compiled natively to PTX, rather than a wrapper around code from somewhere else.<br>There are two tracks to use Rust, matching the two tracks CUDA itself has. SIMT is the model you already write in CUDA C++ or numba-cuda. You indicate what one thread does, and launch thousands of them. Tile is a newer programming model, which is also available in C++ and Python. All of these frontends let you say what one tile of data does, and the Tile IR compiler does the rest.<br>When you are picking one to build on, reach for Tile first. The compiler decides how tiles map onto each architecture, so your source doesn’t encode architecture-specific choices, and you drop to SIMT when you need that control or want to manage memory and threads yourself.<br>Which language you reach for is a separate question from which model. Use the CUDA exposure that best fits the stack you already have. The two projects below are for when that stack is Rust. We plan to support inter-language interop, so the choice does not lock you out of the others.<br>Below is the same kernel on each track, which performs elementwise addition over 1,024 floats. Both are complete programs, both run, and both print the same line, so you can read them side by side and see what changes.<br>cuda-oxide is a custom rustc codegen backend. It intercepts compilation, routes #[kernel] functions through Rust MIR, the community Pliron IR framework, and LLVM IR down to PTX, and hands everything else to the standard backend. The GPU dialects on top of Pliron are ours. The dialects and every transform stay in Rust until the standard LLVM backend takes over.<br>You will need Linux, a GPU with compute capability 8.0 or later, a CUDA toolkit (12.x or newer), clang with its libclang headers, and the pinned nightly toolchain. cargo oxide doctor checks all of it, including the optional system LLVM. Install cargo-oxide, the Cargo subcommand that drives the build:<br>cargo +nightly-2026-04-03 install --git https://github.com/NVlabs/cuda-oxide.git cargo-oxide<br>Then scaffold a project and run it. The template is a complete vector addition program:<br>cargo oxide new vecadd_demo<br>cd vecadd_demo<br>cargo oxide doctor<br>cargo oxide run<br>The first cargo oxide run builds the codegen backend, so expect it to take a while. Later runs reuse the cache.<br>It prints PASSED: all 1024 elements correct. This is the whole program that did it, exactly what cargo oxide new wrote, with comments added here:<br>use cuda_device::{kernel, launch_bounds, launch_contract, thread, DisjointSlice};<br>use cuda_host::cuda_module;<br>use cuda_core::{CudaContext, DeviceBuffer, LaunchConfig1D};</div>
+<div class="para">// === DEVICE CODE - everything in here is compiled to PTX ===<br>// The macro also generates the host-side API used further down:<br>// `load`, `prepare_vecadd`, and the safe `vecadd` launch method.<br>#[cuda_module]<br>mod kernels {<br>use super::*;</div>
+<div class="para">#[kernel] // GPU entry point<br>#[launch_bounds(256)] // max threads per block; lets the compiler budget registers<br>#[launch_contract(domain = 1, block = (256, 1, 1))] // indexes in 1-D, 256-thread blocks<br>pub fn vecadd(a: &amp;[f32], b: &amp;[f32], mut c: DisjointSlice&lt;f32&gt;) {<br>let idx = thread::index_1d();<br>let idx_raw = idx.get(); // the plain usize, for reading the inputs<br>if let Some(c_elem) = c.get_mut(idx) {<br>*c_elem = a[idx_raw] + b[idx_raw];<br>}<br>}<br>}</div>
+<div class="para">fn main() -&gt; Result&lt;(), Box&lt;dyn std::error::Error&gt;&gt; {<br>// === HOST SETUP - device, stream, and buffers ===<br>let ctx = CudaContext::new(0)?;<br>let stream = ctx.default_stream();</div>
+<div class="para">const N: usize = 1024;<br>let a_host: Vec&lt;f32&gt; = (0..N).map(|i| i as f32).collect();<br>let b_host: Vec&lt;f32&gt; = (0..N).map(|i| (i * 2) as f32).collect();</div>
+<div class="para">let a_dev = DeviceBuffer::from_host(&amp;stream, &amp;a_host)?;<br>let b_dev = DeviceBuffer::from_host(&amp;stream, &amp;b_host)?;<br>let mut c_dev = DeviceBuffer::&lt;f32&gt;::zeroed(&amp;stream, N)?;</div>
+<div class="para">// === LOAD, PREPARE, LAUNCH ===<br>// SAFETY: this package owns the embedded device bundle produced for the<br>// kernels module above.<br>let module = unsafe { kernels::load(&amp;ctx)? };</div>
+<div class="para">// 4 blocks of 256 threads, 0 bytes of dynamic shared memory. `prepare_vecadd`<br>// checks that against the contract above and against the live device limits.<br>// The safe `vecadd` below takes that token where a raw config would go.<br>let prepared = module.prepare_vecadd(LaunchConfig1D::new((N as u32).div_ceil(256), 256, 0))?;<br>module.vecadd(&amp;stream, &amp;prepared, &amp;a_dev, &amp;b_dev, &amp;mut c_dev)?;</div>
+<div class="para">// === READ BACK AND VERIFY ===<br>// Copies down and synchronizes, so the launch has finished by the time<br>// `c_host` can be read.<br>let c_host = c_dev.to_host_vec(&amp;stream)?;<br>let errors = (0..N)<br>.filter(|&amp;i| (c_host[i] - (a_host[i] + b_host[i])).abs() &gt; 1e-5)<br>.count();</div>
+<div class="para">if errors == 0 {<br>println!(&quot;PASSED: all {} elements correct&quot;, N);<br>} else {<br>eprintln!(&quot;FAILED: {} errors&quot;, errors);<br>std::process::exit(1);<br>}<br>Ok(())<br>}<br>Host and device code live in one file, build with one command, and need no separate kernel crate.<br>Read the kernel signature first, because it carries the whole safety argument. a and b are ordinary shared slices, readable by every thread. c is a DisjointSlice&lt;f32&gt;, a type that hands each thread exclusive access to its own element and nothing else. It exists because &amp;mut [f32] is the wrong shape for the job. Every thread would need the same &amp;mut, which Rust correctly refuses. DisjointSlice splits that one mutable borrow into per-thread pieces.<br>thread::index_1d() returns an index type, not a bare integer, and c.get_mut(idx) only accepts that type. You get back an Option, so the out-of-bounds case is a branch you handle rather than a memory error you find later.<br>The launch is checked rather than trusted. #[launch_contract] declares that this kernel indexes in one dimension with 256-thread blocks. prepare_vecadd validates your LaunchConfig1D against that declaration and the live device limits, and hands back a proof that the safe vecadd method requires. Kernels without a contract expose only raw unsafe launch methods, because a bare LaunchConfig says nothing about the kernel it is launching.<br>cutile-rs works one level higher. You perform computations on tiles rather than scalars. Each tile block runs the kernel body once as a single logical thread over one sub-tensor of data, and the compiler decides how many real GPU threads back it. The #[cutile::module] macro embeds the kernel’s AST in the host binary and JIT-compiles it through CUDA Tile IR (the NVIDIA tile-level compiler IR) when the kernel is first needed.<br>Requirements are lighter than the SIMT track. You need a GPU with compute capability 8.0 or later, CUDA 13.3, stable Rust 1.89 or newer, and Linux, but no nightly toolchain and no LLVM of your own.<br>cutile is published, so there is nothing to clone:<br>cargo new vecadd_demo<br>cd vecadd_demo<br>cargo add cutile<br>Here is the same elementwise addition, written for tiles. Paste it into src/main.rs and cargo run:<br>use cutile::prelude::*;</div>
+<div class="para">// The macro captures this module&#x27;s AST into the host binary. The kernel is<br>// JIT-compiled through CUDA Tile IR the first time it is actually launched.<br>#[cutile::module]<br>mod kernel {<br>use cutile::core::*;</div>
+<div class="para">#[cutile::entry()]<br>fn add&lt;const B: i32&gt;(<br>// B is the tile width, a static dimension. A different B produces a<br>// different specialization.<br>z: &amp;mut Tensor&lt;f32, { [B] }&gt;, // exclusive output, one sub-tensor of B elements<br>x: &amp;Tensor&lt;f32, { [-1] }&gt;,    // shared input; -1 is a dynamic dimension, resolved at launch<br>y: &amp;Tensor&lt;f32, { [-1] }&gt;,<br>) {<br>// This body runs once per mut sub-tensor, as a single logical thread.<br>// Tile kernels load tiles, not scalars, from x and y.<br>let tx = load_tile_like(x, z); // the slice of x lining up with this sub-tensor of z<br>let ty = load_tile_like(y, z);<br>z.store(tx + ty); // elementwise across the whole tile<br>}<br>}</div>
+<div class="para">fn main() -&gt; Result&lt;(), Error&gt; {<br>let device = Device::new(0)?;<br>let stream = device.new_stream()?;</div>
+<div class="para">// These are lazy. Nothing has touched the GPU yet.<br>let x = api::ones::&lt;f32&gt;(&amp;[1024]);<br>let y = api::ones::&lt;f32&gt;(&amp;[1024]);</div>
+<div class="para">// Partitioning does three things at once: gives each tile exclusive<br>// ownership of its own 128-element chunk, fixes the grid at 1024/128 = 8<br>// tiles, and supplies B.<br>let z = api::zeros::&lt;f32&gt;(&amp;[1024]).partition([128]);</div>
+<div class="para">let c: Vec&lt;f32&gt; = kernel::add(z, x, y) // takes ownership of all three tensors<br>.first()                           // ...and returns them; pick the output back out<br>.unpartition()                     // drop the host-side partition wrapper; no data moves<br>.to_host_vec()                     // record the copy back<br>.sync_on(&amp;stream)?;                // and only now does any of it run</div>
+<div class="para">let errors = c.iter().filter(|&amp;&amp;v| (v - 2.0).abs() &gt; 1e-5).count();<br>if errors == 0 {<br>println!(&quot;PASSED: all {} elements correct&quot;, c.len());<br>} else {<br>eprintln!(&quot;FAILED: {errors} errors&quot;);<br>}<br>Ok(())<br>}<br>PASSED: all 1024 elements correct<br>The Tile track reaches the same answer on stable Rust, and its signature makes the same safety argument. There is no DisjointSlice this time. Partitioning on the host is only needed for mutable tensors, and it hands each tile block one writable sub-tensor that no other tile block can overlap. That exclusivity is what &amp;mut already guarantees.<br>The -1 in the input shapes is a sentinel rather than a size. That dimension is read off the tensor at launch, so the shape can vary without recompiling.<br>The interesting line on the host is .partition([128]), and it is doing three jobs at once. It makes the exclusivity real. Each tile owns its 128-element chunk and no other tile can touch it. It fixes the launch geometry, since 1,024 divided by 128 is a grid of 8 tiles.<br>The grid follows from the partition instead of being computed separately and checked against the kernel’s indexing. It also supplies B, which is never written at the call site because the launcher reads the tile width off the partition. That is why a &amp;mut output has to be partitioned before it can be passed at all.<br>Then look at what the launch returns. The add you call on the host is a macro-generated launcher, not the device function above. It takes ownership of all three tensors and hands them back as a tuple when the GPU is done. That is what .first() is for, picking the output back out of it.<br>Nothing runs until .sync_on(&amp;stream). Everything before it is a lazy description, recorded rather than submitted. That includes the ones, the zeros, the kernel call, and even the copy back to the host. The whole program is one chain with a single synchronization point.<br>Both kernels make the same claim about memory. Their inputs are shared, and their output belongs to one writer alone. They differ only in the level at which they make it, and in whether a purpose-built type is needed to make it at all.<br>That matters because thousands of threads reach the same buffers in no guaranteed order. When two of them hit the same address and one is writing, the ordering decides the result. Those bugs rarely reproduce on demand, and they pass tests before failing in production.<br>Passing the SIMT kernel’s output buffer as one of its own inputs does not compile, whether or not that kernel would actually race:<br>module.vecadd(&amp;stream, &amp;prepared, &amp;c_dev, &amp;b_dev, &amp;mut c_dev)?;<br>error[E0502]: cannot borrow `c_dev` as mutable because it is also borrowed as immutable<br>The same aliasing on the Tile side does not compile either:<br>let z = api::zeros::&lt;f32&gt;(&amp;[1024]);<br>kernel::add(z.partition([128]), z, y)<br>error[E0382]: use of moved value: `z`<br>Both examples catch the classic aliasing mistake at compile time, and they draw the line in different places. cuda-oxide checks each launch call. cutile-rs’s ownership follows the tensors across the launch boundary, which is the stronger of the two claims.<br>Tile gives you no shared memory or thread indexing to get wrong, because the compiler owns both. A tile block is a single logical thread, so there are no threads for you to race. That is what makes it safe by construction, and it is also what you trade away. SIMT keeps that control, and today shared memory there requires unsafe. Shared memory is the bedrock of fast SIMT kernels, so making that path safe is active work.<br>Both projects are early-stage and neither is production-ready. cuda-oxide is early alpha. cutile-rs is further along, published on crates.io and already used outside NVIDIA in HuggingFace’s Grout inference engine and in mistral.rs. Coverage is incomplete and APIs will move. Where you find rough edges, we want to hear about them.<br>Cargo and crates set an expectation that getting started is easy. GPU programming has historically been the opposite, and closing that distance is part of the work. The SIMT track still needs a pinned nightly toolchain, which is exactly the kind of thing we would like to stop asking you for.<br>Rust on GPUs is not new. There is good work in this space that predates ours and continues alongside it. The ecosystem appendix in the cuda-oxide book maps where we sit relative to Rust-GPU, rust-cuda, CubeCL, and the rest, and we have been working with the rust-cuda maintainers as both projects mature.<br>What is new is the engineering we are putting behind it, and a clear sense of where it is going.<br>- Run the SIMT example. cargo oxide new , thencargo oxide run , in cuda-oxide.<br>- Run the Tile example. Clone cutile-rs, then cargo run -p cutile-examples --example hello_world .<br>- Read the docs. The cuda-oxide book and the cuTile Rust documentation.<br>- Read the paper. Fearless Concurrency on the GPU.<br>- File issues. Tell us what broke and what was missing, on cuda-oxide or cutile-rs.<br>- Join the conversation. GitHub Discussions on both repos, or the cuda-oxide Discord.<br>- Come to the talk. Melih Elibol is presenting “Fearless Concurrency on the GPU” at RustConf 2026, Sept. 8 to 11 in Montréal. NVIDIA will have other staff attending too, so come find us if you’re there!<br>Tinker with what is here and come work on it with us. It is early, it is open, and what you build now will shape what comes next.<br>NVIDIA is excited to be leaning in with the Rust community as we elevate native Rust GPU programming. Projects like rust-cuda, rust-gpu, and cudarc pioneered the marriage of GPUs and Rust, and the people behind them, including the team at VectorWare, continue to shape how we think about our own work as we build with the Rust community.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: AttaLambda: a language where types and data are made of untyped lambdas
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    40 points ·
+    5 comments ·
+    kserrec
+  </div>
+
+  <div class="meta">
+    attalambda.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #57
+  </div>
+
+  <div class="links">
+    <a href="https://attalambda.com">Original article</a> · <a href="https://news.ycombinator.com/item?id=49699477">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I made a programming language!<br>I call it AttaLambda.<br>The idea is this: a usable Lisp-shaped language where all the meaningful computation is done in untyped lambda calculus. Logic, arithmetic, data structures, control flow, even the types — all untyped lambdas. A small, explicit Racket layer sits at the boundary to handle the outside world, plus some macros for syntactic sugar.<br>This is its story:<br>A couple years ago, I wanted to play with untyped lambda calculus and go beyond where tutorials usually stop. They show booleans, numbers, arithmetic, maybe the Y-combinator — and then stop. I wanted them to keep going.<br>So I started a project called All The Lambdas. Using Racket set to lazy, I used only one Racket construct for actual computation — lambda — and built integers, rationals, lists, binary digit-list number encodings, search algorithms, and more.<br>Then I found Functional Programming Through Lambda Calculus by Greg Michaelson. In it, Michaelson sketches the bones of a language built in untyped lambda calculus, including a type system where typed objects are themselves pair functions containing a type tag and value.<br>I found that intriguing and implemented and extended the idea, still entirely with untyped lambdas. I don&#x27;t have a background in programming language theory, so I was figuring it out as I went.<br>Then I stopped tinkering with it for a while.<br>Recently I came back and thought: why not turn this into a real usable language with the help of coding agents? I reused most of All The Lambdas as the foundation.<br>Thus AttaLambda was born.<br>Some additional details:<br>* Rat, its number type, uses binary digit-list encodings instead of Church numerals, so numbers scale with their number of binary digits rather than their value<br>* errors are lambda-encoded values, not Racket exceptions, and propagate through the language like ordinary data<br>* the Racket host only performs irreducibly external operations; even things like HTTP parsing, routing, and response construction stay in the pure lambda world<br>* recursion uses lambda-calculus recursion: no loops or true self-reference, just the Y-combinator underneath<br>* automated purity checks catch accidental cheating, like native computation leaking into the pure parts<br>* syntax like multi-argument lambdas, let, cond, and list is just macro sugar that reduces to unary lambdas and application<br>A couple code examples:<br>(short of print, every single thing here reduces to unary untyped lambdas)<br>Factorial:</div>
+<div class="para">#lang attalambda</div>
+<div class="para">(rec factorial n =<br>(cond<br>((eq n 0) 1)<br>(else (mult n (factorial (sub n 1))))))</div>
+<div class="para">(print (factorial 10))</div>
+<div class="para">Which prints:</div>
+<div class="para">3628800</div>
+<div class="para">Or an exact harmonic sum:</div>
+<div class="para">#lang attalambda</div>
+<div class="para">(print<br>(reduce add 0<br>(map (lambda (n)<br>(unwrap-ok (div 1 n)))<br>(range 1 8))))</div>
+<div class="para">Which prints exactly:</div>
+<div class="para">363/140</div>
+<div class="para">As far as I know, no programming language combines all these features: Michaelson-style type tags built from untyped lambdas, exact rationals backed by binary digit lists, errors as lambda values, and real-world programs where almost all computation stays inside the lambda core. None of those pieces are individually new, but I don&#x27;t know of another language combining them this way.<br>Download:<br>https://github.com/kserrec/attalambda/releases/tag/v0.7.0<br>Code:<br>https://github.com/kserrec/attalambda<br>Original All The Lambdas:<br>https://github.com/kserrec/all_the_lambdas</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Open-sourced jev architecture last year with model,paper and dataset
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    9 points ·
+    3 comments ·
+    nandakishor_ml
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49736660">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Everyone now talks about the architecture that&#x27;s not auto regressive and does lightning fast probability prediction with a json schema. I worked on this literally one year back in March 2025, published an arxiv paper, pushed the model to huggingface along with the pypi package and training dataset. And then one year later, a frontier lab came, proposing the same idea like literal breakthrough without technical papers, open weights and no open dataset. For anyones information the main guiding model is RL not embedding model or LLM<br>Paper: https://arxiv.org/abs/2503.23303<br>Model: https://huggingface.co/DeepMostInnovations/sales-conversion-model-reinf-learning<br>Dataset: https://huggingface.co/datasets/DeepMostInnovations/saas-sales-conversations<br>Also the second work published in September 2025 was exactly the same one jev proposed now<br>Paper: https://arxiv.org/abs/2510.01237<br>My model uses PPO over sequence embeddings to output turn-by-turn conversion trajectories (probabilities from 0.0 to 1.0).<br>Jev uses parallel sampling (trained via RLCD) to output confidence distributions and schema choices.<br>It&#x27;s incredibly frustrating that the thing that you made with months of hard work, sweat and sleepless night is architecturally similar with the vertical use case and don&#x27;t get the support you deserve because frontier lab build something horizontal. The open-source story in general</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Netflix doc on AI, if you need bad sleep afterwards
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    trumbitta2
+  </div>
+
+  <div class="meta">
+    netflix.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.netflix.com/title/82792555">Original article</a> · <a href="https://news.ycombinator.com/item?id=49738356">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    I didn&#x27;t sign the Fields medallists&#x27; letter
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    12 points ·
+    8 comments ·
+    simianwords
+  </div>
+
+  <div class="meta">
+    gowers.wordpress.com
+  </div>
+
+  <div class="meta ranks">
+    Top #3 · New #25
+  </div>
+
+  <div class="links">
+    <a href="https://gowers.wordpress.com/2026/09/17/why-i-didnt-sign-the-fields-medallists-letter/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49738091">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">When I was around 11 I heard for the first time about Fermat’s Last Theorem. I was immediately captivated by the problem statement, as well as by the accompanying story, and made a fairly serious attempt to prove it. And while, unsurprisingly, I failed, I learned a lot from the attempt. Blissfully ignorant of the fact that the case had been proved by Euler over 200 years earlier, I decided that that would be a good place to start: once I had sorted that out, I was optimistic that I would be ready to tackle the general case.<br>Since I still couldn’t really see where to start, I decided to simplify the problem further and concentrate on successive differences of cubes, with a view to showing that such a difference could not itself be a cube. At the time I did not know how to express what I was doing in algebraic language, so I did not explicitly try to prove that the Diophantine equation had no solution. Rather, I just worked out some successive differences and stared at them, trying to get some idea of why none of them was a perfect cube. (I should be clear that this story is a reconstruction of what I think probably happened given the few memory traces that remain half a century later rather than a completely reliable account.) At some point, I had the idea of taking the difference sequence of the difference sequence, and discovered that it formed an arithmetic progression. That felt like progress, so I investigated difference sequences a bit more and discovered, purely empirically, the rule that if you start with th powers and keep taking successive differences, then eventually you get to the constant sequence .<br>Somehow I never managed to turn this observation into a proof of Fermat’s Last Theorem, and later on my dream of solving it got replaced by other mathematical dreams. However, when I reached the point in my mathematical education where I was taught about taking difference sequences and about what happened to polynomials, I understood those topics much better than I would have if I had not discovered difference sequences for myself and spent happy hours playing around with them. I mention this story just as an illustration of the phenomenon that was strongly emphasized in this letter signed by 25 Fields medallists, that one learns a lot from thinking about a problem, regardless of whether one solves it.<br>In the end, however, I felt that I could not sign the letter, despite agreeing with much of what it said. Instead, it seemed better to do what I did with the Leiden Declaration and set out my own position in a blog post. But it should be understood that by doing that I am not setting myself up as a member of some opposing camp: indeed one of my worries at the moment is that the mathematical community might become bitterly divided, something I would very much like to avoid. Also, I agree on the fundamental point that we are facing a crisis: I just want to offer a slightly different analysis of what that crisis is. I don’t claim full originality for this analysis, as I know that several other mathematicians have already put forward thoughts that are similar to the ones I have, though (for what it’s worth) I have largely come to these conclusions independently.<br>On the subject of independence, it will perhaps help if I clarify that while I have contacts in the mathematics group at OpenAI, and have also been given early access to some of their models (typically only a few days before they have been released), and have been given free access to their Pro models once released, I have never been paid by OpenAI. I mention this in the hope, perhaps naive, that what I write will not be dismissed for ad hominem reasons. Another potential reason for my being regarded as “pro-AI” is that, as I have stated publicly several times, I have a group in Cambridge devoted to automatic theorem proving. However, that is actually more of a reason to be anti-AI, since our group has been trying to attack the problem of getting computers to prove interesting theorems by understanding as well as possible how humans prove interesting theorems, so now that LLMs can clearly do it without the help of such insights as we have had, one of the main motivations for our work has disappeared. To put it another way, we have had to swallow the bitter lesson (which of course we were always aware was a distinct possibility, even if the speed at which it happened has taken us by surprise). I do in fact think that it is still a very interesting and valuable intellectual exercise to try to gain this understanding, even if we can use LLMs as black boxes, but that’s a topic for another blog post.<br>So why didn’t I sign the letter? Let me extract a couple of sentences from it that express what I see as the principal argument being put forward.<br>But solving problems is only a tool and proxy for achieving the primary goal of conceptual understanding and insight. Forgetting this in the world of AI may turn the tool against the primary goal. Indeed, the mass production at faster and faster pace of “true/false” statements could destroy fertile ground instead of breathing life into new ideas.<br>Perhaps the main reason I didn’t sign is that I don’t fully subscribe to this view. Instead, I have a more complicated view, which I actually expressed in my essay The Two Cultures of Mathematics a quarter of a century ago, and which can be summarized by saying that there is a spectrum of attitudes in mathematics to the relationship between problem-solving and conceptual understanding. At one end of the spectrum you have mathematicians who are primarily motivated by the wish to solve problems, who see conceptual understanding as a very important means to that end. At the other you have mathematicians who are primarily motivated by the wish to attain conceptual understanding, who see problem-solving as a very important means to that end. I worry that the severe-misalignment letter could be seen as saying that the “right” attitude is to focus on conceptual understanding as the main priority — indeed, the above sentences say that more or less directly. But I think that there are mathematicians all across the spectrum, and that that is a good thing (or perhaps I should say that it has been a good thing up to now — the future is much less certain), and I don’t want to suggest to a large fraction of mathematicians, including myself, that their mathematical temperament is somehow “wrong”.<br>My own particular mathematical attitude is very similar to one that was beautifully articulated in a Twitter post by Jacob Tsimerman (another non-signatory of the letter), which, now that I look at it, says a lot of what I will be saying here. And that post in turn is a response to Daniel Litt, who is in my opinion one of the wisest commentators on mathematics and AI. His views are expressed in a later post here, which I deliberately didn’t read until finishing this one, and then found, as I expected, that there was significant overlap. I would also like to take this opportunity to recommend an excellent post by Noah Smith entitled The End of the Age of Heroes, in case you haven’t read it.<br>I have been talking so far about individual mathematical understanding, but I suspect that what concerns most of the signatories is less that than the collective understanding that results at least in part from the human activity of problem solving. My guess is that they would argue, completely coherently, that even if collective understanding is the primary goal, if many individuals are primarily motivated by the wish to solve problems, that’s absolutely fine and contributes to that collective understanding.<br>With that interpretation, the issue becomes slightly different: is it more important that the collective understanding of the mathematical community should be as advanced as possible or that there should be answers to as many problems as possible? Or are those two aims valuable in different ways, so that there is no point in declaring one of them more important? Or are they so inextricably linked that it makes no sense to argue that one is more important than the other? And when we say “important”, for whom are we saying it is important: for mathematicians, or for society as a whole?<br>I find these hard questions, so I don’t want just to declare an answer to them. (Do you see what I did there?) Instead, I’d like to try to offer at least some argument for any conclusions I come to, even if they are tentative. So let’s compare two scenarios. In the first, which I think is the more likely actually to happen, models become publicly available that are better at solving problems than virtually all mathematicians. If there are a few residual mathematicians who can do things the models can’t, even they work far faster if they make heavy use of the models. Thanks to this, in a short time we get answers to many questions that we have deeply cared about, but the rate at which we receive these answers far exceeds the rate at which the mathematical community can absorb them. In particular, most of the answers are obtained with zero effort from human mathematicians — just prompts such as “Thank you — please continue”.<br>In the second scenario, there has been an international agreement, for entirely other reasons, to block the public release of models significantly more powerful than the ones we currently have, and the mathematicians within the tech companies agree to hold off from getting their internal models to solve major problems. Instead, they take guidance from the mathematical community, solving problems only when asked to do so by some suitably representative body that decides that the benefit of receiving a solution of a certain problem outweighs the benefits of humans struggling to solve it over a much longer timescale.<br>I’d like to consider what the difference would be between these two scenarios both for individual and collective understanding. I’ll begin with individual understanding.<br>One might argue that for individual understanding, not too much would change if we are suddenly flooded with large numbers of big new results. There is already far more mathematics out there than I have any hope of understanding (for example, despite being fascinated when Fermat’s Last Theorem was proved, I have made no attempt to understand the proof), and even among the parts that I do understand, the parts that I understand because I myself discovered them form a very small fraction, though a fraction that I understand more deeply than anything else (at least temporarily — after a while I forget things and lose quite a lot of the understanding I built up). However, one change, which seems positive, from the perspective of the building up of individual understanding, would be that we would have a much bigger choice of results that we could choose to study. Also, if we found ourselves stuck on some point, AI would be able to help us. The main likely negative change is that we would probably cease to exercise that part of our brains that we use when spending months or years struggling with a difficult research problem, which can be hugely helpful in developing understanding.<br>I say “likely” because in principle there would be nothing to stop us thinking about very hard problems without consulting LLMs, but in practice it seems unlikely that people would put in the same level of effort that they do now. The situation might a bit like what happened with satnavs, where one could always decide not to use them, to keep the part of the brain active that can look at a map, learn a route, and follow it, but in practice most people succumb to the temptation to use a satnav. (In fact, I myself do try to keep that part of my brain active, and was rather proud of finding my way somewhere recently when I had briefly looked up the route on my phone but then forgotten to bring the phone with me when I actually went there.) But even if all we were doing was reading AI output, I think that the problem-solving muscles in the brain wouldn’t atrophy completely. When students are reading maths papers, I strongly advise them (and I think this is pretty standard advice) to read “actively” rather than “passively”, doing things like trying to prove the result for yourself, looking at the paper only when you feel stuck and need a hint, and even then just trying to get the hint and as little extra as possible. If one reads a paper that way, then one is constantly solving problems, some just exercises and some quite a bit harder. It seems likely that an LLM could get to know what our mathematical background is and feed us with just the right hints to allow us to work our way through a mathematics paper in this active way. Yes, we would lose the particularly deep level of understanding and ownership that comes with having solved a hard problem oneself, but it isn’t clear to me that progress in mathematics would suffer as a result. I would be very interested to hear counterarguments to precisely this point. That is, I would be interested to know what use that level of deep involvement with a proof might have in a world where AI is much better than we are at finding proofs.<br>How about collective understanding? Let me quote a bit more of the letter.<br>Indeed, the mass production at faster and faster pace of “true/false” statements could destroy fertile ground instead of breathing life into new ideas.<br>Often these solutions are announced in a rush, leaving no time for a proper writeup, the isolation of new methods and ideas, and citing relevant previous work of others. As in all creative professions, this raises severe attribution and plagiarism questions. Moreover, without the willing mathematicians who must take care of their development and integration into the mathematical canon, AI-conceived ideas would never become fully alive and the crucial human transmission chain between mathematicians would be lost.<br>I’ll come back to questions about proper citation and focus on what I take as the core worry here: that if results are proved too quickly, then the digestion process will become impossible. I am definitely worried that results will not be properly digested, but for different reasons.<br>A first remark is that what AI is producing is not just true/false statements: we now know not just that the Navier-Stokes equation with smooth forcing admits finite-time blow-up, but we have a proof of that, which builds on a great deal of wonderful work done by human mathematicians. Many people used to express the worry that AI would solve our favourite problems with utterly opaque proofs, but that has not turned out to be the case, even if their write-ups often leave plenty to be desired. (Incidentally, I see these inadequate write-ups as almost certainly a temporary annoyance and therefore not as a fundamental threat to mathematical practice or future mathematical understanding.)<br>Secondly, even if the volume of new results is large, mathematics is a highly specialized discipline, so mathematicians can work in parallel. If, for example, we had to digest 1000 important results in a year that were roughly uniformly distributed across mathematics, then most sub-communities of mathematicians would probably want to understand around 30 of them, and for each individual problem there might well be only a small handful of specialists who would be obvious people to take the lead in reaching this understanding, with that handful varying from problem to problem. So it would be a big task, but not necessarily an impossible one.<br>In this context, it is worth thinking about the huge volume of output of human mathematicians, which seems to have been increasing recently, even before AI. While I have sometimes heard complaints about this, I have certainly not heard suggestions that human mathematicians should slow down the rate at which they prove interesting theorems. That may be partly because the authors of those theorems take the trouble to write their papers well and give good talks. But what about the large quantity of papers, including important ones, that are not written well and whose authors give incomprehensible talks? That can be annoying, but it is a familiar annoyance and not one that we think of as a crisis.<br>A third point is that even if the volume of AI output is too big for us to be able to digest it properly, that is not necessarily a bad thing. To draw an imperfect analogy, there is now more content available on streaming services than anyone could possibly watch, with the result that there is almost certainly some very good content out there that is hardly watched at all. But that isn’t obviously a worse situation than if there were far less content and all of it received the attention it deserved. Returning to mathematics, if there were too much AI-generated content for us to be able to digest it, then we could choose which parts of it we wanted to digest.<br>For that we would need to have some idea what was there (a situation a little similar to how human mathematicians typically learn quite a lot about what results are known in their area even when they do not understand their proofs in any detail). One way one could try to achieve that would be to create a well-designed database, probably with AI help. But perhaps that would be unnecessary, and instead one could simply talk to an LLM and ask it to give a bird’s-eye view of whatever area of mathematics one wanted to understand in that knowing-what’s-there way.<br>The fear seems to be that some very interesting and important parts of mathematics will be discovered by AI and then overlooked, when had they been discovered by human mathematicians they would not have been overlooked. And that may even be the case, but what matters is whether the amount of interesting and important mathematics discovered by AI that is not overlooked will exceed the amount of interesting and important mathematics that would have been discovered and properly digested by humans with AI having played a more modest role.<br>In short, it seems to me that while a flood of “big” AI results would be likely to increase the amount of important mathematics that was not properly digested, it would also be likely to increase the amount that was properly digested, which seems like a pretty good bargain.<br>Let me quickly discuss the problem of AI not properly crediting human mathematicians. I agree that this is a serious problem right now, but it is another problem that I see as temporary. Very soon, the whole “credit system” will surely collapse, since finding an amazing proof will be no more of an intellectual achievement than when a citizen scientist spots through their telescope an object that turns out to be a new comet. Until that happens, it is important to give humans the credit they deserve, since careers can depend on it, but that will soon cease to be the case as well. I have to say that I’m puzzled that this problem exists, since I would have thought that if you asked an LLM to look at a proof and tell you which ideas in it are close to ideas that are in the literature already, it would be extremely good at that task. I hope the answer to this conundrum is not that people have been in such a hurry that they have simply not taken the trouble to do this, but I fear that it might be, at least in some cases. If so, then those who have been careless deserve to be criticized, but it is a minor matter compared with the survival of mathematics, especially if the lack of citations is swiftly put right.<br>Does all this mean that I am optimistic that mathematicians will end up digesting at least as much mathematics in a post-AI world as it would have if AI had not been able to prove major theorems? Not exactly. But my worry is not that we would be unable to do it, but rather that the social structures that currently support this digestion process will be destroyed and not adequately replaced.<br>One way that might happen is that AI disrupts society so much, or even kills vast numbers of us, that the preservation of something like the current mathematical tradition ceases to be of any concern: all that will matter is the survival of the human race. But that again is a topic for a different blog post (which in fact I am in the middle of writing).<br>Let’s assume instead that we get lucky and that AI remains more or less under control. My worry then is that we do not manage to transmit what we know to a new generation of mathematicians. Speaking for myself, my main motivation for becoming a mathematician was the dream that I would solve unsolved problems — the more famous the better. I have also always greatly preferred directly thinking about a problem to reading books and papers and generally learning the mathematics of other people. (I’m not saying that’s good, but just stating a fact about myself.) If the dream of solving a famous problem had not existed, I’m not sure whether I would have become a mathematician. I don’t completely rule it out: maybe what really motivated me was that I had an aptitude for the subject and that solving problems was a way of getting respect from a small group of peers. And maybe I could have tried to gain that respect in a different way, such as thinking very hard about an area of mathematics until I was able to demonstrate to others just how well I understood it. But I’m not sure how motivating that would have been for me. I very much hope that there is a pool of young people for whom it will be a powerful motivation, because I think the survival of a human mathematical tradition may well depend on it.<br>Thus, the primary risk, as I see it, is that a lot of people who would have done a PhD in mathematics and gone on to become custodians of the mathematical tradition will no longer wish to do so. Those of us who have PhD students, including me, need to try as hard as we can to come up with imaginative ways for them to use their time productively (in consultation with the students themselves, obviously). Whether or not we do a good job with that could make a huge difference to the future of mathematics. A related risk is that the perception among policy-makers will be that mathematicians are no longer needed and that funding will become much harder to come by: we urgently need to come up with good ways of explaining the value of having a large pool of human mathematical experts, even if it is no longer part of their role to find new proofs of theorems.<br>A final reason that I didn’t sign the letter is that I wasn’t really sure what it was demanding that isn’t happening already. It seems likely that in a matter of not very many months LLMs will be released that are able to solve major mathematical problems, and they will presumably have no trouble at all with more run-of-the-mill problems. However much we might regret that, there is no chance that the impact of such models on mathematics will persuade AI companies to stop their release, though perhaps concerns about safety will lead to some delay and give us a bit more time to work out how to adapt. Assuming that they are released, there will be a flood of new results, whether we like it or not, and it will no longer be the AI companies producing them, though perhaps the pattern will continue that the AI companies will have access to more powerful models and so will obtain more than their fair share of headline results. So I felt that there was nothing to be gained from criticizing AI companies for generating too many solutions too quickly. In fact, it may well be that all that does is bring forward by a couple of months what was going to happen anyway, and perhaps it will even allow the results to be released in a more controlled way than they would have been if they had been discovered by random people once the models were publicly available. Under the circumstances, I think the best we can do is recognise the changes that are coming and try to work out the least unsatisfactory way of dealing with them.<br>Tags: ai, artificial-intelligence, math, mathematics, technology</div>
+</div>
+
+</div>
+
+</body>
+</html>
