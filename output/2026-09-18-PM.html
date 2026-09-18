@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-18 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-18 PM · Generated 2026-09-18 17:37 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: age-of-product.com, attar.dev, bbc.com, developer.nvidia.com, fex-emu.com, github.com, news.ycombinator.com, snapdrop.me</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Nvidia announces native GPU programming in Rust
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    944 points ·
+    395 comments ·
+    nonmaskable
+  </div>
+
+  <div class="meta">
+    developer.nvidia.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #47
+  </div>
+
+  <div class="links">
+    <a href="https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49724881">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In September 2026, NVIDIA announced it is leaning into native GPU programming in Rust. CUDA C++ and CUDA Python are mature, enterprise-grade toolchains, and NVIDIA will be growing and maturing CUDA Rust into 2027 and beyond<br>The systems layer of AI spans inference engines, serving infrastructure, drivers, and agent runtimes, and it churns constantly as models and techniques change. More and more of it is written in Rust, which catches whole classes of bugs at compile time without giving up performance.<br>NVIDIA is part of that shift for the same reason. The Nova Linux driver is written in Rust. NVIDIA Dynamo is built on a Rust core. NVTX has Rust bindings.<br>The GPU kernel is the exception. You can launch kernels from Rust, but the kernel itself often has to be written in another language.<br>NVIDIA CUDA Rust closes that gap. GPU kernels can be written in Rust, compiled natively to PTX, rather than a wrapper around code from somewhere else.<br>There are two tracks to use Rust, matching the two tracks CUDA itself has. SIMT is the model you already write in CUDA C++ or numba-cuda. You indicate what one thread does, and launch thousands of them. Tile is a newer programming model, which is also available in C++ and Python. All of these frontends let you say what one tile of data does, and the Tile IR compiler does the rest.<br>When you are picking one to build on, reach for Tile first. The compiler decides how tiles map onto each architecture, so your source doesn’t encode architecture-specific choices, and you drop to SIMT when you need that control or want to manage memory and threads yourself.<br>Which language you reach for is a separate question from which model. Use the CUDA exposure that best fits the stack you already have. The two projects below are for when that stack is Rust. We plan to support inter-language interop, so the choice does not lock you out of the others.<br>Below is the same kernel on each track, which performs elementwise addition over 1,024 floats. Both are complete programs, both run, and both print the same line, so you can read them side by side and see what changes.<br>cuda-oxide is a custom rustc codegen backend. It intercepts compilation, routes #[kernel] functions through Rust MIR, the community Pliron IR framework, and LLVM IR down to PTX, and hands everything else to the standard backend. The GPU dialects on top of Pliron are ours. The dialects and every transform stay in Rust until the standard LLVM backend takes over.<br>You will need Linux, a GPU with compute capability 8.0 or later, a CUDA toolkit (12.x or newer), clang with its libclang headers, and the pinned nightly toolchain. cargo oxide doctor checks all of it, including the optional system LLVM. Install cargo-oxide, the Cargo subcommand that drives the build:<br>cargo +nightly-2026-04-03 install --git https://github.com/NVlabs/cuda-oxide.git cargo-oxide<br>Then scaffold a project and run it. The template is a complete vector addition program:<br>cargo oxide new vecadd_demo<br>cd vecadd_demo<br>cargo oxide doctor<br>cargo oxide run<br>The first cargo oxide run builds the codegen backend, so expect it to take a while. Later runs reuse the cache.<br>It prints PASSED: all 1024 elements correct. This is the whole program that did it, exactly what cargo oxide new wrote, with comments added here:<br>use cuda_device::{kernel, launch_bounds, launch_contract, thread, DisjointSlice};<br>use cuda_host::cuda_module;<br>use cuda_core::{CudaContext, DeviceBuffer, LaunchConfig1D};</div>
+<div class="para">// === DEVICE CODE - everything in here is compiled to PTX ===<br>// The macro also generates the host-side API used further down:<br>// `load`, `prepare_vecadd`, and the safe `vecadd` launch method.<br>#[cuda_module]<br>mod kernels {<br>use super::*;</div>
+<div class="para">#[kernel] // GPU entry point<br>#[launch_bounds(256)] // max threads per block; lets the compiler budget registers<br>#[launch_contract(domain = 1, block = (256, 1, 1))] // indexes in 1-D, 256-thread blocks<br>pub fn vecadd(a: &amp;[f32], b: &amp;[f32], mut c: DisjointSlice&lt;f32&gt;) {<br>let idx = thread::index_1d();<br>let idx_raw = idx.get(); // the plain usize, for reading the inputs<br>if let Some(c_elem) = c.get_mut(idx) {<br>*c_elem = a[idx_raw] + b[idx_raw];<br>}<br>}<br>}</div>
+<div class="para">fn main() -&gt; Result&lt;(), Box&lt;dyn std::error::Error&gt;&gt; {<br>// === HOST SETUP - device, stream, and buffers ===<br>let ctx = CudaContext::new(0)?;<br>let stream = ctx.default_stream();</div>
+<div class="para">const N: usize = 1024;<br>let a_host: Vec&lt;f32&gt; = (0..N).map(|i| i as f32).collect();<br>let b_host: Vec&lt;f32&gt; = (0..N).map(|i| (i * 2) as f32).collect();</div>
+<div class="para">let a_dev = DeviceBuffer::from_host(&amp;stream, &amp;a_host)?;<br>let b_dev = DeviceBuffer::from_host(&amp;stream, &amp;b_host)?;<br>let mut c_dev = DeviceBuffer::&lt;f32&gt;::zeroed(&amp;stream, N)?;</div>
+<div class="para">// === LOAD, PREPARE, LAUNCH ===<br>// SAFETY: this package owns the embedded device bundle produced for the<br>// kernels module above.<br>let module = unsafe { kernels::load(&amp;ctx)? };</div>
+<div class="para">// 4 blocks of 256 threads, 0 bytes of dynamic shared memory. `prepare_vecadd`<br>// checks that against the contract above and against the live device limits.<br>// The safe `vecadd` below takes that token where a raw config would go.<br>let prepared = module.prepare_vecadd(LaunchConfig1D::new((N as u32).div_ceil(256), 256, 0))?;<br>module.vecadd(&amp;stream, &amp;prepared, &amp;a_dev, &amp;b_dev, &amp;mut c_dev)?;</div>
+<div class="para">// === READ BACK AND VERIFY ===<br>// Copies down and synchronizes, so the launch has finished by the time<br>// `c_host` can be read.<br>let c_host = c_dev.to_host_vec(&amp;stream)?;<br>let errors = (0..N)<br>.filter(|&amp;i| (c_host[i] - (a_host[i] + b_host[i])).abs() &gt; 1e-5)<br>.count();</div>
+<div class="para">if errors == 0 {<br>println!(&quot;PASSED: all {} elements correct&quot;, N);<br>} else {<br>eprintln!(&quot;FAILED: {} errors&quot;, errors);<br>std::process::exit(1);<br>}<br>Ok(())<br>}<br>Host and device code live in one file, build with one command, and need no separate kernel crate.<br>Read the kernel signature first, because it carries the whole safety argument. a and b are ordinary shared slices, readable by every thread. c is a DisjointSlice&lt;f32&gt;, a type that hands each thread exclusive access to its own element and nothing else. It exists because &amp;mut [f32] is the wrong shape for the job. Every thread would need the same &amp;mut, which Rust correctly refuses. DisjointSlice splits that one mutable borrow into per-thread pieces.<br>thread::index_1d() returns an index type, not a bare integer, and c.get_mut(idx) only accepts that type. You get back an Option, so the out-of-bounds case is a branch you handle rather than a memory error you find later.<br>The launch is checked rather than trusted. #[launch_contract] declares that this kernel indexes in one dimension with 256-thread blocks. prepare_vecadd validates your LaunchConfig1D against that declaration and the live device limits, and hands back a proof that the safe vecadd method requires. Kernels without a contract expose only raw unsafe launch methods, because a bare LaunchConfig says nothing about the kernel it is launching.<br>cutile-rs works one level higher. You perform computations on tiles rather than scalars. Each tile block runs the kernel body once as a single logical thread over one sub-tensor of data, and the compiler decides how many real GPU threads back it. The #[cutile::module] macro embeds the kernel’s AST in the host binary and JIT-compiles it through CUDA Tile IR (the NVIDIA tile-level compiler IR) when the kernel is first needed.<br>Requirements are lighter than the SIMT track. You need a GPU with compute capability 8.0 or later, CUDA 13.3, stable Rust 1.89 or newer, and Linux, but no nightly toolchain and no LLVM of your own.<br>cutile is published, so there is nothing to clone:<br>cargo new vecadd_demo<br>cd vecadd_demo<br>cargo add cutile<br>Here is the same elementwise addition, written for tiles. Paste it into src/main.rs and cargo run:<br>use cutile::prelude::*;</div>
+<div class="para">// The macro captures this module&#x27;s AST into the host binary. The kernel is<br>// JIT-compiled through CUDA Tile IR the first time it is actually launched.<br>#[cutile::module]<br>mod kernel {<br>use cutile::core::*;</div>
+<div class="para">#[cutile::entry()]<br>fn add&lt;const B: i32&gt;(<br>// B is the tile width, a static dimension. A different B produces a<br>// different specialization.<br>z: &amp;mut Tensor&lt;f32, { [B] }&gt;, // exclusive output, one sub-tensor of B elements<br>x: &amp;Tensor&lt;f32, { [-1] }&gt;,    // shared input; -1 is a dynamic dimension, resolved at launch<br>y: &amp;Tensor&lt;f32, { [-1] }&gt;,<br>) {<br>// This body runs once per mut sub-tensor, as a single logical thread.<br>// Tile kernels load tiles, not scalars, from x and y.<br>let tx = load_tile_like(x, z); // the slice of x lining up with this sub-tensor of z<br>let ty = load_tile_like(y, z);<br>z.store(tx + ty); // elementwise across the whole tile<br>}<br>}</div>
+<div class="para">fn main() -&gt; Result&lt;(), Error&gt; {<br>let device = Device::new(0)?;<br>let stream = device.new_stream()?;</div>
+<div class="para">// These are lazy. Nothing has touched the GPU yet.<br>let x = api::ones::&lt;f32&gt;(&amp;[1024]);<br>let y = api::ones::&lt;f32&gt;(&amp;[1024]);</div>
+<div class="para">// Partitioning does three things at once: gives each tile exclusive<br>// ownership of its own 128-element chunk, fixes the grid at 1024/128 = 8<br>// tiles, and supplies B.<br>let z = api::zeros::&lt;f32&gt;(&amp;[1024]).partition([128]);</div>
+<div class="para">let c: Vec&lt;f32&gt; = kernel::add(z, x, y) // takes ownership of all three tensors<br>.first()                           // ...and returns them; pick the output back out<br>.unpartition()                     // drop the host-side partition wrapper; no data moves<br>.to_host_vec()                     // record the copy back<br>.sync_on(&amp;stream)?;                // and only now does any of it run</div>
+<div class="para">let errors = c.iter().filter(|&amp;&amp;v| (v - 2.0).abs() &gt; 1e-5).count();<br>if errors == 0 {<br>println!(&quot;PASSED: all {} elements correct&quot;, c.len());<br>} else {<br>eprintln!(&quot;FAILED: {errors} errors&quot;);<br>}<br>Ok(())<br>}<br>PASSED: all 1024 elements correct<br>The Tile track reaches the same answer on stable Rust, and its signature makes the same safety argument. There is no DisjointSlice this time. Partitioning on the host is only needed for mutable tensors, and it hands each tile block one writable sub-tensor that no other tile block can overlap. That exclusivity is what &amp;mut already guarantees.<br>The -1 in the input shapes is a sentinel rather than a size. That dimension is read off the tensor at launch, so the shape can vary without recompiling.<br>The interesting line on the host is .partition([128]), and it is doing three jobs at once. It makes the exclusivity real. Each tile owns its 128-element chunk and no other tile can touch it. It fixes the launch geometry, since 1,024 divided by 128 is a grid of 8 tiles.<br>The grid follows from the partition instead of being computed separately and checked against the kernel’s indexing. It also supplies B, which is never written at the call site because the launcher reads the tile width off the partition. That is why a &amp;mut output has to be partitioned before it can be passed at all.<br>Then look at what the launch returns. The add you call on the host is a macro-generated launcher, not the device function above. It takes ownership of all three tensors and hands them back as a tuple when the GPU is done. That is what .first() is for, picking the output back out of it.<br>Nothing runs until .sync_on(&amp;stream). Everything before it is a lazy description, recorded rather than submitted. That includes the ones, the zeros, the kernel call, and even the copy back to the host. The whole program is one chain with a single synchronization point.<br>Both kernels make the same claim about memory. Their inputs are shared, and their output belongs to one writer alone. They differ only in the level at which they make it, and in whether a purpose-built type is needed to make it at all.<br>That matters because thousands of threads reach the same buffers in no guaranteed order. When two of them hit the same address and one is writing, the ordering decides the result. Those bugs rarely reproduce on demand, and they pass tests before failing in production.<br>Passing the SIMT kernel’s output buffer as one of its own inputs does not compile, whether or not that kernel would actually race:<br>module.vecadd(&amp;stream, &amp;prepared, &amp;c_dev, &amp;b_dev, &amp;mut c_dev)?;<br>error[E0502]: cannot borrow `c_dev` as mutable because it is also borrowed as immutable<br>The same aliasing on the Tile side does not compile either:<br>let z = api::zeros::&lt;f32&gt;(&amp;[1024]);<br>kernel::add(z.partition([128]), z, y)<br>error[E0382]: use of moved value: `z`<br>Both examples catch the classic aliasing mistake at compile time, and they draw the line in different places. cuda-oxide checks each launch call. cutile-rs’s ownership follows the tensors across the launch boundary, which is the stronger of the two claims.<br>Tile gives you no shared memory or thread indexing to get wrong, because the compiler owns both. A tile block is a single logical thread, so there are no threads for you to race. That is what makes it safe by construction, and it is also what you trade away. SIMT keeps that control, and today shared memory there requires unsafe. Shared memory is the bedrock of fast SIMT kernels, so making that path safe is active work.<br>Both projects are early-stage and neither is production-ready. cuda-oxide is early alpha. cutile-rs is further along, published on crates.io and already used outside NVIDIA in HuggingFace’s Grout inference engine and in mistral.rs. Coverage is incomplete and APIs will move. Where you find rough edges, we want to hear about them.<br>Cargo and crates set an expectation that getting started is easy. GPU programming has historically been the opposite, and closing that distance is part of the work. The SIMT track still needs a pinned nightly toolchain, which is exactly the kind of thing we would like to stop asking you for.<br>Rust on GPUs is not new. There is good work in this space that predates ours and continues alongside it. The ecosystem appendix in the cuda-oxide book maps where we sit relative to Rust-GPU, rust-cuda, CubeCL, and the rest, and we have been working with the rust-cuda maintainers as both projects mature.<br>What is new is the engineering we are putting behind it, and a clear sense of where it is going.<br>- Run the SIMT example. cargo oxide new , thencargo oxide run , in cuda-oxide.<br>- Run the Tile example. Clone cutile-rs, then cargo run -p cutile-examples --example hello_world .<br>- Read the docs. The cuda-oxide book and the cuTile Rust documentation.<br>- Read the paper. Fearless Concurrency on the GPU.<br>- File issues. Tell us what broke and what was missing, on cuda-oxide or cutile-rs.<br>- Join the conversation. GitHub Discussions on both repos, or the cuda-oxide Discord.<br>- Come to the talk. Melih Elibol is presenting “Fearless Concurrency on the GPU” at RustConf 2026, Sept. 8 to 11 in Montréal. NVIDIA will have other staff attending too, so come find us if you’re there!<br>Tinker with what is here and come work on it with us. It is early, it is open, and what you build now will shape what comes next.<br>NVIDIA is excited to be leaning in with the Rust community as we elevate native Rust GPU programming. Projects like rust-cuda, rust-gpu, and cudarc pioneered the marriage of GPUs and Rust, and the people behind them, including the team at VectorWare, continue to shape how we think about our own work as we build with the Rust community.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Jemalloc 5.4.0
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    133 points ·
+    36 comments ·
+    gkfasdfasdf
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #58
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/jemalloc/jemalloc/releases/tag/5.4.0">Original article</a> · <a href="https://news.ycombinator.com/item?id=49750152">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">This release contains over 160 commits, focusing on the technical debts<br>cleaning including refactorings, bug fixes, test coverage improvement, and<br>option cleanups.  The release also includes portability improvements per<br>upstream issues report.<br>New features:<br>- Add EXTENT_ALLOC_FLAG_PINNED so custom extent-allocation hooks can<br>mark non-reclaimable mappings, such as HugeTLB pages, for preferential<br>reuse outside the decay and purge pipeline. Add the mallctl interfaces<br>stats.pinned ,stats.arenas.&lt;i&gt;.pinned ,<br>stats.arenas.&lt;i&gt;.extents.&lt;j&gt;.npinned ,<br>stats.arenas.&lt;i&gt;.extents.&lt;j&gt;.pinned_bytes , and<br>stats.arenas.&lt;i&gt;.mutexes.extents_pinned.{counter} to report<br>pinned-memory usage and mutex statistics. (@binliu19: be2de8c)<br>- Allow resuming per-CPU arena selection via thread.arena .<br>(@Algunenano: 68c35f6)<br>- Better align the contents of human-readable and JSON malloc statistics.<br>(@spredolac: 68fe1be, 30b1a41, 04aad97)<br>- Replace the runtime experimental_infallible_new option with the<br>compile-time--enable-cxx-infallible-new option, enabling<br>compiler-level optimizations and optimization in move constructors,<br>and fix thenew(std::nothrow) contract (@spredolac: 160ab9d, fe33667)<br>Incompatible changes:<br>- Adapt tcache fill and retention targets per bin to demand observed<br>between GC events, replacing the fixed refill/flush policy. Remove<br>seven legacy non-experimental controls:lg_tcache_nslots_mul ,<br>tcache_nslots_small_min ,tcache_nslots_small_max ,<br>tcache_nslots_large ,tcache_gc_delay_bytes ,<br>lg_tcache_flush_small_div , andlg_tcache_flush_large_div .<br>Correspondingmalloc_conf settings are silently ignored, matching<br>opt.* mallctls return ENOENT, andtcache_ncached_max remains<br>supported. (@spredolac: d13fe91)<br>Bug fixes:<br>- Preserve errno acrossfree ,free_sized , andfree_aligned_sized ,<br>and acrossprocess_madvise -based page purging.  (@spredolac: 3a77966,<br>86f0582)<br>- Fix numeric overflow checks in size classes. (@spredolac: 6b24522)<br>- Accept NULL in free_sized() andfree_aligned_sized() (C23<br>correctness). (@bigbruno: 7ce8b91)<br>- Fix TSD lifecycle edge cases by 1) initializing thread-cache bins before<br>marking the cache enabled, preventing reentrant bootstrap allocations<br>from using uninitialized state, and 2) avoiding TSD recreation for late<br>deallocations after thread teardown on generic-TSD platforms.<br>(@fzakaria: 54f22c8, @spredolac: fb5499a)<br>- Use O_CLOEXEC when opening the THP sysfs file ininit_thp_state .<br>(@ibookstein: d070554)<br>- Fix duplicate opt.stats_print andopt.stats_print_opts fields in<br>malloc_stats_print output.  (@spredolac: dfe3a2e)<br>- Fix a potential deadlock during arena_reset .  (@guangli-dai: 6957341)<br>- Fix a prof-sampling / guard-page interaction bug in the SAN.  (@gctony:<br>e36a0fa)<br>Optimizations and refactors:<br>- Modularize jemalloc&#x27;s front end by extracting arena management,<br>initialization, fork orchestration, and allocation dispatch from<br>jemalloc.c ; untangle tcache/arena ownership; and consolidate the<br>internal header graph to eliminate circular dependencies. (@spredolac:<br>ba1e2fe, 8874597, 9d75722, de9ad14, ...)<br>- Simplify ctl dispatch by refactoring arena helpers, internalizing an<br>implementation-only control, replacing control-flow macros with typed<br>helpers, and organizingctl.c by subsystem.  (@spredolac: 9e14346,<br>901365d, 4e903a0, 5bc8d6e)<br>- Cap the base-block growth heuristic to avoid virtual-memory exhaustion<br>under rare racy conditions. (@guangli-dai: 2f4db8c)<br>- Move background-thread lifecycle and state operations into the<br>background-thread module, clarifying ownership independently of PAC/HPA<br>callers. (@guangli-dai: f1f0792)<br>- Simplify the page-allocation boundary by replacing PAI vtable dispatch<br>with direct PAC/HPA calls, removing the obsoletepai_t /pai.h<br>abstraction, and moving deferred-work and decay orchestration out of the<br>arena. (@guangli-dai: 1dfa6f7, 8edd101, d410f43)<br>- Refactor statistics collection and rendering into separate<br>gather/emission stages and descriptor-driven tables. (@spredolac:<br>184f304, 80c8fcb)<br>- Introduce an OS abstraction layer and move platform-dependent<br>file/process I/O, time, synchronization, CPU, virtual-memory, atfork,<br>error-handling, profiling, thread-yield, and configuration-access<br>operations out of allocator core code. (@guangli-dai: c4158ac,<br>c8e2e01, ...)<br>Portability improvements:<br>- Replace the std::__throw_bad_alloc call with standard C++ (#2900).<br>(@lexprfuncall: 1a15fe3)<br>- Make arena_s use a flexible array member (bin_t all_bins[] ) for C99<br>or newer. (@grueninger: 300b58b)<br>- Fix rdtscp detection with --with-lg-vaddr .  (@xinydev: e8a0d2b)<br>- Fix malloc_getcpu on macOS to read the current CPU number correctly.<br>(@Algunenano: 5aabbc8)<br>- Use CLOCK_MONOTONIC for background-thread sleep to prevent<br>clock-rollback stalls, and detect monotonic-condvar support at configure<br>time. (@antonio2368: ebacec3, 8361239)<br>- Fix compilation warnings on macOS. (@gctony: abb0a8a)<br>- Fix thread-exit TSD cleanup on MinGW builds. (@gctony: 1e92317)<br>- Fix GCC 16 build warnings by removing -Wpedantic violations in macro<br>and function syntax and explicitly NUL-terminating profiling thread-name<br>copies to resolve-Wstringop-truncation .  (@grueninger: 5acdcee,<br>c22d929, @jasonangelov: 6a245e0)<br>- Parse PID-namespace symlinks without glibc-dependent strtok /atol ,<br>and return identifiers asuint64_t .  (@guangli-dai: 278d90a)</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: Attar – Compile React apps to native machine code
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    0 comments ·
+    ifdotpy
+  </div>
+
+  <div class="meta">
+    attar.dev
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · New #29
+  </div>
+
+  <div class="links">
+    <a href="https://attar.dev/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49751702">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">brew install occam-tech/attar/attar<br>attar init my-app --template tsx<br>attar build my-app<br>macOS 15 or newer on Apple silicon, with Xcode Command Line<br>Tools. Builds a signed .app.</div>
+<div class="para">Your code and supported dependencies compile together. The linker keeps the engine code they need.<br>The result opens in its own native window. Blink, Chrome’s rendering engine, draws your HTML and CSS.<br>The app runs compiled code, with no Electron or Node.js runtime.<br>The aim: keep familiar web development while reducing the runtime your users need to download and run.<br>The SDK already compiles stateful React interfaces, generated stylesheets and selected UI components. Each link below shows the supported APIs and their limits.<br>Functions, classes, closures, modules and async code, compiled before the app runs. Executable dependencies resolve at build time.<br>JS · TS · TSX<br>Components, hooks, refs, controlled inputs and keyed updates. React updates the interface through a native host connected to Blink.<br>React 19<br>Static stylesheets, compiled Tailwind utilities, React style values, bundled fonts and SVG. Blink provides layout and paint.<br>CSS · Tailwind 4<br>The source example compiles 15 unchanged shadcn/ui component families from the pinned Radix / New York v4 set.<br>Radix · shadcn/ui<br>A C ABI connects the UI engine to native programs. Explore the Rust and C host adapters and their client-SDK requirements.<br>C ABI · Rust<br>Support is scoped to the listed APIs and component variants. The compatibility guide distinguishes working subsets, unavailable features and unverified behavior. React is the current framework adapter; more frameworks will follow.<br>We compared the Etcher USB-flashing app on Electron with an Attar research build on the same Mac. That build came from our experimental Electron compatibility work. Attar Electron is planned and is outside this SDK release.<br>| Measured Electron and Attar Etcher resource use |  |  |<br>|---|---|---|<br>| Measurement | Electron | Attar |<br>|---|---|---|<br>| Application on disk MiB | 375.1 | 73.3 |<br>| Memory at idle MB, all processes | 293.9 | 91.8 |<br>| First window ms, median of 5 launches | 1,081 | 469 |<br>| Processes at idle | 5 | 1 |<br>| Threads at idle | 383 | 13 |<br>| CPU at idle % of one core | 2.99 | 2.06 |<br>Etcher built by Attar was driven through the same five recorded journeys as the Electron original: file selection, source URL, settings, valid logos and malformed logos.<br>Sixteen screen comparisons recorded a remaining red-channel rounding difference of one code value. These checks cover those journeys; they do not establish complete Electron compatibility.<br>These earlier research results describe one app and one machine. Read the roadmap ↗<br>Attar compiles React’s rendering logic together with your application. A native host connects React’s updates to Blink, the same engine that gives Chrome its HTML and CSS behavior.<br>That is how familiar components and styles can become a desktop interface. The compiled JavaScript runtime still handles objects and memory; the UI engine still handles layout, text and input.<br>We are two cofounders working with AI across the compiler, engine and native tooling. Explore the work behind the SDK, or read how its C interface connects to Rust and other native code.<br>The current SDK builds standalone apps. Attar Electron, the planned Electron and Node API compatibility layer, is a separate project and is not included. The Etcher measurements above come from that research work. Read the roadmap.<br>Your JavaScript is compiled into native code before the app starts. HTML and CSS render through Blink in a native window. The interface keeps web rendering behavior; it is not converted into AppKit or Windows widgets. JavaScript runtime services, including memory management, still exist. How the engine works.<br>It depends on the libraries and APIs they use. React 19, static CSS, compiled Tailwind utilities and selected shadcn components have a supported scope. Executable dependencies must be known at build time; runtime code loading and eval are unsupported.<br>The standalone SDK also lacks some common browser APIs, including networking, storage and the Clipboard API. Check compatibility before planning a port.<br>Check libraries and APIs ↗<br>Use macOS 15 or newer on Apple silicon for the standalone React workflow. Linux x86_64 compiler packages are available, but equivalent React and shadcn coverage is not verified. This release has no supported Windows package. See the release scope.<br>No. You can use the SDK directly. When you do write code with an agent, we recommend our published Attar skill for project setup, supported APIs and build instructions. The compiled application does not require an AI service.<br>Early access / SDK<br>Install the SDK, create the included TSX starter and build it. Start on macOS for the standalone React workflow. Source examples show the project files and where to find the built application.<br>Recommended / Agent workflow<br>We recommend installing the Attar skill first. It provides the project layout, accepted APIs, compiler diagnostics and the build-and-verify loop for a standalone app.<br>Read the skill and install it ↗curl -fsSL https://attar.dev/install.sh -o install.sh<br>sh install.sh<br>export PATH=&quot;$HOME/.local/bin:$PATH&quot;<br>attar init my-app --template tsx<br>attar build my-app<br>glibc 2.39 or newer, with Python 3.11, gpg and binutils. Ubuntu and Debian can use the signed apt repository instead. The standalone React / shadcn path is not yet verified on Linux. Check Linux scope.<br>Every package is signed. The installer pins the release key and checks the archive against the signed index. Releases and checksums ↗<br>Leave your email. We’ll send one message when the next release is ready.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: How to recover Google auth after phone stolen?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    102 points ·
+    106 comments ·
+    keymasta
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49742976">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">As we know, google has been effective at automating a lot of their systems, to the point where it can feel like there isn&#x27;t any help available from a human. So what is supposed to be the plan when this type of situation happens?<br>Basically I have a situation that after my phone was stolen, I can&#x27;t get into any of my accounts that are either connected to google, or connected to the phone via 2FA. This has made it complicated/impossible not only to get info about my phone, but also my banking, email, drive, etc.<br>Of course they offer you &quot;multiple options&quot; to recover an account, but not if you forgot your old email&#x27;s password. At that point the options you get are,</div>
+<div class="para">a) Use old phone (obviously the phone is long gone)<br>b) Use current phone (the phone is gone)<br>c) Use old email (I haven&#x27;t used it in like 12 years)</div>
+<div class="para">Does anyone know if their is a process to appeal 2FA or anything to deal with this type of situation?<br>I&#x27;d imagine that this has happened to people many many times, and given how phones and particularly, google auth have become so critical to accomplishing essential tasks within society, there must be some way. Or maybe it&#x27;s just like, once your phone is gone, you are completely over with society? If anyone has any experience with this or inside knowledge please share it!<br>I&#x27;m sure people here have heard of this, and maybe experienced it themselves.<br>Is there a secret option that exists that allows us to use passwords instead of rigamarole? I would love an account that let me simply log in with a password, like google used to be.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Show HN: Shellroute – give each shell its own proxy IP
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    civilis
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/shellroute/shellroute-cli">Original article</a> · <a href="https://news.ycombinator.com/item?id=49751994">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Every terminal can be somewhere else. Open a proxied shell or route one command, then run your terminal workflow normally. Learn more at shellroute.com.<br>npm install -g shellroute<br>Or via Homebrew:<br>brew install shellroute/tap/shellroute<br>Or via Go:<br>go install github.com/shellroute/shellroute-cli/cmd/shellroute@latest<br>Or download binaries from GitHub Releases.<br>Supports macOS and Linux.<br># Log in. A new account is created automatically.<br>shellroute login<br># Shellroute opens after login. Run these inside it:<br>/connect US<br>curl https://ipinfo.io/jsonshellroute run DE -- curl https://ipinfo.io/json<br>| Command | Description |<br>|---|---|<br>| shellroute login | Log in with email OTP |<br>| shellroute logout | Remove stored credentials |<br>| shellroute reveal-key | Print stored API key |<br>| Command | Description |<br>|---|---|<br>| shellroute | Interactive shell with /connect ,/rotate ,/disconnect |<br>| shellroute run &lt;country&gt; -- &lt;cmd&gt; | Run one command through the proxy |<br>| shellroute proxy --country &lt;code&gt; | Persistent proxy (blocks until Ctrl+C) |<br>| shellroute proxy stop | Stop running proxy sessions |<br>For tools configured with an explicit proxy URL:<br>shellroute proxy --country US<br># In another terminal<br>curl -x http://127.0.0.1:41900 https://ipinfo.io/ip<br>| Command | Description |<br>|---|---|<br>| shellroute status | Active sessions |<br>| shellroute balance | Credit balance and rates |<br>| shellroute countries | Available countries |<br>| shellroute cities &lt;country&gt; | Cities in a country |<br>All info commands support --format json.<br>git clone https://github.com/shellroute/shellroute-cli.git<br>cd shellroute-cli<br>./scripts/rebuild-cli.sh<br>./shellroute version<br>Run all checks (lint, tests, audit, cross-compile): ./scripts/run-tests.sh. Requires Go 1.22+.<br>Your terminal -&gt; shellroute CLI (local proxy) -&gt; shellroute API -&gt; Gateway -&gt; Exit IP -&gt; Internet<br>Shellroute implements each active route as a local HTTP proxy and provides standard proxy environment variables to the shell or child process. Clients that use those variables send requests through the selected proxy. Each session remains independent, while shellroute manages credentials, rotation, usage, and cleanup.<br>The shellroute CLI is open source and connects to the shellroute service. The service uses prepaid credits. See pricing and the acceptable use policy.<br>- Config stored in ~/.shellroute/config.toml (mode 600)<br>- API key generated locally, only the hash is sent to the server<br>- No analytics or telemetry collected<br>- Health probe sends a CONNECT to httpbin.org:443 through the proxy to verify upstream connectivity<br>See CONTRIBUTING.md.<br>Apache 2.0. See LICENSE.<br>&quot;shellroute&quot; is a trademark. This license covers the code, not the brand. See NOTICE.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    The scourge of x86 emulation
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    133 points ·
+    20 comments ·
+    dagmx
+  </div>
+
+  <div class="meta">
+    fex-emu.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #59
+  </div>
+
+  <div class="links">
+    <a href="https://fex-emu.com/Scourge-of-emulation/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49750094">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The scourge of x86 emulation<br>Welcome to the first feature article on our site. We’re going to cover an ongoing problem with x86 emulation that affects every application that we emulate. This comes down to a single over-arching term that has wide-reaching ramifications; Emulating the x86 Total Store Ordering memory model (x86-TSO).<br>The problems with emulating this memory model on the weak ordering memory model that ARM defines is multi-faceted and covers multiple issues. We’re going to go over all the problems that we can encounter and the ways we solve (or in some cases can’t solve) in this article. Get yourself a snack and a warm drink to enjoy, this is going to be a long one.<br>What exactly is x86-TSO?<br>Before diving in to how we work around the x86 memory model problem, we need to first discuss exactly what it is. A memory model is a set of rules for how memory accesses in a system behave in relation to each other. The rules will dictate how loads and stores interact in a single-threaded or a multi-threaded environment. There’s a handful of popular memory memory models implemented in various forms of hardware, but the two we care about today is ARM’s relaxed (or weak) consistency model, and the x86 variant of Total-Store-Ordering consistency model. These two models are basically the two extremes of the spectrum; where ARM is the most relaxed, allowing significant hardware optimizations; and x86 is the most strict, enforcing a very strong coherency model that doesn’t allow a lot of room for optimization. One thing to be careful about when discussing memory models is the difference between consistency and atomicity. While these are related, they are not the same nor guaranteed in all cases.<br>The best way to explain how the differences in memory models work is to start with how x86 handles this. With TSO being very strict in how it operates, the programmer can assume that when a memory store occurs, that this will be coherently visible to all other processors in the system. This additionally means that when a memory load occurs, all stores before it “logically” will have been completed, or at least visible. This matches programmer expectations, you write to memory, it becomes visible as at the point of writing, as this is intuitive to think about when programming. The stores are effectively ordering the visibility of the loads, thus the name of the model. There’s a bit of nuance with how this operates but isn’t strictly necessary to understand.<br>The weak memory model that ARM has is a bit less intuitive about how it operates. By default the regular memory loads and stores that ARM uses aren’t strictly coherent across processors in your system, allowing the CPU to operate more efficiently most of the time. When a store instruction executes, that piece of memory (the cacheline) isn’t immediately visible to other processors in the system. Saving on precious power and efficiency because it’s expensive in hardware to invalidate other core’s cachelines, or allow them to snoop another processor’s caches. Relatedly if a processor is loading data from memory that another processor has written to, it’s not guaranteed that this load will even see this updated memory. This sounds like it would cause some significant problems in a multi-threaded application right? Older versions of ARM (ARMv7 and older) used a memory barrier instruction to ensure ordering, which had significant performance implications.<br>To get around this limitation of consistency, ARM also introduced load-acquire, and store-release memory instructions. In C++ parlance this maps to std::atomic’s memory_order_acquire and memory_order_release definitions respectively. In ARM’s terminology, these instructions also aren’t technically considered to be atomic operations, but programmers conflate the two. FEX has used the terms atomic-load and atomic-store to mean the same thing! The distinction usually doesn’t matter, but when discussing these topics it may be better to be pedantic about it.<br>The primary use case for these instructions is to force memory ordering between these class of instructions. ARM calls this the “Release Consistency sequentially consistent (RCsc)” model. Without getting too far in to the weeds about how this model operates, the basic gist is that the load-acquire instructions must be observed sequentially without reordering, and the store-release instructions must as well while fulfilling “barrier-ordered-before” semantics. Removing the costly memory barrier instruction required in older ARM architecture versions.<br>The humble beginnings of ARMv8.0-a<br>This is the premise of where we start in ARMv8.0-a when we’re emulating the x86-TSO memory model. We make all x86 memory loads turn in to ARM’s load-acquire instructions, and x86 memory stores turn in to store-release instructions. This gives FEX effectively the same memory semantics as x86, although we are actually being more strict than what is necessary. This is because we had no middle-ground which exactly matches behaviour. As one might think, it is exceedingly costly to emulate TSO wth this instructions and we have microbenchmarks that can show this. As ARM CPUs weren’t designed to have these relatively rare acquire/release instructions suddenly become the vast majority of instructions executed.<br>First let’s start with something easy and use a microbenchmark that is fairly nice to the hardware. No tricky edge-cases, just accessing memory in in the common case. This gives us some baseline numbers for what the best-case situation should be.<br>Let’s break down this graph as it tells us a few interesting stories. The Load and Store columns of each machine is representing our baseline performance number that our hardware should be attempting to achieve. These aren’t trying to max out the memory bandwidth of each system, but do the same amount of work for each type of operation. If we turn our attention to the acquire-load results, we can see that out of the five CPUs tests, three of them have their performance hindered quite a bit by using acquire-loads! Additionally we can see that the AmpereOne CPU has release-store instructions that are strikingly low compared to the other results, and the M1 Acquire/LRCPC load instructions are quite a bit lower than the baseline as well.<br>The AmpereOne results in particular showcase how bad this legacy path can get. These instructions were never designed to be used this way. Using acquire-release semantics for every load for x86 emulation actually imposes some really strict limitations on ARM CPUs in that the load instructions can no longer be ordered around each other at all. So when you have millions of them in flight per second, the performance isn’t really expected to be good. But because these are the only instructions we had with ARMv8.0-a, it’s what we had to use. While Cortex-X4 and Cortex-X925 have amazing performance for these, you can see how the Oryon-3 has deprioritized their importance.<br>Where do we go from here?<br>Let’s take a closer look at the LRCPC-load instructions, which is mandatory since ARMv8.3. This extension adds a bunch of new load instructions to the ARM ISA and adds a new memory model on top of ARM’s RCsc model from before. This new “Release Consistency processor consistent (RCpc)” memory model is what we’ve been wanting! This extension is designed around the requirements that x86 emulation requires, and is expected to get utilized heavily on hardware that implements it. As you can see from the graph, almost all of the platforms have their LRCPC-loads matching their regular loads in performance.<br>With this new extension that is mandated by newer ARM versions, we basically get solved memory performance. At least according to this microbenchmark that seems to be the case. Once FEX detects this extension we stop using Acquire-Load instructions entirely and switch over to LRCPC-Load instead. But what’s going on with that Apple M1 result..?<br>This is where we need to commend Apple’s path towards solving this problem. With their Apple Silicon processors they directly added support for the x86-TSO memory model. When the CPU feature is toggled, their regular load/store ARM instructions change behaviour to match what x86 requires. They went this route knowing that they will need a high performance solution for their hardware when switching to the ARM ecosystem exclusively. This is why on their hardware the LRCPC-load instructions are actually aliases of their acquire-load instructions, because their x86 emulator doesn’t even use these instructions! Because they implement the x86-memory model, they just use regular load/store instructions, which can be seen in our microbench results as indiscernable performance overhead. To be fair to the other platforms, this thread-wide TSO mode toggle does have some performance impact, we just don’t see it here. When FEX detects this CPU feature from Asahi Linux we will also enable this and get the “free” performance improvement. A potential concern is that when jumping between x86 emulation and ARM code, that the ARM code will pay unnecessary overhead due to all its accesses being TSO now. While this is a reasonable concern, the amount of ARM native code executing under emulation approaches 0%. As a developer, you don’t care about 1% of memory accesses becoming 10% slower, you care about 99% of accesses becoming 15% of the “ideal” (As shown in AmpereOne results).<br>As a note, we think a TSO mode is the best path forward for ensuring high performance x86 emulation on the platform. Because this ensures that every memory access instruction behaves how we want or expect. This is shown with the official FEAT_LRCPC extension actually having three versions that apply bandages to the implementation each time.<br>- FEAT_LRCPC - Adds basic GPR TSO load instructions<br>- FEAT_LRCPC2 - Adds small offset immediate to TSO load instructions<br>- FEAT_LRCPC3 - Adds basic vector and stack-based TSO load &amp; store instructions<br>Even with these three extensions, there is edge-case behaviour that can’t be emulated as nicely as if we had a TSO hardware toggle. We are expecting there to be additional extensions versions as time goes on, trying to fix some of the additional problems we’ll discuss later in the article.<br>I thought accessing memory was the easy bit?<br>In the previous section, we were being nice to the ARM hardware and playing along with the underlying hardware’s alignment requirements to get a baseline for what the performance should look like. When emulating x86 although, we run face first in to a glaring problem right from the start. Your favourite x86 applications don’t care about alignment! They’ll access memory however they please, crossing cacheline granularities, doing atomics that aren’t aligned. You think of the alignment problems, these games are doing it. This problem is so bad that we have a term associated with it, called split-locks. These are such a big deal that even the Linux kernel will capture when these occur and slow down games when they do it! Causing many gamers to tinker with kernel options to avoid the slowdown!<br>But we aren’t going to talk about full on split-locks yet, let’s get started with just load-store instructions in an environment that doesn’t care about alignment. x86 makes certain guarantees to the programmer; if you do a load-store and it is inside of a cacheline then that load-store will be both atomic and still match the coherency model as described before. However, to be a little bit nice to the hardware developers, if the load-store does cross a cacheline, the data isn’t atomic and other threads can and will see it tear. So the programmer needs to be careful as a basic load-store is not a split-lock.<br>The problem with emulating these basic accesses with load-acquire/store-release is that ARMv8.0 requires what is known as natural alignment. This means that for whatever size of data being accessed, the offset in memory must match the size. So for an 8-byte access, it must be at offsets; 0, 8, 16, 24, etc. This works well for native ARM applications, but what happens when we don’t obey natural alignment requirements? For ARM, this means the instruction with raise an alignment fault. The hardware validates that the alignment requirements are fulfilled and if they are not then the CPU will fault. This usually results in a crash but FEX does special handling.<br>Inside of FEX’s JIT mechanism we keep track of memory load-store instructions that are emulating the x86 load-stores. When we know that a load-store can cause an alignment fault we have what is known as a patchpoint in the code. For load-store instructions, this shows up as a NOP instruction either before or after the load-store. When a alignment fault occurs as one of these patchpoints, FEX will capture the fault, patch the code from a load-acquire/store-release instruction to a basic equivalent load-store, and wraps the instruction in a data memory barrier. Then it continues executing!<br>Before then after patching<br>That entire discussion from before about how ARMv8.0-a added these new fancy load-acquire, store-release instructions? We immediately fall back to the classic memory barrier instruction instead when alignment behaviour doesn’t match. Our previous chart didn’t show this bad case, so let’s bring in some fresh data.<br>Oh, that’s a lot of data to sift through. While again good to see how far away the hardware is from the “optimal” path while emulating TSO, it’s not what we care about here. It is interesting to note that this microbench doesn’t showcase much of a difference between aligned and unaligned for regular load/stores so we just calculated an average between the two. We’ll be removing the x86 CPU and the regular load-store data from the ARM columns, as these aren’t the common FEX paths. This way we’ll have a more targeted view about how badly unaligned memory accesses hurt under emulation.<br>Now that we have a much more reasonable graph of data, let’s walk from left to right on this and discuss what is going on.<br>AmpereOne<br>This one is pretty interesting, both the aligned and unaligned load instructions are roughly equivalent and fall within noise. This means that even though the unaligned loads are getting hit with a data memory barrier penalty, the CPU just handles it. This might be the case that the benchmark is bottlenecked by other things, considering how much lower the performance is compared to other platforms.<br>Meanwhile the store side is not looking to be in a good shape even without unaligned. It nearly isn’t visible on the chart! When hitting unaligned stores we’re looking at ~8.5% of a performance hit, but because we are already starting so low it is hard to notice. This is also in stark contrast to regular store instructions getting ~28GB/s in this bench.<br>The only conclusion we can come to here is that Ampere is optimizing for some server class workload and doesn’t really match consumer hardware behaviour. It’s an interesting datapoint, but our users aren’t typically running games on this class of hardware.<br>Cortex-X4<br>This is a highly popular CPU core that is living inside the Qualcomm Snapdragon 8 Gen 3. We only tested this one core from the SoC to not overwhelm the chart with data. Quite a large number of handhelds ship with this so it’s an interesting target. This CPU actually does surprisingly well considering it’s the only cellphone SoC on this list. Overall this core kind of falls in line with what we would expect from it and the graph trends follow with the next-generation Cortex in that chart.<br>The main topics for this CPU are that its aligned loads and stores are reasonably powerful, getting around 11.5GB/s and 6.7GB/s respectively. What’s interesting is the performance falloff when it needs to deal with unaligned loadstores, hitting the DMB instructions penalizes the core roughly evenly between loads and stores at around 50% in this benchmark.<br>This seems to imply that the CPU can keep a decent number of LRCPC-release loadstores in flight so the DMB instructions hurt more when they are encountered, but it isn’t causing world-ending performance. Just that a 50% performance hit due to alignment isn’t an amazing result.<br>Cortex-X925<br>Following up the X4, let’s stop by the DGX Spark and its X925 cores. Not only is this a newer CPU core from ARM, it’s running on a system with dramatically more memory bandwidth. 273GB/s in the platform versus the previous 76.8GB/s. This means that we get fairly similar results to the X4 even, just the graph scales a little higher. Interestingly enough, the performance penalty for unaligned accesses roughly match the X4 even. Although it looks like the stores can recover a little faster, likely due to the faster memory helping out. No surprises here, just consistently matching performance across the generations.<br>Oryon-3<br>This CPU core design is hot off the presses from Qualcomm. Linux support is still in the process of coming up but it already has a strong showing. The most interesting result from this actually comes from the fact that aligned LRCPC-load instructions are matching the performance of regular loads! That means in the case of a well-behaved application we can typically expect full performance. This continues onward to the release-store instructions being quite capable, although it doesn’t quite match regular stores with only 68% of the bandwidth. Not a bad showing in the slightest.<br>This CPU also can’t escape from the penalty of unaligned LRCPC-release loadstores. The load side is roughly matching the ~70% performance penalty of the Cortex-X925, likely because the Snapdragon X2 Elite also has tons of bandwidth. But the store side actually gets off a little worse at ~43% of the performance. Even with these performance hits of unaligned accesses, this platform is actually faster than the aligned accesses from the Cortex offerings.<br>One of the weird things about this platform is that it was advertised to have “Fully coherent 96KB 6-way L1 cache with 64B coherency granules.” Which to our reading implied that unaligned accesses should have dramatically less of a performance impact. Interesting… keep that in mind.<br>Apple M1<br>This is the big one we need to talk about. This is the one that was a game changer, it was the “Apple moment.” It showed everyone that ARM was not only feasible, it could be faster. These numbers on this chart are amazing and it’s the result of Apple sticking the TSO memory model directly in to their hardware. Instead of using LRCPC-release accesses for this one, we just enabled their TSO feature and the aligned versions basically match the unaligned version. Maybe a 5% performance hit on the stores? Compared to every other device on that chart, it’s effectively nothing. This primarily comes down to unaligned accesses no longer requiring DMB instructions to be backpatched in to the code, as the hardware just handles it directly.<br>For us, this is what it means to take x86 emulation seriously on ARM and it really shows that Apple cared that their customers would have a good experience running software both natively and emulated. They saw the problem and just solved it, making it go away. That said, when the TSO mode is enabled, you do get a performance hit. Comparing to the previous graph it’s only getting 76% of the regular store performance, and the load performance basically matches; that’s much more tolerable to bear when everything is so much faster.<br>Wrapping up unaligned LRCPC/release accesses<br>Wrapping up this section, we need to talk about one of the performance improvements that all of these vendors actually support. This is an extension that ARM whipped up called FEAT_LSE2 which all of these tested platforms implement. We previously talked about how acquire/LRCPC/release memory accesses require natural alignment in order to not incur the wrath of the CPU raising alignment faults. ARM actually thought about this problem and implemented this extension which helps x86 emulation (and probably other workloads). This extension loosens the alignment requirements of not only acquire/LRCPC/release load store instructions, it also loosens the requirement for read-modify-write atomics!<br>That sounds all well and good, but here’s the kick to the teeth: that means it only provides marginal performance gains for x86 emulation. This extension only loosens the alignment requirements to allow unaligned memory accesses inside of a 16-byte granule. Any access that crosses that 16-byte granule still receives an alignment fault. x86 applications don’t really care about the alignment of their memory accesses, so we get unaligned accesses across the entire cacheline. It’s only read-modify-write atomics that try to avoid crossing a cacheline on x86!<br>So thanks for the attempt, it’s nice to see, but it doesn’t really move the needle. Since we’re already talking about it, let’s dive in to those RMW atomics shall we?<br>Oh no, what are these atomic instructions?<br>Like most modern instruction sets, x86 supports atomic memory operations. These are instructions that execute an ALU operation on data in memory atomically, allowing no intermediate state to be visible. In x86 terms this operates on memory that is both atomic and coherent, while ARM lets you choose to be only atomic or both atomic and coherent. We touched on this briefly before but there is actually a difference between operating on data atomically, and coherency of that data. What difference does it make?<br>For all of the previous x86 memory model discussion we have been talking about the coherency implications of loads and stores being visible to other processors in the system. What we entirely glossed over is the atomicity requirements of these memory accesses. In the world of x86 a load or store usually completes atomically even when unaligned. This means that if you’re storing 8-bytes of data, and another thread is loading those 8-bytes in a race condition it will never suddenly see a mix of the data from before the store and after the store. In ARM these atomicity guarantees are significantly weaker, meaning if you do an unaligned store instruction the specification of the ISA has zero guarantees about reading a tear in the data. Thankfully for naturally aligned load-store instructions, ARM has a specification called “single-copy atomicity” which guarantees you don’t get a tear for these accesses. Also good news; that FEAT_LSE2 extension from before? It actually extends the single-copy atomicity guarantees to any unaligned access inside of a 16-byte granule! The downside is that x86 has single-copy atomicity guarantees across a full cacheline, so once again the extension still didn’t solve anything completely, just reduced the number of occurences.<br>Enough about the differences in atomicity and coherency. Where’s the actual atomic instructions? What do they do? Starting in ARMv8.1-a, our ISA has gained instructions that mostly matches x86 atomic instructions in behaviour. Let’s just give the full list to show how they map directly in our JIT.<br>| x86 | ARMv8.1-a |<br>|---|---|<br>| LOCK DEC | ldaddal |<br>| LOCK INC | ldaddal |<br>| LOCK NEG | ??? |<br>| LOCK NOT | ldeoral |<br>| LOCK ADC | ldaddal |<br>| LOCK ADD | ldaddal |<br>| LOCK AND | ldclral |<br>| LOCK OR | ldsetal |<br>| LOCK SBB | ldaddal |<br>| LOCK SUB | ldaddal |<br>| LOCK XADD | ldaddal |<br>| LOCK XOR | ldeoral |<br>| LOCK BTC | ldclralb |<br>| LOCK BTR | ldeoralb |<br>| LOCK BTS | ldsetalb |<br>| LOCK CMPXCHG | casal |<br>| CMPXCHG8B | caspal |<br>| CMPXCHG16B | caspal |<br>Well would you look at that, we have a full list of the 18 atomic RMW operations and they basically map directly to some ARM instructions. Ignore the questionable one as it’s not used in real workloads and we would get far too in to the weeds talking about it. We have a pretty clear 1:1 mapping between the architectures, job’s done right? That’s the funny thing about x86 emulation, just because we have these instructions doesn’t mean we get to wire them up without problems. We spent all this time talking about how unaligned accesses can really hurt performance of regular loads and stores, this same problem also applies to RMW atomics!<br>With this graph, we are looking at a single atomic instruction with its memory address landing somewhere within a cacheline. If we included all of the data for all 18 atomic operations then this data would be even more overwhelming than it already is. All these atomic operations behave roughly equivalent so it would be redundant and wouldn’t matter for what we’re discussing here anyway. This is also the first graph in this post that is actually using logarithmic scaling, so when reading it make sure to understand that the performance difference from the fastest to slowest result is on the scale of around 1000x.<br>Starting with the x86 Zen processor on this graph; these are the results that our emulation should be striving to achieve. As we can see, if the access is fully contained within a cacheline then the latency of the instruction is the same at 1.44ns. This can be explained by x86 having “atomic cachelines” or “coherent cachelines”, where as long as an unaligned atomic operation stays within a cacheline then it roughly costs the same. This is a really powerful feature of x86 that has been supported for decades at this point so games end up relying on this heavily without even realizing it. The stand-out result for x86 is the final result that is crossing a 64-byte granule and taking ~660ns! That’s an amazingly slow result at ~458x slower compared to the other results because this is finally the hardware using split-locks.<br>We need to take a moment here to shout out an article that Chips and Cheese wrote while we were preparing to write our article. They do a great deep dive in to why these split-locks are so dramatically slower and is worth the read if you’re unaware of how they work. Specifically we need to mention that x86 split-locks maintain the atomicity and coherency requirements of x86-TSO and will never tear the data even when crossing a cacheline. This is kind of nuts and we’ll explain this more later.<br>Now for our ARM processors, let’s start with the natural alignment latency numbers. As we can see, all of our platforms perform fairly well but even the latest cores don’t get anywhere near x86. Even our fastest ARM platform is ~3x the latency compared to x86; This directly impacts performance of games but usually isn’t the direct bottleneck so it’s hard to measure exactly how much. Continuing onward to the next data point, we can actually combine the results for 16-byte granule and 64-byte granule crossing with most of our ARM platforms. Due to how the ARM specification defines how unaligned atomics work, both of these results are roughly equivalent and FEX treats them the same as the x86 split-lock problem.<br>We keep bringing up this split-lock problem but how exactly does FEX emulate them and what makes it so slow? “I thought Apple M1 added x86-TSO support in the hardware, why is it still slow?” If you recall how we brought up before that FEAT_LSE2 introduced support for unaligned memory accesses within a 16-byte granule; these split-lock operations end up hitting the same alignment problems as before but are dramatically slower. FEX can’t backpatch any of these instructions to just do a DMB operation, so we cause an alignment-fault every time one gets executed. This means that we do a kernel -&gt; userspace signal handler -&gt; kernel -&gt; original code dance. every—single—time one of this split-lock operations execute. Jumping between kernel-space and userspace is slow on every platform and when you’re executing thousands of these per second it adds up very quickly. This is why the emulation of these feature is so terribly slow on ARM.<br>One ARM platform today actually partially resolved this problem although. The Oryon-3 CPU cores introduced what they advertised as “coherent cachelines” and we can see this in our microbenchmark results here. Just like with x86, if the atomic memory access in anywhere inside of the 64-byte cacheline, the performance matches the natural alignment version! This is a tremendous improvement that means the CPU is on par with x86 in feature support until the point it tries to cross a cacheline. We need to applaud Qualcomm on implementing this feature, as it resolves a major performance and correctness problem around split-locks for x86 emulation. The hardware still doesn’t support 64-byte split-locks so we still fall down the FEX emulated path in that instance although.<br>Continuing on to the Apple result; even though they added x86-TSO memory accesses to their hardware for some reason they neglected to implement full cacheline unaligned atomics like Oryon did. It seems like they should have expected this edge case to surface and implement it but that’s just speculation. This is why you can see the cross 16-byte granule behaving the same as other platforms even with the TSO hardware toggle enabled.<br>You might have also noticed another little data quirk in the graph. We have an asterisk on the Cortex-X4 result in this benchmark and the performance of the unaligned atomics are dramatically faster than significantly newer CPUs. It is somehow managing to have only ~209ns latency, while the X925 is latency is 1060ns; that’s a 5x perf improvement! How can this possibly be the case? This is actually some fun “special sauce” that is shipping on the platform we’re testing on, which is of course the Valve Steam Frame. Because Valve cares about the performance of their existing gaming catalogue, they are shipping a kernel patch that one of the FEX developers whipped up. This allows the Linux kernel itself to handle the unaligned atomic without that slow dance with FEX and userspace, allowing it to be dramatically faster. If other platforms want to ship this patch in the kernel then we recommend picking it up as and FEX will automatically start using it.<br>Speaking of kernel intervention, we need to talk about how split-lock emulation is not actually quite correct under FEX due to limitations in the hardware. In order to implement this mandatory feature of x86 correctly, any time we do a 16-byte or 64-byte split-lock, the only way to handle it is to have the kernel implement the feature. Right now FEX implements this as a “best-effort” attempt that can actually tear the data in some cases. You’ll recall that before we said split-locks on x86 will never tear right? Not even the Oryon-3 with its “coherent cachelines” have resolved this problem yet.<br>What do you mean split-lock is mandatory?<br>Implementing split-lock emulation with today’s ARM hardware in a performant matter is actually really difficult to do. A naive implementation is to use a global mutex and whenever a split-lock occurs we will ensure to acquire the mutex before doing the operation. This means that any participating split-lock operation will funnel through this mutex. This is correct except for the issue that any aligned atomic operation isn’t a split-lock and won’t participate. Due to the split-lock emulation code needed to be implemented as two 64-bit compare-exchange operations with each half straddling the granularity boundary, we can get a tear with a non-participating atomic still. A trivial example is one thread constantly modifying an atomic in the middle of the cacheline, and then another thread modifying only the integer on one half. This might sound like a contrived example initially, but there are lock-less linked-list implementations that behave exactly like this! Depending on which half the aligned thread is modifying, either the first or second CAS in the split-lock code will fail. If the first CAS fails, then that’s safe and the code can retry, if the second CAS fails that means the data has torn and we can do nothing but hope it doesn’t corrupt data and crash. This will entirely depend on the algorithm that the guest application is using so we don’t control it.<br>An alternative approach that is completely untenable is to have the kernel track all processes and threads that are sharing memory with each other, then when a thread needs to emulate a split-lock the kernel can halt every process that is sharing memory with that process, do the split-lock in isolation, and then restart the world. The performance implications of this approach aren’t viable. Applications and games can end up doing thousands or more split-locks per second and halting the world will have an intractable performance hit that is dramatically worse than even x86 native.<br>If we want to ensure correctness in the emulation of split-locks FEX needs to have hardware support in some form to support these. Although we’re not saying that all atomic operations should now support split-locks like x86, that would also not be viable. The good news is that ARM actually has an extension for this that does exactly what we want. ARM has an extension call Transactional Memory Extension that could solve our problem. This extension allows our code to do some number of operations inside of a transactional region, then commit that work atomically; if the commit operation fails, then we can simply retry. The downside of this extension? ARM has officially deprecated the extension and no one ever shipped it. This is likely for the best as the x86 version of the extension has had an abundance of problems that caused it to be disabled on many platforms.<br>So we need something else to emulate split-locks correctly. For a solution that we believe works for both FEX needs and ARM vendor needs, we have come up with the idea that a 128-bit CASP instruction can be given the ability to have each half of the CASP perfectly straddle the atomic granule boundary, 64-bits on the lower half, and 64-bits on the upper half. Then only in that case does the instruction not raise an alignment-fault and tries to do the CAS operation. This works because x86 only has up to 64-bit unaligned atomic operations, so both halves of the operation can always be fully enclosed by our single operation.<br>But you may be asking yourself, “how is this any better than the hardware just supporting split-locks?” That’s a good thought and we need to be careful with the how exactly we describe this operation. For x86 their atomic operations must always succeed without tear. For our emulated approach, we can have this ARM CASP instruction fail safely and then we can try again. This is one of the benefits of CAS is that the operation can fail for any reason and it must be tried again. The instruction then also returns the data that it loaded from memory in that time so the program has the latest up to date memory. This is an important distinction since that means FEX can retry the CAS operations infinite times until it inevitably succeeds! This is a benefit of ARM LL/SC architecture that basically allows this to work. A tricky thing is that the hardware does need to guarantee forward progress at some point but it already has support for that for other reasons so it’s completely viable! The only newly added failure mode to the CAS instruction is purely if one of the two cachelines got acquired by another core before it could do the full operation. Even if the hardware still requires up to a couple thousand cycles to guarantee forward progress, that basically matches x86 behaviour.<br>We think this would be the best way forward for x86 emulation of split-locks on ARM platforms, but we’re not hardware architects so all we can do is complain and hope someone solves it for us. We’ll leave the split-lock discussion there for now so we can move on to another interesting problem.<br>Wait, uncached memory needs to work?<br>Before we get in to this topic we need to talk about the term “uncached” because it can mean a couple of things depending on your view of the world. For the purposes of this article, we are using Vulkan terminology because we care about games primarily. In Vulkan terms we have VK_MEMORY_HOST_CACHED_BIT which means that the host CPU caches this memory. The lack of this bit is what we care about here, and what we refer to as “uncached.” As for what this means to the memory subsystem, it gets a little more complicated than you would think. In particular when the memory is living on a GPU, potentially over PCIe, when the memory is “uncached” it will also typically (but not always!) also gain the flag VK_MEMORY_HOST_COHERENT. This means that because of the uncacheable property of the memory, the CPU and GPU always have a coherent world memory view with each other.<br>For the CPU this typically means the memory can be mapped up to three ways. When asking for “cached” memory, this typically has a memory type of Write-back which is also what regular memory mapping types are. “uncached” mapping can be either Write-Combine or “Strong Uncacheable”. The “Strong Uncacheable” implementation is basically non-existant for userspace applications so we can ignore that for today’s discussion. This limits us to effectively WB (cached) and WC (uncached) memory types. Cached is what games typically use for staging buffers, and then uncached is what we use when passing data directly to the GPU.<br>This is code-ified in many game engines that if you don’t expose support for uncached buffer types then some don’t work. This comes down to a behaviour detail around the differences of UMA systems like APUs and PCIe GPUs. UMA systems will typically expose the ability to allocate memory that is cached, coherent, and GPU visible. Where PCIe GPUs can’t guarantee that behaviour so game developers need to either use a staging buffer and an async copy of the data over to the GPU, or use “uncached” memory to very carefully shuffle the data over to the GPU through PCIe. Because of how ubiquitous PCIe is with PC gaming, some engines won’t even do UMA specific code paths and will do the uncached approach regardless!<br>With that little introduction out of the way for what uncached means for us. Let’s bring up a benchmark for how fast cached memory is on some UMA Snapdragon systems. This will let us get a baseline for how the performance should be regularly.<br>For both the Steam Frame and Snapdragon X2 Elite these are some really good results. As we would expect, the Oryon-3 platform has more memory bandwidth so it is able to scale higher in the chart, but both are hitting dozens of gigabytes per second in their results. This graph sets a good baseline for what “normal” write-back memory can achieve. Let’s now show uncached results to see the performance differences.<br>There’s some strange things happening here so we had to use logarithmic again on this graph. Let’s talk about the good first that has shown up. Due to uncached memory buffers being write-combine, we can see that the regular stores for our ARM platforms match the cached benchmark results. This comes down to write-combine memory using what is coined as write combine buffers that actually very temporarily keep around a cacheline of data so that write-combine can burst a cacheline of memory at a time. Interestingly enough it looks like the Zen 4’s WCB can’t quite keep up with cached, but considering this is expected to be going over a PCIe bus it’s probably fine.<br>Now let’s get in to the really ugly results that we have here. Starting off with the easier to explain is the load bandwidth from write-combined memory is abysmal on all platforms tested. If we’re using Zen as our baseline for performance, then our regular load instructions are ARM are winning, but the LRCPC loads are worse. What’s going on here? This is a quirk of how write-combined memory operates, because it is uncached our load instructions are required to go out to system memory for every single access to maintain semantics. Then when we add LRCPC-loads on top of that, it just compounds the problem even further. But the worst case out of all of this is just how badly the store performance is, compared to the performance that Zen gets on the stores, this is basically a showstopper. Up to 816x worse bandwidth! We had games like Hollow Knight: Silksong and Subnautica 2 run at less than 1FPS because of this performance cliff.<br>As we were saying above, when there are PCIe GPUs in the mix then games will need to use uncached memory to pass data to the GPU. When emulating x86<br>games on platforms with a dedicated PCIe GPU then we are in an unwinnable situation and we are guaranteed to run dramatically slower. Remember how ARM<br>has added the family of FEAT_LRCPC1/2/3 extensions from before to improve x86 memory model emulation? This is what happens when we hit an<br>edge-case that isn’t supported. All of these extensions add new instructions to handle loading memory using x86-TSO memory model semantics but none of<br>them solve storing to write-combine memory with x86-TSO semantics. All the way from ARMv8.0-a our store instructions use the regular store-release<br>instructions regardless of the backing memory type. The only way for FEX to work around this problem is to selectively disable TSO-emulation when it<br>becomes an issue, so x86 emulation platforms with PCIe GPUs will always be a worse experience than UMA. At least until we get another FEAT_LRCPC4<br>or similar to resolve the issue.<br>For users on UMA systems then rejoice, there’s a workaround for gaming that we use to improve performance. Because we know when a platform supports cache-coherent CPU and GPU combinations, we can have the video driver always use cached buffers and never encounter this problem. NVIDIA already does this on their Tegra platforms, Snapdragon has been supporting this since at least Adreno 600 class GPUs, and there are many Mali platforms where this is also the case. We have a Adreno Turnip patch that ensures when FEX is running, we never hit uncached memory for platforms that support it. A funny thing is that since Asahi users have a hardware TSO bit, they just naturally don’t encounter this problem in the wild, but getting a PCIe GPU on to that platform is a different story altogether. There’s also a fun quirk where Radeon GPUs on ARM platforms hide all write-combine memory to instead be write-back but we’ll talk about that another time.<br>Looking towards a brighter future<br>After that marathon of an article we hope you have a better understanding of some of the challenges that emulating the x86-TSO memory model brings. Where we started with ARMv8.0 as a minimum spec and where the hardware has provided dramatic improvements over the years in nothing short of astounding. While not all of the edge-cases are yet resolved at the architecture level, it looks like there is a genuine commitment across the ecosystem for trying to improve the worst cases. We have various vendors solving some parts of the problem and moving the needle forward for better compatibility. Maybe in another decade as we look back at this time we’ll laugh about the problems we were encountering now, while enjoying some quality x86 games that will never see a port to ARM hardware. Keeping the legacy of the PC gaming ecosystem alive, regardless of where we might end up playing it.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: Snapdrop: Instantly share files between devices. No setup, no signup
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    75 points ·
+    34 comments ·
+    Capira
+  </div>
+
+  <div class="meta">
+    snapdrop.me
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #27
+  </div>
+
+  <div class="links">
+    <a href="https://snapdrop.me">Original article</a> · <a href="https://news.ycombinator.com/item?id=49746346">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    EU chief opens door for Canada to become &#x27;associate member&#x27;
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    685 points ·
+    884 comments ·
+    hackernj
+  </div>
+
+  <div class="meta">
+    bbc.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.bbc.com/news/articles/cjwyzrr9d3dko">Original article</a> · <a href="https://news.ycombinator.com/item?id=49724141">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">EU chief backs plan for Canada to become &#x27;associate member&#x27;<br>The president of the European Commission has backed proposals for Canada to become the EU&#x27;s first &quot;associate member&quot;.<br>Ursula von der Leyen told the European Parliament on Wednesday she wanted to work on &quot;opening the door&quot; for Canada, which would involve closer ties on various key sectors.<br>The country currently faces tense relations with the US, compounded by an intensifying dispute over trade.<br>Insisting it would not be a &quot;partnership against anyone else&quot;, Von der Leyen did not mention Donald Trump by name. Nevertheless the US president threatened to cut trade with the European Union in response to the proposal.<br>Canadian Prime Minister Mark Carney last week spoke of seeking a &quot;unique alliance&quot; with the EU.<br>Carney was in attendance at the annual key note speech in Strasbourg, and is due to address the parliament on Thursday.<br>Trade talks between Canada and the US collapsed last month, sparking a series of new tariff measures. Trump&#x27;s repeated talk of making Canada a &quot;51st state&quot; has also helped to fuel the feud between the North American neighbours.<br>Von der Leyen told the EU&#x27;s State of the Union address that the bloc and Canada &quot;see the world with the same eyes&quot;, including on topics ranging from AI, to climate change and geopolitics.<br>&quot;And we have stood together: on Ukraine, on defence, on raw materials and on supply chains. But above all... Europe and Canada believe in democracy.&quot;<br>She added: &quot;Partnerships are a strategic choice for Europe. But they also respond to the fracture in the international rules-based system&quot;.<br>She did not give specific details on how any Canadian membership would work, but listed manufacturing, technology, artificial intelligence (AI), defence, energy, critical minerals and economic security as key areas for cooperation.<br>When asked about the plan, Trump called it &quot;laughable&quot;.<br>&quot;If they do that, if I think it&#x27;s at all a hostile act, I will put very serious tariffs or stop trading with Europe, on many things.&quot;<br>He added: &quot;If it&#x27;s a good intention, that&#x27;s fine. If it&#x27;s a bad intention, we&#x27;ll put very heavy tariffs on Europe, which is a possibility.&quot;<br>Both von der Leyen and other European leaders have found a reliable ally in Carney as they deal with similar problems.<br>In particular, they have faced Trump&#x27;s aggressive use of tariffs and his threat to annex Greenland which is a sovereign territory of EU member Denmark.<br>But &quot;associate membership&quot; of the EU does not currently exist and the process, if agreed, could take years.<br>Earlier this year, Germany&#x27;s Chancellor Friedrich Merz suggested - to a mixed reaction - that Ukraine could be granted this new status.<br>Some countries in the western Balkans including Albania, Bosnia and Herzegovina, Montenegro, North Macedonia, and Serbia are already on the long road towards full EU membership.<br>In Eastern Europe, Georgia and Moldova are also applying.<br>Ten of the bloc&#x27;s 27 members are yet to ratify a free-trade agreement struck with Ottawa nearly a decade ago, and some capitals would prefer to build on existing defence and trade agreements rather than create a new form of membership for Canada.<br>Setting out the EU&#x27;s political and policy priorities for the year ahead, von der Leyen also proposed the formation of a European Security Council, which would include the UK and Ukraine, amid an ongoing threat to the continent from Russia.<br>&quot;For a long time, we have discussed a leaders&#x27; format focused on the security of our continent, with partners like Canada, Norway, Ukraine, the United Kingdom and others involved,&quot; she said in the wide-ranging address.<br>&quot;This is even more urgent now, given the nature and scale of the risks at play. This is why we will set out our ideas to make a European Security Council a reality.&quot;<br>Calls for such a body have been growing since Russia&#x27;s full-scale invasion of Ukraine in 2022.<br>It was initially a French-German conception but more countries have shown support, particularly as Trump has questioned the Nato military alliance. Other nations worry such a council could unhelpfully rival Nato.<br>Von der Leyen said the EU was &quot;strengthening our work with Nato&quot; and that expanded defence spending would be &quot;fully aligned&quot; with the alliance.<br>But at the core of such a security council would be the ability to trigger an emergency meeting if one member felt under threat, similar to Nato&#x27;s Article 4.<br>The EU chief said it would be a &quot;mechanism to flank&quot; Article 4, a term that could be interpreted as complementing Nato functions or - if taken in a military context - bypassing them.<br>Alongside global threats, von der Leyen also said many European families were worried about the cost of living, and the &quot;dizzying speed of change&quot; of technology and its impacts on jobs and society.<br>Other proposals included inviting the world&#x27;s largest AI labs for talks on how to support industry efforts to pace the frontier, as well as slashing bureaucracy for businesses in the EU.<br>Plans to curb social media use among children, including banning platforms for under 13s, were also put forward. Under the proposal, children aged 13 to 15 would only be able to set up social media accounts which are supervised by parents.<br>The pledge chimes with the message of European politicians on the right and hard right who have gained support in recent years for proposing a tougher approach.<br>Some of them called the mass attempt to enter the EU through Ceuta an &quot;invasion&quot; and argued asylum rules should be suspended to deal with such a crisis.<br>Von der Leyen said the new emergency tool would &quot;only be triggered under a strictly defined set of criteria&quot; and for a specific period of time, and that fundamental rights would be protected.<br>Human rights groups worry such a move would see vulnerable people, including women and children, turned back and denied the protection afforded to them under international law.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: What are you working on? (September 2026)
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    374 points ·
+    1189 comments ·
+    david927
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49686380">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">What are you working on? What have you been curious about lately?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Slop Grenades, AI Didn&#x27;t Make Delivery Free – Food for Agile Thought 562
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    swolpers
+  </div>
+
+  <div class="meta">
+    age-of-product.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://age-of-product.com/food-agile-thought-562-slop-grenades/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49751978">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+</body>
+</html>
