@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-22 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-22 PM · Generated 2026-09-22 17:36 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: alicegg.tech, dbushell.com, github.com, mimo.xiaomi.com, nathan.rs, news.ycombinator.com, paulkingsnorth.substack.com, shugert.com.mx</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Mini-AGI – Dynamic continual learning model trained on 8GB VRAM
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    263 points ·
+    60 comments ·
+    volotat
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Best #27 · Top #41
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/volotat/mini-AGI/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49783133">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">mini-AGI - is a continual learning byte-level language model that assembles its own architecture, trains from scratch on a single 8 GB VRAM GPU, and keeps learning from everything it reads. It stores its weights as ordinary files on disk and pages them onto the card as it needs them, so the parameter count is bounded by free disk space rather than by VRAM. It grows new capacity while training when it runs short, prunes what nothing asks for, and reads through exactly the same code path it serves on. Targeted at a PC or laptop with at least an 8 GB VRAM GPU on the board.<br>NOTE: as of now this is a small toy-level model. Do not expect a frontier level capabilities. This is rather a small experiment to show, that continual learning from the single stream of data without catastrophic forgetting is possible. Furthermore it is possible on a modest hardware. Which means that almost everyone could train their own version of the model (or simply continue training this one) exactly as they see it fit. And the capabilities would be bounded by the actual hardware, scale and quality of the data available and the amount of time one willing to spend on training the model.<br>Here is how min-run dashboard looks like. The model is pointed to the corpus to constantly read and learn from.<br>History - here is the samples from the whole training run history so far. You can inspect them yourself to see how the model improved over the course of training/reading the corpus.<br>The weights are not published yet. The run is still reading its first pass over the corpus, the weights go up once it has been through all of it, which is a couple of weeks away at the current rate.<br>Every language model you can actually own today is a model somebody else trained and then froze. You can fine-tune around the edges of it, but you cannot train one from scratch on your own hardware, and you cannot keep training it on what you do day to day - the moment you try, it forgets what it knew before. The result is that a personal model is always somebody else&#x27;s model with a thin layer of you on top, and it stops learning the day it ships.<br>mini-AGI model has small enough GPU footprint that it is possible to train end-to-end on one consumer card, and it is built so that training never has to stop. It reads a stream of characters one chunk at a time, takes a gradient step on each, and the same path serves generation. There is no separate fine-tuning regime and no frozen base: reading and being trained are the same event.<br>Three constraints shape everything else in the design:<br>- It has to fit on 8 GB. Not with quantisation - training needs gradients and optimiser state, which is roughly three times the weights again. So the weights live on disk and only the working set is resident.<br>- It has to not forget. A model that learns continually and overwrites itself is worse than one that does not learn at all.<br>- It has to be able to read anything. The alphabet is the 256 byte values, so there is no tokenizer to fit and no data type that needs a new vocabulary.<br>The model is genuinely yours: trained on your hardware, on your data, that keeps learning from every conversation you have with it, and that nobody else can take it away or switch it off.<br>Characters (bytes) does not pass through a fixed stack of layers as it would be in a traditional LLM. Instead, it passes through two dense prelude blocks and then through one recurrent block applied up to 24 times, each application choosing its own experts from a shared pool. The latent state between applications is never decoded - it is merged with the embedded input by an adapter each time round, so the loop cannot drift away from the text it is reading.<br>Three distinct blocks, up to 26 block-applications per character.<br>- Adaptive depth. A halting head scores every character at every row, and the character stops as soon as another row would not change the answer. Easy characters take one row, hard ones take many. This is the PonderNet recipe: while training, every depth is computed and weighted by its halting probability, so the halting head learns through those weights.<br>- Routing per block-application, not per character. Each of the 26 applications picks its own top-8 experts, so one character touches far more of the pool than &quot;top-8&quot; suggests, and the same expert can be selected several times at different depths. What varies is which eight at each point.<br>- No expert is assigned a subject. There are no labels anywhere. Soft top-k routing distributes capability across the pool by itself, and a character can combine fragments from several experts. The cost is that capabilities share parameters and so can interfere.<br>This is the architecture assembling itself, one character at a time, captured from the live model - nothing here is drawn by hand.<br>Each tile on the left is one expert; colour is expert identity and stays the same for the whole clip. A row is one application of the recurrent block, and the eight tiles in it are the eight experts that row actually ran. The stack grows downward as the model keeps going, and the amber line is where halting stopped it - the grey rows below are computation the model declined to spend.<br>The trace on the right is how many rows each character took. It moves constantly between 4 and 14 against a ceiling of 24, and the caret under the text shows which character is being read.<br>Positions are rotary and carry no learned parameters, which is why the context window can be extended by continued training rather than by re-initialising anything.<br>The clip above is the model reading - every character is held-out text it is being shown. This one is the model writing: it was primed with 2,500 characters of a held-out story and then continued on its own, so the grey text is what it was given and the green text is entirely its own. Greedy decoding, no sampling anywhere - run it twice and you get the same sentence.<br>Two things are worth watching. The stack behaves the same way, because generating and reading are the same forward pass in this model - the only difference is whether the next character comes from a file or from the model&#x27;s own argmax. And writing costs more depth than reading: about 9.9 rows a character against 8.0 on the same subject. The dotted lines mark where the working set was re-chosen, which happens every 64 characters; in this clip nothing swapped, because the prompt had already pulled the right experts onto the card.<br>What it produced, continuing a story about a cherry tree:<br>They worked together and saw their favorite shore. One day, they wanted to play with their favorite shore. They wanted to play with it, but<br>Grammatically correct and on-topic. It does repeats itself for now - which is a fair picture of where the model is at 243M characters.<br>Every expert is a file on disk holding its weights and its Adam moments. Above disk sit two caches and a working set:<br>|  | key | what it is |<br>|---|---|---|<br>| disk | — | every expert the model has; bounded by free space |<br>| RAM | ram_cache | recently wanted experts, least-recently-used evicted |<br>| VRAM | resident | the working set - what a character may route through |<br>Before every chunk the model is asked what the text about to be read wants, and the answer becomes the working set. Demand is scored on the hidden states the call sites actually routed on while reading the previous chunk - an embedding carries no context, so scoring on raw embeddings would have every subject asking for the same experts.<br>Two rules the project holds to:<br>- Adam&#x27;s moments travel with the expert. They belong to the expert, not to the slot of VRAM it happened to occupy. Leaving them behind would hand one expert&#x27;s momentum to whatever took its place, and training would carry on looking healthy while every swapped expert inherited a stranger&#x27;s history.<br>- An expert already on the card stays in the slot it is in. Demand comes back sorted, so the order churns while the set itself barely moves. Matching by identity rather than by position is what keeps the number of loads equal to how much the set really changed.<br>Because the choice is made from the previous chunk, it cannot see the text it is about to predict. What keeps the working set from churning on noise is hysteresis - a candidate has to beat a resident by margin to displace it, and a newcomer is safe for dwell_chars of reading.<br>The pool grows when it is short of capacity and shrinks when parts of it stop being asked for.<br>New experts are added on speculation, at a small gate so they change almost nothing, and kept only if something goes on asking for them. A new expert is built by recombination - whole hidden units taken from several existing experts - because a clone of one parent is not novel enough to be worth routing to, and a random expert computes nothing worth routing to. What works is novelty assembled from trained parts.<br>Growth is refused unless every brake agrees:<br>- room - disk and VRAM can take it<br>- used - the capacity already added is being asked for<br>- earning - the previous cohort survived its trial<br>- fits - not too many experts are already inside their trial<br>- honest - train and held-out have not separated<br>Dead means unaddressed. Both the growth brake and the pruner read how long it has been since anything asked for an expert, and never its gate. This is the single most useful finding in the repository: the gate is not merely uninformative here, it is anti-predictive. The smallest gates belong to the busiest experts - one that behaves as a sink, chosen constantly and contributing little per character, reads as dead on a gate test, while a high-gate expert nothing has wanted in hundreds of thousands of segments reads as alive.<br>A new expert is safe for a full survival window no matter what, so it cannot be judged before it has had a chance to be chosen. When the model grows an expert a new file appears; when it prunes one, that file is deleted.<br>Training on a single stream, one subject at a time, is the classic recipe for catastrophic forgetting. Reading half a million characters of chess at the experts&#x27; own learning rate takes the other seven subjects from 1.12 to 3.73 nats.<br>The trunk learning rate is the mechanism. The trunk - embeddings, attention, routers, the halting head - is the part every character passes through, and it carries 97.6% of the squared gradient norm. Running it at 0.1x the experts&#x27; rate takes forgetting from +2.2300 to +0.0067 nats, which is 99.84% of progress retained against chance.<br>| configuration | unread subjects | retained vs chance |<br>|---|---|---|<br>| working set frozen, trunk LR = expert LR | +2.5871 | 42.88% |<br>| swapping, trunk LR = expert LR | +2.2300 | 50.68% |<br>| swapping, trunk at 0.1x - what the run uses | +0.0067 | 99.84% |<br>| control: all seven subjects read | -0.0077 | - |<br>This is the measurement the whole design rests on. The model reads 524,000 characters of chess and nothing else, at batch 1, and the y-axis on the left is what happened to the seven subjects it did not read - zero means nothing was forgotten, up means worse. Three lines, one variable each. Two of them climb to +2.2 and +2.6 nats, which is the model losing most of what it knew. The third, at a trunk learning rate one tenth of the experts&#x27;, never leaves the floor: +0.0067 nats after half a million characters of a single subject.<br>The grey dashed line is the control - the same probe with all seven subjects read, where forgetting is impossible by construction.<br>The right panel converts the same three arms into progress retained against chance. The gap between 50.68% and 99.84% is one number in a config file.<br>Two readings matter here, and the second one corrects this project&#x27;s own earlier account:<br>- The expert pool is not what prevents forgetting. Freezing the working set - removing the one property that makes the pool a pool - costs only 0.3571 nats, 13.8% of the effect. In that arm 93 of 136 experts received no gradient at all and the model still collapsed. Preserving most of the weights is not sufficient.<br>- The damage is displacement, not destruction. Damage the model badly and then read everything again: three quarters of it comes back in 131,000 characters, against the ~50M characters it took to learn those subjects the first time. Knowledge that had to be relearned does not come back 380x faster. &quot;Catastrophic&quot; describes how it looks at the bottom of the curve, not what happened to the weights.<br>What that same read looks like from the inside. This is the working configuration - trunk at 0.1x - during the identical 524,000-character chess probe. On the left, every subject plotted against where it started. Chess, the subject actually being read, improves by 0.013 nats. The shaded band is the range across the seven subjects that are not being read, and it stays within ±0.02 nats for the whole probe: learning one thing did not cost anything measurable anywhere else. That is the claim in the first paragraph of this README, drawn rather than asserted.<br>The right panel is why that is possible at all. Over the whole probe only 54 of 136 experts received any gradient - 60% of the model was structurally untouched, because routing never selected it. This is the pool doing exactly what a pool is for: confining an update to the part of the model that the text actually addressed.<br>The learning rate is not scheduled. A cosine schedule asserts that the run ends, which for a model that reads continually is false. Instead a controller watches held-out loss and moves the rate in both directions: clear improvement buys a little more, no evidence eases it down, and a confirmed jump in held-out steps it back up.<br>This is the shortest path to a model that knows something you care about.<br>python3 train.py read ~/notes                     # a dry read - nothing kept<br>python3 train.py read ~/src ~/docs --passes 3 --save<br>Point it at files or directories. There is nothing to prepare: the alphabet is the 256 byte values, so a file is already written in the only vocabulary the model has. Directories are walked, binaries are skipped by sampling their contents rather than trusting the extension, and each file is read from its beginning to its end because a document has an order.<br>It is the same path training uses: same chunking, same cache, same gradient step.<br>| flag |  |<br>|---|---|<br>| --passes N | read the whole set N times |<br>| --save | keep what it learned; without it weights/ is untouched |<br>| --lr | default 5e-5, below a training run: reading should adjust the model, not overwrite it |<br>| --mix &quot;&quot; | skip the before/after scoring |<br>Two defaults worth knowing. Nothing is saved without --save, so a read is a dry run until you decide otherwise. And it scores the held-out mixture before and after, then says plainly if reading your files cost the model ground elsewhere - the forgetting question measured per-read rather than assumed away.<br>The numbers below are for tracking purposes and move as the run continues. Held-out loss is reported with its standard error, and the size of the evaluation is what sets that error - a difference smaller than it is the instrument rather than a result.<br>There is a second variance underneath these figures. The same configuration run twice lands about 0.014 apart, because the expert dispatch is not deterministic on CUDA. Treat about 0.03 as the threshold for a real difference, not the error bar printed beside one score.<br>Where the model is (318.1M characters read, 169 experts):<br>|  | nats/char | bits/byte |<br>|---|---|---|<br>| held-out, all eight subjects | 0.8336 ± 0.0331 | 1.2026 |<br>| train | 0.6809 | 0.9823 |<br>Held-out loss per subject:<br>| Subject | nats/char | bits/byte |<br>|---|---|---|<br>| chess | 0.552 | 0.796 |<br>| stories | 0.637 | 0.919 |<br>| arithmetic | 0.657 | 0.948 |<br>| code | 0.739 | 1.066 |<br>| reasoning | 0.794 | 1.145 |<br>| chat | 0.831 | 1.199 |<br>| chat_hermes | 1.178 | 1.699 |<br>| wikipedia | 1.280 | 1.847 |<br>Every point on this chart is a model with a published bits-per-byte - the only loss unit that survives a change of tokenizer, which is why a byte-level model can be put beside GPT-3 at all.<br>Three held-out sets are involved - PG19, Pile-CC and this project&#x27;s own mixture - so the vertical positions are not strictly comparable across colours. MambaByte-353M is the closest like-for-like, same parameter class and essentially the same FLOPs per byte, and it read 94x more data than this model has. Transformer-320M read 251x more.<br>The results so far are promising. The red line is the fitted power law, L ∝ D^-0.239 with R² 0.96 over every point past the warmup - a clean, healthy exponent, between Kaplan&#x27;s 0.095 and Chinchilla&#x27;s 0.28, and it has held for more than a decade of data. How steep it looks depends on where the fit starts: windows from 40M to 150M give 0.21 to 0.32, and the band on the chart spans that range rather than pretending to one number.<br>Read straight off that trend, and remembering that the target is this model&#x27;s own mixture rather than PG19:<br>| held-out | bytes needed | days at ~778 char/s |<br>|---|---|---|<br>| 1.10 BPB | 0.51B | ~3 |<br>| 1.00 BPB | 0.75B | ~6 |<br>| 0.93 BPB | 1.02B | ~10 |<br>| 0.80 BPB | 1.92B | ~24 |<br>Those are days to weeks of reading on one laptop GPU, not years, and all of them sit inside a single pass of the 7.87B-character corpus.<br>The right panel shows which subjects are still moving. Code, chat, stories and reasoning are the steep ones; wikipedia and chat_hermes carry the most loss and have the shallowest slopes, which is the honest counterweight - the expensive domains are not the fastest ones.<br>- Make sure you have a CUDA-capable GPU with at least 8 GB of VRAM, and Python 3.10 or newer. The reference machine is an RTX 3070 Laptop GPU with 8 GB.<br>- Clone the repository:<br>git clone &lt;repository-url&gt; cd mini-AGI<br>- Install the dependencies:<br>PyTorch has to match your CUDA version - see the PyTorch install page. The reference environment is torch 2.6.0+cu124 with numpy 1.24.4. Only the first line is needed to train.pip install torch numpy pyyaml matplotlib # the model, and its graphs pip install flask # serve.py pip install chess zstandard datasets # building corpora pip install scipy # a few of the analysis tools<br>- Build the corpus. One command downloads the four public datasets and generates the other four lanes:<br>Lanes already on disk are left alone, so an interrupted build can simply be run again. Individual lanes are available too -python3 -m corpora all # all eight subjects, a few GB python3 -m corpora all --limit 5000 # a small slice first, to try it python3 -m corpora all --full # entire datasets: tens of GB, hours python3 -m corpora lists them - or skip this entirely and point the model at your own files.<br>- Start reading. The weights directory is created from config.yaml the first time, so there is nothing to set up:python3 train.py read data/train --save --weights-dir weights \<br>--held-out data/val --sample-every 10<br>- Serve it:<br>python3 serve.py --port 8080            # then open http://127.0.0.1:8080<br>The run writes a sample log, redraws its graphs as it goes, and checkpoints every few minutes. It is meant to be left alone for days.<br>python3 -m minagi.store weights                    # what the model is right now<br>python3 -m corpora                                 # every corpus target<br>python3 -m corpora all --only wikipedia stories    # rebuild particular lanes<br>python3 -m corpora expand                          # .bin -&gt; the text files read<br>python3 train.py read --help                       # every knob the reader has<br>python3 train.py stream --steps 140000 --lr 2e-4   # the packed-corpus path<br>python3 train.py ponder-probe --ckpt weights       # depth against difficulty<br>Every tool takes --ckpt weights - the directory is the model, and there are no .pt files to keep track of.<br>A fresh model starts small and grows into its shape. The context window begins at model.context_start and extends one character at a time, but only when the model is still getting something out of the far end of the window it already has. The expert pool begins at pool.experts and grows from there.<br>This means the first hours of a run look nothing like the rest of it. Loss falls fast, the pool churns, the window is short, and the learning-rate controller has not gathered enough evaluations to act. None of that is a problem to fix.<br>If a run diverges, it repairs itself: when held-out exceeds the best by more than --revert-factor (default 1.5x) the run reloads weights/, halves the learning rate, pulls the context back and continues. After --max-reverts it stops rather than thrash.<br>minagi/          the model. no command lines here.<br>config.py        reading config.yaml, which building and training both use<br>precision.py     what the model computes in, and how moments are stored<br>tokenizer.py     bytes in, bytes out - 256 values plus structural markers<br>model.py         the transformer: RMSNorm, rotary positions, SwiGLU, flash attention<br>decode.py        how a character is chosen, without a random number generator<br>ingest.py        turning a pile of files into something to read<br>pool.py          the expert pool, and the rules by which it grows and shrinks<br>paged.py         the same pool spread over disk, RAM and VRAM<br>recur.py         latent recurrence with adaptive depth<br>stream.py        reading a corpus behind a KV cache, one chunk at a time<br>store.py         the weights directory, which IS the model<br>optim.py         how much of a gradient is signal<br>plasticity.py    the learning rate, governed by held-out loss<br>live.py          serving a model that is being trained underneath<br>report.py        the model reading statistics off its own weights<br>create.py        writing a fresh weights directory from config.yaml<br>train.py         read | stream | ponder-probe<br>serve.py         local web UI<br>config.yaml      the settings worth changing<br>corpora/         python3 -m corpora all - the whole corpus, downloaded and made<br>weights/         one file per expert. this directory is the model.<br>weights/ is written on the first run and data/ by corpora; neither is in<br>the repository. Everything else above is.<br>weights/<br>manifest.json     what exists, its shape, and where it came from<br>core.npz          embeddings, attention, norms, adapter, halting head<br>routers.npz       the gate, the segment router, one row per expert per site<br>optim.npz         Adam moments for the trunk and the routers<br>experts/          one file per expert: w1, w3, w2 and its own Adam moments<br>e00000.npz ...<br>Training resumes from it - weights, Adam moments and step count - and advances it whenever a run improves on what is there, so a session run only to check something still contributes if it finds anything. The directory holds the best state the model has reached, not the most recent one. Writes are atomic: every file is written to a .tmp and renamed, so an interrupted save cannot leave a half-written weight behind.<br>The directory is written on the first run.<br>Byte level - vocabulary 265: the 256 byte values plus 9 structural markers (&lt;think&gt;…&lt;/think&gt; scratchpad, &lt;user&gt;/&lt;bot&gt; turns, &lt;g&gt; for games, and end-of-text). Context 4,096.<br>| body | RMSNorm, RoPE, SwiGLU, flash attention via scaled_dot_product_attention |<br>| depth | 3 distinct blocks, up to 26 block-applications per character |<br>| recurrence | one weight-shared block applied up to 24 times; the latent is never decoded |<br>| halting | PonderNet - each character halts independently, so hard ones get more depth |<br>| routing | top-8 experts per block-application, chosen per character |<br>| paging | 32 experts resident on the card; the rest live on disk |<br>The parameter count moves, because the pool grows and prunes itself while training. python3 -m minagi.store weights prints what it is now. At the time of writing:<br>core        8.27M   embeddings, attention, norms, adapter, halting head<br>routers     0.17M   one row per expert per call site, plus depth embeddings<br>experts   531.6M    169 x 3.15M each  (3 x 512 x 2048)<br>--------------------<br>total     540.1M<br>VRAM is set by the working set, not by the pool. Only 32 experts are resident at a time - about 109M parameters of the 540M - which is why the pool can keep growing on an 8 GB card. Per byte the model costs about 2.4 GFLOPs to train, which puts it in the same compute class as a dense 400M byte-level transformer.<br>This project was assisted by &quot;Claude Opus 5&quot; model. The model did implemented most of code of this project, verified and debugged it when it was necessary. The model was searching for published papers related to the problems that the project were trying to solve, build tests and experiments, and help with brainstorming the complex problems that arose along the way. The animations, graphs and other media you see here are all done by Claude as well form the real data traces. While I myself provided main ideas, steering, intuition, rejections when thing went in a wrong direction, code monitoring and verification, as well as decisions and strong opinions of how everything should be wired together and work in principle. Documentation was written in tandem.<br>PyTorch does the arithmetic, NumPy holds the weights on disk, and Matplotlib draws every graph.<br>The parts the model is built out of:<br>Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer - Shazeer et al., 2017. The entire expert pool, and the load-balancing auxiliary loss.<br>Switch Transformers - Fedus et al., 2021. The capacity-based batched dispatch, which is what lets the pool run as three matrix multiplies.<br>PonderNet: Learning to Ponder - Banino et al., 2021. The adaptive depth mechanism.<br>RoFormer: Rotary Position Embedding - Su et al., 2021. Why the context window can grow by continued training.<br>GLU Variants Improve Transformer - Shazeer, 2020. SwiGLU.<br>Root Mean Square Layer Normalization - Zhang &amp; Sennrich, 2019.<br>FlashAttention - Dao et al., 2022. Reached through PyTorch&#x27;s scaled_dot_product_attention.<br>Decoupled Weight Decay Regularization - Loshchilov &amp; Hutter, 2017. AdamW.<br>Training Deep Nets with Sublinear Memory Cost - Chen et al., 2016. Gradient checkpointing, which on 8 GB is not optional.<br>ZeRO-Offload - Ren et al., 2021, and ZeRO-Infinity - Rajbhandari et al., 2021. Training a model larger than the card it sits on is not a new capability.<br>Dynamic Mixture of Experts Against Severe Distribution Shifts - Kim et al., 2025. Adds experts to a live MoE, and reports the failure this project spent a week fixing.<br>Training Compute-Optimal Large Language Models - Hoffmann et al., 2022. Chinchilla, and the ratio any efficiency claim has to be tested against.<br>The Pile - Gao et al., 2020. Bits per UTF-8 byte, chosen there for invariance to tokenisation.<br>Transformer-XL - Dai et al., 2019, and Compressive Transformers - Rae et al., 2019. The character-level benchmarks to aim at.<br>An Empirical Model of Large-Batch Training - McCandlish et al., 2018. The gradient noise scale.<br>The AdEMAMix Optimizer - Pagliardini et al., 2024. Implemented for the trunk and available, though at the paper&#x27;s settings it hurt this model and it is not the default.<br>The corpus: TinyStories, OpenHermes-2.5, OpenThoughts-114k and the Lichess open database. Wikipedia and the source-code portion come from public dumps and public repositories.<br>If you use this project in your research or work, please cite it as:<br>@software{Borsky_mini_AGI_2026,<br>author = {Borsky, Alexey},<br>month = {9},<br>title = {{mini-AGI: A Continually Learning Byte-Level Language Model}},<br>url = {https://github.com/volotat/mini-AGI},<br>version = {1.0.0},<br>year = {2026}<br>}</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    MiMo v2.6
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    903 points ·
+    398 comments ·
+    volf_
+  </div>
+
+  <div class="meta">
+    mimo.xiaomi.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #3
+  </div>
+
+  <div class="links">
+    <a href="https://mimo.xiaomi.com/mimo-v2-6">Original article</a> · <a href="https://news.ycombinator.com/item?id=49792730">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Ask HN: Is it impossible to disable Siri on macOS 27?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    146 points ·
+    77 comments ·
+    semidror
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #54
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49786609">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I disabled Siri in the Settings app, and then further disabled Siri and its extensions in Settings &gt; Screen Time.<br>Next, I disabled all Siri-related and Apple Intelligence-related services as per https://github.com/OleksandrKrupko/mac-os-debloat<br>But after restarting, I could still see a &quot;Siri&quot; process running in Activity Monitor. Upon further inspection, I found that it is the &quot;Siri AI.app&quot;.<br>These &quot;features&quot;, together with Apple&#x27;s Personal Context sound very similar to Microsoft&#x27;s Recall.<br>Does anyone have the same experience? Is it really impossible to fully turn off Siri, Siri AI, Apple Intelligence and all related services and features on macOS 27?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Can gzip be a language model?
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    123 points ·
+    44 comments ·
+    networked
+  </div>
+
+  <div class="meta">
+    nathan.rs
+  </div>
+
+  <div class="meta ranks">
+    Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://nathan.rs/posts/gzip-lm/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49797323">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A while back I wrote about language modeling without neural networks, where I generated Shakespeare with an unbounded n-gram model: no weights, no training, just counting. Fortuitously, I came across the paper Language Modeling is Compression, which mentioned the compression–prediction equivalence:<br>every prediction model is inherently a compressor, and all compression algorithms are prediction models.<br>This led to the natural question: can gzip do language modeling?1<br>No neural network, no learned parameters, nothing. Just the compressor that ships with your operating system. You prime it with a corpus, give it a normal text prompt, and it continues that prompt by searching for the byte sequences that compress best. Here’s some real, unedited output after priming it on tiny Shakespeare:<br>gzipt --corpus data/tinyshakespeare.txt --prompt $&#x27;MENENIUS:\n&#x27; --length 200MENENIUS:<br>&#x27;Though all at once canq<br>MARCIUS:<br>Pray now, nocamest thou to a morsel .<br>LARTIUS:<br>Hence, and<br>I&#x27; the end admire, where G<br>again; and after it ag .<br>It turns out, kind of? It’s not exactly coherent text, but it clearly knows something about the text. Much more than I expected gzip to know.2 So how can a compressor generate this?<br>Compression is prediction#<br>Think about what a compressor does. It spends few bytes on data it “expects” and many bytes on data it doesn’t. If I hand you a file that’s the letter A repeated a million times, you can describe it in one sentence. A million random bytes, on the other hand, have no structure to exploit and barely compress at all.<br>This is not a coincidence; it’s the core of information theory. The number of bits needed to encode a symbol is $-\log_2 p$, where $p$ is the probability the model assigns to it. High probability means few bits. So any compressor has a probability model hiding inside it, whether or not anyone wrote one down.<br>gzip uses DEFLATE, which compresses the next bytes by finding matches against the recent text in a 32 KiB sliding window. If a continuation echoes something already in the window, DEFLATE encodes it as a cheap back-reference instead of literal bytes. So:<br>A continuation that gzip “expected”, because it echoes text already in its window, compresses to almost nothing.<br>That gives us a score. If I have some context and I want to know how good a candidate continuation is, I just measure:<br>$$\text{score}(\text{candidate}) = \texttt{len(gzip(context + candidate))}$$<br>The smaller the compressed length, the more “predicted” the candidate is. To prime the model, I include a corpus in gzip’s window. Any continuation that looks like the corpus compresses small, and any continuation that doesn’t compresses large.<br>Generating by beam search#<br>Scoring is one thing; generating is another. The naive approach of picking the single next byte that compresses best fails badly, and for a subtle reason: gzip only gives an integer byte length (no fractions). Adding one byte often doesn’t change the compressed length at all, so many candidates tie and the signal is buried in quantization noise.<br>The fix is to look ahead a whole span before committing. gzipt runs a beam search over byte sequences. At each step, the current context is:<br>corpus window + recent tail of (prompt + generated bytes)<br>Then gzipt tries possible next bytes. Each candidate continuation is scored by compressing context + candidate and checking how many bytes the compressed result takes.<br>The loop is:<br>- Prompt. Start with the user’s prompt as the initial text to continue. There is no start token; the prompt bytes are just part of the context gzip sees.<br>- Context. Show gzip the corpus window plus the recent tail of the prompt/generated text.<br>- Search. Keep the beam_width most-compressible partial continuations. Extend each by every byte that occurs in the corpus, score all of them by compressed length, and prune back down to the bestbeam_width . Repeat forhorizon bytes.<br>- Commit. Take the most-compressible full span (or sample among the finalists if temperature is positive), append it, and start the loop over.<br>One detail that matters is that only the last tail bytes of generated output stay in the scoring context. DEFLATE codes nearby matches more cheaply than far ones, so if gzip could see its entire history, the cheapest thing to do is often to fall into verbatim loops, repeatedly copying text it just emitted.<br>You can see the decoding and scoring process in the animation above, which is the same replay shown at the top. The whole thing is one file of pure standard-library Python (just zlib). Code’s on GitHub if you want to play with it.<br>- The paper did try this, but it ended up performing poorly. Adding beam search significantly improved generation quality (an idea they mentioned), which is discussed below. ↩︎<br>- The code actually uses zlib instead of spawning a gzip process, but the name GziPT was too good. I believe they both use the same DEFLATE algorithm under the hood. ↩︎</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Pygmalion&#x27;s Passion
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    holdit
+  </div>
+
+  <div class="meta">
+    paulkingsnorth.substack.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://paulkingsnorth.substack.com/p/pygmalions-passion">Original article</a> · <a href="https://news.ycombinator.com/item?id=49798590">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Attention is all you have
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    802 points ·
+    239 comments ·
+    zer0tonin
+  </div>
+
+  <div class="meta">
+    alicegg.tech
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #7
+  </div>
+
+  <div class="links">
+    <a href="https://alicegg.tech/2026/09/21/attention">Original article</a> · <a href="https://news.ycombinator.com/item?id=49787726">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The Tetris effect is one of psychology’s most easy to reproduce experiments. Simply spend a bit of time playing the eponymous game every day for a few weeks. After a little while, you’ll start recognizing familiar Tetromino shapes in clouds, buildings, and everyday objects. You might even see them appear before your eyes when you start falling asleep.<br>Attention hijacking<br>There’s one lesson the Tetris effect teaches us: whatever you focus on long enough will end up shaping your thoughts. This can be a good thing since it’s how we learn new skills and discover new ideas. Sadly, less and less of our attention is focused intentionally. Instead of picking what we want to see we let other people decide what is supposed to be good for us.<br>Do you want to watch a video? YouTube knows you like cooking and art streams. But why not also recommend a few clips about the stock market bubble, global warming, and the war in Iran. Doomscrolling will make you stay longer and click on a few more ads.<br>Do you want to listen to music? Just open a Spotify playlist and let the algorithm figure out what you like. Please ignore the AI slop they will insert in between real songs to avoid paying royalties to real artists.<br>Do you want to know how your colleagues are doing? Too bad, LinkedIn will bury any relevant career news between the opinion of complete strangers. It is surely just a coincidence that those strangers happen to be shilling whatever Microsoft is invested in at the moment.<br>Do you want the opinion of strangers on a product? Well those Redditors you wanted to ask are probably just a bunch of LLMs talking to a bunch of Russian trolls now. I hope you didn’t value their opinion too much.<br>If, like me and most people, you spend the major part of your day focused on your device, there’s no doubt it’s affecting you. And when you let someone else dictate what appears on your screen, it’s the same as giving them the key to your brain.<br>Back to an intentional internet<br>The internet wasn’t always like that. Before recommendation algorithms were a thing, you had to decide what you would be doing on the computer.<br>You didn’t really have one big app that you could open and order it to entertain you. Instead, you had a few dozen of bookmarks to websites, each with a specific idea in mind. A site for video game news, that one website with lots of tutorials, a blog about anime that didn’t update often enough, a wiki about a TV show from the 90s…<br>Of course awful things existed on the web. We had Encyclopedia Dramatica and Rotten.com, but you actually had to put the effort to go there if you wanted. Nobody was going to put pictures of dead kids and far-right propaganda as a suggestion after a pancake recipe or a cat video.<br>The good thing is that this intentional internet is still around. It has just been a bit buried below the corporate web, but it’s not very hard to find. After all you’re on this blog, so you probably already have a good idea about it.<br>The main difference between this time and now is you. When you want to get back to reading blogs, RSS feeds, and finish that tutorial instead of doomscrolling shorts, you have to get used to a slower internet. One where content is not infinite and doesn’t get updated every click.<br>But like every habit, the only thing you have to do is to keep at it. And if you pay enough attention to it, something will click in your brain.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    I said no and Apple said yes
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    60 points ·
+    24 comments ·
+    thatslast
+  </div>
+
+  <div class="meta">
+    dbushell.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · New #47
+  </div>
+
+  <div class="links">
+    <a href="https://dbushell.com/2026/09/22/apple-intelligence/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49797982">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I said no and Apple said yes<br>The nice thing about keeping a blog is that I can say at precisely 9:51am, Wednesday 5th February 2025, I discovered that macOS 15.3 had enabled a feature that was phoning home every 15 minutes with personal data. And that I said “no” and turned it off.<br>At the time Apple were generous enough to provide a setting to disable this feature.<br>Although they hid the second part deeper, because why should saying “no” be easy?<br>Last week I succumbed to Apple’s harassment and upgraded macOS 15 to 27. I only skipped one major version, Apple skipped 10!<br>And today I discovered that Apple had removed the “no” switch.<br>The “AI” industry has many flaws, the word “consent” being seemingly missing from training data and company handbooks is one of them. AI bros do not take “no” for an answer. When Apple advertised their deepfake feature back in June it became obvious Apple does not “think different.”<br>Digging through macOS 27 settings I turned off Siri (again). Of course, multiple unkillable Siri processes remain, stealing memory and writing data. For what purpose? Who knows. Note that they removed “Apple Intelligence” from this control.<br>Trawling the web I discovered Apple has hidden settings under “Screen Time” restrictions. This is supposed to be for parental controls. These settings don’t disable Apple “Intelligence” but they do clean up various menus by hiding the slop tools.<br>All of this garbage was enabled after upgrading to macOS 27 despite me having “Apple Intelligence &amp; Siri” turned off already. That was a rather explicit “no”, no?<br>The icing on this cake is the 22.28 GB brick clogging my disk space.<br>Apple is charging £500/TB on new MacBooks so that is what, £11 they’ve stolen from me?<br>But that’s a trivial cost compared to the consent problem. The AI industrial complex does not do consent. You will use it. You cannot look away, it will be stuffed down your throat and if you say “no” they’ll cut out your tongue.<br>The AI industry is vile. My AI policy tried to list my concerns but it’s hopelessly outdated. I can’t keep up. Here’s just three of many headlines I collected this month:<br>- Despite Pledges From Musk, Child Sexual Abuse Material Persists on X<br>- OpenAI Is Now Facing Over 50 Consumer Harm and Wrongful Death Lawsuits<br>- OpenAI and Microsoft Admits LLMs Are Destroying the Web and Built on Theft<br>The list is endless. There is no limit to the human toll to keep this bubble inflated.<br>Call me a radical but I’ve chosen not to kowtow to billionaires. Do you want another Epstein list? Because this is how you create another Epstein list. Fund a generation of psychopaths building on a foundation of non-consent and privacy invasion. Fantastic idea!<br>AI bros keep telling me “just turn it off” and when I do they remove the choice.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: Foremerge – Catch intent conflicts between parallel coding agents
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    42 points ·
+    13 comments ·
+    naw103
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #46
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/naw103/foremerge">Original article</a> · <a href="https://news.ycombinator.com/item?id=49789356">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Foremerge is the open-source coordination protocol for coding agents, built above Git. Agents keep isolated worktrees while sharing intent, semantic claims, dependencies, provisional ChangeSets, decisions, validation, and provenance.<br>| Tell your agent to install | → | Done | → | See collisions before they land |<br>|---|---|---|---|---|<br>| Paste one line into Claude Code, Codex, or Cursor |  | It installs Foremerge and wires itself up |  | Every agent sees what the others are about to change, even in separate worktrees |<br>Status: Foremerge 0.5.0 is a pre-1.0, local-first MVP. The CLI, JSON API,<br>MCP server, SQLite store, deterministic conflict detector, and<br>verification-gated lifecycle are implemented. Public schemas may still<br>change. Published benchmark results do not yet exist, and coordination<br>between machines is outside this project&#x27;s scope.<br>Say you have two AI agents working on the same project at the same time. Each one gets its own copy of the code, so they never fight over files. Both finish. Both look correct. Then you find they undid each other&#x27;s work.<br>Git cannot warn you about that, because Git compares text and not intent. It<br>will stop you when two agents edit the same part of the same file. What it<br>cannot see is two edits that are each perfectly reasonable on their own and<br>land in different files. If one agent moves every caller onto a new<br>StripePaymentService while another adds PayPal support to the old<br>PaymentService, nothing overlaps, so Git merges both without complaint and<br>the PayPal work is left stranded on a class nothing calls any more.<br>Foremerge fixes this by having agents announce what they are about to do, before they do it.<br>- Each agent says what it is about to touch. Not the code, just the<br>target, like &quot;I am going to change the sendEmail function.&quot;<br>- Every agent reads from one shared list. It is a small database inside<br>your project&#x27;s .git folder, so every agent on your machine sees the same<br>picture, whether it is Claude, Codex, or Cursor.<br>- If two plans collide, you hear about it right away. Foremerge names the two agents, explains why their plans clash, and suggests how to split the work. Both worktrees are still clean at that point, so no work has to be thrown away.<br>Think of it as a shared whiteboard. Before an agent starts, it writes down what it is about to work on, and it reads what everyone else already wrote.<br>Two things Foremerge deliberately does not do. It never locks a file or blocks an agent, because a single crashed agent would then stall the whole fleet, so the warnings are advisory and you stay in charge. And it never asks a model to judge conflicts, so the same inputs always produce the same answer.<br>Agent A: Replace PaymentService with StripePaymentService<br>Agent B: Add PayPal support to PaymentService<br>These agents can work in different trees without touching the same line. The plans still collide: one removes the extension point while the other depends on it.<br>Both agents declare the same symbol:PaymentService scope, one saying it will<br>replace it and the other that it will extend it. Foremerge compares those<br>two declarations before either writes code, raises a HIGH advisory, and<br>suggests coordinating on a stable abstraction such as PaymentProvider. That<br>suggestion is explainable evidence, not an automatic architecture decision or a<br>hard lock.<br>Because the operation is declared rather than read out of the summary, it does not matter how either agent phrased its plan. &quot;Consolidate payments onto Stripe&quot; and &quot;Replace PaymentService with Stripe&quot; reach the same verdict.<br>Git remains the durable repository. Foremerge supplies the missing shared awareness above it.<br>Rendered from the actual conflict fields captured by the 0.1.0<br>release-binary run in<br>examples/terminal-session.txt. The displayed<br>command uses the shown jq filter; output is abridged for readability.<br>Paste this into Claude Code, Codex, or Cursor from inside the repository you want to coordinate:<br>Set up Foremerge in this repository so we can coordinate parallel agents.<br>1. Install it:      curl -fsSL https://foremerge.com/install.sh | sh<br>2. Initialize:      foremerge init<br>3. Wire this client and any others in use: foremerge setup all<br>4. Register the check I should be validated against, for example:<br>foremerge checks set test -- cargo test --all-targets<br>5. Confirm:         foremerge doctor --client all<br>Then read the Foremerge skill that step 3 installed for this client and follow<br>it from now on: publish your intent with semantic scopes before editing, claim<br>the scope, and check for conflicts before you start.<br>Adjust step 4 to whatever this repository&#x27;s real test command is. Step 3 asks the client to enable an MCP server, so it will prompt you before doing so. The Codex registration is user level, but one registration serves every repository: start Codex inside the repository you want it to coordinate.<br>You need a recent Git and jq. Install a prebuilt, checksum-verified release<br>binary (macOS and Linux; the script installs to ~/.local/bin):<br>curl -fsSL https://foremerge.com/install.sh | sh<br>Tip<br>Two commands, one program. This installs foremerge and fmg, the same<br>binary under a shorter name, so fmg status and foremerge status do the<br>same thing. Examples below spell out foremerge; type whichever you prefer.<br>Or build from source with Rust 1.85+: cargo install --locked --git https://github.com/naw103/foremerge foremerge, or cargo install --locked --path . from a checkout. Windows binaries are on the<br>releases page. To update,<br>upgrade the same way you installed, then re-run foremerge setup and restart<br>your agent clients; Upgrading Foremerge<br>explains why each step matters. Then, inside the repository you want to<br>coordinate:<br>foremerge init<br>foremerge doctor<br>The installer, the release archives and cargo install all carry both names<br>from 0.4.0 onward. If something else on your PATH already answers to fmg, the<br>installer leaves it alone and says so rather than shadowing it.<br>Install the native skill and MCP entry for any clients used in this repository, then define the trusted checks agents may request by name:<br>foremerge setup all<br>foremerge checks set test -- cargo test --all-targets<br>foremerge doctor --client all<br>Acceptance is verification-gated: Foremerge runs the check itself rather than taking an agent&#x27;s word for it. Pick a check that is fast and that would actually catch a broken handoff, such as a build or a typecheck, rather than a full CI suite; this gate decides whether other agents may treat the work as done, and it does not replace CI. If this repository has nothing meaningful to verify, say so once rather than registering a check that always passes:<br>foremerge checks policy advisory<br>Work accepted that way is recorded as UNVERIFIED with the reason, so the audit<br>trail never implies a check ran when none did. foremerge doctor reports<br>whether the registered checks can actually run here, which matters in agent<br>worktrees, because dependency directories are usually gitignored and<br>git worktree add will not create them.<br>Use setup codex, setup claude, or setup cursor for one client. Setup<br>preserves unrelated configuration (including key order in project MCP JSON).<br>Upgrading Foremerge refreshes its own unedited skill file in place, but a skill<br>file you edited, or a differing Foremerge MCP entry, is never replaced unless<br>you explicitly pass --force. setup all attempts every client and reports each<br>result, exiting nonzero if any failed. The Codex MCP registration is user-level<br>and serves every repository, resolved from the directory Codex is started in;<br>see agent client setup.<br>init creates local coordination state under the repository&#x27;s Git common<br>directory. It does not change tracked files. The following no-worktree sessions<br>are enough to exercise pre-code detection; real coding agents should register<br>their isolated worktrees and actual model identifiers.<br>STRIPE_AGENT=$(<br>foremerge --json agent register \<br>--name stripe-agent \<br>--no-worktree |<br>jq -er &#x27;.data.id&#x27;<br>)<br>STRIPE_RESULT=$(<br>foremerge --json intent publish \<br>--agent &quot;$STRIPE_AGENT&quot; \<br>--task &quot;modernize-payments&quot; \<br>--summary &quot;Replace PaymentService with StripePaymentService&quot; \<br>--scope symbol:PaymentService=replace<br>)<br>STRIPE_INTENT=$(printf &#x27;%s\n&#x27; &quot;$STRIPE_RESULT&quot; | jq -er &#x27;.data.intent.id&#x27;)<br>PAYPAL_AGENT=$(<br>foremerge --json agent register \<br>--name paypal-agent \<br>--no-worktree |<br>jq -er &#x27;.data.id&#x27;<br>)<br>PAYPAL_RESULT=$(<br>foremerge --json intent publish \<br>--agent &quot;$PAYPAL_AGENT&quot; \<br>--task &quot;add-paypal&quot; \<br>--summary &quot;Add PayPal support to PaymentService&quot; \<br>--scope symbol:PaymentService=extend<br>)<br>PAYPAL_INTENT=$(printf &#x27;%s\n&#x27; &quot;$PAYPAL_RESULT&quot; | jq -er &#x27;.data.intent.id&#x27;)<br>printf &#x27;%s\n&#x27; &quot;$PAYPAL_RESULT&quot; |<br>jq &#x27;.data.conflicts[] | {kind, severity, scope, explanation, suggestion}&#x27;<br>printf &#x27;%s\n&#x27; &quot;$PAYPAL_RESULT&quot; |<br>jq &#x27;.data.related_work[] | {agent, summary, asserted, overlap}&#x27;<br>The first command prints the live finding from your local run. The second<br>prints related_work: the other agent&#x27;s intent and every overlapping scope<br>with both declared operations. Foremerge states what overlaps; you decide what<br>it means and record that with foremerge assess record. No files need to<br>change first. Inspect the captured, clearly labeled transcript in<br>examples/terminal-session.txt.<br>Claims add ownership context without blocking either agent:<br>foremerge --json work claim \<br>--agent &quot;$STRIPE_AGENT&quot; \<br>--intent &quot;$STRIPE_INTENT&quot; \<br>--scope symbol:PaymentService \<br>--reason &quot;Changing the provider boundary&quot; &gt;/dev/null<br>foremerge --json work claim \<br>--agent &quot;$PAYPAL_AGENT&quot; \<br>--intent &quot;$PAYPAL_INTENT&quot; \<br>--scope symbol:PaymentService \<br>--reason &quot;Adding another provider&quot; |<br>jq &#x27;.data | {advisory_only, warnings}&#x27;<br>foremerge --json work query --scope symbol:PaymentService |<br>jq &#x27;.data[] | {agent: .agent.name, intent: .intent.summary, open_conflicts}&#x27;<br>Both claims succeed. The second response includes an overlap warning because a claim is a leased advisory, never exclusive ownership.<br>Recorded against the released 0.4.0 binary; every command and its output is real.<br>coding agent A                                  coding agent B<br>|                                               |<br>isolated worktree A                            isolated worktree B<br>|                                               |<br>+--------- semantic events, not edits ----------+<br>|<br>CLI / MCP / JSON API<br>|<br>Foremerge service<br>/        |        \<br>SQLite coordination   git CLI   validation argv<br>in &lt;git-common-dir&gt;       |           |<br>\         Git repository /<br>durable commits and refs<br>Every frontend uses the same service and store. The semantic graph is:<br>Agent → Task → Intent → Claim → Symbol → Dependency<br>→ ChangeSet → Test → Result → Decision → Provenance<br>Mutations update typed SQLite projections, materialize graph edges, and append a hash-chained semantic event in one transaction. The log is useful tamper evidence; it is not a remote identity signature or distributed consensus.<br>Foremerge resolves the Git common directory and stores its default database at:<br>&lt;git-common-dir&gt;/foremerge/state.sqlite3<br>Linked worktrees share that common directory even though their checked-out files are separate. Create a worktree with Foremerge&#x27;s thin wrapper around stock Git:<br>foremerge worktree create \<br>--branch agent/paypal \<br>--path ../payments-paypal \<br>--base HEAD<br>foremerge --cwd ../payments-paypal --json agent register \<br>--name paypal-agent \<br>--model &quot;$ACTUAL_MODEL_ID&quot;<br>Another worktree in the same repository sees the registered agent and its<br>intents immediately. You can override storage with --database PATH or<br>FOREMERGE_DB, but every local agent must point at the same database to share<br>state. The MVP does not replicate SQLite across machines; do not infer<br>distributed safety from a network-mounted database.<br>Foremerge snapshots Git state for ChangeSet fingerprints and accepted refs. It does not automatically merge, rebase, cherry-pick, push, or update a target branch.<br>INTENT ─claim→ CLAIMED ─start→ IN_PROGRESS ─publish→ PROVISIONAL<br>─validate current fingerprint→ VALIDATED<br>─accept gates→ ACCEPTED ─record Git ref→ COMMITTED<br>Supported scope kinds are:<br>symbol api schema config infra test migration env file component contract domain<br>Publish the narrowest useful semantic scope. File paths alone miss API, configuration, schema, infrastructure, and cross-language collisions.<br>Common commands:<br>| Boundary | Command |<br>|---|---|<br>| Register provenance | foremerge agent register --name NAME --model MODEL |<br>| Publish intent | foremerge intent publish --agent ID --task TASK --summary TEXT --scope KIND:KEY=OPERATION |<br>| Claim scope | foremerge work claim --agent ID --intent ID --scope KIND:KEY |<br>| Start implementation | foremerge work start INTENT_ID --agent AGENT_ID |<br>| Ask who is changing it | foremerge work query --scope KIND:KEY |<br>| See what every agent is doing | foremerge status |<br>| Preflight a plan | foremerge conflicts check --intent TEXT --scope KIND:KEY=OPERATION |<br>| Record what you concluded | foremerge assess record --agent ID --intent ID --related-intent-id ID --verdict V --rationale TEXT --action A |<br>| Send coordination | foremerge coordinate send --from ID --to ID --message TEXT |<br>| Watch semantic events | foremerge work watch --after-seq 0 |<br>Run foremerge &lt;command&gt; --help for the complete current flags. Global flags<br>such as --json, --cwd, and --database may appear before or after<br>subcommands.<br>A ChangeSet captures the agent/model, task and intent, affected<br>files/symbols/contracts, dependencies, implementation summary, reported tests,<br>decisions, provenance, worktree, fingerprint, status, and Git ref.<br>The accepted candidate and its later landing commit are retained separately as<br>accepted_commit and integration_commit.<br>The honest integration order is:<br>- Publish intent, claim semantic scope, and mark implementation in progress.<br>- Work and commit on the isolated agent branch.<br>- Publish a ChangeSet for that clean candidate.<br>- Ask Foremerge to execute validation against its exact fingerprint.<br>- Resolve high conflicts, then accept the still-clean, still-validated ref.<br>- Integrate with ordinary Git or a pull request.<br>- Record the durable integration commit in Foremerge.<br>foremerge work claim \<br>--agent &quot;$AGENT_ID&quot; \<br>--intent &quot;$INTENT_ID&quot; \<br>--scope component:payments<br>foremerge work start &quot;$INTENT_ID&quot; --agent &quot;$AGENT_ID&quot;<br># Implement the change and commit it on this isolated branch before publishing.<br>CHANGESET_ID=$(<br>foremerge --json changeset publish \<br>--agent &quot;$AGENT_ID&quot; \<br>--intent &quot;$INTENT_ID&quot; \<br>--summary &quot;Introduce PaymentProvider and StripePaymentProvider&quot; \<br>--file src/payments.rs \<br>--symbol PaymentProvider \<br>--symbol StripePaymentProvider \<br>--contract payment-provider \<br>--provenance-json &#x27;{&quot;source&quot;:&quot;coding-agent&quot;}&#x27; \<br>--git-ref HEAD \<br>--worktree &quot;$PWD&quot; |<br>jq -er &#x27;.data.id&#x27;<br>)<br>foremerge changeset validate &quot;$CHANGESET_ID&quot; \<br>--worktree &quot;$PWD&quot; \<br>-- cargo test --all-targets<br>foremerge changeset accept &quot;$CHANGESET_ID&quot; --git-ref HEAD<br># Integrate with ordinary Git, then record the commit that actually landed.<br>foremerge changeset commit &quot;$CHANGESET_ID&quot; --git-ref main<br>Agent-reported --reported-test COMMAND=STATUS values are provenance only.<br>They do not satisfy acceptance. Foremerge-owned validation records the command<br>argument vector, exit status, output, duration, and candidate fingerprint. Any<br>detected change after validation makes that attempt non-authoritative, but its<br>output and changed-path diagnostic remain queryable with changeset attempts.<br>For trusted checks that generate disposable untracked output, an operator may set exact or directory-prefix rules without changing tracked files:<br>foremerge validation-exclusions set \<br>--path coverage.log \<br>--path target/validation-reports/<br>The normalized policy digest is part of the candidate fingerprint, tracked changes are never excludable, MCP cannot change the policy, and generated files must still be removed before acceptance. See ADR 0001.<br>Acceptance also requires a clean worktree and no unresolved HIGH conflict,<br>unless the caller deliberately uses the visible --allow-high-conflicts<br>override together with --override-reason &quot;...&quot;. Prefer resolving a conflict<br>with an explicit rationale. Acceptance creates<br>refs/foremerge/accepted/&lt;changeset-id&gt;; it does not merge code.<br>Validation commands run as trusted local code with your operating-system permissions. Foremerge does not sandbox them.<br>Run foremerge mcp over stdio. MCP does not require the HTTP daemon; both are<br>adapters over the same database.<br>| Tool | Purpose |<br>|---|---|<br>| register_agent | Record agent, model, capabilities, and worktree provenance |<br>| publish_intent | Announce planned work, declare what it does to each scope, and receive conflicts plus related work to assess |<br>| record_assessment | Record what you concluded about one related intent and what you will do |<br>| claim_work | Create leased advisory claims on semantic scopes |<br>| query_work | Find agents, intents, claims, ChangeSets, and conflicts |<br>| check_conflicts | Check a published or provisional intent before code changes |<br>| publish_changeset | Record implementation, tests, decisions, and Git provenance |<br>| coordinate_with_agent | Send a durable message linked to a conflict or ChangeSet |<br>| start_work | Advance claimed work into implementation |<br>| resolve_conflict | Record an audited resolution for a durable conflict |<br>| run_verification | Run a trusted repository check by name, never raw MCP argv |<br>| accept_changeset | Apply final conflict, dependency, validation, and Git gates |<br>| record_commit | Record the actual Git integration commit |<br>| discard_work | Preserve abandoned work while releasing claims and blockers |<br>| list_agents | Read registered agent provenance |<br>| get_intent | Read one intent and current conflict snapshot |<br>| get_changeset | Read one ChangeSet and Git/provenance state |<br>| status | Read one consistent coordinator status snapshot |<br>Start from the valid minimal config in<br>examples/mcp-config.json. It assumes the client<br>launches foremerge with the repository as its working directory. Clients<br>without a repository working-directory setting should pass an absolute<br>--database before mcp; derive the Git common directory instead of assuming<br>that a linked worktree&#x27;s .git is a directory.<br>See agent client setup for the installer, native skill locations, client-specific MCP files, diagnostics, and safe replacement rules. See MCP setup for transport behavior, schemas, named checks, example inputs, and multi-worktree configuration.<br>Source clones include equivalent skills in .codex/skills, .claude/skills,<br>.cursor/skills, the portable .agents/skills location, and the Claude Code<br>plugin, plus portable Claude and Cursor MCP templates. A Cargo installation<br>embeds the canonical skill so foremerge setup can install it into another<br>repository without copying this source tree.<br>The daemon defaults to authenticated loopback HTTP on<br>http://127.0.0.1:47811. init creates a bearer token with private file<br>permissions where the platform supports them.<br>In one terminal:<br>foremerge daemon<br>In another terminal, read the token path from Foremerge rather than guessing it:<br>export FOREMERGE_URL=http://127.0.0.1:47811<br>TOKEN_FILE=$(foremerge --json init | jq -er &#x27;.data.token_file&#x27;)<br>FOREMERGE_TOKEN=$(tr -d &#x27;\r\n&#x27; &lt; &quot;$TOKEN_FILE&quot;)<br>curl --fail --silent --show-error \<br>--header &quot;Authorization: Bearer $FOREMERGE_TOKEN&quot; \<br>--get &quot;$FOREMERGE_URL/v1/work&quot; \<br>--data-urlencode &#x27;scope=symbol:PaymentService&#x27; |<br>jq .<br>Do not print, commit, or share the token. /healthz is database-free process<br>liveness and /readyz is a bounded non-waiting store probe; both are public.<br>Every /v1 route, including the paged event-chain audit, requires the token unless<br>the daemon was deliberately started with --no-auth for a trusted local test.<br>The MVP refuses non-loopback binds and is not a hardened multi-tenant service.<br>The CLI escape hatch foremerge request reads local auth automatically. A<br>runnable curl walkthrough is in<br>examples/api-requests.sh; the full route and error<br>reference is JSON API.<br>- Conflict detection is deterministic and explainable, but heuristic. It can miss synonymous concepts and warn on compatible work.<br>- Claims warn; they never lock files, symbols, or agents.<br>- Passing validation proves only that the recorded command passed for the recorded fingerprint, not that the test plan was complete.<br>- Git refs and process results are stronger evidence than self-reported model, prompt, or test prose.<br>- The event chain detects changes inside the retained chain; it is not a signature, remote attestation, or external checkpoint.<br>- Local SQLite is not shared-mode consensus, and the loopback bearer token is not a public deployment security model.<br>- There are executable benchmark fixtures, a reproducible query harness, and a benchmark plan, but no published coordinated-vs-uncoordinated performance results yet.<br>- Foremerge does not replace code review, architecture ownership, CI, security scanning, Git hosting rules, or backups.<br>Read the complete limitations and trust model before using Foremerge as an integration gate.<br>| Document | What it answers |<br>|---|---|<br>| Architecture | Why one Rust binary, SQLite, Git CLI, and shared common-dir state? |<br>| Protocol | What do agents publish and when? |<br>| State model | Which transitions and invariants gate work? |<br>| Conflict detection | Which deterministic rules produce findings and suggestions? |<br>| Git integration | How do fingerprints, worktrees, and accepted refs behave? |<br>| Agent clients | How do Codex, Claude Code, and Cursor discover the skill and MCP server? |<br>| MCP setup | How do clients configure and call the 18 lifecycle/read tools? |<br>| JSON API | Which routes, request bodies, auth, and errors are shipped? |<br>| OpenAPI schema | What is the machine-readable HTTP contract? |<br>| Benchmark plan | How will coordinated and uncoordinated runs be compared? |<br>| Validation exclusion ADR | Which generated paths may validation ignore, and why? |<br>| Roadmap | What is current, next, later, or a non-goal? |<br>| Limitations | What does the MVP not guarantee? |<br>| Brand | Which mark, colors, type, icons, and CLI output rules apply to any Foremerge surface? |<br>Also see the changelog, security policy, and code of conduct.<br>- Website: foremerge.com<br>- Crate: crates.io/crates/foremerge<br>- MCP Registry name: mcp-name: io.github.naw103/foremerge<br>Contributions are welcome, especially protocol feedback on scope vocabulary, conflict evidence, ChangeSet provenance, and verification policy. Read CONTRIBUTING.md, then run the complete local gate:<br>make verify<br>Foremerge is licensed under the Apache License 2.0.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    How people are testing AI agents?
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    3 points ·
+    1 comments ·
+    sanathbhat
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49797801">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    What Shopify Theme Automation Can Safely Handle and What Still Needs Engineers
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    shugert
+  </div>
+
+  <div class="meta">
+    shugert.com.mx
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://shugert.com.mx/blog/shopify-theme-automation-safety-boundary">Original article</a> · <a href="https://news.ycombinator.com/item?id=49798557">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The interesting question about AI in Shopify development is no longer whether a model can write Liquid, CSS or JavaScript.<br>It can.<br>The harder question is whether a system can make a change to a merchant&#x27;s store with enough context, containment and verification that the change is operationally safe.<br>That distinction matters because code generation is only one part of production engineering. A useful automation system also needs to know where it is allowed to work, what state it is changing, how to validate the result, how to avoid the live theme, and when to stop and escalate.<br>This is the boundary we use when thinking about autonomous Shopify theme work.<br>Start with an unpublished theme<br>The safest default is simple: do not make ordinary engineering changes directly against the live theme.<br>Shopify&#x27;s current GraphQL Admin API supports themes with roles such as MAIN, UNPUBLISHED and DEVELOPMENT. The themes query can distinguish the published theme from draft themes, and Shopify&#x27;s themeCreate mutation creates new themes as unpublished by default unless a development role is explicitly requested.<br>That gives automation a natural safety boundary:<br>- identify the current production theme;<br>- create or use a non-production copy;<br>- make the bounded change there;<br>- validate it;<br>- generate a preview for review;<br>- promote only through an explicit release step.<br>The technical capability is important, but the workflow is what makes it safe.<br>What automation is well suited to<br>Automation performs best when the requested change has a narrow surface area and an observable success condition.<br>Examples include:<br>- small Liquid section changes;<br>- scoped CSS fixes;<br>- adding a theme setting to an existing section;<br>- changing a template reference;<br>- fixing a simple accessibility issue with a clear rule;<br>- adding or correcting metadata output;<br>- updating a bounded block of theme JavaScript;<br>- validating whether specified theme files changed as intended.<br>Shopify&#x27;s themeFilesUpsert mutation can create or update theme files in batches, which makes controlled file-level automation possible for apps that have the required permissions and exemption.<br>But an API that can write files does not make every file change safe.<br>The unit of safety is not “a file”<br>A five-line edit can be higher risk than a 200-line edit.<br>Changing a CSS selector in an isolated marketing section might be low risk. Changing a shared snippet used by every product card could affect hundreds of storefront surfaces. Editing a global JavaScript utility may influence cart behavior, analytics, subscriptions or personalization even if the diff is small.<br>So a useful autonomous system needs more than a diff limit. It needs to understand blast radius.<br>We score work by questions such as:<br>- Is the file globally shared?<br>- Is the code involved in cart or checkout behavior?<br>- Does it touch pricing, inventory, customer data or authentication?<br>- Does an app depend on the same DOM or event?<br>- Can the result be validated deterministically?<br>- Is rollback simple?<br>- Does the merchant need to make a business decision before implementation?<br>What should escalate to a senior engineer<br>We do not treat autonomous execution as appropriate for every task.<br>Work should generally escalate when it involves:<br>Ambiguous architecture<br>If there are multiple plausible solutions with long-term consequences, the system should not quietly choose one because it can generate the code.<br>Checkout, payment or customer-account behavior<br>These surfaces have commercial, platform and compliance implications beyond theme syntax.<br>Cross-system integrations<br>ERP, PIM, WMS, 3PL, subscription, identity and custom-app work usually require reasoning about external state, contracts and failure modes.<br>Large refactors<br>A request like “make the theme faster” is not a bounded implementation instruction. It is a diagnostic problem first.<br>Changes without a reliable acceptance test<br>If the system cannot define what success looks like before editing, autonomy should be constrained.<br>Validation is the real product<br>The value of automation is not that it writes faster. It is that the whole loop can be faster without lowering the release standard.<br>A strong loop can include:<br>- theme duplication or isolated staging;<br>- a narrowly scoped edit plan;<br>- static checks;<br>- build validation where applicable;<br>- visual regression checks;<br>- accessibility checks;<br>- page-level smoke tests;<br>- performance checks when the change can affect loading;<br>- a preview URL;<br>- an auditable summary of files changed and tests run.<br>That last item matters. A merchant or engineer should be able to understand what happened without being told “the AI fixed it.”<br>Where TaskerArmy fits<br>We built TaskerArmy around this exact idea: merchant-authorized, bounded Shopify engineering work should happen inside a controlled staging-and-validation workflow rather than as unconstrained code generation.<br>It is not meant to prove that senior engineers are obsolete. The opposite boundary is more useful: automate the work that can be safely specified and verified, and escalate the work where judgment, architecture or business context dominates.<br>That is also why Shopify&#x27;s theme APIs matter. The platform exposes real primitives for listing themes, creating unpublished themes and updating theme files, but access to theme-writing capabilities is controlled. Shopify currently notes that themeCreate and themeFilesUpsert require theme-writing permissions and, for applicable apps, an exemption to modify themes.<br>The platform itself is signaling that this is a privileged operation, not a casual script action.<br>The engineering principle<br>The future of Shopify automation is probably not “AI does everything.”<br>It is a layered system:<br>- deterministic tooling for discovery and validation;<br>- AI for interpretation and implementation where the problem is bounded;<br>- platform permissions that constrain what can be touched;<br>- unpublished themes that contain risk;<br>- senior engineers for architecture and ambiguous decisions;<br>- merchant review and release controls when the business impact warrants them.<br>That model is less dramatic than full autonomy, but much more useful in production.<br>For the underlying platform concepts, see our Shopify development guide. For the decision boundary between AI-generated work and professional engineering, see AI builders vs. professional Shopify developers.</div>
+</div>
+
+</div>
+
+</body>
+</html>
