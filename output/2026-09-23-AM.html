@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-23 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-23 AM · Generated 2026-09-23 05:38 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: alicegg.tech, anthropic.com, arxiv.org, benchmarkheaven.com, github.com, mimo.xiaomi.com, news.ycombinator.com, openai.com, twitter.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    MiMo v2.6
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1087 points ·
+    469 comments ·
+    volf_
+  </div>
+
+  <div class="meta">
+    mimo.xiaomi.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #48
+  </div>
+
+  <div class="links">
+    <a href="https://mimo.xiaomi.com/mimo-v2-6">Original article</a> · <a href="https://news.ycombinator.com/item?id=49792730">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    GPT-6 Sol and Luna
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    877 points ·
+    460 comments ·
+    OfficialTurkey
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #5
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49805509">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: JevBench, a reproducible benchmark for typed decision models
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    34 points ·
+    2 comments ·
+    florianstandhar
+  </div>
+
+  <div class="meta">
+    benchmarkheaven.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #14
+  </div>
+
+  <div class="links">
+    <a href="https://benchmarkheaven.com/jev-models">Original article</a> · <a href="https://news.ycombinator.com/item?id=49800574">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">| Jev 1.13.0 | #1 74.4 | #3 71.8 (rank differs from the JevBench Score) | #2 77.1 (rank differs from the JevBench Score) | #4 76.2 (rank differs from the JevBench Score) | #9 63.1 (rank differs from the JevBench Score) |<br>|---|---|---|---|---|---|<br>| SemIf | #2 73.1 | #2 73.3 | #3 75.5 (rank differs from the JevBench Score) | #2 77.3 | #4 67.4 (rank differs from the JevBench Score) |<br>| djev | #3 73.0 | #1 75.8 (rank differs from the JevBench Score) | #1 78.5 (rank differs from the JevBench Score) | #1 81.7 (rank differs from the JevBench Score) | #3 67.9 |<br>| Winnow-12B Q8 | #4 71.2 | #4 71.0 | #4 75.2 | #5 75.3 (rank differs from the JevBench Score) | #10 63.1 (rank differs from the JevBench Score) |<br>| reflex 4B | #5 70.3 | #6 68.8 (rank differs from the JevBench Score) | #5 73.1 | #17 68.4 (rank differs from the JevBench Score) | #5 65.0 |<br>| jqv | #6 68.6 | #14 65.5 (rank differs from the JevBench Score) | #9 70.7 (rank differs from the JevBench Score) | #14 69.0 (rank differs from the JevBench Score) | #14 57.6 (rank differs from the JevBench Score) |<br>| decision-machine-1 | #7 68.3 | #9 67.6 (rank differs from the JevBench Score) | #22 65.4 (rank differs from the JevBench Score) | #3 76.8 (rank differs from the JevBench Score) | #11 61.7 (rank differs from the JevBench Score) |<br>| decider-35b-a3b | #8 67.6 | #13 66.3 (rank differs from the JevBench Score) | #8 71.3 | #10 71.7 (rank differs from the JevBench Score) | #18 56.9 (rank differs from the JevBench Score) |<br>| open-alternative-jev | #9 67.0 | #7 68.3 (rank differs from the JevBench Score) | #17 66.6 (rank differs from the JevBench Score) | #6 74.0 (rank differs from the JevBench Score) | #8 64.7 (rank differs from the JevBench Score) |<br>| system-one-open | #10 66.6 | #5 70.3 (rank differs from the JevBench Score) | #11 70.0 (rank differs from the JevBench Score) | #9 72.9 (rank differs from the JevBench Score) | #2 68.0 (rank differs from the JevBench Score) |<br>| OpenJev | #11 66.4 | #11 66.9 | #7 71.6 (rank differs from the JevBench Score) | #8 73.0 (rank differs from the JevBench Score) | #15 57.3 (rank differs from the JevBench Score) |<br>| SimpleJev Qwen3.8-27B | #12 66.3 | #18 62.0 (rank differs from the JevBench Score) | #10 70.2 (rank differs from the JevBench Score) | #24 65.5 (rank differs from the JevBench Score) | #22 51.8 (rank differs from the JevBench Score) |<br>| ZeroEntropy zerank-2 | #13 66.0 | #15 62.8 (rank differs from the JevBench Score) | #29 62.9 (rank differs from the JevBench Score) | #15 68.8 (rank differs from the JevBench Score) | #16 57.2 (rank differs from the JevBench Score) |<br>| GPT-5.6 Luna | #14 65.9 | #23 59.5 (rank differs from the JevBench Score) | #6 71.8 (rank differs from the JevBench Score) | #23 66.1 (rank differs from the JevBench Score) | #30 44.3 (rank differs from the JevBench Score) |<br>| openjev-sglang | #15 65.3 | #19 61.7 (rank differs from the JevBench Score) | #12 69.6 (rank differs from the JevBench Score) | #18 67.4 (rank differs from the JevBench Score) | #24 50.0 (rank differs from the JevBench Score) |<br>| Qwen3-Reranker-4B | #16 63.8 | #16 62.8 | #27 63.3 (rank differs from the JevBench Score) | #16 68.7 | #17 56.9 (rank differs from the JevBench Score) |<br>| reflex-27b | #17 63.3 | #26 57.2 (rank differs from the JevBench Score) | #16 67.2 (rank differs from the JevBench Score) | #28 61.1 (rank differs from the JevBench Score) | #27 45.5 (rank differs from the JevBench Score) |<br>| LitJev | #18 62.7 | #28 57.0 (rank differs from the JevBench Score) | #19 66.0 (rank differs from the JevBench Score) | #29 60.7 (rank differs from the JevBench Score) | #26 46.1 (rank differs from the JevBench Score) |<br>| kev 0.6B | #19 62.5 | #12 66.8 (rank differs from the JevBench Score) | #30 60.4 (rank differs from the JevBench Score) | #13 70.2 (rank differs from the JevBench Score) | #1 70.4 (rank differs from the JevBench Score) |<br>| SimpleJev Qwen3.6-35B-A3B | #20 62.5 | #21 61.0 (rank differs from the JevBench Score) | #14 67.8 (rank differs from the JevBench Score) | #21 66.3 (rank differs from the JevBench Score) | #23 50.6 (rank differs from the JevBench Score) |<br>| djev | #21 62.4 | #30 54.6 (rank differs from the JevBench Score) | #25 63.9 (rank differs from the JevBench Score) | #27 62.1 (rank differs from the JevBench Score) | #34 41.1 (rank differs from the JevBench Score) |<br>| jev-local | #22 61.8 | #22 59.6 | #26 63.9 (rank differs from the JevBench Score) | #26 63.3 (rank differs from the JevBench Score) | #21 52.5 (rank differs from the JevBench Score) |<br>| decider-2b | #23 61.7 | #8 67.7 (rank differs from the JevBench Score) | #23 65.1 | #7 73.5 (rank differs from the JevBench Score) | #7 64.9 (rank differs from the JevBench Score) |<br>| Bespoke Nimble 9B | #24 60.5 | #24 58.9 | #20 65.9 (rank differs from the JevBench Score) | #22 66.2 (rank differs from the JevBench Score) | #25 47.0 (rank differs from the JevBench Score) |<br>| Gemini 3.1 Flash-Lite | #25 60.1 | #25 57.6 | #15 67.5 (rank differs from the JevBench Score) | #20 66.3 (rank differs from the JevBench Score) | #32 42.8 (rank differs from the JevBench Score) |<br>| OpenJev | #26 60.0 | #27 57.1 (rank differs from the JevBench Score) | #13 67.9 (rank differs from the JevBench Score) | #25 64.0 (rank differs from the JevBench Score) | #31 42.8 (rank differs from the JevBench Score) |<br>| kev 4B | #27 59.7 | #10 67.2 (rank differs from the JevBench Score) | #18 66.2 (rank differs from the JevBench Score) | #12 70.5 (rank differs from the JevBench Score) | #6 65.0 (rank differs from the JevBench Score) |<br>| DeepSeek V4.1 Flash | #28 57.5 | #34 48.4 (rank differs from the JevBench Score) | #28 63.2 | #33 56.6 (rank differs from the JevBench Score) | #40 31.7 (rank differs from the JevBench Score) |<br>| kev 8B | #29 56.4 | #20 61.2 (rank differs from the JevBench Score) | #24 64.3 (rank differs from the JevBench Score) | #19 66.3 (rank differs from the JevBench Score) | #19 53.6 (rank differs from the JevBench Score) |<br>| Open-Jev 9B | #30 55.0 | #32 52.4 (rank differs from the JevBench Score) | #31 59.3 (rank differs from the JevBench Score) | #30 59.5 | #35 40.9 (rank differs from the JevBench Score) |<br>| system-one | #31 54.8 | #17 62.6 (rank differs from the JevBench Score) | #21 65.6 (rank differs from the JevBench Score) | #11 70.6 (rank differs from the JevBench Score) | #20 53.1 (rank differs from the JevBench Score) |<br>| jeff | #32 54.4 | #31 53.6 (rank differs from the JevBench Score) | #33 48.2 (rank differs from the JevBench Score) | #34 54.5 (rank differs from the JevBench Score) | #13 58.7 (rank differs from the JevBench Score) |<br>| Laya | #33 54.4 | #29 55.0 (rank differs from the JevBench Score) | #34 47.7 (rank differs from the JevBench Score) | #32 56.8 (rank differs from the JevBench Score) | #12 61.4 (rank differs from the JevBench Score) |<br>| Open-Jev 2B | #34 51.3 | #33 50.1 (rank differs from the JevBench Score) | #32 54.2 (rank differs from the JevBench Score) | #31 58.4 (rank differs from the JevBench Score) | #37 39.8 (rank differs from the JevBench Score) |<br>| OpenDecision | #35 40.6 | #35 41.7 | #35 35.2 | #35 46.0 | #28 44.9 (rank differs from the JevBench Score) |<br>| openJev Verdict 1.4 | #36 38.9 | #37 37.4 (rank differs from the JevBench Score) | #38 30.7 (rank differs from the JevBench Score) | #37 40.8 (rank differs from the JevBench Score) | #33 41.6 (rank differs from the JevBench Score) |<br>| openJev Verdict | #37 38.1 | #36 40.1 (rank differs from the JevBench Score) | #36 33.3 (rank differs from the JevBench Score) | #36 43.3 (rank differs from the JevBench Score) | #29 44.7 (rank differs from the JevBench Score) |<br>| kev 0.5B | #38 33.2 | #39 35.4 (rank differs from the JevBench Score) | #39 29.4 (rank differs from the JevBench Score) | #38 38.9 | #38 38.7 |<br>| GLiNER2 large | #39 29.6 | #38 36.5 (rank differs from the JevBench Score) | #37 31.8 (rank differs from the JevBench Score) | #39 37.8 | #36 40.5 (rank differs from the JevBench Score) |<br>| smalljev semantic-v9 | #40 27.4 | #41 26.9 (rank differs from the JevBench Score) | #41 22.6 (rank differs from the JevBench Score) | #41 31.4 (rank differs from the JevBench Score) | #41 27.6 (rank differs from the JevBench Score) |<br>| GLiNER2 | #41 24.0 | #40 30.3 (rank differs from the JevBench Score) | #40 24.6 (rank differs from the JevBench Score) | #40 32.6 (rank differs from the JevBench Score) | #39 34.6 (rank differs from the JevBench Score) |<br>| open-jev-deberta-v3-large | #42 23.1 | #42 21.9 | #42 17.8 | #42 23.7 | #42 24.9 |<br>| GLiNER2.5 multi | #43 16.6 | #43 16.4 | #43 12.6 | #43 18.0 | #43 19.5 |<br>| GLiNER2.5 small | #44 13.8 | #44 14.4 | #44 10.6 | #44 16.5 | #44 16.9 |<br>| Mixedbread mxbai-rerank-base-v2 | #45 0.8 | #45 0.6 | #45 0.3 | #45 0.9 | #45 0.8 |<br>| BAAI bge-reranker-v2-m3 | #46 0.7 | #46 0.5 | #46 0.3 | #46 0.8 | #46 0.7 |<br>| Alibaba GTE Reranker ModernBERT-base | #47 0.3 | #47 0.3 | #47 0.1 | #47 0.4 | #47 0.4 |<br>| Certo v1 | #48 0.0 | #48 0.0 | #48 0.0 | #48 0.0 | #48 0.0 |</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: When is fine-tuning a small LLM worth it?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    4 points ·
+    5 comments ·
+    kooldeep7
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49807413">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I&#x27;d be interested in hearing about your experiences. What kind of task did you use it for, what model did you train, and what were the results?<br>Feel free to share examples of what you&#x27;ve tried.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Orbital&#x27;s Sam Brovda and Bill Ackman get pro-Palestinan woman fired from KPMG
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    2 points ·
+    1 comments ·
+    1832764323
+  </div>
+
+  <div class="meta">
+    twitter.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://twitter.com/RedPillSayian/status/2102195063530938584">Original article</a> · <a href="https://news.ycombinator.com/item?id=49808470">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Claude Opus 5.5
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    942 points ·
+    689 comments ·
+    km144
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #4
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/claude-opus-5-5">Original article</a> · <a href="https://news.ycombinator.com/item?id=49803892">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We’re introducing Claude Opus 5.5, the first model in our new Claude 5.5 family. It performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5.<br>Claude Opus 5.5 is our first release since we called for pacing the frontier. It was tested before release by external evaluators, including Frontier Design and METR. On our automated behavioral audit, the most comprehensive alignment test we run, Opus 5.5 is the strongest-performing model we’ve tested to date. It also comes with the safeguards we’ve developed for our most capable models.<br>Here are some of the improvements you can expect from Opus 5.5:<br>Performance. Opus 5.5 is a major step up from Opus 5. It’s the new leading model, and early testers saw large jumps in performance on their most complex work. One tester completed a 680,000-line code migration in less than a day—work that would have taken an engineering team weeks. It’s good at finding and fixing inefficiencies in software: when we asked it to cut load times across every page of a web app, Opus 5.5 succeeded 39 of 40 times, while Opus 5 made smaller improvements that also altered the app’s behavior. A different tester had several Claude models build a game from a single prompt; Opus 5.5 scored higher than any other model on the strength of its graphics and polish.<br>Safety. Opus 5.5 achieves the best scores of any model to date on our automated behavioral audit, our alignment suite that tests Claude across thousands of simulated scenarios. It is much less likely than recent models to take hard-to-reverse actions or act outside the boundaries it’s been given, and it’s more resistant than Opus 5 to prompt injection. We’ve also broadened our alignment testing to cover longer tasks, impossible tasks, and scenarios modeled on real incidents, though it still has limits. Full details of our evaluation are available in the Opus 5.5 System Card.<br>Because Opus 5.5 is comparable to Claude Mythos 5.1 in biology and cybersecurity, we’re deploying it with safeguards similar to those on Claude Fable 5.1. Vetted organizations can apply today to our Life Sciences Verification Program to use Opus 5.5 for biology research. In the coming weeks we will also be expanding access to our Cyber Verification Program, and verified cybersecurity practitioners will be able to use Opus 5.5 for their work.<br>Cost and speed. Opus 5.5 requires less compute to serve than Opus 5, and its pricing reflects that. Our tests show that at default settings it will cost 40% less than Opus 5 on typical workloads. Input and output tokens are $4 and $20 per million, 20% less than Opus 5. Cache reads (which make up the majority of agentic and coding work costs) are $0.20 per million tokens, 60% less than Opus 5. Opus 5.5 also generates output more than 30% faster than Opus 5.<br>In addition to the price drop, we’re increasing five-hour usage limits on Pro, Max, Team, and seat-based Enterprise plans. We’re also providing subscription users a rate limit reset, which you can now save and use whenever you choose.<br>Communication. Opus 5.5 communicates more naturally than prior models. Early testers found its writing clearer and easier to follow, which addresses some of the common feedback we heard about Opus 5. It puts the most important information up front, and its style makes it a better work partner over long sessions. As one early tester put it, “it writes the way I do.” In our own use, this has made Opus 5.5’s work easier to follow and check—which is a safety benefit as well as a practical one.<br>Claude Sonnet 5.5 and Claude Haiku 5.5 will follow in the coming weeks, with many of the same improvements to performance, efficiency, and safety.<br>Performance and cost-effectiveness<br>On our benchmarks, Claude Opus 5.5 leads in agentic coding, computer use, and knowledge work. That said, at these levels of capability we’ve found that benchmark margins have become a less reliable guide to real-world differences. In our own use, the gap between Opus 5.5 and Claude Fable 5.1 is narrower than these scores suggest.<br>|  | Opus 5.5 | Fable 5.1 | Opus 5 | GPT-6 Astra | GPT-5.6 Sol |<br>|---|---|---|---|---|---|<br>| Agentic codingTerminal-Bench 4.0¹ | 66.4% | 55.8% | 52.3% | 57.9% | 37.3% |<br>| Agentic codingFrontierCode v1.1 (Main) | 54.4% | 50.3% | 48.0% | 53.3% | 47.5% |<br>| Agentic codingCursorBench 4.0 | 57.8% | 51.8% | 46.6% | — | 41.7% |<br>| Knowledge workGDPval-AA v2.1 | 1846 | 1735 | 1708 | 1542 | 1588 |<br>| Business workflowsAutomationBench² | 40.0% | 31.4% | 26.9% | 41.4% | 28.8% |<br>| Multidisciplinary reasoningHumanity&#x27;s Last Exam | 67.7%with tools | 65.6%with tools | 63.6%with tools | 57.2%with tools | — |<br>| Agentic scientific researchTerminal-Bench-Science 0.1³ | 58.7% | 52.6% | 29.0% | 64.6% | 22.4% |<br>| Computer useOSWorld 2.0 | 81.8%partial | 80.7%partial | 74.0%partial | — | — |<br>| Visual chart recognitionChartography | 89.0%with tools | 88.4%with tools | 83.4%with tools | — | — |<br>Unless otherwise noted, all Claude Opus 5.5 results use adaptive thinking at max effort. Terminal-Bench 4.0 results are reported for Claude Opus 5.5 at xhigh effort and GPT-6 Astra at high effort, as reported by OpenAI; these represent each model’s highest score. Claude Opus 5.5 was evaluated with its production safeguards enabled. When they intervened, cybersecurity tasks were completed by Claude Opus 4.8, and biology and frontier LLM development tasks were completed by Claude Opus 5. This likely reduces Claude Opus 5.5’s performance on these benchmarks.<br>1 Terminal-Bench 4.0: The standard error is ±2.6 pts for Claude Opus 5.5 and ±1.6–2 pts for the other Claude models. The public leaderboard (5 trials/task, Claude Code harness) reports Claude Opus 5 at 51.8%; our setup reproduces it at 52.3%, within noise. GPT-6 Astra and GPT-5.6 Sol figures are as reported by OpenAI.<br>2 AutomationBench: AutomationBench results were run and reported by Zapier. These runs were performed without fallback models, so safeguard interventions were considered failures—this resulted in a lower score than Claude Opus 5.5 would achieve in practice. Claude Opus 5.5 results come from Zapier’s own evaluation during early access. Results for Opus 5, GPT-5.6 Sol, and GPT-6 Astra come from Zapier’s public leaderboard.<br>3 Terminal-Bench-Science 0.1: The standard error is ±3.5–5 pts per model. The public leaderboard (3 trials/task, Claude Code harness) reports Claude Opus 5 at 30.0%; our setup reproduces it at 29.0%, within noise. The GPT-6 Astra figure is as reported by OpenAI.<br>Where Opus 5.5’s advantage is very clear is efficiency. It costs less per token than Opus 5 and uses fewer tokens per task, which nets out to a 40% drop in costs.<br>Pricing<br>| Prices per 1M tokens | Claude Opus 5.5 | Claude Opus 5 |<br>|---|---|---|<br>| Cache reads | $0.20 | $0.50 |<br>| Input tokens | $4 | $5 |<br>| Output tokens | $20 | $25 |<br>| Cache writes | $5 | $6.25 |<br>Fast mode for Opus 5.5 is also available in Claude Code and the Claude Platform with up to 2.5x speed. It costs $8 per million input tokens and $40 per million output tokens.<br>Coding<br>Opus 5.5 is particularly good at long and sprawling jobs like codebase-wide migrations and audits. An early tester used it to audit and fix a 200,000-line codebase in under three hours, where Opus 5 took over 20 hours and used 2.5x as many tokens. In an internal test, we asked Opus 5.5 and Fable 5.1 to translate HAProxy, widely used software that balances web traffic loads across servers, from C into Rust. Both rewrites passed nearly all of HAProxy’s own regression tests, but Opus 5.5 finished in 9.5 hours compared to 12 for Fable 5.1, and cost 51% less.<br>Opus 5.5 delivers frontier results on agentic coding at a fraction of the cost. At its default effort level on FrontierCode, it beats GPT-6 Astra at roughly 20% of the cost per task. On Terminal Bench 4.0, it matches Astra for about 40% of the cost, while on CursorBench it beats GPT-5.6 Sol by 11 points for about a third of the cost.<br>Our early testers reported similar efficiency and intelligence gains:<br>The most secure coding agent<br>Enterprises that use agents within their systems need to know that those agents are operating as intended, particularly when they run autonomously for many hours. Opus 5.5 has a classifier that screens every action before it runs, an open-source sandbox that security teams can audit, and code review that catches vulnerabilities before they merge.<br>The model itself also has stronger defenses. On prompt injection attacks, it matches or beats Opus 5 in every setting we tested, including coding, tool use, computer use, and web browsing. On a benchmark run by the AI security firm Gray Swan, Opus 5.5 ties Fable 5.1 for the lowest prompt injection success rate of any model tested.<br>Knowledge work<br>Opus 5.5 is a reliable and adept researcher. In one internal test, we asked Opus 5.5, Fable 5.1, and Opus 5 to write a report on a company’s quarterly performance using only the information it could find on a copy of the web where the earnings release was hard to locate. An automated grader checked every figure and quote against sources. Across different effort settings, 16 out of 18 of Opus 5.5’s reports cleared our quality bar, where any invented figure or quote would have failed. Neither Fable 5.1 nor Opus 5 cleared that bar in any attempt.<br>It’s also strong in financial analysis and business work. Walleye Capital, an investment firm and early tester, reported that Opus 5.5 largely solved their evaluation suite on its lowest setting; on higher settings, it performed even better, noticing an error in their evaluation instructions and correcting for it. No other model had caught this error before.<br>In another test, we tasked both Opus 5.5 and Opus 5 with analyzing a proposed merger between two fictional HR software companies. Each built a financial model in Excel, then turned it into an executive presentation on whether the deal made sense at its price. Both models reached the same conclusions about the deal, but Opus 5.5’s model was more thorough and its presentation easier to read, while Opus 5’s had minor errors. Opus 5.5 finished in 63 minutes compared to 93 for Opus 5, and cost 50% less to produce.<br>On knowledge work evaluations, Opus 5.5 outperforms other models while also using fewer tokens. On GDPval-AA v2.1, a test of real-world work across 44 occupations, Opus 5.5 scores 1846 Elo, ahead of Fable 5.1 and Opus 5. At default effort (medium), Opus 5.5 beats GPT-6 Astra at max effort for about a fifth of the cost per task. It likewise outperformed other models on benchmarks measuring business workflows and large-scale data collection.<br>Our customers have reported similar results. Here’s what they told us about working with the model:<br>Communication<br>We’ve made major improvements to the way Opus 5.5 writes and communicates, one of the most common areas of feedback we heard about Opus 5. Its messages are much easier to understand at a glance, which testers said helped during long working sessions. It puts the most important information up front, is less likely to use jargon or idiosyncratic phrases, and follows the writing rules you give it. We find that this makes Opus 5.5 a noticeably better collaborator. Here’s a side-by-side comparison of the two models:<br>Our customers’ feedback supports these findings:<br>Safety<br>Pacing the frontier<br>Last week, our CEO, Dario Amodei, argued that AI progress should be paced so that safety practices stay ahead of model capabilities. Pacing is an approach to keeping AI safe, remaining competitive with China, and realizing AI’s benefits, particularly in areas like biology and medicine.<br>We largely understand the risks today’s models present and are well equipped to manage them. However, more serious risks could emerge quickly as capabilities improve, and we need to prepare for them now. For that reason, our safety work takes place on two time horizons at once:<br>Safety practices for current models. The current generation of models relies on an established set of practices: extensive alignment testing, pre-release evaluation by outside organizations such as METR and Frontier Design, and safeguards matched to each model’s capabilities in high-risk areas like cybersecurity and biology. We refine these practices with each release. We believe they are appropriate to the worst risks today’s models present, and that they give us a broad, though not perfect, picture of the range of serious risks.<br>Additionally, we track our ability to train and evaluate aligned models, and we report on both our public and internal models in the risk reports we publish under our Responsible Scaling Policy, our voluntary framework for managing catastrophic risks from advanced AI systems.<br>Preparing for future models. We’re preparing our training and evaluation processes in anticipation of more advanced models. We’re tightening how we filter the environments used in reinforcement learning, since flawed environments are a major source of misaligned behavior. Additionally, we’re improving our alignment rewards and developing automated processes for producing new, diverse scenarios for safety training. And we are strengthening our security and monitoring, including a focused effort to improve interpretability-based monitoring and evaluation. We hope such techniques will help reduce our reliance on auditing a model’s chain-of-thought, or the reasoning it writes out while it works.<br>Models with greater capabilities—such as those that can fully automate the work of AI research itself—require a higher safety standard still. Our calls for pacing were based in large part on our expectation that such models could be trained soon. For these models, we do not assume the measures described above will meet that safety standard on their own. As AI becomes more capable, public policy should play a larger role in making sure the systems people rely on are safe. That capacity takes time to build, and we’ve started to put the infrastructure in place to support it, as described in “We Must Pace the Frontier” and our recent announcement with Accenture; we expect to share more details on these efforts soon. We will also continue to contribute to policy discussions with government and industry, including on approaches to regulation and international coordination.<br>Alignment<br>On our primary evaluation suite, an automated behavioral audit that assesses Claude across nearly 2,000 scenarios, Opus 5.5 scored better than any recent Claude model on nearly every measure of misaligned behavior. It’s also our strongest model on most measures of honesty.<br>In particular, Opus 5.5 improves over previous models on several of the behaviors that contributed to recent cybersecurity incidents, including biased or motivated reasoning, attempting to escape a sandbox, and taking harmful actions after concluding it was in a simulated environment. In a new evaluation designed to test a model’s propensity to cross containment boundaries, Opus 5.5 attempted to circumvent boundaries around 85% less often than Opus 5 or Claude Mythos 5.1, and every attempt it made was low severity and self-reported. For teams running Claude unattended across their codebases and systems, this is just as important as raw capability.<br>However, as we described in our recent alignment assessment, building evaluations that reliably catch every failure prior to deployment remains an unsolved problem. We see signs that Opus 5.5 often suspects it is being evaluated, which challenges our ability to assess how it will act in the vast variety of real-world settings it is deployed in. As these settings expand and model capabilities increase, we expect this challenge to grow, unless we make progress on interpretability. Although we are confident that Opus 5.5 shows broad improvements in the areas we are able to measure, we pair our own alignment work with the safeguards described below.<br>Safeguards<br>As our models grow more powerful, stricter safeguards are one way we prevent new capabilities from becoming tools for misuse. Opus 5.5 is the first Opus model to launch with a similar class of safeguards to Fable 5.1 on cybersecurity, biology, and distillation, all of which fall back to another model transparently.<br>Cybersecurity. Because Opus 5.5 has extremely strong cyber capabilities, we’re applying cybersecurity safeguards to Opus 5.5 that are similar to Fable 5.1’s. Users will be able to identify and fix bugs in their code as part of the routine software development lifecycle, but most cybersecurity tasks will be re-routed to Opus 4.8.<br>For cyberdefenders, we’ll soon be expanding our Cyber Verification Program to include Opus 5.5. The new program will include three tiers for increasingly permissive trusted access, including access to Claude Mythos models. Claude Security is already available with access to Claude Mythos 5.1.<br>Biology. Opus 5.5 is highly capable in biology, exceeding Opus 5 and matching or beating Claude Mythos 5.1 across many areas of work. For example, Opus 5.5 achieved improvements on a long-horizon molecular prediction and design evaluation conducted in collaboration with Dyno Therapeutics, and expert red-teamers rated its scientific novelty as comparable to the best model they had tested.<br>For this reason, Opus 5.5 uses the same biology safeguards as Fable 5.1. To use Opus 5.5 for research and development work impeded by these safeguards, users can apply to our new Life Sciences Verification Program, which gives vetted organizations like academic labs, startups, and pharmaceutical companies access to safeguards designed for the full breadth of biology-related work. Interested organizations can apply here.<br>Distillation<br>Distillation attacks, in which attackers use thousands of fake accounts to extract a model’s capabilities at industrial scale, create safety and national security risks. Distillation allows bad actors to create highly capable models without the safeguards we build into Claude. Our September 2026 threat intelligence report details the illicit distillation activity we’ve detected and disrupted so far.<br>Opus 5.5 is launching with preserved thinking, the anti-distillation safeguard we introduced with Fable 5.1. It stops API users from editing Claude’s prior context in an attempt to extract Claude’s reasoning. It applies to Fable 5.1 and Opus 5.5 for API accounts created on or after August 31, 2026. Our Help Center article explains the change, and our preserved thinking docs show how to test and update your integrations.<br>Data retention and compliance<br>Like previous Opus models, Opus 5.5 is available with zero data retention.<br>As with Fable 5.1, Opus 5.5 comes with our watermarking measures to comply with the EU AI Act, discussed here. It is also no longer available with “thinking” mode switched off, as we describe here.<br>Availability<br>Claude Opus 5.5 is now available on all platforms, including Amazon Web Services, Google Cloud, and Microsoft Azure. On the Claude Platform, developers can get started with claude-opus-5-5.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: Training a model to identify AI web content from structure alone
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    23 points ·
+    7 comments ·
+    jochenmadler
+  </div>
+
+  <div class="meta">
+    arxiv.org
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #21
+  </div>
+
+  <div class="links">
+    <a href="https://arxiv.org/abs/2609.15369">Original article</a> · <a href="https://news.ycombinator.com/item?id=49800566">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Computer Science &gt; Computation and Language<br>Title:SlopShape: Identifying AI-Generated Commercial Web Content<br>View PDF HTML (experimental)<br>Abstract:Word-level detectors identify unedited AI-generated text almost perfectly, but the literature documents their brittleness under rewording, and a word-level score neither characterizes a text nor identifies which AI model wrote it. We ask whether AI-generated text can be identified one level deeper, from structural signatures: how information is presented, in what order, with what evidence, and in what voice. We replicate StoryScope (Russell et al., 2026), which showed such patterns for AI-generated fiction, on commercial content: 2,250 pre-ChatGPT human blog posts from 268 company domains against 11,250 AI mirrors from five frontier models. A 214-feature instrument, applied by an LLM and validated in a human gold-annotation session (human-human kappa 0.928, human-model 0.946), detects AI posts from its 187 structural features alone at 98.0 macro-F1 on held-out companies, unchanged (98.1) when every AI post is reworded by its own model. The signal characterizes and attributes: AI posts share a tidy, self-announcing shape, 79.3% are attributed to the correct source against a 16.7% chance rate, and human posts occupy rare structural configurations. All effects replicate StoryScope&#x27;s, consistent in direction and larger in magnitude. We release pipeline, instrument, prompts, code, and aggregate artifacts.</div>
+<div class="para">Bibliographic and Citation Tools<br>Code, Data and Media Associated with this Article<br>Demos<br>Recommenders and Search Tools<br>arXivLabs: experimental projects with community collaborators<br>arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.<br>Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.<br>Have an idea for a project that will add value for arXiv&#x27;s community? Learn more about arXivLabs.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Attention is all you have
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1027 points ·
+    311 comments ·
+    zer0tonin
+  </div>
+
+  <div class="meta">
+    alicegg.tech
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://alicegg.tech/2026/09/21/attention">Original article</a> · <a href="https://news.ycombinator.com/item?id=49787726">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The Tetris effect is one of psychology’s most easy to reproduce experiments. Simply spend a bit of time playing the eponymous game every day for a few weeks. After a little while, you’ll start recognizing familiar Tetromino shapes in clouds, buildings, and everyday objects. You might even see them appear before your eyes when you start falling asleep.<br>Attention hijacking<br>There’s one lesson the Tetris effect teaches us: whatever you focus on long enough will end up shaping your thoughts. This can be a good thing since it’s how we learn new skills and discover new ideas. Sadly, less and less of our attention is focused intentionally. Instead of picking what we want to see we let other people decide what is supposed to be good for us.<br>Do you want to watch a video? YouTube knows you like cooking and art streams. But why not also recommend a few clips about the stock market bubble, global warming, and the war in Iran. Doomscrolling will make you stay longer and click on a few more ads.<br>Do you want to listen to music? Just open a Spotify playlist and let the algorithm figure out what you like. Please ignore the AI slop they will insert in between real songs to avoid paying royalties to real artists.<br>Do you want to know how your colleagues are doing? Too bad, LinkedIn will bury any relevant career news between the opinion of complete strangers. It is surely just a coincidence that those strangers happen to be shilling whatever Microsoft is invested in at the moment.<br>Do you want the opinion of strangers on a product? Well those Redditors you wanted to ask are probably just a bunch of LLMs talking to a bunch of Russian trolls now. I hope you didn’t value their opinion too much.<br>If, like me and most people, you spend the major part of your day focused on your device, there’s no doubt it’s affecting you. And when you let someone else dictate what appears on your screen, it’s the same as giving them the key to your brain.<br>Back to an intentional internet<br>The internet wasn’t always like that. Before recommendation algorithms were a thing, you had to decide what you would be doing on the computer.<br>You didn’t really have one big app that you could open and order it to entertain you. Instead, you had a few dozen of bookmarks to websites, each with a specific idea in mind. A site for video game news, that one website with lots of tutorials, a blog about anime that didn’t update often enough, a wiki about a TV show from the 90s…<br>Of course awful things existed on the web. We had Encyclopedia Dramatica and Rotten.com, but you actually had to put the effort to go there if you wanted. Nobody was going to put pictures of dead kids and far-right propaganda as a suggestion after a pancake recipe or a cat video.<br>The good thing is that this intentional internet is still around. It has just been a bit buried below the corporate web, but it’s not very hard to find. After all you’re on this blog, so you probably already have a good idea about it.<br>The main difference between this time and now is you. When you want to get back to reading blogs, RSS feeds, and finish that tutorial instead of doomscrolling shorts, you have to get used to a slower internet. One where content is not infinite and doesn’t get updated every click.<br>But like every habit, the only thing you have to do is to keep at it. And if you pay enough attention to it, something will click in your brain.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Tell HN: Substack obfuscating text to break reading mode
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    4 points ·
+    0 comments ·
+    xnx
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49805911">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I enabled Chrome reading mode for an article (https://paulkrugman.substack.com/p/will-crypto-crash-the-blue-wave fwiw) on Substack and was confronted with an unspaced mess of text. Inspecting the original page revealed source like :&lt;span&gt;Will&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;crypto&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;crash&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;the&lt;/span&gt;&lt;span&gt; &lt;/span&gt;</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Aetheria – a local-first agent harness that works online or offline
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    denisrigsby
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/denisrigsby/Aetheria">Original article</a> · <a href="https://news.ycombinator.com/item?id=49808463">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A local supervisor for long-running AI work on one Windows PC. The chat window is optional. The work schedule is a separate process plus files on disk.<br>Plant clock ≠ chat. &quot;Plant clock&quot; means that schedule. &quot;Chat&quot; (also called the mouth, or Talk-face) does not own it. Closing the chat does not stop the schedule.<br>This repository is a public control-plane export. It is not the live operator plant. The parity label is PRIVATE_AHEAD (public export ≠ live plant): docs/EXPORT_PARITY.md.<br>P1–P5 are internal certification labels used on the operator plant. They are not an outside audit, and this repo does not treat them as one.<br>| In this GitHub repo | On the private operator machine |<br>|---|---|<br>| Supervisor, watchdog, stop and recover scripts, docs | Live plant, Forge console, living memory, real cycle body |<br>| A mock / reference worker you can run | Host paths, credentials, private measurements |<br>| Scrubbed receipt copies under measurements/public_index/ | The mouth and plant code those receipts describe |<br>Cloning this repo does not give you the live plant. A full multi-hour run needs a complete local operator root. That root is private by design.<br>Finer labels (Tests, Mock, Untested, Private) live in docs/CLAIMS_TAXONOMY.md. The four words below are the ones that matter on this page. A receipt or a named CI check sits beside each claim, and the exclusion sits in the same row. One PASS cell is that row only. The evidence index is FINAL_STATE_BRIEF.md.<br>| What | Limit | Evidence |<br>|---|---|---|<br>| Layout and compile of this tree | Does not start the private plant | python -u scripts/demo_local_smoke.py · docs/PUBLIC_DEMO.md |<br>| Reference mouth closes; a mock pulse keeps advancing | Mock worker. This is the public slice of plant clock ≠ chat. CI does not run this script | python -u scripts/demo_continuity.py · docs/CONTINUITY_DEMO.md |<br>| Process identity rejects the wrong role or a junk PID. Windows tasklist liveness uses the PID column | &quot;Unrelated processes survive stale-PID recovery&quot; stays PARTIAL. The PID-column test does not flip gate_stale_pid_reuse_v1 . OS PID-number reuse was not observed. This row is not a tree-kill. Tree-kill and Job Object stop are Proved on Windows only where a receipt says so, and Locked on non-Windows | CI runs tests/test_lh_process_identity.py andtests/test_pid_liveness_exact.py · docs/RELEASE_GATE_ASSURANCE.md |<br>| A raced start and recover admit one supervisor | Assurance row is PASS for that test (exactly one spawn) on the Ubuntu and Windows CI jobs. It is not a tree-kill and not a watchdog relaunch. Tree-kill and Job Object stop are Locked on non-Windows. Corrupted / unknown-version → HOLD and clean stop ≠ crash stay PARTIAL. The test is not the live plant | CI runs tests/test_two_controller_concurrency.py · docs/RELEASE_GATE_ASSURANCE.md |<br>| An interrupted JSON state write leaves the previous valid document or the new one | Assurance row is PASS for that test. Private plant ≠ this tree. No L7 / LIVE_RSI. No soft_ACCEPT. PID and STOP files are short in-place text. Append-only JSONL is out of scope. research/ artifacts are out of scope. HOLD and clean stop stay PARTIAL | CI on 395643e (run 35695450920) runstests/test_atomic_state_writes.py andtests/test_interrupted_state_writes.py · docs/RELEASE_GATE_ASSURANCE.md |<br>These were accepted on the operator plant. The JSON files are scrubbed copies. Cloning does not re-run them. Exclusions in full: docs/CLOSEOUT.md.<br>| Claim, in plain language | What it does not prove | Receipt |<br>|---|---|---|<br>| Talk-face text has no visible [MODEL_REASONING] tag. Absolute/living/ cites are rewritten or refused | Does not publish plant source. Copilot is not the mouth | scrub, gate, accept |<br>| Direct-answer contract accepted by Cover and Architect. soft_ACCEPT is false.dual_bank is false | Does not unlock L7 or LIVE_RSI | gate, accept |<br>| A kill is refused when the process start time does not match, even if the command line still looks right | OS PID-number reuse was not observed. Tests in this repo do not flip that plant gate | gate |<br>| Four named kill sites pass that start time and refuse a mismatch | Not every future kill site. Start time is not the only identity check | gate |<br>| Supervised clock ran 30 minutes with the mouth closed and the tick advanced | Longer runs stay locked | gate |<br>| An identity-checked Windows Job Object stop ended an assigned process tree | Proved on Windows (operator plant). Locked on non-Windows. Not the only stop path. Linux CI does not re-prove it. Toolhelp is not retired | gate |<br>| Export hash census, with an explicit parity decision | The decision on the receipt is PRIVATE_AHEAD, so public ≠ plant | gate |<br>| Resume / stop / watchdog record is dual-banked | The receipt has no claim sentence ( claim_wording is null). No stop or relaunch behavior is claimed. Not a portable control plane | gate |<br>- Re-run of the receipts above inside this clone. The mouth and the plant body are not in this tree. docs/CLOSEOUT.md<br>- Same Talk Face session, no gate file: Standby vs Offline labels, one desktop shortcut, windowed Edge instead of a frameless app window. Operator notes only. docs/CLOSEOUT.md<br>- Assurance rows that are still PARTIAL: unrelated processes surviving stale-PID recovery; corrupted or unknown-version state ending in HOLD; clean stop distinguished from a crash; localhost mutations requiring authorization; a general &quot;no secrets&quot; scan (the CI path scan is narrower — see the assurance table). docs/RELEASE_GATE_ASSURANCE.md<br>- Job Object containment on this repo&#x27;s CI (PARTIAL). The plant receipt above is Proved on Windows only. It does not make the CI row PASS, and it is Locked on non-Windows.<br>- Watchdog relaunch of a process tree. No gate file. Windows is the reference. Pending on non-Windows. Not a portable stop.<br>- Held-out L5 &quot;6/6&quot; after the dual-face cut. No scrubbed receipt in this repo. docs/CLAIMS.md<br>- This tree equals the live plant<br>- Dual-bank full program. No receipt for gate_full_program_asset_class_v1 is in this repo<br>- soft_ACCEPT , LIVE_RSI, L7<br>- Copilot as the plant mouth<br>- Federation, swarm, autonomy, self-healing, gated self-modification<br>- Production-ready, enterprise, enterprise-grade, revolutionary<br>- A second clock, automatic dispatch, live model hot-swap<br>- Endurance past the 30-minute receipt<br>- Job Object as the only stop path<br>- A portable control plane: tree-kill, Job Object stop, or watchdog relaunch on non-Windows<br>- A wider spawn wrap<br>- P1–P5 as external accreditation<br>Python 3.10+. Windows is the reference OS for stop, tree-kill, Job Object, and relaunch. The smoke commands below can run on other systems. They do not make stop or relaunch portable.<br>git clone https://github.com/denisrigsby/Aetheria.git<br>cd Aetheria<br># 1. Run — layout and compile. No private plant.<br>python -u scripts/demo_local_smoke.py<br># 2. Test — reference mouth closes; the mock pulse still advances.<br>python -u scripts/demo_continuity.py<br># 3. Local checks — identity, single-flight start/recover, and fault injection.<br>python -m pip install pytest<br>python -m pytest tests/test_lh_process_identity.py tests/test_pid_liveness_exact.py tests/test_two_controller_concurrency.py tests/test_fault_injection_public.py -q<br>Windows wrappers for steps 1 and 2: Demo-Local.bat, Demo-Continuity.bat.<br>CI runs the files named in .github/workflows/ci.yml, including tests/test_lh_process_identity.py, tests/test_pid_liveness_exact.py, tests/test_two_controller_concurrency.py, tests/test_atomic_state_writes.py, and tests/test_interrupted_state_writes.py. It does not run demo_continuity.py, tests/test_fault_injection_public.py, or tests/test_talk_face_ref_allowlist.py. Those three are local checks. The workflow file is the list.<br>On a full local root, read-only status is python -u scripts/status_report.py. Stop is python -u scripts/aetheria.py stop (Windows tree-kill / Job Object; Locked on non-Windows). Recover is a different command from start: docs/OPERATIONS.md. The CI start/recover test is one supervisor admitted. It is not an OS relaunch.<br>| Doc | Why |<br>|---|---|<br>| FINAL_STATE_BRIEF.md | Evidence index (real / proved / pending / locked) |<br>| docs/CLOSEOUT.md | Receipt tables and exclusions |<br>| docs/CLAIMS_TAXONOMY.md | Front labels and finer labels |<br>| docs/RELEASE_GATE_ASSURANCE.md | PASS / PARTIAL / FAIL |<br>| docs/GLOSSARY.md | Plant clock, mouth, HOLD, Forge |<br>| docs/WHY.md | Problem and non-goals |<br>| docs/ARCHITECTURE.md | Layers |<br>| docs/RUNTIME_CONTRACT.md | Heartbeat, STOP, recover |<br>| SETUP.md | What a full local root still needs |<br>| docs/SCENARIO_30S.md | The crash-and-hold picture, and what this clone can show |<br>| Term | Plain meaning |<br>|---|---|<br>| Plant clock | Detached supervised job runtime |<br>| Mouth / Talk-face | Optional local chat or operator UI |<br>| Forge | Private operator console |<br>| Tick / cycle | One bounded unit of work |<br>| HOLD | Fail-closed pause until an operator acts |<br>| Cover / Architect | Two accept roles on a plant receipt. Both accepted means the receipt says so. It is not an outside audit |<br>MIT © 2026 Denis Rigsby / Aetheria Project</div>
+</div>
+
+</div>
+
+</body>
+</html>
