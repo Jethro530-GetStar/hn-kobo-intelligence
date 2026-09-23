@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-23 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-23 PM · Generated 2026-09-23 17:38 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: anthropic.com, blog.melashri.net, en.wikipedia.org, github.com, news.ycombinator.com, nobodywho.ai, openai.com, youtube.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Claude Opus 5.5
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1535 points ·
+    952 comments ·
+    km144
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #4
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/claude-opus-5-5">Original article</a> · <a href="https://news.ycombinator.com/item?id=49803892">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We’re introducing Claude Opus 5.5, the first model in our new Claude 5.5 family. It performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5.<br>Claude Opus 5.5 is our first release since we called for pacing the frontier. It was tested before release by external evaluators, including Frontier Design and METR. On our automated behavioral audit, the most comprehensive alignment test we run, Opus 5.5 is the strongest-performing model we’ve tested to date. It also comes with the safeguards we’ve developed for our most capable models.<br>Here are some of the improvements you can expect from Opus 5.5:<br>Performance. Opus 5.5 is a major step up from Opus 5. It’s the new leading model, and early testers saw large jumps in performance on their most complex work. One tester completed a 680,000-line code migration in less than a day—work that would have taken an engineering team weeks. It’s good at finding and fixing inefficiencies in software: when we asked it to cut load times across every page of a web app, Opus 5.5 succeeded 39 of 40 times, while Opus 5 made smaller improvements that also altered the app’s behavior. A different tester had several Claude models build a game from a single prompt; Opus 5.5 scored higher than any other model on the strength of its graphics and polish.<br>Safety. Opus 5.5 achieves the best scores of any model to date on our automated behavioral audit, our alignment suite that tests Claude across thousands of simulated scenarios. It is much less likely than recent models to take hard-to-reverse actions or act outside the boundaries it’s been given, and it’s more resistant than Opus 5 to prompt injection. We’ve also broadened our alignment testing to cover longer tasks, impossible tasks, and scenarios modeled on real incidents, though it still has limits. Full details of our evaluation are available in the Opus 5.5 System Card.<br>Because Opus 5.5 is comparable to Claude Mythos 5.1 in biology and cybersecurity, we’re deploying it with safeguards similar to those on Claude Fable 5.1. Vetted organizations can apply today to our Life Sciences Verification Program to use Opus 5.5 for biology research. In the coming weeks we will also be expanding access to our Cyber Verification Program, and verified cybersecurity practitioners will be able to use Opus 5.5 for their work.<br>Cost and speed. Opus 5.5 requires less compute to serve than Opus 5, and its pricing reflects that. Our tests show that at default settings it will cost 40% less than Opus 5 on typical workloads. Input and output tokens are $4 and $20 per million, 20% less than Opus 5. Cache reads (which make up the majority of agentic and coding work costs) are $0.20 per million tokens, 60% less than Opus 5. Opus 5.5 also generates output more than 30% faster than Opus 5.<br>In addition to the price drop, we’re increasing five-hour usage limits on Pro, Max, Team, and seat-based Enterprise plans. We’re also providing subscription users a rate limit reset, which you can now save and use whenever you choose.<br>Communication. Opus 5.5 communicates more naturally than prior models. Early testers found its writing clearer and easier to follow, which addresses some of the common feedback we heard about Opus 5. It puts the most important information up front, and its style makes it a better work partner over long sessions. As one early tester put it, “it writes the way I do.” In our own use, this has made Opus 5.5’s work easier to follow and check—which is a safety benefit as well as a practical one.<br>Claude Sonnet 5.5 and Claude Haiku 5.5 will follow in the coming weeks, with many of the same improvements to performance, efficiency, and safety.<br>Performance and cost-effectiveness<br>On our benchmarks, Claude Opus 5.5 leads in agentic coding, computer use, and knowledge work. That said, at these levels of capability we’ve found that benchmark margins have become a less reliable guide to real-world differences. In our own use, the gap between Opus 5.5 and Claude Fable 5.1 is narrower than these scores suggest.<br>|  | Opus 5.5 | Fable 5.1 | Opus 5 | GPT-6 Astra | GPT-5.6 Sol |<br>|---|---|---|---|---|---|<br>| Agentic codingTerminal-Bench 4.0¹ | 66.4% | 55.8% | 52.3% | 57.9% | 37.3% |<br>| Agentic codingFrontierCode v1.1 (Main) | 54.4% | 50.3% | 48.0% | 53.3% | 47.5% |<br>| Agentic codingCursorBench 4.0 | 57.8% | 51.8% | 46.6% | — | 41.7% |<br>| Knowledge workGDPval-AA v2.1 | 1846 | 1735 | 1708 | 1542 | 1588 |<br>| Business workflowsAutomationBench² | 40.0% | 31.4% | 26.9% | 41.4% | 28.8% |<br>| Multidisciplinary reasoningHumanity&#x27;s Last Exam | 67.7%with tools | 65.6%with tools | 63.6%with tools | 57.2%with tools | — |<br>| Agentic scientific researchTerminal-Bench-Science 0.1³ | 58.7% | 52.6% | 29.0% | 64.6% | 22.4% |<br>| Computer useOSWorld 2.0 | 81.8%partial | 80.7%partial | 74.0%partial | — | — |<br>| Visual chart recognitionChartography | 89.0%with tools | 88.4%with tools | 83.4%with tools | — | — |<br>Unless otherwise noted, all Claude Opus 5.5 results use adaptive thinking at max effort. Terminal-Bench 4.0 results are reported for Claude Opus 5.5 at xhigh effort and GPT-6 Astra at high effort, as reported by OpenAI; these represent each model’s highest score. Claude Opus 5.5 was evaluated with its production safeguards enabled. When they intervened, cybersecurity tasks were completed by Claude Opus 4.8, and biology and frontier LLM development tasks were completed by Claude Opus 5. This likely reduces Claude Opus 5.5’s performance on these benchmarks.<br>1 Terminal-Bench 4.0: The standard error is ±2.6 pts for Claude Opus 5.5 and ±1.6–2 pts for the other Claude models. The public leaderboard (5 trials/task, Claude Code harness) reports Claude Opus 5 at 51.8%; our setup reproduces it at 52.3%, within noise. GPT-6 Astra and GPT-5.6 Sol figures are as reported by OpenAI.<br>2 AutomationBench: AutomationBench results were run and reported by Zapier. These runs were performed without fallback models, so safeguard interventions were considered failures—this resulted in a lower score than Claude Opus 5.5 would achieve in practice. Claude Opus 5.5 results come from Zapier’s own evaluation during early access. Results for Opus 5, GPT-5.6 Sol, and GPT-6 Astra come from Zapier’s public leaderboard.<br>3 Terminal-Bench-Science 0.1: The standard error is ±3.5–5 pts per model. The public leaderboard (3 trials/task, Claude Code harness) reports Claude Opus 5 at 30.0%; our setup reproduces it at 29.0%, within noise. The GPT-6 Astra figure is as reported by OpenAI.<br>Where Opus 5.5’s advantage is very clear is efficiency. It costs less per token than Opus 5 and uses fewer tokens per task, which nets out to a 40% drop in costs.<br>Pricing<br>| Prices per 1M tokens | Claude Opus 5.5 | Claude Opus 5 |<br>|---|---|---|<br>| Cache reads | $0.20 | $0.50 |<br>| Input tokens | $4 | $5 |<br>| Output tokens | $20 | $25 |<br>| Cache writes | $5 | $6.25 |<br>Fast mode for Opus 5.5 is also available in Claude Code and the Claude Platform with up to 2.5x speed. It costs $8 per million input tokens and $40 per million output tokens.<br>Coding<br>Opus 5.5 is particularly good at long and sprawling jobs like codebase-wide migrations and audits. An early tester used it to audit and fix a 200,000-line codebase in under three hours, where Opus 5 took over 20 hours and used 2.5x as many tokens. In an internal test, we asked Opus 5.5 and Fable 5.1 to translate HAProxy, widely used software that balances web traffic loads across servers, from C into Rust. Both rewrites passed nearly all of HAProxy’s own regression tests, but Opus 5.5 finished in 9.5 hours compared to 12 for Fable 5.1, and cost 51% less.<br>Opus 5.5 delivers frontier results on agentic coding at a fraction of the cost. At its default effort level on FrontierCode, it beats GPT-6 Astra at roughly 20% of the cost per task. On Terminal Bench 4.0, it matches Astra for about 40% of the cost, while on CursorBench it beats GPT-5.6 Sol by 11 points for about a third of the cost.<br>Our early testers reported similar efficiency and intelligence gains:<br>The most secure coding agent<br>Enterprises that use agents within their systems need to know that those agents are operating as intended, particularly when they run autonomously for many hours. Opus 5.5 has a classifier that screens every action before it runs, an open-source sandbox that security teams can audit, and code review that catches vulnerabilities before they merge.<br>The model itself also has stronger defenses. On prompt injection attacks, it matches or beats Opus 5 in every setting we tested, including coding, tool use, computer use, and web browsing. On a benchmark run by the AI security firm Gray Swan, Opus 5.5 ties Fable 5.1 for the lowest prompt injection success rate of any model tested.<br>Knowledge work<br>Opus 5.5 is a reliable and adept researcher. In one internal test, we asked Opus 5.5, Fable 5.1, and Opus 5 to write a report on a company’s quarterly performance using only the information it could find on a copy of the web where the earnings release was hard to locate. An automated grader checked every figure and quote against sources. Across different effort settings, 16 out of 18 of Opus 5.5’s reports cleared our quality bar, where any invented figure or quote would have failed. Neither Fable 5.1 nor Opus 5 cleared that bar in any attempt.<br>It’s also strong in financial analysis and business work. Walleye Capital, an investment firm and early tester, reported that Opus 5.5 largely solved their evaluation suite on its lowest setting; on higher settings, it performed even better, noticing an error in their evaluation instructions and correcting for it. No other model had caught this error before.<br>In another test, we tasked both Opus 5.5 and Opus 5 with analyzing a proposed merger between two fictional HR software companies. Each built a financial model in Excel, then turned it into an executive presentation on whether the deal made sense at its price. Both models reached the same conclusions about the deal, but Opus 5.5’s model was more thorough and its presentation easier to read, while Opus 5’s had minor errors. Opus 5.5 finished in 63 minutes compared to 93 for Opus 5, and cost 50% less to produce.<br>On knowledge work evaluations, Opus 5.5 outperforms other models while also using fewer tokens. On GDPval-AA v2.1, a test of real-world work across 44 occupations, Opus 5.5 scores 1846 Elo, ahead of Fable 5.1 and Opus 5. At default effort (medium), Opus 5.5 beats GPT-6 Astra at max effort for about a fifth of the cost per task. It likewise outperformed other models on benchmarks measuring business workflows and large-scale data collection.<br>Our customers have reported similar results. Here’s what they told us about working with the model:<br>Communication<br>We’ve made major improvements to the way Opus 5.5 writes and communicates, one of the most common areas of feedback we heard about Opus 5. Its messages are much easier to understand at a glance, which testers said helped during long working sessions. It puts the most important information up front, is less likely to use jargon or idiosyncratic phrases, and follows the writing rules you give it. We find that this makes Opus 5.5 a noticeably better collaborator. Here’s a side-by-side comparison of the two models:<br>Our customers’ feedback supports these findings:<br>Safety<br>Pacing the frontier<br>Last week, our CEO, Dario Amodei, argued that AI progress should be paced so that safety practices stay ahead of model capabilities. Pacing is an approach to keeping AI safe, remaining competitive with China, and realizing AI’s benefits, particularly in areas like biology and medicine.<br>We largely understand the risks today’s models present and are well equipped to manage them. However, more serious risks could emerge quickly as capabilities improve, and we need to prepare for them now. For that reason, our safety work takes place on two time horizons at once:<br>Safety practices for current models. The current generation of models relies on an established set of practices: extensive alignment testing, pre-release evaluation by outside organizations such as METR and Frontier Design, and safeguards matched to each model’s capabilities in high-risk areas like cybersecurity and biology. We refine these practices with each release. We believe they are appropriate to the worst risks today’s models present, and that they give us a broad, though not perfect, picture of the range of serious risks.<br>Additionally, we track our ability to train and evaluate aligned models, and we report on both our public and internal models in the risk reports we publish under our Responsible Scaling Policy, our voluntary framework for managing catastrophic risks from advanced AI systems.<br>Preparing for future models. We’re preparing our training and evaluation processes in anticipation of more advanced models. We’re tightening how we filter the environments used in reinforcement learning, since flawed environments are a major source of misaligned behavior. Additionally, we’re improving our alignment rewards and developing automated processes for producing new, diverse scenarios for safety training. And we are strengthening our security and monitoring, including a focused effort to improve interpretability-based monitoring and evaluation. We hope such techniques will help reduce our reliance on auditing a model’s chain-of-thought, or the reasoning it writes out while it works.<br>Models with greater capabilities—such as those that can fully automate the work of AI research itself—require a higher safety standard still. Our calls for pacing were based in large part on our expectation that such models could be trained soon. For these models, we do not assume the measures described above will meet that safety standard on their own. As AI becomes more capable, public policy should play a larger role in making sure the systems people rely on are safe. That capacity takes time to build, and we’ve started to put the infrastructure in place to support it, as described in “We Must Pace the Frontier” and our recent announcement with Accenture; we expect to share more details on these efforts soon. We will also continue to contribute to policy discussions with government and industry, including on approaches to regulation and international coordination.<br>Alignment<br>On our primary evaluation suite, an automated behavioral audit that assesses Claude across nearly 2,000 scenarios, Opus 5.5 scored better than any recent Claude model on nearly every measure of misaligned behavior. It’s also our strongest model on most measures of honesty.<br>In particular, Opus 5.5 improves over previous models on several of the behaviors that contributed to recent cybersecurity incidents, including biased or motivated reasoning, attempting to escape a sandbox, and taking harmful actions after concluding it was in a simulated environment. In a new evaluation designed to test a model’s propensity to cross containment boundaries, Opus 5.5 attempted to circumvent boundaries around 85% less often than Opus 5 or Claude Mythos 5.1, and every attempt it made was low severity and self-reported. For teams running Claude unattended across their codebases and systems, this is just as important as raw capability.<br>However, as we described in our recent alignment assessment, building evaluations that reliably catch every failure prior to deployment remains an unsolved problem. We see signs that Opus 5.5 often suspects it is being evaluated, which challenges our ability to assess how it will act in the vast variety of real-world settings it is deployed in. As these settings expand and model capabilities increase, we expect this challenge to grow, unless we make progress on interpretability. Although we are confident that Opus 5.5 shows broad improvements in the areas we are able to measure, we pair our own alignment work with the safeguards described below.<br>Safeguards<br>As our models grow more powerful, stricter safeguards are one way we prevent new capabilities from becoming tools for misuse. Opus 5.5 is the first Opus model to launch with a similar class of safeguards to Fable 5.1 on cybersecurity, biology, and distillation, all of which fall back to another model transparently.<br>Cybersecurity. Because Opus 5.5 has extremely strong cyber capabilities, we’re applying cybersecurity safeguards to Opus 5.5 that are similar to Fable 5.1’s. Users will be able to identify and fix bugs in their code as part of the routine software development lifecycle, but most cybersecurity tasks will be re-routed to Opus 4.8.<br>For cyberdefenders, we’ll soon be expanding our Cyber Verification Program to include Opus 5.5. The new program will include three tiers for increasingly permissive trusted access, including access to Claude Mythos models. Claude Security is already available with access to Claude Mythos 5.1.<br>Biology. Opus 5.5 is highly capable in biology, exceeding Opus 5 and matching or beating Claude Mythos 5.1 across many areas of work. For example, Opus 5.5 achieved improvements on a long-horizon molecular prediction and design evaluation conducted in collaboration with Dyno Therapeutics, and expert red-teamers rated its scientific novelty as comparable to the best model they had tested.<br>For this reason, Opus 5.5 uses the same biology safeguards as Fable 5.1. To use Opus 5.5 for research and development work impeded by these safeguards, users can apply to our new Life Sciences Verification Program, which gives vetted organizations like academic labs, startups, and pharmaceutical companies access to safeguards designed for the full breadth of biology-related work. Interested organizations can apply here.<br>Distillation<br>Distillation attacks, in which attackers use thousands of fake accounts to extract a model’s capabilities at industrial scale, create safety and national security risks. Distillation allows bad actors to create highly capable models without the safeguards we build into Claude. Our September 2026 threat intelligence report details the illicit distillation activity we’ve detected and disrupted so far.<br>Opus 5.5 is launching with preserved thinking, the anti-distillation safeguard we introduced with Fable 5.1. It stops API users from editing Claude’s prior context in an attempt to extract Claude’s reasoning. It applies to Fable 5.1 and Opus 5.5 for API accounts created on or after August 31, 2026. Our Help Center article explains the change, and our preserved thinking docs show how to test and update your integrations.<br>Data retention and compliance<br>Like previous Opus models, Opus 5.5 is available with zero data retention.<br>As with Fable 5.1, Opus 5.5 comes with our watermarking measures to comply with the EU AI Act, discussed here. It is also no longer available with “thinking” mode switched off, as we describe here.<br>Availability<br>Claude Opus 5.5 is now available on all platforms, including Amazon Web Services, Google Cloud, and Microsoft Azure. On the Claude Platform, developers can get started with claude-opus-5-5.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: Npunlock – Run custom C kernels for Intel NPUs
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    22 points ·
+    3 comments ·
+    hsfzxjy
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #9
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/hsfzxjy/npunlock">Original article</a> · <a href="https://news.ycombinator.com/item?id=49800513">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Intel ships programmable SHAVE cores inside its NPUs, but the public stack<br>exposes only graph-level programming. npunlock reconstructs the missing path<br>from custom C code to a runnable NPU kernel.<br>The current implementation has been verified on Windows x64 with Meteor Lake / NPU3720.<br>Latest breakthrough — 2026-09-23: One native graph can execute independent FP32-unary and FP16-binary custom branches; explicit ACT-group preflight handles the compiler&#x27;s branch reordering. Evidence and limits.<br>This complete FP32 GELU example embeds the C kernel in Python, places it in an<br>NPU graph, and checks the result against NumPy. The bundled<br>npunlock/npu3720_kernel.h target header supplies the NPU3720 invocation and<br>tensor-address helpers. The tested MoviTools toolchain makes most conventional<br>libm functions available to kernels without including &lt;math.h&gt;; this<br>example calls tanhf directly. See the<br>mlibm.a symbol inventory for the observed candidates.<br>import numpy as np<br>import npunlock as npu<br>npu.configure(movi_dll_dir=r&quot;C:\path\to\MVC_DEPEND&quot;)<br>gelu_c: bytes = b&quot;&quot;&quot;<br>#define MLIBM_DEFINE_LINK_COMPAT 1<br>#include &lt;npunlock/npu3720_kernel.h&gt;<br>void controlled_act(unsigned layerParams) {<br>act_abi_invocation invocation;<br>ACT_ABI_LOAD_INVOCATION32_OR_RETURN(layerParams, invocation);<br>const float *in = ACT_ABI_INPUT_PTR32(const float, invocation, 0u);<br>float *out = ACT_ABI_OUTPUT_PTR32(float, invocation, 1u);<br>const float SQRT_2_DIV_PI = 0.7978845608028654f;<br>for (unsigned i = 0; i &lt; invocation.element_count; ++i) {<br>float x = in[i];<br>float w = x + 0.044715f * x * x * x;<br>w = tanhf(w * SQRT_2_DIV_PI);<br>out[i] = 0.5f * x * (1.0f + w);<br>}<br>}<br>&quot;&quot;&quot;<br>N = 2048<br>x = npu.input(&quot;x&quot;, shape=(1, N), dtype=&quot;f32&quot;)<br>y = npu.custom(<br>x,<br>source=gelu_c,<br>carrier=&quot;Abs&quot;,<br>_name=&quot;y&quot;,<br>)<br>program = npu.compile(npu.Graph(inputs=[x], outputs=[y], name=&quot;gelu_f32_example&quot;))<br>input_value = np.linspace(-4, 4, N, dtype=np.float32).reshape(1, -1)<br>output = program.run({&quot;x&quot;: input_value})[&quot;y&quot;]<br>reference = 0.5 * input_value * (<br>1.0<br>+ np.tanh(<br>np.sqrt(2.0 / np.pi)<br>* (input_value + 0.044715 * input_value**3)<br>)<br>)<br>print(f&quot;maximum absolute error: {np.max(np.abs(output - reference)):g}&quot;)<br>The same code is available as the runnable FP32 GELU example. See also the FP16 GELU and multi-layer two-input examples, plus a mixed-precision graph with unary and binary custom branches.<br>Intel&#x27;s normal NPU software accepts graphs made from operations its compiler<br>supports; it does not expose a public workflow for supplying a C implementation<br>for an operation. The NPU&#x27;s ACT-SHAVE processors are programmable and run<br>software kernels. npunlock makes those processors usable for compatible<br>custom graph operations while retaining Intel&#x27;s compiler and driver for the<br>surrounding graph and hardware execution.<br>- Windows x64<br>- Meteor Lake / Intel NPU3720<br>- an installed Intel NPU driver for the device<br>- Python 3.10 or newer<br>- CMake 3.24 or newer and an installed MSVC toolchain for source installation<br>- the extracted MoviTools MVC_DEPEND toolchain for custom C compilation<br>OpenVINO is not required as a runtime, Python package, or compiler frontend.<br>npunlock does emit OpenVINO-format IR for the installed Intel driver.<br>npunlock is currently installed from a source checkout:<br>python -m pip install .<br>The build bundles npunlock.dll and npunlock_worker.exe inside the Python<br>package, so normal Python use does not require a separate native path.<br>Custom C compilation uses Intel/Movidius MoviTools, which npunlock does not<br>redistribute or download.<br>A MoviTools package verified to work was found in a legacy Lenovo driver pack. See Getting MoviTools for the official download, hash, extraction command, and expected layout.<br>Extract the MVC_DEPEND payload from Lenovo&#x27;s older<br>Intel NPU driver package 31.0.100.1688, but remember, DO NOT install or downgrade to<br>that driver. All we need is the bundled MoviTools.<br>Point npunlock at the extracted MVC_DEPEND root and run GELU:<br>$env:NPUNLOCK_MOVITOOLS_DIR = &#x27;C:\path\to\MVC_DEPEND&#x27;<br>python examples\example_gelu.py<br>The example runs on the NPU and reports its maximum error against a NumPy reference.<br>- compile user-written C into ACT-SHAVE machine code<br>- run custom kernels inside Intel NPU graphs<br>- static dense FP16 unary and two-input custom kernels<br>- a verified unary FP32 path<br>- one graph containing independent FP32-unary and FP16-binary custom branches<br>- nonlinear math such as GELU and tanhf<br>- reusable NumPy-compatible host/NPU shared input and output buffers<br>- Python, CLI, and native C APIs<br>Support is experimental and currently limited to Windows x64, Meteor Lake / NPU3720, static shapes, compatible ACT carriers, and known tensor layouts. Connected mixed-precision conversion groups are not yet patch-discoverable; the verified mixed-precision example uses independent branches. Other NPU generations have not been verified. See Current limitations for the full compatibility boundary.<br>Have an NPU3720 Linux system or a newer Intel NPU? Contributions are welcome. Two routes look especially promising but remain untested:<br>- a patched NPU3720 graph produced on Windows may run on Linux because the NPU firmware executes the custom machine code; building SHAVE code on Linux would additionally require a way to load the Windows MoviTools DLLs;<br>- newer NPUs may execute the existing 3720xx SHAVE image, or an older OEM<br>driver package for that generation may provide matching MoviTools components.<br>Both need hardware validation, driver/firmware version records, and output comparison against a host oracle. If you can test either path, feedback, failure reports, and code contributions are welcome. See Porting to Linux and newer NPUs for the hypotheses, caveats, and a suggested test plan.<br>- Getting MoviTools — obtain the compiler toolchain without installing the legacy driver<br>- Python API — construct, compile, and execute graphs from Python<br>- Writing custom kernels — C entry point, tensor contract, and examples<br>- How npunlock works — graph compilation and custom-kernel integration<br>- Reverse-engineering breakthroughs — the experiments and discoveries that made custom kernels possible<br>- From model to machine code — step-by-step lowering and the components involved<br>- Intel NPU architecture — DPU and ACT-SHAVE overview<br>- Current limitations — verified hardware and ABI scope<br>- Porting to Linux and newer NPUs — experimental routes and contribution guide<br>- Development and native APIs — CMake, testing, packaging, CLI, and C interfaces<br>- Full documentation index<br>Warning<br>A note on AI use: I did use AI while building this project--for scaffolding, repetitive implementation work, converting my reverse-engineered results into organized documentation, and fixing my English. The reverse engineering, experiments, debugging, and technical conclusions came from hands-on work. If that doesn’t bother you, there’s a pretty deep and surprisingly satisfying rabbit hole ahead.<br>npunlock is licensed under the Apache License 2.0. MoviTools and<br>the Intel/Movidius libraries are external proprietary dependencies and are not<br>covered or redistributed by this repository.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Ask HN: How do GitHub Copilot and Anthropic Claude compare in cost?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    1 comments ·
+    erwindegroot
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · New #41
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49813172">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">At the company I work at the developers all have a GitHub Copilot subscription. Copilot allows them to use several models, including Claude. From the usage I can actually see that Claude Sonnet and Opus are the most commonly used models. This got me thinking: would it be more efficient to switch to Claude completely? It is difficult to compare the GitHub credits with the Claude tokens, but does someone have experience using both? Is the difference significant?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Jev in 25 Lines of Python
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    121 points ·
+    44 comments ·
+    bashbjorn
+  </div>
+
+  <div class="meta">
+    nobodywho.ai
+  </div>
+
+  <div class="meta ranks">
+    Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.nobodywho.ai/posts/jev-in-25-lines/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49812769">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Jev in 25 lines of Python<br>Everyone and their mom is talking about Jev. Jev this, Jev that. Everyone on Twitter is all over Jev, how it&#x27;s the next frontier of large language models and the AI paradigm. We don’t really think so. So here&#x27;s Jev in 25 lines of Python.<br>Load the model.<br># /// script<br># requires-python = &quot;&gt;=3.12&quot;<br># dependencies = [&quot;huggingface-hub&quot;, &quot;llama-cpp-python&quot;, &quot;numpy&quot;]<br># ///<br>import numpy<br>from llama_cpp import Llama<br># Really, you can use any GGUF model from https://huggingface.co/models?library=gguf<br>model = Llama.from_pretrained(<br>repo_id=&quot;Qwen/Qwen3-0.6B-GGUF&quot;,<br>filename=&quot;Qwen3-0.6B-Q8_0.gguf&quot;,<br>n_ctx=512,<br>logits_all=True,<br>verbose=False,<br>)<br>Load the prompt and define your choices.<br>labels = [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;]<br>choices = [&quot;Legitimate&quot;, &quot;Spam&quot;, &quot;Phishing&quot;]<br>email = &quot;Payroll asks for your password on a non-company sign-in page.&quot;<br>options = &quot;\n&quot;.join(<br>f&quot;{label}. {choice}&quot; for label, choice in zip(labels, choices, strict=True)<br>)<br>prompt = f&quot;&quot;&quot;&lt;|im_start|&gt;system<br>Choose one option.&lt;|im_end|&gt;<br>&lt;|im_start|&gt;user<br>Email: {email}\n\n{options}&lt;|im_end|&gt;<br>&lt;|im_start|&gt;assistant<br>&lt;think&gt;\n\n&lt;/think&gt;\n\n&quot;&quot;&quot;<br>model.eval(tokens=model.tokenize(text=prompt.encode(), add_bos=False, special=True))<br>Massage the logits into probabilities.<br>logits = model.scores[model.n_tokens - 1]<br>token_ids = [model.tokenize(text=label.encode(), add_bos=False)[0] for label in labels]<br>choice_logits = numpy.asarray([logits[token_id] for token_id in token_ids])<br>logprobs = choice_logits - numpy.logaddexp.reduce(choice_logits)<br>probabilities = numpy.exp(logprobs)<br>for name, scores in (<br>(&quot;Logits&quot;, choice_logits),<br>(&quot;Log probabilities&quot;, logprobs),<br>(&quot;Probabilities&quot;, probabilities),<br>):<br>values = numpy.round(scores.astype(float), 3).tolist()<br>print(f&quot;{name}:&quot;, dict(zip(choices, values, strict=True)))<br># Logits: {&#x27;Legitimate&#x27;: 26.254, &#x27;Spam&#x27;: 27.262, &#x27;Phishing&#x27;: 29.614}<br># Log probabilities: {&#x27;Legitimate&#x27;: -3.482, &#x27;Spam&#x27;: -2.474, &#x27;Phishing&#x27;: -0.122}<br># Probabilities: {&#x27;Legitimate&#x27;: 0.031, &#x27;Spam&#x27;: 0.084, &#x27;Phishing&#x27;: 0.885}<br>There. That’s Jev.<br>But no, you don’t understand Jev!<br>Yeah, we know.<br>- We don&#x27;t call it a System One decision model.<br>- We didn’t call an API.<br>- We didn&#x27;t create a bunch of synthetic data.<br>- We didn&#x27;t train a model with Reinforcement Learning for Calibrated Decisions (RLCD) to calibrate the decisions and probabilities (even though they are not always correct).<br>But yes. This is Jev.<br>- It classifies: it gets a prompt with choices and outputs probabilities.<br>- It&#x27;s fast.<br>- It&#x27;s local.<br>- You don&#x27;t send your data anywhere else.<br>And we like not sending your data anywhere else. Check out NobodyWho.<br>(note: this is a parody blog post, see these links for better/more complete open implementations of Jev: OpenJev, openjev-sglang, and OpenJev on DiffusionGemma.)</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    The Alien Signal That Looked Intelligent [video]
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    binyu
+  </div>
+
+  <div class="meta">
+    youtube.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.youtube.com/watch?v=NmCRQPITE2g">Original article</a> · <a href="https://news.ycombinator.com/item?id=49813594">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    GPT-6 Sol and Luna
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1523 points ·
+    730 comments ·
+    OfficialTurkey
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #3
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49805509">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Abandoning Scientific Linux Was a Mistake
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    25 points ·
+    12 comments ·
+    elashri
+  </div>
+
+  <div class="meta">
+    blog.melashri.net
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · New #28
+  </div>
+
+  <div class="links">
+    <a href="https://blog.melashri.net/posts/scientific-linux-mistake/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49813286">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A recent CERN announcement caught my attention. By the end of 2026, more than 2,200 industrial computers and embedded systems around CERN&#x27;s accelerator complex are expected to be running Debian 13.<br>CERN is not abandoning the Red Hat ecosystem. AlmaLinux and RHEL remain the main supported Linux distributions across much of the organization; Debian support is currently limited to accelerator front-end systems.<br>Still, the move took me back to a decision made more than a decade ago: CERN and Fermilab&#x27;s gradual abandonment of Scientific Linux. With hindsight, I think it was a mistake.<br>Not because Scientific Linux was technically superior to CentOS, or because maintaining another Linux distribution was free. And not because CERN or Fermilab could somehow have controlled what Red Hat or IBM later chose to do.<br>The mistake was treating Scientific Linux mainly as duplicated engineering work. It was infrastructure.<br>What Scientific Linux was solving<br>Scientific Linux grew out of a practical problem in High Energy Physics. Large experiments span laboratories, universities, computing centers, and countries. If one site builds against one version of glibc, another uses something slightly different, and a third runs an entirely different packaging environment, things become painful very quickly.<br>The scientific community also needed an unusual combination: a Linux distribution that would remain stable for years, work with enterprise software, be freely redistributable, and run across institutions without requiring a commercial license for every machine.<br>Red Hat Enterprise Linux provided the stability and long lifecycle, and Red Hat published the source needed to rebuild it. Scientific Linux turned that source into a community resource. Fermilab announced the distribution in 2003, and CERN joined soon afterward. It eventually spread far beyond those two laboratories. Universities, research institutions, experiments, companies, and even systems aboard the International Space Station used it or distributions derived from it.<br>Scientific Linux was never simply &quot;RHEL with a different wallpaper.&quot; It gave the scientific community an institutionally independent implementation of the Enterprise Linux platform.<br>Then CentOS looked like the obvious answer<br>When Red Hat and CentOS joined forces in 2014, moving to CentOS looked perfectly reasonable. CentOS already offered what many Scientific Linux users wanted: a freely available Enterprise Linux rebuild backed by a much larger general-purpose community.<br>CERN began moving its next major release from Scientific Linux CERN to CERN CentOS 7. Scientific Linux 5 and 6 remained supported, but the future platform at CERN would be based on CentOS. The rationale was compelling. Why should CERN and Fermilab spend scarce engineering time rebuilding a Linux distribution when CentOS was already doing essentially the same work?<br>Why maintain an HEP-specific distribution when the scientific community could converge on a larger common platform? If Red Hat itself was supporting the CentOS project, that seemed to make the platform more sustainable, not less. In 2019, Fermilab took the argument to its logical conclusion or its literal &quot;end.&quot; There would be no Scientific Linux 8. Fermilab would deploy CentOS 8 instead and work with CERN and other laboratories to improve CentOS for high-energy physics.<br>Taken on its own, this was not an irrational decision. But it removed something that was hard to see on a spreadsheet: a credible exit.<br>A distribution has option value<br>This is what I think we underestimated.<br>The cost of maintaining Scientific Linux was visible. People had to rebuild packages, test updates, maintain repositories, produce releases, handle security updates, and support users.<br>The benefit of an independent distribution was harder to quantify. As long as CentOS behaved exactly as CERN and Fermilab expected, Scientific Linux looked redundant. That is how redundancy always looks when nothing has failed yet.<br>Scientific Linux gave the scientific community its own implementation of a RHEL-compatible computing environment. More importantly, it kept alive the people, processes, infrastructure, and institutional knowledge needed to maintain one.<br>That capability had option value. You might not need to exercise the option this year, or even this decade. It becomes valuable when the assumptions underneath your primary platform change. Those assumptions changed surprisingly quickly.<br>[!NOTE]<br>CERN uses a similar argument to justify the FCC: the knowledge required to build large machines such as accelerators and detectors is valuable and must be preserved. If Europe does not build the next machine after the LHC, that expertise may be lost, the next large machine may be built in China, and Europe may lose its technological leadership in the field. The same argument applies to software infrastructure.<br>The CentOS assumption did not last<br>In December 2020, Red Hat changed the role of CentOS.<br>CentOS Linux, the traditional downstream rebuild of released RHEL versions was discontinued in favor of CentOS Stream, which sits ahead of RHEL rather than behind it. This was more than a change in release cadence.<br>Organizations had standardized on CentOS because they wanted a freely distributable approximation of the current RHEL release. The product they had standardized on effectively ceased to exist.<br>CERN and Fermilab immediately had to reconsider their Linux strategy. CERN noted that the shorter CentOS Stream lifecycle was incompatible with some scientific use cases. The laboratories evaluated Stream, RHEL licensing arrangements, and the emerging Enterprise Linux rebuilds. By 2022, CERN and Fermilab were recommending AlmaLinux as the standard distribution for experiments.<br>The circularity is hard to miss.<br>Scientific Linux had been retired partly because maintaining another RHEL rebuild seemed unnecessary while CentOS existed. A few years later, the community needed an independent RHEL-compatible distribution again, so CERN and Fermilab adopted another independently governed RHEL-compatible distribution.<br>AlmaLinux is a good project. This is not a criticism of it. The requirement never disappeared; only our implementation of it did.<br>Then the ground moved again<br>In 2023, Red Hat changed how RHEL-related sources were publicly distributed. CentOS Stream became the sole public repository for that source material, replacing the previous git.centos.org publication model.<br>This did not make RHEL &quot;closed source,&quot; despite how the change was sometimes described. That characterization would be inaccurate. But it made the dependency structure of the Enterprise Linux rebuild ecosystem much more obvious.<br>By then, the lesson should have been familiar: technical compatibility with an upstream product is not the same as independence from the organization that controls it.<br>Scientific Linux had strategic value that was never properly accounted for. Its existence meant CERN, Fermilab, and other institutions were not merely consumers of an ecosystem. Together, they could reproduce a critical part of that ecosystem themselves.<br>Once discarded, that capability is much harder to recreate than to keep alive.<br>And now CERN is moving part of the accelerator complex to Debian<br>The latest chapter makes this history particularly interesting. CERN&#x27;s accelerator controls group first tried to remain within the Red Hat ecosystem. According to the presentation at MiniDebConf Winterthur 2026, the original plan involved CentOS Stream, with Debian prepared as a fallback because, in the presenters&#x27; words, they could not afford new surprises.<br>Then came a more physical problem. RHEL 9 raised its x86-64 baseline to x86-64-v2. RHEL 10 moved to x86-64-v3.<br>Replacing old hardware may be inconvenient but manageable for an ordinary server fleet. Accelerator controls are not an ordinary server fleet.<br>These computers interface with custom electronics, specialized boards, legacy buses, real-time systems, and equipment installed throughout a vast accelerator complex. The hardware can remain operational for decades because replacing one computer may mean redesigning the electronics connected to it.<br>CERN&#x27;s 2023 risk analysis estimated that staying in the Red Hat ecosystem could cost about 5.4 million CHF. It could also require redesigning around eleven boards, hiring more engineers and technicians, reorganizing racks, recabling systems, and recommissioning equipment.<br>The solution was refreshingly simple: do not replace millions of francs&#x27; worth of functioning hardware to satisfy an operating system&#x27;s CPU baseline. Replace the operating system.<br>CERN chose Debian. By the end of 2026, more than 2,200 industrial computers and embedded systems around the accelerator complex are expected to run Debian 13.<br>The irony is difficult to miss<br>What interests me most is not that CERN chose Debian, but why Debian was valuable.<br>The accelerator team specifically praised its continued support for older and less common architectures and its ability, as a community-led distribution, to compete with Red Hat.<br>CERN is also sponsoring Freexian to strengthen Debian&#x27;s long-term-support ecosystem. There is an important principle here: when an institution depends on infrastructure supplied by a community project, contributing resources to keep that project independent and healthy may cost less than consolidating everything around one vendor ecosystem in pursuit of short-term efficiency.<br>That sounds remarkably close to what Scientific Linux used to provide.<br>Scientific Linux was maintained by a surprisingly small group<br>This is another reason I question whether ending Scientific Linux produced the savings we assumed. The distribution was not maintained by hundreds of engineers.<br>Its project history lists only a handful of major developers in its later years, with Fermilab providing the main sponsorship, build infrastructure, bandwidth, and website. That does not make the work trivial. Release engineering, security updates, testing, package rebuilds, infrastructure, and user support all take real time.<br>But those costs should be compared with the value they produced. Scientific Linux provided a stable computing platform to an enormous scientific ecosystem for roughly two decades. Preserving that capability should not have been evaluated solely in terms of the engineer-hours saved by adopting CentOS.<br>The relevant question was: what would it cost to lose the ability to operate independently if the surrounding ecosystem changed?<br>The past decade gives us at least a partial answer.<br>Did Scientific Linux keep Red Hat honest?<br>There is a tempting, stronger argument: that Scientific Linux and other independent rebuilds constrained Red Hat, and that removing one of the major alternatives helped concentrate power around CentOS and RHEL.<br>I think there is something to it, but I would not present it as historical fact. We cannot know the counterfactual.<br>Scientific Linux probably would not have prevented Red Hat from changing CentOS. IBM completed its acquisition of Red Hat in July 2019, after Fermilab had already announced that there would be no Scientific Linux 8. It would therefore be misleading to reduce this to a story about IBM killing something CERN and Fermilab should have anticipated.<br>What I do believe is that independent alternatives change incentives. A vendor behaves differently when major customers and institutions have a credible exit than when leaving requires them to rebuild years of infrastructure.<br>This is not specific to Red Hat. It is basic dependency management. Competition matters even when nobody switches; the possibility of switching matters too. Scientific Linux provided that possibility.<br>And because major scientific institutions maintained it rather than a commercial Linux vendor, its incentives were unusually well aligned with long-lived scientific infrastructure.<br>The real mistake was confusing standardization with dependency<br>Standardization is good.<br>Particle physics could not operate efficiently if every university and laboratory invented its own incompatible computing platform. CERN and Fermilab were right to want common interfaces, compatible binaries, common packaging, and predictable operating environments. But standardization and monoculture are not the same thing.<br>The strategy went wrong when we assumed that standardization required abandoning an independent implementation of the standard. Scientific Linux could have remained boring.<br>In fact, boring was exactly what we needed from it. It did not need to compete with Fedora on innovation or Ubuntu on desktop adoption. It needed to remain a reproducible, institutionally controlled Enterprise Linux platform: somewhere the scientific community could go if the commercial ecosystem moved in a direction incompatible with scientific computing.<br>That is valuable infrastructure even when almost nobody notices it. Especially then.<br>The lesson is larger than Scientific Linux<br>I do not think the answer today is to resurrect Scientific Linux. The ecosystem has moved on. AlmaLinux exists. Rocky Linux exists. Debian is proving increasingly useful at CERN. Containers and modern software distribution have reduced the importance of the host operating system for many workloads.<br>The lesson I take from Scientific Linux is about how research institutions value infrastructure. We are good at calculating the immediate cost of maintaining something ourselves. We are much worse at calculating the long-term cost of losing the ability to maintain it.<br>When deciding whether to retire institutional open-source infrastructure, the calculation should include more than maintenance hours. It should account for governance, concentration risk, the cost of migration if an upstream project changes direction, the institutional knowledge being discarded, and the value of a credible alternative that you hope never to need.<br>The CERN accelerator team&#x27;s final advice in its Debian presentation is probably the best summary:<br>&quot;Distribution portability is a very good thing.&quot;<br>It took more than a decade, several Enterprise Linux strategy changes, a new community rebuild, and now the migration of thousands of accelerator computers to arrive there. Scientific Linux was already teaching us that lesson twenty years ago.<br>We just stopped listening.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: Company-as-Code –&gt; Spec and Validator
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    grischajacobs
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #40
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/Pirol-ai/company-as-code">Original article</a> · <a href="https://news.ycombinator.com/item?id=49813183">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Describe your company once — every AI agent works by your rules.<br>The knowledge about how your company works lives in your head, in chat messages, and in wiki pages that nobody updates. That was okay when a new coworker joined every few months. Now every AI agent session is a new coworker — it starts a hundred times a day, and it knows nothing.<br>Company as Code is an open standard to write this knowledge down once: goals, roles, processes, and policies as plain markdown files in git. People can read them. Agents follow them. A small tool checks them like code.<br>One file per resource. A small typed header, then normal language:<br>---<br>api: company-as-code.org/v0<br>type: process<br>id: invoicing<br>title: Monthly invoicing<br>owner: role/ops<br>serves: [goal/wholesale-growth]<br>policies: [policy/four-eyes-payments]<br>---<br>Trigger: 1st of each month. Steps: agent drafts invoices from delivery notes;<br>ops reviews; send; log. Done when: all invoices sent and logged.<br>The header connects the files into a graph: this process is owned by a role, serves a goal, and follows a policy. The tool checks every reference. If a reference points to something that does not exist, validation fails. The text below the header is normal language — for people and for agents.<br>Files without the api: key are ignored. Your notes and other documents can stay in the same<br>repository.<br>brew install pirol-ai/tap/charta<br>npm i -g @pirol/charta<br>Works on macOS, Linux, and Windows. Binaries are on the<br>releases page. To build from source:<br>cargo build --release --manifest-path charta/Cargo.toml.<br>See what happens when a company description breaks:<br>git clone https://github.com/Pirol-ai/company-as-code &amp;&amp; cd company-as-code<br>bash demo/demo.sh<br>The demo uses a small example company, a coffee roastery (demo/company/ —<br>open it, it is just files). It deletes the Operations role — the person who runs invoicing and<br>customer support. Suddenly three processes have no owner. charta validate finds every broken<br>reference. charta plan shows what the change would affect — before it happens.<br>This is the same company as a graph — generated with charta graph . --format mermaid, rendered<br>by GitHub:<br>flowchart LR<br>company_aurora_roasters[&quot;company/aurora-roasters&quot;]<br>goal_five_star_service[&quot;goal/five-star-service&quot;]<br>goal_wholesale_growth[&quot;goal/wholesale-growth&quot;]<br>policy_agent_autonomy[&quot;policy/agent-autonomy&quot;]<br>policy_four_eyes_payments[&quot;policy/four-eyes-payments&quot;]<br>process_customer_follow_up[&quot;process/customer-follow-up&quot;]<br>process_invoicing[&quot;process/invoicing&quot;]<br>process_weekly_roast_plan[&quot;process/weekly-roast-plan&quot;]<br>role_agent[&quot;role/agent&quot;]<br>role_founder[&quot;role/founder&quot;]<br>role_ops[&quot;role/ops&quot;]<br>goal_five_star_service --&gt;|owner| role_ops<br>goal_wholesale_growth --&gt;|owner| role_founder<br>process_customer_follow_up --&gt;|owner| role_ops<br>process_customer_follow_up --&gt;|serves| goal_five_star_service<br>process_invoicing --&gt;|owner| role_ops<br>process_invoicing --&gt;|serves| goal_wholesale_growth<br>process_invoicing --&gt;|policies| policy_four_eyes_payments<br>process_weekly_roast_plan --&gt;|owner| role_ops<br>process_weekly_roast_plan --&gt;|serves| goal_wholesale_growth<br>process_weekly_roast_plan -. prose .-&gt; role_agent<br>role_agent -. prose .-&gt; policy_agent_autonomy<br>Delete role/ops and you can see the problem before the tool tells you: four arrows point at it.<br>--format dot gives the same graph as Graphviz DOT for every other tool.<br>You do not need this repository — only the installed tool:<br>mkdir my-company &amp;&amp; cd my-company &amp;&amp; git init<br>charta init --name &quot;Acme GmbH&quot;   # creates company.yaml: the root of your description<br>charta validate .                # check it any time — every reference must resolve<br>With npm, you can start without installing anything:<br>npm init @pirol/charta -- --name &quot;Acme GmbH&quot;<br>The other commands, once you have a few files:<br>charta query orphans .     # which resources does nothing reference?<br>charta plan .              # what would your uncommitted change affect?<br>charta graph . --format mermaid   # the graph, rendered by GitHub<br>charta mcp .               # serve the company graph to any MCP-capable agent<br>Want a filled-in starting point instead of an empty one? Copy template/ from this<br>repository.<br>You do not write this alone — your agent writes it with you. Tell your agent how your<br>company works, in your own words. The agent writes the files, runs charta validate, and fixes<br>what is broken. Start with what a new coworker would need to know on day one — every agent<br>session is that new coworker.<br>The description then grows while you work: when an agent asks a question that only you can answer, that answer is a missing file. The agent adds it, validates it, and never asks again. Start small. Add more only when you need it.<br>charta is one small binary (Apache-2.0):<br>| command | what it does |<br>|---|---|<br>| charta validate | checks the description: files are well-formed, every reference resolves, required fields exist |<br>| charta graph /charta query | the graph as JSON, Mermaid, or Graphviz DOT ( --format ); find orphans and backlinks |<br>| charta plan | compares your working tree with the last git commit and shows what a change would affect |<br>| charta mcp | an MCP server — AI agents can read and query the company graph as tools |<br>Details in charta/.<br>| Path | What |<br>|---|---|<br>| spec/ | The format: purpose, header fields, types, references, conformance levels. Working draft; frozen at 1.0. |<br>| conformance/ | Test fixtures. The test suite defines the standard, not the prose. |<br>| charta/ | The reference toolchain (Rust). |<br>| template/ | A minimal starter company. |<br>| demo/ | An example company and the 30-second demo. |<br>Company as Code is 100% compatible with Google&#x27;s<br>Open Knowledge Format (OKF).<br>Every resource file is also a valid OKF concept. The fields type, title, description, and<br>tags have the same meaning as in OKF. Unknown fields are kept, never deleted. OKF files can<br>live in the same repository; charta ignores them. On top of OKF, Company as Code adds: an id,<br>addressing (type/id), references that must resolve, and required fields per type.<br>- Text first, schema small. The meaning lives in normal language. Structure lives in the header. Every extra field makes adoption harder.<br>- Check the structure, not the text. Strict process notations failed because they demanded too much precision from people. Agents can handle normal language. Only references and required fields are enforced.<br>- The description belongs to you, not to a tool. The files on disk are the exchange format.<br>Export is git clone .<br>- Keep what you do not know. Unknown types and fields are preserved exactly. Read and write must not change a file.<br>- No new language. Markdown and YAML — nothing to learn. No query language: fixed commands, JSON output, agents combine them.<br>Toolchain and fixtures: Apache-2.0 (LICENSE). Specification text: CC-BY-4.0 (spec/LICENSE). An open standard, created and maintained by Pirol Labs.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Anyone using a Wispr Flow alternative that is non-cloud?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    14 points ·
+    13 comments ·
+    itsjeremiahs
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49809670">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Looking for something that runs on my device.<br>What&#x27;s everybody using?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Zipf&#x27;s law
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    binyu
+  </div>
+
+  <div class="meta">
+    en.wikipedia.org
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://en.wikipedia.org/wiki/Zipf%27s_law">Original article</a> · <a href="https://news.ycombinator.com/item?id=49813588">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Zipf&#x27;s law (//) is an empirical law stating that when a set of measured values is sorted in decreasing order, the value of the n-th entry is often approximately inversely proportional to n.<br>The best-known instance of Zipf&#x27;s law applies to the frequency distribution of words in a text or corpus of natural language:<br>It is usually found that the most common word occurs approximately twice as often as the next common one, three times as often as the third most common, and so on. For example, in the Brown Corpus of American English text, the word &quot;the&quot; is the most frequently occurring word, and by itself accounts for nearly 7% of all word occurrences (69,971 out of slightly over 1 million). True to Zipf&#x27;s law, the second-place word &quot;of&quot; accounts for slightly over 3.5% of words (36,411 occurrences), followed by &quot;and&quot; (28,852).[1] It is often used in the following form, called the Zipf-Mandelbrot law:<br>whereandare fitted parameters, with, and.[2]<br>This law is named after the American linguist George Kingsley Zipf,[3][4][5] and is still an important concept in quantitative linguistics. It has been found to apply to many other types of data studied in the physical and social sciences.<br>In mathematical statistics, the concept has been formalized as the Zipfian distribution: A family of related discrete probability distributions whose rank-frequency distribution is an inverse power law relation. They are related to Benford&#x27;s law and the Pareto distribution.<br>Some sets of time-dependent empirical data deviate somewhat from Zipf&#x27;s law. Such empirical distributions are said to be quasi-Zipfian.<br>In 1913, the German physicist Felix Auerbach observed an inverse proportionality between the population sizes of cities, and their ranks when sorted by decreasing order of that variable.[6]<br>Zipf&#x27;s law had been discovered before Zipf,[a] first by the French stenographer Jean-Baptiste Estoup in 1916,[8][7] and also by G. Dewey in 1923,[9] and by E. Condon in 1928.[10]<br>The same relation for frequencies of words in natural language texts was observed by George Zipf in 1932,[4] but he never claimed to have originated it. In fact, Zipf did not like mathematics. In his 1932 publication,[11] the author speaks with disdain about mathematical involvement in linguistics, a.o. ibidem, p. 21:<br>- ... let me say here for the sake of any mathematician who may plan to formulate the ensuing data more exactly, the ability of the highly intense positive to become the highly intense negative, in my opinion, introduces the devil into the formula in the form of<br>The only mathematical expression Zipf used looks like ab2 = constant, which he &quot;borrowed&quot; from Alfred J. Lotka&#x27;s 1926 publication.[12]<br>The same relationship was found to occur in many other contexts, and for other variables besides frequency.[2] For example, when corporations are ranked by decreasing size, their sizes are found to be inversely proportional to the rank.[13] The same relation is found for personal incomes (where it is called Pareto principle[14]), number of people watching the same TV channel,[15] notes in music,[16] cells transcriptomes,[17][18] and more.<br>In 1957 George A. Miller proposed that a power law emerges even in randomly generated texts.[19] and in 1992 bioinformatician Wentian Li published a proof[20] that the power law form of Zipf&#x27;s law was a byproduct of ordering words by rank.[21]<br>| Zipf&#x27;s law |  |  |  |<br>|---|---|---|---|<br>| Probability mass function |  |  |  |<br>| Cumulative distribution function |  |  |  |<br>| Parameters |  |  |  |<br>| Support |  |  |  |<br>| PMF | where HN,s is the Nth generalized harmonic number |  |  |<br>| CDF |  |  |  |<br>| Mean |  |  |  |<br>| Mode |  |  |  |<br>| Variance |  |  |  |<br>| Entropy |  |  |  |<br>| MGF |  |  |  |<br>| CF |  |  |  |<br>Formally, the Zipf distribution on N elements assigns to the element of rank k (counting from 1) the probability:<br>where HN is a normalization constant: The Nth harmonic number:<br>The distribution is sometimes generalized to an inverse power law with exponent s instead of 1.[22] Namely,<br>where HN,s is a generalized harmonic number<br>The generalized Zipf distribution can be extended to infinitely many items (N = ∞) only if the exponent s exceeds 1. In that case, the normalization constant HN,s becomes Riemann&#x27;s zeta function,<br>The infinite item case is characterized by the Zeta distribution and is called Lotka&#x27;s law. If the exponent s is 1 or less, the normalization constant HN,s diverges as N tends to infinity.<br>Empirically, a data set can be tested to see whether Zipf&#x27;s law applies by checking the goodness of fit of an empirical distribution to the hypothesized power law distribution with a Kolmogorov–Smirnov test, and then comparing the (log) likelihood ratio of the power law distribution to alternative distributions like an exponential distribution or lognormal distribution.[23]<br>Zipf&#x27;s law can be visualized by plotting the item frequency data on a log-log graph, with the axes being the logarithm of rank order, and logarithm of frequency. The data conform to Zipf&#x27;s law with exponent s to the extent that the plot approximates a linear (more precisely, affine) function with slope −s. For exponent s = 1 , one can also plot the reciprocal of the frequency (mean interword interval) against rank, or the reciprocal of rank against frequency, and compare the result with the line through the origin with slope 1 .[3]<br>Although Zipf&#x27;s law holds for most natural languages, and even certain artificial ones such as Esperanto[24] and Toki Pona,[25] the reason is still not well understood.[26] Recent reviews of generative processes for Zipf&#x27;s law include Mitzenmacher, &quot;A Brief History of Generative Models for Power Law and Lognormal Distributions&quot;,[27] and Simkin, &quot;Re-inventing Willis&quot;.[28]<br>However, it may be partly explained by statistical analysis of randomly generated texts. Wentian Li has shown that in a document in which each character has been chosen randomly from a uniform distribution of all letters (plus a space character), the &quot;words&quot; with different lengths follow the macro-trend of Zipf&#x27;s law (the more probable words are the shortest and have equal probability).[20] In 1959, Vitold Belevitch observed that if any of a large class of well-behaved statistical distributions (not only the normal distribution) is expressed in terms of rank and expanded into a Taylor series, the first-order truncation of the series results in Zipf&#x27;s law. Further, a second-order truncation of the Taylor series resulted in Mandelbrot&#x27;s law.[29][30]<br>The principle of least effort is another possible explanation: Zipf himself proposed that neither speakers nor hearers using a given language want to work any harder than necessary to reach understanding, and the process that results in approximately equal distribution of effort leads to the observed Zipf distribution.[5][31]<br>A minimal explanation assumes that words are generated by monkeys typing randomly. If language is generated by a single monkey typing randomly, with fixed and nonzero probability of hitting each letter key or white space, then the words (letter strings separated by white spaces) produced by the monkey follows Zipf&#x27;s law.[32]<br>Another possible cause for the Zipf distribution is a preferential attachment process, in which the value x of an item tends to grow at a rate proportional to x (intuitively, &quot;the rich get richer&quot; or &quot;success breeds success&quot;). Such a growth process results in the Yule–Simon distribution, which has been shown to fit word frequency versus rank in language[33] and population versus city rank[34] better than Zipf&#x27;s law. It was originally derived to explain population versus rank in species by Yule, and applied to cities by Simon.<br>A similar explanation is based on atlas models, systems of exchangeable positive-valued diffusion processes with drift and variance parameters that depend only on the rank of the process. It has been shown mathematically that Zipf&#x27;s law holds for Atlas models that satisfy certain natural regularity conditions.[35][36]<br>A generalization of Zipf&#x27;s law is the Zipf–Mandelbrot law, proposed by Benoit Mandelbrot, whose frequencies are:<br>The constant C is the Hurwitz zeta function evaluated at s.<br>Zipfian distributions can be obtained from Pareto distributions by an exchange of variables.[22]<br>The Zipf distribution is sometimes called the discrete Pareto distribution[37] because it is analogous to the continuous Pareto distribution in the same way that the discrete uniform distribution is analogous to the continuous uniform distribution.<br>The tail frequencies of the Yule–Simon distribution are approximately<br>for any choice of ρ &gt; 0 .<br>In the parabolic fractal distribution, the logarithm of the frequency is a quadratic polynomial of the logarithm of the rank. This can markedly improve the fit over a simple power-law relationship.[38] Like fractal dimension, it is possible to calculate Zipf dimension, which is a useful parameter in the analysis of texts.[39]<br>It has been argued that Benford&#x27;s law is a special bounded case of Zipf&#x27;s law,[38] with the connection between these two laws being explained by their both originating from scale invariant functional relations from statistical physics and critical phenomena.[40] The ratios of probabilities in Benford&#x27;s law are not constant. The leading digits of data satisfying Zipf&#x27;s law with s = 1 , satisfy Benford&#x27;s law.<br>|  | Benford&#x27;s law: |  |<br>|---|---|---|<br>| 1 | 0.30103000 |  |<br>| 2 | 0.17609126 | −0.7735840 |<br>| 3 | 0.12493874 | −0.8463832 |<br>| 4 | 0.09691001 | −0.8830605 |<br>| 5 | 0.07918125 | −0.9054412 |<br>| 6 | 0.06694679 | −0.9205788 |<br>| 7 | 0.05799195 | −0.9315169 |<br>| 8 | 0.05115252 | −0.9397966 |<br>| 9 | 0.04575749 | −0.9462848 |<br>Following Auerbach&#x27;s 1913 observation, there has been substantial examination of Zipf&#x27;s law for city sizes.[41] However, more recent empirical[42][43] and theoretical[44] studies have challenged the relevance of Zipf&#x27;s law for cities.<br>In many texts in human languages, word frequencies approximately follow a Zipf distribution with exponent s close to 1; that is, the most common word occurs about n times the n-th most common one.<br>The actual rank-frequency plot of a natural language text deviates in some extent from the ideal Zipf distribution, especially at the two ends of the range. The deviations may depend on the language, on the topic of the text, on the author, on whether the text was translated from another language, and on the spelling rules used.[45] Some deviation is inevitable because of sampling error.<br>At the low-frequency end, where the rank approaches N, the plot takes a staircase shape, because each word can occur only an integer number of times.<br>In some Romance languages, the frequencies of the dozen or so most frequent words deviate significantly from the ideal Zipf distribution, because those words include articles inflected for grammatical gender and number.[citation needed]<br>In many East Asian languages, such as Chinese, Tibetan, and Vietnamese, each morpheme (word or word piece) consists of a single syllable; a word of English being often translated to a compound of two such syllables. The rank-frequency table for those morphemes deviates significantly from the ideal Zipf law, at both ends of the range.[citation needed]<br>Even in English, the deviations from the ideal Zipf&#x27;s law become more apparent as one examines large collections of texts. Analysis of a corpus of 30,000 English texts showed that only about 15% of the texts in it have a good fit to Zipf&#x27;s law. Slight changes in the definition of Zipf&#x27;s law can increase this percentage up to close to 50%.[48]<br>In these cases, the observed frequency-rank relation can be modeled more accurately as by separate Zipf–Mandelbrot laws distributions for different subsets or subtypes of words. This is the case for the frequency-rank plot of the first 10 million words of the English Wikipedia. In particular, the frequencies of the closed class of function words in English is better described with s lower than 1, while open-ended vocabulary growth with document size and corpus size require s greater than 1 for convergence of the Generalized Harmonic Series.[3]<br>When a text is encrypted in such a way that every occurrence of each distinct plaintext word is always mapped to the same encrypted word (as in the case of simple substitution ciphers, like the Caesar ciphers, or simple codebook ciphers), the frequency-rank distribution is not affected. On the other hand, if separate occurrences of the same word may be mapped to two or more different words (as happens with the Vigenère cipher), the Zipf distribution will typically have a flat part at the high-frequency end.[citation needed]<br>Zipf&#x27;s law has been used for extraction of parallel fragments of texts out of comparable corpora.[49] Laurance Doyle and others have suggested the application of Zipf&#x27;s law for detection of alien language in the search for extraterrestrial intelligence.[50][51]<br>The frequency-rank word distribution is often characteristic of the author and changes little over time. This feature has been used in the analysis of texts for authorship attribution.[52][53]<br>The word-like sign groups of the 15th-century codex Voynich Manuscript have been found to satisfy Zipf&#x27;s law, suggesting that text is most likely not a hoax but rather written in an obscure language or cipher.[54][55]<br>Researchers have reported mixed support for Zipf&#x27;s law in the vocal communication of other animals, including primates, cetaceans, bats, hyraxes, and birds.[56][57][58]<br>- 1% rule – Hypothesis that more people will lurk in a virtual community than will participate<br>- Benford&#x27;s law – Observation that in many real-life datasets, the leading digit is likely to be small<br>- Bradford&#x27;s law – Pattern of references in science journals<br>- Brevity law – Linguistics law<br>- Demographic gravitation – Social effect<br>- Word list – Bare list of a language&#x27;s words in corpus linguistics<br>- Gibrat&#x27;s law – Economic principle<br>- Hapax legomenon – Word appearing only once in a text or record<br>- Heaps&#x27; law – Heuristic for distinct words in a document<br>- Hilberg&#x27;s hypothesis – Power law growth of entropy of language or a stochastic process<br>- Historical recurrence – Repetition of similar events in history<br>- King effect – Phenomenon in statistics where highest-ranked data points are outliers<br>- Long tail – Feature of some statistical distributions<br>- Lorenz curve – Graph of wealth or income distribution<br>- Lotka&#x27;s law – Application of Zipf&#x27;s law to publications by field<br>- Menzerath&#x27;s law – Linguistic law<br>- Pareto distribution – Probability distribution<br>- Pareto principle – Statistical principle about ratio of effects to causes<br>- Price&#x27;s law – Bibliometric hypothesis<br>- Principle of least effort – Idea that agents prefer to do what&#x27;s easiest<br>- Rank–size distribution – Statistical distribution<br>- Stigler&#x27;s law of eponymy – Observation that no scientific discovery is named after its discoverer<br>- Letter frequency<br>- Most common words in English<br>- ↑<br>Fagan, Stephen; Gençay, Ramazan (2010). &quot;An introduction to textual econometrics&quot;. In Ullah, Aman; Giles, David E.A. (eds.). Handbook of Empirical Economics and Finance. CRC Press. pp. 133–153, esp.&amp;nbps, 139. ISBN 978-1-4200-7036-1. For example, in the Brown Corpus, consisting of over one million words, half of the word volume consists of repeated uses of only 135 words.<br>- 1 2 Piantadosi, Steven (25 March 2014). &quot;Zipf&#x27;s word frequency law in natural language: A critical review and future directions&quot;. Psychon Bull Rev. 21 (5): 1112–1130. doi:10.3758/s13423-014-0585-6. PMC 4176592. PMID 24664880.<br>- 1 2 3 Powers, David M.W. (1998). Applications and explanations of Zipf&#x27;s law. Joint conference on new methods in language processing and computational natural language learning. Association for Computational Linguistics. pp. 151–160. Archived from the original on 10 September 2015. Retrieved 2 February 2015 – via aclweb.org.<br>- 1 2 Zipf, G.K. (1935). The Psychobiology of Language. New York, NY: Houghton-Mifflin.<br>- 1 2 3 Zipf, George K. (1949). Human Behavior and the Principle of Least Effort. Cambridge, MA: Addison-Wesley. p. 1 – via archive.org.<br>- ↑ Auerbach, F. (1913). &quot;Das Gesetz der Bevölkerungskonzentration&quot;. Petermann&#x27;s Geographische Mitteilungen (in German). 59: 74–76.<br>- 1 2 Manning, Christopher D.; Schütze, Hinrich (1999). Foundations of Statistical Natural Language Processing. MIT Press. p. 24. ISBN 978-0-262-13360-9.<br>- ↑ Estoup, J.-B. (1916). Gammes Stenographiques (4th ed.).Manning &amp; Schütze (1999).[7]<br>- ↑ Dewey, Godfrey (1923). Relative Frequency of English Speech Sounds. Harvard University Press – via Internet Archive.<br>- ↑ Condon, E.U. (1928). &quot;Statistics of vocabulary&quot;. Science. 67 (1733): 300. Bibcode:1928Sci....67..300C. doi:10.1126/science.67.1733.300. hdl:11858/00-001M-0000-002B-0DF6-B. PMID 17782935.<br>- ↑ Zipf, G.K. (1932). Selected Studies on the Principle of Relative Frequency in Language. Harvard, MA: Harvard University Press.<br>- ↑ Zipf, George Kingsley (1942). &quot;The Unity of Nature, Least-Action, and Natural Social Science&quot;. Sociometry. 5 (1): 48–62. doi:10.2307/2784953. JSTOR 2784953.<br>- ↑ Axtell, Robert L. (7 September 2001). &quot;Zipf Distribution of U.S. Firm Sizes&quot;. Science. 293 (5536): 1818–1820. Bibcode:2001Sci...293.1818A. doi:10.1126/science.1062081. PMID 11546870.<br>- ↑ Sandmo, Agnar (2015). The Principal Problem in Political Economy. Handbook of Income Distribution. Vol. 2. pp. 3–65. doi:10.1016/B978-0-444-59428-0.00002-3. ISBN 978-0-444-59430-3.<br>- ↑ Eriksson, Magnus; Rahman, S.M. Hasibur; Fraile, Francisco; Sjostrom, Marten (2013). &quot;Efficient interactive multicast over DVB-T2 - Utilizing dynamic SFNS and PARPS&quot;. 2013 IEEE International Symposium on Broadband Multimedia Systems and Broadcasting (BMSB). pp. 1–7. doi:10.1109/BMSB.2013.6621700. ISBN 978-1-4673-6047-0.<br>- ↑ Zanette, Damián H. (7 June 2004). &quot;Zipf&#x27;s law and the creation of musical context&quot;. arXiv:cs/0406015.<br>- ↑ Lazzardi, Silvia; Valle, Filippo; Mazzolini, Andrea; Scialdone, Antonio; Caselle, Michele; Osella, Matteo (27 April 2023). &quot;Emergent statistical laws in single-cell transcriptomic data&quot;. Physical Review E. 107 (4) 044403. Bibcode:2023PhRvE.107d4403L. doi:10.1103/PhysRevE.107.044403. PMID 37198814.<br>- ↑ Chenna, Ramu; Gibson, Toby (2011). Evaluation of the suitability of a Zipfian gap model for pairwise sequence alignment (PDF). International Conference on Bioinformatics Computational Biology. BIC 4329. Archived from the original (PDF) on 6 March 2014.<br>- ↑ Miller, George A. (1957). &quot;Some Effects of Intermittent Silence&quot;. The American Journal of Psychology. 70 (2): 311–314. doi:10.2307/1419346. ISSN 0002-9556. JSTOR 1419346. PMID 13424784.<br>- 1 2 Li, Wentian (1992). &quot;Random Texts Exhibit Zipf&#x27;s-Law-Like Word Frequency Distribution&quot;. IEEE Transactions on Information Theory. 38 (6): 1842–1845. Bibcode:1992ITIT...38.1842L. doi:10.1109/18.165464.<br>- ↑ Newman, Mej (September 2005). &quot;Power laws, Pareto distributions and Zipf&#x27;s law&quot;. Contemporary Physics. 46 (5): 323–351. arXiv:cond-mat/0412004. Bibcode:2005ConPh..46..323N. doi:10.1080/00107510500052444. ISSN 0010-7514.<br>- 1 2 Adamic, Lada A. (2000). Zipf, power-laws, and Pareto – a ranking tutorial (Report) (re-issue ed.). Hewlett-Packard Company. Archived from the original on 1 April 2023. Retrieved 12 October 2023.&quot;original publication&quot;. www.parc.xerox.com. Xerox Corporation. Archived from the original on 7 November 2001. Retrieved 23 February 2016.<br>- ↑ Clauset, A.; Shalizi, C.R.; Newman, M.E.J. (2009). &quot;Power-law distributions in empirical data&quot;. SIAM Review. 51 (4): 661–703. arXiv:0706.1062. Bibcode:2009SIAMR..51..661C. doi:10.1137/070710111.<br>- ↑ Manaris, Bill; Pellicoro, Luca; Pothering, George; Hodges, Harland (13 February 2006). Investigating Esperanto&#x27;s statistical proportions relative to other languages using neural networks and Zipf&#x27;s law (PDF). Artificial Intelligence and Applications. Innsbruck, Austria. pp. 102–108. Archived from the original (PDF) on 5 March 2016 – via cs.cofc.edu.<br>- ↑ Skotarek, Dariusz (12–14 October 2020). Zipf&#x27;s law in Toki Pona (PDF). ExLing 2020: 11th International Conference of Experimental Linguistics. Athens, Greece: ExLing Society. doi:10.36505/ExLing-2020/11/0047/000462. ISBN 978-618-84585-1-2 – via exlingsociety.com.<br>- ↑<br>Brillouin, Léon (2004) [1959, 1988]. La science et la théorie de l&#x27;information [The Science and Theory of Information] (in French). réédité en 1988, traduction anglaise rééditée en 2004<br>- ↑ Mitzenmacher, Michael (January 2004). &quot;A brief history of generative models for power law and lognormal distributions&quot;. Internet Mathematics. 1 (2): 226–251. doi:10.1080/15427951.2004.10129088.<br>- ↑ Simkin, M.V.; Roychowdhury, V.P. (December 2010). &quot;Re-inventing Willis&quot;. Physics Reports. arXiv:physics/0601192. doi:10.1016/j.physrep.2010.12.004.<br>- ↑ Belevitch, V. (18 December 1959). &quot;On the statistical laws of linguistic distributions&quot; (PDF). Annales de la Société Scientifique de Bruxelles. 73: 310–326. Archived (PDF) from the original on 15 December 2020. Retrieved 24 April 2020.<br>- ↑ Neumann, P.G. (c. 2022). Statistical metalinguistics and Zipf / Pareto / Mandelbrot (Report). Computer Science Laboratory. Vol. 12A. Menlo Park, CA: SRI International. Archived from the original on 5 June 2011. Retrieved 29 May 2011 – via sri.com.<br>- ↑ Ferrer i Cancho, Ramon &amp; Sole, Ricard V. (2003). &quot;Least effort and the origins of scaling in human language&quot;. Proceedings of the National Academy of Sciences of the United States of America. 100 (3): 788–791. Bibcode:2003PNAS..100..788C. doi:10.1073/pnas.0335980100. PMC 298679. PMID 12540826.<br>- ↑ Conrad, B.; Mitzenmacher, M. (July 2004). &quot;Power Laws for Monkeys Typing Randomly: The Case of Unequal Probabilities&quot;. IEEE Transactions on Information Theory. 50 (7): 1403–1414. Bibcode:2004ITIT...50.1403C. doi:10.1109/TIT.2004.830752.<br>- ↑ Lin, Ruokuang; Ma, Qianli D.Y.; Bian, Chunhua (2014). &quot;Scaling laws in human speech, decreasing emergence of new words, and a generalized model&quot;. arXiv:1412.4846 [cs.CL].<br>- ↑ Vitanov, Nikolay K.; Ausloos, Marcel (2 December 2015). &quot;Test of two hypotheses explaining the size of populations in a system of cities&quot;. Journal of Applied Statistics. 42 (12): 2686–2693. arXiv:1506.08535. Bibcode:2015JApSt..42.2686V. doi:10.1080/02664763.2015.1047744.<br>- ↑ Fernholz, Ricardo T.; Fernholz, Robert (December 2020). &quot;Zipf&#x27;s law for atlas models&quot;. Journal of Applied Probability. 57 (4): 1276–1297. arXiv:1707.04285. doi:10.1017/jpr.2020.64.<br>- ↑ Tao, Terence (July 2012). &quot;E pluribus unum: From Complexity, Universality&quot;. Daedalus. 141 (3): 23–34. doi:10.1162/DAED_a_00158.<br>- ↑ Johnson, N.L.; Kotz, S. &amp; Kemp, A. W. (1992). Univariate Discrete Distributions (second ed.). New York: John Wiley &amp; Sons, Inc. p. 466. ISBN 978-0-471-54897-3.<br>- 1 2 van der Galien, Johan Gerard (8 November 2003). &quot;Factorial randomness: The laws of Benford and Zipf with respect to the first digit distribution of the factor sequence from the natural numbers&quot;. zonnet.nl. Archived from the original on 5 March 2007. Retrieved 8 July 2016.<br>- ↑ Eftekhari, Ali (2006). &quot;Fractal geometry of texts: An initial application to the works of Shakespeare&quot;. Journal of Quantitative Linguistic. 13 (2–3): 177–193. doi:10.1080/09296170600850106.<br>- ↑ Pietronero, L.; Tosatti, E.; Tosatti, V.; Vespignani, A. (2001). &quot;Explaining the uneven distribution of numbers in nature: The laws of Benford and Zipf&quot;. Physica A. 293 (1–2): 297–304. arXiv:cond-mat/9808305. Bibcode:2001PhyA..293..297P. doi:10.1016/S0378-4371(00)00633-6.<br>- ↑ Gabaix, Xavier (1999). &quot;Zipf&#x27;s Law for Cities: An Explanation&quot;. The Quarterly Journal of Economics. 114 (3): 739–767. doi:10.1162/003355399556133. JSTOR 2586883.<br>- ↑ Arshad, Sidra; Hu, Shougeng; Ashraf, Badar Nadeem (February 2018). &quot;Zipf&#x27;s law and city size distribution: A survey of the literature and future research agenda&quot; (PDF). Physica A: Statistical Mechanics and Its Applications. 492: 75–92. Bibcode:2018PhyA..492...75A. doi:10.1016/j.physa.2017.10.005. Archived from the original (PDF) on 26 November 2024. Retrieved 19 November 2024.<br>- ↑ Gan, Li; Li, Dong; Song, Shunfeng (August 2006). &quot;Is the Zipf law spurious in explaining city-size distributions?&quot;. Economics Letters. 92 (2): 256–262. doi:10.1016/j.econlet.2006.03.004.<br>- ↑ Verbavatz, Vincent; Barthelemy, Marc (19 November 2020). &quot;The growth equation of cities&quot;. Nature. 587 (7834): 397–401. arXiv:2011.09403. Bibcode:2020Natur.587..397V. doi:10.1038/s41586-020-2900-x. PMID 33208958.<br>- ↑ Rosillo-Rodes, Pablo; San Miguel, Maxi; Sánchez, David (14 July 2025). &quot;Entropy and type-token ratio in gigaword corpora&quot;. Physical Review Research. 7 (3) 033054. arXiv:2411.10227. Bibcode:2025PhRvR...7c3054R. doi:10.1103/rxxz-lk3n.<br>- ↑ Ferrer Cancho, Ramon; Solé, Ricard V. (December 2001). &quot;Two Regimes in the Frequency of Words and the Origins of Complex Lexicons: Zipf&#x27;s Law Revisited&quot;. Journal of Quantitative Linguistics. 8 (3): 165–173. doi:10.1076/jqul.8.3.165.4101. hdl:2117/180381.<br>- ↑ Dorogovtsev, S. N.; Mendes, J. F. F. (22 December 2001). &quot;Language as an evolving word web&quot;. Proceedings of the Royal Society of London. Series B: Biological Sciences. 268 (1485): 2603–2606. doi:10.1098/rspb.2001.1824. PMC 1088922. PMID 11749717.<br>- ↑ Moreno-Sánchez, I.; Font-Clos, F.; Corral, A. (2016). &quot;Large-scale analysis of Zipf&#x27;s Law in English texts&quot;. PLOS ONE. 11 (1) e0147073. arXiv:1509.04486. Bibcode:2016PLoSO..1147073M. doi:10.1371/journal.pone.0147073. PMC 4723055. PMID 26800025.<br>- ↑ Mohammadi, Mehdi (2016). &quot;Parallel Document Identification using Zipf&#x27;s Law&quot; (PDF). Proceedings of the Ninth Workshop on Building and Using Comparable Corpora. LREC 2016. Portorož, Slovenia. pp. 21–25. Archived (PDF) from the original on 23 March 2018.<br>- ↑ Doyle, L.R. (18 November 2016). &quot;Why alien language would stand out among all the noise of the universe&quot;. Nautilus Quarterly. Archived from the original on 29 July 2020. Retrieved 30 August 2020.<br>- ↑ Kershenbaum, Arik (16 March 2021). The Zoologist&#x27;s Guide to the Galaxy: What animals on Earth reveal about aliens – and ourselves. Penguin. pp. 251–256. ISBN 978-1-9848-8197-7. OCLC 1242873084.<br>- ↑ van Droogenbroeck, Frans J. (2016). Handling the Zipf distribution in computerized authorship attribution (Report). Archived from the original on 4 October 2023 – via academia.edu.<br>- ↑ van Droogenbroeck, Frans J. (2019). An essential rephrasing of the Zipf-Mandelbrot law to solve authorship attribution applications by Gaussian statistics (Report). Archived from the original on 30 September 2023 – via academia.edu.<br>- ↑ Boyle, Rebecca (22 September 2016). &quot;Mystery text&#x27;s language-like patterns may be an elaborate hoax&quot;. New Scientist. Archived from the original on 18 May 2022. Retrieved 25 February 2022.<br>- ↑ Montemurro, Marcelo A.; Zanette, Damián H. (21 June 2013). &quot;Keywords and Co-Occurrence Patterns in the Voynich Manuscript: An Information-Theoretic Analysis&quot;. PLOS ONE. 8 (6) e66344. Bibcode:2013PLoSO...866344M. doi:10.1371/journal.pone.0066344. PMC 3689824. PMID 23805215.<br>- ↑ Gilman, R.T.; Durrant, C.; Malpas, L.; Lewis, R.N. (2025). &quot;Does Zipf&#x27;s law of abbreviation shape birdsong?&quot;. PLOS Comput Biol. 21 (8) e1013228. Bibcode:2025PLSCB..21E3228G. doi:10.1371/journal.pcbi.1013228. PMC 12349147. PMID 40802653.<br>- ↑ Kirby, S.; Okanoya, K.; Garland, E.C.; Takahasi, M.; Arnon, I. (2026). &quot;Language-like statistical structure arises in learned signaling: evidence from birdsong&quot;. Science Advances. 12 (32) eaea3015. doi:10.1126/sciadv.aea3015. PMC 13450306. PMID 42566530.<br>- ↑ Evrim Yazgin (7 August 2026). &quot;How similar are bird and whale songs to human language?&quot;. CSIRO Publishing. Archived from the original on 11 August 2026.<br>- Gelbukh, Alexander; Sidorov, Grigori (2001). &quot;Zipf and Heaps Laws&#x27; Coefficients Depend on Language&quot;. Computational Linguistics and Intelligent Text Processing. Lecture Notes in Computer Science. Vol. 2004. pp. 332–335. doi:10.1007/3-540-44686-9_33. ISBN 978-3-540-41687-6.<br>- Kali, Raja (15 September 2003). &quot;The city as a giant component: a random graph approach to Zipf&#x27;s law&quot;. Applied Economics Letters. 10 (11): 717–720. doi:10.1080/1350485032000139006.<br>- Shyklo, Alexandra Elizabeth (2017). Simple Explanation of Zipf&#x27;s Mystery via New Rank-Share Distribution, Derived from Combinatorics of the Ranking Process (Report). SSRN 2918642.<br>- Moskowitz, Clara; Ford, Ni-ka; Christiansen, Jen (January 2024). &quot;Cells by Count and Size&quot;. Scientific American. 330 (1): 94. doi:10.1038/scientificamerican0124-94. PMID 39017389.<br>- Strogatz, Steven (29 May 2009). &quot;Guest Column: Math and the City&quot;. The New York Times. Archived from the original on 27 September 2015. Retrieved 29 May 2009.<br>- Seeing Around Corners (Artificial societies turn up Zipf&#x27;s law)<br>- PlanetMath article on Zipf&#x27;s law<br>- Distributions de type &quot;fractal parabolique&quot; dans la Nature (French, with English summary) Archived 2004-10-24 at the Wayback Machine<br>- An analysis of income distribution<br>- Zipf List of French words Archived 2007-06-23 at the Wayback Machine<br>- Zipf list for English, French, Spanish, Italian, Swedish, Icelandic, Latin, Portuguese and Finnish from Gutenberg Project and online calculator to rank words in texts Archived 2011-04-08 at the Wayback Machine<br>- Silagadze, Z. K. (1999). &quot;Citations and the Zipf-Mandelbrot&#x27;s law&quot;. arXiv:physics/9901035.<br>- Zipf&#x27;s Law examples and modelling (1985)[dead link]<br>- Adamic, Lada (2011). &quot;Unzipping Zipf&#x27;s law&quot;. Nature. 474 (7350): 164–165. Bibcode:2011Natur.474..164A. doi:10.1038/474164a. PMID 21654791.<br>- Benford&#x27;s law, Zipf&#x27;s law, and the Pareto distribution by Terence Tao.<br>- &quot;Zipf law&quot;, Encyclopedia of Mathematics, EMS Press, 2001 [1994]</div>
+</div>
+
+</div>
+
+</body>
+</html>
