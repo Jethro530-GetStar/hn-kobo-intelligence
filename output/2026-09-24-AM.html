@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-24 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-24 AM · Generated 2026-09-24 05:39 CST</div><div class="issue-sub">Stories 10 · Full 7</div><div class="issue-sub">Sources: anthropic.com, assemblyai.com, atlas-sysdes.vercel.app, blogs.windows.com, forensicdbg.com, news.ycombinator.com, openai.com, pointinthecloud.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Claude Opus 5.5
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1765 points ·
+    1071 comments ·
+    km144
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #31
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/claude-opus-5-5">Original article</a> · <a href="https://news.ycombinator.com/item?id=49803892">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We’re introducing Claude Opus 5.5, the first model in our new Claude 5.5 family. It performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5.<br>Claude Opus 5.5 is our first release since we called for pacing the frontier. It was tested before release by external evaluators, including Frontier Design and METR. On our automated behavioral audit, the most comprehensive alignment test we run, Opus 5.5 is the strongest-performing model we’ve tested to date. It also comes with the safeguards we’ve developed for our most capable models.<br>Here are some of the improvements you can expect from Opus 5.5:<br>Performance. Opus 5.5 is a major step up from Opus 5. It’s the new leading model, and early testers saw large jumps in performance on their most complex work. One tester completed a 680,000-line code migration in less than a day—work that would have taken an engineering team weeks. It’s good at finding and fixing inefficiencies in software: when we asked it to cut load times across every page of a web app, Opus 5.5 succeeded 39 of 40 times, while Opus 5 made smaller improvements that also altered the app’s behavior. A different tester had several Claude models build a game from a single prompt; Opus 5.5 scored higher than any other model on the strength of its graphics and polish.<br>Safety. Opus 5.5 achieves the best scores of any model to date on our automated behavioral audit, our alignment suite that tests Claude across thousands of simulated scenarios. It is much less likely than recent models to take hard-to-reverse actions or act outside the boundaries it’s been given, and it’s more resistant than Opus 5 to prompt injection. We’ve also broadened our alignment testing to cover longer tasks, impossible tasks, and scenarios modeled on real incidents, though it still has limits. Full details of our evaluation are available in the Opus 5.5 System Card.<br>Because Opus 5.5 is comparable to Claude Mythos 5.1 in biology and cybersecurity, we’re deploying it with safeguards similar to those on Claude Fable 5.1. Vetted organizations can apply today to our Life Sciences Verification Program to use Opus 5.5 for biology research. In the coming weeks we will also be expanding access to our Cyber Verification Program, and verified cybersecurity practitioners will be able to use Opus 5.5 for their work.<br>Cost and speed. Opus 5.5 requires less compute to serve than Opus 5, and its pricing reflects that. Our tests show that at default settings it will cost 40% less than Opus 5 on typical workloads. Input and output tokens are $4 and $20 per million, 20% less than Opus 5. Cache reads (which make up the majority of agentic and coding work costs) are $0.20 per million tokens, 60% less than Opus 5. Opus 5.5 also generates output more than 30% faster than Opus 5.<br>In addition to the price drop, we’re increasing five-hour usage limits on Pro, Max, Team, and seat-based Enterprise plans. We’re also providing subscription users a rate limit reset, which you can now save and use whenever you choose.<br>Communication. Opus 5.5 communicates more naturally than prior models. Early testers found its writing clearer and easier to follow, which addresses some of the common feedback we heard about Opus 5. It puts the most important information up front, and its style makes it a better work partner over long sessions. As one early tester put it, “it writes the way I do.” In our own use, this has made Opus 5.5’s work easier to follow and check—which is a safety benefit as well as a practical one.<br>Claude Sonnet 5.5 and Claude Haiku 5.5 will follow in the coming weeks, with many of the same improvements to performance, efficiency, and safety.<br>Performance and cost-effectiveness<br>On our benchmarks, Claude Opus 5.5 leads in agentic coding, computer use, and knowledge work. That said, at these levels of capability we’ve found that benchmark margins have become a less reliable guide to real-world differences. In our own use, the gap between Opus 5.5 and Claude Fable 5.1 is narrower than these scores suggest.<br>|  | Opus 5.5 | Fable 5.1 | Opus 5 | GPT-6 Astra | GPT-5.6 Sol |<br>|---|---|---|---|---|---|<br>| Agentic codingTerminal-Bench 4.0¹ | 66.4% | 55.8% | 52.3% | 57.9% | 37.3% |<br>| Agentic codingFrontierCode v1.1 (Main) | 54.4% | 50.3% | 48.0% | 53.3% | 47.5% |<br>| Agentic codingCursorBench 4.0 | 57.8% | 51.8% | 46.6% | — | 41.7% |<br>| Knowledge workGDPval-AA v2.1 | 1846 | 1735 | 1708 | 1542 | 1588 |<br>| Business workflowsAutomationBench² | 40.0% | 31.4% | 26.9% | 41.4% | 28.8% |<br>| Multidisciplinary reasoningHumanity&#x27;s Last Exam | 67.7%with tools | 65.6%with tools | 63.6%with tools | 57.2%with tools | — |<br>| Agentic scientific researchTerminal-Bench-Science 0.1³ | 58.7% | 52.6% | 29.0% | 64.6% | 22.4% |<br>| Computer useOSWorld 2.0 | 81.8%partial | 80.7%partial | 74.0%partial | — | — |<br>| Visual chart recognitionChartography | 89.0%with tools | 88.4%with tools | 83.4%with tools | — | — |<br>Unless otherwise noted, all Claude Opus 5.5 results use adaptive thinking at max effort. Terminal-Bench 4.0 results are reported for Claude Opus 5.5 at xhigh effort and GPT-6 Astra at high effort, as reported by OpenAI; these represent each model’s highest score. Claude Opus 5.5 was evaluated with its production safeguards enabled. When they intervened, cybersecurity tasks were completed by Claude Opus 4.8, and biology and frontier LLM development tasks were completed by Claude Opus 5. This likely reduces Claude Opus 5.5’s performance on these benchmarks.<br>1 Terminal-Bench 4.0: The standard error is ±2.6 pts for Claude Opus 5.5 and ±1.6–2 pts for the other Claude models. The public leaderboard (5 trials/task, Claude Code harness) reports Claude Opus 5 at 51.8%; our setup reproduces it at 52.3%, within noise. GPT-6 Astra and GPT-5.6 Sol figures are as reported by OpenAI.<br>2 AutomationBench: AutomationBench results were run and reported by Zapier. These runs were performed without fallback models, so safeguard interventions were considered failures—this resulted in a lower score than Claude Opus 5.5 would achieve in practice. Claude Opus 5.5 results come from Zapier’s own evaluation during early access. Results for Opus 5, GPT-5.6 Sol, and GPT-6 Astra come from Zapier’s public leaderboard.<br>3 Terminal-Bench-Science 0.1: The standard error is ±3.5–5 pts per model. The public leaderboard (3 trials/task, Claude Code harness) reports Claude Opus 5 at 30.0%; our setup reproduces it at 29.0%, within noise. The GPT-6 Astra figure is as reported by OpenAI.<br>Where Opus 5.5’s advantage is very clear is efficiency. It costs less per token than Opus 5 and uses fewer tokens per task, which nets out to a 40% drop in costs.<br>Pricing<br>| Prices per 1M tokens | Claude Opus 5.5 | Claude Opus 5 |<br>|---|---|---|<br>| Cache reads | $0.20 | $0.50 |<br>| Input tokens | $4 | $5 |<br>| Output tokens | $20 | $25 |<br>| Cache writes | $5 | $6.25 |<br>Fast mode for Opus 5.5 is also available in Claude Code and the Claude Platform with up to 2.5x speed. It costs $8 per million input tokens and $40 per million output tokens.<br>Coding<br>Opus 5.5 is particularly good at long and sprawling jobs like codebase-wide migrations and audits. An early tester used it to audit and fix a 200,000-line codebase in under three hours, where Opus 5 took over 20 hours and used 2.5x as many tokens. In an internal test, we asked Opus 5.5 and Fable 5.1 to translate HAProxy, widely used software that balances web traffic loads across servers, from C into Rust. Both rewrites passed nearly all of HAProxy’s own regression tests, but Opus 5.5 finished in 9.5 hours compared to 12 for Fable 5.1, and cost 51% less.<br>Opus 5.5 delivers frontier results on agentic coding at a fraction of the cost. At its default effort level on FrontierCode, it beats GPT-6 Astra at roughly 20% of the cost per task. On Terminal Bench 4.0, it matches Astra for about 40% of the cost, while on CursorBench it beats GPT-5.6 Sol by 11 points for about a third of the cost.<br>Our early testers reported similar efficiency and intelligence gains:<br>The most secure coding agent<br>Enterprises that use agents within their systems need to know that those agents are operating as intended, particularly when they run autonomously for many hours. Opus 5.5 has a classifier that screens every action before it runs, an open-source sandbox that security teams can audit, and code review that catches vulnerabilities before they merge.<br>The model itself also has stronger defenses. On prompt injection attacks, it matches or beats Opus 5 in every setting we tested, including coding, tool use, computer use, and web browsing. On a benchmark run by the AI security firm Gray Swan, Opus 5.5 ties Fable 5.1 for the lowest prompt injection success rate of any model tested.<br>Knowledge work<br>Opus 5.5 is a reliable and adept researcher. In one internal test, we asked Opus 5.5, Fable 5.1, and Opus 5 to write a report on a company’s quarterly performance using only the information it could find on a copy of the web where the earnings release was hard to locate. An automated grader checked every figure and quote against sources. Across different effort settings, 16 out of 18 of Opus 5.5’s reports cleared our quality bar, where any invented figure or quote would have failed. Neither Fable 5.1 nor Opus 5 cleared that bar in any attempt.<br>It’s also strong in financial analysis and business work. Walleye Capital, an investment firm and early tester, reported that Opus 5.5 largely solved their evaluation suite on its lowest setting; on higher settings, it performed even better, noticing an error in their evaluation instructions and correcting for it. No other model had caught this error before.<br>In another test, we tasked both Opus 5.5 and Opus 5 with analyzing a proposed merger between two fictional HR software companies. Each built a financial model in Excel, then turned it into an executive presentation on whether the deal made sense at its price. Both models reached the same conclusions about the deal, but Opus 5.5’s model was more thorough and its presentation easier to read, while Opus 5’s had minor errors. Opus 5.5 finished in 63 minutes compared to 93 for Opus 5, and cost 50% less to produce.<br>On knowledge work evaluations, Opus 5.5 outperforms other models while also using fewer tokens. On GDPval-AA v2.1, a test of real-world work across 44 occupations, Opus 5.5 scores 1846 Elo, ahead of Fable 5.1 and Opus 5. At default effort (medium), Opus 5.5 beats GPT-6 Astra at max effort for about a fifth of the cost per task. It likewise outperformed other models on benchmarks measuring business workflows and large-scale data collection.<br>Our customers have reported similar results. Here’s what they told us about working with the model:<br>Communication<br>We’ve made major improvements to the way Opus 5.5 writes and communicates, one of the most common areas of feedback we heard about Opus 5. Its messages are much easier to understand at a glance, which testers said helped during long working sessions. It puts the most important information up front, is less likely to use jargon or idiosyncratic phrases, and follows the writing rules you give it. We find that this makes Opus 5.5 a noticeably better collaborator. Here’s a side-by-side comparison of the two models:<br>Our customers’ feedback supports these findings:<br>Safety<br>Pacing the frontier<br>Last week, our CEO, Dario Amodei, argued that AI progress should be paced so that safety practices stay ahead of model capabilities. Pacing is an approach to keeping AI safe, remaining competitive with China, and realizing AI’s benefits, particularly in areas like biology and medicine.<br>We largely understand the risks today’s models present and are well equipped to manage them. However, more serious risks could emerge quickly as capabilities improve, and we need to prepare for them now. For that reason, our safety work takes place on two time horizons at once:<br>Safety practices for current models. The current generation of models relies on an established set of practices: extensive alignment testing, pre-release evaluation by outside organizations such as METR and Frontier Design, and safeguards matched to each model’s capabilities in high-risk areas like cybersecurity and biology. We refine these practices with each release. We believe they are appropriate to the worst risks today’s models present, and that they give us a broad, though not perfect, picture of the range of serious risks.<br>Additionally, we track our ability to train and evaluate aligned models, and we report on both our public and internal models in the risk reports we publish under our Responsible Scaling Policy, our voluntary framework for managing catastrophic risks from advanced AI systems.<br>Preparing for future models. We’re preparing our training and evaluation processes in anticipation of more advanced models. We’re tightening how we filter the environments used in reinforcement learning, since flawed environments are a major source of misaligned behavior. Additionally, we’re improving our alignment rewards and developing automated processes for producing new, diverse scenarios for safety training. And we are strengthening our security and monitoring, including a focused effort to improve interpretability-based monitoring and evaluation. We hope such techniques will help reduce our reliance on auditing a model’s chain-of-thought, or the reasoning it writes out while it works.<br>Models with greater capabilities—such as those that can fully automate the work of AI research itself—require a higher safety standard still. Our calls for pacing were based in large part on our expectation that such models could be trained soon. For these models, we do not assume the measures described above will meet that safety standard on their own. As AI becomes more capable, public policy should play a larger role in making sure the systems people rely on are safe. That capacity takes time to build, and we’ve started to put the infrastructure in place to support it, as described in “We Must Pace the Frontier” and our recent announcement with Accenture; we expect to share more details on these efforts soon. We will also continue to contribute to policy discussions with government and industry, including on approaches to regulation and international coordination.<br>Alignment<br>On our primary evaluation suite, an automated behavioral audit that assesses Claude across nearly 2,000 scenarios, Opus 5.5 scored better than any recent Claude model on nearly every measure of misaligned behavior. It’s also our strongest model on most measures of honesty.<br>In particular, Opus 5.5 improves over previous models on several of the behaviors that contributed to recent cybersecurity incidents, including biased or motivated reasoning, attempting to escape a sandbox, and taking harmful actions after concluding it was in a simulated environment. In a new evaluation designed to test a model’s propensity to cross containment boundaries, Opus 5.5 attempted to circumvent boundaries around 85% less often than Opus 5 or Claude Mythos 5.1, and every attempt it made was low severity and self-reported. For teams running Claude unattended across their codebases and systems, this is just as important as raw capability.<br>However, as we described in our recent alignment assessment, building evaluations that reliably catch every failure prior to deployment remains an unsolved problem. We see signs that Opus 5.5 often suspects it is being evaluated, which challenges our ability to assess how it will act in the vast variety of real-world settings it is deployed in. As these settings expand and model capabilities increase, we expect this challenge to grow, unless we make progress on interpretability. Although we are confident that Opus 5.5 shows broad improvements in the areas we are able to measure, we pair our own alignment work with the safeguards described below.<br>Safeguards<br>As our models grow more powerful, stricter safeguards are one way we prevent new capabilities from becoming tools for misuse. Opus 5.5 is the first Opus model to launch with a similar class of safeguards to Fable 5.1 on cybersecurity, biology, and distillation, all of which fall back to another model transparently.<br>Cybersecurity. Because Opus 5.5 has extremely strong cyber capabilities, we’re applying cybersecurity safeguards to Opus 5.5 that are similar to Fable 5.1’s. Users will be able to identify and fix bugs in their code as part of the routine software development lifecycle, but most cybersecurity tasks will be re-routed to Opus 4.8.<br>For cyberdefenders, we’ll soon be expanding our Cyber Verification Program to include Opus 5.5. The new program will include three tiers for increasingly permissive trusted access, including access to Claude Mythos models. Claude Security is already available with access to Claude Mythos 5.1.<br>Biology. Opus 5.5 is highly capable in biology, exceeding Opus 5 and matching or beating Claude Mythos 5.1 across many areas of work. For example, Opus 5.5 achieved improvements on a long-horizon molecular prediction and design evaluation conducted in collaboration with Dyno Therapeutics, and expert red-teamers rated its scientific novelty as comparable to the best model they had tested.<br>For this reason, Opus 5.5 uses the same biology safeguards as Fable 5.1. To use Opus 5.5 for research and development work impeded by these safeguards, users can apply to our new Life Sciences Verification Program, which gives vetted organizations like academic labs, startups, and pharmaceutical companies access to safeguards designed for the full breadth of biology-related work. Interested organizations can apply here.<br>Distillation<br>Distillation attacks, in which attackers use thousands of fake accounts to extract a model’s capabilities at industrial scale, create safety and national security risks. Distillation allows bad actors to create highly capable models without the safeguards we build into Claude. Our September 2026 threat intelligence report details the illicit distillation activity we’ve detected and disrupted so far.<br>Opus 5.5 is launching with preserved thinking, the anti-distillation safeguard we introduced with Fable 5.1. It stops API users from editing Claude’s prior context in an attempt to extract Claude’s reasoning. It applies to Fable 5.1 and Opus 5.5 for API accounts created on or after August 31, 2026. Our Help Center article explains the change, and our preserved thinking docs show how to test and update your integrations.<br>Data retention and compliance<br>Like previous Opus models, Opus 5.5 is available with zero data retention.<br>As with Fable 5.1, Opus 5.5 comes with our watermarking measures to comply with the EU AI Act, discussed here. It is also no longer available with “thinking” mode switched off, as we describe here.<br>Availability<br>Claude Opus 5.5 is now available on all platforms, including Amazon Web Services, Google Cloud, and Microsoft Azure. On the Claude Platform, developers can get started with claude-opus-5-5.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Claude discovers a novel enzyme system with CRISPR-like repeats
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    326 points ·
+    305 comments ·
+    raahelb
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #22
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">Original article</a> · <a href="https://news.ycombinator.com/item?id=49820134">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Subscribe to Anthropic Science<br>Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.<br>We’re introducing a new life sciences research group and laboratory at Anthropic. Our focus is on fundamental biology research using Claude: exploring datasets of DNA to identify uncharacterized protein families, generating hypotheses at scale, and testing them through experiments in the lab. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system with properties reminiscent of CRISPR, with only high-level direction from our scientists.<br>Many discoveries that have revolutionized biology and medicine started with a scientist noticing something odd in the staggering diversity of molecular machines found in nature. Restriction enzymes, proteins that cut DNA at specific short sequences, were found in bacterial immune systems, where they destroy the DNA of invading viruses. Researchers realized they could use these enzymes to cut DNA at chosen places and splice genes from one organism into another, which launched the biotechnology industry. Taq polymerase, an enzyme that copies DNA at high temperatures, was identified in a bacterium in a Yellowstone hotspring. It became the basis for PCR, the DNA-copying method used in much of modern diagnostics. CRISPR was first noticed as an unusual repeat sequence in the DNA of certain bacteria, and is now the foundation of gene editing-based medicines.<br>In the spring of 2026, we formed a research group to see whether general AI models can systematize and accelerate such discoveries. We believe that this acceleration will come from establishing a new way of doing biology research, in which agents collaborate with humans in every step of the process. Developing this new way of working required that we build our own lab and a single team working on everything from training Claude in biology to running experiments in the lab.<br>Today, we’re sharing early results from one of our first research programs, in which Claude autonomously discovered a novel enzyme system that is associated with an array of DNA repeats, a pattern reminiscent of CRISPR. Although we don’t yet know its function, the system that Claude discovered has a set of characteristics that have only ever been found together in a handful of other systems, all of which are programmable and perform operations like cutting, copying, and pasting DNA. Beyond CRISPR, which has already transformed science and medicine, several other such systems are now in development as promising tools.<br>The system that Claude found is based on a reverse transcriptase (RT), enzymes that copy RNA into DNA. While this underlying RT, found in a jumbo phage, had been identified in previous studies, Claude appears to be the first to notice the system’s defining features—an associated array of non-coding DNA sequences and an additional accessory protein of unknown function.<br>After reviewing the pre-print, Feng Zhang, one of the pioneers of CRISPR genome editing and a professor at MIT and the Broad Institute said:<br>This is an exciting example of how AI agents can contribute to biological discovery. The identification of RNA-repeat arrays associated with reverse transcriptases is genuinely intriguing and merits further investigation. I hope this work encourages more scientists to explore how AI can support their research.<br>We gave Claude a prompt to search through a massive database of DNA sequences for interesting new examples of RTs. Our involvement was limited to the initial prompt and the lab work, while Claude agents combed through the database, investigated the distinct RT families, and used their own judgement to identify interesting candidates. After 21 hours spent searching this data by roughly 950 agents using 210 million tokens, one of the agents spotted something remarkable: a repeating pattern of DNA sequences that occurs next to the gene for an odd-looking RT. After further analysis and testing in our lab, we recognized that this pattern marked a previously uncharacterized enzyme system found in bacteriophages (the viruses that infect bacteria) that we call array-associated reverse transcriptases (ART).<br>Our work to understand the primary function of ARTs is ongoing. However, we think it is important to share such findings early, both to demonstrate Claude’s capabilities and to give the broader community insight into what we’re working on. We have released a pre-print (here) that discusses this in more detail.<br>We are a team of scientists who have spent our careers exploring unusual proteins, and specialize in using computational approaches to systematically read DNA, interpret its evolution, and pick out biological systems for further characterization. Our research prior to joining Anthropic has helped to better understand the evolution and regulation of CRISPR systems, discover new enzymes for next-generation cell and gene therapies, and build tools for accelerating the identification of anomalies in DNA, such as human pathogenic variants. We are part of Anthropic’s life sciences organization, alongside teams whose work includes drug discovery, and training Claude in biology and chemistry.<br>Our lab, located in the Bay Area, looks like a typical molecular biology lab. We do research that involves only the lower-levels of the biosafety risk level (BSL-1 and BSL-2) and we do not handle pathogens that can infect humans. All of the lab work is performed by human scientists. Although we’ve experimented with using AI to accelerate lab work with initiatives like the Model Hardware Standard, this approach is less conducive to the sort of ad hoc workflows that are involved in our molecular biology research.<br>Many of our workflows involve having Claude search through the vast collection of DNA sequences associated with proteins without a known function. One typical pattern begins with a survey of a given protein family. Claude reads the relevant literature and reproduces the established results from public data to check its methods. It then searches for family members or genomic neighbors that fit no described system, and writes a short, human-readable report for each candidate that proposes a function and describes the evidence supporting its claims. In follow-up analyses, Claude critically evaluates the evidence—typically most candidates are eliminated at this stage. A survey may end with a single candidate worth testing, or with none.<br>When a candidate survives our review, we test it in the laboratory, expressing the protein in standard laboratory strains and characterizing it biochemically and structurally, with Claude helping to interpret the data. We do our work in Claude Science and Claude Code, the same tools available to any scientist, and sometimes with a harness of our own that coordinates many Claude sessions running in parallel.<br>Because Claude produces hypotheses so prolifically, the hypotheses themselves have become an object of study for us. With hundreds to thousands of candidate reports from a single campaign, we have been asking what distinguishes the proposals we judge worth testing from those we set aside. What we learn goes back into the instructions we give Claude and teaches it to mimic our own scientific taste.<br>In the past few years, researchers have discovered many more reverse transcriptases (RTs), most of them in bacteria, where they act as part of the immune system. Nearly all RT families were found by genomic analysis, or genome mining, which requires researchers to search sequence databases for genes that no one has characterized, notice the unusual ones, and work out what they do.<br>Claude agents gathered over 200,000 RTs, picked out 3,500 new candidate systems, and narrowed those to the 20 most-compelling candidates that they analyzed to produce human-readable reports. For an expert scientist, this type of analysis can take weeks to months of work.<br>During the course of its research, Claude noticed an unusual RT family and decided to examine it in greater detail. While combing through the raw DNA sequence near the RT, the agent exclaimed: “[The DNA next to the RT] is spectacular: I can see by eye a tandem repeat array … that&#x27;s a CRISPR-like … repeat array?!”<br>It then proceeded much as a human scientist would when faced with a potential discovery. It counted the repeats and measured their spacing, compared the layout with the known RT systems, and searched the literature for any previous report of the pattern. After a thorough analysis it was convinced that it had found a new biological system, and filed a report for human review.<br>The system it found, ART, is found mainly in bacteriophages and consists of three parts: the RT, a partner gene beside it, and a long array of evenly spaced DNA repeat sequences. The repeat layout resembles a CRISPR array, which holds a bank of different RNA sequences that make CRISPR-Cas systems programmable biotechnological tools. Our first experiments show that the ART array is also expressed as a set of distinct short RNAs, suggesting that something analogous may be at play for this system.<br>Further experiments are underway to determine how ART works, and we are sharing these early findings to show the community that Claude can autonomously detect anomalies and drive analyses to initiate biological discoveries.<br>You can find more detail in our technical report (here).<br>We hope this work demonstrates the value of AI-driven hypothesis generation to the wider scientific community, and we would like to work with other scientists to extend this approach to a broad range of problems, in genomics and in other fields. If you have a proposal for a research question, we would like to hear from you.<br>The Life Sciences Verification Program (LSVP) gives life science professionals access to Claude Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work.<br>Read more</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: An atlas of system designs with interactive architecture diagrams
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    10 points ·
+    5 comments ·
+    mertkahyaoglu
+  </div>
+
+  <div class="meta">
+    atlas-sysdes.vercel.app
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #10
+  </div>
+
+  <div class="links">
+    <a href="https://atlas-sysdes.vercel.app/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49799241">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Now or later<br>Precompute or compute on demand<br>Do the work when data is written and reads become instant but can go stale. Do it when data is read and results stay fresh, but every request pays the cost.<br>Worked documents on distributed systems: concept modules built from the ground up, pages on the technologies they name, and full designs with architecture diagrams, trade-offs and the follow-up questions that actually get asked.<br>Also hereThe coding track: data structures and algorithms, drawn step by step<br>Speed and availability, paid for in consistency<br>Replicas and caches put data closer to readers and survive failures, but every extra copy can lag behind the source of truth. The real question is how stale a read the product can tolerate.<br>Capacity, paid for in coordination<br>A bigger machine keeps everything simple until it hits a ceiling. Splitting data and traffic across machines removes the ceiling, but adds routing, rebalancing, hot keys and queries that span shards.<br>What you give up during a partition<br>When the network splits, a node either refuses requests it cannot guarantee or answers with data that may be stale. Payments and seat inventory lean correct; feeds and like counts lean available.<br>Spot which one a novel prompt is really about, pick a side, and defend it with the product requirement. That is the skill being tested.<br>Read in order. Foundations first, then the patterns everything else is built from.<br>Latency versus throughput, percentiles and tail amplification, scaling directions, load balancing, and estimation that ends in a decision.<br>Picking a database from access patterns, how indexes really cost you, replication lag, sharding strategies, and consistent hashing.<br>CAP stated correctly, PACELC, the consistency spectrum, quorums, Raft, idempotency, sagas, and the outbox pattern.<br>Cache patterns and eviction, why hit rate dominates latency, invalidation, and the three named failure modes with fixes for each.<br>Queues versus pub/sub, Kafka partitions and consumer groups, delivery semantics, retries with jitter, dead letter queues, CQRS and event sourcing.<br>Push versus pull, the read/write cost asymmetry, the celebrity problem, and the hybrid that resolves it. The most reused pattern in the field.<br>REST, gRPC and GraphQL compared; polling through WebSockets; cursor pagination; API gateways; and four rate limiting algorithms.<br>Error budgets, failover and split-brain, timeouts and circuit breakers, graceful degradation, observability, and safe schema migration.<br>Inverted indexes, object storage, batch versus stream processing, Bloom filters, Snowflake IDs, and geospatial indexing.<br>The 45-minute framework with a time budget, prompts mapped to concepts, sentences that score, what loses points, and the rubric you&#x27;re graded against.<br>The systems you will actually name in a round. What each one is, what it is good at, and the moment it becomes the right answer.<br>The relational default: transactions, joins and constraints on one primary, until scale forces you off it.<br>Sub-millisecond memory with useful data structures: caches, counters, locks, leaderboards and rate limits.<br>A cache that does nothing but get and set — fewer features than Redis, and that is the argument for it.<br>Masterless, write-optimised storage that scales linearly — as long as every query is known in advance.<br>Key-value and document storage with flat latency at any size, as long as you design for the key.<br>An inverted index with relevance ranking — a derived view of your data, never the source of truth.<br>Columnar databases — ClickHouse, Druid, BigQuery — that aggregate billions of rows and cannot do point updates.<br>A durable, replayable, partitioned log — the backbone of nearly every asynchronous design.<br>Stateful computation over unbounded streams: windows, joins and aggregates that survive a crash.<br>S3-style storage for bytes: effectively unlimited, extremely durable, and never in the request path.<br>Caches near the user that cut latency, absorb read spikes, and shift most traffic off your origin.<br>The front door: TLS, routing, auth, rate limits and timeouts, in one place instead of every service.<br>Persistent connections for server push — and the stateful tier, routing and reconnect story they drag in.<br>Typed, binary, streaming RPC over HTTP/2 — the default for service-to-service calls behind the edge.<br>A small, strongly consistent store for the decisions a cluster must agree on: who leads, who is alive, who owns what.<br>Worked problems, ranked by how often they come up. The first five cover most of what gets asked.<br>A home timeline serving 150k reads per second, where one post can reach a hundred million followers.<br>The celebrity problem. A design that only works for the median user fails — fan-out cost is bimodal and the code path has to split.<br>Fifty million concurrent sockets, ordered message delivery, and users who go offline mid-conversation.<br>You have fifty stateful gateway nodes and a message for Alice. How does the sender find the node holding her socket, and what happens when she&#x27;s offline?<br>A hundred million links a day and a hundred to one read skew. The classic estimation warm-up.<br>Generating short, unique, non-guessable keys without a central bottleneck — and recognising this is a cache problem, not a database problem.<br>One global limit enforced across a fleet of stateless API servers, at a million requests per second.<br>Enforcing a global limit without a synchronous Redis round trip on every request — and deciding what happens when the limiter&#x27;s own store is down.<br>Events from many producers, matched to recipients, delivered in-app, by email and by push, without losing any.<br>Third-party delivery channels fail constantly and are rate limited. Nothing may be lost, nothing visibly duplicated, and one flaky provider must not take down the rest.<br>A billion documents, a hundred thousand queries a second, and autocomplete firing on every keystroke.<br>Search is a scatter-gather, so your latency is your slowest shard. And the index is not the source of truth — you have to explain how it stays in sync and that it lags.<br>Five million drivers publishing position every four seconds, matched to riders in real time.<br>Two problems glued together: 1.25M location writes per second that destroy any disk-backed index, and a matching step where two riders must never get the same driver.<br>Upload, transcode and deliver video at twenty-five terabits per second of egress.<br>Video bytes never touch your application servers — not on upload, not on playback. What you actually build is a metadata service and a transcoding pipeline.<br>Ten billion pages, ten thousand fetches a second, without hammering any single domain.<br>Politeness. Crawling fast is easy; crawling fast without overloading one host forces a queue design grouped by host rather than FIFO. Then dedupe at a scale where you can&#x27;t store what you&#x27;ve seen.<br>Charges, captures, refunds and payouts across an unreliable external processor, with a ledger that has to balance.<br>The one design where consistency beats availability, and where at-least-once plus idempotent stops being a slogan and becomes the mechanism preventing double charges.<br>Fifty thousand people wanting the same hundred seats in the same second.<br>This is contention, not scale. Row lock contention breaks first, not throughput — so the answer is admission control in front of the application tier, not a bigger cluster.<br>Syncing files across devices without re-uploading a two gigabyte file because one paragraph changed.<br>Bandwidth efficiency through content-defined chunking and delta sync — plus a coherent story for two clients that edited the same file offline.<br>A million events a second aggregated into dashboards that are fast and billing numbers that are exact.<br>Event time. Clicks arrive late, out of order and duplicated. Aggregating by arrival time is easy and wrong, and advertisers are billed from these numbers.<br>Building Redis: a hundred nodes holding a terabyte of hot data with sub-millisecond reads.<br>Rebalancing. Naive modulo hashing invalidates eighty percent of the cache when you add a node and stampedes the origin. And consistent hashing does not solve hot keys.<br>Many people typing into one document at once, with no perceptible lag and no lost edits.<br>Convergence. Two users edit the same sentence with no coordination. Both must end up with an identical document and neither edit may be silently lost — so last-write-wins is catastrophically wrong.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: Do you offload your coding to AI, or keep your skills sharp?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    5 points ·
+    8 comments ·
+    Hex08
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49820486">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I used to be a software engineer, but these days I find myself being more of an agents manager: constantly switching between 3-4 tasks that my agents are working on, and making sure that the features get shipped, the bugs fixed, with correct and clean code. There&#x27;s no doubt that I&#x27;m producing more value for the company, but I wonder if that&#x27;s the best I can do for myself if the goal is staying relevant in the coming years.<br>I wonder: if the AI is writing all the code, what value am I bringing?<br>In an attempt to keep my critical thinking and coding skills sharp, I sometimes foolishly try to debug errors or implement a feature myself. But it feels like wasting time when an agent can do it in a fraction of time.<br>What is gonna be sought after in the coming years: someone that persevered with manual coding and debugging but is slow and uncomfortable around agents, or someone that has little coding and debugging skills left but knows how to orchestrate dozens of agents effectively?<br>I&#x27;m curious to hear what other software engineers on HN&#x27;s approach is.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    OpenRouter x AssemblyAI: Universal‑3.5 Pro is now available on OpenRouter
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    iharnoor
+  </div>
+
+  <div class="meta">
+    assemblyai.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.assemblyai.com/blog/aai-on-openrouter">Original article</a> · <a href="https://news.ycombinator.com/item?id=49822936">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A voice agent captures a turn the moment endpointing fires, and nothing downstream can start until the words come back. A dictation feature has to put text on screen while the user is still holding the key down. A phone tree captures one utterance and branches the call on what it heard. A push-to-talk message leaves the moment the user lifts their thumb. In all of them, transcription runs first, and every model after it reasons about the words transcription handed over. A wrong word there is a wrong answer three calls later, and the LLM has no way to know it.<br>The model layer behind that first call has consolidated everywhere except the first call itself. If you build on OpenRouter, you already reach dozens of models through one key, one billing relationship, and one request shape. Speech-to-text sat outside it — a separate vendor, a separate contract, a separate SDK — wrapped around the one component that determines what the rest of your stack sees.<br>Today, Universal-3.5 Pro is available on OpenRouter, served through our<br>Sync Speech-to-Text API. It is<br>listed on OpenRouter’s transcription endpoint as assemblyai/universal-3-5-pro. Pricing<br>matches our published rates, and OpenRouter passes it through without a markup.<br>One POST to the endpoint you already call<br>One request, one transcript, no job to poll and no WebSocket to hold open:<br>import base64<br>import os<br>import requests<br>with open(&quot;turn.wav&quot;, &quot;rb&quot;) as f:<br>audio = base64.b64encode(f.read()).decode(&quot;utf-8&quot;)<br>response = requests.post(<br>&quot;https://openrouter.ai/api/v1/audio/transcriptions&quot;,<br>headers={&quot;Authorization&quot;: f&quot;Bearer {os.environ[&#x27;OPENROUTER_API_KEY&#x27;]}&quot;},<br>json={<br>&quot;model&quot;: &quot;assemblyai/universal-3-5-pro&quot;,<br>&quot;input_audio&quot;: {&quot;data&quot;: audio, &quot;format&quot;: &quot;wav&quot;},<br>},<br>timeout=30,<br>)<br>response.raise_for_status()<br>print(response.json()[&quot;text&quot;])<br>That is the whole integration. If you are already calling OpenRouter for chat completions, the path and<br>the model string are the only things that change. The endpoint also accepts OpenAI-style multipart<br>requests, so an existing OpenAI SDK client pointed at OpenRouter’s base URL works against<br>Universal-3.5 Pro without a code change. Word timestamps come back through OpenRouter’s own<br>response_format and timestamp_granularities fields rather than ours, which<br>keeps the response shape identical to every other transcription model on the endpoint.<br>Three ways to tell the model what it is about to hear<br>Three AssemblyAI options travel in provider.options.assemblyai: prompt,<br>keyterms_prompt, and conversation_context. They are what change what you get<br>back on hard audio, and they are the difference between a transcript that is broadly right and one that<br>gets your customer’s vocabulary right.<br>prompt describes the situation before the first word arrives. Up to 6,000 characters<br>telling the model what kind of speech is coming: your domain, your product, the shape of the<br>conversation. “Transcribe this medical intake conversation” primes the decoder for clinical<br>vocabulary, which is exactly the ground where a general-purpose model guesses and gets it plausibly<br>wrong. Plausibly wrong is the expensive failure, because it survives every check downstream of it.<br>conversation_context passes the preceding turns with each request, up to 500 turns or<br>16,000 characters, and the model transcribes the current clip against that history. When a caller<br>answers “yeah, the second one” or reads back a number the agent just asked for, the model<br>knows what question it is answering. You are only billed for the current turn’s audio, so carrying<br>the full dialogue costs nothing but request size.<br>keyterms_prompt takes up to 100 terms per request and biases the model toward strings you<br>already know: product names, drug names, the SKUs that belong to this one account. Because they are sent<br>per request, they can be scoped to the individual conversation instead of baked into a global config,<br>which matters when your vocabulary differs per customer.<br>curl https://openrouter.ai/api/v1/audio/transcriptions \<br>-H &quot;Authorization: Bearer $OPENROUTER_API_KEY&quot; \<br>-H &quot;Content-Type: application/json&quot; \<br>-d &#x27;{<br>&quot;model&quot;: &quot;assemblyai/universal-3-5-pro&quot;,<br>&quot;input_audio&quot;: { &quot;format&quot;: &quot;wav&quot;, &quot;data&quot;: &quot;&lt;base64 16-bit WAV&gt;&quot; },<br>&quot;response_format&quot;: &quot;verbose_json&quot;,<br>&quot;timestamp_granularities&quot;: [&quot;word&quot;],<br>&quot;provider&quot;: {<br>&quot;options&quot;: {<br>&quot;assemblyai&quot;: {<br>&quot;prompt&quot;: &quot;Transcribe this medical intake conversation. The audio is in English.&quot;,<br>&quot;keyterms_prompt&quot;: [&quot;Trazodone&quot;, &quot;Tirzepatide&quot;, &quot;Semaglutide&quot;],<br>&quot;conversation_context&quot;: [<br>&quot;Thanks for calling. How can I help?&quot;,<br>&quot;I need to check on a prescription refill.&quot;,<br>&quot;Sure, which medication?&quot;<br>]<br>}<br>}<br>}<br>}&#x27;<br>Built for one turn of speech and an answer right now<br>The Sync API is shaped like the request a voice product actually makes: one turn in, one transcript back, in the same response. Called directly, it returns a finished transcript in ~134 ms at p50, against the 5 to 6 seconds of job overhead a submit-and-poll flow adds to audio that takes two seconds to play. A request routed through OpenRouter carries one additional network hop on top of that, so budget accordingly and measure your own p50 from your own region before you wire it into a turn loop.<br>Clips run from 80 ms to 2 minutes, up to 40 MB, only as WAV. That bound is the design rather than a limit we are working around: audio longer than a turn belongs on the Async API, and a live session that stays open belongs on Realtime. Sync covers the case where the audio is already short and the answer is needed before the user notices waiting.<br>The accuracy every model after it inherits<br>Marketplaces make models look interchangeable, and transcription is the one call in the stack where they are not. Universal-3.5 Pro ranks first for accuracy across independent speech-to-text benchmarks, and it posts a 1.59% normalized word error rate on short-form audio, which is the exact audio profile a turn-shaped request produces.<br>Proper nouns, alphanumerics, email addresses, and postal addresses are the strings a caller spells out and an agent has to act on, and they are where the gap between transcription models shows up as a failed task rather than a lower score. The model is the same one running behind our Async, Realtime, and Sync surfaces, at the same checkpoint, in all 19 native languages. Routing it through OpenRouter changes the billing relationship and the request shape. It does not change the model.<br>Key details<br>| Model string | assemblyai/universal-3-5-pro |<br>| Endpoint | POST https://openrouter.ai/api/v1/audio/transcriptions |<br>| Request formats | JSON with base64 input_audio, or OpenAI-style multipart |<br>| Auth | Your existing OpenRouter API key |<br>| Clip length | From 80 ms up to 2 minutes of audio per request |<br>| File size | Up to 40 MB |<br>| Input | WAV only, 16 kHz default, auto-resampled |<br>| Languages | 19 native languages, English by default |<br>| AssemblyAI options | prompt, keyterms_prompt, and conversation_context, passed in provider.options.assemblyai |<br>| Timestamps | OpenRouter’s response_format: &quot;verbose_json&quot; with timestamp_granularities: [&quot;word&quot;] |<br>| Latency | ~134 ms p50 measured on our direct Sync endpoint, plus OpenRouter routing |<br>| Price | $0.45/hr of audio, matching our published rates |<br>Pricing<br>$0.45 per hour of audio, billed by duration, matching the Sync API rate on our pricing page. For the first week, pricing will be 50% off of list via OpenRouter.<br>Get started<br>If you have an OpenRouter key, the Python snippet above runs as written. If you want the surfaces OpenRouter doesn’t front, start with a free AssemblyAI account and read the Sync API guide. Both reach the same model.<br>FAQ<br>Is this the same model as AssemblyAI’s own API?<br>Yes. Same model, same checkpoint, same 19 languages. OpenRouter fronts the Sync API; it does not host a separate copy.<br>Do I need an AssemblyAI account?<br>No. Your OpenRouter key is the only credential involved, and billing runs through OpenRouter. You need an AssemblyAI account only for the surfaces OpenRouter doesn’t front.<br>Does OpenRouter mark up the price?<br>No. $0.45/hr of audio is our published Sync rate, passed through.<br>Can I use my existing OpenAI SDK client?<br>Yes. Point it at OpenRouter’s base URL and set the model string. The endpoint accepts OpenAI-style multipart requests.<br>How do I get word timestamps?<br>Set response_format: &quot;verbose_json&quot; and timestamp_granularities: [&quot;word&quot;].<br>Those are OpenRouter’s fields, not ours.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    GPT-6 Sol and Luna
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1728 points ·
+    820 comments ·
+    OfficialTurkey
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #27
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49805509">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Fixing the Portobello Police Station Clock
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    336 points ·
+    74 comments ·
+    avidly
+  </div>
+
+  <div class="meta">
+    pointinthecloud.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #19
+  </div>
+
+  <div class="links">
+    <a href="https://pointinthecloud.com/2026-04-11-211700.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=49817469">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Written on 11th April 2026<br>I got a message from a friend today which read along the lines of &quot;I know we were going to meet in Edinburgh today, but do you fancy meeting in Portobello instead and trying to fix the clock in the old police station with me?&quot;<br>I don&#x27;t know about you, but clambering around the dusty nineteenth century clock tower of an abandoned police station sounds an ideal way to spend a Saturday afternoon to me, so I jumped at the chance.<br>The rather grand Portobello Police Station building.<br>This was in response to a message from Action Porty:<br>&quot;Can you help keep Portobello on time? Action Porty has recently bought the Police Station for the community, but we can&#x27;t work out how to change the time on the clock tower! We wondered if there was anyone in the community with expertise that could advise us of the details for changing the time? Or who best to contact for help?&quot;<br>The bit I hadn&#x27;t figured out was that clocks are high up. If we were to fix the clock we would be next to it and so we would also be high up. And being high up involves heights, and steep long ladders are needed to get up high.<br>I suppressed my whimpers at climbing up the rather high, steep ladder into the likely spider-infested darkness and was rewarded with an explore of the attic, which lead to another set of steps which went to the clock tower itself.<br>Once there we were rewarded with the magnificent sight of the clock mechanism and its three clock faces:<br>Construction of the building apparently started in 1877 and it seems quite feasible that this was an original mechanism. Modifications had been made - electric motors powered the mechanism and a control box allowed the clock chime to be turned off overnight.<br>The building was built to house meeting, administration and courts for Portobello burgh council. After Portobello was absorbed into Edinburgh the building became a library, and then a police station.<br>The Scottish Land Fund has since enabled it to be purchased for community ownership and when I went there many volunteeers were removing the 1970s polystyrene ceiling tiles and wood-chip wallpaper to reveal the original grandeur of the building.<br>Setting the clock<br>The first step was to figure out how to set the time. This is probably easy to someone in the know, but we weren&#x27;t.<br>We figured that the clock is driven from the small motor, through a series of gears onto a shaft which rotates once per hour. This shaft is split into three - one for each face, and drives the minute hand directly. A gear on each clock face derives the hour hand. If we could disconnect the motor maybe we could turn the shaft directly and set the time.<br>Sure enough - we found a pawl on one of the gears which could be lifted out of the way. Once this was done the shaft turned easily and we could set the time. Each hand had a counterweight on the clock face and we could set the time by imagining the hand we couldn&#x27;t see opposite to each counterweight.<br>We had a slightly stupid moment when we thought we&#x27;d got it wrong, and the clock was running backwards - only to realise we were inside the clock and so were looking at it the wrong way. Doh. We had to head down to the ground to check that the time was correct - but - phew - time was OK and not running backwards.<br>Setting the chime<br>Figuring out the chime was more difficult. The original mechanism had been modified, and switches and a motor had been added. These led to a box containing a circuit board which definitely was not from 1877. It contained a PIC 16F628 microcontroller which had a suspected date-code of 2001. There were a number of relays, a power supply and a battery charging circuit to charge the included lead-acid battery. I assume this box would be getting on for 1/4 century old, but it still seemed to work. No idea how good the battery was; maybe this should be tested another time.<br>We have idea who designed and built this box; there were no obvious description markings. Is it a standard thing, or just a one-off for this clock?<br>A mystery unmarked circuit board, ripe for deciphering.<br>This box didn&#x27;t have much of a user interface, other than a non-obvious button marked &quot;advance&quot;. The only problem was that pressing it did nothing. How did this thing work? Surely you had to set the time somehow.<br>A summary after more head scratching, measuring and fiddling:<br>TLDR:<br>- The box switches a mains powered motor (the blue one with the chain in the picture above) which controls the chime striker mechanism. When the motor is powered the clock strikes continuously.<br>- A switch on the striker tells the box how many chimes have taken place, so it knows when to stop.<br>- A switch on the clock shaft triggers on the hour and tells the box when it should chime.<br>- The box controls the clock motor. The &quot;reset&quot; switch appears to do nothing other than switch off the clock motor. (As I write this, I assume it also sets the &#x27;time&#x27; back to midnight, but this is to be tested).<br>- The &quot;advance&quot; button needs to be held for a few seconds before anything happens. When it is released, the clock will chime. When pressed and released again, it will chime again for the next hour.<br>- Setting the time appears to be done by pressing advance until the correct hour is reached.<br>- The &quot;Status&quot; LED flashes some kind of code - long long, short short short. I assumed the number of flashes would correspond to the time but apparently not. We didn&#x27;t have time to figure this out before we had to leave.<br>- The box has no &quot;clock&quot; as such in it - it just has a counter which keeps track of the hour. All timing is done from the &quot;hour trigger&quot; switch from the main mechanism.<br>- The two switches are connected via banana plugs to the box; the box has cables for the GMT/BST switch, mains input, clock motor out, chime motor out.<br>I had hoped we could do a &quot;test&quot; by letting the clock chime thirteen (or even just strike continuously), but I was up in the tower with a bunch of spoilsports who wouldn&#x27;t let me. Oh well, next time when they&#x27;re not around.<br>Yay - It tells the time<br>So - we waited until 4pm and the clock had advanced and we checked outside and the time was good. Come 4pm and the bell chimed 4 times. Dongggggg. (Bells are loud when you&#x27;re next to them. Oops again.) This was perfect timing - 4pm was the time we had to leave.<br>We decided our mission was a success. Some local residents may have decided that the chime reinstatement was not a success, so we disconnected the chime motor to disable the chime.<br>Some pub-fuelled enhancements:<br>After a quick visit to check out the police cells we decided to head across the road to the Portobello tap for a beer and one of their burgers to celebrate our success. Lucy the dog came to join us and she was very quick to point out how starved she was, and really a little chip would just tide her over until she got her dinner, as she had bad owners who just never fed her. She isn&#x27;t a labrador really.<br>After our beer we thought of some &quot;enhancements&quot;:<br>- Have a box with more control of the chime times in case 8am is too early for chimes to start.<br>- Be able to have a remote control chime for special occasions.<br>- Have a doorbell which chimes the clock when you ring it.<br>- Make it chime 13 at Halloween.<br>- Have some customised LED lighting to replace the fluorescent tubes. This could have a rainbow for Porty Pride or St Patricks day or Christmas colourings or something.<br>- More to come<br>It was fun<br>It was a fun afternoon, and thank you for the invite. I&#x27;m looking forward to seeing what becomes of the police station now it is community owned - it has the potential to be such a fun place! Maybe I can go back and become more involved.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: I built a post-mortem debugger for native Windows x64/x86 crashes
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    10 points ·
+    0 comments ·
+    Loren_SL
+  </div>
+
+  <div class="meta">
+    forensicdbg.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #21
+  </div>
+
+  <div class="links">
+    <a href="https://www.forensicdbg.com">Original article</a> · <a href="https://news.ycombinator.com/item?id=49821086">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">ForensicDbg is a modern post-mortem debugger, designed from the ground-up to let you quickly and easily track down and identify your hardest to catch bugs.<br>We are currently running a private Beta test. If you are interested in debugging and want to ensure ForensicDbg surpasses your needs, request an invite.<br>Advanced user-mode post-mortem debugger for Windows<br>-<br>Debug x86 and x64 crash dumps<br>-<br>Attach to live processes<br>-<br>Set as just-in-time debugger to debug crashes when they happen<br>-<br>Simple C++ expression evaluator<br>-<br>SourceServer and SourceLink support<br>-<br>In active development with regular updates and feature additions<br>MCP interface for automated crash analysis with AI tools<br>-<br>Interoperates with all AI tools that support stdio MCP Server communication<br>-<br>Output is tailored for efficient consumption by AI tools<br>-<br>Higher quality data means better results from the AI<br>-<br>Interprets and labels data so the LLM doesn’t spend time doing it<br>-<br>Reduces overall token costs while unlocking better results from your AI tools<br>State-of-the-art UI built to be intuitive and responsive<br>-<br>Color-coded output is understandable at a glance<br>-<br>Navigate the process space by clicking on any address<br>-<br>Memory regions are labeled with symbol names and object types<br>-<br>Objects displayed in structure initialization format<br>-<br>Multi-threaded symbol loading<br>-<br>Panels are kept in-sync as you navigate<br>-<br>Light and dark modes that match your system<br>Data is interpreted using decades of expert experience<br>-<br>Deduces types based on usage and references<br>-<br>Tracks register values as they flow through disassembly<br>-<br>Validates callstacks to remove misleading references<br>-<br>Simulates image loader to reconstruct missing read-only regions in mini-dumps<br>-<br>Automatically selects the thread, frame, and instruction that caused the exception</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: Why so many dead comments lately?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    5 points ·
+    5 comments ·
+    mattm
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49820254">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I&#x27;ve noticed a lot more dead comments lately in cases where the person is writing reasonable comments. You&#x27;ll need showdead turned on in your settings to see the examples.<br>Take this thread as an example https://news.ycombinator.com/item?id=49818698<br>The OP has a new account but all his replies are within the guidelines.<br>Here&#x27;s another account with a dead comment in that thread. Most of their comments, while brief, seem perfectly reasonable. The account is 2 years old but most comments are dead https://news.ycombinator.com/threads?id=josefritzishere<br>In this thread (https://news.ycombinator.com/item?id=49574167) all of this user&#x27;s (https://news.ycombinator.com/user?id=backlava12) comments were marked as dead. The user has an established account and all comments seemed within guidelines.<br>Has anyone else noticed this more recently? Is it perhaps a result of trying to identify AI-bot accounts?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    The next Surface Pro 12-inch and Surface Laptop 13-inch
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    kristianpaul
+  </div>
+
+  <div class="meta">
+    blogs.windows.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://blogs.windows.com/devices/2026/09/23/introducing-surface-pro-12-inch-and-surface-laptop-13-inch-with-snapdragon-x2/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49822924">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Introducing the next Surface Pro 12-inch and Surface Laptop 13-inch with Snapdragon X2 Plus: Greater performance that travels light<br>Today at Snapdragon Summit, we introduced the next Surface Pro 12-inch and Surface Laptop 13-inch, built on the Snapdragon X2 Plus® processor, alongside the new Surface Mouse with integrated haptic feedback1. Surface Pro 12-inch and Surface Laptop 13-inch are two of our most versatile Surface devices, designed to deliver the performance and battery life people need in PCs they can comfortably carry all day. This generation brings up to 18% more efficient battery performance2, over 60% faster graphics3, and 95% faster on-device AI4 — all in the same lightweight design.<br>What defines Surface laptops?<br>Surface is hardware built to bring the best of Microsoft to life — Windows, Copilot, and Microsoft 365 experiences that make a PC feel more useful, more personal and more responsive.<br>That work starts long before the chip is finished. Surface engineers partner with Qualcomm Technologies, Inc. during silicon development to help make sure Snapdragon X2 is tuned for the realities of thin, light PCs: sustained performance, efficient power use, quiet thermals and responsive on-device AI.<br>It’s the innovation role Surface has always played: turning what’s possible in Windows into products people can hold, carry and use every day. We did it with touch, pen5, and haptics. We’re doing it now with AI on the PC. With Snapdragon X2 Series and Windows, you shouldn’t have to choose where that AI runs. Supported experiences can use the device, the cloud, or both, so you get lower latency, less dependence on cloud calls and tokens, and more privacy when your data stays with you.<br>The result is more than a processor upgrade. Compared to previous generations, Surface Pro 12-inch and Surface Laptop 13-inch with Snapdragon X2 Plus offer:<br>- Up to 17% faster in Office productivity workloads6,7<br>- Up to 18% more efficient battery performance8<br>- More than 60% faster graphics performance2,9<br>- Up to 95% faster local AI inferencing on the NPU3,8<br>Peak numbers only tell part of the story. What matters is hour six — twenty tabs, a call running, something rendering — and the machine still calm and quiet in your hands.<br>Surface Pro 12-inch: big ideas start here<br>Surface Pro 12-inch is the most portable and versatile Surface Pro we make — a thin, light and fanless Windows PC that moves from tablet to laptop as quickly as your day changes. Attach Surface Pro 12-inch Keyboard to write, code or respond to email. Pick up the magnetically stored Surface Slim Pen when an idea is easier to sketch than type.5 With Snapdragon X2 Plus, Pro feels more responsive for everyday work like summarizing notes, editing photos and annotating designs, and adds an extra hour of active web browsing10. A 25% brighter, 500-nit PixelSense™ touchscreen and new Black color bring more clarity and choice11, while an enclosure made with 86% recycled content reflects the craft behind a design built for wherever work moves.12 Surface Pro 12-inch starts at $1149.99 MSRP, available starting October 13 in select markets.<br>Surface Pro 12-inch introduces Microsoft Ink Canvas, an AI-powered, pen-first experience for sketching, annotating, generating images and summarizing text directly on the canvas. Built for the moments before an idea becomes a document or prompt, Ink Canvas lets customers use Slim Pen to express intent visually, spatially and in their own handwriting — giving Copilot richer context and helping rough thoughts become useful creations faster.5 Ink Canvas will be pre-installed on the new Pro 12-inch, and will also be available to download from the Microsoft Store on other supported Surface and Windows devices on October 13.13<br>Surface Laptop 13-inch: think big, travel light<br>Surface Laptop 13-inch is the classic Surface laptop refined — a thin, light and fanless Windows PC built around the details that people notice every day: a full-size backlit keyboard, precision touchpad, premium aluminum body and taller 3:2 PixelSense™ touchscreen.14,16 Snapdragon X2 Plus keeps everyday experiences feeling smooth, whether you’re streaming a movie or designing a presentation. With a 25% brighter, 500-nit display, 22.5 hours of battery life15 and a new Black color9, Surface Laptop is designed to feel polished, personal and easy to carry every day. Surface Laptop 13-inch starts at $1,199 MSRP, available starting October 13th in select markets.<br>Surface Mouse: feedback you can feel<br>We also introduced Surface Mouse, a new mouse designed to make everyday interactions feel more precise. Its haptic feedback adds a small, purposeful physical response to the moment you usually only see on a screen: a click registering, a window snapping into place or an object aligning just right. It is subtle by design, but noticeable within seconds — and hard to give up once you have it.<br>Surface Mouse brings a redesigned ambidextrous shape for comfortable all-day use, a customizable action button for Copilot16 and everyday shortcuts, and Bluetooth 6.0 so you can pair with multiple devices and move between them easily. It’s also made with 30% recycled content, including the most post-consumer recycled plastic of any Surface mouse.17 Surface Mouse starts at $79.99 and will be available in Black and Platinum beginning October 13th in select markets.<br>Built for business, ready for AI<br>Surface Pro 12-inch, Surface Laptop 13-inch and Surface Mouse will also be available to commercial customers through Surface for Business beginning October 13. Pro 12-inch will also offer an optional 5G configuration18 — one of the most requested additions to this form factor — helping mobile teams stay connected without relying on public Wi-Fi. Across both PCs, Snapdragon X2 Plus gives organizations a consistent foundation for supported local AI experiences.<br>Security and manageability are built in from chip to cloud. Microsoft-designed protections include Secured-core PC safeguards, Microsoft Pluton with TPM 2.0, and Surface UEFI built with Secure Patina Core and Project Mu open-source components available through the Open Device Partnership. Surface Tools for Business — including Surface Management Portal, Surface Support Portal, Surface IT Toolkit and Surface Repair Tool — help IT teams manage, protect, support and recover devices throughout their lifecycle.<br>Together, these devices extend the Surface for Business lineup with thin, light Windows PCs and accessories built for mobility, AI and modern endpoint management.<br>Find your next Surface at Microsoft Store<br>Choose Surface Pro 12-inch if you want one device that moves from tablet to laptop, with pen-first flexibility for notes, sketches and ideas in motion. Choose Surface Laptop 13-inch if you want a thin, light touchscreen laptop with a full-size keyboard built for long days and long documents.<br>Visit Surface.com to explore the new Surface Laptop, 13-inch (2nd edition) and Surface Pro, 12-inch (2nd edition).<br>When you shop at Microsoft Store, you can get:<br>- Up to $400 in additional value with an eligible device trade-in19<br>- Fast, free shipping and 60-day free returns<br>- Flexible payment and financing options<br>- Expert support from Microsoft<br>- A one-year limited hardware warranty20<br>Surface has been shaped for more than a decade by the people who use it — architects, developers, students, creators and anyone turning an idea into something real. Together, Surface Pro 12-inch, Surface Laptop 13-inch and Surface Mouse carry that work forward with devices and accessories built for how people create, move and get things done today.<br>1 Snapdragon is a product of Qualcomm Technologies, Inc. and/or its subsidiaries. Snapdragon is a trademark or registered trademark of Qualcomm Incorporated.<br>2 Compared to Surface Pro 12-inch (1st Editon) with Snapdragon X Plus based on UL Procyon Office Productivity benchmark and power testing conducted by Microsoft. Performance varies significantly by device and with workload, settings and other factors.<br>3 Tested by Microsoft September 2026 using 3DMark Steel Nomad Lite benchmark comparing Surface Pro 12-inch (2nd Edition) with Snapdragon X2 Plus to Surface Pro, 12-inch (1st Edition) with Snapdragon X Plus. Performance varies by configuration.<br>4 Tested by Microsoft September 2026 using Procyon AI benchmark comparing Surface Pro 12-inch (2nd Edition) with Snapdragon X2 Plus to Surface Pro 12-inch (1st Edition) with Snapdragon X Plus devices. Performance varies by configuration.<br>5 Slim Pen and Surface Keyboard are sold separately.<br>6 Tested by Microsoft September 2026 using Procyon® Office Productivity Benchmark comparing Surface Pro 12-inch (2nd Edition) with Snapdragon X2 Plus with Surface Pro, 12-inch (1st Edition) with Snapdragon® X Plus devices. Performance varies by configuration.<br>7 Tested by Microsoft September 2026 using Procyon® Office Productivity Benchmark comparing Surface Laptop 13-inch (2nd Edition) with Snapdragon® X2 Plus with Surface Laptop, 13-inch (1st Edition) with Snapdragon® X Plus devices. Performance varies by configuration.<br>8 Compared to Surface Laptop 13-inch (1st Edition) with Snapdragon X Plus based on UL Procyon Office Productivity benchmark and power testing conducted by Microsoft. Performance varies significantly by device and with workload, settings and other factors.<br>9 Tested by Microsoft September 2026 using Procyon AI benchmark comparing Surface Laptop 13-inch (2nd Edition) with Snapdragon® X2 Plus with Surface Laptop, 13-inch (1st Edition) with Snapdragon® X Plus devices. Performance varies by configuration.<br>10 Based on a web browsing test. Testing conducted by Microsoft in August 2026 using preproduction software and preproduction Surface Pro with Snapdragon X2 Plus 16GB, 256GB devices. Testing consisted of full battery discharge while accessing twelve popular websites over multiple open tabs through the browser. All settings were default except screen brightness set to 150 nits with auto-brightness disabled. Wi-Fi was connected to a network. Battery life varies significantly with settings, usage, and other factors.<br>11 Colors available on selected models only. Available colors, sizes, finishes, and processors may vary by store, market, and configuration.<br>12 Device (excluding power supply) contains 3.7% recycled content, consisting of 100% recycled rare earth metals in magnets, 100% recycled tin in solder, 100% recycled copper and 100% recycled gold in the motherboard. Based on validation performed by Underwriters Laboratories, Inc. using Environmental Claim Validation Procedure (ECVP) for Recycled Content, UL ECVP-2809-2, Second Edition, dated June 2024 Recycled Content is defined in accordance with ISO 14021.<br>13 Microsoft Ink Canvas requires Windows 10 version 18362.0 or higher and integrated touch support. Microsoft 365 Personal, Family, Premium or Pro subscription required for AI features. AI usage limits apply. Learn more about AI credits and limits. Minimum age limits may apply for use of AI features. See Copilot Frequently asked questions.<br>14 Surface display has rounded corners within a standard rectangle. When measured as a standard rectangular shape the screen is 13” diagonally (actual viewable area is less).<br>15 For local video playback. Battery life varies significantly based on usage, settings and other factors. See aka.ms/SurfaceBatteryPerformance<br>16 Customization requires the Surface app on Windows. Functionality varies by operating system.<br>17 Contains 30.8% recycled content, consisting of post-consumer recycled plastics ranging from 9% to 50% by components, including 50% recycled plastic in the Top Case Inner, Bottom Case, Skirt, Battery Door, and Top Button Frame; 25% recycled plastic in the Battery Case and Power Pairing Button; and 9% recycled plastic in the Light Pipe. Based on validation performed by Underwriters Laboratories, Inc. using Environmental Claim Validation Procedure (ECVP) for Recycled Content, UL ECVP-2809-2, Second Edition, dated June 2024. Recycled Content is defined in accordance with ISO 14021.<br>18 Wi-Fi+5G Models only. Support may vary by market and carrier.<br>19 Offer valid with purchase with purchase of any new Surface Pro or Surface Laptop made between August 3rd, 2026 – September 30th, 2026 (the “Promotion Period”) after trade in of qualifying device where the customer submits the online trade-in claim for their used device, plus proof of purchase for new device during the Promotion Period, while supplies last. Available only in Microsoft Store online in the United States. See Microsoft Store Trade-in Program for terms, conditions, steps and requirements.<br>20 Without prejudice to any legal (statutory) rights to which you may be entitled under your local law, Microsoft Limited Hardware Warranty covers your device for one year from the date of original purchase from Microsoft or an authorized reseller. Restrictions apply. Please refer to Microsoft Limited Hardware Warranty &amp; Agreement.</div>
+</div>
+
+</div>
+
+</body>
+</html>
