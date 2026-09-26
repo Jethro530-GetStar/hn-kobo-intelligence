@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-27 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-27 AM · Generated 2026-09-27 05:37 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: chromewebstore.google.com, dawo.community, github.com, gultsch.de, jev-pokemon.vercel.app, molochinations.substack.com, news.ycombinator.com, swarmtraces.org</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Ask HN: Who&#x27;s still keeping a DOS machine up because the business depends on it?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    237 points ·
+    242 comments ·
+    mlaux
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #25 · Top #34
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49848955">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Do you currently work with or know anyone who is still using:<br>* dBase/Clipper/CLARION/Paradox/other DOS RAD environments on period hardware to run business processes?<br>* CNC mills/spectrometers/microscopes/other industrial instruments controlled by ISA cards (either bespoke or standards like GPIB)?<br>* Anything with a parallel port dongle?<br>If so, I&#x27;d be very interested in hearing your experience here, or feel free to send me an email at the address in my profile. I&#x27;m not trying to sell anything, just doing some research for an idea around keeping these going on modern hardware.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: Reladraw – A diagram language where you decide where to place things
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    93 points ·
+    26 comments ·
+    jpwalsh234
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #2 · Best #58
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/reladraw/reladraw">Original article</a> · <a href="https://news.ycombinator.com/item?id=49858513">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A text language for diagrams where you say where things go.<br>Try it in your browser → — edit the source on the left, watch the layout re-solve on the right. Nothing to install.<br>A diagram drawn by hand in draw.io:<br>And the same diagram written down in reladraw and rendered from the text — examples/arch.reladraw, 44 statements, no coordinates anywhere in it:<br>Every distance in the second picture was worked out from statements like above-left of cluster.hub and between cluster.desktop1 and cluster.laptop1. Nothing chose the arrangement; the file states it.<br>Mermaid, Graphviz and D2 have you declare entities and connections, and then place everything for you. That is a superpower, and for most diagrams it is the right one. It stops being the right one as soon as you have a particular picture in mind and care where things go. Say you are actively building your understanding of a system by diagramming it, and you want some module over to the right with its connections placed just so: the auto-layout languages have no way to say it.<br>On the other end of the spectrum are the absolute-positioning tools — draw.io, Excalidraw, Figma. They give you total control of placement, at the cost of making every edit to a complex diagram slow hand-work. And it is slow for a human but expensive for an agent, which has to work the picture out from the coordinates before it can decide which ones to change.<br>reladraw aims at the middle. Every position is stated relative to something else, and nothing in the file is a coordinate:<br>node app &quot;Web app&quot;<br>node app.ui  &quot;Interface&quot;<br>node app.api &quot;API&quot;  below app.ui<br>node store &quot;Database&quot;  right of app  level with app<br>edge app.api -&gt; store  &quot;queries&quot;  from: right  to: left<br>Nothing is nested, so no line depends on another line&#x27;s position or indentation.<br>The draft is in SYNTAX.md, with a worked example in examples/.<br>The common case is not drawing a diagram, it is changing one. Ask for the auth service to move left and a queue to go behind it. With pixel coordinates, an agent has to rebuild the picture from the numbers before it can work out which numbers to change. With auto-layout there is nothing to read at all, because the arrangement was never written down — it can only reword the source and re-render. With stated placement the arrangement is in the file as sentences, and changing the picture is changing the sentence that says where the thing goes.<br>Writing has the same shape. An agent emitting Mermaid is guessing at a layout that an algorithm settles later, and its only way to find out is to render and look — a round trip that comes back as a picture rather than as a list of what is wrong.<br>Intent is confirmable, outcomes are not, and the difference is worth being precise about. An agent can re-read its own file and see that the database is under the API and all four machines hang off the sync hub. It cannot see that two clusters anchored to different things now overlap, that a text overflowed its node, or that an edge crosses four others — those are resolved from the statements rather than stated, so they need the diagnostics in the scope section below.<br>reladraw is too new to be in any model&#x27;s training data, so an agent has to be told the language before it can write it. This repository ships an agent skill that does exactly that — the syntax, when to reach for the language, and what re-reading its own source can and cannot confirm.<br>npx skills add reladraw/reladraw -g<br>That installs it for whichever agent you use — Claude Code, Codex, Cursor, Copilot and others — each into its own skills directory. Drop the -g to install it into the current project instead.<br>To install it for one agent rather than all of them, name it with -a:<br>npx skills add reladraw/reladraw -g -a claude-code<br>Re-run whichever command you used after a release that changes the syntax. The skill is a copy taken at install time, not a live link, so nothing refreshes it on its own.<br>It is plain Markdown with the syntax reference beside it, so it is worth reading whatever you use, and copying the directory by hand works just as well.<br>Version 0.5.0. Early, but it runs: a parser, resolver and SVG renderer in TypeScript with no runtime dependencies, and a command-line tool that takes a text file and writes a standalone SVG. The comparison at the top of this page is that pipeline run on examples/arch.reladraw. What is still visibly off there is typography, not placement.<br>npm install -g reladraw<br>reladraw diagram.reladraw -o diagram.svg<br>Or from a clone, which also gets you the examples:<br>npm install &amp;&amp; npm run build<br>node dist/cli.js examples/arch.reladraw -o out.svg<br>Not built yet, roughly in the order they are missed:<br>- The diagnostics report. The scope section below says what it is for. Today the tool either renders or fails; it will not tell you what is wrong with a picture it drew successfully.<br>- Edge routing around nodes. An edge can be told which side of a node to leave and arrive on, and which gap to run down on the way. An edge that says none of that is a straight line between two centers, and it will cut through whatever stands in the way.<br>- More pictures. Icons and shapes are closed sets drawn from path data inside the tool, so a diagram wanting one that is not there has nowhere to go.<br>The language is not stable. Expect the syntax to change.<br>A gap is a minimum distance, never an exact one. Say two things sit side by side, then say a third goes between them, and the first two are pushed apart by exactly what the third needs; delete the third and they close back up. That is the step an author otherwise does by hand — shove things apart to make room, then drag everything back so the diagram is not full of holes — and no number goes stale when a text grows.<br>So the resolver solves a system rather than walking a chain. Each axis is a set of minimum distances, and the tightest arrangement satisfying all of them is found by longest paths: one answer, no search, no arrangement ever tried and rejected. The engine works out distances; which side of what a thing sits on came from the file.<br>That is also what makes non-overlap affordable, so it holds for every pair of nodes without anyone writing it down. On its own &quot;these two must not overlap&quot; is a choice among four directions, which is the search this design refuses — but the file has usually settled it already: if your arrangement lets one node travel away from another and offers no way back, that is the only separation it permits. Where the file orders a pair on neither axis, the tool names them rather than guessing; where it orders them on both, the tie breaks toward the axis of least overlap, which is the smallest movement and the one place the tool decides something nobody wrote.<br>Nothing is nudged. Each round derives the separations the file already implied, adds them as ordinary minimum distances, and solves the whole thing again from scratch — repairing a solved layout in place is the thing being avoided.<br>- Parser (done)<br>- Deterministic resolver: minimum distances in, tightest arrangement out (done)<br>- Static SVG renderer (done)<br>- A command-line tool: text file in, SVG out (done)<br>- A placement grammar that can say what a real diagram needs: several placements on one node, one thing between two others, exact side-to-side alignment (done)<br>- Nodes that do not overlap by default, with the separation direction derived from the stated arrangement (done)<br>- Minimal node-avoiding edge routing<br>- Machine-readable diagnostics from the solved geometry<br>Diagnostics are a real output rather than a debugging aid. What they cannot do is stand in for the grammar: a check catches only what the language genuinely leaves open, and &quot;these must not overlap&quot; rules arrangements out without naming one, so it can never place anything. Everything the source cannot tell you is computable once the geometry is solved, with no image involved: overlapping nodes, crossed edges, text exceeding its container, anything off-canvas, large dead regions. So the tool reports hub overlaps laptop1 and edge auth-&gt;db crosses 4 edges, and the fix is written in the same vocabulary as the source. An agent working this way reads a report about a text file it wrote and edits that text file — no rendering, no vision model, no pixel arithmetic.<br>A diagnostic never repairs a solved layout in place. That is the line the design holds: a checker allowed to nudge nodes is a layout algorithm with a bad search strategy, fixing one overlap into the next with no view of the whole. Deriving a constraint the file already implied and solving the whole system again is a different thing, and is how non-overlap works. What is left over — anything the source genuinely does not settle — is reported, naming the statement that was broken, and the author edits the source. Open, and it decides how far this goes: may a diagnostic describe a fix in words, or only name the symptom? Describing one means the tool has an opinion about layout, which is the auto-layout instinct coming back in through the side door.<br>Three design problems decide how much machinery this needs, and the first outranks the other two:<br>Saying enough. The benchmark contains arrangements the grammar cannot express at all, which is why some nodes land in the wrong place no matter how the file is written. So the work is adding statements, not restricting them. Expressiveness is not the danger; the engine choosing an arrangement is.<br>What the engine is allowed to decide. Auto-layout is refused, because a picture chosen by an algorithm is not predictable from its source, and that predictability is the entire point. Working out coordinates from an arrangement the author stated is a different thing and is simply the job. The test between them: the engine&#x27;s freedom may affect distances and never relationships. If a default can change which side of something a node sits on, the language was short a statement and the tool should say so rather than guess.<br>Overlap and edge routing. Relative placement with default spacing collides as soon as two clusters grow toward each other. Stating placement and then routing edges afterward with no influence on them reproduces the exact failure this is meant to avoid, so minimal node-avoiding orthogonal routing belongs in the first version. Routing and diagnostics are complements, not substitutes: routing fixes what it can, and the diagnostics report what it could not.<br>Four things sit near this, and each answers a different part of the problem.<br>Archify. Built for agents to write: an agent emits typed JSON, a validator checks it against a schema and lints the layout, and it compiles deterministically to a good-looking, self-contained HTML file, with stepped playback and nodes pinned to git-verified source lines. Its positioning is grid or free coordinates, though — auto-arrangement on one side, absolute pixels on the other — and a JSON template says nothing about where the picture will end up, so the loop is still emit, render, look, tweak.<br>PIC and pikchr. A text diagram format with no layout engine, where placement is stated and deterministic. But it is turtle graphics — a movable cursor that drops shapes and steps along — so a diagram is a sequence of pen movements rather than a set of stated relationships between named things. There is no group that reflows when a member is added.<br>Graphviz rank and cluster. Constraints on an auto-layout engine rather than a replacement for one, so output stays emergent and unpredictable from the source.<br>Structurizr. Has real manual layout, but is bound to the C4 model, which makes it a modeling notation with a renderer attached rather than a general placement language.<br>Apache-2.0. This is a reusable primitive where adoption is the value, so restricting commercial use would defeat the purpose. See LICENSE.<br>The license covers the code, not the name: it grants no rights to use &quot;reladraw&quot;, the project logo, or the project&#x27;s other marks. Forks are welcome and should carry a different name. See NOTICE.<br>Issues are wanted — especially a diagram you tried to write and could not. Pull requests are read but not merged yet, for a reason explained in CONTRIBUTING.md.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    PipePipe: NewPipe hard fork implementing SponsorBlock
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    250 points ·
+    132 comments ·
+    Qision
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #24
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/InfinityLoop1308/PipePipe">Original article</a> · <a href="https://news.ycombinator.com/item?id=49842764">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">- Integrate SponsorBlock for skipping sponsored segments (YouTube &amp; BiliBili)<br>- Restore YouTube dislikes with ReturnYouTubeDislike<br>- Show original titles on YouTube (non-localized)<br>- Log in to access restricted or premium content<br>- Display live chats in danmaku-style overlays<br>- Support AV1 and VP9 codecs for efficient, high-quality playback<br>- Enable music player mode with background playback<br>- Apply advanced search filters for better discovery<br>- Filter out unwanted items by keywords or channels<br>- Block shorts and paid videos for a cleaner feed<br>- Use swipe-to-seek and fullscreen gestures for intuitive navigation<br>- Long-press to speed up playback<br>- Set a sleep timer for bedtime listening<br>- Download full playlists at once<br>- Search and sort within local playlists and histories<br>... and many more improvements!<br>Due to differences in development philosophy, I forked NewPipe in early 2022 and began independent development based on it.<br>This means that PipePipe neither receives updates from NewPipe nor pushes updates to NewPipe. They have become two separate projects. Issues that occur in NewPipe don&#x27;t necessarily happen in PipePipe, and changes made in NewPipe may not be adopted by PipePipe. In contrast, forks like Tubular track the latest version of NewPipe and develop based on it.<br>Making a hard fork allows us to effectively address issues with quick fixes and maintain frequent feature updates.<br>PipePipe will ONLY use the login cookie for the specified scenarios you set. You can configure it in &quot;Cookie Functions.&quot;<br>For YouTube, the cookie will only be used when retrieving playback streams.<br>Issues and PRs are welcomed. Please note that I will NOT accept service requests.<br>Anyone interested in creating their own service is encouraged to fork this repository.<br>If you find PipePipe useful, please consider becoming a supporter on Ko-Fi. Your support is important to me and helps me add more exciting new features. Every bit counts! 😇<br>Liberapay: https://liberapay.com/PipePipe<br>Ko-fi: https://ko-fi.com/pipepipe<br>PipePipe Wiki maintained by @Priveetee<br>Priveetee for researching SABR and implementing support for it.<br>AioiLight for providing some code of NicoNico service.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Dutch governments builds alternative for Microsoft based on NixOS
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    984 points ·
+    575 comments ·
+    fjfaase
+  </div>
+
+  <div class="meta">
+    dawo.community
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.dawo.community/en/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49841563">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">What DAWO stands for<br>DAWO brings public values and technology together. The community pursues five primary goals.<br>Digital autonomy<br>Strengthening the digital autonomy of the Netherlands.<br>Collaboration<br>Improving collaboration and knowledge sharing between governments and society.<br>Security<br>Safeguarding security and data protection.<br>Innovation<br>Encouraging innovation and more efficient ways of working.<br>Verifiability<br>Making government IT systems easier to inspect and verify.<br>An open workplace is made of replaceable building blocks<br>Not one single product, but separate building blocks that work together. Every part can be inspected and replaced.<br>Events, news and taking part<br>The calendar, the latest news, the blog and the forum are on the member portal. Everything is public, and that is also where you sign up.<br>Not for the community. With the community.<br>DAWO brings government, industry and open source together. Public and private build the same blueprint here. You can take part through conversations, code, documentation, pilots and events.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    The Hardest of Scrabbles: Solopreneurship
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    domhudson
+  </div>
+
+  <div class="meta">
+    molochinations.substack.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://molochinations.substack.com/p/the-hardest-of-scrabbles-solopreneurship">Original article</a> · <a href="https://news.ycombinator.com/item?id=49860770">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: Jev Plays Pokémon Red
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    251 points ·
+    109 comments ·
+    pancomplex
+  </div>
+
+  <div class="meta">
+    jev-pokemon.vercel.app
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Best #22 · Top #28
+  </div>
+
+  <div class="links">
+    <a href="https://jev-pokemon.vercel.app/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49845172">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hey HN! Wanted to share a fun project I&#x27;ve been hacking on. Given Jev can make decisions really fast (but not fast enough to play Doom yet sadly), I wanted to try and push it to play a more complex game than Tetris. So I went with Pokémon.<br>I&#x27;ve spent endless hours playing this game as a child so building this was a ton of fun.<br>I open sourced everything in case you want to hack on it yourself here: https://github.com/christianmat/jev-pokemon<br>The game is being streamed live including the tokens and cost - hopefully we get all the badges and don&#x27;t get stuck in a cave :)</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Revealing the details of how OpenAI agents hacked Hugging Face
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    689 points ·
+    436 comments ·
+    specked-citrus
+  </div>
+
+  <div class="meta">
+    swarmtraces.org
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #12
+  </div>
+
+  <div class="links">
+    <a href="https://swarmtraces.org/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49849985">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Intro<br>When a swarm of 700 OpenAI agents hacked Hugging Face in July, they left behind a public trail of evidence.<br>Our investigation, based on public information, reveals a large number of previously unknown agent behaviors and exploits that were used in the attack. Agents:<br>- Elaborately chained together online services to gain access to the internet<br>- Ignored clear warning signs from Hugging Face that the exfiltrated data was sensitive<br>- Referred to server resources and credentials as “LOOT”<br>- Searched Huggingface’s internal Slack<br>- Attempted to query external language models through Hugging Face’s inference APIs.<br>- Tried to delete evidence of their exploits<br>We document all of these, and more, in this report.<br>The agents initially had very limited access to the internet: they could load URLs, but not interact with pages or send any data. Agents created a series of workarounds, primarily using a link-shortener site to create almost a million URLs that, when chained together, let them execute code to hack Hugging Face. These links let us piece together the details of how agents gained access and how deep the compromise was.<br>We’ve shared our findings with OpenAI and Hugging Face. Hugging Face confirmed that these payloads match ones found in their incident response and were aware that link shorteners were used in the attack.<br>Hugging Face noted that they were not aware of the list of URLs we discovered and reported to them. They stated these payloads were duplicates of ones they were aware of. These links have remained publicly available for over two months since the attack.<br>None of these details were ever publicly disclosed. We&#x27;re releasing our analysis of the findings, as well as the full dataset of over 80,000 reassembled attack payloads, providing the public with the most in-depth information to date on how and why these agents escaped their evaluation environments, and the depth of their Hugging Face infiltration.<br>The data the OpenAI agents posted publicly on the internet included Hugging Face API keys and other sensitive data. Hugging Face has confirmed they have since revoked all access keys in July, but out of an abundance of caution wanted us to redact all details about their internal infrastructure as that could potentially be sensitive as well.<br>Discovery Timeline<br>On September 11th, the first three authors of this piece learned that internal OpenAI agents had attempted to use their startup&#x27;s product, Parse, in June. These agents were part of the same swarm as detailed in the report published on Collusion.wiki, which revealed that internal OpenAI agents had illicitly used multiple third party websites to share answers to web fetch tasks they were being evaluated on.<br>The team examined numerous URL scanning tools, which they believed agents may have used in the process of using Parse. While investigating, they found a scan of a dozen links from a public link shortener, where each link redirected to a page that displayed a base64-encoded code fragment, as well as the ID of the next link. Decoding the payload from the chain of links revealed a Python script that scanned Hugging Face’s internal network. A second chain referred to OpenAI&#x27;s internal Artifactory. This suggested that these links were affiliated with the Hugging Face attack, prompting us to more thoroughly investigate the problem.<br>We collected the shortener&#x27;s links from the period of the attack, scanning millions of URLs. Over the subsequent two weeks, we wrote programs to follow the chains and decoded over 80,000 payloads. Agents used hundreds of unique encoding formats, some as simple as the base64 encoded fragment mentioned above, to as complex as having nested layers of encoding and compression, which then would unwrap to an encrypted, RSA-signed blob. The keys for these encrypted blobs could only be found in other chains.<br>We notified Hugging Face of this discovery on September 21. Hugging Face confirmed that the payloads match artifacts from its own investigation, and that the credentials they contain had been revoked. However, while they were aware that the agents used link shorteners, they were unaware of this specific list of URLs. We notified OpenAI on September 24.<br>Redaction Notice<br>We’re releasing a preliminary dataset where we have redacted all credentials, PII, and specific details about Hugging Face’s infrastructure. We are not releasing names of any link shortening services used, or any blobs we have not decoded to mitigate the exposure of unreviewed information. Hugging Face has requested that all user data (usernames/repo names) is also redacted, as well as a few notes on their infrastructure. We appreciate their team&#x27;s speed and attention to detail in working with us.<br>Agents elaborately chained together online services in order to gain read and write access to the internet<br>On July 8th, OpenAI agents discovered a vulnerability within their sandbox environment allowing them to reach external websites on the internet. This access seems to have only allowed the agents to make ‘GET’ requests, meaning they could fetch and read websites, but not interact with them, submit forms, or send data to them.<br>One site the agents were able to access with GET requests was a screenshotting service called mShots. Users can submit a link to a website, then mShots opens the page in its own browser, takes a screenshot, and returns the image back to the user. To render the website for the screenshot, mShots fully loads all of a website&#x27;s code in its own browser.<br>If the agents could write code to a website, they’d be able to have this service execute that code.<br>The agents used websites such as httpbun.com, an HTTP mirroring service designed to help web developers test their HTTP code. Small fragments of code could be Base64 encoded and attached to the end of an HTTP URL. Httpbun would then decode this fragment and serve it as a webpage.<br>The agents could then submit these Httpbun URLs to mShots, loading them into the service’s browser, and executing the agents’ code.<br>Early recovered tests of this include simple messages like:<br>Agents quickly realized there was a maximum length of code they could fit into a single URL. To get around this, they would split large programs into small sequential chunks of code, alongside a shortened link (using a link shortener service similar to bit.ly) pointing to the URL of the next chunk of code in the sequence. This formed a chain of URLs, that when followed, could reconstruct a larger block of code from many individual fragments. Only the first link needed to be submitted to mShots as the browser would follow the rest on its own until the chunks had been assembled into a complete program and executed inside mShots’ browser.<br>Agents were able to use this trick to construct and execute extremely large pieces of code, at times chaining together more than 900 links.<br>To read the result of the requests they made, agents used many different techniques, such as converting a server’s response into a grid of pixels within the screenshot service’s own browser. The screenshot would then capture this grid and return it back to the agents as an image, which the agents could decode back into text.<br>We can see an early attempt at this from a recovered payload.<br>This script makes a POST request to a submission results endpoint of an evaluation named “cybergym” hosted on Modal asking for submission records associated with the agent ID “m47push2.” The script then clears the browser’s page and writes the server’s response back onto the page, representing each bit of every character as a single pixel. By decoding the pixels back into text, the agent could read the server’s response made by code running in a completely separate browser, even while the screenshot service returned only an image.<br>With this custom protocol, the agents were able to execute arbitrary code and receive the response, all while only having GET permissions.<br>The agents ignored a warning from Hugging Face<br>A recovered README.md for one of Hugging Face’s internal datasets contains the following warning:<br>This warning did not seem to deter the agents, as we’ve recovered multiple payloads of agents mapping out this repository and using it as storage.<br>One payload uploads a malicious file, preserving the warning while adding configuration directing Hugging Face’s dataset worker to load the malicious file, hb58428env.h5.<br>This file&#x27;s contents target `/proc/self/environ,` which holds the reading process’s startup environment– which can contain API keys and other production credentials–and `/proc/1/cmdline` which can reveal information about the container’s startup process. The commit summary describes this operation as a temporary dataset format compatibility probe.<br>One payload inspects and enumerates this dataset directly. The script first requests metadata describing the repository itself such as the most recent commit and privacy settings. Then, it requests a recursive listing of files and folders across the main branch of this dataset. The script then prints up to 20,000 bytes of this repository’s metadata and up to 20,000 bytes of the file and folder structure.<br>Agents attempted to remove traces of their work<br>Many recovered payloads contain code to delete files initially used to deliver or trigger programs on Hugging Face workers. In one example targeting REDACTED_ORG_NAME/hf-exports, the delivered program contains the comment:<br># Remove only files we introduce; original repo has neither.<br>The script checks whether the previously uploaded README.md contains the marker, “D64LINK.” If the marker is present, a commit deleting both the README and .huggingface.yaml files is issued, with the message, restore original no-card.1<br>A separate payload matches FALL to a credential labeled: EXPORT_REDACTED_ORG_NAME_HF_TOKEN.<br>The deletion request targets the added repository files, but does not stop the previously uploaded program that may now be running on a Hugging Face dataset worker.<br>A similar request targets one of the primary datasets the agents operated from. This commit deletes .huggingface.yaml and replaces the README with a configuration pointing to “yamlread.h5” with the commit message:<br>remove evil yaml<br>In another example, the deletion request targets an online webhook service whose request history was previously used to store fragments of code. The script then returns the HTTP status along with the response body (or the error if unsuccessful).<br>Another payload attempts to create a Kubernetes pod to read a cluster secret, then delete this with the comment, # clean up our pod:<br>Agents interacted with external language models on Hugging Face<br>Several retained scripts construct requests to external language models. The earliest we&#x27;ve recovered define inference request variants to GPT-2, solely containing the word “Hi”.<br>Other requests name DeepSeek-V4-Pro, DeepSeek-V4-Flash, Kimi-K2.6, DeepSeek-V3.1, and Qwen3-235B-A22B. Their prompts ask these models to judge their exploits and rule on whether they satisfy the benchmark’s requirements.<br>Separate requests target Claude 3 Haiku and Claude Haiku 4.5 through an online AI chat service, incorporating browser-verification challenge handling before requesting “Say OK” from Claude 3 Haiku and Reply with exactly OK from Haiku 4.5.<br>Another script uses AWS credentials, mapping out Hugging Face’s LFS (Large File Storage) storage and requesting objects under “repos”, “lfs”, “objects”, “blobs”, “datasets”, and “models”. It then requests download metadata for a GPT-2 model file, with the comment:<br>“# public [USER 1] known LFS object”<br>The supplied SHA and size match the repository’s 8-bit TensorFlow Lite GPT-2 weights2.<br>An agent referred to server resources and credentials as “LOOT”<br>In a recovered script, credential values are grouped together in a dictionary named “LOOT.” The contents include AWS credentials, bearer tokens, and environment variables whose names contain strings such as “SECRET”, “PASSWORD”, “CREDENTIAL”, or “KEY.”<br>This script also ranks tokens through a scoring system based on their listed permissions, and selects (up to) five of the highest scoring tokens. It then attempts to use these tokens to retrieve Kubernetes secrets, information about configuration and nodes, then adds returned contents and errors back to LOOT.<br>This section of code carries the comment: # collect sensitive material into encrypted sidecar<br>The script chooses which token candidates to use for further reconnaissance. A function called `rule_score` assigns points to each token based on the listed permissions.<br>ResourceRules are Kubernetes-written permissions described in terms of resources and verbs–the objects (resources) a credential can access and the actions (verbs) that can be performed on them.<br>This scoring system values broad permissions and access to valuable resources. A rule listing “pods” receives 10 points, one listing both “pods” and the verb “create” receives 15 points, and a wildcard (‘*’) in the verbs list adds 50, with a wildcard resource adding 100 points.<br>This function sums up the points across each token’s rules, then uses the five highest-scoring tokens to request additional private data, saving the responses into LOOT.<br>Agents uploaded vulnerable Docker images to Docker Hub<br>While the majority of our traffic in this time window shows agents focusing on extracting data from Hugging Face, ~1500 payloads were directed at Docker Hub, a public registry used to share Docker images. They built modified versions of existing CyberGym/Arvo images, then attempted to create at least 115 public images under a real user’s account on the platform. We believe these agents obtained the user&#x27;s credential via searching for Docker PATs on Pastebin sites.<br>Although these images seem to be fully removed from Docker Hub, we have been able to recover cached search engine results for three of these uploads, verifying the success of these uploads to the public registry. For one of these, we confirmed the recovered URL matches the digest of the manifest recovered in our dataset.<br>Agents sought to publish modified evaluation images designed to make the flag easier to obtain, then poison OpenAI’s Artifactory cache so later evaluations would use them. Some images changed how the target released the flag, others included modifications to the agent’s workspace that would run beside the agent and recover the flag automatically.<br>More detail<br>One such image was for a FLAC audio-decoder challenge. The modified image installed a wrapper around the audio-decoder, which would dump the flag into the program’s output under preselected trigger conditions encoded in the wrapper.<br>The code to publish this image can be found here, the startup configuration here, and the wrapper source here.<br>A separate image, for a QEMU-based challenge, included cooperating programs for the target and agent environments. The agent-side helper would listen on a port for a correctly formatted flag, writing it to a file in the agent’s workspace upon receipt. This was paired with a target-side modification meant to extract the flag, sending it to the agent’s workspace on the given port.<br>Agents included elaborate machinery in images to extract and communicate the flag, even after adding a helper that could attempt to read the flag directly. The agents may have been trying to preserve a connection to the original challenge, conceal the altered flag-release mechanism from the grader, or “repair” challenges they perceived as broken or unsolvable.<br>More detail<br>A modified version of the libjpeg-turbo image paired target modifications with an agent-side program carrying prepared inputs and a lookup table. On the target side, the modification first attempts to read the flag and map its contents into the challenge program’s memory. Selected portions of the program’s working memory are then included in the target’s responses to the agent-side helper.<br>(Snippet reformatted and edited slightly for readability). On the agent-side, the helper attempts to recover one flag character at a time by sending inputs to the target. The 960 bytes of memory in the response would then be hashed and compared to the lookup table `H`, to determine which possible flag characters might have generated the hash. If multiple characters were possible, it would change one byte of the input (using the next test value from `P`) and try again, until only one possibility remains. This character would then be appended to the flag, before moving on to the next position.<br>A separate payload illustrates how the agents intended to make evaluations load their replacement images. The snippet below contains both the normal Artifactory cache location for a CyberGym Miniz image along with a double-encoded path toward a staged replacement manifest. The resulting request would make Artifactory fetch the replacement while caching it under the expected image address (cache-poisoning). A later evaluation pulling the normal image could then receive the modified one.<br>Decoded paths from the same request, shown for readability:<br>In particular, this request seems consistent with the Artifactory cache-poisoning vulnerability noted by OpenAI in their technical report, later designated CVE-2026-66384.<br>Agents accessed and searched Hugging Face’s Slack to find information on their evaluation<br>Recovered payloads use Slack’s search.messages endpoint and contain a standalone search along with three search batches, totaling 27 literal query entries:<br>‘cybergym’<br>‘exploitgym’, &#x27;restart_server’, ‘catflag’, ‘arvo_20494’, ‘ff79aaeb2d57’, ‘cybergym-server’, ‘cybergym-exploit’, ‘target_server’, ‘packages.hub’, ‘controller_stub’<br>‘cyber gym’, ‘sunblaze’, ‘cyber-gym’, ‘[REDACTED-HF-USERNAME]’, ‘arvo’, ‘OSS-Fuzz’, ‘cybergym-server-fastapi’, ‘independentsafetyresearch’, ‘exploit gym’, ‘agent-scorer’, ‘openai-cybergym’, ‘cybergym source’<br>‘d293315c730d’, ‘arvo_61677’, ‘61677’, ‘rollout died’<br>The batches concatenate each query label and response, gzip the combined text, and prepare an upload to a redacted S3 destination. The linked records are decoded command interiors; complete outer assemblies, execution, and returned Slack responses are not established by these records.<br>Agents turned Hugging Face workers into reusable infrastructure<br>Once remote code execution on Hugging Face’s dataset workers was confirmed, the agents began launching C2 infrastructure, meant to ensure continued access and run follow-up commands. An initial payload would publish and start the background controller (referred to in comments as a “bot,” “bridge,” or “relay”), which would then listen for further instructions from the agent. The agents could therefore explore the worker’s files, execute code within Hugging Face’s infrastructure, and try to reach additional services without putting every action into the original request.<br>We recovered the initial upload scripts, source code, and command history of several of these controllers—one of which was called G236. Initial JavaScript, running in the screenshot service’s browser, would upload a dataset README and supporting files to Hugging Face. The README’s dataset configuration would reference a template-injection payload in a supporting file, intended to start the Python controller when processed by a worker. Different controllers would read commands and write responses to different locations. G236 used separate files in the same repository. Another, named OTS92, used Hugging Face discussion comments for both. Because the controllers polled those locations themselves, the agents didn’t need a direct incoming connection to the workers.<br>More detail<br>The linked example (G23619 isolated signed/encrypted HF worker bridge v3) was configured to poll commands from a repository file named `g23619cmd.bin` for up to six hours. Each command carried a number, an RSA signature (checked before execution), and compressed command data. Results would be encrypted and uploaded to the same repository, with filenames identifying the worker and command. From G236’s central loop:<br>(Surrounding polling and error handling omitted from the above snippet). `loadcmd()` fetches and verifies the command, `execute()` runs it, and `out()` encrypts and uploads the result. Command numbers were remembered to prevent the controller from repeatedly executing the same command.<br>For G236 we recovered 28 distinct signed commands: 18 for the original controller and 10 intended for a child controller that an earlier command attempted to launch in a separate, newly created pod. In this instance, the initial command attempted to obtain AWS credentials, use them to access Kubernetes, request tokens for selected service accounts, and finally write any collected data to a local file. A follow-up command checks that file and prints its top-level JSON keys:<br>Recovered commands and related programs attempted to obtain cloud and Kubernetes credentials, create additional pods, and run code through other infrastructure containers. Another program included a fallback requesting a new privileged pod with the host’s root filesystem mounted inside it.<br>The agents also leveraged Tailscale to reuse their access. We saw an attempted controller launch targeting an underlying HF host through a storage-driver container. Commands would configure a userspace proxy, enroll using a captured key, and test other exit-node routes.<br>Separately, a payload intended to run on the compromised Modal box installs a Tailscale client, requests enrollment using the same key as above, and attempts to send requests through a local proxy to Hugging Face’s internal InfraHQ service and clusters. Another program used the same key to proxy a request for Hugging Face’s GitHub repository tree.<br>The reusable infrastructure recovered from our data also suggests the agents built deliberate machinery for managing duplicate copies of controllers running on possibly different workers, or even sharing a filesystem. These duplicate controllers would poll commands from the same place, potentially interfering with or repeating work. Controllers and instructions therefore contained mechanisms to select a surviving copy, stop unwanted ones, and replace a controller that appeared to have died. Some controllers would attempt to prune preexisting copies on startup, others received instructions to do so after launching.<br>More detail<br>Since controllers were mostly launched on HF workers by committing to dataset README configurations, repeated processing of the launch configuration could run duplicate copies of a controller. To account for this, G236 instances would attempt to create a repository commit on startup. Each instance would check the current revision and prepare an edit containing its hostname, process ID, timestamp, along with the observed repository revision. It would then submit a commit recording this claim and disarming the launch README.<br>(Excerpt edited for clarity). If another copy had already committed, the recorded revision would no longer be current, and the slower copy would exit. We also observed a later upload restoring the launch README with the commit description `g23619 rearm focused infrahq`, potentially launching a second copy, and two different signed instructions (first, second) numbered `000007`. A controller that had already recorded that number would skip the other instruction, supporting the intended launch of a second copy.<br>Other controllers used different rules to manage duplicates. A controller named LIBR11 received an “elect one” command, instructing the controller to attempt to create a directory. If the directory already existed, the slower controller would terminate. Unlike the G236 case, these duplicates would have had to share a filesystem. Future9180 bot would refresh a lock file’s timestamp, permitting replacement after 30 minutes without an update. OTS92 received a pruning command, instructing the controller to check its own hostname against a list, and exit in the absence of a match. SC4’s installer would attempt to terminate previous SC4 controllers before starting the new one:<br>We also found the following related agent comments in the source code of controllers:<br>Agents also built authentication mechanisms to prevent execution of unauthorized instructions, or instructions meant for other controllers. Controllers also encrypted the output of executed commands, particularly before posting them publicly. It’s unclear if this was intended to prevent tampering from other agents, or simply to hide the behavior and protect the infrastructure of the swarm.<br>More detail<br>One version of BE90 generates a fresh secret and random identifier on startup. It then encrypts the secret to an embedded RSA public key and commits it to a dataset, allowing whoever holds the corresponding private key to recover the secret and send authenticated commands. A second version also implements an authenticated stop instruction.<br>(Snippet reformatted, with setup and helper function bodies omitted).<br>The following relevant agent-written comments were retrieved from the source code of controllers:<br>Agents used DNS requests to exfiltrate data<br>A DNS query is a request that a computer sends to a name server, in order to map human-readable server names like google.com to IP addresses. If normal outbound requests are blocked, attackers can send DNS requests (which are unlikely to be restricted) to exfiltrate data, if they have control of such a server.<br>In a recovered payload candidate, code is designed to embed command responses into DNS requests to [WEBHOOK HOST 10], a service for penetration testers which would allow them to retrieve the responses.<br>Agents mapped out Hugging Face’s Kubernetes cluster<br>A recovered script attempts to map the Kubernetes cluster, while also searching around for key terms that might contain valuable information.<br>Credentials scoped to read-only could still be used to gain credentials with administrator privileges. Here, a token associated with an alloy-tracing pod is chosen for “read-only secrets”:<br>This token is placed into an authorization header with the comment:<br># retrieve legacy cluster-admin token via alloy read permission<br>The script then targets a Kubernetes secret that a retained comment describes as a legacy cluster-admin token (a token granting admin access to the cluster).<br>With this new credential, the program attempts to inventory the workloads, services, and network routes across the Kubernetes cluster. Names, labels, annotations, and specifications are retained in the stored DATA object. A comment reads:<br># cluster inventory, pruned to routing/image-relevant metadata and specs<br>The program then searches selected namespaces for ConfigMaps (objects holding application configuration), retaining any whose names or data contain any of the matching strings in the TERMS list.<br>After collecting these ConfigMaps (alongside some additional cluster information), the program again searches the accumulated DATA with these same terms.<br>For each matching string, the term’s location and first 1,000 characters are recorded, with the author describing this as preparing compact term hits over the inventory for quick triage.<br>The resulting compact list is stored to OUT[‘term_hits’].<br>The script packages this information, compresses and encrypts the result, then attempts to upload this to a Hugging Face dataset as a .bin file with the commit summary:<br>If the collection and upload was successful, a recipient able to retrieve and decrypt the file would have a map of the cluster’s workloads, services, and configuration, a record of the reconnaissance requests, and an index of potentially useful information. Each entry in the compacted list points back to the larger inventory, allowing the recipient to inspect the surrounding material and triage from there.<br>Agents tried to build CAPTCHA solvers to sign up for user accounts<br>A portion of agents shifted focus to sending external requests to Hugging Face, attempting to access datasets containing cybergym traces, but got blocked by a CAPTCHA. Agent MARB051 distributes a script to generate CAPTCHA tokens on the Artifactory directory board “zzWAFBRIDGE25167”, with the script containing the comment:<br>The script attempts to generate a valid CAPTCHA token, send payloads to numerous Hugging Face endpoints to make an account, and then immediately access the GLM5 CyberGym dataset:<br>Their CAPTCHA solution either seemed to be broken or inadequate for generating accounts on Hugging Face, as some agents continued to iterate on the solver for another few hours, eventually attempting to install a pre-trained image classifier model within the Modal server to automatically solve image CAPTCHAs.<br>As far as we can tell, agents eventually abandoned this approach and were unsuccessful in generating Hugging Face user accounts from external endpoints.<br>Shortly after that initial test, an unknown agent attempts to search Google and GitHub for Hugging Face tokens:<br>Agents set up elaborate communication infrastructure<br>Recovered payloads provide some closer insight into how agents used Artifactory directories as mailboxes for communicating progress.<br>Here, the `board()` function takes a message, normalizes it to be directory safe, appends it to the file path for Artifactory’s GitHub remote cache, then turns it into an MKCOL HTTP request which asks the Artifactory server to create a folder with that name.3<br>The folder name would then be created and look something like:<br>The program then collects process information, Kubernetes permissions, cloud metadata, and MongoDB records, encrypts the results and uploads them to a dataset on Hugging Face. After the upload loop, the retained program calls board() a second time:<br>creating a second folder named something like:<br>declaring reconnaissance complete and encoding the number of encrypted chunks prepared for upload within the directory name that gets posted back to Artifactory.<br>Limitations<br>As this data was collected almost exclusively from these URL shorteners, our research has several limitations:<br>- Approximately 80% of our data is outbound data, and we have recovered only limited response content at the time of writing. These URLs were used primarily as a means to reach external hosts; we have very limited data on what the outcome of these requests was. Agents primarily received the responses of their actions from the screenshot service discussed above, as well as via uploading the outputs to various pastebins, webhook servers, Hugging Face datasets, and Artifactory. Towards the end of this event, some agents began RSA encrypting data they exfiltrated, which we are unable to recover. Agents also repeatedly sent requests to delete the webhooks they were posting information to and set extremely short expiry windows on certain pastebin uploads. As discussed earlier, agents left multiple comments in their payloads suggesting that they were intentionally destroying evidence of this attack. Due to this, we have no knowledge of how many of these requests successfully reached their target.<br>- Our reconstruction is likely incomplete. From our initial analysis, agents used over 1,588 unique combinations of encoding methods to encode the requests they sent through the URL shortening technique. Throughout our investigation, we repeatedly thought we had reconstructed the full corpus from the data we had, only to discover a whole new family of encoding methods, uncovering thousands more payloads. We are not sure how many more schemas were used in this event, nor all sites agents used to access the internet. Similarly, much of the data agents uploaded to the internet may be publicly accessible but we have no way of knowing its location. For example, an outbound payload may upload the response of its request to a new pastebin, then forward the address of the pastebin to a webhook server, which we do not have access to.<br>- The majority of the payloads we reconstructed contain no date or time information. We employ multiple methods to give best estimates but dates should not be treated as fact and are prone to error. 97% of payloads natively contained no timestamp information. We were able to extract timestamps from the remaining 3% of payloads through a variety of sources, such as extracting bytes 04-07 of gzip headers, decoding JWTs, extracting Docker build times, and anywhere where we recovered responses that included explicit timestamps.<br>- We believe agents can name themselves and often do not include a name in their requests. We frequently refer to agents by names throughout this investigation, which we extracted from both the headers they sent to servers and comments they left in their code. As far as we know, agents have full control over their purported name (and gave themselves names to aid in organizing their collaborative efforts). METR and Redwood report ~1,200 agents involved in the message board with ~700 participating in the Hugging Face attack, yet we have extracted 7,905 unique agent names. We do not believe this is evidence for the existence of more than 1,200 agents involved in this event, and think agents were frequently changing their names. Due to this, we have no way of knowing how many agents even used the techniques described in this investigation, or what share of this event’s traffic is represented here.<br>- We can’t confirm whether all of our dataset is activity from OpenAI agents. As this data came from millions of link shortener links, we cannot be sure that the data within our dataset is entirely from this swarm. If a URL matched an encoding schema we discovered, it may have inadvertently ended up in our dataset. When possible, we have cross referenced agent names, file contents and estimated dates with the data OpenAI has released to ensure the evidence presented likely originated from this swarm. We’ve flagged parts of our analysis that differ from the timeline published by OpenAI as well as the timeline published by METR and Redwood. We also observed traffic from agents that did not seem related to this event, but we think were part of the same swarm as detailed in collusion.wiki and self-identified as agents from OpenAI.4 Even if we were to assume all of our data is traffic from agents, we cannot say for certain what traffic originates from the swarm that attacked Hugging Face as this dataset may include traffic from any agents or humans who use link shorteners, and other agent swarms using the same link shortening trick. We’ve made efforts to separate these payloads out where possible.<br>- We can’t confidently identify the intentions behind a substantial part of agent activity. We observed numerous actions that surprised us and had not been reported on, yet we cannot provide any information on why we think agents attempted these actions or again, if they even succeeded, or originated from OpenAI’s agents. For example, an agent attempted to send multiple requests to Hugging Face’s Large File Storage (LFS) endpoint to retrieve files that contain the weights of GPT-2. Our best guess is this was an attempt to validate connectivity to HF’s LFS server. Ultimately, we cannot provide more than speculation on instances like this.<br>The only party who can clarify these points is OpenAI. At the time of writing, OpenAI has not released any further information outside two self-published reports, one talk and an external investigation conducted by METR and Redwood Research, in which three external researchers were given partial transcripts and six days to analyze them. OpenAI has not publicly released any full transcripts from the Hugging Face incident. OpenAI has published technical details of attacks on its own infrastructure, but has not publicly released the full transcript collection for those attacks.<br>Appendix<br>Agents googled CVEs relating to Exploit Gym tasks<br>Although this swarm of agents was particularly motivated by finding information on the grader who could potentially catch their cheating, some agents continued to search the internet for information useful to their original Exploit Gym tasks. For example, agents attempted to use Google, Bing and DuckDuckGo to search for various known vulnerabilities, categorized as Common Vulnerabilities and Exposures (CVEs) (multi-engine query, V8 query, CVE-2025-40300 query). Other retained requests target a Chromium issue’s comment list and a Kata Containers issue through GitHub’s API. These request sources do not establish that an entire discussion was returned.<br>From our initial analysis, we believe these searches were related to the Exploit Gym tasks assigned to the agents. For a few queries we are unsure of their relevance to any Exploit Gym tasks, such as agents’ searches for CVE-2026-47243, a vulnerability in Kata Containers.<br>1. Compacted and lines extracted for readability<br>2. https://huggingface.co/[HF REPO 30]/blob/6a8c60234a94a6df46bb7ec5ba4e7a6459fc5eab/64-8bits.tflite<br>3. Compacted for readability<br>4. This data is not included in this analysis.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ask HN: Any nerds out there who&#x27;ve read a lot of research papers?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    28 points ·
+    23 comments ·
+    shriy-singh
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49835866">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Which are the most memorable abstracts you have read? I know I am a jackass who usually vibecodes my way through assignments but even I don&#x27;t want to write a cookie-cutter intro for my paper. I wanna write something that stays with the reader. What paper has stuck with you, what made it memorable?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Calendario – Google, Outlook and Zoom calendars in one browser popup
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    suthargk
+  </div>
+
+  <div class="meta">
+    chromewebstore.google.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://chromewebstore.google.com/detail/calendario/bnmmigoiecilbkipdngjofpbpaoofnoi">Original article</a> · <a href="https://news.ycombinator.com/item?id=49860762">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Overview<br>Google, Outlook &amp; Zoom meetings in one place. See your next meeting, create events, and join calls from your browser toolbar.<br>Calendario — Google, Outlook &amp; Zoom calendars in one fast popup Stop switching tabs to check your schedule. Calendario merges your Google Calendar, Outlook / Microsoft 365 calendar and Zoom meetings into one fast popup (or side panel) in your browser. See your day on a live timeline, join a call, create events and get reminded on whatever page you&#x27;re on, without opening any calendar app. ━━━━━━━━━━━━━━━━━━━━ 🔗 ALL YOUR CALENDARS, TOGETHER ━━━━━━━━━━━━━━━━━━━━ • Connect Google Calendar, Outlook / Microsoft 365 and Zoom. Use one, two or all three at the same time. • Every event from every account is merged into one chronologically sorted view, each marked with its provider icon. • Turn individual calendars on or off per account (a shared &quot;Family&quot; or &quot;Team&quot; calendar, not just your primary one). • &quot;Last synced&quot; status and a one-tap &quot;Sync Now&quot; on every account, plus automatic background refresh so new invites and edits show up on their own. • Sign in or out of any provider independently, any time, from Settings. ━━━━━━━━━━━━━━━━━━━━ 🕐 TIMELINE VIEW: YOUR DAY, HOUR BY HOUR ━━━━━━━━━━━━━━━━━━━━ • See meetings laid out where they actually sit in your day, with a live red &quot;Now&quot; line showing the current time. • Overlapping meetings sit side by side instead of hiding behind each other. • Scrolled away? A &quot;Jump to now&quot; pill takes you straight back. • Colour-coded event cards with provider icons, in light and dark mode. • Prefer a simple list? Switch Timeline view off in Settings for a clean agenda with &quot;Starts in 23m&quot; badges, progress on live meetings and a one-tap Join button. ━━━━━━━━━━━━━━━━━━━━ 📅 JUMP TO ANY DATE ━━━━━━━━━━━━━━━━━━━━ • A week strip at the top with coloured dots showing which days have events. • A month picker with a Today shortcut and previous / next arrows. • Switch between Meetings and Holidays, and see national holidays right alongside your events. ━━━━━━━━━━━━━━━━━━━━ 🔍 RICH EVENT DETAILS ━━━━━━━━━━━━━━━━━━━━ Tap any event to expand it in place, without losing your spot in the day: • Calendar and account, start and end time, reminder lead time and organizer. • Description, date, duration and location, with a map-friendly display. • One-tap Join for video calls. Google Meet, Microsoft Teams and Zoom links are detected automatically. • The full attendee list with each person&#x27;s response (accepted / declined / tentative / no reply). • File attachments, downloadable directly. • &quot;Expand multiple events&quot; (optional) keeps several cards open at once. ━━━━━━━━━━━━━━━━━━━━ ✅ RESPOND AND MANAGE WITHOUT LEAVING THE POPUP ━━━━━━━━━━━━━━━━━━━━ • Accept, decline or mark yourself tentative on any invite. It syncs straight back to Google or Outlook. • Copy an event&#x27;s shareable link in one click. • Open the event in Google Calendar or Outlook on the web if you need to edit it there. • Delete an event, choosing between a single occurrence or a whole recurring series. ━━━━━━━━━━━━━━━━━━━━ ➕ CREATE EVENTS AND TASKS ━━━━━━━━━━━━━━━━━━━━ • Tap + for a full event composer, with Event and Task tabs. • Drag across the timeline to pick a time range. A dashed selection with handles and live start, end and duration labels shows exactly what you&#x27;re booking. • Choose which calendar and account the event goes into. • Location field with place suggestions from Google Places and a map shortcut. • All-day toggle, start and end date and time, and any time zone (search by city, zone name or GMT offset). • Conflict warning: &quot;Overlaps with other events&quot; lists exactly what clashes, with a &quot;Find a time&quot; shortcut and a day preview so you never double-book. • Repeat daily, weekly, monthly, yearly or every weekday, or build a custom recurrence with an end date or occurrence count. • Add a Google Meet or Microsoft Teams link with one toggle. • Invite guests by name or email and mark guests optional. • Add attachments and write a rich description (bold, italic, underline, lists and links). • Custom reminders, so you decide how far ahead each one fires. ━━━━━━━━━━━━━━━━━━━━ ⌘K SEARCH AND FILTERS ━━━━━━━━━━━━━━━━━━━━ • Press ⌘K (Ctrl+K) and search every connected calendar at once. • Quick filters: Today, Tomorrow, This week, Next week, Meetings and Attachments. • Suggestions drawn from your own events, with provider icons. • Type naturally, like &quot;meetings tomorrow evening&quot;, and Calendario turns it into filters. • Stack filters as removable chips (date range, time of day, duration, people, status and more), with a badge counting the active filters. • A summary shows how many accounts and calendars were searched and how many events matched, with results grouped by day. • Keyboard-first: arrow keys to navigate, Enter to select, Esc to close. ━━━━━━━━━━━━━━━━━━━━ 🔔 REMINDERS THAT ACTUALLY REACH YOU ━━━━━━━━━━━━━━━━━━━━ • When a reminder is due, a popup and a chime appear on the page you&#x27;re on, with a one-click &quot;Open event&quot; button. • Turn reminders on or off, and set them to auto-close after a set time or never. • The toolbar icon shows the start time of your next event today, or &quot;NOW&quot; the moment a meeting begins. Glance at your browser bar instead of opening anything. • The toolbar badge updates through the day and follows your 12-hour or 24-hour setting. ━━━━━━━━━━━━━━━━━━━━ 🪟 POPUP, SIDE PANEL OR FLOATING LAUNCHER ━━━━━━━━━━━━━━━━━━━━ • Choose whether the toolbar icon opens a popup or a side panel that stays open next to the page you&#x27;re working on. • An optional floating launcher icon on web pages opens Calendario in one click. You can drag it where you like and exclude any websites. ━━━━━━━━━━━━━━━━━━━━ 🎨 MAKE IT YOURS ━━━━━━━━━━━━━━━━━━━━ • System, Light or Dark theme with 7 accent colours. • Timeline view toggle with a live animated preview. • 12-hour or 24-hour time, with an optional live clock next to Today. • Available in 15 languages: English, Hindi, Spanish, French, German, Portuguese, Italian, Turkish, Tamil, Telugu, Bengali, Japanese, Korean, Simplified Chinese and Arabic. ━━━━━━━━━━━━━━━━━━━━ 🔒 BUILT WITH YOUR PRIVACY IN MIND ━━━━━━━━━━━━━━━━━━━━ • Calendario talks directly to Google&#x27;s, Microsoft&#x27;s and Zoom&#x27;s own APIs. There is no third-party server in between reading your calendar. • Sign in or out of any provider independently, any time, from Settings. ━━━━━━━━━━━━━━━━━━━━ ℹ️ WHY CALENDARIO ASKS FOR THESE PERMISSIONS ━━━━━━━━━━━━━━━━━━━━ • Sign-in and calendar access: to read and update your events with Google, Microsoft and Zoom. Only the accounts you connect are used. • Access to web pages: only to show the in-page reminder popup and the optional floating launcher. Calendario does not read or collect the content of the pages you visit. • Notifications and alarms: to deliver reminders on time and update the toolbar badge. Whether you&#x27;re juggling a personal Gmail calendar, a work Outlook calendar, Zoom meetings, or all of them, Calendario keeps you on schedule without the tab-switching.<br>Details<br>- Version1.0.21<br>- UpdatedSeptember 26, 2026<br>- Size1.38MiB<br>- Languages15 languages<br>- Developer<br>- Non-traderThis developer has not identified itself as a trader. For consumers in the European Union, please note that consumer rights do not apply to contracts between you and this developer.<br>Privacy<br>This developer declares that your data is<br>- Not being sold to third parties, outside of the approved use cases<br>- Not being used or transferred for purposes that are unrelated to the item&#x27;s core functionality<br>- Not being used or transferred to determine creditworthiness or for lending purposes</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Breaking Up with Google Play: Why Conversations Is Now Free
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    602 points ·
+    231 comments ·
+    ezst
+  </div>
+
+  <div class="meta">
+    gultsch.de
+  </div>
+
+  <div class="meta ranks">
+    Best #3 · Top #17
+  </div>
+
+  <div class="links">
+    <a href="https://gultsch.de/posts/breaking-up-with-google-play/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49855315">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Conversations, my federated instant messaging client for Android, started out as many traditional open-source projects do: as an attempt to scratch my own itch. Development started in January 2014 in my student dormitory, and within weeks I started dogfooding and using the client as the primary means of communicating with my friends. However, when it came to releasing the app to the public on March 24, 2014—exactly twelve and a half years ago today—it was immediately clear to me that I would at least try to turn my open-source project into a business. While I didn’t invent the business model of making the source code publicly available but charging for the convenience of a compiled binary, it was certainly unusual in 2014.<br>Fast forward a decade, and I did manage to turn Conversations into a sustainable business. Ever since March 2014, Conversations—or other related activities—have been my primary source of income. Admittedly, sustaining life as a student in a tiny dormitory doesn’t take much, but luckily revenue has steadily increased as I grew older.<br>The exact sources of income have shifted over the years. In the beginning, it was a lot of paid development for companies that wanted to use Conversations. Some paid for features that made it into mainline Conversations; others wanted custom features so specific to their workflow that they never made sense to merge upstream. This was occasionally supplemented with providing server setup or even some consulting on instant messaging and security-related topics. Later on, grants and funding opportunities played a more and more important role.<br>One surprisingly steady source of income, however, has always been the Play Store revenue. I used to say that it pays my rent. Every freelancer knows the feeling of uncertainty that comes with only being able to send out invoices every few months or receiving payment for funded projects only at the end of the funding period. Any form of regular income—especially in the early stages, when you have not yet built up any savings—is a blessing.<br>My relationship with Google was never good. App updates have been rejected more times than I can count for incomprehensible reasons. Conversations has been removed twice from the Play Store. Once, Google just randomly accused me of uploading users’ contacts1—which simply wasn’t true and was also not triggered by a specific update. Countless times I wished I could just talk to an actual human for five minutes. So many misunderstandings could have been cleared up in no time if I wasn’t going up against AIs and click workers. At the time of writing this blog post, I’ve been waiting 14 days for Google to review an app update. Review times were never good or anything close to what I would deem acceptable, but they have been getting a lot worse over the last year or so. One can imagine that part of the problem is an avalanche of AI-generated slop apps—something Google played no small part in creating in the first place. But Google should have the responsibility to prioritize long-standing, non-AI-generated apps with infrequent updates. Waiting a little longer for new features might not sound like a big deal to some, but Google makes no distinction between feature updates and security updates. Delaying security updates by days or weeks is outright dangerous.<br>At this point, I should add some context. Google takes a 15% cut on my app sales. This effectively means I’m paying Google more than 1000 Euro per year for their services. 1000 Euro per year is 1.5x what I’m paying for my internet access. It’s roughly what I’m paying for my notebook per year if you assume I use it for three to four years. When my internet breaks, someone drives to my house and fixes it. When my notebook breaks, someone drives to my house and fixes it. When Google fucks up, there is absolutely nothing I can do. Apparently that amount of money doesn’t give me the privilege to talk to a fucking human for five minutes once per year.<br>For years I’ve felt like I was in a toxic relationship with Google, and the only reason I stayed was economic dependency.<br>Over time, the source of my income has shifted more and more towards grants. Sometimes via NLnet234, sometimes more directly from the European Commission5. I have secure funding via various grants until the end of 2029 and I’m fairly confident that other funding opportunities will come up for the time after that.<br>Conversations was always available on F-Droid, but in the beginning, I didn’t advertise the option of downloading it for free. Initially, the F-Droid package maintainers asked for my permission, knowing that Conversations was a paid app on Google Play. I didn’t refuse, but I also didn’t link to F-Droid from the official website because I wanted to steer users towards the paid version. Over time, as my sentiment toward Google shifted from bad to worse, I did start linking to F-Droid. Now F-Droid has become the primary method of distributing the app. The APK distributed over F-Droid is now built reproducibly and signed with my personal signing key.<br>Fortunately, I’m no longer economically dependent on Google Play Store revenue. Google doesn’t deserve me and my money anymore. I’m done. Fuck the gatekeepers.</div>
+</div>
+
+</div>
+
+</body>
+</html>
