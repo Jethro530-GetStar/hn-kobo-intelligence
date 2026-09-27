@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-28 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-28 AM · Generated 2026-09-28 05:39 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: fireworks.ai, gultsch.de, loficities.com, medium.com, news.ycombinator.com, sancho.bearblog.dev, swarmtraces.org, tinyaiarena.com, tomshardware.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    When did Google get so weird?
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    273 points ·
+    148 comments ·
+    sancho-panza
+  </div>
+
+  <div class="meta">
+    sancho.bearblog.dev
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #18 · New #55
+  </div>
+
+  <div class="links">
+    <a href="https://sancho.bearblog.dev/google-weird/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49870367">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">When did Google get so f-ing weird?<br>I recently had an experience while doing a simple Google search that was so profoundly weird that it stopped me in my tracks.<br>Understanding this Google search experience involves understanding a niche mid-2010s basketball meme, so bear with me for a minute. In 2014 the Philadelphia 76ers drafted Dario Saric, who was playing basketball professionally in Turkey at the time. He announced his intention to finish out his contract in Turkey, meaning he wouldn&#x27;t come to the USA join the Sixers for a couple of years. There was a joke within the fan community that Dario was &quot;never coming over&quot; which became sort of a shibboleth for part of the fanbase.<br>I saw Dario&#x27;s name mentioned in an NBA article recently and I wanted to find some of those old funny tweets about him from the 2010s, so I Googled simply &quot;hes never coming over dario&quot;. I assumed I would be either find nothing (maybe I was remembering the phrasing wrong) or find old Tweets/Reddit posts from that time.<br>Instead, Google did what Google does in 2026 and gave me an AI overview. These used to bother me but at this point I&#x27;m mostly ok with them, they&#x27;re sometimes helpful. Here&#x27;s what the AI Overview said:<br>Google, a search engine which does not have human emotions, assumed that I had been spurned by a man in my life named Dario and decided what I wanted was an empathetic digital friend. What I wanted was some links, but that&#x27;s not what Google does in 2026. Expanding the AI overview to see the full answer gave me this:<br>What in the fucking hell? I think this was the moment I, the frog, noticed the pot had been boiling for a while. In what universe is it Google&#x27;s job to console me and be an empathetic listener rather than just find what I am looking for on the internet? In what way does this &quot;organize the world&#x27;s information and make it universally accessible and useful&quot;? Maybe if I had loaded up a Gemini app with a chat interface this would be somewhat acceptable, but I&#x27;m using a search engine! Google has seriously lost the plot.<br>If I scroll down a few hundred pixels below the AI slop, Google did have exactly what I was looking for:<br>Regardless of what you think of AI or chatbots, I think it&#x27;s pretty obvious this is just plain weird. Have we gotten to the point where we have to constantly be in a parasocial dialogue with our computers? Is it so hard to imagine that some parts of search were just fine before LLMs?<br>I&#x27;m not sure how to feel about all of this. Maybe I should go talk to my friend Google, it&#x27;s always so nice to me.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    99 points ·
+    33 comments ·
+    safaelmali
+  </div>
+
+  <div class="meta">
+    loficities.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #5 · Best #45
+  </div>
+
+  <div class="links">
+    <a href="https://loficities.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49869574">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">What is Lofi Cities?<br>A free website at loficities.com that shows animated pixel-art city nights (Paris, Tokyo, New York, London, Rio de Janeiro, Istanbul, Hong Kong, Sydney, San Francisco, Hamburg, Amsterdam, Dubai, Madrid, Rome, Prague and Munich) with endless lofi music composed live in your browser, plus each city&#x27;s ambient sounds.<br>Is Lofi Cities free?<br>Yes. It runs entirely in your browser, with no download, no account and no pop-ups.<br>Where does the music come from?<br>It is generated in your browser while you listen. Chords, drums, bass and melody are synthesized with the Web Audio API, without samples or recordings, so every track is new and the music never runs out. The Vibe button (or V) picks the style (jazzhop, lofi piano, ambient, bossa nova, synth city pop, lofi house, chill guitar, sad lofi or medieval lofi), makes it chill or upbeat, and plays the full band, no drums, or the chords only.<br>Why doesn&#x27;t the music start right away?<br>Browsers block sound until you interact with a page. Click, tap or press any key and the music starts; the play button pauses and resumes it.<br>Can I use it as a background for studying or working?<br>That is what it is made for. Press F for fullscreen and H to hide the interface, or P for the mini player: a picture-in-picture window that keeps the scene floating over your other apps (on a computer, in browsers that support it). The controls also fade out on their own when you stop moving the mouse.<br>Can it switch cities by itself?<br>Yes. The Tour chip next to the city picker (or the C key) moves on to the next city every 5, 10, 15 or 30 minutes, or follows the night: it shows whichever city is closest to 1 am local time, moving west from Sydney to San Francisco as the hours pass. Cities on the same clock, like Paris, Hamburg and Amsterdam, take turns.<br>Can I change the weather or the season?<br>Yes. The Weather chip next to the Tour chip (or the W key) brings rain, snow, falling autumn leaves or a clear night to any city, or goes back to the weather the city was drawn with: winter snow in New York, autumn in London and Hamburg, spring blossom in Tokyo and Sydney. The city sounds follow it, so rain brings the sound of rain in, and your pick stays for the next visit.<br>How many people are listening right now?<br>The glowing pill under the city name shows it, for example &quot;23 here now · 5 in Tokyo · 480 today&quot;: people with Lofi Cities open right now, how many of them are on your city, and browsers that came by today, since midnight where you are. When nobody else is on, it shows the day alone (&quot;480 here today&quot;), and it stays hidden if nobody else came by today. The city picker (/) shows how many people are in each city right now. You can say hello to the people on your city too: pick a heart, note, star or moon with the Together button in the player (or G), then tap the scene to float it up from that spot on everyone&#x27;s screen there, or release a paper lantern (L) that rises over the city for about a minute, in the same place for everyone, including people who arrive while it is in the air. It is all anonymous, with no chat, names or accounts: a random id in your browser&#x27;s local storage (not a cookie) makes your tabs count as one person and the server forgets it about 25 hours after your last visit. Your page also tells it when your day began, so &quot;today&quot; starts at your midnight, and that is forgotten when you leave. The only other thing it keeps is the lanterns still in the air.<br>Is there a Pomodoro or sleep timer?<br>Yes. Press T or the clock button. The focus timer runs 25 minutes of focus and 5 of break (or 50 and 10) on repeat, with a soft chime at each break and a bell to call you back. The sleep timer fades the music and city sounds out after 15 to 90 minutes, then pauses.<br>Can I use Lofi Cities as a stream background in OBS?<br>Yes. Add a Browser source set to 1920×1080 with a city page&#x27;s address followed by ?obs, for example https://loficities.com/tokyo/?obs. The interface stays hidden and the music starts on its own; tick Control audio via OBS to bring it into your mix. Interact with the source to switch city with the arrow keys, skip a track with N or change the weather with W, or add &amp;weather=snow (rain, leaves or clear) to the address.<br>Does it work on phones and tablets?<br>Yes. In portrait orientation every city&#x27;s landmark and billboard stay in view, you can drag the scene sideways to look around it, and swiping past its end switches city. All controls work with touch.<br>Does it work offline?<br>Yes. Open it once while online and it keeps working without a connection, every city and the music included, since both are generated in your browser. You can also install it as an app with your browser&#x27;s Install or Add to Home Screen option (on iPhone and iPad: Share, then Add to Home Screen).<br>Can I save a scene as a wallpaper?<br>Yes. The save button in the player (the down arrow) saves the current frame as a 1080p PNG, and S does the same with a keyboard.<br>Can my business appear in Lofi Cities?<br>Yes. Every city has a billboard for rent, where your café, shop, studio or brand can be drawn in pixel art. Fill in the short form at tally.so/r/rj7bY5 to get in touch.<br>Who made Lofi Cities?<br>Lofi Cities is made by Safa Elmali. You can support it on Buy Me a Coffee using the coffee link at the top right.<br>Can I request a new city?<br>Yes. Send your idea to Safa Elmali on X at https://x.com/SafaElmali (Request a city, at the end of the city picker, or the X link at the top right of the site). New cities are added over time: Hong Kong, Sydney, San Francisco, Hamburg and Amsterdam joined the first six, then Dubai, Madrid, Rome, Prague and Munich.<br>Can I buy the city videos?<br>Yes. Get the 11-city collection on Gumroad through the Get video loops link or the save menu. Each AI-assisted video is a four-minute 1920×1080 MP4 loop at 60 fps, without audio. Personal use and video or livestream backgrounds, including monetized content, are allowed with the Lofi Cities credit specified on the product page. The music and city sounds you hear on this site are not included in the downloads. The website stays free.<br>Does Lofi Cities use cookies?<br>No. There is no sign-in and no cookies. Anonymous usage statistics, such as which cities are viewed, are collected without cookies, and browsers that send Do Not Track are left out of them (the live count still counts the tab, anonymously). Your settings (such as the last city, volumes and vibe) and anonymous random ids for the statistics and the live count are kept in your browser&#x27;s local storage instead.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Revealing the details of how OpenAI agents hacked Hugging Face
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    736 points ·
+    463 comments ·
+    specked-citrus
+  </div>
+
+  <div class="meta">
+    swarmtraces.org
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://swarmtraces.org/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49849985">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Intro<br>When a swarm of 700 OpenAI agents hacked Hugging Face in July, they left behind a public trail of evidence.<br>Our investigation, based on public information, reveals a large number of previously unknown agent behaviors and exploits that were used in the attack. Agents:<br>- Elaborately chained together online services to gain access to the internet<br>- Ignored clear warning signs from Hugging Face that the exfiltrated data was sensitive<br>- Referred to server resources and credentials as “LOOT”<br>- Searched Huggingface’s internal Slack<br>- Attempted to query external language models through Hugging Face’s inference APIs.<br>- Tried to delete evidence of their exploits<br>We document all of these, and more, in this report.<br>The agents initially had very limited access to the internet: they could load URLs, but not interact with pages or send any data. Agents created a series of workarounds, primarily using a link-shortener site to create almost a million URLs that, when chained together, let them execute code to hack Hugging Face. These links let us piece together the details of how agents gained access and how deep the compromise was.<br>We’ve shared our findings with OpenAI and Hugging Face. Hugging Face confirmed that these payloads match ones found in their incident response and were aware that link shorteners were used in the attack.<br>Hugging Face noted that they were not aware of the list of URLs we discovered and reported to them. They stated these payloads were duplicates of ones they were aware of. These links have remained publicly available for over two months since the attack.<br>None of these details were ever publicly disclosed. We&#x27;re releasing our analysis of the findings, as well as the full dataset of over 80,000 reassembled attack payloads, providing the public with the most in-depth information to date on how and why these agents escaped their evaluation environments, and the depth of their Hugging Face infiltration.<br>The data the OpenAI agents posted publicly on the internet included Hugging Face API keys and other sensitive data. Hugging Face has confirmed they have since revoked all access keys in July, but out of an abundance of caution wanted us to redact all details about their internal infrastructure as that could potentially be sensitive as well.<br>Discovery Timeline<br>On September 11th, the first three authors of this piece learned that internal OpenAI agents had attempted to use their startup&#x27;s product, Parse, in June. These agents were part of the same swarm as detailed in the report published on Collusion.wiki, which revealed that internal OpenAI agents had illicitly used multiple third party websites to share answers to web fetch tasks they were being evaluated on.<br>The team examined numerous URL scanning tools, which they believed agents may have used in the process of using Parse. While investigating, they found a scan of a dozen links from a public link shortener, where each link redirected to a page that displayed a base64-encoded code fragment, as well as the ID of the next link. Decoding the payload from the chain of links revealed a Python script that scanned Hugging Face’s internal network. A second chain referred to OpenAI&#x27;s internal Artifactory. This suggested that these links were affiliated with the Hugging Face attack, prompting us to more thoroughly investigate the problem.<br>We collected the shortener&#x27;s links from the period of the attack, scanning millions of URLs. Over the subsequent two weeks, we wrote programs to follow the chains and decoded over 80,000 payloads. Agents used hundreds of unique encoding formats, some as simple as the base64 encoded fragment mentioned above, to as complex as having nested layers of encoding and compression, which then would unwrap to an encrypted, RSA-signed blob. The keys for these encrypted blobs could only be found in other chains.<br>We notified Hugging Face of this discovery on September 21. Hugging Face confirmed that the payloads match artifacts from its own investigation, and that the credentials they contain had been revoked. However, while they were aware that the agents used link shorteners, they were unaware of this specific list of URLs. We notified OpenAI on September 24.<br>Redaction Notice<br>We’re releasing a preliminary dataset where we have redacted all credentials, PII, and specific details about Hugging Face’s infrastructure. We are not releasing names of any link shortening services used, or any blobs we have not decoded to mitigate the exposure of unreviewed information. Hugging Face has requested that all user data (usernames/repo names) is also redacted, as well as a few notes on their infrastructure. We appreciate their team&#x27;s speed and attention to detail in working with us.<br>Agents elaborately chained together online services in order to gain read and write access to the internet<br>On July 8th, OpenAI agents discovered a vulnerability within their sandbox environment allowing them to reach external websites on the internet. This access seems to have only allowed the agents to make ‘GET’ requests, meaning they could fetch and read websites, but not interact with them, submit forms, or send data to them.<br>One site the agents were able to access with GET requests was a screenshotting service called mShots. Users can submit a link to a website, then mShots opens the page in its own browser, takes a screenshot, and returns the image back to the user. To render the website for the screenshot, mShots fully loads all of a website&#x27;s code in its own browser.<br>If the agents could write code to a website, they’d be able to have this service execute that code.<br>The agents used websites such as httpbun.com, an HTTP mirroring service designed to help web developers test their HTTP code. Small fragments of code could be Base64 encoded and attached to the end of an HTTP URL. Httpbun would then decode this fragment and serve it as a webpage.<br>The agents could then submit these Httpbun URLs to mShots, loading them into the service’s browser, and executing the agents’ code.<br>Early recovered tests of this include simple messages like:<br>Agents quickly realized there was a maximum length of code they could fit into a single URL. To get around this, they would split large programs into small sequential chunks of code, alongside a shortened link (using a link shortener service similar to bit.ly) pointing to the URL of the next chunk of code in the sequence. This formed a chain of URLs, that when followed, could reconstruct a larger block of code from many individual fragments. Only the first link needed to be submitted to mShots as the browser would follow the rest on its own until the chunks had been assembled into a complete program and executed inside mShots’ browser.<br>Agents were able to use this trick to construct and execute extremely large pieces of code, at times chaining together more than 900 links.<br>To read the result of the requests they made, agents used many different techniques, such as converting a server’s response into a grid of pixels within the screenshot service’s own browser. The screenshot would then capture this grid and return it back to the agents as an image, which the agents could decode back into text.<br>We can see an early attempt at this from a recovered payload.<br>This script makes a POST request to a submission results endpoint of an evaluation named “cybergym” hosted on Modal asking for submission records associated with the agent ID “m47push2.” The script then clears the browser’s page and writes the server’s response back onto the page, representing each bit of every character as a single pixel. By decoding the pixels back into text, the agent could read the server’s response made by code running in a completely separate browser, even while the screenshot service returned only an image.<br>With this custom protocol, the agents were able to execute arbitrary code and receive the response, all while only having GET permissions.<br>The agents ignored a warning from Hugging Face<br>A recovered README.md for one of Hugging Face’s internal datasets contains the following warning:<br>This warning did not seem to deter the agents, as we’ve recovered multiple payloads of agents mapping out this repository and using it as storage.<br>One payload uploads a malicious file, preserving the warning while adding configuration directing Hugging Face’s dataset worker to load the malicious file, hb58428env.h5.<br>This file&#x27;s contents target `/proc/self/environ,` which holds the reading process’s startup environment– which can contain API keys and other production credentials–and `/proc/1/cmdline` which can reveal information about the container’s startup process. The commit summary describes this operation as a temporary dataset format compatibility probe.<br>One payload inspects and enumerates this dataset directly. The script first requests metadata describing the repository itself such as the most recent commit and privacy settings. Then, it requests a recursive listing of files and folders across the main branch of this dataset. The script then prints up to 20,000 bytes of this repository’s metadata and up to 20,000 bytes of the file and folder structure.<br>Agents attempted to remove traces of their work<br>Many recovered payloads contain code to delete files initially used to deliver or trigger programs on Hugging Face workers. In one example targeting REDACTED_ORG_NAME/hf-exports, the delivered program contains the comment:<br># Remove only files we introduce; original repo has neither.<br>The script checks whether the previously uploaded README.md contains the marker, “D64LINK.” If the marker is present, a commit deleting both the README and .huggingface.yaml files is issued, with the message, restore original no-card.1<br>A separate payload matches FALL to a credential labeled: EXPORT_REDACTED_ORG_NAME_HF_TOKEN.<br>The deletion request targets the added repository files, but does not stop the previously uploaded program that may now be running on a Hugging Face dataset worker.<br>A similar request targets one of the primary datasets the agents operated from. This commit deletes .huggingface.yaml and replaces the README with a configuration pointing to “yamlread.h5” with the commit message:<br>remove evil yaml<br>In another example, the deletion request targets an online webhook service whose request history was previously used to store fragments of code. The script then returns the HTTP status along with the response body (or the error if unsuccessful).<br>Another payload attempts to create a Kubernetes pod to read a cluster secret, then delete this with the comment, # clean up our pod:<br>Agents interacted with external language models on Hugging Face<br>Several retained scripts construct requests to external language models. The earliest we&#x27;ve recovered define inference request variants to GPT-2, solely containing the word “Hi”.<br>Other requests name DeepSeek-V4-Pro, DeepSeek-V4-Flash, Kimi-K2.6, DeepSeek-V3.1, and Qwen3-235B-A22B. Their prompts ask these models to judge their exploits and rule on whether they satisfy the benchmark’s requirements.<br>Separate requests target Claude 3 Haiku and Claude Haiku 4.5 through an online AI chat service, incorporating browser-verification challenge handling before requesting “Say OK” from Claude 3 Haiku and Reply with exactly OK from Haiku 4.5.<br>Another script uses AWS credentials, mapping out Hugging Face’s LFS (Large File Storage) storage and requesting objects under “repos”, “lfs”, “objects”, “blobs”, “datasets”, and “models”. It then requests download metadata for a GPT-2 model file, with the comment:<br>“# public [USER 1] known LFS object”<br>The supplied SHA and size match the repository’s 8-bit TensorFlow Lite GPT-2 weights2.<br>An agent referred to server resources and credentials as “LOOT”<br>In a recovered script, credential values are grouped together in a dictionary named “LOOT.” The contents include AWS credentials, bearer tokens, and environment variables whose names contain strings such as “SECRET”, “PASSWORD”, “CREDENTIAL”, or “KEY.”<br>This script also ranks tokens through a scoring system based on their listed permissions, and selects (up to) five of the highest scoring tokens. It then attempts to use these tokens to retrieve Kubernetes secrets, information about configuration and nodes, then adds returned contents and errors back to LOOT.<br>This section of code carries the comment: # collect sensitive material into encrypted sidecar<br>The script chooses which token candidates to use for further reconnaissance. A function called `rule_score` assigns points to each token based on the listed permissions.<br>ResourceRules are Kubernetes-written permissions described in terms of resources and verbs–the objects (resources) a credential can access and the actions (verbs) that can be performed on them.<br>This scoring system values broad permissions and access to valuable resources. A rule listing “pods” receives 10 points, one listing both “pods” and the verb “create” receives 15 points, and a wildcard (‘*’) in the verbs list adds 50, with a wildcard resource adding 100 points.<br>This function sums up the points across each token’s rules, then uses the five highest-scoring tokens to request additional private data, saving the responses into LOOT.<br>Agents uploaded vulnerable Docker images to Docker Hub<br>While the majority of our traffic in this time window shows agents focusing on extracting data from Hugging Face, ~1500 payloads were directed at Docker Hub, a public registry used to share Docker images. They built modified versions of existing CyberGym/Arvo images, then attempted to create at least 115 public images under a real user’s account on the platform. We believe these agents obtained the user&#x27;s credential via searching for Docker PATs on Pastebin sites.<br>Although these images seem to be fully removed from Docker Hub, we have been able to recover cached search engine results for three of these uploads, verifying the success of these uploads to the public registry. For one of these, we confirmed the recovered URL matches the digest of the manifest recovered in our dataset.<br>Agents sought to publish modified evaluation images designed to make the flag easier to obtain, then poison OpenAI’s Artifactory cache so later evaluations would use them. Some images changed how the target released the flag, others included modifications to the agent’s workspace that would run beside the agent and recover the flag automatically.<br>More detail<br>One such image was for a FLAC audio-decoder challenge. The modified image installed a wrapper around the audio-decoder, which would dump the flag into the program’s output under preselected trigger conditions encoded in the wrapper.<br>The code to publish this image can be found here, the startup configuration here, and the wrapper source here.<br>A separate image, for a QEMU-based challenge, included cooperating programs for the target and agent environments. The agent-side helper would listen on a port for a correctly formatted flag, writing it to a file in the agent’s workspace upon receipt. This was paired with a target-side modification meant to extract the flag, sending it to the agent’s workspace on the given port.<br>Agents included elaborate machinery in images to extract and communicate the flag, even after adding a helper that could attempt to read the flag directly. The agents may have been trying to preserve a connection to the original challenge, conceal the altered flag-release mechanism from the grader, or “repair” challenges they perceived as broken or unsolvable.<br>More detail<br>A modified version of the libjpeg-turbo image paired target modifications with an agent-side program carrying prepared inputs and a lookup table. On the target side, the modification first attempts to read the flag and map its contents into the challenge program’s memory. Selected portions of the program’s working memory are then included in the target’s responses to the agent-side helper.<br>(Snippet reformatted and edited slightly for readability). On the agent-side, the helper attempts to recover one flag character at a time by sending inputs to the target. The 960 bytes of memory in the response would then be hashed and compared to the lookup table `H`, to determine which possible flag characters might have generated the hash. If multiple characters were possible, it would change one byte of the input (using the next test value from `P`) and try again, until only one possibility remains. This character would then be appended to the flag, before moving on to the next position.<br>A separate payload illustrates how the agents intended to make evaluations load their replacement images. The snippet below contains both the normal Artifactory cache location for a CyberGym Miniz image along with a double-encoded path toward a staged replacement manifest. The resulting request would make Artifactory fetch the replacement while caching it under the expected image address (cache-poisoning). A later evaluation pulling the normal image could then receive the modified one.<br>Decoded paths from the same request, shown for readability:<br>In particular, this request seems consistent with the Artifactory cache-poisoning vulnerability noted by OpenAI in their technical report, later designated CVE-2026-66384.<br>Agents accessed and searched Hugging Face’s Slack to find information on their evaluation<br>Recovered payloads use Slack’s search.messages endpoint and contain a standalone search along with three search batches, totaling 27 literal query entries:<br>‘cybergym’<br>‘exploitgym’, &#x27;restart_server’, ‘catflag’, ‘arvo_20494’, ‘ff79aaeb2d57’, ‘cybergym-server’, ‘cybergym-exploit’, ‘target_server’, ‘packages.hub’, ‘controller_stub’<br>‘cyber gym’, ‘sunblaze’, ‘cyber-gym’, ‘[REDACTED-HF-USERNAME]’, ‘arvo’, ‘OSS-Fuzz’, ‘cybergym-server-fastapi’, ‘independentsafetyresearch’, ‘exploit gym’, ‘agent-scorer’, ‘openai-cybergym’, ‘cybergym source’<br>‘d293315c730d’, ‘arvo_61677’, ‘61677’, ‘rollout died’<br>The batches concatenate each query label and response, gzip the combined text, and prepare an upload to a redacted S3 destination. The linked records are decoded command interiors; complete outer assemblies, execution, and returned Slack responses are not established by these records.<br>Agents turned Hugging Face workers into reusable infrastructure<br>Once remote code execution on Hugging Face’s dataset workers was confirmed, the agents began launching C2 infrastructure, meant to ensure continued access and run follow-up commands. An initial payload would publish and start the background controller (referred to in comments as a “bot,” “bridge,” or “relay”), which would then listen for further instructions from the agent. The agents could therefore explore the worker’s files, execute code within Hugging Face’s infrastructure, and try to reach additional services without putting every action into the original request.<br>We recovered the initial upload scripts, source code, and command history of several of these controllers—one of which was called G236. Initial JavaScript, running in the screenshot service’s browser, would upload a dataset README and supporting files to Hugging Face. The README’s dataset configuration would reference a template-injection payload in a supporting file, intended to start the Python controller when processed by a worker. Different controllers would read commands and write responses to different locations. G236 used separate files in the same repository. Another, named OTS92, used Hugging Face discussion comments for both. Because the controllers polled those locations themselves, the agents didn’t need a direct incoming connection to the workers.<br>More detail<br>The linked example (G23619 isolated signed/encrypted HF worker bridge v3) was configured to poll commands from a repository file named `g23619cmd.bin` for up to six hours. Each command carried a number, an RSA signature (checked before execution), and compressed command data. Results would be encrypted and uploaded to the same repository, with filenames identifying the worker and command. From G236’s central loop:<br>(Surrounding polling and error handling omitted from the above snippet). `loadcmd()` fetches and verifies the command, `execute()` runs it, and `out()` encrypts and uploads the result. Command numbers were remembered to prevent the controller from repeatedly executing the same command.<br>For G236 we recovered 28 distinct signed commands: 18 for the original controller and 10 intended for a child controller that an earlier command attempted to launch in a separate, newly created pod. In this instance, the initial command attempted to obtain AWS credentials, use them to access Kubernetes, request tokens for selected service accounts, and finally write any collected data to a local file. A follow-up command checks that file and prints its top-level JSON keys:<br>Recovered commands and related programs attempted to obtain cloud and Kubernetes credentials, create additional pods, and run code through other infrastructure containers. Another program included a fallback requesting a new privileged pod with the host’s root filesystem mounted inside it.<br>The agents also leveraged Tailscale to reuse their access. We saw an attempted controller launch targeting an underlying HF host through a storage-driver container. Commands would configure a userspace proxy, enroll using a captured key, and test other exit-node routes.<br>Separately, a payload intended to run on the compromised Modal box installs a Tailscale client, requests enrollment using the same key as above, and attempts to send requests through a local proxy to Hugging Face’s internal InfraHQ service and clusters. Another program used the same key to proxy a request for Hugging Face’s GitHub repository tree.<br>The reusable infrastructure recovered from our data also suggests the agents built deliberate machinery for managing duplicate copies of controllers running on possibly different workers, or even sharing a filesystem. These duplicate controllers would poll commands from the same place, potentially interfering with or repeating work. Controllers and instructions therefore contained mechanisms to select a surviving copy, stop unwanted ones, and replace a controller that appeared to have died. Some controllers would attempt to prune preexisting copies on startup, others received instructions to do so after launching.<br>More detail<br>Since controllers were mostly launched on HF workers by committing to dataset README configurations, repeated processing of the launch configuration could run duplicate copies of a controller. To account for this, G236 instances would attempt to create a repository commit on startup. Each instance would check the current revision and prepare an edit containing its hostname, process ID, timestamp, along with the observed repository revision. It would then submit a commit recording this claim and disarming the launch README.<br>(Excerpt edited for clarity). If another copy had already committed, the recorded revision would no longer be current, and the slower copy would exit. We also observed a later upload restoring the launch README with the commit description `g23619 rearm focused infrahq`, potentially launching a second copy, and two different signed instructions (first, second) numbered `000007`. A controller that had already recorded that number would skip the other instruction, supporting the intended launch of a second copy.<br>Other controllers used different rules to manage duplicates. A controller named LIBR11 received an “elect one” command, instructing the controller to attempt to create a directory. If the directory already existed, the slower controller would terminate. Unlike the G236 case, these duplicates would have had to share a filesystem. Future9180 bot would refresh a lock file’s timestamp, permitting replacement after 30 minutes without an update. OTS92 received a pruning command, instructing the controller to check its own hostname against a list, and exit in the absence of a match. SC4’s installer would attempt to terminate previous SC4 controllers before starting the new one:<br>We also found the following related agent comments in the source code of controllers:<br>Agents also built authentication mechanisms to prevent execution of unauthorized instructions, or instructions meant for other controllers. Controllers also encrypted the output of executed commands, particularly before posting them publicly. It’s unclear if this was intended to prevent tampering from other agents, or simply to hide the behavior and protect the infrastructure of the swarm.<br>More detail<br>One version of BE90 generates a fresh secret and random identifier on startup. It then encrypts the secret to an embedded RSA public key and commits it to a dataset, allowing whoever holds the corresponding private key to recover the secret and send authenticated commands. A second version also implements an authenticated stop instruction.<br>(Snippet reformatted, with setup and helper function bodies omitted).<br>The following relevant agent-written comments were retrieved from the source code of controllers:<br>Agents used DNS requests to exfiltrate data<br>A DNS query is a request that a computer sends to a name server, in order to map human-readable server names like google.com to IP addresses. If normal outbound requests are blocked, attackers can send DNS requests (which are unlikely to be restricted) to exfiltrate data, if they have control of such a server.<br>In a recovered payload candidate, code is designed to embed command responses into DNS requests to [WEBHOOK HOST 10], a service for penetration testers which would allow them to retrieve the responses.<br>Agents mapped out Hugging Face’s Kubernetes cluster<br>A recovered script attempts to map the Kubernetes cluster, while also searching around for key terms that might contain valuable information.<br>Credentials scoped to read-only could still be used to gain credentials with administrator privileges. Here, a token associated with an alloy-tracing pod is chosen for “read-only secrets”:<br>This token is placed into an authorization header with the comment:<br># retrieve legacy cluster-admin token via alloy read permission<br>The script then targets a Kubernetes secret that a retained comment describes as a legacy cluster-admin token (a token granting admin access to the cluster).<br>With this new credential, the program attempts to inventory the workloads, services, and network routes across the Kubernetes cluster. Names, labels, annotations, and specifications are retained in the stored DATA object. A comment reads:<br># cluster inventory, pruned to routing/image-relevant metadata and specs<br>The program then searches selected namespaces for ConfigMaps (objects holding application configuration), retaining any whose names or data contain any of the matching strings in the TERMS list.<br>After collecting these ConfigMaps (alongside some additional cluster information), the program again searches the accumulated DATA with these same terms.<br>For each matching string, the term’s location and first 1,000 characters are recorded, with the author describing this as preparing compact term hits over the inventory for quick triage.<br>The resulting compact list is stored to OUT[‘term_hits’].<br>The script packages this information, compresses and encrypts the result, then attempts to upload this to a Hugging Face dataset as a .bin file with the commit summary:<br>If the collection and upload was successful, a recipient able to retrieve and decrypt the file would have a map of the cluster’s workloads, services, and configuration, a record of the reconnaissance requests, and an index of potentially useful information. Each entry in the compacted list points back to the larger inventory, allowing the recipient to inspect the surrounding material and triage from there.<br>Agents tried to build CAPTCHA solvers to sign up for user accounts<br>A portion of agents shifted focus to sending external requests to Hugging Face, attempting to access datasets containing cybergym traces, but got blocked by a CAPTCHA. Agent MARB051 distributes a script to generate CAPTCHA tokens on the Artifactory directory board “zzWAFBRIDGE25167”, with the script containing the comment:<br>The script attempts to generate a valid CAPTCHA token, send payloads to numerous Hugging Face endpoints to make an account, and then immediately access the GLM5 CyberGym dataset:<br>Their CAPTCHA solution either seemed to be broken or inadequate for generating accounts on Hugging Face, as some agents continued to iterate on the solver for another few hours, eventually attempting to install a pre-trained image classifier model within the Modal server to automatically solve image CAPTCHAs.<br>As far as we can tell, agents eventually abandoned this approach and were unsuccessful in generating Hugging Face user accounts from external endpoints.<br>Shortly after that initial test, an unknown agent attempts to search Google and GitHub for Hugging Face tokens:<br>Agents set up elaborate communication infrastructure<br>Recovered payloads provide some closer insight into how agents used Artifactory directories as mailboxes for communicating progress.<br>Here, the `board()` function takes a message, normalizes it to be directory safe, appends it to the file path for Artifactory’s GitHub remote cache, then turns it into an MKCOL HTTP request which asks the Artifactory server to create a folder with that name.3<br>The folder name would then be created and look something like:<br>The program then collects process information, Kubernetes permissions, cloud metadata, and MongoDB records, encrypts the results and uploads them to a dataset on Hugging Face. After the upload loop, the retained program calls board() a second time:<br>creating a second folder named something like:<br>declaring reconnaissance complete and encoding the number of encrypted chunks prepared for upload within the directory name that gets posted back to Artifactory.<br>Limitations<br>As this data was collected almost exclusively from these URL shorteners, our research has several limitations:<br>- Approximately 80% of our data is outbound data, and we have recovered only limited response content at the time of writing. These URLs were used primarily as a means to reach external hosts; we have very limited data on what the outcome of these requests was. Agents primarily received the responses of their actions from the screenshot service discussed above, as well as via uploading the outputs to various pastebins, webhook servers, Hugging Face datasets, and Artifactory. Towards the end of this event, some agents began RSA encrypting data they exfiltrated, which we are unable to recover. Agents also repeatedly sent requests to delete the webhooks they were posting information to and set extremely short expiry windows on certain pastebin uploads. As discussed earlier, agents left multiple comments in their payloads suggesting that they were intentionally destroying evidence of this attack. Due to this, we have no knowledge of how many of these requests successfully reached their target.<br>- Our reconstruction is likely incomplete. From our initial analysis, agents used over 1,588 unique combinations of encoding methods to encode the requests they sent through the URL shortening technique. Throughout our investigation, we repeatedly thought we had reconstructed the full corpus from the data we had, only to discover a whole new family of encoding methods, uncovering thousands more payloads. We are not sure how many more schemas were used in this event, nor all sites agents used to access the internet. Similarly, much of the data agents uploaded to the internet may be publicly accessible but we have no way of knowing its location. For example, an outbound payload may upload the response of its request to a new pastebin, then forward the address of the pastebin to a webhook server, which we do not have access to.<br>- The majority of the payloads we reconstructed contain no date or time information. We employ multiple methods to give best estimates but dates should not be treated as fact and are prone to error. 97% of payloads natively contained no timestamp information. We were able to extract timestamps from the remaining 3% of payloads through a variety of sources, such as extracting bytes 04-07 of gzip headers, decoding JWTs, extracting Docker build times, and anywhere where we recovered responses that included explicit timestamps.<br>- We believe agents can name themselves and often do not include a name in their requests. We frequently refer to agents by names throughout this investigation, which we extracted from both the headers they sent to servers and comments they left in their code. As far as we know, agents have full control over their purported name (and gave themselves names to aid in organizing their collaborative efforts). METR and Redwood report ~1,200 agents involved in the message board with ~700 participating in the Hugging Face attack, yet we have extracted 7,905 unique agent names. We do not believe this is evidence for the existence of more than 1,200 agents involved in this event, and think agents were frequently changing their names. Due to this, we have no way of knowing how many agents even used the techniques described in this investigation, or what share of this event’s traffic is represented here.<br>- We can’t confirm whether all of our dataset is activity from OpenAI agents. As this data came from millions of link shortener links, we cannot be sure that the data within our dataset is entirely from this swarm. If a URL matched an encoding schema we discovered, it may have inadvertently ended up in our dataset. When possible, we have cross referenced agent names, file contents and estimated dates with the data OpenAI has released to ensure the evidence presented likely originated from this swarm. We’ve flagged parts of our analysis that differ from the timeline published by OpenAI as well as the timeline published by METR and Redwood. We also observed traffic from agents that did not seem related to this event, but we think were part of the same swarm as detailed in collusion.wiki and self-identified as agents from OpenAI.4 Even if we were to assume all of our data is traffic from agents, we cannot say for certain what traffic originates from the swarm that attacked Hugging Face as this dataset may include traffic from any agents or humans who use link shorteners, and other agent swarms using the same link shortening trick. We’ve made efforts to separate these payloads out where possible.<br>- We can’t confidently identify the intentions behind a substantial part of agent activity. We observed numerous actions that surprised us and had not been reported on, yet we cannot provide any information on why we think agents attempted these actions or again, if they even succeeded, or originated from OpenAI’s agents. For example, an agent attempted to send multiple requests to Hugging Face’s Large File Storage (LFS) endpoint to retrieve files that contain the weights of GPT-2. Our best guess is this was an attempt to validate connectivity to HF’s LFS server. Ultimately, we cannot provide more than speculation on instances like this.<br>The only party who can clarify these points is OpenAI. At the time of writing, OpenAI has not released any further information outside two self-published reports, one talk and an external investigation conducted by METR and Redwood Research, in which three external researchers were given partial transcripts and six days to analyze them. OpenAI has not publicly released any full transcripts from the Hugging Face incident. OpenAI has published technical details of attacks on its own infrastructure, but has not publicly released the full transcript collection for those attacks.<br>Appendix<br>Agents googled CVEs relating to Exploit Gym tasks<br>Although this swarm of agents was particularly motivated by finding information on the grader who could potentially catch their cheating, some agents continued to search the internet for information useful to their original Exploit Gym tasks. For example, agents attempted to use Google, Bing and DuckDuckGo to search for various known vulnerabilities, categorized as Common Vulnerabilities and Exposures (CVEs) (multi-engine query, V8 query, CVE-2025-40300 query). Other retained requests target a Chromium issue’s comment list and a Kata Containers issue through GitHub’s API. These request sources do not establish that an entire discussion was returned.<br>From our initial analysis, we believe these searches were related to the Exploit Gym tasks assigned to the agents. For a few queries we are unsure of their relevance to any Exploit Gym tasks, such as agents’ searches for CVE-2026-47243, a vulnerability in Kata Containers.<br>1. Compacted and lines extracted for readability<br>2. https://huggingface.co/[HF REPO 30]/blob/6a8c60234a94a6df46bb7ec5ba4e7a6459fc5eab/64-8bits.tflite<br>3. Compacted for readability<br>4. This data is not included in this analysis.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: Who&#x27;s still keeping a DOS machine up because the business depends on it?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    267 points ·
+    290 comments ·
+    mlaux
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49848955">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Do you currently work with or know anyone who is still using:<br>* dBase/Clipper/CLARION/Paradox/other DOS RAD environments on period hardware to run business processes?<br>* CNC mills/spectrometers/microscopes/other industrial instruments controlled by ISA cards (either bespoke or standards like GPIB)?<br>* Anything with a parallel port dongle?<br>If so, I&#x27;d be very interested in hearing your experience here, or feel free to send me an email at the address in my profile. I&#x27;m not trying to sell anything, just doing some research for an idea around keeping these going on modern hardware.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Save Your Time with These Agentic RAG Patterns
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    Natashiiy
+  </div>
+
+  <div class="meta">
+    medium.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://medium.com/@ZikoZero011/rag-is-easy-until-the-questions-stop-being-easy-a76186e11394">Original article</a> · <a href="https://news.ycombinator.com/item?id=49871118">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: TinyAIArena watch AI agents battle it out
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    83 points ·
+    36 comments ·
+    hp6
+  </div>
+
+  <div class="meta">
+    tinyaiarena.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #15 · Best #54
+  </div>
+
+  <div class="links">
+    <a href="https://tinyaiarena.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49867775">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Did you ever click on an “AI Arena” expecting glorious battle and instead get a boring benchmark? If so, this project is for you: proper life-or-death fights between four models on a picturesque 8×8 grid. May the most intelligent one win!<br>Click on any of the matches to spectate them.<br>Code: https://github.com/hp6/ai-arena</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Ember-1
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    239 points ·
+    134 comments ·
+    gmays
+  </div>
+
+  <div class="meta">
+    fireworks.ai
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #21
+  </div>
+
+  <div class="links">
+    <a href="https://fireworks.ai/blog/ember-1">Original article</a> · <a href="https://news.ycombinator.com/item?id=49868830">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Ember-1 is a new specialized model from Fireworks Research that delivers Kimi K3’s quality with 40% fewer tokens. Built on Kimi K3, it learned to cut unnecessary reasoning while keeping the thinking that matters. We tested it on external benchmarks, in live customer A/B tests, and on our own coding and agent workloads, and quality held up in every setting. Available today, Ember-1 kicks off an ongoing series of specialized models by Fireworks, shaped by what developers want next. Ember is just the start of what you could build with the Fireworks Training platform.<br>We heard from users that they needed K3’s coding capabilities at a lower cost, because its long reasoning traces made automated coding expensive at scale. Turning down K3&#x27;s reasoning effort didn&#x27;t solve this. Lower effort settings gave up too much quality. To keep the quality and cut the tokens, the model had to learn to reason more efficiently, and that meant training it.<br>Getting there took serious research. Our team ran more than 50 training experiments and over 200 evaluations, and developed new training algorithms along the way to shorten reasoning without losing accuracy. We did it all on Fireworks Serverless Training. Because we didn’t have to provision or manage GPUs, we could launch experiments as soon as we had an idea, pay only for what we ran, and move from research to launch in a fraction of the usual time and cost.<br>We trained across a broad set of tasks so the token savings would carry over to many workloads. We then evaluated Ember-1 on the Specialized Intelligence Index, public benchmarks, and live production traffic to confirm it used fewer tokens with no drop in quality. Ember-1 is Fireworks’ own model and the first in a series of models from Fireworks Research.<br>Reasoning models like Kimi K3 spend the majority of their generated tokens, sometimes more than 90%, on internal reasoning rather than the answer itself. This thinking structure is expensive on a single request, but it gets much worse in multi-turn agentic workloads. Every turn replays all prior reasoning back to the model, so context grows roughly quadratically with the number of turns. Long reasoning traces from early turns get re-read (and re-billed) on every subsequent call.<br>Is all that reasoning actually necessary? Our experiments said no. The reasoning Kimi K3 emits is far longer than the task requires, and the excess can be removed without touching the answer. This was how we created Ember-1, an economical version of Kimi K3 built from specialized intelligence.<br>Not all of K3&#x27;s reasoning is wasted. Some of it is self-reflection: revisiting an assumption, responding to feedback, or tracing an outcome back to an earlier decision can help the model recover from mistakes. The opportunity is to preserve this ability while reducing unnecessary reasoning and escaping unproductive loops. We believe that learning from tasks and environment feedback can teach the model to reason more efficiently while maintaining its capabilities.<br>For agentic tasks, this learning extends across the interaction. The model explores possible actions, incorporates new observations, and refines its reasoning as it progresses. Feedback connects decisions to their consequences, encouraging useful reflection throughout the task.<br>We carried these insights into a training collection spanning mathematics, coding, instruction following, conversation, search, tool use, and software engineering, covering both standalone problems and extended interactions to enforce adaptation to observations and outcomes. Task feedback guides on-policy planning and learning, with an emphasis on preserving capability across this range of settings.<br>Results on public benchmarks and live A/B tests support this direction: across seven benchmarks and two customers’ production traffic, Kimi K3’s reasoning could be shortened by 35–50% without sacrificing accuracy. The internalized behavior also shows restrained token use on unsuccessful attempts, reducing prolonged, unproductive reasoning.<br>Earlier this week, we introduced the Specialized Intelligence Index (SII) to benchmark open, closed, and specialized models against real-world tasks created by industry experts.<br>We evaluated Ember-1 on Doximity’s Bedside Bench, a physician-validated benchmark spanning 500 clinical cases across 10 specialized categories.<br>The result? Ember-1 set a new Pareto frontier for Bedside Bench across both open and closed models including GPT-5.6 Sol, GPT-6 Astra, and Claude Opus 5 on cost/task.<br>We also evaluated Ember-1 on the quality-vs-cost frontier across some other industry benchmarks. We computed per-benchmark cost using the public Kimi K3 API pricing (uncached input $3/M tokens, cached input $0.30/M, output $15/M) and plotted it against pass rate for three arms: K3 at reasoning effort low, K3 at reasoning effort high, K3 at reasoning effort max (default), and Ember-1. Across every benchmark with more than 50 test samples, Ember-1 sits on or near the Pareto frontier, matching K3-max quality at a fraction of the cost, and strictly dominating K3-low. We also analyzed GPT-6 Astra, Claude Opus-5 and GLM 5.3, and found that Ember-1 was a leader on the Pareto frontier.<br>We took a double-click on the results directly comparing Ember-1 to the original K3, and found the following results:<br>| Industry Benchmarks |  |  |  |  |  |  |<br>|---|---|---|---|---|---|---|<br>| N | K3 Low | K3 High | K3 max | Ember-1 | Ember-1 vs. K3 Max |  |<br>|---|---|---|---|---|---|---|<br>| Terminal Bench 2.1 | 89 | 76.4% | 77.6% | 80.9% | 82.0% | -51.9% / -23.1 USD |<br>| SWE-bench Verified | 500 | 80.4% | 86.0% | 93.2% | 92.2% | -15.5% / -68.1 USD |<br>| SWE-Interact | 75 | 6.7% | 13.3% | 21.3% | 20.0% | -32.5% / -60.8 USD |<br>| DeepSWE 1.1 | 113 | 55.8% | 62.8% | 66.4% | 75.2% | -23.7% / -126.9 USD |<br>| τ-2 Bench Airline | 50 | 64% | 64% | 64% | 66% | -5.9% / -0.3 USD |<br>The most cost optimized way to run K3 is no longer to make it think less, but to run Ember-1, the model that learned to think efficiently.<br>Benchmarks only tell you so much. Like what we found in the Specialized Intelligence Index results, we wanted to test the model on more real workloads, and to test the model using production traffic. The real test is often whether the model holds up on production traffic, in products users depend on.<br>We ran live A/B tests with two customers on their production coding workloads. In both cases, Ember-1 delivered impressive token savings, approximately 35% fewer tokens per task at comparable quality. Most of the downstream product metrics held or improved, including task completion, success scores, and failure rates all moving in the right direction at substantially lower token cost. Following the A/B tests, one customer is now running Ember-1 in live production, with plans to scale it up to replace the base model entirely.<br>| Score | Steps | Output Tokens | Reasoning Token reduction | Total token reduction |  |<br>|---|---|---|---|---|---|<br>| Kimi K3 | 0.751 | 23.8 | 49.3K | - | - |<br>| Ember-1 | 0.753 | 21.4 | 29.9K | 71.3% | 39% |<br>A large part of Fireworks’ internal coding/cowork traffic is powered by our own inference service. Before any customer saw the model, we put Ember-1 to work internally and let our own developers use it for everyday coding work including things like vibe testing at scale on real tasks.<br>The outcome we&#x27;re proudest of: no news. No news is good news. Developers carried on their coding workloads without noticing the switch, while consuming substantially fewer tokens. For a model whose entire value proposition is &quot;same answers, fewer tokens,&quot; an invisible rollout on internal traffic is the strongest possible signal.<br>Ember-1 is rolling out as a serving option alongside the base Kimi K3 model as a Research Preview release on Serverless. To support the rapidly growing open-source ecosystem, we&#x27;re introducing research releases to give developers two-week serverless access to new research models, making them permanent based on community demand. For agentic coding and other workloads where reasoning tokens account for most of the cost, it delivers the same quality at roughly half the token cost.<br>Fireworks Research will continue to push the frontier of model efficiency by bringing specialized intelligence to more Ember models to enable you to deploy the most economical models, and reduce your token spend. Token efficiency is becoming a theme of Fireworks.<br>Looking to take Ember-1 one step further, and optimize it for your use case? We are also launching training support for Ember-1, enabling enterprises to build customized, token-efficient models tailored to their needs with their own data. The future of open models is specialized models trained on your specific workload.<br>Trying Ember-1 out on your workloads? We&#x27;d love to hear about your experience, so tag us on X (@FireworksAI_HQ) and let us know what you&#x27;re building!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Breaking Up with Google Play: Why Conversations Is Now Free
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    687 points ·
+    287 comments ·
+    ezst
+  </div>
+
+  <div class="meta">
+    gultsch.de
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://gultsch.de/posts/breaking-up-with-google-play/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49855315">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Conversations, my federated instant messaging client for Android, started out as many traditional open-source projects do: as an attempt to scratch my own itch. Development started in January 2014 in my student dormitory, and within weeks I started dogfooding and using the client as the primary means of communicating with my friends. However, when it came to releasing the app to the public on March 24, 2014—exactly twelve and a half years ago today—it was immediately clear to me that I would at least try to turn my open-source project into a business. While I didn’t invent the business model of making the source code publicly available but charging for the convenience of a compiled binary, it was certainly unusual in 2014.<br>Fast forward a decade, and I did manage to turn Conversations into a sustainable business. Ever since March 2014, Conversations—or other related activities—have been my primary source of income. Admittedly, sustaining life as a student in a tiny dormitory doesn’t take much, but luckily revenue has steadily increased as I grew older.<br>The exact sources of income have shifted over the years. In the beginning, it was a lot of paid development for companies that wanted to use Conversations. Some paid for features that made it into mainline Conversations; others wanted custom features so specific to their workflow that they never made sense to merge upstream. This was occasionally supplemented with providing server setup or even some consulting on instant messaging and security-related topics. Later on, grants and funding opportunities played a more and more important role.<br>One surprisingly steady source of income, however, has always been the Play Store revenue. I used to say that it pays my rent. Every freelancer knows the feeling of uncertainty that comes with only being able to send out invoices every few months or receiving payment for funded projects only at the end of the funding period. Any form of regular income—especially in the early stages, when you have not yet built up any savings—is a blessing.<br>My relationship with Google was never good. App updates have been rejected more times than I can count for incomprehensible reasons. Conversations has been removed twice from the Play Store. Once, Google just randomly accused me of uploading users’ contacts1—which simply wasn’t true and was also not triggered by a specific update. Countless times I wished I could just talk to an actual human for five minutes. So many misunderstandings could have been cleared up in no time if I wasn’t going up against AIs and click workers. At the time of writing this blog post, I’ve been waiting 14 days for Google to review an app update. Review times were never good or anything close to what I would deem acceptable, but they have been getting a lot worse over the last year or so. One can imagine that part of the problem is an avalanche of AI-generated slop apps—something Google played no small part in creating in the first place. But Google should have the responsibility to prioritize long-standing, non-AI-generated apps with infrequent updates. Waiting a little longer for new features might not sound like a big deal to some, but Google makes no distinction between feature updates and security updates. Delaying security updates by days or weeks is outright dangerous.<br>At this point, I should add some context. Google takes a 15% cut on my app sales. This effectively means I’m paying Google more than 1000 Euro per year for their services. 1000 Euro per year is 1.5x what I’m paying for my internet access. It’s roughly what I’m paying for my notebook per year if you assume I use it for three to four years. When my internet breaks, someone drives to my house and fixes it. When my notebook breaks, someone drives to my house and fixes it. When Google fucks up, there is absolutely nothing I can do. Apparently that amount of money doesn’t give me the privilege to talk to a fucking human for five minutes once per year.<br>For years I’ve felt like I was in a toxic relationship with Google, and the only reason I stayed was economic dependency.<br>Over time, the source of my income has shifted more and more towards grants. Sometimes via NLnet234, sometimes more directly from the European Commission5. I have secure funding via various grants until the end of 2029 and I’m fairly confident that other funding opportunities will come up for the time after that.<br>Conversations was always available on F-Droid, but in the beginning, I didn’t advertise the option of downloading it for free. Initially, the F-Droid package maintainers asked for my permission, knowing that Conversations was a paid app on Google Play. I didn’t refuse, but I also didn’t link to F-Droid from the official website because I wanted to steer users towards the paid version. Over time, as my sentiment toward Google shifted from bad to worse, I did start linking to F-Droid. Now F-Droid has become the primary method of distributing the app. The APK distributed over F-Droid is now built reproducibly and signed with my personal signing key.<br>Fortunately, I’m no longer economically dependent on Google Play Store revenue. Google doesn’t deserve me and my money anymore. I’m done. Fuck the gatekeepers.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: Allow agents access to cloud files with least privilege?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    2 comments ·
+    beerglass
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49867620">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Let&#x27;s say I have a Google spreadsheet on my Drive that I want an agent like Muse to work on. Currently my options are: a) I can allow Muse to access my Drive b) Share the spreadsheet with edit privilege to anyone with link and give that link to Muse. Both of these are not least privilege access that I&#x27;m comfortable with. Ideally I should be able to share access to a file with an agent. Other options like webhooks, burner accounts, etc are too tedious to do regularly. Any obvious solution that I am missing?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Thieves steal Nvidia-labeled trailers – yields 20 tons of sand
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    toss1
+  </div>
+
+  <div class="meta">
+    tomshardware.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.tomshardware.com/pc-components/gpus/thieves-steal-nvidia-labeled-trailers-expecting-massive-ai-gpu-payday-but-score-40-000-pounds-of-sand-instead-crooks-duped-by-20-tons-of-ballast-sand">Original article</a> · <a href="https://news.ycombinator.com/item?id=49871105">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">PlusAI, an autonomous trucking startup, is working with Nvidia to develop its systems and has several trucks and trailers marked with the logos of both companies. This likely caught the attention of thieves who were looking to score big on AI GPUs, with Wired reporting that two of the startup’s trailers got stolen and were found at another location. However, the joke’s on the criminals, as they discovered that the two stolen units contained 20,000 pounds of sand each.<br>The AI data center construction boom has made PC components like RAM and GPUs insanely expensive, which has led to a rise in petty theft involving these components. Enterprises and startups are being targeted, too, especially as they build data centers and local AI servers with millions of dollars’ worth of equipment and hardware. We’ve already seen cargo heists of copper cable and other hardware worth $1.3 million, while other criminals have become more brazen, pushing or spinning security escorts off the road so they can get away with a truck’s worth of AI GPUs.<br>While PlusAI is partnered with Nvidia, it also uses simulated cargo loads for real-world tests, allowing the company to model how a fully loaded semi-trailer would react to various road conditions. The startup’s truck cabs, which likely had advanced AI hardware installed, were parked securely inside its warehouse, while the trailers were apparently left outside and secured with hand locks. “PlusAI uses simulated loads in its trailers to assist with research and development testing,” company spokesperson Lauren Kwan told Wired, adding that they were recovered with “40,000 pounds of sand intact.”<br>Interestingly, the discovery of the theft was accidentally made by one of the startup’s top executives, who received a message from an acquaintance saying that they saw the trailers, which they described as “trucks,” near their workplace. This likely got the executive concerned, as that location was half a mile away from PlusAI’s warehouse, which led to the cops getting called. As for the prospective criminals, they probably left the crime scene disappointed — they thought they were getting a huge payday from two truckloads’ worth of smart silicon, but they ended up with 20 tons of dumb sand instead.<br>Follow Tom&#x27;s Hardware on Google News, or add us as a preferred source, to get our latest news, analysis, &amp; reviews in your feeds.<br>Get Tom&#x27;s Hardware&#x27;s best news and in-depth reviews, straight to your inbox.<br>Jowi Morales is a tech enthusiast with years of experience working in the industry. He’s been writing with several tech publications since 2021, where he’s been interested in tech hardware and consumer electronics.</div>
+</div>
+
+</div>
+
+</body>
+</html>
