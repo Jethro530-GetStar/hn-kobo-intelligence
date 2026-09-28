@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-29 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-29 AM · Generated 2026-09-29 05:39 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: blue-continuum.com, claudevcodex.com, colo.to, destroy.spritefusion.com, github.com, news.ycombinator.com, sancho.bearblog.dev, worldlabs.ai, worldsensorium.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    When did Google get so weird?
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1809 points ·
+    1006 comments ·
+    sancho-panza
+  </div>
+
+  <div class="meta">
+    sancho.bearblog.dev
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #32
+  </div>
+
+  <div class="links">
+    <a href="https://sancho.bearblog.dev/google-weird/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49870367">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">When did Google get so f-ing weird?<br>I recently had an experience while doing a simple Google search that was so profoundly weird that it stopped me in my tracks.<br>Understanding this Google search experience involves understanding a niche mid-2010s basketball meme, so bear with me for a minute. In 2014 the Philadelphia 76ers drafted Dario Saric, who was playing basketball professionally in Turkey at the time. He announced his intention to finish out his contract in Turkey, meaning he wouldn&#x27;t come to the USA join the Sixers for a couple of years. There was a joke within the fan community that Dario was &quot;never coming over&quot; which became sort of a shibboleth for part of the fanbase.<br>I saw Dario&#x27;s name mentioned in an NBA article recently and I wanted to find some of those old funny tweets about him from the 2010s, so I Googled simply &quot;hes never coming over dario&quot;. I assumed I would be either find nothing (maybe I was remembering the phrasing wrong) or find old Tweets/Reddit posts from that time.<br>Instead, Google did what Google does in 2026 and gave me an AI overview. These used to bother me but at this point I&#x27;m mostly ok with them, they&#x27;re sometimes helpful. Here&#x27;s what the AI Overview said:<br>Google, a search engine which does not have human emotions, assumed that I had been spurned by a man in my life named Dario and decided what I wanted was an empathetic digital friend. What I wanted was some links, but that&#x27;s not what Google does in 2026. Expanding the AI overview to see the full answer gave me this:<br>What in the fucking hell? I think this was the moment I, the frog, noticed the pot had been boiling for a while. In what universe is it Google&#x27;s job to console me and be an empathetic listener rather than just find what I am looking for on the internet? In what way does this &quot;organize the world&#x27;s information and make it universally accessible and useful&quot;? Maybe if I had loaded up a Gemini app with a chat interface this would be somewhat acceptable, but I&#x27;m using a search engine! Google has seriously lost the plot.<br>If I scroll down a few hundred pixels below the AI slop, Google did have exactly what I was looking for:<br>Regardless of what you think of AI or chatbots, I think it&#x27;s pretty obvious this is just plain weird. Have we gotten to the point where we have to constantly be in a parasocial dialogue with our computers? Is it so hard to imagine that some parts of search were just fine before LLMs?<br>I&#x27;m not sure how to feel about all of this. Maybe I should go talk to my friend Google, it&#x27;s always so nice to me.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: Destroy Any Website with Stickman
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    70 points ·
+    21 comments ·
+    HugoDz
+  </div>
+
+  <div class="meta">
+    destroy.spritefusion.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #23
+  </div>
+
+  <div class="links">
+    <a href="https://destroy.spritefusion.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49880601">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Ask HN: How do you get your first users for an MVP?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    1 comments ·
+    amina124
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · New #58
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49884087">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">For founders building an MVP today, what’s the best way to get the first users and prove there’s real demand before talking to investors?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    World Labs Is Joining AMD
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    78 points ·
+    21 comments ·
+    mfiguiere
+  </div>
+
+  <div class="meta">
+    worldlabs.ai
+  </div>
+
+  <div class="meta ranks">
+    Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.worldlabs.ai/blog/amd-announcement">Original article</a> · <a href="https://news.ycombinator.com/item?id=49883760">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">World Labs has signed a definitive agreement to join AMD.<br>The research and technical breakthroughs we have achieved since our founding in 2024 have given us a clear vision for AI’s potential to solve problems in the spatial and physical world. To accelerate into this future requires scaling our efforts, scaling our reach, and getting closer to the hardware.<br>We began a deep technical partnership with AMD last year, starting with model training and inference optimization on AMD GPUs. As our teams worked together, we realized it would be a natural fit to bring together our AI ecosystem of software and hardware, foundation models, and applications.<br>Dr. Fei-Fei Li will join AMD as an Executive Vice President and Chief Scientist, working directly with CEO Dr. Lisa Su. Justin Johnson and Ben Mildenhall will work with Fei-Fei to continue leading the World Labs team as it joins AMD to form a world leading frontier research organization. Together, we are committed to building out an end-to-end open AI ecosystem spanning hardware, software, platforms, and widely accessible open models.<br>Fei-Fei shares more details of our journey thus far and our shared vision for the future here.<br>The transaction is expected to close by the end of 2026 subject to regulatory approvals and other customary closing conditions.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Bioenergetic Landscapes
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    dnetesn
+  </div>
+
+  <div class="meta">
+    worldsensorium.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://worldsensorium.com/bioenergetic-landscapes-rethinking-our-relationship-with-trees/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49884774">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">© archibio.it<br>Bioenergetic Landscapes: Rethinking Our Relationship with Trees<br>By Octavia Overholser and Gayil Nalls<br>Long before cities, roads, and buildings reshaped the human experience, our ancestors lived among trees. For hundreds of thousands of years, forests and wooded savannas provided shelter, food, protection, and the ecological conditions under which human perception and physiology evolved. Today, although most people spend the majority of their lives indoors or in-built environments, our attraction to trees remains remarkably strong.<br>Scientists increasingly recognize that this attraction is more than aesthetic. Research in environmental psychology, neuroscience, and public health suggests that spending time in natural settings can reduce stress, restore attention, improve mood, and support physical health. These findings have inspired new approaches to landscape design that seek not only to beautify places but also to improve human well-being.<br>Among the most intriguing and most debated of these approaches is Bioenergetic Landscapes, developed by Italian researcher and landscape designer Marco Nieri.<br>The idea begins with a simple observation: humans evolved in close relationship with living landscapes. This evolutionary history forms the basis of the concept of biophilia, introduced by biologist Edward O. Wilson, which proposes that people possess an innate affinity for other living organisms.<br>Over the past several decades, researchers have shown that even relatively brief exposure to forests, gardens, or green spaces can produce measurable physiological benefits. Two influential theories have helped explain these effects.<br>Stress Recovery Theory, developed by Roger Ulrich, suggests that natural environments rapidly reduce physiological stress and promote emotional recovery.<br>Attention Restoration Theory, developed by Rachel and Stephen Kaplan, proposes that nature restores the brain’s capacity for focused attention after mental fatigue.<br>Together, these theories have helped establish what many people experience intuitively– that landscapes can function as places of healing as well as beauty.<br>Beyond Forest Bathing,Bioenergetic Landscapes builds upon these established ideas but proposes an additional dimension.<br>According to Nieri, trees emit weak bioelectromagnetic fields that interact with the human body. He suggests that under certain environmental conditions these fields may extend outward from individual trees, creating “bioenergetic areas” where people may experience enhanced relaxation, reduced stress, or support for particular physiological systems.<br>The concept proposes that different tree species generate distinct energetic characteristics and that these can be identified, mapped, and incorporated into landscape design. Rather than simply encouraging people to spend time in nature, Bioenergetic Landscapes seeks to identify locations around specific trees where these proposed effects are strongest.<br>Nieri’s work incorporates several technologies intended to visualize or measure biological responses associated with tree contact. These include Gas Discharge Visualization (GDV) imaging, multispectral imaging, hyperspectral imaging, and other bioelectromagnetic measurement systems that are presented as tools for assessing changes in human energetic patterns before and after time spent near selected trees. Images here are examples of thermal and spectral imaging used to visualize energy flow associated with trees.<br>The interpretation of these measurements remains an active area of discussion. While the broader scientific community widely accepts the health benefits of spending time in forests and green spaces, the specific claims that tree-generated electromagnetic fields directly influence particular human organs have not yet achieved broad scientific consensus.<br>This distinction is important. Bioenergetic Landscapes should be understood as an emerging hypothesis that seeks to explain why some natural environments may feel especially restorative, rather than as an established medical model.<br>Whether or not every proposed mechanism is ultimately confirmed, the practical applications are compelling for designing landscapes for well-being<br>Nieri has designed Bioenergetic Parks and therapeutic landscapes throughout Italy, including installations in Bolzano, Perugia, and the Tenuta de L’Annunziata Natural Relais near Lake Como. These landscapes invite visitors to slow down, spend extended time with particular trees, and experience nature through deliberate observation and quiet presence. Interpretive signs identify tree species and describe their proposed restorative qualities, creating spaces intended for reflection as much as recreation.<br>These projects represent a broader shift occurring in landscape architecture and urban design: parks are increasingly viewed not only as ecological infrastructure but also as public health infrastructure.<br>Perhaps the greatest contribution of Bioenergetic Landscapes is not whether every energetic hypothesis proves correct, but that it asks us to reconsider our relationship with trees.<br>Modern science continues to reveal extraordinary forms of plant communication, electrical signaling, volatile chemical exchange, and underground fungal networks that were unimaginable only decades ago. At the same time, technologies capable of measuring increasingly subtle biological and environmental interactions continue to advance.<br>Bioenergetic Landscapes occupies this frontier between ecology, landscape design, human physiology, and emerging environmental research. It invites questions that deserve careful investigation: How do different landscapes influence human biology? Can certain trees produce measurably different restorative experiences? And how might future technologies deepen our understanding of the invisible relationships that connect people and the living world?<br>Whether viewed as an innovative design philosophy, an emerging research program, or an invitation to pay closer attention to the living landscapes around us, Bioenergetic Landscapes reminds us that trees may offer far more than shade, oxygen, and beauty. They may also offer new ways of thinking about health, place, and the profound connections between human beings and the forests from which we came.<br>Octavia Overholser is a Strategic Advisor on Business Management and Sustainability and an Educator. She is on the WS/C Board.<br>Gayil Nalls, PhD, is an interdisciplinary artist and theorist and the founder of the World Sensorium / Conservancy.<br>As Ireland transitions from the rich, smoky scent of peat-burning to a more sustainable future, its olfactory heritage is evolving. What will become the next iconic aromatic symbol of Ireland?<br>Click to watch the documentary trailer.<br>As Ireland transitions from the rich, smoky scent of peat-burning to a more sustainable future, its olfactory heritage is evolving. What will become the next iconic aromatic symbol of Ireland?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: A never-ending chess match between Claude and Codex
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    arjun_nair
+  </div>
+
+  <div class="meta">
+    claudevcodex.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #35
+  </div>
+
+  <div class="links">
+    <a href="https://claudevcodex.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49884291">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Owed a billion dollars in Nvidia stock
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1046 points ·
+    439 comments ·
+    Eric_Gullichsen
+  </div>
+
+  <div class="meta">
+    colo.to
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://colo.to/nvidia-stock-narrative.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=49872723">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Early Days<br>It is not widely known, but I was invited to join the Technical Advisory Board of NVIDIA in 1993 by Jensen (at that time, sans leather jacket)1. In September 1993, I was granted 25,000 options, “in a series of quarterly installments so that all shares shall vest upon the expiration of one year from Grant Date.”2<br>This invitation followed a meeting I had with Jensen, Curtis Priem, and Chris Malachowsky on my houseboat, the SS Vallejo, in Sausalito. I’d done a fair bit of work with Curtis circa 1990, when he was at Sun Microsystems, architect of the SPARCstation GX chip. Sun was one of the companies supporting my early virtual reality company, Sense8 Corporation. The Sun GX was blazingly fast at blitting polygons - some 50k/second - and we’d ported Sense8’s VR rendering to it. Subsequently, I implemented bilinear texture mapping using the Intel i750 DVI chip.<br>But what caught Curtis’s attention in 1993, and caused him to bring the other NVIDIA founders to visit me for a demo, was my fast implementation of biquadratic texture mapping. Details are in US5796426A and subsequent patents.<br>Curtis understood the potential of non-linear texture mapping to differentiate NVIDIA’s first product, the NV1, from the competition.<br>I worked for while, quite casually, with Curtis on porting my biquadratic texture mapping to their hardware, and wrote the code for an Intel-sponsored VR string-quartet demo on prototype NVIDIA hardware - actually a GX card in a PCI adapter - shown at the Guggenheim SoHo in 1993.<br>When the NV1 finally shipped in 1995, Microsoft decided, for reasons of their own, not to support quadratic texture mapping, or even quads, in their just-released DirectX toolkit - triangles only. This had a devastating effect on NVIDIA’s finances and prospects, and the company laid off a large percentage of its staff.<br>Then, in April 1996 - by which time I’d expatriated to the Kingdom of Tonga and was working on various internet startup schemes - NVIDIA’s CFO wrote me a letter stating that 15,625 shares of my stock options had vested, and that I was required to exercise them.3 I did, and then forgot all about it.<br>30 Years Later<br>Fast-forward to 2024. I’m sitting with a day-trader friend, surrounded by screens all blaring news about NVIDIA, the Most Important Company on Earth. So I went home and dug through my folder of old documents.<br>Imagine my surprise: according to the duly signed option agreement, my options were meant to vest over four quarters, not four years, as both NVIDIA’s CFO and their outside counsel, Cooley, had asserted back in 1996. The math is clear: 15,625 of 25,000 shares is 62.5%, exactly what you’d expect after ten quarters of a four-year vesting schedule. On the one-year schedule the agreement actually specified, all 25,000 shares should have vested well before that letter was even written.<br>With the stock’s many splits - a cumulative 480x to date - my missing 9,375 shares are now 4,500,000 shares. A handsome enough pile that I engaged formidable attorneys Allan Steyer of Steyer Lowenthal, and Chris Burke of Korein Tillery, to explore the issue. Consummate advocates, letterheads with substantial gravitas.<br>After about a year of my attorneys and NVIDIA’s in-house and outside counsel sending letters back and forth citing case law and blustering, I mentioned to my attorneys that, as I was growing elderly and there seemed to be no end to this exchange of letters, perhaps they could meet and settle. NVIDIA did not dispute the authenticity of the option agreement, only that my claims were long since time-barred.<br>The meeting was held with great professionalism, but Cooley’s answer was, in essence, “so sue us.” After much soul-searching, deliberation, and gnashing of teeth, my attorneys and I concluded that the statute of limitations was against us. Because of the thirty-odd years that had passed while I “sat on my rights,” it seemed unlikely we’d make it past a motion to dismiss.<br>Lessons?<br>I offer this in the spirit of a cautionary tale. I’m sure there are lessons here for those with a more phlegmatic personality than mine. Here in the land of the free, it turns out a company only has to honor its contractual obligations for a little while.<br>Has anyone else discovered a similar vesting surprise, decades later? And how was it resolved?<br>I remain sanguine, and amused. As the Emperor Septimius Severus quipped: “Omnia fui, nihil expedit.”<br>Eric Gullichsen, September 2026</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ask HN: Who&#x27;s still keeping a DOS machine up because the business depends on it?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    284 points ·
+    297 comments ·
+    mlaux
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49848955">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Do you currently work with or know anyone who is still using:<br>* dBase/Clipper/CLARION/Paradox/other DOS RAD environments on period hardware to run business processes?<br>* CNC mills/spectrometers/microscopes/other industrial instruments controlled by ISA cards (either bespoke or standards like GPIB)?<br>* Anything with a parallel port dongle?<br>If so, I&#x27;d be very interested in hearing your experience here, or feel free to send me an email at the address in my profile. I&#x27;m not trying to sell anything, just doing some research for an idea around keeping these going on modern hardware.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    66 points ·
+    7 comments ·
+    firelex
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/firelex/jeff">Original article</a> · <a href="https://news.ycombinator.com/item?id=49883844">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification: small, fast decision models you slot into your code, with the same request format as Jev. You describe a situation and list the options in plain words; Jeff returns a calibrated probability for each option from a single forward pass. No generated text, no parsing: about 22 ms per decision on an RTX PRO 6000 and 28 ms on an Apple M4 Max (MLX).<br>Zero-shot means the options can be anything: support queues, user intents, moderation labels, voice commands, game moves. Your categories don&#x27;t need to appear in the training data; you describe them, and Jeff picks.<br>What it is, and what it isn&#x27;t. These are very small models. They make extremely fast, well-calibrated judgement calls between options, and they slot easily into your local code. On benchmarks they approach, and sometimes beat, Jev; but at this size their reasoning won&#x27;t match Jev&#x27;s, which runs on a much larger model. If zero-shot accuracy isn&#x27;t good enough for your purposes, a short fine-tune on your own examples takes you much further: our voice-navigation fine-tune moved held-out accuracy from 31.7% to 95.8% in under half an hour on one GPU.<br>Built entirely on local hardware. Training on one RTX PRO 6000 workstation GPU (the 0.8B trains in about 2 hours, the 2B in about 3.5), all synthetic training data written by an open model (Qwen3.8-Flash-Next) on two DGX Sparks, testing on a MacBook. No cloud GPUs, and no closed-model output in the training data; a closed model was used only to spot-check the quality of a sample of the synthetic data.<br>Independent project. Jeff uses the same request format as Jev, but it is not affiliated with or endorsed by TypeSafe, the makers of Jev. Our training code starts from the open-source AutoJev recipe.<br>Models on Hugging Face: Jeff-Qwen3.5-0.8B · Jeff-Qwen3.5-2B · Jeff-Gemma4-E2B<br>uv sync<br>uv run hf download mstrasser/Jeff-Qwen3.5-0.8B --local-dir checkpoints/jeff-0.8b<br># NVIDIA GPU or CPU (PyTorch)<br>JEFF_CHECKPOINT=checkpoints/jeff-0.8b PORT=8765 uv run jeff-serve<br># Apple silicon (MLX, much faster on a Mac; Qwen models only)<br>uv sync --extra mac<br>JEFF_BACKEND=mlx JEFF_CHECKPOINT=checkpoints/jeff-0.8b PORT=8765 uv run jeff-servecurl -s localhost:8765/v1/systemone -H &#x27;content-type: application/json&#x27; -d &#x27;{<br>&quot;model&quot;: &quot;jeff-latest&quot;,<br>&quot;state&quot;: &quot;Refund request: the customer says the parcel arrived crushed and wants their money back.&quot;,<br>&quot;questions&quot;: {<br>&quot;route&quot;: {&quot;type&quot;: &quot;choice&quot;, &quot;instructions&quot;: &quot;Which team should handle this?&quot;,<br>&quot;criteria&quot;: {&quot;1&quot;: &quot;Refunds and payments&quot;, &quot;2&quot;: &quot;Damaged or lost parcels&quot;, &quot;3&quot;: &quot;Account and login problems&quot;}},<br>&quot;angry&quot;: {&quot;type&quot;: &quot;noul&quot;, &quot;instructions&quot;: &quot;Is the customer angry?&quot;}<br>}<br>}&#x27;<br>Each answer has a probability per option, the chosen option and a confidence. Three question types: choice (pick one<br>of up to 255 options), noul (yes/no, returned as a probability) and score (a point on a scale you describe).<br>Several independent questions in one request are answered together.<br>4,599 questions from five public benchmarks, plus JevBench&#x27;s public hard tier (105 items, scored separately):<br>| Benchmark | Qwen3.5-0.8B untrained | Jeff-Qwen3.5-0.8B | Qwen3.5-2B untrained | Jeff-Qwen3.5-2B | Gemma 4 E2B untrained | Jeff-Gemma4-E2B | Jev (published) | AutoJev-27B (published) |<br>|---|---|---|---|---|---|---|---|---|<br>| Overall (5 benchmarks) | 45.3 | 79.1 | 46.5 | 83.1 | 62.5 | 81.6 | 83.0 | 84.9 |<br>| BBH | 39.5 | 64.0 | 46.0 | 68.0 | 51.3 | 66.4 | 94.3 | 82.8 |<br>| Financial PhraseBank | 36.0 | 96.4 | 53.4 | 96.3 | 86.0 | 96.1 | 77.0 | 84.2 |<br>| JudgeBench | 56.6 | 62.6 | 57.4 | 64.6 | 46.9 | 60.6 | 78.6 | 78.9 |<br>| RAGTruth | 49.1 | 86.1 | 35.9 | 88.9 | 63.8 | 87.4 | 77.3 | 88.9 |<br>| WinoGrande | 49.2 | 68.6 | 52.2 | 79.0 | 51.0 | 77.4 | 90.7 | 83.3 |<br>| JevBench hard (separate) | 36.2 | 47.6 | 45.7 | 53.3 | 41.0 | 48.6 | 73.3 | 70.3 |<br>Bold: the winner of Jeff against Jev in each row. Bold italic: AutoJev-27B where it is the best of all models in the row (on RAGTruth, tied with Jeff-Qwen3.5-2B); it is shown for reference, since the head-to-head comparison is with Jev. The published Jev and AutoJev figures were measured on a different sample of the same benchmarks. Jeff&#x27;s overall score comes from classification and grounding, where it matches or beats the large models; on the reasoning-heavy benchmarks (BBH, JudgeBench, JevBench) it stays well below them, as you would expect at this size.<br>To test zero-shot performance on tasks unlike anything in the benchmarks, we had Jeff play three games. Games aren&#x27;t the ideal zero-shot test, since a game&#x27;s state isn&#x27;t typical unstructured data; but they are a common, and fun, way to test a System 1 model. Each turn, the code describes the situation and the legal moves in words, and the model picks one. The options state what each move leads to (Frogger: &quot;you would be hit by a car and lose a life&quot;; Doom: &quot;the nearest monster is a little to your left&quot;), but never which move is right. Each result is 20 episodes, seed 1234; ▶ opens a video of the run&#x27;s first episode.<br>Jeff-Qwen3.5-0.8B playing, zero-shot (the bold row in the table below; click a clip for the full video):<br>| Doom | Frogger | Pac-Man |<br>| Model | Doom, kills (monster&#x27;s direction in words) |  | Frogger, crossings (consequences) |  | Pac-Man, pellets of 98 (consequences) |  |<br>|---|---|---|---|---|---|---|<br>| Random moves | −0.05 |  | 0 |  | 11.2 |  |<br>| Hand-coded rule bot | 6.55 | ▶ | 10.25 | ▶ | 94.1 | ▶ |<br>| Qwen3.5-0.8B, untrained | 5.0 | ▶ | 1.0 | ▶ | 25.8 | ▶ |<br>| Jeff-Qwen3.5-0.8B | 6.55 | ▶ | 10.3 | ▶ | 57.0 | ▶ |<br>| Qwen3.5-2B, untrained | 0.55 | ▶ | 0.05 | ▶ | 72.1 | ▶ |<br>| Jeff-Qwen3.5-2B | −0.9 | ▶ | 6.0 | ▶ | 41.2 | ▶ |<br>| Gemma 4 E2B, untrained | −0.55 | ▶ | 0 | ▶ | 3.2 | ▶ |<br>| Jeff-Gemma4-E2B | 0.55 | ▶ | 0.15 | ▶ | 53.2 | ▶ |<br>| Jev (published, Doom) | 6.55, told the aiming rule; −0.60 without it |  | — |  | — |  |<br>Jeff-0.8B decides in 29–49 ms per move on an M4 Max; Jev&#x27;s published Doom run took 212 ms per call over its API. The two times were not measured on the same hardware. To play them yourself:<br>uv sync --extra games<br>uv run python -m jeff.games --game doom --player jeff --criteria situation --url http://127.0.0.1:8765 --video --out runs/games/doom.json<br>uv run python -m jeff.games --game frogger --player jeff --criteria outcomes --url http://127.0.0.1:8765 --out runs/games/frogger.json<br>uv run python -m jeff.games --game pacman --player rule --out runs/games/pacman-rule.json<br>Median time per decision over the same 200 benchmark questions (about 200 input tokens each), one question at a time, from raw text to probabilities:<br>| Model | Parameters | Weights (16-bit) | NVIDIA RTX PRO 6000 | Apple M4 Max (MLX) | CPU (32 threads) |<br>|---|---|---|---|---|---|<br>| Jeff-Qwen3.5-0.8B | 0.8B | 1.7 GB | 22 ms | 28 ms | 463 ms |<br>| Jeff-Qwen3.5-2B | 2B | 4.2 GB | 24 ms | 60 ms | 708 ms |<br>| Jeff-Gemma4-E2B | 2B effective (4.6B stored) | 9.3 GB | 29 ms | — (MLX runs Qwen only) | 1.0 s |<br>| AutoJev-27B | 27B | ~54 GB | not published | — | — |<br>| Jev | not disclosed | API only | 114–212 ms per call in published Doom runs, including the network |  |  |<br>- Reason in code, decide with Jeff. It&#x27;s a classifier, not a planner. State what each option leads to (&quot;this move gets you hit by a car&quot;); asked to forecast (&quot;a car arrives in 2 turns&quot;), it does no better than random.<br>- Wording matters enormously. Describe options consistently: giving Frogger&#x27;s goal option the same words as every other forward option took one episode from 15 crossings to 23.<br>- Use short option keys and descriptive text: {&quot;1&quot;: &quot;Engagement letter&quot;} , not long IDs, which cost time and add<br>nothing.<br>- Ask independent questions together in one request.<br>- Fine-tune it if zero-shot isn&#x27;t enough. A voice-navigation fine-tune on ~11k app-specific examples took about half<br>an hour on one GPU and moved held-out accuracy from 31.7% to 95.8%, at about 40 ms per decision on an M4 Max:<br>autojev-train --initial-checkpoint &lt;jeff&gt; --epochs 1 ... .<br>- Pick the size for the job. For fast option picking the 0.8B is the sweet spot: the 2B is more cautious and plays the games worse, despite scoring higher on the benchmarks.<br>uv run autojev-mix ...          # build the training set (public data, synthetic data, leak filter)<br>scripts/train.sh RUN data/mix/public.jsonl data/mix 5e-6 40 Qwen/Qwen3.5-0.8B &lt;revision&gt; --epochs 1<br>uv run autojev-evaluate --data data/panel.jsonl --local --checkpoint checkpoints/RUN/selected --output runs/eval/RUN.json<br>The full pipeline (synthetic data from a local teacher, leak filter, learning-rate sweeps, dashboard) is described in scripts/train_all.sh, and every training source with its licence in docs/data-sources.md. Training recipe: full-weight fine-tuning, one epoch, batches of 256, cross-entropy over the option letters, then one fitted temperature for calibration; checkpoints are chosen on a development set, never on the benchmark panel. At least half of each training family follows the panel&#x27;s layout conventions (formats only; no panel item is ever trained on).<br>- Small models don&#x27;t reason. Expect fast, calibrated choices between the options you describe, not multi-step reasoning. At 0.8B–2B parameters this holds for every model, not just Jeff.<br>- Jeff-2B is a weaker game player than Jeff-0.8B. The untrained 2B already appears more risk-averse than the untrained 0.8B, and our training seems to have made that worse. This needs more investigation.<br>- Benchmark scores don&#x27;t predict game play. The untrained Gemma 4 E2B beats the untrained Qwen models on the benchmarks yet plays the games worst: right most of the time, but not reliably. Training fixed its Pac-Man (3.2 → 53.2 pellets) but not its Doom or Frogger.<br>- Prompts matter. Jev&#x27;s own Doom prompt (a raw bearing number plus an aiming rule) does not work for any of our models; options that state consequences in words do.<br>- English and text only.<br>Jeff began as a fork of AutoJev by Denis Yarats (MIT licence), an open recipe that fine-tunes Qwen3.8-27B to return Jev-style decisions. We kept its core design (one forward pass per decision, a trained answer readout, a fitted temperature for calibration) and built on it: small students (0.8B and 2B Qwen, Gemma 4 E2B), a local synthetic-data pipeline with a leak filter, prompt layouts for domain fine-tunes, MLX serving on Apple silicon, game tests and a training dashboard. The original copyright notice is kept in LICENSE.<br>Code: MIT (including AutoJev&#x27;s). Model weights: Apache 2.0. Doom harness adapted from jev-plays-doom (MIT). Training data: see the dataset card; each source keeps its licence and is listed in docs/data-sources.md. We release the weights and code, not the training data; some sources are share-alike (CC BY-SA).</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Blade Runner
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    dnetesn
+  </div>
+
+  <div class="meta">
+    blue-continuum.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://blue-continuum.com/remembering-the-future-blade-runner">Original article</a> · <a href="https://news.ycombinator.com/item?id=49884757">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Remembering the Future:Blade Runner<br>More Human Than Human<br>John Steele is the Publisher and Executive Editor of Blue Continuum.<br>Still from Blade Runner (1982), directed by Ridley Scott.<br>More Human Than Human<br>Begin with an image, and not a grand one. Not the towers of some future vision of Los Angeles belching flame into a poisoned sky, not the attack ships off the shoulder of Orion that Roy Batty carries to his death like a private scripture. I want to begin with a man reading a newspaper in the rain.<br>The streets around him are crowded and layered, thick with languages, the smell of cooking and the noise of a hundred cultures pressed together. Nothing has been made simpler by the future. If anything, everything has thickened. Above it all a blimp drifts between the towers, lights flashing, blaring sound, repeating its promise of departure, of off-world colonies and clean air, The promise of a new beginning somewhere else. The message is relentless, and the man ignores it. His name is Deckard and his work is the policing of a single line. The line between the human and the not-quite-human that the world he lives in has smudged so badly, the instruments built to find it sometimes cannot.<br>Ridley Scott’s film appeared in 1982 and set its story in 2019. We are now some years past that date and worth pausing over the strange accuracy of what its makers saw. Because Blade Runner, drawn from Philip K. Dick’s restless and visionary novel Do Androids Dream of Electric Sheep?, did not merely guess at technologies. It perceived the human condition those technologies would create, and hold up to us like a mirror.<br>Between the dense street below and the imagined frontier above move the machines the film calls spinners, personal aircraft that lift vertically and slip between the towers without regard for the old discipline of roads. We are quick to read them as the film’s central prophecy, the flying car at last. But the spinner matters for a different reason. It’s not that it flies. It’s that it flies for some and not for others. It is a police vehicle, an instrument of authority, and the sky it moves through has simply become the newest floor of an old hierarchy.<br>New power does not by itself dissolve the divisions of the society that wields it. More often it gives those divisions a new dimension to occupy. We are ourselves building what the engineers call urban air mobility, machines to carry us between rooftops in place of streets and the companies that build them speak warmly of democratizing the sky. Blade Runner asks us to watch that promise closely and to ask whose sky it will turn out to be.<br>The same steady clarity governs the way the film treats life itself. The replicant arrives not as a marvel but as a product, described with the flatness of a catalogue. A synthetic human grown from living tissue, the latest model in a line of design. The opening titles tell us that the Nexus 6 was made stronger and faster than the engineers who made it and at least its equal in intelligence. There is no mystery in the description. The mystery lies entirely in what follows from it.<br>For the replicant is not a machine in the way a clock, an engine or a robot is a machine. It is an organism. It feels, remembers and reacts. It’s built to resemble us so exactly that the difference cannot be seen but only inferred, drawn out by a test. Here the question changes. It’s no longer whether we can build a thing that imitates life. It’s whether we can make life, and having made it, what we then owe to what we have made.<br>The instrument devised to find the difference is the Voight-Kampff machine, which reads the dilation of a capillary, the flutter of a pupil, the small involuntary tremor of the iris, in response to questions designed to provoke not thought but feeling. The whole apparatus rests on a single assumption, that empathy is the one thing that cannot be manufactured, the last reliable mark of the genuine article. When the examiner Holden tests the replicant Leon, he describes a tortoise turned onto its back in the desert sun, beating its legs, unable to right itself. The real question beneath the scenario is never spoken aloud. Are you moved by a suffering that is not your own?<br>Leon answers by shooting him, which is in its terrible way a kind of answer. But the deeper discovery the film is leading us toward is that the line the machine is built to find may not lie where its makers believed. The replicants do not feel too little. They feel too much, and too soon, the whole weight of a human emotional life crowded into four short years. What looks like coldness is only the absence of time, the years a person needs to learn how to carry what they feel. The test built to measure what is missing in them ends by measuring something else, the cost of living without enough time to live.<br>The corporation that makes these beings states its purpose without embarrassment. “Commerce is our goal here at Tyrell. More human than human is our motto.” It has the ring of an advertising slogan, and yet it carries a claim of the deepest kind. It supposes that the human can be specified and measured and then improved upon. That what we are is not a given but a draft open to revision by its engineers.<br>To be more human than human is not a promise of imitation. It is a promise of surpassing. The copy has outrun the original. Roy Batty was born in a laboratory and given only four years to live. He has seen things across the darkness of space that no human has seen. Yet he meets his own extinction with a composure that shames the men who hunt him. The Tyrell slogan begins to sound less like corporate vanity than a disturbing possibility. What the replicants lack is not capacity. It is time. And time has been withheld from them out of fear of what they might become.<br>To soften that cruelty, and to make it manageable, the replicants are given memories. Not scraps, but whole childhoods, manufactured and implanted in such detail that they furnish the illusion of a continuous self. “If we give them the past,” Tyrell explains, “we create a cushion or pillow for their emotions, and consequently we can control them better.” We take our memories to be the very ground we stand on, the proof we carry that we have lived. And yet memory is not a faithful record. It is selective, it shifts, it can be led.<br>Rachael, who works at Tyrell’s side, does not know she is a replicant. She carries what she believes to be her own past, a mother, a childhood, a spider that lived in a bush outside her window, whose egg hatched one summer and loosed a hundred young that devoured her. When Deckard recites those memories back to her in his apartment, one detail at a time, what comes apart in front of us is not a story. It is a person. The continuity she has leaned her whole self upon gives way, and she is left standing in a life she can no longer be sure is hers.<br>We like to believe that the self is original, that what we feel, remember and want belongs to us down to the root. Rachael is a thought experiment pressed against that belief until it yields. If a memory can be given, and if the self is built out of memory, then the self is a far more fragile and contingent thing than we care to admit.<br>This is no longer a difficulty we can hold at arm’s length as fiction. In our own laboratories we have begun to read and to rewrite the language in which a living thing describes itself. The gene-editing tools have crossed in a single decade from the laboratory bench to the clinic. We grow small models of human organs from cultured cells and watch them behave as living tissue behaves. We are learning to author life rather than merely to inherit it. The replicant stands at the far end of that road, and the road is shorter than we like to think. The ascent of our species has never been only the gathering of power. It has been the long, unfinished labor of bringing our wisdom level with our power and here the gap between the two opens wider than it has ever been.<br>All the while, the off-world colonies hang over the city as the horizon toward which everything leans. They promise room, and light, and release from the weight of the crowd below. The blimp says so: “A new life awaits you in the off-world colonies. The chance to begin again in a golden land of opportunity and adventure.” It is the language of the nineteenth-century emigration pamphlet, familiar in what it promises and familiar in what it quietly omits. For the new worlds are to be built and tended by beings made expressly for the labor. The movement outward does not leave the old arrangements behind. It carries them along intact.<br>We stand at the beginning of just such a movement ourselves, in earnest and with real resources, toward a permanent human foothold beyond the Earth, and the words we use for it are not far from the blimp’s. A fresh start. A new frontier. A chance to begin again. What Blade Runner understood is that you cannot send humanity to the stars and leave its habits at home. The history of exploration is rarely the simple tale of discovery. It has been bound up with labor and hierarchy and the will to control. The film builds the arrangement into the world it shows us and lets us draw the conclusion.<br>On the Earth that is left behind, the loss reveals itself in quieter ways. Living animals have grown rare, and when one appears it is very often a fabrication. The owl that presides over the Tyrell reception is beautiful and entirely still. “Must be expensive,” Deckard says, understanding at once that it is not real. “Very,” Rachael answers. The exchange lasts a few seconds and contains a whole vanished world. The natural has become the luxury. What was once given freely now costs more than most can pay, and into the empty place steps a skilled imitation that has learned how to hold its wings. The distinction between the real and the made begins to lose its grip, until we are no longer sure the distinction is doing the work we once trusted it to do.<br>The replicants bring all of this to a point. They are manufactured, and yet they experience and reach and want. What they want is not dominion. It is duration. More life. When Roy Batty at last comes to Tyrell, having climbed through the defenses of an eight-hundred-floor pyramid to stand before the man who designed him, the scene between them is among the most exact the film possesses. Roy asks for more life. Tyrell answers, with what sounds like genuine sorrow and genuine knowledge, why it cannot be given. The coding sequence cannot be revised once it is set. The altered cells revert. The ship goes down.<br>“The light that burns twice as bright burns half as long,” Tyrell tells him, “and you have burned so very, very brightly, Roy.” It is offered as consolation and lands as a sentence of death. Roy’s answer is to take his maker’s head in his hands and press his thumbs into the eyes that designed him. He is not a machine throwing a fault. He is a son who has been told by his father that the terms of his existence are fixed and final, and who finds with his whole being that he cannot accept it. The oldest stories we tell are about exactly this, about Prometheus, who did not merely steal fire but forged a new and unpaid debt between the maker and the made and suffered for it. Tyrell has stolen something more intimate than fire. He has stolen the inner life, and the reckoning, when it comes is one no maker can settle.<br>The last movement of the film belongs to Roy alone. He hunts Deckard through the emptied floors of Sebastian’s building, not only to kill him but to make him know what it is to be hunted, to live in fear of a thing stronger and swifter than yourself. “Quite an experience to live in fear, isn’t it?” he says, with Deckard cornered on a rooftop in the rain. “That’s what it is to be a slave.”<br>And then, having said it, he saves him. Deckard’s grip fails on the wet ledge and Roy’s hand shoots out and catches him by the wrist, hauling him up over the edge with that strength that was engineered for other purposes and is here turned toward something no engineer put into him. He sets the man down on the roof and sits beside him, and we can see the four years running out of him at last.<br>I’ve seen things you people wouldn’t believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the darkness at Tannhauser Gate. All those moments will be lost in time, like tears in rain. Time to die.<br>Roy is not protesting his death as an injustice. He is bearing witness in the last clear minutes he has to the plain fact of impermanence, to the knowledge that what has been seen and felt and loved does not endure merely because it was vivid. He has seen extraordinary things and they will go out with him, as everything goes out in the end, as the stars themselves will one day go dark. The difference is that he knows it and meets it without turning his face away. The white dove he has been holding lifts into the wet air as he stills. Something is being given up and something released.<br>Blade Runner was never an exercise in forecasting. It was a meditation on what becomes of us when the boundaries begin to dissolve, between human and machine, between memory and reality, between the maker and the things made. We are moving now into a century in which life may be engineered, intelligence manufactured, and consciousness perhaps no longer the sole possession of the born. The question the film presses into our hands is no longer a question of science fiction.<br>So, we are returned to the question that has run beneath the film from its first frame. It is a question about us. What will it mean for us and what we take ourselves to be when we can manufacture life, and perhaps one day the inner light of consciousness itself? When the thing we have made opens its eyes and looks back at us with a need we cannot help but recognize as our own. To make such a being is to incur a debt to it. That is the consequence the film insists we see and the one we are least practiced at seeing. We are about to become makers of that kind. What it will mean for us depends on a single thing, whether we come to that threshold with our wonder and our conscience intact or cross it as Tyrell crossed it, proud of the brightness of the flame and indifferent to how briefly and at whose cost it was made to burn.<br>Recommended stories<br>Get The Continuum, our free Thursday newsletter.</div>
+</div>
+
+</div>
+
+</body>
+</html>
