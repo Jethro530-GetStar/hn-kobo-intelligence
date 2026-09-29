@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-09-29 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-09-29 PM · Generated 2026-09-29 17:40 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: apps.apple.com, blog.conan.io, colo.to, hn.watch, jagi.studio, jonclegg.github.io, news.ycombinator.com, sancho.bearblog.dev, thetransmitter.org</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    When did Google get so weird?
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1882 points ·
+    1058 comments ·
+    sancho-panza
+  </div>
+
+  <div class="meta">
+    sancho.bearblog.dev
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #30
+  </div>
+
+  <div class="links">
+    <a href="https://sancho.bearblog.dev/google-weird/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49870367">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">When did Google get so f-ing weird?<br>I recently had an experience while doing a simple Google search that was so profoundly weird that it stopped me in my tracks.<br>Understanding this Google search experience involves understanding a niche mid-2010s basketball meme, so bear with me for a minute. In 2014 the Philadelphia 76ers drafted Dario Saric, who was playing basketball professionally in Turkey at the time. He announced his intention to finish out his contract in Turkey, meaning he wouldn&#x27;t come to the USA join the Sixers for a couple of years. There was a joke within the fan community that Dario was &quot;never coming over&quot; which became sort of a shibboleth for part of the fanbase.<br>I saw Dario&#x27;s name mentioned in an NBA article recently and I wanted to find some of those old funny tweets about him from the 2010s, so I Googled simply &quot;hes never coming over dario&quot;. I assumed I would be either find nothing (maybe I was remembering the phrasing wrong) or find old Tweets/Reddit posts from that time.<br>Instead, Google did what Google does in 2026 and gave me an AI overview. These used to bother me but at this point I&#x27;m mostly ok with them, they&#x27;re sometimes helpful. Here&#x27;s what the AI Overview said:<br>Google, a search engine which does not have human emotions, assumed that I had been spurned by a man in my life named Dario and decided what I wanted was an empathetic digital friend. What I wanted was some links, but that&#x27;s not what Google does in 2026. Expanding the AI overview to see the full answer gave me this:<br>What in the fucking hell? I think this was the moment I, the frog, noticed the pot had been boiling for a while. In what universe is it Google&#x27;s job to console me and be an empathetic listener rather than just find what I am looking for on the internet? In what way does this &quot;organize the world&#x27;s information and make it universally accessible and useful&quot;? Maybe if I had loaded up a Gemini app with a chat interface this would be somewhat acceptable, but I&#x27;m using a search engine! Google has seriously lost the plot.<br>If I scroll down a few hundred pixels below the AI slop, Google did have exactly what I was looking for:<br>Regardless of what you think of AI or chatbots, I think it&#x27;s pretty obvious this is just plain weird. Have we gotten to the point where we have to constantly be in a parasocial dialogue with our computers? Is it so hard to imagine that some parts of search were just fine before LLMs?<br>I&#x27;m not sure how to feel about all of this. Maybe I should go talk to my friend Google, it&#x27;s always so nice to me.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: Pac-Bench – How well can models one-shot a Pac-Man game?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    56 points ·
+    38 comments ·
+    thefourthchime
+  </div>
+
+  <div class="meta">
+    jonclegg.github.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #10
+  </div>
+
+  <div class="links">
+    <a href="https://jonclegg.github.io/pacman-bakeoff/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49885493">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Benchmarks how well Harness+models can create a Pac-Man game from a single prompt:<br>“Create a Pac-Man game in a single HTML page”<br>Each model gets one shot — no follow-up prompts or fixes.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Using any C++ library in Godot
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    19 points ·
+    3 comments ·
+    czoido
+  </div>
+
+  <div class="meta">
+    blog.conan.io
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · New #41
+  </div>
+
+  <div class="links">
+    <a href="https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=49890051">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Godot has become one of the most popular game engines of the last few years. It is free, open source under the MIT license, and small enough to download and start using in minutes. Most Godot games are written in GDScript, the engine’s own scripting language.<br>Sooner or later, though, many projects need something that already exists as a C or C++ library: a simulation library, a database, a networking protocol, a machine learning runtime. GDScript cannot call native code, but Godot can load it through GDExtension, and godot-cpp, the official C++ bindings, lets you expose that code as regular engine classes. Writing the C++ code is the easy part. The hard part is the build: godot-cpp has to match your Godot version, and every library you add has to be compiled for each platform you ship to.<br>In this post we give a short tour of Godot, explain how C++ extensions work, and show how to bring C++ libraries into a Godot game with Conan and godot-cpp 10, now available in ConanCenter. As an example we will use flecs, an Entity Component System library, to simulate 100,000 particles inside a Godot scene.<br>A Quick Introduction to Godot<br>Godot is a general purpose engine for 2D and 3D games. Everything in a Godot project is built from two concepts:<br>- Nodes are the basic building blocks. Each node has a type (Sprite2D ,Camera3D ,AudioStreamPlayer ,Timer …), a set of properties you can<br>edit in the Inspector, and callbacks such as_ready() or_process() that<br>the engine calls during the game loop.<br>- Scenes are trees of nodes saved to disk as .tscn files. A scene can be<br>a character, a menu or a whole level, and scenes can be instanced inside<br>other scenes.<br>Behavior is usually added by attaching a script to a node. GDScript is a Python-like language designed for the engine, and it is great for gameplay logic because changes show up immediately without a compile step.<br>What makes Godot interesting for C++ developers is that the engine itself is written in C++, and it can load extensions written in C++ without being recompiled. A class that comes from one of these extensions becomes a regular engine class: it shows up in the editor next to the built-in nodes, with its properties in the Inspector, and GDScript can use it like any other node. The next section explains how these extensions work.<br>Extending Godot with C++<br>There are two ways to add C++ code to Godot:<br>- Engine modules are compiled into the engine itself. They have full access to the internals, but you need to build and ship your own copy of Godot, including the editor and export templates for every platform.<br>- GDExtension<br>loads a shared library (.dll ,.so ,.dylib , or.wasm on the web) into<br>an official, unmodified Godot build at runtime. The engine talks to the<br>library through a stable C interface.<br>GDExtension is the recommended approach for most projects, and it is how many<br>popular plugins are distributed today. Because the C interface is verbose to<br>use directly, the Godot team maintains<br>godot-cpp, a C++ library that<br>wraps it with an API very close to the one used inside the engine. It provides<br>a C++ class for every engine class, such as Node2D, Sprite2D or Input.<br>Your own classes are regular C++ code that derives from those classes. A node written with godot-cpp looks like this:<br>#include &lt;godot_cpp/classes/node2d.hpp&gt;<br>namespace godot {<br>class MyNode : public Node2D {<br>GDCLASS(MyNode, Node2D)<br>protected:<br>static void _bind_methods() {}<br>public:<br>void _process(double p_delta) override {<br>// runs every frame<br>}<br>};<br>} // namespace godot<br>Since version 10.0, a single godot-cpp release works with any Godot version<br>from 4.3 onwards. You pick one with the api_version build option, and<br>godot-cpp generates its C++ classes from the API of that version. An<br>extension built for Godot 4.3 also works in newer versions, but not in older<br>ones, so you usually pick the oldest Godot version you want to support.<br>Build targets and feature tags<br>There is one more concept you need to know before building anything. godot-cpp is compiled for one of three targets, named after the Godot builds that load the library:<br>- template_debug : the default. Enables debug checks through theDEBUG_ENABLED definition. This library is loaded by the editor and by<br>debug exports.<br>- template_release : for release exports, with the debug checks removed.<br>- editor : for libraries that are only loaded by the editor.<br>Which library Godot loads is decided at runtime by a small .gdextension<br>file. It maps feature tags to library paths. The debug tag matches the<br>editor and debug exports, and the release tag matches release exports:<br>[configuration]<br>entry_symbol = &quot;gdexample_library_init&quot;<br>compatibility_minimum = &quot;4.7&quot;<br>[libraries]<br>macos.debug = &quot;res://bin/libgdexample.template_debug.dylib&quot;<br>macos.release = &quot;res://bin/libgdexample.template_release.dylib&quot;<br>linux.debug = &quot;res://bin/libgdexample.template_debug.so&quot;<br>linux.release = &quot;res://bin/libgdexample.template_release.so&quot;<br>windows.debug = &quot;res://bin/libgdexample.template_debug.dll&quot;<br>windows.release = &quot;res://bin/libgdexample.template_release.dll&quot;<br>The usual workflow<br>The Godot documentation recommends adding godot-cpp to your repository as a git submodule and building it together with your library using SCons. That works well for a first extension, but every project ends up compiling its own godot-cpp for each target, platform and architecture, and any third party library you wrap, such as a physics engine or a machine learning runtime, has to be vendored and built with matching flags for every platform Godot exports to.<br>Both are exactly the kind of problem Conan was built to solve.<br>Managing the Dependencies with Conan<br>With the godot-cpp recipe in ConanCenter, godot-cpp becomes a regular package. The two parameters discussed above are Conan options:<br>- api_version : the Godot API version the bindings target, from4.3 to4.7 (the default).<br>- target :template_debug (the default),template_release oreditor .<br>Each combination is built once and then reused by every project that needs it, instead of being compiled inside each extension.<br>Your GDExtension becomes just another C++ project with dependencies. Any of the more than 1,900 libraries in ConanCenter, or one you package yourself with a Conan recipe, can be added next to godot-cpp, and Conan builds all of them consistently for every platform you target.<br>A Practical Example: A Swarm of 100,000 Particles<br>To show how this works in practice, we will write a GDExtension that<br>registers a new Swarm node. It simulates 100,000 particles that flee from<br>the mouse cursor and bounce off the window edges, and draws all of them in a<br>Godot scene.<br>The simulation runs on flecs, an Entity Component System (ECS) library for C and C++. In an ECS, entities are plain ids, components are plain data structs attached to them, and systems are functions that run over every entity that has a given set of components. Components of the same type are stored together in memory, which makes iterating over large numbers of entities very fast. That is why ECS is a popular choice for simulations, crowds or bullet hell games. It is also the kind of work where native code pays off, since updating this many entities every frame is much faster in C++ than in GDScript.<br>You can find the complete example in the Conan examples2 repository:<br>$ git clone https://github.com/conan-io/examples2.git<br>$ cd examples2/examples/libraries/godot-cpp/gdextension<br>The src folder contains the extension code, and demo is a regular Godot<br>project that loads it.<br>Declaring the dependencies<br>The conanfile.py requires godot-cpp and flecs from ConanCenter:<br>from conan import ConanFile<br>from conan.tools.cmake import CMake, CMakeToolchain, cmake_layout<br>class GDExtensionExample(ConanFile):<br>package_type = &quot;shared-library&quot;<br>settings = &quot;os&quot;, &quot;compiler&quot;, &quot;build_type&quot;, &quot;arch&quot;<br>generators = &quot;CMakeDeps&quot;<br>def requirements(self):<br>self.requires(&quot;godot-cpp/10.0.0&quot;)<br>self.requires(&quot;flecs/4.1.6&quot;)<br>def layout(self):<br>cmake_layout(self)<br>def generate(self):<br>tc = CMakeToolchain(self)<br># Godot picks the library to load by its build &quot;target&quot;, so we name<br># the output after the target godot-cpp was built with<br>tc.cache_variables[&quot;GODOTCPP_TARGET&quot;] = str(self.dependencies[&quot;godot-cpp&quot;].options.target)<br>tc.generate()<br>def build(self):<br>cmake = CMake(self)<br>cmake.configure()<br>cmake.build()<br>The only Godot specific detail is in generate(). We read the target<br>option of the godot-cpp dependency and pass it to CMake, so the name of the<br>library always matches the godot-cpp binary it was linked against.<br>The CMakeLists.txt<br>cmake_minimum_required(VERSION 3.15)<br>project(gdexample LANGUAGES CXX)<br>find_package(godot-cpp REQUIRED CONFIG)<br>find_package(flecs REQUIRED CONFIG)<br>add_library(gdexample SHARED<br>src/register_types.cpp<br>src/swarm.cpp<br>)<br>target_link_libraries(gdexample PRIVATE godot-cpp flecs::flecs_static)<br># Output as demo/bin/libgdexample.&lt;target&gt;.&lt;ext&gt;, the path the<br># demo/bin/gdexample.gdextension file points Godot to. The generator<br># expression prevents multi-config generators from adding a Release/ subfolder<br>set_target_properties(gdexample PROPERTIES<br>OUTPUT_NAME &quot;gdexample.${GODOTCPP_TARGET}&quot;<br>PREFIX &quot;lib&quot;<br>LIBRARY_OUTPUT_DIRECTORY &quot;$&lt;1:${CMAKE_SOURCE_DIR}/demo/bin&gt;&quot;<br>RUNTIME_OUTPUT_DIRECTORY &quot;$&lt;1:${CMAKE_SOURCE_DIR}/demo/bin&gt;&quot;<br>)<br>This is a completely standard CMake project. The extension is a shared<br>library that links godot-cpp and flecs statically, so there is a single<br>library file to ship. We write it straight into demo/bin so Godot finds it<br>without an extra copy step.<br>Writing the node<br>The Swarm class derives from Node2D and owns the flecs world. The<br>components of each particle are plain structs. The GDCLASS macro adds the<br>boilerplate that Godot’s class system needs, and _bind_methods() declares<br>what Godot can see, in this case the count and flee_radius properties.<br>Once the class is registered, they appear in the Inspector and can be used<br>from GDScript. This is a simplified view of the class:<br>struct Position { float x, y; };<br>struct Velocity { float x, y; };<br>class Swarm : public Node2D {<br>GDCLASS(Swarm, Node2D)<br>int count = 100000;<br>double flee_radius = 150.0;<br>flecs::world world;<br>...<br>protected:<br>static void _bind_methods() {<br>ClassDB::bind_method(D_METHOD(&quot;set_count&quot;, &quot;count&quot;), &amp;Swarm::set_count);<br>ClassDB::bind_method(D_METHOD(&quot;get_count&quot;), &amp;Swarm::get_count);<br>ADD_PROPERTY(PropertyInfo(Variant::INT, &quot;count&quot;), &quot;set_count&quot;, &quot;get_count&quot;);<br>// ... and the same for flee_radius<br>}<br>...<br>};<br>The rest of the node connects both worlds. _ready() creates one flecs<br>entity per particle and a flecs system that updates them. It also sets up a<br>MultiMesh,<br>which draws many instances of the same mesh in a single draw call, because<br>one Godot node per particle would be far too heavy for 100,000 of them.<br>Every frame, _process() hands the mouse position to flecs, runs the systems<br>with world.progress(), and copies the resulting positions back into the<br>MultiMesh. Again, this is a simplified view, and the full code is in the<br>repository:<br>void Swarm::_ready() {<br>// One entity per particle, with a Position and a Velocity component<br>for (int i = 0; i &lt; count; i++) {<br>world.entity().set&lt;Position&gt;({ ... }).set&lt;Velocity&gt;({ ... });<br>}<br>// A system that runs for every entity with both components<br>world.system&lt;Position, Velocity&gt;(&quot;Move&quot;).each([this](flecs::iter &amp;it, size_t, Position &amp;p, Velocity &amp;v) {<br>// flee from the mouse, move, and bounce off the window edges<br>});<br>// A MultiMeshInstance2D child node that draws all the particles<br>...<br>}<br>void Swarm::_process(double p_delta) {<br>mouse = get_local_mouse_position();<br>world.progress(static_cast&lt;float&gt;(p_delta));<br>// Copy the position of every entity into the MultiMesh buffer<br>render_query.each([&amp;](const Position &amp;p, const Velocity &amp;v) { ... });<br>multimesh-&gt;set_buffer(buffer);<br>}<br>Registering the extension<br>Finally, register_types.cpp registers the class when Godot loads the<br>library:<br>void initialize_gdexample_module(ModuleInitializationLevel p_level) {<br>if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {<br>return;<br>}<br>GDREGISTER_RUNTIME_CLASS(Swarm);<br>}<br>We register Swarm with GDREGISTER_RUNTIME_CLASS. By default, the code of<br>a GDExtension class also runs inside the editor, so _ready() and<br>_process() would start the simulation while you are editing the scene. A<br>runtime class is only a placeholder in the editor: you can add it to a<br>scene and set its properties, but its code only runs when the game is<br>running.<br>The same file defines gdexample_library_init(), the entry point named in<br>the .gdextension file. It is a few lines of boilerplate that look the same<br>in every extension.<br>Building and running<br>With everything in place, building the extension is a single command:<br>$ conan build . --build=missing<br>...<br>[100%] Linking CXX shared library .../demo/bin/libgdexample.template_debug.dylib<br>[100%] Built target gdexample<br>Conan resolves godot-cpp and flecs, downloads precompiled binaries from ConanCenter when they exist for your configuration, builds the rest from source, generates the CMake integration and finally builds the extension.<br>Note: godot-cpp requires C++17. If your default profile uses an older<br>standard, which is the case for MSVC, add -s compiler.cppstd=17 to the<br>command.<br>Now start Godot 4.7, click “Import” in the Project Manager, and select<br>demo/project.godot. When the project opens, Godot reads<br>bin/gdexample.gdextension, loads the library, and Swarm becomes available<br>like any built-in node. You can find it in the “Create New Node” dialog,<br>under Node2D:<br>The main scene of the demo already contains a Swarm node. Selecting it<br>shows count and flee_radius in the Inspector, the two properties we bound<br>in _bind_methods():<br>Press Play to run the scene, and move the mouse over the window to push the<br>particles around. Then stop it, change count or flee_radius in the<br>Inspector, and play it again to see how the swarm behaves with more particles<br>or a wider flee radius.<br>Conclusion<br>GDExtension and godot-cpp let you write engine classes in C++, and Conan takes care of building godot-cpp and any other C++ library your extension needs. This is also a big advantage when you distribute the extension: building it for every platform you ship to only takes changing the settings of the build.<br>Try the complete example and check the godot-cpp documentation to learn more about writing extensions. If you have any feedback or run into any issues, please let us know in the Conan GitHub repository.<br>Happy game development!<br>This post was written with AI assistance and reviewed by humans.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: Who&#x27;s still keeping a DOS machine up because the business depends on it?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    289 points ·
+    298 comments ·
+    mlaux
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49848955">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Do you currently work with or know anyone who is still using:<br>* dBase/Clipper/CLARION/Paradox/other DOS RAD environments on period hardware to run business processes?<br>* CNC mills/spectrometers/microscopes/other industrial instruments controlled by ISA cards (either bespoke or standards like GPIB)?<br>* Anything with a parallel port dongle?<br>If so, I&#x27;d be very interested in hearing your experience here, or feel free to send me an email at the address in my profile. I&#x27;m not trying to sell anything, just doing some research for an idea around keeping these going on modern hardware.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Revisiting the Neural Correlates of Consciousness
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    asnelt
+  </div>
+
+  <div class="meta">
+    thetransmitter.org
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.thetransmitter.org/consciousness/revisiting-the-neural-correlates-of-consciousness/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49890490">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Life happens in real time, but experience may be composed in ragtime—like the music genre, full of offbeat notes and uneven rhythms. The assumption that waking life consists of a “stream” of conscious representations has inadvertently led consciousness science to its current impasse.<br>Despite interdisciplinary enthusiasm, improved scientific techniques and accumulating data, consciousness science appears to have hit a snag. Even top scientists admit it: Empirical progress has failed to realize optimistic predictions for identifying the neural basis of consciousness. Some argue that the main hindrance has been conceptual, such as shifting definitions of consciousness. Others blame practical limitations, including imprecise neural measures, especially in humans. Still others point toward deeper epistemic sources—that science is an objective, third-person endeavor, and consciousness is subjective and accessible only from a first-person perspective. We believe, however, that the solution may lie in revising one of our common sense intuitions about consciousness.<br>Popular belief holds that conscious experience is continuous, that waking life consists of a “stream” of consciousness. That stream includes or excludes thoughts—perceptions, memories, deliberations—at any given moment. Accordingly, scientists design experiments with the aim of determining what neural activity takes place at the moment a stimulus, a memory or an idea “enters consciousness.”<br>The current paradigm in the neuroscience of consciousness orients experimentation around the search for the “neural correlates of consciousness” (NCC), typically defined as “the minimal set of neuronal mechanisms jointly sufficient for any one specific conscious experience.” Since its introduction by Christof Koch and Francis Crick in 1990, the standard interpretation of the NCC has included the assumption that consciousness is a stream of representations, implying that at any one time, there will be a set of neural events correlating to the content of that stream.<br>The goal of the NCC approach is admirable: to pursue empirical data in a theory-neutral way. But we submit that because its implementation has smuggled in the assumption of a stream of consciousness, in effect, the NCC approach violates theory-neutrality and has inadvertently led consciousness science to its current impasse.<br>C<br>onsider a hypothetical experiment, as illustrated in Figure 1. A participant is shown a noisy image for a few seconds. Midway through, a semi-hidden figure of a ghost appears. Afterward, an experimenter asks the participant to report if they saw anything interesting. The experimenter then administers some apparently unrelated forced-choice tasks—to choose between paired words like “haunt” and “dive,” or “spirit” and “liquor,” for example. Finally, the experimenter directly asks the participant if they saw a ghost.<br>Imagine further that EEG recordings collected as the hypothetical participant saw the ghost indicate four interesting neural activity patterns, or signatures, each a few hundred milliseconds apart. Which one should be interpreted as indicating the time at which the participant became conscious of the ghost? The first signature occurs in every case, regardless of what the person reports seeing, and might simply be evidence of basic (unconscious) sensory processing. The last signature (number 4) occurs only when people spontaneously report seeing the ghost.<br>But this neural activity might be tied to the preparation of the verbal report, rather than to the conscious experience itself. Signature 2 happens in the cases where people chose the spookier option within each forced-choice pair, indicating a “priming effect” on their behavior, even if they later deny seeing the ghost. Signature 3 happens only in the cases in which people, when asked if they saw a ghost, respond in the affirmative, leading some to interpret this as the key NCC. However, does the third signature reflect a now-conscious retrieval of an initially subconscious percept?<br>This hypothetical conundrum has clear parallels in actual consciousness science. The interpretation of Signature 2 as the genuine NCC corresponds most closely to Recurrent Processing and Integrated Information theories. These theories propose that early stages of sensory integration and differentiation are sufficient for conscious perception. The interpretation that Signature 3 reflects the real NCC is consistent with Higher-Order theories (including Attention Schema Theory) as well as, perhaps, some versions of Global Workspace and Predictive Processing theories. Higher-order theories collectively propose that first-order perceptions and thoughts, however well integrated or differentiated, remain unconscious until some additional mechanism interacts with them. Global workspace theory posits that first-order perceptions and thoughts are consciously experienced only when they are made broadly accessible to the rest of the brain via selection and broadcasting mechanisms, which in turn enable flexible, voluntary behavior. The interpretation that favors Signature 4 has been treated by various thinkers under the label “the refrigerator light illusion,” i.e., whenever we open the door to introspect our experiences, the light of consciousness always seems to be on. (See also Naccache on “temporal islets” of consciousness.)<br>So, just as in the hypothetical case, in contemporary consciousness science we have an apparently uncontroversial assumption (about the stream of consciousness and its contents), but no clear way to interpret the data. Despite having an ostensibly theory-neutral frame—the NCC—and several rival theories, we have no clear way to determine the victor. What has gone wrong?<br>The problem may very well lie in the persistent neglect of the possibility that consciousness consists of multiple mental events, correlating to multiple, heterogeneous neural events that play out over time. Perhaps all four signatures are important. Each might well reflect a necessary stage of processing with no single stage being sufficient on its own. Some or all of the approaches mentioned above may capture different aspects or mechanisms of consciousness, without there having to be a single fact of the matter about whether a participant is conscious of a stimulus at a particular point in time.<br>W<br>e realize that this may seem counterintuitive at first. But what seems intuitive now may have surprisingly recent historical roots. In the late 19th century, William James introduced the phrase “stream of consciousness.” (The idea soon found a home in the literature of Joyce and Proust.) By then, the notion of mental “elements” had become popular among physiologists, neurologists and the first psychologists. Many of them adopted doctrines of “psychophysical parallelism,” asserting that mental elements should have physiologic correlates. These (and other) approaches suggested two parallel timelines—one of physiologic events and the other of mental elements.<br>By the time the modern paradigm for studying consciousness was established, a century of cultural currency and scientific practice had hardened this suggestion into unquestioned dogma. Talk of mental elements and “atoms of thought” had given way to talk of representations, but these could still constitute the objects of consciousness, the water in the stream.<br>Philosophical debates about consciousness became especially entrenched in the 20th century. Crick and Koch’s NCC proposal sought to bracket these controversies and create a theory-neutral space for empirical investigation. But the standard interpretation of the NCC is a continuation of the same notion of consciousness that gained popularity a century before: They are physiologic events correlating to a stream of conscious representations.<br>The intent of the NCC approach is laudable, and its goal may be feasible. But the practice of searching for the NCC at a single point in time precludes certain interpretations of data, artificially limiting our explanatory options. Life happens in real time, but experience may be composed in ragtime—like the music genre, full of offbeat notes and uneven rhythms. Let the quest for the NCC accommodate this: Experimentalists in consciousness science should no longer tacitly assume a single stream of conscious representations correlating to a sequence of neural states. Challenging this core assumption will open up new opportunities for experimental design and interpretation that allow for the possibility that consciousness’s timing is more complex. Call it the NCC-Rag.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Phyllotaxis: An audio-reactive LED display
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    141 points ·
+    15 comments ·
+    evakhoury
+  </div>
+
+  <div class="meta">
+    jagi.studio
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #51
+  </div>
+
+  <div class="links">
+    <a href="https://jagi.studio/posts/phyllotaxis/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49880411">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I’ve been fascinated by understanding patterns that appear in nature, through code. Communing with the inherent emergent patterns that exist in the universe.<br>The phyllotaxis is one such pattern, the expanding double-spiral shape that appears in the center of sunflowers, succulents, other plants. It’s surprisingly simple code:<br>// Inner and outer are throw-away,<br>// just for spacing the cells that are used<br>float[][] points = new float[numCells + numOuter + numInner][2];<br>float outerRadius = width / 2;<br>final int total = numCells + numInner + numOuter;<br>for (int i = 0; i &lt; total; i++)<br>{<br>float f = i / float(total);<br>float a = i * 1.6180339887;</div>
+<div class="para">float distance = f * outerRadius;</div>
+<div class="para">float x = -cos(a * TWO_PI) * distance;<br>float y = sin(a * TWO_PI) * distance;</div>
+<div class="para">points[i][0] = x;<br>points[i][1] = y;<br>}<br>Take a number of linear points on a radial line of a circle, and rotate each one by an increasing multiple of the golden ratio.<br>You get a neat point cloud out of this that already looks very much like a sunflower. Voronoi tessellating it looks quite interesting and seed-pod-like:<br>After experimenting with this for a while, I had the idea: what if I made it a physical object and put an RGB addressable LED in each cell? A kind of cellular LED matrix. I had built a rectangular neopixel matrix in high school, but I’d been waiting to find a more interesting shape for the next one.<br>From digital to physical<br>I exported the cell edge data from my processing sketch, and imported it into a python sketch using the CadQuery library.<br>Wrote some code to build physical geometry out of the data:<br># Create the negative space of a single cell<br># shrunk with a negative offset-2d<br>cell_shape = (cq.Workplane(&quot;XY&quot;)<br>.polyline(vertices)<br>.close()<br>.offset2D(-wall_thickness/2, kind=&#x27;intersection&#x27;)<br>.extrude(total_height)<br>.translate((0, 0, base_height)))<br># Cut it out of the total to create a shell with walls<br>total_shape = total_shape.cut(cell_shape)<br># Cut the shape of the hole to fit the LED in the center of the cell<br>total_shape = total_shape.cut(<br>led_hole.rotate((0, 0, 0), (0, 0, 1), math.degrees(angle))<br>.translate((centerX, centerY, 0)))<br>This snippet, after constructing the total volume of all merged voronoi cells, subtracts the shrunk volume of each individual cell from the total, and then carves an LED-sized hole in each. Doing this for all cells yields the yellow shape below. I also split the geometry into four roughly equal quadrants at this point, each of which would fit on my 3D printer bed.<br>I exported the STEP files and did some post processing in FreeCAD, adding screw holes, building a thin version of it that acted as a ‘faceplate’ with paper under it. I cut and glued paper to the bottom of the thin version, and used the screw holes to screw it into the cell walls.<br>I 3D printed the shapes, and found some translucent paper that diffuses light well and looks organic and playful with light shining through it. I love the look of this mulberry paper, with such beautiful organic fibers.<br>Soldering 89 LEDs is kinda tedious. But I found my way into the flow state and it became relaxing. I hooked it up to a spare STM32 blackpill board I had lying around, and wrote a little neopixel driver using SPI. It was already cool with some basic test patterns.<br>I built a simple sketch framework, letting me write processing-style ‘shader’ code for the LEDs. Using a look-up table with the floating point position for every LED as if it was on the unit circle, I could easily write code like this, which feels like a fragment shader:<br>void radial_spirals(LEDBuffer leds) {<br>for (int i = 0; i &lt; NUM_LEDS; i++) { // iterate every cell<br>// Get LED position from LUT<br>float x = led_positions[i][0];<br>float y = led_positions[i][1];</div>
+<div class="para">// Polar coordinates<br>float r = sqrtf(x*x + y*y);<br>float theta = atan2f(y, x);  // Angle in radians [-π, π]</div>
+<div class="para">// Spiral pattern: combine angle and radius<br>float spiral = sinf(theta * 2.0f + r * 5.0f - seconds * 2.0f);</div>
+<div class="para">float brightness = (spiral + 1.0f) * 0.5f;<br>uint8_t level = (uint8_t)(brightness * 255.0f);</div>
+<div class="para">leds[i] = rgb(level, 0, 0);<br>}<br>}<br>Pretty nifty.<br>I very quickly discovered this radial pattern that I enjoyed the most, a pulsating sine wave modulating brightness outward from the center. This ended up being what I used for the primary feature of the audio-reactive sketch I did later.<br>Adding audio<br>Wouldn’t it be cool if it could react dynamically to the sounds in the room, rather than just displaying predefined patterns? I wanted it to feel alive and dynamic.<br>The STM32 board driving it had floating point support and ARM DSP instructions, so I could run the fourier transform and do audio analysis. I added a digital I2S mic, the INMP441, to my breadboard circuit driving the thing.<br>Since it outputs a digital signal, it’s easy to wire up with no risk of analog noise. The ARM CMSIS library came in handy to process the audio signal and do some analysis. With some auto-gain control and multiband splitting to analyze energy at different frequencies, I had a good foundation to write some code that reacted to audio in dynamic ways.<br>A lot of tuning and a very chaotic sketch with a lot of global timers and messy state produced this audio-reactive program, which is still the basis of what runs on the board to this day. It came alive listening to Jon Hopkins’ Neon Pattern Drum.<br>Tidying up<br>Just a few details left. It needs a sturdier surface to mount it to. I found a bamboo cutting board and routed it into a circle; the natural bamboo wood grain complements the organic paper so well.<br>I had assembled the controller MCU and mic into a perfboard, and stuffed it into a 3D printed box with a guitar pedal switch on it. But the electronics were janky and prone to noise that would cause the LEDs to flicker when the box moved. I decided to learn how to build PCBs, and switched to a proper PCB mounting the blackpill board and mic and a button, and a proper spot for a logic-level shifter to get a good 5V signal out of the microcontroller. It worked well, and making PCBs was a bit easier than I expected, at least for this level of complexity.<br>Building the second version<br>I showed it off at a New Year’s party ringing in 2026, and people seemed to like it; some friends even told me that they wanted one. I got inspired to build a second version, which would hopefully be easier to assemble and would be more sturdy. Since I had just learnt PCB design, I decided to try and switch from a 3D printed plate to mount the LEDs on, to using PCBs as a backplate. I tweaked the shape a bit and added 5-fold symmetry, since PCBs are ordered in batches of 5; rather than four unique pieces that I’d 3D print, I’d order five of the same PCB, and assemble them into a ring.<br>It turns out that hand soldering neopixel LEDs with a soldering iron is even more of a nightmare, as the pads for individual neopixels sit underneath them; they’re intended to be soldered using a method that heats up the PCB rather than an iron. The project went on hiatus for a bit.<br>I brought the project parts with me when I attended a programming retreat at Recurse Center in the summer of 2026, and a friend I met there was much more handy with a hot air soldering station than I am. We managed to finish all the soldering, and I designed and 3D printed new cell walls to clip onto the PCBs and screw them together.<br>After finishing the new version during my Recurse batch, I decided to leave it at Recurse Center as an installation. I switched to an ESP32, so it can be on the wifi network there, and rewrote the firmware in Rust. The controller serves a local website where RC attendees can upload sketches and games to it using a tiny webassembly backend and minimal API.<br>What’s next?<br>I’m still not fully satisfied with this project.<br>Enough people have expressed enjoyment over it that I’d love to be able to make more of them, at the very least to gift to friends if not to sell more broadly. But the process has not been ideal; soldering has been tedious both times for different reasons. The process of attaching the paper is tricky, and the paper itself is fragile and difficult to repair if it breaks. I have some ideas for improvements that merit experimenting with: different types of LEDs which are easier to hand solder, using PCB assembly, testing out a layer of clear acrylic to protect the paper with, attaching the paper face plates with magnets.. So many things to test out in the future.<br>For now, the project deserves a break, but when the time is right it’ll be onto version 3!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: A goal tracker that looks like a 1983 terminal, drawn in Swift
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    1 comments ·
+    NSergeevich
+  </div>
+
+  <div class="meta">
+    apps.apple.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #36
+  </div>
+
+  <div class="links">
+    <a href="https://apps.apple.com/us/app/thrive-habit-goal-tracker/id6768297854">Original article</a> · <a href="https://news.ycombinator.com/item?id=49890084">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Set a goal in a couple of taps and watch it turn into progress. Now with a Home Screen widget you can check in from, and full VoiceOver support.<br>Your whole week on one screen. Tap a cell the day you actually did it — that&#x27;s the whole routine.<br>THRIVE is a habit and goal tracker that looks like a 1983 phosphor terminal: six life stats, XP, streaks and shields, every pixel drawn in code.<br>No account, no ads, no analytics. Nothing ever leaves your iPhone.<br>T.H.R.I.V.E. — YOUR SIX STATS<br>• T — Training: sport, diet, sleep<br>• H — Head: reading, study, languages<br>• R — Relations: family, friends, staying in touch<br>• I — Inner: meditation, journaling, gratitude<br>• V — Value: budget, career, investments<br>• E — Expression: music, writing, any craft<br>HOW IT WORKS<br>• Check-ins &amp; XP: every check-in grants XP twice — to the goal&#x27;s stat and to your overall level.<br>• Stat levels pay off: the higher a stat, the more XP each of its check-ins gives.<br>• Weekly streak bonus: close every scheduled day of the week and Monday brings a bonus; consecutive weeks multiply it.<br>• Decay: a stat idle for 7 days starts fading — one check-in stops it.<br>• Shields: a shield covers a missed day so it doesn&#x27;t break your streak.<br>• Ranks: every 10 levels opens a new tier with a new rank insignia.<br>PRIVATE BY DESIGN<br>No account, no feed, no ads, no analytics. Everything lives on your device — we couldn&#x27;t see your data if we wanted to.<br>PRICING<br>Every feature is free for 14 days — no sign-up, no card. After the trial your data stays visible; keep checking in with a monthly or yearly subscription, or a one-time lifetime purchase.<br>Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/<br>Ratings &amp; Reviews<br>This app hasn’t received enough ratings or reviews to display an overview.<br>SHARE YOUR WEEK<br>Your week is now an image you can send. The same grid, the same glyphs, the same phosphor — as a card, from the Today screen or straight from a level-up.<br>A TOUR YOU CAN SKIP<br>The first run now has a skip button, so a fresh install reaches its first check-in in a few taps instead of six.<br>A BETTER MOMENT TO BE ASKED<br>The app asks what you think of it after a week you actually closed — and never on a day you missed one.<br>Requires iOS 18.<br>Version 1.2<br>The developer, Nikita Nikiforov, indicated that the app’s privacy practices may include handling of data as described below. For more information, see the developer’s privacy policy .<br>Data Not Collected<br>The developer does not collect any data from this app.<br>Privacy practices may vary, for example, based on the features you use or your age. Learn More<br>Accessibility<br>The developer has not yet indicated which accessibility features this app supports. Learn More</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Owed a billion dollars in Nvidia stock
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1065 points ·
+    447 comments ·
+    Eric_Gullichsen
+  </div>
+
+  <div class="meta">
+    colo.to
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://colo.to/nvidia-stock-narrative.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=49872723">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Early Days<br>It is not widely known, but I was invited to join the Technical Advisory Board of NVIDIA in 1993 by Jensen (at that time, sans leather jacket)1. In September 1993, I was granted 25,000 options, “in a series of quarterly installments so that all shares shall vest upon the expiration of one year from Grant Date.”2<br>This invitation followed a meeting I had with Jensen, Curtis Priem, and Chris Malachowsky on my houseboat, the SS Vallejo, in Sausalito. I’d done a fair bit of work with Curtis circa 1990, when he was at Sun Microsystems, architect of the SPARCstation GX chip. Sun was one of the companies supporting my early virtual reality company, Sense8 Corporation. The Sun GX was blazingly fast at blitting polygons - some 50k/second - and we’d ported Sense8’s VR rendering to it. Subsequently, I implemented bilinear texture mapping using the Intel i750 DVI chip.<br>But what caught Curtis’s attention in 1993, and caused him to bring the other NVIDIA founders to visit me for a demo, was my fast implementation of biquadratic texture mapping. Details are in US5796426A and subsequent patents.<br>Curtis understood the potential of non-linear texture mapping to differentiate NVIDIA’s first product, the NV1, from the competition.<br>I worked for while, quite casually, with Curtis on porting my biquadratic texture mapping to their hardware, and wrote the code for an Intel-sponsored VR string-quartet demo on prototype NVIDIA hardware - actually a GX card in a PCI adapter - shown at the Guggenheim SoHo in 1993.<br>When the NV1 finally shipped in 1995, Microsoft decided, for reasons of their own, not to support quadratic texture mapping, or even quads, in their just-released DirectX toolkit - triangles only. This had a devastating effect on NVIDIA’s finances and prospects, and the company laid off a large percentage of its staff.<br>Then, in April 1996 - by which time I’d expatriated to the Kingdom of Tonga and was working on various internet startup schemes - NVIDIA’s CFO wrote me a letter stating that 15,625 shares of my stock options had vested, and that I was required to exercise them.3 I did, and then forgot all about it.<br>30 Years Later<br>Fast-forward to 2024. I’m sitting with a day-trader friend, surrounded by screens all blaring news about NVIDIA, the Most Important Company on Earth. So I went home and dug through my folder of old documents.<br>Imagine my surprise: according to the duly signed option agreement, my options were meant to vest over four quarters, not four years, as both NVIDIA’s CFO and their outside counsel, Cooley, had asserted back in 1996. The math is clear: 15,625 of 25,000 shares is 62.5%, exactly what you’d expect after ten quarters of a four-year vesting schedule. On the one-year schedule the agreement actually specified, all 25,000 shares should have vested well before that letter was even written.<br>With the stock’s many splits - a cumulative 480x to date - my missing 9,375 shares are now 4,500,000 shares. A handsome enough pile that I engaged formidable attorneys Allan Steyer of Steyer Lowenthal, and Chris Burke of Korein Tillery, to explore the issue. Consummate advocates, letterheads with substantial gravitas.<br>After about a year of my attorneys and NVIDIA’s in-house and outside counsel sending letters back and forth citing case law and blustering, I mentioned to my attorneys that, as I was growing elderly and there seemed to be no end to this exchange of letters, perhaps they could meet and settle. NVIDIA did not dispute the authenticity of the option agreement, only that my claims were long since time-barred.<br>The meeting was held with great professionalism, but Cooley’s answer was, in essence, “so sue us.” After much soul-searching, deliberation, and gnashing of teeth, my attorneys and I concluded that the statute of limitations was against us. Because of the thirty-odd years that had passed while I “sat on my rights,” it seemed unlikely we’d make it past a motion to dismiss.<br>Lessons?<br>I offer this in the spirit of a cautionary tale. I’m sure there are lessons here for those with a more phlegmatic personality than mine. Here in the land of the free, it turns out a company only has to honor its contractual obligations for a little while.<br>Has anyone else discovered a similar vesting surprise, decades later? And how was it resolved?<br>I remain sanguine, and amused. As the Emperor Septimius Severus quipped: “Omnia fui, nihil expedit.”<br>Eric Gullichsen, September 2026</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: How do you get your first users for an MVP?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    4 points ·
+    6 comments ·
+    amina124
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49884087">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">For founders building an MVP today, what’s the best way to get the first users and prove there’s real demand before talking to investors?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Show HN: HN.watch – Videos of all Hacker News posts
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    176 points ·
+    92 comments ·
+    mrborgen
+  </div>
+
+  <div class="meta">
+    hn.watch
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · Top #25 · Best #39
+  </div>
+
+  <div class="links">
+    <a href="https://hn.watch/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49879401">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hi HN, I’m Per, founder of Scrimba (YC S20). We’ve spent the last decade teaching people how to code with an HTML-based video format. We’ve now plugged an LLM into it, so that people can create explainer videos about anything. It’s called “Scrimba Explain”.<br>To demo this technology for Hacker News, we built HN.watch. It’s like HN, but with explainer videos instead of articles. We create them on-the-fly the first time someone clicks on a link.<br>While there are obvious visual drawbacks of using HTML instead of diffusion models, there are three big benefits: - Speed: Much faster to generate than pixel-based videos (just a few seconds from click to playback) - Cost: Our cost per video is ~$0.04. (Excluding image generation, which some videos utilize. Quickly blows up the cost) - Easy editing: the above benefits also make AI-assisted editing cheap &amp; fast<br>Our hypothesis is that if video creation goes from “dollars and minutes” to “cents and seconds”, a bunch of new use cases will be unlocked. Here are some we see already: - A video explanation of every single Pull Request (we do this internally) - Give every page in your internal/extrernal docs a video - Turn a complex article into a video in ~4 seconds (via our Chrome extension) - Course creators can quickly draft lessons before recording the real thing - People also create a lot of personal stuff stories for their kids, wedding invitations, birthdays, etc<br>The stack is based on an open-source programming language (Imba) created by our CTO, Sindre Aarsæther. It compiles to JavaScript, so it interoperates fully with the npm + node ecosystem. You can learn more here: https://imba.io/<br>We’ve also built our own sync engine (OP), and a context management system for agents (Q). We feared this would make the LLMs struggle when writing code for us, as neither is in their training data (there’s very little Imba in there too). However, we’ve been pleasantly surprised to see that LLMs actually are really good at our stack. This is probably because the stack is extremely dense. Imba is compact, and so is OP, where a single declaration sets storage, sync, permissions, UI, and what the AI sees. This means there’s no translations between frontend, API, db and JSON where the model can get confused and get things wrong.<br>Simply said, instead of using React.js, Express, Supabase, and LangChain, we built it all from scratch. Definitely suffering from the “not invented here” syndrome, lol! As for the models, we use Gemini, GPTs, Inworld, ElevenLabs, and a few others.<br>If you want to try it out, just take your pick: - The Web UI (scrimba.com/explain) - MCP (add it to your coding agent) - ChatGPT Plugin - Chrome Extension<br>You can find a link to all of the above in our docs: https://docs.scrimba.com/explain/introduction<br>And finally, a real pixel-based video of the tool: https://www.youtube.com/watch?v=k6rbHmBxSEs<br>Would love to hear your feedback and if anyone has ideas for other use cases.<br>PS: I expect quite a bit of pushback from HN for this launch, given how fan of text the HN crowd is. This kind of tool is not for everyone. But there are a lot of people today who prefer videos over text, especially in the younger generations.</div>
+</div>
+
+</div>
+
+</body>
+</html>
