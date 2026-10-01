@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-01 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-01 PM · Generated 2026-10-01 17:40 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: blog.google, github.com, ledge.sh, metaculus.com, news.ycombinator.com, openai.com, thespacereview.com, youtube.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Ledge.sh – Runnable Markdown Notes
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    134 points ·
+    59 comments ·
+    dancablam
+  </div>
+
+  <div class="meta">
+    ledge.sh
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #13 · Best #58
+  </div>
+
+  <div class="links">
+    <a href="https://ledge.sh">Original article</a> · <a href="https://news.ycombinator.com/item?id=49902382">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">select plan, count(*)<br>from signups group by plan;<br>plan | count<br>------+-------<br>free |  1204<br>pro  |   187<br>import pandas as pd<br>df = pd.read_csv(&quot;signups.csv&quot;)<br>print(df[&quot;source&quot;].mode()[0])<br>newsletter<br>Monday check on last week&#x27;s signups. The stripe profile holds the API key and database URL. Endpoints are in Stripe API notes. #growth<br>curl -sG https://api.stripe.com/v1/subscriptions -u &quot;$STRIPE_KEY:&quot; \<br>-d limit=100 -d &quot;created[gte]=$(date -v-7d +%s)&quot; &gt; subs.json<br>jq -r &#x27;.data[].plan.nickname&#x27; subs.json | sort | uniq -c | sort -rn<br>24 Pro, 11 Team, and 3 Business since last Monday.<br>import json<br>subs = json.load(open(&quot;subs.json&quot;))[&quot;data&quot;]<br>mrr = sum(s[&quot;plan&quot;][&quot;amount&quot;] for s in subs) / 100<br>print(f&quot;{len(subs)} subscriptions, +${mrr:,.0f} MRR&quot;)<br>38 new subscriptions, adding $2,682 in MRR.<br>select source, count(*) as upgrades<br>from accounts<br>where upgraded_at &gt;= now() - interval &#x27;7 days&#x27;<br>group by source order by upgrades desc;<br>The database agrees: 38 upgrades. Newsletter 17, docs 12, referrals 9.<br>Write this week&#x27;s growth update from this note for #team<br>A Markdown notebook for developers and DevOps who keep commands in their notes. Write a note, press ⌘↩ on a code block, and its output streams in beneath it. In your shell, in your project, on your machine, or on a server.<br>curl -fsSL https://ledge.sh/server.sh | sh<br>Shell blocks run in a persistent shell that belongs to the note. A cd, an exported variable, or an activated virtualenv carries into the next run.<br>sudo password or a [y/N] in the output panel.cwd: and env: in the frontmatter set where the note&#x27;s shells start and what they carry.norun on a fence takes the Run button away. Use it for a command you are quoting, not running.<br>Totals drift by a cent on partial refunds. Repro first. #billing<br>cd services/billing &amp;&amp; source .venv/bin/activate<br>pytest -q --tb=no tests/test_refunds.py<br>Point Ledge at a machine over ssh and the notes live there. The server holds the files and runs the shells. The app on your computer is the window onto it.<br>ledge backup puts an encrypted copy of the notes in an S3-compatible bucket every hour.<br>Cut 2.4.2 from the server, not the laptop. The build takes a minute.<br>make release<br>Ledge runs on iPhone and iPad as a window onto the same server. The phone holds no notes. It reads, edits, and runs what is on the server.<br>^C, ^D, Escape, and the arrow keys sit above the keyboard, so you can interrupt a command, quit a pager, or move around in htop.ledge pair prints on the server. The phone signs in with a key made in the Secure Enclave that never leaves it, and that key can speak to Ledge and nothing else.<br>Two episodes transcoding. Check before starting a third.<br>htop<br>Add a host: line to the frontmatter and every run in the note happens over ssh on that host. The note itself stays where it is.<br>confirm and Ledge shows the code, names the machine, and asks before running it.ssh. Keys, agents, ~/.ssh/config, and 2FA work as they do in a terminal.cwd and env travel with the run. Profiles and secrets never do.python, node, and other interpreted blocks run on the host too, with a per-machine interpreter override in Settings.<br>Stale session keys after the 2.4.1 deploy. Flush staging, verify, then prod.<br>redis-cli -n 2 flushdb<br>⌘D splits the view left and right, ⇧⌘D top and bottom, and either side can split again. Each pane has its own tabs.<br>Some trials end a day early.<br>go test ./...<br>A profile is a named file of environment variables kept outside your notes folder. A note that names it gets the variables in its shells. The note carries only the name.<br>profile: deploy in the frontmatter reads ~/.config/ledge/profiles/deploy.env, a plain dotenv file readable only by you.envFile: .env loads the project&#x27;s own dotenv for everything that is not a secret.<br>Backup restore drill. The AWS keys come from the deploy profile.<br>aws s3 ls s3://ledge-api-backups/nightly/ | tail -2<br>Ledge ships an MCP server. claude mcp add ledge -- ledge mcp connects Claude Code, and any MCP agent can read, search, create, and edit your notes through it.<br>prompt code block is a runnable block. ⌘↩ pipes it to the agent and the reply streams in beneath it.<br>Tag after the migration bake. Checklist in Release runbook. #release<br>git log --oneline v2.4.1..HEAD | head -3<br>9f31c22 storage: chunked uploads for assets over 50 MB<br>41b0a07 api: rate limit per token, not per IP<br>c2ade19 fix: retry idempotent writes on 5xx<br>Locking encrypts a note&#x27;s body on disk behind a passphrase. Agents never see it, sync services carry ciphertext, and reading it requires an unlock.<br>This note is locked. Its body stays sealed on disk, away from agents and search, until you unlock.<br>Unlock Notes…<br>Notes are plain files in ordinary folders, so syncing them is syncing a folder: iCloud Drive, Dropbox, git, Syncthing, or whatever you already use. There is no database on the side.<br>This workspace is a repo. One run commits and pushes every note in it.<br>git add -A &amp;&amp; git commit -m &quot;notes $(date +%F)&quot; || true<br>git pull --rebase &amp;&amp; git push<br>Six kinds of notes, each with the manual page that covers it.<br>docker compose up -d db<br>make migrate<br>✔ Container api-db-1  Started<br>migrated to 0043_signup_source<br>INFO keyspace<br># Keyspace<br>db0:keys=4812339,expires=0,avg_ttl=0<br>%w[a b c].each_with_index do |s, i|<br>puts &quot;#{i}: #{s}&quot;<br>end<br>0: a<br>1: b<br>2: c<br>zpool list -o name,cap,health<br>NAME   CAP  HEALTH<br>tank   81%  ONLINE<br>List the open tasks in [[2026-07-30]]<br>- Send the lease renewal back<br>- Finish the chapter 4 notes<br>Everything else you expect from a notes app is here.<br>Python, Node, Ruby, and PHP run out of the box. A redis block feeds redis-cli, pointed at staging or prod by the note&#x27;s REDIS_URL. TypeScript uses the Bun runtime bundled with the app, so ts blocks run with nothing installed. Adding an interpreter is one line in Settings.<br>⌘J opens today&#x27;s note, stamped from your daily template. Templates are ordinary notes with {{date}} and {{yesterday}} tokens, and one carrying a prompt block gives every morning a one-keystroke briefing.<br>Attach a project folder and its Markdown files become notes where they are, running their blocks in the project. ⌘1 to ⌘9 switch workspaces, and each keeps its own pane layout. Removing an attached folder from Ledge touches no files.<br>Syntax hides away from the caret: **bold** shows bold, links show their label, tables and images render in place, and a checkbox is clickable. Move the caret in and the exact characters come back. One setting shows every character all the time.<br>Copy part of a web page, a Slack thread, or a Google Doc, and ⌘V pastes it as Markdown: headings, lists, checkboxes, links, and tables included. ⇧⌘V pastes the plain text. An image on the pasteboard lands in the workspace as a file, rendering in place; pasted into a locked note, it is encrypted from the first byte.<br>⌘P opens a note by title; type # for full-text search. Wikilinks address titles, so a retitle never leaves a stale link. Backlinks and outline each get a panel.<br>Tag a note with inline #hashtags or a frontmatter tags: line, and ⌥⌘T lists every tag with its count. Press f on a note&#x27;s row, or click its star, and it sits in a Favorites section at the top of the sidebar, however deep in a folder it lives. Both are frontmatter, so they travel with the file.<br>⌫ moves a note to the workspace trash and shows an Undo strip. The Trash section in the sidebar holds it for 30 days, where r restores it and permanent deletion asks first.<br>Lists, reads, searches, creates, and appends from any terminal, and the app follows along live. Results go to stdout, everything conversational to stderr, so pipes stay clean, and --json switches any verb to machine-readable output.<br>Free and open source under Apache-2.0. No account required, and no database on the side. Your notes are Markdown files on your computer or on a server you run, and they stay yours.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Gemini 4 Argon
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1383 points ·
+    891 comments ·
+    bradleyg223
+  </div>
+
+  <div class="meta">
+    blog.google
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49913571">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Gemini 4 Argon: our next era of frontier intelligence<br>Today, we’re announcing our new frontier model, Gemini 4 Argon, which is rolling out to a set of trusted cyber defenders through our Fairwind Program. Built to sustain deep reasoning across complex, long-horizon workflows, Argon is fundamentally changing the way we work and build at Google. It delivers frontier performance in complex workflows across real-world software engineering, enterprise knowledge work like legal and finance, and cybersecurity defense.<br>Safely releasing frontier capabilities at this level requires a phased approach. We are actively engaged in the U.S. government’s voluntary process for pre-release model access while we gradually expand access. We’ll continue to gather feedback from early testers as we iterate on guardrails before making Argon available to developers, enterprises, and consumers as soon as possible.<br>Argon will launch at an introductory price 1 of $2 per million input tokens and $10 per million output tokens, with cached input tokens priced at 95% off input token price.<br>Changing how we work and build at Google<br>Gemini 4 Argon is already powering our internal workflows, with thousands of Googlers highlighting the model’s strengths in specialized coding tasks, conducting deeper research, and writing quality. It’s helping teams build faster and push the boundaries of engineering productivity and accelerating breakthroughs:<br>- Quantum algorithmic optimization: Argon is helping our quantum computing researchers optimize the spacetime resources (qubits × gates) of subroutines that bottleneck important applications. In one example, it beat the published baseline by 40% in a matter of minutes.<br>- Memory efficiency: A team of Argon agents analyzed fleet-wide profiling telemetry to autonomously identify and apply memory optimizations across Google’s data centers, freeing up over 300 TiB of memory once rolled out, with an estimated 500 TiB to 1 PiB in total savings.<br>- Large Scale Codebase Migrations and Optimizations: Argon agents are working on migrating C/C++ codebases to Rust across Google — scaling from tens of thousands of lines in core libraries like re2, libgav1 up to 800K+ lines for the Fuchsia Zircon kernel. Given the criticality of many of these systems, such large-scale rewrites are undergoing rigorous automated and manual auditing, emulation testing, and review before rolling out to production.<br>For libgav1, Google&#x27;s open source software for decoding video, Argon agents took an existing Rust port and replaced 32K lines of SIMD code by running many rounds of profile-guided experiments, studying the compiler&#x27;s output, producing safe Rust so the compiler would vectorize it automatically. The end result is a memory-safe video decoder that runs 2.7x faster than the Rust port, with identical video output, bringing it closer to the optimized C++.<br>Working harder on your most complex problems<br>To support Gemini 4 Argon’s capabilities across longer, more complex use cases, we are significantly expanding the model’s output token limit to an industry-leading 1M tokens, up from the previous 64K tokens. When the model has the headroom to think deeply and generate hundreds of thousands of tokens in a single trajectory, it adds a new level of depth in reasoning to solve tough problems in one go.<br>Enabling coding and enterprise workflows across domains<br>Gemini 4 Argon’s capabilities across coding, reasoning, and multimodality and its ability to sustain long, multi-step tasks enable it to excel across a range of enterprise workflows.<br>Google engineers have been using Argon for their daily tasks, from everyday debugging to large-scale codebase migrations and algorithm designs. It sets a new state of the art on DeepSWE v1.1 (77.9%), which measures a model’s performance in real-world long-horizon software engineering tasks.<br>Beyond coding, Argon is the leading model on the Vals Index, which measures economic impact across finance, coding, legal, and tax work, with every sector weighted by its contribution to U.S. GDP. We see similarly leading performance across other domain specific evaluations, like Vals Finance Agent v2 (multi-step financial research) and Harvey’s Legal Agent Benchmark (legal research and drafting). On AutomationBench, Zapier’s benchmark measuring end-to-end execution across core business functions, Argon ranks #1 with a score of 51.3%.<br>Argon is also uniquely strong when knowledge work requires visual understanding. It’s able to drive professional chart analysis, identify details from long videos, and take action based on a series of documents. For example, on LVBench, which measures long video understanding, Argon is state of the art with a score of 91.7%.<br>Leading in defensive cybersecurity<br>To better equip cyber defenders for the new era of cyberattacks, we trained Gemini 4 Argon to be highly capable at cybersecurity defense. Argon can autonomously find, validate, and patch critical software vulnerabilities. For trusted defenders and our own internal teams at Google, we’ll be releasing Argon without cyber guardrails so they can leverage its full frontier-level cybersecurity defense capabilities.<br>Wiz is already using Argon for cybersecurity defense through its Scan for Good initiative – a program dedicated to protecting critical public infrastructure for free by finding and remediating high-risk exposures. In an early demonstration of its impact, the model uncovered a critical vulnerability exposing sensitive personal information across healthcare software used by hospitals worldwide, identifying a severe risk that previous frontier models had missed.<br>On CWE-bench v1, which evaluates the model’s ability to remediate security vulnerabilities, Argon ties for first place with a top score of 68%, building on 3.8 Flash Cyber’s frontier performance on CWE-bench v0.<br>Gemini 4 Argon demonstrates impressive leaps in vulnerability discovery over 3.8 Flash Cyber. For example:<br>- On Google’s internal comprehensive vulnerability benchmark, Argon uncovered a wide range of exposures across complex codebases spanning 20 programming languages.<br>- On Wiz’s internal black-box penetration testing benchmark, which tests a model’s ability to analyze live web systems without source code, Argon outperforms 3.8 Flash Cyber in discovering the attack surface, identifying vulnerabilities, and producing proof-of-concept evidence to validate them.<br>Strengthening frontier safeguards before broad availability<br>Before rolling out Gemini 4 Argon broadly, we’re continuing to strengthen critical frontier safeguards across four main areas:<br>Defending against misuse: To prevent bad actors from using Argon for cyber or chemical, biological, radiological, and nuclear (CBRN) attacks, the model is designed to refuse harmful requests while preserving legitimate, dual-use scientific research, as per our Frontier Safety Framework. We are strengthening the robustness of our safeguards for this launch, including improving our techniques to monitor the model’s internal activations to spot misuse. These safeguards underwent robustness testing by internal and external red teams using a combination of manual and automated attack methods.<br>Defending against prompt injection attacks: Argon is also our most resilient model yet against indirect prompt injections, where malicious instructions or context are used to hijack a model’s behavior. These are complex attacks that require constant vigilance and multiple layers of defense. Through automated red teaming and adversarial training, Gemini 4 Argon is leading in prompt injection robustness on the Gray Swan’s Indirect Prompt Injection (IPI) benchmark.<br>Monitoring for misalignment: In order to prevent Argon from stepping out of bounds to try to accomplish a task in a way that goes beyond the user’s intentions, we are deploying misalignment mitigations that monitor Argon’s chain-of-thought and actions and stop execution when necessary.<br>We used a similar system to monitor our training runs and send alerts to a dedicated incident response team, taking careful precautions against feeding the findings back into training so as to not risk shaping Argon’s reasoning to evade our monitoring. We strongly encourage the rest of the industry to preserve reasoning transparency in these pivotal moments of increased capabilities while navigating alignment risks, so that model thoughts remain helpful in identifying and diagnosing misalignment.<br>Hardening systems: As frontier models grow increasingly capable, safely testing them requires secure environments that can keep up with the systems themselves. In line with our agent control roadmap, we are hardening our sandboxed environments by isolating and sealing them before high-risk training or evaluations begin. We’re committed to sharing these agent security best practices with our partners to improve security across the ecosystem.<br>Rolling out soon<br>We built Gemini 4 Argon with frontier-level capabilities on coding, knowledge work, cybersecurity defense, and creative writing to be a partner for developers, professionals, and enterprises while they tackle the most difficult problems. We’re grateful for the initial cohort of cyber defenders and trusted testers whose real-world evaluations and feedback will help us strengthen our systems before we release to developers, enterprises, and consumers, starting with paid API customers and Google AI Ultra subscribers.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Capitalism Can&#x27;t Handle AI
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    5 comments ·
+    sedan_baklazhan
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · New #34
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49919185">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Capitalism as a system of profit-seeking agents can&#x27;t handle AI right.<br>There is a very simple feedback loop:<br>1. Agents seek to increase their profit by automating people.<br>2. Each agent acts to its own good but at the same moment, the ultimate goal is to get rid of all consumers of what agents produce, because jobless people are very bad at consuming goods and services.<br>3. Agents don&#x27;t have any motivation to provide goods and services to consumers if they don&#x27;t get anything valuable in return.<br>Conclusion is simple. Either:<br>a. AI development will be completely regulated and jobs will be preserved (thus negating the promised AI effectiveness), or<br>b. Capitalism will be destroyed and a completely new economical formation will take place.<br>It is AI or capitalism.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    OpenDLSS: A Vulkan Reimplementation of Nvidia&#x27;s DLSS 5 Neural Rendering Network
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    55 points ·
+    38 comments ·
+    sagacity
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/maanHimself/OpenDLSS-NR">Original article</a> · <a href="https://news.ycombinator.com/item?id=49906100">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A Vulkan reimplementation of NVIDIA&#x27;s DLSS 5 Neural Rendering network, bit-exact against the original.<br>The same 71-block Swin / ViT network as DLSS-NR build 310.8.0, running FP8 on the tensor cores. The intermediates match too, not just the final image: all 75 block boundaries, byte for byte.<br>ports/browser-webgpu/ is a second, independent implementation: the same bytes in a browser, with no<br>tensor cores and no FP8.<br>You supply the weights, as a model directory in the layout described below.<br>A U-net of shifted-window transformer blocks with a global ViT at the bottom: 71 blocks over six pooling levels, FP8 (E4M3) activations with FP16 accumulation, 141 MiB of weights. It is a generative neural rendering network (NVIDIA&#x27;s term): it re-renders the frame the engine already drew, generating detail from injected noise and adjusting tone, structure and skin under a style setting. Input and output are the same resolution; it is not an upscaler.<br>The WebGPU port at 2048x1152, NR off on the left and on on the right. Scene: Cowboy Gramps by Muhammed Ismayil, CC0.<br>It takes one rendered frame (a low dynamic range proxy of it, three lanes of Gaussian noise, the previous frame&#x27;s output reprojected, and five conditioning scalars) and produces four f32 channels per pixel: an RGB residual and one temporal-blend logit. docs/network.md is the graph in full. NVIDIA describes the model in its report, DLSS 5: Generative Neural Rendering (project page).<br>powershell -File scripts\fetch_tools.ps1 [-Npm]     # once: tools\ (glslang, Vulkan-Headers, volk, CMake, Ninja)<br>powershell -File scripts\build.ps1                  # shaders, PTX, build\dlss5vk.exe<br>powershell -File scripts\fetch_filament.ps1         # once, for the demo: third_party\filament (+ the patch)<br>powershell -File scripts\build_filament.ps1         # once, for the demo: third_party\filament-install<br>powershell -File scripts\build_demo.ps1             # build\demo\dlss5-demo.exe<br>build\dlss5vk.exe bench   --model &lt;dir&gt; --width 768 --height 768<br>build\dlss5vk.exe profile --model &lt;dir&gt; --width 768 --height 768   # per-dispatch timings<br>build\dlss5vk.exe parity  --model &lt;dir&gt; --fixture &lt;dir&gt;            # bit-exactness against a fixture<br>build\dlss5vk.exe verify  --model &lt;dir&gt; --fixture &lt;dir&gt;            # block-0 kernel-by-kernel bisect<br>python scripts\ptx\test_fast_divmod.py                             # the PTX divider, over every n &lt; 2^24 (numpy)<br>The demo can be double-clicked. It lists every scene under build\scenes in the Demo scene dropdown and<br>starts on the first one, or loads the glTF given on the command line. The model directory is --model &lt;dir&gt;,<br>else DLSS5VK_MODEL, else models\nr next to this README. See demo/README.md for the<br>renderer, the keys, the scenes and view.json.<br>RTX 4070 SUPER, whole network per frame, minimum over 40 frames. 241 dispatches at every resolution.<br>| resolution | time |<br>|---|---|<br>| 768x768 | 2.8 ms |<br>| 1920x1080 | 7.8 ms |<br>| 2560x1440 | 12.6 ms |<br>| 3840x2160 | 29.3 ms |<br>The GPU alternates between two clock states under sustained load, so medians run a few percent higher. Compare minima.<br>| Part | Files | Notes |<br>|---|---|---|<br>| Host | src/ (C++20) | Vulkan context, model loading and weight re-layout, kernel wrappers, the network graph, a CPU reference of the arithmetic, the dlss5vk tool |<br>| GLSL kernels | shaders/ | The reference route: cooperative-matrix FP8 GEMMs, fused 32-channel block, fused QKV + window attention, expert MLP, global attention, elementwise ops. Exact and complete on their own. |<br>| PTX kernels | scripts/ptx/ | Python generators emitting PTX for the fast route: mma.sync E4M3 with f16 accumulation, cp.async rings, barrier-free chaining through device counters, split-K GEMMs, streamed global attention. Generated intobuild/ptx by the build. |<br>| Demo | demo/ ,third_party/filament.patch | The network inside a Filament (Apache-2.0) frame: Filament patched for per-object motion vectors and a Vulkan interop hook, glTF scenes through gltfio, ImGui controls. |<br>| WebGPU port | ports/browser-webgpu/ | The same network in a browser, bit-exact against the same captures, with no tensor core, no FP8, no fusion between blocks and no chaining: the exactness is in the specification, not in the hardware. 72 ms at 512x512 against 2.7 ms here. |<br>Not implemented: DLSS-SR, which is a different network. The temporal path is implemented, but in the demo: the<br>network&#x27;s history input lanes and its per-pixel blend logit drive a reprojected feedback loop<br>(docs/frame.md). The dlss5vk tool runs single frames with no history, which is what the<br>reference captures were made with.<br>- Windows, an NVIDIA Ada (or newer) GPU and a driver exposing VK_KHR_cooperative_matrix ,VK_NV_cooperative_matrix2 ,VK_EXT_shader_float8 andVK_NV_cuda_kernel_launch .<br>- Visual Studio 2022 or later with the C++ x64 toolset (any edition or the Build Tools; found through vswhere,<br>or set VCVARS64 to yourvcvars64.bat ), git, Python 3 for the PTX generators, and Node.js + npm and<br>Pillow for the scene converter.<br>- The portable toolchain under tools/ (git-ignored):scripts\fetch_tools.ps1 downloads glslang 16.6.0,<br>Vulkan-Headers v1.4.363, volk (pinned tags), CMake 3.31 and Ninja 1.13. No Vulkan SDK install is needed.-Npm also installs the scene converter&#x27;s modules intotools\gltf .<br>- For the demo: Filament v1.77.0, cloned and patched by scripts\fetch_filament.ps1 and built once byscripts\build_filament.ps1 (both git-ignored; about 15 minutes and 6 GB of build tree, placed in%LOCALAPPDATA%\dlss5-vulkan orDLSS5_FILAMENT_BUILD_DIR ;DLSS5_BUILD_JOBS caps the parallel<br>compiles, default 8, because MSVC takes up to a GB per job on Filament).<br>nr::Model reads manifest.json: a stages array (each entry: id, file relative to the directory,<br>packedByteLength, sha256) and a tensors array (each entry: name, block, layer, parameter,<br>stage, stageOffset, byteLength). Stage files hold the E4M3 weights as packed bytes; the host re-lays<br>them out into the matrix forms the kernels consume (src/nr_model.cpp). Nothing in this repository produces<br>such a directory.<br>The graph is the 71-block network of 310.8.0 and nothing else: a model with a different block count is refused at load.<br>parity compares against recorded captures of the original, which are not part of this repository. A fixture is a<br>directory with a manifest.json:<br>| key |  |<br>|---|---|<br>| sourceDimensions ,fullDimensions | the valid size and the padded field |<br>| proxy orinputFeatures | the input: an RGBA f32 image (with conditioning ,seed ,autoMask ), or the f32 features themselves |<br>| checks | what the fixture gates, any of &quot;boundaries&quot; ,&quot;head&quot; ,&quot;output&quot; ; required and never empty |<br>| blocks ,transitions | &quot;boundaries&quot; : E4M3 references (block /id ,width ,height ,channels ,file ) |<br>| omittedBoundaries | &quot;boundaries&quot; :{name: reason} for each comparable boundary the fixture has no reference for |<br>| referenceHead | &quot;head&quot; : the f32 RGBA head |<br>| nativeOutput | &quot;output&quot; : the composed image,dtype&quot;f32&quot; (RGBA halves, needsproxy ) or&quot;u8&quot; (an 8-bit capture) |<br>Everything is validated before the GPU runs, and a fixture that fails any of it is refused: a declared check without<br>its reference, a reference that is missing, short or names nothing in the graph, a reference no declared check uses,<br>or a comparable boundary (blocks 0-69, the five encoder transitions) with neither a reference nor a reason. Verdicts<br>are bit-exact (the pass), equal only up to the sign of zero (a failure), within one code (the 8-bit<br>capture only, reported apart) or a mismatch; see docs/numerics.md. The head and the output are<br>compared on the production schedule, resubmitted --repeat times (default 3), which must also agree with the same<br>graph under barriers; the boundaries come from an instrumented run, whose head must agree with production&#x27;s. verify<br>additionally needs inputFeatures and a block-0 reference.<br>All default to the fast, exact route. Every switch keeps the output byte-identical, and parity under each of<br>them is part of the gate. Any switch that sends a kernel back to GLSL also turns counter chaining off, because<br>only the PTX kernels take part in it.<br>- DLSS5VK_UNFUSED=1 runs the GLSL reference route, up to 2560x1440: it materializes every intermediate.<br>- DLSS5VK_PTX_DIR is the PTX directory, defaultbuild/ptx .<br>- DLSS5VK_CHAIN=0 puts barriers between every launch instead of counter chaining.<br>- DLSS5VK_PTX_GEMM ,GEMMT ,GEMMV ,BLOCK32 ,FFN ,QKV andATTN set to 0 take one kernel family<br>back to its GLSL spelling.<br>- DLSS5VK_ATTN_STREAM forces streamed global attention off (0) or on (1).<br>- DLSS5VK_SPLITK=0 ,DLSS5VK_VIT_CHAIN=0 andDLSS5VK_NO_PTX_MLP=1 disable split-K, the ViT chain and the<br>PTX MLP.<br>- DLSS5VK_NO_FUSE_PRE ,POOL ,UPRES andPOST set to 1 drop one fusion each.<br>- DLSS5VK_CHAIN_MASK is a bit mask: 1 expert stages, 2 c32 blocks, 4 split GEMMs. Default 3.<br>- DLSS5VK_DEFER_MAX is the widest stage whose projection GEMM is fused. Default 128.<br>- DLSS5VK_VALIDATION=1 runs under the Khronos validation layer (refused if it is not installed: a Vulkan SDK, orVK_LAYER_PATH at a build of Vulkan-ValidationLayers); an error it reports fails the run.DLSS5VK_DEBUG=1 only prints the driver&#x27;s own messages (the PTX compiler&#x27;s among them).DLSS5VK_LIST_EXTENSIONS=1 lists<br>extensions.<br>docs/README.md is the index: network.md is the graph, numerics.md the exactness contract, weights.md the layouts, execution.md the scheduling, and frame.md the demo&#x27;s frame.<br>This project is not affiliated with, endorsed by, or supported by NVIDIA. It contains no NVIDIA software, weights, headers, or instructions for obtaining them. No rights under any NVIDIA intellectual property are granted or implied by this repository or its license, and you are responsible for the licenses that apply to whatever model data you use with it.<br>MIT for everything in this repository (LICENSE). Third-party components are listed in NOTICE.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    An Interview with Bill Gates on AI
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    vldmrs
+  </div>
+
+  <div class="meta">
+    youtube.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.youtube.com/watch?v=A_156w0aYtU">Original article</a> · <a href="https://news.ycombinator.com/item?id=49919641">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: Yantra – an LALR(1) parser generator for C++
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    23 points ·
+    15 comments ·
+    renjipanicker
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #30
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/TantrixAuto/yantra">Original article</a> · <a href="https://news.ycombinator.com/item?id=49916997">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Yantra is a powerful compiler compiler and LALR(1) parser generator written in C++, with the following core features:<br>- An integrated lexer<br>- Built-in support for UNICODE/UTF8 input<br>- Built-in AST builder<br>- Built-in AST walker(s)<br>- Bottom-up parsing (being LALR), and top-down walking (traversal)<br>- Multi-mode lexer, useful for implementing nested multi-line comments, etc.<br>- Lexer-driven (push-based) parser: reads input one character at a time and feeds tokens to the parser as they complete, useful for processing input as it arrives (e.g. from a socket).<br>- An optional amalgamated mode, where the entire parser is generated as a single cpp file, along with a full-featured main() function.<br>- Or, in non-amalgamated mode, the parser is generated as separate .hpp and .cpp files, ready to drop into an existing project.<br>The name Yantra is Sanskrit for machine, as in state machine in this context.<br>Yantra has no dependencies beyond the C++ standard library, so building it is a plain CMake build:<br>git clone git@github.com:TantrixAuto/yantra.git<br>cd yantra<br>mkdir build &amp;&amp; cd build<br>cmake ..<br>cmake --build .<br>This produces the ycc executable in bin/. Save a grammar file, hello.y:<br>start := stmts;<br>stmts := stmts stmt;<br>stmts := stmt;<br>stmt := ID;<br>ID := &quot;[A-Za-z]+&quot;;<br>WS := &quot;\s&quot;!;<br>Then generate a parser from it:<br>bin/ycc -c ascii -f hello.y -a<br>This writes hello.cpp (an amalgamated, self-contained parser with its own main()) and hello.log. Compile it with any C++23 compiler:<br># clang<br>clang++ --std=c++23 -o hello hello.cpp<br># gcc<br>g++ --std=c++23 -o hello hello.cpp<br># MSVC (cl.exe, from a Developer Command Prompt)<br>cl /std:c++23 /EHsc /nologo hello.cpp<br>The grammar above recognizes one or more whitespace-separated alphabetic words. -s &lt;string&gt; feeds that string directly to the parser as input (as opposed to -f &lt;filename&gt;, which reads from a file, or -i, which reads interactively from the console):<br># succeeds silently<br>$ ./hello -s &quot;hello world&quot;<br>$ echo $?<br>0# -t1 prints the parsed AST<br>$ ./hello -s &quot;hello world&quot; -t1<br>0:start_1(1:stmts_1(2:stmts_2(3:stmt_1(4:ID(hello))) 2:stmt_1(3:ID(world))) 1:_tEND())# fails: ID only matches letters, &quot;123&quot; isn&#x27;t valid input for this grammar<br>$ ./hello -s &quot;hello 123&quot;<br>s1-err:?a1.in(001,007):TOKEN_ERROR{{token: }}<br>hello 123<br>$ echo $?<br>1<br>Yantra parses the entire input into an AST first, then walks it top-down calling your semantic actions, unlike most parser generators, where actions run bottom-up as each rule is reduced. That ordering is what lets a parent rule&#x27;s action run before its children are visited. Save this as calc.y:<br>%class Calculator;<br>start := expr;<br>expr := expr(a) PLUS expr(b)<br>%{<br>std::cout &lt;&lt; &quot;Adding&quot; &lt;&lt; std::endl;<br>%}<br>expr := NUMBER(N)<br>%{<br>std::cout &lt;&lt; &quot;Number: &quot; &lt;&lt; N.text &lt;&lt; std::endl;<br>%}<br>NUMBER := &quot;\d+&quot;;<br>PLUS := &quot;\+&quot;;<br>WS := &quot;\s+&quot;!;<br>Generate and compile it the same way as above (bin/ycc -c ascii -f calc.y -a, then any of the three compiler commands), then run it:<br>$ ./calc -s &quot;1 + 2 + 3&quot;<br>Adding<br>Number: 1<br>Adding<br>Number: 2<br>Number: 3<br>1 + 2 + 3 parses left-associatively as (1 + 2) + 3. So the outer Adding, the root of the tree, prints first, followed by its left child (Number: 1) and then its right child, which is itself another Adding node with its own two children. A hand-written recursive-descent or bottom-up parser would have to build extra AST classes and a separate walking pass to get this ordering. Here it falls out of the grammar directly.<br>See the Build Instructions and Tutorial below for a real walk-through of the grammar syntax.<br>- vs. Bison / Yacc / Lemon (the classic LALR(1) family):<br>- Lemon, from SQLite, is Yantra&#x27;s direct stated inspiration.<br>- These run semantic actions during parsing, as each rule reduces, bottom-up.<br>- Yantra always builds the full AST first, then walks it top-down in a separate pass, so a parent rule&#x27;s action can run before its children are visited.<br>- A single grammar can also define more than one walker (e.g. one that emits C++, another that emits Java, from the same parse).<br>- Getting either of those out of the Bison family means hand-building your own AST and walker on top.<br>- vs. ANTLR:<br>- ANTLR walks a fully-built parse tree too, but that comes for free from its LL(*) algorithm, which already builds the tree top-down as it parses.<br>- Yantra gets the same top-down walk out of LALR(1), a bottom-up algorithm with no natural &quot;whole tree exists yet&quot; moment during parsing, while keeping LALR(1)&#x27;s time and space efficiency over adaptive LL(*).<br>- Beyond that, Yantra targets C++ only (ANTLR generates for many languages) and ships its own integrated lexer with mode-stack support instead of a separate lexer generator.<br>- ANTLR&#x27;s own generator tool is Java, so using it from a C++ project means adding a JVM to the build toolchain just to run the generator. Yantra is a native C++ executable with no such dependency.<br>- ANTLR is far more mature and widely used. Yantra is a much smaller, newer, single-maintainer project.<br>- vs. tree-sitter:<br>- A different problem entirely. It&#x27;s built for incremental, error-tolerant parsing embedded in editors and IDEs (what GitHub, Neovim, etc. use it for), not for generating a compiler/codegen backend.<br>- Yantra doesn&#x27;t do incremental reparsing and isn&#x27;t trying to.<br>See Known Limitations for an honest list of what Yantra doesn&#x27;t do yet.<br>The following are a set of key links to get familiar with Yantra.<br>It is recommended that they be read in the given order.<br>| Name | Description |<br>|---|---|<br>| Tutorial | A step-by-step walk-through for getting started with Yantra. |<br>| Overview | A high-level overview of Yantra. |<br>| Concepts | Key concepts of Yantra. |<br>| User Manual | User manual describing the grammar. List of pragmas. |<br>| Developer Reference | Description of major classes. |<br>| Build Instructions | Steps to build Yantra. |<br>| Grammar Quickstart | A quick introduction to the grammar file structure. |<br>See https://github.com/TantrixAuto/lingo for standalone sample project that uses yantra.<br>This is a language server extension created by Raj Chaudhuri that provides syntax highlighting for Yantra files in vscode, qtcreator, and any other IDE that supports the Language Server Protocol.<br>Yantra is licensed under the MIT License.<br>Renji Panicker (@renjipanicker)</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    OpenAI halved the allowance of the $200 plan to 10x
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    8 points ·
+    4 comments ·
+    k9294
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · New #60
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49919026">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">&gt; Our commitment is that, over time, your subscription will continue to help you get more work done with an increasing level of quality.<br>&gt; Starting October 30, 2026, your included usage in ChatGPT Work and Codex will decrease from 20 times to 10 times the ChatGPT Plus allowance.<br>&gt; For those who want even more usage and speed, the new Pro 500 tier offers our highest usage allowance, with 25 times the usage of Plus.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1053 points ·
+    936 comments ·
+    crorella
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/introducing-gpt-6-1-sol/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49896586">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Radiant Is Open
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    chthonicdaemon
+  </div>
+
+  <div class="meta">
+    metaculus.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.metaculus.com/notebooks/45808/radiant-is-open/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49919621">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    The top secret URSALA, RAQUEL, and FARRAH satellites (2025)
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    217 points ·
+    103 comments ·
+    Bluestein
+  </div>
+
+  <div class="meta">
+    thespacereview.com
+  </div>
+
+  <div class="meta ranks">
+    Top #3 · Best #35
+  </div>
+
+  <div class="links">
+    <a href="https://www.thespacereview.com/article/4951/1">Original article</a> · <a href="https://news.ycombinator.com/item?id=49915082">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">|  | Stars in the sky: The top secret URSALA, RAQUEL, and FARRAH satellites from the 1970s to the 21st century by Dwayne A. DayMonday, March 10, 2025 |  |<br>| Twenty HEXAGON satellites were launched from California between 1971 and 1986, with one failure. HEXAGON was a big photo-reconnaissance satellite, but often carried Program 989 subsatellites that were deployed in orbit. (credit: Peter Hunter) |<br>In 1963, the Air Force launched the first “hitchhiker” off the side of a larger satellite. This began a secretive program that lasted more than 40 years under a variety of names and designations. The satellites, about the size of a large suitcase, were festooned with antennas and spun rapidly as they orbited the Earth, sweeping their antennas over the ground and gathering radar and other signals, so-called electronic intelligence, or ELINT. They usually recorded the signals for later transmission to the ground, but occasionally directly re-transmitted them to a ground station.<br>| Satellites with names like URSALA, RAQUEL, FARRAH, GLORIA, and CARRIE have only recently been declassified, with significant information about them released only in the past two months, including the disclosure of previously secret space shuttle payloads. |<br>For the first decade, the various satellites under this program chased whatever new ELINT targets appeared and were of interest to the intelligence community. The satellites were designed to be inexpensive and simple enough to be developed in a year or less in response to new threats. Their payloads were often bespoke designs, built only once or twice before they were replaced by something else.<br>But by the 1970s, the National Reconnaissance Office (NRO), which managed the program, began to standardize the satellites and give them an operational mission supporting military forces around the world. Satellites with names like URSALA, RAQUEL, FARRAH, GLORIA, and CARRIE have only recently been declassified, with significant information about them released only in the past two months, including the disclosure of previously secret space shuttle payloads. These satellites represented a profound change in the collection of intelligence data from orbit, a change from serving relatively exclusive “national” leadership to supporting tactical forces of the Army, Navy, and Air Force. They brought the wizard war of space-based electronic intelligence to the warfighter.<br>| During the 1970s and 1980s, subsatellites were deployed off the sides of large HEXAGON photo-reconnaissance satellites. (credit: NRO) |<br>The first of the small satellites were colloquially called “hitchhikers,” but Lockheed Missiles and Space Company, which built them, referred to them as Program 11, or P-11 satellites, and this designation seems to have been used by officials throughout the 1960s and 1970s as generic shorthand for the small satellites, even when they had official program designations and specific names. In 1965/66, the P-11 program was redesignated P-770B, then Program 989.[1] However, as fewer individual satellites were procured over the years, it appears from available documentation that officials often referred to the individual satellites rather than the program they were part of. The Program 989 satellites continued flying even after a larger series of signals intelligence (SIGINT) satellites known as Program 770 ended with the last launch in 1972.[2]<br>By the 1970s, the intelligence community began using the TALENT-KEYHOLE designation “Mission 7300” to refer to the collection of radar signals and their geolocation data by these low Earth orbit satellites. Mission 7100 referred to the ocean surveillance mission performed by the PARCAE satellites. Mission 7200 referred to payloads hosted on other satellites, such as the AFTRACK electronic intelligence systems carried on many CORONA satellites in the 1960s.[3] By the 1980s there was increasing discussion within the intelligence community of merging both Missions 7100 and 7300 by developing new satellites incorporating both of their capabilities.<br>During the 1960s, the satellites often lasted only a few months in orbit. Their lifetimes were often limited by their low orbits. Satellites with large antennas, such as large low-frequency spiral antennas or large flex-rib dish antennas, were dragged down by the thin atmosphere at their altitudes. It was typical for satellites to last one to four years before they burned up in the atmosphere, although MABELI was still operating when it burned up after seven years and TOP HAT II was still functioning when it burned up at six years.[4] The Secretary of the Air Force Special Projects office, located in Los Angeles, was the NRO’s West Coast organization responsible for managing Mission 7300, among other projects. Usually only referred to as SAFSP and mostly manned by Air Force officers, SAFSP sought to increase the lifetimes and capabilities of the satellites so that fewer were required to perform the missions. Improved electronics made this possible.[5]<br>Throughout the 1960s the satellites had names like PUNDIT, SAVANT, SOUSEA, and SAMPAN that were obscure references to people working in the intelligence field, or sometimes even inside jokes or puns. The program managers (all men) were told that they needed to avoid possible hints about the satellites’ missions, and so they decided to name them after movie actresses.[6]<br>Because the P-11s were carried into orbit alongside other, bigger, photo-reconnaissance satellites, the satellites were inevitably compromises. They were limited in size, mass, power, capability, and cost. Nevertheless, they were designed to pack as much capability into a small size as possible. They were notable for sporting several dishes around their periphery, most of which were spring-loaded to deploy using centrifugal force.<br>| Radars produce mainbeams and weaker sidelobes. The Program 989 satellites usually had the ability to detect both, and in some cases they could determine fine-grain data about the signals, enabling the development of jamming and spoofing capabilities. (credit: NRO) |<br>Radars produce main beams that radiate forward of the emitter, and side lobes that spread out to the emitter’s sides. The main beam is obviously the most powerful part of the emission, but it is focused in a specific direction and can only be intercepted if a collector such as a satellite antenna travels through the emission cone. The side lobes spread out over a much larger area but are fainter. A satellite with parabolic dishes can collect the fainter side lobes, whereas main beams can be collected in low Earth orbit without large dish antennas if the satellite travels through them. Thus, even though the Program 989/Mission 7300 satellites were not particularly large, their dish antennas provided a capability for intercepting faint, and more prolific, radar side lobes.<br>By the late 1960s and early 1970s, the NRO was also launching several new classes of larger signals intelligence satellites to much higher orbits, including geosynchronous orbits. Those satellites were designed to collect Soviet microwave communications, missile and rocket telemetry, and other signals. But they were primarily restricted to northern hemisphere targets, for the satellites in highly elliptical orbits, and to eastern hemisphere targets if they were located in geosynchronous orbit over the eastern hemisphere. In other words, a signals intelligence satellite located in the eastern hemisphere to monitor communications from Moscow could not also cover targets over Central America. Program 989 low Earth orbiting satellites were still necessary for intercepting radar signals in large part because the satellites were closer to their targets and covered the entire globe from their polar orbits. The low Earth orbiting satellites also could serve new users, not just the Central Intelligence Agency and National Security Agency and the “national” level customers of their intelligence like the White House and senior military leadership.<br>| Four URSALA satellites were launched during the 1970s. The ability of URSALA to provide data to mobile electronics vans deployed in the field made these satellites valuable for tactical users. Tactical Exploitation of National CAPabilities (TENCAP) became an important intelligence mission. (credit: NRO) |<br>The Vietnam War played an important part in causing a redirection in the low Earth orbit signals intelligence program. In the mid to late 1960s, the NRO had launched more than a dozen P-11 satellites designed to intercept anti-ballistic missile (ABM) radar signals. But by 1969, hundreds of American aircraft had been shot down by missiles over Vietnam, and for several years overhead imagery had detected a Soviet radar system deployed in the field, but no electronic intercepts had been made (the identity of this radar is still deleted from declassified documents.) In addition, the existing satellites lacked the capability to search for Ku-band emitters in the 12-to-18-gigahertz range. Finally, radar experts expected the Soviet Union to begin deploying “double-agile radars” that could simultaneously frequency hop from pulse-to-pulse and jitter in pulse repetition interval (the time between pulses) from pulse-to-pulse. A new capability would be required to detect these emerging radar threats.[7]<br>The lack of specific knowledge about these emerging high-threat signals produced a set of requirements that could not be satisfied by a single system using the technology available at the time but led to the creation of two new satellite systems: URSALA and RAQUEL.<br>| “Back in the early 1970’s the new mission was to get data directly to the commander on the FEBA (Forward Edge of the Battle Area). I had a payload with possibilities if it could be ‘trailerized.’ We decided to go for it but needed a catchy name, so we used DRACULA…Direct Readout and Collection ULA (‘ULA’ was the three-letter shorthand for the URSALA payload).” |<br>URSALA was designed to collect signals from double-agile radars in bands from 2 to 12 gigahertz. It searched radar side lobes, not their main beams. It was considered a “general search” system. RAQUEL was designed not to search from horizon-to-horizon, but to maximize the intercept time on relatively short slant range targets by using a spinning pencil beam (i.e. the narrow beam in which a signal could be detected by the satellite.)[8]: “Since the frequency of the signals was not known, it was necessary to develop a collection system capable of searching a wide frequency range. A means of associating the signals definitely with the [radar] was also required, as was a capability to measure technical parameters precisely.” The RAQUEL satellites required more time to develop than URSALA due to their increased complexity.[9]<br>Four URSALA satellites were deployed from HEXAGON photo-reconnaissance satellites during the 1970s. They were placed into approximately 509-kilometer (275-nautical-mile) circular orbits. They were designed to detect pulsed emitters primarily within the Soviet Union. URSALA represented a change in design philosophy for the NRO: rather than the custom approach that was used for many of the dozens of satellites produced during the 1960s, SAFSP sought to standardize the satellites and their payloads. URSALA satellites also had some ability to detect and geolocate ships at sea, although this was not a primary mission.<br>URSALA I and II were launched in 1972 and 1973 and designed for general search and electronic order of battle for pulsed and continuous wave emitters with a frequency range of 2 to 12 gigahertz. They weighed 178 kilograms (393 pounds) and had nine-month design lifetimes. URSALA I ultimately lasted 70 months, and URSALA II lasted 61 months.[10]<br>Although URSALA (and later RAQUEL) was intended to detect signals from surface-to-air missile radars that were deployed tactically, at least at first the satellites were serving national intelligence requirements, meaning that their data was evaluated in places like the National Security Agency, and then eventually used to better protect tactical aircraft. Tactical forces would indirectly benefit from the intelligence, but they would not receive it.<br>However, the 1973 war in the Middle East prompted the use of the satellites for “operational support,” and the success of the URSALA I and II satellites in this role stimulated the development of techniques for more rapid data processing, both on the satellites and on mobile ground terminals.[11] This was apparently the beginning of a new mission for these small satellites, the evolution from their use primarily in support of strategic intelligence gathering to providing data that could be directly used by military forces deployed around the world—electronic intelligence order of battle (EOB), or an indication of the types and locations of enemy deployed electronic emitters. For instance, detecting Soviet SA-6 mobile surface to air missile radars in a new location provided an indication that the missiles were likely protecting a moving armor column, or a high-value target like a field headquarters.<br>By the mid-1970s, Army and Air Force tactical users were becoming interested in directly accessing the electronic intelligence data collected by the low Earth orbiting satellites, bypassing the NSA. They funded a program called RTIP which in 1977 consisted of two vans—a mobile antenna van and a processing van—that demonstrated the feasibility of direct downlink and on-board processing operation using data from the URSALA III satellite.[12] This was the beginning of what became known as Tactical Exploitation of National CAPabilities, or TENCAP. As more customers began using the data produced by the satellites, they exerted a pull on NRO requirements (see “From the sky to the mud: TENCAP and adapting national reconnaissance systems to tactical operations,” The Space Review, June 19, 2023.)<br>After RTIP, the NRO’s West Coast office, along with the US Army, developed the Interim Tactical ELINT Processor (ITEP) vans, which were first deployed in 1979. A follow-on van, known as the Tactical ELINT Processor, was planned to work with the FARRAH spacecraft. However, ITEP proved suitable to work with URSALA, RAQUEL, and FARRAH. The Air Force later dropped the “I” from ITEP, referring to it as TEP. The Army renamed its vans as the Electronic Processing and Dissemination System (EPDS), and by 1990 they were widely deployed throughout the world.[13]<br>According to one person who worked on the satellites during this time, “Back in the early 1970’s the new mission was to get data directly to the commander on the FEBA (Forward Edge of the Battle Area). I had a payload with possibilities if it could be ‘trailerized.’ We decided to go for it but needed a catchy name, so we used DRACULA…Direct Readout and Collection ULA (‘ULA’ was the three-letter shorthand for the URSALA payload).” The Air Force officer put together a briefing for NRO headquarters in the Pentagon. “General Bradburn liked the briefing but trashed the name, saying that he could already hear the welcome by the East Coast: Oh, no, not another blood sucking program from out west!”[14]<br>Before the launch of URSALA III in 1976, the NRO had decided to let the program die with the end of URSALA IV. However, data users objected and there was pressure to continue or reinstate the program. “In order to do this funding from both the tactical EOB users and the technical intelligence users was needed to cover the costs of a replacement vehicle,” an official history noted.[15] Although details are still limited, apparently this meant that the Army, Navy, and Air Force were required to pay for part of the satellite program. If so, this would have also given the service branches a greater say in the establishment of requirements.<br>URSALA III and IV, launched in 1976 and 1979, were also designed for general search and electronic order of battle detection missions and had the same frequency range of 2 to 12 gigahertz as their predecessors.[16] But they weighed substantially more, at 259 kilograms (570 pounds), and were designed with 18-month lifetimes. URSALA IV was equipped with an encrypted downlink to enable its use by tactical forces.[17] URSALA III lasted 133 months and URSALA IV lasted 35 months.[18]<br>| The RAQUEL 1A satellite was launched in 1978 and during the 1982 Falklands War it was used to gather signals from Argentine deployed forces that were probably provided to the UK military. The satellite may have played a role in locating the light cruiser ARA General Belgrano, which was sunk by a Royal Navy submarine. (credit: NRO) |<br>RAQUEL was similar to URSALA in design, although intended to search different frequency bands. Whereas URSALA was a “general search” satellite, RAQUEL was described as a “directed search and technical intelligence” satellite. The primary mission of RAQUEL was to “search for, locate, and identify new or unusual signals and to collect emitter mainbeam technical intelligence data on signals in the 4-18 GHz frequency range in accordance with the National SIGINT Requirements List (NSRL). Additional mission requirements include the collection and reporting of operational ELINT data.”[19] The satellite also had a technical intelligence receiver that was capable of recording fine data about the signals it detected. RAQUEL 1 was launched off a HEXAGON satellite in October 1974, and RAQUEL 1A was launched from a HEXAGON in March 1978. RAQUEL 1A cost $13.6 million in 1976, an indication of the approximate cost of the satellites of this type.[20] Initially there had been plans to develop a RAQUEL II, but the cost was deemed excessive.<br>RAQUEL 1 weighed 256 kilograms (565 pounds) and was described as the “first of new block of increased capability, high reliability spacecraft.” It had a design life of 18 months, but eventually lasted 63 months, until early 1980.[21,22]<br>RAQUEL 1A was declared operational by mid-May 1978, and “time critical reporting procedures for North Korea, the Middle East, and the Ethiopia-Somalia border were implemented.”[23] It later intercepted and geolocated uplinks from Afghanistan that apparently indicated Soviet plans to invade the country. Shortly after the Soviets began sending aircraft and materials into Afghanistan in 1979, the satellite detected a key Soviet communications satellite uplink.<br>| More internal volume became available inside the basic subsatellite shape, and designers took advantage of this by packing in even more electronics. One officer who worked on the program calculated that the satellite was now the density of solid mahogany. |<br>During the 1982 Falklands War, the satellite was reoriented to provide coverage of extreme southern latitudes. This was possible while maintaining much of the usual northern hemisphere coverage. The attitude maneuver was performed during April 24–27, 1982, resulting in two to four passes a day of daytime coverage, providing high-quality collection.[24] Details on the satellite’s value during the Falklands War are unavailable, but obvious targets of interest would have been Argentine air defense radars deployed to the islands, as well as the locations of any Argentine naval vessels. Notably, the Argentine light cruiser ARA General Belgrano was sunk on May 1 by a Royal Navy nuclear submarine, several days after RAQUEL 1A began monitoring the conflict.[25]<br>The satellites had projected lifetimes of approximately three years but lasted over four times as long. RAQUEL 1A was put into caretaker status in March 1987, but was taken in and out of caretaker status several times after that, including an extended period from August to October 1987 to monitor a still-classified target. In September 1990, operators prepared to take the satellite out of caretaker status again to support Desert Shield/Storm, but this proved unnecessary. RAQUEL 1A re-entered the atmosphere in February 1992, after 14 years in orbit.<br>| The first two FARRAH satellites were box-like and deployed from HEXAGON satellites. FARRAH III, IV, and V were larger and originally intended for launch from the space shuttle. They were later switched to Titan II rockets. From their low Earth orbit, they could detect radar signals and provide intelligence to tactical forces. (credit: NRO) |<br>By 1976, after reversing the decision to end the low Earth orbit signals intelligence program, the NRO decided to recombine the search and electronic order of battle functions (with geolocation) that had been separated into the URSALA satellites and the technical intelligence functions that had been put into the RAQUEL satellites. This single vehicle was initially called “SAT 1.” The SAT 1 study was conducted by Lockheed and combined the functions along with expanded frequency coverage from 2 to 18 gigahertz. The concept was funded in 1977 and construction started in 1978. The satellite was renamed FARRAH.[27]<br>Changes to the bus-sized HEXAGON photo-reconnaissance satellite enabled even heavier subsatellite payloads to be mounted to their sides.[28] In addition, reduction in electronics size meant that more internal volume became available inside the basic subsatellite shape, and designers took advantage of this by packing in even more electronics. One officer who worked on the program calculated that the satellite was now the density of solid mahogany.<br>The satellites were equipped with a CDC 469 on-board general purpose digital computer. The computer was used for real time “deinterleaving and readout directly to remote tactical support vans.” This computer was small, lightweight, and energy efficient for its time.[29,30]<br>FARRAH I and II, launched in 1982 and 1984, respectively, were nearly identical spacecraft whose mission was “to acquire data to satisfy General Search, Operational Elint, and Technical Intelligence requirements on signals in the 2-18 GHz frequency range.” The general search requirements included high priority Soviet, Chinese, and other directed target areas. They also included known interest high-priority targets and strategic and tactical targets associated with weapon systems undergoing development. Operational intelligence was collected for the purposes of indications and warning, and Strategic Arms Limitation Treaty monitoring and force positioning. The FARRAH satellites further developed the capability to provide data to small tactical ground stations for US Army and Air Force units.[31]<br>The FARRAH satellites were located in orbits of approximately 709 kilometers (383 nautical miles) altitude inclined 96 degrees to the Equator. Each weighed approximately 340 kilograms (750 pounds) and they were designed with 36-month lifetimes, but ended up exceeding this by a substantial amount.[32,33] In early 1991 both satellites lost their final tape recorders, which limited them to transpond collection only, meaning that they could only send signals when they were both in line of sight with an emitter and a ground station. Despite having degraded substantially during the 1980s, both FARRAH I and II operated until the early 2000s, when they were shut down after two decades of service. FARRAH I ceased operations on November 3, 2004, 22 years after launch. FARRAH II was shut down on October 6, 2004, 20 years after launch. Both satellites were placed in a “non-recoverable state” and were projected to remain in orbit in excess of 50 years.<br>During the 1970s, the P-11-type satellites that had started out as relatively small and inexpensive a decade earlier had steadily grown in mass, cost, and capability. They had also evolved from mostly strategic intelligence collection systems to suppliers of operationally useful intelligence data to tactical units throughout the world. This had involved not only improvements to the satellites, but also new ground systems and new ways of sharing data. That also meant that new users, particularly the United States Army, emerged and began recommending the types of data that was most useful to them. TENCAP started with modest means but continued to grow.<br>| The FARRAH satellites had antennas for intercepting different frequencies. The satellites spun at 50 RPM. (credit: NRO) |<br>The shuttle era: the FARRAH “tuna cans”<br>In 1980, the National Reconnaissance Office determined which of its satellite programs would transition to use the Space Shuttle and which would continue to use existing expendable launch vehicles.[36] The GAMBIT and HEXAGON photo-reconnaissance satellite programs were both scheduled to retire during the 1980s and thus would not be modified to fly on the shuttle. Because the smaller Program 989 satellites like URSALA, RAQUEL, and FARRAH had launched off the side of HEXAGON satellites, they would need a new way to reach orbit after the end of the HEXAGON program.<br>As a result of this decision, the NRO performed an “ELINT Mix Study” and related studies to examine issues related to the transition of low altitude SIGINT programs to the shuttle. One possibility was combining existing low-altitude programs, or to replace selected low-altitude capabilities with an upgraded high-altitude satellite (as had been done with the large Program 770 STRAWMAN satellites in the early 1970s). The NRO determined that existing systems should be upgraded but not combined. The upgraded satellites would also be launched along with Improved PARCAE ocean surveillance satellites on the shuttle.[37]<br>NRO officials decided not only that future FARRAH satellites could be launched by the shuttle, but that they could be substantially enlarged to take advantage of the shuttle’s greater lift capabilities. At least three of the new satellites would be procured: FARRAH III, IV, and V. They would be larger and heavier than their predecessors with the same name, equipped with more antennas and receivers. The new satellites would weigh more than 1,360 kilograms (3,000 pounds), compared to 340 kilograms for FARRAHs I and II.[38]<br>| According to an official history updated in 1991, the switch from expendable rockets to the shuttle and then back again for both the FARRAH and PARCAE programs “proved extremely costly” for both programs. |<br>The NRO has now released illustrations of the FARRAH III satellite, indicating that it was a large, squat cylinder, generally referred to as a “tuna can,” and equipped with three dish antennas and several other pole antennas like its much smaller predecessor. FARRAH III had a tactical on-board processor and could direct downlink its data to users. One artist illustration showed this data being transmitted to fixed ground stations, ground-based mobile vans, and an aircraft carrier. FARRAH could therefore send data directly to some ships. In contrast, at the time, data was apparently not directly downlinked from the PARCAE ocean-surveillance satellites to ships but was first relayed through fixed ground stations for processing and then through geosynchronous communications satellites to ships at sea, as well as through a dedicated communications satellite network in highly elliptical orbits.<br>The satellites spun at 50 rpm and had three high-gain parabolic antennas that covered 0.8 to 6, 6 to 12, and 12 to 18 gigahertz. The latter used “cooled front-end electronics” to receive the higher frequencies. They were also equipped with single and double-boom omni antennas to suppress sidelobe interceptions.[39] FARRAH V had additional capabilities that remain classified.[40] FARRAH III was apparently designed with a three-year nominal lifetime.[41]<br>| In the mid-1980s, several of the FARRAH signals intelligence satellites intended for shuttle launch were switched to use converted Titan II ICBMs. Three were launched starting in 1988, although FARRAH IV failed in orbit. (credit: Peter Hunter) |<br>Although the plan had been to launch at least the first three of these larger FARRAH satellites on the shuttle, the NRO official in charge of the FARRAH program realized that this would require major upgrades to the shuttle that might not be funded in time, if at all, and he chose to remove the satellites from the shuttle and launch them on converted Titan II ICBMs instead. Eventually, the PARCAE program also switched from the shuttle to the expensive Titan IV rocket. According to an official history updated in 1991, the switch from expendable rockets to the shuttle and then back again for both the FARRAH and PARCAE programs “proved extremely costly” for both programs.[42]<br>FARRAH III was launched in September 1988. FARRAH IV was launched in September 1989 but failed soon after reaching orbit.[43] FARRAH V was launched in September 1992. No details have been released about when FARRAH III and V ceased operating, but in 2021 they were observed still spinning in orbit, and they could possibly still be operational. In 1993, three additional Titan II rockets that had been assigned to “classified payloads” were made available for other programs. It is likely that these three were originally allocated to FARRAHs VI-VIII, but a program reorientation resulted in their cancellation.[44]<br>Although designed with a three-year nominal lifetime, FARRAH III was apparently still alive nine years later.[45] Considering that its smaller predecessors lasted two decades, FARRAHs III and V could have even been operational into the 2010s. Recently, the Space Force celebrated the 30th anniversary of operations of the first Milstar communications satellite, and Defense Support Program missile warning satellites remain operational after two decades in orbit, indicating that long lifetimes in orbit are not unusual for military satellites.<br>| The FARRAH satellites could supply intelligence data to tactical forces, ships, and even aircraft. Data could be recorded for later transmission, or directly transponded to a ground station as soon as it was received. Fixed ground stations could also re-transmit data. (credit: NRO) |<br>The data from the FARRAH satellites could be sent down in several different ways. Data from the Tactical Onboard Processor could be transmitted by direct downlink to receivers, either fixed or mobile, including ships at sea. The signals intercepted by the satellites could be either recorded for later playback, or “transponded,” meaning that the data was sent as soon as it was collected. Data sent to a fixed ground station could then be relayed through a military comsat to another ground station or other users.[46]<br>An NRO document explained that the remote operating locations “are NRO assets strategically located near high interest areas, providing greater, near realtime coverage without putting tape recorder cycles on the satellites. This contiguous field of view between target area and receive site reduces the number of tape recorder cycles on the vehicles while preserving the intelligence value. The mechanical tape recorders are the life-limiting factor on our store-and-forward mission capabilities.” There were three remote operating locations for the satellites, although their locations are still classified.[47] The Mission 7300 data was also “fused” with other data, most likely from the PARCAE ocean surveillance satellites.<br>| The LORRI 2 payload was attached to the last HEXAGON photo-reconnaissance satellite and was designed to search a little-used portion of the frequency spectrum to determine if it was being used by foreign military powers. The payload was destroyed when the Titan rocket carrying it blew up soon after launch. (credit: NRO) |<br>In addition to the FARRAH satellites that served general electronic intelligence collection requirements, SAFSP also oversaw the development of several specialized systems during this period, such as LORRIs I and II, which were intended to survey portions of the spectrum that were still mostly unused by the military.<br>The concept for LORRI I was developed in 1973–1974, but limited funding delayed its development.[48] LORRI I was an attached payload carried on a HEXAGON satellite launched in 1980 and was “the first satellite collector of SIGINT in the 26-to-42-gigahertz frequency range. It remained with its host spacecraft for its entire lifetime of eight months.[49] LORRI I was intended to survey this frequency range to determine if it was being used by the Soviet Union or other countries for new purposes. It apparently demonstrated that the frequency range was mostly quiet. According to one document, the Naval Research Laboratory’s NRO component office (known as Program C) “flew an earlier, largely unproductive mission” similar to LORRI I. (It is unclear what this mission was, but it may have been included on a POPPY satellite.)[50]<br>LORRI II was expanded to cover three additional frequency ranges. These were 92 to 96 gigahertz, 70 to 74 gigahertz, and a VHF collection window centered at 158 megahertz to collect signals from a still-classified radar target as well as the large Soviet HEN HOUSE ABM and space-tracking radars.[51]<br>LORRI II was mounted to the side of the last HEXAGON photo-reconnaissance satellite, which was planned to have a much longer lifetime than previous HEXAGONs, staying in orbit long after its film ran out. That satellite and the LORRI II payload were lost when the Titan 34D rocket exploded soon after liftoff in April 1986. This prompted the NRO to search for near-term alternatives to replace the capability. One solution was a small satellite known as GLORIA I. The other was to make modifications to FARRAH III, then approximately one year from launch.[52]<br>| Two classified GLORIA satellites were carried into orbit on space shuttle missions STS-28R in 1989 and STS-39 in 1991. The secret satellites were carried in containers in the shuttle&#x27;s payload bay. (credit: NASA) |<br>GLORIA I was a small satellite deployed from the payload bay of the space shuttle Columbia during the STS-28R mission in 1989. It was a spin-stabilized satellite with a single one-foot (30-centimeter) parabolic receiver. GLORIA I was originally conceived to collect signals in the 18-to-26-gigahertz region, but the loss of LORRI II resulted in a change to intercept a higher frequency band.[53] GLORIA I’s primary mission was a general search for pulsed emitters in the 30-to-38-giaghertz frequency region, repeating a survey of this frequency band that had been conducted by LORRI I nearly a decade earlier. It was also intended to test the feasibility of low-cost, quick reaction satellites and was generally considered a success. Because GLORIA did not find any new or unusual uses for this frequency region, the NRO determined that another survey would not be needed for a decade. Early during the mission, the satellite’s solid state memory suffered from radiation and “latch up” problems, which were overcome.<br>| The GLORIA satellites were relatively small (note the scissors on the table) and used to search portions of the radio spectrum for new emitters. (credit: NRO) |<br>GLORIA II was a nearly identical satellite deployed from the space shuttle Discovery during the STS-39 mission in 1991. GLORIA II’s memory, command decoder, and mass memory controller had been upgraded to overcome early flight deficiencies.[54] Both GLORIA satellites were built by Ball Brothers, with the payload built by E-Systems. They were intended to meet a requirement for quick response, low cost, and limited time mission objectives. GLORIA II surveyed 18-to-26-gighertz frequencies for radar and communications emitters, a frequency region that had not previously been covered by NRO satellites. GLORIA II did detect an unknown radar, although details are unavailable. A GLORIA III was apparently evaluated, but not developed.<br>| CARRIE was launched in 1994 as part of the STEX satellite (also known as DARPASAT). It was designed to detect communications and provide intelligence data to American tactical forces. (credit: NRO) |<br>CARRIE stood for COMINT and Rapid Reporting Interferometry Experiment.[56] CARRIE started out as a concept within the Defense Advanced Research Projects Agency (DARPA) for an “experimental satellite providing direct support to warfighters.” The planned mission lifetime was one year, but the satellite lasted eight years until reentering the atmosphere in 2002. The satellite was designed to be quickly responsive, meaning that the collection requirements could be rapidly changed while the satellite was overhead.<br>The CARRIE satellite was launched as a ride-share on a Taurus rocket in 1994, part of the STEX satellite. One of its contributions to intelligence collection was finding evidence of “heritage” Soviet communications systems still operating in Cuba. It also geolocated new and unidentified emitters in multiple countries.<br>CARRIE was considered to be part of Mission 7200, because it was attached to STEX. CARRIE’s focus was on communications intelligence. STEX was apparently also used to relay data from FARRAH satellites that had lost their tape recorders a few years earlier, although it is unclear how STEX accomplished this.[57]<br>A summary produced in late 1997 indicated that Mission 7300 (the FARRAH satellites) and Mission 7200 (the CARRIE satellite) had detected 55 new signals in 1993, 52 in 1994, 49 in 1995, 33 in 1996, and 18 new signals by September 1997.[58] Clearly the number of new detections was declining over this period, although whether this was because of the collapse of the Soviet Union or the limitations of the satellites is unknown.<br>As early as 1980 there were studies within the NRO about possibly merging the PARCAE ocean surveillance system with the satellites of Mission 7300. That merger was rejected at the time in favor of upgrading both systems. But the existence of two systems for low Earth orbit signals intelligence collection, along with the increasing cost of both, required NRO officials to defend them, apparently both from the White House’s Office of Management and Budget and relevant congressional committees.<br>| The Mission 7100 ocean surveillance program ended in 2008, but it is unclear when, or if, the Mission 7300 signals intelligence program also ended, or if some of the satellites remain in operation despite having been supplanted by a new effort starting in the 1990s. |<br>At some point during the 1980s, the program office for Mission 7300 produced a document explaining “Why Mission 7300 does so well in detecting new signals.” It declared that the system was “superior in its ability to find new signals in the SIGINT environment because it has the following inherent characteristics: special system capabilities, and extensive parametric and geolocation information from a single blip (pulse or CW sample).”[59] The special system capabilities included full Earth coverage, including the southern hemisphere and broad ocean areas. It “continues to evaluate the world environment prior to, during, and after events. While other systems are focusing on world events, Mission 7300 continues to provide General Search data.” It also had extensive frequency coverage of 2 to 18 gigahertz, plus 20 to 60 megahertz, 150 to 170 megahertz, and 30 to 38 gigahertz, with future capability (possibly in FARRAH V) including the regions 0.8 to 2 gigahertz and 18 to 26 gigahertz. The system had rapid frequency span coverage and geolocation with a single collector.<br>All of the Mission 7300 data was processed and analyzed. This was apparently in contrast to the PARCAE data, which was not completely processed. As one former PARCAE contractor noted, at least in the early years of the program much of the data was discarded because there was too much to process.<br>According to documents released by the NRO, the low Earth orbit signals intelligence mission and the ocean surveillance mission were eventually merged during the 1990s. The Mission 7100 ocean surveillance program ended in 2008, but it is unclear when, or if, the Mission 7300 signals intelligence program also ended, or if some of the satellites remain in operation despite having been supplanted by a new effort starting in the 1990s.<br>Today, satellite intelligence is integrated into military operations more extensively than ever before, the ultimate legacy of Program 989 and its satellites named after movie actresses.<br>Note: we are now moderating comments. There will be a delay in posting comments and no guarantee that all submitted comments will be posted.</div>
+</div>
+
+</div>
+
+</body>
+</html>
