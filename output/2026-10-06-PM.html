@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-06 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-06 PM · Generated 2026-10-06 17:40 CST</div><div class="issue-sub">Stories 10 · Full 8</div><div class="issue-sub">Sources: ec.europa.eu, github.com, jacobtomlinson.dev, liquidbrain.net, news.ycombinator.com, reflection.ai, stelabouras.com, techspot.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Beam: Reflection&#x27;s 501B open-weight model
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    453 points ·
+    143 comments ·
+    Philpax
+  </div>
+
+  <div class="meta">
+    reflection.ai
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #7
+  </div>
+
+  <div class="links">
+    <a href="https://reflection.ai/blog/introducing-beam">Original article</a> · <a href="https://news.ycombinator.com/item?id=49969183">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We are introducing Beam, Reflection’s first open-weight model. Beam is a sparse Mixture-of-Experts model with 501 billion total parameters, 23 billion active, built for coding, reasoning, and agentic workloads.<br>Beam’s capabilities come from major investments in both pretraining and reinforcement learning (RL). We pretrained the model on 23.8 trillion diverse, curated, high-quality tokens from the web and proprietary licensed datasets, matching or outperforming available similar-sized open base models. In parallel, we developed the algorithms, training environments, and infrastructure needed to sustain high-compute RL at exceptional scale. Our high-compute RL run generated over 100 million rollouts on 10.5K NVIDIA GB300 GPUs over 4 weeks of training.<br>Together, these efforts produced competitive open-weight performance with frontier inference compute efficiency.<br>Beam is undergoing final red-teaming and evaluations. You can sign up here for early access to the model. We will release the weights, technical report, model card, and developer artifacts later this month.<br>Model Capability<br>We trained Beam with a particular focus on coding and agentic performance. Beam advances the Western open-weight frontier and is competitive with larger open models like GLM 5.2 and approaching Qwen 3.8-Max on coding and agentic tasks. Where frontier open models like Kimi K3 remain ahead on raw capability, Beam&#x27;s advantage is efficiency at inference time.<br>The below figure shows Beam&#x27;s performance across a range of coding, agentic, reasoning, and STEM benchmarks. NR denotes scores that have not been reported.<br>Beam pairs coding and agentic capabilities with highly efficient reasoning. On advanced reasoning benchmarks, it achieves scores comparable to GLM-5.2 while using 3–4× less inference compute. Efficiency gains are even more pronounced when comparing to models in the 2T+ parameter family like Qwen 3.8-Max, which require significantly more inference compute per token.<br>These results translate into more intelligence per token, delivering strong model capabilities at lower cost, making Beam a powerful workhorse model for enterprise coding and agentic workloads.<br>High-Compute Reinforcement Learning<br>We made high-compute reinforcement learning a central scaling axis for Beam, investing in RL science, data, and infrastructure to turn more compute into stronger capabilities. Scaling RL enables more extensive exploration of problem-solving strategies, while longer rollouts support multi-step reasoning, tool use, and adaptation to environment feedback.<br>To scale reinforcement learning, we deployed 10.5K NVIDIA GB300 GPUs for four weeks generating more than 100 million rollouts with a maximum context length of 256K tokens. Training and grading used approximately 1.3 billion sandboxes. To sustain a run of this magnitude, we sourced one million high-quality coding, agentic, and STEM environments. We believe this is one of the largest scale RL runs conducted by any open lab to date. Across our evaluation suite, capabilities continued to improve as we increased RL compute, with no sign of a plateau.<br>We trained Beam with asynchronous policy gradients. At scale, policy staleness becomes a major source of instability for these methods. Long running rollouts have tokens that are generated by multiple model checkpoints, with earlier tokens becoming increasingly stale relative to the current policy. Numerical mismatch between training and inference engines further compounds this challenge.<br>We developed new algorithms to maintain stable learning under these conditions while systematically reducing training–inference mismatch throughout our pipeline. These advances enable fully asynchronous RL at scale that remains stable, even when learning from interactions generated more than a day earlier.<br>Learning to reason efficiently<br>We trained Beam with a controllable length penalty that rewards successful solutions while discouraging unnecessary tokens. Early in RL, performance improved even as completion lengths fell: the model learned to solve tasks more effectively with less reasoning. Later, as Beam developed stronger agentic capabilities, completion lengths grew again, but those additional tokens supported further gains in performance. Throughout training, RL improved the tradeoff between capability and token usage.<br>Users can control this tradeoff through Beam’s reasoning effort parameter: lower settings favor shorter responses, while higher settings allow longer reasoning to improve performance on demanding tasks. This gives users the flexibility to match reasoning effort to their task and compute budget.<br>How behavior generalizes with RL<br>We designed Beam’s RL training to develop reasoning and agentic capabilities that generalize beyond its training tasks. During a phase of training on reasoning, software engineering, and terminal tasks, we saw consistent gains in browsing despite the absence of browsing tasks from the RL mixture. This transfer suggests that Beam was learning broader agentic capabilities that generalize across domains. When given web access, it organically learned to search for and query other large language models, and to use OCR APIs to read documents.<br>The demos below showcase Beam applying these capabilities across research, application development, gameplay, and machine learning workflows. The examples range from building a live NYC subway dashboard using public data to creating interactive applications and preparing model fine-tuning notebooks. Although Beam is text-only, it can work with information from other modalities when represented as text. In another out of distribution domain, Beam also created a fine-tuning notebook for the latest and smallest Gemma-4 model on a Text2SQL task.<br>Together, these demos illustrate the breadth of tasks Beam can tackle by combining reasoning, coding, and tool use. Each example includes the initial request and resulting output, along with relevant setup and user iterations.<br>Scaling reinforcement learning environments<br>Frontier-scale reinforcement learning requires a large volume of difficult, high-quality tasks. We built a pool of nearly one million environments, primarily through synthetic data pipelines, supplemented by proprietary vendor data and open-source sources.<br>We relied heavily on an iterative curation process. First, we synthesized or sourced environments across a broad set of domains including software engineering, terminal use, competitive coding, STEM, web search, tool use, and general knowledge work. Second, we heavily filtered tasks for difficulty (ensuring they were neither consistently solvable, nor impossible for the model) and quality (e.g., not underspecified, misleading, guessable, hackable, or otherwise broken or noisy). Third, we tested the tasks through RL, which allowed us to identify further quality or difficulty issues and inform the next iteration of sourcing and filtering.<br>Throughout Beam’s development, we found that compromises in data quality led to capability plateaus and other training issues. Systematic improvements to task quality were essential to sustaining capability gains throughout the run, which ended with no sign of saturation.<br>Frontier RL infrastructure<br>High-compute agentic RL requires generating rollouts, executing tools, evaluating outcomes, and updating the model at scale. We built an asynchronous platform that lets these processes run independently while coordinating the flow of experience and model updates.<br>During Beam’s training, we sustained an average of 110K concurrent rollouts. Seven capabilities made this practical:<br>Fully asynchronous execution: Agents generate rollouts while the trainer learns and publishes new model versions. Each token is tagged with the version that produced it, allowing the training algorithm to account for policy staleness as completed rollouts flow into training.<br>Flexible compute allocation: We adjusted the balance between inference and training as the workload evolved, operating at inference-to-training GPU ratios from 3.9:1 to 5.4:1. We also resized the trainer across five GPU mesh configurations within the same training lineage without losing training state.<br>Fast model updates: New weights reached the inference fleet in a median of approximately 12 seconds. Hierarchical distribution transfers weights across racks over RoCE, then shares them locally over NVLink. Compared with every replica pulling weights directly, this reduced cross-rack traffic by 75% and made fleet-wide adoption of new weights 2.2× faster.<br>Resilience to inference failures: During the run, 71 inference incidents were handled without terminating the training job. Inference capacity recovered in a median of eight minutes, with lost capacity accounting for just 0.02% of elapsed serving GPU-minutes.<br>Environments at scale: We supported up to 170K concurrent sandboxes during the run. Across the platform, we processed more than one billion sandbox creation requests, spanning over 20 clusters, two clouds, and four regions. 90% of new sandboxes were ready in under 10 seconds.<br>Efficient Trainer Packing: Dynamic packing kept training batches 99.99% full on average, holding per-GPU trainer throughput within 1.5% as mean rollout length grew almost 70%.<br>Observability and reward integrity: Per-token records enabled numerical consistency checks between training and inference at every step. Independent judges re-screened passing solutions for verifier exploits, while replayable records made rewards and their use in training inspectable.<br>Together, these capabilities enabled us to train on longer interactions and more demanding environments while maintaining throughput, recovering from failures, and checking the integrity of the learning process.<br>Pretraining a Foundation for Reasoning<br>Reinforcement learning builds on top of a robust base model. To facilitate reasoning, we ensured Beam’s foundation had rich knowledge in coding domains, innate agentic capabilities that could be amplified, and stable MoE optimization dynamics.<br>While developing Beam, we pretrained a series of iteratively bigger models to establish and verify our scaling recipe. Making their performance predictable required carefully designing model tiers, curating diverse in-house code and web validation sets, and aggressively decontaminating all training data against them. The scaling held; the final Beam Base matches its predicted performance, and also matches or outperforms accessible similar-sized open-source base models.<br>Stable and balanced MoE optimization<br>The Beam architecture and optimization recipe emphasizes a numerically healthy foundation for sustained downstream RL. It combines interleaved local and global attention, fine-grained routed experts, a controlled residual stream, and multiple forms of load balancing to ensure stable, balanced expert utilization and healthy signal propagation through residuals.<br>For expert utilization, we built on auxiliary-loss-free load balancing (DeepSeek-AI et al., 2024), introducing cosine decay of expert-bias updates to reduce routing perturbations later in training. Sequence-level balancing further encourages balanced expert utilization on data outside the pretraining distribution, preparing the model for the changing distribution of downstream RL. As a result, the final pretrained base has almost-perfect uniform utilization, ensuring all experts can be used for learned reasoning.<br>For the residual stream, we developed a depth-based scaling approach that counteracts activation growth as sublayer outputs accumulate, helping keep residual norms stable as model depth increases. Combined with SandwichNorm, elementwise attention gating, and FP32 residual accumulation – which reduces rounding error when adding small updates to the stream – this recipe controls activation growth and outliers, thereby ensuring healthy signal propagation throughout all layers of Beam. This stability persists throughout pretraining, reinforcement learning, and alignment.<br>Quality-centric data curation<br>Beam was pretrained on 23.8 trillion diverse high-quality tokens from the web, public sources, and proprietary licensed datasets. Our data pipeline was designed to give Beam a foundation for downstream agentic coding: source code, technical explanations, and mathematical and scientific knowledge, preserved through every stage of curation. We train on almost all publicly accessible and unrestrictively-licensed code and code documentation on the web.<br>We trained our own quality classifiers for web, code, and STEM content, divided data into fine-grained quality tiers, and weighed training toward stronger material. After extensive scientific iteration, we optimized both precision and recall of data curation significantly beyond conventional web filters used in state-of-the-art OSS data frameworks. On one hand, about 95% of raw Internet tokens are eliminated through parsing, deduplication, and curation. On the other hand, we found that conventional techniques would have missed roughly 1.8 trillion high-quality tokens we retain, including 87% of our curated web-code tokens.<br>Code modeling requires its own curation for the highest performance. For each language, we applied individually tuned filters, removed low-quality autogenerated and unlearnable content, and trained classifiers to identify corrupted content or code that may hurt training stability. Overrepresented languages and file types are rebalanced to further broaden exposure.<br>We also developed a high-throughput pipeline for processing PDF artifacts, to ensure the base Beam has knowledge across a wide range of STEM topics. It integrates a vision-language OCR model with in-house quality classifiers and artifact detectors that catch malformed reconstructions, distributed across thousands of GPUs to process petabytes of technical data.<br>We repeated code and technical content multiple times to increase the model’s exposure over the course of its training horizon. This required careful attention to fuzzy deduplication, packing algorithms, and the science of overtraining, to ensure every repeated data source helps rather than hurts generalization.<br>Frontier-grade pretraining infrastructure<br>Beam was pretrained end-to-end in under four weeks on a cluster of 6,144 NVIDIA GB300 NVL72 GPUs. To achieve the reliability, performance, and development velocity required to train Beam at scale, we built nearly the entire infrastructure stack in-house. This included a novel topology-aware, Kubernetes-based scheduler across our clusters; an internal node lifecycle system with continuous health monitoring and alerts; and a silent data corruption (SDC) detection system capable of semi-autonomous rewinds and restarts. Together, these systems gave us the performance and operational control required to train our own frontier model efficiently and with greater stability.<br>As a result of extensive investments in the training recipe stability, infrastructure, and data quality, the overall pretraining run finished with an extremely smooth trajectory. We executed nine semi-automatic rewinds throughout, attributed either to non-deterministic gradient norm spikes or to suspected SDCs. In addition, the run’s goodput (the share of wall-clock time spent on training steps retained in the final model) reached 92.3% towards the end thanks to improvements in checkpointing, fault detection, and node health management.<br>Building a strong prior for RL in Midtraining<br>Our midtraining stage was designed specifically as a foundation for high-compute RL, developing the knowledge, reasoning, and tool-use capabilities that allow Beam to learn from more demanding tasks.<br>We built multi-stage data curation pipelines that capture the structure and complexity of real-world tasks while expanding coverage of capabilities that are difficult to learn from raw data alone. Starting from carefully selected real-world examples, these pipelines transform, combine, and extend material into training data designed to teach specific capabilities. This includes long, reasoning-rich documents that expose the model to extended chains of logic.<br>Midtraining also extends Beam’s effective context length to 1M tokens. We combine structured code repositories, long-horizon tasks, and high-quality long-form documents to teach the model to identify, retain, and connect relevant information across long sequences.<br>Together, these capabilities give RL a stronger starting point, enabling Beam to explore more complex solutions, work through longer interactions, and learn from tasks that would otherwise be out of reach.<br>Safety and Alignment<br>Our safety and alignment work involved training a second model from our pretrained checkpoint using a separate SFT and RL pipeline on data specifically targeting the principles by which the model should abide. We merged the capabilities of the two teachers – a large-scale RL teacher and a dedicated safety and alignment teacher – via multi-teacher on-policy distillation (MOPD).<br>We organized Beam&#x27;s safety and alignment principles into three tiers:<br>(1) Rules that Beam should not break: following our safety policies and maintaining its identity as an AI agent.<br>(2) Qualities that Beam should consistently satisfy, such as: using the context it is given, making accurate claims, acknowledging uncertainty, and transparently following the user’s request.<br>(3) The default style for how Beam should interact: direct, thorough, efficient, and proactive in anticipating what the user may need next.<br>We designed the RL environments in the alignment stage to incentivize Beam’s adherence to these principles. Many of these environments involved non-verifiable rewards judged by a generative reward model, yet we were able to use them to predictably shape the model’s behavior. Forecasting how rewards would affect different behaviors before running RL, we were able to predict RL gains better than the Best-of-N ceiling alone (r = 0.79 compared to r=0.46 with BoN ceiling). This allowed us to iterate on rubrics and reward design, squash behaviors like hallucinations and excessive formatting, and improve Beam’s overall interaction quality.<br>Our safety training used deliberative alignment (Guan et al., 2024) techniques to incorporate our safety policy directly into the model&#x27;s reasoning. The dataset was built adversarially and iteratively: in each round, we trained a model, generated prompts that elicited harmful or over-refusing behavior from it, and folded the successful attacks back into SFT mixture for the next round. For safety RL, we similarly sourced single-turn, multi-turn, jailbreak, and agentic scenarios in which a simulated adversary pressures a tool-using model to take unsafe actions, to simultaneously reduce over-refusals and harmful compliance.<br>We will publish the results of our safety evaluations in our model technical report and will open-source safety evaluations we developed and used internally to create a shared, inspectable standard that the open ecosystem can test against and contribute to.<br>The Path Ahead<br>This preview shows what Beam can do today. We are making this early version of Beam available to a select group of users; you can sign up for the waitlist here.<br>We want Beam to be widely accessible and easy to build on. This month, we will release the weights under an Apache 2.0 license, along with documentation and the full stack for running, evaluating, and fine-tuning the model. We will be launching Beam with an ecosystem of distribution partners, as well as integration with a broad range of open source libraries and harnesses, so developers can use Beam across existing open-source workflows.<br>Beam is the first model in a series, and the first demonstration of the open intelligence our team is committed to building. We are already training what comes next, with the goal of bringing the open frontier closer to the frontier of intelligence with every release.<br>Latest articles<br>Building Frontier Open Intelligence<br>August 9, 2025</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: Photoc – Command-line tools for photographers
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    34 points ·
+    5 comments ·
+    ahmetomer
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #19
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/ahmetomerv/photoc">Original article</a> · <a href="https://news.ycombinator.com/item?id=49944196">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Quick start · Commands · Workflows · File safety · Scripting · Installation · Troubleshooting · Contributing · License<br>Command-line tools for photographers.<br>photoc helps you review, organize, and prepare photos from the terminal.<br>Summarize a shoot, read metadata, find blurry shots and exact duplicates,<br>rename and sort photos into folders, make contact sheets and smaller copies,<br>or remove GPS location before sharing. Every command works in shell scripts,<br>and most can print JSON.<br>photoc works with JPEG files and reads metadata from Sony ARW RAW files. Other RAW formats (CR3, NEF, RAF, DNG, …) and HEIC are not supported yet. See File-type support.<br>photoc never changes your original files unless you ask it to with --apply<br>(rename, sort) or --in-place (scrub). It never overwrites existing<br>files.<br>Read-only commands only read. Commands that create files write new copies next to your originals or in a folder you choose. See File safety for details.<br>photoc is not a RAW developer, an image editor, a photo catalog, or a replacement for deep metadata editors such as ExifTool. Windows is not supported yet.<br>Install photoc from its Homebrew tap (macOS or Linux with Homebrew):<br>brew install ahmetomerv/photoc/photoc<br>photoc --version<br>The qualified name adds the tap automatically; Homebrew installs the required libraries. For a prebuilt executable instead, use the shell installer.<br>Then try these read-only commands on your own photos:<br>photoc --help                         # list commands<br>photoc exif photo.jpg                 # one photo&#x27;s metadata<br>photoc stats ./photos --recursive     # summarize a folder and its subfolders<br>photoc timeline ./photos              # review a shoot by session<br>For example, photoc rename ./shoot --format &#x27;{date}_{camera}_{sequence}.{ext}&#x27;<br>previews these three sample JPEGs without changing any files:<br>session_1000.jpg -&gt; 2026-09-27_Model S_0001.jpg<br>session_1030.jpg -&gt; 2026-09-27_Model S_0002.jpg<br>session_1200.jpg -&gt; 2026-09-27_Model S_0003.jpg<br>Summary: 3 JPEG, 3 planned, 0 unchanged, 0 blocked, 0 applied, 0 rolled back<br>For help with a specific command, run photoc &lt;command&gt; --help or man photoc.<br>Directory scans look only inside the chosen folder unless you add<br>--recursive, and they do not follow symlinks. Quote paths containing<br>spaces, such as photoc exif &quot;Summer trip/photo.jpg&quot;. Put options before<br>-- when a path begins with -, for example photoc exif -- -photo.jpg.<br>Each command name links to its guide with options, examples, limits, and a JSON schema where supported. All guides are listed in the documentation index.<br>Inspect (read-only):<br>| Command | Purpose |<br>|---|---|<br>| exif | Show dimensions, camera, exposure, capture time, and GPS for one photo |<br>| stats | Summarize storage, capture dates, cameras, lenses, and exposure settings |<br>| timeline | Group a shoot by date and session |<br>| query | Find photos matching metadata filters such as ISO, aperture, camera, or date |<br>| duplicates | Find byte-identical files and show potential space savings |<br>| focus | Rank JPEGs by sharpness score, lowest first, to help culling |<br>| check | Audit JPEGs for structural and decoding problems |<br>Organize (preview by default; add --apply to change files):<br>| Command | Purpose |<br>|---|---|<br>| rename | Rename photos using metadata templates such as {date}_{camera}_{sequence}.{ext} |<br>| sort | Move photos into YYYY/MM/DD/ or session-001/ folders |<br>Make copies (originals unchanged by default):<br>| Command | Purpose |<br>|---|---|<br>| compress | Write smaller JPEG copies at a chosen quality or target file size |<br>| contact | Make paged JPEG contact sheets with filenames and optional exposure data |<br>| scrub | Write copies without GPS, private fields, or descriptive metadata |<br>--json works with exif, stats, timeline, query, duplicates,<br>focus, and check. Longer directory operations show progress on stderr; use<br>--no-progress to turn it off.<br>| Command | JPEG | Sony ARW | Other RAW files |<br>|---|---|---|---|<br>| exif, stats, timeline, rename, sort | Metadata | Common TIFF/EXIF metadata | Unsupported/skipped |<br>| query, check, compress, contact, focus, scrub | Supported | Unsupported/skipped | Unsupported/skipped |<br>| duplicates | Exact bytes | Exact bytes | Exact bytes |<br>ARW support is metadata only: no RAW development, pixel decoding,<br>compression, or GPS rewriting. Files are matched by extension (.jpg,<br>.jpeg, .arw, case-insensitive). See<br>Sony ARW metadata support for fields and limits. Want your<br>camera supported? See Contributing.<br>These recipes combine commands the way you might use them after a shoot. Commands that change files are shown in two steps: preview, then apply.<br># See how the day breaks into sessions. Adjust --gap to match how you shoot.<br>photoc timeline ./shoot --gap 45m<br># Preview new names, then apply the same command.<br>photoc rename ./shoot --format &#x27;{date}_{camera}_{sequence}.{ext}&#x27;<br>photoc rename ./shoot --format &#x27;{date}_{camera}_{sequence}.{ext}&#x27; --apply<br># Preview session folders, then apply.<br>photoc sort ./shoot --by session --gap 45m<br>photoc sort ./shoot --by session --gap 45m --apply<br>If any photo lacks the metadata a plan needs, such as a capture date, the whole plan is blocked and nothing changes. The preview lists the blocked files.<br># Lowest sharpness scores first; show only those below the threshold.<br>photoc focus ./shoot --recursive --threshold 100 --only-blurry<br># Byte-identical copies, for example from importing a card twice.<br>photoc duplicates ./shoot --recursive<br>Sharpness scores are a review aid, not a verdict: subject detail, noise, and intentional blur all affect them. photoc never deletes files; you decide what to remove.<br># Write compressed copies into ./share, keeping the originals.<br>photoc compress ./selects --recursive --target 2MB --output-dir ./share<br># Remove location and identifying metadata from those copies.<br>photoc scrub ./share --privacy --recursive --in-place<br># Confirm no copy still has GPS (prints nothing when clean).<br>photoc query ./share --recursive --has-gps<br>compress keeps EXIF, including GPS, by default, so scrub after compressing.<br>--in-place is used here only because ./share contains copies; it replaces<br>files without a backup. --privacy can leave data in opaque MakerNotes; see<br>the scrub limits.<br>photoc query ./photos --recursive --iso &quot;&gt;800&quot; --aperture &quot;&lt;=4&quot;<br>photoc query ./photos --camera &quot;DSC-RX100M7A&quot;<br>photoc query ./photos --after 2026-01-01 --before 2026-12-31<br>Filters are combined with AND, and date bounds include the named days. See query details for matching rules and NUL-separated output.<br># Contact sheet with exposure data, sorted by capture time.<br>photoc contact ./shoot --output sheet.jpg --metadata --sort date<br># Check a folder for corrupt or truncated JPEGs.<br>photoc check ./photos --recursive --only-errors<br># Save statistics as JSON for your own scripts.<br>photoc stats ./photos --recursive --json &gt; stats.json<br>| Command | Changes originals? | Output | Existing files |<br>|---|---|---|---|<br>| Inspect commands | Never | Report on stdout | Not touched |<br>| rename, sort | Only with --apply | Renames or moves in place | Never overwritten; whole plan checked first |<br>| compress | Never | photo.compressed.jpg copies | Skipped (directory) or rejected (single file) |<br>| contact | Never | sheet.jpg, sheet-001.jpg, … | Never overwritten |<br>| scrub | Only with --in-place | photo.scrubbed.jpg copies | Rejected |<br>Important details:<br>- Rename and sort check the whole plan before changing anything. If a rename or move fails, photoc tries to undo earlier changes, but another process changing files at the same time can prevent full recovery. Keep backups of important collections.<br>- Compress loses image detail and can produce a larger file. EXIF<br>(including orientation and GPS), ICC color profiles, and XMP are preserved;<br>other APP markers are not copied. If a --target size cannot be reached,<br>photoc still writes a copy at the minimum quality and exits with status<br>1. 2MB means 2,000,000 bytes; 2MiB means 2,097,152 bytes. See<br>metadata preservation.<br>- Scrub copies JPEG image data without recompression. --gps removes EXIF<br>GPS only; --privacy removes supported location and identifier fields; --all-metadata removes descriptive metadata but keeps ICC profiles and<br>orientation. Information in opaque MakerNotes or unknown formats may remain.<br>- scrub --in-place creates no backup. It verifies a temporary copy, then<br>replaces the original in one atomic step. Symlinks, hard links, and files<br>that change during processing are refused. Permission bits and group<br>ownership are kept; ACLs and extended attributes are not copied.<br>- Check reads without changing anything. An OK result is not a backup or a visual-quality guarantee. See audit limits.<br>Results go to stdout; status text, warnings, errors, and progress go to stderr.<br>--json output contains only JSON, and missing values are null.<br>photoc exif photo.jpg --json | jq &#x27;.exposure&#x27;<br>photoc timeline ./photos --json | jq &#x27;.summary&#x27;<br>photoc query ./photos --recursive --has-gps --print0 | xargs -0 ls -l<br>| Exit code | Meaning |<br>|---|---|<br>| 0 | Success |<br>| 1 | A processing or filesystem operation failed, or a compression target was not met |<br>| 2 | Invalid command usage |<br>Global options work before or after the command: -q/--quiet keeps results<br>but hides status text and non-critical warnings, -v/--verbose adds<br>diagnostics on stderr, and --no-progress disables the progress display.<br>The scripting guide covers JSON details, per-command exit code rules, progress, and exactly what quiet and verbose modes show.<br>The Quick start uses the project&#x27;s Homebrew tap. It builds photoc from source and manages its dependencies. After a new version is published to the tap, update an existing Homebrew installation with:<br>brew update<br>brew upgrade photoc<br>photoc --version<br>brew update refreshes the tap; brew upgrade photoc installs the newer<br>version. The version badge at the top tracks GitHub releases; Homebrew offers<br>that version after the update pull request for the<br>tap formula<br>is merged. See the installation guide<br>for details.<br>The shell installer downloads a checksum-verified prebuilt release for<br>macOS arm64, macOS x86_64, or Linux x86_64 to $HOME/.local/bin.<br>Install the runtime libraries for your system first:<br># macOS<br>brew install libexif jpeg-turbo libxml2# Ubuntu / Debian<br>sudo apt install libexif12 libturbojpeg libjpeg8 libxml2<br>Then download and run the installer:<br>curl -fsSL https://raw.githubusercontent.com/ahmetomerv/photoc/main/scripts/install.sh \<br>-o install-photoc.sh<br>sh install-photoc.sh<br>photoc --version<br>Release binaries require macOS 15 or later, or glibc-based Linux with glibc<br>2.35 or later. The installer verifies the download&#x27;s SHA-256 checksum and<br>never replaces an existing file. If photoc is not found, see<br>Add photoc to your PATH.<br>- Choose a version or directory:<br>sh install-photoc.sh --version vX.Y.Z --install-dir &quot;$HOME/bin&quot;<br>- Upgrade: preview and remove the tracked shell installation, then run the installer again; see Upgrading.<br>- Uninstall: download the uninstaller, preview, then apply: curl -fsSL https://raw.githubusercontent.com/ahmetomerv/photoc/main/scripts/uninstall.sh \ -o uninstall-photoc.sh sh uninstall-photoc.sh # preview sh uninstall-photoc.sh --apply # remove This removes only an unchanged shell-installer installation.<br>The installation guide also covers source builds, shell completions, install locations, the man page, and upgrade behavior. Source and manual installations have their own uninstall instructions.<br>photoc: command not found<br>Check that your install directory is on PATH. For the shell installer, see<br>Add photoc to your PATH.<br>Which photoc installation am I running?<br>Run type -a photoc to list matching commands and command -v photoc to see<br>which one your shell selects. A Homebrew installation normally resolves to<br>$(brew --prefix)/bin/photoc. If an older shell-installed copy also appears<br>at ~/.local/bin/photoc, follow the<br>tracked uninstall steps.<br>The same path appearing twice in type -a usually means its directory occurs<br>twice in PATH.<br>error while loading shared libraries: libturbojpeg.so.0 (Linux) or dyld: Library not loaded (macOS)<br>A runtime library is missing from a shell or manual installation. Install the packages listed under Shell installer. The prebuilt executable does not bundle these libraries.<br>macOS says the binary &quot;cannot be opened&quot; or &quot;cannot be verified&quot;<br>Release binaries are not signed or notarized. The installer downloads with<br>curl, which does not trigger this. If you downloaded a binary in a browser,<br>remove the quarantine flag after verifying its checksum:<br>xattr -d com.apple.quarantine ./photoc-darwin-arm64.<br>My photos are skipped or reported as unsupported<br>photoc reads JPEG files and Sony ARW metadata only, matched by file extension. See File-type support.<br>Rename or sort says the plan is blocked<br>At least one photo is missing metadata the plan needs, such as a capture date or a field used in your template. The preview names each blocked file. Move those files elsewhere or choose a template that does not need the missing field.<br>A scan succeeded but some files had warnings<br>stats and timeline continue past individual file errors and count them in<br>the summary. See exit codes.<br>For anything else, open an issue<br>with the command you ran, photoc --version, your OS, and the full error<br>output.<br>Bug reports, documentation fixes, and focused code changes are welcome. You can also help without writing C: photographers can share sample files from other cameras so support for more formats can be tested.<br>- CONTRIBUTING.md: building, testing, sanitizers, static analysis, and project references for maintainers.<br>- Documentation index: every command guide and reference page.<br>- Release notes: what changed in each version.<br>Please follow the code of conduct. For file corruption, unsafe overwrites, or suspected vulnerabilities, follow the private reporting steps in SECURITY.md.<br>photoc&#x27;s source is licensed under the MIT License. Dependencies retain their own licenses; see third-party notices. This software is based in part on the work of the Independent JPEG Group.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Tell HN: Bob Cringely has died
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    933 points ·
+    210 comments ·
+    paveworld
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49949438">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I heard from a friend of the family that Bob passed away in his sleep early Saturday. Very sad news. Bob, who&#x27;s real name was Mark Stevens, was an early employee of Apple and was best known for his PBS documentaries, especially &quot;Triumph of the Nerds&quot;. He will be missed.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    916 points ·
+    417 comments ·
+    snehesht
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/Niko1221/Strata">Original article</a> · <a href="https://news.ycombinator.com/item?id=49953495">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">English · 简体中文 · 日本語 · Deutsch · Français · Español · Português<br>Run a 125-billion-parameter AI model on your own gaming PC<br>NVIDIA or AMD graphics card (12 GB or more) · Windows or Linux · free and open source<br>A voxel pagoda garden, 1 shot prompt running on an RTX 5070 with Strata (IQ3_S, 128K context) ·<br>full video (49 s)<br>Strata runs Qwen3.8-Flash-Next on a normal PC. This is a large, smart AI model that usually needs a server. It chats, writes code, reads pictures and works with your apps and coding agents. Nothing leaves your PC.<br>We measured it on two ordinary gaming PCs. A token is about ¾ of a word.<br>- Writes answers: how fast the reply appears in a short chat. 60 tokens per second is faster than you can read.<br>- Reads your prompt: how fast it takes in what you send (here a 32K-token document, code or chat history).<br>| NVIDIA: RTX 5070 (12 GB), Ryzen 5 7600, 64 GB RAM | AMD: RX 9070 XT (16 GB), Ryzen 9 3900X, 47 GB RAM |<br>|---|---|<br>|  |  |<br>| Size | Writes answers | Reads your prompt |<br>|---|---|---|<br>| Q2_0 | 94 tokens/s | 2,650 tokens/s |<br>| IQ2_XS | 79 tokens/s | 2,090 tokens/s |<br>| IQ3_XXS | 62 tokens/s | 1,750 tokens/s |<br>| IQ3_S | 53 tokens/s | 1,620 tokens/s |<br>| Coder | 55 tokens/s | 2,180 tokens/s |<br>| Size | Writes answers | Reads your prompt |<br>|---|---|---|<br>| Q2_0 | 60 tokens/s | 1,160 tokens/s |<br>| IQ2_XS | 52 tokens/s | 1,110 tokens/s |<br>| Coder | 44 tokens/s | 1,420 tokens/s |<br>NVIDIA: Q2_0 with engine 0.1.36, the other rows with 0.1.26 (4K answers, 32K prompts). The full tables are in DETAILS.md. A card with more VRAM is faster: an RTX 3090 (24 GB) should write about 100-140 tokens per second. Long chats and other cards: speed of each model, community results.<br>Strata is free. If it runs well on your PC, a coffee keeps the work on it going.<br>| Graphics card | NVIDIA GeForce RTX 20, 30, 40 or 50 series, or AMD Radeon RX 7900 XT / XTX, RX 7800 XT / 7700 XT, RX 9060 XT, RX 9070 / 9070 XT, Radeon AI PRO R9700 or RX 6800 / 6900 series. It needs 12 GB of VRAM or more. |<br>| RAM | 32 GB or more. Your RAM decides which model fits. 64 GB runs every size. |<br>| Disk | About 80 GB free. Use an SSD if you can: the first start is much faster. |<br>| System | Windows 10 / 11 or Linux, and a current graphics driver from NVIDIA or AMD. |<br>The installer sets up everything else. Two or three cards can share the model (multi-GPU).<br>Experimental, written and tested by community members on their own machines:<br>- Older graphics cards (Tesla P40 / V100, GTX 10, Radeon VII / MI50, RX 6700 XT, RX 5500 XT): Older GPUs.<br>- Intel Arc, built from source on Linux: Intel Arc.<br>- AMD Ryzen AI Max (Strix Halo), built from source on Linux: Strix Halo.<br>- Older processors without AVX2: they work, but slowly. Older CPUs.<br>The full list: docs/INSTALL.md.<br>Do you use an AI coding assistant (Claude Code, Cursor, Codex, GitHub Copilot, ...)? Paste this into it:<br>Set up Strata on this PC for me: https://github.com/Niko1221/Strata - follow docs/AI_SETUP.md in that repository.<br>It checks your graphics card, RAM and disk and picks the model that fits. Then it installs and starts it and tells you how to connect your apps. AI tools can also install, start and stop Strata through its MCP server.<br>Download Strata and unzip it (or git clone it).<br>Windows: double-click START-HERE.bat. Linux: run ./setup.sh in the Strata folder.<br>The steps are the same for NVIDIA and AMD. The installer finds your card and sets up the right engine for it. It asks you a few questions:<br>- which model and which size,<br>- how much context (how much text the model keeps in mind),<br>- whether it should read pictures.<br>Press Enter each time for the recommended answer. Then it downloads the model (about 70 GB) and starts it. If the<br>download stops, run it again: it continues where it left off. Your browser opens the Strata app at<br>http://127.0.0.1:8080.<br>While the model starts, your PC can be slow or stop responding for 1-3 minutes (longest the first time). Strata loads 35-55 GB into your RAM and locks part of it for the graphics card. This is normal. Wait, and don&#x27;t close the window. The window shows what Strata is doing.<br>Next time, run START-HERE.bat (or ./setup.sh) again. It starts right away and downloads nothing twice. Close<br>its window to stop the model. UPDATE.bat (./update.sh) updates Strata without starting it. Updating, Docker,<br>several cards, where the files go and every option: docs/INSTALL.md.<br>The installer recommends one for your RAM. The same model comes in several sizes, compressed more or less. Smaller sizes are faster. Larger sizes are a bit smarter.<br>| Your RAM | Take | Why |<br>|---|---|---|<br>| 32 GB | Coder | it fits 32 GB, and it is made for code (with a 24 GB card, Q2_0 and IQ2_XS run too) |<br>| 48 GB | IQ2_XS (or Q2_0, the fastest) | the larger sizes do not fit |<br>| 64 GB | IQ2_XS (recommended), or IQ3_XXS / IQ3_S | every size fits; IQ3_S is the best and the slowest |<br>| 96 GB or more | IQ3_S, or Unsloth&#x27;s UD-IQ4_XS (~4-bit) | room for the largest sizes with everything else open |<br>- Coder: a coding version with half of the experts removed. It reaches 91% of the full model&#x27;s SWE-bench Verified score (measured by its authors) and fits 32 GB of RAM. It is weaker outside code, including Chinese and other CJK text (#438). For those, take Q2_0, IQ2_XS or IQ3_S, which keep every expert.<br>- Swift 1.5: a fine-tune that thinks for a much shorter time before it answers. You get the answer sooner, at about the same quality.<br>- Unsloth UD-IQ4_XS: Unsloth&#x27;s ~4-bit version, between IQ3_S and UD-Q4_K_XL in quality. A 94 GB download. With less than ~80 GB of RAM, Strata reads part of it from the SSD while it answers, so it is slower there (an NVMe SSD helps).<br>- Unsloth UD-Q4_K_XL (experimental): the closest to the full model. But Strata reads most of it from the SSD while it answers, so it writes only 7-8.5 tokens/s on a 64 GB PC.<br>- OrcaRouter&#x27;s Uncensored IQ3_XXS: you set it up by hand. It is not in the installer&#x27;s menu.<br>Sizes, downloads and what fits where: docs/MODELS.md. To add another model later, run<br>SETUP.bat (Linux: ./setup.sh --setup).<br>The Strata app&#x27;s Monitor (left) while a coding agent writes the pagoda garden from the video (right)<br>- In the browser: open http://127.0.0.1:8080. It has Chat, a live Monitor of the model and your<br>GPU/CPU/RAM, and About with the settings and addresses.<br>- Your apps and coding agents: add an &quot;OpenAI-compatible&quot; provider with the base URL<br>http://127.0.0.1:8080/v1. Any API key and any model name work.<br>- Apps that use Anthropic&#x27;s API: http://127.0.0.1:8080/v1/messages (Claude Code: ANTHROPIC_BASE_URL=http://127.0.0.1:8080).<br>- Codex CLI and other apps that use the OpenAI Responses API: /v1/responses (setup).<br>- Thinking: choose off, low, medium or high in the chat menu or in your app&#x27;s &quot;reasoning effort&quot;. Off is the fastest. High is best for hard questions.<br>- Pictures: say yes to &quot;Images?&quot; in setup. Then click Picture in the chat, or attach pictures in your app. AMD cards read pictures on Linux through the processor; on Windows they can&#x27;t yet.<br>- From your phone or another PC: START-HERE.bat --setup --host 0.0.0.0 --api-key &lt;secret&gt;. Always set a key.<br>- One request at a time: by default Strata answers one request, and the others wait. To answer several at once,<br>set &quot;parallel&quot;: 2 (BATCHING.md). On a 12 GB card this makes each answer slower.<br>- Long prompts: Strata reads the first message of a chat in full, about 1 minute per 30,000 tokens. Follow-up messages start in seconds.<br>More: where your chats are stored, the API.<br>- My PC froze the first time Strata started. This is normal while it loads the model. Wait, and don&#x27;t close the window. Still frozen after 10 minutes? Restart the PC, close other programs and try again, or pick a smaller size.<br>- It stopped while downloading or installing. Run START-HERE.bat (or ./setup.sh) again. It continues where<br>it stopped.<br>- It&#x27;s very slow and the disk light keeps blinking, or it says &quot;the engine stopped unexpectedly&quot;. Your PC does not have enough free RAM. Close other programs (browsers use a lot), or pick a smaller size (Q2_0 or IQ2_XS).<br>- It says port 8080 is already in use. Strata is already running. Look for its window.<br>More problems and their fixes: docs/TROUBLESHOOTING.md. Still stuck? Open an<br>issue and attach strata-&lt;model&gt;.log from the Strata folder. Found a<br>security problem? Report it privately: SECURITY.md.<br>Models like this one usually run on servers with hundreds of gigabytes of graphics memory. Your graphics card has 12-24 GB. Strata makes the model fit by sharing the work across your whole PC. Think of a kitchen: the things you use all the time stay on the counter, and the rest waits in the pantry.<br>- The model is a team of 24,576 small specialists (&quot;experts&quot;). Each word needs only 10 of them.<br>- Your graphics card keeps the few thousand experts that are used most often. Your RAM holds all of them, and your processor works on the rest at the same time. Your SSD holds a big lookup table.<br>- Guess, then check: a small helper guesses the next few words. The big model checks them all at once. You get the same answer, 1.6-1.8x sooner.<br>- Long texts are read in big pieces (up to 8,192 tokens at a time), at over 1,000 tokens per second.<br>The longer explanation: docs/HOW_IT_WORKS.md. Every part and its numbers: the details and the paper.<br>The model is Qwen3.8-Flash-Next by the Qwen team. It was compressed by ISTA-DASLab, UkisAI (Swift 1.5) and Unsloth. Strata uses parts of llama.cpp / ggml. All credits: docs/HOW_IT_WORKS.md. Strata is open source under the MIT License. A few parts and every model have their own licenses (which ones).<br>Strata is free and open source. If it is useful to you, you can support its development:</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Writing blog posts while walking the dog
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    brtkwr
+  </div>
+
+  <div class="meta">
+    jacobtomlinson.dev
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://jacobtomlinson.dev/posts/2026/writing-blog-posts-while-walking-the-dog/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49976198">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I’m excited about how AI is changing how I work, it has made me more productive and able to get more things done. I’m also frustrated by how much low-effort content is being generated and sprayed across the internet. Content that isn’t created to benefit the reader, it’s there only to benefit the creator via ads, referrals, etc.<br>I’ll admit I tend to write blog posts for my own personal reasons. Usually it’s so I can avoid explaining something multiple times to different people, or so I can get a better understanding of an idea in my head by writing about it. I primarily blog for myself, but the goal is to benefit others with the content too. I’m not trying to sell ads or anything like that.<br>Every time I read model output that I didn’t personally prompt myself I feel inconvenienced, or I feel like the person sending me model output is being rude. It’s like they can’t be bothered to metabolise the ideas themselves and my time reading it is less valuable than their time writing it. Occasionally I do want raw model output from people because I want to put it into another model. But it should be included as an appendix so that it can be my choice. It shouldn’t be foisted upon me at every turn.<br>I’m also sensitive to blogs and other web content that has been created purely by an AI. You can just tell from the writing style that no effort has gone into it.<br>I feel that if you expect somebody to take the time to read something, then you need to load that information into your own brain, have your own thoughts and make your own decisions about it, and then take the time to output it in your own words and ideas. That’s what gives it value. That’s what makes it different. You’ve thought about it and added your own ideas to it. You’ve combined a bunch of ideas into some new piece of information that you want to tell people about.<br>It may be existing information that you’re resurfacing, or that you’re trying to improve your own knowledge about. It might be new information, where you’ve made a connection between some things and you want to tell people. Or it may just be a combination of experiences. I’ve experienced the same thing a hundred times but I can’t find it written down anywhere, so I’m going to write a summary of those hundred experiences.<br>It’s all stuff that’s coming from you. The value is you.<br>Extrapolation vs interpolation<br>It’s my observation that every kind of AI usage seems to fall into one of two broad camps.<br>The first is where you take a small piece of information, a basic prompt, and pass it into a model to expand or decompress it into something larger. This happens a lot when coding and building things with AI. You’re trying to go from the seed of an idea to an implementation of that idea, and it’s a very extrapolative process. Maybe you’re using something like Matt Pocock’s grill me skill to add more information to it, but ultimately you’re letting the AI find its way. You’re letting it expand and fill that space. Coding harnesses exist to take that extrapolative process and constrain and corral it into something useful. You follow the model’s extrapolated output, but you guide it into achieving the goals you want to achieve.<br>That’s great, and I have no qualms with that kind of usage in the places where it’s appropriate. What I dislike is when that kind of workflow is used to generate written, spoken or video content that you expect other people to consume.<br>I don’t think it’s appropriate to use extrapolative generation when creating content, because you’re not adding value. You’re taking the seed of an idea and adding the average stochastic knowledge about that idea to fluff it up to enough volume to pass as a piece of content. Then you expect people to read it, and in doing so distil it back down to what is effectively your prompt, because the prompt is the only thing you put into it.<br>You might as well just tweet the prompt instead of blowing it up into a piece of content.<br>The second way of using AI is interpolative. You take lots and lots of context and use the model to filter and distil it. I use this a lot when I’m generating ideas. I might have a long sessions where I talk to an AI about an idea I’ve had. We talk through the pros and cons and the way I would approach it. I ask it to research different things, or we have a conversation about a paper or a blog post. I might seed the conversation with a bunch of stuff I want to start with, like “here’s a project, let’s go and read the code”, and then talk about how we could extend it in this way or that way. I start with this big mass of stuff and have a long conversation, and the value I’m trying to get from the AI lives within everything I’ve said and all of the context we’ve put into the context window. I’m trying to pull out connections, links and repeated statements. I’m trying to find the consistent path and clean it up and neaten it into something more useful than a big pile of source material.<br>These are two very different uses of AI. In one you take a small amount of information and add noise to it. In the other you take a very large amount of information and distil out the nugget of gold in the middle. You’re assaying your knowledge to smelt it down into the valuable minerals, rather than fluffing up thin information.<br>Both are useful tools, and you can do different things with them. But when it comes to creating content, whether that’s writing blog posts or making videos or whatever, it’s only yours if you’re doing the second one. If you’re creating extrapolative content then it isn’t yours. It’s the model lab’s content that you’re just posting under your name.<br>Getting away from the desk<br>I’ve spent most of my life obsessed with computers, and I’m extremely fortunate that I get to work in the industry that I am so passionate about. But one of the only things I dislike about working in the tech industry is that I have to spend all day, every day, sat at a desk.<br>I’ve worked in offices with cubicles, in open plan offices and in home offices. I’ve spent most of my time trying to counter that sedentary lifestyle with sit-stand desks and regular breaks, but it’s a challenge. With the current wave of AI and all the improvements going on I can see an end to that requirement of being sat hunched over the machine I’m working on.<br>At the moment I communicate with the computer by typing and clicking, but we’re so close to the point where I can fully communicate with it by speaking and listening. That unlocks a totally different way of working. It would allow me to not sit at a desk all the time. It would let us completely change the way we think about office furniture. If lots more work becomes conversation, deep thinking and communication, then we can work in ways that aren’t so rigid around where the computer is. You put your phone in your pocket, put your headphones in, go out for a walk in the countryside and talk through a problem you’re having. Want to learn something? You talk and listen. Want to build something? You describe it and refine it.<br>I’m sure there will always be tasks that need a screen or some other kind of input. Reading and writing will always be important and it’s necessary to keep doing them. But talking, listening and thinking are also core components of knowledge work, and those don’t require a screen or a desk. So maybe we can just do things differently. I’m really excited about that, and I think not spending 100% of my time at a desk will be good for me both physically and mentally.<br>Writing without a desk<br>A big component of my job is writing. I write issues, pull requests, planning documents, architecture documents, meeting notes and reports. As a software engineer leader I regularly have to communicate what we’re building. With AI tools getting so good at turning plans into code I write less and less code, so more of my life is reviewing code and writing reports and documents.<br>When you write a document you have to think, communicate and learn. You need to fill your brain with a bunch of information and then distil it down into a document. Combine that with my goal of getting away from the desk and I’d love to get to a point where I can do that without a screen and just have my headphones in. Maybe I still have to sit and read, or maybe I can have conversations with an AI, or listen to a podcast or a video. I fill my brain with state, and then I need to think, distil and refine.I can talk out loud and describe what I’m thinking, what I’m feeling and what I think we should do next.<br>It’s almost like I’m talking to myself, the AI is just a mirror that becomes a reflection of my own thoughts and feelings. It can add to that, it can discuss and refine, but it’s effectively my own mind building up a context that I’m then going to interpolate within.<br>I love technical writing and I love my blog. I often have ideas for things I want to write about, but I don’t have the time to actually sit down and write. Writing a blog post usually takes me half a day, maybe even a whole day if it’s a long one. I brain dump onto the page and then spend hours moving things around, smushing stuff about and editing. I do many, many editing passes on my content. A post that takes 10 minutes to read takes hours to write. I don’t always have time for this, so I miss opportunities to write about things because I just don’t have the hours needed to commit the words to the page.<br>I feel like there’s an opportunity here. How can I use AI to get this content written down without violating my principle of not publishing extrapolated model output? I’m not trying to take a half-baked prompt and blast 2,000 words onto the page through an LLM. I’m trying to refine my thoughts into something useful, and to write as little as possible to communicate the thing I want to talk about. And I hope the thing I want to talk about is nuanced, interesting and useful.<br>So I’m starting to experiment, and this post is me experimenting with a new workflow. I’ve spent a long time thinking about the principles and concepts I’m writing about in this post, and now I’m putting the plan into practice. I started this blog post on a walk with my dog, talking to an AI about this core idea. We filled the context with all the relevant things over about 30 minutes, and then we put it together into a structure. But I chose the structure. I decided the direction this post was going to go in, not the AI. This is just a reflection of me and my ideas.<br>Seeding the context<br>So how do you make sure you’re working in an interpolative way and not an extrapolative one?<br>Nothing I write is some brand new, insanely novel idea that nobody has ever thought about. It’s usually a culmination of thoughts and ideas. Maybe I’ve been thinking about a bunch of posts I’ve read and how those ideas connect together into something I think is interesting and worth talking about. Or maybe I’ve already written a post and I have thoughts about how to extend it and what to talk about beyond it based on new information or ideas.<br>When I start writing a post I usually already have some references in mind. These are things I’ll probably link to at some point, because they set the scene or back up points I’m going to make. I know what they are because I’ve already spent time thinking about all of this on my own before I start. Linking to them adds credibility to the post.<br>So one way to start a post is to sit down at a desk, open whichever AI you want to use and seed it with those links. Give it all the links and say “I’m going to write a post and I want to talk through what the content is going to be, and I know it’s going to reference these things”. Once you’ve given it that prompt it will go off and read all of them. You’ve started to fill the context, not necessarily with your own words yet, but with ideas you care about and think are important. Now you can start building on that foundation.<br>Thinking out loud<br>Once the context is primed the AI will probably reply with a bunch of stuff, maybe recapping the posts it’s read, but I usually just ignore that. I put my headphones in, go for a walk and tell it what my goal is. “I want to write a post about this topic.”<br>I might not have all the ideas fully fleshed out at that point, it’s still a loose soup of stuff in my head. So I’ll say that I want to have a conversation about how I’m going to write about this topic, and that at some point I want to put together a structure and an outline, but not yet. For now I just want to talk about these loose ideas and get everything into the context.<br>Then I just start talking. I think out loud, talking through the ideas and where I’m going with them. This can be a really long process. Sometimes the AI will try to nudge you towards making the structure, and push you in whatever direction it thinks you want to go next, but I often just push back. I might walk for 30 minutes thinking out loud, basically talking to myself. That’s how my workflow used to go when I wrote posts, I would just sit and think to myself. Now I’m thinking out loud into something that is capturing it, and that thing can interpolate within it later on.<br>Why not stop here?<br>Once the context is filled with all this information I’ve done all of the thinking work. I have a big soup of content that is mine. It belongs to me because these are my thoughts and ideas, and I’ve spoken them out loud. I’ve effectively crossed off that first point. I’m doing interpolative writing instead of extrapolative writing, and therefore I feel comfortable posting this on my blog and asserting it is my own content.<br>If I asked the model at this point to distil what we’ve talked about into a post, it would probably do a fair job of taking my thoughts and ideas and writing them out as a blog post. But it would be very clearly AI written, because although they are my throughts the words would be its words. To a reader it would be clear that this is AI content, and they might bounce off it straight away. They’d spot the tells, the words and phrasings they recognise from AI content, decide this is probably low-effort content and stop reading.<br>That would be a shame, because it’s not the same. The effort has been put in here, and I would hope people would read this more favourably than a tweet that has been expanded into a post. So this is a big challenge. I don’t think it’s okay to stop at this point. I need to keep going and keep owning the creation of this content.<br>Dictating the post<br>What I’m experimenting with this time is having a discussion about structure once I’ve done all of that and then dictating the post in it’s entirety. For this content to really remain mine I need to walk through the whole post from beginning to end, laid out the way I’d like it. That way I’m doing the storytelling and setting the narrative, so it hopefully still sounds like mine, because it still is. But I haven’t had to sit and type it out.<br>I can’t usually hold a whole post in my head at one time, and I can’t just pick up where I left off when I’m dictating. I want to give myself some markers. If I’m giving a conference talk I have slides, and I mostly use them as prompts to remind myself where to go next. Lately I’ve even experimented with not having slides because I’m just telling a story, and I held a notebook with bullet points that walked me through it and kept me on track, because I know I’m going to forget where I am or get lost.<br>I wanted to do the same kind of thing here. I put together a structure, then I said to the AI “remind me of point one” and dictated point one. I walked through it pretty much word for word, the way I would tell it if I was giving a conference talk. Then I moved on to point two, point three and so on, each time asking the AI to recap what we want to talk about in the next point. It gives me a quick 10 second summary of a point that I’ve already decided on. It isn’t coming up with the idea, it’s just reminding me of my own structure from earlier in the walk. Then I say out loud what I want to say, word for word. Written and spoken words are slightly different in how we phrase and structure things, so I needed to do some cleanup later to figure out how it’s going to look on the page, but I’m effectively dictating my words for each section of the post. The words you are reading here were spoken by me, not generated by an AI.<br>By the time I get to the end of the post the model has all of it in its context. The initial source material, the unstructured discussion about where I want this post to go, the discussion about how I want to lay it out and the key points I want to make, and then each section dictated with exactly what I want to say. In theory I now have a context that contains the blog post I want to write. It’s my blog post and my content, but it’s not ready yet. I need to actually get the words into a file that I can publish.<br>The final step<br>Once I have a session that contains my blog post I need to transform it into writing. At this point I paused and asked myself a few questions. Can I rely on the AI to write it for me, or do I need to sit down and write it myself? Is this all just a big thought exercise to help me refine my ideas? Should I discard the session or can I use the model to write the post?<br>I decided that for this post I’m going to experiment with letting the model output a first draft based on my dictation. It created a markdown file containing a lightly cleaned up version of what I said. When I’m talking there are ums and ers and pauses, and I correct myself with “oh, I meant this” or “I didn’t mean to say that, I meant to say this”. I’m hoping the model has successfully followed all of that and lightly cleaned up what I said into something that looks like I wrote it.<br>I’ve also given it some examples of other posts I’ve written to help communicate my writing style so that it can more accurately convert from my spoken style to my written style.<br>I then asked the model to output a markdown file which I moved into my favourite editor for a two full editing passes. It’s almost like I’m working on a final copy of my own work. I fixed any spelling mistakes, trimmed unecessary words, and I tried to remove any AI tells that are left.<br>Honestly I think it’s done a pretty good job. This post is written the way I wanted and it contains the information I wanted to convey.<br>Did I save time?<br>I wrote this post in a few sessions over a couple of days:<br>- 30 minutes - dog walking with headphones in - discussing initial context and ideas and outlining structure and takeaways<br>- 45 minutes - dog walking with headphones in - dictating the post in my own words, audibly referring back to my outline<br>- 60 minutes - sitting at my desk typing - reading the markdown draft through two full times with light/medium editing, nothing structural<br>According to my blog software’s reading speed estimate this post will take the average reader 15-20 minutes to complete. This is one of my longer pieces of content that in the past would’ve taken me a full day to write and edit. I’m optimistic here that I’ve managed to reduce the writing time by 3-4x without compromising on quality, and I’ve also managed to spend most of that time outside lightly exercising and enjoying nature.<br>Should I have typed it myself?<br>So what I have produced here is content that is a distilled and refined version of my thoughts and ideas. I’ve checked all of my personal boxes in staying true to not publishing AI content. But it’s unclear to me whether there should be a final, final pass where I retype the whole post from scratch.<br>Typing the post out could be considered the proof that I’ve done the work. Do I need to earn that proof? If I did type it myself, nobody would read it and think “this is AI”, because there would be no AI written words in it. But I don’t know whether that’s necessary. I don’t know whether the content I can produce through this process of dictation and distillation is enough.<br>Honestly, I’m interested in what you think. Come and find me on Bluesky and tell me what you think about this post and how I created it. Did it feel like AI content? Do you feel like I stuck to my principle of not putting AI created content on my blog? I’m genuinely interested in your thoughts and feedback.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: Entombed in a Raycaster
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    23 points ·
+    5 comments ·
+    stelabouras
+  </div>
+
+  <div class="meta">
+    stelabouras.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #21
+  </div>
+
+  <div class="links">
+    <a href="https://www.stelabouras.com/blog/entombed-raycaster/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49943598">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Around a year ago (it might have been more, my memory can be spotty) I experienced the raycaster rite of passage almost every game developer goes through. I was reading Lode&#x27;s tutorial, watching the &#x27;Make Your Own Raycaster&#x27; series on YouTube by 3DSage (both resources highly recommended by the way), when I came across the Entombed algorithm: a maze generation algorithm found in the Atari 2600 game Entombed (1983), in which the player must escape a maze while chased by zombies.<br>What intrigued me about this algorithm is that the maze was being generated procedurally based on some old (almost arcane now) logic that dictated how the next line was going to be generated while working within the constraints of the Atari 2600.<br>The Atari 2600 has 128 bytes (yes, with a b) of RAM and in Entombed, the maze scrolls upward continuously while the player walks down into it. That means a stored maze is practically impossible, given the device memory limitation. So the maze has to be made one row at a time and thrown away as it scrolls off. Which raises the question: how do you build a maze one line at a time, when you can only keep a handful of lines in memory? Enter the mystery table!<br>The real reason the Entombed game gained the interest of game archaeologists is the mystery table behind the maze generation, and the fact that to this day nobody has quite managed to explain why it works. For years the story was that it had been written by someone &quot;drunk and whacked out of his brain&quot;. Turns out the real story isn&#x27;t that far off: Paul Allen Newell and Duncan Muirhead, a maths grad student, sketched it out on napkins over a couple of beers at a bar, and Newell had it running on the Atari by the end of the weekend.<br>Here is how the logic works: Each cell of the maze is generated from its five neighbours: two already filled to its left in the same row, and three from the row above. Those five bits form an index from 0 to 31 into the lookup table above that returns a wall (1), a passage (0) or a coin-flip (random). And that&#x27;s the whole thing. No backtracking, no searching: the row gets filled in one sweep, with a tetromino-like window sliding along it a cell at a time.<br>One could go as far as to characterize the algorithm as a cellular automaton, but according to Paul Allen Newell, John Aycock and Katie M. Biittner:<br>The algorithm defies easy categorisation, and may be unique. With its reliance only on local information, it is tempting to view the algorithm as based on cellular automata (Sarkar 2000), yet the lack of parallelism and the strange shape of the &#x27;neighbourhood&#x27; of cells surrounding X makes the cellular-automata notion contrived.<br>This is pretty much the opposite of how maze algorithms normally work. Usually you hold the whole grid in memory and the algorithm guarantees you end up with a maze you can actually solve. Entombed never sees more than eleven rows at a time and guarantees nothing at all. It just generates something that looks like a maze.<br>Given that there are no guarantees in the Entombed case, two correction passes are introduced. They run once a line is complete, looking back at the rows behind it: if the maze has started repeating itself or walling sections off, they just blank the whole line, or half of it.<br>After consuming all the references I could find, I immediately started thinking of ways I could implement this logic on a raycaster! It turned out to be quite a fun side-project which combined learning the ins and outs of raycasting and creating a simple Wolfenstein 3D renderer with the exception that the map must be procedurally generated by logic taken from this ancient (depending on your age) Atari game!<br>I decided to represent the state of each maze row as a uint32 where each bit shows whether there is a wall or not. This would make things easier to calculate and memory efficient as the maze grows while the player moves further and further in.<br>My version differs from the original in a few ways: I dropped the mirror (seen in the screenshot above), widened the playfield to 30 cells, and never throw away rows once they&#x27;re generated, since memory isn&#x27;t exactly a problem these days (or is it?).<br>I also gave the player and the enemies the ability to break the walls in front of them, which (in theory) could feed back into the maze generation, but in practice it never does: rows are generated far enough ahead that by the time you break anything, the generator has long moved past it.<br>The funny thing is that I realized pretty recently that the original game also provided players with the same wall-breaking ability. It makes sense though, as you need to provide players with an easy way to proceed out of dead-ends... especially if you are getting chased by mysterious entities.<br>I based the C implementation on top of the one provided by 3DSage and fixed some corner cases I could find where the player and the enemy entities could get stuck. Overall it was a really fun and unique experience.<br>Once I got it working I pretty much forgot about it. Then a couple of weeks ago after watching the &#x27;Backrooms&#x27; movie I got reminded of this short experiment, so I thought I could spruce it up, solve some minor issues, skin it as a Backrooms-y type of game (please don&#x27;t sue me lol) and show it to the world.<br>As a cherry on top, I told Claude to write a Three.js version of it playable in the browser with some more effects (tried my best to recreate a Diablo-like minimap), in case you don&#x27;t fancy compiling and running a C game on your machine.<br>How far can you go until you get entombed?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Ask HN: Who wants to be hired? (October 2026)
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    133 points ·
+    558 comments ·
+    whoishiring
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49922568">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Share your information if you are looking for work. Please use this format:</div>
+<div class="para">Location:<br>Remote:<br>Willing to relocate:<br>Technologies:<br>Résumé/CV:<br>Email:</div>
+<div class="para">Please only post if you are personally looking for work. Agencies, recruiters, job boards,<br>and so on, are off topic here.<br>Readers: please only email these addresses to discuss work opportunities.<br>Searchers: try https://nthesis.ai/public/hn-wants-to-be-hired, https://www.wantstobehired.com.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Accountability mechanisms can be joyful (2024)
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    33 points ·
+    9 comments ·
+    luu
+  </div>
+
+  <div class="meta">
+    liquidbrain.net
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://liquidbrain.net/blog/accountability-and-joy/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49951155">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">My partner and I both have things we&#x27;d like to do every day. For her, it&#x27;s a set of concussion exercises; for me, some type of workout. Recently, we&#x27;ve experimented with a music-based accountability mechanism: any time one of us completes their task, they can send a song for the other person to listen to. It&#x27;s still early yet, but it&#x27;s been surprisingly effective, and I want to talk a little bit about why.<br>One of the most useful tips I got from Thinking Fast and Slow was to use accountability bets. It&#x27;s easy to ignore important tasks which don&#x27;t feel visceral; e.g. to not finish a dissertation thesis despite having direct monetary rewards to do so. One makes an accountability bet with a friend; if one does not complete the task in a set time-frame, they suffer some concrete harm. They might have to give a large sum of money to a abhorrent cause, or give up coffee for a week. Once, I offered to give up my screen time settings. To increase motivation, accountability bets magnify the stick,<br>That kinda sucks. It&#x27;s uncomfortable to be the friend proffering the deal, and stressful when you are the one trying to complete the goal. For things which are personal projects, they can easily turn intrinsic motivation into an extrinsic fear of failure ... which isn&#x27;t great. They have their uses (particularly for important projects), but are limited.<br>Accountability doesn&#x27;t need to be stressful, though. This music-based system is fun because it plays on a whole different set of motivations. If I don&#x27;t work out, the only consequence is I can&#x27;t share a piece of music. But if I do work out, I get to bring joy to a person I love. Importantly, this joy isn&#x27;t selfish: if my partner is having a bad day, I get the chance to share a song that might make her feel better. Instead of magnifying the stick, I&#x27;ve watered the carrot.<br>This is not to say that the traditional accountability bet structure is not useful; if I need to do a large, difficult thing, sending an individual song might not be sufficient motivation. But it is also not the only pattern, and for recurring small things, it may not be the best one.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    EU high-tech trade surplus up to €32.4B in 2025
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    giuliomagnifico
+  </div>
+
+  <div class="meta">
+    ec.europa.eu
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20261006-3">Original article</a> · <a href="https://news.ycombinator.com/item?id=49976176">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">EU high-tech trade surplus up to €32.4 billion in 2025<br>In 2025, the EU imported €534.1 billion worth of high-tech products and exported €566.5 billion, resulting in a trade surplus of €32.4 billion. After 4 consecutive years of trade deficits (2020-2023), the EU trade balance in high-tech products has been positive for 2 years in a row.<br>Since 2015, imports have increased by an average of 6% year-on-year (+€239.9 billion) and exports by 7% (+€265.4 billion).<br>In terms of sold production, the EU produced €532 billion worth of high-tech products in 2025. Since 2015, when it produced €287 billion worth of these products, production has increased by an average of 6% year-on-year.<br>Source datasets: Eurostat extraction; ds-059331 (trade), ds-059367 (PRODCOM 2025) and ds-059358 (PRODCOM 2015-2024)<br>Who are the EU’s main trade partners for high-tech products?<br>In 2025, more than half of the EU’s high-tech imports came from China (28%; €150.4 billion) and the United States (25%; €131.4 billion). Switzerland (6%; €32.6 billion) was the other top trading partner.<br>Imports from China consisted mostly of electronics-telecommunications (48% of its total imports to the EU) and computers and office machines (31%), while the United States supplied mainly aerospace products (36%) and pharmaceuticals (33%). In Switzerland’s case, 71% of imports were pharmaceuticals.<br>Source dataset: Eurostat extraction; ds-059331<br>When it comes to exports, in 2025, the United States was the top trading partner (34%; €195.1 billion). The United Kingdom followed (9%; €52.5 billion), ahead of China (8%; €48.1 billion).<br>To the United States, the EU exported mostly pharmaceuticals (62% of all exports to this country) and aerospace products (12%). Exports to the United Kingdom were more diversified: 23% were pharmaceuticals, while aerospace products and electronics-telecommunications each represented 19%, and 13% were scientific instruments. Exports to China showed similar variety, with electronics-telecommunications at 30%, aerospace products at 27%, scientific instruments at 20%, and pharmaceuticals at 13%.<br>For more information<br>Methodological note<br>The data in this article uses the high-tech aggregation by the Standard International Trade Classification (SITC – Rev. 4). This list, based on the Organisation for Economic Co-operation and Development (OECD) definition, contains technical products of which the manufacturing involved a high intensity of R&amp;D.<br>For information on upcoming releases, visit our release calendar. If you have any queries, please visit our contact us page.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Anthropic reported diary entry to police, woman faces felony charge
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    730 points ·
+    563 comments ·
+    emptybits
+  </div>
+
+  <div class="meta">
+    techspot.com
+  </div>
+
+  <div class="meta ranks">
+    Best #3 · Top #30
+  </div>
+
+  <div class="links">
+    <a href="https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=49961057">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">What just happened? Another incident has taken place that illustrates the need to be careful what you tell AI. A Florida woman is facing felony charges after she used Claude as a diary and allegedly wrote that she planned to &quot;shoot up&quot; the Sheriff&#x27;s office. After a human reviewer examined the statements, they were reported to police.<br>According to the arrest report, Carli Michelle Heller, of Bonita Springs, Florida, wrote on September 26 that she would attack the Sheriff&#x27;s office. She later said that she uses Anthropic&#x27;s chatbot like a &quot;diary.&quot;<br>Claude&#x27;s safety systems flagged the entry and it was escalated to a human reviewer. After deciding it was a credible threat, the reviewer reported it to law enforcement.<br>The company says it may share user information in limited emergencies if it believes disclosure is necessary to prevent death or serious physical injury.<br>Deputies identified Heller and visited her home. She was detained without incident before an LCSO intelligence detective took over the investigation.<br>Heller faces a charge of making a written threat of violence under Florida law. Florida Statute 836.10 makes it a second-degree felony to send, post, or transmit a written or electronic record threatening to kill or injure someone, carry out a mass shooting, or commit an act of terrorism. The communication must be made in a manner in which another person may view it.<br>Anthropic isn&#x27;t going to be taking any chances when it comes to anything it deems a potential threat. Last month, it was reported that OpenAI and Sam Altman are being sued by British Columbia over claims that the company could have prevented a mass shooting in the Canadian province.<br>The shooter, eighteen-year-old former pupil Jesse Van Rootselaar, had previously been flagged by OpenAI&#x27;s safety team for her conversations about gun violence, but OpenAI never alerted police because the conversations did not meet the threshold for legal referral.<br>In June, Florida also sued OpenAI and Altman, alleging that ChatGPT had contributed to real-world harms, including the 2025 Florida State University shooting.<br>The latest incident is another reminder to think before you enter something into a chatbot that could get you into trouble. It&#x27;s certainly not a private diary whose contents are for your eyes only.<br>Reports last month revealed that human contractors reviewing Microsoft Copilot&#x27;s image editor can see users&#x27; prompts, uploaded photos and AI-generated edits. Documents show that some of those assignments contain sexual, disturbing or potentially illegal material, though the reviewers are not there to flag the content – only to assess whether the output is accurate.</div>
+</div>
+
+</div>
+
+</body>
+</html>
