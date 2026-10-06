@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-07 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-07 AM · Generated 2026-10-07 05:41 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: arstechnica.com, blog.google, developers.cloudflare.com, mistral.ai, news.ycombinator.com, parseable.com, peterszentkiralyi.eu, techspot.com, theaviationist.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Ask HN: Why is Ask HN only showing me 14 posts?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    4 points ·
+    0 comments ·
+    Gooblebrai
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · New #2 · Top #9
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49984484">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I&#x27;d have swear before there were more and even a more button at the bottom</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Mistral Large 4
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1426 points ·
+    891 comments ·
+    Philpax
+  </div>
+
+  <div class="meta">
+    mistral.ai
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://mistral.ai/news/mistral-large-4/\">Original article</a> · <a href="https://news.ycombinator.com/item?id=49977979">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://docs.mistral.ai/models/mistral-large-4-0</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: I turned my iPhone and a $20 smart plug into an f-stop timer
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    52 points ·
+    12 comments ·
+    pentakkusu
+  </div>
+
+  <div class="meta">
+    peterszentkiralyi.eu
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #16
+  </div>
+
+  <div class="links">
+    <a href="https://peterszentkiralyi.eu/darkplug/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49978595">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Darkplug<br>A darkroom timer for iPhone that controls your enlarger.<br>Control your enlarger with Darkplug and a compatible smart plug on your local network. Built for film photographers and darkroom printers, Darkplug combines precise timing, guided workflows, and a red-on-black interface designed for darkroom use.<br>☝️ You only need this beside your enlarger and you are set (EU model pictured).<br>Designed for darkroom printing<br>Darkplug times exposures like a classic darkroom timer, and also provides more advanced printing workflows with a very unique feature set. Whether you are making a straight print, testing exposure, planning a complex dodge and burn sequence, or doing split grade printing, Darkplug keeps the process fast and straightforward.<br>Darkplug uses a red-on-black interface designed to stay safe to next to photo paper. The controls are simple, legible in low light, and focused on the task in front of you. The red colour was chosen and tested so that it does not fog paper.<br>What you can do with Darkplug<br>- Time straight prints<br>- Add an optional 4-second count-in<br>- Control the timer with F-Stop steps (Darkplug+ feature)<br>- Run guided test strips with second or F-Stops increments (Darkplug+ feature)<br>- Plan and execute complex dodge and burn steps with an easy to understand unique grid system (Darkplug+ feature)<br>- Save and restore dodge and burn plans with reusable plan codes (coming soon as a Darkplug+ feature)<br>- Split grade (two channel) print timer (Darkplug+ feature)<br>- Use a guided paper developing timer (Darkplug+ feature)<br>Darkplug+<br>Darkplug+ unlocks advanced tools and workflows for printers who want more control.<br>It is available as a one-time in-app purchase. No subscriptions.<br>How it works<br>Set up your smart plug and note its local IP address. Make sure the plug and your iPhone or iPad share the same local network. Connect your enlarger to the smart plug. Enter the plug’s local IP address in Darkplug, and connect. Once set up, you can control the enlarger directly from your iPhone or iPad.<br>Compatible smart plugs<br>Darkplug works with the following smart plugs manufactured by Shelly:1<br>- Shelly Plus Plug S Gen2 🇪🇺<br>- Shelly Plus Plug UK Gen2 🇬🇧<br>- Shelly Plug S Gen3 🇪🇺<br>- Shelly Outdoor Plug S Gen3 🇪🇺<br>- Shelly Plug M Gen3 🇪🇺<br>- Shelly Plug US Gen4 🇺🇸<br>Support<br>For questions, feedback, or support, email me at fill.cans82@icloud.com.<br>FAQ<br>See here.<br>Privacy<br>Darkplug is developed by Péter Szentkirályi. For information about privacy and data handling, read the Privacy Policy.<br>Terms of Use<br>Read the Terms of Use.<br>Get Darkplug<br>Darkplug is available now on the App Store.<br>- Shelly is a trademark of SHELLY GROUP SE.↩</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    F/A-18F Super Hornet Returns from Operation Epic Fury with Sub-Buster Marking
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    Gaishan
+  </div>
+
+  <div class="meta">
+    theaviationist.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://theaviationist.com/2026/10/02/sub-buster-fa18f/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49984513">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">As VFA-41 returned to NAS Lemoore on Oct. 1, one of their jets carried a unique decoration indicating its involvement in the destruction of an unidentified Iranian submarine during the squadron’s tour on USS Abraham Lincoln (CVN 72).<br>A silhouette of a submarine, filled in with the moniker ‘Sub Buster’, adorned the nose of F/A-18F Super Hornet 168491 as it was photographed landing at Naval Air Station Lemoore, California. With the destruction of submarines, operated by relatively few nations globally, being rare even during open warfare, this is undoubtedly the first time a Super Hornet has carried such a decoration.</div>
+<div class="para">View this post on Instagram</div>
+<div class="para">Iran lost a large number of its submarine force during Operation Epic Fury, so it is not possible to definitively confirm which vessel the Super Hornet was involved in destroying. However, if the marking is designed to be representative, it most resembles a Kilo class submarine. Of Iran’s three Russian-built Kilo class submarines, one, the Taregh, was specifically confirmed by the U.S. as destroyed while in port. The remaining two are thought to have long been inoperable though, if also targeted, would count as a kill all the same.<br>Kilo class submarine “IRIS Taregh” launching the new Homa class recon UAV. Hopefully we see a UAV able to fit in the torpedo tubes pic.twitter.com/yPLVH1Z3EH<br>— Iran Defense commentary (unofficial) (@IranDefense) July 15, 2022<br>The U.S. also confirmed the sinking of the Fateh, the lead vessel of an indigenous class of small, coastal submarines, though – again, if the marking is representative – this submarine type does not resemble the one depicted. Multiple Ghadir class submarines, even smaller than the Fateh, are known to have been destroyed, with at least one targeted using a AGM-114 Hellfire missile (ruling out a Super Hornet).<br>🇺🇸 MQ-9 strike on an Iranian submarine with Hellfire. https://t.co/TSlXzzN0Ua pic.twitter.com/5oyLcoMO2l<br>— Colby Badhwar (@ColbyBadhwar) March 10, 2026<br>ATACMS ballistic missiles and uncrewed surface vessels (USVs) are also known to have been employed to target submarines alongside in port.<br>WATCH: CENTCOM deployed uncrewed surface vessels to strike an Iranian submarine and naval maintenance facility. pic.twitter.com/eWFHLPvArX<br>— Open Source Intel (@Osint613) July 13, 2026<br>The Kilo class subs are, by a large margin, Iran’s most theoretically capable submarines. If operated to their fullest potential, the three submarines would have the potential to be among the deadliest military assets in the region, able to target surface vessels as well as lay mines, launch guided munitions and even drones with little warning before slipping away beneath the waves, hidden amongst the sounds of the busy shipping lanes. On the other hand, the Persian Gulf’s limited depth and high salinity make submarine operations – even for experienced crews – difficult, presenting a high risk of accidental grounding and difficulty maintaining sonar contacts. Nonetheless, two or three Kilo class submarines, employed well, could have presented a major hazard in and around the Strait of Hormuz running barrier patrols.<br>However, since delivery in the 1990s, Iran has consistently failed to maintain its Kilo submarine force to a standard where they present any form of sustained threat. Aims to keep at least two submarines in active service at one time were rarely achieved.<br>Video of Iranian Kilo class submarine Tareq launching Miaad torpedo, Fateh and Ghadir class submarine launching Valfajr-2 torpedo, and SH-3D helicopter launching Mk-46 torpedo during Iranian Army Zolfaghar-1401 exercise today. pic.twitter.com/zQvBr7AY2j<br>— Mehdi H. (@mhmiranusa) January 1, 2023<br>It is unknown what type of weapon was deployed by the jet to target the submarine. Submarines are extremely vulnerable when not underwater, and any breach of the pressure hull could render the boat unusable either permanently or for a significant period of time. The latter is of particular note here, since any effort to repair the submarine could be delayed by further strikes.<br>Given how unusual engaging a submarine is for a Super Hornet, the kill marking (or a version of it) is sure to live on the side of 168491 as a permanent feature in a similar fashion to F-15E Strike Eagle 89-0487’s green star commemorating the destruction of an Iraqi helicopter with a laser guided bomb.<br>Many thanks to Jeff Rojas for capturing this aircraft and sharing his images with us. You can find him on Instagram at @jro_photography.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Anthropic reported diary entry to police, woman faces felony charge
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    799 points ·
+    640 comments ·
+    emptybits
+  </div>
+
+  <div class="meta">
+    techspot.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #45
+  </div>
+
+  <div class="links">
+    <a href="https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=49961057">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">What just happened? Another incident has taken place that illustrates the need to be careful what you tell AI. A Florida woman is facing felony charges after she used Claude as a diary and allegedly wrote that she planned to &quot;shoot up&quot; the Sheriff&#x27;s office. After a human reviewer examined the statements, they were reported to police.<br>According to the arrest report, Carli Michelle Heller, of Bonita Springs, Florida, wrote on September 26 that she would attack the Sheriff&#x27;s office. She later said that she uses Anthropic&#x27;s chatbot like a &quot;diary.&quot;<br>Claude&#x27;s safety systems flagged the entry and it was escalated to a human reviewer. After deciding it was a credible threat, the reviewer reported it to law enforcement.<br>The company says it may share user information in limited emergencies if it believes disclosure is necessary to prevent death or serious physical injury.<br>Deputies identified Heller and visited her home. She was detained without incident before an LCSO intelligence detective took over the investigation.<br>Heller faces a charge of making a written threat of violence under Florida law. Florida Statute 836.10 makes it a second-degree felony to send, post, or transmit a written or electronic record threatening to kill or injure someone, carry out a mass shooting, or commit an act of terrorism. The communication must be made in a manner in which another person may view it.<br>Anthropic isn&#x27;t going to be taking any chances when it comes to anything it deems a potential threat. Last month, it was reported that OpenAI and Sam Altman are being sued by British Columbia over claims that the company could have prevented a mass shooting in the Canadian province.<br>The shooter, eighteen-year-old former pupil Jesse Van Rootselaar, had previously been flagged by OpenAI&#x27;s safety team for her conversations about gun violence, but OpenAI never alerted police because the conversations did not meet the threshold for legal referral.<br>In June, Florida also sued OpenAI and Altman, alleging that ChatGPT had contributed to real-world harms, including the 2025 Florida State University shooting.<br>The latest incident is another reminder to think before you enter something into a chatbot that could get you into trouble. It&#x27;s certainly not a private diary whose contents are for your eyes only.<br>Reports last month revealed that human contractors reviewing Microsoft Copilot&#x27;s image editor can see users&#x27; prompts, uploaded photos and AI-generated edits. Documents show that some of those assignments contain sexual, disturbing or potentially illegal material, though the reviewers are not there to flag the content – only to assess whether the output is accurate.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    EmbeddingGemma 2
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    104 points ·
+    14 comments ·
+    ilreb
+  </div>
+
+  <div class="meta">
+    blog.google
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #57
+  </div>
+
+  <div class="links">
+    <a href="https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49980487">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">EmbeddingGemma 2: an open, lightweight multimodal embedding model<br>We introduced EmbeddingGemma last year to provide a lightweight option for high-quality text embeddings, to help your apps organize, search, and connect information directly on consumer hardware. The developer community’s response blew past our expectations. With more than 20 million downloads, builders have used it to power smarter on-device search tools and privacy-first retrieval augmented generation (RAG) pipelines.<br>Today, we’re launching EmbeddingGemma 2, expanding beyond text to unify code, images, video, and audio in a shared embedding space. Built on the Gemma 4 architecture and released under a commercially permissive Apache 2.0 license, EmbeddingGemma 2 has 740 million parameters, making it optimal for on-device inference. It can help find a specific video clip from a voice memo, or search through hours of audio recordings based on a text query, all processed by a single, natively multimodal model.<br>Built from the same technology as Gemini Embedding models, EmbeddingGemma 2 is:<br>- Best-in-class for its size: Achieves leading scores among sub-1B multimodal embedders for its size across benchmarks like MTEB (Massive Text Embedding Benchmark) Code and MAEB (Massive Audio Embedding Benchmark), while matching or outperforming many larger models across text, vision, and audio tasks.<br>- Modular by design: Requires as little as 270M parameters for text-only workloads with optional vision (170M) and audio (300M) encoders for full multimodal support.<br>- Storage-efficient: Using Matryoshka Representation Learning (MRL), developers can dynamically truncate output vectors from 768 dimensions down to 512, 256, or 128 dimensions. This provides up to 6x storage reduction for local vector databases and memory usage.<br>- Optimized for on-device performance: Runs efficiently within tight resource constraints. With quantization, on a Google Pixel 11 Pro, EmbeddingGemma 2 requires as little as ~191MB active RAM for text-only weights and ~567MB for the full multimodal model.<br>- Extended context ready: Features an 8K token context window (4x larger than EmbeddingGemma 1), allowing it to process up to 5.5 minutes of audio, 29 images, 58 video frames, or interleaved combinations thereof directly on local hardware.<br>Achieving top-tier quality for code, vision, and audio<br>EmbeddingGemma 2 matches the strong multilingual text performance of EmbeddingGemma while delivering a significant 9.92-point improvement on code performance (in MTEB Code, from 68.76 to 78.68), making it well-suited for local codebase indexing, semantic code search, and coding agent retrieval. Across image, video, documents, and audio, it sets a new standard in quality-per-parameter for sub-1B models and even outperforms some specialist models more than twice its size.<br>Enabling semantic search, routing, and retrieval, fully on-device<br>EmbeddingGemma 2 brings robust capabilities directly to edge hardware. Generating embeddings locally helps ensure data privacy, reduces pipeline latency, and empowers developers to build cross-modal search and retrieval that works entirely offline.<br>When paired with generative models such as Gemma 4, EmbeddingGemma 2 enables on-device RAG pipelines that understand complex multimodal data. Because EmbeddingGemma 2 is built on Gemma 4 and shares its text tokenizer and audio encoder, developers can run both models together in a unified pipeline with a lower combined total memory footprint.<br>Getting started with EmbeddingGemma 2<br>We worked closely with the following partners to ensure EmbeddingGemma 2 works immediately where you build:<br>- Download the models: Find the model weights on Hugging Face and Kaggle, with Gemini Enterprise Agent Platform Model Garden availability coming soon. Visit LiteRT Community on Hugging Face for models optimized for on-device.<br>- On-device deployment: Develop cross-platform apps with Google AI Edge MediaPipe for turnkey embedding, retrieval &amp; decision tasks or LiteRT for custom model integration. Build for the browser with transformers.js or WebGPU.<br>- Use your favorite development tools: Serve the model efficiently using transformers, sentence-transformers, MLX, vLLM, llama.cpp, SGLang, Ollama, and LMStudio. Store your embedding vectors with Qdrant.<br>- Fine-tuning: Follow guidance by Unsloth for how to fine-tune EmbeddingGemma 2 for your use cases.<br>Explore our developer guide, documentation, and guides for inference and fine-tuning.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: Parseable, an open observability datalake, handles 100M time-series/min
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    70 points ·
+    14 comments ·
+    yashdotrv
+  </div>
+
+  <div class="meta">
+    parseable.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #21
+  </div>
+
+  <div class="links">
+    <a href="https://www.parseable.com">Original article</a> · <a href="https://news.ycombinator.com/item?id=49978171">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Exascale columnar data lake for observability<br>Purpose built for telemetry data. Written in Rust. Open core, open Parquet, and open standards, at a fraction of the cost. Deploy in public or private cloud, or use managed Parseable<br>Address high cardinality with columnar design<br>Global deployments<br>JSON bytes ingested<br>Compression on average<br>Events processed<br>Cloud native, data lake architecture that scales as you go<br>Deploy on a public or private cloud. Point it to an object store.<br>Configure your telemetry agents. You are ready to go<br>Complete observability feature set<br>built within a single binary<br>Alerts, Dashboards, Logs, Metrics and Distributed Traces views.<br>Service maps, Error page, AI analysis and RCA<br>Open, columnar format at the heart<br>Stateless design<br>Understanding the use cases<br>Understanding the scenarios where<br>Parseable is the right choice for your observability needs<br>Leverage LLMs and traditional ML models to deeply analyze and investigate your telemetry data. From summarizing trends, identifying anomalies, understanding complex patterns and unknown unknowns to actionable insights and root cause analysis.<br>Flexible deployment options<br>Available options include self-hosted OSS, managed cloud,<br>and enterprise deployments with BYOC<br>Best for<br>Serious teams looking for enterprise grade observability.<br>What’s included<br>- Enterprise features like PromQL, distributed queries, and AI native interface.<br>- Advanced access control and governance.<br>- Priority support for critical deployments.<br>24/7<br>Premium support<br>100%<br>Data sovereignty<br>Zero<br>Vendor lock-in<br>Trusted by thousands of teams for<br>mission critical observability<br>Teams across the globe trust Parseable for their observability workloads<br>0<br>Global deployments<br>0<br>Events processed<br>0<br>JSON bytes ingested<br>0<br>Total Parquet bytes<br>$ curl -fsSL https://logg.ing/setup | bash<br>Integrates with what you already run<br>Huge ecosystem of integrations across telemetry agents, data sources, visualization tools, authentication, LLMs and more<br>Parseable has several in house tools to leverage your observability data better<br>Frequently asked questions?<br>Parseable unifies logs, metrics, and traces in one open observability platform. Teams get SQL and natural-language querying, dashboards, alerts, access controls, forecasting, and object-storage-native data management.<br>View all features<br>See your data in a new light<br>Parseable unifies telemetry data and keeps full-fidelity data queryable.<br>It all lives in open formats on object storage with your complete control and ownership.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    GitHub Refuses To Remove Cracked Copies Of My Software Even After A Month
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    11 points ·
+    6 comments ·
+    IvanK_net
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49982498">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I am a developer of https://www.photopea.com, a popular photo editor that runs in a web browser.<br>Many people are asking AI models to take the Javascript code from my website, remove all ads from it, and they publish such a &quot;new product&quot; on Github for everyone to download.<br>There exist tens of such repositories on Github. I want my website to be the only source of a stable version of my program Photopea. I even received emails from people complaining about something in Photopea, and it took several emails to figure out that they are not using Photopea.com (so it ruins my reputation a little).<br>I reported it to Github on the 4th of September 2026: https://www.photopea.com/g/XKoqqIGv<br>Today, a month later, I received this response:<br>Thank you for submitting a DMCA takedown notice. We&#x27;ve reviewed the information you&#x27;ve provided, and based on the facts presented to us, we&#x27;re unable to confirm a violation of 17 U.S. Code § 1201.<br>What do you think I could do? Do you think I should look for a lawyer to deal with it outside the digital world? I really doubt that a real person ever looked at my report, and they probably send this response automatically to 99% of people.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Web Search API
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    585 points ·
+    280 comments ·
+    tosh
+  </div>
+
+  <div class="meta">
+    developers.cloudflare.com
+  </div>
+
+  <div class="meta ranks">
+    Best #3 · Top #53
+  </div>
+
+  <div class="links">
+    <a href="https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49963171">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Paramount completes $111B Warner merger, creating &quot;Skydance&quot; behemoth
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    73 points ·
+    67 comments ·
+    Mgtyalx
+  </div>
+
+  <div class="meta">
+    arstechnica.com
+  </div>
+
+  <div class="meta ranks">
+    Top #3 · New #48
+  </div>
+
+  <div class="links">
+    <a href="https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49983703">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Paramount Skydance completed its $111 billion merger with Warner Bros. Discovery today, after a last-ditch effort to block the deal was rejected by Supreme Court Justice Elena Kagan.<br>The post-merger company is called Skydance, taking the name of a firm that Paramount bought in a separate deal last year. The new Skydance combines two of the largest movie studios, streaming services Paramount+ and HBO Max, CBS, CNN, “and a portfolio of live sports including CBS Sports and TNT Sports, as well as a deep programming library and expansive collection of brands and franchises,” Skydance said today in a press release announcing completion of the deal.<br>The merger was delayed a bit by a lawsuit filed by California and 11 other states. In July, US District Judge Araceli Martínez-Olguín in the Northern District of California ruled that the combination would likely reduce competition substantially and violate antitrust laws.<br>California settled the lawsuit last month, and the other states involved went along with the compromise. A coalition of free speech and media advocacy groups urged the judge to reject the settlement, saying it will give residents of the states that sued Paramount “virtually nothing.”<br>Martínez-Olguín approved the settlement on September 30, saying the deal “represents a reasonable factual and legal resolution of the dispute.” She wrote that a typical settlement “does not fully remediate an alleged violation or even necessarily resolve the ultimate factual and legal issues of a case.” It “reflects a compromise of the claims short of full adjudication—compromise that may leave some dissatisfaction for both sides and the public but a compromise that saves the risk, time, and expense of litigating through trial.”<br>The settlement addresses the lawsuit’s complaints about film distribution “by requiring certain minimum thresholds of investment and release of domestic films,” and addresses complaints about licensing of basic cable channels with “requirements for continued, separate negotiations of distribution for the two entities’ basic cable holdings,” the judge wrote. Objections based on “hopes and desires for the proposed consent decree to reach farther—to achieve more—do not rise to the level of legal violations upon which the Court can reject the parties’ negotiated resolution,” she wrote.</div>
+</div>
+
+</div>
+
+</body>
+</html>
