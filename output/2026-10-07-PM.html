@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-07 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-07 PM · Generated 2026-10-07 17:41 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: developers.cloudflare.com, github.com, mistral.ai, news.ycombinator.com, openai.com, peterszentkiralyi.eu, sicpers.info, strandsagents.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Tell HN: GitHub refuses to remove cracked copies of my software after a month
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    234 points ·
+    129 comments ·
+    IvanK_net
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #15 · Best #30
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49982498">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I am a developer of https://www.photopea.com, a popular photo editor that runs in a web browser.<br>Many people are asking AI models to take the Javascript code from my website, remove all ads from it, and they publish such a &quot;new product&quot; on Github for everyone to download.<br>There exist tens of such repositories on Github. I want my website to be the only source of a stable version of my program Photopea. I even received emails from people complaining about something in Photopea, and it took several emails to figure out that they are not using Photopea.com (so it ruins my reputation a little).<br>I reported it to Github on the 4th of September 2026: https://www.photopea.com/g/XKoqqIGv<br>Today, a month later, I received this response:<br>Thank you for submitting a DMCA takedown notice. We&#x27;ve reviewed the information you&#x27;ve provided, and based on the facts presented to us, we&#x27;re unable to confirm a violation of 17 U.S. Code § 1201.<br>What do you think I could do? Do you think I should look for a lawyer to deal with it outside the digital world? I really doubt that a real person ever looked at my report, and they probably send this response automatically to 99% of people.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Mistral Large 4
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1802 points ·
+    1067 comments ·
+    Philpax
+  </div>
+
+  <div class="meta">
+    mistral.ai
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #7
+  </div>
+
+  <div class="links">
+    <a href="https://mistral.ai/news/mistral-large-4/\">Original article</a> · <a href="https://news.ycombinator.com/item?id=49977979">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://docs.mistral.ai/models/mistral-large-4-0</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Sharing AI progress in mathematics
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    914 points ·
+    833 comments ·
+    OfficialTurkey
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49984923">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://github.com/openai/math<br>https://github.com/openai/math/tree/main/preprints</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Show HN: NanoMuse – An open-source AI agent for your phone and computer
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    20 points ·
+    3 comments ·
+    ilreb
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #21
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/nano-muse/nanoMuse">Original article</a> · <a href="https://news.ycombinator.com/item?id=49987765">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">English | 简体中文 | 繁體中文 | Español | Français | Bahasa Indonesia | 日本語 | 한국어 | Русский | Tiếng Việt<br>nanoMuse is an open-source personal agent for every device you own. One agent with a name and a look of its own, in the style of Meta&#x27;s Muse: it does things instead of answering questions, keeps working while the app is closed, remembers you, and stops to ask before anything you could not undo.<br>nano means the whole set, small enough to run and deploy yourself: the phone app, the desktop app, the web console and the relay that joins them are all in this repository, under GPL-3.0-or-later. Free, open source, non-profit — let&#x27;s build it together. Sign in and you get a free allowance of model use on the community relay — the developer pays for it; when it is gone, use your own key. The same relay runs on a server of yours, so nothing has to leave your house. Latest: 0.1.40 Clear — release notes · try it in the browser.<br>- 2026-10-07 📄 Our paper is available on arXiv.<br>- 2026-10-06 🚀 Latest version: 0.1.40 Clear.<br>- 2026-09-25 🎉 nanoMuse is released.<br>Every version: releases.<br>| Browser | demo.nanomuse.dev — a nanoMuse on a simulated phone, after a sign-in. A demo; the apps below are the real thing |<br>| Android 8.0+, arm64 | nanoMuse-0.1.40-arm64.apk — every version is signed with the same key and installs over the last |<br>| iPhone / iPad | TestFlight — a beta; the link delivers the build once Apple&#x27;s beta review has passed · iOS |<br>| macOS 12+ | Apple Silicon · Intel — not notarised: right-click → Open the first time |<br>| Windows 10+ | nanoMuse-Desktop-0.1.40-win-x64.exe — click Run anyway once |<br>| Linux x64 | AppImage · .deb · tar.gz |<br>| Docker | bash scripts/self-host.sh --local for your own relay; docker compose up -d app for the web app on a server of yours — self-hosting |<br>All downloads come from the latest release; the same files are on nanomuse.cn/dl when GitHub is slow where you are. Open the app, sign in with an e-mail or a mainland-China phone number, and it has a model to think with. The phone, the desktop and the web share one account and show the same conversations.<br>| Does things. A Linux shell, a browser, MCP servers and skills — and, with Hands on, the apps on your phone and the windows on your computer through their screens, for everything that never had an API. | Asks first. A stop before deleting, sending or paying, remembered for once, this chat or always; passwords and codes are yours to type. A login or a CAPTCHA is handed to you, Done resumes. |<br>| Reaches your other devices. Say it on the phone, it runs on your PC; @Mac … at the start of a message sends the task there. Approvals come back to the device in your hand. | Keeps going. Goals checked on a schedule, routines that run while the app is closed, a feed written for you each morning. |<br>| Remembers you. What it is, what it knows about you and when it wakes are Markdown files you can read and edit. | Lives in your chat apps. It answers in 飞书, 钉钉, 企业微信 and Telegram. |<br>| A look of its own. Describe one, your image model draws it, a video model makes it move. A small dragon by default. | Any model. The relay&#x27;s allowance, your own key at one of eighteen providers (Bailian, OpenRouter, OpenAI, Gemini, DeepSeek and more), or a plan you already pay for: ChatGPT, Claude, Kimi. A provider without picture or video models leaves those two off, and the app says so. |<br>Each device runs its own agent — the phone inside the APK (Alpine Linux under proot, a shell, a browser, MCP), the computer inside nanoMuse Desktop (DeepSeek Harness with the Python runtime for the hands). Signed in, they meet on the relay and can ask each other for things; the text of the conversations travels through it, files and screenshots stay where they were made.<br>docs/every-device.md explains the devices, docs/hub.md the frames, docs/cloud.md the relay, docs/privacy.md what it keeps.<br>|  | Meta Muse | OpenMinis | nanoMuse |<br>|---|---|---|---|<br>| Where the agent runs | A cloud VM per user | The phone it is installed on | Your phone, your computer, or a server of yours — one account across them |<br>| Apps without an API | Out of reach; the VM never touches your devices | An accessibility CLI on Android | The screen as a hand on the phone and the computer: screenshots, APIs first, you take over for logins. Not on iOS — the system does not allow it |<br>| Other devices | Clients of one VM | The one it is installed on | Devices ask each other for things over the hub, with approvals where you are |<br>| Models | Meta&#x27;s | Bring your own | The relay&#x27;s free allowance, or your own |<br>| Licence | Closed | GPL-3.0 | GPL-3.0-or-later, built on OpenMinis |<br>nanomuse.cn/docs — install per platform, every device, hands, connectors, memory, self-hosting, the protocols. The sources are in docs/; what changed in each version is in the CHANGELOG and docs/releases/.<br>One VPS, one hour: docs/self-hosting.md. Three ways — no server at all with your own key, your own relay with scripts/self-host.sh, or a runtime of your own for the web app.<br>Use it for a real task, report what broke, then pick something focused: CONTRIBUTING.md has the setup and the conventions, AGENTS.md the rules a coding agent follows in this tree, and the roadmap says where to start. Issues · Discussions · Discord.<br>If you find nanoMuse useful, please cite the paper.<br>@misc{liu2026nanomuseopensourcepersonalagent,<br>title={nanoMuse: An Open-Source Personal Agent for Every Device You Own},<br>author={Guangyi Liu and Yong Liu and Jiangning Zhang},<br>year={2026},<br>eprint={2610.08699},<br>archivePrefix={arXiv},<br>primaryClass={cs.AI},<br>url={https://arxiv.org/abs/2610.08699},<br>}<br>nanoMuse stands on other people&#x27;s work; THIRD_PARTY_NOTICES.md has the terms.<br>- OpenMinis — the on-device agent the phone app is built on, with proot and Alpine Linux for the sandbox.<br>- DeepSeek Harness — the agent harness the desktop app is a plugin of.<br>- UI-TARS-desktop (ByteDance) — the desktop hands&#x27; operator is a port of theirs, and the stage&#x27;s markers follow their ScreenMarker.<br>- MobileGym, MemGUI-Bench, PhoneHarness, CopilotKit/OpenMuse, Open-AutoGLM, ClawGUI — the phone operator, the traces and the product ideas.<br>nanoMuse is an independent community project, not affiliated with or endorsed by Meta Platforms, Inc.; Muse is their trademark. The dragon is the project&#x27;s own.<br>GPL-3.0-or-later. The phone app is based on OpenMinis 1.13 (GPL-3.0), modified since 2026-09-24 — see NOTICE. Earlier versions of the Python line were MIT (tag pre-openminis).</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Show HN: Mithril, Bitstillery Edition
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    jvanveen
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49990384">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://github.com/bitstillery/mithril is a heavily modified (AI) version of Mithril, that features Signals, a State proxy, full Typescript &amp; Bun tooling as well as several performance tweaks.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Strands Decider 2B: a small, open-source, decision model
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    174 points ·
+    43 comments ·
+    gmays
+  </div>
+
+  <div class="meta">
+    strandsagents.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #40
+  </div>
+
+  <div class="links">
+    <a href="https://strandsagents.com/blog/introducing-strands-decider/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49987076">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Earlier this year, we announced strands-labs, a place to get hands-on with state-of-the-art approaches to agentic AI. Today, we’re excited to add Strands Decider 2B: a small decision model optimized for fast experimentation, local development, and innovation.<br>Strands decider is one of a new class of decision models or system one models, a type of model that has been gaining a lot of attention since TypeSafe AI’s launch of Jev earlier this month. Unlike LLMs that can generate arbitrary output, decision models are designed to pick between sets of options (e.g. “Is the string ‘turn on the lights’ about the coffee machine? Yes or no.”, “What language is the phrase ‘sihamba ngokushesha’ in? English, Zulu, or Dutch.”) and assign simple numerical scores (e.g. “Is the phrase ‘this is the best doc I’ve ever read’ a positive sentiment? Between 0 and 1.”).<br>In exchange for this reduction in flexibility, decision models are faster and more capable at a given size, always produce an answer from the selected options, and can run with very low latency.<br>The flip side is that this approach (generating all outputs in a single parallel pass) makes it significantly worse at solving complex problems than reasoning models, and its lack of ability to generate text makes it unsuited for coding, chatbots, document summarization, and other common LLM tasks.<br>In addition, decision models give each decision a high-quality reliability score (i.e. “how sure can I be that this yes/no is correct?”), which is not available through frontier LLM inference APIs. They also make it highly efficient to ask multiple questions about the same prompt. This combination of properties makes them perfect for driving the types of agentic workflows we see many developers building with the Strands Harness SDK, and the recently launched Strands harness. We expect that this class of model is going to lead to a lot of interesting innovation in agentic AI over the next few weeks, months, and years.<br>Strands Decider 2B is our first contribution to that innovation. It’s a 2 billion parameter model, suitable for running on a local CPU or GPU, which can return answers to meaningful questions in tens of milliseconds. Its accuracy and calibration is competitive with the other models we know of in this class. We’ve released strands-decider-2b as open source on GitHub, with the weights on Hugging Face, including all the training data and scripts we used to build the model, making it a great place to start on your own innovation journey.<br>Model Architecture<br>The core idea is that we take a pre-trained LLM torso (Qwen3.5-2B), and remove the LM head, taking away its ability to generate text. The LM head is replaced with a pointer head which scores the answers offered by the torso for each option. It does this by scoring the hidden state at each option position against the hidden state at the &lt;answer&gt; position. This head is pretty small, just over a million total parameters. The torso is fine-tuned with a rank-16 LoRA adapter.<br>Figure 1: The Strands Decider 2B architecture.<br>As you browse through the repo, you’ll find that this is the second major iteration of the architecture. The first one was similar, but used a slot head that we found performed significantly worse. In fact, the model we’re releasing today is v19, with lots of iterations under the covers. Everything we changed in each version is covered in the repo, and you can follow along with the work we did.<br>How does it perform?<br>For models of this type, we’re interested in three performance targets: accuracy (how well it answers questions), calibration (how trustworthy its confidence scores are), and latency (how quickly it can make decisions). We’ve been measuring the first two together: accuracy on JevBench’s public set, and calibration using the Brier score on the same set. We’ve found that strands-decider-2b performs well on accuracy and calibration (3rd of 33 in the 2B class, and 1st of 30 excluding the just-over-2B models). As we’ve evolved the architecture our scores are getting better, and we have many ideas for future improvements. We hope the community joins us, in the spirit of Strands labs, in contributing new ideas of your own.<br>Figure 2: Accuracy and calibration (Brier score) across the training trajectory. As the architecture evolved over successive versions, both metrics improved on JevBench’s public set.<br>On latency, strands-decider-2b can make local decisions in a median of around 115ms on widely available hardware. The time taken to decide depends on the task size, approximately linearly increasing as the task size gets larger. The results in the graph here are on a local Nvidia RTX3090, but the performance on an M3 MacBook isn’t much worse, with a median latency for small tasks around 153ms. As with accuracy and calibration, we have a lot of ideas for getting better here, especially in reducing the floor.<br>Figure 3: Decision latency as a function of task size (in tokens), measured on a local Nvidia RTX 3090 against v18 of the model. Latency increases approximately linearly with task size.<br>Why 2B?<br>We chose to make Strands decider available as a small model for two reasons. One is that we want to encourage experimentation. You can use, and even train, strands-decider-2b on hardware you already have. This makes it easy, fast, and low risk to try things out. The other is that two billion total parameters, seems like something of a sweet spot: small enough for experimentation, large enough to do meaningful work. Strands decider performs 100% of the easy tasks on JevBench correctly, for example, and these types of problems map well to some of the easier problems we see people tackle with agents.<br>What can I do with Strands decider?<br>Whatever you want! More seriously, we’re seeing early success using this class of model for model routing, tool selection, evaluations, guardrails, memory, context management, and policy classification. We’ve also seen exciting innovation around building hybrid agents, using LLMs to make the hardest decisions and using decider models to make the easier rote decisions, reducing cost and latency. We’re seeing experiments combining decider models with fixed workflow languages to build another kind of hybrid workflow. Folks are also using these kinds of models to play games, automate tasks, navigate mazes, and more. The speed of innovation in this space is astonishing.<br>Trying it out<br>The easiest place to get started is through the strands-decider CLI:<br>Choice question<br>You can ask the model to choose based on some state and a question:<br>Example output:<br>In this output we can see that the model is predicting billing as the answer with the highest probability score.<br>The repo also includes examples using strands-decider-2b inside a Strands agent, under examples/strands/. The agent itself runs locally, connects to Strands decider also running locally, and then uses the default LLM from Amazon Bedrock.<br>It’s a deliberately small scenario. The agent has the (obligatory) demo get_weather tool and a system prompt that makes it deliberately eager, so that when the user asks “What’s the weather?” without saying where, the agent guesses a city and calls the tool anyway. However, before that call runs, strands-decider-2b will read the conversation and the proposed tool call and answers two yes/no questions about it: are these argument values grounded in anything the user actually said (spoiler: no!) and is it too early to call this tool anyway. A few lines of Python turn the predictions into a decision, and the agent goes back to ask which city you meant instead of confidently reporting the weather somewhere nobody mentioned.<br>The pattern here is Strands’ intervention system. We use the InterventionHandler with a before_tool_call method, pass it to Agent(interventions=[...]), and it runs before any tool executes. What it returns is a typed action: Proceed, Deny, Confirm (stop and ask a person), or Guide, which hands the model back its turn with feedback rather than blocking the call outright. This existing handler is a Python class and Strands has no opinion about what goes inside it, so the same shape holds whether you’re calling our decision model, a Cedar policy, or another agent. (There are equivalent hooks around the model call and around the whole invocation.) This example is an illustration rather than a recommendation, so the questions, the threshold and the policy were all picked by hand. The point is that a decision this cheap can sit in a path where an LLM call never could.<br>The Strands team is working on libraries for decision model integration, so watch the repo for updates soon.<br>Conclusion<br>You can download, use, or build off strands-decider-2b today. All the data is available, along with everything you need to get started. You can grab the code from GitHub, and the latest snapshots from Hugging Face. Now go experiment!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: Neptune, a free and open-source terminal built in Rust
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    1 comments ·
+    gabo2006
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/zevem/neptune">Original article</a> · <a href="https://news.ycombinator.com/item?id=49989493">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">neptune.rs · Downloads · User guide<br>A native Rust terminal for focused work, inspired by cmux and Ghostty. Independent shell sessions, GPU rendering, and a quiet workspace interface, with no webview.<br>- Workspaces, tabs, split panes, and groups with drag-and-drop organization.<br>- Local shells and SSH workspaces backed by real PTY sessions.<br>- Scrollback, terminal search, selection/clipboard, and a command palette.<br>- Custom keybindings configured in TOML.<br>- 715 built-in themes and custom themes shared by the window and terminal.<br>- Terminal notifications with optional native desktop banners.<br>- Saved workspace layouts and directories, plus optional Claude Code, Codex, OpenCode, pi and Oh My Pi session resumption on local Unix terminals, where an agent&#x27;s pull requests appear on its tab with their checks, unresolved review comments and merged state beside the screenshots and files it attaches, and a panel lists which agents are working, idle or waiting for you. Either agent can start the other out of view and work with it.<br>- Projects: a lead agent that plans work in a chat panel, starts and follows other agents in their own terminals, keeps shared notes for them and wakes on schedules or pull request changes while Neptune is open. Local Unix workspaces, with Claude Code or Codex installed.<br>Get published stable builds or prereleases. See the installation guide for platform packages, AppImage launch instructions, and download verification.<br>Linux is the local verification platform. macOS and Windows need native runtime verification before a production release; see the remaining release gates.<br>Use the pinned Rust 1.97.1 toolchain through rustup. A graphical desktop and a working graphics driver are required. On Debian/Ubuntu:<br>sudo apt-get install pkg-config libxkbcommon-dev libxkbcommon-x11-0 libwayland-dev libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev<br>cargo run --release --locked --bin neptune<br>See building from source for macOS and Windows prerequisites, executable locations, and desktop integration.<br>Build job limits, optional compiler caching, and scoped verification are in the development guide.<br>| Guide | Contents |<br>|---|---|<br>| Installation | Downloads, source builds, and desktop integration |<br>| User guide | Workspaces, SSH, shortcuts, preferences, and restoration |<br>| Configuration example | Supported settings and defaults |<br>| Notifications | Terminal alerts and coding-agent setup |<br>| Agent sessions | Coding-agent session resumption and activity, locally and on SSH hosts |<br>| Projects | A lead agent that runs other agents: chat, shared context, watches, limits and what is stored |<br>| Development | Build tooling, native inspection, CI, and artifacts |<br>| Architecture · Interface design | Ownership, terminal engine, renderer, and UI direction |<br>| Verification · Performance | Native evidence, release gates, and reproducible measurements |<br>| Releases · Changelog | Packaging, signing, updates, and What&#x27;s New |<br>| Website | The neptune.rs site and download pages |<br>Neptune is MIT licensed. Bundled fonts retain their SIL Open Font License notices; third-party dependencies and vendored development skills retain their respective licenses. See third-party notices for skill attribution and the full upstream license texts.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: I turned my iPhone and a $20 smart plug into an f-stop timer
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    80 points ·
+    35 comments ·
+    pentakkusu
+  </div>
+
+  <div class="meta">
+    peterszentkiralyi.eu
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · Top #37
+  </div>
+
+  <div class="links">
+    <a href="https://peterszentkiralyi.eu/darkplug/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49978595">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Darkplug<br>A darkroom timer for iPhone that controls your enlarger.<br>Control your enlarger with Darkplug and a compatible smart plug on your local network. Built for film photographers and darkroom printers, Darkplug combines precise timing, guided workflows, and a red-on-black interface designed for darkroom use.<br>☝️ You only need this beside your enlarger and you are set (EU model pictured).<br>Designed for darkroom printing<br>Darkplug times exposures like a classic darkroom timer, and also provides more advanced printing workflows with a very unique feature set. Whether you are making a straight print, testing exposure, planning a complex dodge and burn sequence, or doing split grade printing, Darkplug keeps the process fast and straightforward.<br>Darkplug uses a red-on-black interface designed to stay safe to next to photo paper. The controls are simple, legible in low light, and focused on the task in front of you. The red colour was chosen and tested so that it does not fog paper.<br>What you can do with Darkplug<br>- Time straight prints<br>- Add an optional 4-second count-in<br>- Control the timer with F-Stop steps (Darkplug+ feature)<br>- Run guided test strips with second or F-Stops increments (Darkplug+ feature)<br>- Plan and execute complex dodge and burn steps with an easy to understand unique grid system (Darkplug+ feature)<br>- Save and restore dodge and burn plans with reusable plan codes (coming soon as a Darkplug+ feature)<br>- Split grade (two channel) print timer (Darkplug+ feature)<br>- Use a guided paper developing timer (Darkplug+ feature)<br>Darkplug+<br>Darkplug+ unlocks advanced tools and workflows for printers who want more control.<br>It is available as a one-time in-app purchase. No subscriptions.<br>How it works<br>Set up your smart plug and note its local IP address. Make sure the plug and your iPhone or iPad share the same local network. Connect your enlarger to the smart plug. Enter the plug’s local IP address in Darkplug, and connect. Once set up, you can control the enlarger directly from your iPhone or iPad.<br>Compatible smart plugs<br>Darkplug works with the following smart plugs manufactured by Shelly:1<br>- Shelly Plus Plug S Gen2 🇪🇺<br>- Shelly Plus Plug UK Gen2 🇬🇧<br>- Shelly Plug S Gen3 🇪🇺<br>- Shelly Outdoor Plug S Gen3 🇪🇺<br>- Shelly Plug M Gen3 🇪🇺<br>- Shelly Plug US Gen4 🇺🇸<br>Support<br>For questions, feedback, or support, email me at fill.cans82@icloud.com.<br>FAQ<br>See here.<br>Privacy<br>Darkplug is developed by Péter Szentkirályi. For information about privacy and data handling, read the Privacy Policy.<br>Terms of Use<br>Read the Terms of Use.<br>Get Darkplug<br>Darkplug is available now on the App Store.<br>- Shelly is a trademark of SHELLY GROUP SE.↩</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Reasons to Dislike AI Coding
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    6 points ·
+    0 comments ·
+    signa11
+  </div>
+
+  <div class="meta">
+    sicpers.info
+  </div>
+
+  <div class="meta ranks">
+    Top #3 · New #19
+  </div>
+
+  <div class="links">
+    <a href="https://www.sicpers.info/2026/10/reasons-to-dislike-ai-coding/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49990204">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Code as Art<br>I covered this before in Art or tool? If you think of software as artistic output then generated software isn’t real because it doesn’t have the creative ineffability that’s a sign of true art.<br>There’s no argument against this one except that the people who want software typically aren’t paying for artworks, they’re paying for outcomes. And the outcomes of using a given artefact are the same regardless of how the artefact is made.<br>That also means there’s no argument for this one, unless you accept as axiomatic the ideas that things that can be considered art should only be made by people, and that using this particular set of tools is too big a separation between the person and the work when no other historical set of tools was too big a separation between the person and the work.<br>AI as Employment Thief<br>I covered this one before too, in On working machines. If you think of typing in code as the thing you get paid for, and the employers now have access to a machine that can do the typing, then the machine “stole your jobs”.<br>Except that the job was never to type code, it was to deliver valuable software. People who can still do that can still get paid by organisations that need that to be done. And, as I said in the linked post, demand only increases as application becomes more efficient.<br>Humans as Meat Proxies<br>If you think that software creation is an interpersonal endeavour, then taking task descriptions generated by software and turning them into prompts that the software uses to generate more software is a dehumanising experience.<br>This has been the trajectory of society for centuries. Here’s a quote from the Fragment on Machines:<br>…once adopted into the production process of capital, the means of labour passes through different metamorphoses, whose culmination is the machine, or rather, an automatic system of machinery (system of machinery: the automatic one is merely its most complete, most adequate form, and alone transforms machinery into a system), set in motion by an automaton, a moving power that moves itself; this automaton consisting of numerous mechanical and intellectual organs, so that the workers themselves are cast merely as its conscious linkages. […]<br>The accumulation of knowledge and of skill, of the general productive forces of the social brain, is thus absorbed into capital, as opposed to labour, and hence appears as an attribute of capital, and more specifically of fixed capital, in so far as it enters into the production process as a means of production proper.<br>This passage, written by Karl Marx in about 1857-1858, shows that both mechanical and intellectual work was always intended to be replaced by machinery (in predicting the alienation of intellectual work, Marx probably relied on his knowledge of contemporary mathematician Charles Babbage). In this situation it isn’t the technology that takes the job, it’s the mode of production. And given that programming is intellectual work, the means of production is literally our heads, we ought to be able to seize those.<br>Software Engineering as Rules<br>Motivated by Bertrand Meyer’s AI for Smarties, if you believe that software engineering is the careful application of the mysterious knowledge of software engineers, encapsulated in rules like the SOLID principles, “prefer composition over inheritance”, “use you’re type’s good“, the Law of Demeter and so on, then AI can’t possibly write software because it doesn’t apply those rules, it just generates text that happens to compile.<br>Never mind that much of the history of computing involves people taking an empiricist approach to software: copying it from Stack Overflow and tweaking it until it works; writing it out from a listing in Numerical Recipes or Sinclair User and tweaking it until it works; writing macros to automate the copying phase, and so on.<br>AI Companies as Bad Actors<br>If you believe that the big AI companies is run by people who don’t have humanity’s best interests at heart (further reading: all the Karl Marx writings I didn’t already quote above), then AI coding is bad because it supports those companies. As long as you don’t allow for the creation of other companies, the use of non-corporate models like academic or community models, and so on.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Web Search API
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    586 points ·
+    282 comments ·
+    tosh
+  </div>
+
+  <div class="meta">
+    developers.cloudflare.com
+  </div>
+
+  <div class="meta ranks">
+    Best #3
+  </div>
+
+  <div class="links">
+    <a href="https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49963171">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+</body>
+</html>
