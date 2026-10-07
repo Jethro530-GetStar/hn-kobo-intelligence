@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-08 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-08 AM · Generated 2026-10-08 05:42 CST</div><div class="issue-sub">Stories 10 · Full 3</div><div class="issue-sub">Sources: anthropic.com, bigwords.page, gtlds.fyi, mistral.ai, news.ycombinator.com, openai.com, resilience.ocf.tw, sumatrafilemanager.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Tell HN: GitHub refuses to remove cracked copies of my software after a month
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    502 points ·
+    293 comments ·
+    IvanK_net
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #7 · Top #56
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49982498">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I am a developer of https://www.photopea.com, a popular photo editor that runs in a web browser.<br>Many people are asking AI models to take the Javascript code from my website, remove all ads from it, and they publish such a &quot;new product&quot; on Github for everyone to download.<br>There exist tens of such repositories on Github. I want my website to be the only source of a stable version of my program Photopea. I even received emails from people complaining about something in Photopea, and it took several emails to figure out that they are not using Photopea.com (so it ruins my reputation a little).<br>I reported it to Github on the 4th of September 2026: https://www.photopea.com/g/XKoqqIGv<br>Today, a month later, I received this response:<br>Thank you for submitting a DMCA takedown notice. We&#x27;ve reviewed the information you&#x27;ve provided, and based on the facts presented to us, we&#x27;re unable to confirm a violation of 17 U.S. Code § 1201.<br>What do you think I could do? Do you think I should look for a lawyer to deal with it outside the digital world? I really doubt that a real person ever looked at my report, and they probably send this response automatically to 99% of people.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    248 points ·
+    80 comments ·
+    SpeakingOfBrad
+  </div>
+
+  <div class="meta">
+    bigwords.page
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #5 · Best #32
+  </div>
+
+  <div class="links">
+    <a href="https://bigwords.page/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49994443">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Mistral Large 4
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1988 points ·
+    1185 comments ·
+    Philpax
+  </div>
+
+  <div class="meta">
+    mistral.ai
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #50
+  </div>
+
+  <div class="links">
+    <a href="https://mistral.ai/news/mistral-large-4/\">Original article</a> · <a href="https://news.ycombinator.com/item?id=49977979">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://docs.mistral.ai/models/mistral-large-4-0</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Claude Haiku 5.5
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    498 points ·
+    233 comments ·
+    sfkgtbor
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #8
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/claude-haiku-5-5">Original article</a> · <a href="https://news.ycombinator.com/item?id=49996437">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Introducing Claude Haiku 5.5: the cheapest, fastest, and most capable small model we’ve ever released.<br>Claude Haiku 5.5 is designed for high-volume, cost-sensitive tasks. It reliably handles quick and repetitive workloads (like summaries, compactions, database queries, and classification requests). It pairs well with Opus 5.5 and Sonnet 5.5 as a subagent on coding work. And, since it’s also our fastest model to date, it works especially well for speed-sensitive tasks like live customer support and browser use.¹<br>Haiku 5.5 is available at a much lower price than Haiku 4.5. On average, it now costs around 75% less to run.²<br>Along with this launch, we’re making improvements to the value of our model range. We’re halving the price of Claude Sonnet 5.5’s cache reads, which means Sonnet 5.5 now runs around 20% cheaper on most agentic work. And we’re introducing a new monthly API credit for our Claude Max and Team subscribers, designed to support our users in building new agents and applications that run on the Claude Platform.<br>Performance<br>Here’s how Claude Haiku 5.5 performs across a range of benchmarks:<br>|  | Haiku 5.5 | Haiku 4.5 | GPT-6 Luna | Sonnet 5.5For reference |<br>|---|---|---|---|---|<br>| Knowledge workGDPval-AA v2.1 | 1620 | 735 | 1437 | 1840 |<br>| Knowledge workAA-Briefcase v1.1 | 1578 | 614 | 1336 | 1824 |<br>| Computer useOSWorld 2.1 | 72.4%Offline subset | 15.7%Offline subset | 48.9%Offline subset | 83.9%Offline subset |<br>| Multidisciplinary reasoningHumanity’s Last Exam | 45.9%no tools | 10.2%no tools | — | 56.9%no tools |<br>|  | 57.4%with tools | 18.7%with tools | — | 64.5%with tools |<br>| Agentic codingTerminal-Bench 4.0 | 39.2% | 0.0% | 16.4% | 70.6% |<br>| Agentic codingFrontierCode 1.1 (Main) | 46.4% | — | 42.4% | 52.1%Xhigh |<br>| Visual reasoningChartography | 46.4%no tools | 6.4%no tools | 29.1%no tools | 61.6%no tools |<br>For details on how we run our evaluations, see the Haiku 5.5 System Card.<br>Haiku 5.5 is our first Haiku-class model to come with an adjustable effort setting. This means that, as with our other models, users can decide whether to optimize for cost or intelligence. The charts below show how Haiku 5.5 performs on three benchmarks at each effort setting:<br>In early testing, our customers reported results consistent with the performance and cost improvements shown above. Here’s what they told us about the new model:<br>Pricing<br>The table below shows how Claude Haiku 5.5’s pricing compares to our other models. Haiku 5.5 is especially good value when used for tasks with prompts up to 100,000 tokens, which make up around 90% of requests to our previous Haiku model.<br>| Price per 1 million tokens | Haiku 5.5 prompts up to / over 100k | Haiku 4.5 | Sonnet 5.5 |<br>|---|---|---|---|<br>| Cache reads | $0.01 / $0.05 | $0.10 | $0.10 |<br>| Cache writes | $0.125 / $0.625 | $1.25 | $2.50 |<br>| Input tokens | $0.10 / $0.50 | $1.00 | $2.00 |<br>| Output tokens | $0.50 / $2.50 | $5.00 | $10.00 |<br>Safety<br>Alignment. Claude Haiku 5.5 shows major improvements across almost all of our alignment evaluations relative to Haiku 4.5. In particular, we found far fewer instances of misaligned behavior, and a lower willingness to cooperate with misuse. The model’s system card describes our evaluation process and results in more detail.<br>Safeguards. Consistent with its capabilities, Haiku 5.5’s cybersecurity safeguards are more restrictive than Haiku 4.5’s, but somewhat less restrictive than those we’ve applied to other recent models. In cybersecurity, they permit a wider range of defensive tasks than our safeguards for Sonnet 5.5, but they still block penetration testing and other techniques more likely to be used by attackers.<br>Haiku 5.5’s biology safeguards are the same as for Sonnet 5, Sonnet 5.5, and Opus 5. They allow research biology questions but restrict access to requests that we judge as likely to cause harm. Organizations working on wider-ranging biology and cyber activities can apply to our Life Sciences Verification Program and Cyber Verification Program.<br>Availability<br>Claude Haiku 5.5 is available now on all platforms, including Amazon Web Services, Google Cloud, and Microsoft Azure. On the Claude Platform, developers can get started with claude-haiku-5-5.<br>See our migration guide for details.<br>Further updates<br>Alongside our new pricing for Claude Haiku 5.5, we’re making further improvements to the value of our models and products.<br>First, starting today, we’re lowering the price of cache reads on Claude Sonnet 5.5. Cache reads now cost 50% less: $0.10 per million tokens rather than $0.20. Because cache reads make up a large share of models’ token consumption, this reduces the cost of Sonnet 5.5 on most agentic tasks by around 20%.<br>For instance, here’s what the price cut means for Sonnet 5.5’s performance relative to cost on Terminal-Bench 4.0:<br>This chart illustrates an important difference between Haiku 5.5 and our larger models. Sonnet 5.5 and Opus 5.5 remain better choices for complex agentic coding tasks like those measured by Terminal-Bench 4.0. By contrast, Haiku 5.5 is best suited to more narrowly scoped tasks that might otherwise have been cost-prohibitive with previous versions of Claude—like compaction, summarization, or subagent work.<br>Second, this week, we’ll roll out a new monthly API credit to all Max and Team subscribers for use on the Claude Platform. Max 5x users will get $100 in credits per month, Max 20x users will get $200, and Team subscribers will receive up to $500, pooled across their users. These credits are designed to allow our users to experiment with building tools, apps, and agents that call our API. They can be used on any of our models. For more information, see our Help Center article.<br>For developers, we’re also updating our Claude Python and TypeScript SDKs to add support for computer use and browser use in beta. Haiku 5.5 is especially well-suited to these tasks, given its combination of speed, capability, and price. You can read more about this in our Claude Platform docs.<br>Footnotes<br>1 Claude Haiku 5.5 is our fastest model to date at each model’s standard speed, although it runs less quickly than our Opus models in Fast Mode.<br>2 Claude Haiku 5.5 is priced 90% lower than Claude Haiku 4.5 for requests up to 100,000 tokens, and 50% lower for requests over 100,000 tokens. On Haiku 4.5, 90% of requests fell into the former category. This calculation also accounts for changes between Haiku 4.5 and Haiku 5.5 in how many tokens are used to complete a given piece of work: Haiku 5.5 has an updated tokenizer (similar to Sonnet 5.5’s and Opus 5.5’s), which means it uses slightly more tokens per task.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Sumatra File Manager
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    Fudgel
+  </div>
+
+  <div class="meta">
+    sumatrafilemanager.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://sumatrafilemanager.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49999171">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Sumatra File Manager<br>Fast, small. A file manager for Windows.<br>Tabs, filter, themes, compact launcher. Packed with features.<br>Tabs<br>Filter<br>Themes<br>Compact mode<br>Screenshots<br>Recycle Bin<br>Command palette</div>
+<div class="para">Can&#x27;t play YouTube? Watch the MP4<br>Home view — drives, places, and favorites<br>Why Sumatra File Manager?<br>- Lightweight and fast — a native Windows app that starts instantly<br>- Home view — drives and Explorer Quick access folders in one place<br>- Compact mode — double-click the caption to shrink to a launcher for Start Menu and PATH programs<br>- Tabs and split panes — work in several folders without extra windows<br>- Filter as you type — Ctrl+F to narrow the list<br>- Command palette — Ctrl+K to run any command<br>- Themes — light, dark, and a built-in theme picker<br>- Windows 10 and 11 — 64-bit portable .exe, no installer required<br>Frequently asked questions<br>- Do I need to install it?<br>- No. The download is a portable 64-bit .exe. Put it anywhere and run it.<br>- Is it available for Mac or Linux?<br>- The current release is Windows-only.<br>- How is this related to Sumatra PDF?<br>- Same author, same idea: a small, fast Windows tool without bloat.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Sharing AI progress in mathematics
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1204 points ·
+    1365 comments ·
+    OfficialTurkey
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #22
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49984923">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://github.com/openai/math<br>https://github.com/openai/math/tree/main/preprints</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    GPT‑6 and Intelligent UI for everyone
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    364 points ·
+    170 comments ·
+    joshuawright11
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #16
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/gpt-6-for-everyone/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49996425">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: gtlds.fyi – All the proposed new gTLDs
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    32 points ·
+    33 comments ·
+    irs
+  </div>
+
+  <div class="meta">
+    gtlds.fyi
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #13
+  </div>
+
+  <div class="links">
+    <a href="https://gtlds.fyi/">Original article</a> · <a href="https://news.ycombinator.com/item?id=49997971">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Tell HN: Amazon forgot how to write and test code
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    7 points ·
+    1 comments ·
+    penskymaterial
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49997864">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">On an older but perfectly serviceable PC with 16GB RAM, Amazon.com idles at 20% CPU and will spike to 80-100% when scrolling. The screen tears and typing sometimes takes seconds before characters appear.<br>This is hilariously bad and a harbinger of the ongoing decline of the industry right now.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    When Submarine Cables Go Dark
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    wrxd
+  </div>
+
+  <div class="meta">
+    resilience.ocf.tw
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://resilience.ocf.tw/web/report/en">Original article</a> · <a href="https://news.ycombinator.com/item?id=49999165">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Irvin Chen (陳心一)<br>ORCID: https://orcid.org/0009-0002-1059-7130<br>Open Culture Foundation (ocf.tw)<br>MozTW, Mozilla Taiwan Community (moztw.org)<br>Published: 2026-05-22<br>Last Updated: 2026-08-07<br>This work was supported by a grant from the APNIC Foundation (ROR: 01y4y6h16), via the Information Society Innovation Fund (ISIF Asia).<br>This study examines how everyday network services may remain available when Taiwan experiences large-scale international submarine cable outages. By observing homepage resource requests and tracing the locations of resources used during page loading, we assess potential website availability during international connectivity outages and use the results as a risk indicator.<br>The work focuses on two core questions: (1) how much websites commonly used in Taiwan depend on foreign-hosted resources, and (2) how much they depend on local (in-Taiwan) nodes of multinational public-cloud providers. We develop a measurement framework that turns the abstract risk of “what happens when cables go dark” into concrete dependency-structure analysis.<br>We collected connection data from 2,179 websites commonly used in Taiwan. The results show that 39.3% are “foreign-dependent,” with foreign resource exposure and relatively high direct failure risk under cable-outage scenarios. Another 49.6% are “cloud-dependent”: no foreign resource requests were observed, but they rely on local nodes of multinational public clouds or CDNs, so their actual availability when international connectivity fails is highly uncertain.<br>This study provides a scalable, reproducible measurement method for quantifying observable foreign dependencies and comparing dependency structures across websites. The results can inform policy and industry resilience planning and support continued tracking of resilience improvements.<br>Taiwan is a highly digitalized society; the Internet and the information systems built on it are a critical foundation for how society operates. Digital dependence keeps growing: as of 2024, fixed broadband household penetration reached 74.5%1; mobile broadband penetration 87.12%; overall Internet usage rose from 67.2% in 2006 to 88.75%2.<br>From waking to sleep, people constantly use networked screens to access and exchange information. The network is embedded in daily life and social activity. Communications, commerce, media, logistics, and public and government services all rely on digital systems online.<br>High connectivity means any sizable, sustained network outage can significantly impact the economy and society.<br>When someone opens an app (e.g. Line, the most popular messaging app in Taiwan, with over 98.2% usage rate1) on a phone and sends a message, a chain of network requests is triggered.<br>First, the app asks the OS to connect; the device queries the carrier DNS for the target server IP (e.g. Line). After obtaining the address, it opens a TCP/IP connection and sends the request.<br>Data leaves the phone over wireless to a nearby cell site, then enters the carrier’s fiber backbone and core. Because Line’s main servers are abroad (Japan), traffic is routed to an international gateway—e.g. Tamsui or Toucheng cable landing stations—and crosses submarine cables overseas.<br>After reaching the destination country, traffic lands again and enters a cloud provider’s data center (e.g. AWS, Google Cloud, Azure). The app server processes the request; the response returns along a similar path and is rendered by the OS and the app.<br>This often completes in a fraction of a second. Unnoticed by users, data may travel thousands of kilometers round-trip between Taiwan and Japan—or tens of thousands of kilometers to another continent and back.<br>More importantly, one tap on an app or site can trigger dozens or hundreds of parallel requests, each repeating the above pattern. Most everyday digital services are effectively cross-border systems; “instant” interaction depends heavily on international links and submarine cables.<br>As noted, many sites and apps used daily depend on foreign resources and international connectivity. Losing external connectivity would likely break most digital services.<br>As an island, over 99% of Taiwan’s external traffic relies on submarine cables3. Cable resilience therefore directly affects everyday service availability and broader societal resilience.<br>Submarine cables are multi-layer cables a few centimeters thick on the seabed, or buried one to three meters in shallow water. In busy shallow areas such as the Taiwan Strait, damage often comes from human activity—anchoring, fishing, dredging—and from natural wear, amplifier failure, earthquakes, landslides, and geopolitical risk. Human causes dominate cable damage in Taiwan4.<br>According to the Taiwan Submarine Cable Map (smc.peering.tw), Taiwan is almost always in a state where “at least one cable is impaired”5. Cable faults may be a chronic background condition, not rare exceptions.<br>Availability of all international submarine cables serving Taiwan, 2025/3/18–2026/3/18 (source: Taiwan Submarine Cable Map (smc.peering.tw), cable status timeline).<br>Taiwan connects globally through fourteen international cables via landing stations at Tamsui, Bali, Toucheng, and Fangshan (another station is under construction in Dawu, Taitung), plus ten domestic cables to Penghu, Kinmen, Matsu, and other outlying islands6 (RNAL and FNAL are two systems on one physical cable; MODA counts them separately, yielding fifteen international systems in some counts).<br>Under normal conditions, the Internet’s meshing, redundancy, diversity, and connectivity let carriers reroute traffic over other cables when a few fail. Quality may drop without users noticing. However, when multiple cables fail together, bandwidth redundancy is quickly exhausted, causing severe congestion or large-scale outages affecting communications, logistics, government operations, and digital systems7.<br>According to repair-time benchmarks published by the Ministry of Digital Affairs8, average repair time is about 32 days for international cables and about 110 days for domestic cables linking outlying islands. Disruptions can therefore last for months or even quarters, and contingency planning should assume a monthly rather than daily timescale.<br>A recent multi-cable failure occurred from 2025-12-25 to 2026-01-03: earthquakes off Yilan damaged six international cables (including EAC1, SJC2, PLCN, F/RNAL, EAC2, Apricot—nearly half of cables)4. Users reported slower networks and blocked apps, with repairs not completed until May 2026.<br>The 2006 Hengchun earthquakes remain a landmark case: on 2006-12-26 at 20:26 and 20:34, two magnitude-7 quakes off southwest Hengchun triggered many aftershocks. Mainland damage was relatively light, but underwater landslides broke four of six external cables at the time.<br>Taiwan’s international connectivity was severely disrupted. Initial call completion to the U.S. was about 40%; to China and Japan about 10%. China, Hong Kong, Japan, Korea, and Southeast Asia were also hit hard. Google, Yahoo, MSN, Gmail, Wikipedia, and other major services saw major outages across the region, affecting trade and finance.<br>Eight cable ships joined repairs; full restoration took nearly two months by mid-February 20079. The UN ISDR director called submarine cable damage from the quake a new modern-type disaster10.<br>Both events show that even without total blackout, simultaneous multi-cable failure can cause severe congestion and widespread service degradation.<br>The early 2023 Matsu outage is a real-world case of complete external cable loss for a region.<br>Two cables linking Matsu to Taiwan were damaged on 2023-02-02 and 2023-02-08 by Chinese fishing vessels, cutting regional Internet and telecom except for very limited microwave capacity (2 Gbps), leaving most residents unable to get online11. One cable (Taiwan–Matsu 3) was repaired after about 50 days at end of March.<br>Taiwan–Matsu 2 and 3 total about 1 Tbps. After 2023, microwave was expanded to 12 Gbps. When both cables failed again on 2025-01-15 and 2025-01-22, the larger microwave link kept some connectivity12.<br>At the beginning of the 2006 incident, Chunghwa Telecom reallocated capacity on the ST-1 communications satellite to support international telephone service, briefly restoring partial availability for international voice calls. If a similar-scale incident happened today, could satellites still serve as a substitute?<br>Under the Taiwan Space Agency’s (TASA) “B5G LEO communications satellite program”13, Taiwan plans to launch two experimental LEO satellites before 2030 with a three-year design life.<br>Former TASA chair Tsung-Tsong Wu estimated that 24/7 nationwide LEO coverage would require at least 120 satellites, with roughly 40 replacements per year for a three-year lifetime—far above current plans, so it is hard to build substantive backup connectivity on that scale14.<br>Bandwidth also differs by orders of magnitude. A modern cable may carry hundreds of Tbps; Apricot is designed for 211 Tbps15. Starlink capacity was estimated around 20 Gbps in 2023 research—roughly 10,000× less per comparable unit; the full Starlink constellation (~3,300 satellites in 2023) was estimated around 20 Tbps total, comparable to one cable system16.<br>Even summing current LEO satellite bandwidth (Gbps class) cannot replace transoceanic cable throughput (Tbps class). TWNIC chair Kenny Huang compared cables to reservoirs and satellites to pipes12. Satellites can support emergency government or regional links, not national-scale replacement.<br>In 2006, the main economic impact of lost international connectivity was disrupted international telephone service—finance and select industries—with overseas internet services affecting only a minority of users.<br>In twenty years, dependence on the Internet has grown sharply. Taiwan’s international bandwidth grew from 147.7 Gbps in 2006 to 10.6 Tbps in 2026—nearly 70×17. Meanwhile, average cable damage in Taiwan is about 5.1 times per year versus a global average of 0.1–0.2—roughly 25–50× higher risk3.<br>Deloitte (2016) estimated that a full national Internet outage in a highly digitalized country could cost about USD 23.6 million in GDP per day per ten million people—roughly USD 55 million per day for Taiwan, or about USD 1.7 billion per month, before accounting for semiconductor supply-chain and cross-border finance spillovers18.<br>The same work notes that even partial outages or bandwidth reduction hurt productivity, transactions, information access, and confidence.<br>Taiwan is more Internet-dependent and faces more frequent cable damage risk. A 2006-scale event today would affect far more than niche industries, with broader societal impact and much harder emergency response and alternative routing than in 2006.<br>Public discussion of cable outages has increased, but often stays at “communications difficulties”—Line/Messenger/WeChat, Google, Gmail, Office 365—similar to 2006 framing.<br>Academic resilience work often focuses on infrastructure or intermediary layers: cable topology, routing, DNS1920, CDN and cloud centralization. That implies: if infrastructure is up and reachable, services work.<br>Routing is decentralized and imperfect; failures are routine. Policy constraints mean routing errors, misconfiguration, or node faults can cause large outages without physical cuts. Infrastructure health alone does not equal service availability21.<br>Even with spare cables, traffic reshaping, routing policy, or concentrated paths can still block communication—“physically connected” ≠ “actually reachable”22; redundancy alone does not guarantee cross-border availability23.<br>Modern stacks span infrastructure, logical, and application layers; societal impact exceeds any single operator. Resilience is a public-good problem across layers, operators, and borders7.<br>Indices such as the Internet Resilience Index use national infrastructure, performance, security, and market structure as proxies24 but do not directly measure whether sites people use daily still load when international connectivity is constrained.<br>Policy analyses focus on national infrastructure, topology, repair capacity, alternatives, and geopolitical risk—emphasizing bandwidth redundancy, path diversity, repair, and cooperation25.<br>Third-party dependency research (e.g. DNS, CDN, certificate authorities) highlights concentration and single points of failure26: over 89% of sites depend on third parties for critical functions; top three providers support over 90%27; multi-level indirect dependencies can amplify failures28.<br>Resilience must include service availability under constrained external connectivity and third-party state—not only physical reachability. This study emphasizes “service availability under constrained connectivity”, developing application-layer methods to ask which everyday digital services—and what share—could remain usable when external links fail, and how cable outages may affect network and societal resilience.<br>The challenge we face is not “will cables break?” but service collapse risk: in a highly digital, cloud-heavy, cross-border-dependent society, when external connectivity is severely impaired, which services keep basic function, which degrade, and which fail outright?<br>Past debate focused on bandwidth, physical damage, and backup communication methods. Modern services are not “a local server serving static HTML.” A “Taiwan” site or app may run on global cloud regions across datacenters and depend on hosts, CDNs, third-party JavaScript, login, payments, analytics, push, AI APIs, and other external components. Any critical piece abroad or reachable only via foreign paths can fail unexpectedly during cable outages.<br>Under severely congested or broken international links, repairing or rebuilding systems becomes harder.<br>Impact cannot be judged only by “how many spare cables remain.” Services may fail due to routing, DNS, congestion, cloud dependencies, or unreachable external assets even when the physical network is not fully down. Beyond connectivity, we need user-facing service availability measurements.<br>Without understanding real impact, we cannot prepare. This study turns “what happens when cables go dark” into measurable, comparable technical questions—filling an application-layer gap in resilience discourse. Through a test framework, it estimates how commonly used services may load, degrade, or fail when foreign connectivity is lost, providing evidence for backup design, resilience investment, and policy and social readiness.<br>When an island nation highly dependent on international networks, such as Taiwan, experiences severe degradation, instability, or partial interruption of its external submarine-cable connectivity—and thus loses access to much of the global Internet—to what extent do commonly used domestic websites continue to operate, degrade, or fail?<br>We aim to systematically test and count international-facing components in service operation—CDNs, third-party APIs, cloud platforms, external libraries—and map dependency structure and potential availability risk for commonly used services under foreign-network isolation.<br>The work should give government, industry, and civil society concrete evidence on systemic impact of external connectivity loss, supporting resilience strategy for digital services and critical public sectors.<br>Two core themes:<br>Three concrete questions:<br>.gov.tw government websites, .edu.tw education websites, and general services, show systematic differences in foreign-resource dependency rates?<br>This study uses a programmatic browser to observe the distribution of resource requests generated while loading each homepage. A homepage is the first user-visible point of interaction with a service and includes some of the front-end resources required for basic rendering and interaction. We treat this observation as a scalable proxy indicator for comparing dependency exposure across a large number of websites. However, it does not include the complete backend architecture or cloud control-plane dependencies and therefore cannot be interpreted directly as overall service availability.<br>We compiled a high-traffic site list for Taiwan, including domestic and international services commonly used by locals. The target is “sites Taiwanese people use,” instead of “Taiwan sites”—so the list includes Google, Gmail, etc.<br>The unit of study is “websites” (Web), not direct equivalence to app availability. (OCF has related work on app connectivity resilience.)<br>There is no authoritative “sites Taiwanese people use” list. We merged:<br>.tw.<br>This campaign used ranking snapshots obtained from each source on 2026-07-20. Before merging, hostnames were lowercased and a leading www. was removed, while other subdomains were preserved. Duplicate hostnames were merged into one entry while retaining the source-specific rankings. The resulting merged_lists_tw.json contains 2,467 sites.<br>We also use manual_curated_list_tw.json to include 42 manually selected open-source and digital-resilience community cases, including OCF, SITCON, and g0v. Two hostnames overlap with the automatically ranked list.<br>Together, the two lists contain 2,507 unique websites. The lists and scripts are open source in top-traffic-website-list-taiwan.<br>Tests used typical Taiwanese residential connectivity:<br>Site availability depends not only on establishing connections, but on fetching dependent resources (JavaScript, CSS, images, APIs). Modern sites combine resources from many domains; together they determine what users see and can do. Prior work uses headless browsers to analyze request behavior and third-party dependencies3027.<br>Building on dependency-exposure analysis from resource requests, we extend it to the systematic scenario of “international connectivity failure” and its potential impact on service availability.<br>Backend architecture, data paths, control planes, and internal cloud behavior are not directly observable externally. We do not attempt to map full system dependencies; we focus on observable front-end network requests and build operational metrics from them.<br>Two core metrics:<br>Foreign Dependency Exposure<br>Whether homepage requests include foreign-hosted resources—exposure to foreign networks at the resource layer.<br>Cloud Local Endpoint Exposure<br>Whether requests hit Taiwan nodes of multinational public-cloud or CDN providers—exposure to sites hosted on, or dependent on, their local endpoints.<br>These describe “dependency exposure structure” at the homepage front-end resource layer, not full system architecture or actual failure modes.<br>We can classify sites into three categories based on the above metrics:<br>Foreign-dependent<br>Foreign resource exposure: homepage load directly depends on foreign resources. Such sites are directly exposed to unavailable resources when external connectivity is severely degraded or interrupted, making them the most likely to be affected immediately and the category with the highest direct risk.<br>Cloud-dependent<br>No foreign resource exposure, but cloud local endpoint exposure: homepage loads show no foreign resource requests, yet use resources from Taiwan nodes of multinational public-cloud or CDN providers. Sites appear localized, but availability still depends on control planes, origins, authentication, and cache persistence—“surface-local, cross-border uncertainty”.<br>Locally-contained<br>No foreign resource exposure and no multinational-cloud local-endpoint exposure. Such sites have a higher chance of local operation, but full-system availability during external outages is not guaranteed.<br>Tools and projects:<br>We developed web-resilience-test to open each target homepage site-by-site with a programmatic headless browser and record all resource connections during load.<br>Next, the tool processes all resource requests collected during page loading. It excludes blob: and other unparsable requests, as well as requests matching the ad-filter rules or the manual exclusion list. It then deduplicates the requests, retaining only one request per hostname within each website; each unique website-hostname pair constitutes one observation.<br>The tool then uses IPinfo, provider-specific response headers, the LACeS anycast API31, and ping RTT to determine the geographic location and classification of each observation.<br>Finally, the tool aggregates all test results into statistical tables. The detailed workflow follows.<br>no-global-connection-check.js tests one site:<br>Initialization<br>https://)<br>Page load and request capture<br>request for all request metadata including headers<br>Retries and errors<br>www. prefix<br>Request cleanup<br>blob: requestsfonts.gstatic.com, because its failure is less likely to affect core website functionality than failures of scripts, APIs, or content resources. Future studies can use the same mechanism to add other exclusions<br>Domain location<br>country=TW, record it as a domestic connectioncloud_providers_tw.json registry version 0.1.0, dated 2026-01-05, to determine whether it belongs to the multinational cloud/CDN category. The registry contains 30 international public-cloud, CDN, and hosting providers and excludes Taiwan-only providerscountry other than TW and its ASN belongs to one of the following six providers with local Taiwan nodes, apply the advanced classification steps:cf-ray, x-amz-cf-pop, x-served-by, x-azure-ref, and x-msedge-ref for known cloud location markers. A value containing TPE indicates a Taiwan nodelocations includes Taiwan and confidence is confident, classify it as domesticRTT &lt; 15 ms; otherwise, retain the foreign classification<br>Note: we built the cloud_providers_tw.json ASN registry using complete request data from earlier tests. It is open source for use by other research and projects.<br>Classification and resilience metrics<br>domestic/cloud, domestic/direct, foreign/cloud, foreign/directorg is listed in providers_intl or providers_intl_without_known_taiwan_region/poptest-results/&lt;site&gt;.json<br>Errors<br>test-results/_error/&lt;site&gt;.error.jsonCloudflare challenge: target site uses Cloudflare&#x27;s challenge protection mechanism to prevent abuse.HTTP 4xxTimeout<br>RTT is the final stage of location classification: a target cloud or CDN endpoint enters RTT only when IPinfo, provider-specific response headers, and LACeS cannot determine its location. The test tool pings the endpoint five times and uses the minimum RTT. It is reclassified as an international public-cloud node in Taiwan only when the minimum RTT is below 15 ms; otherwise, it remains classified as foreign.<br>Across 2,179 successfully tested websites, the browser recorded 262,926 raw HTTP requests. The filtering described above and within-site hostname deduplication produced 19,046 unique website-hostname observations for classification. Of these, 3,640 observations from 976 distinct hostnames across 1,243 websites entered the RTT fallback stage; details are in the table below.<br>| Metric | Count | Share |<br>|---|---|---|<br>| Sites tested | 2,179 |  |<br>| Sites with RTT fallback | 1,243 | 57.0% of sites tested |<br>| Observations to classify | 19,046 |  |<br>| Entered RTT stage | 3,640 | 19.1% of observations |<br>| RTT measured | 3,064 | 84.2% of RTT-stage observations |<br>| Min RTT &lt; 15 ms | 2,394 | 78.1% of measured RTTs |<br>| Min RTT ≥ 15 ms | 670 | 21.9% of measured RTTs |<br>The distribution of the 3,064 measured RTTs is shown below. Each point is one successful measurement; the horizontal axis is an observation index, and the vertical axis is logarithmic. Values are bimodal; the 10–30 ms transition range holds 130 observations (4.2%).<br>Based on this distribution, we use a relatively conservative &lt; 15 ms threshold within the sparse interval to classify a resource as domestic, reducing the risk of misclassifying a foreign resource as domestic.<br>| RTT range | Count | Share |<br>|---|---|---|<br>| 0–&lt;5 ms | 206 | 6.7% |<br>| 5–&lt;10 ms | 2,090 | 68.2% |<br>| 10–&lt;15 ms | 98 | 3.2% |<br>| 15–&lt;20 ms | 12 | 0.4% |<br>| 20–&lt;30 ms | 20 | 0.7% |<br>| 30–&lt;50 ms | 270 | 8.8% |<br>| 50–&lt;100 ms | 247 | 8.1% |<br>| 100–&lt;200 ms | 100 | 3.3% |<br>| ≥200 ms | 21 | 0.7% |<br>Without RTT correction (equivalent to a 0 ms threshold), every resource entering RTT fallback retains its foreign classification, producing 1,370 foreign-dependent websites and 566 cloud-dependent websites. Applying the 15 ms threshold reclassifies 514 websites (23.6%) from foreign-dependent to cloud-dependent, resulting in 856 and 1,080 websites in the two categories, respectively.<br>The table further tests sensitivity to the selected RTT threshold. Relative to the 15 ms baseline used in this study, a 10 ms threshold moves only 27 websites (1.2%) from cloud-dependent to foreign-dependent, while a 20 ms threshold moves only five websites (0.2%) from foreign-dependent to cloud-dependent. The locally-contained count is unchanged. The aggregate classification therefore differs only slightly across the 10, 15, and 20 ms thresholds.<br>| RTT threshold | Foreign-dependent | Cloud-dependent | Sites reclassified vs. 15 ms |<br>|---|---|---|---|<br>| No RTT (0 ms) | 1,370 (62.9%) | 566 (26.0%) | — |<br>| 10 ms | 883 (40.5%) | 1,053 (48.3%) | 27 (1.2%) |<br>| 15 ms | 856 (39.3%) | 1,080 (49.6%) | — |<br>| 20 ms | 851 (39.1%) | 1,085 (49.8%) | 5 (0.2%) |<br>batch-test.js runs single-site tests over the list and writes test-results/statistic.tsv. From that batch output we derive overall foreign-dependency rates and per-resource resilience status.<br>We use web-resilience-test-profile to compile individual static pages and host them at https://resilience.ocf.tw/ for public lookup of each site’s resilience (e.g. Will ocf.tw work if cables break?).<br>At ~2,000 sites, when running with default parallelism (4 parallel tests, 8 parallel static page compilations), it takes about 30–60 minutes to complete. The latest test results are published at web-resilience-test-result and resilience.ocf.tw.<br>Of 2,507 unique sites tested, 2,179 completed successfully.<br>Within the measured results, 39.3% are “foreign-dependent,” with foreign resource exposure and high direct failure risk under cable outages; 49.6% are “cloud-dependent”—no foreign resource exposure was observed, but they rely on in-Taiwan nodes of multinational public clouds or CDNs, so availability is highly uncertain. Only 11.2% are “locally-contained,” with no observed exposure and a higher chance of normal operation. Overall, 88.8% of sites warrant further attention as high-risk or high-uncertainty.<br>Foreign-dependent: sites hosted abroad or whose homepages request foreign resources. They are exposed to international connectivity degradation or interruption and face high failure risk.<br>Cloud-dependent: no direct foreign resource exposure, but loading pulls resources from Taiwan nodes of multinational public-cloud or CDN providers. Topologically domestic, yet control planes, origins, authentication, or cache persistence may still depend on foreign systems—“localized in appearance, uncertain in availability”.<br>Locally-contained: no dependency exposure was observed among front-end resources. The site itself appears to be domestic and not hosted on a multinational public cloud, and it does not request foreign resources or resources from domestic nodes of multinational clouds. It therefore has a higher chance of continued operation, although this category does not account for complete backend dependencies and cannot establish that the service will continue operating.<br>| Category | Sites | Share |<br>|---|---|---|<br>| Foreign-dependent (foreign resource exposure) | 856 | 39.3% |<br>| Cloud-dependent (no foreign exposure; in-Taiwan nodes exposure) | 1,080 | 49.6% |<br>| Locally-contained (no observed exposure) | 243 | 11.2% |<br>| Total | 2,179 | 100.0% |<br>Among Category 2 (cloud-dependent) sites, requests to different international public-cloud nodes in Taiwan break down as follows:<br>Provider site counts are non-exclusive: one site may use more than one provider, so the rows must not be added to obtain a site total.<br>Of 1,323 sites with no foreign dependency, 965 use resources from GCP Taiwan nodes (72.9%).<br>If public-cloud services such as GCP cannot keep local nodes running during external network outages, the impact would be very high. Their resilience is a key factor in whether sites can continue operating during submarine-cable disruptions.<br>For resources requested from domestic and international nodes of multinational public clouds, we found the following distribution:<br>| Provider | Sites (domestic nodes) | Sites (international nodes) | Requests (domestic nodes) | Requests (international nodes) |<br>|---|---|---|---|---|<br>|  | 1,685 | 56 | 7,393 | 63 |<br>| Cloudflare | 1,016 | 17 | 3,051 | 21 |<br>| Amazon | 512 | 309 | 1,382 | 522 |<br>| Akamai | 338 | 11 | 446 | 13 |<br>| Fastly | 6 | 257 | 6 | 369 |<br>| Microsoft | 140 | 77 | 196 | 143 |<br>A site may request both domestic and international nodes from the same provider, so the two columns overlap and must not be added to obtain a provider total.<br>For Google cloud resources, measured by request count, 7,393 of 7,456 Google requests were classified as domestic-node requests, or about 99.2%; 63 were international-node requests, or about 0.8%. This shows the practical value of CDN-based data localization, and makes the persistence of mirrored resources on Taiwan nodes a key factor in whether ordinary sites remain available when external links are congested or cut.<br>Public-cloud services with lower domestic resource shares should be further evaluated for full in-country mirroring, cache persistence, and contingency operations.<br>For this comparison, global cloud includes the multinational public-cloud and CDN providers compiled for this study, while other/local covers all other providers. A website is counted in a cell when at least one of its observations belongs to that group:<br>| Unit: sites &amp; adoption rate | Domestic | Foreign | Any |<br>|---|---|---|---|<br>| Global cloud | 1,881 (86.3%) | 754 (34.6%) | 1,910 (87.7%) |<br>| Other/local | 1,623 (74.5%) | 245 (11.2%) | 1,709 (78.4%) |<br>| Total | 2,140 (98.2%) | 856 (39.3%) | 2,179 (100.0%) |<br>87.7% of sites depend on global-cloud resources: 86.3% depend on resources from domestic global-cloud endpoints, and 34.6% depend on resources from foreign global-cloud endpoints.<br>Among the 856 sites with foreign resource exposure, most also use domestic resources; only 39 use foreign resources exclusively, accounting for just 1.8% of all 2,179 sites. This shows the practical value of CDN contributions to data localization and benefits for service resilience.<br>Among the 18,969 unique website-hostname observations with provider information from IPinfo, dependencies are highly concentrated among large providers. Provider labels are normalized from IPinfo ASN organization data. Providers above 5% include Google, Cloudflare, Amazon, Chunghwa Telecom (CHT), and Facebook. Google has the highest observation share at 39.7%, followed by Cloudflare at 16.4% and Amazon at 10.4%.<br>Per-site inspection shows that Google resources mainly include services such as GTM, while Cloudflare provides infrastructure and services such as cdnjs JavaScript CDN and WAF. These common infrastructure services form key parts of contemporary internet-service resilience.<br>| Unit | Count | Share |<br>|---|---|---|<br>|  | 7,525 | 39.7% |<br>| Cloudflare | 3,109 | 16.4% |<br>| Amazon | 1,979 | 10.4% |<br>| Data Communication (CHT) | 1,645 | 8.7% |<br>|  | 1,460 | 7.7% |<br>| Akamai | 518 | 2.7% |<br>| Fastly | 375 | 2.0% |<br>| Microsoft | 346 | 1.8% |<br>| Taiwan Academic (TANet) | 321 | 1.7% |<br>| Yahoo | 115 | 0.6% |<br>| Oracle | 110 | 0.6% |<br>| Taiwan Fixed Network | 107 | 0.6% |<br>| New Century | 93 | 0.5% |<br>| OVH SAS | 81 | 0.4% |<br>| Automattic | 66 | 0.3% |<br>| Zenlayer | 60 | 0.3% |<br>| Incapsula | 54 | 0.3% |<br>| Yuan-Jhen Info | 44 | 0.2% |<br>| Magnite | 40 | 0.2% |<br>| Datacamp | 37 | 0.2% |<br>| Sony | 36 | 0.2% |<br>| Byteplus | 32 | 0.2% |<br>To assess the resilience of government and education sites, we first looked only at foreign resource connectivity:<br>gov.tw and *.gov.tw); 16 had foreign connectivity, or 6.8%.*.edu.tw); 34 had foreign connectivity, or 13.3%.<br>| Type | Sites tested | Foreign dependencies | Share |<br>|---|---|---|---|<br>| Government | 235 | 16 | 6.8% |<br>| Education | 255 | 34 | 13.3% |<br>| All | 2,179 | 856 | 39.3% |<br>Government and education sites depend less on foreign resources than the overall population. This suggests that public-sector and academic-network environments have a stronger baseline for local availability, although full service resilience still requires checking backend dependencies and real usage workflows.<br>Based on this study’s findings, we identify the following policy and technical recommendations to improve the resilience of Taiwan’s overall digital services.<br>Overall, the main risk for websites commonly used in Taiwan does not come only from a small number of fully foreign-hosted services. It is more widely embedded in dependency structures involving foreign resources and Taiwan-based nodes of multinational public clouds. Resilience strategies should therefore go beyond asking whether a service is “in Taiwan,” and further examine whether its resource supply chain, cloud control planes, and critical user journeys can continue operating locally.<br>Main limitations:<br>This study observes the source locations of website requests, not full network paths such as traceroute, nor routes from abroad via VPN. Whether “domestic” resources or pages are anycast/CDN nodes still needs further testing.<br>The 15 ms RTT cutoff is a fallback heuristic, not physical proof of endpoint location. Routing changes, congestion, or nearby foreign nodes can affect individual measurements, although the threshold sensitivity analysis shows limited aggregate impact.<br>“Foreign dependency” and “cloud dependency” here refer to front-end observable exposure, not full backend architecture. Even locally-contained sites by front-end metrics may still rely on foreign databases, APIs, or backend services. The 11.2% locally-contained group cannot be assumed to remain available during external outages.<br>Resources and webpages hosted on Taiwan nodes of multinational public-cloud services do not guarantee that the service can operate independently during submarine-cable or international connectivity outages. Observing a Taiwan endpoint shows only that some front-end resources can be obtained domestically. Actual availability may still depend on:<br>This study does not perform fault-injection tests that simulate a loss of international connectivity, such as using VPN or DNS techniques to make foreign resources unreachable. As a broad survey of many websites, it estimates potential risk from dependency structures rather than directly observing service degradation during a forced connectivity outage.<br>This study tests homepages only, not full user journeys such as login, transactions, browsing, or search. Results should therefore be treated as “initial availability” indicators based on dependency exposure among resources involved in initial service access, not as measurements of complete service availability.<br>Suggested follow-ups:</div>
+</div>
+
+</div>
+
+</body>
+</html>
