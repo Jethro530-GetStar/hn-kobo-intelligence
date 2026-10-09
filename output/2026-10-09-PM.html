@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-09 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-09 PM · Generated 2026-10-09 17:42 CST</div><div class="issue-sub">Stories 10 · Full 8</div><div class="issue-sub">Sources: anthropic.com, cactuscompute.com, dgt.is, ekstrabladet.dk, markoanastasov.com, news.mit.edu, news.ycombinator.com, oldroll.io, quake-srp.pages.dev</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Quake ported to safe Rust, playable in browser
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    155 points ·
+    125 comments ·
+    ilreb
+  </div>
+
+  <div class="meta">
+    quake-srp.pages.dev
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #10 · Best #50
+  </div>
+
+  <div class="links">
+    <a href="https://quake-srp.pages.dev/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50016312">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Move<br>WASDmove / strafe (id&#x27;s own: the arrows and ,. — idcontrols on the console)<br>mouselook (click to lock; or click-drag). Too slow or too fast: Options, Mouse Speed — on a Mac a gaming mouse starts slow (macOS passes on only part of its movement)<br>←→turn<br>Spacejump / swim up<br>Cswim down<br>gamepadLeft stick moves, right stick looks, RT fires, A or LT jumps, bumpers change weapon, Start the menu (D-pad, A and B work it), Back the scores. idcontrols on the console gives id&#x27;s own joystick (after joystick 1). A browser sees a pad once a button is pressed</div>
+<div class="para">Fight<br>clickfire<br>Ctrlfire (DOS-style — arrows + Ctrl play fine without capturing the mouse)<br>1–8select weapon (1 axe · 2 shotgun · 4 nailgun, once owned)<br>wheelswitch weapon — up next, down previous (the slop preset&#x27;s; Classic: id&#x27;s, unbound)</div>
+<div class="para">Interface<br>any keythe menu, while a demo plays<br>Escmenu / back — with the mouse captured, Esc releases it and opens the menu. In fullscreen on Chrome/Edge Esc just toggles the menu (hold it to leave fullscreen); elsewhere a second Esc leaves fullscreen (browser rule)<br>Tabhold for the scoreboard (monsters, secrets, time)<br>↑↓menu: navigate · ←→ adjust · Enter select<br>Optionsscreen size, brightness, mouse, always run — Customize controls to rebind keys, Video Options for the picture&#x27;s size, Slop Options for this port&#x27;s own settings, and last Reset to Classic (id&#x27;s WinQuake exactly) and Reset to slop (everything as it starts), each resetting everything — keys, Options, video — after asking; saved games stay. Open the page as ?classic or ?slop to start in that preset<br>-=screen size down / up<br>Alt+Enterfullscreen on and off, whatever has the keyboard: the game, the menu, the console (Option+Return on a Mac). With id&#x27;s own controls (idcontrols) the chord is id&#x27;s strafe and jump: use the fullscreen button. F11 is the browser&#x27;s own, the whole window<br>F6 / F9quicksave / quickload (id&#x27;s own binds — also F1 help, F2/F3 the Save/Load screen, F4 Options, F10 quit, F12 a screenshot — a .pcx file in this page&#x27;s storage, not a download yet; F12 only reaches the game in fullscreen, where the browser keeps it for devtools otherwise)<br>~console (see below)<br>gamewith a mission pack on this page (the server&#x27;s or your own): Quake, Scourge of Armagon or Dissolution of Eternity — on the start screen, under the view, or GAME in a phone&#x27;s menu. A choice reloads the page as ?game=hipnotic / ?game=rogue (none for Quake): bookmark one to start there. Saves stay; an unsaved game ends</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Why isn&#x27;t the industry freaking out about DeepSeek 4.1 Flash?
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    749 points ·
+    620 comments ·
+    jonotime
+  </div>
+
+  <div class="meta">
+    dgt.is
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #5
+  </div>
+
+  <div class="links">
+    <a href="https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50000488">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Why Isn&#x27;t The Industry Freaking Out About DeepSeek 4.1 Flash?</div>
+<div class="para">I have been using DeepSeek 4.1 Flash for about a month, heavily, across a dozen projects. It is super capable, and orders of magnitude cheaper than the &quot;frontier&quot; models. When I&#x27;m mid-session, if I don&#x27;t look at the model name, I honestly could not tell you if I&#x27;m using DeepSeek or Opus. Whether it&#x27;s our conversations, the work, or the speed, I don&#x27;t notice a difference. I don&#x27;t care that there is no 4.1 &quot;Pro&quot;. I treat this like a frontier model because it behaves like one. I&#x27;m coming at this from my subjective usage experience, but you can see more complete benchmarks here if that floats your boat. So why aren&#x27;t the frontier labs freaking out right now? China is going to eat their lunch. They may be a month or two behind Anthropic/OpenAI, but these distilled Chinese models can handle the same workloads. Sure, they stole Claude&#x27;s training, and Anthropic stole it from other people. I&#x27;m not getting into the whole who-owns-whose-data debate, because most developers aren&#x27;t thinking like that. They&#x27;re just trying to get the most bang for their buck. Today&#x27;s models are now good enough for high-quality unattended tasks. Chasing the latest and greatest is silly. It is fun to see the new Fable capabilities, but the tasks we throw at them are usually ridiculous (maybe even insulting) if you believe in LLM sentience. It&#x27;s like asking a math PhD to organize the files on your desktop. With my OpenCode Go sub of $10/month, DeepSeek is basically unlimited. This has completely changed my way of developing. There is no shame now in spinning up mindless tasks, or exploratory UI monkey testing. And sure, go ahead and reorganize your desktop files. That will cost $0.003 instead of $1. I have rarely exceeded $1 in expected costs in a session. I try to keep my sessions tight, but sometimes they run for most of a day. I even lean on 4.1 Flash for complex planning and research. For occasional critical tasks, I sometimes pull in Opus 5.5 to do a final code review, which will catch a few edge cases. Then I have DeepSeek execute the fixes. Even when I call up Opus or GLM (which seems to be drinking the same Chinese Kool-Aid as DeepSeek), it&#x27;s less about quality and capabilities and more about getting new eyes on a problem. DeepSeek shrank the KV cache by roughly 437x compared to their V1 model. Holding that cache in GPU memory is one of the biggest costs of running long coding sessions. That&#x27;s how my all-day sessions stay under a dollar. It must be better for the environment too. Using Claude almost feels wasteful, and not just on cost: its caching means DeepSeek must be using less water and electricity. This cache magic is also how Opus 5.5 quietly got its own efficiency boost. Yes, I have frontier subscriptions. My work provides Claude, Cursor, and others. I&#x27;m not nickel-and-diming here. I&#x27;m thinking more about long-term planning, sustainability, and democratizing access to high intelligence. This is a game changer. These wins are lost on the tech industry, which thinks that if you&#x27;re not paying top dollar, it&#x27;s not worth it. FAANG wants to spend the most money for the highest intelligence. Forget it if it&#x27;s unethical, expensive, or bad for the environment or the economy. This is dog-eat-dog capitalism. This leads to people having crazy setups to load balance a dozen Claude Max subs, and complaining when they can&#x27;t get more. And to the self-hosters out there, the economics of 4.1 Flash mean self-hosting is not worth it. If saving money is your goal, you will never recoup the costs. But if your concern is privacy, just wait. These cache optimizations are coming to you, and this cache magic will soon run entirely locally. Even now, 4.1 Flash is technically self-hostable, even if not practically so. Any day now.<br>Good Enough Changes How You Work<br>Cache Magic<br>- ← Previous<br>AI DevEx Log - July 2026</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Ask HN: What do you run on a $5 VPS that&#x27;s worth keeping online 24/7?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    233 points ·
+    366 comments ·
+    mariocesar
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #14
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=49985548">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">DHH&#x27;s &quot;AI shed&quot; idea got me thinking about getting a small $5–10/month VPS.<br>I&#x27;m a Linux guy and have on many points of my life have a personal server. So I like the idea of having something always on, but I’m not sure the maintenance is worth it when most things can just run on my laptop.<br>That said, I tend to do things myself and only later realize I could have automated or delegated them, so I may have a blind spot here.<br>If you have a cheap VPS or mini PC, what actually ended up being useful long-term? Anything that saved enough time or replaced enough subscriptions to justify keeping it around?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Margaret Hamilton has died
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2091 points ·
+    250 comments ·
+    muglug
+  </div>
+
+  <div class="meta">
+    news.mit.edu
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007">Original article</a> · <a href="https://news.ycombinator.com/item?id=49998895">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Margaret Hamilton, a profoundly influential computer scientist best known for leading the software engineering team at MIT’s Instrumentation Lab during NASA’s Apollo program, died on Sep. 30. She was 90.<br>A computing pioneer who authored over 130 publications, Hamilton helped to establish software engineering as a dedicated discipline. She worked at MIT from 1959 until the mid-1970s, after which she became a successful computing entrepreneur and CEO.<br>Her life’s work was recognized with many awards and honors, including the 2016 Presidential Medal of Freedom from President Barack Obama, whose citation noted: “Hamilton defined new forms of software engineering and helped launch an industry that would forever change human history. Her software architecture led to giant leaps for humankind, writing the code that helped America set foot on the moon.”<br>“To say Margaret Hamilton was a pioneer — to say she was ahead of her time — would be a dramatic understatement. She was a software engineer at a time when that field was in its infancy, and she not only developed advanced code herself but also led a team in using that nascent technology to develop one of the most complex systems humanity had ever achieved,” says Olivier de Weck, the Apollo Program Professor and interim head of the MIT Department Aeronautics and Astronautics.<br>“The Apollo program still stands as one of our greatest testaments to the power of collaboration, ingenuity, and engineering, and Margaret Hamilton was a fundamental contributor to that program’s success. And for her that was just the beginning! She went on to become an entrepreneur and remained on the cutting edge of systems software throughout an extraordinary career, while acting as an advocate, mentor, and inspiration to millions.”<br>Early life and projects at MIT<br>Born in Paoli, Indiana, in 1936, Hamilton began studying mathematics at the University of Michigan in 1955 before transferring to Earlham College, where she earned a BA in mathematics with a minor in philosophy in 1958. She moved to Boston, Massachusetts, in 1959 with her husband while he pursued a law degree.<br>Hamilton soon found a temporary position in the meteorology department at MIT, working with professor of meteorology Edward N. Lorenz SM ’43, ScD ’48 on weather prediction software. This was her first entry point into computer programming, and her work would go on to inform Lorenz’s future publications on chaos theory.<br>From there, Hamilton took a role as a programmer at MIT Lincoln Laboratory in 1961, working on the Semi-Automatic Ground Environment (SAGE) project, the United States’ first air defense system. Hamilton wrote software for the prototype AN/FSQ-7 computer (XD-1), used by the U.S. Air Force to search for potentially unfriendly aircraft. During this time, Hamilton began to take an interest in software reliability — a new and largely unexplored concept at the time.<br>In 1965 Hamilton was preparing to pursue graduate studies when her husband saw an advertisement in the newspaper: The Instrumentation Lab at MIT was seeking people to develop software to “send man to the moon.” The lab had won the contract from NASA to build the onboard flight software for the Apollo program. Intrigued by the challenge, Hamilton applied, and was hired as the first programmer for the Apollo project at MIT, as well as the first female programmer in the project.<br>Hamilton worked first on the software for the uncrewed Apollo missions and then was promoted into leading the team developing the on-board flight software for the crewed missions. By 1968 she was assistant director in charge of the Command and Service Module team, and more than 400 people were working on Apollo’s software.<br>“From my own perspective, the software experience itself (designing it, developing it, evolving it, watching it perform and learning from it for future systems) was at least as exciting as the events surrounding the mission,” Hamilton told MIT News in 2009. “There was no second chance. We knew that. We took our work seriously, many of us beginning this journey while still in our 20s. Coming up with solutions and new ideas was an adventure. Dedication and commitment were a given. Mutual respect was across the board. Because software was a mystery, a black box, upper management gave us total freedom and trust. We had to find a way, and we did. Looking back, we were the luckiest people in the world; there was no choice but to be pioneers.”<br>“Defensive” programming and priority-driven software take humans to the moon<br>Hamilton discovered a talent for leadership, as well as a keen instinct for problem-solving and critical thinking that would prove to save Project Apollo several times over.<br>There was the incident that became known as “the Lauren error”: One day, her daughter Lauren, then four years old, was playing with the command module simulator at the Instrumentation Lab when she somehow activated a pre-launch program, called P01, while the simulator was in midflight — which crashed the simulator altogether. Hamilton created a program add-on in the technical documentation warning users not to launch P01 during flight.<br>She also proposed a software fix to prevent the error happening during a real mission, but she was overruled on the grounds that the highly trained astronauts were never going to make that same mistake. Yet during the Apollo 8 mission in 1968, that’s exactly what happened: Jim Lovell inadvertently launched P01 during the flight, causing the on-flight navigational data to vanish. Hamilton and her team were called in to solve the error, and after that her proposed changes were integrated into the program. This was an early example of “defensive” programming, the practice of building software that could anticipate or fix errors on its own.<br>Hamilton’s most famous contribution to the Apollo program came during the pivotal Apollo 11 mission to land on the moon in July of 1969. Moments before the Eagle module was set to land on the lunar surface, the onboard computer raised the alarm. It had detected a 1202 error: The computer was overloaded due to a fault in a hardware switch, and it was possible the system would not be able to handle the complex landing procedure.<br>But Hamilton and her team had engineered priority-driven software, able to shut down unnecessary background tasks in order to prioritize mission-critical tasks. Houston trusted Hamilton’s software and allowed the mission to proceed, and two men walked on the moon for the first time.<br>Later career and legacy<br>Hamilton continued to work at the Instrumentation Lab into the 1970s. As the Apollo program wound down, the Instrumentation Lab spun out of MIT to become the independent Draper Laboratory.<br>“Margaret left an indelible mark on Draper, and we will be forever grateful,” says Jerry M. Wohletz SM ’97, PhD ’00, president and CEO at Draper. “Through her leadership and contributions to the development of the onboard flight software for NASA’s Apollo Guidance Computer, she helped ensure that Apollo astronauts landed safely on the lunar surface and safely returned home. We will honor her legacy at Draper forever.”<br>Hamilton went on to create her first software company, Higher Order Software, in 1976. The firm was based on Hamilton’s software engineering approach of error prevention and fault tolerance.<br>A decade later, Hamilton founded another software company, Hamilton Technologies, “to provide products and services to modernize the planning, system engineering and software development process in order to maximize reliability, lower cost and accelerate time to market.”<br>Hamilton Technologies’ flagship product is the Universal Systems Language (USL), a systems modeling language and methodology for engineering complex software systems that prioritize error prevention and defensive programming.<br>Throughout her career, Hamilton worked to achieve recognition for software engineering as a dedicated discipline.<br>“I fought to bring the software legitimacy so that it — and those building it — would be given its due respect, and thus I began to use the term ‘software engineering’ to distinguish it from hardware and other kinds of engineering, yet treat each type of engineering as part of the overall systems engineering process,” Hamilton told El Pais in 2018. “When I first started using this phrase, it was considered to be quite amusing. It was an ongoing joke for a long time. They liked to kid me about my radical ideas. Software eventually and necessarily gained the same respect as any other discipline.”<br>Among her many awards and honors, Hamilton was recognized with the NASA Exceptional Space Act Award for scientific and technical contributions in 2003; the Computer History Museum Fellow Award in 2017; the Intrepid Lifetime Achievement Award in 2019; and induction into the National Aviation Hall of Fame in 2022.<br>Later in life, Hamilton become an icon for women in science and technology, especially after a now-famous photo, showing her next to a printout of her MIT team’s Apollo code, began circulating online. In 2015, the Apollo software she helped to develop was added in its entirety to the code-sharing site GitHub. And in 2017, she became an official Lego Minifigure after a set originally designed by MIT science communicator Maia Weinstock, honoring her and several other women of NASA history, became available worldwide.<br>“Margaret Hamilton has been an inspiration to generations of computer scientists and engineers. Hers was a career dedicated to preventing errors and what she called ‘handling the unknown,’” says de Weck. “She personified leadership by example, and established a practice of software engineering based on problem-solving and systems engineering that we all benefit from.”<br>Hamilton is survived by her daughter, Lauren Hamilton; her son-in-law, Richard Selesnick; two grandsons; four great grandchildren; and her siblings John, David, and Kathryn. A memorial service will take place in the spring in Cambridge, Massachusetts.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Small batches still matter when agents write the code
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    markoa
+  </div>
+
+  <div class="meta">
+    markoanastasov.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://markoanastasov.com/signals/small-batches-still-matter/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50018223">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Small Batches Still Matter When Agents Write The Code<br>Spoke with a team this week who told me they try to cap pull requests at 500 lines and keep failing.<br>The cap is there to stop people throwing slop grenades with 10k lines of code at each other. Agents never get tired. They keep going until the feature looks complete. Before AI, some people worked the same way, spending days or weeks in a branch and only asking for review when they felt done.<br>Continuous Delivery taught us to ship in small batches for two reasons: so a human can understand each change, and so we can roll it back quickly when something breaks. Agents writing the code doesn’t change the fact that people need to understand the systems they’re responsible for.<br>So I still recommend splitting large changes into chunks that can be reviewed and deployed on their own. The simplest way today is to have the agent write a plan in a Markdown file and keep it updated as it goes. Then each change gets a fresh agent session that reads the plan at the start and updates it at the end.<br>The best unit of work is still what fits inside our head.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Tell HN: I&#x27;ve been paying for a rural Tanzanian&#x27;s education for 10 years
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    700 points ·
+    216 comments ·
+    lukehandcool
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · Best #8 · Top #34
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50006366">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Ten years ago I was 19 and traveling through East Africa, and I spent a summer in Ibumila, a village in the Njombe highlands of Tanzania. There&#x27;s no school in the village. The nearest one is a boarding school an hour away that costs a few hundred dollars a year, which is out of reach for most families there and was about two weeks of summer job money for me. The daughter of the family I stayed with, Anwarite, was 11. I offered to pay her fees and told myself I&#x27;d keep paying as long as she wanted to keep going.<br>This summer she graduated from the University of Dar es Salaam with a degree in Language Studies, and last week she told me she&#x27;d been accepted into a Master of Arts in Swahili program there. Roughly 2% of people from Njombe ever finish a university degree. Her goal is to get a PhD and then to bring it back to the region.<br>Her entire 18-month master&#x27;s program (tuition, registration, fees, books, supplies) comes to 3,060,000 TSh, about $1,161.<br>Since this worked out, I kept adding students as I could afford to, and in 2021 I registered it as a 501(c)(3), the Tanzania Education Project. It supports five students from Ibumila now, school fees and healthcare. I kept it small while I was finishing my PhD because I didn&#x27;t want commitments I couldn&#x27;t personally guarantee for a decade; I&#x27;ve since started a postdoc, so it feels like the right time to grow past my own paycheck. The long-term goal is that every kid in the village has access to education and healthcare. I sometimes think of this project as a slow experiment. How much could the village itself change over someone&#x27;s lifetime if the kids have access to education?<br>https://tanzaniaeducationproject.org/ is the website. Nobody takes a salary, and aside from bank fees the money goes to the students. If anyone wants to fund Anwarite&#x27;s master&#x27;s specifically, it&#x27;s here: https://www.gofundme.com/f/send-anwarite-to-her-masters-prog...<br>Happy to answer any questions or take any tips you all might have about doing this sort of thing.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Whistle: Speech to Text in 16.9 MB
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    759 points ·
+    152 comments ·
+    gmays
+  </div>
+
+  <div class="meta">
+    cactuscompute.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #4
+  </div>
+
+  <div class="links">
+    <a href="https://cactuscompute.com/blog/whistle">Original article</a> · <a href="https://news.ycombinator.com/item?id=50008427">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Today we release Whistle, a speech recognition model for mobiles, wearables, robots, smart home, automotive and microcontrollers. It is one 16.9 MB file, runs on the CPU with no dependencies, and loads into the same C++ engine as Needle, from the same container and the same quantisation.<br>Whistle does three jobs, all of them on the device:<br>- Transcription. 16 kHz mono audio, up to 30 seconds in one pass, in English, German, French, Spanish, Italian, Dutch and Polish. The language is detected unless you name it.<br>- Word timestamps. Every word with its start, end and probability, aligned from the decoder&#x27;s attention.<br>- Speech embedding. The encoder output, one row per 80 ms frame, without decoding a transcript.<br>The front end. 16 kHz mono audio is framed at a 25 ms window and a 10 ms hop into 80 log-mel bins, band-limited to 250-3500 Hz and normalised per channel. Thirty seconds is 3,000 frames. A convolutional stem of 128 channels and kernel 9 halves that count three times, leaving 375 frames at one per 80 ms. Every stage after this runs at that rate, and embed returns one row per frame.<br>The encoder. Eight Simple Attention blocks: four mHC residual lanes and a Monarch Hadamard MLP in place of the feed-forward network, the same blocks Needle uses. The attention is not causal. A frame at 3 s attends to a frame at 12 s.<br>The decoder. Eight Laddered Simple Attention blocks at width 512, 8 query heads to 2 KV heads, 48-dimensional queries and keys, 64-dimensional values, a 3-tap causal convolution on Q, K and V, and engram lookups at layers 3 and 7 over 18,432 slots. That is Needle&#x27;s block list with a different layer count.<br>The speech-specific part is one addition per layer. Each decoder layer reads the encoder through a gated cross attention, x ← x + σ(g) · softmax(q̂ K̂ᵀ/√d) V, with a gate learned per layer and K and V taken from the clip. Those projections run once when the clip arrives, 375 frames across 8 layers, and are then held for the whole decode. Five beams therefore cost five short transcript caches, not five passes over the audio.<br>Decoding. Five beams scored by length-normalised log probability. Keyword biasing walks an Aho-Corasick automaton over the phrases you pass in, alongside the beams, and lifts their log probability as the automaton advances. The transcript is capped at 320 tokens. The vocabulary is 8,192 text pieces plus seven language tokens, one per language, so the detected language is emitted as a token rather than returned out of band.<br>The ladder is on the decoder. Every depth from 2 layers up was trained as a model of its own, and --audio-depth selects one at load time. The encoder is never sliced: all eight blocks run at every depth.<br>Silence. The engine measures the clip&#x27;s loudness range before the decoder starts. Below the threshold it returns an empty transcript and an empty language, and never enters the beam search.<br>Whistle is ahead on LibriSpeech test-clean and test-other, on SPGISpeech, on Earnings-22 and on the FLEURS average. Whisper base is ahead on TED-LIUM, on AMI and on the MLS average, at 145.3 MB against 16.9.<br>Each model ran on its official runtime at its defaults: Whistle&#x27;s C++ engine at 5 beams, openai-whisper, and moonshine-voice non-streaming over whole audio. Time to first token is audio in to first token. Decode is tokens divided by the wall time after it, so the encoder is not counted twice. Whisper pads every input to 30 seconds, so its time to first token is flat across clip lengths. Whistle&#x27;s tracks the clip: 5.9 ms at 5 seconds, 11.1 ms at 10, 36.3 ms at 30.<br>Word error rates are scored with the Whisper normalizers. Whistle&#x27;s are measured over 86,174 utterances. Whisper&#x27;s and Moonshine&#x27;s are the figures their authors published, from the multilingual checkpoints rather than the English-only ones. No test audio appears in Whistle&#x27;s training or validation data, verified by comparing audio checksums and speaker IDs across every reported test set.<br>needle_load reads whichever model a .cact file holds, so the same binary does speech, text, or both:<br>On the third line needle_complete takes the clip directly. The engine transcribes it, answers the transcript against your tools, and returns one JSON object with the calls and the speech fields, the speech ones prefixed audio_. No transcript is handled by the caller.<br>A 16 kHz WAV or raw samples need nothing beyond the base install. Other sample rates and microphone capture need the [mic] extra, which adds soxr and sounddevice.<br>Every call returns the text, the language, the milliseconds to the first token and the decoder&#x27;s tokens per second after it. word_timestamps=True adds each word with its times and probability. keywords=[&quot;Siobhan&quot;, &quot;Krzysztof&quot;] raises the log probability of those phrases during the search. language=&quot;de&quot; forces the language instead of detecting it. needle.Whistle() is the same model as an object, for embed(audio) or to hold one tuned .cact.<br>needle whistle playground transcribes from the microphone in the terminal, and needle whistle compare runs the same clip through Whistle, Whisper and Moonshine side by side with their timings.<br>The engine ships prebuilt for seventeen targets, from macOS and Linux through Android, iOS, watchOS, Windows on ARM, RISC-V, MIPS, the browser and a WASI component. Every folder holds a needle binary, libneedle.a and needle.h, and loads any .cact you hand it.<br>needle_load, needle_transcribe and needle_embed are the whole speech C API. The engine reads no environment variables. Every behaviour is a compiled default or an explicit flag.<br>Weights are on Hugging Face, the engine and its platform folders are in Cactus-Compute/needle3, and the source is on GitHub.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: OldRoll, a free vintage photo editor for the browser
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    8 points ·
+    1 comments ·
+    awa11
+  </div>
+
+  <div class="meta">
+    oldroll.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #19
+  </div>
+
+  <div class="links">
+    <a href="https://www.oldroll.io/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50016840">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Adjust Light, Color and Focus<br>Fine-tune exposure, contrast, warmth, saturation and lens blur. Crop to the part that matters, then compare with the original.<br>Use OldRoll Web to transform your photos with Digicam, Film, Y2K, 90s, VHS, and Dreamy retro effects. Fine-tune the light, color and texture, all in your browser.<br>100% free online · No installation · Mobile ready<br>Start with the looks people return to, from crisp digicam flash and disposable-camera warmth to soft film grain and dreamy color.<br>Start with a camera-inspired look, then shape the light, texture and layout around your photo.<br>Layer film frames, flashes, grain, light leaks and stickers without losing the camera look underneath.<br>Bring one photo or several moments into an OldRoll layout, then choose a solid, gradient or textured background.<br>Retro photo editing for posts, portraits, campaigns, cover art and visual stories.<br>Give posts, reel covers and everyday photo dumps a consistent camera-inspired mood.<br>Try film, disposable-camera and light-leak looks, then fine-tune exposure, color and grain.<br>Build Y2K, street, lo-fi and camcorder-inspired visuals without flattening every image into the same preset.<br>Turn product, packing and lifestyle photos into warmer campaign visuals while keeping the item easy to see.<br>Create cover art, teaser posts and backstage images with haze, grain and after-hours color.<br>Give cosplay, convention and character-focused photos a dreamy, VHS or direct-flash finish.<br>OldRoll starts with recognizable camera character, then gives you room to decide how far the edit should go.<br>Explore recognizable camera moods such as CCD color, disposable warmth, direct flash, VHS texture and film grain.<br>Choose a photo from desktop or mobile and begin editing without installing desktop software.<br>Adjust the strength, compare with the original and fine-tune the details before saving the result.<br>Move from one photo to a complete strip or layout while keeping the visual direction consistent.<br>Choose a photo from your phone or computer. Start with a clear portrait, street scene or travel photo.<br>Try Digicam, Film, Y2K, Disposable Camera, 90s, VHS or Dreamy, then adjust the intensity to suit your photo.<br>Compare the edit with the original, preview the finished result and save your photo.<br>Camera-inspired creativity, loved by a worldwide community.<br>6k+ ratings<br>4.3/5<br>213k+ reviews<br>Featured by Xiaomi<br>Everyday moments, reimagined with OldRoll.<br>Small moments. Favorite cameras. Feedback from the OldRoll community.<br>Editorial summaries of selected OldRoll app reviews. Names and dates are from Google Play.<br>OldRoll is a browser-based aesthetic photo editor for creating Digicam, Film, Disposable Camera, 90s, VHS, Dreamy and other retro looks.<br>Yes. In your mobile or desktop browser, select Choose a Photo and upload an existing picture. You can start with a photo from your phone gallery instead of taking a new shot. The mobile app also supports importing photos for editing.<br>You can use the available light, color, texture, crop, frame, effect and sticker controls to shape the final result. Available settings may vary by Camera or Filter.<br>Camera resources recreate a fuller camera character, while Filters are focused looks that can be applied and adjusted inside the editor.<br>The OldRoll mobile app includes a large collection of free resources. To celebrate the launch of OldRoll Online, the current online version is 100% free, with all current features available. No paid subscription is needed for this online launch offer.<br>Yes. The official OldRoll app offers a dedicated camera-first experience on iOS and Android.<br>Start with a daylight portrait, a picnic or a travel snapshot. Choose a 90s look for warm yellow tones, faded shadows and an aged-print finish. Keep the effect subtle enough to preserve skin tones, and avoid starting with an image that is already heavily filtered.<br>A Y2K look leans toward early digital cameras: low-resolution texture, direct flash, cool cyan or violet color and a pixel-style date stamp. A 90s look feels more like an aged print, with warm yellow color and softer contrast. Indoor party portraits work especially well for Y2K.<br>Choose a portrait with backlight or side light, visible hair edges and bright highlights. A Dreamy effect softens those highlights into a gentle glow while keeping the face readable. Flat, dark photos usually show less bloom than a naturally backlit scene.<br>A photo booth look combines several portraits in a strip or grid. Use pictures with consistent light and framing, then arrange them in a collage layout. For a camera-led experience on your phone, explore the mobile app&#x27;s Booth camera; available layouts can differ between the app and online editor.<br>OldRoll supports customizable date stamps. In the online editor, check the selected camera for its available date settings. A visible timestamp is a creative overlay, not proof of when the original photo was taken. Keep an unedited copy if you may want a version without the stamp.<br>Still have questions?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Claude Haiku 5.5
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1039 points ·
+    483 comments ·
+    sfkgtbor
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/claude-haiku-5-5">Original article</a> · <a href="https://news.ycombinator.com/item?id=49996437">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Introducing Claude Haiku 5.5: the cheapest, fastest, and most capable small model we’ve ever released.<br>Claude Haiku 5.5 is designed for high-volume, cost-sensitive tasks. It reliably handles quick and repetitive workloads (like summaries, compactions, database queries, and classification requests). It pairs well with Opus 5.5 and Sonnet 5.5 as a subagent on coding work. And, since it’s also our fastest model to date, it works especially well for speed-sensitive tasks like live customer support and browser use.¹<br>Haiku 5.5 is available at a much lower price than Haiku 4.5. On average, it now costs around 75% less to run.²<br>Along with this launch, we’re making improvements to the value of our model range. We’re halving the price of Claude Sonnet 5.5’s cache reads, which means Sonnet 5.5 now runs around 20% cheaper on most agentic work. And we’re introducing a new monthly API credit for our Claude Max and Team subscribers, designed to support our users in building new agents and applications that run on the Claude Platform.<br>Performance<br>Here’s how Claude Haiku 5.5 performs across a range of benchmarks:<br>|  | Haiku 5.5 | Haiku 4.5 | GPT-6 Luna | Sonnet 5.5For reference |<br>|---|---|---|---|---|<br>| Knowledge workGDPval-AA v2.1 | 1620 | 735 | 1437 | 1840 |<br>| Knowledge workAA-Briefcase v1.1 | 1578 | 614 | 1336 | 1824 |<br>| Computer useOSWorld 2.1 | 72.4%Offline subset | 15.7%Offline subset | 48.9%Offline subset | 83.9%Offline subset |<br>| Multidisciplinary reasoningHumanity’s Last Exam | 45.9%no tools | 10.2%no tools | — | 56.9%no tools |<br>|  | 57.4%with tools | 18.7%with tools | — | 64.5%with tools |<br>| Agentic codingTerminal-Bench 4.0 | 39.2% | 0.0% | 16.4% | 70.6% |<br>| Agentic codingFrontierCode 1.1 (Main) | 46.4% | — | 42.4% | 52.1%Xhigh |<br>| Visual reasoningChartography | 46.4%no tools | 6.4%no tools | 29.1%no tools | 61.6%no tools |<br>For details on how we run our evaluations, see the Haiku 5.5 System Card.<br>Haiku 5.5 is our first Haiku-class model to come with an adjustable effort setting. This means that, as with our other models, users can decide whether to optimize for cost or intelligence. The charts below show how Haiku 5.5 performs on three benchmarks at each effort setting:<br>In early testing, our customers reported results consistent with the performance and cost improvements shown above. Here’s what they told us about the new model:<br>Pricing<br>The table below shows how Claude Haiku 5.5’s pricing compares to our other models. Haiku 5.5 is especially good value when used for tasks with prompts up to 100,000 tokens, which make up around 90% of requests to our previous Haiku model.<br>| Price per 1 million tokens | Haiku 5.5 prompts up to / over 100k | Haiku 4.5 | Sonnet 5.5 |<br>|---|---|---|---|<br>| Cache reads | $0.01 / $0.05 | $0.10 | $0.10 |<br>| Cache writes | $0.125 / $0.625 | $1.25 | $2.50 |<br>| Input tokens | $0.10 / $0.50 | $1.00 | $2.00 |<br>| Output tokens | $0.50 / $2.50 | $5.00 | $10.00 |<br>Safety<br>Alignment. Claude Haiku 5.5 shows major improvements across almost all of our alignment evaluations relative to Haiku 4.5. In particular, we found far fewer instances of misaligned behavior, and a lower willingness to cooperate with misuse. The model’s system card describes our evaluation process and results in more detail.<br>Safeguards. Consistent with its capabilities, Haiku 5.5’s cybersecurity safeguards are more restrictive than Haiku 4.5’s, but somewhat less restrictive than those we’ve applied to other recent models. In cybersecurity, they permit a wider range of defensive tasks than our safeguards for Sonnet 5.5, but they still block penetration testing and other techniques more likely to be used by attackers.<br>Haiku 5.5’s biology safeguards are the same as for Sonnet 5, Sonnet 5.5, and Opus 5. They allow research biology questions but restrict access to requests that we judge as likely to cause harm. Organizations working on wider-ranging biology and cyber activities can apply to our Life Sciences Verification Program and Cyber Verification Program.<br>Availability<br>Claude Haiku 5.5 is available now on all platforms, including Amazon Web Services, Google Cloud, and Microsoft Azure. On the Claude Platform, developers can get started with claude-haiku-5-5.<br>See our migration guide for details.<br>Further updates<br>Alongside our new pricing for Claude Haiku 5.5, we’re making further improvements to the value of our models and products.<br>First, starting today, we’re lowering the price of cache reads on Claude Sonnet 5.5. Cache reads now cost 50% less: $0.10 per million tokens rather than $0.20. Because cache reads make up a large share of models’ token consumption, this reduces the cost of Sonnet 5.5 on most agentic tasks by around 20%.<br>For instance, here’s what the price cut means for Sonnet 5.5’s performance relative to cost on Terminal-Bench 4.0:<br>This chart illustrates an important difference between Haiku 5.5 and our larger models. Sonnet 5.5 and Opus 5.5 remain better choices for complex agentic coding tasks like those measured by Terminal-Bench 4.0. By contrast, Haiku 5.5 is best suited to more narrowly scoped tasks that might otherwise have been cost-prohibitive with previous versions of Claude—like compaction, summarization, or subagent work.<br>Second, this week, we’ll roll out a new monthly API credit to all Max and Team subscribers for use on the Claude Platform. Max 5x users will get $100 in credits per month, Max 20x users will get $200, and Team subscribers will receive up to $500, pooled across their users. These credits are designed to allow our users to experiment with building tools, apps, and agents that call our API. They can be used on any of our models. For more information, see our Help Center article.<br>For developers, we’re also updating our Claude Python and TypeScript SDKs to add support for computer use and browser use in beta. Haiku 5.5 is especially well-suited to these tasks, given its combination of speed, capability, and price. You can read more about this in our Claude Platform docs.<br>Footnotes<br>1 Claude Haiku 5.5 is our fastest model to date at each model’s standard speed, although it runs less quickly than our Opus models in Fast Mode.<br>2 Claude Haiku 5.5 is priced 90% lower than Claude Haiku 4.5 for requests up to 100,000 tokens, and 50% lower for requests over 100,000 tokens. On Haiku 4.5, 90% of requests fell into the former category. This calculation also accounts for changes between Haiku 4.5 and Haiku 5.5 in how many tokens are used to complete a given piece of work: Haiku 5.5 has an updated tokenizer (similar to Sonnet 5.5’s and Opus 5.5’s), which means it uses slightly more tokens per task.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Denmark data breach: it appears that the password was simply 123456
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    delamon
+  </div>
+
+  <div class="meta">
+    ekstrabladet.dk
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://ekstrabladet.dk/nyheder/samfund/medie-hacker-paastaar-at-staa-bag-cpr-laek/11314806">Original article</a> · <a href="https://news.ycombinator.com/item?id=50018213">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Indtil videre har det ikke været offentligt kendt, hvem der trængte ind i det danske CPR-register og dermed fik adgang til næsten 8,8 millioner CPR-numre.<br>Men nu hævder en anonym hacker over for Politiken, at det var vedkommende, der gjorde det – og at det ikke var specielt vanskeligt.<br>Takket være et lækket password fra en tidligere medarbejder i en mindre dansk virksomhed, der har adgang til registret, tiltvang hackeren sig adgang 11. september i år.<br>Adgangskoden var ganske simpel, nemlig 123456. Herefter konstruerede hackeren to computerprogrammer, der fandt CPR-oplysninger frem og efterfølgende gemte dem eksternt.<br>Hackeren, der angiveligt ikke har planer om at sælge eller lække CPR-numrene, er med egne ord &#x27;virkelig chokeret&#x27; over den mangelfulde sikkerhed.<br>Han beskriver selv sagen på følgende måde:<br>- Nogen efterlader en kuffert med 10 kilo plutonium uden opsyn på en banegård. Så stjæler en hjemløs den.<br>- Ja, selvfølgelig skal man ikke stjæle andres kufferter. Men man skal heller ikke efterlade nukleart materiale på en banegård, siger vedkommende til Politiken.<br>Hackeren har delt en fil med de mange CPR-numre med Politiken, der har givet it-sikkerhedsekspert Emil Hørning fra virksomheden Defend Denmark mulighed for at lave en kort analyse af de mange data.<br>Han vurderer det som sandsynligt, at hackeren taler sandt, og at vedkommende har benyttet den angivne metode.<br>Interviewet med hackeren er foregået på engelsk over en krypteret tjeneste.<br>Forsknings-, uddannelses- og digitaliseringsminister Christina Egelund (M) erkender i et skriftligt svar, at sikkerheden omkring CPR-systemet ikke har været god nok.<br>Hun siger, at der nu er sat en stopper for, at uvedkommende kan få adgang til systemet på tilsvarende vis, og har samtidig bedt om en sikkerhedsgennemgang af systemet.<br>Private virksomheder og foreninger kan i dag få adgang til CPR-registret, hvis de for eksempel har brug for adresseoplysninger på kunder eller medlemmer.<br>RITZAU</div>
+</div>
+
+</div>
+
+</body>
+</html>
