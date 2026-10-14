@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-14 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-14 AM · Generated 2026-10-14 08:27 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: bleepingcomputer.com, deepmind.google, github.com, guitoro.com, news.ycombinator.com, parsimony.lasu.dev, pulseos.finance, science.org, tomshardware.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Guitoro, a virtual guitar you strum with your keyboard
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    231 points ·
+    78 comments ·
+    talccc
+  </div>
+
+  <div class="meta">
+    guitoro.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #2 · Best #39
+  </div>
+
+  <div class="links">
+    <a href="https://guitoro.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50077020">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Loading guitar<br>The most realistic virtual guitar online<br>Guitoro is the most realistic and the most complete virtual guitar you can play online, free in your browser. Play it with your computer keyboard, your left hand on the chords and your right hand strumming, or swipe the strings with your finger on a phone or tablet. Choose a steel-string acoustic, a classic guitar, an electric guitar or a four-string bass.<br>It&#x27;s also a way to learn chords and songs that a chord chart or a video lesson can&#x27;t show you. Each song plays its best-known part close to the original recording, stroke for stroke. Slow it down to 20% and watch it being played: each string lights up the moment it&#x27;s hit, the pick swings down and up with the strum, and the neck shows which finger goes where.<br>Then it&#x27;s your turn. No guitar? Play the song on the keys or the screen, and it waits for you at every chord change. Have a guitar? Pick it up and play along at your own speed, with the strings, the strum and the fingering right in front of you.<br>Every guitar and bass note is a recording of a real instrument. There&#x27;s nothing to download and no account to create. If you played the Google guitar doodle, Guitoro takes the idea further: six real strings, 15 chords in every key, and 51 songs to play along with.<br>Play<br>No guitar needed. Guitoro is built to be played, not just clicked, on whatever you have in front of you.<br>Your left hand holds a chord on the letter keys and your right hand strums with H and J, the way you&#x27;d play a real guitar. 15 chords sit under your fingers, plus keys for arpeggios, single strings, chucks and palm mutes.<br>On a phone or tablet, tap a chord pad and swipe the strings with your finger. Up to five fingers at once, and you can tap the frets on the neck to play single notes.<br>Drag across the strings. A fast swipe plays louder, a slow drag rolls the notes one by one, and a click plucks a single string.<br>On a computer, switch to Solo and every keyboard row becomes a string and every column a fret, with bends and vibrato on the arrow keys.<br>Learn by watching<br>In a video lesson the hand moves fast and hides the strings, so you can&#x27;t tell which ones were really hit. Guitar apps teach the basic chords and stop there. Guitoro plays the song&#x27;s real part on the guitar in front of you, at the speed you choose, and shows exactly what the hands do. Then you play it, on the virtual guitar or on your own.<br>Each song plays its best-known part close to the original recording, stroke for stroke. Slow it anywhere from 20% to full speed and the chords, the strum and the band slow down together.<br>Each string lights up the moment it sounds, then vibrates as it rings. You can see whether a stroke hits all six strings, just the bass strings or only the top three.<br>Over a strummed part, the pick swings down and up like a real strumming hand, once per step of the pattern. Solid swings hit the strings and faint ones miss them, so you see the hand keep moving through the gaps.<br>While a chord rings, the neck shows it: finger numbers from 1 to 4, barres, muted strings and the capo. Copy the shape onto your own guitar.<br>Play a song&#x27;s chords on the keys or the screen and it follows you. The keys show its chords in order, the next one lights green, and the song holds until you play it. No score and no rush.<br>Watch a part slowly, copy it on your guitar, then play along as you raise the speed. On a computer, choose My guitar: the on-screen keys step aside and the song box shows the strum or picking pattern, a chord strip you can click to jump around, and the speed.<br>Realism<br>Most online guitars only let you click single strings or frets, or play a synthesized tone when you click a chord. On Guitoro you strum: swipe across the strings or use the keys, and every string sounds as you cross it, from recordings of real instruments.<br>Every guitar and bass note is a recording of a real instrument: a steel-string acoustic, a classic guitar with nylon strings, a solid-body electric on its bridge pickup, and a four-string bass.<br>Each string sounds as your finger or mouse crosses it. Swipe down or up, fast or slow, and you hear the difference, down to a slow roll across the strings.<br>Chords use the shapes guitarists play, with open strings, barres and muted strings, so a G sounds like a G on a guitar, not on a keyboard.<br>Chucks, palm mutes, hammer-ons, pull-offs, bends and vibrato, while the strings vibrate on screen as they ring.<br>Use cases<br>Strum real chords and play whole songs with your computer keyboard or your fingers, with a backing band behind you. On a train, at the office or on the sofa, a laptop or a phone and headphones are enough.<br>Songs like Wonderwall, Hallelujah and Let It Be come set up with the right key, capo, tempo and the strum from the record. Lead the chords from the keys, or pick up your own guitar and play along at any speed.<br>Slow a song&#x27;s strum down, watch which way the pick moves on every beat, then strum it yourself over a drum beat until it feels steady.<br>See where each finger goes, hear how the chord should sound, then copy the shape on a real guitar. Every chord also has its own page in the guitar chord chart.<br>Paste the chords of a song from a chord site and hear how it goes before you sit down to play it.<br>Type a chord progression under My songs, loop it with the backing band, and record the idea before it&#x27;s gone.<br>Show a class a chord shape or a strum on a big screen, slowed down, with every string and every pick stroke visible.<br>Singers, keyboard players and songwriters can hear how guitar chords are voiced and see how a progression lies on the fretboard, without learning to hold a guitar first.<br>Features<br>The most complete virtual guitar online: four instruments, every key, real chord shapes, songs, a backing band and recording, all free in one place.<br>Steel-string acoustic, classic guitar, electric and four-string bass, each built from recorded samples. Pick a recording for the acoustic (Warm, Bright or Mellow) and the classic (Natural or Concert), and presets for the electric, from Clean to Crunch, Classic Rock, Metal, Lead and Ambient.<br>Pick any of the 24 major and minor keys and the chord keys fill with the chords that fit it: the main chords, sevenths, and sus, add9 or sus2 colors. Edit puts any chord you type, like F#m7 or Dsus2, on a key.<br>While a chord rings, the neck shows finger numbers, barres, muted strings and the capo. Standard is the shape most players learn first, Easy swaps a barre chord for a smaller shape, and Up plays the same chord higher up the neck.<br>51 songs and classical pieces come set up to play, from Wonderwall and Hotel California to Canon in D. Slow them to 20%, lead their chords from the keys, or play along on your own guitar.<br>14 everyday strums from Steady downs and the pop staple D DU U DU to shuffle and 6/8, 4 styles (reggae, funk and country), 26 more rhythms drawn from real songs, and 12 picking patterns like Travis and classical p-i-m-a. Choose one and you hear it straight away.<br>Drums, bass and strings that follow your chords: 15 drum styles, including rock, funk, reggae, bossa nova and cajon, and 25 bass lines. The Band switch next to Play turns them on. Tempo goes from 10 to 220 BPM, with a metronome.<br>Paste a song from a chord site or as ChordPro text, pick a strum, and Guitoro plays it with the band. Write &quot;x2&quot; to repeat a line or a part. Lyrics are left out, and your songs stay in your browser.<br>Play single notes and melodies on the neck from the computer keyboard, with hammer-ons, pull-offs, bends and vibrato.<br>Overdrive, distortion and fuzz on the electric, plus bass, mid and treble, room or hall reverb, and delay on every instrument.<br>10 tunings, from Standard, Drop D and half step down to DADGAD and Open G, D and E, a capo up to fret 10, and a left-handed guitar.<br>Record takes of up to 10 minutes with the band, replay them and save them as WAV or a small compressed file. Takes stay in your browser.<br>A free guitar tuner that listens through your microphone, with pages for drop D, open tunings, the bass and the ukulele.<br>Getting started<br>From silence to a song you lead yourself. The first two steps take a few seconds.<br>Pick Acoustic, Classic, Electric or Bass at the top of the page. On a phone, tap the guitar picture. You can switch at any time.<br>Tap a chord pad, or press its letter on the keyboard. The default key is G major, so the middle row, A S D F G, holds G, C, D, Em and Am. Auto strum starts on, so the chord strums itself.<br>Turn Auto off, then swipe down across the strings for a downstroke and up for an upstroke. On a keyboard, H strums down and J strums up.<br>Open the Strum menu and pick a strum or picking pattern. You hear it once on your chord. With Auto and Loop on, it keeps playing while you hold a chord key.<br>Open Songs &amp; recordings and pick a song. Press Play to hear it, or press the chord key that lights green to lead it yourself. The tempo button next to Play slows it down.<br>Turn on the Band switch next to Play. Its edit button opens Backing band, where you choose the drums, the bass line and the strings.<br>Open Songs &amp; recordings, choose Recordings, and press Record. Play, then use Stop next to the recording timer. Your takes stay in Recordings.<br>Keyboard<br>Your left hand holds the chords and your right hand strums, just like on a guitar. Keys follow their physical position on a US QWERTY keyboard, and every key on screen shows its letter.<br>| Chords | Three rows of five: A to G for the main chords, Q to T for sevenths, Z to B for more chords and colors like sus4 and add9 |<br>|---|---|<br>| Strum | H down, J up, K down when pressed and up when released, N hard down, M slow down |<br>| Pick | Y arpeggio, U bass note, I O P the top three strings |<br>| Feel | L chuck, ; palm mute, Shift hard strum, Alt slow strum |<br>| Songs | The chord keys show the song&#x27;s chords in order and the next one lights green. With My guitar on, Space plays and pauses the song |<br>| Solo mode | Each row is a string and each column a fret. Left and Right arrows move up and down the neck, Up bends, Down adds vibrato |<br>Learn chords<br>In the key of G these four chords sit on the middle row of keys, and together they play hundreds of pop and folk songs. Press each one and watch the neck: the numbers are your fingers, from 1 for the index to 4 for the little finger. An X marks a string you don&#x27;t play, and a bar across the strings is a barre.<br>Play C, then Am. The chord name above the guitar tells you which is major and which is minor, and your ear learns the bright and the sad sound. Do the same with the sevenths on the top row.<br>Put your fingers where the dots are, strum, and compare your sound with Guitoro&#x27;s. A buzzing or dead string usually means a finger is too far from the fret or touching the next string. Many barre chords have an Easy version for while your hand gets stronger.<br>Open Songs &amp; recordings and pick a song, or paste one under My songs. Press each chord key as it lights green: the song waits for you at every change. Start slow, then raise the speed a little at a time.<br>Switch the key to hear the same chords higher or lower, or in a minor key. Put a capo on in Settings and the same shapes sound higher, which is how guitarists play in keys like A or B with easy open chords. Drop D and Open G show how a tuning changes the whole sound.<br>Low E string on the left. Numbers are fingers, O is an open string, X is a string you don&#x27;t play.<br>Learn strumming<br>Strum patterns are written with D for a downstroke and U for an upstroke, and x for a muted chuck. The trick is to keep your hand moving down on every number and up on every &quot;and&quot;, even when it misses the strings. In Guitoro you can watch the pick do exactly that.<br>Counted &quot;1, 2 and, and, 4 and&quot;: the down on beat 3 is left out, but the hand still moves.<br>Choose a pattern from the Strum menu and you hear it once on your chord. The menu shows each pattern as a grid of downs and ups.<br>Open a song with the strum you want and slow it to 50% or less. The pick swings down on the numbers and up on the &quot;and&quot;s: solid when it hits the strings, faint when it misses. The strings light up to show which ones each stroke hits.<br>Turn Auto off, turn on the Band switch or the metronome, and strum along with H and J or by swiping the strings.<br>Record a take and listen for uneven strokes. When it sounds steady, speed up.<br>Steady downs, then Down-up eighths, then the pop staple, then 6/8 ballad and Shuffle. After that, open songs like Wonderwall, Hallelujah and Knockin&#x27; on Heaven&#x27;s Door and strum their own patterns.<br>Songs<br>Each song page has its chords with diagrams and its strum or picking pattern written out, and sets the guitar up for you: key, capo, tempo and chords. The easy guitar songs page groups them by how many chords they have.<br>Playing a real guitar along? The free online guitar tuner listens through your microphone, with pages for drop D, half step down and open tunings. There is a free ukulele tuner too.<br>Every major, minor and seventh chord in all 12 keys, with finger charts and an easier version where there is one: the guitar chord chart. Search any chord there, hear it strummed, and open it on the guitar.<br>FAQ<br>Yes. It runs in your browser with no download and no sign-up.<br>A video shows a teacher&#x27;s hand from one angle, at one speed, and the hand hides which strings it hits. Guitoro plays the song&#x27;s part close to the original recording on a guitar you can see whole: each string lights up as it&#x27;s hit, the pick shows every down and up stroke, and you set the speed. Then you play it yourself and the song waits for you.<br>51 songs and classical pieces, from Wonderwall, Hotel California, Let It Be and Perfect to Canon in D and Für Elise, each with its key, capo, tempo and strum or picking set up. See them all on the easy guitar songs page, or paste your own from a chord site.<br>Yes. Tap a chord pad and swipe the strings. In portrait, the enlarged neck sits below the strings with four frets per page. In landscape, the neck and strings sit side by side. Tap the frets to play single notes. Solo mode and My guitar need a computer.<br>Yes. The left side of the keyboard holds 15 chords and the right side strums, picks and mutes. See the table above.<br>Press the tempo button next to Play and drag the speed, from 20% to full speed. The chords, the strum, the pick on screen and the band all slow down together.<br>Yes, as a guide next to your guitar. It shows you what to play and how it should sound: the chord shapes and fingers, which strings each stroke hits, which way to strum, and whole songs at any speed. Watch it slowly, copy it on your guitar, then play along. It can&#x27;t hear you or check your hand, so listen to yourself and compare with Guitoro.<br>Yes, on a computer. Pick a song and answer &quot;Yes, my guitar&quot;, or switch to My guitar at the top of the page. The on-screen keys step aside, the speed goes down to 20%, and Space starts and stops the song. Tune up first with the online tuner.<br>Browsers only start sound after you touch the page, so tap a chord pad or a string first. Then check the device volume and the tab&#x27;s sound. Bluetooth headphones can add a delay, and wired headphones or speakers fix it.<br>In this browser, on this device. Export the takes you want to keep as WAV or a compressed audio file before you clear browser data or switch devices.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Domain Health
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    4 points ·
+    0 comments ·
+    anjalibery
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · New #37 · Top #48
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50080125">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We have WorkOS and are sending out activation emails for our beta product. They activation email (with the link) ends up in spam. We&#x27;ve tried so many different combos (plain text vs. html, vs. no hyperlink), and it seems like anything with a link is getting bounced. I&#x27;m worried about our domain health and curious if there&#x27;s a better way to diagnose the problem</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Gemini 4 Argon
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    941 points ·
+    728 comments ·
+    737max
+  </div>
+
+  <div class="meta">
+    deepmind.google
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://deepmind.google/models/gemini/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50073879">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">See also: Gemini 4 Argon for Robotics - https://news.ycombinator.com/item?id=50074869</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Show HN: Mosh-rs, Mosh rewritten in Rust with scrollback and Windows support
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    Arunjay__
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/Arunjay4213/mosh-rs">Original article</a> · <a href="https://news.ycombinator.com/item?id=50080836">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The mobile shell, rewritten in Rust: wire-compatible with mosh 1.4, with a native Windows client and real scrollback.<br>Install · Known limitations · Usage · Compatibility · How it works · How this was built · Contributing<br>mosh-rs is an independent project. It is not affiliated with MIT, Keith Winstein, or the mosh maintainers. It exists because of their work: see License and attribution.<br>mosh is a remote terminal that survives what kills ssh: Wi-Fi to cellular handoffs, a laptop that sleeps overnight, and links with high latency or packet loss. It runs over UDP, keeps the screen in sync instead of streaming bytes, and echoes your keystrokes locally before the server answers.<br>mosh-rs is a Rust port of mosh master (decd9b7, March 2026), wire-compatible with mosh 1.4.0, so that it works with the mosh-server already installed on your hosts.<br>It adds two things upstream mosh never had: a native Windows client, and scrollback that lands in your local terminal&#x27;s history.<br>The Linux release binaries are single static binaries.<br>Status: pre-alpha. v0.1.0 is the first pre-release: download it from the Releases page and see Install. The Known limitations list says what has been tested and what has not. Every number and every compatibility result in this README was measured, and anything not yet tested is marked as such.<br>Found a bug or something that behaves differently from mosh? Please open an issue. For security problems, follow SECURITY.md instead.<br>- Pre-alpha: expect rough edges, and report them in the issue tracker.<br>- The v0.1.0 macOS client cannot connect (an address lookup bug on macOS, fixed on main); the v0.1.0 macOS server works. Use v0.1.1 or later on a Mac.<br>- Windows: sleeping and waking the machine, Ctrl-^ Ctrl-Z, and idle CPU have not been tested; losing and regaining the network has.<br>- mosh-server is Unix-only, as in upstream.<br>- No X forwarding, port forwarding, or SOCKS; mosh never had them.<br>mosh is excellent software, and its protocol design is the reason this project exists. Its last release, 1.4.0, shipped in October 2022. As of October 2026 the upstream repository has 170 open issues and 62 open pull requests. There has never been a native Windows client; Windows users run mosh inside WSL, Cygwin, or a browser extension. Scrollback has been missing since the start: mobile-shell/mosh#122, &quot;mosh prevents the use of scrollback&quot;, has been open since April 2012.<br>A port keeps everything that works (the protocol, the emulator semantics, the prediction behavior) and makes the two missing features possible without forking the protocol. New features are additive protobuf fields that existing peers ignore, so mixed old and new installs keep working.<br>Pre-built binaries are attached to the v0.1.0 release.<br>Each archive has a .sha256 file next to it for checking the download.<br>v0.1.0 is a pre-release; the Known limitations list says what has been tested.<br>mosh-rs works with the mosh-server already on your hosts (mosh 1.4), so you can install only the client side.<br>The --scrollback feature needs the mosh-rs mosh-server on the remote host.<br>The archives hold static binaries for mosh, mosh-client, and mosh-server.<br>Replace x86_64 with aarch64 for arm64.<br>v=v0.1.0; t=x86_64-unknown-linux-musl<br>curl -LO https://github.com/Arunjay4213/mosh-rs/releases/download/$v/mosh-rs-$v-$t.tar.gz<br>curl -LO https://github.com/Arunjay4213/mosh-rs/releases/download/$v/mosh-rs-$v-$t.tar.gz.sha256<br>sha256sum -c mosh-rs-$v-$t.tar.gz.sha256<br>tar xzf mosh-rs-$v-$t.tar.gz<br>sudo install mosh-rs-$v-$t/mosh mosh-rs-$v-$t/mosh-client mosh-rs-$v-$t/mosh-server /usr/local/bin/<br>Download mosh-rs-v0.1.0-aarch64-apple-darwin.tar.gz and install it the same way, with shasum -a 256 -c in place of sha256sum -c.<br>The v0.1.0 macOS mosh launcher cannot connect: it finds no address for any host, so it stops with &quot;Could not connect to HOST, last tried :&quot; and &quot;Did not find remote IP address&quot;.<br>The cause was reading the address family at the Linux position of a C socket address; macOS puts a length byte first.<br>It is fixed on main, and the fix was used for a real session from an Apple silicon Mac (macOS 15.8) to a Linux server over the network, typing a command and quitting with [mosh is exiting.] (STATUS.md).<br>Until the macOS release asset is rebuilt, build from source on the Mac (cargo build --release -p mosh); v0.1.1 carries the fix once it is tagged.<br>The v0.1.0 mosh-server was verified on macOS separately: a Linux client ran a full session against it (INTERVENTIONS.md).<br>- Download mosh-rs-v0.1.0-x86_64-pc-windows-msvc.zip and unzip it.<br>- Keep mosh.exe and mosh-client.exe together in one folder: mosh.exe starts the mosh-client.exe next to it.<br>- In Windows Terminal, run .\mosh.exe user@host from that folder, or add the folder to your PATH.<br>The launcher uses the OpenSSH client that ships with Windows 10 and later.<br>There is no Windows server; the remote host needs mosh-server from mosh-rs or mosh 1.4.<br>The escape key is Ctrl-^, which you type as Ctrl+6 in Windows Terminal, so Ctrl+6 then . quits a session.<br>See Windows for what has been tested.<br>Install with Cargo, which builds from source and needs Rust 1.89 or later:<br>cargo install mosh<br>This installs mosh, mosh-client, and mosh-server into ~/.cargo/bin.<br>On Windows the installed mosh-server.exe only prints that the server is not supported there, as described under Windows (x86_64).<br>Build on Linux with Rust 1.89 or later (the minimum, rust-version in Cargo.toml):<br>git clone https://github.com/Arunjay4213/mosh-rs<br>cd mosh-rs<br>cargo build --release<br># binaries: target/release/mosh, target/release/mosh-client, target/release/mosh-server<br>To build the Windows client, see Building for Windows.<br>mosh-rs builds the same three programs as mosh, with the same names and flags, so existing scripts keep working.<br>mosh user@host                      # connect<br>mosh host -- tmux attach            # run a command instead of a login shell<br>mosh --ssh=&quot;ssh -p 2222&quot; host       # custom ssh command<br>mosh -p 60001 host                  # pin the server&#x27;s UDP port (or a range: 60000:60010)<br>mosh --predict=always host          # local echo even on fast links<br>mosh --local localhost              # run mosh-server locally, without ssh (a host argument is still required)<br>mosh --scrollback host              # keep the session&#x27;s output in your terminal&#x27;s history (needs a mosh-rs server)<br>The most used launcher flags (PLAN.md section 8); mosh --help lists all of mosh.pl&#x27;s options:<br>| Flag | Meaning |<br>|---|---|<br>| --server=COMMAND | mosh-server command on the remote host (default mosh-server) |<br>| --ssh=COMMAND | ssh command used to start the server (default ssh) |<br>| -p, --port=PORT[:PORT2] | server-side UDP port or range |<br>| --predict=adaptive\|always\|never\|experimental | local echo mode ( -a is always, -n is never) |<br>| --no-init | do not send the terminal initialization string |<br>| --local | run mosh-server locally without ssh |<br>| -4, -6 | IPv4 only, IPv6 only |<br>| --scrollback | keep the session&#x27;s output in the local terminal&#x27;s history; needs a mosh-rs server, falls back to upstream behavior with a notice otherwise (new in mosh-rs) |<br>The server takes mosh-server new --scrollback MIB to cap how much undelivered history it holds (default 32 MiB, 0 turns capture off).<br>Environment variables, as in upstream:<br>| Variable | Meaning |<br>|---|---|<br>| MOSH_KEY | session key passed from the launcher to mosh-client; removed from the environment once read |<br>| MOSH_PREDICTION_DISPLAY | default prediction mode ( adaptive, always, never, experimental) |<br>| MOSH_ESCAPE_KEY | the client&#x27;s escape key (default Ctrl-^) |<br>Each cell is six runs of the interop test (PLAN.md section 3, oracle 4), one per screen scenario: a scripted session over loopback through the udp-impair proxy, with the final screen compared against a direct run of the same script.<br>The mosh 1.4 binaries are the Ubuntu 24.04 apt package.<br>| Client / server | Clean | 5% loss | 30% loss, 200 ms, reorder | 2 min blackout | Client roams |<br>|---|---|---|---|---|---|<br>| mosh-rs client / mosh-rs server | ✅ | ✅ | ✅ | ✅ | ✅ |<br>| mosh-rs client / mosh 1.4 server | ✅ | ✅ | ✅ | ✅ | ✅ |<br>| mosh 1.4 client / mosh-rs server | ✅ | ✅ | ✅ | ✅ | ✅ |<br>| mosh 1.4 client / mosh 1.4 server (baseline) | ✅ | ✅ | ✅ | ✅ | ✅ |<br>| mosh-rs client with --scrollback / mosh-rs server | ✅ | ✅ | ✅ | ✅ | ✅ |<br>| mosh-rs client with --scrollback / mosh 1.4 server | ✅ | ✅ | ✅ | ✅ | ✅ |<br>✅ verified by the interop test (INTEROP_FULL=1 tests/interop.sh), six screen scenarios per cell (seq, colors, vim, wide characters, resize, typing), 180 runs in all (120 for the first four rows, 60 for the two --scrollback rows), on an 8-core arm64 Linux VM at commit 728e468 (results in STATUS.md).<br>In the loss columns, loss starts once the session is up; session setup with 30% loss from the first packet is checked separately by tests/interop-setup-loss.sh (40 of 40 setups for the mosh-rs client with the 1.4 server and for the 1.4 client with the mosh-rs server).<br>Upstream&#x27;s own test suite (make check, 32 tests, from the decd9b7 tree) also passes with mosh-rs binaries in every client/server combination (mosh-rs server, mosh-rs client, both): 30 pass and the same 2 expected failures as upstream.<br>Targets from PLAN.md section 5, measured by tools/bench against C++ mosh 1.4.0 (Ubuntu 24.04 package) on the same machine, an 8-core arm64 Linux VM (Neoverse-V1), mosh-rs commit 7cab26f, with target/release/bench --hour.<br>Both implementations run the same scripted workload, alternating run by run; tools/bench/README.md describes it.<br>| Metric | Target | mosh-rs | mosh 1.4.0 |<br>|---|---|---|---|<br>| Idle CPU over 60 s, client and server | 0.0% | 0.00%, 0.00% | 0.00%, 0.00% |<br>| Resident memory after a 1 hour session, client | no more than mosh 1.4.0 | 4.1 MiB | 14.3 MiB |<br>| Resident memory after a 1 hour session, server | no more than mosh 1.4.0 | 2.5 MiB | 9.9 MiB |<br>| Static binary size (aarch64 musl): mosh, mosh-client, mosh-server | under 4 MB | 0.8 MB, 1.2 MB, 1.1 MB | not measured (Perl script and dynamically linked binaries) |<br>| Client startup to its first terminal write | under 20 ms | 1.40 ms | 2.94 ms |<br>| Startup to the first frame, loopback | no slower than mosh 1.4.0 | 252.2 ms | 256.6 ms |<br>| Keystroke to screen with prediction, 300 ms RTT | one render, no visible delay | 0.09 ms, one render | 0.08 ms, one render |<br>| seq 1 100000 until done on screen, loopback | no slower than mosh 1.4.0 | 110 ms | 130 ms |<br>Notes:<br>- The first frame takes about 250 ms in both implementations because upstream&#x27;s round-trip estimate starts at 1 second, which sets the first send interval to its 250 ms maximum; mosh-rs keeps upstream&#x27;s timing.<br>- Part of the memory difference is shared-library pages: the C++ binaries load several shared libraries, the static mosh-rs binaries load none.<br>- All numbers are medians where several runs were taken; the full output, including p90 values and per-run times, is printed by tools/bench.<br>A mosh session has four layers, and mosh-rs ports each one from upstream.<br>- Crypto. Every UDP packet is AES-128 in OCB3 mode with a 16-byte tag, keyed by a secret the server prints once over ssh.<br>- Transport (SSP). Each side keeps numbered snapshots of a state object and sends only the diff from the snapshot the other side last acknowledged, so a lost packet is replaced by a newer diff instead of being resent, and the server adopts a new client address on the first valid packet from it (roaming).<br>- State objects. The client sends keystrokes and resizes; the server sends its terminal screen, encoded as the escape sequences that redraw the client&#x27;s copy.<br>- Frontend. mosh starts mosh-server over ssh, mosh-server runs your shell in a pseudoterminal, and mosh-client draws the mirrored screen plus predicted local echo.<br>local machine                                                 remote host<br>+--------------+     UDP: AES-128-OCB3 + SSP diffs     +--------------+     +-----+     +-------+<br>| mosh-client  | &lt;-----------------------------------&gt; | mosh-server  | &lt;-&gt; | pty | &lt;-&gt; | shell |<br>| (prediction) |   keystrokes -&gt;     &lt;- screen diffs   | (emulator)   |     +-----+     +-------+<br>+--------------+                                       +--------------+<br>^                                                      ^<br>+------- mosh launcher: ssh host -- mosh-server new ---+  (once, to exchange the key)<br>The full design is in docs/ARCHITECTURE.md.<br>Upstream mosh has no scrollback because the client switches the local terminal to the alternate screen and the server discards rows that scroll off.<br>With mosh --scrollback and a mosh-rs server, the server records every row that leaves the top of the screen, and the rows on screen when a program clears it, and sends them as a new protobuf field that upstream peers ignore.<br>The client writes those lines into your terminal&#x27;s normal history, so the mouse wheel and your terminal&#x27;s search work as they do over ssh.<br>Full-screen programs like vim and less run in your terminal&#x27;s own alternate screen, so nothing they draw enters history and the screen from before them comes back when they exit.<br>The screen is always current; history follows a few seconds behind on a large burst (the history of seq 1 50000 arrives in about 9 seconds on loopback), because the server sends at most a few packets of history per round trip so that it survives packet loss.<br>The remote program is never paused for history: if more than 32 MiB of history is waiting (for example while your laptop sleeps during a long build), the oldest undelivered lines are dropped and a dim line in your history says how many.<br>Known limit: changing the window height can lose or repeat a few rows, because terminals keep the bottom of the screen on resize while mosh&#x27;s emulator keeps the top.<br>Against an upstream server, --scrollback falls back to normal mosh behavior and shows a notice.<br>How this is checked: tests/scrollback.sh runs seq 1 50000 through mosh in tmux with a 200,000-line history and compares the captured history with seq line by line, also through 30% packet loss, around vim, less and clear, across resizes, and against an upstream server.<br>The Windows client puts the console into VT mode, so keys arrive as the same escape-sequence bytes a Unix terminal produces and output is plain VT bytes, with no key translation layer.<br>It starts the server with the ssh.exe that ships with Windows 10 and later, and assumes TERM=xterm-256color when TERM is unset, as it normally is on Windows.<br>mosh.exe and mosh-client.exe cross-compile from Linux and need only system DLLs.<br>mosh-server stays Unix-only, as in upstream.<br>The escape key is Ctrl-^, as in upstream; in Windows Terminal you type it as Ctrl+6.<br>So Ctrl+6 then . quits the session.<br>Tested by hand on a Windows machine in Windows Terminal against a Linux server (INTERVENTIONS.md): connecting, typing, ls --color, vim, UTF-8 output, Ctrl-C, resizing and quitting all worked, and a session survived turning Wi-Fi off and on.<br>The Wi-Fi off-and-on test was accepted as the network-loss check for the Windows client in place of a sleep-and-wake test, because both cut the network under a live session and mosh recovers from either the same way.<br>Sleeping and waking the Windows machine has not been tested.<br>Not tested yet: Ctrl-^ Ctrl-Z and idle CPU on Windows.<br>Correctness is proven against upstream&#x27;s own C++ code, not by unit tests. Each check is a program that can be run, and the results go into STATUS.md.<br>- Reference oracles. Small C++ harnesses linked against the upstream build dump the emulator&#x27;s screen, new_frame output, and encrypted packets; the Rust versions must produce byte-identical output.<br>- Differential fuzzing. Generated escape-sequence inputs (one run of 1,000,000 and several of 200,000, plus random screen pairs for new_frame) run through both emulators; any mismatch is minimized and fixed.<br>- Recorded session corpus. Ten recorded sessions (bash, vim, less, htop, tmux, the Claude Code TUI, seq, a resize, 256-color and truecolor, wide characters and emoji) and 17 inputs from upstream&#x27;s own emulation tests, replayed through both emulators.<br>- Interop matrix. Rust and C++ clients and servers in every combination, under loss, delay, reordering, blackouts, and roaming.<br>- Upstream&#x27;s test suite. make check in upstream mosh, with mosh-rs binaries swapped in.<br>- End-to-end and comparison tests. The real binaries, mostly driven in tmux, with most cases also run with the C++ program for comparison: client, server, prediction timing at 300 ms round trip, the launcher&#x27;s options and messages compared with /usr/bin/mosh (73 cases), terminfo answers for every terminal type, and a hostile scrollback server.<br>- Scrollback oracle. seq 1 50000 through mosh-rs inside tmux must appear in history exactly, with no gaps, duplicates, or blank lines, including under 30% loss, a vim excursion, clear, and a width resize (height resizes have the known limit above).<br>- Benchmarks. Side by side with C++ mosh 1.4.0 in the same harness.<br>The port was produced by AI coding agents working from the upstream mosh source under a written plan, PLAN.md. Every module was checked against upstream&#x27;s own code by differential testing, as described in How correctness is checked, and reviewed line by line against the upstream code it was ported from. The complete record of the work is in this repository:<br>- PLAN.md: the plan the port follows, including the allowed differences from upstream.<br>- STATUS.md: the status log, with the commands run and their measured results.<br>- INTERVENTIONS.md: every time the work needed outside help or departed from the plan.<br>- reviews/: the code reviews and how each finding was resolved.<br>| Path | What it holds | Ported from |<br>|---|---|---|<br>| crates/terminal | VT parser, framebuffer, Display and new_frame; pure Rust, no I/O | src/terminal |<br>| crates/network | OCB3 crypto, protobuf messages, SSP transport | src/crypto, src/network, src/protobufs |<br>| crates/platform | local tty, pseudoterminal, process spawning, UDP sockets, the select loop; the only platform-specific crate | src/util, src/frontend, src/network (sockets) |<br>| crates/mosh | state sync, client, prediction overlay, server, launcher; builds mosh, mosh-client, mosh-server | src/statesync, src/frontend, scripts/mosh.pl |<br>| ref/ | C++ oracle harnesses linked against the upstream build (not shipped) |  |<br>| tools/ | udp-impair, corpus recorder, bench (not shipped) |  |<br>| tests/ | end-to-end and conformance tests; tests/run-all.sh runs them all |  |<br>| scripts/ | upstream build for the oracles, static release build, CI helpers |  |<br>Contributions are welcome, with one strong rule: behavior matches upstream mosh master (decd9b7, March 2026) exactly, except for the deviations listed in PLAN.md section 9. Read CONTRIBUTING.md before opening a pull request, and the Code of Conduct before joining a discussion.<br>Please do not report vulnerabilities in public issues. See SECURITY.md for private reporting.<br>mosh-rs is licensed under the GNU General Public License v3.0 or later, because it is a port of mosh, which is GPLv3.<br>mosh was created by Keith Winstein and the mosh authors. The protocol, the emulator design, the prediction overlay, and the test suite that mosh-rs is checked against are their work. See mosh.org, the upstream repository mobile-shell/mosh, and the paper &quot;Mosh: An Interactive Remote Shell for Mobile Clients&quot; (Winstein and Balakrishnan, USENIX ATC 2012).<br>mosh-rs is an independent project and is not affiliated with or endorsed by MIT, Keith Winstein, or the mosh maintainers. Please report mosh-rs bugs here, not upstream.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    17 points ·
+    6 comments ·
+    niztk
+  </div>
+
+  <div class="meta">
+    pulseos.finance
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #5 · New #29
+  </div>
+
+  <div class="links">
+    <a href="https://pulseos.finance">Original article</a> · <a href="https://news.ycombinator.com/item?id=50080275">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Budgeting that never<br>leaves your machine.<br>Pulse Local is a complete budgeting app, with a chat that answers from your own figures.<br>Other apps keep your ledger on their servers, or send your questions to someone else&#x27;s model. We keep both on your machine.<br>“Local” usually means your data.<br>Not your question.<br>Your ledger sits on your disk. Then you ask something, and the question plus the rows that answer it go to a hosted model.<br>Your ledger<br>Stays<br>Every local-first app does this much.<br>Your question<br>Sent, on most<br>A privacy policy promises not to train on it. The question still leaves your machine.<br>Pulse Local<br>Both stay<br>The models are files next to your ledger. There is no endpoint to send to.<br>Ask about your money.<br>Keep the conversation private.<br>Find out where your money went, compare months, or check what is left in your budget. Supported spending answers are calculated from your transactions and read twice before a figure is shown.<br>Private<br>chat stays on your machine<br>your questions are not sent to an online AI service<br>Yours<br>answers from your own transactions<br>ask about your own shops, categories and months<br>Explained<br>see what was counted<br>check the details behind a spending answer<br>Check the month and category. Labels above spending answers show what Pulse included. Select one to change it.<br>Keep the conversation going. Ask “by merchant” for a breakdown, or name another month to compare.<br>Your decisions stay yours. Pulse explains your figures and everyday budgeting terms. What to do about them is up to you.<br>Know the limits. Pulse can misunderstand a question. When its two readings disagree it says it is not sure instead of guessing, and AI answers are labelled.<br>See what you can ask.<br>Then make it your own.<br>These are real replies from the app, run on sample transactions. The follow-up questions show how to break an amount down or compare it with another month.<br>Pick a question on the right. The replies are real: each one came out of the app, answered against a sample ledger.<br>Questions<br>A complete budgeting app.<br>Not a privacy demo.<br>Plans and targets, rules, rollover, splits, cash flow, forecast. It covers the ground the most used budgeting apps cover, and does all of it on your machine.<br>Spending. One figure for the month, and every category against its plan. Sample data.<br>The money maths was checked against six months of a real ledger, month by month, and matched to the cent.<br>Local mode is global.<br>Pick your country once and the ledger is kept in your currency, any of the world’s. Every figure is written the way you write it, 1.234,56 € in Berlin and ¥1,311 in Tokyo, and a bank file from anywhere imports: day-first dates, decimal commas, a header in your own language picked by hand. Nothing is converted, ever. The app answers in English.<br>75<br>countries in the picker, every currency in the file<br>symbol, grouping and decimal mark the way that country writes money<br>0<br>exchange rates<br>one currency per ledger; a file in another one lands as written, and the import says so<br>1<br>language<br>the chat reads and answers in English; bank files import in any language<br>Same app. Any price.<br>You pick.<br>We are a small team of ML practitioners and product people. Once Pulse Local is on your machine it costs us nothing to run, so you can help us keep doing this, or use it for free. Every feature, either way.<br>Research<br>We tune small open models to answer money questions on your machine, benchmark them against cloud models in the open, and publish the weights.<br>Our tuned model, on Hugging Face<br>The app<br>A complete budgeting app: plans, rules, splits, cash flow, forecast, and a chat that answers from your own figures. Every feature, at every price.<br>What is next<br>Windows, bank sync for more people, and the answers the model still gets wrong.<br>Every button ends at the same download; the paid ones come straight back here with it ready. One payment, not a subscription, and nothing in the app checks which one you chose. Bank sync is the one thing with a running cost on our side, so it is the one thing with a price of its own: the Sync Pass, $29 a year.<br>Beta for Mac with Apple Silicon, signed and notarised by Apple, so it opens like any other app and keeps itself up to date. On Windows? Tell us and we will write when it is ready.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Hackers activate automatic defrosting in supermarket fridges across Europe
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    881 points ·
+    983 comments ·
+    Zeekaas
+  </div>
+
+  <div class="meta">
+    tomshardware.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #58
+  </div>
+
+  <div class="links">
+    <a href="https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident">Original article</a> · <a href="https://news.ycombinator.com/item?id=50055304">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">An ongoing cyberattack has reportedly struck major supermarket chains across Europe, disrupting refrigeration control systems. The attack — which has reportedly seen units set to continuously defrost at 50 degrees Celsius — is also apparently affecting deliveries and in-store pricing powered by electronic shelf labels, La Dépêche reports.<br>According to the report, &quot;several&quot; major retailers have been targeted by a cyberattack, which has hit Danfoss-made refrigeration controls used by French supermarkets Intermarché, Leclerc, and Coopérative U. Indeed, the latter&#x27;s president, Dominique Schelcher, has confirmed as of Monday morning that &quot;A cyberattack has been affecting the refrigeration production facilities of several stores in our network since last night.&quot; Schelcher said teams had been mobilized to fix the issue and promised an investigation into the incident, which he described as &quot;extremely serious.&quot;<br>The report states the units have had their automatic defrosting systems activate, but that hackers have also configured the function — which normally runs for just two hours a day — into a continuous, forced defrosting cycle with the temperature set to a toasty 50 degrees Celsius. Sources reportedly described &quot;a wave of heat&quot; escaping from fridges and freezers<br>Early reports indicate losses are already approaching 300,000 euros, but could run into several million euros nationwide. Separately, NOS in the Netherlands reports that several supermarket chains have been hit with a malfunction due to a cybersecurity incident on Sunday afternoon. Albert Heijn, Etos, and Gall &amp; Gall have had their websites taken down, impacting deliveries. Electronic shelf labels have also been compromised, disrupting in-store pricing. &quot;We have immediately taken measures to protect our IT environment. Part of this involves the preventive temporary shutdown of a number of systems,&quot; Albert Heijn said in a statement.<br>It is unclear at this stage whether the two attacks are related or how widespread either of them is. Belgium&#x27;s Delhaize chain, which belongs to Albert Heijn, has also reported disruption. Images online show stores in Amsterdam warning customers about price problems, and the suspension of loyalty programs that have also been impacted by the incident.<br>Get Tom&#x27;s Hardware&#x27;s best news and in-depth reviews, straight to your inbox.<br>Stephen is Tom&#x27;s Hardware&#x27;s News Editor with almost a decade of industry experience covering technology, having worked at TechRadar, iMore, and even Apple over the years. He has covered the world of consumer tech from nearly every angle, including supply chain rumors, patents, and litigation, and more. When he&#x27;s not at work, he loves reading about history and playing video games.<br>-<br>They want those appliances to be online for a single reason: spyware.<br>They want to be able to track our habits so they can sell the data to advertisers. If they lose more money because of hacking attacks like this than they make by selling our data, they may reconsider their commercial strategy.<br>I have been looking for a dumb TV recently for my Switch 2. Unable to find anything. They are all &quot;smart&quot;, so more spying machines than actual TVs. Thinking that this is also happening to fridges and laundry machines is terrifying. Reply<br>-<br>JayGau said:They want those appliances to be online for a single reason: spyware.<br>They want to be able to track our habits so they can sell the data to advertisers. If they lose more money because of hacking attacks like this than they make by selling our data, they may reconsider their commercial strategy.<br>I have been looking for a dumb TV recently for my Switch 2. Unable to find anything. They are all &quot;smart&quot;, so more spying machines than actual TVs. Thinking that this is also happening to fridges and laundry machines is terrifying.<br>They can do all that stuff without having to connect to the internet. Just log the data locally and then deal with it on a private server later on. As for smart TVs, just buy one and dont connect it to wifi and dont plug in a lan cable Reply<br>-<br>jp7189 said:Monitoring, logging, alerting, and control of temps that directly correlate to spoilage and lost revenue.. yeah.. cant see any reason a multinational supermarket chain would want that... /sBut there&#x27;s a difference between passive monitoring vs. the ability to do remote control. Clearly, the potential for exploits didn&#x27;t factor into somebody&#x27;s calculus, when they decided to add features for remote control.<br>I hope the short-term fix is simply to power-cycle the fridges and disable their online connectivity. Reply</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Ask HN: Do you want a router that has DD-WRT pre-installed?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    152 points ·
+    146 comments ·
+    Ixander
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50039291">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I sometimes run across comments where someone says they want an open-source router. I wonder if this is a viable idea for someone to start as a small company. What makes me hesitant is that, first, it looks like this already exists in several wireless and non-wireless routers (like the GL.iNet Flint or OpenWrt One), and second, I assume hackers would just make their own.<br>I have been flashing DD-WRT to my routers for many years. My current setup is an Archer C9 that connects via cable to an Archer C8, which then wirelessly bridges to an R7000. All of them run DD-WRT. If I had &quot;fun money,&quot; I would buy a low-power SFF PC with dual NICs, run OPNsense or OpenWrt, and use the wireless routers strictly as access points. Since I don&#x27;t have that much to spend, I look for older DD-WRT friendly routers, usually under $30, on Craigslist or Facebook Marketplace, and flash them myself.<br>I see that Ubiquiti and MikroTik make quality routers with proprietary OSes for around $65 new. Protectli and Netgate offer pfSense routers starting at $259.00. The GL.iNet Flint 2 is $169.00, and the OpenWrt One is $89.<br>According to ResellBot (because eBay now requires a login to see sold listings with prices), the sold &quot;DD-WRT Routers&quot; generally go for under $160. These include the WRT3200ACM, Netgear AC1750, Linksys EA9300, and Linksys R7350.<br>When I asked an AI how I would go about judging interest, building, raising funds, and manufacturing, it seems doable but expensive (said $125,000 minimum in total made up of $30,000 for regulatory approval, engineering and protoyping $10,000+) and time-consuming just to get to a &quot;golden prototype&quot; for demos.<br>So if I were a &quot;hacker&quot; and wanted an open-source router, depending on my funds, I would either:<br>1. Flash DD-WRT to an existing router (used or new).<br>2. Buy one with it already installed, like the OpenWrt One or a Protectli device.<br>3. Get an SFF PC and build my own.<br>I remember when some comments about DropBox said it was a waste because any hacker could make that. I also know DropBox was marketed to the average person and businesses. I don&#x27;t really see how a hacker friendly router could take off like that unless hackers are choosing the hardware and setting up the networks for average people. And I assume that most people setting up the networks want different qualities like brand name recognition, ease and speed of purchasing equipment (Walmart or BestBuy), and the ability to point a customer or family member to the number of solid reviews and articles saying it a good router to qualify their choices.<br>So, do you actually want a router that you can buy with DD-WRT pre-installed?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    What a Jurassic forest may have sounded like
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    3 points ·
+    0 comments ·
+    gmays
+  </div>
+
+  <div class="meta">
+    science.org
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.science.org/content/article/what-jurassic-forest-may-have-sounded">Original article</a> · <a href="https://news.ycombinator.com/item?id=50080783">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ledger confirms spy chip implant behind wallet crypto thefts
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    394 points ·
+    306 comments ·
+    thm
+  </div>
+
+  <div class="meta">
+    bleepingcomputer.com
+  </div>
+
+  <div class="meta ranks">
+    Top #3 · Best #16
+  </div>
+
+  <div class="links">
+    <a href="https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50054092">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Ledger has confirmed that some of its devices distributed through Southeast Asian reseller CryptoBilis were compromised with a hardware implant that drained users&#x27; cryptocurrency wallets.<br>The company has been investigating reports of users losing funds from wallets purchased through CryptoBilis, a major Malaysia-based hardware wallet retailer operating across Southeast Asia.<br>Some researchers have shown the implant in Ledger X since September 16, saying tampered devices were available for nearly half the price of the original hardware.<br>Ledger wallets are physical devices designed to securely store the private keys that control cryptocurrency assets and authorize transactions.<br>On October 9, Ledger said it had launched an investigation into user reports of cryptocurrency losses and asked CryptoBilis to stop selling and shipping Ledger devices.<br>The next day, the company confirmed hardware tampering on at least one device, though it’s still unclear exactly how or when the devices were tampered with.<br>&quot;Ledger can confirm that one of the impacted users’ devices contained an unauthorized hardware implant. Ledger is reaching out to impacted users as part of the ongoing investigation,&quot; Ledger said.<br>The crypto wallet maker also noted that it was working with authorities to identify the perpetrator and bring them to justice.<br>“[...]Ledger recommends users who purchased a Ledger device from this reseller to not initiate set up if they have not yet done so. If you have set up your Ledger device, consider moving assets to a new Ledger signer (with a new seed),” warned Ledger.<br>Yesterday, Ledger provided another update, confirming that all user reports of unexpected fund drains were linked to devices sold through CryptoBilis and describing the affected volume as “limited.”<br>While the company did not disclose the type of devices compromised in this supply-chain attack, reports online talk about a spy implant in Ledger X devices that blends with the legitimate hardware.<br>Mark Karpelès, currently leading Karpeles Lab Inc. and CTO at Shells.com, showed a picture of the new implant in Ledger X, saying that it was &quot;quite an evolution&quot; from previous versions featuring manually soldered wires.<br>The former CEO of Mt. Gox said the implant was concealed behind the screen, but its antenna cable would have indicated that something was wrong.<br>According to Karpelès, the malicious hardware captured the device&#x27;s display output and button presses to identify the seed phrase, then transmitted it to the attacker over an LTE connection using an eSIM.<br>&quot;Ledger Nano X are used to store crypto. The spy implants are used to steal whatever crypto you store in those Ledger Nano X,&quot; Karpelès explained.<br>Although the CEO did not name CryptoBilis as the vendor of the compromised LedgerX, he said the device was not purchased via Ledger&#x27;s recommended channels but from &quot;a well known platform via a Chinese seller (product shipped from Malaysia).&quot;<br>Tibane Labs, a cryptocurrency research and development studio, confirmed Karpelès&#x27; finding, adding that there were two implant versions for Ledger X.<br>The researchers obtained two variants, one in a Ledger device bought on Amazon Japan from &quot; China-based seller · shipped from Malaysia,&quot; the other purchased on Yahoo! Auctions, Japan.<br>In a report over the weekend, Tibane Labs notes that the threat actor made room for the malicious circuitry by replacing the original battery with a smaller one, which powers both the implant and the Ledger X.<br>&quot;Under the battery and antenna sits an ST STM32G431KBU6 (Arm Cortex‑M4, 128 KB flash, UFQFPN‑32),&quot; the researchers found inside one of the devices.<br>For connectivity, the actor used &quot;a tiny eSIM, an 8‑pad package just 2×2 mm, next to the MCU, and a shielded LTE module that sends the words out.&quot;<br>In the second hardware wallet analyzed, Tibane researchers found that markings on both the MCU (Microcontroller Unit) and the eSIM had been scraped off to hide the part numbers.<br>The second variant, which appears to be the same one that Karpelès described, is more advanced. It ran on the original battery and fit into the space normally occupied by the foam padding under the OLED display.<br>In both cases, the tell tale was the antenna wire, which ran along the top edge in the case of the second implant. In the first implant, the antenna is taped across the top of the battery and the shielded LTE module.<br>The researchers warned that the specimen above used &quot;a designed, panelised flex PCB, the kind ordered from a board house, not a hand-built one-off.&quot;<br>Ledger is advising users to avoid purchasing from unauthorized resellers as they run an increased risk of getting counterfeit or modified devices.<br>The company is also reminding its authorized resellers and distributors to get the products only through authorized channels and to avoid restocking returned products.<br>Ledger provides a ‘Genuine Check’ mechanism to determine the authenticity of the device; however, it explicitly warns that it cannot detect added implants when the device’s original Secure Element remains intact.<br>At this time, there’s no indication that any other Ledger resellers are shipping compromised wallets; however, the community’s trust in the resellers’ network has been compromised, with many now calling for its dismantling.<br>Join Mikko Hyppönen and security leaders from the NFL, CHANEL, and Atlassian for a two-hour digital summit on what AI-speed attacks change, what defenders should stop doing, and how to validate, decide, fix, and re-validate at machine speed.<br>Save your seat</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Show HN: Parsimony – an open-source benchmark for how much code AI models add
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    35 points ·
+    3 comments ·
+    lasu
+  </div>
+
+  <div class="meta">
+    parsimony.lasu.dev
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · Top #22
+  </div>
+
+  <div class="links">
+    <a href="https://parsimony.lasu.dev/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50077619">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">def has_negative(values):<br>found = False<br>for value in values:<br>if value &lt; 0:<br>found = True<br>return found<br>Parsimony<br>Existing benchmarks measure solve rate and cost, but don&#x27;t punish excess code, which makes a codebase harder to work with in the long term. Parsimony measures how much code AI models add.<br>It takes the patches that benchmarks already publish and counts coding units: syntax elements like statements, calls, comparisons, names and literals. Lines aren&#x27;t counted, so cramming code isn&#x27;t rewarded, and deleted code is subtracted: net units = added − removed.<br>Compare models<br>How to read this<br>Models are ranked by mean net units added on the tasks they solved, lowest first. &quot;Net units added (mean)&quot; also includes failed attempts. Solved comes from SWE-bench Verified; tests aren&#x27;t rerun. Measured is how many solved attempts could be measured.<br>The Artificial Analysis Intelligence Index is an outside score, matched by model and reasoning effort. It doesn&#x27;t affect the rank.<br>Faded models were run by me on the first 3–10 DeepSWE Python tasks (OpenAI models with pi, Anthropic models with Claude Code) and graded with each task&#x27;s own tests. They aren&#x27;t verified or ranked. GPT-5.6 Sol ran both ways: my run added 0.88× the code of its published run.<br>Leaderboard<br>| Rank | Model |  |  |  |  |<br>|---|---|---|---|---|---|<br>Data sources<br>Hashes<br>Method<br>- Each patch is applied to the task&#x27;s code, and both versions of every changed file are parsed. Nothing is run.<br>- Tests, docs and generated files are left out. Only Python is measured.<br>- Pass/fail comes from SWE-bench&#x27;s published results; tests aren&#x27;t rerun.<br>Limits<br>- Smaller isn&#x27;t always better: units measure size, not readability or design.<br>- Models that write more code also tend to solve more tasks (Spearman 0.33–0.60 on the boards with 26+ models).<br>- Every model uses the same agent (mini-SWE-agent), but the agent still affects how much code gets written.<br>Add your own benchmark<br>Have code-size numbers from another benchmark? Download the example file, fill in your results and open it to get the same chart and table. The file stays in your browser. Format and how to share it.<br>Example: check for a negative number<br>Both return the same result.<br>def has_negative(values):<br>return any(value &lt; 0 for value in values)</div>
+</div>
+
+</div>
+
+</body>
+</html>
