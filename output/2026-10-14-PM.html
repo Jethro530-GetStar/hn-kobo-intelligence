@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-14 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-14 PM · Generated 2026-10-14 22:35 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: anthropic.com, deepmind.google, github.com, guitoro.com, maximus.ethosoft.net, museumofages.org, news.ycombinator.com, reddit.com, typeof.net</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Guitoro, a virtual guitar you strum with your keyboard
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    506 points ·
+    136 comments ·
+    talccc
+  </div>
+
+  <div class="meta">
+    guitoro.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #10 · Best #12
+  </div>
+
+  <div class="links">
+    <a href="https://guitoro.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50077020">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Loading guitar<br>The most realistic virtual guitar online<br>Guitoro is the most realistic and the most complete virtual guitar you can play online, free in your browser. Play it with your computer keyboard, your left hand on the chords and your right hand strumming, or swipe the strings with your finger on a phone or tablet. Choose a steel-string acoustic, a classic guitar, an electric guitar or a four-string bass.<br>It&#x27;s also a way to learn chords and songs that a chord chart or a video lesson can&#x27;t show you. Each song plays its best-known part close to the original recording, stroke for stroke. Slow it down to 20% and watch it being played: each string lights up the moment it&#x27;s hit, the pick swings down and up with the strum, and the neck shows which finger goes where.<br>Then it&#x27;s your turn. No guitar? Play the song on the keys or the screen, and it waits for you at every chord change. Have a guitar? Pick it up and play along at your own speed, with the strings, the strum and the fingering right in front of you.<br>Every guitar and bass note is a recording of a real instrument. There&#x27;s nothing to download and no account to create. If you played the Google guitar doodle, Guitoro takes the idea further: six real strings, 15 chords in every key, and 51 songs to play along with.<br>Play<br>No guitar needed. Guitoro is built to be played, not just clicked, on whatever you have in front of you.<br>Your left hand holds a chord on the letter keys and your right hand strums with H and J, the way you&#x27;d play a real guitar. 15 chords sit under your fingers, plus keys for arpeggios, single strings, chucks and palm mutes.<br>On a phone or tablet, tap a chord pad and swipe the strings with your finger. Up to five fingers at once, and you can tap the frets on the neck to play single notes.<br>Drag across the strings. A fast swipe plays louder, a slow drag rolls the notes one by one, and a click plucks a single string.<br>On a computer, switch to Solo and every keyboard row becomes a string and every column a fret, with bends and vibrato on the arrow keys.<br>Learn by watching<br>In a video lesson the hand moves fast and hides the strings, so you can&#x27;t tell which ones were really hit. Guitar apps teach the basic chords and stop there. Guitoro plays the song&#x27;s real part on the guitar in front of you, at the speed you choose, and shows exactly what the hands do. Then you play it, on the virtual guitar or on your own.<br>Each song plays its best-known part close to the original recording, stroke for stroke. Slow it anywhere from 20% to full speed and the chords, the strum and the band slow down together.<br>Each string lights up the moment it sounds, then vibrates as it rings. You can see whether a stroke hits all six strings, just the bass strings or only the top three.<br>Over a strummed part, the pick swings down and up like a real strumming hand, once per step of the pattern. Solid swings hit the strings and faint ones miss them, so you see the hand keep moving through the gaps.<br>While a chord rings, the neck shows it: finger numbers from 1 to 4, barres, muted strings and the capo. Copy the shape onto your own guitar.<br>Play a song&#x27;s chords on the keys or the screen and it follows you. The keys show its chords in order, the next one lights green, and the song holds until you play it. No score and no rush.<br>Watch a part slowly, copy it on your guitar, then play along as you raise the speed. On a computer, choose My guitar: the on-screen keys step aside and the song box shows the strum or picking pattern, a chord strip you can click to jump around, and the speed.<br>Realism<br>Most online guitars only let you click single strings or frets, or play a synthesized tone when you click a chord. On Guitoro you strum: swipe across the strings or use the keys, and every string sounds as you cross it, from recordings of real instruments.<br>Every guitar and bass note is a recording of a real instrument: a steel-string acoustic, a classic guitar with nylon strings, a solid-body electric on its bridge pickup, and a four-string bass.<br>Each string sounds as your finger or mouse crosses it. Swipe down or up, fast or slow, and you hear the difference, down to a slow roll across the strings.<br>Chords use the shapes guitarists play, with open strings, barres and muted strings, so a G sounds like a G on a guitar, not on a keyboard.<br>Chucks, palm mutes, hammer-ons, pull-offs, bends and vibrato, while the strings vibrate on screen as they ring.<br>Use cases<br>Strum real chords and play whole songs with your computer keyboard or your fingers, with a backing band behind you. On a train, at the office or on the sofa, a laptop or a phone and headphones are enough.<br>Songs like Wonderwall, Hallelujah and Let It Be come set up with the right key, capo, tempo and the strum from the record. Lead the chords from the keys, or pick up your own guitar and play along at any speed.<br>Slow a song&#x27;s strum down, watch which way the pick moves on every beat, then strum it yourself over a drum beat until it feels steady.<br>See where each finger goes, hear how the chord should sound, then copy the shape on a real guitar. Every chord also has its own page in the guitar chord chart.<br>Paste the chords of a song from a chord site and hear how it goes before you sit down to play it.<br>Type a chord progression under My songs, loop it with the backing band, and record the idea before it&#x27;s gone.<br>Show a class a chord shape or a strum on a big screen, slowed down, with every string and every pick stroke visible.<br>Singers, keyboard players and songwriters can hear how guitar chords are voiced and see how a progression lies on the fretboard, without learning to hold a guitar first.<br>Features<br>The most complete virtual guitar online: four instruments, every key, real chord shapes, songs, a backing band and recording, all free in one place.<br>Steel-string acoustic, classic guitar, electric and four-string bass, each built from recorded samples. Pick a recording for the acoustic (Warm, Bright or Mellow) and the classic (Natural or Concert), and presets for the electric, from Clean to Crunch, Classic Rock, Metal, Lead and Ambient.<br>Pick any of the 24 major and minor keys and the chord keys fill with the chords that fit it: the main chords, sevenths, and sus, add9 or sus2 colors. Edit puts any chord you type, like F#m7 or Dsus2, on a key.<br>While a chord rings, the neck shows finger numbers, barres, muted strings and the capo. Standard is the shape most players learn first, Easy swaps a barre chord for a smaller shape, and Up plays the same chord higher up the neck.<br>51 songs and classical pieces come set up to play, from Wonderwall and Hotel California to Canon in D. Slow them to 20%, lead their chords from the keys, or play along on your own guitar.<br>14 everyday strums from Steady downs and the pop staple D DU U DU to shuffle and 6/8, 4 styles (reggae, funk and country), 26 more rhythms drawn from real songs, and 12 picking patterns like Travis and classical p-i-m-a. Choose one and you hear it straight away.<br>Drums, bass and strings that follow your chords: 15 drum styles, including rock, funk, reggae, bossa nova and cajon, and 25 bass lines. The Band switch next to Play turns them on. Tempo goes from 10 to 220 BPM, with a metronome.<br>Paste a song from a chord site or as ChordPro text, pick a strum, and Guitoro plays it with the band. Write &quot;x2&quot; to repeat a line or a part. Lyrics are left out, and your songs stay in your browser.<br>Play single notes and melodies on the neck from the computer keyboard, with hammer-ons, pull-offs, bends and vibrato.<br>Overdrive, distortion and fuzz on the electric, plus bass, mid and treble, room or hall reverb, and delay on every instrument.<br>10 tunings, from Standard, Drop D and half step down to DADGAD and Open G, D and E, a capo up to fret 10, and a left-handed guitar.<br>Record takes of up to 10 minutes with the band, replay them and save them as WAV or a small compressed file. Takes stay in your browser.<br>A free guitar tuner that listens through your microphone, with pages for drop D, open tunings, the bass and the ukulele.<br>Getting started<br>From silence to a song you lead yourself. The first two steps take a few seconds.<br>Pick Acoustic, Classic, Electric or Bass at the top of the page. On a phone, tap the guitar picture. You can switch at any time.<br>Tap a chord pad, or press its letter on the keyboard. The default key is G major, so the middle row, A S D F G, holds G, C, D, Em and Am. Auto strum starts on, so the chord strums itself.<br>Turn Auto off, then swipe down across the strings for a downstroke and up for an upstroke. On a keyboard, H strums down and J strums up.<br>Open the Strum menu and pick a strum or picking pattern. You hear it once on your chord. With Auto and Loop on, it keeps playing while you hold a chord key.<br>Open Songs &amp; recordings and pick a song. Press Play to hear it, or press the chord key that lights green to lead it yourself. The tempo button next to Play slows it down.<br>Turn on the Band switch next to Play. Its edit button opens Backing band, where you choose the drums, the bass line and the strings.<br>Open Songs &amp; recordings, choose Recordings, and press Record. Play, then use Stop next to the recording timer. Your takes stay in Recordings.<br>Keyboard<br>Your left hand holds the chords and your right hand strums, just like on a guitar. Keys follow their physical position on a US QWERTY keyboard, and every key on screen shows its letter.<br>| Chords | Three rows of five: A to G for the main chords, Q to T for sevenths, Z to B for more chords and colors like sus4 and add9 |<br>|---|---|<br>| Strum | H down, J up, K down when pressed and up when released, N hard down, M slow down |<br>| Pick | Y arpeggio, U bass note, I O P the top three strings |<br>| Feel | L chuck, ; palm mute, Shift hard strum, Alt slow strum |<br>| Songs | The chord keys show the song&#x27;s chords in order and the next one lights green. With My guitar on, Space plays and pauses the song |<br>| Solo mode | Each row is a string and each column a fret. Left and Right arrows move up and down the neck, Up bends, Down adds vibrato |<br>Learn chords<br>In the key of G these four chords sit on the middle row of keys, and together they play hundreds of pop and folk songs. Press each one and watch the neck: the numbers are your fingers, from 1 for the index to 4 for the little finger. An X marks a string you don&#x27;t play, and a bar across the strings is a barre.<br>Play C, then Am. The chord name above the guitar tells you which is major and which is minor, and your ear learns the bright and the sad sound. Do the same with the sevenths on the top row.<br>Put your fingers where the dots are, strum, and compare your sound with Guitoro&#x27;s. A buzzing or dead string usually means a finger is too far from the fret or touching the next string. Many barre chords have an Easy version for while your hand gets stronger.<br>Open Songs &amp; recordings and pick a song, or paste one under My songs. Press each chord key as it lights green: the song waits for you at every change. Start slow, then raise the speed a little at a time.<br>Switch the key to hear the same chords higher or lower, or in a minor key. Put a capo on in Settings and the same shapes sound higher, which is how guitarists play in keys like A or B with easy open chords. Drop D and Open G show how a tuning changes the whole sound.<br>Low E string on the left. Numbers are fingers, O is an open string, X is a string you don&#x27;t play.<br>Learn strumming<br>Strum patterns are written with D for a downstroke and U for an upstroke, and x for a muted chuck. The trick is to keep your hand moving down on every number and up on every &quot;and&quot;, even when it misses the strings. In Guitoro you can watch the pick do exactly that.<br>Counted &quot;1, 2 and, and, 4 and&quot;: the down on beat 3 is left out, but the hand still moves.<br>Choose a pattern from the Strum menu and you hear it once on your chord. The menu shows each pattern as a grid of downs and ups.<br>Open a song with the strum you want and slow it to 50% or less. The pick swings down on the numbers and up on the &quot;and&quot;s: solid when it hits the strings, faint when it misses. The strings light up to show which ones each stroke hits.<br>Turn Auto off, turn on the Band switch or the metronome, and strum along with H and J or by swiping the strings.<br>Record a take and listen for uneven strokes. When it sounds steady, speed up.<br>Steady downs, then Down-up eighths, then the pop staple, then 6/8 ballad and Shuffle. After that, open songs like Wonderwall, Hallelujah and Knockin&#x27; on Heaven&#x27;s Door and strum their own patterns.<br>Songs<br>Each song page has its chords with diagrams and its strum or picking pattern written out, and sets the guitar up for you: key, capo, tempo and chords. The easy guitar songs page groups them by how many chords they have.<br>Playing a real guitar along? The free online guitar tuner listens through your microphone, with pages for drop D, half step down and open tunings. There is a free ukulele tuner too.<br>Every major, minor and seventh chord in all 12 keys, with finger charts and an easier version where there is one: the guitar chord chart. Search any chord there, hear it strummed, and open it on the guitar.<br>FAQ<br>Yes. It runs in your browser with no download and no sign-up.<br>A video shows a teacher&#x27;s hand from one angle, at one speed, and the hand hides which strings it hits. Guitoro plays the song&#x27;s part close to the original recording on a guitar you can see whole: each string lights up as it&#x27;s hit, the pick shows every down and up stroke, and you set the speed. Then you play it yourself and the song waits for you.<br>51 songs and classical pieces, from Wonderwall, Hotel California, Let It Be and Perfect to Canon in D and Für Elise, each with its key, capo, tempo and strum or picking set up. See them all on the easy guitar songs page, or paste your own from a chord site.<br>Yes. Tap a chord pad and swipe the strings. In portrait, the enlarged neck sits below the strings with four frets per page. In landscape, the neck and strings sit side by side. Tap the frets to play single notes. Solo mode and My guitar need a computer.<br>Yes. The left side of the keyboard holds 15 chords and the right side strums, picks and mutes. See the table above.<br>Press the tempo button next to Play and drag the speed, from 20% to full speed. The chords, the strum, the pick on screen and the band all slow down together.<br>Yes, as a guide next to your guitar. It shows you what to play and how it should sound: the chord shapes and fingers, which strings each stroke hits, which way to strum, and whole songs at any speed. Watch it slowly, copy it on your guitar, then play along. It can&#x27;t hear you or check your hand, so listen to yourself and compare with Guitoro.<br>Yes, on a computer. Pick a song and answer &quot;Yes, my guitar&quot;, or switch to My guitar at the top of the page. The on-screen keys step aside, the speed goes down to 20%, and Space starts and stops the song. Tune up first with the online tuner.<br>Browsers only start sound after you touch the page, so tap a chord pad or a string first. Then check the device volume and the tab&#x27;s sound. Bluetooth headphones can add a delay, and wired headphones or speakers fix it.<br>In this browser, on this device. Export the takes you want to keep as WAV or a compressed audio file before you clear browser data or switch devices.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Gemini 4 Argon
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1374 points ·
+    977 comments ·
+    737max
+  </div>
+
+  <div class="meta">
+    deepmind.google
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #14
+  </div>
+
+  <div class="links">
+    <a href="https://deepmind.google/models/gemini/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50073879">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">See also: Gemini 4 Argon for Robotics - https://news.ycombinator.com/item?id=50074869</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Iosevka is an open-source, sans-serif and slab-serif, monospace font
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    374 points ·
+    129 comments ·
+    otobrglez
+  </div>
+
+  <div class="meta">
+    typeof.net
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #18
+  </div>
+
+  <div class="links">
+    <a href="https://typeof.net/Iosevka/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50084240">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">AMONG the many valuable contributions of William Dwight Whitney to linguistic science is one especially important and fundamental principle. It may be stated in these words. In explaining the prehistoric phenomena of language we must assume no other factors than those which we are able to observe and estimate in the historical period of language development. The factors that produced changes in human speech five thousand or ten thousand years ago cannot have been essentially different from those which are now operating to transform living languages. On the basis of this principle we look to-day at a much-discussed problem of Indo-European philology with views very different from the views held by the founders of Comparative Philology and their immediate successors. I refer to the problem, how the Indo-European people came to assign gender to nouns, to distinguish between masculine, feminine, and neuter. This question is of interest to others besides philologists. What man of culture who has learned languages such as the Greek, Latin, or French has not at times wondered that objects which have no possible connection with the natural gender of animals appear constantly in the language as male or female? In German, for example, it is der fuss, but die hand; der geist, but die seele; in Latin, hīc hortus, hīc animus, hīc amor, but haec planta, haec anima, haec felicitas; in Greek, ὁ πλοῦτος, ὁ οἶκος, but ἡ πενία, ἡ οἰκία.</div>
+<div class="para">This gender distinction pervades all the older Indo-European languages, and must therefore be regarded as having its origin in the time of the pro-ethnic Indo-European community. Not only is the subject itself full of interest, but also the treatment it has received from the philological research of our century. The various efforts made to solve the problem may very aptly illustrate an essential difference which exists between the theories of language development held in the beginning and middle of this century and those which prevail to-day, — a difference of method existing not in comparative linguistics alone, but also in other fields of philological and historical research that border on it.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: Many SWEngs out there are considering re-training
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    15 points ·
+    12 comments ·
+    jrowilliams
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50085133">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Question is what it says on the tin. I&#x27;ve been mulling over the state of the industry and where I believe it to be going, and while I believe there will still be a role for us SWEng&#x27;s in the future, I believe there will be a need for far fewer of us.<br>So much so that, a la industrial revolution, there will be lots of layoffs and SWEngs without a cause. This is obviously quite a pessimistic view of where the industry is going, and maybe I&#x27;m just looking for some reassurance or discussion - my question is at what point do a large amount of SWEngs have to find something else to do and re-train?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    YouTube adds a GIF feature to the comment section
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    o4c
+  </div>
+
+  <div class="meta">
+    reddit.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.reddit.com/r/youtube/comments/1x25v4s/how_did_they_put_a_gif_in_the_comments_wth/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50088361">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Redesigning source control at Anthropic
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    829 points ·
+    889 comments ·
+    Philpax
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #34
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/engineering/redesigning-source-control">Original article</a> · <a href="https://news.ycombinator.com/item?id=50073633">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Get the developer newsletter<br>Product updates, how-tos, community spotlights, and more. Delivered monthly to your inbox.<br>At Anthropic, coding is no longer the bottleneck to building systems or doing research. Claude is able to autonomously iterate on research loops, micro-optimize complex programs, and build new services from the ground up at a speed and scale we haven’t seen before. The bottleneck, now, is all of the developer infrastructure built for human scale: source control, builds, and CI.<br>In May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day. We don’t expect this rate of growth to slow down anytime soon; the latent demand for merging code is practically infinite, and every bottleneck we remove immediately leads to a further increase in the amount of code we produce.<br>In order to support this growth, we built Scion, an in-house version control system, and fully migrated our monorepo from git in five months. We also built and shipped a code review surface (called Antique), code search, a rich source control IAM system, novel ways of managing and landing large amounts of reviewed code, and more, all in that same time period. In this post, we’ll focus on how we built Scion specifically. It makes for an interesting case study: Claude’s ability to write code was both what put us in this situation in the first place and how we were able to quickly build a high-quality, scalable system to deal with it.<br>Before we explore what we built, we should acknowledge how unusual our workload is. Unsurprisingly, Anthropic uses Claude to write software far more than almost any other company, so we’re often the first to see where tools built for human scale start to strain. Source control is just one example of this. While we don’t expect many organizations to have these problems in the very near term, we suspect it won’t be too long before others who use AI coding tools experience these same pressure points, which is why we wanted to share what we built and what we learned.<br>Git is a decentralized system: every clone is a complete, self-contained repository that can compute diffs, read history and blame, and check out any revision while fully offline. For the vast majority of repositories, this is the right design, and it’s a large part of why git became the standard.<br>As our monorepo grows, it increasingly doesn’t fit that design space. The history of our main branch alone is almost 100 GB, and a compressed working copy is over 25 GB. We perform on the order of 25 million code checkouts per day for CI, before counting developer environments, agent sandboxes, and research jobs. Fetched naively, that would be over 600 PB of git traffic per day.<br>Git offers tools for working with a slice of a repository, such as shallow clones, sparse checkouts, and promisor remotes. Beyond these, there are standard workarounds for large monorepos, like internal git mirrors and repository snapshots (seeds) kept in blob storage. We’ve used all of them—at our peak, we operated several hundred internal git mirrors to deal with the load. This bought us time, but they became harder to operate as our merge rate increased. Seeds fell further from the tip of main between refreshes, and it took more and more care to keep operations that depend on history, like diff and blame, working on partial clones.<br>Taking a step back, we noticed that, like most companies, we were using git as a centralized system with one authoritative copy, but nearly all of our clients were agents and jobs that are online by definition. The properties that make git excellent for distributed, offline work were actively undermining our ability to scale as the repo grew. So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?<br>With agentic coding, many common assumptions about how software is developed are evolving. We embraced these changes when building Scion, which allowed us to take a fundamentally different approach than git on several core principles. Source control for huge monorepos has prior art, notably Google’s Piper and Meta’s Sapling, so we were able to build Scion with their hard-won lessons in mind. Our principles are:<br>Clients are always online. Git assumes that clients work offline and need a complete copy of the repository. Since nearly all of our clients are agents and jobs, we designed Scion’s client and protocols around a server that is always reachable, and have clients fetch data when they need it.<br>Client-server asymmetry. In git, every client is capable of being a full-fledged server. In Scion, the server answers questions about file history and blame, creates commits, performs merges and rebases, and so on. The client maintains a bounded local object cache, lays out the working copy files on disk, monitors for filesystem changes, and gives users an ergonomic way to work with the server. It can compute very little on its own but, in exchange, it requires much less data locally.<br>A comprehensive source control service can power many novel applications. With git, a CI job or tool that needs to ask a question about the repository, such as who last changed a line or how two commits are related, has to maintain a local copy of the repo or hope that vendor-specific APIs provide the answer. With Scion, all of the source control queries the client uses are also exposed via API, so in many cases jobs don’t need a local repository at all. Many internal tools, such as our automated bisect and revert pipelines, wouldn’t be practical at scale without this cheap, programmatic access to source control.<br>Everything must be horizontally scalable. At our peak, we ran several hundred git mirrors, which significantly strained capacity and no longer scaled once the repo outgrew the mirrors’ disks or memory limits. In Scion, the repository’s data is distributed, and every component is independently scalable; there is no fully materialized copy of the repo anywhere, even on the server. There is no equivalent of packfiles (git’s compressed bundles of objects), so no repository maintenance is needed.<br>Commits must be cheap, incremental, and lock-free. In git, you commit locally and then push to share your work. In Scion, every commit, rebase, or merge happens on the server, so there’s nothing to push, but each of those operations needs to be fast. The cost of creating a commit and updating its downstream data structures has to scale with the size of the change, not the overall size of the repo, or the server can’t keep up. The development lifecycle in Scion discourages refs (pointers to commits, such as branches and tags), except for the main ref or release branches, because global state that every server has to agree on is a looming scaling problem.<br>The working copy is optional, and sparse by design. Because our monorepo is so large, and because we check out code tens of millions of times a day for CI, we wanted to avoid checkouts whenever we could. With Scion, a CI job that needs the diff between a commit and its merge base, for example, can ask the server for it. The same goes for writes: many write workloads can also skip the checkout and function entirely via API. Scion’s protocol is centered around sparse checkouts, which only contain the directories the client asks for, and virtualized checkouts, which materialize files on demand, so when a job does need files on disk, the client only pays for what it actually reads.<br>It’s helpful to understand how these principles came together in practice when building Scion. These insights can apply to other source control systems or, more broadly, to other stages of the software development lifecycle.<br>In Scion, the unit of work is a “changeset,” an entry in a write-ahead log. A changeset stores most of what you’d expect from a commit in git. But where a git commit stores a pointer to the tree, a changeset stores a list of the files that changed relative to its first parent,1 along with content-addressed pointers to the compressed file contents in blob storage. Changesets are created server-side and are available everywhere, instantly.<br>This structure lets us accept changesets with very high throughput because there are no packfiles to accept, no locking or cross-server coordination, and no refs to move around. Scion does technically support refs, but since neither creating nor fetching commits involves them, moving one is a compare-and-swap on a single Spanner row that happens separately from creating changesets.<br>A changeset records only what’s changed, so on its own, it can’t quickly answer questions like who last edited a line or which commits affected a file. To answer those, Scion builds additional data structures from the changesets, including dedicated structures for file blame and path history and skip lists for the commit graph. We call everything that isn’t directly part of the changeset “derived data,” and we compute it all through one generic mechanism. Each type of derived data is defined recursively, so its value for a changeset is computed from its values for that changeset’s parents.<br>This mechanism has three benefits. First, we can easily add a new type of derived data when a new data structure would make some operation faster. Second, for each type, we can choose whether to compute it eagerly or defer the work, so we avoid materializing data we don’t need. And third, because the client never sees the internals of these data structures, we can optimize them without changing the client. We’ve added new types of derived data many times as the system has grown, such as new indices for performing copy detection or path-based file search.<br>A small fleet of Scion servers provides source control APIs for any operation a client needs, such as getting changesets, computing diffs, finding merge bases, and fetching blobs. All source control data is content-addressed, so a piece of data never changes once it’s stored, and any server can cache it without checking with the others. As a result, the servers are horizontally scalable and require little coordination. They are essentially large caches that can also compute derived data on the fly and write the results back to Spanner.<br>Scion’s many consumers no longer need to maintain local repositories of their own. Fetching and maintaining the repository used to be a significant maintenance burden for CI jobs or tools that needed to ask source control questions, particularly about commit ancestry and blame. Early in the migration, before we had our own client, repo format, or protocols, Scion only answered these “metadata” queries. Fetching file contents and materializing working copies are far more data-intensive operations, and they needed a design of their own.<br>Scion’s scn client deviates from git’s fetch protocols in several important ways and, as a result, lends itself to a highly scalable architecture that requires significantly less CPU than git servers. Scion’s negotiation doesn’t tell the server what the client already has; instead, it operates exclusively on trees and blobs the client wants. Starting from a root tree, the client checks its local store for missing trees and requests them recursively, then repeats the process for blobs. Every request is for a specific object that never changes, so any cache can answer it, and the architecture closely resembles traditional tiered caches. The process is also efficient and resumable, because there is no single multi-gigabyte packfile response. Sparse and even virtualized checkouts don’t need special support, because the client simply doesn’t ask for trees it doesn’t want.<br>In the fleet, the client talks over a socket to a daemon, scion-daemon, that stores objects for the whole node. Most of our nodes need access to the monorepo, and jobs on the same node reuse most of the same objects. Each daemon starts from a periodically refreshed snapshot, then talks only to the tree and blob cache servers in its region, called scion-cache. These cache servers stream objects directly from memory, in the disk format that the daemon will consume, so they don’t need to spend time computing the client’s missing objects or performing delta compression. When a cache is missing an object, it asks the authoritative scion-servers, which read from Spanner or cloud storage as needed.<br>The scion-daemon, scion-cache, and scion-server all respond to identical RPCs for this protocol, so the client doesn’t need to know the cache topology. Any tier could theoretically talk to any other, but we strictly enforce the tiering to isolate failure domains. We want to avoid a situation where a failure in a regional scion-cache overwhelms the upstream scion-servers and brings down the entire system.<br>Each tier of this system maintains a cache hit rate of over 99% and does not require long-lived state, so it’s easy to scale up if needed. Our Scion infrastructure footprint is now 200x smaller than our previous git mirroring infrastructure in terms of CPU and memory requirements. CI and research jobs check out code two orders of magnitude faster (in seconds rather than minutes), which frees up a sizable amount of capacity across the fleet; CI alone realized a 25% CPU capacity win. Neither clients nor caches need to perform repository maintenance, which simplifies the lifecycle management of our jobs.<br>We started building Scion around the same time as Claude Mythos Preview and Claude Tag became available internally. Both of these releases simultaneously amplified the need for Scion and meaningfully accelerated how quickly we could build it.<br>Here’s a particularly striking example. Earlier in the year, we had largely handwritten the first version of the git-to-Scion ingestion pipeline as a prototype. We thought it was good—until we got our hands on an early internal snapshot of Claude Mythos Preview. We asked it to rewrite the whole thing, and with no further instructions, it produced a version that consumed 20x less memory and was 4x faster, while preserving all of the implicit invariants around ingestion ordering and data structures.<br>What we learned building and operating Scion offers some interesting lessons for what building agent-scale software could look like.<br>Rapid development with a small team will become more common. A team of seven people built both Scion and Antique (our code review tool, which we could easily write a whole other blog post about), not to mention half a dozen related systems, and fully migrated to them in five months. We did all this while the volume of code merged per day increased by 10x. In the past, developing and deploying a source control system like this would have taken a company years of iterative migration, with many more engineers. We think this sort of fast, nimble migration will become more common in the future.<br>Engineers are no less valuable, but their work is changing. All of the engineers who worked on this system would now rate Claude as better at writing code than them. But our engineers still supplied the invaluable understanding of the high-level inter-system components and the design-level tradeoffs, making informed choices around the problems we wanted to solve and the scale we knew we needed to achieve. Very often, we found that the role of the engineers was to tell Claude “no.” Agents will sometimes violate core system constraints to satisfy a pattern that should never have been allowed in the first place. This was particularly common in our migration. For example, there were multiple systems that tried to brute force looking up when a change merged to main by linearly reading the commit log instead of asking our code review tool. Anthropic also makes extensive use of adversarial review, and, while this is incredibly effective in many ways, it can also be myopic, so skilled engineers needed to steer Claude away from over-engineering parts of the system in response to hypothetical concerns. For example, one such review was overly defensive about trusting another internal service, which resulted in Claude adding excessive validation and complexity. Our team members still review every change request for the system, but they now examine the intent of the change as opposed to reading every line of code.<br>We were able to substantially improve optimization and quality. By virtue of Claude’s ability to write immense amounts of code much faster than we could ourselves, Scion is among the most well-tested and well-defended codebases we have ever worked on. Even on our tight timeline, we were able to build hermetic simulations of every non-trivial infrastructure and source control interaction we’ve ever encountered, as well as fuzzing and sophisticated rate limiting. Claude also casually found significant optimizations—for example, an algorithmic optimization to ancestry queries that missed one of our indexes—that would have taken an expert days or weeks of analysis and tuning… and then did it all again the next day.<br>We laid the groundwork for new forms of monorepo security. Managing safety, security, and compliance in a massive monorepo is as important as managing the size and scale. We built Scion with these in mind from the start. It supports rich access control on repositories, as well as the ability to apply permissions to individual directories in order to protect the most sensitive code without losing the benefits of a monorepo. Furthermore, the code review tooling we built can express complex semantic constraints on approvals, which lets us differentiate simple things like comment-only changes from sensitive logical changes, so that human reviewers can focus on the most consequential changes.<br>A new level of operational excellence is possible. Our team uses Claude Tag heavily, which has helped us monitor each component of the system. For example, we created Slack channels where we tasked Claude with being obsessively focused on the health of a single component. We call these Claudes “superfans.” We have a scion-daemon superfan, a scion-cache superfan, an Antique merge queue superfan, and so on. They have access to our telemetry and logs, and act like an experienced engineer who has nothing better to do than to refresh charts and look for anything strange. We also have traditional alerts for all of our systems, but our superfans can detect subtle and novel issues that make these alerts seem one-dimensional by comparison.<br>We’re completely rethinking our priors. This project prompted us to take a very hard look at other workflows designed for human scale. A proper merge queue, for example, doesn’t make much sense at agent scale. What does CI even mean when hundreds or even thousands of changes can merge while tests are running? We haven’t been able to effectively replicate the industry standard of a global repository lock on the merge queue, so instead, we’ve invested in post-merge and pre-deploy automated testing. This does mean that concurrent changes can conflict, but Claude can typically fix these conflicts faster than humans can even identify them.<br>We see Scion as just one part of the answer to the scaling concerns that increasingly capable AI agents have raised. We’re sharing these details as an example of how teams can tackle similar challenges, though we don’t expect our solution, or our considerations, to suit every case.<br>Scion is by no means a suitable replacement for git for general use. The concepts we’ve outlined here really only make sense for truly enormous monorepos, with either tens of thousands of engineers or swarms of agents prolifically writing code. Plus, Anthropic is unique in that our ability to spend tokens for internal use far exceeds what any other business would realistically want to spend. We do this both to address our own software development needs, and to test Claude’s capabilities.<br>Practically speaking, it’s difficult to offer Scion in a form that would be broadly useful to other organizations. It diverges significantly from git, meaning companies would need to migrate every piece of the development lifecycle, and it requires its own code review, code search, and CI. Our internal versions of these components are highly bespoke, so they would be difficult for other organizations to adopt, and we worry that attempting to build a public version that tries to please everyone wouldn’t actually be very useful.<br>However, we anticipate that this class of problems will become more commonplace over the next six to 12 months, and it would be an inefficient use of engineering resources for every company using git to face similar challenges alone. Given that, we think the most impactful thing we can do is to share our thinking, so that other developers can apply some of the most successful parts of Scion to git without departing from the overall model. A git server doesn’t have to work the same way as a git client does; novel server architectures exist that provide significant scaling improvements. Git platforms can provide comprehensive server-side RPCs like Scion, perhaps even in a standardized way across forges that the git client can learn to talk to. The negotiation protocol doesn’t have to look exactly like it does today, either, and the various sparse and shallow features in git can be made to compose well.<br>Lastly, we want to acknowledge that the git community has spent nearly two decades scaling the platform for millions of developers. Our contribution is far narrower: sharing our early view into how agentic software development interacts with these systems, so that we can partner with GitHub, GitLab, and the OSS community to support the changing needs of developers. We’re all in it together as the software development lifecycle intersects with the AI exponential.<br>Written by Nick G. and the source control team: S.G., R.K., Dan C., Garrett H., Ben L., Colin M., Joe P. We’re grateful to Vilas J. and Sergiu D. for supporting the source control team on this ambitious journey and Amir O. for early contributions to Antique.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: A guided 3D Leonardo da Vinci museum, built in code
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    47 points ·
+    18 comments ·
+    micstradev
+  </div>
+
+  <div class="meta">
+    museumofages.org
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #11
+  </div>
+
+  <div class="links">
+    <a href="https://museumofages.org/w/vinci">Original article</a> · <a href="https://news.ycombinator.com/item?id=50085022">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hello HN,<br>I am the founder of a small nonprofit which built Museum of Ages. We opened its first wing last week, a digital Leonardo da Vinci museum. It is a virtual tour with 17 stops, his works and then his last house in Amboise. The entrance is free.<br>At the different stops you can see for example his paintings close to their real size, or 15 of his machines rebuilt in code, and you can have a look at 29 of his anatomy sheets. We also selected 207 of his manuscript pages which you can read in a virtual reading table, mirror the view to read his writing and 131 of the 207 are translated. We also rebuilt his last house in Amboise on the later stops of the walk. The museum is available in seven languages.<br>Each stop has one of four grades as a label, documented, reconstructed, conjectural and not known. In a detailed view the user can have a closer look at the sources.<br>The materials of the rooms and machines are created in Three.js. The museum runs with WebGPU. If the browser doesn’t support it, the fallback is WebGL2. To create the textures we used Creative Commons Zero photo scans (CC0) and for a few small objects we use free 3D models (CC0).<br>Our mission is to create digital museums you can walk as not everyone can get to a museum, because illness or disability keeps them away. Some cannot afford the trip or just reside far away. So our goal is also to make our digital museums as accessible as possible. Therefore we also pre-rendered the walk so that it also works on older phones and is easy to use for older people.<br>We released the code under AGPL-3.0. The texts and pictures are CC BY-SA 4.0. Reproductions have their own licenses.<br>https://github.com/chipmates/museumofages<br>We put a lot of time and passion into the museum and hope you like it. We are happy about any feedback. Which digital museum would you like to see next?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ask HN: Do you want a router that has DD-WRT pre-installed?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    155 points ·
+    148 comments ·
+    Ixander
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50039291">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I sometimes run across comments where someone says they want an open-source router. I wonder if this is a viable idea for someone to start as a small company. What makes me hesitant is that, first, it looks like this already exists in several wireless and non-wireless routers (like the GL.iNet Flint or OpenWrt One), and second, I assume hackers would just make their own.<br>I have been flashing DD-WRT to my routers for many years. My current setup is an Archer C9 that connects via cable to an Archer C8, which then wirelessly bridges to an R7000. All of them run DD-WRT. If I had &quot;fun money,&quot; I would buy a low-power SFF PC with dual NICs, run OPNsense or OpenWrt, and use the wireless routers strictly as access points. Since I don&#x27;t have that much to spend, I look for older DD-WRT friendly routers, usually under $30, on Craigslist or Facebook Marketplace, and flash them myself.<br>I see that Ubiquiti and MikroTik make quality routers with proprietary OSes for around $65 new. Protectli and Netgate offer pfSense routers starting at $259.00. The GL.iNet Flint 2 is $169.00, and the OpenWrt One is $89.<br>According to ResellBot (because eBay now requires a login to see sold listings with prices), the sold &quot;DD-WRT Routers&quot; generally go for under $160. These include the WRT3200ACM, Netgear AC1750, Linksys EA9300, and Linksys R7350.<br>When I asked an AI how I would go about judging interest, building, raising funds, and manufacturing, it seems doable but expensive (said $125,000 minimum in total made up of $30,000 for regulatory approval, engineering and protoyping $10,000+) and time-consuming just to get to a &quot;golden prototype&quot; for demos.<br>So if I were a &quot;hacker&quot; and wanted an open-source router, depending on my funds, I would either:<br>1. Flash DD-WRT to an existing router (used or new).<br>2. Buy one with it already installed, like the OpenWrt One or a Protectli device.<br>3. Get an SFF PC and build my own.<br>I remember when some comments about DropBox said it was a waste because any hacker could make that. I also know DropBox was marketed to the average person and businesses. I don&#x27;t really see how a hacker friendly router could take off like that unless hackers are choosing the hardware and setting up the networks for average people. And I assume that most people setting up the networks want different qualities like brand name recognition, ease and speed of purchasing equipment (Walmart or BestBuy), and the ability to point a customer or family member to the number of solid reviews and articles saying it a good router to qualify their choices.<br>So, do you actually want a router that you can buy with DD-WRT pre-installed?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Pg_vectorsearch: An index that is faster than pgvector&#x27;s IVFFlat and HNSW
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    85 points ·
+    29 comments ·
+    jascha_eng
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/timescale/pg_vectorsearch">Original article</a> · <a href="https://news.ycombinator.com/item?id=50086165">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A PostgreSQL extension for high-performance approximate nearest neighbor (ANN) search.<br>Status: alpha. Meant for testing, not production. Upgrading between prereleases may not be possible; plan to drop and recreate the extension and its indexes. See the changelog for known issues.<br>- PRISM index (100M+ vectors) — IVF-style, with hierarchical routing<br>- RaBitQ quantization with theoretical error bounds for two-stage search<br>- SIMD-optimized distance computation (AVX2, AVX512, NEON)<br>- Dynamic updates — inserts, updates and deletes, with posting-list<br>splits via prism_rebalance (see Maintenance)<br>- pgvector compatible — index existing vector and halfvec columns<br>as-is (see Existing pgvector tables)<br>PRISM (Partitioned Routing Index for Similarity Matching) is a PostgreSQL-native index access method that is conceptually similar to pgvector&#x27;s IVFFlat, but it is built around state-of-the-art quantization, routing, and partitioning techniques. It is implemented in C for high performance and seamless integration with PostgreSQL.<br>The result: an index that is significantly faster than pgvector&#x27;s IVFFlat and HNSW, for both querying and index building. In fact, compared to graph-based HNSW, PRISM is faster at equivalent recall on a 100-million-vector dataset, on an instance with a quarter of the memory.<br>To achieve this performance, PRISM uses a hierarchical centroid tree to partition vectors into clusters, and relies on the PostgreSQL buffer cache to keep that tree warm in memory. Vectors are RaBitQ-quantized and stored in posting lists with a page layout optimized for SIMD distance computation. The RaBitQ encoding carries error bounds that let a search rule out vectors that cannot possibly be nearest neighbors, so far fewer of them need reranking against the full-precision vectors stored in the table.<br>Query Flow:<br>1. Traverse centroid tree to find nearest clusters (buffer cache)<br>2. Scan posting lists for candidates (buffer cache, async I/O)<br>3. RaBitQ two-stage filtering: estimate → error bound → rerank<br>4. Full-precision reranking from heap<br>5. Return k nearest neighbors<br>For detailed architecture, see docs/architecture.md.<br>Install the extension first; see Building.<br>There are two ways to use a PRISM index. Pick the one that matches where your vectors live:<br>- Native types. Starting fresh, or not using<br>pgvector? Store vectors in pg_vectorsearch&#x27;s own vec32 (float32) or vec16 (float16) columns. No other extension is needed.<br>- Existing pgvector tables. Already have<br>vector or halfvec columns? Install pg_vectorsearch next to<br>pgvector and build a PRISM index on those columns as they are. Your<br>table and queries stay unchanged.<br>Both paths build the same index and use the same operators (&lt;-&gt;,<br>&lt;#&gt;, &lt;=&gt;) and tuning knobs.<br>CREATE EXTENSION pg_vectorsearch;<br>-- PLAIN keeps the vector inline. EXTERNAL (the default) toasts a value<br>-- over ~2 kB, and rerank then pays an extra fetch the planner does not cost.<br>CREATE TABLE items (<br>id serial PRIMARY KEY,<br>embedding vec32(3) STORAGE PLAIN<br>);<br>-- Load first; the index is sized from the row count at CREATE INDEX.<br>-- 500 rows is enough for the planner to use the index.<br>INSERT INTO items (embedding)<br>SELECT ARRAY[i::real, (i % 7)::real, (i % 5)::real]::vec32<br>FROM generate_series(1, 1000) i;<br>-- For inner product or cosine, see Operator classes below.<br>CREATE INDEX ON items USING prism (embedding vec32_l2_ops);<br>-- 0 = auto (~0.95 recall). Raise for recall, lower for speed.<br>SET prism.nprobe = 40;<br>SELECT * FROM items<br>ORDER BY embedding &lt;-&gt; &#x27;[3,1,2]&#x27;<br>LIMIT 5;<br>Use vec16 instead of vec32 to halve the space vectors take in the<br>table, with the matching vec16_* operator classes.<br>If you already have a table with pgvector&#x27;s vector or halfvec<br>columns, you can build a PRISM index on it directly. Nothing about the<br>table or your queries needs to change.<br>vec32 and vec16 are binary-compatible with pgvector&#x27;s vector and<br>halfvec but have different names, so the two extensions can be<br>installed side by side, even in the same schema.<br>-- The table you already have, included so the example runs on its own.<br>CREATE EXTENSION vector;<br>CREATE TABLE documents (<br>id        bigserial PRIMARY KEY,<br>body      text,<br>embedding vector(384)<br>);<br>CREATE INDEX documents_embedding_hnsw<br>ON documents USING hnsw (embedding vector_l2_ops);<br>-- Install pg_vectorsearch next to pgvector and build the index on the<br>-- existing column. The column is not rewritten or copied.<br>CREATE EXTENSION pg_vectorsearch;<br>CREATE INDEX documents_embedding_prism<br>ON documents USING prism (embedding vec32_l2_ops);<br>-- Your queries keep working as before. PRISM is normally faster, so<br>-- the planner should prefer it over the HNSW index while both exist.<br>-- Verify with an EXPLAIN:<br>EXPLAIN (COSTS OFF)<br>SELECT id, body<br>FROM documents<br>ORDER BY embedding &lt;-&gt; (SELECT embedding FROM documents WHERE id = 42)<br>LIMIT 10;<br>--  Limit<br>--    InitPlan 1<br>--      -&gt;  Index Scan using documents_pkey on documents documents_1<br>--            Index Cond: (id = 42)<br>--    -&gt;  Index Scan using documents_embedding_prism on documents<br>--          Order By: (embedding &lt;-&gt; (InitPlan 1).col1)<br>-- Once you are happy with it, drop the HNSW index.<br>DROP INDEX documents_embedding_hnsw;<br>Use the PRISM operator class for the same distance metric as your HNSW index.<br>Pick the operator class for your distance metric and column type. L2 is the default.<br>| Distance | Operator | vec32 / vector | vec16 / halfvec |<br>|---|---|---|---|<br>| L2 | &lt;-&gt; | vec32_l2_ops | vec16_l2_ops |<br>| Inner product | &lt;#&gt; | vec32_ip_ops | vec16_ip_ops |<br>| Cosine | &lt;=&gt; | vec32_cosine_ops | vec16_cosine_ops |<br>When replacing an HNSW index, pgvector&#x27;s vector_&lt;metric&gt;_ops maps to<br>vec32_&lt;metric&gt;_ops and halfvec_&lt;metric&gt;_ops to vec16_&lt;metric&gt;_ops.<br>Defaults are tuned from large-scale benchmarks; most deployments only<br>ever adjust prism.nprobe.<br>See the tuning guide for every index parameter and GUC,<br>their tradeoffs, and when changing them makes sense.<br>An insert appends to whichever posting list its vector routes to, so lists<br>grow as rows arrive and never split on their own. Besides REINDEX, the<br>prism_rebalance procedure splits oversized lists in place.<br>See the maintenance guide for how it works and its current<br>limitations.<br>Requirements:<br>- PostgreSQL 18+ (with development headers)<br>- GNU C11 compiler (GCC 11+ or Clang 14+)<br>- Meson build system<br>- Optional: CBLAS, for faster RaBitQ encoding. See Development.<br># Release build<br>meson setup builddir --buildtype=release<br># Build and install to PostgreSQL<br>meson install -C builddir<br>See the development guide for build options.<br>- Tuning - Index parameters, GUCs, tradeoffs, defaults<br>- Maintenance - Rebalancing and splitting posting lists<br>- Architecture - High-level design and data structures<br>- SIMD - SIMD build options and distance computation<br>- Development - Build options, testing, CI scripts<br>- RaBitQ - Binary quantization with theoretical error bounds (SIGMOD 2024)<br>- SPFresh - LIRE protocol for incremental updates (SOSP 2023)<br>- SPANN - Billion-scale ANN with boundary replication (NeurIPS 2021)<br>- ScaNN for AlloyDB - Hierarchical clustering (Google)<br>- pgvector - Vector type and operators for PostgreSQL<br>- pgvectorscale - DiskANN-based vector index for PostgreSQL</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    macOS windows-like window maximize
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    Hamiro89
+  </div>
+
+  <div class="meta">
+    maximus.ethosoft.net
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://maximus.ethosoft.net/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50088333">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Turn the full-screen button into a maximize button.<br>Click it and the window fills the screen, the way Maximize works on Windows. No full screen and no new Space: your menu bar, Dock and other windows stay where they are. Click again to put the window back.<br>It works like Maximize on Windows<br>On a Mac, the full-screen button moves a window to a new Space. Maximus turns it into a maximize button: bigger window, same desktop.<br>- In normal macOS, a double-click on the title bar zooms the window. Each app picks the size, often just big enough for its content, and some apps do nothing. With Maximus, a double-click maximizes the window.<br>- Hold Option when you click, and macOS does its normal action.<br>- Full screen is still there: hold the pointer over the full-screen button and choose Full Screen, or press Control-Command-F.<br>- Dialogs, panels and windows with a fixed size keep their normal action.<br>- With more than one display, the window fills the display that holds most of it.<br>- Some apps limit the size of their windows. Those windows can stop a little short of the edge.<br>Pay once. Use it on up to 3 Macs.<br>Try every feature free for 14 days. No account and no card. After the trial, pay once to keep using it. Updates for version 1 are free.<br>For macOS 13 Ventura or later, on Apple silicon and Intel. Payment goes through Link, Stripe&#x27;s checkout. Link is our reseller: it handles VAT and sales tax, and your card statement shows LINK.COM. Already bought it? Get your key again.<br>Questions<br>Doesn&#x27;t macOS already do this?<br>Partly, from macOS 15. You can Option-click the full-screen button, or choose Fill from the menu that opens when you hold the pointer over it. You can also set a title-bar double-click to Fill in System Settings, but some apps ignore that setting. A plain click still opens full screen in a new Space.<br>Maximus makes the plain click and the double-click fill the screen, edge to edge, and a second click puts the window back. It also works on macOS 13 and 14.<br>Why does it need the Accessibility permission?<br>macOS lets an app move the windows of other apps only with this permission. Maximus uses it to see clicks on the full-screen button and the title bar, and to change the window size. It does not read what is in your windows.<br>Does it send my data anywhere?<br>No analytics and no tracking. The app goes online for two things only: to activate and check your license, and to check for updates. The privacy policy lists exactly what it sends.<br>How do I move my license to a new Mac?<br>On the old Mac, click the menu bar icon, choose License, then Deactivate This Mac. Then enter the key on the new Mac. One license works on up to 3 Macs at the same time.</div>
+</div>
+
+</div>
+
+</body>
+</html>
