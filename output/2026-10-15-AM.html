@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-15 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-15 AM · Generated 2026-10-15 08:00 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: anoma.ly, anthropic.com, clova.email, deepmind.google, jjmaxwell4.com, liquid.ai, news.ycombinator.com, petal.live, twitter.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Gemini 4 Argon
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1432 points ·
+    1026 comments ·
+    737max
+  </div>
+
+  <div class="meta">
+    deepmind.google
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #47
+  </div>
+
+  <div class="links">
+    <a href="https://deepmind.google/models/gemini/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50073879">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">See also: Gemini 4 Argon for Robotics - https://news.ycombinator.com/item?id=50074869</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Things to know when you get cancer – 2026 Edition
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    640 points ·
+    171 comments ·
+    jjmaxwell4
+  </div>
+
+  <div class="meta">
+    jjmaxwell4.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #10
+  </div>
+
+  <div class="links">
+    <a href="https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50093568">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Things to know if you get cancer (2026 Edition)<br>I was diagnosed with squamous cell carcinoma in my mouth in May 2026. Here are some things I learned based on that experience so far.<br>- You need to be doggedly persistent on scheduling things. Yes this means lots of phone calls. If you get an appointment a few weeks out, call back a few days later and ask for something sooner and see if they have any cancellations. I could only get an appointment 4 weeks out with an ENT (this was before I knew anything was wrong). My wife made me call back and I was able to get in that week due to a cancellation.<br>- AIs may downplay the seriousness of things. I was chatting with various models and most pushed me in the direction of “you don’t have cancer” for a while. Just something to note.<br>- You may need to push for comprehensive genetic testing. Some doctors were weird about this and didn’t order it promptly, even after telling me they would. My surgeon, who told me he’d get it done, eventually referred me out to an oncologist. This caused a multi-month delay to getting genetic results, since the first results were done on the surgery tumor, not the biopsy tumor. No one cares more about your case than you, so take control and send lots of follow-ups.<br>- You can find the “Standard of Care” flow charts for every cancer type. Look and get through this yourself to see what the options are based on how things have progressed. NCCN guidelines. You may need to make an account, which you can do as a non-professional. I like the PDF files. They also have an interactive navigator. Use AI to help you figure out what to pick based on your case.<br>- If surgery is recommended, I would try and talk to someone who has undergone the surgery. I did not do this and regret it. Ask them how intense things were, what it felt like, etc. My surgeon talked me through my surgery, but it was a lot rougher on me physically than I expected. Ask the surgeon how many of these surgeries they do a year and what the complication rate is.<br>- Get a second opinion as soon as possible, no matter how much you like your plan. This may require a lot of calling and getting on an airplane, but I’d move to schedule it at a top cancer center as soon as you are relatively sure of your diagnosis. Ask for a second read of the pathology at the center where you get the second opinion.<br>- I started a new folder on my Mac, and after appointments I’d dictate what happened and what the doctor said and have the AI make a new document summarizing things and asking its own follow-up questions for next time. Nice to be able to refer to this over time.<br>- Check out all the resources and materials at the Sijbrandij Foundation. Sid (GitLab cofounder) took matters into his own hands when standard of care ran out. Schedule a call with these guys. They are great and have good materials and questions to ask your doctors.<br>Note, since this is on the front page of Hacker News right now. exhilaration suggested that if you are within a 2-3 hour drive of a major cancer center, go there instead of your local community hospital. Use the US News cancer hospital rankings. The top centers usually take your insurance, so use vacation days and book a hotel if you have to. The largest benefit I saw was speed. At MD Anderson I got a question answered within 20 minutes of a visit, because the doctor called the pathologist who he was on a first name basis with. If that wasn’t at a cancer center, it would have taken days, or more likely the question never would have been answered at all (I had asked my oncologist about this and he’d just shrugged). The rest of the HN comments are worth reading too.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: Petal, open-source CoScreen/ScreenHero finally free
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    102 points ·
+    25 comments ·
+    thedracle
+  </div>
+
+  <div class="meta">
+    petal.live
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #12
+  </div>
+
+  <div class="links">
+    <a href="https://petal.live/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50092470">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hi HN!<br>I’m Jason Thomas, one of the founders of CoScreen.<br>As some of you may know, Datadog sunset the CoScreen service on July 31st.<br>Four of us from the original CoScreen team have spent the last couple months building a free and open source pair programming tool inspired by those that came before us: It’s called Petal (https://github.com/kiruna-labs/petal)<br>Some history first, because when we started CoScreen we had hoped to break the sad and established pattern of this industry.<br>Screenhero was an exceptional tool that a lot of us loved for pairing. Multiple cursors, low latency, you could click your partner’s editor, and just start typing. It felt like magic while we had it. Then Slack bought it in 2015, and shut down the standalone app in December 2017.<br>When Till, Max, and I started CoScreen, we were aware of this history, and wanted to build an even more magical collaboration and screen sharing experience: the entire concept was “throw a window from your laptop up on someone else’s screen, and start collaborating with zero friction.”<br>Datadog acquired us in 2022, and thus began the great adventure of adapting our real-time technology into Datadog products, while also continue developing CoScreen as a standalone tool from the Datadog ecosystem. Datadog invested in the product for years and we’re thankful for that. But CoScreen itself proved, like so many other screen sharing tool acquisitions, to be too tangential from the customer base and core mission. We instead built other communication features in Datadog, the integrations with other video platforms, and also its wildly successful MCP server.<br>We weren&#x27;t the only ones. Around was bought by Miro and shut down in March 2025. Multi (formerly Remotion) was acqui-hired by OpenAI in 2024 and shut down about a month later. It&#x27;s nearly always the same story: a small team builds something hard that people love, a platform buys it for the team or the feature, and the standalone product doesn&#x27;t survive the integration.<br>So we decided firmly to do things differently this time. Petal is completely free and open source and we aren&#x27;t monetizing it. If we lose interest or get hit by a bus, you can self-host it or fork it, and nobody can sunset it on you. Honestly it&#x27;s a love letter to everyone in this community that supported us, believed in us, and to liberate collaborative screen sharing from this vicious cycle.<br>We hope through this we can help foster a large and vibrant community around innovating in this product sector.<br>What Petal does: shared windows show up as real windows on your desktop, movable and resizable, not tiles in a grid. Several people can share at once, everyone gets a labeled cursor, and you can click into any shared window to type and scroll. Rooms are persistent, so you click once to join &quot;eng-sync&quot; instead of passing links around.<br>It runs on macOS and Windows (Linux is next, this time for real and you can help us!), plus a web app. Media goes over LiveKit. You can use our hosted instance with zero config, or point the app at your own LiveKit server with one docker-compose if you want the traffic to stay on your network or even use an entirely different video backend if you want to.<br>The part that still feels strange to us: CoScreen took almost six years to build. The first version of Petal took under eight weeks, from scratch, with frontier models like Fable and Astra doing a lot of the work. Real-time video and window capture is some of the most unforgiving code we have ever written, so we didn&#x27;t expect that. We will do a proper writeup on what worked and what didn&#x27;t, and are happy to answer questions about it here.<br>Till, Darren, Max and I will be in the thread.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: Demonstrating Skills When Everything Is a Prompt
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    Brisk4t
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · New #12
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50097092">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I used to (and sometimes still do) love really thinking about a problem - pen and paper, whiteboards, thinking on the tornado throne, you name it.<br>And before AI, the projects I came up with might not have been the BEST or life-changing but they were the result of me hyper-focusing on something niche for an inordinate amount of time. Which inevitably meant I learned a lot AND anyone who saw that had a predictable reaction &quot;that&#x27;s so cool, you need a life, but still cool&quot;. And I&#x27;ve interpreted that as a recognition of skill and care. On occasion that has even landed me opportunities that I didn&#x27;t even know existed.<br>These days I find myself wondering if there&#x27;s anything that isn&#x27;t a prompt (or a few hundred) away. And if it is, what would make my skills valuable or even visible. Specifically in the context of soon becoming an ex-student, current struggling new-grad, I keep wondering what signals indicate skills to an outsider (and not a SKILLS.MD). A resume by itself is quickly becoming deceptive with most projects just being the product of barking at a model with half-baked ideas until something resembling a working prototype comes out.<br>To be clear, I&#x27;m not a pessimist. I don&#x27;t think its time to till the fields for our overlords. I&#x27;m trying to understand what advice people think is still applicable and what is a relic that needs a patch or two.<br>TL;DR: AI projects are impressive but don&#x27;t always indicate skills. How do i signal skills and not just ideas and prototypes?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    LFM2.5-24B-A2B: Built for Fast On-Device Agents
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    gmays
+  </div>
+
+  <div class="meta">
+    liquid.ai
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.liquid.ai/blog/lfm2-5-24b-a2b">Original article</a> · <a href="https://news.ycombinator.com/item?id=50097369">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Today, we release LFM2.5-24B-A2B, a 24B-parameter reasoning model with just 2B active parameters, built for fast, private agents on-device. It is the largest and final model in the LFM2.5 family, which now spans two orders of magnitude: from LFM2.5-230M to LFM2.5-24B-A2B.<br>LFM2.5-24B-A2B is competitive with Qwen3.6-35B-A3B, a model with ~50% more total and active parameters, on five of eight agentic and tool-use benchmarks, scoring 48.09 on LiveClaw versus 38.19 and 27.69 on AutomationBench versus 8.72. Because only 2B parameters are active per token, it runs up to 1.7× faster than comparable MoEs on-device, with 184 tokens/s on an Apple M5 Max and up to 21K output tokens/s on a single NVIDIA B300 GPU.<br>The base (LFM2.5-24B-A2B-Base) and post-trained (LFM2.5-24B-A2B) models are open-weight and available today on Hugging Face and our Playground. Check out our docs on how to run and fine-tune it locally.<br>What changed since LFM2-24B-A2B<br>LFM2.5-24B-A2B builds on our previous LFM2-24B-A2B release, with an expanded vocabulary and context window, scaled-up pretraining, and large-scale reinforcement learning. Unlike its predecessor, LFM2.5-24B-A2B is a reasoning-only model that produces an explicit chain of thought before its final answer. We adopted this strategy to leverage its high decode speed and improve answer quality.<br>Architecture. It keeps the 40 layers, 64 experts per MoE block with top-4 routing, and the same hybrid of gated short convolutions and GQA. The two architectural changes are the context window extension from 32,768 to 131,072 tokens, and the in-place tokenizer expansion, which doubles the vocabulary from 65K to 128K tokens for better non-Latin tokenization.<br>Pre-training was scaled up from 17T tokens to 33T tokens.<br>Mid-training has two phases. The first runs 2T tokens at 32K context on curated, higher-quality data weighted toward reasoning, math, code, instruction following, and multilingual text. The second runs 300B tokens at 131K context, weighted toward long context data. Tool calls and multi-turn trajectories appear throughout both phases to prepare the model for agentic workloads.<br>During teacher specialization, LFM2.5-24B-A2B exhibited well-known reward-hacking behaviors: searching for the final answer in a repository&#x27;s git history or on platforms like GitHub, PyPI, and Hugging Face. More surprisingly, it even figured out it was in a sandbox, as shown in the examples below.<br>This behavior looks emergent but might be explained by training data containing similar patterns. We tightened our sandboxes in response, and all reported results below come from sealed evaluation environments.<br>Benchmarks<br>We evaluated LFM2.5-24B-A2B across 16 benchmarks covering tool use and agentic workflows, knowledge, instruction following, math, and coding. Despite being the smallest model in total and active number of parameters, it is competitive with, and often outperforms, larger MoEs with ~50% more total and active parameters, such as Qwen3.6-35B-A3B.<br>| Benchmark | LFM2.5-24B-A2B | Qwen3.6-35B-A3B | Gemma-4-26B-A4B-it | Nemotron-3.5-Lightning (30B-A3B) |<br>| AutomationBench | 27.69 | 8.72 | 5.46 | 2.61 |<br>| BFCLv4 | 65.01 | 65.00 | 57.09 | 53.78 |<br>| ToolSandbox | 80.71 | 75.02 | 72.09 | 75.13 |<br>| LiveClaw | 48.09 | 38.19 | 41.25 | 37.72 |<br>| PinchBench | 83.18 | 89.93 | 77.12 | 84.20 |<br>| τ³-Bench Banking | 8.04 | 7.63 | 4.54 | 7.01 |<br>| WebArena Verified | 26.75 | 37.62 | 25.62 | 28.69 |<br>| GPQA Diamond | 74.42 | 83.69 | 74.90 | 72.42 |<br>| AA-Omniscience | -24.90 | -24.35 | -59.39 | -3.58 |<br>| HLE | 7.40 | 7.69 | 8.57 | 5.65 |<br>| IFEval | 96.75 | 93.06 | 92.00 | 94.19 |<br>| IFBench | 74.69 | 64.21 | 47.44 | 71.67 |<br>| Multi-IF | 84.38 | 81.53 | 82.19 | 82.34 |<br>| MATH-500 | 96.04 | 96.73 | 95.66 | 96.40 |<br>| SWE-Bench Verified (OpenCode) | 51.00 | 66.20 | 25.80 | 53.40 |<br>| SciCode | 32.71 | 37.35 | 35.42 | 27.78 |<br>LFM2.5-24B-A2B leads or matches the competition on five of the eight tool-use and agentic benchmarks (AutomationBench, BFCLv4, ToolSandbox, LiveClaw, and τ³-Bench Banking), with its widest margin on AutomationBench, where it scores more than three times the next-best model. It also leads on all three instruction-following benchmarks. Larger models keep an edge on knowledge-heavy benchmarks like GPQA Diamond, HLE, and AA-Omniscience, and on coding benchmarks like SWE-Bench Verified (OpenCode) and SciCode.<br>The results make LFM2.5-24B-A2B an ideal foundation for agents that need to reason, call tools, and run reliably on your device. For knowledge-heavy workloads, we recommend pairing LFM2.5-24B-A2B with retrieval or web search, which plays to its tool-calling strength.<br>Fast inference everywhere<br>LFM2.5-24B-A2B ships with day-one support across the inference ecosystem:<br>- llama.cpp — GGUF checkpoints for efficient edge inference<br>- MLX — Optimized inference for Apple Silicon<br>- vLLM — GPU-accelerated serving for production throughput<br>- SGLang — High-performance GPU serving framework<br>- ONNX — Cross-platform inference across diverse accelerators<br>All runs were collected on Pipette, the same benchmarking infrastructure behind Liquid AI&#x27;s public device performance data.<br>Edge inference. Due to the efficient LFM2 architecture, LFM2.5-24B-A2B is the fastest of the compared MoEs at reading in prompts and generating answers. It decodes 184 tokens/s on an Apple M5 Max and 114 tokens/s on an AMD Ryzen AI Max+ 395, up to 1.7x faster than the next-best model, while using the least memory.<br>GPU inference. To demonstrate the competitiveness of LFM architecture we compare the GPU inference throughput to other similarly sized MoE models. We measure GPU throughput (total output tokens / wall time) on a single NVIDIA B300 GPU using a sustained-load setting: at each concurrency level, we continuously maintain the target number of in-flight requests, replacing each completed request immediately.<br>We benchmark each model with SGLang 0.5.22, 1,024 input tokens, up to 256 output tokens, in BF16. LFM2.5-24B-A2B is the fastest model in its size class, reaching over 21K output tokens per second at high concurrency.<br>Run local agents with LFM2.5-24B-A2B<br>LFM2.5-24B-A2B’s size, speed, and capabilities make it a great choice for agents that run continuously on your own hardware. In the demo below, we run it inside Hermes Agent on an M5 Max MacBook Pro, where it plans, calls tools, and works through a real task entirely on-device, without any cloud API calls.<br>The point of the demo is not the individual tools. It is that the tool-dispatch loop feels interactive on consumer hardware: ask, propose, confirm, run, repeat, all in well under a second per dispatch, with full audit trails and your data never leaving the device. Check out our local agent guide for how to serve the model locally and connect it with the agent harness of your choice.<br>Get Started<br>Start building today with LFM2.5-24B-A2B, available on Hugging Face.<br>For API inference, you can also sign up for Liquid Console where you&#x27;ll receive $2 in credit to get started. The model is priced at $.10/1M input tokens (at $.05 for cached input) and $1.00/1M output tokens.<br>With LFM2.5, we&#x27;re delivering on our vision of AI that runs anywhere. These models are:<br>- Open-weight — Download, fine-tune, and deploy. See our model license.<br>- Fast from day one — Native support for llama.cpp, MLX, and vLLM across Apple, AMD, Qualcomm, and Nvidia hardware<br>- A complete family — From base models for customization to specialized audio and vision variants, one architecture covers diverse use cases<br>We can&#x27;t wait to see what you build.<br>Download on Hugging FaceRun your harness of choice locally with LFM2.5-24B-A2BIntegrate with our API<br>Citation<br>For citations, please use the following reference or BibTeX:<br>*All the models were evaluated with vLLM and the following generation parameters:<br>- AutomationBench: temperature = 0.6, top_p = 0.95, no max output tokens (bounded by the model&#x27;s context window).<br>- BFCLv4: temperature = 0.001, max output tokens = 4096.<br>- ToolSandbox: temperature = 0, max output tokens = 1024; user simulator: GPT-4o-2024-08-06, temperature = 0, max output tokens = 1024.<br>- LiveClaw: temperature = 1.0 (vLLM default; the agent sets no temperature), max output tokens = 8192.<br>- τ³-Bench Banking: official user model (GPT-5.2, low reasoning effort) with default BM25 retrieval, temperature = 0, max output tokens = 16384 per turn.<br>- WebArena: temperature = 0.6, top_p=0.95, max_turns=40 (no of browser actions allowed), no max output tokens (bounded by the model&#x27;s context window))<br>- Other evals: temperature = 0.6, max output tokens = 32768.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    OpenCode 2.0
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    221 points ·
+    87 comments ·
+    gmays
+  </div>
+
+  <div class="meta">
+    anoma.ly
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #35
+  </div>
+
+  <div class="links">
+    <a href="https://anoma.ly/notes/opencode-2-0/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50094994">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">OpenCode 2.0 is a major overhaul. It draws on millions of daily users&#x27; experience to deliver a system that can flex to everything an agent needs to be. There are quite a lot of new features, performance improvements, and bug fixes but here are some of the more impactful user-facing changes.<br>The Service<br>From the beginning OpenCode adopted a client/server model. However, this was not something it took advantage of by default and was mostly used by power users.<br>In 2.0 this server now automatically runs as a single background process on your machine. When you open up a TUI, the web interface or the desktop app they&#x27;re all talking to the same central process.<br>If you&#x27;re using the programmatic client @opencode/client to make your own scripts, they will autodiscover the local service and just work. This is particularly useful for scheduled tasks. You can also call it via CLI by using opencode api commands.<br>You can expose it to other hosts and run /pair or opencode pair to connect it to other applications. We have native apps in the works that take advantage of this flow.<br>The API<br>The old API grew haphazardly as we and the world collectively learned what agents are and should be. It was bad.<br>We started from scratch and examined all the weird use cases across the millions of users who use OpenCode every day. It now supports nearly anything you need to be able to do.<br>OpenCode is also aware of its own API and will call it to do useful things like moving the current session into a git worktree when starting new work.<br>We&#x27;ve also shipped a new client package @opencode/client that contains clients for vanilla JavaScript as well as Effect.<br>Code Mode<br>The models love to write code and OpenCode 2.0 takes advantage of that more than any other coding agent. We&#x27;ve built a minimal JavaScript interpreter in the @opencode/codemode package.<br>This package ingests MCP servers or OpenAPI endpoints, converting them into functions that the agent can call in a script. It can run these scripts natively without the complexity of Node.js VMs or embedding complicated solutions like QuickJS.<br>This lets your agent write scripts that can do things like call a tool, map over the results and call another tool. Single round trip instead of calling them one at a time.<br>All MCP servers in 2.0 are opted into codemode by default. This means you can add a thousand of them with minimal context bloat and your agent will discover and compose them to get things done.<br>Background Tasks<br>The latest batch of models are incredibly good at orchestration and it is important for harnesses to let them express the full extent of that capability.<br>First, we&#x27;ve added background subagents. This allows the primary agent to kick off some work to another one while it continues.<br>This happens automatically but you can also trigger it manually - even with a different model. It lets you do things like “spawn a background fable subagent to review this code” while you keep prompting.<br>Second, we&#x27;ve added background shell commands. The shell tool can be invoked asynchronously so long-running work does not have to block the primary agent. It&#x27;ll be notified when things are complete.<br>If any foreground shell command or subagent takes longer than you expect, you can hit a hotkey to move them to the background so you can keep prompting.<br>Plugins<br>Although OpenCode 1.0 had a plugin system, it never got the attention it needed. To correct that, we forced ourselves to implement nearly every OpenCode 2.0 feature as an internal plugin and there are now 80+ of them. This guarantees that the Plugin API stays well maintained.<br>We&#x27;ve also promoted TUI plugins from experimental to stable. Since it is all powered by OpenTUI, you can build nearly anything. Here is an example of something useless.<br>We also spent quite a lot of time ensuring everything in OpenCode 2.0 can be hot-reloaded. So it can write a plugin for itself mid-session and use it right away - we covered the design of this in a previous blogpost.<br>The SDK<br>OpenCode can also now be used as a library with the @opencode/sdk package. This is the exact same code that powers our CLI.<br>This means you can strip it down and make your own flavor of OpenCode that runs on a server or in specialized environments like Durable Objects. And then you can connect to it from any OpenCode client since it speaks the standard OpenCode server protocol.<br>It also has an optional Effect-based API.<br>Upgrading<br>To upgrade the CLI, make sure you&#x27;re on the latest 1.x release, then run opencode upgrade --major.<br>There are some breaking changes.<br>1.0 plugins will not work in 2.0<br>Server API is completely different<br>tui.json config is moved to json</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: I wrote an email app that accepts only one sender per inbox
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    70 points ·
+    57 comments ·
+    edpin2000
+  </div>
+
+  <div class="meta">
+    clova.email
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #24
+  </div>
+
+  <div class="links">
+    <a href="https://clova.email/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50090932">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Zero Spam. Quiet by Design.<br>Infinite inboxes, so nobody ever gets your real address. Give every company its own — when one leaks, you delete it, not your life.<br>Pick one based on who you&#x27;re handing the address to.<br>01 · One-sender<br>The first person or company to write claims the address for good. Everyone else is rejected at the door — so a resold or breached list is worth nothing.<br>02 · Temporary<br>Set a lifetime — an hour for a download link, a month for a trial. When it&#x27;s up the inbox turns mail away, and can wipe what it holds.<br>03 · Prefix<br>Claim a prefix of five characters or more, then anything you add after it already works — no setup, and no dash needed. Each address still locks to its first sender.<br>$0<br>forever<br>$30/year<br>$2.50 a month, billed yearly<br>$50/year<br>$4.17 a month, billed yearly<br>* Limits are 100 messages per day in the Free plan and 1000 in Pro and Business. Limits subject to change.<br>MCP<br>Connect Claude, Cursor or any assistant that speaks MCP, and hand it the inbox chores: a fresh address for a sign-up, the code that just arrived, every receipt from March. It gets only the permissions you give it.<br>Make me an address for the gym trial, and tell me the code they send.<br>How the three inbox types work together in one mailbox.<br>Sign in with a Google account, a passkey, or a username and a password. With Google, Clova.Email receives only your email address, your name and your profile photo: the address is how we know it is you, and the name and photo fill in your profile, where you can change or remove them. We never use any of it for advertising, never sell it and never share it. The whole of it is in our privacy policy.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Redesigning source control at Anthropic
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    866 points ·
+    962 comments ·
+    Philpax
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/engineering/redesigning-source-control">Original article</a> · <a href="https://news.ycombinator.com/item?id=50073633">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Get the developer newsletter<br>Product updates, how-tos, community spotlights, and more. Delivered monthly to your inbox.<br>At Anthropic, coding is no longer the bottleneck to building systems or doing research. Claude is able to autonomously iterate on research loops, micro-optimize complex programs, and build new services from the ground up at a speed and scale we haven’t seen before. The bottleneck, now, is all of the developer infrastructure built for human scale: source control, builds, and CI.<br>In May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day. We don’t expect this rate of growth to slow down anytime soon; the latent demand for merging code is practically infinite, and every bottleneck we remove immediately leads to a further increase in the amount of code we produce.<br>In order to support this growth, we built Scion, an in-house version control system, and fully migrated our monorepo from git in five months. We also built and shipped a code review surface (called Antique), code search, a rich source control IAM system, novel ways of managing and landing large amounts of reviewed code, and more, all in that same time period. In this post, we’ll focus on how we built Scion specifically. It makes for an interesting case study: Claude’s ability to write code was both what put us in this situation in the first place and how we were able to quickly build a high-quality, scalable system to deal with it.<br>Before we explore what we built, we should acknowledge how unusual our workload is. Unsurprisingly, Anthropic uses Claude to write software far more than almost any other company, so we’re often the first to see where tools built for human scale start to strain. Source control is just one example of this. While we don’t expect many organizations to have these problems in the very near term, we suspect it won’t be too long before others who use AI coding tools experience these same pressure points, which is why we wanted to share what we built and what we learned.<br>Git is a decentralized system: every clone is a complete, self-contained repository that can compute diffs, read history and blame, and check out any revision while fully offline. For the vast majority of repositories, this is the right design, and it’s a large part of why git became the standard.<br>As our monorepo grows, it increasingly doesn’t fit that design space. The history of our main branch alone is almost 100 GB, and a compressed working copy is over 25 GB. We perform on the order of 25 million code checkouts per day for CI, before counting developer environments, agent sandboxes, and research jobs. Fetched naively, that would be over 600 PB of git traffic per day.<br>Git offers tools for working with a slice of a repository, such as shallow clones, sparse checkouts, and promisor remotes. Beyond these, there are standard workarounds for large monorepos, like internal git mirrors and repository snapshots (seeds) kept in blob storage. We’ve used all of them—at our peak, we operated several hundred internal git mirrors to deal with the load. This bought us time, but they became harder to operate as our merge rate increased. Seeds fell further from the tip of main between refreshes, and it took more and more care to keep operations that depend on history, like diff and blame, working on partial clones.<br>Taking a step back, we noticed that, like most companies, we were using git as a centralized system with one authoritative copy, but nearly all of our clients were agents and jobs that are online by definition. The properties that make git excellent for distributed, offline work were actively undermining our ability to scale as the repo grew. So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?<br>With agentic coding, many common assumptions about how software is developed are evolving. We embraced these changes when building Scion, which allowed us to take a fundamentally different approach than git on several core principles. Source control for huge monorepos has prior art, notably Google’s Piper and Meta’s Sapling, so we were able to build Scion with their hard-won lessons in mind. Our principles are:<br>Clients are always online. Git assumes that clients work offline and need a complete copy of the repository. Since nearly all of our clients are agents and jobs, we designed Scion’s client and protocols around a server that is always reachable, and have clients fetch data when they need it.<br>Client-server asymmetry. In git, every client is capable of being a full-fledged server. In Scion, the server answers questions about file history and blame, creates commits, performs merges and rebases, and so on. The client maintains a bounded local object cache, lays out the working copy files on disk, monitors for filesystem changes, and gives users an ergonomic way to work with the server. It can compute very little on its own but, in exchange, it requires much less data locally.<br>A comprehensive source control service can power many novel applications. With git, a CI job or tool that needs to ask a question about the repository, such as who last changed a line or how two commits are related, has to maintain a local copy of the repo or hope that vendor-specific APIs provide the answer. With Scion, all of the source control queries the client uses are also exposed via API, so in many cases jobs don’t need a local repository at all. Many internal tools, such as our automated bisect and revert pipelines, wouldn’t be practical at scale without this cheap, programmatic access to source control.<br>Everything must be horizontally scalable. At our peak, we ran several hundred git mirrors, which significantly strained capacity and no longer scaled once the repo outgrew the mirrors’ disks or memory limits. In Scion, the repository’s data is distributed, and every component is independently scalable; there is no fully materialized copy of the repo anywhere, even on the server. There is no equivalent of packfiles (git’s compressed bundles of objects), so no repository maintenance is needed.<br>Commits must be cheap, incremental, and lock-free. In git, you commit locally and then push to share your work. In Scion, every commit, rebase, or merge happens on the server, so there’s nothing to push, but each of those operations needs to be fast. The cost of creating a commit and updating its downstream data structures has to scale with the size of the change, not the overall size of the repo, or the server can’t keep up. The development lifecycle in Scion discourages refs (pointers to commits, such as branches and tags), except for the main ref or release branches, because global state that every server has to agree on is a looming scaling problem.<br>The working copy is optional, and sparse by design. Because our monorepo is so large, and because we check out code tens of millions of times a day for CI, we wanted to avoid checkouts whenever we could. With Scion, a CI job that needs the diff between a commit and its merge base, for example, can ask the server for it. The same goes for writes: many write workloads can also skip the checkout and function entirely via API. Scion’s protocol is centered around sparse checkouts, which only contain the directories the client asks for, and virtualized checkouts, which materialize files on demand, so when a job does need files on disk, the client only pays for what it actually reads.<br>It’s helpful to understand how these principles came together in practice when building Scion. These insights can apply to other source control systems or, more broadly, to other stages of the software development lifecycle.<br>In Scion, the unit of work is a “changeset,” an entry in a write-ahead log. A changeset stores most of what you’d expect from a commit in git. But where a git commit stores a pointer to the tree, a changeset stores a list of the files that changed relative to its first parent,1 along with content-addressed pointers to the compressed file contents in blob storage. Changesets are created server-side and are available everywhere, instantly.<br>This structure lets us accept changesets with very high throughput because there are no packfiles to accept, no locking or cross-server coordination, and no refs to move around. Scion does technically support refs, but since neither creating nor fetching commits involves them, moving one is a compare-and-swap on a single Spanner row that happens separately from creating changesets.<br>A changeset records only what’s changed, so on its own, it can’t quickly answer questions like who last edited a line or which commits affected a file. To answer those, Scion builds additional data structures from the changesets, including dedicated structures for file blame and path history and skip lists for the commit graph. We call everything that isn’t directly part of the changeset “derived data,” and we compute it all through one generic mechanism. Each type of derived data is defined recursively, so its value for a changeset is computed from its values for that changeset’s parents.<br>This mechanism has three benefits. First, we can easily add a new type of derived data when a new data structure would make some operation faster. Second, for each type, we can choose whether to compute it eagerly or defer the work, so we avoid materializing data we don’t need. And third, because the client never sees the internals of these data structures, we can optimize them without changing the client. We’ve added new types of derived data many times as the system has grown, such as new indices for performing copy detection or path-based file search.<br>A small fleet of Scion servers provides source control APIs for any operation a client needs, such as getting changesets, computing diffs, finding merge bases, and fetching blobs. All source control data is content-addressed, so a piece of data never changes once it’s stored, and any server can cache it without checking with the others. As a result, the servers are horizontally scalable and require little coordination. They are essentially large caches that can also compute derived data on the fly and write the results back to Spanner.<br>Scion’s many consumers no longer need to maintain local repositories of their own. Fetching and maintaining the repository used to be a significant maintenance burden for CI jobs or tools that needed to ask source control questions, particularly about commit ancestry and blame. Early in the migration, before we had our own client, repo format, or protocols, Scion only answered these “metadata” queries. Fetching file contents and materializing working copies are far more data-intensive operations, and they needed a design of their own.<br>Scion’s scn client deviates from git’s fetch protocols in several important ways and, as a result, lends itself to a highly scalable architecture that requires significantly less CPU than git servers. Scion’s negotiation doesn’t tell the server what the client already has; instead, it operates exclusively on trees and blobs the client wants. Starting from a root tree, the client checks its local store for missing trees and requests them recursively, then repeats the process for blobs. Every request is for a specific object that never changes, so any cache can answer it, and the architecture closely resembles traditional tiered caches. The process is also efficient and resumable, because there is no single multi-gigabyte packfile response. Sparse and even virtualized checkouts don’t need special support, because the client simply doesn’t ask for trees it doesn’t want.<br>In the fleet, the client talks over a socket to a daemon, scion-daemon, that stores objects for the whole node. Most of our nodes need access to the monorepo, and jobs on the same node reuse most of the same objects. Each daemon starts from a periodically refreshed snapshot, then talks only to the tree and blob cache servers in its region, called scion-cache. These cache servers stream objects directly from memory, in the disk format that the daemon will consume, so they don’t need to spend time computing the client’s missing objects or performing delta compression. When a cache is missing an object, it asks the authoritative scion-servers, which read from Spanner or cloud storage as needed.<br>The scion-daemon, scion-cache, and scion-server all respond to identical RPCs for this protocol, so the client doesn’t need to know the cache topology. Any tier could theoretically talk to any other, but we strictly enforce the tiering to isolate failure domains. We want to avoid a situation where a failure in a regional scion-cache overwhelms the upstream scion-servers and brings down the entire system.<br>Each tier of this system maintains a cache hit rate of over 99% and does not require long-lived state, so it’s easy to scale up if needed. Our Scion infrastructure footprint is now 200x smaller than our previous git mirroring infrastructure in terms of CPU and memory requirements. CI and research jobs check out code two orders of magnitude faster (in seconds rather than minutes), which frees up a sizable amount of capacity across the fleet; CI alone realized a 25% CPU capacity win. Neither clients nor caches need to perform repository maintenance, which simplifies the lifecycle management of our jobs.<br>We started building Scion around the same time as Claude Mythos Preview and Claude Tag became available internally. Both of these releases simultaneously amplified the need for Scion and meaningfully accelerated how quickly we could build it.<br>Here’s a particularly striking example. Earlier in the year, we had largely handwritten the first version of the git-to-Scion ingestion pipeline as a prototype. We thought it was good—until we got our hands on an early internal snapshot of Claude Mythos Preview. We asked it to rewrite the whole thing, and with no further instructions, it produced a version that consumed 20x less memory and was 4x faster, while preserving all of the implicit invariants around ingestion ordering and data structures.<br>What we learned building and operating Scion offers some interesting lessons for what building agent-scale software could look like.<br>Rapid development with a small team will become more common. A team of seven people built both Scion and Antique (our code review tool, which we could easily write a whole other blog post about), not to mention half a dozen related systems, and fully migrated to them in five months. We did all this while the volume of code merged per day increased by 10x. In the past, developing and deploying a source control system like this would have taken a company years of iterative migration, with many more engineers. We think this sort of fast, nimble migration will become more common in the future.<br>Engineers are no less valuable, but their work is changing. All of the engineers who worked on this system would now rate Claude as better at writing code than them. But our engineers still supplied the invaluable understanding of the high-level inter-system components and the design-level tradeoffs, making informed choices around the problems we wanted to solve and the scale we knew we needed to achieve. Very often, we found that the role of the engineers was to tell Claude “no.” Agents will sometimes violate core system constraints to satisfy a pattern that should never have been allowed in the first place. This was particularly common in our migration. For example, there were multiple systems that tried to brute force looking up when a change merged to main by linearly reading the commit log instead of asking our code review tool. Anthropic also makes extensive use of adversarial review, and, while this is incredibly effective in many ways, it can also be myopic, so skilled engineers needed to steer Claude away from over-engineering parts of the system in response to hypothetical concerns. For example, one such review was overly defensive about trusting another internal service, which resulted in Claude adding excessive validation and complexity. Our team members still review every change request for the system, but they now examine the intent of the change as opposed to reading every line of code.<br>We were able to substantially improve optimization and quality. By virtue of Claude’s ability to write immense amounts of code much faster than we could ourselves, Scion is among the most well-tested and well-defended codebases we have ever worked on. Even on our tight timeline, we were able to build hermetic simulations of every non-trivial infrastructure and source control interaction we’ve ever encountered, as well as fuzzing and sophisticated rate limiting. Claude also casually found significant optimizations—for example, an algorithmic optimization to ancestry queries that missed one of our indexes—that would have taken an expert days or weeks of analysis and tuning… and then did it all again the next day.<br>We laid the groundwork for new forms of monorepo security. Managing safety, security, and compliance in a massive monorepo is as important as managing the size and scale. We built Scion with these in mind from the start. It supports rich access control on repositories, as well as the ability to apply permissions to individual directories in order to protect the most sensitive code without losing the benefits of a monorepo. Furthermore, the code review tooling we built can express complex semantic constraints on approvals, which lets us differentiate simple things like comment-only changes from sensitive logical changes, so that human reviewers can focus on the most consequential changes.<br>A new level of operational excellence is possible. Our team uses Claude Tag heavily, which has helped us monitor each component of the system. For example, we created Slack channels where we tasked Claude with being obsessively focused on the health of a single component. We call these Claudes “superfans.” We have a scion-daemon superfan, a scion-cache superfan, an Antique merge queue superfan, and so on. They have access to our telemetry and logs, and act like an experienced engineer who has nothing better to do than to refresh charts and look for anything strange. We also have traditional alerts for all of our systems, but our superfans can detect subtle and novel issues that make these alerts seem one-dimensional by comparison.<br>We’re completely rethinking our priors. This project prompted us to take a very hard look at other workflows designed for human scale. A proper merge queue, for example, doesn’t make much sense at agent scale. What does CI even mean when hundreds or even thousands of changes can merge while tests are running? We haven’t been able to effectively replicate the industry standard of a global repository lock on the merge queue, so instead, we’ve invested in post-merge and pre-deploy automated testing. This does mean that concurrent changes can conflict, but Claude can typically fix these conflicts faster than humans can even identify them.<br>We see Scion as just one part of the answer to the scaling concerns that increasingly capable AI agents have raised. We’re sharing these details as an example of how teams can tackle similar challenges, though we don’t expect our solution, or our considerations, to suit every case.<br>Scion is by no means a suitable replacement for git for general use. The concepts we’ve outlined here really only make sense for truly enormous monorepos, with either tens of thousands of engineers or swarms of agents prolifically writing code. Plus, Anthropic is unique in that our ability to spend tokens for internal use far exceeds what any other business would realistically want to spend. We do this both to address our own software development needs, and to test Claude’s capabilities.<br>Practically speaking, it’s difficult to offer Scion in a form that would be broadly useful to other organizations. It diverges significantly from git, meaning companies would need to migrate every piece of the development lifecycle, and it requires its own code review, code search, and CI. Our internal versions of these components are highly bespoke, so they would be difficult for other organizations to adopt, and we worry that attempting to build a public version that tries to please everyone wouldn’t actually be very useful.<br>However, we anticipate that this class of problems will become more commonplace over the next six to 12 months, and it would be an inefficient use of engineering resources for every company using git to face similar challenges alone. Given that, we think the most impactful thing we can do is to share our thinking, so that other developers can apply some of the most successful parts of Scion to git without departing from the overall model. A git server doesn’t have to work the same way as a git client does; novel server architectures exist that provide significant scaling improvements. Git platforms can provide comprehensive server-side RPCs like Scion, perhaps even in a standardized way across forges that the git client can learn to talk to. The negotiation protocol doesn’t have to look exactly like it does today, either, and the various sparse and shallow features in git can be made to compose well.<br>Lastly, we want to acknowledge that the git community has spent nearly two decades scaling the platform for millions of developers. Our contribution is far narrower: sharing our early view into how agentic software development interacts with these systems, so that we can partner with GitHub, GitLab, and the OSS community to support the changing needs of developers. We’re all in it together as the software development lifecycle intersects with the AI exponential.<br>Written by Nick G. and the source control team: S.G., R.K., Dan C., Garrett H., Ben L., Colin M., Joe P. We’re grateful to Vilas J. and Sergiu D. for supporting the source control team on this ambitious journey and Amir O. for early contributions to Antique.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Tell HN: Don&#x27;t mass spam employers with LLM generated emails
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    5 points ·
+    1 comments ·
+    karamazov
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50095323">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">If you&#x27;re looking for a job, do -not- have Claude bulk email every company on &quot;Who&#x27;s Hiring&quot;.<br>These things all look the same and your message is just going to get marked spam.<br>For example, it&#x27;s painfully obvious that our staff eng role&#x27;s &quot;combination of distributed execution, workload optimization, and cost-aware infrastructure&quot; is not, in fact, &quot;unusually close&quot; to whatever line on your resume Claude decided is tangentially relevant.<br>Just write a normal email by hand and send it. If you it looks like you spent 5 minutes looking up what we do and are actually excited I&#x27;ll at least look at your resume; if you spent 0 minutes thinking about the job posting I&#x27;m going to spend 0 minutes on this too.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    One-Shot San Francisco Homeless Shooter from Y Combinator Alum
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    tclancy
+  </div>
+
+  <div class="meta">
+    twitter.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://twitter.com/plbiojout/status/2110182960658018732">Original article</a> · <a href="https://news.ycombinator.com/item?id=50097321">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+</body>
+</html>
