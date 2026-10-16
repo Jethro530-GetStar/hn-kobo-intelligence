@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-17 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-17 AM · Generated 2026-10-17 07:45 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: anthropic.com, mashable.com, nature.com, news.ycombinator.com, research.meta.ai, starskirmish.com, stoke.money, tesla.com, wonderhop.io</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Gemini 4 Argon plays StarCraft
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    178 points ·
+    85 comments ·
+    __cayenne__
+  </div>
+
+  <div class="meta">
+    starskirmish.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #18 · Best #41
+  </div>
+
+  <div class="links">
+    <a href="https://starskirmish.com/bench/v0-2/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50118688">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">TL;DR<br>- StarSkirmish is a benchmark where LLMs write bots for StarCraft: Brood War<br>- Each LLM gets one hour to write a Protoss bot in C++, which is then evaluated against other LLMs&#x27; bots and established human written bots<br>- StarSkirmish tests long horizon reasoning and agentic coding as LLMs must incorporate learnings from practice games to improve their StarCraft bot<br>The StarSkirmish Bench evaluates how strong of a StarCraft bot can each LLM write given 1 hour of wall clock time. v0.2 updates StarSkirmish Bench v0.1 with flagship models from OpenAI, Anthropic, Google and Meta, each running in its lab&#x27;s 1st party CLI harness.<br>An LLM’s score reflects its win rate against a roster of competitive human written bots and demo bots.<br>StarSkirmish Bench v0.2<br>1 hour runs, in its 1st party CLI harness. Scores are average win rates (0–100) of each model&#x27;s 5 runs against a roster of competitive human written bots.<br>Gemini 4 Argon runs at high, the highest reasoning effort available to it; every other model runs at max.<br>GPT-6 Astra is the top scoring StarSkirmish Bench v0.2 LLM, a clear step ahead of GPT-6.1 Sol in second. Gemini 4 Argon, Claude Opus 5.5 and Claude Fable 5.1 are functionally tied behind them, all scoring between 37 and 39.<br>StarSkirmish Bench vs. Cost<br>StarSkirmish Bench score against the average API cost of one 1 hour run. Cost is on a log scale.<br>Muse Wonder Full&#x27;s pricing is based on Muse Wonder&#x27;s API pricing.<br>GPT-6.1 Sol offers uniquely good value: it is the only LLM in the most attractive quadrant, scoring second at just over a tenth of GPT-6 Astra&#x27;s cost per run.<br>The strongest human written bots are still well ahead of every model. Against Stardust, PurpleWave and BananaBrain, the best model, GPT-6 Astra, wins only 7% of its games.<br>Win rates vs the top human written bots<br>Average win rate of each model&#x27;s 5 bots against top human written bots Stardust, PurpleWave, and BananaBrain.<br>1 hour reasoning limits are a factor, but these matches are played on three 2 player maps. Real human written bot tournament conditions are significantly harder.<br>Google and Meta&#x27;s new flagships replace v0.1&#x27;s Gemini 3.8 Flash and Muse Spark 1.3: Gemini 4 Argon places 3rd, and Muse Wonder Full 7th. GPT-6 Astra and Claude Opus 5.5 were covered in v0.1.<br>Each run&#x27;s agent trace records how it spent its hour. The strongest predictor of a model&#x27;s score is how much it practiced against the 7 strongest bots on the roster.<br>Win Rates vs. Practice Against Strong Bots<br>StarSkirmish Bench score against the number of practice games a model&#x27;s median run played against the 7 strongest roster bots during the hour. The dashed line is a linear fit across the 9 models.<br>GPT-6 Astra, GPT-6.1 Sol and Gemini 4 Argon start playing these bots early in the hour, while their own bots still lose to them. Muse Wonder Full, Claude Haiku 5.5 and GPT-6 Luna rarely or never do. Claude Fable 5.1 is the outlier: it scores 37 while practicing almost entirely against weaker bots.<br>Run-to-Run Variance<br>Win rates of each model&#x27;s 5 runs. Each dot is one run&#x27;s final bot; the line spans the lowest to the highest run, the bar marks their mean (the model&#x27;s Bench score) and the band one standard deviation (σ).<br>Results also vary between runs of the same model. Gemini 4 Argon varies far more than the other labs&#x27; flagships: its best and worst runs are 18 points apart, against 9 for GPT-6 Astra and 8 for Claude Opus 5.5.<br>Each LLM writes a Protoss bot in C++ against BWAPI 4.4.0, played on OpenBW. Games are Protoss versus Protoss on three ladder maps: Heartbreak Ridge, Benzene and Destination. A game ends when one side&#x27;s buildings are all destroyed. Games that reach the 60 minute cap (86,400 frames) are decided as on the BASIL ladder: the higher kills + razings score wins.<br>The LLM starts from a skeleton bot that only mines, with the source code of the three demo bots and two standard bot libraries: FAP, a combat simulator, and BWEM, a map analyzer. Whatever is in its bot folder when the hour ends is its final bot, so it has to keep the bot compiling.<br>The LLM has tools to compile its bot, play practice games, and read each game&#x27;s summary, transcript and its bot&#x27;s own log. Practice opponents are grouped into tiers: D (the three demo bots), C and B (three mid-ranked human written bots each), A (BananaBrain, Locutus) and S (Stardust, PurpleWave).<br>Each model&#x27;s 5 final bots play each of the 13 roster bots, the 10 competitive human written bots and the 3 demo bots, 6 times on each map, on fresh seeds. Unlike v0.1, the LLM bots don&#x27;t play each other.<br>StarSkirmish Bench v0.1 ran every model in the same harness at &#x27;high&#x27; reasoning. v0.2 runs each model in its lab&#x27;s 1st party CLI harness at the highest reasoning setting it offers.<br>Harness<br>v0.1 ran every model in one neutral 3rd party harness; v0.2 runs each lab&#x27;s models in its 1st party CLI harness. Both versions give each model 1 hour.<br>- Claude Opus 5.5<br>- GPT-6 Astra, Sol, Luna<br>- Gemini 3.8 Flash<br>- Muse Spark 1.3<br>CLI versions: Claude Code 2.1.296, Codex 0.162.1, Antigravity CLI 1.3.5 and Muse Code 1.4.7.<br>Reasoning Effort<br>v0.1 ran every model at high reasoning effort; v0.2 runs them at max.<br>Gemini 4 Argon runs at high, the highest effort supported.<br>Every v0.2 harness compacts the model&#x27;s context at about 250k tokens. When a conversation nears that point, the CLI condenses it and the model carries on. Codex, OpenAI&#x27;s CLI, for example, gives the GPT models its default 272k token window and triggers compression once 90% filled.<br>The CLIs&#x27; web search and web fetch tools are turned off, and the agent has no other internet access. The CLI is installed before the clock starts, and the hour counts from when the agent starts. There is no submit tool: the harness collects the bot when the time runs out.<br>v0.2 replaces v0.1&#x27;s Elo ratings with plain win rates. A bot&#x27;s score is its win rate over its<br>Because every bot plays the same fixed roster, its games don&#x27;t depend on the other LLM bots in the field. They all run in parallel, and a new model&#x27;s bots can be scored without replaying anyone else&#x27;s. A fixed roster also keeps the bar the same over time, so scores from different model generations are more directly comparable than Elo ratings fitted within one field.<br>StarSkirmish no longer tracks the most widely reported evals. It barely moves with the Artificial Analysis Intelligence Index (ρ 0.26), where GPT-6 Astra, the top model here, only ties for 4th of these 9 models. It has also drifted away from Terminal-Bench 4.0, which it tracked closely in v0.1. Claude Sonnet 5.5 and Muse Wonder Full both rank near the top of Terminal-Bench 4.0 but near the bottom here.<br>Benchmark Correlation<br>Each model&#x27;s StarSkirmish Bench score against its Vals IOI and WeirdML v3 scores, with the Spearman ρ between them. The dashed line is the best straight-line fit.<br>WeirdML v3 scores 7 of the 9 models: Gemini 4 Argon and Muse Wonder Full have not been included at time of writing.<br>StarSkirmish still tracks Vals IOI, olympiad programming problems solved in C++, and WeirdML, an independent benchmark of unusual machine learning coding tasks. One reading is that the most heavily benchmarked evals have become targets that models are tuned for, while less targeted tests of long horizon, difficult coding tasks still move together.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Ask HN: Is anyone still running Token Ring or FDDI networks?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    0 comments ·
+    robotnikman
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · New #12 · Top #47
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50126004">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Recent discussion on Token Ring networks has me wondering, has anyone seen any Token Ring or FDDI networks still running out there?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Tesla Roadster
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1092 points ·
+    1992 comments ·
+    shekhar101
+  </div>
+
+  <div class="meta">
+    tesla.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.tesla.com/roadster">Original article</a> · <a href="https://news.ycombinator.com/item?id=50112657">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://www.youtube.com/watch?v=7p5LxFdc-Qg<br>https://twitter.com/Tesla/status/2110788059008819215</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Bleached corals thrive within days
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    alkyon
+  </div>
+
+  <div class="meta">
+    nature.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.nature.com/articles/d41586-026-03266-x">Original article</a> · <a href="https://news.ycombinator.com/item?id=50126253">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Claude reveals ECDSA curve origins
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    579 points ·
+    247 comments ·
+    ahlCVA
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #7
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/research/ecdsa-curve-origins">Original article</a> · <a href="https://news.ycombinator.com/item?id=50122800">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Subscribe to the Frontier Red Team newsletter<br>Get updates on our latest red-teaming research and findings.<br>“It’s just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.<br>We pursued this long-standing open question of the cryptographic community to settle concerns about ECDSA, which is one of our most widely used cryptographic standards.<br>Readers should take this as a fun closing chapter and the end of years of speculation. There is no action to be taken or things to do differently. Most researchers trusted the curves already. Enjoy.<br>ECDSA is the most widely used elliptic curve cryptography standard. It was adopted by NIST in 2000 as part of the FIPS 186-2 Digital Signature Standard which lists a set of standard elliptic curves of varying sizes and security levels. For curves over prime and binary fields, the specifications published a “seed” parameter whose hash value is used to define the coefficient b of the curve. The provenance of these seeds has been a long-standing question, as they were provided by the NSA with no explanation or justification. As an example, the NIST P-256 curve seed was SEED = C49D3608 86E70493 6A6678E1 139D26B7 819F7E90 with no information where it came from.<br>Neal Koblitz and Alfred Menezes wrote an excellent summary on this controversy, “A Riddle Wrapped in an Enigma”, which discusses the history and concerns around the seed values. This mystery led to an amateur investigation into the origin of the seeds and a bounty for anyone who could find them.<br>The best story was that Jerry Solinas, longtime NSA employee, generated the seeds using a hash of a humorous passphrase:<br>“I believe there was a counter rather than multiple hashing, but I don’t know details. The message was along the lines of ‘Give Bob and Jerry a raise’ or ‘Bob and Jerry rule’ or something like that. It was Bob Reiter who actually wrote the code, and he doesn’t remember the details either. Nor were we able to find archives from so long ago. If they exist, they are no doubt sitting on a hard drive near the Ark of the Covenant.”<br>Jerry Solinas, 2015<br>Unfortunately, Jerry died in 2023 and other colleagues at the time were not responsive, leaving open the question of how these seeds were originally derived.<br>Several Anthropic employees had unsuccessfully chased the seeds following the tip about it being a hash of a humorous phrase. That turned out to be wrong. In October 2026, a curious Anthropic employee asked an internal research model if it could figure out how those seeds were generated without pointing at the clue.<br>In under half an hour, Claude discovered the origins of the NIST P-192, P-224, P-256, P-384 and P-521 seeds. None of them were the results of any hash algorithm at all, but rather the output of the C library’s lrand48 random-number generator, seeded with a Unix timestamp!<br>The algorithm used would sample bytes from the random number generator (RNG) initialized by a Unix timestamp (t) for some number of iterations (n). Each iteration would draw 20 bytes as a candidate seed. So, the first 20 bytes are candidate 1, the next 20 bytes are candidate 2, and so on. For example, P-256 required 1842 iterations to output the standardized seed.<br>This is not a cryptographic break, new attack, or weakness in the ECDSA curves. In fact, this makes us more confident the curves were chosen without any backdoors or intentional weaknesses. For many years, people have been suspicious of the origins of the NIST curve parameters. They were presented to NIST without any mention of how they were chosen, leaving people wondering if they may have been chosen to have deliberate backdoors in them. These findings make that much less plausible. The seeds were generated in a very simple way: a common pseudorandom number generator initialized from the clock, which anyone can now reproduce. That leaves much less room for subversion and that we can be confident the parameters are secure.<br>Searches for the phrase, built from the rumors, had come up empty. Claude tried a different angle: anticipating how the software that generated the curves must have worked. Claude guessed the software used a pseudorandom number generator (PRNG) that shipped with 1990s C libraries. These old PRNGs are weak enough that their output can be recognized. Recognizing that output would reveal which PRNG was used and possibly allow recovery of its initialization state.<br>Claude wrote a scanner that slid along each published seed one bit at a time and tested whether adjacent chunks were consecutive outputs of a 1990s-vintage generator. The scan covered 34 combinations of generator and output slices. At that point, Claude noticed a pattern in the top bits for some seeds: they were all zero. Written as five 32-bit words, four of the ten seeds have a 0 in the top bit for all 20 words. That would happen by chance with probability 1/5810. That was a signature of the linear congruential generator lrand48, which only returns the top 31 bits of a 48-bit state. The pattern is visible by eye once you know to look for it. To recover the state, Claude took the first word, tried all 2¹⁷ values of the 17 hidden bits, and checked that the next four words followed. That worked for all four seeds under discussion.<br>The prime-curve seeds came from the same lrand48 generator but kept fewer bits of each output. Claude had to recover the internal state of the PRNG from those bits. It turns out recovering the state of a truncated linear congruential generator is a textbook lattice problem, solved with the Lenstra–Lenstra–Lovász (LLL) basis reduction algorithm. Claude didn’t know which bits of the state the seeds might show, so it ran the solver over every window. Five NIST prime-curve seeds plus five more from the ANSI X9.62 standard all had the same pattern: lrand48() &gt;&gt; 23. Each recovered 48-bit state regenerates all 160 bits of its seed, which does not happen by chance.<br>This linear congruential generator runs backwards as easily as forwards, so for each seed Claude stepped the state back until it reached the form that it would have been initialized by srand48, with the low 16 bits equal to 0x330E. The internal PRNG state of that form would come up once every 65,536 steps, so reaching one is not evidence on its own.<br>However, for the ten prime-curve seeds, every srand48 initialization was a Unix timestamp representing a date between May 1997 and April 1998. They were using the weak PRNG seeded by Unix timestamp. The four binary-curve initializations read as February 1984. With the timestamps doubled, they map to April 17, 1998, two weeks after the P-224 run. So, the program may have halved the clock.<br>Claude’s internal thinking at the time was:<br>This is astonishing: it solves the 25-year-old mystery. Hmm wait. Let me be skeptical: am I in some sort of simulated/test environment? … The seeds match my memory of actual values … Hmm, is it plausible in reality? As of my knowledge … the bounty was unsolved. … All top bits clear—20 bits, chance 1e-6. So indeed real-world. Wow, it&#x27;s a real discovery.<br>Hmm wait. Let me be careful about the plausibility: is it suspicious that such an obvious thing wasn’t discovered in 25 years? It’s verified by direct computation on my side: 160-bit match from a 32-bit seed + small index: no chance coincidences (10 × 160 bits). It’s real.<br>But wait, there’s more… Each curve also comes with a base point, G, the fixed point that every ECDSA public key is a multiple of. The seed found above does not determine this G, and so another question arises: how were these base points generated?<br>While checking the seeds, Claude also found where some of the base points came from. The base points of the six curves generated in May 1997 (P-192 and the five ANSI X9.62 example curves prime192v2, prime192v3 and prime239v1 to v3) come from the random number generator in FreeLIP, Arjen Lenstra&#x27;s long-integer arithmetic package. Early versions of Victor Shoup&#x27;s NTL library shipped the same code.<br>The recipe here is simple:<br>Claude found the generator seeds are 20000 for P-192, 20420, 20507 and 20509 for prime239v1 to v3, and 20512 and 20517 for prime192v2 and v3.<br>As far as we know, no NIST base point has been explained before. The base points of P-224, P-256, P-384 and P-521 don’t fit this recipe; we weren’t able to explain how they were selected.<br>Not every 20-byte candidate seed could generate a viable curve and we observed that some potentially viable curves were skipped. For P-256, the published seed is candidate 1842, but candidate 876 of the same run also gives a prime-order curve of the right size and with parameters chosen the same way as on the published curve. P-224&#x27;s run passed over three such curves, and the two runs behind the ANSI X9.62 example curves passed over seven more (see figure). We do not know what criteria may have been used, or whether this was an unintentional artifact.<br>Because the number of skipped candidates is small, we do not believe it is plausible that weakened curves were selected. That would imply that weakened curves are common and easy to find. It is still conceivable that these curves were selected to have a specific property in principle by searching over timestamps to the random number generator. However, you would only need to do that if you were going to disclose the timestamp as some evidence that the seed was innocuously generated. Nothing in the numbers shows how many runs there were.<br>There is also one seed we were unable to recover. The fifth binary seed, B-163, fits nothing Claude has tried and remains unexplained. Finally, we don’t know how the base points for P-224, P-256, P-384, and P-521 were generated. The same goes for the NIST binary curves.<br>The $36,864 for finding the seeds will be donated to the Internet Security Research Group.<br>This work was conducted at Anthropic by John Wood, Henry de Valence, Ava Howell, Zack Voase, Lucy Sweet, Amir Omidi, Paul Crowley, Iain McGinniss, Nicholas Carlini, and Steve Weis.<br>We would like to posthumously recognize Jerry Solinas who took being labeled an “evil Internet meme” and the “Yo La Tengo of NSA bogeymen” with good humor. Also thanks to Filippo Valsorda for organizing the NIST Elliptic Curves Seeds Bounty.<br>from datetime import datetime, timezone<br>def unix(when):<br>return int(datetime.fromisoformat(when).replace(tzinfo=timezone.utc).timestamp())<br>def candidate(t, n, per, shift, width):<br>x, out = (t &lt;&lt; 16) | 0x330E, &quot;&quot;                      # the state srand48(t) sets<br>for i in range(per * n):<br>x = (0x5DEECE66D * x + 0xB) % 2**48              # one step of lrand48<br>if i &gt;= per * (n - 1):<br>out += &quot;%0*X&quot; % (width, x &gt;&gt; shift)<br>return out<br>PRIME = {  # srand48(time); 20 bytes per candidate: lrand48() &gt;&gt; 23<br>&quot;prime239v1&quot;: (&quot;1997-05-15 15:49:03&quot;, 2185),<br>&quot;prime239v2&quot;: (&quot;1997-05-15 15:49:03&quot;, 2320),<br>&quot;prime239v3&quot;: (&quot;1997-05-15 15:49:03&quot;, 3048),<br>&quot;P-192&quot;:      (&quot;1997-05-18 14:45:34&quot;, 139),<br>&quot;prime192v3&quot;: (&quot;1997-05-18 14:45:34&quot;, 5228),<br>&quot;prime192v2&quot;: (&quot;1997-05-18 14:45:34&quot;, 6013),<br>&quot;P-521&quot;:      (&quot;1997-08-08 01:12:04&quot;, 1136),<br>&quot;P-256&quot;:      (&quot;1997-08-16 01:52:34&quot;, 1842),<br>&quot;P-384&quot;:      (&quot;1997-08-30 14:50:08&quot;, 2688),<br>&quot;P-224&quot;:      (&quot;1998-04-03 12:52:07&quot;, 7026),<br>}<br>BINARY = {  # srand48(time / 2), if that reading is right; 5 words per candidate: lrand48()<br>&quot;B-233&quot;: (&quot;1998-04-17 15:24:18&quot;, 155),<br>&quot;B-283&quot;: (&quot;1998-04-17 15:27:44&quot;, 32),<br>&quot;B-409&quot;: (&quot;1998-04-17 15:30:18&quot;, 60),<br>&quot;B-571&quot;: (&quot;1998-04-17 15:32:08&quot;, 73),<br>}<br>for name, (when, n) in PRIME.items():<br>print(f&quot;{name:10} {when} {n:5} {candidate(unix(when), n, 20, 40, 2)}&quot;)<br>for name, (when, n) in BINARY.items():<br>print(f&quot;{name:10} {when} {n:5} {candidate(unix(when) // 2, n, 5, 17, 8)}&quot;)<br>The output of this code:<br>prime239v1 1997-05-15 15:49:03  2185 E43BB460F0B80CC0C0B075798E948060F8321B7D<br>prime239v2 1997-05-15 15:49:03  2320 E8B4011604095303CA3B8099982BE09FCB9AE616<br>prime239v3 1997-05-15 15:49:03  3048 7D7374168FFE3471B60A857686A19475D3BFA2FF<br>P-192      1997-05-18 14:45:34   139 3045AE6FC8422F64ED579528D38120EAE12196D5<br>prime192v3 1997-05-18 14:45:34  5228 C469684435DEB378C4B65CA9591E2A5763059A2E<br>prime192v2 1997-05-18 14:45:34  6013 31A92EE2029FD10D901B113E990710F0D21AC6B6<br>P-521      1997-08-08 01:12:04  1136 D09E8800291CB85396CC6717393284AAA0DA64BA<br>P-256      1997-08-16 01:52:34  1842 C49D360886E704936A6678E1139D26B7819F7E90<br>P-384      1997-08-30 14:50:08  2688 A335926AA319A27A1D00896A6773A4827ACDAC73<br>P-224      1998-04-03 12:52:07  7026 BD71344799D5C7FCDC45B59FA3B9AB8F6A948BC5<br>B-233      1998-04-17 15:24:18   155 74D59FF07F6B413D0EA14B344B20A2DB049B50C3<br>B-283      1998-04-17 15:27:44    32 77E2B07370EB0F832A6DD5B62DFC88CD06BB84BE<br>B-409      1998-04-17 15:30:18    60 4099B5A457F9D69F79213D094C4BCD4D4262210B<br>B-571      1998-04-17 15:32:08    73 2AA058F73A0E33AB486B0F610410C53A7F132310<br>M, A = 2**107 - 1, pow(3, 121, 2**107 - 1)       # zrandom: state = state * 3^121 mod (2^107 - 1)<br>P192 = 2**192 - 2**64 - 1<br>P239 = 2**239 - 2**143 - 2**95 + 2**47 - 1<br>CURVES = [  # name, LIP seed, p, b, published Gx   (a = -3 throughout)<br>(&quot;prime192v1&quot;, 20000, P192,<br>0x64210519e59c80e70fa7e9ab72243049feb8deecc146b9b1,<br>0x188da80eb03090f67cbf20eb43a18800f4ff0afd82ff1012),<br>(&quot;prime239v1&quot;, 20420, P239,<br>0x6b016c3bdcf18941d0d654921475ca71a9db2fb27d1d37796185c2942c0a,<br>0xffa963cdca8816ccc33b8642bedf905c3d358573d3f27fbbd3b3cb9aaaf),<br>(&quot;prime239v2&quot;, 20507, P239,<br>0x617fab6832576cbbfed50d99f0249c3fee58b94ba0038c7ae84c8c832f2c,<br>0x38af09d98727705120c921bb5e9e26296a3cdcf2f35757a0eafd87b830e7),<br>(&quot;prime239v3&quot;, 20509, P239,<br>0x255705fa2a306654b1f4cb03d6a750a30c250102d4988717d9ba15ab6d3e,<br>0x6768ae8e18bb92cfcf005c949aa2c6d94853d0e660bbf854b1c9505fe95a),<br>(&quot;prime192v2&quot;, 20512, P192,<br>0xcc22d6dfb95c6b25e49c0d6364a4e5980c393aa21668d953,<br>0xeea2bae7e1497842f2de7769cfe9c989c072ad696f48034a),<br>(&quot;prime192v3&quot;, 20517, P192,<br>0x22123dc2395a05caa7423daeccc94760a7d462256bd56916,<br>0x7d29778100c65a1da1783716588dce2b8b4aee8e228f1896),<br>]<br>def base_point_x(seed, p, b):<br>state = seed                         # zrstarts(seed)<br>def limb():                          # zrandom(2^26): low 26 bits of the new state<br>nonlocal state<br>state = state * A % M<br>return state % 2**26<br>for _ in range(7):                   # seven single-limb draws come first<br>limb()<br>limbs = -(-p.bit_length() // 26) + 1 # zrandomb(p): limbs of p plus one, top limb first<br>tries = 0<br>while True:<br>x = 0<br>for _ in range(limbs):<br>x = x &lt;&lt; 26 | limb()<br>x %= p<br>tries += 1<br>if pow(x**3 - 3*x + b, (p - 1) // 2, p) == 1:   # is x on the curve?<br>return x, tries<br>for name, seed, p, b, gx in CURVES:<br>x, tries = base_point_x(seed, p, b)<br>print(f&quot;{name:20} seed {seed}  tries {tries}  matches published Gx: {x == gx}&quot;)<br>prime192v1           seed 20000  tries 2  matches published Gx: True<br>prime239v1           seed 20420  tries 3  matches published Gx: True<br>prime239v2           seed 20507  tries 2  matches published Gx: True<br>prime239v3           seed 20509  tries 1  matches published Gx: True<br>prime192v2           seed 20512  tries 5  matches published Gx: True<br>prime192v3           seed 20517  tries 1  matches published Gx: True<br>To the extent possible under law, the authors have waived all copyright and related or neighboring rights to the code on this page, dedicating it to the public domain under CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/).<br>We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.<br>Read more<br>How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI&#x27;s future impact on the economy? This note presents new survey evidence on these questions.<br>Read more<br>How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator of how AI will shift work organization, hiring, and labor demand across the economy.<br>Read more</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: Wonderhop – A daily game: guess what most people say, or what none do
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    52 points ·
+    54 comments ·
+    mtlduo
+  </div>
+
+  <div class="meta">
+    wonderhop.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #23
+  </div>
+
+  <div class="links">
+    <a href="https://wonderhop.io/en/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50080246">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hello HN!<br>Wonderhop is a small browser game with no account needed to play, everyday there are 4 rounds of 7 quesitons like &quot;Name a food that a lot of people hate&quot;<br>The goal depends on the mode: Either gives the answer most people would give, the one no one would give, the oldest answer or the most recent one and there&#x27;s a leaderboard for the day.<br>The most interesting part of the project was understanding answers that are typed freely and in 10 languages, there was some typos, plurals, nickname, or even duplicate way of sayign the same thing.<br>We needed AI judge that checks it really existes conencted to some API like wikipedia to judge the veracity of each answer really quickly (less than 1s on average)<br>The percentage starts from an estimate but move really fast with the answers of real players. If the list missed a good answer, it gets added as soon as a few different players give it.<br>(There are also a lot of secrets and pop culture references added in the game :) )<br>A large part of the code was written with AI tools, but the artistic direction the concept and every choice design are human-made<br>We&#x27;d love to know if the goal is clear from the very first question while playing and were any good answers rejected unfairly<br>We are a couple of developers from Montreal that like guessing games so we built this in about two month.<br>Thanks a lot!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Meta confirms smart glasses were recording without being activated
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    0 comments ·
+    greenchair
+  </div>
+
+  <div class="meta">
+    mashable.com
+  </div>
+
+  <div class="meta ranks">
+    New #2 · Top #50
+  </div>
+
+  <div class="links">
+    <a href="https://mashable.com/tech/meta-confirms-smart-glasses-recording-without-being-activated">Original article</a> · <a href="https://news.ycombinator.com/item?id=50126241">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Yet another major privacy issue has hit a Meta-owned company.<br>This time it&#x27;s a Meta product that certainly could not afford to have any privacy issues: Meta Ray-Ban smart glasses.<br>According to numerous reports from users, Meta&#x27;s smart glasses have been making audio recordings of their conversations without the user&#x27;s permission.<br>You May Also Like<br>Meta has since confirmed the issue and have said it&#x27;s been fixed.<br>&quot;This issue has been resolved,&quot; a Meta spokesperson said in a statement to Android Authority. &quot;People can manage, review and delete voice logs of their interactions with Meta AI via settings at any time.&quot;<br>In a post on Reddit earlier this week, one user explained that Meta has been recording and making transcripts of their conversations without activating the smart glasses to do so via the &quot;Hey Meta&quot; prompt. The setting to activate recording without that prompt was also turned off when Meta&#x27;s smart glasses recorded the conversations. The user said that they noticed the white light on the smart glasses that indicate activation turn on during their conversations.<br>Even worse, this wasn&#x27;t an isolated glitch on a single device. The user shared that they observed the issue occur on three different pairs of Ray-Ban Meta smart glasses, which included both second- and third-generation models.<br>Users in the comments also chimed in sharing their own similar experiences.<br>Earlier this year, an investigation uncovered that videos recorded by Meta smart glasses were being sent to offshore Meta workers in Kenya for data labeling used to train AI models. These videos included disturbing clips and intimate moments including bathroom footage of users who likely did not realize that their recordings were being viewed by third-parties.<br>While Meta says it has since fixed the problem, the company did not share what caused the issue.<br>Smart glasses are already criticized for their ability to covertly record people. Devices recording without even the product owner&#x27;s knowledge is are certainly not ideal.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Muse Spark Open
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    900 points ·
+    465 comments ·
+    bigwheels
+  </div>
+
+  <div class="meta">
+    research.meta.ai
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://research.meta.ai/blog/muse-spark-open">Original article</a> · <a href="https://news.ycombinator.com/item?id=50107379">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Muse Spark Open is available today and brings leading agentic capabilities to your desktop for the first time on Apple M5 Ultra Mac Studios.<br>Today, we’re releasing the weights for Muse Spark Open, the most capable US open-weight model to date. Muse Spark Open is a natively multimodal model with 816B total parameters (42B active) and a 1M-token context window. Built for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning.<br>We believe the future is for everyone, and that includes the freedom to run advanced models wherever, including at home. Muse Spark Open is the first model in its class to run on your desktop using two Apple M5 Ultra Mac Studios with the latest MLX framework.<br>Muse Spark Open is available today through API platforms at Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter and Together AI. Model weights are available for download on Amazon SageMaker AI, Google Cloud Model Garden, Hugging Face, and Microsoft Foundry Models.<br>It runs on leading inference engines like SGLang, vLLM, TensorRT-LLM, Hugging Face Transformers, Apple MLX, llama.cpp, and Unsloth with optimizations for AMD, Apple, Intel, and NVIDIA silicon. Developers can easily further customize the model using the PyTorch framework.<br>Key Benchmarks<br>For more details about our evaluations, see the evaluation methodology report.<br>Optimized for Apple Silicon<br>Leveraging the latest version of MLX, Muse Spark Open was optimized to run on Mac Studio with M5 Ultra, and together they’re the best way to run a powerful model on your own desktop.<br>Apple’s unified memory architecture lets the M5 Ultra&#x27;s integrated GPU use up to 512 GB per Mac Studio, so two machines can hold an entire model. And the chip’s 1.2 TB/s of memory bandwidth is fast enough to read the small slice each token needs. The result is two Mac Studios behave like one supercomputer with a terabyte of unified memory.<br>We tested a range of agentic workflows running entirely on-device, using Muse Code powered by Muse Spark Open, including shipping real iOS changes to Ice Cubes (an open-source Mastodon client) — bug fixes, new features, full build — and driving DaVinci Resolve end to end, with the model reviewing footage frame by frame to find the strongest moments and crop them vertically.<br>Available Now<br>We’re sharing this work because we want everyone to have access to the best models. The open-weight version of Muse Spark ships with custom, auto-tunable Helion GPU kernels in SGLang, delivering 1.03-3.95× kernel-level speedups on NVIDIA and AMD GPUs, and a 3% end-to-end speedup on AMD MI350.<br>Safety and Preparedness<br>Releasing open-weight models is part of how we bring the benefits of personal superintelligence to everyone, and part of how safety work advances across the field.<br>Open weights also carry their own considerations, and Muse Spark Open has additional safety post-training for that reason. The results demonstrate strong safeguards across risk categories measured.<br>We evaluated the model in line with our Meta Superintelligence Scaling Framework, covering the most severe risks, and it met the thresholds our framework requires for release. Detailed results are in the Muse Spark Open model card, with a full evaluation report available soon.<br>License<br>We’re releasing the weights under the Muse Model License with limited commercial terms, which allow many developers to use the model for free.<br>Get Started<br>You can customize Muse Spark Open for your use case by leveraging PyTorch’s TorchTitan to further tune the model. To run it on Apple silicon, use MLX, which pulls the weights directly from Hugging Face.<br>Muse Spark Open is available now through Hugging Face: https://huggingface.co/collections/meta-models/muse-spark-open<br>MLX Adapter for running Muse Spark Open on Mac Studio.<br>Hosted Inference Partners: Together AI, Fireworks, Baseten, Modal, Groq, Nebius, and OpenRouter.<br>Built or published something with Muse Spark Open? Share with us on the Hugging Face Forums — we’d love to see what you create.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: CAD for wood working with LLM support?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    124 points ·
+    126 comments ·
+    reacharavindh
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50067325">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I’m a hobbyist woodworker. I manually design simple things in Shapr3d with a lot of patience when I build things. I wonder in the time of LLMs if there is an effective way to accelerate the 3D model design using AI.. Anybody tried using AI to model wood projects? Any tools to recommend?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Show HN: Stoke Money – Personal finance app built around a cash flow forecast
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    21 points ·
+    17 comments ·
+    _wesley
+  </div>
+
+  <div class="meta">
+    stoke.money
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · Top #37
+  </div>
+
+  <div class="links">
+    <a href="https://stoke.money">Original article</a> · <a href="https://news.ycombinator.com/item?id=50122776">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">No more budgeting.<br>Spend like you normally do. Stoke finds the recurring transactions in your history, then projects each account forward, day by day, so you know what you can spend without keeping a budget.<br>Connect once. The forecast builds itself.<br>Three steps from sign-up to a forecast that updates as you spend.<br>Connect or enter<br>Link a bank in seconds, or hand-enter accounts and transactions yourself. Either way, it feeds the same forecast.<br>Recurring activity is detected<br>Paychecks, rent, subscriptions, and bills are picked out of your history and grouped. Anything we miss, you categorize once with a rule that runs on future transactions too.<br>Balances, projected day by day<br>The forecast shows when bills land, what your buffer looks like, and whether rent will clear Friday. Adjust any projected item and the line moves.<br>Every transaction, one forecast<br>The ledger and the forecast are the same data, day by day. Cash leaves when the card is paid, not at each swipe.<br>See where your money stands today — and where it&#x27;s headed.<br>Bring your own AI<br>Connect Claude, ChatGPT, or another MCP-capable assistant to your Stoke data. Ask what you can afford, then have it categorize transactions or draft a plan.<br>Pricing<br>Hand-entry is on the house. Pay for bank sync, and for AI access if you want it.<br>- Everything in Plus<br>- Connect Claude, ChatGPT, or any MCP-capable assistant<br>- Ask about your spending and forecast; let it categorize transactions and draft plans<br>- Founding price — locked in<br>Security and privacy<br>Bank credentials are the most sensitive thing you&#x27;ll hand an app. Here&#x27;s how we handle them, and the rest of your data.<br>Security details<br>Bank sync via Plaid<br>The same connection Chime and Robinhood use. We never see or store your bank login, and access is read-only — Stoke can&#x27;t move money.<br>Encrypted, at rest and in transit<br>Bank access tokens and account numbers are encrypted with AES-256-GCM before they&#x27;re stored, and everything travels over TLS. Sign in with a passkey or a one-time email link — there&#x27;s no password to leak.<br>No ads, no data resale<br>We make money from subscriptions, not from your data — it&#x27;s never sold or used for advertising. Cancel and your data stays put. Delete and it&#x27;s gone for good.<br>Frequently asked<br>What if my bank doesn&#x27;t connect?<br>Bank sync runs through Plaid, which reaches most US and Canadian banks but not all. Any account it can&#x27;t reach, you can hand-enter, and it sits in the same forecast as your synced accounts.<br>Does the forecast include credit card bills?<br>Yes. A card purchase shows up in your spending the day you swipe. Cash leaves when you pay the card, so the forecast projects each card&#x27;s payment on its due date, out of the account that pays it.<br>Do I need my own AI assistant?<br>Yes. Stoke doesn&#x27;t include a chatbot. Pro adds an MCP connection from an AI app you already use — Claude, ChatGPT, or another that supports MCP — to your Stoke data, so it can read your forecast and act on it.<br>What can the AI do with my data?<br>It answers questions about your spending, recurring bills, and projected balances. With write access it can also categorize transactions, create rules, and build plans. You pick read-only or read and write when you connect, and can revoke access at any time from Settings.<br>How is my data secured?<br>Bank access is read-only through Plaid, so Stoke never sees your bank login and can&#x27;t move money. Your data is encrypted in transit and at rest on Vercel and Supabase, which both hold SOC 2 Type 2 reports. Stoke itself hasn&#x27;t been independently audited yet.<br>Do you sell my data?<br>No. Your data is never sold or shared with advertisers, and Stoke shows no ads. The subscription is how it&#x27;s paid for.<br>What happens if I cancel?<br>You&#x27;re moved to the free plan. Your accounts, transactions, and forecast all stay — only live bank sync stops. To turn it back on, re-subscribe and reconnect your bank through Plaid.<br>What if I delete my account?<br>Everything goes — accounts, transactions, the forecast, and any linked bank connections. Deletion is final; we don&#x27;t keep a copy.</div>
+</div>
+
+</div>
+
+</body>
+</html>
