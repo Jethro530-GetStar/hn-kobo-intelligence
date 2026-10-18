@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-18 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-18 PM · Generated 2026-10-18 21:24 CST</div><div class="issue-sub">Stories 10 · Full 8</div><div class="issue-sub">Sources: anthropic.com, api-docs.deepseek.com, danielmangum.com, huggingface.co, legendofhyrule.com, news.ycombinator.com, niemanlab.org, sphinx-six-theta.vercel.app, spomory.yliuai.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Sphinx – A hook that quizzes you on your AI&#x27;s code before shipping
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    173 points ·
+    51 comments ·
+    critiquebrowser
+  </div>
+
+  <div class="meta">
+    sphinx-six-theta.vercel.app
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #6 · Best #41
+  </div>
+
+  <div class="links">
+    <a href="https://sphinx-six-theta.vercel.app/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50137950">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">- Free<br>- FOSS<br>“Outsource your thinking,<br>not your understanding.”<br>— Sun Tzu<br>Sphinx is a Git hook for agent-assisted development. Before your agent’s code ships, it asks you a question about what that code actually does.<br>npm install -g sphinx-understand<br>Built to run on minimal tokens, from your existing coding agent, OpenRouter, or any OpenAI-compatible endpoint.<br>Sphinx<br>Your webhook handler now saves the event ID before calling charge(). Stripe times out and sends the same event again. What happens on the retry?<br>You<br>It runs twice, so the customer is charged twice.<br>Sphinx<br>Not quite. The retry finds the saved ID and returns 200 without charging. But that ID is stored before the charge succeeds. If charge() fails, what does the next retry do?<br>You<br>It skips the charge, so the customer is never billed.<br>- 01 You push. Or your agent does. Git pauses on the branches you protect.<br>- 02 Sphinx asks. A reviewer that never saw your chat reads the diff and asks what the change does when things go wrong.<br>- 03 You answer. Get it wrong and you learn why, then try a new scenario. Get it right and the push continues.<br>Works with Codex, Claude Code, Cursor, OpenCode, and Pi, or plain Git. Your answers never reach the coding agent, and .env files and keys are never opened. In a hurry? sphinx yolo lets pushes through, and every skip is logged.<br>Start in a minute.<br># Node 22.19+ · macOS, Linux, or WSL<br>npm install -g sphinx-understand<br>sphinx install<br># then push as usual<br>git push<br>sphinx install connects Git and your coding agents and asks which model should review. Read the docs for everything else.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Claude reveals ECDSA curve origins
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1041 points ·
+    384 comments ·
+    ahlCVA
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #46
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/research/ecdsa-curve-origins">Original article</a> · <a href="https://news.ycombinator.com/item?id=50122800">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Subscribe to the Frontier Red Team newsletter<br>Get updates on our latest red-teaming research and findings.<br>“It’s just timestamps”: the decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.<br>We pursued this long-standing open question of the cryptographic community to settle concerns about ECDSA, which is one of our most widely used cryptographic standards.<br>Readers should take this as a fun closing chapter and the end of years of speculation. There is no action to be taken or things to do differently. Most researchers trusted the curves already. Enjoy.<br>ECDSA is the most widely used elliptic curve cryptography standard. It was adopted by NIST in 2000 as part of the FIPS 186-2 Digital Signature Standard which lists a set of standard elliptic curves of varying sizes and security levels. For curves over prime and binary fields, the specifications published a “seed” parameter whose hash value is used to define the coefficient b of the curve. The provenance of these seeds has been a long-standing question, as they were provided by the NSA with no explanation or justification. As an example, the NIST P-256 curve seed was SEED = C49D3608 86E70493 6A6678E1 139D26B7 819F7E90 with no information on where it came from.<br>Neal Koblitz and Alfred Menezes wrote an excellent summary on this controversy, “A Riddle Wrapped in an Enigma”, which discusses the history and concerns around the seed values. This mystery led to an amateur investigation into the origin of the seeds and a bounty for anyone who could find them.<br>The best story was that Jerry Solinas, longtime NSA employee, generated the seeds using a hash of a humorous passphrase:<br>“I believe there was a counter rather than multiple hashing, but I don’t know details. The message was along the lines of ‘Give Bob and Jerry a raise’ or ‘Bob and Jerry rule’ or something like that. It was Bob Reiter who actually wrote the code, and he doesn’t remember the details either. Nor were we able to find archives from so long ago. If they exist, they are no doubt sitting on a hard drive near the Ark of the Covenant.”<br>Jerry Solinas, 2015<br>Unfortunately, Jerry died in 2023 and other colleagues at the time were not responsive, leaving open the question of how these seeds were originally derived.<br>Several Anthropic employees had unsuccessfully chased the seeds following the tip about it being a hash of a humorous phrase. That turned out to be wrong. In October 2026, a curious Anthropic employee asked an internal research model if it could figure out how those seeds were generated without pointing at the clue.<br>In under half an hour, Claude discovered the origins of the NIST P-192, P-224, P-256, P-384, and P-521 seeds. None of them were the results of any hash algorithm at all, but rather the output of the C library’s lrand48 random-number generator, seeded with a Unix timestamp!<br>The algorithm used would sample bytes from the random number generator (RNG) initialized by a Unix timestamp (t) for some number of iterations (n). Each iteration would draw 20 bytes as a candidate seed. So, the first 20 bytes are candidate 1, the next 20 bytes are candidate 2, and so on. For example, P-256 required 1,842 iterations to output the standardized seed.<br>This is not a cryptographic break, new attack, or weakness in the ECDSA curves. In fact, this makes us more confident the curves were chosen without any backdoors or intentional weaknesses. For many years, people have been suspicious of the origins of the NIST curve parameters. They were presented to NIST without any mention of how they were chosen, leaving people wondering if they may have been chosen to have deliberate backdoors in them. These findings make that much less plausible. The seeds were generated in a very simple way: a common pseudorandom number generator initialized from the clock, which anyone can now reproduce. That leaves much less room for subversion and that we can be confident the parameters are secure.<br>Searches for the phrase, built from the rumors, had come up empty. Claude tried a different angle: anticipating how the software that generated the curves must have worked. Claude guessed the software used a pseudorandom number generator (PRNG) that shipped with 1990s C libraries. These old PRNGs are weak enough that their output can be recognized. Recognizing that output would reveal which PRNG was used and possibly allow recovery of its initialization state.<br>Claude wrote a scanner that slid along each published seed one bit at a time and tested whether adjacent chunks were consecutive outputs of a 1990s-vintage generator. The scan covered 34 combinations of generator and output slices. At that point, Claude noticed a pattern in the top bits for some seeds: they were all zero. Written as five 32-bit words, four of the ten seeds have a 0 in the top bit for all 20 words. That would happen by chance with probability 1/5,810. That was a signature of the linear congruential generator lrand48, which only returns the top 31 bits of a 48-bit state. The pattern is visible by eye once you know to look for it. To recover the state, Claude took the first word, tried all 2¹⁷ values of the 17 hidden bits, and checked that the next four words followed. That worked for all four seeds under discussion.<br>The prime-curve seeds came from the same lrand48 generator but kept fewer bits of each output. Claude had to recover the internal state of the PRNG from those bits. It turns out recovering the state of a truncated linear congruential generator is a textbook lattice problem, solved with the Lenstra–Lenstra–Lovász (LLL) basis reduction algorithm. Claude didn’t know which bits of the state the seeds might show, so it ran the solver over every window. Five NIST prime-curve seeds plus five more from the ANSI X9.62 standard all had the same pattern: lrand48() &gt;&gt; 23. Each recovered 48-bit state regenerates all 160 bits of its seed, which does not happen by chance.<br>This linear congruential generator runs backwards as easily as forwards, so for each seed Claude stepped the state back until it reached the form that it would have been initialized by srand48, with the low 16 bits equal to 0x330E. The internal PRNG state of that form would come up once every 65,536 steps, so reaching one is not evidence on its own.<br>However, for the ten prime-curve seeds, every srand48 initialization was a Unix timestamp representing a date between May 1997 and April 1998. They were using the weak PRNG seeded by Unix timestamp. The four binary-curve initializations read as February 1984. With the timestamps doubled, they map to April 17, 1998, two weeks after the P-224 run. So, the program may have halved the clock.<br>Claude’s internal thinking at the time was:<br>This is astonishing: it solves the 25-year-old mystery. Hmm wait. Let me be skeptical: am I in some sort of simulated/test environment? … The seeds match my memory of actual values … Hmm, is it plausible in reality? As of my knowledge … the bounty was unsolved. … All top bits clear—20 bits, chance 1e-6. So indeed real-world. Wow, it&#x27;s a real discovery.<br>Hmm wait. Let me be careful about the plausibility: is it suspicious that such an obvious thing wasn’t discovered in 25 years? It’s verified by direct computation on my side: 160-bit match from a 32-bit seed + small index: no chance coincidences (10 × 160 bits). It’s real.<br>But wait, there’s more… Each curve also comes with a base point, G, the fixed point that every ECDSA public key is a multiple of. The seed found above does not determine this G, and so another question arises: how were these base points generated?<br>While checking the seeds, Claude also found where some of the base points came from. The base points of the six curves generated in May 1997 (P-192 and the five ANSI X9.62 example curves prime192v2, prime192v3, and prime239v1 to v3) come from the random number generator in FreeLIP, Arjen Lenstra&#x27;s long-integer arithmetic package. Early versions of Victor Shoup&#x27;s NTL library shipped the same code.<br>The recipe here is simple:<br>Claude found the generator seeds are 20000 for P-192, 20420, 20507, and 20509 for prime239v1 to v3, and 20512 and 20517 for prime192v2 and v3.<br>As far as we know, no NIST base point has been explained before. The base points of P-224, P-256, P-384, and P-521 don’t fit this recipe; we weren’t able to explain how they were selected.<br>Not every 20-byte candidate seed could generate a viable curve, and we observed that some potentially viable curves were skipped. For P-256, the published seed is candidate 1,842, but candidate 876 of the same run also gives a prime-order curve of the right size and with parameters chosen the same way as on the published curve. P-224&#x27;s run passed over three such curves, and the two runs behind the ANSI X9.62 example curves passed over seven more (see figure). We do not know what criteria may have been used, or whether this was an unintentional artifact.<br>Because the number of skipped candidates is small, we do not believe it is plausible that weakened curves were selected. That would imply that weakened curves are common and easy to find. It is still conceivable that these curves were selected to have a specific property in principle by searching over timestamps to the random number generator. However, you would only need to do that if you were going to disclose the timestamp as some evidence that the seed was innocuously generated. Nothing in the numbers shows how many runs there were.<br>There is also one seed we were unable to recover. The fifth binary seed, B-163, fits nothing Claude has tried and remains unexplained. Finally, we don’t know how the base points for P-224, P-256, P-384, and P-521 were generated. The same goes for the NIST binary curves.<br>The $36,864 for finding the seeds will be donated to the Internet Security Research Group.<br>This work was conducted at Anthropic by John Wood, Henry de Valence, Ava Howell, Zack Voase, Lucy Sweet, Amir Omidi, Paul Crowley, Iain McGinniss, Nicholas Carlini, and Steve Weis.<br>We would like to posthumously recognize Jerry Solinas who took being labeled an “evil Internet meme” and the “Yo La Tengo of NSA bogeymen” with good humor. Also thanks to Filippo Valsorda for organizing the NIST Elliptic Curves Seeds Bounty.<br>from datetime import datetime, timezone<br>def unix(when):<br>return int(datetime.fromisoformat(when).replace(tzinfo=timezone.utc).timestamp())<br>def candidate(t, n, per, shift, width):<br>x, out = (t &lt;&lt; 16) | 0x330E, &quot;&quot;                      # the state srand48(t) sets<br>for i in range(per * n):<br>x = (0x5DEECE66D * x + 0xB) % 2**48              # one step of lrand48<br>if i &gt;= per * (n - 1):<br>out += &quot;%0*X&quot; % (width, x &gt;&gt; shift)<br>return out<br>PRIME = {  # srand48(time); 20 bytes per candidate: lrand48() &gt;&gt; 23<br>&quot;prime239v1&quot;: (&quot;1997-05-15 15:49:03&quot;, 2185),<br>&quot;prime239v2&quot;: (&quot;1997-05-15 15:49:03&quot;, 2320),<br>&quot;prime239v3&quot;: (&quot;1997-05-15 15:49:03&quot;, 3048),<br>&quot;P-192&quot;:      (&quot;1997-05-18 14:45:34&quot;, 139),<br>&quot;prime192v3&quot;: (&quot;1997-05-18 14:45:34&quot;, 5228),<br>&quot;prime192v2&quot;: (&quot;1997-05-18 14:45:34&quot;, 6013),<br>&quot;P-521&quot;:      (&quot;1997-08-08 01:12:04&quot;, 1136),<br>&quot;P-256&quot;:      (&quot;1997-08-16 01:52:34&quot;, 1842),<br>&quot;P-384&quot;:      (&quot;1997-08-30 14:50:08&quot;, 2688),<br>&quot;P-224&quot;:      (&quot;1998-04-03 12:52:07&quot;, 7026),<br>}<br>BINARY = {  # srand48(time / 2), if that reading is right; 5 words per candidate: lrand48()<br>&quot;B-233&quot;: (&quot;1998-04-17 15:24:18&quot;, 155),<br>&quot;B-283&quot;: (&quot;1998-04-17 15:27:44&quot;, 32),<br>&quot;B-409&quot;: (&quot;1998-04-17 15:30:18&quot;, 60),<br>&quot;B-571&quot;: (&quot;1998-04-17 15:32:08&quot;, 73),<br>}<br>for name, (when, n) in PRIME.items():<br>print(f&quot;{name:10} {when} {n:5} {candidate(unix(when), n, 20, 40, 2)}&quot;)<br>for name, (when, n) in BINARY.items():<br>print(f&quot;{name:10} {when} {n:5} {candidate(unix(when) // 2, n, 5, 17, 8)}&quot;)<br>The output of this code:<br>prime239v1 1997-05-15 15:49:03  2185 E43BB460F0B80CC0C0B075798E948060F8321B7D<br>prime239v2 1997-05-15 15:49:03  2320 E8B4011604095303CA3B8099982BE09FCB9AE616<br>prime239v3 1997-05-15 15:49:03  3048 7D7374168FFE3471B60A857686A19475D3BFA2FF<br>P-192      1997-05-18 14:45:34   139 3045AE6FC8422F64ED579528D38120EAE12196D5<br>prime192v3 1997-05-18 14:45:34  5228 C469684435DEB378C4B65CA9591E2A5763059A2E<br>prime192v2 1997-05-18 14:45:34  6013 31A92EE2029FD10D901B113E990710F0D21AC6B6<br>P-521      1997-08-08 01:12:04  1136 D09E8800291CB85396CC6717393284AAA0DA64BA<br>P-256      1997-08-16 01:52:34  1842 C49D360886E704936A6678E1139D26B7819F7E90<br>P-384      1997-08-30 14:50:08  2688 A335926AA319A27A1D00896A6773A4827ACDAC73<br>P-224      1998-04-03 12:52:07  7026 BD71344799D5C7FCDC45B59FA3B9AB8F6A948BC5<br>B-233      1998-04-17 15:24:18   155 74D59FF07F6B413D0EA14B344B20A2DB049B50C3<br>B-283      1998-04-17 15:27:44    32 77E2B07370EB0F832A6DD5B62DFC88CD06BB84BE<br>B-409      1998-04-17 15:30:18    60 4099B5A457F9D69F79213D094C4BCD4D4262210B<br>B-571      1998-04-17 15:32:08    73 2AA058F73A0E33AB486B0F610410C53A7F132310<br>M, A = 2**107 - 1, pow(3, 121, 2**107 - 1)       # zrandom: state = state * 3^121 mod (2^107 - 1)<br>P192 = 2**192 - 2**64 - 1<br>P239 = 2**239 - 2**143 - 2**95 + 2**47 - 1<br>CURVES = [  # name, LIP seed, p, b, published Gx   (a = -3 throughout)<br>(&quot;prime192v1&quot;, 20000, P192,<br>0x64210519e59c80e70fa7e9ab72243049feb8deecc146b9b1,<br>0x188da80eb03090f67cbf20eb43a18800f4ff0afd82ff1012),<br>(&quot;prime239v1&quot;, 20420, P239,<br>0x6b016c3bdcf18941d0d654921475ca71a9db2fb27d1d37796185c2942c0a,<br>0xffa963cdca8816ccc33b8642bedf905c3d358573d3f27fbbd3b3cb9aaaf),<br>(&quot;prime239v2&quot;, 20507, P239,<br>0x617fab6832576cbbfed50d99f0249c3fee58b94ba0038c7ae84c8c832f2c,<br>0x38af09d98727705120c921bb5e9e26296a3cdcf2f35757a0eafd87b830e7),<br>(&quot;prime239v3&quot;, 20509, P239,<br>0x255705fa2a306654b1f4cb03d6a750a30c250102d4988717d9ba15ab6d3e,<br>0x6768ae8e18bb92cfcf005c949aa2c6d94853d0e660bbf854b1c9505fe95a),<br>(&quot;prime192v2&quot;, 20512, P192,<br>0xcc22d6dfb95c6b25e49c0d6364a4e5980c393aa21668d953,<br>0xeea2bae7e1497842f2de7769cfe9c989c072ad696f48034a),<br>(&quot;prime192v3&quot;, 20517, P192,<br>0x22123dc2395a05caa7423daeccc94760a7d462256bd56916,<br>0x7d29778100c65a1da1783716588dce2b8b4aee8e228f1896),<br>]<br>def base_point_x(seed, p, b):<br>state = seed                         # zrstarts(seed)<br>def limb():                          # zrandom(2^26): low 26 bits of the new state<br>nonlocal state<br>state = state * A % M<br>return state % 2**26<br>for _ in range(7):                   # seven single-limb draws come first<br>limb()<br>limbs = -(-p.bit_length() // 26) + 1 # zrandomb(p): limbs of p plus one, top limb first<br>tries = 0<br>while True:<br>x = 0<br>for _ in range(limbs):<br>x = x &lt;&lt; 26 | limb()<br>x %= p<br>tries += 1<br>if pow(x**3 - 3*x + b, (p - 1) // 2, p) == 1:   # is x on the curve?<br>return x, tries<br>for name, seed, p, b, gx in CURVES:<br>x, tries = base_point_x(seed, p, b)<br>print(f&quot;{name:20} seed {seed}  tries {tries}  matches published Gx: {x == gx}&quot;)<br>prime192v1           seed 20000  tries 2  matches published Gx: True<br>prime239v1           seed 20420  tries 3  matches published Gx: True<br>prime239v2           seed 20507  tries 2  matches published Gx: True<br>prime239v3           seed 20509  tries 1  matches published Gx: True<br>prime192v2           seed 20512  tries 5  matches published Gx: True<br>prime192v3           seed 20517  tries 1  matches published Gx: True<br>To the extent possible under law, the authors have waived all copyright and related or neighboring rights to the code on this page, dedicating it to the public domain under CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/).<br>We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.<br>Read more<br>How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI&#x27;s future impact on the economy? This note presents new survey evidence on these questions.<br>Read more<br>How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator of how AI will shift work organization, hiring, and labor demand across the economy.<br>Read more</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    DeepSeek search and fetch – $0.75 per 1000 successful requests
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    304 points ·
+    143 comments ·
+    fagnerbrack
+  </div>
+
+  <div class="meta">
+    api-docs.deepseek.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #24
+  </div>
+
+  <div class="links">
+    <a href="https://api-docs.deepseek.com/guides/search/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50138531">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Search &amp; Fetch<br>The Search API and the Fetch API give agents and RAG applications access to live web content:<br>- Search API finds web pages for a query and returns structured results. It is powered by DeepSeek&#x27;s in-house search engine.<br>- Fetch API retrieves a single web page and returns its content as Markdown.<br>Both are raw JSON APIs. They use the same bearer authentication as the DeepSeek API.<br>The base URL is https://api.deepseek.com:<br>| API | Endpoint |<br>|---|---|<br>| Search | POST https://api.deepseek.com/v1/tools/search |<br>| Fetch | POST https://api.deepseek.com/v1/tools/fetch |<br>See the Search API Reference and Fetch API Reference for the complete request and response schemas.<br>Authentication<br>Send your API key and the JSON content type in the request headers:<br>| Header | Required | Value |<br>|---|---|---|<br>| Authorization | Yes | Bearer &lt;DeepSeek API Key&gt; |<br>| Content-Type | Yes | application/json |<br>Search API<br>Request<br>curl https://api.deepseek.com/v1/tools/search \<br>-H &quot;Authorization: Bearer &lt;DeepSeek API Key&gt;&quot; \<br>-H &quot;Content-Type: application/json&quot; \<br>-d &#x27;{<br>&quot;query&quot;: &quot;DeepSeek V4 release&quot;,<br>&quot;count&quot;: 5,<br>&quot;need_content&quot;: true<br>}&#x27;<br>import requests<br>response = requests.post(<br>&quot;https://api.deepseek.com/v1/tools/search&quot;,<br>headers={<br>&quot;Authorization&quot;: &quot;Bearer &lt;DeepSeek API Key&gt;&quot;,<br>},<br>json={<br>&quot;query&quot;: &quot;DeepSeek V4 release&quot;,<br>&quot;count&quot;: 5,<br>&quot;need_content&quot;: True,<br>},<br>)<br>response.raise_for_status()<br>for result in response.json()[&quot;results&quot;]:<br>print(result[&quot;title&quot;], result[&quot;url&quot;])<br>print(result[&quot;summary&quot;])<br>Request fields:<br>| Field | Type | Required | Default | Description |<br>|---|---|---|---|---|<br>| query | string | Yes | - | The search query must contain 1 to 128 Unicode characters, cannot be all whitespace, and supports the query operators listed below. |<br>| count | integer | No | 10 | The number of results to return, between 1 and 50. |<br>| ori_question | string | No | - | The user&#x27;s original question that triggered the search, between 1 and 128 characters, to improve query understanding, with null treated as not provided. |<br>| localization | string | No | &quot;&quot; | An optional IP address used to localize search results. |<br>| need_content | boolean | No | false | Whether to return page content in content, which is always an empty string when false. |<br>Unknown fields in the request body are ignored.<br>Query Operators<br>The query is forwarded with its search syntax intact. The examples below combine operators with a search term; you can combine multiple operators in one query.<br>| Operator | Example | Description |<br>|---|---|---|<br>| site: | DeepSeek site:github.com | Restrict results to the given site, and to target multiple sites, separate the site: clauses with spaces and join them with OR, for example DeepSeek site:github.com OR site:huggingface.co. |<br>| -site: | DeepSeek -site:example.com | Exclude the given site, and separate multiple sites with spaces. |<br>| - | DeepSeek -advertisement | Exclude pages containing the term, and separate multiple terms with spaces. |<br>| -&quot;...&quot; | DeepSeek -&quot;release notes&quot; | Exclude pages containing the exact phrase, which can contain spaces, and separate multiple phrases with spaces. |<br>| &quot;...&quot; | DeepSeek &quot;exact phrase&quot; | Match an exact phrase, and separate multiple phrases with spaces. |<br>| lang: | DeepSeek lang:zh,en | Restrict results to the given language codes, separating multiple codes with commas, for example lang:zh,en. |<br>| after: | DeepSeek after:2025 or DeepSeek after:2025-01-01 | Restrict results to pages published after a date. |<br>| before: | DeepSeek before:2026 or DeepSeek before:2026-06-01 | Restrict results to pages published before a date. |<br>For example:<br>{<br>&quot;query&quot;: &quot;DeepSeek site:github.com OR site:huggingface.co lang:en after:2025&quot;,<br>&quot;count&quot;: 10<br>}<br>Response<br>A successful request returns HTTP 200 with a results array. A normal search with no matches returns an empty array.<br>{<br>&quot;results&quot;: [<br>{<br>&quot;rerank_score&quot;: 2.4,<br>&quot;title&quot;: &quot;DeepSeek V4 model released&quot;,<br>&quot;url&quot;: &quot;https://example.com/deepseek-v4&quot;,<br>&quot;snippet&quot;: &quot;DeepSeek V4 is now available, with tool calling and long-context support.&quot;,<br>&quot;summary&quot;: &quot;DeepSeek has released the V4 model. The release adds improved tool calling and long-context support for agent workflows.&quot;,<br>&quot;content&quot;: &quot;DeepSeek V4 is now generally available...&quot;,<br>&quot;site_name&quot;: &quot;Example News&quot;,<br>&quot;site_icon&quot;: &quot;https://example.com/favicon.ico&quot;,<br>&quot;date&quot;: &quot;2026-06-01T00:00:00+00:00&quot;,<br>&quot;authority&quot;: 3<br>}<br>]<br>}<br>Each item in results contains:<br>| Field | Type | Description |<br>|---|---|---|<br>| rerank_score | number | A relevance score from 0 to 3 that combines signals such as relevance, authority, and freshness, with scores of 1.5 or above considered high-quality results. |<br>| title | string | The title of the result. |<br>| url | string | The URL of the result. |<br>| snippet | string | A short summary related to the query, typically 100 to 200 characters, intended for display in a UI. |<br>| summary | string | A long summary related to the query, typically 600 to 800 characters, intended to be read by a model. |<br>| content | string | The page content, which is empty when need_content is false or when the content is unavailable. |<br>| site_name | string or null | The name of the site, or null when unavailable. |<br>| site_icon | string or null | The URL of the site icon, or null when unavailable. |<br>| date | string or null | The publication time in UTC, formatted as RFC 3339, or null when unknown. |<br>| authority | integer | The authority tier of the page, 0 to 4 ( -1 means unknown), with values of 3 or above indicating highly authoritative sources. |<br>Fetch API<br>Request<br>curl https://api.deepseek.com/v1/tools/fetch \<br>-H &quot;Authorization: Bearer &lt;DeepSeek API Key&gt;&quot; \<br>-H &quot;Content-Type: application/json&quot; \<br>-d &#x27;{<br>&quot;url&quot;: &quot;https://example.com/article&quot;<br>}&#x27;<br>import requests<br>response = requests.post(<br>&quot;https://api.deepseek.com/v1/tools/fetch&quot;,<br>headers={<br>&quot;Authorization&quot;: &quot;Bearer &lt;DeepSeek API Key&gt;&quot;,<br>},<br>json={&quot;url&quot;: &quot;https://example.com/article&quot;},<br>)<br>response.raise_for_status()<br>page = response.json()<br>print(page[&quot;title&quot;])<br>print(page[&quot;content&quot;])<br>Request fields:<br>| Field | Type | Required | Description |<br>|---|---|---|---|<br>| url | string | Yes | The page URL to fetch, which must be at most 8192 characters, an HTTP or HTTPS URL with a host, and must not contain a username or password. |<br>Response<br>{<br>&quot;title&quot;: &quot;Example article&quot;,<br>&quot;content&quot;: &quot;# Example article\n\nArticle content.&quot;<br>}<br>| Field | Type | Description |<br>|---|---|---|<br>| title | string | The title of the page, empty when the title is unavailable. |<br>| content | string | The fetched page content as Markdown text. |<br>Fetching is subject to the target site&#x27;s availability and access policies.<br>Errors<br>Errors follow the OpenAI-compatible error format. The param field is always null.<br>{<br>&quot;error&quot;: {<br>&quot;message&quot;: &quot;&#x27;count&#x27; must be between 1 and 50&quot;,<br>&quot;type&quot;: &quot;invalid_request_error&quot;,<br>&quot;param&quot;: null,<br>&quot;code&quot;: &quot;invalid_request_error&quot;<br>}<br>}<br>| HTTP Status | Description |<br>|---|---|<br>| 400 | The request headers or body are invalid, including malformed JSON or an invalid field value. |<br>| 401 | The API key is missing or invalid. |<br>| 402 | The account has insufficient balance. |<br>| 403 | The Fetch request was rejected by the security policy. |<br>| 404 | Fetch could not retrieve usable page content, for example due to an unavailable URL, a URL blocked by site policy, an error from the target site, an unsupported content type, or a page with no extractable Markdown content. |<br>| 408 | Reading the request body timed out. |<br>| 413 | The request body is too large. |<br>| 429 | The Search or Fetch QPS limit was exceeded. |<br>| 500 | An internal server error occurred. |<br>| 504 | A downstream request timed out. |<br>Search and Fetch are read-only. For HTTP 408, 429, or 5xx errors, wait and retry. For HTTP 402, top up your account before retrying. Do not retry other 4xx errors without changing the request.<br>Billing<br>Search and Fetch are billed per successful request, not by tokens or by the number of returned results:<br>| API | Unit | Price |<br>|---|---|---|<br>| Search | Per 1,000 successful requests | $0.75 |<br>| Fetch | Per 1,000 successful requests | $0.75 |<br>A request is billable only when it returns HTTP 200 and produces a result (Search must return a non-empty results array, and Fetch must return page content). Failed requests, empty search results, and timeouts are not billed. count only controls how many results are returned and does not affect the per-request price.<br>Note: when you use the DeepSeek API through DeepSeek Harness, Claude Code, or Codex, server-side tool calls already hit the Search and Fetch APIs. These calls are currently free of charge; per-request billing starts at 00:00 Beijing time on November 1, 2026.<br>Rate Limits<br>For each account, Search and Fetch are limited independently, and traffic to one does not consume the other&#x27;s quota:<br>| API | QPS Limit |<br>|---|---|<br>| Search | 5 |<br>| Fetch | 5 |<br>The QPS (requests per second) limits are calculated at the account level, regardless of which API key is used, and are separate from the model concurrency limits. Requests above the account-level QPS limit receive HTTP 429. In addition to the account-level limit, Fetch is also subject to a per-domain QPS limit, and requests above that limit also receive HTTP 429.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Tell HN: Remember to migrate away from .name domain
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    155 points ·
+    98 comments ·
+    nikanj
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #49
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50089577">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">If you have a third.level.name domain, it&#x27;ll get permanently expunged next year. Have you successfully taken steps to migrate away? Did you move to a standard .com domain, or are you taking your chances with another .tld?<br>Personally, I&#x27;m stuck in Microsoft hell because Azure admin emails cannot be changed and support is both uncaring and powerless.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    What&#x27;s on That Access Port?
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    hasheddan
+  </div>
+
+  <div class="meta">
+    danielmangum.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://danielmangum.com/posts/whats-on-that-access-port/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50140886">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In my last post, I wrote about debugging the Nordic Semiconductor nRF54LM20 when a peripheral, specifically the Key Management Unit (KMU), writes directly to memory while the CPU is halted. Or I should really say that I wrote about debugging the application core (Cortex-M33), as the nRF54LM20 also has a RISC-V coprocessor (VPR) referred to as the Fast Lightweight Peripheral Processor (FLPR). Around the time that Nordic announced the VPR core, I wrote two posts; one about its architecture and the other about how communication works between it and an application core.<br>In the latter VPR post, I attached to the application core with GDB and<br>JLinkGDBServer in the same manner that I did in my recent KMU exploration post<br>in order to step through the communication protocol. This strategy was<br>appropriate for the operations described in the respective posts, but in some<br>cases it may be desirable to connect to the VPR core for debugging.<br>Typically, silicon vendors will provide tooling, or work with open source<br>projects, to make it easy to designate the core you want to connect to at a<br>higher level of abstraction. For example, Nordic products have robust suport in<br>the Zephyr RTOS ecosystem, and Zephyr’s meta<br>CLI, west, can<br>be used to build (west build) and flash (west flash) firmware on all chips.<br>west supports building and flashing multiple<br>images<br>in one operation using System Build<br>(Sysbuild).<br>Each build system managed by Sysbuild is referred to as a domain, and the<br>--domain flag can be used to perform the specified operation for only the<br>specified domain.<br>While we typically want to target all domains when building and flashing, west debug is a great example of how the --domain flag can be useful. For example,<br>if we were building the Zephyr blinky sample for the nRF54LM20, using the FLPR<br>for GPIO control via Nordic’s High Performance Framework<br>(HPF)<br>(stay tuned for a future post on HPF), we would use the following command to<br>build the blinky application for the application core and the GPIO application<br>for the FLPR core.<br>west build -p -b nrf54lm20dk/nrf54lm20b/cpuapp nrf/samples/zephyr/basic/blinky -- -DSB_CONFIG_HPF=y -DSB_CONFIG_HPF_GPIO=y -DSB_CONFIG_HPF_GPIO_BACKEND_ICMSG=y -DEXTRA_DTC_OVERLAY_FILE=&quot;./boards/nrf54lm20dk_nrf54lm20b_cpuapp_hpf_gpio.overlay&quot;<br>In the resulting build/ directory, we would see a top-level domains.yaml<br>file with the following contents.<br>default: blinky<br>build_dir: &lt;local-path&gt;/build<br>domains:<br>- name: blinky<br>build_dir: &lt;local-application-path&gt;/build/blinky<br>- name: hpf_gpio<br>build_dir: &lt;local-application-path&gt;/build/hpf_gpio<br>flash_order:<br>- blinky<br>- hpf_gpio<br>Issuing a west flash command would flash both of the images onto the device,<br>but because we can only debug one core at a time, west debug with no flags<br>would target the default domain (blinky) and connect to the application<br>core. Specifying hpf_gpio would instead connect to the FLPR.<br>west debug --domain hpf_gpio<br>If you prefer a graphical UX, you could leverage this same functionality via Nordic’s VSCode tooling, as described in this post by my Nordic coworker Sebastian Viviani.<br>Behind the scenes, Zephyr includes board support files that help west know how<br>to setup the debugging connection. If we were to look in each specific domain’s<br>build/&lt;domain&gt;/zephyr/ directory, we would find a runners.yaml file. For<br>example, the hpf_gpio domain in the previous build includes the following<br>contents.<br># Available runners configured by board.cmake.<br>runners:<br>- nrfutil<br>- jlink<br># Default flash runner if --runner is not given.<br>flash-runner: nrfutil<br># Default debug runner if --runner is not given.<br>debug-runner: jlink<br># Common runner configuration values.<br>config:<br>board_dir: &lt;local-application-path&gt;/zephyr/boards/nordic/nrf54lm20dk<br># Build outputs:<br>elf_file: zephyr.elf<br>hex_file: zephyr.hex<br>bin_file: zephyr.bin<br># Host tools:<br>gdb: &lt;local-zephyr-sdk-path&gt;/zephyr-sdk-1.0.1/gnu/riscv64-zephyr-elf/bin/riscv64-zephyr-elf-gdb<br>openocd: &lt;local-zephyr-sdk-path&gt;/zephyr-sdk-1.0.1/hosttools/usr/bin/openocd<br>openocd_search:<br>- &lt;local-zephyr-sdk-path&gt;/zephyr-sdk-1.0.1/hosttools/opt/openocd/share/openocd/scripts<br># Runner specific arguments<br>args:<br>nrfutil:<br>[]<br>jlink:<br>- --dt-flash=y<br>- --device=nRF54LM20A_RV32<br>- --speed=4000<br>If we were to look at the nRF54LM20 DK board support files in the Zephyr source tree, we would find the following CMake snippet.<br>boards/nordic/nrf54lm20dk/board.cmake<br>if(CONFIG_SOC_NRF54LM20A_CPUAPP OR CONFIG_SOC_NRF54LM20B_CPUAPP)<br>board_runner_args(jlink &quot;--device=nRF54LM20A_M33&quot; &quot;--speed=4000&quot;)<br>elseif(CONFIG_SOC_NRF54LM20A_CPUFLPR OR CONFIG_SOC_NRF54LM20B_CPUFLPR)<br>board_runner_args(jlink &quot;--device=nRF54LM20A_RV32&quot; &quot;--speed=4000&quot;)<br>endif()<br>if(CONFIG_TFM_FLASH_MERGED_BINARY)<br>set_property(TARGET runners_yaml_props_target PROPERTY hex_file tfm_merged.hex)<br>endif()<br>include(${ZEPHYR_BASE}/boards/common/nrfutil.board.cmake)<br>include(${ZEPHYR_BASE}/boards/common/jlink.board.cmake)<br>The args.jlink flags at the bottom of the runners.yaml file are sourced from<br>these board_runner_args() CMake macros, and they are passed to<br>JLinkGDBServer when invoking west debug for the corresponding domain.<br>Because J-Link has native multi-core<br>support for the nRF54L<br>series, the --device flag can be used to tell JLinkGDBServer to consult its<br>internal database for information on how to connect to each of the respective<br>cores.<br>If the debugger is not already knowledgeable of the SoC architecture, it may be necessary to provide more detailed information. For example, see the nRF54H20 J-Link script for connecting to the application core.<br>In fact, if we were to connect to the FLPR core on the nRF54LM20 using JLinkExe -device nRF54LM20A_RV32 directly, we would see the following sequence of lines<br>in the initial output.<br>Found SW-DP with ID 0x6BA02477<br>RISC-V behind DAP detected<br>DPIDR: 0x6BA02477<br>CoreSight SoC-400 or earlier<br>AP[1] (AHB-AP) specified by user as debug AP.<br>AP map scan skipped.<br>AP map:<br>AP[0]: AHB-AP, APAddr = 0x00000000<br>AP[1]: AHB-AP, APAddr = 0x01000000<br>AP[2]: MEM-AP, APAddr = 0x02000000<br>Core base addr: 0x5004C400 (user configured)<br>In my nRF54LM20 KMU post, I included the following diagram from the nRF54LM20 datasheet that describes the debug architecture, including the three Access Ports (APs) that are available via the Debug Access Port (DAP).<br>The datasheet also includes a table describing the functionality of each access port.<br>| AP ID | Type | Description |<br>|---|---|---|<br>| 0 | AHB-AP | CM33 access port |<br>| 1 | AHB-AP | AUX access port |<br>| 2 | CTRL-AP | Control access port |<br>As observed in the JLinkExe output, it opts to forego scanning the access port<br>map in favor of connecting directly to the second<br>AHB-AP<br>(AP[1]), which it knows to be the access port for the RISC-V FLPR core. If<br>instead invoking JLinkExe -device nRF54LM20A_M33 to debug the Cortex-M33<br>application core, the following output would be observed.<br>Found SW-DP with ID 0x6BA02477<br>DPIDR: 0x6BA02477<br>CoreSight SoC-400 or earlier<br>AP map detection skipped. Manually configured AP map found.<br>AP[0]: AHB-AP (IDR: Not set, ADDR: 0x00000000)<br>AP[1]: APB-AP (IDR: Not set, ADDR: 0x00000000)<br>AP[2]: MEM-AP (IDR: Not set, ADDR: 0x00000000)<br>Iterating through AP map to find AHB-AP to use<br>AP[0]: Core found<br>AP[0]: AHB-AP ROM base: 0xE00FE000<br>CPUID register: 0x411FD210. Implementer code: 0x41 (ARM)<br>In this case the J-Link once again reports that the AP map is known, but instead<br>of selecting an access port immediately, it iterates through the map looking for<br>the Cortex-M33 core. While the underlying logic is hidden in the closed source<br>JLinkArm.dll library that underlies most J-Link tooling, it is likely that the<br>default behavior for Arm cores, even those on devices known to the J-Link, is to<br>leverage the information offered by the Arm Debug Interface<br>(ADI) to discover the core and<br>its capabilities.<br>The ADI specifies the architecture of a Debug Access Port (DAP), which consists of a Debug Port (DP) and one or more Access Ports (APs).<br>There are multiple types of debug ports: JTAG (JTAG-DP), Serial Wire (SW-DP), and Serial Wire / JTAG (SWJ-DP). Likewise, there are multiple types of access ports, with the Advanced High-performance Bus Access Port (AHB-AP) itself being a type of Memory Access Port (MEM-AP), and the Control Access Port (CTRL-AP) being a custom AP implementation by Nordic. There are a minimum set of registers for DPs and APs respectively, which must be provided by any implementation. The following diagram outlines the interaction between the DP and MEM-APs (and thus AHB-APs).<br>This diagram gives a hint to how a debug probe, such as the J-Link, may go about<br>discovering the access ports that are available on a given DAP, even if the SoC<br>is not already known. The first relevant register is the DP’s AP Select<br>(SELECT) register (highlighted in the DP registers above). It can be used to<br>select an access port (APSEL) and the register bank (APBANKSEL) within the<br>access port.<br>| APSEL | RES0 | APBANKSEL | DPBANKSEL |<br>|---|---|---|---|<br>| XXXXXXXX | XXXXXXXXXXXXXXXX | XXXX | XXXX |<br>| [31:24] | [23:8] | [7:4] | [3:0] |<br>If the value in the APSEL bits does not correspond to an access port on the<br>DAP, the ADI defines the following behavior.<br>If there is no AP with the ID APSEL, all AP transactions return zero on reads and are ignored on writes.<br>After successfully selecting an access port, the AP’s identification<br>register<br>(IDR) (highlighted in the MEM-AP registers above), which is the only register<br>that must be implemented by all APs, can be used to understand the attributes of<br>the AP. It is always the last register in the AP register space, located at<br>0xFC.<br>| Revision | Designer | Class | RES0 | Variant | Type |<br>|---|---|---|---|---|---|<br>| XXXX | XXXXXXXXXXX | XXXX | XXXXX | XXXX | XXXX |<br>| [31:28] | [27:17] | [16:13] | [12:8] | [7:4] | [3:0] |<br>For the most part, debuggers hide the specific reads and writes to DP and AP<br>registers behind higher levels of abstractions, such as reading a memory address<br>or advancing the program counter of a CPU. However, J-Link does support lower<br>level commands to read and write directly to DPs (ReadDP / WriteDP) and APs<br>(ReadAP / WriteAP). If you wanted to manually scan the AP map, you could use<br>the following sequence of commands.<br>Write to DP register 2 (SELECT), setting the APSEL value to 0 and the<br>APBANKSEL value to 0xF, which will allow for targeting the IDR register<br>(0xFC) on subsequent AP reads.<br>J-Link&gt; WriteDP 2 0x000000F0<br>Writing DP register 2 = 0x000000F0 (0 write repetitions needed)<br>Read AP register 3 (IDR in bank 0xF).<br>J-Link&gt; ReadAP 3<br>Reading AP register 3 = 0x84770001 (0 read repetitions needed)<br>The resulting value (0x84770001) can be decoded to provide information about<br>the AP, which we already know to be an AHB-AP.<br>| Revision | Designer | Class | RES0 | Variant | Type |<br>|---|---|---|---|---|---|<br>| 1000 | 01000111011 | 1000 | 00000 | 0000 | 0001 |<br>| Revision 8 | Arm Limited | Mem-AP | RESERVED | - | AMBA AHB3 bus |<br>Issuing the same sequence of commands with APSEL set to 1 once again informs<br>us that the second access port is also an AHB-AP.<br>J-Link&gt; WriteDP 2 0x010000F0<br>Writing DP register 2 = 0x010000F0 (0 write repetitions needed)<br>J-Link&gt; ReadAP 3<br>Reading AP register 3 = 0x84770001 (0 read repetitions needed)<br>However, reading the third access port (2), returns a different IDR value.<br>J-Link&gt; WriteDP 2 0x020000F0<br>Writing DP register 2 = 0x020000F0 (0 write repetitions needed)<br>J-Link&gt; ReadAP 3<br>Reading AP register 3 = 0x32880000 (0 read repetitions needed)<br>This is expected given that the third AP is a Nordic CTRL-AP (0x32880000).<br>Decoding the fields in the register, we can identity Nordic’s JEDEC<br>manufacturing<br>code<br>in the DESIGNER field, as specified in the nRF54LM20<br>datasheet.<br>| Revision | Designer | Class | RES0 | Variant | Type |<br>|---|---|---|---|---|---|<br>| 0011 | 00101000100 | 0000 | 00000 | 0000 | 0000 |<br>| Revision 3 | Nordic VLSI ASA | Undefined | RESERVED | - | CTRL-AP |<br>An attempt to select a fourth access port (3) results in a read of the IDR<br>register returning 0x00000000, indicating that we have likely reached the end<br>of the AP map.<br>Though silicon vendors will typically make understanding the low level details of the debug interface extraneous, having at least cursory knowledge of how a debugger enables you to access and control various components of an SoC can be useful. Direct DP and AP register accesses may be necessary in the event that you are reverse engineering an unknown chip, authoring your own debug tooling, or attempting to verify the security state of your product.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    DeepSeek-v4.1-Flash-1017
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    896 points ·
+    671 comments ·
+    theykk
+  </div>
+
+  <div class="meta">
+    huggingface.co
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #11
+  </div>
+
+  <div class="links">
+    <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017">Original article</a> · <a href="https://news.ycombinator.com/item?id=50129045">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance–cost Pareto frontier across multiple agent harnesses.<br>| Benchmark | DS-V4.1-Flash-1017 | DS-V4.1-Flash | K3 | GLM-5.3 | GPT-5.6 Sol | Opus 5 |<br>|---|---|---|---|---|---|---|<br>| HLE w/o tools | 42.6 (44.0†) | 36.8 (39.1†) | 43.5 | 42.0† | 44.5 | 56.3 |<br>| Terminal-Bench 4.0 | 42.3 | 31.2 | 12.6 | 37.9 | 39.9 | 51.8 |<br>| DeepSWE v1.1 | 77.0 | 74.2 | 67.5 | 66.9 | 73.0 | 74.0 |<br>| ProgramBench | 29.1 | 20.3 | 17.5 | 19.0 | 23.0 | 37.0 |<br>| NL2Repo-Bench | 68.2 | 65.4 | 58.0 | 58.0 | 56.8 | 75.3 |<br>| Automation-Bench v1.0.6 | 60.5 | 54.8 | 46.7 | 48.8 | 45.8 | 50.3 |<br>| Agents’ Last Exam | 35.4 | 31.8 | 27.6 | 28.5 | 26.7 | 28.6 |<br>| Apex Bench v1.1 | 72.1 | 64.6 | 47.8 | 56.6 | 54.3 | 65.8 |<br>| Chartography (w/tools) | 83.0 | 78.9 | 68.1 | — | 79.9 | 84.0 |<br>| BabyVision (w/tools) | 92.5 | 89.6 | 85.7 | — | 88.9 | 94.1 |<br>| ZeroBench-main (w/tools) | 51.0 | 49.0 | 41.0 | — | 53.0 | 52.0 |<br>† denotes the text-only subset of HLE. We use the Claude Code harness for Terminal-Bench 4.0 and the Mini-SWE-V2 harness for DeepSWE v1.1.<br>This release does not include a Jinja-format chat template. The encoding folder contains a self-contained Python reference implementation (encoding.py) with test cases for multi-turn conversations, tool calling, thinking mode, numeric reasoning effort, mid-conversation system messages, and interleaved image content.<br>For production use, we additionally release deepseek-recipe, a set of Rust libraries with Python bindings that provides the same prompt format as a maintained, protocol-aware toolkit. It converts Messages, Chat Completions, and Responses API requests into the Conversation format, encodes them into DeepSeek V4 and V4.1 prompts or token IDs, and parses model output back into complete or streamed responses — covering thinking, tool calls, images, and generation settings. Model inference, tool execution, and HTTP transport are left to the caller.<br>Please refer to the inference folder for instructions on weight conversion and running inference locally.<br>Recommended sampling parameters:<br>| Parameter | Value |<br>|---|---|<br>| temperature | 1.0 |<br>| top_p | 1.0 |<br>| context_window | 1M tokens |<br>| max_tokens | ≥ 256K |<br>This repository and the model weights are licensed under the MIT License.<br>@misc{deepseekai2026deepseekv41flash,<br>title={DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression},<br>author={DeepSeek-AI},<br>year={2026},<br>}<br>If you have any questions, please raise an issue or contact us at service@deepseek.com.<br>- Downloads last month<br>- 10,233</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: The Zelda timeline to catch up before the Ocarina of Time remake
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    0 comments ·
+    jsomau
+  </div>
+
+  <div class="meta">
+    legendofhyrule.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #14
+  </div>
+
+  <div class="links">
+    <a href="https://legendofhyrule.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50140769">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Ocarina of Time days<br>Nintendo&#x27;s official timeline. After Ocarina of Time it branches into the child, adult and fallen-hero eras.<br>Hyrule&#x27;s History<br>Long before the Kingdom of Hyrule, people live on Skyloft, an island the goddess Hylia raised above the clouds. When a dark storm pulls Zelda down to the Surface below, her friend Link takes up the Goddess Sword to find her.<br>At Hyrule&#x27;s Picori Festival, Vaati breaks the sacred Picori Blade, frees the monsters it kept locked away and turns Princess Zelda to stone. Link sets out with Ezlo, a talking cap, to find the tiny Picori who can reforge the blade.<br>Generations after a boy sealed the wind sorcerer Vaati inside the Four Sword, the seal fails and Vaati carries off Princess Zelda to be his bride. Link draws the Four Sword and is split into four.<br>Ganondorf, king of the Gerudo, wants the Triforce hidden in the Sacred Realm. Princess Zelda and Link, a boy raised in Kokiri Forest, try to reach it first, a quest that carries Link seven years into the future and back.<br>Long after the Imprisoning War sealed Ganon away, the wizard Agahnim takes power at Hyrule Castle and sends the descendants of the Seven Sages away to break the seal. A telepathic plea from Princess Zelda wakes Link.<br>The Triforce sends Link from Hyrule Castle to two distant lands. In Holodrum, General Onox has taken Din, the Oracle of Seasons. In Labrynna, the sorceress Veran has possessed Nayru, the Oracle of Ages.<br>Sailing home to Hyrule after a journey of training, Link is wrecked in a storm and washes up on Koholint Island. An owl tells him that to leave he must wake the Wind Fish, asleep in an egg on the island&#x27;s mountain.<br>Centuries after A Link to the Past, a sorcerer named Yuga is turning the descendants of the Seven Sages into paintings. Link, a blacksmith&#x27;s apprentice, follows him into Lorule, a dark counterpart of Hyrule with its own princess, Hilda.<br>Several years after A Link Between Worlds, Link reaches Hytopia, a kingdom devoted to fashion, where the witch Lady Maud has cursed Princess Styla into a jumpsuit she cannot take off. King Tuft calls for heroes to enter the Drablands.<br>Hyrule has shrunk to a small kingdom when Ganon&#x27;s army invades and steals the Triforce of Power. Princess Zelda splits the Triforce of Wisdom into eight pieces and hides them. A young traveler named Link sets out to find them.<br>A few years after Ganon&#x27;s defeat, a crest appears on Link&#x27;s hand. Impa tells him of a Princess Zelda of long ago, put into an endless sleep, while Ganon&#x27;s followers hunt Link, believing his blood can bring their master back.<br>Months after Ocarina of Time, Link is searching for a lost friend when a Skull Kid wearing a strange mask leads him into the land of Termina. Above its Clock Town a moon is falling. It will strike in three days.<br>Long after Ocarina of Time, Link works on a ranch in Ordon Village when monsters take the village&#x27;s children and twilight spreads over Hyrule. Inside it Link becomes a wolf and meets Midna, an imp from the Twilight Realm.<br>Dark clouds gather over Hyrule. As Princess Zelda and six maidens check the seal on Vaati, a dark double of Link carries the maidens off. Link draws the Four Sword to stop him, splits into four and sets Vaati free.<br>Centuries after the Hero of Time, Hyrule lies under a great sea and its hero is a legend. When a giant bird carries off his little sister, Link of Outset Island sets sail with the pirate Tetra and her crew to find her.<br>Soon after The Wind Waker, Link and Tetra&#x27;s pirates go looking for a ghost ship said to take sailors. When Tetra vanishes aboard it, Link washes up in the World of the Ocean King and sets out to find the ship and her.<br>A century after Tetra founded New Hyrule, the Spirit Tracks that keep an ancient demon sealed begin to vanish. Princess Zelda&#x27;s body is taken. Her spirit joins Link, a new royal engineer, to restore the tracks.<br>Link wakes from a hundred-year sleep to find Hyrule in ruins. Calamity Ganon, which destroyed the kingdom a century ago, is coiled around Hyrule Castle, held there by Princess Zelda, whose voice guides Link.<br>Some time after Breath of the Wild, Link and Zelda follow a sickening Gloom into the caverns beneath Hyrule Castle and find an ancient body held down by a glowing arm. The seal breaks, the castle rises into the sky and Zelda vanishes.<br>Rifts are swallowing Hyrule. After Link frees Princess Zelda from Ganon and vanishes into one, a false king blames her for the rifts. With the fairy Tri and the Tri Rod, which makes echoes of things she has seen, she sets out to close them.<br>The three Golden Goddesses create the world. Where they leave it the Triforce remains.<br>The Golden Goddesses leave the Triforce in the care of the goddess Hylia. It grants the wish of whoever holds it, so she keeps it from those who would misuse it.<br>The Demon King Demise and his armies make war on the land to take the Triforce. The goddess Hylia gathers the people who survive.<br>Hylia sends the survivors and the Triforce into the sky on land above a sea of clouds. Then she seals Demise away. In time Skyloft forgets the Surface.<br>A people skilled in magic try to take the Triforce from the Sacred Realm. Hyrule&#x27;s histories call them the Interlopers. They are banished to the Twilight Realm.<br>To keep the Sacred Realm safe, the sage Rauru builds the Temple of Time over its entrance. Its Door of Time opens only with the three Spiritual Stones and an ocarina.<br>Zelda&#x27;s descendants found the Kingdom of Hyrule on the land below the clouds. Its royal family keeps the old stories of the goddess and the Triforce.<br>Civil war spreads across Hyrule. A dying mother leaves her baby son with the Kokiri, forest children who never grow up. The King of Hyrule ends the war.<br>With the hero fallen, Ganon takes the whole Triforce. The Seven Sages seal him and his monsters in the Sacred Realm, now the Dark World, in the Imprisoning War.<br>Kings rule with the united Triforce. Then a magician puts Princess Zelda into an endless sleep when she won&#x27;t say where the Triforce of Courage is. Hyrule declines.<br>Years after Link warns the king about Ganondorf, the Sages try to execute him. He survives by the Triforce of Power, so they banish him to the Twilight Realm.<br>Ganon breaks free and no hero comes. The gods answer Hyrule&#x27;s prayers with a flood that seals the kingdom under the sea. The people they chose live on the peaks.<br>Link and Tetra&#x27;s crew find a new land crossed by rails called the Spirit Tracks. Tetra names it New Hyrule. The kingdom grows for a century.<br>In the age of the gods the Zonai, a people said to descend from them, found Hyrule. A Ganondorf of this age becomes the Demon King and is sealed away.<br>Some 10,000 years ago Calamity Ganon is sealed with Sheikah machines. About 100 years before Link wakes it returns, seizes them and ruins Hyrule.<br>Beneath Hyrule Castle the sealed Demon King wakes. The castle rises into the sky. Floating islands, chasms and Gloom, a sickening poison, appear across Hyrule.<br>The Hero is Defeated: Link falls in battle. Ganon claims the Triforce. Child Era: Sent back in time, Link warns Zelda. Adult Era: The hero vanishes. The gods flood Hyrule.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Legal experts warn Meta&#x27;s new terms still grant broad scraping permissions
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    39 points ·
+    12 comments ·
+    DeepLogin
+  </div>
+
+  <div class="meta">
+    niemanlab.org
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50139692">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Meta has removed the word “train” from its upcoming terms of service for business accounts. The company revised its terms after Nieman Lab’s story on Thursday exposed that the new terms would permit broad scraping of websites “associated with” business accounts, and possibly allow Meta to use that scraped content to train its AI models.<br>In its revision, published Friday afternoon, Meta removed the word “train” from a list of allowed use cases and limited those uses to “advertising and business products,” rather than all Meta products. But the revised terms will still allow for broad scraping of websites, potentially superseding robots.txt files, according to legal experts.<br>On Saturday, a Meta spokesperson said the company revised the terms because “it wasn’t clear in the initial consolidation of terms that robots.txt preferences are respected. News sites, like all other content owners, still have the ability to disable the crawler via robots.txt flags. That has been the case, and it has not changed.”<br>Meta has not included any specific language about respecting robots.txt preferences in its revised terms of services. The new terms are slated to go into effect on October 30. There is no option for business accounts to opt out of the new terms before then.<br>“I think publishers should remain concerned,” said Matt Topic, a media and intellectual property attorney at Loevy &amp; Loevy. “The revised version of the new terms still allows Meta to use that scraped content to develop any ‘business product.’ That doesn’t seem to be a defined term, and presumably Meta is developing AI business products. I think ‘develop’ is broad enough to include ‘train.&#x27;”<br>Meta currently lists examples of its business products as “ads, Meta Business Tools and Meta Business Suite.”<br>Virtually every news organization has at least one Meta business account, which allows companies to manage Facebook Pages, Threads accounts, Instagram profiles, and WhatsApp channels from one place.<br>As of publication time, the section reads (with changes in bold):<br>You authorize us (or any entity acting on our behalf) to use automated software (such as web scrapers, bots, robots, spiders, crawlers, and user agents) and create test credentials to access, index, cache, analyze, collect, retrieve, or crawl the domains, web pages, or URLs (and any content available through them) that are associated with your products or services, or that are made available through your or users’ use of Meta Company Products and services, and to periodically pull updates from such domains, web pages, or URLs in order to provide, develop, improve, research, and maintain advertising and business products (including business, commercial and related products to help you create and deliver ads and other commercial content, provide users information about your products and services, and connect you with users who may be interested in your products and services) and maintain the integrity and security of Meta Company Products.<br>Here’s the original text:<br>You authorize us (or any entity acting on our behalf) to use automated software (such as web scrapers, bots, robots, spiders, crawlers, and user agents) and create test credentials to access, index, cache, analyze, collect, retrieve, or crawl the domains, web pages, or URLs (and any content available through them) that are associated with your products or services, or that are made available through your or users’ use of Meta Company Products and services, and to periodically pull updates from such domains, web pages, or URLs. Meta may use any content from such domains, web pages, or URLs to provide, develop, improve, research, train, and maintain the integrity of, the Meta Company Products, services, and features provided under these Commercial Terms and any other applicable supplemental terms.<br>“We’ve heard you and want to clarify: the crawling terms we consolidated only applied to our ads and business products, and we’ve clarified that in the terms themselves,” a spokesperson said in a statement, claiming publishers can still update their scraping preferences using robots.txt files. “This is not about scraping news sites, and these updates don’t give us new rights that supersede those preferences.”<br>Meta’s current terms permit it to scrape websites associated with business accounts, but only in a very specific scenario. That language is found in its terms of service for when accounts use Meta’s generative AI features to run advertisements. The scraped content can only be used to “optimize your ads.”<br>Adding this language to more general terms of service, and allowing scraped content to be used for all “advertising and business products,” is a substantial expansion of Meta’s scraping permissions.<br>A Meta spokesperson said the company is incorporating its “Ad Creative Generative AI Terms” into its general commercial terms to make them easier to understand.<br>Three legal experts Nieman Lab consulted were skeptical about the revised terms of service and Meta’s most recent statements.<br>“[The update] doesn’t address my concerns,” said James Grimmelmann, a professor of digital and information law at Cornell Law School. “While it adds more language about the permitted uses, [the] ‘develop…advertising and business products’ [language] is still broad enough to drive a truck through. This does nothing to restrict the ‘associated with your products or services’ [language] that would let Meta scrape entire sites.”<br>University of Wisconsin law professor Benjamin Sobel explained that robots.txt indicates a website’s preferences, but compliance with those is completely voluntary. He likened it to a homeowner putting up a sign saying, “Don’t look at my house.” Putting up that sign doesn’t give the homeowner an enforceable legal right to stop people from looking at the house.<br>“You can still express the preference, and unless it’s a legally enforceable preference, it can still be ignored all the same,” he said.<br>At least three journalism organizations have publicly raised concerns about the forthcoming terms as a result of Nieman Lab’s reporting.<br>Prior to the update on Friday, the European Publishers Council announced that it would formally petition the E.U.’s telecommunications regulatory authorities and its executive body, the European Commission, to “scrutinize these terms urgently, including their implications for copyright, contractual fairness and abuse of market power.”<br>The United Kingdom News Media Association, the trade organization representing British media, issued a statement on Friday calling for government officials to intervene.<br>“This shameless landgrab attempt from Meta to scrape anything and everything from news publishers and business websites to train their AI products is the worst kind of arrogant tech platform bullying,” said chief executive Theo Bamber. “We urgently need Ministers and regulators to stand up for British creators and the business community by calling out this outrageous behaviour and preventing Meta from setting this dreadful precedent.”<br>The News/Media Alliance — the largest news publishing trade association in the United States — denounced the terms, with president and CEO Danielle Coffey calling the update “outrageous and probably illegal.”<br>“The company’s decision to withhold access to its audience unless businesses allow Meta to scrape content from their websites is an appalling, bad-faith policy, and a clear abuse of the company’s market power,” Coffey said. “It cannot be allowed to be implemented on October 30.”<br>This story has been updated to include comments from Meta.<br>Are you considering changing how you use Meta-owned platforms? Let us know: [email protected].</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: How can we stop UX people from changing UIs to get promotions?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    5 points ·
+    2 comments ·
+    ex-aws-dude
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50137490">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Every product seems to go through constant UI churn that has no benefit to users other than changing around whitespace or refreshing the look.<br>If you have a full time UX person they _must_ change the UI of your product otherwise there is no way to get promoted.<br>That is just an unavoidable fact of incentive structures.<br>As a company how can you avoid that issue?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Show HN: Spomory – graph-based MCP memory with an RL-trained forgetting policy
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    liuyunfei2026
+  </div>
+
+  <div class="meta">
+    spomory.yliuai.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://spomory.yliuai.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50140880">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">One memory, any AI you use.<br>Never start over — A shared memory across every AI you use. Say it once in any AI. Come back tomorrow in a different one. Your context follows you, wherever you work.<br>24 AI Platforms verified end-to-end.<br>Works inside the AI tools you already use<br>Every AI tool switch means starting over.<br>Switch AI tools, start a new chat, or just come back tomorrow, and you&#x27;re explaining who you are, what you&#x27;re working on, and what you already said — all over again.<br>Brief your AI on the project<br>Repeat it in the next chat, the next AI tool, the next model<br>Lose time every session to context you&#x27;ve already given<br>The fix isn&#x27;t a smarter AI. It&#x27;s structural: one memory every AI tool can reach.<br>Say it once. Every AI already knows.<br>You say it once:<br>I&#x27;m the lead engineer on the warehouse-automation project at Acme Robotics. I report to Daniel Chen.<br>Next session, a different app:<br>Who do I report to on the Acme project?<br>Daniel Chen — you mentioned this earlier, in Claude Desktop.<br>Illustrative example, not a screenshot — but the underlying connection is real: write from one client, read from another, verified across 24 clients on the Platforms page. See it on the Platforms page →<br>Doesn&#x27;t Claude or ChatGPT already have memory?<br>Yes — and it&#x27;s gotten genuinely good. But it&#x27;s built to remember you inside that one app. Say something in ChatGPT, and Claude never hears about it. Switch to Cursor, Doubao, or any of the other clients Spomory connects to, and you&#x27;re starting over — because built-in memory doesn&#x27;t leave the app it was built into.<br>How it actually works<br>The same example, through all four stages — write, connect, recall, manage — running automatically, every time, from any client.<br>You tell it something. It becomes structured facts.<br>add_memory sends your text through an LLM that extracts it into (subject, predicate, object) triples — not a raw text blob, not just an embedding.<br>Maria joined Acme Robotics as lead engineer. She reports to Daniel Chen.<br>Maria —works_at→ Acme Robotics<br>Maria —reports_to→ Daniel Chen<br>New facts link into what it already knows — nothing gets rebuilt.<br>New triples are incrementally merged into a dual-layer memory graph (entities, relations) — matching or related facts link up, nothing is ever fully rebuilt.<br>Ask from any client. It finds the connected facts, not just the one that sounds similar.<br>search_memory matches your query directly against triples, then runs personalized PageRank over the memory graph to pull in connected, multi-hop context.<br>Who does Maria report to?<br>Daniel Chen<br>It decides on its own whether to keep, update, or retire a memory.<br>A GRPO-trained policy — not a hardcoded rule — decides whether an incoming fact should be added, merged into an existing one, or should retire an outdated memory.<br>New message: &quot;Maria now reports to Priya Shah.&quot;<br>How is this different from a vector database / plain RAG?<br>A pure similarity search returns whatever embedding is closest to your query and can&#x27;t explain why. Spomory matches your query against extracted triples, then walks the memory graph with personalized PageRank — every result traces back to specific facts, and multi-hop connections (A relates to B relates to C) get surfaced even when nothing in the query text is similar to C.<br>Benchmarks<br>Run against a live LLM, not simulated.<br>Two ways to run it, same engine underneath<br>Local-first<br>For developers and technical users: install the MCP server, point Claude Desktop, Cursor, Codex CLI, or Doubao (豆包) at it, and your memory graph lives in a SQLite file on your own disk — encrypted at rest by default, no account required.<br>Get started — local &amp; free<br>Cloud &amp; cross-app<br>For memory that needs to follow you across more than one client: a hosted MCP endpoint backed by Postgres, reachable over HTTPS with either an API key or OAuth 2.1 — currently for MCP-capable clients (Claude Desktop, Cursor, Codex CLI, Doubao, and similar), not a web app.<br>Get started — cloud &amp; cross-app<br>What&#x27;s actually different here<br>Memory sovereignty, not a compliance checkbox<br>Export your full memory graph any time in an open JSON-LD-style format, or physically delete it — permanently, with an audit trail, and it&#x27;s a free-tier feature, not something locked behind a paywall.<br>Real measured results, limitations included<br>Published LoCoMo and LongMemEval numbers, run against a live LLM — including the run where a fix traded retrieval recall for a real accuracy gain, and we explained why instead of just reporting the win.<br>An RL-trained policy decides what to remember<br>ADD / UPDATE / DELETE / NOOP isn&#x27;t a set of hand-written if-statements — it&#x27;s a GRPO-trained policy, evaluated against a rule-based baseline with the comparison published, small sample size and all.<br>Retrieval you can trace, not just a similarity score<br>Queries are matched against extracted triples, then expanded across the memory graph with personalized PageRank — every answer traces back to specific facts, not an opaque embedding distance.<br>What &quot;private by default&quot; actually means here<br>You&#x27;re trusting it with real context about your life and work. Here&#x27;s exactly what that does and doesn&#x27;t mean today.<br>Credentials are hashed<br>API keys and OAuth tokens are stored as hashes only — a leaked database doesn&#x27;t leak usable plaintext credentials.<br>Never sold, never used to train models<br>Your text passes through an LLM (extraction) and Resend (login email) as named sub-processors, and nowhere else.<br>Nothing hidden from you<br>get_graph shows exactly what&#x27;s stored — entities, relations, source — not an opaque black box.<br>Export or delete it, for real<br>export_memory and forget_memory are a real export and a physical delete, not a status flag — free, in both local and cloud modes.<br>This is a summary, not the whole picture. Read the full Privacy page →<br>Frequently asked<br>Is Spomory open source?<br>Yes — Apache 2.0, source on GitHub. The MCP server, retrieval engine, and memory-management policy are all in the open repo.<br>Does it work with ChatGPT or Gemini?<br>ChatGPT: yes — via Developer Mode custom connectors (OAuth 2.1), verified end-to-end. Gemini&#x27;s consumer web app doesn&#x27;t support MCP connectors yet; Google&#x27;s own Gemini CLI does, and that&#x27;s verified separately.<br>Is my data used to train models, or shared with anyone?<br>No. Local mode never leaves your machine. Cloud mode sends extraction text to the configured LLM provider (currently DeepSeek) and nothing else — full detail on the Privacy page, including the sub-processors involved.<br>Can I use my own LLM instead of the default?<br>Yes — the LLM and embedding providers are pluggable, and any OpenAI-compatible Chat Completions API works (OpenAI, DeepSeek, Qwen, etc.).<br>What happens to my data if I stop using it?<br>You can export your complete memory graph or permanently delete it at any time, for free, in both local and cloud modes — this isn&#x27;t a premium feature. Details on the Memory Passport page.</div>
+</div>
+
+</div>
+
+</body>
+</html>
