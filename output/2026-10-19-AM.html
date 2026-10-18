@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-19 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-19 AM · Generated 2026-10-19 07:27 CST</div><div class="issue-sub">Stories 10 · Full 7</div><div class="issue-sub">Sources: arxiv.org, github.com, huggingface.co, karrisaarinen.com, legendofhyrule.com, news.ycombinator.com, sphinx-six-theta.vercel.app, twitter.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: WhatsApp MCP running free on Cloudflare
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    17 points ·
+    7 comments ·
+    zoozla
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #7 · New #51
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/finereli/whatsapp-mcp">Original article</a> · <a href="https://news.ycombinator.com/item?id=50145715">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Let your AI agent read your WhatsApp messages.<br>This is a small server that runs in your own Cloudflare account. You link your phone to it once, the way you&#x27;d link WhatsApp Web, and from then on any MCP client (Claude Code, Claude Desktop, anything that speaks MCP) can search and read your chats. It can read and search your messages, and remember names you give it for phone numbers. It can&#x27;t send anything.<br>Ask your agent things like:<br>- &quot;What did Dana say about the flights?&quot;<br>- &quot;Find every message where someone mentioned the lease, across all my chats.&quot;<br>- &quot;Summarize what I missed in the family group this week.&quot;<br>Your phone stays the source of truth. The server is a linked device that your agent talks to.<br>It doesn&#x27;t stay connected to WhatsApp. When your agent asks for something, and once a day, it connects, collects whatever WhatsApp queued for it since last time, writes that to its own database, and hangs up. Your phone keeps working normally and keeps getting notifications.<br>Your messages live in a SQLite database inside a Durable Object in your Cloudflare account. Nothing goes anywhere else.<br>You need a Cloudflare account on the Workers Paid plan (see the note below), Node 20 or later, and your phone.<br>git clone https://github.com/finereli/whatsapp-mcp<br>cd whatsapp-mcp<br>npm install<br># 1. A place for the sign-in tokens. Paste the id it prints into wrangler.jsonc.<br>npx wrangler kv namespace create OAUTH_KV<br># 2. A password for the page that links your phone. 12+ characters.<br>npx wrangler secret put OWNER_PASSWORD<br># 3. Deploy.<br>npm run deploy<br>Wrangler prints your URL, something like https://whatsapp-mcp.your-name.workers.dev. Open it. The front page has the two remaining steps:<br>- Link WhatsApp. Scan the QR code with WhatsApp (Settings, Linked Devices, Link a Device). If you&#x27;re on the phone itself and can&#x27;t scan a screen, use the phone number option instead. The first link imports your history. The page shows progress, and you can close it.<br>- Connect your agent. In Claude Code: claude mcp add --transport http whatsapp https://your-url/mcp Then type /mcp and sign in with the password. Other clients: point them at the same /mcp URL.<br>If you want your own domain, see the comments at the bottom of wrangler.jsonc.<br>Importing a large history decodes a lot of data in one go, and the default CPU limit on Workers is too small for it. wrangler.jsonc raises it, and raising it needs the paid plan, which is a few dollars a month. I haven&#x27;t tried the free plan. If you&#x27;re on it, remove the limits block and expect the first import to be fragile.<br>This isn&#x27;t official. WhatsApp has no API for reading your own personal messages. This uses the same protocol WhatsApp Web uses, through an open source library (Baileys). That&#x27;s against WhatsApp&#x27;s terms. For a linked device that only reads, the practical risk is low, but it isn&#x27;t zero. Use it on your own account, and don&#x27;t use it to send messages.<br>You get what WhatsApp sends. The first link imports whatever history WhatsApp decides to hand a new device. It may not be everything. It only does this once per link. To import again, relink (your stored messages are kept, and a re-import fills in anything missing).<br>Some chats show up as phone numbers. WhatsApp doesn&#x27;t give a linked device every contact name, and most of these are one-off messages from people you never saved. For the ones that matter, your agent can fix it: it lists the unnamed chats, looks the numbers up in your contacts with whatever contacts tool it already has (a Google Contacts or Gmail connector, for example), and saves the names. The server never connects to a contacts service itself. See &quot;Naming chats&quot; below.<br>Media isn&#x27;t downloaded. Photos, voice notes and documents appear as labels like [image] or [voice note 12s], with the caption if there was one. Nothing is transcribed.<br>It&#x27;s for one person. One deployment is one WhatsApp account and one owner. That&#x27;s deliberate: each deployment holds a full message history and a live login to the account, so everyone should run their own.<br>Relinking. If your phone says the device was removed, or you want to start over, ask your agent to run relink, or open /setup and choose &quot;Unlink and scan again&quot;. You scan a new QR code. Stored messages are kept.<br>| Tool | What it does |<br>|---|---|<br>| list_chats | Chats, most recent first. Filter by name or number. |<br>| get_messages | Read one chat. Page back or forward by date. |<br>| search_messages | Full-text search across everything, or within one chat. |<br>| unnamed_chats | Chats known only by phone number, busiest first, with the last thing the other person said. |<br>| set_contact_names | Save names for phone numbers, in any format. Names stick to the number, so they also show up in groups. |<br>| sync_now | Pull new messages right now. |<br>| link_status | Is it linked, when did it last pull, how much is stored. |<br>| relink | Unlink and start over. A human has to scan the new QR code. |<br>Every read tool first tops up from WhatsApp if the stored copy is more than ten minutes old.<br>WhatsApp only gives this server the names it knows. The rest show up as phone numbers. Rather than have the server log in to a contacts service (which means a cloud project, consent screens and, for Google, an app review), it hands the job to your agent, which usually already has a way to reach your contacts.<br>Say &quot;find names for my unnamed chats&quot;. The agent calls unnamed_chats, matches the numbers against your contacts, and saves what it finds with set_contact_names. It won&#x27;t find everyone: most unnamed chats are a single message from a stranger.<br>Agents get nudged toward this on their own. The server&#x27;s instructions mention it, and so does every &quot;no chat found&quot; and &quot;no matches&quot; result, because that&#x27;s the moment an agent is stuck on a name. link_status also says how many chats are unnamed.<br>Everything below is for whoever is changing the code, including an AI agent working on a fork. The top of this file is for the person who owns the deployment.<br>MCP client ──OAuth──&gt; Worker (src/index.ts)<br>├─ /mcp ───────────&gt; mcp.ts: tools, one fresh McpServer per request<br>├─ /, /setup, /authorize, /login/*, /pair/*   (landing, sign-in, pairing UI)<br>└─ cron 04:00 UTC ──&gt; pull()<br>│ RPC<br>v<br>WhatsAppStore (Durable Object, one instance named &quot;owner&quot;)<br>├─ SQLite: auth keys, messages, chats, contacts, FTS5 index<br>└─ Baileys socket, opened only during a session (pairing or pull)<br>│ WebSocket<br>v<br>WhatsApp servers<br>One Durable Object holds everything. Its SQLite is both the Baileys auth store and the message store. The Worker is stateless apart from a KV namespace the OAuth provider uses for tokens and a short-lived &quot;pending sign-in&quot; record.<br>| File | Job |<br>|---|---|<br>| src/index.ts | Routes. OAuth provider wiring, sign-in, pairing endpoints, /debug, cron. |<br>| src/auth.ts | Who counts as the owner. Two modes: a password, or a login service. Also the owner&#x27;s browser session. |<br>| src/phone.ts | Phone numbers in any format to WhatsApp jids. |<br>| src/whatsapp-do.ts | The Durable Object. Runs Baileys sessions, exposes RPC methods for the Worker. |<br>| src/store.ts | Schema, ingesting Baileys events into SQLite, and every query. |<br>| src/auth-state.ts | Baileys auth state backed by the DO&#x27;s SQLite (replaces useMultiFileAuthState). |<br>| src/mcp.ts | The MCP tools, and the hint that points agents at the naming tools. |<br>| src/pages.ts, src/landing.ts, src/privacy.ts, src/tos.ts, src/ui.ts | All HTML. ui.ts has the shared design tokens. |<br>| src/ws-shim.ts, src/lru-shim.ts, src/polyfills.ts | Make Baileys run on workerd. See below. |<br>| scripts/vendor-bridge.mjs | Extracts the wasm from Baileys&#x27; Rust bridge. Runs on npm install. |<br>| local-export/ | A separate one-off script that dumps your history to JSON files with no server. Not part of the deployment. |<br>All WhatsApp traffic happens inside runSession() in whatsapp-do.ts. There are two kinds:<br>- Pairing (startPairing). No credentials yet. Baileys emits QR strings, kept in memory and rendered to SVG by pairStatus(). After a scan WhatsApp closes the socket with code 515 (restart required), and the session reconnects with the new credentials. History arrives as messaging-history.set chunks with a progress percentage. The session ends when WhatsApp reports 100 percent and the stream has been quiet for a few seconds.<br>- Pull (pull). Reconnects with stored credentials. WhatsApp delivers whatever it queued while we were away, then signals receivedPendingNotifications. The session ends after a few quiet seconds.<br>Callers share one session: a second pull() while one is running gets the same promise.<br>A pairing session outlives the HTTP request that started it. startPairing sets a Durable Object alarm, and alarm() awaits the session promise. An in-flight alarm handler is what keeps the object alive. The pairing page only watches; closing it doesn&#x27;t stop the import.<br>Idle detection counts only data events (messaging-history.set, messages.upsert), not connection chatter. Counting everything keeps a session open forever, because presence and contact updates never stop.<br>All in the Durable Object&#x27;s SQLite (store.ts, initSchema).<br>- messages(chat, id, ts, from_me, sender, push_name, type, body), primary key (chat, id). Media is a label in body. Edits update body; deletes set it to [deleted].<br>- messages_fts, an FTS5 index over body, kept in sync by triggers.<br>- chats(jid, name, is_group), contacts(jid, name, notify) and custom_names(jid, name). Display names resolve by WhatsApp&#x27;s chat name, then WhatsApp&#x27;s contact name, then a saved name, then the person&#x27;s own push name, then the number. custom_names is what set_contact_names writes.<br>- alias(lid, pn). WhatsApp is moving to anonymous @lid identifiers. This maps them to phone-number JIDs, and addAlias folds existing rows into the phone-number form so one person is one chat.<br>- auth(k, v), Baileys credentials and signal keys, JSON with Buffers encoded by Baileys&#x27; BufferJSON.<br>- meta(k, v), currently just last_pull.<br>Ingest is idempotent. Re-importing history upserts: it fills in a missing sender or push_name and never duplicates. That is what makes relinking safe.<br>These all cost real time to find. Read them before touching the Baileys parts.<br>- Baileys needs three shims to run on workerd.<br>- ws: the package needs Node sockets. ws-shim.ts wraps the Workers WebSocket, opened with fetch() and an Upgrade header because that&#x27;s the only way to set the Origin header WhatsApp checks.<br>- whatsapp-rust-bridge: it ships its wasm as base64 and compiles it at runtime, which workerd forbids. vendor-bridge.mjs writes the wasm to a file and patches the loader to import it as a CompiledWasm module. The vendor/ folder is generated, not committed.<br>- Timers: Node timers have .unref() and workerd&#x27;s don&#x27;t. polyfills.ts adds it. It must be the first import in both the Worker and the Durable Object module.<br>- lru-cache autopurge breaks the first import. Baileys creates caches with ttlAutopurge: true, which starts one setTimeout per entry. workerd allows 10,000 pending timers per object, and the first history sync blows through that with QuotaExceededError. lru-shim.ts turns autopurge off. Expired entries are still dropped lazily on access.<br>- QR pairing never sets creds.registered. That flag belongs to the mobile registration flow. &quot;Is this linked&quot; is creds.me?.id.<br>- History comes once per link. If a first import fails halfway, that history is gone until you relink. Don&#x27;t ship a change to ingest code without testing it against a real first link.<br>- Group senders arrive in two places. Live messages have key.participant. History messages put it on msg.participant. Read both.<br>- Pin Baileys exactly. It&#x27;s a prerelease and its API moves between release candidates.<br>- Deploys don&#x27;t evict a busy Durable Object. An object with an active session keeps running old code until the session ends. Renaming the class with a migration didn&#x27;t evict it either. If you&#x27;ve shipped a fix and the object still misbehaves, stop sending it requests and wait three to five minutes. Every probe, including /debug, resets its idle timer, so polling a stale object keeps it stale. Baileys also leaks interval timers when a socket closes; finish() in whatsapp-do.ts clears them so the object can go idle at all.<br>- Logging out takes two steps. logout() first connects and calls Baileys&#x27; logout(), so the device disappears from the phone&#x27;s list, then clears local credentials. If the first step fails it says so in the debug events, and the user has to remove the device by hand.<br>- WhatsApp stores a placeholder where a name should be. Chats it has no contact for are named after the number, sometimes masked (+972∙∙∙∙∙∙∙20), in the chat name and the contact name. numberLike in store.ts treats those as no name, and ingest refuses to store them. Before that fix a placeholder outranked a real saved name.<br>- Don&#x27;t call markOnlineOnConnect. It&#x27;s set to false on purpose. Marking the linked device online makes the phone stop showing notifications.<br>| Name | Kind | Purpose |<br>|---|---|---|<br>| OWNER_PASSWORD | secret | Password mode (default). 12+ characters or sign-in refuses. |<br>| OWNER_EMAIL | var | Login-service mode: the one email allowed in. |<br>| OPERATOR_NAME | var, optional | Shown on the privacy page as who runs this server. |<br>| DEFAULT_COUNTRY_CODE | var, optional | Country code (digits, no plus), used when your agent saves a number written without one, e.g. 972. |<br>| LOGIN_ORIGIN | var | Set this to switch to login-service mode. |<br>| ALLOWED_ORIGINS | var | Login-service mode: comma-separated origins whose tokens are accepted. Production should list only production. |<br>| PIN | secret, optional | 32+ random characters. Enables the /debug routes via an x-pin header. Leave it unset to leave them off. |<br>| OAUTH_KV | binding | Token store for the OAuth provider and pending sign-ins. |<br>| WA | binding | The Durable Object. |<br>Keep a deployment&#x27;s own values (domain, KV id, email) in wrangler.local.jsonc, which is gitignored, and deploy with npm run deploy:local. wrangler.jsonc is the template other people start from.<br>- Add a tool. Register it in mcp.ts and put the SQL in store.ts. Read tools should call fresh() first. Keep tools read-only unless you mean otherwise. If a failure leaves an agent stuck, say in the tool result what to try next, the way NAME_HINT does for missing names.<br>- Change who can sign in. auth.ts picks a mode (authMode) and the routes in index.ts follow it. To add another identity provider, add a mode there and a callback route. The rest of the code only sees an opaque bearer token.<br>- Make it multi-user. Today the Durable Object is addressed by the fixed name owner (wa() in index.ts, handleMcp in mcp.ts), and userId is the constant &#x27;owner&#x27; in the OAuth props. To go multi-user, derive both from the signed-in identity and key the object on it. Think about whether you want to hold other people&#x27;s message history first.<br>- Other ways to fill in names. Anything that can produce { jid, name } rows can call store.setCustomNames. A CSV upload, a CardDAV pull or a scheduled job would all work. The agent route exists so the server needs no credentials for any of them.<br>- Sending messages. Not built, on purpose. Think hard before adding it.<br>With PIN set, these return JSON and need the header x-pin: &lt;PIN&gt;:<br>- /debug: session phase, linked or not, counts, and the last events from the session (connection changes, history chunk sizes, errors).<br>- /debug/pull: run a pull now.<br>- /debug/chats?q=, /debug/messages?chat=, /debug/search?q=, /debug/types: read the store without going through MCP.<br>- /debug/unnamed: the chats unnamed_chats would return.<br>- /debug/sql?q=: one read-only SELECT against the store, for finding out why a name or a count looks wrong.<br>- /debug/logout: the same as relink.<br>Local development: npm run dev with a .dev.vars containing OWNER_PASSWORD=... (12+ characters). It runs a local Durable Object with its own empty storage, so you can exercise the sign-in flow and see a real QR code, but linking a phone from local dev makes a second linked device.<br>To test the pairing UI states without a phone, serve the page with a mocked /pair/status. Everything the page needs is that one JSON shape: paired, running, progress, qrSvg, messages, chats.<br>- npm run typecheck, then npm test. The test runs the real store code against Node&#x27;s built-in SQLite (Node 22.13 or later), including the migration from older versions. That SQLite has no FTS5, so search itself isn&#x27;t covered.<br>- Deploy, then GET /debug with the PIN. It should come back with phase: &quot;idle&quot; and paired: true.<br>- GET /debug/pull. A quiet account should return reason: &quot;idle&quot; in about ten seconds.<br>- Call list_chats, then get_messages on a Hebrew or emoji-heavy chat, then search_messages. Then unnamed_chats, and set_contact_names on one number, and confirm the chat shows the name.<br>- If you touched ingest, relink and confirm the stored message count doesn&#x27;t grow (re-import is idempotent) and that group messages show real sender names.<br>- Chats with no name in WhatsApp and none saved show as phone numbers. Nothing refreshes names by itself: they only get saved when an agent (or you) does it.<br>- If the daily pull finds the session logged out, nothing tells you. link_status shows it the next time your agent asks.<br>- Edits and deletes are applied when they arrive as protocol messages. That path hasn&#x27;t been tested against real ones.<br>- It&#x27;s only been exercised against one real account.<br>MIT</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Hybrid Reasoning Agents: LLM agents that think in latent space, act through text
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    133 points ·
+    75 comments ·
+    allinonai
+  </div>
+
+  <div class="meta">
+    arxiv.org
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #40
+  </div>
+
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.18861">Original article</a> · <a href="https://news.ycombinator.com/item?id=50145337">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Computer Science &gt; Computation and Language<br>Title:Hybrid Reasoning Agents<br>View PDF HTML (experimental)<br>Abstract:How can we build an agent that thinks beyond human language, yet still acts through it in the external environment? Modern LLM agents still reason and interact through text, while latent reasoning offers an efficient internal medium but lacks native tool access and reasoning transparency. We bridge these two directions with Hybrid Reasoning Agents (HybridAgents), which dynamically navigate between latent reasoning and text-based interaction throughout a unified generation process. Architecturally, a lightweight HybridLink enables seamless transitions between text and latent modes, while the agent&#x27;s continuous working memory preserves lossless hybrid context across multiple turns. These designs preserve tool-integrated agentic capabilities while making latent thoughts directly inspectable. Building on this architecture, we further develop dedicated post-training algorithms for hybrid reasoning: HybridSFT stabilizes tool-integrated hybrid generation by teaching the backbone to coordinate with HybridLink, then HybridRL scales reasoning by learning when to think in latent space and when to act through text. We evaluate HybridAgent at 3 model scales across 11 benchmarks covering mathematics, science, medicine, search, and agentic reasoning. Compared with frontier LLM Agents and agentic frameworks spanning both text-based and latent methods, HybridAgent consistently improves performance by 10.4%, while delivering 35.5%-54.7% token reduction, 1.8x-2.6x faster inference, and 2.7x-3.7x cost savings. Code and data are available at this https URL.</div>
+<div class="para">Current browse context:<br>Bibliographic and Citation Tools<br>Code, Data and Media Associated with this Article<br>Demos<br>Recommenders and Search Tools<br>arXivLabs: experimental projects with community collaborators<br>arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.<br>Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.<br>Have an idea for a project that will add value for arXiv&#x27;s community? Learn more about arXivLabs.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    OpenCode Hacked: User credentials leaked
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    940 points ·
+    174 comments ·
+    pranshuchittora
+  </div>
+
+  <div class="meta">
+    twitter.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://twitter.com/opencode/status/2111516673953935833">Original article</a> · <a href="https://news.ycombinator.com/item?id=50133401">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Tell HN: Remember to migrate away from .name domain
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    162 points ·
+    106 comments ·
+    nikanj
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50089577">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">If you have a third.level.name domain, it&#x27;ll get permanently expunged next year. Have you successfully taken steps to migrate away? Did you move to a standard .com domain, or are you taking your chances with another .tld?<br>Personally, I&#x27;m stuck in Microsoft hell because Azure admin emails cannot be changed and support is both uncaring and powerless.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Show HN: The Zelda timeline to catch up before the Ocarina of Time remake
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    153 points ·
+    91 comments ·
+    jsomau
+  </div>
+
+  <div class="meta">
+    legendofhyrule.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #17 · Best #33
+  </div>
+
+  <div class="links">
+    <a href="https://legendofhyrule.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50140769">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Ocarina of Time days<br>Nintendo&#x27;s official timeline. After Ocarina of Time it branches into the child, adult and fallen-hero eras.<br>Hyrule&#x27;s History<br>Long before the Kingdom of Hyrule, people live on Skyloft, an island the goddess Hylia raised above the clouds. When a dark storm pulls Zelda down to the Surface below, her friend Link takes up the Goddess Sword to find her.<br>At Hyrule&#x27;s Picori Festival, Vaati breaks the sacred Picori Blade, frees the monsters it kept locked away and turns Princess Zelda to stone. Link sets out with Ezlo, a talking cap, to find the tiny Picori who can reforge the blade.<br>Generations after a boy sealed the wind sorcerer Vaati inside the Four Sword, the seal fails and Vaati carries off Princess Zelda to be his bride. Link draws the Four Sword and is split into four.<br>Ganondorf, king of the Gerudo, wants the Triforce hidden in the Sacred Realm. Princess Zelda and Link, a boy raised in Kokiri Forest, try to reach it first, a quest that carries Link seven years into the future and back.<br>Long after the Imprisoning War sealed Ganon away, the wizard Agahnim takes power at Hyrule Castle and sends the descendants of the Seven Sages away to break the seal. A telepathic plea from Princess Zelda wakes Link.<br>The Triforce sends Link from Hyrule Castle to two distant lands. In Holodrum, General Onox has taken Din, the Oracle of Seasons. In Labrynna, the sorceress Veran has possessed Nayru, the Oracle of Ages.<br>Sailing home to Hyrule after a journey of training, Link is wrecked in a storm and washes up on Koholint Island. An owl tells him that to leave he must wake the Wind Fish, asleep in an egg on the island&#x27;s mountain.<br>Centuries after A Link to the Past, a sorcerer named Yuga is turning the descendants of the Seven Sages into paintings. Link, a blacksmith&#x27;s apprentice, follows him into Lorule, a dark counterpart of Hyrule with its own princess, Hilda.<br>Several years after A Link Between Worlds, Link reaches Hytopia, a kingdom devoted to fashion, where the witch Lady Maud has cursed Princess Styla into a jumpsuit she cannot take off. King Tuft calls for heroes to enter the Drablands.<br>Hyrule has shrunk to a small kingdom when Ganon&#x27;s army invades and steals the Triforce of Power. Princess Zelda splits the Triforce of Wisdom into eight pieces and hides them. A young traveler named Link sets out to find them.<br>A few years after Ganon&#x27;s defeat, a crest appears on Link&#x27;s hand. Impa tells him of a Princess Zelda of long ago, put into an endless sleep, while Ganon&#x27;s followers hunt Link, believing his blood can bring their master back.<br>Months after Ocarina of Time, Link is searching for a lost friend when a Skull Kid wearing a strange mask leads him into the land of Termina. Above its Clock Town a moon is falling. It will strike in three days.<br>Long after Ocarina of Time, Link works on a ranch in Ordon Village when monsters take the village&#x27;s children and twilight spreads over Hyrule. Inside it Link becomes a wolf and meets Midna, an imp from the Twilight Realm.<br>Dark clouds gather over Hyrule. As Princess Zelda and six maidens check the seal on Vaati, a dark double of Link carries the maidens off. Link draws the Four Sword to stop him, splits into four and sets Vaati free.<br>Centuries after the Hero of Time, Hyrule lies under a great sea and its hero is a legend. When a giant bird carries off his little sister, Link of Outset Island sets sail with the pirate Tetra and her crew to find her.<br>Soon after The Wind Waker, Link and Tetra&#x27;s pirates go looking for a ghost ship said to take sailors. When Tetra vanishes aboard it, Link washes up in the World of the Ocean King and sets out to find the ship and her.<br>A century after Tetra founded New Hyrule, the Spirit Tracks that keep an ancient demon sealed begin to vanish. Princess Zelda&#x27;s body is taken. Her spirit joins Link, a new royal engineer, to restore the tracks.<br>Link wakes from a hundred-year sleep to find Hyrule in ruins. Calamity Ganon, which destroyed the kingdom a century ago, is coiled around Hyrule Castle, held there by Princess Zelda, whose voice guides Link.<br>Some time after Breath of the Wild, Link and Zelda follow a sickening Gloom into the caverns beneath Hyrule Castle and find an ancient body held down by a glowing arm. The seal breaks, the castle rises into the sky and Zelda vanishes.<br>Rifts are swallowing Hyrule. After Link frees Princess Zelda from Ganon and vanishes into one, a false king blames her for the rifts. With the fairy Tri and the Tri Rod, which makes echoes of things she has seen, she sets out to close them.<br>The three Golden Goddesses create the world. Where they leave it the Triforce remains.<br>The Golden Goddesses leave the Triforce in the care of the goddess Hylia. It grants the wish of whoever holds it, so she keeps it from those who would misuse it.<br>The Demon King Demise and his armies make war on the land to take the Triforce. The goddess Hylia gathers the people who survive.<br>Hylia sends the survivors and the Triforce into the sky on land above a sea of clouds. Then she seals Demise away. In time Skyloft forgets the Surface.<br>A people skilled in magic try to take the Triforce from the Sacred Realm. Hyrule&#x27;s histories call them the Interlopers. They are banished to the Twilight Realm.<br>To keep the Sacred Realm safe, the sage Rauru builds the Temple of Time over its entrance. Its Door of Time opens only with the three Spiritual Stones and an ocarina.<br>Zelda&#x27;s descendants found the Kingdom of Hyrule on the land below the clouds. Its royal family keeps the old stories of the goddess and the Triforce.<br>Civil war spreads across Hyrule. A dying mother leaves her baby son with the Kokiri, forest children who never grow up. The King of Hyrule ends the war.<br>With the hero fallen, Ganon takes the whole Triforce. The Seven Sages seal him and his monsters in the Sacred Realm, now the Dark World, in the Imprisoning War.<br>Kings rule with the united Triforce. Then a magician puts Princess Zelda into an endless sleep when she won&#x27;t say where the Triforce of Courage is. Hyrule declines.<br>Years after Link warns the king about Ganondorf, the Sages try to execute him. He survives by the Triforce of Power, so they banish him to the Twilight Realm.<br>Ganon breaks free and no hero comes. The gods answer Hyrule&#x27;s prayers with a flood that seals the kingdom under the sea. The people they chose live on the peaks.<br>Link and Tetra&#x27;s crew find a new land crossed by rails called the Spirit Tracks. Tetra names it New Hyrule. The kingdom grows for a century.<br>In the age of the gods the Zonai, a people said to descend from them, found Hyrule. A Ganondorf of this age becomes the Demon King and is sealed away.<br>Some 10,000 years ago Calamity Ganon is sealed with Sheikah machines. About 100 years before Link wakes it returns, seizes them and ruins Hyrule.<br>Beneath Hyrule Castle the sealed Demon King wakes. The castle rises into the sky. Floating islands, chasms and Gloom, a sickening poison, appear across Hyrule.<br>The Hero is Defeated: Link falls in battle. Ganon claims the Triforce. Child Era: Sent back in time, Link warns Zelda. Adult Era: The hero vanishes. The gods flood Hyrule.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Someone behind the software
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    272 points ·
+    112 comments ·
+    tosh
+  </div>
+
+  <div class="meta">
+    karrisaarinen.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #19
+  </div>
+
+  <div class="links">
+    <a href="https://karrisaarinen.com/posts/someone-behind-the-software/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50142573">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Someone behind the software<br>I think good products carry something of the people who make them. Their experience, what they care about, and how they think things should work. You might not know who those people are, but you can feel their perspective in the product.<br>The industry often talks about software as though it comes out of a factory. You collect requirements, build features, and measure whether they work. Follow the process and you should get a good result. Now we&#x27;re talking automating this whole pipeline with agents.<br>But two teams can talk to similar customers, have access to the same technology, and make very different things. The difference comes from how they understand what they see and the style they go about building it. The founder background or company DNA also shapes this a lot.<br>At Linear, we have always valued intuition over process or data. I think people sometimes understand that as making decisions based on personal preference, without much thought or evidence. What we mean by it is that your intuition develops through experience and understanding. You work on something, talk to customers, make mistakes, and learn what to pay attention to. The intuition is your point of view on something, and forcing to use your judgment, not hide behind faceless data.<br>Before we launched, we talked to people across companies and roles about how they worked. We had our own frustrations with this type software, but those conversations helped us understand what mattered beyond our own experience. Our perspective got better after those conversations.<br>So eventually the products develops a character through what its makers pay attention to, what they decide not to do and what they keep working on after it technically works. I sometimes think of this as the soul of a product. You feel that someone cares about how the whole thing comes together.<br>A feature can work perfectly well on its own and still make the product worse. Recognizing that requires some belief about what the product should be. Someone has to make the call, then stay close enough to customers to see whether they were right.<br>Recently, many products are starting to feel messy to me, including products from very successful companies. There seems to be more thought going into what the technology can do and what can be added than the form it should take. The product changes are primarily additive, not improving the core problem.<br>I think the reasons for this is that it&#x27;s lot easier to add new capabilities, than rethink existing capabilities. So each product becomes a collection of abilities, without actually having unified point of view.<br>I wonder whether some of this comes from how the work is organized. Individuals work with agents to produce changes independently, each operating a small software factory. Each change might make sense on its own, but together they start to resemble Frankenstein’s monster rather than a carefully shaped sculpture.<br>Without the shared perspective, soul, or thought, the product becomes an average of all those outputs. The choices that once gave it character are being diluted by day. More things work, but it becomes harder to feel someone or even something behind them.<br>Making software is getting easier. I hope that gives people more room to develop a perspective and follow it further. To understand a problem deeply and keep shaping an answer until the pieces belong together.<br>I want to feel the creator behind the software, not the factories.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    DeepSeek-v4.1-Flash-1017
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    934 points ·
+    704 comments ·
+    theykk
+  </div>
+
+  <div class="meta">
+    huggingface.co
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017">Original article</a> · <a href="https://news.ycombinator.com/item?id=50129045">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance–cost Pareto frontier across multiple agent harnesses.<br>| Benchmark | DS-V4.1-Flash-1017 | DS-V4.1-Flash | K3 | GLM-5.3 | GPT-5.6 Sol | Opus 5 |<br>|---|---|---|---|---|---|---|<br>| HLE w/o tools | 42.6 (44.0†) | 36.8 (39.1†) | 43.5 | 42.0† | 44.5 | 56.3 |<br>| Terminal-Bench 4.0 | 42.3 | 31.2 | 12.6 | 37.9 | 39.9 | 51.8 |<br>| DeepSWE v1.1 | 77.0 | 74.2 | 67.5 | 66.9 | 73.0 | 74.0 |<br>| ProgramBench | 29.1 | 20.3 | 17.5 | 19.0 | 23.0 | 37.0 |<br>| NL2Repo-Bench | 68.2 | 65.4 | 58.0 | 58.0 | 56.8 | 75.3 |<br>| Automation-Bench v1.0.6 | 60.5 | 54.8 | 46.7 | 48.8 | 45.8 | 50.3 |<br>| Agents’ Last Exam | 35.4 | 31.8 | 27.6 | 28.5 | 26.7 | 28.6 |<br>| Apex Bench v1.1 | 72.1 | 64.6 | 47.8 | 56.6 | 54.3 | 65.8 |<br>| Chartography (w/tools) | 83.0 | 78.9 | 68.1 | — | 79.9 | 84.0 |<br>| BabyVision (w/tools) | 92.5 | 89.6 | 85.7 | — | 88.9 | 94.1 |<br>| ZeroBench-main (w/tools) | 51.0 | 49.0 | 41.0 | — | 53.0 | 52.0 |<br>† denotes the text-only subset of HLE. We use the Claude Code harness for Terminal-Bench 4.0 and the Mini-SWE-V2 harness for DeepSWE v1.1.<br>This release does not include a Jinja-format chat template. The encoding folder contains a self-contained Python reference implementation (encoding.py) with test cases for multi-turn conversations, tool calling, thinking mode, numeric reasoning effort, mid-conversation system messages, and interleaved image content.<br>For production use, we additionally release deepseek-recipe, a set of Rust libraries with Python bindings that provides the same prompt format as a maintained, protocol-aware toolkit. It converts Messages, Chat Completions, and Responses API requests into the Conversation format, encodes them into DeepSeek V4 and V4.1 prompts or token IDs, and parses model output back into complete or streamed responses — covering thinking, tool calls, images, and generation settings. Model inference, tool execution, and HTTP transport are left to the caller.<br>Please refer to the inference folder for instructions on weight conversion and running inference locally.<br>Recommended sampling parameters:<br>| Parameter | Value |<br>|---|---|<br>| temperature | 1.0 |<br>| top_p | 1.0 |<br>| context_window | 1M tokens |<br>| max_tokens | ≥ 256K |<br>This repository and the model weights are licensed under the MIT License.<br>@misc{deepseekai2026deepseekv41flash,<br>title={DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression},<br>author={DeepSeek-AI},<br>year={2026},<br>}<br>If you have any questions, please raise an issue or contact us at service@deepseek.com.<br>- Downloads last month<br>- 10,233</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ask HN: How do you deal with AI output of your boss?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    12 points ·
+    11 comments ·
+    okr
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50135854">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">So, my boss goes on a rampage. You can clearly see the joy and at the same time the rage and impatience. AI is the tool he always wanted. We are too slow. Process is out of the window. No need for sprints anymore. No planning, just doing. All people downstream must somehow adapt.<br>Whenever i see now his automated messages in slack, my natural reaction is: why do i even bother reading that? Thats for machines to read. He does not need me? Clearly i am not made for that. What is he expecting me to do? To confirm how great the AI did the job? Should i remember all these perfect presentations AI has created and integrate it into my doings into the coming weeks?<br>I am torn. Should i really free my AI and deal with all this incoming text? Is this the way to react on this perfection?<br>I am not mad at him, it clearly frees him of all the burder of dealing with people.<br>I just dont know how to deal with this output personally. It is not for humans.<br>I feel left alone. This is not a company anymore. Everyone is talking to AI now. This feels like chaos. Where everyone can do everything and stepping into each other&#x27;s domain and it is perfect. The only way AI is stopped at are the ACLs.<br>And because AI does everything for me, i don&#x27;t remember things anymore, as i have no emotion connected with it. Feels like bad schooling and memoizing and get through it and you can&#x27;t as it so dry and lifeless.<br>So, how people deal with it in a company context? How have they setup their machines to react and still be up to date without reading the constant stream of changes coming from others?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Google Harness2: Recursive Agent Harnessing for an Open World
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    reimertz
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/google-research/harness2">Original article</a> · <a href="https://news.ycombinator.com/item?id=50146503">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A harness is the system around a model that enables it to act as an agent: prompts, tools, memory, skills, orchestration, and more. Harnessing is the process of optimizing that system.<br>Harness² is a plug-and-play framework for recursive agent harnessing in an open world, where agents encounter tasks unseen during harness design. It connects two levels of recursion while keeping model weights fixed:<br>- Task-level recursion refines the execution harness for the current task through a contrastive Propose–Probe–Compose step: propose edits, probe their effects on the same task, and compose a refined harness from behavioral contrasts between executions, without ground-truth feedback.<br>- Harnessing-level recursion updates a persistent improvement harness with adopted harnesses and evidence-supported lessons from each task to guide future refinement.<br>Across three professional benchmarks and four model–harness configurations, a single Harness² step improves GLM-5 and Gemini 3.5 Flash over their base harnesses, with gains of up to 11.5 points on WorkBuddy-Bench, 4.5 points on JobBench, and 11.8 percentage points on LAB&#x27;s partial pass rate. Increasing the task-level recursion budget brings further gains.<br>The release supports parallel and sequential recursion, OpenCode and Codex executors, and JobBench, LAB, and WorkBuddy-Bench.<br>harness2-video.mp4<br>Harness² exposes eight editable components around the model: system prompt, guardrails, memory, tool guidance, subagents, skills, scripts, and plugins. They control context construction, the tool interface, delegation, and behavior inside the tool loop.<br>Use Linux, Python 3.12, and uv. From the repository root:<br>uv venv --python 3.12 .venv<br>source .venv/bin/activate<br>uv pip install -e &#x27;.[render]&#x27;<br>harness2-demo --output runs/demo --k 2<br>The local demo runs both recursion modes with deterministic editors and real Python executions. It requires no model credentials.<br>For model-backed benchmarks, install Node.js 20+, the Google Cloud CLI, and the benchmark dependencies. LAB needs Pandoc and Poppler; WorkBuddy-Bench needs Docker. Then configure your models:<br>cp .env.example .env<br># Edit .env with your Vertex AI project and model IDs.<br>gcloud auth application-default login<br>See the setup guide for model settings, authentication alternatives, and the Codex executor.<br>The following example installs LAB and runs one task, then evaluates and reports its result. Model-backed runs incur API costs; start with a small task selection.<br>harness2-setup lab<br>harness2-check --bench lab<br>harness2 --bench lab --k 1 --mode parallel \<br>--only-domains antitrust-competition --max-tasks 1<br>harness2-judge --bench lab --k 1 --mode parallel<br>harness2-report --bench lab --k 1 --mode parallel<br>Sequential recursion runs the same commands with --mode sequential. --k is<br>the task-level recursion budget; see Experiments. Judging and<br>reporting must use the same benchmark, executor, subset, --k, --mode, and<br>seed as the refinement run. Add --dry-run to harness2 to preview task<br>selection without model calls.<br>| Benchmark | Tasks | Install | Guide |<br>|---|---|---|---|<br>| JobBench | Professional work | harness2-setup jb | JobBench |<br>| LAB | Legal work | harness2-setup lab | LAB |<br>| WorkBuddy-Bench | Office, web, and code | harness2-setup wb | WorkBuddy |<br>Choose one benchmark per command. WorkBuddy also takes --subset office,<br>--subset web, or --subset code on every command after setup. The<br>benchmark guides cover each one&#x27;s data, domains, and<br>grading.<br>Scale task-level recursion in two ways: parallel recursion explores multiple candidate harnesses and composes refinements from their execution evidence; sequential recursion carries the refined harness and accumulated evidence through successive Propose–Probe–Compose steps.<br>Parallel recursion explores wider; sequential recursion refines deeper.<br>| Option | Behavior |<br>|---|---|<br>| --k 1 | One Propose–Probe–Compose step |<br>| --k K --mode parallel | Probe K general and K domain-specific candidates, then produce K compositions |<br>| --k K --mode sequential | Refine the harness through K successive steps |<br>| --substrate cx | Use Codex instead of the default OpenCode executor |<br>After each task, harnessing-level recursion retains the adopted harness and evidence-supported lessons to guide future refinement. See the experiment guide for task selection, concurrency, reproducibility, and baseline comparisons.<br>Executor network access is unrestricted, and Codex runs with its sandbox disabled. Public benchmark rubrics may be accessible online. Before evaluation, configure network restrictions to prevent access to benchmark answers and grading criteria.<br>Results are saved under runs/, organized by benchmark and subset where<br>applicable. They include task summaries, deliverables, adopted harnesses,<br>reflection notes, and evaluation results.<br>Repeat the same command to resume. Use a new HARNESS2_RUNS_DIR when changing<br>models or task selection. See results and resume<br>for details; each command also supports --help.<br>@article{xu2026harness2,<br>title   = {Harness$^2$: Recursive Agent Harnessing for an Open World},<br>author  = {Xu, Ruiyao and Chen, Yanfei and CuiZhu, Zhongying and Dalvi Mishra, Bhavana and Ming, Yifei and Yu, Han and Han, Rujun and Lee, Chen-Yu and Pfister, Tomas},<br>journal = {arXiv preprint arXiv:2610.14224},<br>year    = {2026},<br>url     = {https://arxiv.org/abs/2610.14224}<br>}<br>See CONTRIBUTING.md.<br>Harness² is licensed under Apache 2.0. Third-party code under<br>third_party/, benchmarks, and datasets retain their<br>upstream licenses; see<br>third-party notices.<br>This is not an officially supported Google product. This project is not eligible for the Google Open Source Software Vulnerability Rewards Program.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Show HN: Sphinx – A hook that quizzes you on your AI&#x27;s code before shipping
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    238 points ·
+    81 comments ·
+    critiquebrowser
+  </div>
+
+  <div class="meta">
+    sphinx-six-theta.vercel.app
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · Best #20 · Top #26
+  </div>
+
+  <div class="links">
+    <a href="https://sphinx-six-theta.vercel.app/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50137950">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">- Free<br>- FOSS<br>“You can outsource your thinking,<br>but not your understanding.”<br>— Sun Tzu<br>Sphinx is a Git hook for agent-assisted development. Before your agent’s code ships, it asks you a question about what that code actually does.<br>npm install -g sphinx-understand<br>Built to run on minimal tokens, from your existing coding agent, OpenRouter, or any OpenAI-compatible endpoint.<br>Sphinx<br>Your webhook handler now saves the event ID before calling charge(). Stripe times out and sends the same event again. What happens on the retry?<br>You<br>It runs twice, so the customer is charged twice.<br>Sphinx<br>Not quite. The retry finds the saved ID and returns 200 without charging. But that ID is stored before the charge succeeds. If charge() fails, what does the next retry do?<br>You<br>It skips the charge, so the customer is never billed.<br>- 01 You push. Or your agent does. Git pauses on the branches you protect.<br>- 02 Sphinx asks. A reviewer that never saw your chat reads the diff and asks what the change does when things go wrong.<br>- 03 You answer. Get it wrong and you learn why, then try a new scenario. Get it right and the push continues.<br>Works with Codex, Claude Code, Cursor, OpenCode, and Pi, or plain Git. Your answers never reach the coding agent, and .env files and keys are never opened. In a hurry? sphinx yolo lets pushes through, and every skip is logged.<br>Start in a minute.<br># Node 22.19+ · macOS, Linux, or WSL<br>npm install -g sphinx-understand<br>sphinx install<br># then push as usual<br>git push<br>sphinx install connects Git and your coding agents and asks which model should review. Read the docs for everything else.</div>
+</div>
+
+</div>
+
+</body>
+</html>
