@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-20 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-20 AM · Generated 2026-10-20 00:34 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: 100toolkit.com, github.com, githubstatus.com, marc.info, modernescpp.com, news.ycombinator.com, reddit.com, twitter.com, wired.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Wine Ported to OpenBSD
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    230 points ·
+    56 comments ·
+    iamnothere
+  </div>
+
+  <div class="meta">
+    marc.info
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #23
+  </div>
+
+  <div class="links">
+    <a href="https://marc.info/?l=openbsd-ports&amp;m=179236125692175">Original article</a> · <a href="https://news.ycombinator.com/item?id=50152307">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">[prev in list] [next in list] [prev in thread] [next in thread]<br>List:       openbsd-ports<br>Subject:    emulators/wine<br>From:       Thomas Frohwein &lt;tfrohwein () fastmail ! com&gt;<br>Date:       2026-10-18 22:08:43<br>Message-ID: 20261018150843.271e0c06 () babcom6 ! home ! arpa<br>[Download RAW message or body]<br>Hello,<br>In what might the most surprising port proposal of the year, I&#x27;m proud<br>to present a new port for wine. This has been a collective effort,<br>after some of the prodding at the %gs/gsbase question (see thread [1]).<br>The gates swung open with Andrii&#x27;s software solution to the %gs issue -<br>explanation to me: &quot;can&#x27;t set gsbase, so we are emulating %gs prefix on<br>commands&quot;. Overall, the heavy lifting was done by Andrii and Fabien - kudos.<br>Turns out there is a ground-swell with interest in wine [2], different<br>than even 5-10 years ago because a lot of Windows software has since<br>moved to being 64bit.<br>We have since tested several dozens of 64-bit Windows software, mostly<br>successfully. See screenshots at [3][4][5], livestream recordings at<br>[6] for example. Even the Remaster of The Witcher 3 which released just<br>last month runs, and runs well (requires adding in vkd3d-proton; see<br>README; livestream at [7] which looks less fluent than it is due to<br>the on-system recording with ffmpeg).<br>Biggest limitation is that WoW64 doesn&#x27;t work, so 32bit Windows<br>software is still a no-op. You can check .exe/.dll easily with file(1)<br>- if it says something like &quot;MS-DOS executable PE for MS Windows (GUI)<br>Intel 80386 32-bit&quot;, then it&#x27;s 32-bit.<br>The builtin-tests are disabled for now. Enabling them is pretty<br>involved as they need access to the X server and multiple tests still<br>hang, however that was not observed in the real life testing with a<br>good number of games. This is still being worked on.<br>For those who wish to test it, I suggest Notepad++ as a small, fairly<br>straightforward piece of 64-bit Windows software [8]. Note that this<br>is (as always) run-at-your-own-risk software (see [9]). Consider<br>setting up a separate, non-privileged user for this until we can<br>explore if some fencing in, potentially with unveil(2) can be done.<br>Appreciate testing of the port draft and contributions by: brynet@,<br>bentley@, pertho (on irc.libera.chat #openbsd-gaming), vl_ms<br>ok?<br>[1] https://marc.info/?l=openbsd-tech&amp;m=179067466617674&amp;w=2<br>[2] https://marc.info/?l=openbsd-tech&amp;m=179070170845285&amp;w=2<br>[3]<br>https://old.reddit.com/r/openbsd_gaming/comments/1x4e7fi/some_samples_from_wip_wine_port/<br>[4]<br>https://old.reddit.com/r/openbsd_gaming/comments/1x5yxpu/more_wineonopenbsd_screenshots/<br>[5]<br>https://old.reddit.com/r/openbsd_gaming/comments/1x7z2ry/even_more_wineonopenbsd_proof/<br>[6] https://video.gamerstavern.online/w/8tjjFRDtGJQZwxfE4ojVoC<br>[7] https://video.gamerstavern.online/w/oZcTRKL5JMiU4M4FqGKcNH<br>[8]<br>https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.8.1/npp.8.9.8.1.portable.x64.zip<br>[9]<br>https://gitlab.winehq.org/wine/wine/-/wikis/FAQ#is-wine-malware-compatible<br>[Attachment #3 (application/x-compressed-tar)]<br>[prev in list] [next in list] [prev in thread] [next in thread]<br>Configure |<br>About |<br>News |<br>Add a list |<br>Sponsored by KoreLogic</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: KiviDB, a faster Redis-compatible memory database and vector cache
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    36 points ·
+    13 comments ·
+    murtazayusuf
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #10
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/kividbio/kividb">Original article</a> · <a href="https://news.ycombinator.com/item?id=50152541">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">KiviDB is a fast, multi-threaded alternative to Redis® and Valkey, written in Rust. It<br>speaks the Redis protocol (RESP2 and RESP3), so existing Redis clients, redis-cli and<br>libraries work unchanged, and it has full-text and vector search built in. It runs every<br>core on a sharded in-memory key-value design, and persists to snapshots and an optional<br>append-only file.<br>On the same 32 cores, KiviDB serves 21 million pipelined GETs per second: about 9× Redis 8 and 2.3× Dragonfly, with under half Dragonfly&#x27;s p99 latency (benchmarks).<br>docker run -d -p 6380:6380 kividb/kividb<br>redis-cli -p 6380 PING        # PONG<br>KiviDB listens on 6380, not Redis&#x27;s 6379, so the two can run side by side; point your<br>client at that port, or pass --port 6379.<br>- Protocol: Redis-compatible command surface (see COMMANDS.md for the supported commands)<br>- Search and vectors: Redis Stack–style FT.* commands for full-text, tag, numeric and vector (FLAT / HNSW) search<br>- Lua scripting: optional Cargo feature. EVAL, SCRIPT, FUNCTION, FCALL and related commands are available in builds with --features lua (see Scripting commands (Lua))<br>- TLS: optional Cargo feature (--features tls)<br>- Default listen address: 0.0.0.0:6380, with protected mode on<br>- License: GNU Affero General Public License v3 (AGPL-3.0-only), open source; using KiviDB does not put your application under the AGPL; see License<br>Repository: github.com/kividbio/kividb · Website: kividb.io<br>|  | KiviDB | Redis 8 | Valkey 8 | Dragonfly | KeyDB |<br>|---|---|---|---|---|---|<br>| License | AGPL-3.0 | RSALv2, SSPLv1 or AGPL-3.0 | BSD-3-Clause | BSL 1.1 | BSD-3-Clause |<br>| Language | Rust | C | C | C++ | C++ |<br>| Commands run on | every core (sharded) | one thread (I/O threads) | one thread (I/O threads) | every core (shared-nothing) | several threads |<br>| Full-text and vector search ( FT.*) | built in | built in (Query Engine) | separate module | built in | no |<br>| Lua scripting | lua build | yes | yes | yes | yes |<br>As of October 2026. Something out of date or wrong? Please open an issue.<br>Throughput, latency, vector search and vector ingest. Click for the full-resolution video.<br>All figures below are from one session in October 2026 on AWS Graviton3 bare metal: the<br>server on a c7gn.metal (64 vCPU), confined to 32 cores, and the load generator on a<br>second c7gn.metal in the same placement group. Each engine ran alone on the server,<br>one after another.<br>memtier_benchmark through kivi-benchmark&#x27;s run-matrix.sh: 10 million keys, 100-byte<br>values, 30 s a scenario, mean of two rounds; 300 connections pipelined, 1,200 without<br>pipelining.<br>| ops/s | KiviDB 1.1.0 | Dragonfly 2.0.2 | Redis 8.10 | Redis Cluster (32 shards) |<br>|---|---|---|---|---|<br>| GET, pipeline 16 | 21.2M | 9.1M | 2.4M | 4.7M |<br>| SET, pipeline 16 | 19.2M | 8.5M | 2.0M | 4.7M |<br>| GET, no pipelining | 3.07M | 3.35M | 1.32M | 1.46M |<br>| SET, no pipelining | 3.12M | 3.38M | 1.54M | 1.46M |<br>| p99 latency, GET / SET, pipeline 16 | 0.36 / 0.42 ms | 0.88 / 1.07 ms | 2.2 / 2.7 ms |  |<br>| Memory per key | 177 B | 134 B | 178 B | 183 B |<br>redis/vector-db-benchmark on glove-25-angular (1.18M vectors, 25 dimensions): HNSW with M=16 and EF_CONSTRUCTION=256, 100 clients uploading in batches of 64, then queries at ef 64, 128, 256 and 512.<br>|  | KiviDB 1.1.0 | Dragonfly 2.0.2 | Redis 8.10 (query engine) |<br>|---|---|---|---|<br>| Queries/s at ef 64 (recall@10) | 59.3k (0.943) | 41.3k (0.912) | 31.8k (0.912) |<br>| Queries/s at ef 128 | 50.7k (0.961) | 40.3k (0.937) | 28.9k (0.937) |<br>| Queries/s at ef 256 | 31.5k (0.989) | 36.2k (0.979) | 21.1k (0.979) |<br>| Queries/s at ef 512 | 18.7k (0.998) | 29.8k (0.995) | 13.7k (0.995) |<br>| Ingest and index build | 31 s | 13 s | 38 s |<br>| Memory after ingest | 1.66 GB | 1.13 GB | 1.07 GB |<br>- Methodology and scripts: kivi-benchmark<br>- The most recent automated run: benchmarks/LATEST.md<br>Results depend on the environment. Treat published figures as one controlled capture, not a guarantee, and measure on your own hardware and workload.<br>KiviDB implements Redis Stack–compatible search and vector commands, so existing clients and tutorials largely work unchanged. Use them for full-text (BM25), tags / numerics, and vector ANN (FLAT or HNSW) on hash fields.<br>- Create an index on keys with a prefix, declaring at least one VECTOR field (HNSW or FLAT) and optional TEXT / TAG / NUMERIC fields:<br>redis-cli -p 6380 FT.CREATE idx ON HASH PREFIX 1 doc: SCHEMA \<br>vec VECTOR HNSW 10 TYPE FLOAT32 DIM 128 DISTANCE_METRIC COSINE M 16 EF_CONSTRUCTION 128<br>- Store vectors as raw FLOAT32 little-endian bytes in a hash field (DIM × 4 bytes), the same convention as Redis Stack and redis-py / numpy blobs. Use your client&#x27;s binary-safe HSET (the integration tests under tests/e2e/ have examples).<br>- Query with KNN (Dialect 2), passing the query vector as a named binary parameter:<br>redis-cli -p 6380 FT.SEARCH idx &#x27;*=&gt;[KNN 10 @vec $q]&#x27; PARAMS 2 q &lt;blob&gt; DIALECT 2<br>The full command surface, filters, hybrid search and edge cases are in COMMANDS.md (search for FT.CREATE, FT.SEARCH, FT.HYBRID, and so on).<br>- Native snapshots (dump.kdb) store the keys, the index schemas, and, when you SAVE / BGSAVE with indexes populated, the HNSW graph of each vector field, so search quality after a restart matches the graph you had before shutdown.<br>- While search indexes are being rebuilt at startup, most commands return LOADING until the rebuild finishes; PING, INFO and a few other commands still work.<br>- After a large ingest, run SAVE (or schedule BGSAVE) so the next start reloads the graph from disk instead of rebuilding it from the hashes.<br>KiviDB comes in four variants, chosen by Cargo features at build time:<br>| Variant | Cargo features | Adds |<br>|---|---|---|<br>| default | none | the core server, without Lua or TLS |<br>| lua | lua | Lua scripting ( EVAL, EVALSHA, SCRIPT, FUNCTION, FCALL, …) |<br>| tls | tls | TLS listener, and TLS between cluster nodes and replicas |<br>| full | lua,tls | both |<br>In a build without Lua, the scripting commands return an error. A build without TLS refuses<br>to start if --tls-port is given, rather than serving plaintext.<br>Requires a stable Rust toolchain (rust-toolchain.toml selects<br>stable with rustfmt and clippy). The crate uses the 2024 edition; the oldest<br>toolchain it is checked against is Rust 1.89, the version the Dockerfile<br>builds with.<br>git clone https://github.com/kividbio/kividb.git<br>cd kividb<br>cargo build --release                      # default variant<br>cargo build --release --features lua       # with Lua scripting<br>cargo build --release --features tls       # with TLS<br>cargo build --release --features lua,tls   # full<br>./target/release/kividb<br>On Linux the server uses io_uring when the kernel allows it and falls back to Tokio<br>otherwise (--io-model auto, the default).<br>To build the Docker image yourself, docker build -t kividb . builds the default variant;<br>docker build --build-arg KIVIDB_FEATURES=lua,tls -t kividb:full . builds another one.<br>./target/release/kividb                    # listens on 0.0.0.0:6380<br>redis-cli -p 6380 PING<br>Any Redis client works; point it at port 6380.<br>Protected mode is on by default, as in Redis. While it is on, no bind address has been<br>set (--bind or bind in the config file) and the default user has no password, only<br>clients on the same machine (loopback) may connect. Any other client<br>receives a -DENIED error that explains the options, and is disconnected.<br>To accept clients from other machines, do one of these:<br>- set a password: --requirepass &lt;password&gt;, or ACL SETUSER default &gt;&lt;password&gt;;<br>- set a bind address: --bind &lt;address&gt;;<br>- turn protected mode off: --protected-mode no, protected-mode no in the config file, or CONFIG SET protected-mode no from a local client.<br>If you turn it off or bind to a public address, make sure the server cannot be reached from the internet without a password.<br>Images are published to Docker Hub and the GitHub Container Registry, with the same tags in both:<br>docker pull kividb/kividb:latest<br># or<br>docker pull ghcr.io/kividbio/kividb:latest<br>latest and version tags such as v1.1.0 are the default variant; v1.1.0-lua,<br>v1.1.0-tls and v1.1.0-full are the others. Images are built for amd64 and arm64.<br>docker run -p 6380:6380 kividb/kividb<br>A container is reached through its network, never from loopback, so the image&#x27;s default<br>command is --protected-mode no. Arguments you pass replace that default, which turns<br>protected mode back on. When you pass your own flags, set a password (recommended) or add<br>--protected-mode no yourself:<br>docker run -p 6380:6380 ghcr.io/kividbio/kividb \<br>--requirepass &quot;change-me&quot; \<br>--databases 8 \<br>--loglevel debug<br>With AOF persistence (mount a volume so data survives restarts; the server runs as user<br>kividb in /home/kividb):<br>docker run -p 6380:6380 \<br>-v $(pwd)/data:/home/kividb \<br>ghcr.io/kividbio/kividb --aof --requirepass &quot;change-me&quot;<br>With --aof, every write is appended to appendonly.aof and the file is replayed on<br>startup, so a crash loses at most about the last second of writes (the fsync interval)<br>rather than everything since the last snapshot. When an AOF is present it is the source of<br>truth and the snapshot is not loaded; see docs/PERSISTENCE.md for why.<br>io_uring in containers: Docker&#x27;s default seccomp profile blocks io_uring on recent<br>versions, and KiviDB then falls back to Tokio. To allow it on a Linux host, run with<br>--security-opt seccomp=unconfined (understand what that permits before using it in<br>production).<br>Release binaries for Linux (x86_64, aarch64) and macOS (Apple silicon, Intel) are published<br>on GitHub Releases. The latest/download<br>links below always resolve to the newest release; replace latest/download with<br>download/v1.1.0 to pin a version.<br># Linux x86_64<br>curl -LO https://github.com/kividbio/kividb/releases/latest/download/kividb-linux-x86_64.tar.gz<br>tar xzf kividb-linux-x86_64.tar.gz<br>./kividb<br># Linux aarch64 (an ARMv8.1 CPU or newer: Graviton2 and later, Ampere; not a Raspberry Pi 4)<br>curl -LO https://github.com/kividbio/kividb/releases/latest/download/kividb-linux-aarch64.tar.gz<br># macOS, Apple silicon / Intel<br>curl -LO https://github.com/kividbio/kividb/releases/latest/download/kividb-darwin-aarch64.tar.gz<br>curl -LO https://github.com/kividbio/kividb/releases/latest/download/kividb-darwin-x86_64.tar.gz<br>Each variant other than the default has its name in the file: kividb-lua-linux-x86_64.tar.gz,<br>kividb-tls-…, kividb-full-…. The default variant is also packaged for Linux as<br>kividb_amd64.deb / kividb_arm64.deb and kividb.x86_64.rpm / kividb.aarch64.rpm,<br>built with nfpm from<br>packaging/nfpm.yaml. A SHA256SUMS.txt file lists the checksum<br>of every file in a release.<br>curl -LO https://github.com/kividbio/kividb/releases/latest/download/kividb_amd64.deb &amp;&amp; sudo dpkg -i kividb_amd64.deb<br>curl -LO https://github.com/kividbio/kividb/releases/latest/download/kividb.x86_64.rpm &amp;&amp; sudo rpm -i kividb.x86_64.rpm<br>KiviDB is configured with command-line flags, or with a Redis-style configuration file<br>(one directive per line, such as port 6380 or appendonly yes). The file is read from<br>/etc/kividb/kividb.conf if it exists; --configfile &lt;path&gt; names another one. A flag given<br>on the command line wins over the same setting in the file. Run kividb --help for the full<br>list.<br>| Flag | Default | Description |<br>|---|---|---|<br>| --port | 6380 | Port to listen on |<br>| --bind | 0.0.0.0 | Address to listen on. Setting it explicitly turns off protected mode |<br>| --protected-mode &lt;yes\|no&gt; | yes | See Protected mode |<br>| --threads | 0 (auto) | Worker threads; auto is the number of cores minus 2 (all cores below 4) |<br>| --databases | 16 | Number of databases |<br>| --dir &lt;path&gt; | start directory | Where dump.kdb, appendonly.aof and nodes.conf live |<br>| --aof | off | Append-only file persistence |<br>| --maxmemory &lt;bytes&gt; | 0 (unlimited) | Memory limit |<br>| --maxmemory-policy | noeviction | What happens at the limit: noeviction, or the allkeys-* / volatile-* eviction policies (kividb --help lists them) |<br>| --loglevel | info | debug, verbose, notice (or info), warning, nothing |<br>| --logfile &lt;path&gt; | standard error | Write the log to a file |<br>| --log-format &lt;text\|json&gt; | text | Log line format |<br>| --io-model | auto | auto, uring or tokio (io_uring is Linux only) |<br>| --requirepass &lt;password&gt; | none | Password for the default user |<br>| --aclfile &lt;path&gt; | none | ACL file to load users from |<br>| --replicaof &lt;HOST&gt; &lt;PORT&gt; | none | Replicate from a primary |<br>| --replica-announced-port &lt;port&gt; | server port | Port announced to the primary via REPLCONF listening-port |<br>| --slowlog-log-slower-than &lt;us&gt; | off | Slowlog threshold in microseconds ( 0 logs every command) |<br>| --slowlog-max-len &lt;n&gt; | 128 | Slowlog entries kept |<br>| --cluster-enabled &lt;yes\|no&gt; | no | Cluster mode: a cluster bus on &lt;port&gt; + 10000, topology in nodes.conf, gossip, failure detection and failover |<br>| --cluster-node-timeout &lt;ms&gt; | 15000 | Time without a reply before a peer is suspected to have failed |<br>| --tls-port &lt;port&gt; | 0 (off) | TLS listener (TLS builds only) |<br>| --tls-cert-file, --tls-key-file | none | Server certificate and key (PEM) |<br>| --tls-ca-cert-file | none | CA that client certificates are checked against |<br>| --tls-auth-clients &lt;yes\|optional\|no&gt; | yes | Whether clients must present a certificate (only with --tls-ca-cert-file) |<br>| --update-check &lt;yes\|no&gt; | yes | The startup update check |<br>TLS clients connect on a separate port, --tls-port; plain traffic stays on --port.<br>cargo build --release --features tls<br>./target/release/kividb --port 6380 --tls-port 6381 --tls-cert-file cert.pem --tls-key-file key.pem<br>redis-cli --tls -p 6381 --cacert ca.pem   # ca.pem: the CA that signed cert.pem<br>Client certificates (mutual TLS). With --tls-ca-cert-file ca.pem, clients must present a<br>certificate signed by that CA; others are refused during the handshake.<br>--tls-auth-clients optional accepts clients without a certificate but still refuses an<br>invalid one, and --tls-auth-clients no does not ask for one. With redis-cli:<br>redis-cli --tls -p 6381 --cacert ca.pem --cert client.pem --key client.key.<br>Clients must use TLS on the TLS port. A plain connection to it (for example redis-cli -p 6381<br>without --tls) fails the handshake, and the server logs [TLS] handshake failed. For<br>memtier_benchmark, add --tls (and --tls-skip-verify for a self-signed certificate).<br>The log goes to standard error, or to --logfile. docs/LOGGING.md<br>describes the log; docs/ERRORS.md explains the warnings, errors and error<br>replies, and what to do about each.<br>When it starts, a release build of KiviDB makes one HTTPS request to<br>https://github.com/kividbio/kividb/releases/latest, the same page you would open to find<br>the newest release. GitHub answers with a redirect to that release&#x27;s tag; if it is newer<br>than the running build, KiviDB prints a short notice with the link before the startup<br>banner. Nothing is sent but the request itself, with a User-Agent of kividb/&lt;version&gt;:<br>no host name, configuration, keys, data or identifier. GitHub sees the request&#x27;s source IP<br>address, as any web server would.<br>Startup waits at most 1.5 seconds for the reply; a failure is logged at debug level only and never affects clients. Only a version-shaped tag is accepted from the reply, and nothing else from it is printed.<br>Any one of these turns it off:<br>- --update-check no on the command line;<br>- update-check no in the configuration file;<br>- KIVIDB_NO_UPDATE_CHECK=1 in the environment.<br>It is also never made by a debug build or when the CI environment variable is set.<br>--update-check-url points it at another https:// address, such as a mirror inside a<br>closed network. docs/UPDATE_CHECK.md has the details.<br>Contributions are welcome. See CONTRIBUTING.md for how to build, test and submit changes. Contributions are accepted under the Contributor License Agreement, which you sign on your first pull request.<br>Please follow the Code of Conduct. The Changelog lists what changed in each release.<br>Please do not report security vulnerabilities in public issues. See SECURITY.md for how to report one privately.<br>Copyright (c) 2026 KIVIDB PRIVATE LIMITED.<br>KiviDB is open source software, licensed under the GNU Affero General Public License, version 3 (AGPL-3.0-only), an OSI-approved license. You may use, modify and redistribute it under its terms. See NOTICE.<br>Using KiviDB does not put your application under the AGPL. An application that talks to KiviDB over the network, through any Redis client, is a separate program: you can run an unmodified KiviDB as your database, in any product, open or closed, commercial or not, with no obligation on your application&#x27;s code. The AGPL asks for one thing beyond the GPL: if you modify KiviDB itself and let others use your modified version over a network (for example, as a hosted service), you must offer them the source code of your modified KiviDB.<br>Commercial license. KIVIDB PRIVATE LIMITED owns the copyright in KiviDB and also offers it under a commercial license, for organizations that cannot use AGPL software or that want to modify or embed KiviDB without publishing their changes. Write to support@kividb.io.<br>Our commitment. Every version of KiviDB we release under the AGPLv3 stays available under the AGPLv3. The Contributor License Agreement lets us offer the commercial license alongside it; it is not a way to take the open source version away.<br>- Can I use KiviDB as the database of my closed-source or commercial application? Yes. Your application connects to KiviDB over the network; it is not a derivative of KiviDB, and the AGPL places no obligation on it.<br>- Can I run KiviDB as a service for my own users or customers? Yes. If you run it unmodified, you have nothing to publish. If you modify KiviDB and offer that modified version over a network, you must offer its source to the users of that service.<br>- Do client libraries or my configuration count as modifications? No. Redis clients, configuration files, and scripts and functions you send to KiviDB are not part of KiviDB.<br>- My organization does not allow AGPL software. The commercial license is for that case: support@kividb.io.<br>Redis® is a registered trademark of Redis Ltd. Any rights therein are reserved to Redis Ltd. Any use by KiviDB is for referential purposes only and does not indicate any sponsorship, endorsement or affiliation between Redis and KiviDB. KiviDB is not affiliated with Redis Ltd. Other names mentioned are trademarks of their respective owners.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    OpenCode Hacked: User credentials leaked
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    965 points ·
+    175 comments ·
+    pranshuchittora
+  </div>
+
+  <div class="meta">
+    twitter.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://twitter.com/opencode/status/2111516673953935833">Original article</a> · <a href="https://news.ycombinator.com/item?id=50133401">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    MiniMax M3.1 Flash: Redefining Agent Performance and Cost
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    6 points ·
+    0 comments ·
+    minimaxir
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50153759">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://www.minimax.io/blog/minimax-m31f<br>The domain appears to be shadowbanned on Hacker News and this is a major model release that multiple people have tried to submit, so working around that.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    The Problem with C++ Safety (Part 1): Why &quot;It Works&quot; Isn&#x27;t Good Enough
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    ibobev
+  </div>
+
+  <div class="meta">
+    modernescpp.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.modernescpp.com/index.php/cpp-and-memory-safety-part-1/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50154458">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In Memory of Rainer Grimm<br>Welcome back to the blog of Rainer Grimm! This is the first of hopefully many new C++-related articles in Rainer’s blog. Since you are reading this, you have potentially read many of his articles and have gotten an idea of his passion and his devotion to the C++ community. In this blog, for more than a decade, Rainer has provided the C++ community with countless articles about the latest and greatest of C++.<br>With deep sadness you may have already heard the news: Rainer passed away on October 6th 2025, as a victim of his ALS disease. He leaves a big hole in our hearts, but also in the C++ community. He will be sorely missed by many friends, colleagues, and students.<br>It would be a shame to let his amazing contribution to the C++ community go to waste. In order to honor his devotion to the community, a few C++ experts, in particular Mateusz Pusz, Jens Weller, Slobodan Dmitrović, Ivan Čukić, and me, have come together to continue his journey: bringing the latest and greatest news to you, the readers of Rainer’s blog. I’m making a start here, trying to uphold the spirit of his blog.<br>Of course there will be little changes: the five of us have our own style, our own interests, our own message. Thus the upcoming sequence of articles will inevitably be a little different from Rainer’s original articles. It will be a mixture of different areas of expertise, of different highlights and of different topics. But one thing will remain: we’ll make sure Rainer’s devotion to quality and insight will be upheld. We’ll make sure to continue on his path to bring valuable information to the C++ community.<br>The Problem<br>So let’s start to talk about C++: we have a problem. C++ isn’t memory safe! …<br>I suspect that this isn’t particularly new to you. In fact, the NSA published an article back in 2022, in which it explicitly recommended not to use C or C++ for safety and security related software anymore [1]. The wording has softened since the first publication, but the spirit remains the same: prefer memory safe languages.<br>But it is not just the US authorities. The recommendation in the “Cyber Resilience Act” of the European Union is similar: avoid memory unsafe languages. Although they did not explicitly mention C and C++ as the culprits, the message was clear enough.<br>This sounds dire, but of course there is a fundamental and very good reasoning behind these articles. According to [2], “Hardware and software products are increasingly subject to successful cyberattacks, leading to an estimated global annual cost of cybercrime of 5.5 trillion Euros by 2021.”<br>5.5 trillion Euros!!! Yes, several trillion Euros have been lost due to malicious attacks, many of them from foreign countries interested in the downfall of our economy and society. And this number alone should be a perfect explanation for the desire to harden our software against cyber attacks.<br>But how does this relate to C++? Well, unfortunately some statistics have been pulled out of proportion and bent to emphasize what a significant and devastating impact the lack of memory safety of C++ has on cyber security. Officials therefore advise the use of languages that are considered memory safe.<br>Now we could start talking about these statistics and we could go into detail why C++ and memory safety in general are not the most important factors for cyber security and why C++ itself is by far not as unreliable and endangering as it sounds [3]. We could also, as so many people on social media do, start to argue that the arguments against C++ are exaggerated, misinformed or just plain wrong. However, let’s be serious: of course there is truth behind the statements. Truth that cannot really be denied, unfortunately. Therefore, from my perspective, it makes more sense to explore where and why these arguments emerge and what we can do about it.<br>An Example<br>Based on my many years as a C++ trainer and consultant, I believe I have a pretty good idea about the real problem in our community. In order to make a point, let’s take a look at an example I saw on LinkedIn some time ago [4]. A developer posted code for a “Palindrome Check in C++”. Here is the original code:<br>Before reading on, please take a look at this code and tell me if you see any problems — in particular any safety or security related issues.<br>…<br>OK, I assume you’ve taken a good look and have found a couple of issues — yes, more than one. But in order to stay positive and in order to make an attempt, let’s start with the positive aspect of this code: yes, all semicolons in this code are correctly placed. Well done!<br>But unfortunately that’s it. The list of deficiencies is unfortunately much longer:<br>- a using directive for namespace std shouldn’t even be used in example code anymore. Inexperienced developers might get the impression it’s a good idea and apply this in their own code. So just to be explicit: this is a terrible idea. Core Guideline SF.7 will help you to understand the details [5].<br>- the main() function is used to demonstrate the code instead of immediately providing a properly named function for the task. We could argue that it is just an example, but we could also argue that this is just lazy. Or is it just code written by AI? Perhaps, but more on that later.<br>- the “input” string and the subsequent size variable are not const qualified. Which is a pity, because they are never changed, but only read. This clearly violates Core Guideline Con.1 [6].<br>- the variables firstPointer and lastPointer are defined within the same statement. While this works and compiles of course, it is considered bad practice today. Please, don’t do this anymore! See also Core Guideline ES.10 [7].<br>- although the variables are called Pointer, they are actually of type int. Thus the name is misleading at best — or just plain wrong.<br>- lastPointer is set to size-1, which only “works” because the chosen type is int, not size_t. Yes, I agree, in this case everything is fine, but a generalized function would have to deal with the special case, which is just ignored here.<br>- the characters of the string are accessed via the subscript operator. This operation takes a size_t, not an int, and does not perform any bounds checking, which could quickly lead to undefined behavior.<br>- firstPointer and lastPointer are postfix incremented, although the old value is neither needed nor used in the code. This potential waste of resources is warned against in Core Guideline P.9 [8].<br>A Generalized Function<br>This (hopefully) feels like a crushing review. But you might want to argue: “OK, Klaus, that may be a little picky. I get it, a lot of core guidelines were violated, but it’s just a simple example. After all, it works, right?”<br>Well, I honestly don’t think that it is a good idea to post “simple” code examples that violate so many of the community’s best practices. Actually, in my opinion it is a terrible idea. However, we could be well-meaning at this point and imagine a second attempt to solve the problem, this time with a generalized function named is_palindrome():<br>OK, OK, I admit it, I’m providing this example to make a point. For this reason I also don’t adhere to all the best practices. But we, again well-meaning, could argue that this is a much better attempt to solve the problem. So please, take a close look at the is_palindrome() function and tell me if you are certain that there are no safety or security related issues.<br>…<br>I hope you’ve really taken a good look. You might come up with the following summary: “OK, Klaus, assuming you want to keep this simple and therefore really only want to apply this to a std::string, and considering this is only the next iteration, this appears to work well.”<br>But wait: the question wasn’t “does it work well”, but “are you certain”! So are you certain, i.e. 100% certain, that this code does not contain any safety or security related issues?<br>At this point you might pause and reconsider. Honestly, if I were you, I wouldn’t be certain either. Although the code is just a few lines long, it is already difficult to think it through in every detail. Are all special cases covered? Could this result in an infinite loop? Could this accidentally access any invalid memory location? Are there other sources of undefined behavior? I can’t be certain by just looking at it. I’d need more time, potentially much more time to really think it through.<br>For this reason — the reason of not being certain — I would rate this as poor code. Yes, seriously, poor code.<br>“But Klaus, isn’t this a little too harsh? This code isn’t so bad after all!”<br>No, I’m dead serious. I would even argue that this is not the kind of C++ code we write and should write today, i.e. “modern C++” code. This is “classic C++” to me. And I’m very confident in saying this, because the modern solution is so much shorter and so much simpler.<br>What’s next?<br>In the second part we’ll take a look at the modern C++ solution and discuss why it is superior to the classic solution. So stay tuned :-)<br>References<br>Thanks a lot to my Patreon Supporters: Matt Braun, Roman Postanciuc, Tobias Zindl, G Prvulovic, Reinhold Dröge, Abernitzke, Frank Grimm, Sakib, Broeserl, António Pina, Sergey Agafyin, Андрей Бурмистров, Jake, GS, Lawton Shoemake, Jozo Leko, John Breland, Venkat Nandam, Jose Francisco, Douglas Tinkham, Kuchlong Kuchlong, Robert Blanch, Truels Wissneth, Mario Luoni, Friedrich Huber, lennonli, Pramod Tikare Muralidhara, Peter Ware, Daniel Hufschläger, Alessandro Pezzato, Bob Perry, Satish Vangipuram, Andi Ireland, Richard Ohnemus, Michael Dunsky, Leo Goodstadt, John Wiederhirn, Yacob Cohen-Arazi, Florian Tischler, Robin Furness, Michael Young, Holger Detering, Bernd Mühlhaus, Stephen Kelley, Kyle Dean, Tusar Palauri, Juan Dent, George Liao, Daniel Ceperley, Jon T Hess, Stephen Totten, Wolfgang Fütterer, Matthias Grün, Ben Atakora, Ann Shatoff, Rob North, Bhavith C Achar, Marco Parri Empoli, Philipp Lenk, Charles-Jianye Chen, Keith Jeffery, Matt Godbolt, Honey Sukesan, bruce_lee_wayne, Silviu Ardelean, schnapper79, Seeker, and Sundareswaran Senthilvel.<br>Thanks, in particular, to Jon Hess, Lakshman, Christian Wittenhorst, Sherhy Pyton, Dendi Suhubdy, Sudhakar Belagurusamy, Richard Sargeant, Rusty Fleming, John Nebel, Mipko, Alicja Kaminska, Slavko Radman, and David Poole.<br>| My special thanks to Embarcadero |  |<br>| My special thanks to PVS-Studio |  |<br>| My special thanks to Tipi.build |  |<br>| My special thanks to Take Up Code |  |<br>| My special thanks to SHAVEDYAKS |  |<br>Modernes C++ GmbH<br>Modernes C++ Mentoring (English)<br>Beatrix Jaud-Grimm<br>Kelterstraße 23<br>72108 Rottenburg<br>Mail: schulung@ModernesCpp.de<br>Mentoring: www.ModernesCpp.org</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: Qwen3-4B with the AI writing tics trained out
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    104 points ·
+    85 comments ·
+    erikkannike
+  </div>
+
+  <div class="meta">
+    100toolkit.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #17 · Best #59
+  </div>
+
+  <div class="links">
+    <a href="https://100toolkit.com/blog/deslop-model/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50151928">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Answers on 40 held-out prompts<br>These are one sampled answer per prompt from the original model and from the released one, on ten topics in four genres, with no system prompt. Underlined passages are what the slop detector counts.<br>ollama run hf.co/erikkannike/qwen3-4b-deslop-v4-GGUF:Q4_K_M, a 2.5 GB download.<br>My home lab is a MacBook Air, so this is a 4B model trained on 161 answers. The recipe doesn&#x27;t depend on the model size, and running it on larger models is the next step.<br>The score comes from a detector I wrote from a style guide of AI writing habits: the em dash, &quot;it&#x27;s not X, it&#x27;s Y&quot;, lists of three, rhetorical questions answered on the spot, signposts like &quot;here&#x27;s the thing&quot;, short fragments for emphasis, and words like &quot;delve&quot; and &quot;seamless&quot;. Each habit has a weight, and the score is a weighted count per 1000 words. A paragraph by a careful human writer scores close to zero, and the original model averages 121.<br>A regex can&#x27;t tell good writing from bad, so every model below was also checked for damage. Drift measures how far its predictions on 22 passages of human prose move from the original model&#x27;s. A 30-question quiz checks that it still knows things, and a rule-based check flags broken output like lowercase sentence starts or a lost topic. I also read a sample of answers from every model.<br>An earlier experiment on this model found the assistant register as a direction inside it: subtracting it while the model writes, together with a plain-style system prompt, takes the score to about 15, but it needs the prompt and code running during generation, and it shifts the model&#x27;s predictions on ordinary text. A second one read neurons one at a time and found four whose sign flip removes 70% of &quot;not X, but Y&quot; at almost no cost, though only for that one habit.<br>To get both into the weights I used distillation: a teacher, built from whatever worked best so far, answers 288 training prompts. I keep the answers that pass the checks, and a small LoRA adapter learns to produce them from the bare prompt. The first round got the score to about 20 with no prompt and no hooks.<br>For round two the teacher was the round-one model plus the four-neuron patch and the plain-style prompt. Adding the direction steering on top as well produced the lowest score I have measured, 9.5, from text with no capital letters that wandered off topic, so I took the steering back out. The teacher then averaged 7.4, and the student trained on its 171 best answers scored 9.9, with 80% of answers in the human range.<br>In its answers, an opinion piece about a company&#x27;s new CRM never took a position and read like an incident report. A blog post about moving to a new city became a third-person story about a family with a leaking apartment. A piece about houseplants cited &quot;a study from the University of Technology Sydney&quot;, which the model invented. Almost every sentence ran into the next with &quot;, which&quot; or &quot;, so&quot;, 28 times as often as in the original model. That last habit came from my own teacher prompt, which had told the model to join sentences &quot;with because, so, but, which&quot;, and two rounds of imitation had amplified it.<br>I added rule-based checks for whether an answer does what the prompt asked. An opinion piece has to state a position early, a personal reflection has to be in the first person, an email has to open with a greeting, and the length has to roughly match the request. Two more checks count &quot;, which&quot; and &quot;, so&quot; joins and invented studies and percentages. On those, the round-two model did what was asked only 60% of the time, against 78% for the original.<br>The third teacher got a prompt that put the task first: take a position when asked, write in the first person when it&#x27;s personal, vary the sentences, and don&#x27;t invent studies or names. It wrote three answers per prompt, and an answer was kept only if it scored under 12, passed the damage checks and passed all the task checks. About 30% did, which covered 161 of the 288 prompts.<br>The model trained on those answers is the released one. Its score rose a little, from 9.9 to 12.5, while task fit went back to 80% and the &quot;, which&quot; joins fell from 1.4 to 0.3 per 100 words. Invented studies and percentages nearly disappeared.<br>The quantised build (Q4_K_M, 2.5 GB) runs on a laptop with Ollama or llama.cpp:<br>ollama run hf.co/erikkannike/qwen3-4b-deslop-v4-GGUF:Q4_K_M<br>llama-cli -hf erikkannike/qwen3-4b-deslop-v4-GGUF:Q4_K_M<br>The full-precision weights load with transformers like any Qwen3-4B checkpoint:<br>from transformers import AutoModelForCausalLM, AutoTokenizer<br>name = &quot;erikkannike/qwen3-4b-deslop-v4&quot;<br>tok = AutoTokenizer.from_pretrained(name)<br>model = AutoModelForCausalLM.from_pretrained(name, torch_dtype=&quot;auto&quot;)<br>msgs = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Write a LinkedIn post about switching to a four-day week.&quot;}]<br>ids = tok.apply_chat_template(msgs, add_generation_prompt=True, return_tensors=&quot;pt&quot;)<br>out = model.generate(ids, max_new_tokens=300, do_sample=True, temperature=0.7)<br>print(tok.decode(out[0][ids.shape[1]:], skip_special_tokens=True))<br>The repo also has the parts on their own: the LoRA adapter (126 MB) and the neuron edit, a 175-byte list of four weight columns and their scales. The adapter was trained with the edit active, so the two go together.<br>The voice is flat: the model writes runs of short declarative sentences, and its personal pieces read like diary entries.<br>It also still makes things up: studies and percentages are rare now, but invented names and places are common, like a coffee shop on Maple Street run by a woman named Maria, because concrete detail is what every round rewarded. It also runs long, and answers to &quot;about 150 words&quot; often come in near 200.<br>I have only tested short English prose in these genres. Code, long conversations, other languages and tool use may be no better than the original model, or worse. The score is my style guide written as regular expressions, and no blind test with readers has checked it yet. The numbers also move between runs: the same model scored 10.2 through the adapter and 12.5 as merged weights, from sampling differences alone.<br>Each student ended up about as good as the best answers its teacher could write, so a better model needs a better teacher. I&#x27;m putting together a set of excellent human writing, public-domain essays and letters plus modern pieces, to use as examples for a base model. A base model never went through assistant training and still writes like the people it learned from. If that teacher writes better than this model does, the same recipe should produce a student with some taste as well as clean habits. After that comes the same pipeline on a 7 to 8B model and one around 30B, and a blind test where people pick the better text.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Namecheap just seized and disabled all my domains
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    634 points ·
+    331 comments ·
+    sashk
+  </div>
+
+  <div class="meta">
+    reddit.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #51
+  </div>
+
+  <div class="links">
+    <a href="https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50142866">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Another day another GitHub incident
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    61 points ·
+    29 comments ·
+    gateauxd
+  </div>
+
+  <div class="meta">
+    githubstatus.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · New #51
+  </div>
+
+  <div class="links">
+    <a href="https://www.githubstatus.com/incidents/8tzbpcnl75jp">Original article</a> · <a href="https://news.ycombinator.com/item?id=50153934">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: How to deal with shipping AI-written code you don&#x27;t understand?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    12 points ·
+    22 comments ·
+    rzk
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50151036">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I saw this LinkedIn post from a Meta engineer and it resonated with me:<br>https://www.linkedin.com/posts/ali-hamie_im-an-engineer-at-meta-and-i-never-felt-share-7517317918666211328-7C8N<br>&gt; I&#x27;m an engineer at Meta and I never felt this uncomfortable doing my job. I&#x27;m writing code these days and it all feels like a black box. This new standard of shipping with AI is moving so fast that if we&#x27;re going to spend our time checking each line of code, it&#x27;s going to take forever. That means you can end up with systems you&#x27;ve built where you don&#x27;t truly understand how all the code works. You understand the high level, but not every detail. And maybe this is becoming the new standard. It goes against every instinct of being a software engineer. I&#x27;m used to understanding what I&#x27;m building. Now I&#x27;m trying to figure out how much I need to understand before I&#x27;m comfortable moving forward. Are other engineers feeling this too?<br>How are you handling this?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Elizabeth Holmes Tricked Wired–and Everyone Else
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    aray07
+  </div>
+
+  <div class="meta">
+    wired.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.wired.com/story/how-elizabeth-holmes-tricked-wired-and-everyone-else/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50154454">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Elizabeth Holmes, the disgraced founder of the fraud-ridden blood-test company Theranos, made her national press debut in The Wall Street Journal in 2013. The article—“A Drop of Blood, an Instant Diagnosis”—wasn’t a science story, or even a business story. It ran in the Opinion section, by a writer on the Journal’s editorial board named Joseph Rago, winner of a Pulitzer Prize for critiques of the Affordable Care Act.<br>He wrote that he was impressed by the prospect of individuals having more direct control of their health care; no less an eminence than former secretary of state George Shultz, a Theranos board member, had told Rago that Holmes was the next Steve Jobs or Bill Gates.<br>By 2014, Holmes was the youngest woman billionaire ever, and the mid-2010s were electric with tech-industry success stories—the iPhone, Tesla, Airbnb, Twitter. I was an editor at WIRED back then, and Theranos-as-presented felt very WIRED. It looked like evidence that a Silicon Valley approach to innovation would work in every industry, including medicine. And at the magazine that first published the idea of the “quantified self,” Theranos’ pitch validated the notion that individuals could take charge of their own health with innovative tech and access to data.<br>One of my colleagues, an editor named Caitlin Roper, saw a story in Theranos and in Holmes, but no one was sure what shape it should take. The executive editor suggested Roper just go talk to Holmes and see what was what. The result was an influential long-form Q&amp;A headlined “One Drop, Infinite Data: How Elizabeth Holmes Built a Better Blood Test.” Because print magazines move with the agility and speed of a post-Panamax cargo ship, the story didn’t run until the March 2014 issue.<br>Over the next few months, other publications followed. Fortune put Holmes on the cover. The New Yorker did a profile. In October 2015, Inc. put her on the cover, calling her “the next Steve Jobs”—and a couple of weeks later, The Wall Street Journal did another article on Theranos, by the reporter John Carreyrou. The headline was deceptively humble: “Theranos Has Struggled with Blood Tests.”<br>Uh-oh.<br>The speedy and accurate blood tests were fake, the innovative tech didn’t exist, and Walgreens, a major partner, terminated its deal with Theranos. It was a grift. A new documentary film, out this week, follows Holmes in the weeks leading up to her incarceration.<br>Get a bunch of old WIRED editors together these days and it doesn’t take more than one drink before we start asking each other whether we enabled the worst parts of the tech world’s rise to power. Sometimes it seems like every antichrist-lecturing, panopticon-building, machine-god-bothering weirdo with $100 billion and a government contract made his debut in our pages. So, with Theranos and Holmes back in the news, the current administration at WIRED wondered what we were thinking back then.<br>It was a long time ago. I called Caitlin.<br>As always, we were looking for good stories. “I was interested in this female founder, but also the idea that her actual goal was disruption of health care, that there could be more transparency and reduced costs,” says Roper, who today is executive producer for scripted film and TV at The New York Times. “I was going through some medical stuff at the time and having constant blood tests, and I was curious about what this could do.”<br>Roper got a go-ahead to report and write something, execution to be determined. In the house jargon: Green light, format TK. She and I talked it through separately. “The conversation I remember with you, which I thought of many years later, was looking at the board of directors, her board, which was just completely batshit. It had military figures and government officials, and just seemed very odd,” Roper says. “You said there was something weird about that. It raised your suspicious hackles.”<br>It did—a few of us thought we saw hints of red flags. The company hadn’t published any peer-reviewed data. Colleagues had heard unconfirmable rumors of shenanigans inside the company. But that didn’t mean it wasn’t a story. We’d just have to figure out how to handle all that. WIRED had been, in years past, overly credulous, especially of scientific claims. But primarily WIRED covered innovation and stuff that sounded futuristic. This felt like it qualified.<br>“I remember that with dramatic irony, looking back,” Roper says.<br>Holmes agreed to an interview, and Roper went down to the Valley, to Theranos’ offices. She was only the second reporter to be there, and she got the performance that Holmes would become famous for. “There’s a lot of weird things about her. She was speaking in this strange, low voice. She was wearing a Steve Jobs outfit—black turtleneck,” Roper says. “She seemed like she was very precisely trying to project something.” (That first WSJ story ran with an illustrated caricature; WIRED shot a photo, professionally styled, of Holmes in her signature look.)<br>They spent an hour talking. Roper got her blood drawn, a tiny pinprick from the tip of her finger. “I said, ‘I’d love to see the box, can I follow my blood sample?’” Roper says. “They said, absolutely not.” Company reps implied it was a health-and-safety issue.<br>Instead, Holmes took Roper to the Palo Alto Walgreens, one of the few where Theranos had actually set up shop. “That part seemed like a snow job,” Roper says. “It was clear even from my own basic research that it hadn’t rolled out.” The booth at Walgreens was not in service. Holmes told her the company was going to open Walgreens labs across the Southwest.<br>Roper’s blood results came back. “The panel they took was similar to a panel I’d just had. I looked at them, and they matched,” Roper says. That seemed roughly confirmatory, at the time. It’s impossible to know now how it pulled that off, but later it turned out Theranos maintained a fully kitted-out lab in its Palo Alto offices, in addition to the lab for the company’s supposed new tech.<br>Interview done, Roper drove back up to San Francisco, to WIRED. “It didn’t feel like there was a feature to do,” she says. The Walgreens stuff wasn’t happening yet; it was too hard to report out how the technology worked. What was hard, in retrospect, was validation. Roper and the bosses weren’t sure that investment money from bold-faced names made up for an absence of hard scientific evidence.<br>So Roper wrote it up as an interview—a Q&amp;A. “It seemed more like an interesting founder story,” she says. Roper asked every hard question, and got answers. They just turned out to be lies. But Roper acknowledges some cracks in the story’s origin. “If she had not been a woman, I would have been less motivated. That was part of what compelled me,” she says. “I felt sympathetic to the idea of her outfit and her weirdness, because I related to the idea that she was passing in some way in that environment, needing to assert herself.”<br>It’s tempting to see in that a DEI-run-amok story. It isn’t. All of us at WIRED were trying to wrestle with sexism in the world we covered, and at our magazine. Holmes’ board was all non–Silicon Valley types—was that because venture investors and scientists had identified her as a bad risk, or was it because Silicon Valley venture capitalists don’t support women founders?<br>Just a month after Roper’s Q&amp;A ran, a team of researchers at the Harvard Business School and MIT Sloan School published a paper in the Proceedings of the National Academy of Sciences showing that investors were far more likely to fund the same pitch if it came from a man than if it came from a woman—and that conventionally attractive men did even better. Today, roughly 75 percent of venture investors are men, and the proportions were worse a decade ago. There’s even research showing that male venture investors are more likely to promote women to partner if the men have daughters. Roper and WIRED were trying to fight that tide and ran aground on a grifter instead.<br>“Partially, yes, it’s a woman founder, and that’s a nice change of pace. It would’ve been nice if you guys could have beaten John Carreyrou and figured it out,” says Dave Karpf, an associate professor at George Washington University who has read every issue of WIRED and uses them to teach a class about Silicon Valley’s visions of the future. “But it wasn’t a new, untested claim. It was an active fraud.”<br>It’s fair to imagine a timeline where WIRED dug in deeper and was more critical, or at least didn’t further drive the hype cycle. “That story and the way we photographed her was absolutely fuel to lauding her and drawing attention,” Roper says. “I do feel partially responsible for that.”<br>We probably were, but I’m not sure WIRED’s Q&amp;A was any more or less credulous than stories other magazines did. I know I sound defensive here, but even WIRED’s rigorous fact-check process wasn’t designed to unmask fraud. We all got got; it’s easy to see red flags when they’re in the rearview mirror. Was it weird to believe a 19-year-old college dropout had noticed something about pathology and microfluidics no one else had? Sure, but as Karpf points out, the system valorizes those kinds of iconoclasts. Steve Jobs was a dropout, man!<br>“If she had done all the graduate work, she wouldn’t have been nearly as fundable. They would just find someone else to tell them the stories they want to fund,” Karpf says. “It’s the people promoting it who, I think, have a bunch of answering to do.”<br>In 2019, as Sam Altman was leaving his role leading the tech incubator Y Combinator to become CEO of OpenAI, he wrote a blog post extolling the virtue in founders with “too much self belief … almost to the point of delusion.” Venture investors will tell you they invest in people as much as ideas, and the ideas are sometimes early-days, or half-baked. The system encourages exaggeration—right up to the line of deception. It can favor charismatic hucksters. If Theranos’ technology didn’t quite work yet, well, that’s a core tenet of Silicon Valley: Fake it till you make it.<br>And for a long time, WIRED helped. The magazine touted big ideas, and sometimes those ideas turned out to be dumb. Sometimes we were too early; sometimes we were wrong. Pitch meetings for stories big and small were a bit of a Thunderdome, actually. Eventually we developed some heuristics to encode skepticism in the process. For architecture stories, renders weren’t enough—ground had to have been broken. Physical objects had to exist in physical space; reporters had to be able to visit a thing. A flying car had to, you know, fly. In stories about new drugs or medical devices, the gating rule became “phase 3 trials or get the fuck out.”<br>Today, every responsible tech journalist has had to don new kinds of armor to prepare for the future that WIRED helped create. It’s possible to marvel at robot cars navigating cities as if driven by ghosts—while acknowledging the ways they sometimes fail, are often remote-piloted by humans, and pose new questions about regulating Big Tech. It’s possible to be awed by generative artificial intelligence’s capabilities while also interrogating the motives and practices of the companies that build it. And, yes, the personal politics of tech trillionaires matter when they’re donating more than a quarter of a billion dollars to support one political party over another. All of that was probably WIRED’s responsibility back then; it’s everyone’s responsibility now.<br>The tech business hates all that, reasonably. Not rarely, some longtime Silicon Valley dude will learn I spent most of my career at WIRED and say something like, “What happened to that place? I miss the old, optimistic WIRED.”<br>But you know, in the same issue of the magazine that carried the Holmes Q&amp;A, another of our colleagues, Bill Wasik, wrote an opinion piece touted on the cover as “Silicon Valley’s Douchebag Problem.” Wasik, today the science editor at The New York Times, wrote then that dead-eyed misbehavior in pursuit of profit would kill tech’s magical status. Peter Thiel–derived ideas about secession and business models that relied on surveillance capitalism risked a backlash that would burn it all down, Wasik warned. The Valley and its toys, he wrote, would end up “a punch line—a hallucination of a future that no one believes in anymore.”<br>Science and tech journalism have to be about more than investors and returns. The future is too important; the stakes are too high. Case in point: As part of Joseph Rago’s reporting on Elizabeth Holmes and Theranos, he got his finger pricked. Rago’s blood test results were back “by the time I walked out the door,” he wrote. “(Phew: all clear.)” Four years later, Rago, 34, died alone in his New York apartment.<br>The city medical examiner said the cause of his death was sarcoidosis, a rare (and rarely fatal), hard-to-diagnose inflammatory disorder. Doctors usually figure it out by excluding other possibilities. Rago didn’t even know he had the disease. But among its signs are elevated levels of vitamin D and angiotensin-converting enzyme. Maybe an honest blood test would have spotted it.<br>Let us know what you think about this article. Submit a letter to the editor at [email protected].</div>
+</div>
+
+</div>
+
+</body>
+</html>
