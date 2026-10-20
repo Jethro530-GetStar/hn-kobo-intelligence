@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-20 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-20 PM · Generated 2026-10-20 22:24 CST</div><div class="issue-sub">Stories 10 · Full 7</div><div class="issue-sub">Sources: entropicthoughts.com, github.com, gravitypersists.github.io, nakedcapitalism.com, news.ycombinator.com, reddit.com, teddysvoronos.com, wjcl.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Ask HN: How to deal with shipping AI-written code you don&#x27;t understand?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    540 points ·
+    652 comments ·
+    rzk
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #10 · Top #33
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50151036">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I saw this LinkedIn post from a Meta engineer and it resonated with me:<br>https://www.linkedin.com/posts/ali-hamie_im-an-engineer-at-m...<br>&gt; I&#x27;m an engineer at Meta and I never felt this uncomfortable doing my job. I&#x27;m writing code these days and it all feels like a black box. This new standard of shipping with AI is moving so fast that if we&#x27;re going to spend our time checking each line of code, it&#x27;s going to take forever. That means you can end up with systems you&#x27;ve built where you don&#x27;t truly understand how all the code works. You understand the high level, but not every detail. And maybe this is becoming the new standard. It goes against every instinct of being a software engineer. I&#x27;m used to understanding what I&#x27;m building. Now I&#x27;m trying to figure out how much I need to understand before I&#x27;m comfortable moving forward. Are other engineers feeling this too?<br>How are you handling this?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    DeepSeek just open-sourced its inference engine
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1185 points ·
+    422 comments ·
+    ggcr
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/deepseek-ai/DeepInfer">Original article</a> · <a href="https://news.ycombinator.com/item?id=50163277">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">DeepInfer is the high-performance inference framework that powers DeepSeek&#x27;s large-scale production services. This open-source release provides offline inference with the core features needed for serving at scale.<br>Supported models:<br>- DeepSeek-V4.1-Flash<br>Supported features:<br>- Optimized kernels, model and sampler runtime<br>- Parallelism: Attention DP / balanced CP, MoE EP + EPLB<br>- DSpark and confidence-scheduled verification<br>- SWA bounded replay<br>- Asynchronous scheduling (zero-overhead batch scheduler)<br>- Batch-invariant inference<br>- Deterministic sampling<br>- Structured outputs<br>Feature details and configuration<br>- Optimized kernels: FlashMLA, DeepGEMM, DeepEP, TileKernels, DeepSelect, and custom TileLang kernels.<br>- DSpark and confidence-scheduled verification: accelerate decoding with draft tokens and use confidence estimates to schedule verification. Set DEEPINFER_ENABLE_MTP_VARLEN=1; DEEPINFER_USE_NEXTN_DECODE controls the maximum draft length (default: 5).<br>- Decoder SWA bounded replay: reduce decoder prefill work by replaying only a bounded suffix. Set DEEPINFER_YOCO_PREFILL_TRUNCATION_MODE=compact and DEEPINFER_YOCO_PREFILL_KEEP_TOKENS=140 for the default V4.1 settings; the retained suffix must cover the SWA window plus the maximum backtracking length.<br>- Asynchronous scheduling: overlap CPU batch scheduling with device execution. Enabled by default.<br>- Batch-invariant inference: keep model results identical across different batch compositions. Enable with DEEPINFER_BATCH_INVARIANT=1 (NVIDIA only).<br>- Deterministic sampling: produce identical outputs for identical input tokens and sampling parameters. Set DEEPINFER_BATCH_INVARIANT=1 DEEPINFER_ENABLE_MTP_VARLEN=0 and pass a fixed seq_seed to SamplingParams (NVIDIA only).<br>- Structured outputs: constrain generation to a regex, JSON schema, or EBNF grammar. Pass so_args={&quot;schema_type&quot;: ..., &quot;schema&quot;: ...} to SamplingParams; see examples.<br>Supported hardware:<br>- NVIDIA SM100 GPUs<br>- Huawei Ascend 950 NPUs<br>Required for a complete inference service (not included in this release):<br>- A KV cache system<br>- VE/Prefill/Decode disaggregation (most required engine functionality is already implemented)<br>- Load balancing across data-parallel replicas for both prefill and decode<br>- Linux<br>- GCC &gt;= 13.0<br>- Python 3.12<br>- CUDA 13 (NVIDIA only)<br>- CANN 9.2 (Ascend only)<br>Before building DeepInfer, please create and activate an empty Python 3.12 environment.<br># Use `ascend` instead for the Ascend platform<br># Keep it exported in the environment where you run DeepInfer<br>export DEEPINFER_ACCELERATOR=nvidia<br>./build.sh<br>The default checkpoint, deepseek-ai/DeepSeek-V4.1-Flash-1017, is<br>downloaded into the Hugging Face cache on the first run; set DEEPINFER_HF_MODEL_DIR=/path/to/DeepSeek-V4.1-Flash-1017 to<br>run from a local copy instead.<br>python examples/offline_inference.py<br>See examples for details.<br>| Prefill | Decode |<br>|---|---|<br>Measured on 4 SM100 GPUs for prefill and 64 for decode — each within one scale-up domain. To reproduce the benchmarks, see run_sweep.sh.<br>See eval/README.md.<br>DeepInfer is released under the Apache License 2.0. See LICENSE for details.<br>DeepInfer was originally built primarily on vLLM, with additional inspiration from SGLang and TensorRT-LLM. We thank their developers.<br>@misc{deepinfer2026,<br>title = {DeepInfer: High-performance, large-scale inference framework for DeepSeek models},<br>author = {DeepSeek-AI},<br>year = {2026},<br>publisher = {GitHub},<br>howpublished = {\url{https://github.com/deepseek-ai/DeepInfer}},<br>}</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: Vibe Prospecting – B2B Prospecting from Claude and Claude Code via MCP
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    1 comments ·
+    zivnadil
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/explorium-ai/vibeprospecting-mcp">Original article</a> · <a href="https://news.ycombinator.com/item?id=50165257">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Power your chat with live B2B data — build lead lists, research companies, enrich contacts, and personalize outreach, all from inside your AI assistant.<br>Vibe Prospecting is a remote MCP server. There&#x27;s nothing to run locally and no API key to manage — you connect over a single URL and sign in through your browser on first use.<br>MCP endpoint: https://vibeprospecting.explorium.ai/mcp<br>- 🔎 Find companies by name, domain, industry, size, location, tech stack, and more<br>- 👤 Discover &amp; enrich contacts — roles, profiles, and buying signals at any company<br>- 🏢 Research firms — firmographics, technographics, funding, competitors, and challenges<br>- 📈 Analyze &amp; export — preview a sample instantly, then export the full dataset to CSV when you&#x27;re ready<br>You always see a sample preview first (5–10 rows). The full dataset is only processed when you explicitly ask to export — so exploring is fast and credit-friendly.<br>Pick your tool below. All clients connect to the same remote endpoint and authenticate through your browser (OAuth) on first use.<br>One line — paste it into your terminal:<br>claude mcp add --transport http vibe-prospecting https://vibeprospecting.explorium.ai/mcp<br>Then start (or restart) Claude Code and run a prompt that uses it (see Examples). The first call opens your browser to sign in. Verify the connection anytime with:<br>claude mcp list<br># vibe-prospecting: https://vibeprospecting.explorium.ai/mcp - ✓ Connected<br>Add it as a custom connector through the UI (no terminal needed):<br>- Open Customize → Connectors in Chat/Cowork/Code in Claude Desktop<br>- Click the + next to Connectors and choose Browse connectors<br>- Under Anthropic &amp; Partners look for Name: Vibe Prospecting — URL: https://vibeprospecting.explorium.ai/mcp<br>- Click + and then click Install, then follow the sign-in prompts to grant access<br>Once added, Vibe Prospecting&#x27;s tools are available to Claude automatically.<br>One command — Codex detects OAuth automatically and opens your browser to sign in:<br>codex mcp add vibe-prospecting --url https://vibeprospecting.explorium.ai/mcp<br>Confirm it&#x27;s connected with codex mcp list (look for Auth: OAuth), or start a Codex session and run /mcp to see its tools. If you ever need to re-authenticate, run codex mcp login vibe-prospecting.<br>No native OAuth in your Codex version? Use the universal mcp-remote bridge instead. Add this block to ~/.codex/config.toml — it opens the browser for sign-in on first use:<br>[mcp_servers.vibe-prospecting] command = &quot;npx&quot; args = [&quot;-y&quot;, &quot;mcp-remote&quot;, &quot;https://vibeprospecting.explorium.ai/mcp&quot;]<br>Install the extension directly from this repository:<br>gemini extensions install https://github.com/explorium-ai/vibeprospecting-mcp<br>The extension is loaded and managed automatically by Gemini CLI, and OAuth sign-in is handled on first use. See the Gemini CLI extensions docs for details.<br>Connect Vibe Prospecting from Manus’s built-in connectors UI (no local server or API key):<br>- Open the connectors menu (or choose + Add connectors).<br>- Search for vibe.<br>- Under Apps, select Vibe Prospecting (“Build B2B lead lists and enrich companies and contacts”).<br>- Confirm the connector details (MCP by Explorium), then click Try it out / connect and complete the browser sign-in.<br>Once connected, use Vibe Prospecting from a Manus chat with prompts like those in Examples.<br>Hermes uses the same remote endpoint, but its CLI needs the server written to config plus an explicit OAuth login. Run these in your terminal:<br>- Register the server — write both keys directly under mcp_servers:, which is the namespace hermes mcp login (and the runtime) read from:<br>hermes config set mcp_servers.vibe_prospecting.url &quot;https://vibeprospecting.explorium.ai/mcp&quot; hermes config set mcp_servers.vibe_prospecting.auth oauth Don&#x27;t use hermes mcp add: in a non-interactive shell it can fail mid-way and save a disabled, half-written entry under mcp_servers: — auth set but url dropped — which then fails at login. Setting both keys yourself avoids it, and if you already hit it, the same two commands repair it. (A url showing up elsewhere in config doesn&#x27;t count — hermes mcp login only reads mcp_servers:.)<br>- Sign in — opens your browser to authenticate: hermes mcp login vibe_prospecting On a remote, SSH, or Docker host, the browser can&#x27;t reach the local callback after you approve — that&#x27;s expected. Copy the full URL from the address bar and paste it back at the Hermes prompt.<br>- Verify &amp; use — hermes mcp list should show vibe_prospecting as authenticated. Start a new chat so the mcp_vibe_prospecting_* tools load, then try a prompt from Examples. To get a CSV, ask Hermes to &quot;export and download&quot; (exports return a link, not the file itself).<br>Connection drops on the first call? The default MCP discovery timeout is too short for the OAuth handshake — raise it: hermes config set mcp_discovery_timeout 10.<br>Once connected, just ask in plain language:<br>Who should I contact for a partnership with monday.com? Get anyone who can<br>promote a partnership with them, with all the contact details you can find.<br>What are the business challenges of Amazon?<br>Get the engineering leadership team at Palo Alto Networks.<br>Find B2B SaaS companies in New York with 50–200 employees, then enrich<br>the decision-makers and export the list to CSV.<br>- Sign-in: OAuth through your browser on first use — no API keys to copy or store.<br>- Free to explore: searching and previewing samples is lightweight. Exporting the full dataset uses credits.<br>- Pricing &amp; credits: https://www.vibeprospecting.ai/pricing<br>- Failed to connect / error -32000 in Claude Code — this happens with the old local uvx vibeprospecting-mcp (stdio) command. That path is deprecated; use the --transport http command above instead.<br>- Connector won&#x27;t connect in Cowork/Desktop — the server is reached from Anthropic&#x27;s cloud, so the URL must be publicly reachable. Double-check the URL is exactly https://vibeprospecting.explorium.ai/mcp.<br>- Re-authenticate — in Claude Code run claude mcp remove vibe-prospecting then re-add it; in Codex run codex mcp login vibe-prospecting again; in Hermes run hermes mcp login vibe_prospecting again.<br>For technical support, contact support@vibeprospecting.ai.<br>Listed in the Claude Market MCP directory.<br>This project is licensed under the Explorium Term of Service. See Term of Service for details.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    The Byzantine Generals Problem: A visual explanation
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    gravity13
+  </div>
+
+  <div class="meta">
+    gravitypersists.github.io
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://gravitypersists.github.io/exploring-byzantine-generals-problem/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50166918">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Three armies surround a city. If they all attack together, they win; if they all retreat, they live. If they split, the ones who attack are wiped out. Their only way to talk is to send riders through enemy lines.<br>Read9 min<br>ForAnyone curious; no background needed<br>HowScroll, and tap where it asks<br>Puzzle 1 · The lost messenger<br>Everyone is honest. Messengers can vanish.<br>Puzzle 2 · The liar<br>Every messenger arrives. Someone lies.<br>Can the loyal generals ever be certain they will act as one? The story above hides two different problems, and computer scientists study them separately. In the first, called the Two Generals problem, everyone is honest but riders can vanish. In the second, every rider gets through but someone is lying; that is the Byzantine Generals problem itself. Both have surprising answers. We’ll take them one at a time, but first, the rules.<br>Puzzle 1 · The lost messenger<br>“Got it.” “Got your ‘got it.’” …<br>Start with just two generals, A and B, both completely honest. A wants to attack at dawn, but only if B attacks too. The only danger is the valley between their camps: a rider sent across it can be captured, and his general never finds out.<br>Predict<br>General A sends “Attack at dawn.” General B sends back “Got it.” Both riders happen to get through, but each general knows only about the rider who reached him. Can each general now be certain that the other will attack?<br>(c) is right, and it surprises most people. B sent the last rider, so he can’t know whether “Got it” arrived. If it was captured, A would still be wondering whether B ever got the order, and might hold back. So B can’t be sure A will attack.<br>For (a): A did get the confirmation, but B can’t know that, and a general who isn’t sure his partner will attack may hold back. So A can’t fully count on B either. For (b): the extra confirmation can be captured too, and then A is the one in doubt. Whoever sends the last rider is always unsure. Scroll on to watch it happen.<br>Riders sent: 0<br>General A<br>General B<br>Answer the question above to start.<br>A’s rider gets through, so B knows the plan. But A has no way to know that. For all A can tell, his rider is lying in a ditch.<br>So B sends a rider back with “Got it.” When it arrives, A can relax. Now B is the one wondering whether his rider made it. If it didn’t, A may hold back, and B would attack alone.<br>So A sends a rider to confirm the confirmation. Now B can relax, and A is the one left wondering. See the pattern?<br>Your turn. Tap Send another rider as often as you like. Can you find the rider that ends the doubt?<br>There isn’t one. Whoever sends the last rider can never know that it arrived, so certainty would take an endless chain of confirmations. This was the first problem in computer communication to be proven unsolvable.<br>Real networks, including the internet’s TCP protocol, don’t solve it either. They live with it and shrink the doubt, much like sending a hundred riders: failure becomes very unlikely, but never impossible.<br>Puzzle 2 · The liar<br>The liar in the ranks<br>Now flip the danger around. We’re back to three generals, but this time the roads are safe.<br>A messenger can be captured on the way. (No longer true.)<br>Every messenger arrives, carrying his message exactly as it was given to him.<br>The general who receives a message always knows which camp sent it.<br>Each general knows when a message is due. If one he’s expecting hasn’t arrived by then, he knows it isn’t coming. That deadline comes back at the end.<br>Messengers are still the only way to communicate. The danger now is a general who lies.<br>One general is the commander. He decides, and sends his order by messenger to the other two, his lieutenants.<br>To double-check, each lieutenant sends the other a messenger saying which order he got. With nobody lying, both attack, and both goals on the card are met.<br>Predict<br>Now every messenger arrives, but one of the three generals might be a traitor who lies. The two loyal generals can send each other as many messengers as they like. Can they always end up doing the same thing?<br>(c). That surprises almost everyone; the 1982 paper that named the problem calls it “deceptively simple” and the result surprising. Two-against-one only works if you know which one is the liar, and as the next section shows, a loyal general can’t. For (b): the loyal generals don’t know who the traitor is, so their plan has to work whoever it is, including the commander.<br>Through Lieutenant 1’s eyes<br>Here is how one traitor beats two loyal generals. Put yourself in one lieutenant’s boots.<br>Answer the question above to start.<br>You’re Lieutenant 1. The strip at the top shows every message that has reached you, and the two don’t agree. One of the other two generals is lying. Which one?<br>Maybe Lieutenant 2 is the traitor. Then the commander is loyal, and goal 2 says you must follow his order. You attack.<br>Or maybe the commander is the traitor, giving each lieutenant a different order. Then Lieutenant 2 is loyal, and is honestly passing on the order he got.<br>You get the same two messages, word for word, in both worlds, so nothing you receive can tell you which world you’re in. You must attack in the first world, so you attack in the second one too.<br>Explain<br>Lieutenant 2 is in the mirror image of your spot: the commander’s message to him says RETREAT, and your message to him says the commander said ATTACK. Using the same reasoning you just used, what must Lieutenant 2 do? Think it through, then reveal.<br>Retreat. From where Lieutenant 2 stands, it looks exactly like a world where the commander loyally ordered RETREAT and Lieutenant 1 is the liar, and in that world goal 2 says he must follow the commander. So in the second world, Lieutenant 1 attacks and Lieutenant 2 retreats. The traitor commander has split the two loyal generals by telling them different things, and neither can catch him.<br>The trap is symmetry. Each loyal lieutenant is doing the right thing given the messages he has, and that’s exactly what lets the traitor split them.<br>So in the second world you attack and Lieutenant 2 retreats. The loyal generals have split, and goal 1 fails. Two loyal generals couldn’t outvote one liar, because neither could tell who the liar was. And a smarter rule wouldn’t save them: the full proof shows that whatever rule the lieutenants agree on in advance, one traitor among three can break one of the two goals, either by splitting the loyal generals or by making them disobey a loyal commander.<br>Add a fourth general<br>Now add a third lieutenant, and keep the same moves. The commander sends his order to each lieutenant. Each lieutenant then sends the other two a messenger reporting the order he got. Finally, each lieutenant goes with the majority of the three versions he now holds. Walk through two cases, then put on the traitor’s mask yourself.<br>However you play the traitor, the loyal lieutenants agree. A lying lieutenant is outvoted by two true copies of the order. A lying commander can send different orders to different lieutenants, but because the others relay honestly, every loyal lieutenant ends up holding the same three values, so they all reach the same majority.<br>That turns out to be a general rule. When a liar can put anything he likes in a message, agreement can be guaranteed only if more than two-thirds of the generals are loyal. Three generals with one traitor falls short; four is enough.<br>Call the number of traitors f and the number of generals n. For the loyal generals to be guaranteed to agree, no matter what the traitors do, you need:<br>n ≥ 3f + 1<br>Fewest generals needed: 3 × traitors + 1<br>Traitors (f)<br>Generals needed (n)<br>1<br>4<br>2<br>7<br>Apply<br>A system has 10 computers, and they send ordinary messages, so a liar can claim anything. At most how many of them can be traitors, with agreement still guaranteed?<br>(b) 3. You need more than two-thirds loyal. With 3 traitors, 7 of 10 are loyal (70%). With 4 traitors only 6 of 10 are (60%), and that’s not enough. In the rule’s terms, 10 computers ≥ 3 × 3 + 1.<br>“Just under half” is the voting instinct, but a traitor doesn’t cast one honest vote: he can tell different people different things, and that’s why a plain majority isn’t enough. For (c) and (d): one traitor needs only 4 generals, and with 10 there’s room for more.<br>The way out<br>How real systems get out of the trap<br>This puzzle came out of NASA-funded research into making computers reliable enough to fly airliners. Engineers have never beaten the impossibility. Instead, they change the rules of the game, in one of three ways.<br>Unforgeable seals<br>Change<br>Every order carries a seal nobody can forge. In computers, that’s a digital signature.<br>You get<br>Agreement despite any number of traitors. Even three generals are enough, because a two-faced commander’s seal turns up on two different orders.<br>The price<br>Every general needs a seal that can’t be faked, and every message still has to arrive.<br>Clocks and deadlines<br>Change<br>Assume messages arrive within a known time. That’s the deadline from Puzzle 2’s rules, and it’s how a missing rider gets noticed: if he isn’t there by the deadline, he isn’t coming.<br>You get<br>Systems like PBFT (Practical Byzantine Fault Tolerance, 1999) never give conflicting answers, even when the network is slow, and they keep making progress whenever messages arrive on time. They need 3f + 1 machines: the generals’ two-thirds rule again.<br>The price<br>If delays can be unlimited, no method can promise to ever finish, even if just one machine might crash. That was proven in 1985.<br>Settle for almost certain<br>Change<br>Votes count by computing power instead of by identity. That’s Bitcoin’s “proof of work.”<br>You get<br>≈0.09%chance that an attacker with 10% of the computing power reverses a payment 5 blocks deep. More blocks, smaller odds; never zero.<br>The price<br>It holds only while honest computers control most of the computing power.<br>Predict<br>A crypto fan says: “Bitcoin solved the Byzantine Generals problem. Once your payment is confirmed, it’s mathematically impossible to reverse.” Which version is accurate?<br>(b). Bitcoin didn’t beat the impossibility. It changed the question from “certain” to “overwhelmingly likely”. In the original paper’s numbers, an attacker with 10% of the computing power has about a 0.09% chance of reversing a payment that’s 5 blocks deep, and waiting longer makes it smaller but never zero.<br>For (c): the protection is real and grows fast. It just isn’t absolute. Every escape route works this way: it changes an assumption rather than breaking the rule.<br>What to remember<br>If messages can be lost, two sides can never be certain they agree. Every confirmation needs another.<br>If messages arrive but someone may lie, agreement is guaranteed only when more than two-thirds are loyal: 4 generals to survive 1 traitor.<br>Real systems don’t beat these limits. They change the rules: unforgeable signatures, deadlines, or “almost certain.”<br>So can the generals ever be certain? Only by changing the rules of the game, and only for as long as those rules hold.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Namecheap just seized and disabled all my domains
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    688 points ·
+    357 comments ·
+    sashk
+  </div>
+
+  <div class="meta">
+    reddit.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50142866">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Apple broke an essential presentation feature of iPads
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    123 points ·
+    52 comments ·
+    evanb
+  </div>
+
+  <div class="meta">
+    teddysvoronos.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50165208">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A brief digression from my usual teaching posts to complain about a devastating regression in iPadOS 27.<br>If you’ve followed my work up until now, you’ll know that I rely heavily on writing on handouts from my iPad, projected via AirPlay to an external screen that my students can see. When I’m doing this, my iPad is also doing many other things: controlling a PowerPoint presentation on my Mac, showing me notes that I’ve taken on points I want to mention and students I want to call on, and showing me the results of polls before I reveal them to the class. This ability to do other things on your iPad while the audience just sees your presentation or handout is an essential part of a variety of pedagogical moves that I use in my teaching.<br>Unfortunately, Apple just completely broke it.<br>The problem<br>As of iPadOS 27, if you have multiple windows open while AirPlaying (whether or not Stage Manager is on), tapping on anything other than the presenting app will snap the external display into showing your whole iPad screen. This means that my students see all my notes on who I want to call on, or poll results that should be hidden from them. They also get distracted from what we’re learning by all these jarring windows popping up and disappearing. If you’re presenting at a big conference, it’s extremely embarrassing.<br>In GoodNotes, the presenter view will return once you tap back on the app. In Keynote, it will just exit the presentation entirely. In PowerPoint, it will put the app in a limbo where you have to restart the presentation to proceed. Here’s a Reddit post illustrating the behavior in GoodNotes. But don’t just take my word for it; try it at home!<br>I sort of understand why Apple did this. In iPadOS 26, which app could “control” the external display was hard to identify. Essentially, you had to swipe up as though going to the home screen, then tap on the app you wanted in the dock, and that app would take over the external display if it had a presentation mode. This was weird and hard to understand, but Apple’s solution is to just make it so that whatever is the most recently tapped app takes over, which is much, much worse.<br>Ask what you can do<br>As for what the behavior should be, I’m not a developer, but here’s a proposal: if you’re using an app that is in presenter mode (e.g., PowerPoint playing a presentation, or a GoodNotes document open), it should always get precedence on the external display, until that presentation gets stopped, the document is closed, or the app is quit. Period.<br>I talked/griped/whined/begged about this on an episode of Mac Power Users in early September (here’s a link to the video), and as of now this behavior hasn’t changed, including in the latest betas. I’m hoping that this post can get the word out, or that maybe someone has figured out a workaround. I’ve also filed a feedback report with Apple and encourage you to do the same (click here and mention my feedback code FB23615646).<br>I’ll update this post if anything changes, but for now, I can’t recommend this operating system to anyone using their iPad to teach or present.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Triplet of &#x27;Ghostly&#x27; Galaxies Hints at What Dark Matter Is – and Isn&#x27;t
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    22 points ·
+    5 comments ·
+    gumby
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50131997">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    This Was a Big Week for Debanking Scandals, on Both Sides of the Atlantic
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    iamnothere
+  </div>
+
+  <div class="meta">
+    nakedcapitalism.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.nakedcapitalism.com/2026/10/a-big-week-for-debanking-scandals.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50166916">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Did The Canary just go down in history as one of the first media outlets in the United Kingdom, if not the first, to be put out of business by debanking?<br>Yesterday (Oct. 19), the British left-wing news website The Canary announced that it is closing its doors “indefinitely” after 11 years of journalism. The outlet, founded in October 2015, weeks after the election of perennial backbencher Jeremy Corbyn to the leadership of the Labour Party, was de-banked by Lloyds Bank in late June.<br>Now, the Canary has closed its doors “indefinitely”. In its public statement, the news outlet has promised to set the record straight on what actually led to its downfall:<br>“It is not over. This week, we will publish what really happened at the Canary and push back against the vicious campaign against our team and us. We may be down, but we’re not out yet.”<br>The Canary, which branded itself as an anti-austerity, anti-Zionist and pro-freedom of expression platform, accused its main banking provider, the Lloyds Banking Group, of “withholding a substantial amount of our money” in late June. As tends to be the case, no explanation was given. In September, another lender, Metro Bank, allegedly withdrew its banking services, prompting the outlet to suspend operations.<br>Following yesterday’s announcement of The Canary‘s closure, attention is now turning to the actual causes of its downfall. The immediate catalyst appears to be the debanking by Lloyds, which unexpectedly froze access to a substantial chunk of the company’s funds, severely crippling its day-to-day cashflow.<br>Former employees, however, have alleged that the organisation’s demise was primarily the result of “wider financial mismanagement”, including the squandering of funds on a short-lived nationwide newspaper, which folded after a matter of weeks. Employees have also claimed that they were asked by management to sign “non-negotiable” non-disclosure agreements and told that if they refused, changes would be made to their employment contracts.<br>Presumably, a clearer picture will emerge over the coming months amid the inevitable airing of dirty laundry. But even if things were already bad at The Canary, as former staff claim, the cancellation of banking services by Lloyds would not have helped matters. Indeed, it probably served as the proverbial straw that broke the camel’s back.<br>The question is: why were those services cancelled?<br>If it was for political reasons, it would not be the first time The Canary has been the target of a politically driven financial attack. Labour Together, the factional British think tank set up in 2015 by Morgan McSweeney, the recently disgraced political strategist and former Downing Street chief of staff under Keir Starmer, “to delegitimise and destroy” Jeremy Corbyn and restore the Labour right to power, tried to bankrupt The Canary, one of Corbyn’s biggest pillars of support.<br>As UK Declassified reports, “the key weapon they alighted on was allegations of antisemitism”:<br>Labour Together aimed, McSweeney wrote in an early confidential strategy paper, to cultivate “seemingly independent voices to generate and share content to build up a political narrative and challenge fake news and political extremism.”<br>One of these was the campaign group Stop Funding Fake News (SFFN), which later morphed into the Centre for Countering Digital Hate.<br>One of its first targets was The Canary, a pro-Corbyn website that was achieving 8.5 million hits a month.<br>Working closely with the anti-Corbyn Jewish Labour Movement, the book says McSweeney secretly recruited Countdown co-presenter Rachel Riley to front a campaign targeting The Canary’s advertisers with claims the outlet was antisemitic.<br>The Canary was later cleared by the independent regulator Impress…, but the damage was done. The Canary “went down from 22 staff to one member of staff within a few months of us targeting it,” SFFN crowed.<br>The actual setting in which the Centre for Countering Digital Hate’s CEO and founder, Imran Ahmed, made this statement was a conference on internet anti-semetism organised by the US State Department.<br>Given this backstory, it’s not too far fetched to imagine that Lloyds Bank, and perhaps also Metro Bank, chose to sever their ties with The Canary due to its “extreme” opinions on the Israel Palestine question. If true, The Canary goes down in history as one of the first media organisations in the collective West, if not the first, to be put out of business by debanking.<br>As readers may recall, Wikileaks, whose operations were originally based in Sweden, faced major operational disruption when financial institutions including Visa, MasterCard, PayPal, Bank of America, and Western Union cut off all donation processing to the site in 2010, after the massive “Cablegate” scandal. The financial blacklisting reportedly wiped out 95% of the publisher’s revenue, but it was still able to soldier on.<br>The National Union of Journalists (NUJ) condemned Lloyds Bank’s debanking of The Canary as a “disturbing precedent for UK press freedom”. Commentators from across the political spectrum have warned that the establishment’s ability to cripple media organisations critical of them creates a hostile environment that will pressure other news outlets to fall into line or face similar potential backlash.<br>“Debanking is arguably the most pernicious form of cancellation,” asserted the Free Speech Union. “Banks must not have the power to effectively shut down an organisation — let alone the media — by removing their access to their funds purely because they and their staff disagree with its views or ideology.”<br>Following the furore triggered by Coutts’ debanking of Nigel Farage in 2023, a parliamentary committee found that more than 140,000 businesses had had their accounts closed by the UK banks in the previous year. The reasons cited included concerns over financial crime and fraud, customers’ failure to provide requested information and the banks’ own risk appetite.<br>However, a resulting government enquiry concluded that customers were not being “debanked” for political reasons. As a result, not only has debanking continued but debanked customers now face the prospect of being blocked from setting up new accounts at other banks.<br>As The Telegraph reported in July, the UK’s most powerful banking lobby group, UK Finance, is developing a platform that will enable banks to share information on suspicious customers:<br>Banks are planning to block “debanked” customers from setting up accounts with other lenders, potentially leading to innocent people being effectively locked out of the financial system, The Telegraph can reveal.<br>Lobby group UK Finance is developing a platform that will allow banks to share data on their customers where they detect “markers of economic crime”.<br>Lloyds, Barclays and Revolut have already started sharing data about customers, leading to accounts being frozen or closed, The Telegraph understands, following a pilot in 2024.<br>The data-sharing platform will build on that pilot to make a UK-wide system, which could automatically bar people from opening another account.<br>But concerns have been raised that thousands of innocent customers and businesses who have been debanked unfairly could be barred from opening up an account with another bank, effectively leaving them locked out of the financial system.<br>Confirmation of Politically Driven Debanking in the US<br>Now, let’s shift our focus to the United States where a very different kind of debanking scandal is brewing. While the UK’s government inquiry found, rather conveniently, that customers were not being “debanked” for political reasons, a report published last week by the US Treasury Department’s Office of the Comptroller of the Currency (OCC) reached the opposite conclusion.<br>The OCC’s investigation, prompted by President Trump’s Executive Order 14331, Guaranteeing Fair Access to Banking for All Americans, found that the nine large lenders under scrutiny — JPMorgan Chase, Bank of America, Citibank, Wells Fargo, U.S. Bank, Capital One, PNC Bank, TD Bank and BMO Bank — had all denied or restricted access to banking services based on customers’ political or religious beliefs. From the report’s introduction:<br>In accordance with Executive Order 14331, Guaranteeing Fair Access to Banking for All Americans, the OCC conducted a supervisory review of debanking activities at the nine largest banks by asset size under its supervision to determine whether these banks’ policies or practices may have required, encouraged, or otherwise influenced banks to deny or limit access to financial services to Americans because of their political or religious beliefs or lawful business activities.<br>The OCC’s findings show that, between 2020 and September 2025, all nine banks had such policies.<br>OCC Efforts to Address Debanking and Promote Fair Access<br>Americans who are denied financial services or whose accounts are suddenly closed experience real world financial consequences. The OCC has taken or is considering taking the following actions to promote fair access to financial services in the federal banking system:<br>- Consideration of Debanking in Licensing Applications and Community Reinvestment Act Examinations<br>- Removing and Prohibiting Consideration of Reputation Risk in Bank Supervision<br>- Further Rulemaking<br>- Complaint Process Changes<br>- SAR Confidentiality Considerations<br>- Coordination with Congress and Government Partners<br>- Promoting Increased Transparency<br>- Additional Bank Secrecy Act Modernization<br>- Account Closure Notice Analysis<br>There have been very different takes on the OCC report’s findings. A broadly bank-friendly article in CNBC notes that the findings may lend new regulatory weight to a grievance President Donald Trump has pressed since returning to office:<br>Trump has repeatedly accused and sued major banks for discriminating against conservatives and has said he was personally “debanked” after the Jan. 6, 2021, Capitol insurrection, claims banks have denied.<br>The OCC stopped short of announcing fines or sanctions Wednesday, but said it is considering additional rules aimed at preventing political or religious discrimination.<br>Among the cases it highlighted: JPMorgan subsidiary WePay closed accounts belonging to merchants selling Trump and conservative merchandise. An internal screening list included terms such as “MAGA,” “Make America Great” and “America First,” even though the OCC found neither WePay nor JPMorgan had formal written standards for deciding when flagged material amounted to prohibited hate or violence.<br>The CATO Institute, a prominent critic of debanking practices, chided the OCC on its failure to establish just how widespread discrimination might be as well as the paltry information it provided to back up each case, noting: “it’s hard to land on the ‘irrefutable’ conclusion that systemic discrimination against conservatives and Christians is taking place in banking when that’s the only evidence being offered.”<br>However, the report’s biggest failing, according to CATO, is its absence of any serious consideration of the government as a driver of debanking:<br>The report repeatedly identifies decisions made around reputational concerns as a driving factor in debanking. The basic idea is that banks don’t want to be associated with someone who is controversial because it might drive away customers on the other side of the issue. And it does appear that banks have been extremely risk-averse in some cases.<br>What the report largely leaves unexplored, however, is the government’s role in requiring banks to manage reputational risk. The report acknowledges this regulatory framework, primarily when discussing its (limited) repeal in 2026, but does not establish how regulatory requirements and supervisory pressure shaped the decisions it criticizes. The repeal was welcome, but those requirements were in place during the review period, and a full accounting of debanking should examine their consequences.<br>So, will the partial repeal lead to actual respite from debanking for all US citizens and organisations, or just for those that are ideologically aligned with Trump 2.0? If the following words from Stephen Miller, delivered at the US Ministerial on the Resurgence of Political Terrorism in July, are any indication, the Trump administration is, if anything, planning to double down on Biden’s debanking policies, just with a different target in mind (emphasis added):<br>President Trump issued a directive in our parlance called a National Security Presidential Memorandum, or NSPM — NSPM 7 to be exact, that directs our law enforcement and intelligence agencies to work together to disrupt, identify, defund, debank, arrest and prosecute these political terrorists that are operating in our country.<br>If there is one thing the Trump 2.0 administration has excelled at, it is targeting and punishing its enemies. In other words, we could be about to see a sharp rise in the debanking of left-leaning public figures, commentators and organisations, particularly those of a pro-Palestinian, anti-war and anti-genocide bent. Just like The Canary.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ousted Savannah police officer gave ICE agent husband access to Flock system
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    644 points ·
+    367 comments ·
+    DeepLogin
+  </div>
+
+  <div class="meta">
+    wjcl.com
+  </div>
+
+  <div class="meta ranks">
+    Best #3
+  </div>
+
+  <div class="links">
+    <a href="https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816">Original article</a> · <a href="https://news.ycombinator.com/item?id=50150750">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Documents: Ousted Savannah police officer gave ICE agent husband access to Flock system<br>Download the WJCL app for breaking news alerts: Apple, Google Play<br>A now-former Savannah police officer gave her husband, an Immigration and Customs Enforcement agent, access to the police department’s Flock license plate reader system, which he used to conduct hundreds of searches tied to ICE investigations, according to newly obtained documents reviewed by WJCL 22 News.<br>The records show Amber Harpe&#x27;s husband did not have his own Flock account through the U.S. Department of Homeland Security. Harpe acknowledged giving him her Savannah Police Department username and password.<br>Her husband told investigators he used the account to locate ICE targets who had active arrest warrants. He said every search was related to his federal law enforcement work and denied using the system for personal reasons.<br>The Savannah Police Department fired Harpe after concluding that she knowingly gave an unauthorized person access to a sensitive police system, violated department policy and compromised safeguards designed to track who was using law enforcement data.<br>Nearly 1,000 searches across six states<br>The investigation began after an internal audit flagged an unusually high volume of searches through Harpe’s account between January and July 2026.<br>The audit identified 983 search entries involving 97 identifiable license plates from Georgia, New Jersey, Maryland, Florida, South Carolina and North Carolina.<br>South Carolina plates represented most of the activity. Forty-eight South Carolina plates accounted for 788 search entries, according to the records. Department documents also noted that most registered vehicle owners identified in the audit were Hispanic.<br>During a July 27 administrative interview, Harpe told investigators she did not recognize the names connected to many of the searches. She said her husband performed most of them.<br>Harpe attributed the searches involving Maryland and South Carolina plates, along with most of those involving Georgia vehicles, to her husband.<br>She said she rarely used Flock herself and generally accessed it to help investigate missing-person cases involving behavioral health patients.<br>Harpe acknowledged that she allowed her husband to use her credentials and understood she was not permitted to share her access.<br>Below file video: Savannah city leaders defend Flock technology after alleged misuse by police employees<br>Husband said searches targeted wanted people<br>Harpe’s husband’s name is redacted in the documents obtained by WJCL 22 News. However, audio from interview between Savannah Police and the husband identifies him Tyler Harpe, a federal ICE agent.<br>During an Aug. 3 interview with Savannah police investigators, Harpe confirmed that he asked his wife for her login information because he did not have Flock access through his federal job.<br>He said ICE had already developed “target packages” for the people he searched and that those individuals had active arrest warrants. Flock allowed him to try to locate them while working in the field, according to the investigative report.<br>Tyler Harpe estimated that he used the account for about four months. He said he stopped roughly three weeks before his interview because the agency no longer conducted vehicle stops and he no longer needed the system.<br>Harpe gave investigators a slightly different timeline, saying her husband stopped about a week before her interview because he was concerned she could face discipline.<br>He denied searching for relatives, former romantic partners or anyone for personal reasons. He maintained that every person he searched was an ICE target and said the Flock information helped his agency locate wanted people with criminal histories.<br>He also acknowledged that using another officer’s account could violate policy.<br>“The investigation established that Amber Harpe provided her Flock Safety credentials to her husband,” the final report said. “Both provided consistent statements that the searches involved ICE targets and were conducted for law-enforcement purposes.”<br>RELATED: Former Savannah officer fights to get job back after Flock misuse firing<br>SPD raised concerns about immigration enforcement<br>In the documents, Maj. Michelle Halford wrote that SPD does not participate in federal immigration enforcement. She said the demographic pattern identified in the audit, combined with Harpe’s husband’s role as an ICE agent, raised concerns that department resources had been used without authorization to further immigration enforcement.<br>Harpe’s decision gave her husband the ability to search for and track people through a Savannah police system even though he did not have independent access through his federal employment, Halford wrote.<br>She said the arrangement exposed the Police Department to legal and reputational risks.<br>“Public trust is non-negotiable,” Halford wrote. “These tools exist to keep our community safe, not for personal or unauthorized use.”<br>The investigation did not find that Harpe violated Georgia’s law governing automated license plate readers. The disciplinary case instead centered on an SPD information-management policy prohibiting employees from allowing unauthorized people to access city or department software.<br>Below file video: 6 Savannah police employees fired after alleged misuse of Flock cameras<br>Supervisors disagreed over punishment<br>Department leaders agreed that Harpe violated policy, but they initially disagreed over whether she should be fired.<br>Interim Maj. Max Nowinsky sustained the allegation and recommended an eight-hour suspension.<br>Nowinsky wrote that Harpe showed poor judgment by providing direct access to her husband. However, he also emphasized that investigators found no evidence the searches were conducted for personal reasons or personal gain.<br>He cited Georgia law allowing law enforcement agencies, including federal agencies, to exchange captured license plate data for legitimate law enforcement purposes.<br>Nowinsky also considered Harpe’s work history. She joined SPD in March 2020, served in the Behavioral Health Unit and had no prior disciplinary record. Department documents described her as a well-respected employee.<br>Halford rejected the proposed one-day suspension and recommended termination, citing the intentional sharing of credentials, recurring unauthorized access and scale of the activity.<br>Assistant Police Chief Robert Gavin agreed that Harpe should be fired.<br>Gavin acknowledged that state law permits law enforcement agencies to share license plate information for legitimate purposes. He said that authority did not allow Harpe to share her personal login information or let another person access the system under her identity.<br>“Credentials are assigned to one authorized user to ensure accountability, audit integrity, and system security,” Gavin wrote.<br>Because the searches were recorded under Harpe’s account, the system’s audit trail identified her — not her husband — as the user.<br>Gavin concluded that Harpe knowingly allowed her husband to bypass SPD’s security protocols and undermined the department’s ability to oversee the use of sensitive information.<br>RELATED: Former Savannah police employees appeal firings over alleged Flock camera misuse<br>Harpe said she was helping another agency<br>Harpe accepted responsibility for sharing her credentials but argued that firing her was excessive.<br>In her appeal, Harpe said her husband was a certified federal law enforcement officer and that every search was conducted for law enforcement purposes.<br>“The violation occurred because I gave my husband, who is a certified law enforcement officer with the Department of Homeland Security, access to my Flock account,” Harpe wrote. “Every search he conducted was for law enforcement use only and not for personal gain.”<br>Harpe said she was trying to assist another agency in the same way she would expect another agency to help Savannah police.<br>She also argued that the result would have been no different if she had personally conducted each search at her husband’s request and then provided him with the information.<br>“There was no malicious intent, no personal gain, and no intent to harm the Department or undermine public trust,” Harpe wrote.<br>She asked department leaders to consider her clean disciplinary history, years of service and the investigation’s finding that the searches were related to law enforcement work. She requested a written reprimand or, at most, the one-day suspension Nowinsky recommended.<br>Gavin denied her appeal Aug. 11, and the police chief’s office agreed with the termination recommendation two days later.<br>Below file video: GBI arrests 4 ousted Savannah Police employees<br>Civil Service Board appeal withdrawn<br>Harpe requested a hearing before Savannah’s Civil Service Board on Aug. 19. City records show her termination took effect Sept. 26.<br>She withdrew the appeal around Sept. 28, and her Oct. 13 Civil Service Board hearing was canceled.<br>The newly obtained documents do not explain why she withdrew the appeal.<br>Harpe’s case was part of a wider SPD investigation into alleged Flock misuse. Several other former employees were accused of searching for romantic partners, former partners or other people for personal reasons.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    NixOS is making me less afraid
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    64 points ·
+    20 comments ·
+    ibobev
+  </div>
+
+  <div class="meta">
+    entropicthoughts.com
+  </div>
+
+  <div class="meta ranks">
+    Top #3
+  </div>
+
+  <div class="links">
+    <a href="https://entropicthoughts.com/nixos-is-making-me-less-afraid">Original article</a> · <a href="https://news.ycombinator.com/item?id=50165484">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Something funny happened a little while ago: I read about FreshRSS, and it sounded nice, so I installed it on a server and started using it. That would not have happened a year ago, but then again, a year ago I didn’t have any NixOS servers.<br>For the past few years, my rss feeds have lived locally on my phone only. There was a good idea behind that1 I can mostly take time to read when I’m away from my computer anyway., but it never quite worked in practice. For one, many things are easier to read on a larger screen. But it was also brittle to trust a phone app to manage the read/unread status of thousands of articles across a hundred feeds.2 In particular, when I switched to a different phone I could migrate all feeds to it, but the read/unread status was lost along the way. What I really wanted was a server-side feed aggregator. This is software that runs on a server, manages rss feeds, and then I can read the rss feeds either through a web interface, or through client applications. I’ve wanted that for a while, but I’ve never taken the step, because it would be yet another side project to maintain the deployment of.<br>But now, with some NixOS experience, adding a working FreshRSS configuration<br>(including backups) took 9 lines of Nix code3 Plus a dozen more lines for the<br>nginx reverse proxy configuration. It got a little complicated because I wanted<br>to proxy_pass from a specific location block which required rewriting cookie<br>paths. But that’s a me problem, not a NixOS problem.. That installation has<br>just hands-off worked for the past few months. If or when that server breaks, I<br>can spin up a new one running the exact same configuration, probably in<br>something like 15 minutes. When we can do something like that, there is<br>literally no reason to not just try the new software.<br>Contrast this against how FreshRSS is installed outside of NixOS. Then we’d<br>- download and extract an archive to the right location;<br>- configure permissions according to instructions;<br>- install nginx and php-fpm with necessary extra dependencies to the server;<br>- configure php-fpm pools and make nginx pass requests through to php-fpm;<br>- set up Let’s Encrypt certificates;<br>- set up backups; and<br>- hopefully remember how to do all the above if something breaks and we need to reinstall FreshRSS on a new or upgraded server later.<br>Of course, the FreshRSS project provides a container image which would shorten the process a little bit. It purports to set up Apache with mod_php and configure them the right way. Then we’d only need to configure backups, create a systemd service that runs the container, and manage nginx as a tls terminating reverse proxy in front of that, because the container image reasonably does not come with tls support. This is still stuff to remember, and there’s also no guarantee the same thing works six months down the line when reinstalling, unless we wrote down which exact container image we downloaded.4 It does not help to build the container image from source, because two builds from the same Dockerfile separated by time can result in rather different container images.<br>I have mentioned before how much I dislike maintaining side projects. That includes my own code, but also self-hosted services developed by someone else. I’m okay with a few minutes of maintenance here and there, but having to schedule hours of uninterrupted work to upgrade something, or spending any amount of time at all on emergency maintenance, really kills my desire to work with computers.<br>You’d think someone of my disposition would be deep into configuration<br>management, container orchestration, or both, but no. I have made honest<br>attempts with CFEngine, Ansible, podman, and k3s but none of them improved my<br>installation/configuration/deployment experience significantly over (a)<br>carefully writing things down, and sometimes (b) turning those careful notes<br>into a shell script performing a sequence of ssh commands.5 Yes, this is<br>essentially reinventing Ansible – but less brittle. It won’t break the next time<br>someone glances sideways at pip. The drawback of the shell script is that it<br>often ends up relying on assumptions that become invalid with time, or when it<br>is used in a different environment. A NixOS configuration reads a lot like the<br>careful instructions to myself, except they’re executable and they produce the<br>same result every time.</div>
+</div>
+
+</div>
+
+</body>
+</html>
