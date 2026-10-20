@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-20 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-20 AM · Generated 2026-10-20 08:30 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: 3anddoneapp.com, arstechnica.com, ipinfo.io, minimax.io, news.ycombinator.com, reddit.com, roadrash.pages.dev, space.com, wjcl.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Ask HN: How to deal with shipping AI-written code you don&#x27;t understand?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    238 points ·
+    374 comments ·
+    rzk
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #18 · Best #27
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50151036">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I saw this LinkedIn post from a Meta engineer and it resonated with me:<br>https://www.linkedin.com/posts/ali-hamie_im-an-engineer-at-m...<br>&gt; I&#x27;m an engineer at Meta and I never felt this uncomfortable doing my job. I&#x27;m writing code these days and it all feels like a black box. This new standard of shipping with AI is moving so fast that if we&#x27;re going to spend our time checking each line of code, it&#x27;s going to take forever. That means you can end up with systems you&#x27;ve built where you don&#x27;t truly understand how all the code works. You understand the high level, but not every detail. And maybe this is becoming the new standard. It goes against every instinct of being a software engineer. I&#x27;m used to understanding what I&#x27;m building. Now I&#x27;m trying to figure out how much I need to understand before I&#x27;m comfortable moving forward. Are other engineers feeling this too?<br>How are you handling this?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    France&#x27;s Supermarket Fridges Were Vulnerable Online for Months
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    17 points ·
+    7 comments ·
+    emot
+  </div>
+
+  <div class="meta">
+    ipinfo.io
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · New #22
+  </div>
+
+  <div class="links">
+    <a href="https://ipinfo.io/blog/france-fridges-hack">Original article</a> · <a href="https://news.ycombinator.com/item?id=50159616">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">On the night of October 11 to 12, 2026, fridges and freezers in hundreds of French supermarkets started to warm up. Cyber attackers had pushed the refrigeration systems into defrost mode, which heats the cooling parts to melt ice. Some units reached 50°C (122°F), some equipment started to catch fire, according to the Paris prosecutor, and stores threw away their fresh and frozen food. The reports pointed to one maker of refrigeration controllers, Danfoss (a Danish industrial company).<br>We went through IPinfo&#x27;s weekly Internet scans to examine these systems before the attack. In this blog post we’ll explore some of the findings. Here’s the TL;DR:<br>The numbers from the chains keep growing. More than 400 stores were hit in total according to Futura-Sciences, and losses could reach several million euros. Carrefour said 80 of its stores were hit, while Intermarché and Netto, both part of Les Mousquetaires (a French retail group), had more than 300 hit. Monoprix reported that about 5% of its stores were affected.<br>Leclerc and Coopérative U, two other French supermarket chains, also confirmed attacks. Coopérative U&#x27;s CEO, Dominique Schelcher, told RTL that 80 of its 2,000 stores were hit. He added that the stores don&#x27;t buy from Danfoss directly but use a Danfoss system supplied by their refrigeration contractors.<br>Danfoss said most of the affected equipment was &quot;legacy,” naming two older controller models, the AK-SM 800 and AK-SC 355. CERT-FR (France&#x27;s cybersecurity agency) said it knew of numerous compromises of AK-SM and AK-SC controllers. It told operators to disconnect them or restrict who can reach them, and updated its alert on October 13 to add XWEB supervisors (systems that monitor a store&#x27;s fridges and freezers) from Copeland, a US maker of cooling equipment, and Dixell, its Italian brand. Its alert says attack campaigns are probably still ongoing. Nobody has said who did it or how they got in, and the Paris prosecutor&#x27;s office has opened an investigation.<br>We scan the IPv4 Internet (the most common type of Internet address) every week, connecting to the usual ports that websites use (the numbered doors a computer answers on) and recording what answers. In the sweep that ran on October 6 and 7, five days before the attack, 2,528 addresses showed a Danfoss StoreView dashboard. That is the web page that stores and technicians use to watch and manage these controllers, the equivalent of the control panel in the back room, except that anyone who typed in the address could open it.<br>According to our data, France had 1,331 of them (53%). That is more than the other 72 countries and territories combined (1,197). Poland came next with 179, then the United States (101), Portugal (92), and Belgium (85).<br>Why France? Our data can&#x27;t say, but it rules a few things out. French dashboards ran the same mix of software versions as everywhere else, so they weren&#x27;t patched worse. They also weren&#x27;t unusual in how they connect. In France, about two-thirds connect through one national provider, much like the main telecom in Portugal, Germany, or Romania. Almost all (98%) are on telecom providers&#x27; networks rather than in data centers or clouds, which fits a controller plugged into the store&#x27;s own Internet connection, with access opened for a technician or head office.<br>CERT-FR&#x27;s advice hints at why stores keep them online: it tells them to check their insurance terms before cutting the data their controllers send to refrigeration contractors.<br>The dashboards also give away how old the software behind them is. They come in two generations. The older one is a page built with Flash (an old browser plug-in, retired in 2020) and served by the AK-SM 800. Danfoss declared these controllers end of life in 2023. That same year, the security firm Synacktiv published a login bypass (a way in without the password) for them, and Danfoss&#x27;s advice was to restrict network access. This is the &quot;legacy&quot; equipment Danfoss named.<br>The newer one runs on the AK-SM 800A, Danfoss&#x27;s current model. Its dashboard shows when its software was built, a bit like the production date stamped on a carton, which tells us roughly which version it runs: 242 of them say May 19, 2023, the build date of firmware 3.3 (firmware is the software built into the controller). Controllers older than 3.3 miss three 2023 fixes, including one for a flaw rated critical. Those older than 4.2 also miss a fix for a 2025 login bypass, and those older than 4.3.1 miss two more 2025 fixes.<br>Put together, 85% of the French dashboards (1,136 of 1,331) ran software with known security flaws, almost the same as the 84% elsewhere. That is 527 older controllers Danfoss no longer supports, 280 missing the 2023 fixes, and 329 missing the 2025 fixes. Only 195 had every known fix.<br>Every scan from late March 2026 until the attack found about the same number: between 2,464 and 2,622 Danfoss dashboards open to the Internet, roughly half of them in France.<br>They were mostly the same devices. Of the 1,331 French dashboards found on October 6, 1,019 were open at the very same address on March 30, six months earlier. Over those months, the number of older controllers Danfoss no longer supports didn&#x27;t go down in France (519 at the end of March, 527 in October). Updates came slowly. The share of newer French controllers with every known fix went from 14% to 24%, under two points a month.<br>Most stores did disconnect after the attack. Our next weekly scan ran on October 14, two days after the attack. Of the 1,331 French dashboards from October 6–7, only 316 were still online at the same address, a 76% drop. In the weekly scans from August to early October, only 3% to 7% disappeared from one week to the next. The older controllers Danfoss no longer supports fell the most, from 527 to 64. Fully updated ones fell too, from 195 to 54, which points to stores disconnecting them rather than updating them.<br>Outside France, 25% disappeared, more than the usual 9% to 12%. Censys, another Internet scanning company that counts every day, saw a similar 71% drop in France between October 11 and 14. On October 14, the technical director of Claroty, the security company that found the 2025 flaws, told Tom&#x27;s Guide that exposed AK-SM 800 controllers were still online. Our October 14 scan still found 64 of them.<br>France wasn&#x27;t the only country with these systems online. Danfoss dashboards with known flaws were open in 69 other countries and territories, led by Poland (157), the United States (85), and Portugal (77). In some countries most were the older controllers Danfoss no longer supports: 80% in Iceland, 75% in Australia, and 72% in Germany.<br>Some reports suggest other European countries may have been hit. One analyst quoted by Australia&#x27;s ABC said Spain, Portugal, Poland, Germany, and Belgium had also been affected. Our data can&#x27;t say whether they were, but it does show that all five had out-of-date Danfoss dashboards open to the Internet five days before the attack.<br>CERT-FR&#x27;s updated alert also names XWEB supervisors from Dixell, Copeland&#x27;s Italian brand of refrigeration controllers, so we counted those too. The same scan found 1,611 XWEB dashboards in 66 countries, but only 70 in France; Italy, where Dixell is based, had 467. Judging by when their software was built, only 180 of the 752 newer XWEB PRO units had the February 2026 fixes. The other 859 were older models that haven&#x27;t had a software update from Copeland since 2018. After the attack, French operators unplugged their XWEB dashboards too: our October 14 scan found only 20 of the 70 still online, a 71% drop, when a normal week loses 2% to 9%. Elsewhere, including Italy, the number fell only at the usual weekly rate.<br>The dashboards were identified with two fingerprints (patterns that identify a device) built by our data team. The newer interface is matched by its page title. The older one is matched by its web server plus the Flash loader page, which identifies the AK-SM 800. AK-SC 355 controllers, which Danfoss also named, may not be in our count. Sixteen devices that share the older web server but aren&#x27;t Danfoss (network cards in backup power units, building controllers, thermostats) were removed, along with two addresses that answer on almost every port, a sign of a honeypot (a decoy set up to attract attackers).<br>An independent count by the security researcher Baptiste Robert, posted on X, found 2,752 Danfoss systems online, 1,590 of them in France, a little above ours. Censys, which scans differently, found more: 1,825 of the newer dashboards in France on October 11, 61% of its worldwide total.<br>The numbers are a minimum. They cover IPv4 only and the ports we scan, and an address is not always one store. We aren&#x27;t publishing any of the addresses. CERT-FR told us it had already identified the affected systems, and we&#x27;re in contact with CERT-EU (the EU&#x27;s cybersecurity team for its institutions) to help other European cybersecurity teams in any way we can.<br>CERT-FR&#x27;s advice is to take these controllers off the public Internet and, if a contractor needs remote access, to give it through a secure VPN (a private, encrypted connection). Letting in only the contractor&#x27;s addresses is a stopgap, not a fix. A factory reset alone isn&#x27;t enough either: an exposed controller that no longer gets updates will likely be compromised again. For Danfoss systems, CERT-FR also says to update the firmware, set the security level to Strict, and change the default passwords.<br>We can&#x27;t tell from the scans how the attackers got in or who they were, and we don&#x27;t know which chains or stores were hit. Being able to open a dashboard from the Internet doesn&#x27;t mean anyone can break in through it, and nobody has said whether any of the flaws above were used.<br>The data does show what things looked like before and after the attack. Five days before the attack, France had more of these dashboards open to anyone than the rest of the world combined, and most were behind on updates. After the attack, most of them went offline within days, and we&#x27;ll keep checking the 316 that were still online on October 14.<br>This is one of IPinfo&#x27;s data stories, where we use our own measurements to look at what happens on the Internet. If you spot something we got wrong, have data that adds to this, or have a story you&#x27;d like us to look into, write to us at emot@ipinfo.io.<br>Data: IPinfo&#x27;s Internet scans of IPv4 addresses, October 6–7, 2026, and 18 weekly scans from March 30 to October 6, 2026. Counts are addresses and a minimum.<br>João Tomé is an Internet Data Research Editor at IPinfo, finding trends and stories about how the Internet works and changes. He has a background in journalism, data storytelling, and podcasting, including five years at Cloudflare.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: RoadRash ported to Three.js to run in the browser
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    7 points ·
+    1 comments ·
+    olucurious
+  </div>
+
+  <div class="meta">
+    roadrash.pages.dev
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #42
+  </div>
+
+  <div class="links">
+    <a href="https://roadrash.pages.dev">Original article</a> · <a href="https://news.ycombinator.com/item?id=50158684">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Road Rash was one of my favourite PC games growing up. I wanted to play it again, but the browser emulators I tried felt sluggish, so I decided to build a browser version using Three.js.<br>This started mostly out of nostalgia. I wanted to be able to open a link and get back to racing and knocking people off their bikes.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Namecheap just seized and disabled all my domains
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    669 points ·
+    348 comments ·
+    sashk
+  </div>
+
+  <div class="meta">
+    reddit.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50142866">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Accused OpenAI spy had folder called &quot;Saudi Gov Docs,&quot; FBI says
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    Metacelsus
+  </div>
+
+  <div class="meta">
+    arstechnica.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50159832">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">On Monday, a court granted the US government’s request to deny release of a former OpenAI engineer accused of bugging a top-secret conference room to steal the frontier lab’s secrets.<br>In a court filing Sunday, US attorney Craig Missakian argued that Abdulrahman Alfozan must continue to be detained while the US makes its case that Alfozan brazenly spied on OpenAI, either for his own personal business gain or to benefit the Kingdom of Saudi Arabia.<br>Evidence showed that Alfozan had been chatting with a member of the KSA royal family on WhatsApp, while pursuing opportunities to permanently move back to Saudi Arabia during the country’s biggest AI push yet, the government argued. Shortly before his arrest, the FBI found he accessed a folder called “Saudi Gov Docs” on his iPhone, where he also allegedly stored photos of a second bug he planted in the offices.<br>With so much evidence against him, Alfozan—a Saudi national and US permanent legal resident—is a flight risk with seemingly endless support from the Saudi government, Missakian alleged.<br>The FBI arrested Alfozan days before he could hop a plane, Missakian said. The US attorney noted that Alfozan had already booked a one-way ticket for him, his wife, and their baby to Riyadh, Saudi Arabia’s capital. That ticket was allegedly “paid for by the Saudi government.” Following his arrest, his wife and son booked a sooner flight and immediately left the US without him. Once again, the US found “a member of the Saudi military booked and paid for yet another one-way ticket for the defendant’s wife and son, this one business class to Doha, Qatar.”<br>After receiving “significant compensation from a decade of high-tech employment in the Bay Area,” Alfozan has “ample resources” to run away to Saudi Arabia, the US government alleged. He also has “at least two bank accounts in Saudi Arabia,” the government said.<br>To support their request to detain Alfozan, the government pointed to a case where former Twitter employees were charged with spying for the Saudi government. Charges are still pending against one of the ex-Twitter staffers, Ali Alzabarah, the US said, partly because “a Saudi foreign official” helped “coordinate a next-day flight to Saudi Arabia” shortly after Twitter confronted him.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    MiniMax M3.1 Flash
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    362 points ·
+    155 comments ·
+    jtg
+  </div>
+
+  <div class="meta">
+    minimax.io
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #14
+  </div>
+
+  <div class="links">
+    <a href="https://www.minimax.io/blog/minimax-m31f">Original article</a> · <a href="https://news.ycombinator.com/item?id=50154540">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Today, we officially roll out MiniMax M3.1 Flash.<br>Space Bunny 🐰, which processed more than 200 trillion tokens while operating anonymously, was an early version of MiniMax M3.1 Flash.<br>As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%.<br>M3.1 Flash improves across a broad range of benchmarks, reaching the level of leading models in complex agentic tasks (cowork), computer use, software development (coding), and cybersecurity.<br>Complex Tasks and Automation:<br>- M3.1 Flash ranks among the top performers on AutomationBench-AA. It can complete real enterprise workflows across SaaS systems, solving practical problems in sales, marketing, operations, customer service, finance, and HR from end to end.<br>- Scoring 76.2 on BankerToolBench, it excels at complex real-world challenges such as multi-step planning, maintaining consistency across documents and files, financial compliance, and chained tool calls.<br>Coding and Software Engineering:<br>- It achieves 73.7% on DeepSWE v1.1, placing it alongside top models. DeepSWE focuses on complex software tasks that require models to independently understand code, develop features, fix issues, and validate their work through testing. M3.1 Flash demonstrates strong execution across long sequences of steps, supporting complex software development workflows at a lower cost.<br>Computer Use:<br>- It scores 61.7 points on OSWorld V2, which measures AI computer operation and cross-application task execution, and 29.6 points on Agents’ Last Exam (ALE), which evaluates performance on real professional work and complex tasks. It ranks first among Chinese models on both benchmarks.<br>- M3.1 Flash demonstrates strong capabilities in interacting with real environments, using tools, and executing long sequences of tasks—moving beyond understanding a task to taking action and delivering results.<br>Cybersecurity:<br>- It achieves a strong score of 82% on CyberGym, demonstrating leading capabilities in vulnerability discovery and validation.<br>- In in-depth evaluations by our internal security experts, the model performed strongly in code auditing, vulnerability patching, penetration testing, malware analysis, and reverse engineering, enabling efficient, low-cost support for building complex security systems.<br>We have further optimized M3.1 Flash’s inference efficiency through more aggressive sparsity. In everyday use, output speeds can reach 200+ TPS (tokens per second), with median (P50) speeds consistently reaching 170+ TPS.<br>For agentic tasks, the model’s overall usage cost is 70% lower than its predecessor.<br>Flat pricing per 1M tokens: $0.15 input · $0.60 output · $0.015 cached input.<br>Across three benchmarks—Automation-Bench for complex agentic task execution, DeepSWE for real-world coding, and Agents’ Last Exam (ALE) for computer use in real-world tasks with economic value—M3.1 Flash delivers performance on par with top models at a very low task cost, setting a highly competitive new standard for performance and cost.<br>M3.1 Flash is now available through the MiniMax API, M Plan, and MiniMax Code. Model weights will be released later.<br>Download MiniMax Code for desktop: https://agent.minimax.io/download<br>Subscribe to M Plan: https://www.minimax.io/m-plan<br>API access: platform.minimax.io<br>Flash represents our ongoing exploration of the balance between efficiency and capability. Pro, which pushes the boundaries of intelligence, will also arrive later.<br>Intelligence with Everyone.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: I built a task system to handle the drudgery so I could focus on tasks
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    44 points ·
+    46 comments ·
+    dmayle
+  </div>
+
+  <div class="meta">
+    3anddoneapp.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #47
+  </div>
+
+  <div class="links">
+    <a href="https://3anddoneapp.com/try">Original article</a> · <a href="https://news.ycombinator.com/item?id=50151980">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I&#x27;m a software engineer from the east coast (who has lived in Boston, NY, the bay area, UK, France), and I built a task system called 3 &amp; Done. It&#x27;s the place you trust to store everything you need to do. It accepts voice input for rapid entry, as well as text (it stores the audio locally so you can listen to jog your memory) and emails you every morning with the three most important things for you to do that day, and why, based on what you&#x27;ve said about the task: deadlines, urgency, sitting too long.<br>I&#x27;ve been at software engineering for about 44 years now... Grew up with it, which was unusual when I started, and I was always good about getting into the zone and doing things. The career started small, small company, then back office, the dot com startups, then smaller companies again after the bust, a non-profit, and eventually YouTube (Google at the time, but just barely) and Meta (just Facebook when I was there).<br>When I hit the startups, and later big tech, it was no longer enough to just be an engineer, to have drive, to be good, you had to be organized, you had to follow through, get stuff done, and that&#x27;s where the task systems started. Twenty-five over the years (and yes, I&#x27;ve actually counted), from Moleskine notebooks with Getting Things Done, evernote (remember evernote?), bug trackers, todoist, asana, google keep, among others.<br>When I managed on the Facebook News Feed, I got into gantt charts (for me and my team), spreadsheets, OmniPlan... I remember apologizing to my director for being so disorganized (because I felt I was making a mess of it), and he told me that I was the most organized engineer he knew.<br>That was because I was doing all of the work in the background, the trimming, the sorting, the reviews, but it was just so much work. Which was why I changed from system to system. Each time it built up, and I had to spend more time looking at things I couldn&#x27;t or didn&#x27;t get done, when I was rushed and couldn&#x27;t put time into today&#x27;s review, it would pile up, and then using it was so much work that I would start taking mini-notes, just emailing myself a few things to do the next day.<br>That&#x27;s actually the thesis of the app (but not where it started), that if I could just have a few things to do emailed to me each day, I could get it done.<br>This app actually started when I described my previous startup failures into a Claude web session, and it repeated back to me what I had just said. My previous failures were because I spent too much time building the stuff I needed, and not building what I was supposed to be building.<br>I decided that the app would email me three things to do every day (which matches best practices for attention), but that the day was always yours to decide. We won&#x27;t overload you, but you can add more, if you&#x27;re feeling up to it, or cut back, and we never shame and try our best not to nag (I often only finish two). If we get it wrong, you can tell us, and we&#x27;ll re-rank it once a day, or you can set it manually, and if you do, we never override that choice. The web app is live, and native for both platforms is coming. In the meantime, on Android, you can use gestures to quick launch into the voice input so saving a task is only a gesture away (e.g. double-tap the back of a Pixel, double-press the power button on Motorola).<br>Now let&#x27;s talk about the dirty parts. I used AI to help me build this. Anthropic models mostly, and the brains of the app come from Anthropic models (I like the quality, I like the privacy, absolutely no training on customer data, and the stance of the company). This app is not some one-shot wonder where I asked frontier models to build a task system and then I put it on a server to show you.<br>I have prompts for the various features (e.g. ranking, generating suggestions, task extractions), I have eval sets of task lists (not anyone&#x27;s real tasks, but constructed from patterns in my tasks, or the tasks of testers who allowed me to fix the problems they were having), with the three I expect to come out. I store the eval outputs, and re-test whenever I add a new rule to a prompt, or whenever testing a new model version. The great thing about having this eval set is that it catches when I get it wrong. When I introspect a failed run, sometimes it&#x27;s because I need to tune a prompt, but sometimes it&#x27;s because I missed something in my own ranking.<br>I did the same thing with my infrastructure as well, so this time, instead of setting up servers, and building login systems, and managing databases, I built on Vercel (git push to serving Next.js), Neon (hosted postgres).<br>I started getting emails mailed to me by mid-June, but started getting usable suggestions on June 26, and I&#x27;ve been using it every morning since. I wanted it to be easy to get started, and easy to use, so the input handles mess (you can add multiple tasks in the same run-on sentence, and a friend who helped me test it just pasted his entire obsidian todo list in wholesale to get started).<br>I wanted to make sure that anyone could try it out, so I built a trial feature that uses the real in-app ranking with a list of items you provide.<br>If you want to try the service, there&#x27;s a free 14-day trial (card required), and then it&#x27;s $99/year or $9.99/month after that (plus sales tax). We warn you seven days before your card is charged and if you cancel, you keep access through the term (either the trial, or our last paid period). Online, through settings -&gt; billing, no email, no call.<br>I really hope you&#x27;ll try it out. If you do, please tell me if we did a good job picking out your day.<br>https://3anddoneapp.com/try</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ousted Savannah police officer gave ICE agent husband access to Flock system
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    624 points ·
+    359 comments ·
+    DeepLogin
+  </div>
+
+  <div class="meta">
+    wjcl.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816">Original article</a> · <a href="https://news.ycombinator.com/item?id=50150750">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Documents: Ousted Savannah police officer gave ICE agent husband access to Flock system<br>Download the WJCL app for breaking news alerts: Apple, Google Play<br>A now-former Savannah police officer gave her husband, an Immigration and Customs Enforcement agent, access to the police department’s Flock license plate reader system, which he used to conduct hundreds of searches tied to ICE investigations, according to newly obtained documents reviewed by WJCL 22 News.<br>The records show Amber Harpe&#x27;s husband did not have his own Flock account through the U.S. Department of Homeland Security. Harpe acknowledged giving him her Savannah Police Department username and password.<br>Her husband told investigators he used the account to locate ICE targets who had active arrest warrants. He said every search was related to his federal law enforcement work and denied using the system for personal reasons.<br>The Savannah Police Department fired Harpe after concluding that she knowingly gave an unauthorized person access to a sensitive police system, violated department policy and compromised safeguards designed to track who was using law enforcement data.<br>Nearly 1,000 searches across six states<br>The investigation began after an internal audit flagged an unusually high volume of searches through Harpe’s account between January and July 2026.<br>The audit identified 983 search entries involving 97 identifiable license plates from Georgia, New Jersey, Maryland, Florida, South Carolina and North Carolina.<br>South Carolina plates represented most of the activity. Forty-eight South Carolina plates accounted for 788 search entries, according to the records. Department documents also noted that most registered vehicle owners identified in the audit were Hispanic.<br>During a July 27 administrative interview, Harpe told investigators she did not recognize the names connected to many of the searches. She said her husband performed most of them.<br>Harpe attributed the searches involving Maryland and South Carolina plates, along with most of those involving Georgia vehicles, to her husband.<br>She said she rarely used Flock herself and generally accessed it to help investigate missing-person cases involving behavioral health patients.<br>Harpe acknowledged that she allowed her husband to use her credentials and understood she was not permitted to share her access.<br>Below file video: Savannah city leaders defend Flock technology after alleged misuse by police employees<br>Husband said searches targeted wanted people<br>Harpe’s husband’s name is redacted in the documents obtained by WJCL 22 News. However, audio from interview between Savannah Police and the husband identifies him Tyler Harpe, a federal ICE agent.<br>During an Aug. 3 interview with Savannah police investigators, Harpe confirmed that he asked his wife for her login information because he did not have Flock access through his federal job.<br>He said ICE had already developed “target packages” for the people he searched and that those individuals had active arrest warrants. Flock allowed him to try to locate them while working in the field, according to the investigative report.<br>Tyler Harpe estimated that he used the account for about four months. He said he stopped roughly three weeks before his interview because the agency no longer conducted vehicle stops and he no longer needed the system.<br>Harpe gave investigators a slightly different timeline, saying her husband stopped about a week before her interview because he was concerned she could face discipline.<br>He denied searching for relatives, former romantic partners or anyone for personal reasons. He maintained that every person he searched was an ICE target and said the Flock information helped his agency locate wanted people with criminal histories.<br>He also acknowledged that using another officer’s account could violate policy.<br>“The investigation established that Amber Harpe provided her Flock Safety credentials to her husband,” the final report said. “Both provided consistent statements that the searches involved ICE targets and were conducted for law-enforcement purposes.”<br>RELATED: Former Savannah officer fights to get job back after Flock misuse firing<br>SPD raised concerns about immigration enforcement<br>In the documents, Maj. Michelle Halford wrote that SPD does not participate in federal immigration enforcement. She said the demographic pattern identified in the audit, combined with Harpe’s husband’s role as an ICE agent, raised concerns that department resources had been used without authorization to further immigration enforcement.<br>Harpe’s decision gave her husband the ability to search for and track people through a Savannah police system even though he did not have independent access through his federal employment, Halford wrote.<br>She said the arrangement exposed the Police Department to legal and reputational risks.<br>“Public trust is non-negotiable,” Halford wrote. “These tools exist to keep our community safe, not for personal or unauthorized use.”<br>The investigation did not find that Harpe violated Georgia’s law governing automated license plate readers. The disciplinary case instead centered on an SPD information-management policy prohibiting employees from allowing unauthorized people to access city or department software.<br>Below file video: 6 Savannah police employees fired after alleged misuse of Flock cameras<br>Supervisors disagreed over punishment<br>Department leaders agreed that Harpe violated policy, but they initially disagreed over whether she should be fired.<br>Interim Maj. Max Nowinsky sustained the allegation and recommended an eight-hour suspension.<br>Nowinsky wrote that Harpe showed poor judgment by providing direct access to her husband. However, he also emphasized that investigators found no evidence the searches were conducted for personal reasons or personal gain.<br>He cited Georgia law allowing law enforcement agencies, including federal agencies, to exchange captured license plate data for legitimate law enforcement purposes.<br>Nowinsky also considered Harpe’s work history. She joined SPD in March 2020, served in the Behavioral Health Unit and had no prior disciplinary record. Department documents described her as a well-respected employee.<br>Halford rejected the proposed one-day suspension and recommended termination, citing the intentional sharing of credentials, recurring unauthorized access and scale of the activity.<br>Assistant Police Chief Robert Gavin agreed that Harpe should be fired.<br>Gavin acknowledged that state law permits law enforcement agencies to share license plate information for legitimate purposes. He said that authority did not allow Harpe to share her personal login information or let another person access the system under her identity.<br>“Credentials are assigned to one authorized user to ensure accountability, audit integrity, and system security,” Gavin wrote.<br>Because the searches were recorded under Harpe’s account, the system’s audit trail identified her — not her husband — as the user.<br>Gavin concluded that Harpe knowingly allowed her husband to bypass SPD’s security protocols and undermined the department’s ability to oversee the use of sensitive information.<br>RELATED: Former Savannah police employees appeal firings over alleged Flock camera misuse<br>Harpe said she was helping another agency<br>Harpe accepted responsibility for sharing her credentials but argued that firing her was excessive.<br>In her appeal, Harpe said her husband was a certified federal law enforcement officer and that every search was conducted for law enforcement purposes.<br>“The violation occurred because I gave my husband, who is a certified law enforcement officer with the Department of Homeland Security, access to my Flock account,” Harpe wrote. “Every search he conducted was for law enforcement use only and not for personal gain.”<br>Harpe said she was trying to assist another agency in the same way she would expect another agency to help Savannah police.<br>She also argued that the result would have been no different if she had personally conducted each search at her husband’s request and then provided him with the information.<br>“There was no malicious intent, no personal gain, and no intent to harm the Department or undermine public trust,” Harpe wrote.<br>She asked department leaders to consider her clean disciplinary history, years of service and the investigation’s finding that the searches were related to law enforcement work. She requested a written reprimand or, at most, the one-day suspension Nowinsky recommended.<br>Gavin denied her appeal Aug. 11, and the police chief’s office agreed with the termination recommendation two days later.<br>Below file video: GBI arrests 4 ousted Savannah Police employees<br>Civil Service Board appeal withdrawn<br>Harpe requested a hearing before Savannah’s Civil Service Board on Aug. 19. City records show her termination took effect Sept. 26.<br>She withdrew the appeal around Sept. 28, and her Oct. 13 Civil Service Board hearing was canceled.<br>The newly obtained documents do not explain why she withdrew the appeal.<br>Harpe’s case was part of a wider SPD investigation into alleged Flock misuse. Several other former employees were accused of searching for romantic partners, former partners or other people for personal reasons.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: How do you deal with AI output of your boss?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    17 points ·
+    14 comments ·
+    okr
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50135854">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">So, my boss goes on a rampage. You can clearly see the joy and at the same time the rage and impatience. AI is the tool he always wanted. We are too slow. Process is out of the window. No need for sprints anymore. No planning, just doing. All people downstream must somehow adapt.<br>Whenever i see now his automated messages in slack, my natural reaction is: why do i even bother reading that? Thats for machines to read. He does not need me? Clearly i am not made for that. What is he expecting me to do? To confirm how great the AI did the job? Should i remember all these perfect presentations AI has created and integrate it into my doings into the coming weeks?<br>I am torn. Should i really free my AI and deal with all this incoming text? Is this the way to react on this perfection?<br>I am not mad at him, it clearly frees him of all the burder of dealing with people.<br>I just dont know how to deal with this output personally. It is not for humans.<br>I feel left alone. This is not a company anymore. Everyone is talking to AI now. This feels like chaos. Where everyone can do everything and stepping into each other&#x27;s domain and it is perfect. The only way AI is stopped at are the ACLs.<br>And because AI does everything for me, i don&#x27;t remember things anymore, as i have no emotion connected with it. Feels like bad schooling and memoizing and get through it and you can&#x27;t as it so dry and lifeless.<br>So, how people deal with it in a company context? How have they setup their machines to react and still be up to date without reading the constant stream of changes coming from others?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Astronomers discover the first ever green star
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    bushwart
+  </div>
+
+  <div class="meta">
+    space.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.space.com/astronomy/stars/astronomers-discover-the-1st-ever-green-star-a-cosmic-zombie-just-in-time-for-halloween">Original article</a> · <a href="https://news.ycombinator.com/item?id=50159816">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">How awesome would it be if the sun could take on a spooky green glow for Halloween? It turns out that scientists have discovered that our star may indeed go green, but only billions of years from now after its death — and only if it then starts eating planets like a cosmic zombie.<br>That&#x27;s possible because scientists have discovered that white dwarfs, the type of stellar remnants sun-sized stars leave behind when they die, can actually take on a range of colors including green if they snack on their rocky planets like cosmic cannibals.<br>For stellar scientists, the colors of stars have always been indicative of their temperatures. Cool stars look orange, while stars like the sun look white, and the hottest stars glow pale blue. This is akin to a blacksmith&#x27;s iron glowing red, then orange, then white-hot as it heats up. Researchers have always assumed that white dwarfs follow the same rule. However, new research suggests that these stellar corpses could glow in a range of colors including green, pink, cyan, yellow, and purple. That means the universe is far more colorful than we suspected.<br>&quot;Most stars, including most white dwarfs, behave like &#x27;perfect radiators,&#x27; so their color is set almost entirely by temperature. But nobody had really looked into what else might be possible for white dwarfs,&quot; team leader Mark Hollands of the University of Warwick said in a statement sent to Space.com.<br>&quot;It turns out these incredibly dense stars caaaaan produce colors nobody expected, and some of them genuinely surprised me.&quot;<br>How white dwarfs break stellar color rules<br>White dwarfs get their name because when they were discovered, they appeared surprisingly hot and glowed white or pale blue. However, this new research suggests that this slightly bland and uniform appearance is because no white dwarf is close enough for Earthbound astronomers to see their true colors.<br>The key to the rainbow-like array of colors this team suggests white dwarfs could possess is their density. White dwarfs form when stars with a mass roughly that of the sun run out of fuel and can no longer support themselves against their own gravity, causing their cores to collapse. As a result, the matter that makes up white dwarfs is around the density of water, millions of times denser than the sun&#x27;s surface, the photosphere.<br>In these conditions, elements like carbon, calcium, and sodium can interact with the surrounding dense helium plasma and absorb light across a wider range of colors than they would at lower densities. That shifts the colors of white dwarfs away from the white/light blue seen for a perfect radiator of heat.<br>The researchers found that the colors of white dwarfs would fit into distinct groups tied to the individual chemical makeup of the stellar remnant&#x27;s atmosphere.<br>White dwarfs abundant in carbon should be pink or purple, while those that have been enriched with debris from consumed asteroids and comets, and the remains of old planetary systems, would take a more yellow hue. Cooler white dwarfs with mixed hydrogen and helium atmospheres often would glow cyan or pale blue, caused as hydrogen molecules collide with helium atoms in their dense atmospheres.<br>One of the most striking examples of white dwarf coloration, however, would arise when one of these living dead stars starts feeding on the planets around it like a horror movie zombie.<br>Zombie white dwarfs go green<br>The researchers found that some dead star white dwarfs can go a little green around the gills after snacking on orbiting planets.<br>An example of this is WD J1330+6435, a cool white dwarf located around 326 light-years away, which has been accreting rocky material from a planetary companion. This has enriched its atmosphere with calcium, lithium, and sodium, and the team&#x27;s model suggests this would have led WD J1330+6435 to adopt a green hue.<br>But unlike the green-tinged zombies of George Romero&#x27;s classic Dawn of the Dead, there are no hordes of these green-faced cosmic zombies ... yet.<br>The researchers think that no other star, living or dead, has ever been credibly reported as green. That makes WD J1330+6435 the first known genuinely green star.<br>&quot;The traces of sodium in the atmosphere of this white dwarf absorb the orange part of the spectrum, leaving behind a ghostly green glow,&quot; Hollands said. &quot;Imagine standing on a planet and looking up at a green star. It feels like something out of science fiction.&quot;<br>Scientists see red<br>The team didn&#x27;t just discover that a known white dwarf is the first-ever green star; they also discovered what could be the reddest star ever in the form of the white dwarf WD J1011+2845.<br>Located just 48 light-years from Earth, this white dwarf has a deep convection zone that carries carbon from its core to its surface. These carbon molecules distort light from the white dwarf, causing a deep salmon-pink glow unlike anything seen in any other star.<br>Despite this rainbow of white dwarfs, the team theorizes that white is still the most common color for these stellar corpses. Only five of the 151 white dwarfs within around 65 light-years of Earth have extraordinary coloring. Extrapolating this to the total population of white dwarfs, the team estimates that only one in 30 of these dead stars has an unusual color.<br>&quot;One in thirty might not sound like a huge fraction, but across the entire population of white dwarfs in the universe, that is still a lot of oddly colored stars out there,&quot; Boris Gänsicke, Department of Physics, University of Warwick, said. &quot;Yet if we take the median across a representative population of white dwarfs, we found that the average white dwarf really is white.&quot;<br>The team&#x27;s research was published on Thursday (Oct. 14) in the journal RAS Techniques and Instruments.<br>Robert Lea is a science journalist in the U.K. whose articles have been published in Physics World, New Scientist, Astronomy Magazine, All About Space, Newsweek and ZME Science. He also writes about science communication for Elsevier and the European Journal of Physics. Rob holds a bachelor of science degree in physics and astronomy from the U.K.’s Open University. Follow him on Twitter @sciencef1rst.<br>You must confirm your public display name before commenting<br>Please logout and then login again, you will then be prompted to enter your display name.</div>
+</div>
+
+</div>
+
+</body>
+</html>
