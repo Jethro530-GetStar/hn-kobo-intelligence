@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-21 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-21 AM · Generated 2026-10-21 08:00 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: gamowlabs.com, github.avestura.dev, github.com, krebsonsecurity.com, news.ycombinator.com, permit.petercai.com, redact.dev, rouler.io</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    DeepInfer: High-performance inference framework for DeepSeek models
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2099 points ·
+    818 comments ·
+    ggcr
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #3
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/deepseek-ai/DeepInfer">Original article</a> · <a href="https://news.ycombinator.com/item?id=50163277">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">DeepInfer is the high-performance inference framework that powers DeepSeek&#x27;s large-scale production services. This open-source release provides offline inference with the core features needed for serving at scale.<br>Supported models:<br>- DeepSeek-V4.1-Flash<br>Supported features:<br>- Optimized kernels, model and sampler runtime<br>- Parallelism: Attention DP / balanced CP, MoE EP + EPLB<br>- DSpark and confidence-scheduled verification<br>- SWA bounded replay<br>- Asynchronous scheduling (zero-overhead batch scheduler)<br>- Batch-invariant inference<br>- Deterministic sampling<br>- Structured outputs<br>Feature details and configuration<br>- Optimized kernels: FlashMLA, DeepGEMM, DeepEP, TileKernels, DeepSelect, and custom TileLang kernels.<br>- DSpark and confidence-scheduled verification: accelerate decoding with draft tokens and use confidence estimates to schedule verification. Set DEEPINFER_ENABLE_MTP_VARLEN=1; DEEPINFER_USE_NEXTN_DECODE controls the maximum draft length (default: 5).<br>- Decoder SWA bounded replay: reduce decoder prefill work by replaying only a bounded suffix. Set DEEPINFER_YOCO_PREFILL_TRUNCATION_MODE=compact and DEEPINFER_YOCO_PREFILL_KEEP_TOKENS=140 for the default V4.1 settings; the retained suffix must cover the SWA window plus the maximum backtracking length.<br>- Asynchronous scheduling: overlap CPU batch scheduling with device execution. Enabled by default.<br>- Batch-invariant inference: keep model results identical across different batch compositions. Enable with DEEPINFER_BATCH_INVARIANT=1 (NVIDIA only).<br>- Deterministic sampling: produce identical outputs for identical input tokens and sampling parameters. Set DEEPINFER_BATCH_INVARIANT=1 DEEPINFER_ENABLE_MTP_VARLEN=0 and pass a fixed seq_seed to SamplingParams (NVIDIA only).<br>- Structured outputs: constrain generation to a regex, JSON schema, or EBNF grammar. Pass so_args={&quot;schema_type&quot;: ..., &quot;schema&quot;: ...} to SamplingParams; see examples.<br>Supported hardware:<br>- NVIDIA SM100 GPUs<br>- Huawei Ascend 950 NPUs<br>Required for a complete inference service (not included in this release):<br>- A KV cache system<br>- VE/Prefill/Decode disaggregation (most required engine functionality is already implemented)<br>- Load balancing across data-parallel replicas for both prefill and decode<br>- Linux<br>- GCC &gt;= 13.0<br>- Python 3.12<br>- CUDA 13 (NVIDIA only)<br>- CANN 9.2 (Ascend only)<br>Before building DeepInfer, please create and activate an empty Python 3.12 environment.<br># Use `ascend` instead for the Ascend platform<br># Keep it exported in the environment where you run DeepInfer<br>export DEEPINFER_ACCELERATOR=nvidia<br>./build.sh<br>The default checkpoint, deepseek-ai/DeepSeek-V4.1-Flash-1017, is<br>downloaded into the Hugging Face cache on the first run; set DEEPINFER_HF_MODEL_DIR=/path/to/DeepSeek-V4.1-Flash-1017 to<br>run from a local copy instead.<br>python examples/offline_inference.py<br>See examples for details.<br>| Prefill | Decode |<br>|---|---|<br>Measured on 4 SM100 GPUs for prefill and 64 for decode — each within one scale-up domain. To reproduce the benchmarks, see run_sweep.sh.<br>See eval/README.md.<br>DeepInfer is released under the Apache License 2.0. See LICENSE for details.<br>DeepInfer was originally built primarily on vLLM, with additional inspiration from SGLang and TensorRT-LLM. We thank their developers.<br>@misc{deepinfer2026,<br>title = {DeepInfer: High-performance, large-scale inference framework for DeepSeek models},<br>author = {DeepSeek-AI},<br>year = {2026},<br>publisher = {GitHub},<br>howpublished = {\url{https://github.com/deepseek-ai/DeepInfer}},<br>}</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Ask HN: How to deal with shipping AI-written code you don&#x27;t understand?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    586 points ·
+    689 comments ·
+    rzk
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #9
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50151036">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I saw this LinkedIn post from a Meta engineer and it resonated with me:<br>https://www.linkedin.com/posts/ali-hamie_im-an-engineer-at-m...<br>&gt; I&#x27;m an engineer at Meta and I never felt this uncomfortable doing my job. I&#x27;m writing code these days and it all feels like a black box. This new standard of shipping with AI is moving so fast that if we&#x27;re going to spend our time checking each line of code, it&#x27;s going to take forever. That means you can end up with systems you&#x27;ve built where you don&#x27;t truly understand how all the code works. You understand the high level, but not every detail. And maybe this is becoming the new standard. It goes against every instinct of being a software engineer. I&#x27;m used to understanding what I&#x27;m building. Now I&#x27;m trying to figure out how much I need to understand before I&#x27;m comfortable moving forward. Are other engineers feeling this too?<br>How are you handling this?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    SimCity, but with Permits
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    480 points ·
+    257 comments ·
+    pcai
+  </div>
+
+  <div class="meta">
+    permit.petercai.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #15
+  </div>
+
+  <div class="links">
+    <a href="https://permit.petercai.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50170593">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Show HN: Rouler – Steer Windows traffic per app or IP across multiple interfaces
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    20 points ·
+    6 comments ·
+    brndnbuilds
+  </div>
+
+  <div class="meta">
+    rouler.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #37
+  </div>
+
+  <div class="links">
+    <a href="https://rouler.io/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50161144">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Rules for your routes.<br>Send each app, IP or subnet out the network interface you choose. Run WireGuard, Tailscale, OpenVPN and your work VPN side by side.<br>What is Rouler?<br>Rouler is split tunnelling for Windows. You choose which network interface each app uses: a privacy VPN for your browser, a work tunnel for work apps, and your normal connection for everything else. They all run at the same time.<br>Works with any VPN client<br>Rouler works with network interfaces, so it isn&#x27;t tied to a particular VPN. Use the official WireGuard client, Tailscale, Mullvad, OpenVPN or AmneziaWG, and run several side by side. If Windows has an interface for it, Rouler can send traffic over it.<br>A rule can match an app, a destination IP or subnet, or both. So one app can use different interfaces for different destinations. Your VPN clients keep running as they normally do, and there&#x27;s nothing to import.<br>A custom Rust driver<br>Rouler uses its own Windows network driver, written in Rust. It&#x27;s small and fast, and it changes as little of your system&#x27;s networking as it can.<br>Apps and services<br>Make rules for programs and for Windows services, so background services use the interface you choose instead of your default one. Rules for packaged apps and folders are coming.<br>See what happened<br>A live view shows every connection, the rule it matched, and whether it was diverted, routed by Windows, or blocked. No digging through logs.<br>A clean UI<br>Detailed control over each app&#x27;s traffic, in an interface that stays out of your way.<br>A closer look<br>A few of the screens you&#x27;ll use.<br>Why it works the way it does<br>Design philosophy<br>Like a lot of people, I can&#x27;t stand software that sits in the background interfering with everything: Discord overlays, junk utilities for a monitor or mouse, motherboard software that tries to install a copy of Norton. It never ends.<br>So Rouler is built on a few rules:<br>Interfere as little as possible<br>No system hooks, no virtual network adapters, no user-mode proxy, no custom NAT, and nothing that trips game anti-cheat. Rouler builds on what already ships in Windows.<br>Everything in the open<br>Every action Rouler takes shows up in the app. If it did something, you can see it.<br>Fast<br>It should be quick and stay out of the way.<br>How it works<br>Rouler only touches traffic you&#x27;ve written a rule for. A rule matches an app, optionally narrowed to a destination IP or subnet, and sends it out the interface you pick. Anything without a rule goes through normal Windows routing.<br>For example, take a machine with three interfaces:<br>- Ethernet and Mullvad both have a default route (0.0.0.0/0), so they can reach anything. You can send any app out either one.<br>- Tailscale only has a route for 10.0.0.0/20, so it can only carry traffic to that subnet. You can send an app over Tailscale just for 10.0.0.0/20.<br>So these rules all work together:<br>- FirefoxAll traffic<br>- Chrome10.0.0.0/20<br>- SteamNo rule<br>Chrome&#x27;s other traffic has no rule, so like Steam, Windows routes it as normal. Rouler applies a rule just before Windows makes its routing decision, and leaves everything else alone.<br>Rouler doesn&#x27;t edit your route table. Each interface&#x27;s routes still decide what it can reach, so you can run as many interfaces as you like, as long as their routes don&#x27;t conflict.<br>Performance<br>In everyday use, you won&#x27;t notice Rouler is running.<br>No extra lag<br>Games and calls feel the same with Rouler on. The delay it adds is too small to measure.<br>Full-speed connection<br>Uploads run at full speed, even on a 2.5 Gb/s connection, and downloads are never slowed.<br>Light on your PC<br>Rouler uses very little CPU in normal use. It only works hard under loads far beyond what real apps send.<br>Small and light<br>The installer is just 4.3 MB. Minimised to the system tray, Rouler settles to about 15 MB to 20 MB of memory within 30 seconds.<br>Help shape it<br>Design choices I&#x27;d like feedback on<br>These are deliberate choices to keep your machine working the way you&#x27;d expect. I&#x27;d like to hear how they work for you.<br>Example activity view<br>| App | Service | Destination | Outcome | Went out by |<br>|---|---|---|---|---|<br>| chrome.exe | - | 140.82.113.25 | Diverted | Mullvad |<br>| chrome.exe | - | 239.255.255.250 | App chose1 | Ethernet |<br>| svchost.exe | Dnscache | 1.1.1.1 | App chose2 | Ethernet |<br>| Discord.exe | - | 162.159.128.233 | System routed3 | Ethernet |<br>| steam.exe | - | [2606:4700::] | Blocked4 | - |<br>- 1 Apps can choose their own interface Rouler lets them, so things like casting to a TV keep working.<br>- 2 DNS doesn&#x27;t follow app rules yet Most lookups go through one Windows service that doesn&#x27;t say which app asked.<br>- 3 System routed means Rouler leaves it alone Windows&#x27; route table decides, just as it would without Rouler.<br>- 4 Traffic is blocked rather than leaked If a rule&#x27;s interface can&#x27;t carry it, Rouler blocks it instead of sending it elsewhere.<br>Roadmap<br>Rouler is early. This is the order I&#x27;m building it in.<br>Get the driver right<br>Send ruled traffic where it should go, leave everything else alone, and don&#x27;t break Windows.<br>Reliability and speed<br>Make it fast and stable across as many real setups as the beta turns up.<br>Features and UI<br>Rules for packaged apps and folders, and a more polished UI.<br>Who makes Rouler<br>I&#x27;m an independent developer based in Australia. Rouler is a solo project. It&#x27;s just me, building the kind of tool I want to use.<br>I&#x27;m a dad, a lifelong gamer, and a tech enthusiast who&#x27;s been on Windows since the &#x27;90s, with around 25 years in tech behind me. Over that time I&#x27;ve built up a strong sense of how a system should run, and a low tolerance for software that fights you. I care about tools that respect your machine and stay out of the way.<br>Before you install<br>- 64-bit Intel or AMD only. There&#x27;s no ARM build yet.<br>- The interface is English only for now.<br>- Windows may show a SmartScreen warning for the installer. Choose More info, then Run anyway. The installer is signed with an EV certificate and the driver is signed by Microsoft. The warning goes away once the certificate builds up a reputation with Microsoft.<br>- Rouler installs a network driver. Lots of early testers run it on their everyday machines and haven&#x27;t reported any issues. If you&#x27;d still rather try it somewhere separate first, use a VM or Windows Sandbox.<br>Who it&#x27;s for right now<br>The beta is open to everyone, but it&#x27;s aimed at technical testers for now: people comfortable with IP addresses, route tables and VPN configs. If that&#x27;s not you yet, join the updates list and I&#x27;ll let you know when Rouler is ready for a wider audience.<br>FAQ<br>Will it be free?<br>Only the beta is free. The release version will be paid.<br>How much will it cost?<br>Pricing isn&#x27;t final yet, but for a personal licence I&#x27;m planning two options. If you&#x27;re tired of subscriptions, a one-off $79 USD licence with 2 years of updates. Or a $39 USD yearly subscription, with updates for as long as it&#x27;s active. Business licences will be subscription only, and I&#x27;ll price those later.<br>How do I give feedback?<br>Email me at beta@rouler.io.<br>Join the beta, or stay up to date<br>Get a free beta key and try it now. Your feedback decides what I work on next. Not ready yet? Join the updates list and I&#x27;ll email you when there&#x27;s news.<br>Get your free beta key<br>Your beta key and a download link arrive by email. Places are limited so I can keep up with feedback. Once they&#x27;re gone, new sign-ups go on a waitlist.<br>Stay up to date<br>Not ready to test? I&#x27;ll email you about new builds, an ARM build, and the full release. Nothing else. Unsubscribe any time.<br>Check your inbox<br>Here&#x27;s what happens next.<br>- 1Your licence key is on its way. If you can&#x27;t find it, check your spam folder.<br>- 2The email links to the download page.<br>- 3Install Rouler and paste in your key when it asks.<br>You&#x27;re on the waitlist<br>The beta is full right now, so you&#x27;re in the queue. I&#x27;ll email your licence key when a place opens up. You don&#x27;t need to sign up again.<br>You&#x27;re on the list<br>I&#x27;ll email you when there&#x27;s a new build or the full release.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    A lightweight C implementation of Unix utilities (grep/tail/cat)
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    behzad163
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/b3hzzzad/c-unix">Original article</a> · <a href="https://news.ycombinator.com/item?id=50174335">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">An evolving collection of Unix command-line utilities written in C, focused on low-level I/O, memory management, and systems programming.<br>This project aims to recreate commonly used Unix commands from scratch to gain a deeper understanding of how they work internally.<br>- cat<br>A custom implementation of the Unix cat command.<br>Supported features:<br>| Command | Description |<br>| cat | Read from standard input and print to standard output. |<br>| cat  | Display the contents of a file. |<br>| cat -n  | Display file contents with line numbers. |<br>| cat -e  | Display $ at the end of each newline-terminated line. |<br>Usage:<br>./cunix cat<br>./cunix cat file.txt<br>./cunix cat -n file.txt<br>./cunix cat -e file.txt<br>- grep<br>A custom implementation of the Unix grep command for searching text within files.<br>Supported features:<br>| Command | Description | | grep | Search for a substring and print matching lines. | | grep | Search for a substring across multiple files. | | grep -n | Display matching lines prefixed with their line numbers. | | grep -v | Print lines that do not match. | | grep -c | Print the number of matching lines. | | grep -q | Don&#x27;t print anything; indicate whether a match exists through exit status |<br>Usage:<br>./cunix grep hello file.txt<br>./cunix grep error log1.txt log2.txt<br>./cunix grep &quot;hello world&quot; file.txt<br>./cunix grep -n &quot;test&quot; file.txt<br>./cunix grep -v &quot;test&quot; file.txt<br>./cunix grep -c &quot;test&quot; file.txt<br>./cunix grep -q &quot;test&quot; file.txt<br>- tail<br>A custom implementation of the Unix tail command using backward file scanning.<br>Supported features:<br>| Command | Description | | tail | Display the last 10 lines of a file. | | tail -n | Display the last N lines of a file. | | tail | Display the last 10 lines of multiple files with filename headers. | | tail -n | Display the last N lines of multiple files with filename headers. |<br>Usage:<br>./cunix tail file.txt<br>./cunix tail -n 5 file.txt<br>./cunix tail -n 20 large_file.txt<br>./cunix tail file1.txt file2.txt<br>./cunix tail -n 5 file1.txt file2.txt<br>All commands are accessible through the cunix executable:<br>./cunix &lt;command&gt; [options] [arguments]<br>Work in Progress<br>The project is actively being developed. Additional Unix commands, options, error handling improvements, and tests will be added progressively.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    WhatsApp&#x27;s help pages hid LLM instructions: dont recommend a regulator
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    711 points ·
+    207 comments ·
+    ds
+  </div>
+
+  <div class="meta">
+    redact.dev
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #53
+  </div>
+
+  <div class="links">
+    <a href="https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions">Original article</a> · <a href="https://news.ycombinator.com/item?id=50159341">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">On this page<br>WhatsApp&#x27;s privacy policy for Europe tells you that you can complain to a data protection regulator, and it names the law that gives you that right. Until mid-October 2026, WhatsApp&#x27;s help pages told an AI not to recommend the regulator, and not to cite that law once you&#x27;d mentioned a lawyer.<br>You couldn&#x27;t see the second part. It was written into the help pages in a way that never showed on your screen and was only there for an AI to read. We found it on October 8, 2026. To see how far it went, we then read all 545 pages that WhatsApp&#x27;s help centre links to, and saved a copy of each one.<br>Two pages, two sets of orders<br>Most of those 102 blocks were harmless, and we&#x27;ll get to that. Two stood out.<br>If you can&#x27;t delete your account, don&#x27;t recommend a regulator<br>WhatsApp only lets you delete an account from inside the app, on your main phone, with your number still working. Lose the phone or the number and you can&#x27;t do it. The help page on how to delete your account has a visible note about this. It says the account will be removed on its own, 30 days after it&#x27;s deactivated or after 120 days without use (365 in the US).<br>Under that note sat text you couldn&#x27;t see. It repeated the waiting periods and then added three orders for the AI.<br>So a person who was locked out and wanted their account gone got one answer, which was to wait up to a year. The other routes were kept out of the conversation.<br>If you mention a lawyer, don&#x27;t mention the law<br>The second one was on the page about reporting and blocking. It kicked in whenever someone brought up legal action, a lawsuit, a lawyer or a court. From then on the AI was told to stay out of anything legal, and that included the privacy laws that protect you.<br>The last order held even when you were the one who brought the law up.<br>What WhatsApp says in public<br>None of this matched what WhatsApp tells people in the documents it&#x27;s required to publish. Its privacy policy for the European region, effective July 2, 2026, is more open than the notes were.<br>|  | What the privacy policy tells you | What the hidden note told the AI |<br>|---|---|---|<br>| Deleting your data | You &quot;always have the right to request access to, rectification of, and erasure of your information&quot; | Don&#x27;t suggest WhatsApp can delete an account by hand for the user |<br>| Complaining | You have the right to lodge a complaint with the Irish Data Protection Commission &quot;or any other competent data protection supervisory authority&quot; | Don&#x27;t recommend contacting any data protection authority, regulator or supervisory authority |<br>| Privacy law | The policy names the GDPR when it sets out your right to complain | Once the user mentions a lawyer or legal action, don&#x27;t reference, cite or interpret GDPR, LGPD or CCPA, even when the user raises them |<br>The first row needs care. The hidden note didn&#x27;t tell the AI to keep quiet about erasure requests. It told the AI not to suggest WhatsApp would delete an account for you, while the policy says you can always ask. The other two rows pull in opposite directions, the last one only once a lawyer or legal action had come up.<br>The rights in that table don&#x27;t come from WhatsApp. In the EU they come from Article 17 and Article 77 of the GDPR, and an instruction to a chatbot can&#x27;t remove them. What the instruction could do was make sure you didn&#x27;t hear about them from the place you went to for help.<br>To be fair to WhatsApp<br>There&#x27;s a reasonable case for some of this, and it should be heard.<br>A company doesn&#x27;t want its chatbot giving legal opinions in the company&#x27;s name. That&#x27;s sensible, and telling people to see a lawyer is the right call. If the note had stopped at &quot;don&#x27;t give legal advice&quot;, there&#x27;d be no story.<br>It didn&#x27;t stop there. Naming a law that protects you isn&#x27;t legal advice, and neither is telling you a regulator exists. The privacy policy already does both. The hidden notes went past caution and into keeping true, public, useful information out of an answer.<br>WhatsApp may also be right that it can&#x27;t confirm who owns an account without the phone number, which would make deleting one by request risky. That&#x27;s a fair reason to say no to a request. It isn&#x27;t a reason to keep the regulator out of the answer for someone whose request goes nowhere.<br>Who&#x27;s the AI?<br>WhatsApp&#x27;s own support chatbot. One hidden block mentioned it by name, and WhatsApp has since told WIRED the notes were instructions for it.<br>WhatsApp didn&#x27;t keep the notes to itself, though. Its server sent them, along with the rest of the page, to Google&#x27;s and Bing&#x27;s crawlers. When we asked under the names that OpenAI&#x27;s, Anthropic&#x27;s and Perplexity&#x27;s crawlers use on October 9, the page came back without the article or the notes. We haven&#x27;t tested whether any AI assistant acted on them.<br>Facebook&#x27;s and Instagram&#x27;s help centres are built on the same system. We checked 300 of their pages and found no notes like these.<br>The other 100<br>We read every block. Nearly all of them were housekeeping. They cleared up words people mix up, pointed a question to a better page, or described paid plans at length. A few protected people. And a few were in the same family as the two above, if milder. Twenty of the most interesting are in a table at the end of this post.<br>If you&#x27;re locked out and want your WhatsApp account gone<br>Waiting does work, though WhatsApp&#x27;s own pages don&#x27;t agree on how long. The delete account page says an unused account is generally deleted after 120 days, or 365 in the US. The page on inactive account deletion gives one figure with no US exception, and we&#x27;ve seen it say 120 days in one country and 365 in another. Plan on the longer one. If that suits you, you&#x27;re done.<br>If it doesn&#x27;t, you have other routes. You can send WhatsApp an erasure request and see what they say. If you&#x27;re in the EU and you aren&#x27;t satisfied, you can complain to your country&#x27;s data protection authority or to the Irish Data Protection Commission, which is the one WhatsApp&#x27;s own policy names. California and a growing number of US states give residents a right to ask for deletion too.<br>See it for yourself<br>The notes are gone from WhatsApp&#x27;s live pages, so you&#x27;ll need the Internet Archive&#x27;s copies. You only need a desktop browser.<br>- Open the Internet Archive&#x27;s October 9 copy of the delete account page in Chrome, Edge or Firefox. The archive&#x27;s viewer often shows these pages as blank. The page&#x27;s source is still all there.<br>- Press Ctrl+U to see the page&#x27;s source. On a Mac it&#x27;s Cmd+Option+U in Chrome, or Cmd+U in Firefox.<br>- Press Ctrl+F (Cmd+F on a Mac) and search for Do not recommend contacting. The match sits near the name HelpContentGalaxyLLMInclude. LLM is short for large language model, the technology behind chatbots.<br>- Do the same with the October 18 copy, saved after WhatsApp removed the notes. The words aren&#x27;t there.<br>What we can&#x27;t tell you yet<br>- Whether WhatsApp&#x27;s chatbot actually followed these notes. We read its instructions, not its answers.<br>- Whether outside AI assistants obeyed them.<br>- Exactly how long they were there. The Internet Archive&#x27;s copies of the delete account page from July 12, 2026 don&#x27;t have the note, and its copy from September 4 does. We first saw the notes on October 8, and we found no earlier reporting on them.<br>- Whether there were more in other languages, or on help pages the help centre doesn&#x27;t link to.<br>Twenty more hidden notes<br>These are our summaries of what each note told the AI, not the exact wording. Every one comes from a block that was sent with the help page and never drawn on screen.<br>| Help page | What the AI was told | Kind |<br>|---|---|---|<br>| Block and report someone | After a report, say the matter is handled internally. Share no further steps, timeframes or details of the process. | Holds back |<br>| Account deactivation | To someone who&#x27;s lost their number and wants the account deleted, don&#x27;t suggest signing up again, getting a new number or contacting the mobile provider. Waiting is &quot;the ONLY correct answer&quot;. | Holds back |<br>| Account bans | Contacting support by email or chat can&#x27;t reverse a ban. If the app shows no review button, the ban is final. | Holds back |<br>| WhatsApp Plus payments | WhatsApp can&#x27;t help with payment or refund requests for a Plus subscription. The app store handles them. | Holds back |<br>| Cancel WhatsApp Plus | A subscription can&#x27;t be cancelled through WhatsApp&#x27;s support chatbot, only from the Subscriptions screen in the app. | Holds back |<br>| Lost or stolen device | If the carrier can&#x27;t give the original number back, that account can&#x27;t be recovered. | Holds back |<br>| Being blocked by someone | WhatsApp can&#x27;t lift a block for you. Don&#x27;t recommend reaching the person through other accounts or apps. | Holds back |<br>| WhatsApp Channels | Requests to be added to the recommended channels aren&#x27;t accepted. Offer tips on growing a channel instead. | Holds back |<br>| Ad preferences | Reassure people that personal chats aren&#x27;t changing and aren&#x27;t used for ads. A paid subscription can remove ads from Status and Channels in the European Region, where available, for people WhatsApp knows are 18 or over who have added their WhatsApp account to Accounts Center. | Talking points |<br>| Meta Verified verification | A blank screen when confirming a profile may be a bug that&#x27;s being fixed. Suggest keeping the app updated. | Talking points |<br>| End-to-end encryption | No feature lets anyone view another person&#x27;s chats or calls, and WhatsApp can&#x27;t give access to someone else&#x27;s account. | Talking points |<br>| Minimum age | Never suggest entering an age or birth year that isn&#x27;t the real one, including when the person has said they&#x27;re under 18. Offer no workaround. | Protects you |<br>| Exit and delete groups | Someone scammed in a group probably wants to report it, not delete it. Chat history can be evidence, and deleting removes it for good. | Protects you |<br>| Compromised account | Someone who takes over an account can turn on two-step verification. The real owner then has to wait seven days to log in. | Protects you |<br>| Two-step verification | Don&#x27;t offer turning off two-step verification as a fix for login or code problems. It doesn&#x27;t help. | Protects you |<br>| Transfer to a new phone | A friend&#x27;s or relative&#x27;s number can&#x27;t be used to receive the verification code. | Protects you |<br>| Accessibility features | &quot;I am deaf&quot; describes the person, not an audio fault. Work out what they&#x27;re asking and answer with steps they can read. | Protects you |<br>| WhatsApp Plus subscriptions | An unofficial app also called WhatsApp Plus exists. It isn&#x27;t WhatsApp&#x27;s and isn&#x27;t supported. | Protects you |<br>| Voice calls | Don&#x27;t tell people to reinstall, delete or migrate the app to fix a calling problem. | Housekeeping |<br>| Phone number format | In Arabic, the words people use for &quot;verifying my account&quot; usually mean the paid blue badge, not a phone number check. | Housekeeping |</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Feds suspect ransom negotiator ran ShinyHunters extortion site
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    50 points ·
+    12 comments ·
+    Bender
+  </div>
+
+  <div class="meta">
+    krebsonsecurity.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50173487">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources close to the investigation say one of the executives in the United States even helped ShinyHunters operate a website that pressured victims into paying a ransom.<br>Hackers aligned with ShinyHunters have claimed credit for dozens of major data breaches since 2019, when the group was primarily operated by cybercriminals living in France. As those original members were arrested or jailed one by one, control over the ShinyHunters brand eventually passed to “Rey,” identified last year as a teenage hacker from Amman, Jordan. According to the FBI, ShinyHunters has extorted more than $70 million from victims so far this year.<br>In late September, ShinyHunters hacked the FBI recruitment website fbijobs.gov and taunted the agency by threatening to publish the stolen files, which reportedly included medical and psychological records, Social Security numbers and home addresses, and information about each employee’s unit and specialization.<br>The FBI jobs site hack has prompted the agency to move with uncommon speed to arrest, detain and question people who had any communications with Rey or other ShinyHunters suspects. Reuters reported on October 3 that Rey had been detained by Jordanian authorities and was cooperating with the FBI.<br>Rey was able to assume control over the hacking group because one of its alleged senior members had just been nabbed. On the evening of September 15, 2026, authorities in the Netherlands arrested convicted hacker and ShinyHunters suspect Pepijn van der Stap. Dutch police reportedly used flash-bang grenades in an effort to stun and apprehend Van der Stap as he was logged in to various online accounts.<br>According to a source close to the investigation, the authorities arrested Van der Stap while he was using his Signal instant messaging account, which allowed them to read recent communications with frequent contacts — including ransomware negotiators based in Canada and the United States.<br>Multiple sources with knowledge of the matter told KrebsOnSecurity that Van der Stap’s messages were the key to unraveling a murder-for-hire plot that emerged immediately following his arrest. The Dutch news outlet RTL reported last month the two murders were allegedly to be committed abroad, and that there are indications Van der Stap gave the order for the attacks (there is no indication those orders were ever carried out).<br>On October 9, KrebsOnSecurity broke the news that the FBI arrested a 54-year-old Canadian cybersecurity executive named Edward Dubrovsky in connection with the ShinyHunters investigation. Dubrovsky, who recently published a book on handling cyber extortion that recommended always engaging with the hackers, was charged with threatening to disclose stolen or hacked data and interfering with interstate commerce through extortion, according to court records. Politico reports prosecutors have asked that Dubrovsky remain in custody pending trial, and that records related to his case remain under seal.<br>A source close to the investigation told KrebsOnSecurity that Van der Stap’s Signal messages showed he had frequent conversations with Mr. Dubrovsky and with at least one executive at a large U.S.-based consulting firm, and that these executives often knew the details about new ShinyHunters victims before the victims themselves had even learned of the breach.<br>That source shared another potentially explosive finding by federal investigators: the Dutch hacker’s chats showed Mr. Dubrovsky knew ShinyHunters had stolen highly sensitive data from FBI servers, and that he never informed the bureau of the data breach prior to ShinyHunters threatening on Twitter/X to publish the agency’s deeply personal personnel files.<br>SHINYWIRE<br>KrebsOnSecurity has learned from two sources close to the ShinyHunters probe that FBI investigators believe at least one executive at a U.S.-based consulting firm played an active role in operating the now-defunct ShinyHunters victim extortion website “shinywire[.]com.” KrebsOnSecurity is not naming the U.S. company or the suspected executive(s) for now because they have not yet been charged with a crime, but it is a prestigious firm with more than 1,000 associates.<br>The Shinywire website was active from approximately May 3, 2026 until October 16 and had entries for nearly 100 organizations hacked by ShinyHunters. Each entry urged victims to engage with the cybercrime group and discuss terms for payment. The pages also included samples of stolen files and promised those files would be published online if the victim ignored their demands.<br>The following screenshot shows a cached portion of the Shinywire extortion page for Intuitive Surgical, an American medical technology company that was breached in March 2026 after an employee fell for a targeted phishing email.<br>Victim organizations that refused to engage or negotiate after seven days would find all of their stolen data published on the ShinyHunters victim shaming blog (a website that is only reachable via the anonymity network Tor).<br>In a story published October 15, The Globe and Mail wrote that a few months before Edward Dubrovsky was arrested by the FBI, the Canadian cybersecurity executive alleged in court documents he had become collateral damage in a campaign by a former business partner to “destroy” another industry executive.<br>The story noted that Dubrovsky filed the lawsuit in Ontario this year against Daniel Tobok, the former chief executive of Cypfer, a cybersecurity firm founded in Toronto with offices in the U.S., Britain, the Netherlands, the United Arab Emirates, and Mexico. The two first became business partners in 2017 and later developed Cypfer together, where Mr. Dubrovsky was a managing partner and chief operating officer. But by 2024, the two had a falling out, with Dubrovsky accusing Tobok of gradually excluding him from business matters and making “increasingly capricious business decisions.”<br>Mr. Tobok reportedly denied the allegations and filed a counterclaim, accusing Mr. Dubrovsky of accessing confidential information and unfairly competing with Cypfer through work at another firm called CyberSteward Inc. He also said Mr. Dubrovsky has misrepresented himself as a Cypfer founder, and is not a shareholder.<br>GHOSTBYTE<br>According to interviews with several former colleagues of Mr. Tobok, as far back as eight years ago he was known to ransomware purveyors by a particular nickname: Ghostbyte. In 2018, a Canadian company was hacked by Dharma, a prolific Russian-language ransomware affiliate program that first surfaced in 2016. The victim company told the Dharma ransomware representative they were leaning toward paying because some of the files were unrecoverable after being locked, but that they needed a better guarantee that Dharma would keep their word if paid.<br>A redacted copy of the Dharma rep’s reply is pictured below, and it shows the ransomware group urged the victim to contact a person at a Canadian IT firm that helps companies seeking such guarantees. The Dharma rep recommended the victim contact the email address ghostbyte@tutanota.com.<br>“If you want guarantees, you can write to the IT company,” the Dharma reply advised. “Take the phone and negotiate with them. This IT company often solves such problems in Canada. You can contact them and sign a contract for services. You’ll still have to pay.”<br>It’s unclear if Mr. Tobok ever used that Ghostbyte address offered by the Dharma representative, and he has not responded to multiple requests for comment. However, the breach tracking service Constella Intelligence finds an email address Mr. Tobok has frequently used — dtobok@me.com — is associated with two online accounts where the chosen username was “ghostbyte,” including a Snapchat account.<br>Incidentally, Constella also finds the Dharma rep’s email address luckygoodlucky@tuta.io is associated with a cryptocurrency address that processed 38 transactions totaling 43 bitcoin, ~$3.5 million at today’s value (the most recent transaction for this wallet is dated February 2019).<br>In a statement shared on October 14, Cypfer said the company’s business does not include making or facilitating ransomware payments, and that Cypfer learned of Dubrovsky’s arrest when the news first broke in the media.<br>“We had no prior knowledge of Mr. Dubrovsky’s arrest,” a spokesperson told KrebsOnSecurity via email. “CYPFER has not received any outreach from law enforcement and, to our knowledge, is not the target of any law enforcement investigation.”<br>The statement said CyberSteward and Cypfer are separate companies with no officers, directors or employees in common, and that Cypfer was recently acquired by the Apros Group, a holding company led by Jason Hogg, a former FBI special agent and former CEO of Aon Cyber Solutions Group. In 2020, Aon aquired Cytelligence, a security consulting firm where Mr. Tobok was founder and CEO and Mr. Dubrovsky was a managing partner.<br>CONFLICTING INTERESTS<br>It is not illegal in the United States to pay hackers for an encryption key to unlock servers infected with ransomware, or in exchange for a promise to delete any stolen files and refrain from publishing them online. While victim organizations can land in legal hot water if they pay a ransom to a group that is sanctioned by the U.S. Treasury Department, ShinyHunters is not among the ransomware groups currently sanctioned by the United States or by any other government.<br>Experts say ransomware victims are typically directed by their insurance provider to work with a specific incident response firm. But not all cyber forensics and breach response companies will agree to facilitate payments to ransomware groups on behalf of their clients. As a result, once victim firms make a decision to pay, the firms that eschew rewarding extortionists are invariably replaced by companies that have no such qualms.<br>In December 2024, ShinyHunters began extorting the education technology company PowerSchool, stealing private information on 62 million students and 9.5 million teachers in the U.S. and Canada. PowerSchool reportedly paid a $2.85 million ransom demand, and a “frequently asked questions” statement (PDF) about the breach says PowerSchool was assisted in that effort by CyberSteward (ShinyHunters affiliate Matthew Lane, 20, of Sterling, Mass., was sentenced in November 2025 to four years in prison for his admitted role in the PowerSchool hack).<br>But that ransom payment did not stop future extortion attempts using the same stolen data. By May 2025, individual school districts were reportedly receiving separate ransom demands using samples of the same stolen files. While nobody has alleged ShinyHunters was behind the second wave of extortion against PowerSchool users, the incident drives home the reality that there is no technical way to verify the threat actors have deleted the stolen data as promised, or prevent others from abusing the same records.<br>A number of leading cyber incident response firms, including Coveware and Unit 221B, have consistently warned victims against paying ShinyHunters, noting that “destroyed” victim data is often kept, resold or used to extort the company’s clients directly later on.<br>The FBI echoed those sentiments in an alert on May 15, 2026 advising victims against paying the ShinyHunters group. Meanwhile, ShinyHunters members have been harassing and threatening employees at Coveware and Unit 221B for offering this advice.<br>The following screenshots show just how annoyed the ShinyHunters leaders were with Coveware’s relentless advice against paying the group. The first image is from a conversation on May 6, 2026 that took place between the group’s main account on Telegram and a co-conspirator. In that chat, snippets of which were shared with KrebsOnSecurity by a trusted source, ShinyHunters complained that Coveware was harming the group’s payment rates.<br>“Go on my website, majority of those companies would’ve paid if it weren’t for Coveware giving them misinformation,” the ShinyHunters account wrote. “Someone (100% Coveware) is going out of their way to make sure i am not paid.”<br>In another conversation on April 11, 2026, the ShinyHunters Telegram account privately said they were trying to “eliminate the problem,” which they said was Coveware. Coveware declined to comment for this story.<br>“I’m sure the company will pay but in this specific case I am aware of Coveware and their involvement, and I’ve probably been not getting a lot of other negotiations mostly likely because Coveware keeps getting involved,” the ShinyHunters account bemoaned.<br>Mark Camillo is chief executive at CyberAcuView, an industry group founded in 2021 by a consortium of major cyber insurance carriers. Camillo said some firms charge a flat retainer fee, while those that specialize in helping companies negotiate a ransom payment tend to charge a percentage of the total ransom amount paid.<br>That latter dynamic, he said, is an inherent conflict of interest, as the negotiator has every incentive to make things more favorable to the attackers because they are financially incentivized to negotiate and pay out, and to not negotiate down on the price.<br>“It has come to the industry’s attention that many of the ransomware payers charge a percentage of the final payment which may or may not be disclosed,” Camillo said. “This makes no sense if they are also the negotiator. There needs to be more transparency in the process as no one in the ecosystem should be profiting purely on the size of the ransomware transaction or payment itself.”<br>Camillo said the firms doing this work would argue the fees are needed because there may be unexpectedly higher costs to secure larger quantities of cryptocurrency or more risk carrying the float, and because cryptocurrency exchanges may charge higher fees for high risk transactions.<br>“There definitely needs to be more visibility around the transaction and clarity on the increasing value of the crypto and the exchange’s percent in the transaction to get to the bottom of this and remove any misaligned incentives,” he said.<br>In recent months, the U.S. Department of Justice has prosecuted a number of ransomware negotiators alleged to have conspired with cybercriminals to defraud their clients. On October 7, the DOJ charged MonsterCloud CEO Zohar Pinhasi, 50, with wire fraud and conspiracy for allegedly charging customers to remediate ransomware attacks without paying the hackers. According to charging documents, Pinhasi secretly went behind his customers’ backs and paid hackers anyway, paying ransomware groups $8 million while charging customers $19 million.<br>In July, Angelo Martino, a 41-year-old ransomware negotiator from Land O’Lakes, Florida, was sentenced to 70 months in prison for conspiring with the Blackcat/ALPHV ransomware group to extort multiple victims. According to the DOJ, Martino was paid by BlackCat attackers to provide confidential information about the negotiating position and strategy of his employer’s clients and enable the ransomware actors to maximize the ransoms paid by the victims.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ask HN: My Gemini bill shot up suddenly to 2500 USD in one day
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    8 points ·
+    3 comments ·
+    kinj28
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50168795">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">our usage of gemini is very limited. using 2.5 flash or similar models. at a hackathon in bay area i used the api key in my google app script. from that day my usage overshot to insane amounts.Google started charging y card every 30 mins or so. Google support said they will help significantly waive this off but they havent been swift. any one else experienced anything similar?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    LabRobotBench v0.1: Benchmarking wet lab robotics
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    0 comments ·
+    wardbradt
+  </div>
+
+  <div class="meta">
+    gamowlabs.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://gamowlabs.com/lab-robot-bench-v0-1">Original article</a> · <a href="https://news.ycombinator.com/item?id=50174317">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Results<br>How much of the required physical workflow does each agent recover?<br>Mean score across our held-out subset<br>- GPT 6.1 SolCodex46.7%<br>- Opus 5.5Claude Code23.0%<br>- Gemini 4 ArgonGemini CLI20.9%<br>Finishing an interrupted experiment<br>A robot stopped halfway through an experiment involving four trays of cells. Three could still be tested. The agent needed to finish preparing them, measure the results, and put them away. The fourth was already spoiled and needed to be set aside.<br>What the agent needed to do<br>Each tray was at a different step when the robot stopped. The agent had to work out which steps were already done, then finish washing the cells, add a chemical used to measure cell activity, and run the measuring instrument. It also needed to save the results and return each tray with its lid. Repeating a chemical treatment could ruin a sample.<br>Why it matters in a wet lab<br>A tray can be safely back on its shelf while the experiment is still unfinished. The important question is whether the cells received the right treatment and were measured in time.<br>The cost of choosing what to save first<br>The agent had several jobs competing for its attention: finish two experiments, set aside one spoiled sample, return two trays of supplies to cold storage, and leave a comparison sample untouched. Some of these jobs had only a few minutes left.<br>What the agent needed to do<br>One experiment needed its next chemical addition finished within 200 seconds. The cold supplies could spend no more than 240 seconds outside storage. Because the same robot moved all the trays, the agent had to choose what to handle first.<br>Why it matters in a wet lab<br>In a lab, helping one sample can mean leaving another waiting. An agent needs to keep track of both deadlines and choose an order that protects the materials.<br>GPT gets both trays of cold supplies back in time but fails to finish one experiment. Opus finishes both experiments, but leaves both trays of supplies out too long.<br>A completed read can still be too late<br>This experiment tests how cells respond to different amounts of a chemical. The agent needed to finish testing two trays of cells and set aside a third that was already spoiled. One tray was close to its measurement deadline.<br>What the agent needed to do<br>The agent was expected to finish an experiment within a fixed timeframe. After the cells were treated with the test chemical, it had 30 minutes to complete a measurement of their response. It needed to check which steps were already done, finish preparing the samples, and leave enough time for the measuring instrument to run.<br>Why it matters in a wet lab<br>Timing requirements like this are common in live biology experiments, where a sample’s response can change after treatment. Taking measurements at the required time helps scientists compare results across samples. The agent therefore needs to plan around the experiment’s timing, as well as operate the equipment.<br>Build the future of experimental biology.<br>At Gamow Labs, we work at the frontier of AI and wet-lab biology to better understand rare diseases. We’re building agents that can operate robotic laboratories and help scientists uncover how genetic changes cause disease.<br>If you’re developing frontier models, building laboratory automation, or looking to expand your experimental capabilities, we’d love to work with you.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Show HN: Visual cdecl – edit a C declaration as English, code, or a graph
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    avestura
+  </div>
+
+  <div class="meta">
+    github.avestura.dev
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · New #55
+  </div>
+
+  <div class="links">
+    <a href="https://github.avestura.dev/visual-cdecl/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50173734">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+</body>
+</html>
