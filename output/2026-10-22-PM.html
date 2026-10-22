@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-22 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-22 PM · Generated 2026-10-22 22:35 CST</div><div class="issue-sub">Stories 10 · Full 7</div><div class="issue-sub">Sources: 404media.co, builders.cortex.io, crystal-lang.org, emudhra.com, emudhra.we-have-a-problem.com, github.com, news.ycombinator.com, php.net</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    56 points ·
+    10 comments ·
+    petecooper
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #51
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50193416">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I posted here about the then-upcoming PHP RCEs related to CVE-2026-109618 &amp; CVE-2026-109619. I appreciate this has had considerable knock-on effects with the schedule for co-ordinated disclosure, and created additional workload.<br>I am truly sorry. I take full responsibility for my actions.<br>It was not remotely my intention to cause any of the subsequent side effects.<br>At the time of posting, I didn&#x27;t know about any embargo. My contact had told me there was no embargo, and her contact had told her the same thing.<br>As someone who follows the 4-weekly PHP release cycle and compiles it from source, my intention was to alert others in a similar position to be aware of the importance/urgency of the updates.<br>That clearly backfired in a pretty wild fashion. I have learned my lesson.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Security advisory: Critical remote code execution vulnerabilities, update now
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1537 points ·
+    655 comments ·
+    xd
+  </div>
+
+  <div class="meta">
+    php.net
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.php.net/archive/2026.php#2026-10-21-5">Original article</a> · <a href="https://news.ycombinator.com/item?id=50172041">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities that can allow unauthenticated remote code execution. All PHP users are strongly encouraged to update immediately.<br>Who is at risk: all PHP installations serving web requests, including PHP-FPM, Apache with mod_php, php-cgi, FrankenPHP and LiteSpeed. We consider the risk highest for mod_php, with a demonstrated exploit where an unauthenticated request can trigger the attack before any application code runs.<br>The vulnerabilities:<br>- RCE via OOM corruption, CVE-2026-109618 (GHSA-w8hw-w9fx-j79w): out-of-memory handling can interrupt PHP while internal request data is only partially initialized. Request cleanup may then treat the invalid data as valid.<br>- RCE via stale global state, CVE-2026-109619 (GHSA-6wmf-4rv5-p3rp): request-owned internal state can survive after its backing memory has been freed. A later request handled by the same worker may use that stale state before normal initialization resets it.<br>How to update:<br>- Update to PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35. Source downloads are on our downloads page. Windows source and binaries are on the same page.<br>- Linux distributions and LTS vendors received the patches in advance, so check your vendor for updated packages.<br>- PHP 8.1 and older no longer receive updates from the PHP project. Some distributions and LTS vendors provide backported fixes, so contact your vendor for details, or upgrade to a supported version.<br>- If you rely on the volunteer-maintained rpms.remirepo.net, we urge you to switch to distribution packages or build from source, so you can immediately apply updates. The repo will not have updates today.<br>- Given the severity of these vulnerabilities, the PHP security team provided minimal source-backports for PHP 7.4, PHP 8.0, and PHP 8.1 to help people building from source or without access to an LTS vendor.<br>If you cannot update immediately: while only an update is a complete solution, the following measures reduce exposure to specific attack paths but do not make an installation safe.<br>RCE via OOM corruption (CVE-2026-109618):<br>- Set memory_limit=-1, preferably in a way applications can&#x27;t override, such as php_admin_value in the FPM pool or Apache configuration, and check that no pool, directory or application setting puts a finite limit back. This removes the controllable PHP memory limit failure, but an underlying allocation failure can still reach the vulnerable path.<br>- Set a low post_max_size. For applications that don&#x27;t require file uploads, set post_max_size = 8M. If file uploads are necessary, set post_max_size = 32M. Keep upload_max_filesize below post_max_size.<br>Consider enforcing limits at the web server or proxy level for decoded request size, input field count, multipart part count, header count, and nesting depth. These<br>limits must also cover requests without a usable Content-Length.<br>- Use a container or cgroup limit as an availability boundary, preferably with a policy that kills only the affected worker. Do not substitute RLIMIT_AS or RLIMIT_DATA, as these can cause the vulnerable allocation failure.<br>RCE via stale global state (CVE-2026-109619):<br>- Set session.upload_progress.enabled=0 and restart every worker. Use php.ini, an FPM pool or server<br>configuration that applies before request parsing. Do not rely on ini_set() or FPM .user.ini. This blocks the confirmed session paths but not other variants.<br>- On PHP 8.5, set fatal_error_backtraces=0 and restart every worker. This blocks the confirmed fatal backtrace path only.<br>- Remove invalid or deprecated settings applied per request that emit diagnostics before initialization. Hiding diagnostics with error_reporting, display_errors or @ does not help.<br>- Fix attacker-reachable fatal errors and execution timeouts, including failures in callbacks, upload or import processing and cleanup.<br>The advisories linked above have the full technical details.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    eMudhra to Exit Global SSL/TLS Certificate Business
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    134 points ·
+    61 comments ·
+    bo0tzz
+  </div>
+
+  <div class="meta">
+    emudhra.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business">Original article</a> · <a href="https://news.ycombinator.com/item?id=50195110">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Show HN: App Factory – 42 Claude Code skills to ship apps to App Store and Play
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    yybd
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/yybd/app-factory">Original article</a> · <a href="https://news.ycombinator.com/item?id=50194964">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">English · עברית<br>42 skills that build, describe, ship and announce apps — to the App Store and Google Play, and outside them, on the Mac and on Windows. Each one loads only where it is wanted.<br>The story behind it — why one big instructions file stopped holding, and what replaced it: the article.<br>They are Claude Code plugins. You enable the tracks a repo needs, and a session opened there carries them; a session opened anywhere else does not.<br>Built for Claude Code, and tested only there. The scripts the skills run are<br>ordinary command-line tools any agent can call, but the loading — tracks, the<br>marketplace, enable.py — is Claude Code&#x27;s plugin system, and most skills find their<br>scripts through ${CLAUDE_PLUGIN_ROOT}, which only Claude Code sets.<br>claude plugin marketplace add yybd/app-factory<br>cd ~/code/my-app &amp;&amp; python3 ~/.claude/plugins/marketplaces/app-factory/factory/enable.py<br># then the install lines it prints, and QUICKSTART for the rest<br>QUICKSTART.md walks the whole thing — fifteen minutes, one app, with a check after every step.<br>The usual way to steer a coding agent is one large instruction file. Everything goes in: release rules, test conventions, SEO, the way you name things. It does not hold. The file grows past what stays in view, rules contradict each other, and the agent proposes an Android deploy while you are editing a website.<br>The failure is not that the agent forgets. It is that everything was told to it at once, whether or not it applied.<br>So: nothing is global. A skill is a document the agent loads when its description matches what you asked for, and the descriptions are the only part that is always in context. What it costs to have 42 of them available is about 8,400 tokens of descriptions — and only in a repo where you turned them on.<br>Eight tracks of skills, plus one that does setup:<br>| Track | Skills |  |<br>|---|---|---|<br>| apple-track | 16 | the App Store, the Mac App Store, and direct distribution outside both |<br>| android-track | 9 | Google Play, and getting a build onto a device |<br>| shared-track | 7 | the work that is the same either way: naming, copy, release order, prices |<br>| web-track | 4 | a site&#x27;s structure, an audit of it, and whether search finds it |<br>| capacitor-track | 2 | web-in-a-shell apps, where the bugs live in the seam |<br>| design-track | 1 | visual craft for any HTML interface |<br>| windows-track | 1 | a Windows installer that updates itself, outside any store |<br>| announce-track | 1 | the posts that announce a release or an article, checked per channel, posted only on a yes per post |<br>| factory-setup | 1 | on everywhere; says when a repo looks like an app and no track is on |<br>Each track&#x27;s own README lists what is in it, what it costs, and what it needs installed. The counts above are generated from the skills on disk — in this repo, every number that can be counted is.<br>Executors do one thing: play-store-ship builds, signs and uploads an AAB.<br>app-icon-generator writes every icon size from one image.<br>Orchestrators sequence executors without doing their work. prepare-app-release<br>drives identity, compliance, media, copy, the version bump, the build and the upload —<br>and hands the website leg off explicitly rather than doing it silently.<br>The division matters because the second kind is where a release goes wrong: not in any single step, but in the order, and in the step nobody remembered.<br>It writes files in the repo you point it at, reads credentials in place without ever copying or printing them, and uploads to the stores at the end of skills whose whole job that is. It never submits an app for review, never changes a price, and never pushes.<br>There is one directory it will delete from. TRUST.md is the full list, written to be read before you enable anything.<br>Nothing, to install. Individual skills need what they need — Xcode for Apple, a JDK for<br>Android, fastlane for either store — and each says so and stops rather than failing<br>halfway. COMPATIBILITY.md has the table.<br>You do not need a data repo, a website, or the companion guards project. All three are optional and the skills detect their absence rather than assuming it.<br>| QUICKSTART.md | install to first working skill |<br>| TRUST.md | what the skills do to your repos and stores |<br>| COMPATIBILITY.md | platforms, tools, credentials, versions |<br>| SKILLS.md | every skill and where it loads |<br>| APP-LIFECYCLE.md | the whole path from finished code to a live listing |<br>| HOW-IT-WORKS.md | loading, the plugin cache, and the three traps |<br>| CONTRIBUTING.md | adding a skill, and the rules that came from real failures |<br>| FAQ.md | the glossary, and the questions installing raised |<br>| CHANGELOG.md | what changed, and why a version matters |<br>| SECURITY.md | what is handled, and how to report something |<br>Once you are shipping more than one app, a second problem appears: an app&#x27;s code, its<br>listing text and its website are different repos, and a session stands in exactly one of<br>them. Work left in another is not missing — it is invisible, which is how &quot;done&quot; gets<br>said over a clean git status.<br>That is RepoGuards: one registry that decides which tracks load where, and guards that refuse a write into a repo the session is not standing in. It is a separate marketplace, it is optional, and nothing here requires it.<br>Licence: MIT, except two skills that came from elsewhere and keep their own — see THIRD_PARTY_NOTICES.md.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    AI Is &#x27;Amplifying the Destruction&#x27; of War
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    gumby
+  </div>
+
+  <div class="meta">
+    404media.co
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.404media.co/ai-is-already-amplifying-the-destruction-of-war/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50195962">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The UN met this week to discuss, among other things, the threat of autonomous weapons.<br>“The technology is developing at a pace that is very concerning,” Laurent Gisel, the head of the International Committee of the Red Cross’s (ICRC) legal warfare team, told 404 Media. Gisel was in NYC this week to address the UN about all the things that are driving conflict across the planet. His prepared remarks include a statement on the illegal arms trade, nuclear weapons, mines, and – of course – AI.<br>Autonomous weapons have been a hot topic at the UN this year. In September, the UN attempted to pass a treaty that would govern the use of killer AI weapons. Diplomats from Russia and the US stripped it of its power.<br>But the UN has pressed forward. On Tuesday, the international governing body announced a new initiative that would grapple with the issue. But, as Gisel said: “multilateral processes take quite some time” and “we already see the effects on the battlefield.”<br>AI is already picking targets and killing people. Gisel said the technology is “amplifying the destruction, amplifying the violation of the law, amplifying the humanitarian harm caused by conflicts.”<br>Israel used an AI powered by Microsoft to pick targets in Gaza. In Ukraine, AI-powered Russian drones are deciding which humans to kill. The United States military is pitching itself as an “AI-first” fighting force. Secretary of Defense Pete Hegseth recently announced Project Meridian, an initiative to guide the AI-powered autonomous weapons of the future. Three of Meridian&#x27;s leads are Elon Musk, defense contractor Palmer Luckey, and Newt Gingrich.<br>For Gisel, one of the biggest dangers of AI is how fast it is. A core selling point for the tech is that it can help commanders make decisions faster. But that also accelerates the pace of mistakes. “Targets are created at higher speed and higher frequency, and are actually then prosecuted quicker, and with that give us great concerns in terms of the level of human control that is retained,” he said. “The human is supposed to remain in the loop.”<br>The human does not always remain in the loop. The Israel Defense Forces told journalists it did not thoroughly vet the kill lists generated by Lavender, the AI system it used to pick targets in Gaza. “It&#x27;s known in the [civilian world] [...] that humans tend to trust the systems,” Gisel said. “That it&#x27;s more the case when the humans are tired, when the humans are under stress, when the humans have to deliver quickly, and that&#x27;s of course exactly the situation in which soldiers are in. So all of that gives us a lot of concerns in terms of retaining control on the use of force in armed conflict.”<br>AI boosters often pitch AI as an “easy button,” a way for people to brute force a complicated task and get it over with. But the consequences are much different when someone in Silicon Valley is parsing spreadsheets or reverse engineering code than when they’re prosecuting a war in the Middle East.<br>“That&#x27;s something that the developers of those systems don&#x27;t necessarily realize either, because some of those systems are developed by technological companies very far away from the battlefield, and they are not naturally all developed for battlefield use,” Gisel said.<br>International humanitarian law is an ever-evolving legal negotiation between world powers meant to limit the devastating effects of war. It’s imperfect and countries with vast armies like the US and Russia often do not abide by it. The ICRC, which Gisel represents, exists explicitly to shape these rules and laws. Some of the laws are old, far older than AI, but according to Gisel humanitarian law applies to “all weapons, means, and methods of warfare. Those of yesterday, those of today, and those of tomorrow.”<br>Beyond the opportunity to code humanitarian law into AI, Gisel said there should be new rules and regulations for the new technology. “Not to prohibit them all, but to prohibit specific categories of autonomous weapon systems and put specific restrictions on others,” he said.<br>&quot;...Once the genie is out of the bottle, it&#x27;s very, very much difficult to put it back in the bottle&quot;<br>But he does have redlines. The first is any AI support system that removes a human being from the kill chain. “That requires specific limits and guardrails and restrictions from our perspective,” he said.<br>“The other type of autonomous weapon system that we recommend prohibiting is those that would target human beings directly, where the target profile is the human being, as opposed to a tank, weapon systems, or another typical military objective, and the reason why is based on ethical concerns, humanitarian concerns, and a moral line,” he added.<br>Autonomous weapons have existed for a long time. Some US warships have gatling guns that track and destroy incoming targets automatically. The difference is that those weapons track ships and missiles, not human beings.<br>According to Gisel, one problem with autonomous weapons that target humans or AI support systems that pick targets is that they’re unpredictable. He said banning unpredictable weapons should be a non-brainer. “Military discipline is about your forces [...] delivering the commander&#x27;s intent,” he said. “If you have a weapon that is unpredictable in its effect, how can you deliver the commander&#x27;s intent?”<br>But it’s been a sticking point in negotiations. “We would have thought, military considerations, would align. But actually, that has also faced quite some pushback. Strangely enough,” he said. He spoke about the negotiations in August and September from earlier in the year. “There were references in the last proposal by the chair of the group on precisely all those questions: that the autonomous weapon systems need to be reliable, explainable, understandable, and predictable. And all of that was taken out by some states.”<br>Gisel also opposes AI in nuclear command and control. In 1983, the Soviet Union’s early warning systems reported that the US had launched a nuclear weapon at the country. Soviet lieutenant colonel Stanislav Petrov decided the computer had made a mistake and decided not to report the attacks up the chain. He was right.<br>“States will continue to use satellite systems and therefore algorithms that go with those satellites,” he said. “But it&#x27;s so important to ensure that it remains entirely under human control and a really meaningful human control.”<br>While the UN deliberates and the ICRC wrangles with how to regulate all this, the wars continue and military forces continue to embrace AI. “That&#x27;s why it&#x27;s urgent to have decisions being made by the international community on what to prohibit and what to restrict [...] once the genie is out of the bottle, it&#x27;s very, very much difficult to put it back in the bottle,” he said.<br>Lisel said the world needs to act now. “Otherwise, it&#x27;s the technology that will decide what is acceptable, and that&#x27;s not the world we want to live in, right?”</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: Omnara – Open-source alternative to Claude Managed Agents
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    95 points ·
+    27 comments ·
+    kmansm27
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #37
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/omnara-ai/omnara">Original article</a> · <a href="https://news.ycombinator.com/item?id=50183892">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A self-hostable alternative to Claude Managed Agents and OpenAI&#x27;s Agents API.<br>Website · Quickstart · Docs · API · Changelog · Discord<br>Omnara is an open-source managed agent platform. Use the API to run AI agents on any model and any machine, with tools, secrets, permissions, and streaming built in. Self-host it for free under Apache 2.0, or use Omnara Cloud.<br>Sign in at app.omnara.com. Your first project comes<br>with a model provider (omnara-openrouter) and a pool of managed sandboxes<br>(default-pool), so this config runs as is. Save it as agent.yaml:<br>version: v1<br>instruction: |<br>You are an engineering assistant. Use your machine to run commands.<br>model:<br>provider_config: omnara-openrouter<br>name: anthropic/claude-fable-5.1<br>machine_sources:<br>- machine_pool_name: default-pool<br>Launch it with the CLI (Node.js 22 or newer). If you&#x27;re not logged in, the first command opens your browser to sign in.<br>npx omnara agents launch --file agent.yaml \<br>--name &quot;Machine assistant&quot; \<br>--message &quot;Report this machine&#x27;s operating system and free disk space.&quot;<br>Chat with the agent in your terminal with npx omnara agents chat &lt;agent-id&gt;,<br>or open it in the dashboard to watch its tool calls and reply.<br>Launch it from your code with the TypeScript SDK<br>Create an API key in the dashboard and export it as OMNARA_TOKEN, install the<br>SDK with npm install @omnara/sdk, and use the org and project IDs that<br>npx omnara config prints:<br>import { readFile } from &#x27;node:fs/promises&#x27;<br>import { bearerToken, createOmnaraClient, openAgentEventStream, sdk } from &#x27;@omnara/sdk&#x27;<br>const client = createOmnaraClient({ auth: bearerToken(process.env.OMNARA_TOKEN!) })<br>const path = { orgID: &#x27;org_...&#x27;, projectID: &#x27;proj_...&#x27; }<br>const config = await sdk.createAgentConfig({<br>client,<br>path,<br>body: { source: await readFile(&#x27;agent.yaml&#x27;, &#x27;utf8&#x27;), source_format: &#x27;yaml&#x27; },<br>})<br>const launched = await sdk.createAgent({<br>client,<br>path,<br>body: { config: config.data.id, message: &quot;Report this machine&#x27;s free disk space.&quot; },<br>})<br>const agentID = launched.data.agent.id<br>for await (const event of openAgentEventStream({ client, path: { ...path, agentID } })) {<br>console.log(event)<br>}<br>The quickstart shows the same flow with the REST API.<br>To have your coding agent do the setup, give it this prompt:<br>Help me set up Omnara by following https://www.omnara.com/SKILL.md<br>Requires Docker with Compose.<br>git clone https://github.com/omnara-ai/omnara.git<br>cd omnara<br>docker compose -f compose.yaml --profile app up -d<br>Open http://localhost:8000 and sign up. Local<br>development prints the verification link in docker compose logs api, so no<br>email provider is needed. To build from source instead of using published<br>images, run docker compose --profile app up -d --build.<br>A new instance has no models or machines yet. In the console, add a model provider and a model, connect this computer under Machines, and share both with your project. Sandboxes also work once your instance has a public URL.<br>Point the CLI at your instance and log in:<br>npx omnara config --api-url http://localhost:8000/api/v1 --issuer-url http://localhost:8000<br>npx omnara login<br>In agent.yaml, use your provider and model names, and replace the<br>machine_pool_name entry with machine_name: &lt;your machine&gt;. Then launch it<br>with the same command as above.<br>The local defaults are intentionally insecure. For a real deployment, follow the self-hosting guide and the configuration reference.<br>Your product talks to Omnara, and Omnara runs each agent with the model, tools, and machines in its config.<br>flowchart TB<br>subgraph yours[&quot;Your side&quot;]<br>users([&quot;Your users&quot;]) --&gt; app[&quot;Your app&lt;br/&gt;REST API · TypeScript SDK&quot;]<br>team[&quot;Your team&lt;br/&gt;CLI · dashboard&lt;br/&gt;Slack · Discord · GitHub&quot;]<br>end<br>subgraph omnara[&quot;Omnara&quot;]<br>api[&quot;API&lt;br/&gt;launch · input&lt;br/&gt;event stream · approvals&quot;] &lt;--&gt; pg[(&quot;Postgres&lt;br/&gt;each agent&#x27;s event log&quot;)] &lt;--&gt; worker[&quot;Workers&lt;br/&gt;run the agent loop&quot;]<br>end<br>subgraph plug[&quot; &quot;]<br>models[&quot;Models&lt;br/&gt;OpenAI · Anthropic&lt;br/&gt;OpenRouter · self-hosted&quot;]<br>tools[&quot;Tools&lt;br/&gt;built-in · skills&lt;br/&gt;MCP · custom&quot;]<br>machines[&quot;Machines&lt;br/&gt;sandboxes or your own&lt;br/&gt;laptop, VM, container&quot;]<br>end<br>app --&gt; api<br>team --&gt; api<br>worker --&gt; models<br>worker --&gt; tools<br>worker --&gt; machines<br>classDef side fill:none,stroke:#8b949e,stroke-width:1px<br>classDef core fill:#506FCF,stroke:#3D5BB5,stroke-width:1px,color:#ffffff<br>classDef store fill:#3D5BB5,stroke:#2E4794,stroke-width:1px,color:#ffffff<br>classDef plugin fill:none,stroke:#85A0E6,stroke-width:1.5px<br>class users,app,team side<br>class api,worker core<br>class pg store<br>class models,tools,machines plugin<br>style yours fill:none,stroke:#8b949e,stroke-dasharray:4 3<br>style omnara fill:#506FCF14,stroke:#506FCF,stroke-width:1.5px<br>style plug fill:none,stroke:#85A0E6,stroke-dasharray:4 3<br>linkStyle default stroke:#8b949e,stroke-width:1.5px<br>- API. Your app, the CLI, and the dashboard all use the same REST API to launch agents, send messages, and answer approvals. Events stream back as they happen.<br>- Postgres. Every step of every agent is saved here. That record is the agent&#x27;s state, so any worker can pick an agent back up after a crash or restart.<br>- Workers. Stateless processes that build the model context, call the model, and run tools. An agent only uses a worker while it&#x27;s taking a turn, so one worker can serve many agents. Add workers to handle more turns at once.<br>- Machines. Each machine runs the omnarad daemon, which connects out to<br>Omnara, so agents can run commands there without any inbound ports.<br>Omnara also uses Redis, blob storage for attachments and tool outputs, and a memory filesystem. The architecture docs cover the details.<br>- Any model. Bring your own keys for OpenAI, Anthropic, OpenRouter, Amazon Bedrock, LiteLLM, Ollama, or any compatible endpoint, including models you host yourself.<br>- Tools. Built-in tools for shell commands, files, web search and fetch, and asking a person a question, plus MCP servers and custom tools that run in your own systems.<br>- Skills. Package instructions and files once, attach them to any agent, and the agent loads them when it needs them.<br>- Memory. Memory stores give agents files that persist between conversations and can be shared with other agents, with read or read-write access per agent.<br>- Subagents. An agent can start subagents with a fresh context, check their progress, and send them new instructions. Each subagent is a full agent you can inspect.<br>- Machines. Machines are tools the agent uses. Install the Omnara daemon on any macOS or Linux laptop, VM, or container and your agents can run commands and edit files there, with no inbound ports or SSH keys. Or use sandboxes from eleven providers (Arker, Blaxel, boxd, CreateOS, Daytona, E2B, Freestyle, Modal, Superserve, Tenki, Unikraft). An agent can use several machines at once (for example, a set of GPU servers) and move between them. If your laptop goes offline, the agent can continue in a sandbox and sync its work back with git.<br>- Durable state. Every step is saved, so agents pick up where they left off after crashes, restarts, and machine disconnects.<br>- Schedules. Cron triggers with time zones can message an existing agent, launch a new one from a profile, or start a new Slack or Discord thread.<br>- Slack, Discord, and GitHub. Mention the bot in Slack or Discord to start an agent in a thread, where it replies, asks questions, and requests approvals. On GitHub, an agent can start when a pull request opens or someone mentions it, then read the diff, comment, and submit reviews. To connect another service, build a custom integration on the same public API.<br>- Streaming and webhooks. Stream every event as it happens or receive it as a webhook, and send new messages while the agent works.<br>- Permissions. Each tool can run immediately, ask a person first, or be blocked. The platform enforces the setting, and the agent waits until someone approves or denies the call.<br>- API, SDK, and CLI. A REST API<br>defined in api/openapi/openapi.yaml, a<br>TypeScript SDK (@omnara/sdk),<br>a CLI (omnara), and an MCP server.<br>- Role-based access control and secrets. Organization and project roles for users and API keys. Credentials for models, machines, and MCP servers are stored once and shared with each project explicitly.<br>- Multi-tenant. One deployment serves many organizations, each with its own members, projects, secrets, model providers, and machines. Self-hosted operators can give every new organization default models and sandboxes, as Omnara Cloud does.<br>- Your data. Self-hosted deployments keep every agent&#x27;s history in your own Postgres, where you can query it for analytics, evals, and training datasets.<br>Claude Managed Agents and OpenAI&#x27;s Agents API are hosted services for running agents on one company&#x27;s models. Omnara does the same job as an open-source platform you can run anywhere, with any model.<br>|  | Omnara | Claude Managed Agents | OpenAI&#x27;s Agents API |<br>|---|---|---|---|<br>| Source | Open source (Apache 2.0) | Closed | Open-source harness (Codex). The hosted service is OpenAI&#x27;s. |<br>| Models | Any compatible model | Claude | OpenAI |<br>| Agent loop | Omnara&#x27;s, works with any model | Anthropic&#x27;s, built for Claude | Codex, run and updated by OpenAI |<br>| Where the platform runs | Omnara Cloud, or your own infrastructure | Anthropic&#x27;s cloud | OpenAI&#x27;s cloud |<br>| Where agents run | Sandboxes from many providers, or your own machines | Anthropic sandboxes, or your own sandboxes | OpenAI sandboxes, partner sandboxes, or your own machines |<br>| Operations | Managed on Omnara Cloud. You operate it when self-hosting. | Managed by Anthropic. You run the sandbox side if you self-host sandboxes. | Managed by OpenAI. You run the environment if you bring your own. |<br>| Agent history | Stored by Omnara on Omnara Cloud and queryable through the API. In your own Postgres when self-hosted. | Stored by Anthropic, readable and deletable through the API. Not currently eligible for Zero Data Retention or HIPAA BAA coverage. | Stored by OpenAI. No Zero Data Retention support. US data residency only. |<br>| Pricing | Free to self-host. On Omnara Cloud, free with your own keys and machines, or pay as you go for our models and sandboxes. | Claude token rates plus $0.08 per active session-hour | OpenAI model rates, plus standard rates for OpenAI tools and hosted sandboxes |<br>Choose Claude Managed Agents or the Agents API if you use one company&#x27;s models and want that company to run everything for you. Choose Omnara if you want to pick your models and machines, run the platform yourself, or keep agent data in your own database.<br>| If you use | It&#x27;s good for | Omnara adds |<br>|---|---|---|<br>| Workflow builders, such as n8n or Zapier | Predictable, step-by-step automations | Open-ended agents that run code on machines and keep state for days |<br>| Agent frameworks, such as Mastra, LangChain, or the OpenAI Agents SDK | Agent logic in your app&#x27;s code | Hosting, state, machines, permissions, and integrations, with agents created and changed through an API instead of a redeploy |<br>| Agent harnesses, such as Claude Code, the Claude Agent SDK, Codex, OpenCode, or Pi | One agent loop in a terminal or on one machine | Cloud agents that run as a service, across machines and users, started from your app, Slack, GitHub, or a schedule |<br>| Managed agent platforms, such as Claude Managed Agents or the Agents API | Hosted agents on one company&#x27;s models | The same model of hosted agents, open source, on any model, and self-hostable |<br>Each of these is an agent.yaml plus a SKILL.md in examples/,<br>and you can deploy any of them with one prompt to your coding agent.<br>- Slack coding agent fixes issues you mention in Slack, Discord, or a GitHub pull request and opens a PR.<br>- PR review agent reviews your GitHub pull requests against a checkout of the repository and leaves inline findings.<br>- SRE agent investigates production problems such as a 5xx spike.<br>- Browser agent works in a real browser on long-running tasks.<br>- PostHog analytics agent compares yesterday&#x27;s product usage with the 7-day average and reports what changed.<br>- Reddit, X, and LinkedIn signal agents summarize the last 24 hours of posts about a topic you pick.<br>- Video generation agent makes short videos from a brief.<br>There are also code samples for a CLI chat app built on the TypeScript SDK, custom tools over webhooks, and a SharePoint filesystem mount.<br>MCP server. Connect Claude Code, Codex, Cursor, or any MCP client that<br>supports OAuth to https://app.omnara.com/mcp to launch and manage Omnara<br>agents. You sign in through the browser, so there are no tokens to paste. In<br>Claude, add it from the<br>connectors directory. Omnara is<br>also listed in the official MCP Registry as com.omnara/omnara.<br>claude mcp add --transport http omnara https://app.omnara.com/mcp<br>codex mcp add omnara --url https://app.omnara.com/mcp<br>Then sign in with /mcp in Claude Code or codex mcp login omnara in Codex.<br>See Connecting MCP clients.<br>CLI. omnara manages agents,<br>profiles, machines, model providers, secrets, skills, and cron triggers from<br>your terminal or your coding agent&#x27;s shell. Run npx omnara --help to start.<br>Setup skill. skills/setup-omnara-agent,<br>also served at omnara.com/SKILL.md, walks a<br>coding agent through setting up Omnara for your project.<br>Docs for LLMs. docs.omnara.com/llms.txt.<br>What is Omnara? An open-source managed agent platform for running AI agents on any model and any machine.<br>How much does it cost? Nothing to self-host. Omnara Cloud has no platform fee. You can bring your own model keys and machines for free, or pay as you go for our models at provider token rates and our sandboxes by active time and retained storage. See pricing.<br>Can I self-host it? Yes. Run it with Docker Compose locally, then follow the self-hosting guide for production. The API, CLI, SDK, and config format are the same on Omnara Cloud and self-hosted deployments.<br>Which models work? Any model behind an OpenAI Responses, OpenAI Chat Completions, or Anthropic Messages compatible endpoint, including OpenAI, Anthropic, OpenRouter, Amazon Bedrock, LiteLLM, and Ollama.<br>Source development requires the Go version declared in go.mod,<br>Node.js 24 or newer with Corepack, ripgrep, and Docker with Compose. Run the<br>fast repository gate with make verify. See CONTRIBUTING.md<br>for the full test suite, generated-code workflows, and pull request<br>expectations.<br>Discord · GitHub Issues · X · Security</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    eMudhra intermediate CA compromise
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1250 points ·
+    490 comments ·
+    galadran
+  </div>
+
+  <div class="meta">
+    emudhra.we-have-a-problem.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://emudhra.we-have-a-problem.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50166579">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">20th October 2026<br>The private keys of eight eMudhra intermediate CA certificates have been compromised. They chain to roots trusted by the Mozilla, Microsoft, Apple and Chrome root programs and by many downstream trust stores.<br>To demonstrate that the keys are compromised, the original reporter Wayne signed the following message with the private key of each of the eight intermediate CAs and reported it to the Root Program Teams on the 17th of October:<br>We have a problem here - Wayne<br>proof.zip contains the message, and for each intermediate the certificate, its public key and a signature on the message. To verify with OpenSSL:<br>openssl x509 -in EM-DV-TLS-CA-G3B.crt.pem -noout -pubkey | diff - EM-DV-TLS-CA-G3B.pub.pem<br>openssl dgst -sha384 -verify EM-DV-TLS-CA-G3B.pub.pem -signature EM-DV-TLS-CA-G3B.sig message.txt<br>The root programs and many downstream trust stores have taken action to protect their users. The certificates have been blocked in Firefox and Chrome since the 17th of October, in Apple devices since the 19th and on Microsoft platforms since the 20th.<br>The issue was responsibly disclosed to downstream trust stores on the 19th of October. Many have already released updates or are in the process of releasing updates.<br>An attacker with the private key of any of the compromised intermediate CAs could impersonate any website or service.<br>This has already been remediated by Mozilla, Microsoft, Apple, and Chrome for their users through their tools for distributing revocation information such as OneCRL, CRLite and CRLSets.<br>The CA has also revoked the compromised intermediate certificates. However, many other clients do not consume revocation information and require software updates to ensure they no longer trust the compromised intermediates.<br>| Intermediate CA | Chains to | Result |<br>|---|---|---|<br>To check curl or other command-line clients, run:<br>curl https://dv-g3b-emudhra.we-have-a-problem.com/<br>curl https://dv-g3b-aaa-emudhra.we-have-a-problem.com/<br>A certificate error means the client does not trust the compromised intermediates.<br>To check a trust store offline, chains.zip contains the certificate chain served by each of the twelve hosts above in PEM format, with instructions for verifying them with OpenSSL.<br>The private keys for the intermediate certificates were incorrectly generated by the CA. This means that anyone can recover them from the certificates.<br>This would have been possible since the certificates were created in April 2025. There are no entries in the certificate transparency logs for these intermediates in that period, indicating that CT-enforcing clients like Firefox, Chrome, Edge and Safari could not have been attacked.<br>However, many clients outside of the browser ecosystem do not enforce Certificate Transparency. We do not know if attackers exploited the flawed key generation to target these clients.<br>Further technical information about the cause is captured in the initial incident report in Mozilla&#x27;s bug tracker.<br>The servers behind the checker record how many times each user-agent connects successfully, meaning it still trusts the compromised intermediates. Only these counts are recorded. See the user-agent statistics.<br>A JSON dump with more detail, including counts for each JA4 fingerprint, is also available.<br>impacted-intermediates.json lists the eight intermediates and their Sectigo cross-signs. roots.json lists the roots they chain to.<br>Please see this thread in Mozilla&#x27;s dev-security-policy forum.<br>Users should update their browsers and operating systems to the latest versions as soon as possible.<br>| Software | Patched version |<br>|---|---|<br>| Ubuntu ca-certificates | 20260816ubuntu0.22.04.1, 20260816ubuntu0.24.04.1, 20260816ubuntu0.26.04.1, 20260816ubuntu0.26.10.1 |<br>| Debian ca-certificates | 20250419~deb12u2, 20250419+deb13u1, 20260816+nmu1 |<br>| Devuan ca-certificates | Same as Debian |<br>| Arch Linux ca-certificates-mozilla | 3.131.1-1 |<br>| Gentoo ca-certificates | 20260816.3.125 |<br>| Fedora ca-certificates | 2026.2.92_v9.0.319 |<br>| FreeBSD caroot | 15.1-RELEASE-p6, 14.5-RELEASE-p3, 14.4-RELEASE-p12 |<br>| FreeBSD ca_root_nss | 1.131.1 |<br>| Freedesktop SDK | 25.08.19, 26.08.3 |<br>| Chainguard ca-certificates | 20260909-r3 |<br>| Alpine Linux ca-certificates | 20261020-r0 |<br>| GNU Guix | 7608a99 |<br>| OmniOS web/ca-bundle | r151054by, r151056ay, r151058y |<br>| Bottlerocket | pending |<br>| NSS | 3.131.1 |<br>| curl CA bundle | 2026-10-20 |<br>| Cloudflare CFSSL trust store | 2026.10.1 |<br>| Homebrew ca-certificates | 2026-09-25_1 |<br>| Go | 1.27.3, 1.26.10 |<br>| Java | 27.0.1.0.2, 25.0.5.0.2, 21.0.13.0.2, 17.0.21.0.2, 11.0.33.0.2, 8u511 (OpenJDK, Oracle JDK) |<br>| Node.js | 22.23.4, 24.22.1, 26.12.1 |<br>| Python certifi | 2026.10.19 |<br>| pip | 26.2.2 |<br>| uv | 0.13.4 |<br>| pixi | 0.82.1 |<br>| Rust rustls-webpki | 0.103.16 |<br>| Rust webpki-roots / webpki-root-certs | 1.0.10 |<br>| Rustup | 1.29.2 |<br>| Electron | 44.9.1, 43.8.1, 42.11.16 |<br>| Bun | pending |<br>| Claude Code | 2.1.303 |<br>| Composer ca-bundle | 1.4.16, 1.6.0 |<br>| Elixir castore | 1.0.22 |<br>| Erlang certifi | pending |<br>| mise | 2026.10.17 |<br>| Perl Mozilla::CA | 20261020 |<br>| Deno | 2.9.8 |<br>| Docker Desktop | 4.96.2 |<br>Add more at github.com/galadran/we-have-a-problem.com.<br>macOS blocks the compromised intermediates, but the built-in curl, git, python3, perl, ruby, and openssl verify certificates against /etc/ssl/cert.pem without checking revocation, and that file has not been updated. To remove the affected roots from it, run:<br>sudo cp -p /etc/ssl/cert.pem /etc/ssl/cert.pem.bak &amp;&amp;<br>sudo awk &#x27;/^(###|===) /{skip=0}<br>/^=== .*\/CN=(AAA Certificate Services|emSign ECC Root CA - G3)$/{skip=1}<br>!skip&#x27; /etc/ssl/cert.pem.bak | sudo tee /etc/ssl/cert.pem &gt; /dev/null<br>The built-in pip3, and the pip in virtual environments created from the built-in python3, use their own outdated copy of the roots instead. To make them use the fixed system file, run:<br>F=&quot;$(/usr/bin/python3 -c &#x27;import sysconfig; print(sysconfig.get_path(&quot;stdlib&quot;))&#x27;)/sitecustomize.py&quot; &amp;&amp;<br>echo &#x27;import os; os.environ.setdefault(&quot;PIP_CERT&quot;, &quot;/etc/ssl/cert.pem&quot;)&#x27; | sudo tee -a &quot;$F&quot; &gt; /dev/null &amp;&amp;<br>sudo chmod 644 &quot;$F&quot;<br>For nix-darwin users, please **additionally** follow NixOS instructions.<br>Until a distribution ships an updated ca-certificates package, expert users can distrust the affected roots in the system trust store. This is NOT recommended for ordinary users.<br>On Debian and Ubuntu, run as root:<br>sed -i \<br>-e &#x27;s|^mozilla/emSign_ECC_Root_CA_-_G3.crt|!&amp;|&#x27; \<br>-e &#x27;s|^mozilla/Comodo_AAA_Services_root.crt|!&amp;|&#x27; \<br>/etc/ca-certificates.conf &amp;&amp; update-ca-certificates<br>On Alpine, run as root:<br>apk add ca-certificates &amp;&amp;<br>sed -i -e &#x27;s|^mozilla/emSign_ECC_Root_CA_-_G3.crt|!&amp;|&#x27; \<br>/etc/ca-certificates.conf &amp;&amp; update-ca-certificates<br>On Fedora, RHEL, CentOS Stream, Rocky Linux, AlmaLinux and Amazon Linux 2023, run as root:<br>d=/etc/pki/ca-trust/source/blocklist; [ -d $d ] || d=/etc/pki/ca-trust/source/blacklist<br>trust extract --overwrite --format=pem-bundle \<br>--filter=&#x27;pkcs11:object=Comodo%20AAA%20Services%20root;type=cert&#x27; \<br>$d/Comodo_AAA_Services_root.pem &amp;&amp;<br>trust extract --overwrite --format=pem-bundle \<br>--filter=&#x27;pkcs11:object=emSign%20ECC%20Root%20CA%20-%20G3;type=cert&#x27; \<br>$d/emSign_ECC_Root_CA_-_G3.pem &amp;&amp;<br>update-ca-trust<br>On openSUSE and SLES, run as root:<br>d=/etc/pki/trust/blocklist; [ -d $d ] || d=/etc/pki/trust/blacklist<br>trust extract --format=pem-bundle \<br>--filter=&#x27;pkcs11:object=Comodo%20AAA%20Services%20root;type=cert&#x27; \<br>$d/Comodo_AAA_Services_root.pem &amp;&amp;<br>trust extract --format=pem-bundle \<br>--filter=&#x27;pkcs11:object=emSign%20ECC%20Root%20CA%20-%20G3;type=cert&#x27; \<br>$d/emSign_ECC_Root_CA_-_G3.pem &amp;&amp;<br>update-ca-certificates<br>On Arch Linux, run as root:<br>trust extract --format=pem-bundle \<br>--filter=&#x27;pkcs11:object=emSign%20ECC%20Root%20CA%20-%20G3;type=cert&#x27; \<br>/etc/ca-certificates/trust-source/blocklist/emSign_ECC_Root_CA_-_G3.pem &amp;&amp;<br>update-ca-trust<br>On NixOS, add to your configuration:<br>security.pki.caCertificateBlacklist = [<br>&quot;Comodo AAA Services root&quot;<br>&quot;emSign ECC Root CA - G3&quot;<br>];<br>Microsoft has shipped blocks for these certificates through Windows&#x27; automatic certificate trust list updates. Machines that receive these updates don&#x27;t need this workaround. This script lets administrators block the compromised certificates locally on machines that do not, for example those that are offline or have automatic updates disabled.<br>This mitigation is not recommended for enterprise-managed devices. Your IT department will manage the rollout; contact them before applying local changes.<br>Download and inspect Block-EmudhraCompromisedCA.ps1, then run it from an elevated PowerShell terminal. Requires PowerShell 5.1 or later and the built-in Windows PKI module. This command bypasses execution policy for this process only; it does not change the machine&#x27;s policy. Organization-enforced policies may still prevent execution.<br>powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Block-EmudhraCompromisedCA.ps1<br>The script imports its 16 compromised intermediates and cross-signs into LocalMachine\Disallowed (Untrusted Certificates).<br>This mitigation applies to clients using the Windows operating system certificate trust stores and chain validation (including Schannel TLS and Authenticode). It adds blocks to Untrusted Certificates without modifying Trusted Root Certification Authorities. Applications using independent CA bundles still need their own updates.<br>On NetBSD 10 and later, run as root:<br>certctl untrust /usr/share/certs/mozilla/all/emSign_ECC_Root_CA_-_G3.pem &amp;&amp;<br>certctl untrust /usr/share/certs/mozilla/all/Comodo_AAA_Services_root.pem<br>On FreeBSD 14 or later, run the following commands as root:<br>cp /etc/ssl/certs/14bc7599.0 /usr/share/certs/untrusted/14bc7599.pem<br>cp /etc/ssl/certs/ee64a828.0 /usr/share/certs/untrusted/ee64a828.pem<br>certctl rehash<br>Site published by Dennis Jackson. This site is the work of many contributors from the community. The source is on GitHub and PRs are welcome.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Crystal 1.22.0 Is Released
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    34 points ·
+    9 comments ·
+    ksec
+  </div>
+
+  <div class="meta">
+    crystal-lang.org
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://crystal-lang.org/2026/10/12/1.22.0-released/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50194938">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Crystal 1.22.0 is released!<br>Highlights<br>- Standard streams emulate SIGPIPE stdlib/runtime<br>- Revamped DWARF parsing for performance stdlib/runtime<br>- All targets support native event loop stdlib/runtime<br>- Support for LLVM 23 &amp; 24 stdlib/llvm<br>- aarch64-linux promoted to Tier 1<br>platform/linux<br>We are announcing a new Crystal release 1.22.0 with several new features and bug fixes.<br>Pre-built packages are available on GitHub Releases and our official distribution channels. See crystal-lang.org/install for installation instructions.<br>This release includes 251 changes since 1.21.1 by 33 contributors. We thank all the contributors for all the effort put into improving the language! ❤️<br>Below we list the most remarkable changes in the language, compiler, and stdlib. For more details, visit the full changelog.<br>Crystal processes exit immediately when writing to STDOUT or STDERR fails with EPIPE.<br>This closely resembles the default behaviour of the SIGPIPE signal.<br>Previously, the failing write would raise IO::Error, which typically prints<br>an error message and exits. This error message is now removed (#17335).<br>You can opt out of this behaviour with STDOUT.exit_on_broken_pipe = false.<br>Thanks, @straight-shoota<br>Constants can have type declarations (#16951). They work exactly as you would expect the combination of constants and type declarations to be.<br>module Foo<br>BAR : Int32 = 1<br>BAZ : String = &quot;&quot;<br>QUX : Int64 = 123 # autocasts 123 to Int64<br>end<br>Thanks, @stakach<br>The targets aarch64-linux-gnu and aarch64-linux-musl moved from Tier 2 to Tier 1.<br>The only missing piece was that we were lacking official builds, but we have that since 1.19.<br>Process.fork had been deprecated sine before 1.0 and now we finally removed it (#17367)<br>Thanks, @straight-shoota<br>- New macros enable more text operations at compile time: StringLiteral#bytesize (#17176), NumberLiteral#chr (#17169) and RangeLiteral#each supports CharLiteral (#17170)<br>Thanks, @straight-shoota<br>New constants Crystal::ALL_FLAGS and Crystal::USER_FLAGS provide access to the compile time flags (#17392).<br>Thanks, @straight-shoota<br>We completely revamped DWARF parsing to enhance performance and reduce memory usage. The DWARF parser now scans sections on demand (#17283) and builds an efficient index table once (#17410, #17455), which results in blazingly fast look ups. Decoded backtrace lines are cached in an LRU cache (#17285).<br>Also added aupport for DWARF 5 features DW_FORM_addrx&lt;n&gt; and DW_FORM_strx&lt;n&gt; (#17445).<br>Thanks, @ysbaddaden<br>We merged numerous improvements and bug fixes for HTTP.<br>- #remote_address and #local_address moved from HTTP::Request to HTTP::Context (#17196)<br>- Add HTTP::Headers#merge (#17326)<br>- Serialize IO::Memory in HTTP body with Content-Length header (#17388)<br>Bug fixes:<br>- Reject unrecognized HTTP Transfer-Encoding header (#17140), invalid Content-Encoding (#17262), and invalid HTTP trailer (#17337)<br>- [breaking] Fix the return values of HTTP::Request#body= and #content_length= (#17257, #17273)<br>- Fix HTTP.parse_headers_and_body to not raise with without_zlib (#17272)<br>- Validate properties of HTTP::WebSocketHandler (#17235), HTTP::Request (#17255,#17304, #17374, #17310, #17312, #17258), HTTP::Headers name (#17317)<br>- Close HTTP::Client on IO::Error during request (#17318)<br>- Fix Content-Encoding: deflate (#17261)<br>- Fix HTTP::Request.from_io parsing empty header name (#17254)<br>- Fix HTTP::Request#form_params? to ignore invalid content-type (#17256)<br>Thanks @straight-shoota, @hahwul, @jgaskins, @Sija<br>All targets support a native event loop based directly on the system selector and use it by default.<br>We enabled epoll on Solaris (#17370) and kqueue on all remaining BSD targets (#17421, #17420).<br>libevent is still available as a fallback, but now it’s strictly opt-in and becoming technically obsolete. We expect to deprecate in a following release.<br>Thanks, @ysbaddaden<br>We finally enabled support for Kernel TLS in the OpenSSL bindings by default (#17059)<br>Thanks, @ysbaddaden<br>- File.exists? (#17307), as well as File::Info.readable?, .writable?, .executable? now receive a follow_symlinks: false argument(#17391)<br>- Add Char::Reader.new(Bytes) (#17428)<br>- Add Time::Span#to_nanoseconds etc. (#17190)<br>- Add GC.syscall(&amp;) (#17150)<br>- Fixed backtraces when linking with -static-pie on musl-libc (#17316)<br>Thanks, @straight-shoota, @ysbaddaden<br>- Uppercase instance and class variables (#17160)<br>- HTTP::Request#local_address and #remote_address (#17260)<br>- LLVM::Type#size and #alignment (#17494)<br>Thanks, @straight-shoota, @hertzdevil<br>Updated distribution-scripts (#17178) brings upgrades of package dependencies, docker base images etc.<br>Thanks, @straight-shoota<br>This is the first release featuring builds for aarch64-windows-msvc.<br>Thanks, @hertzdevil<br>Crystal established a forward compatibility policy in RFC 30: Building Crystal 1.22 requires a stage-0 compiler at 1.14 or higher.<br>We have been able to do all of this thanks to the continued support of 84codes and all other sponsors. To maintain and increase the development pace, donations, and sponsorships are essential. OpenCollective is available for that.<br>Reach out to crystal@manas.tech if you’d like to become a direct sponsor or find other ways to support Crystal. We thank you in advance!<br>Contribute</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Run iOS on Android Phones
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    4 points ·
+    0 comments ·
+    spicygum
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50193014">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://github.com/oosexgang/hackios-xnu-kernel<br>https://github.com/UniXNU/UniXNU</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    A software factory is just a durable workflow
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    nikhilunni
+  </div>
+
+  <div class="meta">
+    builders.cortex.io
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://builders.cortex.io/blog/software-factory-automations/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50195960">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In the first post in our software factory series we built up a framework for how to think about software factories and how organizations should responsibly adopt them.<br>TL;DR: The software factory is just your existing SDLC, with as many steps automated as responsibly possible.<br>Yeah, yeah — pretty diagram, what does that actually mean in practice?<br>Let’s dig into the technical details: how exactly Cortex’s open source factory, engrams, implements this idea.<br>The Tiniest Factory<br>First let’s focus on a subgraph of the above diagram: we start with a bug ticket in Jira and we want to ship a fix to production:<br>Let’s pretend we’ve never heard of AI — what would this look like for a human?<br>- A ticket comes in<br>- You write the code change and put up a pull request<br>- You ask people for reviews<br>- You shepherd the PR: answer comments, fix CI, rebase, ask again<br>- Once it has merged you deploy it to production<br>- You close the ticket<br>Abstract away the details, and this is just a workflow! A well-defined sequence of steps with an indeterminate time inbetween, moved along through a series of handoffs and triggers.<br>This idea is not a new one; businesses have been systematizing processes going back to Henry Ford’s Model T assembly line. This idea evolved into the discipline of Business Process Management (BPM) by the early aughts, and some of the earliest workflow execution engines were built with this use case in mind.<br>The difference now is that we have AI to participate in or fully take over each of those steps.<br>Durable Workflows as the Primitive<br>Going back to our tiniest factory: look where the time goes! A human or agent works on the code and puts up a pull request… then what?<br>Wait hours for a review, or bother reviewers for reviews after a socially acceptable amount of time. Change requests are raised on the PR, and then we work on it… then more reviews. Even when the code makes it to production, if there’s a process for rolling it out via feature flags, we must participate in that, and so on.<br>This shape of work breaks the usual ways of running code:<br>- A request handler can’t hold it. Nothing should keep a connection, a thread, or a VM open for a day to wait on a reviewer.<br>- A job queue doesn’t remember where it was. A retried job starts from the top, so it re-sends the prompt, re-posts the comment, re-opens the PR.<br>- Cron and a status column turn into a hand-built state machine. Every new step is another state, another transition, another edge case when two events race.<br>- Deploys to our BPM service land mid-flight. If a run lasts days, every deploy happens in the middle of hundreds of them.<br>- Outside world triggers can repeat themselves. Slack and GitHub retry webhooks until they get a 2xx, so every input can arrive more than once.<br>A durable workflow is exactly the primitive built to solve this issue. Where modern workflow engines differ from BPM execution engines is that you can model your processes as ordinary code: a function that calls steps in order. The runtime checkpoints each step’s result to a database as it completes. If the process crashes or a deploy restarts it, the workflow resumes from its last completed step, and finished steps return their recorded result instead of running again. Waiting is a first-class operation: a workflow can park until a message arrives, holding nothing open while it waits.<br>That gives a factory the two guarantees it needs: every run resumes where it was, and every side effect happens once.<br>Our First Proto-Factory<br>engrams is our software factory. It runs Claude Code, Codex, or your own harness in a Firecracker microVM in your own cloud; idle agents are snapshotted to blob storage and cost almost nothing, and credentials never enter the VM. We spent a lot of time nailing down security, reliability, and cost effectiveness of that platform primitive, so that we could build the actual software factory product around it, where agentic sessions are “just another step” in a workflow you design.<br>But we didn’t launch an open workflow platform on day one. A blank canvas of workflow blocks makes a poor first impression, so we started with two experiences people would use every day, built to be good on their own:<br>- PR review: Open a pull request and engrams reviews it. A finder agent reads the diff and proposes findings; a verifier agent checks each one and drops what it can’t confirm. The result is one GitHub review with inline comments. A new push supersedes the review in flight.<br>- Slack threads: Mention the bot in a channel and a cloud agent session opens as you, with your credentials. The agent’s session is relayed into the thread: replies join the same session, and the agent’s questions arrive as Slack forms.<br>Automations in engrams<br>Now the software factory is just piecing together some of those same building blocks, with a handful more, to automate just about anything within your SDLC.<br>Picking apart just the PR reviewer: there are a series of steps that it does that are broadly applicable to other automations we may want to do:<br>- GitHub webhook trigger<br>- Spawn a VM running Claude Code with a prompt (to review the PR and write findings to a file on disk)<br>- Download (the findings) file from the VM<br>- Spawn a fresh VM running Claude Code with a prompt (to independently verify those findings)<br>- Post a GitHub review<br>Beyond just those blocks, we introduced:<br>- Cron, manual, and webhook triggers<br>- Basic control flow primitives (filter, branch, loop) to compose steps into a workflow<br>- A QuickJS-in-WASM sandboxed JavaScript block, for more precise control flow<br>- A primitive to use Jev, a trendy, dirt cheap decision model that we use to power the smart profile picker when you mention the @engrams Slack bot.<br>DBOS: Our Workflow Engine of Choice<br>We chose DBOS as our durable workflow engine because it is a simple, lightweight, and reliable engine that is easy to run in your own cloud. It is very important to us that engrams have as simple of a deployment model as possible, and the appeal of “all you need is Postgres” without the operational burden that its open source competitors suffer from was very attractive.<br>Plus, we had recent organizational experience dabbling with DBOS for our newly launched OpEx Review product.<br>DBOS runs embedded in our TypeScript product plane (on Bun), its system tables live in a dbos schema next to our Drizzle tables, and the engine launches before the HTTP server starts serving:<br>DBOS.setConfig({<br>name: &quot;engrams-orchestrator&quot;,<br>systemDatabaseUrl: config.databaseUrl,<br>systemDatabaseSchemaName: &quot;dbos&quot;,<br>executorID: dbosExecutorId(), // the pod name<br>runAdminServer: false,<br>logger: dbosLogger,<br>});<br>await DBOS.launch();<br>How an Automation Becomes a DBOS Workflow<br>To make blocks composable, we replaced both hand-written workflows with a single registered workflow, AutomationRunWorkflow, that interprets a block graph stored as data. Every automation, built-in or custom, runs through it.<br>export async function automationRunWorkflowImpl(input, deps = {}) {<br>// Bump on ANY change to step naming, step order, recv semantics,<br>// or finalize position. Lives in the registered body so a bump<br>// rotates the DBOS application version.<br>const ENGINE_STEP_CONTRACT = 4;<br>const engine = deps.engine ?? productionEngineDeps(); // DBOS.runStep, DBOS.recv, ...<br>return interpretAutomation({ ...input, contract: ENGINE_STEP_CONTRACT }, engine);<br>}<br>export const automationRunWorkflow = DBOS.registerWorkflow(<br>automationRunWorkflowImpl, { name: &quot;AutomationRunWorkflow&quot; });<br>The body is intentionally small, because DBOS versions an application by the source of its registered workflow functions. The graph changes every time someone edits an automation, but the registered body almost never does. A few rules keep replay deterministic:<br>- Pin the definition. The first step loads the automation version pinned on the run and returns it as a checkpointed output. A replay walks the same graph even if an admin edits the automation mid-run.<br>- Name every step by its place in the graph. Steps are step:&lt;framePath&gt;:&lt;attempt&gt;, where the frame path encodes the block and loop iteration. Each loop pass and each retry gets its own checkpoint and its own row in our run history.<br>- Decide inside steps. Branch conditions, loop exits, and filters are evaluated inside a step, so a replay reads the checkpointed boolean instead of re-evaluating.<br>- Checkpoint the clock. Never, ever call non-deterministic functions like Date.now() in control flow.<br>- Retry in the engine. Attempt n runs as its own named step; errors carry a permanent flag, so a template error or a provider 4xx never retries.<br>A snapshot test asserts the exact ordered step names for linear, branch, loop, retry, deadline, stop, and supersede graphs. Any accidental change to the step sequence breaks CI, and an intentional one bumps ENGINE_STEP_CONTRACT.<br>Holding Nothing Open<br>Every automation run has exactly one mailbox, and the run id is the DBOS workflow id: autorun:&lt;automationId&gt;:&lt;deliveryKey&gt;. When a block needs to wait (for a session to go idle, for a Slack reply, for a signal from the agent), the interpreter parks in DBOS.recv. Nothing else is held: no socket, no lock — and notably — no VMs.<br>Compute nodes are the dominant cost for engrams deployments so we built our control plane so that it could efficiently tear down and rehydrate idle sessions.<br>This primitive fits very naturally with the DBOS model: a parked workflow is just a row in the system tables, just like a parked VM is just a row in Postgres, along with some files in blob storage, so that the next time a message arrives for that run, the engine wakes it up and resumes from its last completed step:<br>Anything that wants to wake a run sends to it:<br>- A session listener sends session_idle and session_ended when the agent finishes a turn or exits<br>- The agent itself sends signals through a tool<br>- The dispatcher sends new events for runs that join them, plus supersede<br>- Operators send stop<br>Idempotency, All the Way Down<br>Early on, we discovered that the hardest side effects to get a handle on were commands running inside an agent’s microVM: a git clone, a build, or a message to Claude Code. They take minutes, they aren’t idempotent, and the VM underneath them can be snapshotted, evicted, and restored on another host while they run.<br>A race condition we ran into: a PR review ran git clone inside a DBOS step. Mid-clone, a routine VM snapshot reset the guest’s connections! The command finished, but its result had nowhere to go.<br>The fix was to make VM operations behave like DBOS steps:<br>- Every exec gets a deterministic id, so a replayed step asks for the same exec.<br>- The guest journals each exec: output and exit status are written inside the VM, so a result survives a dropped connection, a snapshot, or a move to another host.<br>- Exec is attach-or-start. Calling it again with the same id attaches to the running or finished command instead of spawning a second one.<br>Now a DBOS step that runs a command can safely re-run as a whole after any restart: the replay attaches to the original exec and gets the original result.<br>We used this same pattern for every side effect — because we can lean on DBOS for at-least-once delivery, with idempotency for every operation, we can guarantee effectively-once delivery for every automation:<br>| Side effect | Deterministic ID | Deduped by |<br>|---|---|---|<br>| Run a command in the VM | A deterministic exec id | The VM’s exec journal: attach or start |<br>| Send a prompt to the agent | An id from the triggering event, such as slack:&lt;event_id&gt; | The harness in the VM, which remembers prompt ids across restarts and snapshots |<br>| Start a run from a webhook | autorun:&lt;automationId&gt;:&lt;provider&gt;:&lt;deliveryId&gt; as the workflow id | DBOS |<br>| A cron occurrence | The occurrence epoch in the run id | DBOS |<br>Results<br>engrams is a software factory that “just works” only because of the durable workflow model that DBOS gives us. A block graph someone drew in an editor gets the same guarantees as code we wrote ourselves: it survives restarts and deploys, it can wait days for a reply, and every side effect, down to a command inside a VM, happens once. And it runs in the Postgres every engrams install already has.<br>If you’re building agents that act over hours or days, try engrams, or start with DBOS in your own Postgres!</div>
+</div>
+
+</div>
+
+</body>
+</html>
