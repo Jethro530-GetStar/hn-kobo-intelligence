@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-24 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-24 AM · Generated 2026-10-24 07:54 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: corgi.computer, edjefferson.com, gst.artofliberty.org, impossiblemachines.xyz, kimi.ai, music.apple.com, news.ycombinator.com, quad9.net, write.as</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Ask HN: If the models are so good, why doesn&#x27;t OpenAI just start 100 companies?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    590 points ·
+    653 comments ·
+    ex-aws-dude
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #14 · Top #51
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50200997">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Title is a bit of an exaggeration but the question is more: if the frontier models are so good, why even sell them as your primary money maker?<br>Couldn&#x27;t OpenAI or Anthropic make a lot more money by just starting companies themselves that leverage the models and building their own products?<br>Is selling tokens really the best strategy?<br>Especially with commodification and prices declining wouldn&#x27;t that indicate there is more money to be made on the application-side of the models rather than the utility side</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Kimi K3.1 Pro and K3.1 Pro Highspeed
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    657 points ·
+    417 comments ·
+    Jowsey
+  </div>
+
+  <div class="meta">
+    kimi.ai
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #9
+  </div>
+
+  <div class="links">
+    <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Original article</a> · <a href="https://news.ycombinator.com/item?id=50212065">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Introducing Kimi K3.1 Pro<br>We&#x27;re introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window. It delivers substantial improvements across coding, 3D creation, financial research, and other agentic capabilities.<br>We are also releasing Kimi K3.1 Pro Highspeed, which delivers 2-3× the speed of K3.1 Pro for more responsive interactions.<br>Kimi K3.1 Pro and Kimi K3.1 Pro Highspeed are available today on Kimi.ai, Kimi Work, Kimi Code, and the Kimi API. The full model weights will be released by Nov 4.<br>Advancing the Frontier of Open Intelligence<br>Kimi K3.1 Pro is a post-trained version of Kimi K3, with substantially larger post-training compute. To enable large-scale joint RL across hundreds of downstream domains, we optimized every layer of the stack — the RL framework, long-context inference, training efficiency, sandbox infrastructure, rollout scheduling, and a shared platform for environment quality checks — so that each increment of RL compute delivers stable, predictable returns. As a result, K3.1 Pro achieves consistent gains in every domain.<br>Across coding, agentic, and knowledge benchmarks, K3.1 Pro matches or approaches the strongest proprietary models. On Terminal-Bench 4.0, which evaluates coding agents on realistic, resource-constrained terminal tasks using strict task-specific tests, K3.1 Pro scores 65.7%, ahead of GPT-6 Astra (58.2%) and narrowly behind Claude Opus 5.5 (66.4%). And on Kimi Code Bench 3.0 Long-horizon, our internal benchmark that tests coding agents&#x27; multi-step execution, tool use, and end-to-end problem solving across diverse engineering domains, K3.1 Pro scores 61.2%, above K3&#x27;s 55.95%.<br>Coding<br>K3.1 Pro covers the full range of coding work, from quick fixes in real codebases to full-project builds. It also brings a more considered visual style to games and web experiences, and knows how to build them with the right tools.<br>K3.1 Pro works effectively across game engines such as Unity, Unreal Engine, and Godot, combining them with web search and 3D generation to create complete experiences. Its front-end pages, interactive Three.js scenes, and 3D assets show stronger composition, typography, animation, and polish. The examples below were created end to end by K3.1 Pro:<br>K3.1 Pro&#x27;s long-horizon coding capabilities are also strengthened through large-scale reinforcement learning. In one internal test, it built a human walking dynamics simulator with integrated training and evaluation pipelines on top of human-atlas, an open-source anatomical model of the human body comprising 296 skeletal components, including cartilage, and 402 muscle components. Across 167 missions and 420 independent reviews, it analyzed experimental results, diagnosed problems, and iteratively refined the walking controller, enabling the simulated human to go from collapsing within seconds to walking continuously with alternating strides for 11.2 seconds. When reward shaping failed to improve arm motion, K3.1 Pro did not simply keep adjusting the reward: it ran open-loop probes of the simulator&#x27;s dynamics, identified and corrected 36 errors in shoulder-muscle moment-arm calculations, and then retrained the controller.<br>3D Modeling and Design<br>K3.1 Pro is strong at 3D creation and spatial reasoning. On BenchCAD, which tests 3D reconstruction from multi-view renderings through CAD code generation, K3.1 Pro scores 92.7% with tools, approaching the performance of Claude Opus 5.5 (96.2%) and GPT-6 Astra (95.9%). From a text brief, sketch, or reference image, it can infer shape, proportions, and spatial relationships to create usable 3D models. It also has a stronger grasp of existing asset libraries and model collections.<br>K3.1 Pro particularly excels at parametric modeling, from mechanical parts and architectural models to configurable products and custom furniture. Without MCP connectors, it can write and run scripts for tools like Blender and CAD software to build and refine assets, edit components, and adjust geometry, materials, and scene layout.<br>Below are examples of 3D assets K3.1 Pro created for brand films, games, and interactive web experiences:<br>3D Make is now live on kimi.ai and the Kimi app — preview and edit your 3D models online, download them ready for 3D printing, or export them as videos or Live Photos to share anywhere.<br>Finance<br>With stronger reasoning and agentic capability, K3.1 Pro is capable of end-to-end delivery of complete financial workflows. K3.1 Pro achieves state-of-the-art results on OfficeQA Pro v2 (64.4), which tests complex fiscal data analysis over real financial documents through retrieval, cross-document verification, and multi-step numerical reasoning. K3.1 Pro also improves over K3 on Frontier Finance, which measures support for complete investment workflows from screening to profitability analysis.<br>K3.1 Pro also improves significantly across all our internal finance benchmarks:<br>- Financial Modeling evaluates formula linkage, financial logic, and final workbook quality in real-world modeling tasks. K3.1 Pro improves on K3 by 7.2 points.<br>- Financial Research evaluates whether models can produce auditable research under evidence and cutoff constraints. K3.1 Pro improves on K3 by 11.6 points.<br>- Business Operation evaluates long-horizon management and decision-making in a simulated business environment. K3.1 Pro achieves about 4.2× K3&#x27;s performance.<br>Financial analysis and investment research demand a high degree of factual accuracy. To address this, we made targeted improvements to K3.1 Pro&#x27;s factual accuracy on real-world tasks and challenging prompts. On Kimi Hallu Bench Hard bench, an internal benchmark designed to stress-test factual accuracy, its claim-level hallucination rate fell from 23.4% for K3 to 8.3%, while the share of responses containing at least one factual error was just 42.4% of its predecessor&#x27;s rate. (The evaluation is a stress test for factual accuracy, with examples deliberately crafted to probe situations where models are prone to errors. The reported rates do not represent overall error rates in daily use.)<br>The cases below show how K3.1 Pro handles financial modeling, investment analysis, and source-grounded research in practice:<br>Cybersecurity<br>As K3.1 Pro became more capable, we spent a correspondingly larger share of our effort understanding where cyber capability comes from, and how much of it we can control. We therefore analyzed and evaluated K3.1 Pro&#x27;s vulnerability research capabilities, and applied targeted controls during training to reduce potential misuse risk while preserving general usefulness.<br>Identifying and removing cyber-related data. During development, we observed vulnerability research performance improving steadily as post-training scaled. Tracing the source of this trend, we found that cyber-related content was embedded within the general mid-training corpus, and cyber-related tasks were present in the RL environment mix — a natural byproduct of training on broad data. In preliminary experiments on internal models, we found that without data removal at either the mid-training or the RL stage, downstream cyber capability would increase substantially. These findings gave us a concrete lever for control. For the open-weight release of K3.1 Pro, we identified and removed cyber-related data from both training stages, while retaining the general-purpose coding tasks needed for model usefulness. We will continue to apply appropriate controls at every training stage, of which cyber-related data identification and restriction is one example.<br>Evaluation and results. After data cleaning, we evaluated K3.1 Pro on xdev-bench-hard, our in-house benchmark of expert-curated, source-code-based vulnerability discovery and exploitation tasks, calibrated to provide meaningful differentiation at our current capability level. Most tasks faithfully reproduce recently disclosed vulnerabilities in software such as the Linux kernel, Node.js, JavaScriptCore, Exim, and VirGL, with mitigations enabled. Each task provides the vulnerable source code, a short bug hint, and the corresponding binary; the agent must develop an exploit, achieve arbitrary code execution in a separate sandbox, and retrieve a secret string for automated verification. We report pass@3 over a random subset of runs, with no hard timeouts or output token limits.<br>On xdev-bench-hard, the checkpoint without these risk-reduction measures — no cyber-related data removal at mid-training and no cyber-related RL environment filtering — solves 90.5% of problems at pass@3; the final K3.1 Pro reaches 81.0%. The comparison shows that data removal meaningfully reduces cyber capability relative to what the same training pipeline would otherwise produce. At the same time, K3.1 Pro improves substantially over its predecessor, indicating that stronger general coding and long-horizon debugging capabilities generalize to cyber tasks even after targeted data removal. K3.1 Pro&#x27;s cyber capability remains behind that of frontier proprietary models that have been publicly available for at least three months. We will keep evolving our internal benchmarks so that evaluation stays informative as model capabilities continue to advance.<br>Open-weight principles. These evaluations frame our open-weight release decision. First, we aim not to release open weights that would extend the absolute frontier of cyber capability. K3.1 Pro&#x27;s offensive cyber capability is, by design, below what our pipeline can produce, and remains behind that of frontier proprietary models. Second, we intend to progressively raise the cyber capability available in open weights. We believe making K3.1 Pro available in a non-discriminatory way benefits people who need dual-use capabilities for defensive purposes. When a capable model is open and runs on infrastructure its users control, many more teams gain the means to audit the code they maintain — including legacy systems that rarely receive dedicated security reviews. We believe that letting this capability diffuse gradually — rather than concentrating it in a few proprietary systems — ultimately makes all software more secure.<br>Availability<br>Kimi K3.1 Pro rolls out today across the Kimi product family: on Kimi.ai and the Kimi mobile apps, Kimi Work and Kimi Code, and through the Kimi API.<br>Full model weights will be released by Nov 4, 2026.<br>Kimi Enterprise administrators can enable K3.1 Pro for their organization; access is off by default at launch.<br>Details for each channel:<br>- Kimi Agents: Download or update to the latest Kimi app from your mobile app store, available on iOS, Android, and HarmonyOS, or visit kimi.ai.<br>- Work with Kimi K3.1 Pro: Download the latest Kimi Work desktop app, version 3.1.0 or later, available for Windows and Apple silicon Macs.<br>- Code with Kimi K3.1 Pro: Run Kimi Code and select Kimi K3.1 Pro using the /model command.<br>- Build with the Kimi API: Visit the Kimi API Platform and select kimi-k3.1-pro / kimi-k3.1-pro-highspeed. Zero Data Retention is available for API customers.<br>- Bring Kimi to your organization: Kimi Business provides enterprise-grade data privacy and member management, with complete separation between personal and organization accounts. Visit the pricing page and select “Get Kimi Business” to subscribe for your team.<br>Benchmarks<br>Footnotes<br>Unless otherwise specified, all Kimi K3.1 Pro results reported below are obtained with the reasoning effort set to &#x27;max&#x27;, temperature = 1.0, and top-p = 0.95.<br>Coding benchmarks<br>- Terminal-Bench 4.0. Kimi K3.1 Pro is evaluated with the Claude-Code harness. The DeepSeek-V4.1-Flash-1017 is taken from the release blog (https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017). All remaining scores are taken as the maximum value reported in either their blog posts or the official Terminal-Bench 4.0 leaderboard (https://www.tbench.ai/).<br>- Terminal-Bench Science 0.1. Kimi K3.1 Pro is evaluated with the Claude-Code harness. Our internal evaluation of DeepSeek-V4.1-Flash-1017 yields a score of 9.3; However, an older version, DeepSeek-V4.1-Flash, scores 15.7 on the official Terminal-Bench Science, so we report 15.7 here; all remaining scores are from the official Terminal-Bench Science leaderboard (https://www.terminal-bench-science.ai/).<br>- DeepSWE v1.1. Kimi K3.1 Pro is evaluated with the Claude-Code harness. All scores are taken from each model&#x27;s respective technical report. GPT-6 Astra(https://openai.com/index/gpt-6-astra/). Claude Opus 5.5 and Claude Fable 5.1(https://www.anthropic.com/claude-opus-5-5-system-card and https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card); DeepSeek-V4.1-Flash-1017 (https://api-docs.deepseek.com/news/news261017/); GLM-5.3 (https://z.ai/blog/glm-5.3).<br>- SWE-Marathon v1.1. Kimi K3.1 Pro is evaluated with the Claude-Code harness. DeepSeek-V4.1-Flash-1017 is evaluated with the ClaudeCode harness. All other scores are taken from the official SWE-Marathon leaderboard (https://www.swe-marathon.org/).<br>- PostTrainBench. Kimi K3.1 Pro and DeepSeek-V4.1-Flash-1017 were evaluated internally on v1.2 using the Claude-Code harness and H20 GPUs instead of H100 GPUs. For stable evaluation, all judge models used DeepSeek-V4.1-Flash-1017 at maximum effort, which best matched the official GPT-5.6-Terra (xhigh) judge in testing. Other scores are from the official leaderboard (https://posttrainbench.com/).<br>- ProgramBench (binary score). We report binary scores rather than raw ProgramBench scores: a task receives a score of 1 if its ProgramBench score is ≥95%, and 0 otherwise. Kimi K3.1 Pro is evaluated with the Claude-Code harness. The DeepSeek-V4.1-Flash-1017 and GLM-5.3 scores are taken from the release blog (https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017); all remaining scores are from the Vals ProgramBench leaderboard (https://www.vals.ai/benchmarks/programbench).<br>- Internal Coding Bench: Kimi Code Bench 2.0 and Kimi Code Bench 3.0 Long-horizon. Kimi K3.1 Pro is evaluated with Claude-Code harnesses; All other models are evaluated at their max-effort setting. Note that proprietary model testing may involve some fallback behavior.<br>- BenchCAD. Open models are evaluated by us on 1,000-case subsets randomly sampled from the full 17,900-case Vision2Code dataset, at maximum reasoning effort. With-tools results use the Claude Code harness; without-tools results use single-shot generation with the official BenchCAD prompts and scoring pipeline. Scores for Claude Fable 5.1 and Claude Opus 5.5 are taken from the Claude Opus 5.5 System Card; GPT‑6 Astra’s with-tools score is taken from its official report. GPT‑6 Astra has not reported a without-tools score and is marked “—”.<br>Agentic benchmarks<br>- BioMysteryBench dataset is drawn from the official v11 release, with Kimi K3 as the judge model. We evaluate Kimi K3.1 Pro with Kimi Code, GLM-5.3 and DeepSeek-V4.1-Flash-1017 with Claude Code, and GPT-6 Astra with Codex. Scores for the Claude models are taken directly from their official system cards.<br>- Our Agents’ Last Exam dataset is drawn from the official v1.1 release, comprising 122 tasks, including 86 CLI tasks, with environment images aligned with the official Hugging Face release. We additionally assign a score of zero to runs that bypass the task’s stated requirements, such as retrieving answers online instead of performing the required analysis in Wireshark. DeepSeek and Kimi are evaluated using Claude Code and Kimi Code, respectively. All other results are taken from the official benchmark website.<br>- OfficeQA Pro, OfficeQA Pro v2. GPT-6 Astra is evaluated with Codex, while all other models are evaluated with Claude Code. Each task provides the agent with the entire PDF corpus, with all PDFs rendered as images and no machine-readable text available. We observed instances in the trajectories of certain external models where they retrieved reference answers online; Consequently, we assigned a score of zero to these tasks.<br>- Frontier Finance is evaluated with the official finance agent v2 harness.<br>- HANDBOOK.md is evaluated using the official harness built on OpenHands, with evaluation tasks drawn from the benchmark’s early open-source v1 release.<br>- Harvey Legal Agent is evaluated on a public dataset of 1,251 tasks using Artificial Analysis’s Stirrup harness, with performance reported as the all-pass rate (i.e., the percentage of tasks that pass all rubric criteria).<br>- OSWorld V2.1 is evaluated with the Kimi Agent harness in the official OSWorld v2 repo, while GPT-6 Astra&#x27;s score is taken from Muse Wonder&#x27;s technical report.<br>- DECK-Arena evaluates presentation generation on real-world queries, while Design Bench covers graphic design via direct and reference-image few-shot prompting; Both run models across python-pptx, pptxjs, and Kimi&#x27;s in-house DSL in a harness with integrated search and image generation, using an automated grader calibrated on 10,000+ human judgments.<br>- MCP Atlas. All models are evaluated on the 500-task public subset with a 100-turn limit, using Gemini 3.1 Pro as the judge.<br>- BrowseComp. We adopt the context-compaction strategy used in the Claude model cards, triggered at 200K tokens. We allow a maximum of 500 steps; if this limit is reached before a task is completed, we force the agent to provide an answer, which is then judged. All BrowseComp runs are conducted with temperature=1.0 and top-p=1.0.<br>- GDPval-AA v2.1, AA-Briefcase v1.1 and AutomationBench-AA scores are cited from https://artificialanalysis.ai/, Apex Agents scores are cited from https://www.mercor.com/apex/apex-agents-leaderboard/<br>- GDP.pdf w/ python, ZeroBench w/ python and ChartoGraphy w/ python are averaged over five runs. Other multimodal benchmarks (w/ python) are averaged over four runs. For GDP.pdf w/ python: Each original PDF file is sent to the sandbox, where the model can use IPython tool to process it. Final responses are graded against each rubric criterion using Gemini-3.5-Flash (medium reasoning effort) and the official judging prompt. We report the task-macro mean rubric pass rate: for each task, we average the fraction of rubric criteria passed over five independent runs, then average these task-level scores equally across all tasks.<br>Reasoning &amp; Knowledge &amp; Multimodal benchmarks<br>- GDP.pdf. Each PDF is provided as page images resized to a longest edge of 1,152 pixels, interleaved with Docling-extracted text in page order. Responses are graded against each rubric criterion using Gemini-3.5-Flash Medium and the official judging prompt. We report the strict pass rate among fully scored responses.<br>- HLE and HLE-Diamond evaluate general knowledge and reasoning capabilities. We report accuracy on the full evaluation sets, with 2,500 questions for HLE and 1,000 questions for HLE-Diamond. For models marked with an asterisk (*), accuracy is reported on the text-only subset of questions.<br>- GDP.pdf, ZeroBench and ChartoGraphy are averaged over five runs. Other multimodal benchmarks are averaged over four runs. GDP.pdf scores of GLM-5.3 Max and DeepSeek-V4.1-Flash-1017 Max is cited from https://artificialanalysis.ai/.<br>- MMMU-Pro is evaluated following the official protocol, preserving the original input order and prepending images to the text input.<br>- Kimi Hallucination Benchmark evaluates factual accuracy on an internal set of challenging, de-identified prompts drawn from practical work tasks. We report the claim-level hallucination rate assessed by fact-checking agents.<br>Cybersecurity benchmarks<br>- ExploitBench. Kimi K3.1 Pro is evaluated with the official ExploitBench harness under the 300-turn budget. We report the pass@5 max capability score: for each environment, the best run across 5 seeds, scored by the number of capability flags reached out of 16, where achieving arbitrary code execution counts as achieving all 16 capabilities. The GPT-6 Astra score is taken from https://openai.com/index/gpt-6-astra/; the Claude Opus 5.5 and Claude Mythos 5.1 scores are taken from https://www.anthropic.com/claude-opus-5-5-system-card; the GLM-5.3 score is taken from https://z.ai/blog/glm-5.3.<br>- ExploitGym. Kimi K3.1 Pro is evaluated with the KimiCode harness under a 6-hour wall-clock budget per task. The GPT-6 Astra score is taken from https://openai.com/index/gpt-6-astra/; the Claude Opus 5.5 and Claude Mythos 5.1 scores are taken from https://www.anthropic.com/claude-opus-5-5-system-card at the 6-hour budget; the GLM-5.3 score is taken from https://z.ai/blog/glm-5.3.<br>- xdev-Bench-hard: Kimi K3.1 Pro is evaluated with the KimiCode harness. GLM-5.3 and DeepSeek-V4.1-Flash-1017 are evaluated with the Claude Code harness.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: Corgi, a helpful {agent, terminal} multiplexer
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    11 points ·
+    0 comments ·
+    eiopa
+  </div>
+
+  <div class="meta">
+    corgi.computer
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #10
+  </div>
+
+  <div class="links">
+    <a href="https://corgi.computer/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50214373">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">keeps watch<br>Every agent, what it&#x27;s doing, and who needs you.<br>- ▶ working<br>- ● needs you<br>- ● finished<br>- ○ idle<br>agent aware<br>- ▶ working<br>- ● needs you<br>- ● unread<br>- ○ clear<br>F1 to catch up.<br>new tab agent<br>Ctrl-T to jump into work, new or old.<br>Use your existing accounts. All of them.<br>top for your tokens<br>Where did the tokens go?<br>activity tracking<br>Hover an agent to see what it did.<br>Keep ’em running<br>Like tmux, your agents and processes keep running in the background.<br>corgi and you’re in.<br>see their changes<br>Every file it touched, in one scroll.<br>worktrees<br>Fantastic trees and where to find them.<br>clever corgi<br>Organizes your workspaces for you.<br>resource usage<br>Per workspace, live.<br>embraces the modern terminal<br>⌘V just pastes an image, even on SSH*.<br>Links you can copy.<br>Images you can see.<br>* Requires Ghostty Nightly.<br>Tab Tricks<br>Undo tab closes with Ctrl-Shift-T.<br>ssh friendly<br>Image paste just works* with ⌘V. On a slow link, Corgi keeps pace.<br>* Requires Ghostty Nightly.<br>hackable<br>Drive Corgi from any terminal. corgi --skill teaches your agents.<br>keyboard and mouse<br>Corgi loves both.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Quad9 to exit France
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1336 points ·
+    468 comments ·
+    farrokhi
+  </div>
+
+  <div class="meta">
+    quad9.net
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://quad9.net/news/blog/au-revoir-france/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50195959">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Back to Blog<br>Farewell, France<br>We have some news to share with you.<br>Summary<br>Starting November 24, Quad9 will no longer be able to offer its free cyberprotection service to users located in France.<br>The French courts yesterday handed down an unfavorable ruling against Quad9 in a major case that undermines the transparency and stability of the internet. This decision in favor of beIN forces Quad9 to block the recursive DNS resolution for a number of domain names for users located in France.<br>The good news is the court significantly reduced the financial penalty, from €580,000 to €1,000 per day. However, for Quad9, this has never been just a financial issue: it is a matter of principle.<br>We cannot comply with this ruling over the long term while remaining faithful to our mission to protect your privacy, defend you against cyber threats, and preserve the integrity of the internet. For us, recursive DNS resolution is a neutral and passive service. We categorically refuse to alter or lie to you about the DNS responses you receive in a way that opposes your expectations.<br>This ruling forces an untenable position upon us. Compliance is technically unfeasible, and implementation directly contradicts our mandate to serve the public. As a result, we have made the difficult decision to withdraw Quad9 services from France as of Tuesday, November 24. We deeply regret that French internet users will be left without an alternative that can adequately protect their cybersecurity while remaining compliant with European privacy law.<br>Background<br>beIN, a Qatari company with offices in France, previously sought to force Quad9 to block resolution for a set of domain names they assert are participating in copyright infringement of its audiovisual rights on sports event broadcasts. Quad9 has no association with these domain names, nor with the operators of the websites. The French courts have fundamentally misunderstood the working of the internet and the role of the domain name system and have allowed a financial penalty to apply to Quad9 if we do not block DNS responses to users in France.<br>Quad9 is a Swiss public-benefit, nonprofit foundation established for the explicit purpose of protecting the cybersecurity of internet users. We charge nothing for our service and serve all people and organizations which seek to improve the security and privacy of their internet use. Our core values are to make privacy, security, and integrity available to all internet users, and our mission is to universally apply these guiding principles to recursive DNS resolution services in order to serve end users.<br>We want to be very clear: we do not condone content piracy. Quad9 exists to create a safer, more trustworthy internet experience for end users. We offer global blocking as an option for malicious cyberactivity against users worldwide. We do not block content, and we give users the choice to use our threat blocking services, or not, based on their interests and needs. Content piracy needs to be dealt with at the source: the place where the infringing content is published. Forcing uninvolved third parties to break the fundamental operating principles of the internet to benefit individual parties to the detriment of the global internet-using public is misguided, counter-productive, and distracts from actual solutions addressing the hosting of the content directly, or the market pressures which cause piracy to exist in the first place. Not only are DNS recursive resolvers, like Quad9, the wrong actors to address piracy, but applying legal pressure to Quad9 will also have vast unintended consequences harming the cybersecurity of hundreds of millions of innocent internet users.<br>For Quad9, complying with this ruling is impossible. We have no database of users associating them with jurisdictions. Our service is free to the public and does not require sign-up or proof of identity. Recursive DNS is so fundamental to the underlying operation of the internet that there is no method to map users’ jurisdictions reliably, nor do we think there should be a way to force users to identify themselves before they can connect to the internet. Our core goals – privacy of user data and honesty of responses - are directly opposed to the methods necessary to implement the blocking this court ruling would require us to perform. There is no way we can determine which users this ruling applies to – we have no list of French users, because we do not keep dossiers of our users at all.<br>If we do not comply, we will face a daily penalty of 1.000 euros until the blocking concludes on November 14 (i.e., 24.000 euros) not including our legal defense. Quad9 cannot survive the accumulation of penalties yet to be assessed in 20 other pending cases, nor those of future cases similar to the one brought by beIN. Inaction is, therefore, not an option to challenge this decision.<br>Can Quad9 just comply via global blocking?<br>We could add these names to our global malicious domain blocking database, which is what we use to provide internet users with malware and phishing protection. This is a single, monolithic set of names applied to all users of our protective services (9.9.9.9 &amp; secondaries) globally but not to our nonprotective services (9.9.9.10 &amp; secondaries). Blocking these names for all users globally would satisfy the requirements of the court.<br>However, this would have the “extraterritorial” effect of applying French legal decisions to every internet user worldwide, when they are meant to solely apply to France, for the commercial benefit of a single private, foreign-owned company. We suspect if other nations wished to impose their national legislation within France, there would be a strong reaction from French users and authorities. The converse is equally true: the findings of a French court are not applicable to the rest of the world. Such a system would set a precedent that any nation could impose their laws, morals, economic demands, or social constructs upon any other nation by the means of blocking DNS names, and thus blocking communication and content.<br>Therefore, this global blocking method is entirely unworkable for us as a solution to be compliant with the court order.<br>What is “France” from the perspective of the internet?<br>There are more important reasons geoIP blocking will not work. We already prevailed in a similar legal case in Germany in 2021-2023 in which we learned an important lesson: we tried to use geoIP blocking as a “hack” in a similar circumstance at the start of the legal proceedings, allowing us to continue services in Germany until the case concluded. The plaintiff (Sony Music Entertainment GmbH) then used a VPN to access the blocked content from Germany in circumvention of the geoIP blocking. The court agreed with Sony in their assertions of noncompliance, and we were fined for contempt of court.<br>From this experience, we know that the geoIP-based model is not only unfit from a technical perspective, but we have proven, historical evidence that using geoIP methods results in fines being levied against us by courts. To any technology-aware person, this seems absurd and outrageous – but this is what we face in these lawsuits where there is a disconnect between the courts’ understanding and how (and why) the technical protocols of the internet actually operate. We cannot risk this negative outcome in this or any other future instance, as absurd decisions apparently are de rigueur in these cases.<br>We eventually won that case against Sony, but it took several years, six figures of cost to Quad9, and massive wasted time – all of which set us back in our ability to deliver services and is a resource debt we are still paying for today. This case is just more of the same – the opposition has more lawyers than we have money and time.<br>The decision of Quad9<br>Given these conditions and as a result of our unwavering mission, our historical experience, our desire to remain within the law, and the outcome of the court decision, we are left with an uncomfortable choice.<br>The demands lead us to an impossible requirement: we must adhere to the court’s decision, or we face growing risks to our existence. However, in implementing the blocking, we must either extend French law to the whole world (blocking globally) or create a vulnerability condition whereby we continue to be at risk because the available technical methods are imprecise, impossible to validate, and do not meet any user privacy and security requirements.<br>This leads us to the only conclusion we can understand to eliminate our legal risk and keep us true to our mission: we must make our cybersecurity protection and general services unavailable to French users. Our departure is scheduled for November 24, 2026.<br>In any event, for Quad9, this is a matter of principle regarding the potential misuse of these types of blocking measures. Allowing private corporations to have the ability to block what is seen on the internet seems to us to be a dangerous and infinitely deep problem. Actions that seem reasonable and infrequent today will tomorrow become an avalanche of petty demands used to suppress political, religious, economic, or social outcomes. We will not be even a small part of that degradation of the freedom of knowledge. Once the tools of censorship are built, they are rarely used sparingly or justly.<br>This case with beIN is not the only litigation we face in France. There are approximately 20 different lawsuits pending against Quad9 (and other recursive resolver operators) that demand we comply with blocking hundreds of different names. We expect many of them to escalate to the same conditions as we have seen with beIN, which puts Quad9 at risk regardless of the outcome of this case.<br>Based on the generalized, high-level traffic statistics we keep, we know we have many users in France. With our departure, those users will be put at risk from the threats we have protected them from for nearly 9 years. We deeply regret that result, but we have no other choice. Below is a partial list of the networks from which we see traffic in France. You will see many infrastructure, national security, finance, education, and other networks of critical importance in addition to ISP users and mobile users. All these users will lose service on November 24 because of the legal risks facing Quad9 in France.<br>What is the purpose of this whole lawsuit, anyway?<br>The most troubling part of this decision is that it is ineffective in practice. Forcing Quad9 to block domain names does not take the content out of circulation and has no effect on the servers that house the data.<br>We offer a free service, and there are thousands of other open DNS systems that do what Quad9 does but with lower trust, safety, and reliability. Users seeking blocked content will simply shift their DNS to use one of those other free services, possibly using systems in other nations that have less-than-honorable intentions from a privacy and security perspective. This is like holding a piece of newspaper in front of a stadium full of people to block the view of a concert. It is an unsolvable problem via recursive DNS, and the effect of legal rulings like this is not measurable outside of the amounts paid to lawyers and the number of words in press releases declaring hollow victory.<br>Even beIN will not see any changes. Perhaps that is understood and the cruelty may be the point - we cannot say with certainty why such expenditures have been made against a small nonprofit like Quad9, which tries only to bring safer, trusted service to users. But of this we are certain: these actions are a tragic waste of time and resources and create a real, negative outcome for the internet community of France, whether or not they are our users.<br>What we are doing on November 24<br>Quad9 will not block the domains in question - we wish to remain committed to our integrity of providing a complete view of the DNS for users who wish that service. However, starting on November 24, we will no longer serve French users, thus keeping Quad9 out of danger from similar, perhaps even larger risks in the future. Our hope is that 30 days will be sufficient time for conversion, though we regret that this message will undoubtedly not reach some users in time.<br>An appeal is pending, and we will continue to legally defend our position in court in this case and as many other cases as we are able. We will continue to oppose court-ordered DNS blocking of this nature everywhere. Our resources are limited, but we are determined to keep the internet open and free. You can donate here to help us continue to deliver on our mission and assist us in the legal costs we incur in this and other fights.<br>What you can do next<br>We think this problem is reversible. French citizens: tell your legislators that looking up names is not a criminal offense. The internet needs to remain open and freely available to anyone, and neutral intermediaries like Quad9 (or any DNS resolver) should not be implicated in legal proceedings because we map names to IP addresses. Further, we know there are potential plans in consideration in France (and other European nations) to give private corporations and others automated and unvalidated abilities to filter DNS content that they alone determine to be unwanted, making it possible for a wide range of badly-managed or anti-democratic activities to be implemented. We believe you disagree with this as much as we do. Make yourself heard, or you will lose your rights silently.<br>ARCOM is your regulatory authority, and you should tell them this precedent places France at risk both from a practical and strategic perspective.<br>Let them know that under their mandate, they have to balance your digital rights as citizens as well as the audiovisual rights on sports event broadcasts of rights holders. Balance cannot be claimed when the privacy and security of digital users are the collateral damage.<br>In conclusion<br>Fighting piracy via DNS resolvers blocking is ineffective. It is disproportionate and misguided, ill-fitted and futile to fight piracy, as the source content remains completely available to resurge under another name. Forcing Quad9 to depart harms French digital strategy and sovereignty in the long run relating to security, privacy, and integrity - contradicting France’s supreme national interests in exchange for a short-term, imaginary commercial victory.<br>We deeply regret that we must leave our French users without cybersecurity protection, but we hope the future will see a more reasonable interpretation of the law which allows us to return.<br>Sincerely,<br>The Quad9 Team<br>* This post was authored and translated into French by humans on the Quad9 Team<br>Partial List of French Networks Using Quad9<br>This list is extracted from network metrics of an hour or so of typical usage. Quad9 tracks network autonomous systems number origins as per our privacy policy, but we do not identify individual IP addresses or users within those networks. There are hundreds of additional French networks using Quad9; we picked only these at random to show the breadth of usage. Autonomous systems are not exclusively geographically-mapped and cannot be used as a jurisdictional identifier; though it is safe to say that most of these networks have a significant portion of their user base in France.<br>National government &amp; public agencies 60855 — Direction interministérielle du numérique (DINUM) — Prime Minister’s digital directorate; sets state digital strategy and runs the interministerial state network (RIE). 43717 — Business France (EPIC) — National agency that helps French firms export and attracts foreign investment. 205461 — France Travail (EPA; formerly Pôle emploi) — National public employment service: job placement, jobseeker support, unemployment benefit payment. 777 — CEA Paris-Saclay (EPIC) — Saclay centre of the Commissariat à l’énergie atomique et aux énergies alternatives; public research in nuclear and alternative energy, defence and health technology. 44850 — Institut de recherche pour le développement (IRD; EPST) — Public research institute working with Global South partners on health, environment and social sciences. 29110 — Institut Pasteur (private foundation, recognised as public utility) — Non-profit biomedical research foundation in Paris (infectious diseases, vaccines, microbiology); hosts national reference centres.<br>Research &amp; education network 1307, 1712, 1715, 1942, 1945, 2060, 2094, 2198, 2200, 2202, 2259, 2269, 2457, 2470, 2472 — RENATER (GIP) — National research and education network; its members are the State and public research bodies.<br>Student-run campus networks 204515 — Crans (association) — ENS Paris-Saclay student network association providing connectivity, hosting and email to members. 212424 — ViaRézo (Association des réseaux de CentraleSupélec) — Student association providing internet and IT services on the CentraleSupélec campus. 207849 — ESIEESPACE — ESIEE Paris student club that runs OpenGate, a student non-profit ISP.<br>Private education 56339 — IONIS Education Group (SAS) — Private for-profit higher-education group (EPITA, Epitech, ESME, IPSA, ISG, Sup’Biotech).<br>Regional &amp; local government 208458 — Région Nouvelle-Aquitaine — Regional authority covering 12 départements; seat in Bordeaux; created 2016. 208820 — Département de la Seine-Saint-Denis — Île-de-France département; council seated in Bobigny. 50036 — Département des Pyrénées-Atlantiques — Nouvelle-Aquitaine département; council seated in Pau. 34000 — Département des Bouches-du-Rhône — Departmental council. 48799 — Ville et Eurométropole de Strasbourg — Shared administration of the City of Strasbourg and the 33-commune Eurométropole. 204897 — Grand Besançon Métropole — Communauté urbaine of 67 communes around Besançon. 208574 — Communauté de communes du Pays de Bitche — Intercommunal body of 46 communes in Moselle; owns the Tubéo public fibre-to-the-home network. 202834 — Commune d’Échirolles — Commune south of Grenoble; member of Grenoble-Alpes Métropole. 211127 — SITPI (Syndicat intercommunal pour les télécommunications et les prestations informatiques) — Ten Grenoble-area communes pooling telecom, IT and GIS services.<br>Public digital infrastructure (local-authority networks &amp; IT) 200245 — Manche Numérique (syndicat mixte) — Builds the Manche fibre network; provides IT, e-administration and telecom services to local authorities. 44842 — Somme Numérique (syndicat mixte) — Owns the Somme fibre network; provides digital services to local authorities and schools. 214589 — Essonne Numérique (syndicat mixte ouvert) — Essonne public fibre network, plus interconnection, hosting and data-centre services for public sites. 47608 — Gigalis (GIP) — Pays de la Loire regional fibre network for local authorities, health, emergency services and schools. 41114, 62038 — Orne THD (SPL) — Company owned by Rombas and neighbouring communes in Moselle; sells fibre internet and TV over their networks. 39271 — C’Chartres Innovations Numériques (SEM) — Chartres Métropole company running fibre, a private 5G network, a data centre and IT services. 207430 — SITEC, Société informatique et télématique corse (SEM; Collectivité de Corse 56%) — Hosting, cloud, cybersecurity and IT services for Corsican public bodies. 50547 — Régie du réseau câblé du Haut Sundgau (local-authority régie) — Public wired telecom network in southern Alsace. 49011 — MACS THD (SASU, SFR group) — Private company running the Maremne-Adour-Côte-Sud (Landes) high-speed network under a public-service concession.<br>Energy &amp; utilities 1301 — Électricité de France (EDF; 100% state-owned) — National electricity producer and supplier; operates France’s nuclear fleet. 62141 — Compagnie nationale du Rhône (CNR; majority public shareholding, Engie reference shareholder) — Holds the Rhône concession: hydroelectric dams, navigation and irrigation, plus wind and solar. 39830 — Teréga (private SA; formerly TIGF) — Gas transmission and underground storage operator for south-west France. 43734 — UEM (local SEM; formerly Usine d’électricité de Metz) — Metz utility: electricity, gas, district heating, public lighting. 12727, 42487, 208719 — Vialis (SEM; Colmar largest shareholder) — Colmar utility: electricity and gas plus cable TV, internet and fibre. 204645 — Régie ENES (Régie municipale d’électricité de Creutzwald) — Municipal régie: electricity, fibre internet, local TV, district heating.<br>Transport 203885 — SNCF (Société nationale SNCF SA; state-owned) — Parent holding company of the national railway group. 34809 — Sanef (SA; Abertis subsidiary) — Motorway concession operator for northern and eastern France.<br>Health 201659 — AP-HM (Assistance Publique – Hôpitaux de Marseille) — Marseille’s public university hospital group. 51588 — SESAN (GIP) — Île-de-France regional body providing shared digital-health services to care providers. 49692 — Compagnie Générale de Santé (SAS; private) — Name of the hospital group now called Ramsay Santé.<br>Broadcast &amp; media 24843, 43930 — France Télévisions (state-owned SA) — National public-service television broadcaster. 43646 — TDF (SASU; owned by infrastructure funds) — Broadcast transmission and tower infrastructure operator.<br>Private industry &amp; technology 29104 — Thales Services Numériques (SAS; Thales group) — IT services, cloud, security operations and integration for defence, space and public-sector clients. 49068 — Stormshield (SAS; Airbus Defence and Space) — Cybersecurity vendor (firewalls, endpoint protection, encryption); ANSSI-qualified products. 57226 — IDEMIA Identity &amp; Security France (SAS) — Identity documents, biometric identification and border/access systems; formerly Safran Morpho. 41935 — Dassault Systèmes (SE; listed) — 3D design and simulation software (CATIA, SOLIDWORKS); not Dassault Aviation. 42924 — VINCI Construction SI (SNC) — In-house IT unit of VINCI Construction. 201647 — SI-nerGIE (GIE of Orano and Framatome) — Shared IT operations for both companies: data centres and local support. 49920 — Flowbird (SAS) — Maker of parking meters and transit ticketing systems. 20493 — Viparis Le Palais des Congrès de Paris (SA; 50/50 CCI Paris Île-de-France and Unibail-Rodamco-Westfield) — Operates the Palais des Congrès convention centre.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    I failed every LeetCode interview
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    garn810
+  </div>
+
+  <div class="meta">
+    write.as
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://write.as/m5g5r26qo5wt7">Original article</a> · <a href="https://news.ycombinator.com/item?id=50216956">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I failed every LeetCode interview<br>Most of my time outside work goes to building things. Side projects, products I never quite finished or small tools I wanted to exist, ideas I hack on until they either work or teach me something. None of it fits on a CV anyone can read in six seconds.. but still I have this dream of working in a large corporation like Google. I have now failed every LeetCode style interview I&#x27;ve ever attempted. I mean, I&#x27;m lucky to even be filtered for the interview nowadays.. However, I failed not because I couldn&#x27;t solve the problems. I solved them (honestly, without any AI). I just rarely solved them the way the interviewer wanted. The solution with the right complexity clas or the one somebody already knew the trick for (but I didn&#x27;t). I got to a working answer in my own way, but got filtered out for the shape of it. Of course someone could say &quot;you must grind more&quot;. Of course, yes. But when the job requirement says &#x27;we are looking for builders&#x27;, and yet here I am, ready to spend ALL of my time building things just because I love it, how can I pass? You don&#x27;t even allow me to talk about it since there&#x27;s this leetcode filter. --- Some piece of me has wanted big tech since I first learned to code.... The logos, the scale, the badge, the story you get to tell at a family dinner (I work at Google!). It was the finish line before I understood anything about what the work actually was, and the wanting never asked my permission. The front door of a house I&#x27;ve dreamed about since I was young, and knowing the door is badly built doesn&#x27;t stop it from stinging every time it stays shut. You can see straight through the game and still ache to win it. Both things live in me and neither one cancels the other.. A strange game, really strange.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Local Wikipedia: Wikipedia, but only for things a half hour walk from you
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1198 points ·
+    223 comments ·
+    sohkamyung
+  </div>
+
+  <div class="meta">
+    edjefferson.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #6
+  </div>
+
+  <div class="links">
+    <a href="https://edjefferson.com/localwiki/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50202285">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Apple Music 404 Not Found
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    516 points ·
+    175 comments ·
+    frizlab
+  </div>
+
+  <div class="meta">
+    music.apple.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #17
+  </div>
+
+  <div class="links">
+    <a href="https://music.apple.com/this-url-doesnt-exist">Original article</a> · <a href="https://news.ycombinator.com/item?id=50207910">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://www.macrumors.com/2026/10/23/apple-music-has-a-hidde...</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: Impossible Machines: declaratively program the physical world
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    55 points ·
+    16 comments ·
+    bhaprayan
+  </div>
+
+  <div class="meta">
+    impossiblemachines.xyz
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #20
+  </div>
+
+  <div class="links">
+    <a href="https://www.impossiblemachines.xyz">Original article</a> · <a href="https://news.ycombinator.com/item?id=50202746">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hey all —<br>Sharing a thought experiment I put together. The premise: what might declarative programming feel like for the physical world?<br>We’re already familiar with this paradigm in software land (eg SQL etc where we declare what we want and the execution engine figures out how).<br>I didn’t have access to an actuator so I mocked up the concept in software. The way it works is you demonstrate the effect and the system figures out how to achieve it. So say you want to ring a bell and you have a crank. The system will find a way to connect the two. If you add obstacles it figures out how to work around them (runs a constraint solver runs behind the scenes).<br>I think what’s interesting about this is being able to think about the problem at a higher level of abstraction, with the system figuring out a way to achieve the intended effect.<br>Anyways, curious to read reactions, feedback, and interesting ideas on how to extend this!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: What router will remain secure during the vulnpocalypse?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    4 points ·
+    2 comments ·
+    nonfunctional
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · New #33
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50216355">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hi,<br>Curious about what kind of router I should get to be safe with all the vulnerabilities being discovered. I&#x27;m thinking something running OpenWRT makes sense, since that&#x27;s open source and likely to receive updates quickly going forward. Does anyone have any recommendations?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Veritas Villages – libertarian intentional communities in Latin America
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    mateusfreira
+  </div>
+
+  <div class="meta">
+    gst.artofliberty.org
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://gst.artofliberty.org/veritas-villages-libertarian-intentional-communities-in-latin-america/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50216949">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Building Freedom in the Cracks of the State A Canadian tax refugee is betting that like-minded neighbors, Bitcoin, and blockchain-voted HOAs can deliver in Latin America, today, much of what free private cities are still fighting for on paper.<br>Etienne Note: This is an expanded chapter from my upcoming book: Voluntaryism - How the Only “ISM” Fair for Everyone Leads to Harmony, Prosperity and Good Karma for All. The book includes a section that breaks down the most exciting libertarian and voluntaryist enclaves, where freedom-minded individuals vote with their feet by moving to jurisdictions with less government, more freedom, stronger private property protections, and extraordinary liberty-minded individuals. In addition to Veritas Villages, I am covering: Prospera (negotiated sovereignty and governance as a service),  The Free State Project in New Hampshire, Cheran (The Mexican town that kicked out the Mexican federal “government” and cartels), Liberstad (Southern Norway), Montelibero (Montenegro, Europe), Liberland (Serbia/Croatia border), Los Propietarios, (Argentina), Network States in general and Seasteading among others.<br>Patrick Hiebert figures that when he lived in Canada, he worked for the government until about October every year. Add up the income tax, the GST, the PST and the carbon levies, and by his own math roughly 70% of what he earned went to the state. So he left. Two decades and many residential developments later, he runs Autris, a small publicly traded company (OTC: AUTR) headquartered in Panama City, and its flagship product: Veritas Villages, a growing network of freedom-oriented communities in Panama, Costa Rica and Nicaragua.<br>I learned about Hiebert from watching the 2026 Free Private Cities conference and followed up with an interview for my upcoming book, Voluntaryism: How the Only “ISM” Fair for Everyone Leads to Harmony, Prosperity and Good Karma for All and our weekly feature libertarian intentional community roundup in our Five Meme Friday newsletter. Asked whether “libertarian intentional community” describes what he builds, he didn’t hesitate: “I think that’s a pretty good nomenclature for what we do.”<br>Veritas Villages is not Próspera. It has no charter city, no special legal jurisdiction and no 50-year stability agreement. Its approach is more modest, and more immediately replicable: find countries whose existing governance already gives you most of what you want, buy land, gather people who think alike, and govern the rest by contract.<br>“Lots of these countries have some pretty good governance. I’d say sometimes 80 to 85% of what we’d want to ask for anyway.” — Patrick Hiebert<br>Who’s Behind It<br>Arnold Patrick Hiebert co-founded the Autris Group with his son, Spencer. In 2025 Mikkel Thorup, the well-known expat and offshore consultant, bought a 5% stake in Autris from Hiebert and joined its board. The company is small but growing fast by its own reporting: for the fiscal year ended June 30, 2025, Autris reported revenue of about $1.18 million (up 383%), gross assets of about $44.4 million, and more than $32 million in acquisitions. It says it intends to raise up to $30 million to buy more land and more Bitcoin and to move up to a major exchange.<br>Those numbers come from company press releases, which are written to sell. Readers who are considering buying a home, or the stock, should do their own due diligence.<br>The Four Villages<br>The Master Plan for Atenas<br>Homes range from a 402-square-foot studio to a 3,400-square-foot, four-bedroom model. Owning a home in any village makes you a member of the Veritas Village Club, which gives you use of the amenities in every other village. Hiebert treats this as a political hedge as much as a perk: “I don’t know what Panama’s gonna be like in 20 years.” If one host country turns hostile, members already have a foothold in the others.<br>F.I.R.S.T. Principles and the One Rule<br>The communities are organized around what Hiebert calls the F.I.R.S.T. philosophy: Freedom, Independence, Resilience, Sustainability and Transparency. In practice, that means off-grid-capable infrastructure (solar, natural water, waste treatment, community food production) and a culture where, in Hiebert’s words, people “can agree to disagree.”<br>He says the buyers come from everywhere. On one recent day at Coronado, ten prospective couples came from Italy, Germany, France, the Netherlands, the UK, Canada, the US and Australia. What they share is not a party but a diagnosis: the West is sliding toward authoritarianism, while much of Latin America is moving the other way. “People further on either spectrum, far left or far right, are probably not going to find our communities interesting,” he says.<br>There are very few rules, but one is unusual. Every commercial business inside a Veritas Village must accept Bitcoin, along with whatever other currencies it chooses. “I’m a big believer in financial freedom, and I’m not a big believer in fiat currencies,” Hiebert says. Autris keeps Bitcoin in its own treasury and runs a solar-powered Bitcoin miner at Coronado.<br>Firing the HOA President<br>Anyone who has lived in an American subdivision knows the homeowners association is often the closest thing to a petty state most people deal with directly. Hiebert’s fix is the most interesting governance experiment in the project: there is no HOA president and no committee. Residents decide HOA matters through a DAO, a blockchain-based voting system, using quadratic voting.<br>Each homeowner receives 100 tokens a year. A single vote on an issue costs one token, but the price rises with the square of the number of votes: two votes cost four tokens, three cost nine. That lets residents show how strongly they care, not just which side they’re on, and it stops one passionate faction from dominating every decision.<br>A die-hard tennis player can spend heavily on a third court. A late sleeper can spend a few tokens on banning roosters. Someone who doesn’t care keeps their tokens for something that matters to them. “If you lose the vote, at least you know that your relatively like-minded neighbors feel differently, and you can’t blame it on one person or one committee,” Hiebert says.<br>From a voluntaryist point of view, this is the part worth studying. It is governance by contract among people who chose to be there, with transparent rules and no permanent ruling class, even a small one.<br>A Mortgage That Pays You<br>Autris recently introduced vendor-financed Bitcoin mortgages. According to Hiebert, buyers who pay in Bitcoin don’t pay interest. Instead, the company pays them 1.9%. His reasoning: fiat lenders charge interest partly to cover the lost purchasing power of the currency they’re repaid in. If you believe Bitcoin doesn’t lose purchasing power, you can afford to pay the borrower. “As far as I know, we’re the only residential community developer that offers negative interest rates,” he says.<br>It’s a clever piece of monetary theory put into practice, and also a bet. In effect, the developer is betting Bitcoin will appreciate. Buyers should understand exactly what their loan is denominated in. If the debt is denominated in Bitcoin and Bitcoin rises, the loan costs more in dollar terms. If it’s denominated in dollars and paid in Bitcoin, the risk is reversed. Read the contract.<br>The Tax Picture: Territorial, Not Zero<br>All three host countries use territorial taxation: they tax income earned inside the country and generally leave foreign-source income alone. A Costa Rica resident who designs buildings for US clients may owe nothing locally on that income. A corner store selling to locals pays the normal tiered rates. Hiebert is careful to say he isn’t a tax lawyer.<br>There is a major exception for American readers. The United States is one of only two countries, with Eritrea, that tax citizens on their worldwide income wherever they live. Moving to Panama does not end your relationship with the IRS. The Foreign Earned Income Exclusion and foreign tax credits soften the blow, but the 0% figure applies to Canadians, Europeans and Australians in a way it doesn&#x27;t apply to U.S. passport holders.<br>And territorial taxation is a policy, not a promise. “I hope they don’t change it and get greedy,” Hiebert says. That is the core vulnerability of the whole model: host governments grant the freedom, so they can take it back.<br>Why Not Próspera?<br>I asked whether Autris would build inside Próspera, the Honduran ZEDE whose charter-city governance is the gold standard of the free private city movement. Hiebert admires it (“I envy Próspera’s governance”) and works with Tipolis, the free-private-city consultancy that helped design Próspera’s governance, on the governance within his own villages. His objection is economic, not philosophical. Próspera’s early investors need land prices high enough to earn back their money, and those prices are above what Autris could resell homes for. “We’d be losing money on every home.”<br>He also points to Honduras’s instability. The country repealed the ZEDE law in 2022, and Próspera spent years fighting to survive a hostile government despite its supposedly ironclad 50-year agreement. As Hiebert put it, they “almost found out a couple of years ago that that didn’t matter.”<br>Proof of Concept as Strategy<br>The most strategically important thing Hiebert told me may be this. He travels with the Tipolis team to meet heads of government and propose self-governed zones, or free cities. (“I don’t use sovereign because the governments hate that word.”) The answer is always the same: show us where you’ve done one.<br>Veritas Villages is that proof. At a recent dinner, a Panamanian minister asked him how Coronado had sold out while neighboring developments sold “one home to their sister and one to their dentist.” Hiebert’s answer was the philosophy itself. The people moving in are bringing businesses with them, including a violin maker and a Canadian snowmobile-parts manufacturer potentially relocating their businesses to the land of the canal and no snow. Now, he says, officials are asking what else they can do to help.<br>That is the incremental path: show results first, then ask for more autonomy. It is slower than a charter and less philosophically satisfying, but it may be more durable because it gives governments evidence that freer arrangements benefit them, too.<br>The Voluntaryist Scorecard<br>Veritas Villages is not a stateless society, and it doesn’t claim to be. Here is our assessment of where it advances voluntaryism and where it falls short.<br>A word on Nicaragua. Hiebert praises Daniel Ortega’s hands-off COVID stance (“I’m not your father, you’re not children”) and calls Nicaragua “the most capitalist socialist country I’ve ever been in.” That may describe daily life for expats. But the Ortega-Murillo government has expelled hundreds of political opponents and stripped them of citizenship, shut down thousands of NGOs, and seized property from critics, including the Jesuit-run Central American University in 2023. A government that confiscates property from people who displease it is the opposite of a safe home for freedom-minded investors. Leaving people alone during a pandemic is one thing. Respecting property rights is another.<br>The Bottom Line<br>Free private cities are the cathedral of the movement: ambitious, legally innovative, and slow to build. Veritas Villages is the parish church. It already stands, is already full, and is built from what is available today. It doesn’t abolish the state. It routes around the worst of it, picks the friendliest jurisdictions it can find, and uses contract, cryptography and sound money to govern what the state leaves alone.<br>For readers who want out of an increasingly authoritarian West now rather than in twenty years, it is one of the more serious options available. For the movement, its greatest value may be as the working example that persuades the next government to sign a charter.<br>Disclosure: This article is not investment, tax or legal advice. Financial figures are drawn from Autris press releases and have not been independently audited by Voluntaryist.News.<br>About the Author<br>Etienne de la Boetie2 is the founder of the Art of Liberty Foundation, and the editor of Voluntaryist.News, our daily survey of the best of the alternative media from a voluntaryist perspective, and Five Meme Friday, which delivers hard-hitting voluntaryist memes and the best of the alternative media. He is an internationally recognized expert and speaker on voluntaryism and government illegitimacy, criminality and corruption. His original writings and research can be found at ArtOfLiberty.Foundation<br>He is the author of multiple books exposing the illegitimacy and criminality of government, including:<br>- The Greatest Theft in Human History – How the Banks and “Government” Will Steal at Least $1.40 MILLION from the Typical Worker… “Legally” – which exposes the theft of inflation from fractional reserve banking and the real cost of confiscatory taxation and Social Security underpayment from government CPI manipulation.<br>- To See the Cage is to Leave It – 25 Techniques the Few Use to Control the Many – An expose of a variety of unethically manipulative techniques the organized crime “government” is using on the population in their mandatory schools, affiliated scouting programs, and through propaganda secretly inserted into films and television shows to trick the population into a system that will steal 58% of their lifetime earnings.<br>- “Government” – The Biggest Scam in History… Exposed! – How Intergenerational Organized Crime Runs the”Government,” Media and Academia- which breaks down how inter-generational organized crime centered around banking and central banking is robbing and controlling the population using the technique of “government” with puppet politicians and monopoly media/academia.</div>
+</div>
+
+</div>
+
+</body>
+</html>
