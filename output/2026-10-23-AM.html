@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-23 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-23 AM · Generated 2026-10-23 08:04 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: github.com, news.ycombinator.com, quad9.net, reuters.com, techspot.com, uberblok.storagebits.workers.dev, wordpress.org, youtube.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    339 points ·
+    138 comments ·
+    petecooper
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #14 · Best #24
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50193416">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I posted here about the then-upcoming PHP RCEs related to CVE-2026-109618 &amp; CVE-2026-109619. I appreciate this has had considerable knock-on effects with the schedule for co-ordinated disclosure, and created additional workload.<br>I am truly sorry. I take full responsibility for my actions.<br>It was not remotely my intention to cause any of the subsequent side effects.<br>At the time of posting, I didn&#x27;t know about any embargo. My contact had told me there was no embargo, and her contact had told her the same thing.<br>As someone who follows the 4-weekly PHP release cycle and compiles it from source, my intention was to alert others in a similar position to be aware of the importance/urgency of the updates.<br>That clearly backfired in a pretty wild fashion. I have learned my lesson.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Quad9 (DNS Resolver) to Exit France
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    950 points ·
+    344 comments ·
+    farrokhi
+  </div>
+
+  <div class="meta">
+    quad9.net
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://quad9.net/news/blog/au-revoir-france/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50195959">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Back to Blog<br>Farewell, France<br>We have some news to share with you.<br>Summary<br>Starting November 24, Quad9 will no longer be able to offer its free cyberprotection service to users located in France.<br>The French courts yesterday handed down an unfavorable ruling against Quad9 in a major case that undermines the transparency and stability of the internet. This decision in favor of beIN forces Quad9 to block the recursive DNS resolution for a number of domain names for users located in France.<br>The good news is the court significantly reduced the financial penalty, from €580,000 to €1,000 per day. However, for Quad9, this has never been just a financial issue: it is a matter of principle.<br>We cannot comply with this ruling over the long term while remaining faithful to our mission to protect your privacy, defend you against cyber threats, and preserve the integrity of the internet. For us, recursive DNS resolution is a neutral and passive service. We categorically refuse to alter or lie to you about the DNS responses you receive in a way that opposes your expectations.<br>This ruling forces an untenable position upon us. Compliance is technically unfeasible, and implementation directly contradicts our mandate to serve the public. As a result, we have made the difficult decision to withdraw Quad9 services from France as of Tuesday, November 24. We deeply regret that French internet users will be left without an alternative that can adequately protect their cybersecurity while remaining compliant with European privacy law.<br>Background<br>beIN, a Qatari company with offices in France, previously sought to force Quad9 to block resolution for a set of domain names they assert are participating in copyright infringement of its audiovisual rights on sports event broadcasts. Quad9 has no association with these domain names, nor with the operators of the websites. The French courts have fundamentally misunderstood the working of the internet and the role of the domain name system and have allowed a financial penalty to apply to Quad9 if we do not block DNS responses to users in France.<br>Quad9 is a Swiss public-benefit, nonprofit foundation established for the explicit purpose of protecting the cybersecurity of internet users. We charge nothing for our service and serve all people and organizations which seek to improve the security and privacy of their internet use. Our core values are to make privacy, security, and integrity available to all internet users, and our mission is to universally apply these guiding principles to recursive DNS resolution services in order to serve end users.<br>We want to be very clear: we do not condone content piracy. Quad9 exists to create a safer, more trustworthy internet experience for end users. We offer global blocking as an option for malicious cyberactivity against users worldwide. We do not block content, and we give users the choice to use our threat blocking services, or not, based on their interests and needs. Content piracy needs to be dealt with at the source: the place where the infringing content is published. Forcing uninvolved third parties to break the fundamental operating principles of the internet to benefit individual parties to the detriment of the global internet-using public is misguided, counter-productive, and distracts from actual solutions addressing the hosting of the content directly, or the market pressures which cause piracy to exist in the first place. Not only are DNS recursive resolvers, like Quad9, the wrong actors to address piracy, but applying legal pressure to Quad9 will also have vast unintended consequences harming the cybersecurity of hundreds of millions of innocent internet users.<br>For Quad9, complying with this ruling is impossible. We have no database of users associating them with jurisdictions. Our service is free to the public and does not require sign-up or proof of identity. Recursive DNS is so fundamental to the underlying operation of the internet that there is no method to map users’ jurisdictions reliably, nor do we think there should be a way to force users to identify themselves before they can connect to the internet. Our core goals – privacy of user data and honesty of responses - are directly opposed to the methods necessary to implement the blocking this court ruling would require us to perform. There is no way we can determine which users this ruling applies to – we have no list of French users, because we do not keep dossiers of our users at all.<br>If we do not comply, we will face a daily penalty of 1.000 euros until the blocking concludes on November 14 (i.e., 24.000 euros) not including our legal defense. Quad9 cannot survive the accumulation of penalties yet to be assessed in 20 other pending cases, nor those of future cases similar to the one brought by beIN. Inaction is, therefore, not an option to challenge this decision.<br>Can Quad9 just comply via global blocking?<br>We could add these names to our global malicious domain blocking database, which is what we use to provide internet users with malware and phishing protection. This is a single, monolithic set of names applied to all users of our protective services (9.9.9.9 &amp; secondaries) globally but not to our nonprotective services (9.9.9.10 &amp; secondaries). Blocking these names for all users globally would satisfy the requirements of the court.<br>However, this would have the “extraterritorial” effect of applying French legal decisions to every internet user worldwide, when they are meant to solely apply to France, for the commercial benefit of a single private, foreign-owned company. We suspect if other nations wished to impose their national legislation within France, there would be a strong reaction from French users and authorities. The converse is equally true: the findings of a French court are not applicable to the rest of the world. Such a system would set a precedent that any nation could impose their laws, morals, economic demands, or social constructs upon any other nation by the means of blocking DNS names, and thus blocking communication and content.<br>Therefore, this global blocking method is entirely unworkable for us as a solution to be compliant with the court order.<br>What is “France” from the perspective of the internet?<br>There are more important reasons geoIP blocking will not work. We already prevailed in a similar legal case in Germany in 2021-2023 in which we learned an important lesson: we tried to use geoIP blocking as a “hack” in a similar circumstance at the start of the legal proceedings, allowing us to continue services in Germany until the case concluded. The plaintiff (Sony Music Entertainment GmbH) then used a VPN to access the blocked content from Germany in circumvention of the geoIP blocking. The court agreed with Sony in their assertions of noncompliance, and we were fined for contempt of court.<br>From this experience, we know that the geoIP-based model is not only unfit from a technical perspective, but we have proven, historical evidence that using geoIP methods results in fines being levied against us by courts. To any technology-aware person, this seems absurd and outrageous – but this is what we face in these lawsuits where there is a disconnect between the courts’ understanding and how (and why) the technical protocols of the internet actually operate. We cannot risk this negative outcome in this or any other future instance, as absurd decisions apparently are de rigueur in these cases.<br>We eventually won that case against Sony, but it took several years, six figures of cost to Quad9, and massive wasted time – all of which set us back in our ability to deliver services and is a resource debt we are still paying for today. This case is just more of the same – the opposition has more lawyers than we have money and time.<br>The decision of Quad9<br>Given these conditions and as a result of our unwavering mission, our historical experience, our desire to remain within the law, and the outcome of the court decision, we are left with an uncomfortable choice.<br>The demands lead us to an impossible requirement: we must adhere to the court’s decision, or we face growing risks to our existence. However, in implementing the blocking, we must either extend French law to the whole world (blocking globally) or create a vulnerability condition whereby we continue to be at risk because the available technical methods are imprecise, impossible to validate, and do not meet any user privacy and security requirements.<br>This leads us to the only conclusion we can understand to eliminate our legal risk and keep us true to our mission: we must make our cybersecurity protection and general services unavailable to French users. Our departure is scheduled for November 24, 2026.<br>In any event, for Quad9, this is a matter of principle regarding the potential misuse of these types of blocking measures. Allowing private corporations to have the ability to block what is seen on the internet seems to us to be a dangerous and infinitely deep problem. Actions that seem reasonable and infrequent today will tomorrow become an avalanche of petty demands used to suppress political, religious, economic, or social outcomes. We will not be even a small part of that degradation of the freedom of knowledge. Once the tools of censorship are built, they are rarely used sparingly or justly.<br>This case with beIN is not the only litigation we face in France. There are approximately 20 different lawsuits pending against Quad9 (and other recursive resolver operators) that demand we comply with blocking hundreds of different names. We expect many of them to escalate to the same conditions as we have seen with beIN, which puts Quad9 at risk regardless of the outcome of this case.<br>Based on the generalized, high-level traffic statistics we keep, we know we have many users in France. With our departure, those users will be put at risk from the threats we have protected them from for nearly 9 years. We deeply regret that result, but we have no other choice. Below is a partial list of the networks from which we see traffic in France. You will see many infrastructure, national security, finance, education, and other networks of critical importance in addition to ISP users and mobile users. All these users will lose service on November 24 because of the legal risks facing Quad9 in France.<br>What is the purpose of this whole lawsuit, anyway?<br>The most troubling part of this decision is that it is ineffective in practice. Forcing Quad9 to block domain names does not take the content out of circulation and has no effect on the servers that house the data.<br>We offer a free service, and there are thousands of other open DNS systems that do what Quad9 does but with lower trust, safety, and reliability. Users seeking blocked content will simply shift their DNS to use one of those other free services, possibly using systems in other nations that have less-than-honorable intentions from a privacy and security perspective. This is like holding a piece of newspaper in front of a stadium full of people to block the view of a concert. It is an unsolvable problem via recursive DNS, and the effect of legal rulings like this is not measurable outside of the amounts paid to lawyers and the number of words in press releases declaring hollow victory.<br>Even beIN will not see any changes. Perhaps that is understood and the cruelty may be the point - we cannot say with certainty why such expenditures have been made against a small nonprofit like Quad9, which tries only to bring safer, trusted service to users. But of this we are certain: these actions are a tragic waste of time and resources and create a real, negative outcome for the internet community of France, whether or not they are our users.<br>What we are doing on November 24<br>Quad9 will not block the domains in question - we wish to remain committed to our integrity of providing a complete view of the DNS for users who wish that service. However, starting on November 24, we will no longer serve French users, thus keeping Quad9 out of danger from similar, perhaps even larger risks in the future. Our hope is that 30 days will be sufficient time for conversion, though we regret that this message will undoubtedly not reach some users in time.<br>An appeal is pending, and we will continue to legally defend our position in court in this case and as many other cases as we are able. We will continue to oppose court-ordered DNS blocking of this nature everywhere. Our resources are limited, but we are determined to keep the internet open and free. You can donate here to help us continue to deliver on our mission and assist us in the legal costs we incur in this and other fights.<br>What you can do next<br>We think this problem is reversible. French citizens: tell your legislators that looking up names is not a criminal offense. The internet needs to remain open and freely available to anyone, and neutral intermediaries like Quad9 (or any DNS resolver) should not be implicated in legal proceedings because we map names to IP addresses. Further, we know there are potential plans in consideration in France (and other European nations) to give private corporations and others automated and unvalidated abilities to filter DNS content that they alone determine to be unwanted, making it possible for a wide range of badly-managed or anti-democratic activities to be implemented. We believe you disagree with this as much as we do. Make yourself heard, or you will lose your rights silently.<br>ARCOM is your regulatory authority, and you should tell them this precedent places France at risk both from a practical and strategic perspective.<br>Let them know that under their mandate, they have to balance your digital rights as citizens as well as the audiovisual rights on sports event broadcasts of rights holders. Balance cannot be claimed when the privacy and security of digital users are the collateral damage.<br>In conclusion<br>Fighting piracy via DNS resolvers blocking is ineffective. It is disproportionate and misguided, ill-fitted and futile to fight piracy, as the source content remains completely available to resurge under another name. Forcing Quad9 to depart harms French digital strategy and sovereignty in the long run relating to security, privacy, and integrity - contradicting France’s supreme national interests in exchange for a short-term, imaginary commercial victory.<br>We deeply regret that we must leave our French users without cybersecurity protection, but we hope the future will see a more reasonable interpretation of the law which allows us to return.<br>Sincerely,<br>The Quad9 Team<br>* This post was authored and translated into French by humans on the Quad9 Team<br>Partial List of French Networks Using Quad9<br>This list is extracted from network metrics of an hour or so of typical usage. Quad9 tracks network autonomous systems number origins as per our privacy policy, but we do not identify individual IP addresses or users within those networks. There are hundreds of additional French networks using Quad9; we picked only these at random to show the breadth of usage. Autonomous systems are not exclusively geographically-mapped and cannot be used as a jurisdictional identifier; though it is safe to say that most of these networks have a significant portion of their user base in France.<br>National government &amp; public agencies 60855 — Direction interministérielle du numérique (DINUM) — Prime Minister’s digital directorate; sets state digital strategy and runs the interministerial state network (RIE). 43717 — Business France (EPIC) — National agency that helps French firms export and attracts foreign investment. 205461 — France Travail (EPA; formerly Pôle emploi) — National public employment service: job placement, jobseeker support, unemployment benefit payment. 777 — CEA Paris-Saclay (EPIC) — Saclay centre of the Commissariat à l’énergie atomique et aux énergies alternatives; public research in nuclear and alternative energy, defence and health technology. 44850 — Institut de recherche pour le développement (IRD; EPST) — Public research institute working with Global South partners on health, environment and social sciences. 29110 — Institut Pasteur (private foundation, recognised as public utility) — Non-profit biomedical research foundation in Paris (infectious diseases, vaccines, microbiology); hosts national reference centres.<br>Research &amp; education network 1307, 1712, 1715, 1942, 1945, 2060, 2094, 2198, 2200, 2202, 2259, 2269, 2457, 2470, 2472 — RENATER (GIP) — National research and education network; its members are the State and public research bodies.<br>Student-run campus networks 204515 — Crans (association) — ENS Paris-Saclay student network association providing connectivity, hosting and email to members. 212424 — ViaRézo (Association des réseaux de CentraleSupélec) — Student association providing internet and IT services on the CentraleSupélec campus. 207849 — ESIEESPACE — ESIEE Paris student club that runs OpenGate, a student non-profit ISP.<br>Private education 56339 — IONIS Education Group (SAS) — Private for-profit higher-education group (EPITA, Epitech, ESME, IPSA, ISG, Sup’Biotech).<br>Regional &amp; local government 208458 — Région Nouvelle-Aquitaine — Regional authority covering 12 départements; seat in Bordeaux; created 2016. 208820 — Département de la Seine-Saint-Denis — Île-de-France département; council seated in Bobigny. 50036 — Département des Pyrénées-Atlantiques — Nouvelle-Aquitaine département; council seated in Pau. 34000 — Département des Bouches-du-Rhône — Departmental council. 48799 — Ville et Eurométropole de Strasbourg — Shared administration of the City of Strasbourg and the 33-commune Eurométropole. 204897 — Grand Besançon Métropole — Communauté urbaine of 67 communes around Besançon. 208574 — Communauté de communes du Pays de Bitche — Intercommunal body of 46 communes in Moselle; owns the Tubéo public fibre-to-the-home network. 202834 — Commune d’Échirolles — Commune south of Grenoble; member of Grenoble-Alpes Métropole. 211127 — SITPI (Syndicat intercommunal pour les télécommunications et les prestations informatiques) — Ten Grenoble-area communes pooling telecom, IT and GIS services.<br>Public digital infrastructure (local-authority networks &amp; IT) 200245 — Manche Numérique (syndicat mixte) — Builds the Manche fibre network; provides IT, e-administration and telecom services to local authorities. 44842 — Somme Numérique (syndicat mixte) — Owns the Somme fibre network; provides digital services to local authorities and schools. 214589 — Essonne Numérique (syndicat mixte ouvert) — Essonne public fibre network, plus interconnection, hosting and data-centre services for public sites. 47608 — Gigalis (GIP) — Pays de la Loire regional fibre network for local authorities, health, emergency services and schools. 41114, 62038 — Orne THD (SPL) — Company owned by Rombas and neighbouring communes in Moselle; sells fibre internet and TV over their networks. 39271 — C’Chartres Innovations Numériques (SEM) — Chartres Métropole company running fibre, a private 5G network, a data centre and IT services. 207430 — SITEC, Société informatique et télématique corse (SEM; Collectivité de Corse 56%) — Hosting, cloud, cybersecurity and IT services for Corsican public bodies. 50547 — Régie du réseau câblé du Haut Sundgau (local-authority régie) — Public wired telecom network in southern Alsace. 49011 — MACS THD (SASU, SFR group) — Private company running the Maremne-Adour-Côte-Sud (Landes) high-speed network under a public-service concession.<br>Energy &amp; utilities 1301 — Électricité de France (EDF; 100% state-owned) — National electricity producer and supplier; operates France’s nuclear fleet. 62141 — Compagnie nationale du Rhône (CNR; majority public shareholding, Engie reference shareholder) — Holds the Rhône concession: hydroelectric dams, navigation and irrigation, plus wind and solar. 39830 — Teréga (private SA; formerly TIGF) — Gas transmission and underground storage operator for south-west France. 43734 — UEM (local SEM; formerly Usine d’électricité de Metz) — Metz utility: electricity, gas, district heating, public lighting. 12727, 42487, 208719 — Vialis (SEM; Colmar largest shareholder) — Colmar utility: electricity and gas plus cable TV, internet and fibre. 204645 — Régie ENES (Régie municipale d’électricité de Creutzwald) — Municipal régie: electricity, fibre internet, local TV, district heating.<br>Transport 203885 — SNCF (Société nationale SNCF SA; state-owned) — Parent holding company of the national railway group. 34809 — Sanef (SA; Abertis subsidiary) — Motorway concession operator for northern and eastern France.<br>Health 201659 — AP-HM (Assistance Publique – Hôpitaux de Marseille) — Marseille’s public university hospital group. 51588 — SESAN (GIP) — Île-de-France regional body providing shared digital-health services to care providers. 49692 — Compagnie Générale de Santé (SAS; private) — Name of the hospital group now called Ramsay Santé.<br>Broadcast &amp; media 24843, 43930 — France Télévisions (state-owned SA) — National public-service television broadcaster. 43646 — TDF (SASU; owned by infrastructure funds) — Broadcast transmission and tower infrastructure operator.<br>Private industry &amp; technology 29104 — Thales Services Numériques (SAS; Thales group) — IT services, cloud, security operations and integration for defence, space and public-sector clients. 49068 — Stormshield (SAS; Airbus Defence and Space) — Cybersecurity vendor (firewalls, endpoint protection, encryption); ANSSI-qualified products. 57226 — IDEMIA Identity &amp; Security France (SAS) — Identity documents, biometric identification and border/access systems; formerly Safran Morpho. 41935 — Dassault Systèmes (SE; listed) — 3D design and simulation software (CATIA, SOLIDWORKS); not Dassault Aviation. 42924 — VINCI Construction SI (SNC) — In-house IT unit of VINCI Construction. 201647 — SI-nerGIE (GIE of Orano and Framatome) — Shared IT operations for both companies: data centres and local support. 49920 — Flowbird (SAS) — Maker of parking meters and transit ticketing systems. 20493 — Viparis Le Palais des Congrès de Paris (SA; 50/50 CCI Paris Île-de-France and Unibail-Rodamco-Westfield) — Operates the Palais des Congrès convention centre.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: Uberblok – an interactive museum of ZFS internals
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    70 points ·
+    20 comments ·
+    storagebits
+  </div>
+
+  <div class="meta">
+    uberblok.storagebits.workers.dev
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #23
+  </div>
+
+  <div class="links">
+    <a href="https://uberblok.storagebits.workers.dev/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50180257">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Keeping data safe is critical work, and seldom seen. A file system is handed everything people keep, and it has to stay right through crashes, failing disks and writes cut short. One of the principles ZFS was designed on, in Bill Moore’s words: never, ever trust the underlying hardware.<br>1<br>This museum pays homage to that piece of engineering, and to the people who built it. Jeff Bonwick led the development of ZFS, with Bill Moore as co-lead;1 Matt Ahrens was one of its two original authors.2 The work began in 2001 with two engineers at Sun Microsystems3 and was integrated into Solaris on 31 October 2005,4 a step Bonwick summed up as 584 files, 92,000 lines of change, 56 patents, 5 years<br>.4 On 17 November he wrote: I’m incredibly proud of the ZFS team, and deeply grateful: no one person can do something on this scale.<br>5<br>It pays homage, too, to the engineering at Sun in those years, where engineers published how their systems worked: the slab allocator, presented by Jeff Bonwick at USENIX in 1994;6 DTrace, by Bryan Cantrill, Michael Shapiro and Adam Leventhal, in 2004;7 and the source of ZFS itself, released under the CDDL as part of OpenSolaris.3<br>And to those who carry it on: OpenZFS, announced in 20132 and founded by members of the Linux, FreeBSD, Mac OS X and illumos communities.2 The release this museum reads lists more than 700 people in its AUTHORS file.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    PHP 8.2.35
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1077 points ·
+    558 comments ·
+    tuyuri
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/php/php-src/releases/tag/php-8.2.35">Original article</a> · <a href="https://news.ycombinator.com/item?id=50180873">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Related ongoing thread: Today&#x27;s PHP security release, and how we&#x27;re strengthening security - https://news.ycombinator.com/item?id=50182987</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    America is Booming into a Ghost Town [video]
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    idbnstra
+  </div>
+
+  <div class="meta">
+    youtube.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.youtube.com/watch?v=rX0RuKswLAo">Original article</a> · <a href="https://news.ycombinator.com/item?id=50202800">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    OpenShell – A safe, private runtime for fleets of autonomous AI agents
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    277 points ·
+    143 comments ·
+    niemandhier
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #33
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/NVIDIA/OpenShell">Original article</a> · <a href="https://news.ycombinator.com/item?id=50198675">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Important<br>New in OpenShell 0.1.x: a stable release cadence, new isolation primitives, an expanded extension surface, and new APIs. Read the 0.1.0 upgrade guide.<br>OpenShell is the safe, private runtime for fleets of autonomous AI agents. Agents are most useful when they can read files, install packages, call APIs, and use credentials. OpenShell gives them that capability without giving them unrestricted access to your data, secrets, or network. You declare what each agent can touch in a policy, and OpenShell enforces it.<br>OpenShell governs what agents can do in two ways: it instruments the kernel to enforce policy on every file access, system call, and network connection at runtime, and it uses formal verification to check what a policy change would allow before it is applied.<br>- Kernel-level enforcement. Each agent runs in an isolated sandbox. Kernel controls confine which files it can access and which system calls it can make, and every network connection passes through a policy check before it leaves the sandbox. Agents never see real credentials; OpenShell adds them only to requests bound for approved endpoints.<br>- Formally verified policy changes. Before a policy change is approved, OpenShell uses formal verification to flag risky new access it would grant, such as reaching a new host with credentials or calling a new API method, so those changes wait for human review.<br>See Architecture for how the gateway, supervisor, and sandbox fit together.<br>You need Linux, macOS on Apple Silicon, or Windows with WSL 2 (experimental), plus Docker, Podman, or host virtualization. See the Support Matrix for details.<br>curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh<br>openshell sandbox create --name demo<br>The installer sets up the CLI and a local gateway. The default sandbox image is minimal Ubuntu with no agent installed. To run a real agent, follow Run Your First Agent: it runs OpenCode against a free OpenRouter model and shows how to approve new access as the agent needs it.<br>- Sandboxes: images, runtimes, GPUs, and lifecycle.<br>- Policies: filesystem, network, and process rules, with the advisor and prover for reviewing changes.<br>- Providers: credentials that work only at approved endpoints, including inference.<br>- Gateways: the control plane for sandboxes, policy, and access.<br>- Kubernetes: deploy the gateway with Helm. Your CNI must enforce NetworkPolicy.<br>- Extensibility: middleware, interceptors, and compute drivers.<br>- Tutorials: step-by-step policy and agent walkthroughs.<br>- Prerelease and development builds: try an upcoming release or the latest commit on main.<br>Install the public OpenShell skills for your coding agent:<br>npx skills add NVIDIA/OpenShell<br>The skills teach your agent to drive the OpenShell CLI, write sandbox policies, and debug gateways and inference routing. They live in skills/ and work without an OpenShell source checkout.<br>SDKs connect applications to an OpenShell gateway. They do not install the CLI. Use the same OpenShell release for the SDK and the gateway when possible.<br>| Language | Install | Docs |<br>|---|---|---|<br>| Python | uv add openshell | README |<br>| TypeScript | npm install @nvidia/openshell-sdk (GitHub Packages) | README |<br>| Go | go get github.com/NVIDIA/OpenShell/sdk/go@latest | README |<br>| Rust | cargo add openshell-sdk --git https://github.com/NVIDIA/OpenShell --tag &lt;release-tag&gt; | Installation and usage |<br>- Questions and discussion: GitHub Discussions<br>- Bug reports and feature requests: GitHub Issues, using the issue templates<br>- Security vulnerabilities: follow SECURITY.md. Do not open a GitHub issue.<br>- Roadmap: OpenShell Roadmap and the RFC board<br>- Try it in the cloud: Brev Launchable<br>OpenShell is built agent-first: it is developed with the same agent-driven workflows it enables. See CONTRIBUTING.md for development setup and the contribution workflow, and AGENTS.md for repository coding conventions.<br>OpenShell collects anonymous telemetry, limited to operational categories and counts, to help improve the project. It does not collect sandbox names, hostnames, file paths, prompts, credentials, provider or model names, or user content. To disable it, set OPENSHELL_TELEMETRY_ENABLED=false on the gateway, or server.telemetryEnabled=false for Helm installs. You can also compile telemetry out entirely. See Telemetry for details and the community telemetry reports for published usage trends.<br>This software automatically retrieves, accesses or interacts with external materials. Those retrieved materials are not distributed with this software and are governed solely by separate terms, conditions and licenses. You are solely responsible for finding, reviewing and complying with all applicable terms, conditions, and licenses, and for verifying the security, integrity and suitability of any retrieved materials for your specific use case. This software is provided &quot;AS IS&quot;, without warranty of any kind. The author makes no representations or warranties regarding any retrieved materials, and assumes no liability for any losses, damages, liabilities or legal consequences from your use or inability to use this software or any retrieved materials. Use this software and the retrieved materials at your own risk.<br>This project is licensed under the Apache License 2.0.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: Replacing CAPTCHAs with adaptive proof-of-work in WordPress
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    7 points ·
+    5 comments ·
+    MatthiasNordwig
+  </div>
+
+  <div class="meta">
+    wordpress.org
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #26
+  </div>
+
+  <div class="links">
+    <a href="https://wordpress.org/plugins/gdpr-compliant-recaptcha-for-all-forms/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50194762">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Description<br>Spam protection your visitors never see. No image grids, no “I’m not a robot” checkbox, no puzzles, nothing to click. Your visitors just hit Send — while their browser silently solves a tiny cryptographic challenge (proof-of-work) in a few milliseconds. Real humans never notice. Mass-spam bots either fail the challenge or have to burn so much computing power per message that spamming your site stops being worth it.<br>Every form, out of the box. WordPress logins, registrations and comments, WooCommerce checkout and reviews, and virtually every form plugin — Contact Form 7, Elementor Pro Forms, WPForms, Gravity Forms, Ninja Forms, Fluent Forms, Formidable and dozens more (full list below). One plugin protects all of them, and the most popular builders are detected and configured automatically on activation.<br>Truly universal — not a list of integrations<br>Most anti-spam tools protect only the form plugins they ship an integration for. If your builder is not on their list — or you use a hand-coded form, a theme’s built-in form, or three different builders on one site — you are on your own.<br>This plugin works differently: it recognizes submissions by their signature — the characteristic fields and actions of the request itself — instead of hooking into specific form plugins. That is why it covers any form:<br>- Popular builders are recognized automatically: their signatures ship with the plugin and are pre-configured on activation.<br>- Everything else — custom-coded forms, exotic builders, legacy themes — you teach the spam check yourself in under a minute: turn on direct analysis mode, submit the form once, click save. Done. No code, no waiting for the developer to add your builder.<br>And because no integration code is involved, nothing breaks when your form builder updates.<br>In practice that solves two everyday problems:<br>- Real sites mix. A typical site has comments, a contact form from one builder, a newsletter signup from another, WooCommerce reviews — protecting each with its own anti-spam solution means more plugins, more settings pages, more things that can conflict. Here, one plugin covers the whole site.<br>- Designers and agencies standardize. If you build sites for clients, you can install the same proven plugin on every project — no matter which form stack the client uses (or switches to later). One tool to know, one place to look when something needs attention.<br>Why “invisible” wins<br>Every CAPTCHA interaction costs you real visitors: an extra click here, an unreadable image there, “select all traffic lights” on a phone screen — and the contact request or sale is gone. This plugin flips the deal: instead of making humans prove themselves, it makes the device pay. The visitor’s browser proves it is a real, JavaScript-running client by doing a moment of invisible computation. Zero friction for people, real costs for bots.<br>Self-contained and featherweight<br>Everything runs on your own web server — there is no external service in the loop. That is not just a privacy nicety, it is an operational one:<br>- Nothing external can fail. No third-party API whose outage, rate limit or latency silently breaks your forms. Your spam protection is exactly as available as your site.<br>- Nothing external slows you down. No remote scripts, no extra DNS lookups or connections — your PageSpeed and Core Web Vitals stay untouched.<br>- Tiny footprint. A few kilobytes of JavaScript and lean server code; runs fine on shared hosting, staging environments and even intranets without internet access.<br>Why not just use …<br>- Google reCAPTCHA, hCaptcha or Turnstile? They require an account and API keys, load scripts from external servers (hello, consent banners) and still challenge real users when in doubt. This plugin needs no keys, loads no third-party scripts and never challenges anyone.<br>- Akismet? Sends the content of every submission to an external service for analysis, and commercial sites need a subscription. Here, everything stays on your own server.<br>- Honeypot fields and time checks? Modern bots skip honeypots routinely, and browser autofill loves to fill them by accident. Proof-of-work attacks the economics of spam instead of playing hide-and-seek.<br>And they all share one structural limit: they protect the forms they ship an integration for. This plugin protects the forms you actually have (see “Truly universal” above).<br>Key features<br>- Invisible — zero user interaction, ever<br>- Protects everything: logins, registrations, comments, WooCommerce, every form builder — even hand-coded custom forms<br>- No account, no API keys, no external service for the spam check — install and you are done<br>- Brute-force protection for logins, with optional Fail2Ban log support<br>- Adaptive under-attack mode: the challenge automatically gets harder for everyone while a spam wave is running, and relaxes afterwards<br>- Your choice per site: block spam, deliver it flagged, or just collect it in a spam inbox and watch<br>- Teach it live: unrecognized custom form? Direct analysis mode adds it with one click, straight from the live page<br>- Lightweight: a few KB of JavaScript, no render-blocking, no layout shift<br>- Privacy-friendly by design: no cookies, no sessions, no tracking, no visitor data leaves your server, IP addresses are only stored as hashes — GDPR/DSGVO/RGPD-friendly without a consent banner<br>- Free<br>Setup Guide<br>Works with<br>Pre-configured out of the box — as soon as the plugin is active, these are recognized automatically, no setup:<br>WordPress: Login, Password Reset, Comments<br>WooCommerce: Checkout, Login, Password Reset, Product Reviews (the shopping cart is deliberately not checked)<br>Form and page builders: Contact Form 7, WPForms, Elementor Pro Forms, Ninja Forms, Fluent Forms, Forminator, Gravity Forms, Formidable Forms, Everest Forms, WS Form, SureForms, MetForm, JetFormBuilder, Otter Blocks, Spectra, Kadence Blocks, Essential Blocks, Divi Forms, MW WP Form, Jetpack Forms, Mailchimp for WordPress, MailPoet, WP User Frontend, wpDiscuz, bbPress (topics &amp; replies), Thrive Architect, Thrive Leads, Thrive Apprentice, Thrive Quiz Builder, Thrive Comments, UserFeedback, Popup Maker (subscription form), YITH WooCommerce Wishlist, Newsletter (subscription forms), CoBlocks, Popup Builder, Hustle, MailerLite, Email Subscribers, Quiz and Survey Master, WP-Polls, Form Maker, Gutena Forms, Happyforms, Brevo, Mailchimp List Subscribe, Calculated Fields Form, Crowdsignal Forms (NPS &amp; feedback), Pirate Forms, Hostinger Reach, FormLayer, My Sticky Elements, Cool FormKit, Visual Form Builder, Royal Elementor Addons (forms), Happy Addons (Mailchimp form), Chaty (contact form), Jeg Kit (Mailchimp form), Element Pack Lite (contact form), Depicter (lead forms), Hello Plus (forms), PopupKit (subscription form)<br>Reviews and testimonials: Customer Reviews for WooCommerce, Strong Testimonials, Site Reviews, WP Ultimate Review<br>Checkout and registration forms (recognised and recorded; blocking them is a separate switch, off by default): BuddyPress (registration), WP-Members (registration), ProfilePress (registration &amp; checkout), Easy Digital Downloads (checkout), CartFlows (checkout login), Amelia (booking), Bookly (booking)<br>Added in under a minute, without code — switch on direct analysis mode, submit the form once, click save: registration forms (WordPress and WooCommerce), Ultimate Member, BuddyForms, MemberPress, Paid Memberships Pro, CheckoutWC &amp; Flux Checkout, Quform, NEX-Forms, Bit Form, Form Maker, Funnelforms, Mailjet, SiteOrigin Page Builder, Calculated Fields Form, weForms, Responsive Contact Form Builder, Smart Forms, Kali Forms, Happyforms, ApplyOnline, FormCraft, CRM Perks Forms, Tripetto, Easy Form Builder, SimpleForm — and any hand-coded or custom form.<br>One honest limit: a form that is hosted elsewhere and only embedded on your page (Typeform, Jotform, Zoho Forms, HubSpot, OptinMonster and the like) sends its data straight to that service. The submission never reaches WordPress, so no WordPress plugin — this one included — can check it.<br>Screenshots<br>Installation<br>- Install &amp; activate the plugin via the WordPress Plugins page — protection starts immediately with balanced defaults, and popular form builders are configured automatically<br>- Watch the short setup video (see above) to understand the message inbox and the analysis modes<br>- After a few days, check the message inbox: real submissions arrive as messages, spam lands in the spam folder<br>- Using a custom or exotic form that was not recognized? Turn on direct analysis mode and add it with one click, straight from the live form<br>- (Optional) Decide how to treat spam: block it, deliver it flagged, or just collect it<br>FAQ<br>- Does it actually work?<br>- Yes. For the kind of spam that plagues almost every site — automated, mass-sent — the typical experience after activation is that it simply stops: every message now costs the sender real computing power, which breaks the economics of sending thousands of them. That result has held up across years of production use. And the protection is actively maintained: when a new generation of protocol-aware bots learned to reuse a solved challenge across many submissions, version 5.0 closed that route with single-use, signed tokens. For the rare rest — targeted spam written by humans — the flag-and-inbox workflow keeps you in control instead of promising magic.<br>- Will my visitors notice anything?<br>- No. There is nothing to see, click or solve. The proof-of-work starts in the background as soon as the page has loaded and is typically finished within a second or two — long before they hit Send.<br>- Do I need an account or API keys?<br>- No. Unlike reCAPTCHA, hCaptcha or Turnstile the spam protection involves no external service at all — no keys, no registration, no third-party scripts, no rate limits.<br>- Will it slow down my site?<br>- No. The plugin ships a few kilobytes of JavaScript, loads no external resources and causes no layout shift. The computation happens on the visitor’s device in the background; the server-side check is a single fast lookup.<br>- Does it work with caching plugins?<br>- Yes. The challenge token is fetched via Ajax at runtime, so fully cached pages stay protected. One thing to know: right after installing or updating, clear your page cache once so the plugin’s JavaScript is included everywhere.<br>- Which forms are supported?<br>- All public forms — including hand-coded and custom ones. The plugin recognizes submissions by their signature (the request’s characteristic fields and actions) instead of integrating with specific form plugins, so it is not limited to a fixed list. WordPress core, WooCommerce and the several dozen builders listed above come pre-configured; any other form is added without code in under a minute via direct analysis mode: submit it once, click save.<br>- What data is stored? Is it GDPR compliant?<br>- Everything the spam protection touches stays on your server: no cookies, no sessions, no tracking, no external requests. IP addresses are only stored as SHA-256 hashes, and password fields are never stored with saved messages. That means no consent banner is needed for the spam protection — friendly to GDPR (DSGVO, RGPD) and similar privacy laws. The one thing that can leave your server is a message you type yourself when deactivating the plugin — see the next question.<br>- Does the plugin send anything to an external service?<br>- The spam protection: never. There is exactly one exception, and it only happens if you make it happen. When you deactivate the plugin, a box asks what went wrong. If you type something and press Send and deactivate, that text is sent to the plugin author’s server at programmiere.de and kept for 90 days. The plugin’s name and version number travel with it. Nothing else is stored with it — no IP address, no address of your site, no referring page, no browser details, and nothing from your forms. Press Deactivate without sending, or leave the box empty, and nothing at all is transmitted. Full details: https://programmiere.de/GDPRCompliantRecaptcha/<br>- Does it protect WooCommerce?<br>- Yes: checkout, login, registration, password reset, comments and product reviews are covered out of the box.<br>- What spam does it stop — and what not?<br>- Every submission has to pay for itself with a small proof-of-work computation. This makes mass spam economically expensive and silently filters out low-effort bots — the vast majority of spam. Like any anti-spam solution (including CAPTCHAs), it cannot fully prevent targeted, low-volume spam sent by a determined human or a bot that invests real computing power per message; for those rare cases, use the flag-instead-of-block option and the spam inbox to keep an eye on what comes through.<br>- Submissions are incorrectly treated as spam<br>- Right after installation this is usually a caching issue: the proof-of-work JavaScript is not yet included in cached pages. Clear the cache on your webserver (or caching plugin) and in your browser.<br>- JavaScript might crash due to an incompatibility with another plugin. Press F12 on the affected page and check the browser console for errors — and please report the issue in the support forum; such reports are usually addressed within a day.<br>- A real message was refused as “Gibberish content”<br>- Since 6.0, gibberish detection is off unless you switch it on for individual fields, so this should no longer happen on its own. If you did switch it on for a field: open the message, look at the reason line — it names the field that triggered it — and use that field’s button to stop checking it. Fields carrying tokens, licence keys or reference numbers are random by design and are not suitable for this check; message and subject fields are.<br>- Neither messages nor spam show up in the inbox<br>- Activate the Analysis mode<br>- Submit the affected form and look for the captured entry in the Analytic Box<br>- Open the entry and add it to the protection scope<br>- If the submission does not appear there either, please post in the support forum<br>- After updating, (almost) every submission is flagged as spam<br>- The protection works by having the visitor’s browser silently solve a small puzzle before a form is submitted. If that puzzle is never solved, a genuine submission looks exactly like a bot, so it gets flagged. Right after an update there are three common reasons for this, all quick to rule out:<br>- Stale server code / OPcache. The update changed the database schema, but your server may still be running the previous version’s PHP code from its OPcache — the two no longer match. Flush the OPcache (restart PHP-FPM, or use your host’s “Flush OPcache” button), then clear any page/object cache. 5.1 also tries to do this automatically on update, but some hosts still need it done once by hand.<br>- A cached page serving the old script. If a full-page cache is serving pre-update HTML, browsers load the previous version’s script against the new server. Purge your page cache (and CDN) once after updating.<br>- A reverse proxy / CDN without Trusted Proxies set. If your site sits behind Cloudflare, a load balancer or similar and the plugin sees the proxy’s IP instead of the visitor’s, the check cannot line up. Set your proxy’s address under Settings Trusted proxies.<br>To confirm which one it is: open the affected page, press F12  Console, and look for a warning from “gdpr-recaptcha”; on the Network tab, check that the get_stamp request returns clean JSON (no PHP notice/HTML before it). Sharing that in the support forum pins it down immediately.<br>- Problems with Borlabs Script Blocker<br>- When you use the Borlabs Script Blocker to scan for JavaScript, the scan does not work properly while this plugin is active. Deactivate this plugin for the scan and reactivate it afterwards.<br>- Still stuck?<br>- Check the browser console (F12) on the problematic page for messages<br>- Post in the support forum with as many details as possible — issues are usually fixed quickly<br>- If the protection does not work on a specific form, a short note with the form plugin’s name is enough to get it looked at<br>Reviews<br>Contributors &amp; Developers<br>“Invisible Anti-Spam &amp; CAPTCHA — reCAPTCHA Alternative for All Forms” is open source software. The following people have contributed to this plugin.<br>Contributors<br>“Invisible Anti-Spam &amp; CAPTCHA — reCAPTCHA Alternative for All Forms” has been translated into 4 locales. Thank you to the translators for their contributions.<br>Interested in development?<br>Browse the code, check out the SVN repository, or subscribe to the development log by RSS.<br>Changelog<br>6.2.0<br>- Fixed: The repeat-sender lock no longer remembers numbers, so order, product, event or phone numbers lock out no one.<br>- Changed: The server now waits up to 5 seconds for a slow device to finish its check before rejecting a submission.<br>- Changed: The invisible check now starts once the page has loaded, so visitors who submit quickly are no longer rejected.<br>- Fixed: One rejected cart request could block other shoppers of the same product for 36 hours.<br>- Fixed: The Add to Cart button could be rejected as spam; WooCommerce cart requests are no longer checked.<br>- Fixed: Saving the settings broke rule lines with =&gt; or &amp; (they were stored HTML-encoded); such lines are repaired on update.<br>- Fixed: Deleting the plugin failed with a fatal error and left its tables and settings behind.<br>- Fixed: Sites that already monitored a checkout or registration form keep blocking spam on it after this update.<br>- Added: Out-of-the-box detection for Royal Elementor Addons, Happy Addons, Chaty, Jeg Kit and Element Pack Lite.<br>- Added: Out-of-the-box detection for Depicter, Hello Plus, PopupKit and Strong Testimonials.<br>- Added: Out-of-the-box detection for Customer Reviews for WooCommerce, Site Reviews and WP Ultimate Review.<br>- Added: Registration forms of BuddyPress, WP-Members and ProfilePress are recognised.<br>- Added: Checkouts and bookings of EDD, ProfilePress, CartFlows, Amelia and Bookly are recognised.<br>- Security: Password fields of Easy Digital Downloads, GiveWP and ProfilePress are no longer stored.<br>- Added: Checkout and registration forms are recognised and recorded; blocking them is a separate switch, off by default.<br>- Added: The WooCommerce block checkout (Store API) is recognised and recorded.<br>- Security: Card numbers, CVCs and IBANs are no longer stored in the spam folder.<br>- Fixed: REST submissions are judged by the method WordPress runs them as, so a header can no longer disguise one.<br>- Fixed: A blocked submission now answers HTTP 422, not 200, so forms no longer show success for a refused entry.<br>- Security: Card numbers are no longer hashed into the repeat-sender store as if they were phone numbers.<br>- Changed: The “Works with” list in the readme is grouped by kind instead of one long line.<br>- Added: Out-of-the-box detection for Hostinger Reach, FormLayer, My Sticky Elements and Visual Form Builder.<br>- Added: Out-of-the-box detection for Cool FormKit, including Elementor’s newer atomic form action.<br>- Added: The deactivation box now offers five reasons to click, and points to the support forum.<br>- Added: The deactivation box can attach technical details (versions, plugins) if you tick the box.<br>- Added: Out-of-the-box detection for Hustle, Brevo, MailerLite, Mailchimp List Subscribe and Email Subscribers.<br>- Added: Out-of-the-box detection for Quiz and Survey Master, WP-Polls, Form Maker, Gutena Forms and Happyforms.<br>- Added: Out-of-the-box detection for Calculated Fields Form, Pirate Forms and Crowdsignal Forms (NPS and feedback).<br>- Changed: The deactivation box no longer explains the plugin name and version with a second plugin that no longer exists.<br>6.1.0<br>- Changed: The deactivation box and the readme now also name what travels with a message: the plugin name and version.<br>- Note: Tested up to WordPress 7.1.<br>- Added: The direct-analysis overlay can save an action narrowed to selected field values.<br>- Changed: One-click and agent scope writes now validate JSON rule lines; agents get plain action names only.<br>- Added: MailPoet signups sent with JavaScript are now detected too, not just the no-JavaScript path.<br>- Added: Newsletter (The Newsletter Plugin) subscription forms are now detected out of the box.<br>- Added: CoBlocks contact form submissions are now detected out of the box.<br>- Added: Popup Builder subscription forms are now detected out of the box.<br>- Added: Action-list lines can be JSON rules that pin field values, for AJAX actions shared with a plugin’s backend.<br>- Added: WooCommerce’s ajax add-to-cart button (wc-ajax=add_to_cart) is now checked out of the box.<br>- Fixed: A pattern that discards a form posted through admin-post.php now triggers the follow-up admin notice.<br>- Changed: Plain GET requests are no longer checked — a link click cannot carry a proof of work.<br>- Note: WooCommerce cart links (?add-to-cart=) no longer produce inbox entries, nor does any GET form.<br>- Added: MailPoet’s subscription form is recognized out of the box on the path automated submissions take.<br>- Changed: The “Works with” list now names exactly the builders recognized out of the box.<br>- Added: Kadence Blocks, Essential Blocks, Popup Maker, UserFeedback and MW WP Form are named there now.<br>- Note: Registration forms are no longer listed as pre-configured — only login and password reset are.<br>- Added: out-of-the-box detection for MW WP Form<br>- Added: out-of-the-box detection for wpDiscuz comment forms (regular and inline)<br>- Added: out-of-the-box detection for Kadence Blocks forms (Form block and Advanced Form)<br>- Added: out-of-the-box detection for Essential Blocks forms<br>- Added: out-of-the-box detection for Popup Maker subscription forms<br>- Added: out-of-the-box detection for MetForm form submissions<br>- Added: out-of-the-box detection for UserFeedback survey responses<br>- Added: out-of-the-box detection for bbPress forum topics and replies<br>- Added: out-of-the-box detection for Mailchimp for WordPress (MC4WP) sign-up forms<br>- Security: One-click “monitor this” buttons now refuse a pattern or action that would evaluate wp-admin itself.<br>- Changed: Scope additions made through the Abilities API are judged by the same catalog as the settings page.<br>- Fixed: The over-broad pattern warning now also covers the Screen Options box and the classic editors.<br>- Fixed: The feedback box shown when deactivating the plugin never reached its recipient; messages were lost.<br>- Changed: The deactivation box now names its recipient, sends no referrer, and offers a button to send nothing.<br>- Note: The readme now discloses this one optional transmission; the spam protection itself still talks to no one.<br>- Note: The pattern box now says what its save-time check covers: WordPress own screens, not other plugins admin pages.<br>- Added: The repeat-sender lock now shows how many submissions it caught recently, next to the button that releases it.<br>- Fixed: A form that posts the same long text in every submission no longer locks itself out after a single spam message.<br>- Fixed: The WordPress-login help text now suggests a test that actually works instead of one that cannot.<br>- Changed: The Block spam help text now warns it rejects real submissions while spam simulation also runs.<br>- Fixed: Deleting the plugin now also removes the one gibberish-notice option row it used to leave behind.<br>- Fixed: Requests that cannot carry a token no longer wait for one, cutting the time they occupy the server.<br>- Fixed: The “apply on actions” list now only matches the actions and field names actually listed in it.<br>- Added: YITH WooCommerce Wishlist is detected out of the box.<br>- Added: A one-time, dismissible review request on the plugin’s own pages after 30 days and 100 caught spam submissions.<br>6.0.0<br>- Added: A message’s REST route line now says whether that route is monitored<br>- Note: New FAQ entry explaining what to do if a real message is refused as gibberish<br>- Added: Pick fields to check for gibberish with one click from a stored message, or type them in Settings<br>- Added: Saving the gibberish list points out unreadable lines and forms no longer monitored<br>- Note: A one-time notice explains that gibberish detection is off and how to switch it on<br>- Changed: Gibberish detection is off by default and only checks fields you select<br>- Changed: A gibberish verdict now names the field that triggered it<br>- Removed: The gdpr_pow_gibberish_exempt_fields filter – only selected fields are checked now<br>- Fixed: Gibberish detection no longer applies to the WordPress login form<br>5.6.0<br>- Fixed: Ninja Forms submissions were always blocked as “Gibberish content”.<br>- Added: Builders posting their whole form as JSON in one field now expose their single fields to rules.<br>- Changed: A “Known spam value” block no longer extends the 36-hour lock, so a false alarm cannot renew itself.<br>- Fixed: Jetpack Forms are watched again; the shipped action name was one Jetpack never registered.<br>- Fixed: WP User Frontend forms are watched again; both the detection path and the signature were wrong.<br>- Added: Formidable Forms is detected again – its classic and its AJAX submit are both watched out of the box.<br>- Fixed: An over-broad field pattern no longer discards your own wp-admin saves.<br>- Changed: Admin screens skip the spam check when the logged-in user can edit posts.<br>- Added: a Diagnostics button now produces a copyable status report that is safe to post in a public support forum.<br>- Fixed: “Save WooCommerce shopping carts” now also covers cart requests carrying add-to-cart in the URL query.<br>- Fixed: The “Thrive Comments detected” notice now names the recognition pattern actually added.<br>- Changed: removed 21 shipped recognition patterns that named form fields no product ever sends; coverage is unchanged.<br>- Changed: Jotform, Typeform and Zoho Forms are no longer listed as detected; their forms submit to their own servers.<br>5.5.0<br>- Added: submissions blocked as “Known spam value” now link directly to the setting that releases them.<br>- Fixed: submissions were incorrectly flagged as spam on sites using Cloudflare Turnstile.<br>- Added: the WordPress comment form is now protected by default; comment spam previously passed unchecked.<br>- Added: blocked-value rules that can never match are now labelled on save instead of appearing active.<br>- Added: a “Blocked values” entry can now be a rule that binds a value to a single field or form.<br>- Added: blocked-value rules that would discard an entire form are held back until you confirm them.<br>- Fixed: the one-time migration of blocked values now also handles pattern lists with classic Mac line endings.<br>5.4.0<br>- Changed: The “Apply on pattern” help now notes that a numeric value still needs its quotation marks.<br>- Changed: The help for “Apply on pattern” and “Blocked values” now shows real examples of the lines you would enter.<br>- Changed: Blocked sender values moved to their own “Blocked values” setting. Existing entries move over automatically.<br>- Added: {“*”:”value”} in “Apply on pattern” now matches any field carrying that value — it monitors, it does not block.<br>- Fixed: The notice about a discarded admin save now names whether a pattern or a blocked value was responsible.<br>- Fixed: A blocked email address or domain no longer stops a registered user from logging in with it.<br>- Added: A whole sender domain can be blocked in “Blocked values” with one line (@disposable.tld), subdomains included.<br>- Added: “Block this sender’s domain” button in the message view; the settings help now explains blocking values.<br>- Fixed: An admin-side ajax reply could carry a PHP warning ahead of its JSON on servers that display errors.<br>- Fixed: A block on a wp-admin screen no longer writes a fail2ban line, so an over-broad pattern cannot ban the admin.<br>- Added: A field pattern that also matches your admin screens now warns before saving, and asks you to confirm it.<br>- Added: An admin notice now names the field pattern when one of your own admin page saves was discarded as spam.<br>- Added: Settings now suggests the detected reverse-proxy address, with one click to add it to trusted proxies.<br>- Fixed: A handshake failure caused by a cache, proxy or clock issue no longer adds the sender to the 36-hour spam list.<br>5.3.4<br>- Fixed: submissions are no longer all flagged as spam on servers whose database connections disagree about the time zone.<br>- Fixed: the spam and health figures in the status bar and dashboard widget now count the right day on servers whose database time zone differs from the site’s.<br>- Fixed: old messages are now deleted exactly on schedule on sites whose time zone is not UTC, instead of a few hours early or late.<br>- Security: a “/0” range in the trusted proxy list no longer makes every visitor a trusted proxy.<br>- Security: the site whitelist can no longer be claimed with a forged Host header.<br>- Security: a submission can no longer exempt its own fields from spam analysis by declaring them password fields.<br>- Added: a “/0” entry in the trusted proxy list is now refused when you save it, with an explanation, instead of being stored and quietly doing nothing.<br>- Added: AI agents can be allowed to read stored submissions, and separately to change protection settings and delete submissions. Two switches, both off by default.<br>- Added: an option to trust a proxy on a private network when no trusted proxy is configured, for sites whose host does not publish the proxy address.<br>- Added: the analysis mode now shows why a submission was judged the way it was, not just what it was.<br>- Added: the status bar shows which address the plugin sees for you, and where it took it from.<br>- Fixed: the “submissions without a stamp row” figure now also counts when storing spam is switched off, where it used to read zero and look healthy.<br>- Fixed: the IP whitelist now understands subnets and different spellings of the same address, instead of matching text exactly.<br>- Changed: only the current puzzle format is accepted now; the transitional formats carried since 5.3.2 are gone.<br>- Note: site whitelist entries must name your site’s real address; an entry naming an alias (www versus the bare domain) no longer matches.<br>5.3.3<br>- Added: once you have fixed a storage problem, a green self-test clears the warning instead of leaving it up for a day<br>- Changed: the self-test and the two diagnostic resets now live on their own Diagnostics tab<br>- Changed: a self-test result now leads with its verdict and shows the error code, instead of one long coloured sentence<br>- Added: a blocked message links straight to the self-test, one click from where the problem is visible<br>- Added: a self-test button that runs the whole invisible check against your own site and answers in one sentence<br>- Added: the self-test now says outright when a solved puzzle could not be stored, instead of blaming stale code<br>- Fixed: where the time-window setting had gone missing, solved puzzles were discarded while still counted as valid<br>- Added: a blocked submission records what the server actually found, so a support case can be settled in one round<br>- Fixed: a solved puzzle the server could not store was still reported as accepted, so every later submission was blocked<br>- Fixed: the browser no longer treats an unanswered or rejected puzzle as solved, and retries the handshake instead<br>- Added: the settings screen now names it outright when solved puzzles cannot be written to the database<br>- New: AI agents can now run a plain-language self-test of the spam protection and read its health figures.<br>- New: optional and off by default — an AI agent can extend which forms are monitored, guarded against lockouts<br>- New: the plugin now appears on the Connectors screen of WordPress 7.0, stating plainly that it uses no external service.<br>5.3.2<br>- Fixed: the block reason shown for follow-up tokens no longer refers to a waiting window that no longer exists<br>- Removed: the extra second puzzle some visitors were given is gone — one puzzle per visitor, always<br>- Fixed: submissions sent while that second puzzle was still running are no longer flagged as spam<br>- Fixed: captcha fields are no longer misread as gibberish, and single-field random-letter spam is now caught<br>- Added: fields can be excluded from spam analysis via the skip list or the new gdpr_pow_gibberish_exempt_fields filter<br>5.3.1<br>- Added: Spectra forms are now protected automatically, with no manual setup required.<br>- Fixed: form builders that submit via URLSearchParams no longer drop the proof-of-work token.<br>- Fixed: token injection now detects request bodies created inside iframes.<br>5.3.0<br>- New: SureForms and JetFormBuilder are now recognised out of the box.<br>- The analysis mode shows the REST route for entries captured with the live overlay too, not just for logged ones.<br>- The analysis mode now records and shows the REST route of a submission, with one click to start monitoring it.<br>- Fix: default detection for WS Form, Everest Forms, and Otter Blocks never matched — now corrected.<br>- New: REST routes are now a third way to scope the spam check, covering WS Form and Otter Blocks out of the box.<br>- Hardening: exemptions from the spam and login checks are now server-side only; the ‘Apply on REST-API’ option is gone.<br>- Note: an over-broad field pattern (like just “email”) can now match admin screens too; keep patterns form-specific.<br>- New: status bar and dashboard show how many solved puzzles came back from another address than they were issued to.<br>- Privacy: nothing derived from the visitor address is in the page source, and the challenge answer carries a fingerprint.<br>- Hardening: only X-Forwarded-For is still evaluated, and only behind a trusted proxy; four spoofable headers are ignored.<br>- Fix: a cache, proxy pool or IPv4/IPv6 dual stack no longer flags every submission as spam; puzzles are address-free.<br>- Blocked messages now name the actual cause, not just the kind of block.<br>- Fix: submissions are no longer rejected while the site is under attack and an older cached token is solved<br>- Fix: the token request is no longer served from a page or CDN cache, which could make every submission look like spam<br>- New: confirm a password field the plugin does not recognise, and its values are redacted, in old messages too.<br>- Security: password field values could be stored with a submission in some cases; they are now always redacted.<br>- Security: existing stored entries are cleaned up once after the update.<br>5.2.1<br>- Fix: a difficulty above 20 made every submission spam — the server issued challenges its own check rejected.<br>5.2.0<br>- Spam messages now show why they were blocked, plus a health counter for submissions without a proof-of-work stamp.<br>5.1.1<br>Security release. Fixes the three reported vulnerabilities and, after a full internal review, several related hardenings across the message-management area.<br>* Security (SQL injection): admin-defined spam-analysis patterns are now escaped before they are interpolated into the LIKE conditions of the message queries. Closes an authenticated (Editor+) SQL injection via the pattern key/value (CVE-2026-16094, CVE-2026-16146).<br>* Security (stored XSS): the form “action” value shown on the Spam/Messages admin pages is now JavaScript-escaped inside the inline submit handlers, not only HTML-attribute-escaped, so a quote in a captured action can no longer break out into script (CVE-2026-16145). A second highlighting sink in the detail view that re-decoded escaped values is now built via DOM text nodes, so captured content can never execute there either.<br>* Security (access control / CSRF): every message action — viewing, moving, deleting (including “delete all”) and saving patterns / action lists — now verifies its nonce before acting and requires the manage_options capability. Previously the “delete all” path ran without a verified nonce or capability, and the whole message area was reachable with edit_pages. NOTE: managing captured messages is now limited to administrators.<br>* Security (log injection): the Fail2Ban integration now strictly sanitises the login name and strips line breaks, so a crafted login can no longer forge log lines / ban arbitrary IPs; it also logs the validated client IP instead of the raw remote address.<br>* Hardening: consistent unslashing/sanitising of admin-AJAX input; guards against malformed unauthenticated requests that could raise PHP errors on the spam-check path; and, on multisite, the Fail2Ban log path can only be set by super admins (with path-traversal rejected).<br>5.1<br>This release brings stronger anti-spam layers to every site, alongside important reliability fixes.<br>* New: gibberish detection — obvious keyboard-mash and random-string submissions are recognised and filtered, language-neutrally, while legitimate codes (VAT ids, serials, order numbers, product names) are left untouched.<br>* New: repeat-sender (“echo”) lock — once a message is classified as spam, its core values (sender, linked domain, phone, long-text hash) are briefly remembered as one-way hashes with a short lifetime, so the same sender is caught again on any form and any IP. It can be switched off, and its remembered values reset, on the settings page; registered users’ and admins’ addresses are excluded so an injected spam mail can never lock them out of login or password reset.<br>* New: an adaptive solve-time re-challenge makes implausibly fast (likely non-browser) solves pay more, without ever hard-blocking a genuine visitor.<br>* New: form builders you activate AFTER installing the plugin are now covered automatically (previously only builders present at install time were). A one-time notice lets you review and confirm any that were already active but not yet covered — your own custom entries, and anything you removed, are never touched.<br>* Fix: on a small number of sites, every submission could be flagged as spam. The browser-side puzzle is now resilient — a stray PHP notice, a byte-order mark or a proxy error page in the get_stamp response no longer aborts it, and if the request cannot be made at all it falls back to the token already embedded in the page.<br>* Fix: a password field without a name attribute could abort the script’s setup on some themes/builders; hardened so it can no longer break token injection into Ajax form submissions.<br>* Fix: the challenge-renew timer is now clamped to a sane minimum, so an empty/zero “Time Window” option can no longer cause rapid background requests to admin-ajax.<br>* Fix: the invisible token is no longer added to GET forms (e.g. a theme’s search box), so searching no longer appends a long “gdpr_pow_token=…” to the URL. POST forms are unaffected and stay protected.<br>* Compatibility: a third-party script that wraps fetch/XHR before the visitor first interacts is no longer overwritten by the plugin.<br>* Hardening: after an update the plugin proactively invalidates the PHP OPcache for its own files, reducing the chance of old code running against the new database schema. On some hosts an OPcache flush / PHP-FPM restart may still be needed once — see the FAQ.<br>5.0<br>- Major anti-spam hardening against protocol-aware bots: every proof-of-work is now bound to a single-use, HMAC-signed token per submission (replay of one solved challenge no longer works), with a per-token and per-IP usage limit<br>- Forwarded-For/Client-IP headers are only trusted behind a configurable trusted-proxy list (new option) — closes IP-spoofing of the whitelist<br>- Adaptive difficulty with an automatic site-wide “under-attack mode” (new option): the puzzle gets harder for everyone while a spam wave is running; no per-visitor data involved<br>- Proof-of-work now uses the browser’s native crypto engine where available (about 10x faster), with a fallback for older browsers and http-only sites<br>- Faster spam-check path: worker no longer sleeps up to 5 seconds under a spam flood<br>- Redesigned settings page: status strip, topic tabs, short descriptions with progressive-disclosure help on every option<br>- Reworked direct analysis mode: persistent guide bar with live coverage instead of stacked popups, entries persist server-side<br>- Security: password fields are never stored in captured submissions — neither in the classic analysis inbox nor in direct-analysis entries<br>- Security: CSRF protection (nonce) added to the direct-analysis pattern-save endpoint<br>- Security: SQL statements consistently use prepared placeholders; full WordPress coding-standards pass across the whole codebase<br>- Recognition patterns can no longer accidentally match on the plugin’s own injected fields<br>- All option texts are now translatable via the WordPress.org community catalog (translate.wordpress.org)<br>- Requires PHP 7.1 or newer (was effectively required before, now declared honestly)<br>4.1.2<br>- CSRF vulnerability fixed<br>4.1.1<br>- Improved Pattern recognition<br>- Solved: Warning for usage of empty keys<br>4.1<br>- Fail2Ban-Support added<br>- Problems with Thrive Comments and json-based submissions fixed<br>4.0<br>- The automatic mode has been removed. From now on, all form types require manual configuration of associated patterns and actions to ensure the spam protection functions correctly.<br>- During plugin installation, the appropriate actions and patterns for major form builders will be automatically added to the scope—provided the respective form builder is installed.<br>- Adding new form types to the spam protection, which are not yet included by default, can still be done via the analysis mode or direct analysis mode.<br>- If important patterns or actions are missing, I appreciate any feedback and suggestions for improvements.<br>- This update ensures targeted spam protection configuration while still allowing automatic detection of widely used form builders.<br>3.8.1<br>- Fixed: Erroneous error handling for file-uploads (i.e. Fancy Product Designer)<br>3.8<br>- Fixed: Problems with IP-Forwarding and load-balancing led to always false-positives<br>3.7.3<br>- SQL-Bug during installation routine fixed<br>3.7.2<br>- Optimized symbols in the settings menu<br>3.7.1<br>- Fixed: Bug with empty field “Skip fields from saving”<br>3.7<br>- Highly recommended security feature “Skip fields from saving” on the tab “Saving Messages” on the plugins options page added. This feature is intended to exclude fields (i.e. password fields) from beeing saved with messages. Background: The plugin is identifying password fields on the form and skips them from beeing saved already. But in the case of the event that JavaScript is crashing, the identification process may fail and thus the password will be saved nevertheless. Therefore this option shall be used to define password fields manually that shall be skipped from saving.<br>3.6.10<br>- Fixed: Bug with hiding the menu in initial state of the settings menu<br>3.6.9<br>- Fixed: Bug with the new feature to stop logging logins<br>3.6.8<br>- New feature: The admin area is turned to red as long as the simulation mode is on<br>- New feature: The messages inbox can be hidden, by setting its position to -1<br>- New feature: The logging of login-messages can be switched off<br>3.6.7<br>- Fixed: Variables that where not initialized caused warnings on higher debug-levels<br>3.6.6<br>- Problem with forminator and possibly other form builders too fixed: Bots where able to bypassed the pattern matching and thus the spam check too.<br>3.6.5<br>- Fixed: A dedicated spam-check for WordPRess-standard-requests was introduced, in order to treat them differently from other post-requests. It turned out that some spam showed up after the last release. This should not happen anymore<br>3.6.4<br>- Fixed: In v.3.5.5 the plugin was changed to apply the spam check always on WordPress standard submissions such as comments. Even in explicit mode. This behaviour is changed now, in a way that even for WordPress standard submission types patterns have to match, before they are checked for spam.<br>- This means: If you are using WordPress standard submission-types such as comments and posts, from now on you need to add the respective patterns for them, as for any other type of submission, in order to make the spam check work for them.<br>3.6.3<br>- Fixed Bug with Inboxes<br>3.6.2<br>- Improved performance administration area and inboxes<br>- Bug with empty pages for inboxes solved<br>3.6.1<br>- Loading error for Direct Analysis Mode fixed<br>3.6<br>- “Direct analysis mode” introduced: This mode allows easier administration of the explicit mode, as froms and submission-types now now can be added directly and life from the forms<br>- Settings page devided into tabs</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ask HN: Have the PHP vulnerabilities been exploited?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    4 points ·
+    1 comments ·
+    crisnoble
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50200306">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Yesterday was wild with many going dark just in case, many orgs of all sizes scrambling to update php, people rushing to find a POC, reproduce etc. I had expected to see public defacing or warnings of takeovers etc. I am surprised and possibly naively optimistic that I have yet to hear of these things happening, but am very curious if anyone knows of instances of the bugs been exploited.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Getty Images files for US bankruptcy, advances restructuring plan
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    CharlesW
+  </div>
+
+  <div class="meta">
+    reuters.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.reuters.com/legal/litigation/getty-images-files-us-bankruptcy-advances-restructuring-plan-2026-10-21/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50202774">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Woman faces six years in prison over Cash App account she never opened
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    442 points ·
+    440 comments ·
+    oidar
+  </div>
+
+  <div class="meta">
+    techspot.com
+  </div>
+
+  <div class="meta ranks">
+    Top #3 · Best #20
+  </div>
+
+  <div class="links">
+    <a href="https://www.techspot.com/news/114296-woman-spends-three-nights-jail-faces-six-years.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50194833">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">WTF?! Digital identity fraud is far from something new, but this case shows just how extreme the repercussions can be. A Cash App account opened in someone else&#x27;s name and used in scams could lead to an innocent person being sentenced to years in prison. The problem is that the company initially refused to provide information about the account because she couldn&#x27;t prove that she was the owner.<br>In April, Amanda Smith was shocked to discover officers at her upstate Pennsylvania home with a warrant for her arrest, writes 404 Media. The alleged crime took place in Arkansas – more than a thousand miles away in a state she&#x27;d never visited. Smith was taken to the local jail, where she was locked up for three nights.<br>Her bail was initially set at $50,000, but Smith says authorities told her there was little point in paying it because they intended to extradite her to Arkansas anyway. After being released, she and her husband drove to Arkansas for a court appearance, where she was fingerprinted and photographed. Another $20,000 bail was imposed before she could return home.<br>Smith later discovered why she had been arrested: a scammer had tricked someone into sending $1,000 to a Cash App account, one that was in her name but controlled by a criminal.<br>It turned out that the account had been created using Smith&#x27;s Social Security number and date of birth. But Smith, who describes herself as not tech-savvy, said she had never used Cash App.<br>The situation sounds like one that should have been resolved quickly. But Smith says she is still being asked to prove her innocence in an ongoing criminal case. One stumbling block was that Cash App refused to hand over details of the account to Smith because she couldn&#x27;t prove she was the owner. She eventually received the data through discovery in her case.<br>Shockingly, Smith is now facing up to six years in prison for a crime she says she didn&#x27;t commit and knew nothing about. The charges include computer fraud, unlawful use of a communication device, and theft of property. &quot;They&#x27;re trying to turn it into my problem [...] that I need to prove that I&#x27;m innocent,&quot; Smith told 404 Media. &quot;That&#x27;s not what I grew up believing was the way it worked.&quot;<br>Not too surprisingly, the fraud took place on that bastion of honest transactions, Facebook Marketplace. The buyer found items for sale and messaged the seller, who told them to send money to his wife&#x27;s Cash App account. The name on the account was Amanda Smith.<br>Unfortunately, the seller&#x27;s Facebook account had been hacked. There were no items for sale, and the Cash App account had been created just before the scam took place.<br>Cash App records also revealed what happened to the stolen money. Just hours after the $1,000 arrived, it was divided into smaller amounts and sent to a network of other accounts. Some appeared to be controlled by scammers, while others had changed their usernames, potentially making the money more difficult to trace.<br>Police obtained Smith&#x27;s personal details from Cash App through a search warrant. A detective then obtained her driver&#x27;s license and checked her information using Accurint, a LexisNexis database used by law enforcement. But having someone&#x27;s details on an account isn&#x27;t quite the same as proving they operated it.<br>And there were plenty of discrepancies. According to 404 Media&#x27;s review, the address on the account was one where neither Smith nor her husband had ever lived. The account had also been accessed through Verizon connections, while Smith says she uses AT&amp;T and has never had a Verizon plan.<br>There was also a discrepancy involving the phone used to create the account. Cash App&#x27;s records showed an iPhone running iOS 16.1.1, an operating system dating back to 2022. Smith, however, provided evidence that her iPhone 13 mini was running the much newer iOS 26.5.2.<br>The phone number associated with the account raised further questions. Although Smith said she might have used it years earlier, 404 Media found it linked to her name in historical data breaches. Tellingly, someone had also used the same number to create a Venmo account under a different name around a week before the fraudulent Cash App account was opened.<br>Also read: Cash App reaches $45 million settlement over alleged failure to protect users from fraud<br>A private investigator hired by Smith has questioned whether police established that she actually controlled the account. Her lawyer is trying to have the case dismissed. Neither Cash App nor the prosecutor responded to requests for comment.<br>Meanwhile, authorities have offered Smith a plea deal including a $1,000 fine, $1,000 in restitution and three years&#x27; probation. She has refused, saying she is innocent. A hearing is scheduled for November.<br>This isn&#x27;t the first time someone has ended up in jail because of another person&#x27;s fraud. A grandmother was jailed for six months after facial recognition tech falsely linked her to a bank fraud case. She is now suing the City of Fargo and a Fargo Police Department detective for $10 million over the incident.</div>
+</div>
+
+</div>
+
+</body>
+</html>
