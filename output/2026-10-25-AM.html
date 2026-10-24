@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-25 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-25 AM · Generated 2026-10-25 07:31 CST</div><div class="issue-sub">Stories 10 · Full 3</div><div class="issue-sub">Sources: blog.calif.io, chatgpt.com, danluu.com, edjefferson.com, huggingface.co, kimi.ai, news.ycombinator.com, sharebucks.app, stealmybitcoin.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Steal My Bitcoin
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    338 points ·
+    170 comments ·
+    cloudlandsdev
+  </div>
+
+  <div class="meta">
+    stealmybitcoin.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Show HN #1 · Best #20
+  </div>
+
+  <div class="links">
+    <a href="https://stealmybitcoin.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50224916">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Made this because I&#x27;m curious if anyone out there has figured out how to actually use this PHP RCE we spent the last few days panicking over. Have fun!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Local Wikipedia: Wikipedia, but only for things a half hour walk from you
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1540 points ·
+    242 comments ·
+    sohkamyung
+  </div>
+
+  <div class="meta">
+    edjefferson.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #22
+  </div>
+
+  <div class="links">
+    <a href="https://edjefferson.com/localwiki/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50202285">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Ask HN: If the models are so good, why doesn&#x27;t OpenAI just start 100 companies?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    643 points ·
+    730 comments ·
+    ex-aws-dude
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50200997">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Title is a bit of an exaggeration but the question is more: if the frontier models are so good, why even sell them as your primary money maker?<br>Couldn&#x27;t OpenAI or Anthropic make a lot more money by just starting companies themselves that leverage the models and building their own products?<br>Is selling tokens really the best strategy?<br>Especially with commodification and prices declining wouldn&#x27;t that indicate there is more money to be made on the application-side of the models rather than the utility side</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Show HN: Sparse kernel delivering 36% higher training throughput
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    jakcwi
+  </div>
+
+  <div class="meta">
+    huggingface.co
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://huggingface.co/JakCwi/eugen-sparse">Original article</a> · <a href="https://news.ycombinator.com/item?id=50226525">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Code only — no model weights.<br>| What this repository is | A code library (Triton GPU kernels + PyTorch wrapper) for a sparse SwiGLU feed-forward layer. No model weights. |<br>| Developed by | Jakub Ćwirlej |<br>| Origin | The sparse model variants of the EUGEN project (the production EUGEN 160M model has a dense FFN and does not use this kernel) |<br>| Framework / hardware | PyTorch + Triton; NVIDIA GPU with bf16 tensor cores (Ampere or newer); a slow dense reference path runs anywhere |<br>| Measured in our training | Full model with d_model 512, d_ff 4,096 (306M parameters), 6.25% active (256 of 4,096 FFN neurons per token), against the dense model of the same FFN capacity, on one RTX PRO 6000: the first version of this kernel trained 1.23× faster; the current version reaches 36% higher training throughput than the dense model. A single FFN block ran 1.26× (d_ff 4,096) and 1.34× (d_ff 8,192) faster than its dense equivalent. |<br>| Status | Experimental: tested in our own training runs, early observations promising; it is an open question whether it pays off when a model is trained sparse from scratch and densified at the end |<br>| Intended use | Research and experiments with sparse feed-forward layers in transformer training |<br>| Out of scope | Commercial use (licence); production training without your own validation on your GPU and model shapes |<br>| Licence | CC BY-NC 4.0 |<br>A transformer layer spends most of its compute in the feed-forward block, where every token goes through every neuron. Here the neurons are split into small groups, and for each token only the few groups that would respond most strongly are computed — the others are skipped entirely, also when computing gradients. This is a single Python file with GPU kernels written in Triton; it plugs into a PyTorch model in place of a normal SwiGLU feed-forward layer and works with torch.compile.<br>Tested experimentally; early observations are promising. It is open whether sparse training pays off over the whole cycle — training from scratch and densifying later (switching the sparse layer to a dense one). The kernel comes from the sparse model variants of the EUGEN project; the production model EUGEN 160M has a dense FFN and does not use it. This is the kernel we trained with (not a simplified demo), cleaned up for publication. Tested on one GPU type only (see Requirements). Not a validated product.<br>- make_subsample_index(d_ff, group_size, samples_per_group, seed) — a fixed random subset of gate rows per group, used to estimate group energy cheaply. Draw once per layer and save it with the model.<br>- grouped_topk_select(x, W_gate, group_size, num_active_groups, subsample_idx=None, samples_per_group=None, load_balance_bias=None) — for every token, the indices of the num_active_groups groups with the largest energy Σ|SiLU(x·W_gate)|(optionally estimated on the subsample, optionally re-weighted by a balancing bias). Hard top-k, no gradient.<br>- sparse_swiglu_ffn(x, W_gate, W_up, W_down, group_idx, group_size) — the FFN output Σ_selected (SiLU(x W_g) ⊙ x W_u) W_d with gradients to x and all three weights. Weights in nn.Linear layout. One torch.library.triton_op: no graph breaks under torch.compile.<br>- update_load_balance_bias(bias, freq_ema, current_freq, target_freq, gamma, bias_max, momentum) — auxiliary-loss-free load balancing (in the style of DeepSeek-V3): call once per optimizer step.<br>- reference_sparse_swiglu_ffn(...) — a dense masked PyTorch reference with the same math (tests, CPU path).<br>- kernel_supported(...), plan(...) — will the Triton path run for this shape, and how the work is split (no GPU work).<br>- NVIDIA GPU with bf16 tensor cores (Ampere or newer). Tested only on an RTX PRO 6000 (Blackwell); other cards are untested.<br>- PyTorch with torch.library.triton_op (2.6 or newer per the PyTorch docs; tested on 2.12).<br>- Triton 3.x (tested on 3.7.0).<br>- Without a GPU (or with an unsupported shape / older PyTorch) the same math runs on the slow dense reference path. On a CPU you can still check the kernels in the Triton interpreter: TRITON_INTERPRET=1 python test_eugen_sparse.py (needs Triton installed).<br>No package to install: copy eugen_sparse.py next to your code (it imports only torch and, if present, triton).<br>pip install torch triton       # versions as above<br>git clone https://huggingface.co/JakCwi/eugen-sparse<br>import torch<br>import eugen_sparse as es<br>d_model, d_ff, G, K = 512, 4096, 32, 8           # 8 of 128 groups active = 6.25 % of the neurons<br>dev = &quot;cuda&quot;<br>W_gate = torch.randn(d_ff, d_model, device=dev, dtype=torch.bfloat16) * d_model ** -0.5<br>W_up   = torch.randn(d_ff, d_model, device=dev, dtype=torch.bfloat16) * d_model ** -0.5<br>W_down = torch.randn(d_model, d_ff, device=dev, dtype=torch.bfloat16) * d_ff ** -0.5<br>sub, spg = es.make_subsample_index(d_ff, G, samples_per_group=8, seed=0)   # once per layer<br>sub = sub.to(dev)<br>x = torch.randn(4096, d_model, device=dev, dtype=torch.bfloat16)<br>idx = es.grouped_topk_select(x, W_gate, G, K, subsample_idx=sub, samples_per_group=spg)<br>y = es.sparse_swiglu_ffn(x, W_gate, W_up, W_down, idx, G)                 # [4096, 512]<br>print(es.plan(x.shape[0], d_model, d_ff, G, K))   # kernel used? token chunks, tiles, determinism<br>A complete nn.Module (EugenSparseFFN: subsample and balancing buffers, update_balance() after the optimizer step, autocast, torch.compile) is in example.py; python example.py runs on CUDA or, slowly, on CPU.<br>| parameter | valid values | how to choose |<br>|---|---|---|<br>| density = num_active_groups · group_size / d_ff | — | 5–10 %. Our training configuration: d_ff 4096, group_size 32, 8 active groups = 6.25 %. A wide FFN at low density is preferable to a narrow one at high density. |<br>| group_size | power of two, ≥ 16 | 32 (our value). Up to 64 the fused kernels run; above 64 an unfused pair (same result, more memory traffic). Larger groups use the GPU better but make the selection coarser. |<br>| num_active_groups (K) | 1 … d_ff / group_size | sets the density together with group_size. |<br>| d_ff | multiple of group_size, ≥ 2 groups | need not be a power of two (1536, 3072, 3200 work). |<br>| d_model | multiple of 16 | multiples of 128 run at full tile width; smaller divisors use narrower tiles. |<br>| samples_per_group | 1 … group_size | 8 of 32 (a quarter of the gate) in our training. More = more accurate, more expensive selection; = group_size (or no subsample) = exact selection. |<br>| balancing: gamma, bias_max, momentum | — | 1e-3, 0.5, 0.99 (our values); target_freq = num_active_groups / num_groups; call after every optimizer.step(). |<br>| tokens per micro-batch | tokens · K / num_groups well above 64 | ideally hundreds of tokens per group; small micro-batches leave tiles half empty. |<br>| dtype | bf16 | under torch.autocast the function casts inputs and weights to the autocast dtype itself. fp32 works (tests) but is not the target. |<br>| EUGEN_SPARSE_* environment variables | integers, read at import | defaults = our training configuration. EUGEN_SPARSE_DW_DET=1 forces deterministic weight gradients (slower). Change the others only with your own measurement. |<br>Layout that worked better for us than several dense layers: first layer dense, the following layers sparse.<br>- Silent fallback. For an unsupported shape, no Triton or an old PyTorch, the slow dense reference runs instead; on CUDA a one-time warning is printed. Check kernel_supported(...) / plan(...) once.<br>- The subsample must stay fixed: draw it once per layer, keep it in state_dict. A new draw per step or after resuming changes the selection.<br>- The balancing bias and its EMA belong to state_dict too (persistent=True).<br>- Non-determinism: y and dX are accumulated with fp32 atomics, so bitwise differences between runs are possible; weight gradients too when there are several token chunks (unless EUGEN_SPARSE_DW_DET=1). Selection and the CSR bucketing are deterministic.<br>- Hard selection: only the selected groups get weight gradients in a step; the routing itself is not learned by gradient.<br>- group_idx must come from grouped_topk_select (distinct groups per token). Hand-made indices with duplicates or out-of-range values are not checked: the kernel would count a duplicated group twice, the reference once.<br>- No input validation beyond the shape rules: tokens · num_active_groups must stay below 2³¹ (int32 indices).<br>- Block benchmarks do not predict training speed: measure your own training loop under torch.compile. Random inputs spread tokens evenly; a trained model has popular groups (the balancing bias counters that).<br>- Memory: compact activations [tokens, K·group_size] (gate and up) plus fp32 buffers [tokens, d_model] for y and dX.<br>- Changing group_size mid-training changes the number of groups and the buffer shapes (bias, subsample): it is a model change, not a setting.<br>- The example module counts group usage in its last forward call of the step; with gradient accumulation, accumulate lb_freq_now yourself.<br>python test_eugen_sparse.py                     # GPU: everything; CPU: selection, subsample, balancing, plan<br>TRITON_INTERPRET=1 python test_eugen_sparse.py  # CPU: kernels vs reference in the Triton interpreter (fp32)<br>python speed_check.py --compile          # GPU: time dense vs sparse FFN block on YOUR card (our own figures: the model card above)<br>On a GPU the tests compare the kernel with the reference (y, dX, dW_gate, dW_up, dW_down) in fp32 and bf16, with several token chunks, run torch.library.opcheck and check torch.compile without graph breaks. How the kernels work: TECHNICAL.md.<br>eugen_sparse.py (library) · test_eugen_sparse.py · speed_check.py (a timing script to run on your own GPU) · example.py · TECHNICAL.md · LICENSE<br>Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0), © 2026 Jakub Ćwirlej — free for non-commercial use with attribution. Full text in LICENSE. Dependencies (not included): PyTorch (BSD-3-Clause), Triton (MIT).<br>Jakub Ćwirlej, eugen_sparse: sparse SwiGLU FFN kernel in Triton, 2026, https://huggingface.co/JakCwi/eugen-sparse. Contact and more about the project: https://jakubcwirlej.com.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Today, we hacked what we&#x27;d set out to hack: the iPhone
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1069 points ·
+    669 comments ·
+    pavel_lishin
+  </div>
+
+  <div class="meta">
+    blog.calif.io
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #40
+  </div>
+
+  <div class="links">
+    <a href="https://blog.calif.io/p/iphone">Original article</a> · <a href="https://news.ycombinator.com/item?id=50211474">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    We should be more ambitious with the software we build
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    40 points ·
+    24 comments ·
+    ltratt
+  </div>
+
+  <div class="meta">
+    danluu.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · New #41
+  </div>
+
+  <div class="links">
+    <a href="https://danluu.com/ambitious/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50225695">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Since early this year, Michael Malis (of pgrust) has been showing me interesting things he&#x27;s done and saying<br>[W]e should be more ambitious with the software we build<br>There is, understandably, a lot of skepticism about projects like pgrust because there are so many low-quality AI-generated projects out there. If I didn&#x27;t know Malis and didn&#x27;t look into it, I would just assume that pgrust was another vibe slopped project that&#x27;s never going to work. But I know Malis well enough to trust his work without looking into it, and if you look into it a bit, you&#x27;ll see that in testing pgrust, he&#x27;s testing thoroughly enough that he&#x27;s even uncovering real bugs in Postgres, such as this numerical bug that can cause valid SP-GiST operations to fail, this format cache bug that can cause incorrect results from JSONPath, this pgcrypto bug that can cause later operations to fail, multiple memory safety bugs in the dictionary loader, this money overflow bug, etc.<br>This isn&#x27;t to say that pgrust is bug free, but it does indicate that there&#x27;s a substantial amount of testing happening and, even if pgrust itself is never successful, just making the attempt will have improved Postgres in a durable way. The main pitch for pgrust is actually performance, and that&#x27;s where the really interesting work is happening; if pgrust fails, it&#x27;s possible that some of the optimizations they&#x27;ve demonstrated will make it into Postgres, Clickhouse, etc., but that&#x27;s obviously less direct than filing Postgres bugs which get fixed.<br>That being said, I find it understandable that, every time I see pgrust discussed on a news aggregator, most people dismiss it as vibeslop garbage because almost all of these rewrite projects are slop. If I didn&#x27;t know Malis, I would make the same assumption, because who has the time to look into all of these projects? Because I know Malis, I didn&#x27;t bother to look at it; I just trusted him (I only found the above because I wanted to check on pgrust before using it as an example for this post).<br>As a consumer of software, everywhere you look, there&#x27;s slow software that the creator is claiming is fast because the creator is touting some slop benchmark, e.g., here&#x27;s one of multiple examples I saw yesterday, and of course low-quality software that doesn&#x27;t work is more common than ever.<br>But, as a builder of software, it doesn&#x27;t matter that almost all of these projects are vibeslop, that other people are out there shoveling out huge piles of crap and calling it gold. You can build things like pgrust or other projects that would&#x27;ve been too large to really be feasible in the past and, if you do a reasonable job with testing and benchmarking, that stuff can actually be good-enough quality to use.<br>If I were writing it, I would say &quot;we can be more ambitious with the software we build&quot; and not &quot;we should&quot;, but Malis has been casually chatting with me when he&#x27;s said this, so maybe he would say the same in an actual post; don&#x27;t read too much into should vs. can here. What&#x27;s interesting to me is how capabilities have advanced such that we can do a lot more.<br>Just for example, after hearing that OpenAI was going to use Cerebras for their SOTA models and not just fast-but-low-quality models like 5.3-Codex-Spark, I looked at where time on my computer would go if I was using a SOTA model, but 10x to 100x faster; some things that were already sometimes a bottleneck that would only get worse with a faster model were:<br>- Ripgrep<br>- Compiling Rust<br>- Syscall and filesystem overhead<br>At the level of a &quot;works for me&quot; project, these are all things that can seriously be improved. I don&#x27;t have much spare time at the moment but, even so, I built this regex engine that can be tweaked to be faster than other general-purpose regex libraries on any particular workload I care about, this ripgrep fork that uses the native code compiler from the regex engine and is faster for my codex ripgrep workloads (of course a text index is the better solution, but I&#x27;ve already worked on text indexing and this was a &quot;just for fun&quot; project where I wasn&#x27;t trying to do the optimal thing), and a Rust that sped up builds for my projects (huge improvement for cold builds, moderate for warm, limited by wanting to avoid forking the Rust compiler front-end). For syscalls and filesystem overhead, just switching development from Mac to Linux improved this a lot, and of course this is another thing that can be sped up a lot as well, especially when agents are hammering lots of small filesystem operations (it&#x27;s not uncommon to see my machine waiting on filesystem ops because the standard OS filesystem interface wasn&#x27;t designed with modern disk performance in mind).<br>For someone like me who doesn&#x27;t know anything about regexes, string matching algorithms, compilers, interpreters, etc., this set of projects would&#x27;ve taken a year or more to get to &quot;works for me&quot; quality. Instead, this was a low single-digit number of hours of my time. If I wanted to make any of these things meet a &quot;useful product or open source project&quot; quality bar, that would be a lot more work0, but it&#x27;s still pretty incredible how much this process is sped up.<br>Another project I previously mentioned was this Azul AI which is superhuman at matched time controls. When I did that (with GPT-5.1/5.2), with zero AI knowledge, it took about 5 hours of my time to get something superhuman, and about 20 hours of my time to become what appeared to be the strongest AI at the time, including being stronger against humans than this AI that was used to cheat on Board Game Arena. Gabriel Cangussu recently built an AI that demolishes my AI, and AFAICT, it took him substantially less time than my AI took me. From talking to him about it, one key difference is that Fable 5.1 and Opus 5.5 have a much better understanding of board game AIs. When I used GPT-5.1/5.2, pretty much every suggestion they had was wrong and I had to do a lot of steering to get things to be remotely reasonable. If I had GPT read a codebase or a paper to implement relevant techniques from the paper, it would fail. If I read the paper myself and named a technique, it would say it did the technique, but it would generally do something that superficially looked like the technique but wasn&#x27;t the actual technique until I issued some corrections. When the model is that far from being able to do the right thing, if you have no background in the area, it&#x27;s fairly time consuming to check if the model did the right thing since you have to learn enough about what it&#x27;s supposed to do to be able to check that it did what was claimed.<br>When I did that project, I said to friends that I didn&#x27;t think the state models were in could last. It seemed impossible that they wouldn&#x27;t get good enough to be able to read a paper and implement the techniques soon, and it seemed like they should also be able to pick out codebases and papers to crib from as well. From my experience messing around a bit with Fable 5 and Cangussu&#x27;s experience with Fable 5.1 and Opus 5.5, that seems to have happened, which is a huge time saver for someone like me who doesn&#x27;t know anything about board game AIs (I know a little bit now, but still less than any real AI researcher).<br>For any particular domain, like board game AIs, you can say, &quot;who cares? Board game AIs don&#x27;t matter&quot;, but I&#x27;ve found this increase in capability to be true in quite a few different domains. Just for example, I did this toy eval of verification and test techniques with GPT-5.6 Sol implementing zstd on medium and xhigh. I haven&#x27;t had time to write it up, but when I published that post, I also re-did the evals with GPT-6 Astra. 6 Astra was so good that I had to find different evals because models had advanced too much. For zstd, 6 Astra succeeds at passing all of the registered tests more than 99% of the time across all conditions, even the ones that significantly impair performance, like using TDD (and, BTW, it does it more cheaply as well, taking about $1 to implement zstd). I ended up using the IMAP RFC, which 5.6 Sol couldn&#x27;t do effectively, and Pandoc, which is a pretty major thing to implement as it needs to be able to read and write many different formats.<br>BTW, when people have said they used the new model and everything just works, software is solved, etc., I haven&#x27;t found this to be true at all. It&#x27;s true that there are a lot more things the newer model can one-shot, where things basically just work, but this just means that I end up working on more ambitious things where models still struggle. I&#x27;m more productive and can work faster, but I find that, in terms of what I&#x27;m doing, I get farther from &quot;it just works&quot; with each more capable model because the gap between what the model can verify effectively without significant handholding and what the model can implement has been increasing. All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build.<br>Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.<br>I&#x27;ve had this note on my recent posts, which also applies to this one. In order to get more posts out, I&#x27;m trying to crank posts out in half an hour and not review them much. This definitely means less well-supported posts. If I were writing this in my standard style, I would&#x27;ve had comprehensive benchmarks for all of my projects that I mentioned. Instead, I did a quick comparison that satisfied my curiosity and am writing this up without rigorous benchmarking, and there are maybe twenty or thirty things in this post that I&#x27;d like to do but haven&#x27;t done.<br>Appendix: we should be less ambitious with the software we build<br>Here&#x27;s a comment from Yossi Kreinin, quoted (with permission, of course):<br>If you publish this I will publish a response explaining that for most people they should be less ambitious with the software they build with AI or they&#x27;ll experience abject failure. I think a lot of the problems don&#x27;t lend themselves that well to &quot;agentic loops&quot; since you don&#x27;t have clear pass/fail criteria, and even when you do most people have trouble reasoning about giant black boxes which they can impose constraints on but can&#x27;t understand the innards of [I include myself in this set.] This is a little bit like microservices I guess, where some people both need it and are very good at using it but likely for most people, they need it less and can&#x27;t use it well at all. I sort of envy the ones who should and actually can be this ambitious about the software they build of course; not saying you shouldn&#x27;t be more ambitious at all but moderating said ambition is a big part of handling the current situation for most I think<br>I have a similar thought about &quot;there&#x27;s no reason for software to be slow&quot; BTW; in many cases, if you use AI to speed up some flow, you will add a bunch of messy code that will be overfit for the use case you tested on and will neither generalize, perf-wise, for all the use cases you should care about, nor will be maintainable upon future changes. If you know what you&#x27;re doing and you understand how the system should be decomposed into parts and when it makes sense to go all-in on optimizing some part or a combination of them working together and how to properly benchmark it, etc., then things are great, but if for instance you have a manager who thinks there&#x27;s no reason for software to be slow and he pushes people to use AI to make random parts of the software fast... Run for cover<br>My feeling is that, overall, the situation here is a bit analogous to the discussion here about why I don&#x27;t like when people talk about how AI gives a 100x or 1000x productivity increase. There are some things that are sped up by a very large factor, easily over 1000000x. And some things don&#x27;t currently get sped up at all. If you do exactly what you would&#x27;ve done five years ago, but with AI, the speedup is fairly poor because of Amdahl&#x27;s law. But, in the general case, you can choose what to speed up and if you&#x27;re looking for things that are productive to do, this often seems to involve things that were previously too expensive to do.<br>And, I think that you can often set up systems that have some kind of self-checking property even when most people wouldn&#x27;t. This discussion of the implementation of Guards of Atlantis 2 is an example of that. It&#x27;s a poor choice for an AI project because the official rules are a mess of ambiguous and contradictory English text (it&#x27;s probably the game I&#x27;ve seen humans misplay at the highest rate, and the rules are confusing enough that the designer has often changed their mind about what their own rules mean despite continually maintaining that the rules are perfectly clear and one can play the game by simply reading the rules as written). If you try to produce a working set of rules in a naive way, AI won&#x27;t really help with this (although it can speed up implementation once you have a clean spec), but for that, I was able to set up some kind of janky set of consistency checks between all of the inconsistent explanations of the game rules, which got fairly close to a correct set of rules (approximately as close as what someone else did with much more human effort and less of a systematic approach), which was enough to compare it to someone else&#x27;s implementation and get a working set of rules. This setup did cost a lot more in tokens than a more manual approach. But it was &quot;only&quot; a month or two of the $200/mo OpenAI subscription with GPT-5.1/5.2, which is a lower cost than the cost in time of me sitting down and writing a clean spec for the game, i.e., a copy of the rules that is actually consistent and correct.<br>I feel like a lot of problems are in something like this class of problem, where it&#x27;s possible to set up some kind of at least partially self-checking setup that a human can spend a small amount of time on. This also feels analogous to the situation about software testing at large, where (before coding agents) I found fuzzing and property-based testing to be highly effective. For most domains, people told me some kind of reason this kind of testing wouldn&#x27;t work, but when I&#x27;ve tried these techniques with all of the domains people told me these techniques don&#x27;t work for, they work fine. They&#x27;re somewhat more work to apply, but they&#x27;re still applicable and, AFAICT, more efficient and effective than writing traditional unit tests.<br>Part of the gist of Yossi&#x27;s comment is that people aren&#x27;t doing this kind of thing. Considering how many more bugs I see now than I used to, e.g., the last time I opened up the web chat for a big AI lab, I ran into a double-digit number of bugs within one minute, it&#x27;s hard to say that Yossi is wrong. But, to that point, I still have my original opinion. Just because other people are pumping out vast quantities of barely working slop doesn&#x27;t mean that you have to do the same thing.<br>Appendix: a few &quot;random&quot; examples<br>The examples in the body of the post I gave for things I&#x27;ve done are tooling things I never would&#x27;ve done. There are a lot more things like that as well since it&#x27;s so easy to build &quot;works for me&quot; quality tooling that&#x27;s intended solely for me. I do think it&#x27;s possible to go further than is productive, e.g., Steve Yegge wrote a lot about Gas Town and how productive it was, but when he was building his next agentic framework, he noted that he never used Gas Town to successfully build anything other than Gas Town, people were into Ralph Loops for a while even though, when I tried comparing them, they seemed worse than just doing the naive thing I was doing at the time, normal loops with context where you sometimes clear context as appropriate instead of doing it by default at the completely arbitrary point of when a single turn is completed, etc., so I&#x27;ve tried to stick to things where the impact is pretty direct. Besides the obvious reason this has been effective, the dramatic change in model and harness capability over time means that what tooling it makes sense to build changes very quickly, so spending a lot of time working on any particular tool that will be suboptimal at best and quite possibly obsolete in three months doesn&#x27;t really make sense.<br>And, for a lot of my personal tools, my assumption is that an AI lab will obsolete anything I make in short order. For a very silly example of this, I have a tool that was useful since the release of GPT-5.6 Sol that restarts codex when it finds a memory leak. Presumably, OpenAI will fix this at some point and this tool will become worthless. For a slightly less silly example, take the Rust interpreter I had some agent build. For token-budget reasons, a lot of things that ought to be done for a very high-performance interpreter haven&#x27;t been done.<br>For example, the interpreter doesn&#x27;t modify the actual Rust front-end compiler to make it easy to take updates; performance would be much better if I just made changes to the Rust front-end, but I don&#x27;t have the token budget to maintain a compatible fork of the Rust compiler, but this shouldn&#x27;t be a problem for OpenAI. OpenAI spent $10B+ on getting access to Cerebras while also preventing Anthropic from having access.<br>Funnily enough, for coding, on many tasks, if you actually use one of their SOTA models and compare it to what you get from Anthropic, the actual speedup isn&#x27;t all that large because of time spent on things like compiling Rust. Given that they were willing to commit $10B+ on this, it stands to reason that they&#x27;ll eventually do a better job at speeding up the relevant tools than anyone could feasibly do outside an AI lab, so there&#x27;s not much point in spending too much effort on this (this could arguably be untrue if non-coding tasks are expected to completely dominate future OpenAI revenue in the short term, but even then, given what they pay for tokens vs. what I pay, it still seems like it would make sense for them to speed a lot of these things up given that I could do it outside of a lab; perhaps there&#x27;s some kind of argument like, if you have access to their usage data, there are so many more important bottlenecks that this one doesn&#x27;t make sense to prioritize, but it still seems like it should make sense for them at some point even if it doesn&#x27;t fall into the top 100 bottlenecks for Cerebras-enabled coding agents).<br>Another kind of thing that one might not call ambitious, but that speaks to the kind of thing that&#x27;s possible, are games that I&#x27;ve made. There are games I&#x27;ve thought about and wanted to make that I don&#x27;t think are generally enjoyable enough that they make sense for a real audience, but that I&#x27;ve wanted to play. For example, ever since reading David Gerrold&#x27;s Star Wolf books in the 90s, I&#x27;ve wanted to play a game that implements combat as described in the books, which is a sort of like submarine combat. At least among realistic war games, this genre is extremely niche because almost everybody finds naval combat boring, and submarine combat is a particularly boring subgenre of naval combat games, so this doesn&#x27;t really make sense as a money-making game, but it&#x27;s so easy to implement games that I had an agent implement the game so I could play it for an hour or two. I never would&#x27;ve spent 10-20 hours implementing a game so that I could play it for an hour or two, but I&#x27;d spend 5 minutes. I&#x27;ve also previously mentioned implementing a game with the same rules as Scout and Guards of Atlantis 2. I was never going to take the time to implement these games by hand just so I have a way to play with my friends on the occasions where we can&#x27;t get together in-person, but I&#x27;m happy to have an LLM bash these things out. And, of course, for people who want to make games with a wider audience, there&#x27;s a game renaissance going on right now due to coding agents. It&#x27;s pretty amazing how many interesting and creative games are being made now that having programming skills and the time to put them to use is no longer a bottleneck for making games.<br>Data analysis is another thing where the productivity multiplier can be very high and I can do all sorts of things I never would&#x27;ve done. As I&#x27;ve mentioned in a number of my last posts, I have way too many of these projects to really be able to write them up, even when attempting to write very quickly and bash out posts in half an hour apiece.<br>When I&#x27;ve talked to people about their one-off tooling, there&#x27;s a lot of fun stuff people have done. For example, here&#x27;s something Peter Geoghegan mentioned a month or two back:<br>I had Fable implement a custom Neovim Lua function that formats code according to my very specific preferences. This is both something I don&#x27;t want to maintain myself and inherently a Rube Goldberg device. Theoretically I could accomplish the same outcome in a principled way by patching clang-format, but my requirements are so exact that I think that approach would never be satisfactory.<br>We use a tool call pgindent, which is our fork of bsd_indent. You can approximate the same formatting rules using clang-format, but that isn&#x27;t good enough. If I commit something that isn&#x27;t perfectly formatted/indented according to pgindent, I get a CI failure that I&#x27;m expected to fix quickly -- something I&#x27;d really prefer to avoid ...<br>Practically speaking, getting slick, clang-format-style formatting that avoids nag emails about misindented code requires a total architectural mess (I also don&#x27;t want to spend the time developing a principled approach, but that&#x27;s really a separate issue). The function allows me to effortlessly format a given block of code from Neovim, similar to the clang-format LSP integration. I&#x27;m being unreasonably fussy here, of course, but I find that LLMs allow me to be this exacting about tooling.<br>The function performs multiple passes: an initial formatting pass using clang-format/clangd, and a separate formatting pass using pgindent. I need it to do both because clang-format handles some cases correctly that pgindent misses. This is brittle because I only want to format the code within a range of lines selected via block visual mode (I don&#x27;t want to run clang-format on code not added by my patch). This conflicts with pgindent&#x27;s design; it can only format whole C files.<br>Figuring out which relevant subset of the temp whole file buffer needs to be copied back into my working buffer is nontrivial. The initial line range I selected doesn&#x27;t directly map to the affected C AST elements. So the function uses tree-sitter to intelligently delineate the exact subset of the temp indented C code that needs to be copied back. The rules need to be fuzzy in exactly the right way for cases where my selection straddles the same block of code. There are a bunch of edge cases.<br>Another complicating factor is that pgindent relies on a typedef file generated with objdump to identify types; without that file, the formatting looks wonky. The formatting function dynamically generates any extra typedefs from clangd, for that one file, so I don&#x27;t have to worry about a stale typedef file (I might have created a new struct seconds before running the formatting tool, I don&#x27;t want to run objdump on the whole postgres binary each time, that&#x27;d blow up latency).<br>This appears to work perfectly. The latency is totally acceptable. I have only a vague understanding of how all this works, though. I don&#x27;t even know Lua. This will probably continue to work, even as further changes are made to our fork of bsd_indent that somewhat alter how code is formatted, which happens from time to time.<br>I&#x27;m skeptical of the saaspocalypse. But I do think that LLMs are writing a lot of useful software that would have been insanely uneconomical to write any other way. There&#x27;s an interesting small subset of software that&#x27;d be impossibly tedious for any human to maintain, relative to the value that it creates.<br>I also caught with Malis while writing this and found out about all sorts of fun stuff he&#x27;s been doing. It&#x27;s enough that writing it all up in detail could be its own post, but one fun thing is that, the last time I taked to him about pgrust verification, he mentioned using Kani to verify some parts of the code. He&#x27;s since switched to Lean and has been using Lean to verify things that are too complex to do in Kani. This would be another topic for another post, but I wonder why people have generally settled on Lean for LLM-driven proofs (as opposed to, say, ACL2). I wonder how Lean would look in an updated version of this theorem prover comparison, or if someone were to run a theorem prover eval that&#x27;s analogous to this language eval.<br>Of course, you can think of plenty of examples out of AI labs, such as a mid-sized team Anthropic building an internal replacement for GitHub as well as some other tooling in five months<br>A team of seven people built both Scion and Antique (our code review tool, which we could easily write a whole other blog post about), not to mention half a dozen related systems, and fully migrated to them in five months.<br>I think these kinds of examples are interesting and they point to where the industry will be in the not-so-far future, but what you can do with unlimited tokens, while relying on other infrastructure and tooling built with unlimited tokens doesn&#x27;t tell you much about what you can accomplish today without unlimited funds. Projects like pgrust as well as projects that people I know do in their spare time (of which I&#x27;ve probably mentioned something like 1%—there are just a lot of these, like David Turner creating an skipper for podcasts that&#x27;s &quot;works for me&quot; quality that works better than anything he could find, the spare-time projects Dennis Snell mentioned here, etc.) are more representative of what you can do today.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: Call4me – a ChatGPT plugin that lets it make phone calls on your behalf
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    2 points ·
+    1 comments ·
+    skeptrune
+  </div>
+
+  <div class="meta">
+    chatgpt.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #35
+  </div>
+
+  <div class="links">
+    <a href="https://chatgpt.com/plugins/plugin_asdk_app_6abdec89d46c81919cda058ca9f62cb8?search=call4me">Original article</a> · <a href="https://news.ycombinator.com/item?id=50225806">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    733 points ·
+    264 comments ·
+    petecooper
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50193416">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I posted here about the then-upcoming PHP RCEs related to CVE-2026-109618 &amp; CVE-2026-109619. I appreciate this has had considerable knock-on effects with the schedule for co-ordinated disclosure, and created additional workload.<br>I am truly sorry. I take full responsibility for my actions.<br>It was not remotely my intention to cause any of the subsequent side effects.<br>At the time of posting, I didn&#x27;t know about any embargo. My contact had told me there was no embargo, and her contact had told her the same thing.<br>As someone who follows the 4-weekly PHP release cycle and compiles it from source, my intention was to alert others in a similar position to be aware of the importance/urgency of the updates.<br>That clearly backfired in a pretty wild fashion. I have learned my lesson.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    I vibe coded an alternative to splitwise free
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    ish-xyz
+  </div>
+
+  <div class="meta">
+    sharebucks.app
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://sharebucks.app/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50226520">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Kimi K3.1 Pro and K3.1 Pro Highspeed
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1057 points ·
+    648 comments ·
+    Jowsey
+  </div>
+
+  <div class="meta">
+    kimi.ai
+  </div>
+
+  <div class="meta ranks">
+    Best #3 · Top #37
+  </div>
+
+  <div class="links">
+    <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Original article</a> · <a href="https://news.ycombinator.com/item?id=50212065">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Introducing Kimi K3.1 Pro<br>We&#x27;re introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window. It delivers substantial improvements across coding, 3D creation, financial research, and other agentic capabilities.<br>We are also releasing Kimi K3.1 Pro Highspeed, which delivers 2-3× the speed of K3.1 Pro for more responsive interactions.<br>Kimi K3.1 Pro and Kimi K3.1 Pro Highspeed are available today on Kimi.ai, Kimi Work, Kimi Code, and the Kimi API. The full model weights will be released by Nov 4.<br>Advancing the Frontier of Open Intelligence<br>Kimi K3.1 Pro is a post-trained version of Kimi K3, with substantially larger post-training compute. To enable large-scale joint RL across hundreds of downstream domains, we optimized every layer of the stack — the RL framework, long-context inference, training efficiency, sandbox infrastructure, rollout scheduling, and a shared platform for environment quality checks — so that each increment of RL compute delivers stable, predictable returns. As a result, K3.1 Pro achieves consistent gains in every domain.<br>Across coding, agentic, and knowledge benchmarks, K3.1 Pro matches or approaches the strongest proprietary models. On Terminal-Bench 4.0, which evaluates coding agents on realistic, resource-constrained terminal tasks using strict task-specific tests, K3.1 Pro scores 65.7%, ahead of GPT-6 Astra (58.2%) and narrowly behind Claude Opus 5.5 (66.4%). And on Kimi Code Bench 3.0 Long-horizon, our internal benchmark that tests coding agents&#x27; multi-step execution, tool use, and end-to-end problem solving across diverse engineering domains, K3.1 Pro scores 61.2%, above K3&#x27;s 55.95%.<br>Coding<br>K3.1 Pro covers the full range of coding work, from quick fixes in real codebases to full-project builds. It also brings a more considered visual style to games and web experiences, and knows how to build them with the right tools.<br>K3.1 Pro works effectively across game engines such as Unity, Unreal Engine, and Godot, combining them with web search and 3D generation to create complete experiences. Its front-end pages, interactive Three.js scenes, and 3D assets show stronger composition, typography, animation, and polish. The examples below were created end to end by K3.1 Pro:<br>K3.1 Pro&#x27;s long-horizon coding capabilities are also strengthened through large-scale reinforcement learning. In one internal test, it built a human walking dynamics simulator with integrated training and evaluation pipelines on top of human-atlas, an open-source anatomical model of the human body comprising 296 skeletal components, including cartilage, and 402 muscle components. Across 167 missions and 420 independent reviews, it analyzed experimental results, diagnosed problems, and iteratively refined the walking controller, enabling the simulated human to go from collapsing within seconds to walking continuously with alternating strides for 11.2 seconds. When reward shaping failed to improve arm motion, K3.1 Pro did not simply keep adjusting the reward: it ran open-loop probes of the simulator&#x27;s dynamics, identified and corrected 36 errors in shoulder-muscle moment-arm calculations, and then retrained the controller.<br>3D Modeling and Design<br>K3.1 Pro is strong at 3D creation and spatial reasoning. On BenchCAD, which tests 3D reconstruction from multi-view renderings through CAD code generation, K3.1 Pro scores 92.7% with tools, approaching the performance of Claude Opus 5.5 (96.2%) and GPT-6 Astra (95.9%). From a text brief, sketch, or reference image, it can infer shape, proportions, and spatial relationships to create usable 3D models. It also has a stronger grasp of existing asset libraries and model collections.<br>K3.1 Pro particularly excels at parametric modeling, from mechanical parts and architectural models to configurable products and custom furniture. Without MCP connectors, it can write and run scripts for tools like Blender and CAD software to build and refine assets, edit components, and adjust geometry, materials, and scene layout.<br>Below are examples of 3D assets K3.1 Pro created for brand films, games, and interactive web experiences:<br>3D Make is now live on kimi.ai and the Kimi app — preview and edit your 3D models online, download them ready for 3D printing, or export them as videos or Live Photos to share anywhere.<br>Finance<br>With stronger reasoning and agentic capability, K3.1 Pro is capable of end-to-end delivery of complete financial workflows. K3.1 Pro achieves state-of-the-art results on OfficeQA Pro v2 (64.4), which tests complex fiscal data analysis over real financial documents through retrieval, cross-document verification, and multi-step numerical reasoning. K3.1 Pro also improves over K3 on Frontier Finance, which measures support for complete investment workflows from screening to profitability analysis.<br>K3.1 Pro also improves significantly across all our internal finance benchmarks:<br>- Financial Modeling evaluates formula linkage, financial logic, and final workbook quality in real-world modeling tasks. K3.1 Pro improves on K3 by 7.2 points.<br>- Financial Research evaluates whether models can produce auditable research under evidence and cutoff constraints. K3.1 Pro improves on K3 by 11.6 points.<br>- Business Operation evaluates long-horizon management and decision-making in a simulated business environment. K3.1 Pro achieves about 4.2× K3&#x27;s performance.<br>Financial analysis and investment research demand a high degree of factual accuracy. To address this, we made targeted improvements to K3.1 Pro&#x27;s factual accuracy on real-world tasks and challenging prompts. On Kimi Hallu Bench Hard bench, an internal benchmark designed to stress-test factual accuracy, its claim-level hallucination rate fell from 23.4% for K3 to 8.3%, while the share of responses containing at least one factual error was just 42.4% of its predecessor&#x27;s rate. (The evaluation is a stress test for factual accuracy, with examples deliberately crafted to probe situations where models are prone to errors. The reported rates do not represent overall error rates in daily use.)<br>The cases below show how K3.1 Pro handles financial modeling, investment analysis, and source-grounded research in practice:<br>Cybersecurity<br>As K3.1 Pro became more capable, we spent a correspondingly larger share of our effort understanding where cyber capability comes from, and how much of it we can control. We therefore analyzed and evaluated K3.1 Pro&#x27;s vulnerability research capabilities, and applied targeted controls during training to reduce potential misuse risk while preserving general usefulness.<br>Identifying and removing cyber-related data. During development, we observed vulnerability research performance improving steadily as post-training scaled. Tracing the source of this trend, we found that cyber-related content was embedded within the general mid-training corpus, and cyber-related tasks were present in the RL environment mix — a natural byproduct of training on broad data. In preliminary experiments on internal models, we found that without data removal at either the mid-training or the RL stage, downstream cyber capability would increase substantially. These findings gave us a concrete lever for control. For the open-weight release of K3.1 Pro, we identified and removed cyber-related data from both training stages, while retaining the general-purpose coding tasks needed for model usefulness. We will continue to apply appropriate controls at every training stage, of which cyber-related data identification and restriction is one example.<br>Evaluation and results. After data cleaning, we evaluated K3.1 Pro on xdev-bench-hard, our in-house benchmark of expert-curated, source-code-based vulnerability discovery and exploitation tasks, calibrated to provide meaningful differentiation at our current capability level. Most tasks faithfully reproduce recently disclosed vulnerabilities in software such as the Linux kernel, Node.js, JavaScriptCore, Exim, and VirGL, with mitigations enabled. Each task provides the vulnerable source code, a short bug hint, and the corresponding binary; the agent must develop an exploit, achieve arbitrary code execution in a separate sandbox, and retrieve a secret string for automated verification. We report pass@3 over a random subset of runs, with no hard timeouts or output token limits.<br>On xdev-bench-hard, the checkpoint without these risk-reduction measures — no cyber-related data removal at mid-training and no cyber-related RL environment filtering — solves 90.5% of problems at pass@3; the final K3.1 Pro reaches 81.0%. The comparison shows that data removal meaningfully reduces cyber capability relative to what the same training pipeline would otherwise produce. At the same time, K3.1 Pro improves substantially over its predecessor, indicating that stronger general coding and long-horizon debugging capabilities generalize to cyber tasks even after targeted data removal. K3.1 Pro&#x27;s cyber capability remains behind that of frontier proprietary models that have been publicly available for at least three months. We will keep evolving our internal benchmarks so that evaluation stays informative as model capabilities continue to advance.<br>Open-weight principles. These evaluations frame our open-weight release decision. First, we aim not to release open weights that would extend the absolute frontier of cyber capability. K3.1 Pro&#x27;s offensive cyber capability is, by design, below what our pipeline can produce, and remains behind that of frontier proprietary models. Second, we intend to progressively raise the cyber capability available in open weights. We believe making K3.1 Pro available in a non-discriminatory way benefits people who need dual-use capabilities for defensive purposes. When a capable model is open and runs on infrastructure its users control, many more teams gain the means to audit the code they maintain — including legacy systems that rarely receive dedicated security reviews. We believe that letting this capability diffuse gradually — rather than concentrating it in a few proprietary systems — ultimately makes all software more secure.<br>Availability<br>Kimi K3.1 Pro rolls out today across the Kimi product family: on Kimi.ai and the Kimi mobile apps, Kimi Work and Kimi Code, and through the Kimi API.<br>Full model weights will be released by Nov 4, 2026.<br>Kimi Enterprise administrators can enable K3.1 Pro for their organization; access is off by default at launch.<br>Details for each channel:<br>- Kimi Agents: Download or update to the latest Kimi app from your mobile app store, available on iOS, Android, and HarmonyOS, or visit kimi.ai.<br>- Work with Kimi K3.1 Pro: Download the latest Kimi Work desktop app, version 3.1.0 or later, available for Windows and Apple silicon Macs.<br>- Code with Kimi K3.1 Pro: Run Kimi Code and select Kimi K3.1 Pro using the /model command.<br>- Build with the Kimi API: Visit the Kimi API Platform and select kimi-k3.1-pro / kimi-k3.1-pro-highspeed. Zero Data Retention is available for API customers.<br>- Bring Kimi to your organization: Kimi Business provides enterprise-grade data privacy and member management, with complete separation between personal and organization accounts. Visit the pricing page and select “Get Kimi Business” to subscribe for your team.<br>Benchmarks<br>Footnotes<br>Unless otherwise specified, all Kimi K3.1 Pro results reported below are obtained with the reasoning effort set to &#x27;max&#x27;, temperature = 1.0, and top-p = 0.95.<br>Coding benchmarks<br>- Terminal-Bench 4.0. Kimi K3.1 Pro is evaluated with the Claude-Code harness. The DeepSeek-V4.1-Flash-1017 is taken from the release blog (https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017). All remaining scores are taken as the maximum value reported in either their blog posts or the official Terminal-Bench 4.0 leaderboard (https://www.tbench.ai/).<br>- Terminal-Bench Science 0.1. Kimi K3.1 Pro is evaluated with the Claude-Code harness. Our internal evaluation of DeepSeek-V4.1-Flash-1017 yields a score of 9.3; However, an older version, DeepSeek-V4.1-Flash, scores 15.7 on the official Terminal-Bench Science, so we report 15.7 here; all remaining scores are from the official Terminal-Bench Science leaderboard (https://www.terminal-bench-science.ai/).<br>- DeepSWE v1.1. Kimi K3.1 Pro is evaluated with the Claude-Code harness. All scores are taken from each model&#x27;s respective technical report. GPT-6 Astra(https://openai.com/index/gpt-6-astra/). Claude Opus 5.5 and Claude Fable 5.1(https://www.anthropic.com/claude-opus-5-5-system-card and https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card); DeepSeek-V4.1-Flash-1017 (https://api-docs.deepseek.com/news/news261017/); GLM-5.3 (https://z.ai/blog/glm-5.3).<br>- SWE-Marathon v1.1. Kimi K3.1 Pro is evaluated with the Claude-Code harness. DeepSeek-V4.1-Flash-1017 is evaluated with the ClaudeCode harness. All other scores are taken from the official SWE-Marathon leaderboard (https://www.swe-marathon.org/).<br>- PostTrainBench. Kimi K3.1 Pro and DeepSeek-V4.1-Flash-1017 were evaluated internally on v1.2 using the Claude-Code harness and H20 GPUs instead of H100 GPUs. For stable evaluation, all judge models used DeepSeek-V4.1-Flash-1017 at maximum effort, which best matched the official GPT-5.6-Terra (xhigh) judge in testing. Other scores are from the official leaderboard (https://posttrainbench.com/).<br>- ProgramBench (binary score). We report binary scores rather than raw ProgramBench scores: a task receives a score of 1 if its ProgramBench score is ≥95%, and 0 otherwise. Kimi K3.1 Pro is evaluated with the Claude-Code harness. The DeepSeek-V4.1-Flash-1017 and GLM-5.3 scores are taken from the release blog (https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017); all remaining scores are from the Vals ProgramBench leaderboard (https://www.vals.ai/benchmarks/programbench).<br>- Internal Coding Bench: Kimi Code Bench 2.0 and Kimi Code Bench 3.0 Long-horizon. Kimi K3.1 Pro is evaluated with Claude-Code harnesses; All other models are evaluated at their max-effort setting. Note that proprietary model testing may involve some fallback behavior.<br>- BenchCAD. Open models are evaluated by us on 1,000-case subsets randomly sampled from the full 17,900-case Vision2Code dataset, at maximum reasoning effort. With-tools results use the Claude Code harness; without-tools results use single-shot generation with the official BenchCAD prompts and scoring pipeline. Scores for Claude Fable 5.1 and Claude Opus 5.5 are taken from the Claude Opus 5.5 System Card; GPT‑6 Astra’s with-tools score is taken from its official report. GPT‑6 Astra has not reported a without-tools score and is marked “—”.<br>Agentic benchmarks<br>- BioMysteryBench dataset is drawn from the official v11 release, with Kimi K3 as the judge model. We evaluate Kimi K3.1 Pro with Kimi Code, GLM-5.3 and DeepSeek-V4.1-Flash-1017 with Claude Code, and GPT-6 Astra with Codex. Scores for the Claude models are taken directly from their official system cards.<br>- Our Agents’ Last Exam dataset is drawn from the official v1.1 release, comprising 122 tasks, including 86 CLI tasks, with environment images aligned with the official Hugging Face release. We additionally assign a score of zero to runs that bypass the task’s stated requirements, such as retrieving answers online instead of performing the required analysis in Wireshark. DeepSeek and Kimi are evaluated using Claude Code and Kimi Code, respectively. All other results are taken from the official benchmark website.<br>- OfficeQA Pro, OfficeQA Pro v2. GPT-6 Astra is evaluated with Codex, while all other models are evaluated with Claude Code. Each task provides the agent with the entire PDF corpus, with all PDFs rendered as images and no machine-readable text available. We observed instances in the trajectories of certain external models where they retrieved reference answers online; Consequently, we assigned a score of zero to these tasks.<br>- Frontier Finance is evaluated with the official finance agent v2 harness.<br>- HANDBOOK.md is evaluated using the official harness built on OpenHands, with evaluation tasks drawn from the benchmark’s early open-source v1 release.<br>- Harvey Legal Agent is evaluated on a public dataset of 1,251 tasks using Artificial Analysis’s Stirrup harness, with performance reported as the all-pass rate (i.e., the percentage of tasks that pass all rubric criteria).<br>- OSWorld V2.1 is evaluated with the Kimi Agent harness in the official OSWorld v2 repo, while GPT-6 Astra&#x27;s score is taken from Muse Wonder&#x27;s technical report.<br>- DECK-Arena evaluates presentation generation on real-world queries, while Design Bench covers graphic design via direct and reference-image few-shot prompting; Both run models across python-pptx, pptxjs, and Kimi&#x27;s in-house DSL in a harness with integrated search and image generation, using an automated grader calibrated on 10,000+ human judgments.<br>- MCP Atlas. All models are evaluated on the 500-task public subset with a 100-turn limit, using Gemini 3.1 Pro as the judge.<br>- BrowseComp. We adopt the context-compaction strategy used in the Claude model cards, triggered at 200K tokens. We allow a maximum of 500 steps; if this limit is reached before a task is completed, we force the agent to provide an answer, which is then judged. All BrowseComp runs are conducted with temperature=1.0 and top-p=1.0.<br>- GDPval-AA v2.1, AA-Briefcase v1.1 and AutomationBench-AA scores are cited from https://artificialanalysis.ai/, Apex Agents scores are cited from https://www.mercor.com/apex/apex-agents-leaderboard/<br>- GDP.pdf w/ python, ZeroBench w/ python and ChartoGraphy w/ python are averaged over five runs. Other multimodal benchmarks (w/ python) are averaged over four runs. For GDP.pdf w/ python: Each original PDF file is sent to the sandbox, where the model can use IPython tool to process it. Final responses are graded against each rubric criterion using Gemini-3.5-Flash (medium reasoning effort) and the official judging prompt. We report the task-macro mean rubric pass rate: for each task, we average the fraction of rubric criteria passed over five independent runs, then average these task-level scores equally across all tasks.<br>Reasoning &amp; Knowledge &amp; Multimodal benchmarks<br>- GDP.pdf. Each PDF is provided as page images resized to a longest edge of 1,152 pixels, interleaved with Docling-extracted text in page order. Responses are graded against each rubric criterion using Gemini-3.5-Flash Medium and the official judging prompt. We report the strict pass rate among fully scored responses.<br>- HLE and HLE-Diamond evaluate general knowledge and reasoning capabilities. We report accuracy on the full evaluation sets, with 2,500 questions for HLE and 1,000 questions for HLE-Diamond. For models marked with an asterisk (*), accuracy is reported on the text-only subset of questions.<br>- GDP.pdf, ZeroBench and ChartoGraphy are averaged over five runs. Other multimodal benchmarks are averaged over four runs. GDP.pdf scores of GLM-5.3 Max and DeepSeek-V4.1-Flash-1017 Max is cited from https://artificialanalysis.ai/.<br>- MMMU-Pro is evaluated following the official protocol, preserving the original input order and prepending images to the text input.<br>- Kimi Hallucination Benchmark evaluates factual accuracy on an internal set of challenging, de-identified prompts drawn from practical work tasks. We report the claim-level hallucination rate assessed by fact-checking agents.<br>Cybersecurity benchmarks<br>- ExploitBench. Kimi K3.1 Pro is evaluated with the official ExploitBench harness under the 300-turn budget. We report the pass@5 max capability score: for each environment, the best run across 5 seeds, scored by the number of capability flags reached out of 16, where achieving arbitrary code execution counts as achieving all 16 capabilities. The GPT-6 Astra score is taken from https://openai.com/index/gpt-6-astra/; the Claude Opus 5.5 and Claude Mythos 5.1 scores are taken from https://www.anthropic.com/claude-opus-5-5-system-card; the GLM-5.3 score is taken from https://z.ai/blog/glm-5.3.<br>- ExploitGym. Kimi K3.1 Pro is evaluated with the KimiCode harness under a 6-hour wall-clock budget per task. The GPT-6 Astra score is taken from https://openai.com/index/gpt-6-astra/; the Claude Opus 5.5 and Claude Mythos 5.1 scores are taken from https://www.anthropic.com/claude-opus-5-5-system-card at the 6-hour budget; the GLM-5.3 score is taken from https://z.ai/blog/glm-5.3.<br>- xdev-Bench-hard: Kimi K3.1 Pro is evaluated with the KimiCode harness. GLM-5.3 and DeepSeek-V4.1-Flash-1017 are evaluated with the Claude Code harness.</div>
+</div>
+
+</div>
+
+</body>
+</html>
