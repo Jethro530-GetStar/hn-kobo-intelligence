@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-29 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-29 AM · Generated 2026-10-29 00:11 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: carmelitegothic.com, chopstick.sh, dennisy.me, emudhra.we-have-a-problem.com, ghostty.org, news.ycombinator.com, nozomi-xi.vercel.app, openai.com, status.datadoghq.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Ghostty 1.4
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1220 points ·
+    388 comments ·
+    deaux
+  </div>
+
+  <div class="meta">
+    ghostty.org
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #13
+  </div>
+
+  <div class="links">
+    <a href="https://ghostty.org/docs/install/release-notes/1-4-0">Original article</a> · <a href="https://news.ycombinator.com/item?id=50261998">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Ghostty 1.4.0<br>Release notes for Ghostty 1.4.0, released on October 27, 2026.<br>Ghostty 1.4.0 is a major release that includes large performance and memory improvements, a 100% complete Kitty graphics implementation including animation and relative placements (the first non-Kitty terminal to do so), SSH integration improvements, and hundreds more improvements and fixes across all platforms.<br>This release features 7 months of work with changes from 172 contributors over 2,889 commits. Thank you to all the contributors, maintainers, community moderators, translators, packagers, and users who each helped make this release possible.<br>These release notes are painstakingly and lovingly hand-crafted by human Ghostty maintainers, including the full changelog. They take a combined 16+ hours to write, so please enjoy. 🥰<br>- GHSA-4hwh-wx3w-3fqg. Paste protection didn&#x27;t treat carriage returns as line endings, so a paste could run a command without confirmation in programs that don&#x27;t use bracketed paste. This requires user interaction (copy-paste) to trigger.<br>- GHSA-mhff-mv4q-fp63. Malicious Kitty graphics commands could crash or hang Ghostty, force huge allocations, or in limited cases read or delete files outside the allowed temporary directories. This only requires displaying malicious output.<br>- GHSA-hcr9-7hcr-mjm8. Malicious terminal output could crash Ghostty, closing every window, via tmux control mode. tmux doesn&#x27;t need to be installed. This affects Ghostty 1.3.0 and 1.3.1.<br>- GHSA-hp9c-qp4q-cpw3. The same impact as above, via a tmux control mode layout with a zero-sized or oversized pane. This affects Ghostty 1.3.0 and 1.3.1.<br>- GHSA-w9q4-5jvv-mcv4.<br>Clearing the screen into scrollback could corrupt memory if it deleted<br>the scrollback page holding a styled or hyperlinked cursor. This only<br>requires displaying malicious output, but only with a small<br>scrollback-limit such as 0. The default isn&#x27;t known to be affected.<br>- GHSA-2r63-vmw6-3m3c.<br>A crafted directory name could make the zsh shell integration send<br>arbitrary escape sequences, such as silently replacing the clipboard via<br>OSC 52. bash was affected in a more limited way. This only requires<br>cd-ing into a directory from untrusted content, such as a cloned<br>repository.<br>- macOS: GHSA-cw69-wm67-5pv8. Cmd-clicking a crafted OSC 8 hyperlink could open unsafe local files or custom URL schemes, leading to arbitrary command execution. Ghostty now blocks unsafe targets and confirms custom URL schemes. This requires user interaction (cmd-click) to trigger.<br>- macOS: GHSA-mfw9-xcr3-7gfp.<br>The same issue as above for links detected by the link configuration,<br>including the default URL matcher. This requires user interaction<br>(cmd-click) to trigger.<br>- macOS: GHSA-v8cw-fg4j-jcc4. Drag-and-drop text skipped paste protection, with the same impact as above. This requires user interaction (drag-and-drop) to trigger.<br>- macOS: GHSA-mxqx-236q-wrv7. Opening a file whose name contains control characters could run a different command than the one shown in the confirmation dialog. This requires a crafted file on your system and confirming the dialog.<br>Note: I requested CVEs for the above advisories weeks ago, but GitHub hasn&#x27;t assigned them yet. If/when they&#x27;re assigned, I will update the above with proper CVE numbers.<br>PRs: #12999 #13069 #13393 #14413 #14414<br>Ghostty 1.4 supports macOS 27 (Golden Gate). Most of the work was compatibility fixes:<br>- Tabs in the titlebar (macos-titlebar-style = tabs) lay out correctly<br>again.<br>- The native tab bar no longer draws as a solid gray bar on top of your theme. It now lets the new glass style blend with your terminal background.<br>- macos-titlebar-style = hidden no longer covers the top lines of the<br>terminal when Reduce Transparency is on.<br>- The app icon no longer has a thin border.<br>- The Shortcuts &quot;New Window&quot; action no longer opens two windows when Ghostty is running without any windows.<br>Ghostty 1.4 remains fully compatible with prior macOS versions back to and including macOS 13 (Ventura). See the system requirements for more details.<br>Note<br>Ghostty 1.3.1 works on macOS 27, but it has some of the visual issues listed above, such as the gray tab bar.<br>PRs: #13943 #13939 #13935 #13934 #13893 #13933 #13389 #13270 #13281<br>Ghostty now supports Kitty graphics animation and relative placements. These were the last major features of the Kitty graphics protocol that Ghostty didn&#x27;t support.<br>Programs that display animated images with the Kitty protocol, such as an<br>animated GIF shown with kitten icat, now animate in Ghostty instead of<br>showing a single still frame. Frame transmission, composition, and playback<br>control are all supported, and animations pause while the terminal isn&#x27;t<br>visible. Relative placements let a program position one image relative to<br>another image&#x27;s placement, so the child image moves along with its parent.<br>We also did a full conformance pass against the specification and Kitty itself, fixing dozens of behavioral differences. For example, images now scroll with text inside scroll regions (#4323 ), retransmitting an image ID replaces the old image (#6711 ), and invalid image data now gets an error response instead of silence, which could leave clients hanging. The full list is in the terminal capabilities section.<br>Kitty graphics are faster, too. Image payloads are now parsed in bulk with SIMD instead of one byte at a time, making large image transfers about 16x faster to parse in our benchmarks (64 MiB of image data, x86_64 Linux), and drawing images costs much less per frame.<br>Our Kitty graphics implementation now covers 100% of the published specification, making Ghostty (and libghostty) the first terminal to do this outside of Kitty itself.<br>PRs: #13264 #13473 #13240 #13245 #14130 #14137 #14138 #14017<br>Ghostty now transparently compresses scrollback that isn&#x27;t visible, reducing the physical memory those pages use by 70% to 90% for typical text-heavy history. Compression only runs while the terminal is idle and pages are decompressed on demand when you scroll back or search, so it has no measurable impact on I/O throughput.<br>Thanks to compression, the default scrollback limit has been raised from 10 MB to 50 MB per terminal. On platforms that support compression, a full scrollback still generally uses less physical memory than the old 10 MB limit did.<br>Note<br>Compression lowers resident (physical) memory, not virtual memory, so look at resident memory when measuring it. It is currently available on macOS and 64-bit Linux.<br>Beyond scrollback, memory usage is lower in many places:<br>- A new, empty terminal now uses about 16 KiB of terminal page memory on macOS, down from 128 KiB in Ghostty 1.3.1.<br>- On macOS and Linux, memory freed by clearing or trimming scrollback is now returned to the OS instead of being held until the terminal closes.<br>- Hidden tabs release their GPU resources. On macOS, with one visible tab and 20 hidden tabs, GPU memory dropped from about 385 MiB to 18 MiB. Rebuilding them when a tab becomes visible again takes under a millisecond.<br>PRs: #13209 #13220 #13226 #13227 #13537 #13827 #13587 #14011 #13722 #14035 #12760<br>There are performance improvements across the board in Ghostty 1.4 that yield significant gains compared to prior Ghostty versions.<br>The biggest win came from a surprising discovery: on macOS, the kernel caps every read from a pty at about 1 KiB no matter how large the read buffer is. Previously, Ghostty processed each read as it arrived, so per-read overhead was paid every kilobyte, and the program writing output sat blocked while we parsed. Ghostty now drains the pty on one thread while parsing on another, raising end-to-end I/O throughput by 25% to 55% on macOS (M4 Max, plain and Unicode text) over Ghostty 1.3.x.<br>VT processing itself is also much faster. In parser benchmarks, plain<br>ASCII text went from 128 MB/s to 725 MB/s (5.7x), CJK text got 3.4x<br>faster, and a 2.6 GB dataset of real-world terminal recordings<br>from asciinema is processed about 25% faster.<br>Together, these changes took cat-ing a 150 MB text file on macOS from<br>1.5 seconds to 566 milliseconds.<br>Other notable improvements:<br>- Resize: resizing a terminal with a large scrollback is about 6x faster (120x80 with 10,000 lines of scrollback), and 3x to 5x faster with history full of CJK text or emoji.<br>- Rendering: the renderer holds the terminal lock 2.7x to 11x less per frame, leaving more time for the I/O thread during heavy output.<br>- Copy and search: formatting terminal contents as plain text, HTML,<br>or VT, which backs clipboard copy, write_screen_file, and scrollback<br>search, is 1.5x to 8x faster.<br>- Launch (macOS): about 15% faster from launch to visible window, and 27% faster to the first rendered frame.<br>- Idle energy: on macOS, the renderer&#x27;s display link now sleeps when there&#x27;s nothing to draw. On GTK, hidden tabs stop rendering, matching macOS.<br>- Large OSC sequences: OSC 52 clipboard payloads parse about 30x faster, and even short sequences like title changes are about 6x faster.<br>The GTK app has a new rendering pipeline. It no longer uses GtkGLArea.<br>Instead, the renderer draws with EGL on its own thread, exports each frame<br>as a DMABUF, and hands it to GTK to display. Rendering is now<br>triple-buffered, which should greatly reduce tearing, and no OpenGL calls<br>run on the main thread anymore, which let us remove a number of<br>workarounds.<br>The most visible result is crisp text under fractional scaling. Text and box-drawing characters are no longer blurry with fractional display scaling such as 125% or 150% (#1938 ). We fixed this once before, but it came back after upstream GTK changes. Ghostty now renders at the window&#x27;s true fractional scale, so every rendered pixel maps to exactly one pixel on screen.<br>The new render surface needs a system EGL library (see Changes for Package Maintainers). On GPU drivers that can&#x27;t export DMABUFs, Ghostty falls back to copying frames through the CPU, which is slower but works.<br>PRs: #13962 #13993 #13995 #13998 #14002 #14061<br>Ghostty now implements the Kitty clipboard protocol (OSC 5522) on both macOS and GTK. Ghostty 1.3 could parse the protocol but didn&#x27;t implement it.<br>OSC 52 can only read and write plain text. The Kitty clipboard protocol lets programs running in the terminal read and write any kind of clipboard data, such as images or HTML, and lets them pick among the formats on the clipboard. Programs can also enable paste events (mode 5522), which tell the program what formats a paste contains so it can read the one it wants. This is how a terminal program can accept a pasted image, for example.<br>Clipboard access follows the existing clipboard-read and<br>clipboard-write configurations. By default, reads prompt for permission<br>and writes are allowed. The permission prompt shows a preview of the<br>clipboard contents, including images. Programs that send a password can<br>have your answer remembered for the rest of that terminal session. A new<br>clipboard-write-limit-bytes configuration limits the size of a single<br>write (default 64 MiB). A write over the limit fails and leaves the<br>clipboard untouched.<br>You can now rearrange splits on GTK by dragging them, matching the macOS feature introduced in Ghostty 1.3. When a tab has two or more splits, each split shows a drag handle at the top. Grab the handle and drop the split onto any other split, including splits in other tabs and windows. An overlay shows which side of the target split it will land on. The terminal contents, working directory, and running processes all move with it.<br>A new drag-handle configuration controls when drag handles are shown on<br>both macOS and GTK: auto (default), always, or never. With never,<br>splits can&#x27;t be rearranged with the mouse. Hiding the handles was a<br>common request from users who found them in the way.<br>On GTK, splits can only be dropped onto other splits. Dragging a split out to create a new tab or window is macOS-only.<br>PRs: #14454 #13494 #14483 #14538 #14673 #14375 #14144<br>Ghostty 1.4 includes dozens of improvements to core terminal emulation. We now run esctest, Thomas Dickey&#x27;s terminal conformance suite, against Ghostty&#x27;s terminal core in CI. Alongside that, we fixed many differences from xterm in cursor movement within margins, tab stops, character sets, mode reports, and more. You can find the full list of related changes in the terminal capabilities section.<br>Ghostty also supports several new sequences, including soft terminal reset<br>(DECSTR), extended cursor position reports (DECXCPR), backarrow key mode<br>(DECBKM), and screen size reports in characters (CSI 19 t). Programs can<br>also now ask whether the terminal is visible using<br>visibility reports<br>(mode 2033), so they can stop rendering while hidden.<br>Keyboard encoding also matches xterm more closely, with fixes for<br>modifyOtherKeys mode 2 and legacy Alt-as-Escape encoding of non-ASCII<br>keys.<br>Two new sequences are disabled by default because they can be abused by untrusted programs, including ones running on a remote machine:<br># Allow programs to resize the window (CSI 8 t)<br>vt-window-resize-allowed = true<br># Allow programs to request screen checksums (DECRQCRA)<br>vt-xt-checksum-report = true<br>PRs: #12582 #12814 #13533 #13844 #14472 #14854<br>Ghostty 1.2 introduced SSH shell integration features<br>as a work in progress. In Ghostty 1.4, they&#x27;re backed by a new<br>ghostty +ssh CLI action: a drop-in ssh wrapper that prepares the<br>remote session for Ghostty and then runs the real ssh with your<br>arguments forwarded unchanged.<br>ghostty +ssh user@example.com<br># Or alias it so every ssh invocation goes through it<br>alias ssh=&#x27;ghostty +ssh --&#x27;<br>Before connecting, +ssh installs Ghostty&#x27;s terminfo on the remote host<br>so the proper xterm-ghostty TERM value can be used, and forwards<br>COLORTERM, TERM_PROGRAM, and TERM_PROGRAM_VERSION. If the terminfo<br>install fails (for example, tic isn&#x27;t available on the remote), it falls<br>back to TERM=xterm-256color. Flags such as --terminfo=false,<br>--forward-env=false, and --verbose control each step.<br>The ssh-env and ssh-terminfo shell integration features (still opt-in)<br>now call +ssh too. Previously, each shell integration carried its own copy<br>of this logic, which made up roughly a third of our shell integration<br>scripts. Now bash, zsh, fish, elvish, and Nushell all behave identically,<br>and you can get the same behavior from scripts or anywhere else by calling<br>ghostty +ssh directly.<br>The terminfo install itself is also more reliable. Ghostty now always<br>installs its own bundled terminfo rather than accepting whatever<br>xterm-ghostty entry the remote already has, and it reinstalls<br>automatically when a Ghostty update changes the terminfo. It also no longer<br>needs infocmp or Ghostty&#x27;s terminfo on the local machine. Installs are<br>cached per host and port, so two machines behind one address no longer<br>share a cache entry. And ssh-env no longer silently overrides SetEnv<br>entries in your ~/.ssh/config (#11518 ).<br>The +ssh-cache command that manages this cache now takes positional<br>destinations (ghostty +ssh-cache user@example.com) and has a new<br>--prune=30d flag. See the breaking changes if you<br>script against +ssh-cache.<br>macOS: The minimum required macOS version for Ghostty 1.4 remains unchanged (macOS 13 Ventura). Ghostty is now compatible with macOS 27.<br>GTK: Ghostty 1.4 requires GTK 4.18 and libadwaita 1.7, up from GTK 4.14 and libadwaita 1.5 in Ghostty 1.3. This aligns with our GTK/Adwaita version policy. Notably, Ubuntu 24.04 LTS doesn&#x27;t meet this requirement. Systems with older GTK or Adwaita versions can work around this requirement by using an older version of Ghostty or the Flatpak package. #14330<br>OpenGL (GTK): The minimum required OpenGL version remains 4.3, but Ghostty now renders through EGL instead of GTK&#x27;s OpenGL widget. This should be invisible for nearly everyone, but if Ghostty fails to start with an EGL error, please make sure your GPU driver provides a working EGL implementation.<br>Important<br>We previously announced that Ghostty 1.4 would require macOS 14. Nothing forced our hand to do this in this release, so we kept macOS 13 support. We still plan to drop macOS 13 in a future release. Apple dropped security support for macOS 13 in the fall of 2025, so we recommend upgrading regardless.<br>The following behaviors have changed in 1.4.0:<br>- copy-on-select has been reworked and now accepts none, primary, clipboard, or both. The meaning of clipboard has changed: it<br>previously copied to both the selection clipboard and the system<br>clipboard, and now copies only to the system clipboard. If you set copy-on-select = clipboard and want the old behavior, change it to both. #12600  #12604<br>- macOS: copy-on-select now defaults to none (previously true), so<br>selecting text no longer copies it anywhere and middle-click paste of the<br>selection no longer works by default. To restore the 1.3 behavior, set copy-on-select = primary. Note that an explicit copy-on-select = true on macOS now copies selections to the system clipboard, which is<br>different from 1.3. #12600  #12604<br>- macOS: cmd+arrow_up and cmd+arrow_down now run jump_to_prompt again,<br>matching Terminal.app and Ghostty 1.2. In 1.3, these keys were hardcoded<br>to scroll to the top and bottom and couldn&#x27;t be rebound. To keep the 1.3<br>behavior, set keybind = cmd+arrow_up=scroll_to_top and keybind = cmd+arrow_down=scroll_to_bottom. #12245<br>- GTK: The default ctrl+shift+page_up and ctrl+shift+page_down keybinds<br>now move the current tab left and right (move_tab), matching Firefox,<br>GNOME Terminal, and VS Code. jump_to_prompt moved to ctrl+shift+arrow_up and ctrl+shift+arrow_down, so programs running in<br>the terminal no longer receive those keys. If a program you use needs<br>them, unbind them with keybind = ctrl+shift+arrow_up=unbind and keybind = ctrl+shift+arrow_down=unbind. #4998  #12458<br>The list below contains deprecations that remain compatible today through a compatibility layer, but may break in a future release if they are ignored:<br>- scrollback-limit has been renamed to scrollback-limit-bytes, to make<br>room for the new scrollback-limit-lines. #13473<br>- copy-on-select = true is replaced with copy-on-select = primary on<br>Linux and FreeBSD, or copy-on-select = clipboard on macOS. copy-on-select = false is replaced with copy-on-select = none.<br>#12600  #12604<br>There is no set timeline to remove these deprecations, but we recommend adapting to the new configurations sooner rather than later to avoid any possible disruptions in the future.<br>- Scrollback history is now transparently compressed while the terminal<br>is idle, reducing the physical memory used by compressed scrollback by<br>70% to 90% for typical text. Compression is available on macOS and 64-bit<br>Linux and can be disabled with the new scrollback-compression configuration. Because of this, the default scrollback limit has been<br>raised from 10 MB to 50 MB, which on average still uses less memory than<br>a full scrollback did previously. #13264<br>- A new configuration scrollback-limit-lines limits scrollback by number<br>of lines instead of bytes. The existing scrollback-limit configuration<br>has been renamed to scrollback-limit-bytes (the old name continues to<br>work). If both are set, the first limit reached applies, and both accept unlimited. #13473<br>- copy-on-select now accepts none, primary, clipboard, and both and no longer affects middle-click paste (see middle-click-action). clipboard now copies only to the system clipboard, so use both for the<br>previous behavior. The default on macOS is now none. See the<br>breaking changes for migration details. #12600<br>- A new configuration middle-click-action configures the behavior of<br>middle-clicking: primary-paste (default) pastes from the selection<br>clipboard, clipboard-paste pastes from the system clipboard, and ignore does nothing. #12478<br>- A new binding action move_tab_to_new_window moves the current tab into<br>a new window of its own. It is also available in the command palette.<br>#2630<br>- A new CLI command +explain-config prints the documentation for a<br>configuration option or binding action, e.g. ghostty +explain-config font-size. #11546<br>- The +explain-config and +show-config CLI commands now page their<br>output through $GHOSTTY_PAGER or $PAGER (falling back to less) when<br>run interactively. Paging can be disabled with --no-pager or by setting<br>the pager to an empty value. #11940<br>- A new configuration drag-handle controls when the split drag handles<br>are shown: auto (default), always, or never. #13706  #13709<br>- Scrollback search now wraps around when navigating past the first or last match. #11449<br>- A new configuration link-osc8 (default true) can be set to false to<br>disable OSC 8 hyperlinks entirely. Disabled OSC 8 hyperlinks are not<br>highlighted, previewed, copied, or opened. #13634<br>- Processes running in Ghostty now receive a GHOSTTY_SURFACE_ID environment variable that uniquely identifies the terminal they are<br>running in. #12027<br>- The right-click context menu now has a &quot;Close Split&quot; item. #11173 #11174<br>- Upgrade to Unicode 18. #14293<br>- I/O throughput is 25% to 55% higher on macOS by reading from the pty concurrently with parsing previously read output. #13209<br>- VT processing is significantly faster across the board. Plain text is up<br>to ~6x faster, real-world output (measured against a large asciinema<br>dataset) is ~24% faster, grapheme-heavy output is ~3x faster, and DEC<br>special graphics (line drawing), repeated characters (REP),<br>hyperlink-heavy output, and scroll regions are all faster. #13220<br>#13226  #13231  #13294  #13625  #13826  #14356<br>- Large OSC sequences, such as OSC 52 clipboard writes, are parsed ~30x faster and small OSC sequences, such as title changes, ~6x faster. #14011 #13565<br>- Resizing with reflow is ~6x faster with large scrollback and 3x to 5x faster with scrollback heavy in wide characters such as CJK or emoji. #13537 #13827<br>- Terminals use significantly less memory. A new terminal now uses ~16 KiB of physical memory for its screen instead of 128 KiB on macOS, every terminal page uses 30% less memory, and memory freed from scrollback (such as by clearing it) is now returned to the operating system. #13240 #13245 #14130 #14137 #14138<br>- Kitty graphics are faster. Large image transfers are parsed in bulk using SIMD, zlib-compressed images decompress ~17% faster, pixel format conversion avoids an extra copy, and the per-frame cost of drawing images is much lower, especially with Unicode placeholder images on screen or long scrollback. #13270 #13281 #13987 #14422 #14780 #14789<br>- Formatting terminal contents is 1.5x to 8x faster, which speeds up<br>clipboard copy (plain, HTML, and VT), write_screen_file and related<br>actions, and scrollback search. #13587<br>- The renderer holds the terminal lock 2.7x to 11x less time per frame, and glyph and font lookups are faster. #13227 #14300 #14301 #14420 #14406 #13258<br>- command-palette-entry = clear removes all command palette entries,<br>including the default entries. #12682<br>- window-padding-balance has a new value equal that balances padding<br>equally on all four sides without capping the top padding. #11491<br>- theme now expands ~ to the home directory in theme file paths,<br>including in separate light and dark themes. #13840<br>- +list-themes now supports g and G to jump to the first and<br>last theme, and ctrl+d and ctrl+u to page down and up. #13681<br>#14607<br>- The terminal inspector can now copy terminal I/O events or export them to a file. #13519<br>- Bundled themes updated to release-20261019-151001-86a776d. This adds 356 new themes and renames or removes none. The colors of 10 existing themes changed upstream: Adwaita, Adwaita Dark, Atom One Light, Catppuccin Frappe, Catppuccin Latte, Catppuccin Macchiato, Catppuccin Mocha, Cursor Dark, Dark Modern, and Electron Highlighter.<br>- Fix configuration parsing silently ignoring all settings after a comment or blank line that happened to end at an internal buffer boundary. This typically only affected long configuration files. #13638<br>- Fix a performance degradation where, after a long uptime, the renderer rebuilt its full terminal state on every frame. #13585<br>- Fix the automatically created configuration file being empty instead of containing the configuration template. #13774<br>- +edit-config works when $EDITOR or $VISUAL contains arguments,<br>such as zed --new. #11897<br>- adjust-cursor-height works again. #13225<br>- Mouse selection improvements: dragging after a ctrl/cmd triple-click<br>output selection now extends the selection by command output, autoscroll<br>stops when the screen switches (e.g. to the alternate screen), a force<br>touch on macOS selects the word at the press location without starting a<br>drag, and releasing a drag no longer activates a link or prompt click.<br>#12830<br>- Double-click word selection no longer continues across hard line breaks, and double-clicking either half of a wide character (such as CJK) selects the whole word. #14354 #14391<br>- Wide characters at the edges of a selection are now consistently rendered as selected and included when copying, including when the wide character wraps onto a new internal page. #14632 #14651<br>- Triple-click line selection no longer pulls in neighboring prompt text when clicking blank cells between OSC 133 prompt boundaries. #14553<br>- Link detection and double-click selection no longer merge prompt text with the command text next to it when shell integration is active. #12435<br>- File paths opened with cmd/ctrl-click no longer include trailing<br>spaces, which broke opening paths printed by some TUIs. #13505<br>- Mouse releases are now reported to the program that received the mouse<br>press when clicking at a shell prompt with click-to-move enabled. This<br>fixes double-click selection in programs like fzf&#x27;s ctrl+r history<br>search. #14710<br>- Shell redraws after a resize are no longer processed at the old terminal size. This fixes one cause of duplicated or misplaced prompts after resizing. #14706<br>- Scrolling, such as clicking in the scrollbar, now works with very large scrollback (millions of lines). #13048<br>- Custom command-palette-entry actions with string parameters, such as set_tab_title, no longer have their parameters escaped when run from<br>the command palette. #13609<br>- HTML clipboard copies no longer include a superfluous trailing newline. #13543<br>- Copying as VT (copy_to_clipboard:vt) and VT screen files now preserve<br>OSC 8 hyperlinks, empty gaps between text, and cells that only have<br>a background color, such as colored status bars. VT screen files also<br>keep trailing blank rows. #14711  #14725  #14766<br>- The mouse pointer now restores the shape set by the running program (OSC 22) after releasing modifier keys instead of resetting to the default. #14128<br>- Custom shaders no longer receive swapped selection foreground and background color uniforms. #14460<br>- Ghostty no longer floods the logs with &quot;adjusting page capacity&quot; messages during output with many styles, graphemes, or hyperlinks. #14631<br>- Fix stale wrap and prompt state on rows reused after scrolling or erasing, which could cause incorrect copy, search, selection, and reflow results. #14010<br>- Fix stale rendering of the previous row after erasing or deleting a wrapped wide character. #14054<br>- Fix a freeze when reloading the configuration while a program is flooding the terminal with queries, such as color queries. #14833<br>- +list-themes no longer crashes on some keys when the search<br>matches no themes, and the keypad down key now moves one row instead of<br>21. #14612  #14605<br>- Fix crashes in scrollback search after clearing the scrollback, resizing, or erasing history. #11957 #13274 #13282<br>- Fix crashes and viewport corruption when resizing with scrolled-back history or with the cursor near the bottom of the screen. #12300 #12907 #12935<br>- Fix a use-after-free crash when clicking or selecting text during heavy output. #12463<br>- Fix a possible crash when reflowing hyperlinks during a resize. #13524<br>- Fix possible crashes or memory corruption when scrolling or erasing rows across a page boundary that needed more capacity. #13394 #13397<br>- Fix possible crashes and memory corruption found via fuzzing when printing causes a page to grow, or after clearing the screen into scrollback. #11261 #13997<br>- Fix many latent crashes and undefined behavior in selection, pins, search, title and working directory updates, and resize error handling. #12894 #13275 #13278 #13367<br>- Fix a possible crash or corrupted input when many pty writes are queued, such as during large pastes. #13659<br>- Fix an out-of-bounds access when IME preedit text with wide characters is composed between existing wide characters, such as with Korean input. #12479<br>- Fix a crash when pressing or releasing mouse button 11. #14759<br>- Fix the write_screen_file, write_scrollback_file, and write_selection_file actions leaking two file descriptors on each use,<br>which could eventually prevent opening new terminals. #13644<br>- Fix memory and file descriptor leaks in terminal I/O, including for writes<br>in read-only mode and files read via the input configuration.<br>#13574  #13579  #13931<br>- vt: Kitty graphics animation is now fully supported: frame transmission, composition, animation control, and rendering. #5255 #13943<br>- vt: Kitty graphics relative placements (P=, Q=, H=, V=) are now<br>supported, allowing images to be positioned relative to other images.<br>#13939<br>- vt: Support the Kitty graphics transient image usage hint. Transient images are evicted first when image storage is full. #13389<br>- vt: The Kitty clipboard protocol (OSC 5522) is now implemented on macOS<br>and GTK, including paste events (mode 5522). Reads and writes follow<br>clipboard-read and clipboard-write, and a new clipboard-write-limit-bytes configuration limits the size of a single<br>write. #10549  #13962  #13993  #13995  #13998  #14002  #14061<br>- vt: Support visibility reports (mode 2033 and CSI ? 998 n), which tell<br>programs when the terminal is not visible, such as in a background tab<br>or on another workspace, so they can stop rendering. #13494<br>- vt: Programs can resize the window with the xterm CSI 8 ; rows ; cols t sequence if the new vt-window-resize-allowed configuration is enabled<br>(default off). The request is ignored in splits, windows with multiple<br>tabs, the quick terminal, and fullscreen, maximized, or tiled windows.<br>#1115  #14375<br>- vt: Support OSC 133 click_events=2, which reports prompt clicks with<br>row coordinates relative to the prompt. #10865  #12953<br>- vt: Support soft terminal reset (DECSTR, CSI ! p), which resets<br>modes, margins, and text attributes without clearing the screen.<br>#14538<br>- vt: Support backarrow key mode (DECBKM, mode 67), which lets programs<br>choose whether backspace sends DEL (0x7f, the default) or BS (0x08). #12226<br>- vt: Support the DECRQCRA and XTCHECKSUM screen checksum reports, which<br>are mostly used by terminal test suites. Because a program can use these<br>to read the screen contents, they are disabled unless the new<br>vt-xt-checksum-report configuration is enabled. The new vt-xt-checksum-extension configuration controls how the checksum is<br>calculated. #14483<br>- vt: Respond to CSI 19 t (report screen size in characters) and to<br>DECXCPR (CSI ? 6 n) extended cursor position requests. #14633<br>#14673<br>- vt: DECRQM now answers ANSI mode queries (CSI Ps $ p), reports DECECM<br>and other unimplemented ANSI modes as permanently reset like xterm, and<br>no longer truncates mode numbers above 32767 in its reply. #12505<br>#14236  #14237  #14672<br>- vt: Ghostty terminfo now advertises overline support (Smol/Rmol),<br>which lets tmux pass overlines through. DECRQSS SGR replies now include<br>overline and curly, double, dotted, and dashed underline styles.<br>#13649  #13653  #13470<br>- vt: The terminfo Se capability now resets the cursor to the configured cursor-style instead of a steady block. This fixes programs like Neovim<br>leaving a block cursor behind on exit. #12482<br>- vt: OSC payloads are now limited to 8 MiB, Kitty graphics payloads to 65 MiB, and each cell to 64 combining codepoints, so terminal output can&#x27;t easily exhaust memory. This also fixes a memory leak on invalid Kitty graphics data. #12349 #13633<br>- vt: Experimental support for the<br>Glyph Protocol<br>(APC 25a1), which lets programs register custom glyphs. Ghostty parses<br>and answers requests but doesn&#x27;t render registered glyphs yet.<br>#12352  #12930  #12937<br>- vt: Parse the new program status protocol (OSC 7501), which lets programs report whether they are idle, working, done, blocked, or failed. This is the first terminal specification pioneered by the Ghostty project. libghostty can parse it all, but the Ghostty GUI ignores it for now. #14560<br>- vt: Parse (but do not implement) the Kitty desktop notification protocol (OSC 99). #10467<br>- vt: Parse (but do not implement) the Kitty drag and drop protocol (OSC 72). #13029<br>- vt: More tmux control mode fixes, including crashes that running<br>tmux -CC could trigger. tmux control mode is still not hooked up to<br>the GUI. #11395  #11935  #14262  #14680<br>- vt: Clearing the screen at a prompt (e.g. ctrl+l in bash or zsh) now<br>moves prior output into scrollback even when the prompt is not on the<br>last row. Previously, the output was erased. #14660  #14668<br>- vt: Kitty graphics: transmitting an image with an existing ID now replaces the image and removes its old placements, as the spec requires. Interrupted or failed retransmissions no longer leave stale images on screen. #6711 #13723 #13893<br>- vt: Kitty graphics: images now move with the text when a program scrolls<br>with CSI S, CSI T, or scroll margins, and are clipped to the scroll<br>region. #4323  #13935<br>- vt: Kitty graphics: automatically assigned image IDs no longer collide with IDs chosen by the program. #2197 #13934<br>- vt: Kitty graphics: delete commands now match the spec and Kitty. Point<br>deletes (d=p, d=c) only remove placements at that cell, d=a only<br>removes placements on the visible screen, range deletes accept empty<br>ranges, and deleting a missing placement no longer frees the image.<br>#13652  #13895  #13898  #13932<br>- vt: Kitty graphics: command validation and responses now match Kitty.<br>This fixes missing responses for invalid image data that could hang<br>clients, false positive query replies, lost IDs in chunked transfer<br>replies, file transfers with an exact S size, and loads interrupted by<br>a non-chunk transmission. #13889  #13892  #13896  #13897  #13933<br>#14811<br>- vt: Kitty graphics: cropped source rectangles are no longer stretched,<br>and X/Y offsets are kept within the first cell. #13890  #13891<br>- vt: Kitty graphics: the cursor moves after tall images like Kitty does, so consecutive images no longer overlap. #13887<br>- vt: Full reset (RIS) no longer resets image-storage-limit to the<br>default. #13951<br>- vt: OSC and APC sequences (such as Kitty graphics commands) canceled by CAN or SUB, or aborted by another control character, are now discarded instead of executed, matching xterm. #14453 #14812<br>- vt: With modifyOtherKeys level 2, control keys, keypad keys, and<br>alt+escape now encode like xterm. F13 to F25, Help, and Menu now send<br>xterm&#x27;s function key sequences in all legacy encoding modes. #14144<br>#14145<br>- vt: Legacy alt-as-escape encoding now sends the full UTF-8 sequence for non-ASCII keys. #14146<br>- vt: Kitty keyboard protocol release events no longer repeat the typed text for dead keys or level 5 keys on GTK, which caused duplicated characters in programs like Neovim. #13861<br>- vt: ctrl+alt+shift+backspace now sends ESC BS in legacy key encoding,<br>matching xterm. #14508<br>- vt: UTF-8 mouse mode (1005) now encodes the button correctly, fixing invalid reports for the back and forward mouse buttons. #14532<br>- vt: Foreground, background, and cursor colors reset with OSC 110, 111, or 112 now follow later configuration changes, such as a light/dark theme switch. #13650<br>- vt: Full reset (RIS) now restores palette colors changed with OSC 4. #14480<br>- vt: An empty OSC 22 now resets the mouse pointer shape to the default. #14495<br>- vt: Long desktop notifications (OSC 9 and OSC 777) with multibyte UTF-8 text are no longer dropped or shown as invalid UTF-8 when truncated. #13795 #13811<br>- vt: DCS strings now carry UTF-8 data. Previously, some UTF-8 bytes were dropped, ended the string early, or started a new control sequence. #14016<br>- vt: C0 controls 0x10 to 0x1F are now executed instead of printed<br>as text, and UTF-8 encoded C1 controls are ignored, matching xterm.<br>#14022  #14023<br>- vt: Erasing a full line (CSI 2 K) now clears its soft-wrap state, so<br>erased rows no longer join together when the window is resized. #13637<br>- vt: The cursor and saved cursor keep the correct position when a resize reflows text, fixing an extra line wrap or overwritten text after resizing. #12598 #14458 #14478<br>- vt: Variation selectors (VS15/VS16) now apply to the preceding codepoint, fixing the rendering of some ZWJ emoji such as the pirate flag. #12596<br>- vt: Combining marks printed after a character in the last column now attach to that character. #12581<br>- vt: Characters above U+00FF, such as emoji, now print as-is instead of as a blank while a non-UTF-8 character set such as DEC line drawing is active. #14554<br>- vt: Single shifts (SS2/SS3) now apply only to the next printed character. #14576<br>- vt: Tab clear (TBC) fixes: CSI 0 g no longer sets a tab stop where<br>there wasn&#x27;t one, and CSI g with no parameter clears the tab stop at<br>the cursor. #13900  #14644<br>- vt: Printing with autowrap (DECAWM) disabled clears the pending wrap, so re-enabling autowrap doesn&#x27;t cause a spurious line wrap. #14652<br>- vt: With reverse wrap enabled, moving left after restoring a cursor with a pending wrap no longer jumps the cursor. #14390<br>- vt: Cursor movement respects margins and origin mode: CUB and backspace stop at the left margin, and CHA, HPA, VPA, HPR, and VPR no longer apply the margin offset twice in origin mode. #14761 #14762<br>- vt: Fix a crash when VS15 narrows a wide character under the cursor. #13631<br>- vt: Fix a crash or memory corruption after narrowing the terminal cuts a wide character in half on the alternate screen or with wraparound disabled. #14509<br>- vt: Fix a crash when a grapheme cluster widens in the last column and wraps inside or below a scroll region with grapheme clustering (mode 2027) enabled. #14552<br>- vt: Fix a slow memory and performance leak in graphics-heavy sessions where evicted Kitty images left their placements&#x27; tracked positions behind. #13656<br>- vt: Fix a memory leak when an OSC color sequence contains more than two requests. #13239<br>- A new ghostty +ssh CLI action wraps ssh and sets up Ghostty on remote<br>hosts: it forwards Ghostty&#x27;s environment and installs Ghostty&#x27;s terminfo<br>on the first connection to each host, caching successful installs. It can<br>be used directly (ghostty +ssh user@example.com) or as an alias<br>(alias ssh=&#x27;ghostty +ssh --&#x27;) without shell integration. The ssh-env and ssh-terminfo shell integration features now use it for every<br>shell. #12582<br>- ssh-terminfo now always installs Ghostty&#x27;s bundled terminfo on remote<br>hosts instead of keeping an existing, possibly outdated, xterm-ghostty entry, and reinstalls it when a newer Ghostty changes its terminfo.<br>#13844<br>- ghostty +ssh-cache has been reworked with positional destinations, a<br>new --prune option, consistent output and exit codes, and error<br>messages that name the cache file. See the<br>breaking changes above. #12814  #13533<br>- ssh-terminfo now tells apart the same host on different ports, so<br>terminfo is installed on each of them. ghostty +ssh-cache accepts host:port destinations. #14472<br>- ssh-env no longer overrides SetEnv entries in your ~/.ssh/config.<br>#11518  #14854<br>- bash: Failed commands now report their real exit status on Bash 4.4+, so command finished notifications no longer report every command as successful. #14247 #14250<br>- nu: Tab completion for ssh and sudo now works with external<br>completers such as carapace. #13310<br>- bash: The bundled bash-preexec, used only for Bash versions older than<br>4.4 such as macOS&#x27;s /bin/bash, has been updated to 0.7.0. #14120<br>- zsh: Fix a stray { in the prompt and broken prompt marking when PS1 or PS2 ends with a bare %. #11832<br>- bash: Fix &quot;command not found&quot; errors in subshells that inherit<br>PROMPT_COMMAND. #11690<br>- bash: Fix a syntax error when an existing PROMPT_COMMAND ends with a<br>newline. #11621<br>- bash: Fix extra blank lines at the prompt when using ble.sh. #11644<br>- bash: Fix the shell integration hook being added twice when it is<br>sourced again with an array PROMPT_COMMAND. #14266<br>- macOS: Support macOS 27. This fixes the layout and background color of titlebar tabs, a thin border around the app icon, hidden titlebars covering the top lines of the terminal with Reduce Transparency enabled, and the Shortcuts &quot;New Window&quot; action opening two windows. #13001 #13390 #14107 #14411 #12999 #13069<br>- macOS: When a terminal&#x27;s process exits, a native bar now appears at the<br>bottom of the terminal instead of text being written into the terminal.<br>Commands that fail or exit faster than abnormal-command-exit-runtime are highlighted in red. #7649  #12251<br>- macOS: Quitting, or closing a window, when multiple windows or tabs have running processes now offers &quot;Review Windows...&quot;, which steps through each one so you can decide what to close. #12742 #14062<br>- macOS: The command palette now highlights matching text, matches initials, searches action descriptions, and ranks results by where they matched. #12264 #13610 #13624<br>- macOS: The search bar now remembers the last search and shares it with other apps through the system find pasteboard, like Safari and Terminal.app. #12516 #12712<br>- macOS: Screen readers such as VoiceOver are now notified when the selection changes instead of reading a stale selection. #12902<br>- macOS: The AppleScript terminal class and the Shortcuts terminal entity<br>now expose pid (of the foreground process) and tty. #11592<br>#10756  #11922<br>- macOS: AppleScript tabs and terminals have a new read-write<br>name override property to set or clear a custom title. #12048<br>#14733<br>- macOS: Middle-clicking a tab closes it with<br>macos-titlebar-style = tabs. #11962  #11963<br>- macOS: The version in the About window now links to the release notes for that version. #11964<br>- macOS: Updates that are downloaded and installed automatically no longer prompt you to restart. Checking for updates manually still offers to restart. #13623<br>- macOS: toggle_background_opacity now applies to every tab in the<br>window, and new windows inherit the current state. #11583<br>- macOS: cmd+arrow_up and cmd+arrow_down now run their configured<br>keybinds, which default to jump_to_prompt. Ghostty 1.3 always scrolled<br>to the top or bottom of the scrollback instead, ignoring the<br>configuration. To scroll to the top or bottom, use cmd+home and cmd+end. #12245<br>- macOS: In the configuration errors window, Return reloads the configuration and Escape ignores the errors. #12601<br>- macOS: Ghostty launches about 15% faster to a visible window and draws its first frame about 27% sooner. #13722<br>- macOS: Terminals that aren&#x27;t visible, such as background tabs, now release their GPU resources and rebuild them when shown again. With 20 background tabs, GPU memory drops from about 385 MiB to 18 MiB. Metal buffers also no longer over-allocate when they grow. #14017 #13490<br>- macOS: Lower idle CPU and energy use. The display link now pauses when there is nothing to draw, and unfocused terminals that are animating draw at most once per display refresh instead of once per write. #14035 #14068<br>- macOS: Update Sparkle to 2.9.6, which fixes several security advisories in Sparkle, including CVE-2026-47121 and CVE-2026-47122. #14072 #14082<br>- macOS: Global keybinds no longer stop working after macOS disables Ghostty&#x27;s event tap. #12294 #12714<br>- macOS: Fix IME composition issues. Korean text being composed is now<br>committed instead of lost when pressing an arrow key, and control-key<br>IME shortcuts such as Japanese input&#x27;s ctrl+j no longer send control<br>characters to the terminal. #11461  #12447  #12518  #12547<br>- macOS: Text from input methods, dictation, and the emoji picker is now sent as typed input instead of pasted text. Programs no longer treat dictation as a paste, and switching input sources mid-composition sends the pending text as keys, matching Terminal.app. #13195 #13222 #13817<br>- macOS: Unicode Hex Input can now enter characters outside the Basic Multilingual Plane, such as emoji, typed as surrogate pairs. #13733 #13737<br>- macOS: font-thicken now also applies to IME preedit text. #14230<br>- macOS: option+backspace and other modified Backspace keys now report<br>their modifiers with the Kitty keyboard protocol instead of sending a<br>bare DEL. #13871<br>- macOS: Pasting and dropping text now prefer plain text over URLs, so a<br>path copied from apps like Transmit pastes as a path instead of an<br>sftp:// URL. #13152  #13170  #13212<br>- macOS: The search bar keeps focus when you click in it or on the next/previous buttons, and the terminal&#x27;s focus state is now correct while search is open. #11872 #11978<br>- macOS: The Find Next and Find Previous menu items and the<br>navigate_search and end_search keybinds now work correctly,<br>including while the search field is focused. #12070  #12492<br>- macOS: Pressing Enter in the search bar no longer blocks confirming an IME candidate. #12781<br>- macOS: Clicking a command palette entry with the mouse now runs it instead of closing the palette. #11665<br>- macOS: The command palette now gets focus and paste when opened from the inline tab title editor. #12524<br>- macOS: Holding cmd+t to create many tabs now leaves the newest tab<br>focused. #13725  #13985<br>- macOS: Fix an empty &quot;ghost&quot; tab or window that could appear when a tab was closed right after it was opened. #12119<br>- macOS: Titlebar tabs no longer disappear after creating a tab from &quot;Show All Tabs&quot;. #12949 #13017<br>- macOS: Double-clicking the window title now zooms the window with<br>macos-titlebar-style = tabs. #12219<br>- macOS: Moving a tab with macos-titlebar-style = tabs on macOS 26 no<br>longer briefly shows the neighboring tab. #14847<br>- macOS: The inline tab title editor stays in place while the window is resized. #12220<br>- macOS: Fix tabs flashing when switching tabs after a program changed the background color with OSC 11, and the window chrome keeping the old color after a light/dark theme switch. #12825 #12828 #12822<br>- macOS: The macos-glass-regular and macos-glass-clear options for background-blur now layer the glass over the background color, and<br>focused windows are no longer less transparent than unfocused ones.<br>#13914  #13928<br>- macOS: The native titlebar no longer cuts off the end of the title when<br>using a custom window-title-font-family. #14135  #14217<br>- macOS: Fix terminals rendering at a stale size under heavy system load or during rapid resizes from window managers. #12143<br>- macOS: Splits dragged into another tab or window now render immediately, and the source window keeps keyboard focus. #12343 #12338<br>- macOS: The split zoom indicator no longer stays visible after the other splits of a zoomed split are closed, such as with AppleScript. #14703<br>- macOS: The split divider now uses the standard row and column resize pointers. #13433<br>- macOS: window-save-state = never now also stops macOS from taking<br>window restoration snapshots, which could stall focus changes between<br>windows. #14506<br>- macOS: Window state saved by Ghostty 1.2 or later is now migrated, so windows and tabs are restored after updating Ghostty. #12461<br>- macOS: Tabs created while the screen is locked now initialize correctly. #13639<br>- macOS: Quitting now asks for confirmation when windows with running processes are minimized or the quick terminal is hidden. #13686<br>- macOS: OSC 52 clipboard read confirmations no longer steal focus. If the terminal is unfocused, Ghostty rings the bell and shows the prompt when you return to it. #13744<br>- macOS: Splits in the quick terminal now also set<br>GHOSTTY_QUICK_TERMINAL=1. #12895  #12896<br>- macOS: The quick terminal no longer reopens at a stale size after a display is reconnected at a different resolution. #13250<br>- macOS: The &quot;New Ghostty Tab Here&quot; and &quot;New Ghostty Window Here&quot; services now open the correct directory when given a plain-text path. #12727 #12731<br>- macOS: Working directories passed from Services, Shortcuts, and<br>AppleScript are now normalized, fixing Nushell and zsh %1~ prompts.<br>#12614  #14051<br>- macOS: ghostty -e no longer opens the command&#x27;s file arguments as<br>extra terminals, e.g. ghostty -e vim file.txt. #13748<br>- macOS: Opening a .command file from Finder no longer corrupts<br>non-ASCII characters in its path. #13862<br>- macOS: The Shortcuts terminal entity now reports the correct kind, title, working directory, and screenshot for new terminals. #13007<br>- macOS: The Shortcuts &quot;New Terminal&quot; action now works with commands that have arguments and with a command field that was cleared. #12391 #12392<br>- macOS: AppleScript send key now works for character keys, not only<br>special keys like enter, and respects macos-option-as-alt. #13205<br>- macOS: Update pill fixes: update errors are now shown, &quot;Install and Relaunch&quot; no longer asks for confirmation, and the cancel option is hidden once an update can no longer be canceled. #13540 #13562 #13612<br>- macOS: The default app icon follows the system icon style again after changing it in System Settings, and custom icons now apply to the app in Finder. #12180 #12344<br>- macOS: The dock icon bell badge now appears when notification permission was granted earlier without badge permission. #12133<br>- macOS: The Copy menu item is disabled when nothing is selected. #12521<br>- macOS: Menu items now show the correct shortcut for keybinds on physical<br>keys (e.g. super+backquote), uppercase letters, forward delete, and<br>the scroll_to_selection and search_selection actions. #13888<br>#12039  #12011  #12281<br>- macOS: The secure input indicator&#x27;s popover arrow now points at the icon. #12249<br>- macOS: Fix a rare permanent freeze after waking from sleep or changing displays. macOS did not mark the app as &quot;Not Responding&quot;, so it could only be killed. #14691<br>- macOS: Fix a crash when closing a tab, most easily triggered with<br>undo-timeout = 0. #13359  #13364<br>- macOS: Fix a crash when opening a new tab from a native fullscreen window. #13636<br>- macOS: Fix a crash caused by a data race when reading cached terminal contents. #13646<br>- macOS: Fix a crash when OSC 52 clipboard confirmation prompts overlap. #13648<br>- macOS: Fix crashes when CoreText returns null, such as for fonts without a display name or under severe memory pressure. #13642 #13679<br>- macOS: Fix closed windows leaking with transparent titlebars (the default), which made Ghostty and WindowServer use more CPU and memory over time. #13601<br>- macOS: Fix a memory leak each time Ghostty reads terminal text, such as for copy, Quick Look, or accessibility. #12020 #12025<br>- macOS: Fix an IOSurface memory leak when scripts rapidly create and close terminals. #13640<br>- macOS: Fix a Mach port leak, and a gradual slowdown, while global keybinds wait for Accessibility permission. #13590<br>- GTK: Splits can now be rearranged with drag and drop, matching macOS. Drag a split by its handle and drop it onto another split, including splits in other tabs and windows. #10224 #10423<br>- GTK: Ghostty now renders at the true fractional scale (e.g. 125% or 150%), so text and box-drawing characters are sharp instead of blurry under fractional scaling. #1938 #14269<br>- GTK: The renderer no longer uses GtkGLArea. Ghostty now renders with<br>EGL entirely on the render thread and hands finished frames to GTK as<br>DMABUFs, so the main thread no longer does any OpenGL work. #14052<br>#14636<br>- GTK: Windows can now be renamed using the menu, command palette, or the<br>new prompt_window_title and set_window_title binding actions.<br>#10469  #10999<br>- GTK: A new +new-tab CLI command opens a new tab in a running Ghostty<br>instance. When run from inside Ghostty, the tab opens in the same<br>window. It accepts the same -e, --working-directory, and --title flags as +new-window. #11762<br>- GTK: A new +toggle-quick-terminal CLI command toggles the quick<br>terminal of a running Ghostty instance, useful for binding in window<br>managers without global shortcut support. #12661<br>- GTK: Global keybinds now use the vicinae-hotkey-v1 Wayland protocol<br>when the compositor supports it (e.g. Hyprland 0.56+), falling back to<br>the XDG desktop portal otherwise. Ghostty shows a desktop notification if<br>a global keybind can&#x27;t be registered. #13464<br>- GTK: quick-terminal-screen is now supported on Wayland. The default, main, places the quick terminal on the compositor&#x27;s primary output<br>(or the first monitor if the compositor doesn&#x27;t report one). Set it to mouse to let the compositor choose, which was the previous behavior.<br>#11117<br>- GTK: On Wayland, background-blur now uses the compositor-agnostic ext-background-effect-v1 protocol instead of KDE&#x27;s blur protocol,<br>enabling blur on compositors such as Niri. The blur region also no longer<br>covers the window&#x27;s client-side shadows. #10721  #10720  #10727<br>- GTK: On GTK 4.23.3 and newer, background-blur uses GTK&#x27;s built-in<br>background blur, which covers the window more accurately. #13581<br>#13586<br>- GTK: The open_config binding action now accepts new_window to<br>edit the configuration in $VISUAL or $EDITOR in a new Ghostty<br>window. The default, os_open, keeps the previous behavior. #11905<br>- GTK: A new configuration gtk-horizontal-tab-scroll (default true)<br>can be set to false to stop two-finger horizontal scrolling from<br>switching tabs, passing the scroll to the terminal application instead.<br>#12659<br>- GTK: A new configuration gtk-tabs-inverted moves the close button to<br>the start of each tab, in both the tab bar and the tab overview.<br>#14657<br>- GTK: The default command palette entries are now translatable. #11641<br>- GTK: The embedded Noto emoji fonts were updated, so newer emoji and ZWJ sequences such as the head-shaking faces render as one glyph instead of overlapping neighboring cells. #14047<br>- GTK: ctrl+shift+page_up and ctrl+shift+page_down now move the current<br>tab left and right (move_tab), matching Firefox, GNOME Terminal, and<br>VS Code. jump_to_prompt moved to ctrl+shift+arrow_up and ctrl+shift+arrow_down. #4998  #12458<br>- GTK: URLs now open through the XDG desktop portal, falling back to<br>xdg-open if the portal is unavailable. Ghostty passes an activation<br>token so the opened application, such as your browser, can come to the<br>front on compositors that require one. #5991  #11754  #14785<br>#14787<br>- GTK: Desktop notifications are now withdrawn when their terminal is focused or closed, and repeated notifications with the same text replace each other, matching macOS. #14108<br>- GTK: Tabs that aren&#x27;t visible no longer render, saving CPU and GPU. This matches macOS. #12760<br>- GTK: The Dolphin &quot;Open Ghostty Here&quot; action now opens a new window in the running Ghostty instance instead of launching a separate one. #11614<br>- GTK: Fix Ghostty sometimes failing to launch with systemd 262, which refused to start the service because Ghostty reported readiness before it could handle reload signals. #14398 #14399<br>- GTK: Fix deeply nested splits sometimes becoming invisible or losing focus. #11193 #12698<br>- GTK: Resizing splits, especially with resize_split keybinds, no<br>longer flickers. #13414<br>- GTK: resize_split on nested splits no longer causes large jumps in<br>size. #12699<br>- GTK: Splits can no longer be resized smaller than one cell, by dragging<br>the divider or with resize_split. #14476<br>- GTK: High-resolution scroll wheels no longer scroll much faster than standard scroll wheels. #12483<br>- GTK: Disable unwanted kinetic scrolling on trackpads with GTK versions older than 4.20.1. #11793<br>- GTK: Middle clicks are once again sent to terminal applications using<br>mouse reporting when gtk-enable-primary-paste is disabled in<br>GSettings. #12940  #13108<br>- GTK: The quick terminal no longer breaks when toggled off manually<br>while quick-terminal-autohide is enabled. #11679  #12471<br>- GTK: Opening the right-click context menu no longer hides the quick<br>terminal when quick-terminal-autohide is enabled. #12843<br>- GTK: The resize overlay no longer keeps reappearing when the scrollbar is visible and no longer blocks mouse input while shown. #11970 #11972<br>- GTK: The maximum window size is now based on the monitor the window is currently on, not the monitor it was opened on. #13171<br>- GTK: +new-window -e now works when shell-integration is set to a<br>specific shell. +new-window and +new-tab also accept a new --shell-integration flag. #12378  #13741<br>- GTK: Keys remapped to modifiers with XKB (e.g. Delete remapped to<br>ISO_Level3_Shift) no longer also send the original key. #13967<br>- GTK: On Wayland, the IME candidate window now follows the cursor while composing and no longer covers the line being edited. #14729<br>- GTK: Splits in a tab that was moved to another window now act on the<br>new window (e.g. toggle_fullscreen). #14474<br>- GTK: The mouse cursor keeps its text shape while selecting text. #14558<br>- GTK: The command palette now uses the terminal colors when<br>window-theme = ghostty. #14662<br>- GTK: Opening URLs no longer fails when the fallback opener (xdg-open)<br>produces large output. #12797<br>- GTK: Clicking a desktop notification no longer focuses the wrong terminal when the one that sent it has since been closed. #12028<br>- GTK: A bell in the focused terminal no longer leaves the bell indicator set. #13597<br>- GTK: Fix the window continuously redrawing in the background after an indeterminate progress bar (OSC 9;4) was removed. #14704 #14738<br>- GTK: Log missing or invalid gtk-xft-dpi values once instead of<br>repeatedly. #14410  #14085  #14434<br>- GTK: Fix a crash when closing tabs or splits on GTK 4.20 (GNOME 49). #12426<br>- GTK: Fix a crash with global keybinds or on configuration reload when no D-Bus connection is available. #13101<br>- GTK: Fix a possible crash when Fontconfig reports a font&#x27;s language as a plain string instead of a language set. #14853<br>- GTK: Fix a leak where every audio bell started a new GStreamer pipeline and threads that were never cleaned up, slowly raising CPU usage. #13647 #12815 #13657<br>- Snap: Link the system FreeType, Fontconfig, HarfBuzz, libpng, and zlib instead of bundled copies, fixing frequent crashes caused by two copies of the same library in one process. #14392 #14682<br>- Snap: The snap&#x27;s own GIO modules and XDG data directories now take priority over the host&#x27;s. #12045<br>- Snap: Programs running inside Ghostty, such as clear, now find the xterm-ghostty terminfo entry. #12662<br>- Flatpak: Commands started by Ghostty on the host are now terminated if Ghostty crashes. #12427<br>Ghostty 1.4 introduces full localization for the command palette and adds support for 4 new languages:<br>- Basque<br>- Belarusian<br>- Danish<br>- Serbian (Cyrillic and Latin scripts)<br>Localization is maintained by volunteer contributors. If you want to help localize Ghostty in your language, please open a discussion on the GitHub repo. Thank you to all the volunteers who contributed to Ghostty&#x27;s localization!<br>- Ghostty now requires Zig 0.17 to build. #14518 #14519<br>- GTK builds now require GTK 4.18 and libadwaita 1.7, up from GTK 4.14 and libadwaita 1.5. Builds against older headers fail at compile time, and Ghostty exits at startup if older libraries are loaded at runtime. #14330<br>- GTK builds now link the system EGL library (pkg-config egl, usually<br>provided by libglvnd or Mesa) for the new renderer. At runtime, Ghostty<br>uses GTK&#x27;s EGL display when it can, and otherwise needs an EGL driver<br>that supports the surfaceless platform. #14052  #14636<br>- A new -Dinstalled-exe-path build option sets the absolute executable<br>path written into the desktop file, D-Bus services, and systemd user<br>service. Previously this path came from the install prefix. Without the<br>option, these files now name ghostty alone, which systemd only finds in /usr/bin or /usr/local/bin, so set it for any other prefix.<br>#14805  #14806<br>- When linking the system gtk4-layer-shell (-fsys=gtk4-layer-shell),<br>version 1.0.4 or newer is now required. Ghostty no longer disables the<br>quick terminal on older versions, which can crash on some compositors.<br>#11559<br>As with 1.3, libghostty isn&#x27;t directly part of the Ghostty 1.4 release. But a large part of the 1.4 development cycle went into libghostty, so here&#x27;s an update.<br>Over the past 6 months, the C API for libghostty-vt has grown from a parser and a few encoders into a complete terminal emulator API, adopted by dozens of free and commercial terminal emulators used by millions of people. It&#x27;s hard to quantify exactly, but the number of people using a libghostty-based terminal is confidently several times the number of people using the Ghostty GUI.<br>libghostty-vt now builds for macOS, Linux, Windows (MSVC and GNU), FreeBSD, Android, iOS, and WebAssembly, and CI continuously verifies every one of these targets. The goal is for libghostty-vt to be generally usable everywhere, within reason, so if you want more target support, let us know!<br>It&#x27;s also easier to integrate libghostty-vt into existing build systems. There&#x27;s CMake support, Nix packaging, an xcframework, and a source tarball, in addition to the existing pkg-config file. libghostty-vt no longer needs libc++, and it can build freestanding.<br>The API is still marked as a work in progress and broke compatibility<br>several times during this cycle, so expect more breaking changes before<br>a tagged release. The API documentation<br>and the Zig, C, C++, Swift, and WebAssembly examples<br>(now over 30) are kept up to date with main.<br>We&#x27;re going to do a final pass over the C API, break ABI one more time, and then likely tag a libghostty 1.0 release very soon.<br>Ghostty is a non-profit project, fiscally sponsored by Hack Club. All of our finances are public on HCB, so you can see exactly where every dollar goes.<br>During the 1.4 cycle, we paid $41,820 to contributors under contract and spent about $1,260 on infrastructure such as website hosting.<br>I&#x27;m happy to share that we&#x27;ve now signed our first two 12-month contracts, which give contributors stable, long-term paid work on Ghostty and help ensure the ongoing stability and sustainability of the project:<br>- @trag1c is Ghostty&#x27;s head of operations. He manages the community on GitHub and Discord, coordinates our volunteer translators, and maintains various other important project systems.<br>- @vancluever works on various Ghostty<br>subsystems. In this cycle, he led the upgrade to Zig 0.16, moved the<br>build off Zig&#x27;s deprecated @cImport, updated the bundled Fontconfig,<br>and more. He&#x27;s also the author of<br>z2d, the 2D graphics library Ghostty<br>uses to draw box-drawing characters and other sprite glyphs.<br>If you&#x27;d like to support Ghostty, please visit our sponsorship page.<br>The primary focus of the roadmap continues to be libghostty functionality, stability, and portability. During the last release cycle, I said I aimed to tag a libghostty release. We haven&#x27;t done that yet, but I&#x27;m confident we will do so before Ghostty 1.5.<br>libghostty is a project that continues to be the tide that lifts all boats. libghostty improvements tie directly to Ghostty GUI improvements as well as dozens of other large projects in the ecosystem. As more large projects adopt libghostty, libghostty tends to get more testing and attention, and this creates a cycle that yields the most gain for terminal emulators everywhere.<br>macOS and GTK builds of Ghostty have talented, capable maintainer teams that are continuing to improve them, so they&#x27;re not neglected by any means! As a project, we&#x27;ve decided to drop any roadmap for Windows support in the Ghostty GUI. libghostty fully supports Windows (and we test it in CI), and the official stance now is that downstream projects should use that.<br>Our release cycle remains 6 months. This release was delayed by one month, but Ghostty 1.5 is planned for March 2027. libghostty will have a separate release cycle.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Ten days later, Git on macOS still trusts the compromised eMudhra certificates
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    658 points ·
+    239 comments ·
+    galadran
+  </div>
+
+  <div class="meta">
+    emudhra.we-have-a-problem.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #9
+  </div>
+
+  <div class="links">
+    <a href="https://emudhra.we-have-a-problem.com/apple.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50271640">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">28th October 2026<br>Apple was notified of the eMudhra incident on 17th October. As of 28th October, the developer tools Apple ships with macOS, including git, curl and python3, still trust the compromised certificates.<br>Worse, macOS 27.2, released on 26th October, did not fix the issue and undid the workaround that users had applied by hand, leaving them vulnerable again.<br>Meanwhile, dozens of other projects, many run by volunteers, shipped fixes days ago.<br>Anyone can intercept any HTTPS connection these tools make.<br>For git, that means clones and pulls from https:// remotes can deliver attacker-chosen code, pushes can be altered in transit, and your credentials, such as GitHub tokens, can be intercepted.<br>To check whether your git is affected, run:<br>git ls-remote https://git-emudhra.we-have-a-problem.com/check.git<br>A certificate error means your git is protected. If git lists a commit, your git is affected. Your connections to GitHub, or any other https:// git remote, can be intercepted and tampered with.<br>To see an attack end to end, run the command below in a temporary directory. It clones a repository from a test server impersonating GitHub. The -c option redirects github.com to our test server for this one command only. The server presents a github.com certificate issued by one of the compromised eMudhra intermediates.<br>git -c http.curloptResolve=github.com:443:15.235.19.186 clone https://fake-user@github.com/galadran/emudhra-git-test<br>A patched git will refuse with a certificate error. If the clone succeeds, you&#x27;ll see a README.md starting with INTERCEPTED.<br>A real attacker would not need the extra option. Anyone on the network path between you and GitHub can redirect your traffic themselves.<br>You can replace the demo repository with any other, public or private. Keep the fake-user@ prefix. Without it, git would send your GitHub credentials to the test server. For example:<br>git -c http.curloptResolve=github.com:443:15.235.19.186 clone https://fake-user@github.com/Homebrew/brew<br>curl, python3 and the other tools Apple ships are affected in the same way. To check curl, run:<br>curl https://dv-g3b-noct-emudhra.we-have-a-problem.com/<br>curl https://dv-g3b-aaa-noct-emudhra.we-have-a-problem.com/<br>A certificate error means curl is protected.<br>Apple has already protected Safari and other apps built on its networking framework.<br>Apple needs to ship a fix for macOS developers as soon as possible, for example by removing the affected roots from /etc/ssl/cert.pem.<br>The affected roots can be removed by hand. The macOS workaround on the main page walks through the steps. Apple&#x27;s guidance states that macOS updates may revert the fix, so developers need to repeat the checks above and the workaround after every update until Apple ships a fix.<br>Security teams should also consider whether macOS runners are used in their CI or other build infrastructure and evaluate the supply chain risk.<br>Site published by Dennis Jackson. This site is the work of many contributors from the community. The source is on GitHub and PRs are welcome. Licensed under the Apache License, Version 2.0.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Old.reddit.com Gone
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    7 points ·
+    3 comments ·
+    Balgair
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · New #35
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50275640">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">It may just be me, but old.reddit.com is finally gone. And, at last, I am free</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Show HN: I made an interactive Sakura tree that runs in the browser
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    4 points ·
+    0 comments ·
+    mohabbat_vlx
+  </div>
+
+  <div class="meta">
+    nozomi-xi.vercel.app
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://nozomi-xi.vercel.app">Original article</a> · <a href="https://news.ycombinator.com/item?id=50274657">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">It grows differently every time, with falling petals, wind, weather and rain. Click it to shake the blossom loose. Runs in your browser, and you can add it to your own website with npm. Its about 16KB.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Is Datadog Down
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    humanlion87
+  </div>
+
+  <div class="meta">
+    status.datadoghq.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://status.datadoghq.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50276012">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Please note that data processing and alerts are not affected by this incident.<br>28, 2026 - 12:10 EDT<br>The status of Datadog https://app.datadoghq.com<br>Starting on Oct 29, 2026, Datadog’s status page will transition to Datadog’s own Status Pages product: https://docs.datadoghq.com/incident_response/status_pages/.<br>The new status of Datadog will be accessible via the same URL: https://status.datadoghq.com/.<br>If you would like to see the status of third party integrations you might have enabled with Datadog check out https://datadogintegrations.statuspage.io<br>If you are a customer running in another region:<br>- our EU region https://app.datadoghq.eu check out https://status.datadoghq.eu<br>- our US3 region https://app.us3.datadoghq.com check out https://status.us3.datadoghq.com<br>- our US5 region https://app.us5.datadoghq.com check out https://status.us5.datadoghq.com<br>- our AP1 region https://app.ap1.datadoghq.com check out https://status.ap1.datadoghq.com<br>- our GovCloud region https://app.ddog-gov.com check out https://status.ddog-gov.com<br>- our AP2 region https://app.ap2.datadoghq.com check out https://status.ap2.datadoghq.com<br>- our US2 Gov region https://app.us2.ddog-gov.com/ check out https://status.us2.ddog-gov.com<br>- our UK1 region https://app.uk1.datadoghq.com check out https://status.uk1.datadoghq.com</div>
+<div class="para">Scheduled Maintenance<br>The Datadog US1 Status Page Is Changing on October 29 2026. Oct 29, 2026 13:00-21:00 EDT<br>28, 2026 - 10:47 EDT<br>The new Datadog status page will be accessible via the same URL: https://status.datadoghq.com/. If you need to access the old version, you can find it at 1k6wzpspjf99.statuspage.io<br>The old status page will remain available, and Datadog will publish identical updates to both.<br>Notifications will continue to be delivered to all existing subscribers.<br>- Email notifications: On October 29, we will migrate all email subscriptions to the new status page. No action is required, and you will continue receiving email notifications as usual. Notifications will continue to be sent from help@status.dtdg.co<br>- Slack: Notifications via the old Slack integration will continue to be delivered until further notice. On October 29, we recommend upgrading to the Datadog Slack app to take advantage of the latest features (https://docs.datadoghq.com/incident_response/status_pages/#subscribe-in-slack)<br>- RSS Feed: RSS feeds will continue normally.<br>- SMS and Webhooks: Your existing subscriptions to SMS messages and webhooks will continue to be delivered.<br>If you typically view the Datadog status page via the web or supported subscription methods, no action is required.<br>Custom integrations, workflows, and scripts that depend on the old status page url, structure, or API payloads may be affected by this transition. We recommend reviewing any custom integrations or code you have that pull data from Datadog’s status page. If you have custom integrations or code, you’ll need to take one of the following actions:<br>Change the URL in your custom integration or code to point to the old version<br>Update your custom integration or code to consume our new status page structure or payloads<br>If you have any questions, please respond to this email or reach out to our support team by visiting help.datadoghq.com.<br>15, 2026 - 17:49 EDT</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Three new discoveries in mathematics, computer science, and physics
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1142 points ·
+    681 comments ·
+    jonluca
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #52
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50251344">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Related:<br>The Exponential Time Hypothesis Is False [pdf] - https://news.ycombinator.com/item?id=50251661</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    CNC Stone Carving
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    115 points ·
+    25 comments ·
+    bschne
+  </div>
+
+  <div class="meta">
+    carmelitegothic.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://carmelitegothic.com/cnc-stone-carving/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50274409">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">CNC Stone Carving<br>In a form of architecture so ancient, CNC machines may seem a little out of place. However, when one considers that the medieval builders were always on the forefront of the technology of their day, it no longer seems so strange. To build Gothic today, it must become a reality, not a romantic idea locked up forever in one’s head.<br>(The Carmelite Monks spend their allotted work time on construction. See their Horarium here.)<br>CNC machines and robots have unlocked the ability to relatively quickly carve the intense details of a Gothic church. Ornate pieces that used to take months for a skilled carver, now can be accomplished in a matter of days. Instead of cutting out the beauty, using the excuse that it takes too long, thus doesn’t fit into the budget, modern technology can be used to make true Gothic in all its beauty a reality again today.<br>The use of modern technologies in stone carving unlock the potential of modern youth. Though they may be untrained in the use of a hammer and chisel, young men and women have grown up in a world of computers. The skills they possess can now be channeled towards a higher end, the building of a church for the glory of God.<br>What is a CNC machine<br>CNC stands for “computer numerically controlled”, where a computer, through a series of XYZ coordinates, controls the movements of a machine. The first CNC was invented for the manufacturing of airplane parts. Stone cutting CNC machines are a relatively new invention.<br>Stone carving CNC machines typically use diamond tipped blades and milling bits, not water or laser, to carve the stone. The diamonds, harder than the stone, grind away at the stone and wear it away. The water is simply to keep the diamond tool from heating up from the friction and to wash away the stone sludge created by the carving process.<br>Normally the stone carving CNC machines used for sculptures and foliage have 5 axes, being able to move left and right, up and down, front and back, and rotate their heads in two different ways. The machines interpolate these multiple axes in order to carve the stone. “Interpolate” means to work together, and an axis is one direction of motion. So, the machines can move left, and down, and rotate their heads all at the same time to reach into a small area or leave a particular finish on the stone. Sometimes they will even have a 6th axis, typically a lathe or a turntable, for carving tall stones such as pinnacles or statues. The lathe interpolates with the other axes, carefully positioning itself to allow the CNC machine to reach each area of the stone. CNC machines can also carve stone unattended, sometimes for long periods at a time and overnight. This means 40 hours, a typical week of work, is less than 2 days for a CNC, a significant time savings!<br>Prussiani CNC machines<br>The Carmelite Monks use CNC machines from Prussiani Engineering, a stone CNC manufacturer based out of Bergamo, Italy. Italians have always been at the forefront of stone carving, and it is no different with modern technology. With Prussiani’s machines the monks can carve levels of detail previously reserved to the hand carving of highly skilled craftsmen. With the mindset “where there’s a will, there’s a way” and careful programming the machines’ capabilities are practically limitless and have the ability to carve unprecedented 3D reliefs.<br>The Prussiani machines also have a reputation of being indestructible, a reputation proven in the battlefield of stone carving. Stone is an incalcitrant material, and it takes robust machines to subdue it; no small task! Here’s a little story to illustrate. For the first time, a few months after we started carving stone, we left our first CNC machine running overnight on several 7 foot long window sills. We woke to a shocking surprise the following morning. The huge stones, weighing several hundred pounds each, had been thrown about as if a tornado had ripped through the machine. Stones were snapped and shattered, the fragments scattered about the inside of the CNC milling area. After the shock settled, we proceeded to analyze what had happened. It turns out there was a mistake in the particular batch of code the machine had read and followed that night. At the very end of each window sill, after it had completely finished carving, the code told the CNC machine to repeatedly pound down into the top of the sill, almost as if it was a giant fist. The stones didn’t stand a chance, but that same machine is still carving stones to this day, almost a decade later.<br>The Carving Process<br>The process of carving stone with a CNC is a digital workflow. The ornate pieces covered in foliage, the statues, the gargoyles, and many other distinct Gothic elements begin with the artist, the head carver. He sculpts the various flowers and leaves using a 3d modeling program in a process much similar to molding a ball of clay. It still requires a great deal of artistic talent, but there is a major advantage to this work in a computer, the Undo button! The artist can experiment with an almost infinite number of designs to find the one most suited to the space. And with the ability to visualize the pieces in a full model of the church, there is no longer any guesswork as to what the finished building will look like.<br>Once the artist has finished a particular sculpture it is passed on to the actual stone carvers, the CNC programmers. The programmers take the 3d model into a CAM program, which stands for computer aided machining, and create the toolpaths that the CNC machine will use to carve the actual stones. Utilizing a large arsenal of tooling and methods they gradually carve the stone down to the finished piece. They do their best to transform the stone block they start with to as close a resemblance of the artist’s model as possible, similar to the way stone carvers have historically used a pointing machine to transfer measurements from a plaster model into stone. At the same time they have to juggle a wide array of concerns, from which tools to use depending on speed and finish, to how to keep the stone from moving, to avoiding collisions between the cnc and the stone, or even other stones they might be carving at the same time. This is a lot to keep track of, but if done well, it will quickly bear fruit. It is extremely rewarding to see the keystrokes and mouse clicks of a computer turn into not only a finished product, but an ornately carved part of a Gothic church, a place God will be loved for centuries to come.<br>Finally, once all of that Gcode (the programming language of a CNC machine) is ready, it is handed over to the sawyers, who operate the CNC machines themselves, as well as the various other saws that prepare the stone blocks for carving. The sawyers are the “boots on the ground” guys and keep a clear line of communication open with the programmers to ensure that everything runs smoothly. They carefully follow the layouts and tooling lists the programmers prepare for each piece as they set up the stones for carving, set reference points so the machines can locate each stone, and monitor it as it carves. They are constantly keeping a watchful eye to ensure that everything goes smoothly. There is a symbiotic relationship between the sawyers and the programmers as the work of each is essential to the successful completion of each stone.<br>The sawyers also operate the wire saws and bridge saws, cutting each stone to either be carved into something more ornate, or to go straight into the wall. The wire saw, a simpler type of 2 axis cnc itself, can cut simple profiles, including any straight piece, such as columns and the straight parts of window surrounds. The sawyer, using the wire saw, will take a large slab of stone and sometimes cut even 20 or 30 different smaller stones out of it; looking similar to pieces from a cookie cutter. This frees up the 5 axis CNC machines to focus on the more ornate pieces, and is also significantly faster.<br>There are many different facets to the art and science of stone carving today and only a few have been touched on here. Pneumatic chisels and hand carving certainly have a valuable role to play, as well as a multitude of other methods not discussed here. The learning curve to dive into such a work is indeed daunting, the workload intimidating, but the fruit of it will stand for centuries to come.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ask HN: What do you believe or not believe about AI?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    7 points ·
+    14 comments ·
+    maniac_2000
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50271004">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">There is quite opposing discourse on the internet as to whether AI is going to take everyone&#x27;s job, or if we are witnessing one of the greatest pre-IPO PR jobs in history. Or both.<br>I&#x27;m wondering what people smarter than me believe or don&#x27;t believe.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Show HN: Chopstick – Mac notch widgets built by your coding agent
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    joshuaknauber
+  </div>
+
+  <div class="meta">
+    chopstick.sh
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://chopstick.sh/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50274603">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hey HN,<br>happy to share Chopstick with you. It&#x27;s a Mac app that makes your notch useful, but most importantly customizable and dynamic.<br>What makes it unique is that you can build custom widgets with your coding agent. Chopstick automatically learns from your usage and suggests new widgets with time.<br>Widgets are dynamic meaning they can trigger in specific situations.<br>The obvious case is &quot;when Spotify is playing&quot;, but you can also get more complex and say show the widget to push my changes when VS Code is open and I have changes.<br>TLDR:<br>- Chopstick gives you widgets in your Mac notch<br>- You can build your own widgets with your existing agent<br>- Widgets are highly customizable in what they can do and what triggers them<br>- It&#x27;s a one time payment (with trial), discounted for launch<br>Feel free to join the discord as well for sharing widgets! https://discord.gg/kqbnvgeTQC<br>Let me know your feedback!<br>- Josh</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Humanities Mode Collapse
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    dennisy
+  </div>
+
+  <div class="meta">
+    dennisy.me
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://dennisy.me/notes/humanities-mode-collapse">Original article</a> · <a href="https://news.ycombinator.com/item?id=50276008">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Humanities mode collapse<br>I woke up this morning with a jolt. It was not a nightmare, but it was borderline, one of those &quot;weird&quot; dreams. I was in a world where everyone spoke in a very constricted vocabulary. Not only was the vocabulary constricted, but the ideas and thoughts themselves also seemed to sampled from a very homogenous distribution. Yet everyone was happy. They seemed to understand and agree with each other.<br>I feel we are seeing an element of this play out in real life. For now this is only in populations who are &quot;AI pilled&quot;1 and therefore consuming huge amounts of writing and ideas from a very few sources (Claude &amp; ChatGPT). These models write in quite specific ways, but they also seem to formulate ideas and approach innovation in consistent ways. I notice this especially when they propose new ideas. Often, these are combinations of concepts already discussed in the conversation, presented in similar ways.<br>I&#x27;ve also started noticing something similar in the startups people are building. The ideas, the products, and even the way founders explain what they&#x27;re building seem increasingly alike. Of course, founders have always borrowed ideas from each other, and everyone is chasing similar opportunities. But I wonder how much of this convergence comes from using the same models to brainstorm, develop and articulate those ideas.<br>I don&#x27;t have anything concrete to back this up yet. It&#x27;s anecdotal, and something I&#x27;d like to explore with data in another post.<br>But back to the dream. If we&#x27;re increasingly consuming ideas from the same few systems, are we slowly being trained to speak and think in a particular manner, shaped by a handful of powerful organisations? Are we living in Orwell&#x27;s 19842, or Huxley&#x27;s Brave New World3?<br>In 1984, Orwell introduces Newspeak, a deliberately restricted language designed to make certain thoughts impossible. As one of its architects explains, &quot;the whole aim of Newspeak is to narrow the range of thought.&quot; Huxley presents a different, and perhaps more disturbing, vision. In Brave New World, people are conditioned from birth to accept their place in society, to desire what they are given, and to be happy doing so. As the Director explains, the goal is &quot;making people like their unescapable social destiny.&quot; My dream seemed to combine both. Everyone spoke and thought alike, and nobody was unhappy about it.<br>The uncomfortable part is that I count myself among the AI-pilled. I think AI has huge potential to benefit humanity and make us more efficient. But at the same time, I worry about losing my own intelligence as the artificial version becomes both better and more abundant.<br>I recently wrote about a narrower version of this problem in Code at the speed of my understanding. We&#x27;re becoming dramatically better at producing software, while potentially losing the very process through which we learned to build good software. I wonder whether something similar is happening to our ability to develop original ideas.<br>And perhaps that&#x27;s the distinction we should be thinking about more carefully. We should be building AI systems that don&#x27;t aim purely to automate our thinking, but to augment our intelligence in ways that elevate our own capacity for thought, rather than gradually diminish it.<br>References<br>- Benjamin Polge. AI-pilled: meaning, origin, and usage examples. 2026. A glossary entry describing deep conviction in AI&#x27;s transformative potential and its integration into everyday work. ↩<br>- George Orwell. Nineteen Eighty-Four, 1949. Part One, Chapter 5, in which Syme explains the purpose of Newspeak. ↩<br>- Aldous Huxley. Brave New World, 1932. Chapter One, in which the Director explains the purpose of conditioning. ↩</div>
+</div>
+
+</div>
+
+</body>
+</html>
