@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-10-31 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-10-31 PM · Generated 2026-10-31 23:26 CST</div><div class="issue-sub">Stories 10 · Full 4</div><div class="issue-sub">Sources: arkm.com, github.com, news.ycombinator.com, nik.art, nytimes.com, parameter.ai, piefed.world, youtube.com, zebra.rodeo</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Tell HN: Scribd Breached
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    287 points ·
+    105 comments ·
+    x______________
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #19 · Best #26
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50312756">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Not seeing anything posted about this anywhere, received on Monday, 26th of Oct 2026:<br>Subject: Notice of Security Incident<br>This notice is being sent on behalf of Scribd, Inc., the parent company of Scribd, Slideshare, Everand, and Fable, by Epiq, Scribd Inc.’s notification partner.<br>Hello,<br>We are writing to let you know that Scribd, Inc. recently experienced a security incident that may have affected your data.<br>We detected that an unauthorized third party may have gained access to certain user data in one of our systems. After investigating this activity, we found that the third party may have accessed your email address and the following of your information: last 4 digits of your credit card and country, credit card issuer, credit card expiry date, payment history (not including credit card details).<br>We have no evidence that this data has been misused, but we are notifying you out of an abundance of caution so that you can take steps to protect your information.<br>Watch for phishing<br>We encourage you to stay vigilant for phishing attempts by bad actors pretending to be Scribd, Inc. or Scribd, Slideshare, Everand or Fable.<br>Remember that Scribd, Inc. will never ask you for your username and password or other sensitive information via email or text. If you did receive a message like that:</div>
+<div class="para">Don&#x27;t click on any links in it. Instead type scribd.com, slideshare.net, everand.com, or fable.co directly into your browser.<br>Call us at: +1-877-361-9887. Hours of operation are Monday-Friday, 11:00 a.m.-11:00 p.m., Central European Time.<br>Report it through Scribd, Inc.&#x27;s Help Center.</div>
+<div class="para">For more information<br>We regret that this incident occurred and any concern it may cause you. If you have additional questions, contact the dedicated call center at +1-877-361-9887. Hours of operation are Monday-Friday, 11:00 a.m.-11:00 p.m. Central European Time.<br>The National Cyber Security Center has helpful guidance on how to recognize and avoid phishing scams here.<br>What Scribd, Inc. is doing</div>
+<div class="para">We have secured the affected system and ended the unauthorized access.<br>We have notified law enforcement as well as the relevant data protection authorities.<br>We are working with an expert third party cybersecurity firm to strengthen our access controls and monitoring.</div>
+<div class="para">We value the trust you place in us with your information, and don’t take that lightly. We are deeply sorry this happened and will keep you updated if anything further changes.<br>Scribd, Inc.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Molly(Signal fork) has not been updated since 3 months and is vulnerable
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    146 points ·
+    91 comments ·
+    DeepLogin
+  </div>
+
+  <div class="meta">
+    piefed.world
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #50
+  </div>
+
+  <div class="links">
+    <a href="https://piefed.world/post/1503394">Original article</a> · <a href="https://news.ycombinator.com/item?id=50314666">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: Marelleo, an open-source story box I built for my kids using ESP32
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    129 points ·
+    37 comments ·
+    foOg
+  </div>
+
+  <div class="meta">
+    zebra.rodeo
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #9
+  </div>
+
+  <div class="links">
+    <a href="https://zebra.rodeo/en/blog/marelleo/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50260753">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">It started as an irritation on holiday<br>Last summer, on holiday with friends and a small tribe of children, I came across the Toniebox. And honestly, I thought it was great. The child puts a figurine on the box, the story starts. They take it off, it stops. No screen, no menu, no parent to go and fetch. A two year old gets it in one second, which is roughly the highest level of usability anyone can reach.<br>The gesture is perfect. The business model, much less so. All these boxes work the same way: the object sells for a more or less reasonable price, and the money is made afterwards, on the content. Whether it’s the Lunii and its closed catalogue, the Yoto and its card packs, or the Toniebox and its figurines, every new story is a purchase, from a catalogue I don’t choose, on an object I don’t control. You’re not buying a player, you’re buying a subscription dressed up as a wooden toy. And that genuinely annoys me.<br>Meanwhile, I had been telling myself for years that I wanted to do electronics. Not as a dabbler: actually understand it. Except I knew nothing about it. I own a soldering iron that comes out every three years to reattach a headphone wire, never to build anything. The kind of guy who knows what a resistor is without ever having had to choose one.<br>The two urges met in the car on the way home. That would be my project. An RFID reader, a tag, a box that plays an audio track depending on what you put on it. Not to make a product. Just for my kids, and to learn.<br>Two discoveriesv0<br>The breadboard, or the right to get it wrong<br>I already knew what I didn’t want. A Raspberry Pi is a full computer just to play an MP3: too big, too hungry, and it takes twenty seconds to boot. A child putting a figurine down does not wait twenty seconds, they wander off and play. At the other end, the genuinely low level chips, the ones you program in C with a 400 page datasheet, are far too steep for a beginner who would like to hear a story that same evening.<br>While reading around, I came across the two things that made the project possible. First the ESP32 development board: a microcontroller with WiFi built in, beefy enough to decode MP3, simple enough to program like an Arduino, and sold for a handful of euros. Then the breadboard, that perforated plate where you push components in without soldering anything.<br>It sounds like a detail. It is the whole project tipping over. On a breadboard, getting it wrong costs nothing: you unplug, you start again, nothing is damaged. When you’re learning, that is exactly the property you need.<br>So I read documentation, I talked it through with Claude, I drew wiring diagrams in a notebook. And very quickly, far too quickly to feel earned, I had a circuit that played an audio track when you put a tag on it. It was ugly, a plate of copper spaghetti, the speaker lying bare on the table. But it worked. A few hours, and I had a thing that told stories. I don’t think I had been that pleased with something made by my own hands since childhood.<br>What caught fire<br>The potentiometer, the smoke, and the smell of ski wax<br>What came next is less glorious. To set the volume I added a potentiometer, that little rotary knob which is nothing more than a variable resistor. Except that wired wrong, it no longer sets anything at all: it becomes a plain wire between plus and minus. That has a name, it’s called a short circuit, and it heats up terrifyingly fast.<br>It smoked. And it gave off a very particular smell, which took me a good while to place before it hit me all at once: ski wax. Burning wax. I recognise it instantly now, and it is never good news.<br>The battery was the other piece of work, and the one that made me think. You don’t connect a lithium cell to two wires and move on. You need a charge controller, a dedicated chip that decides when and how to fill it, that stops at the right moment and cuts out before anything stupid happens. You also need to fasten it down properly, because a lithium battery rattling around inside an enclosure and getting pinched is precisely the scenario in those videos nobody wants to watch.<br>And then a stupid detail: my battery’s connector did not match the one on the charging board. Two little white plugs that look alike, two different pitches, incompatible. So I did what you do at eleven at night on a Tuesday when you’re nearly there: I cut the connector off and soldered the battery straight on.<br>Immediate consequence, which I had not seen coming: no connector any more, therefore no way to unplug anything, and no switch anywhere in the circuit. The box was permanently on. Twenty four hours a day. A lithium cell hastily soldered into an object that never turns off, sitting in a child’s bedroom. Written down like that, it needs no comment.<br>That is the moment I stopped treating this lightly. Not out of fear, but because I understood that I was no longer tinkering with a gadget on the corner of a table: I was placing an electrical object into my children’s daily life. Everything else in the project follows from that realisation.<br>Workshop notev1<br>From breadboard to perfboard<br>The first consequence was leaving the breadboard, and it wasn’t only about safety.<br>A breadboard holds by friction. Every wire is held by a tiny spring, which is wonderful for trying things and disastrous for lasting. Move the circuit and a contact is lost, and the fault that follows is far worse than a clean failure: it is intermittent. You hunt a bug in your code for an hour and a half, you reread the same function twenty times, and it’s a wire that no longer touches.<br>The next step is perfboard: the same grid of holes, but on a printed circuit, with every component soldered in. You lose the right to be wrong, you gain a circuit that holds together. That’s where I really learned to solder, and above all where I understood that my repair soldering had nothing to do with manufacturing soldering. Repairing is remaking a joint that existed. Building is making a hundred in a row, all clean, all identical, knowing that the hundred and first is the one that will fail.<br>The enclosure<br>My kids unscrewed the knob until the wires tore off<br>For the enclosure I got very lucky: François Lagunas lent me his 3D printer and helped me through the first attempts. Without him I would still be cutting cardboard with a ruler. I drew my models in Fusion 360 on the free hobbyist licence, and printed.<br>The first version was too big and too fragile. And quality control arrived faster than expected, in the shape of three children aged 21 months, 5 and 7.<br>They broke the knob by turning it like animals. The volume knob ended up spinning with no end stop, round and round, and as it turned it wound the wires around themselves until it tore every one of them off. I opened the box onto a little nest of twisted copper. That’s where I learned the most important rule of the entire project: a five year old does not turn a knob, they unscrew it. And they don’t stop when it resists. They stop when it gives.<br>So I started over. I took every measurement again with callipers, component by component, so that each hole would land exactly where it should and each part would be held by plastic rather than by its wires. I thickened the walls, added pockets, lowered the height. Version after version, the object stopped looking like a prototype and started looking like an object.<br>Still in the spirit of nothing being allowed to give, I also abandoned self tapping screws. Screwing straight into printed plastic holds once, twice, and on the third go the material splits along the layers: the hole holds nothing any more and the part is fit for reprinting. The real answer is called a brass insert. You set it on the hole, come down on it with the tip of the soldering iron, the brass heats up, melts the plastic around itself and sinks in. As it cools you have a metal thread captured in the part, which you can screw and unscrew a hundred times.<br>And then came the only test that no technical argument passes on my behalf: my wife liked the box. Not politely: she put it on the living room shelf, among the objects you don’t tidy away when someone rings the doorbell. That also settles the cube shape, which I wasn’t sure about. An object for children that you don’t need to hide is an object that ends up being used.<br>In the opening photo, all of that is still visible: a circle engraved on the top, which says where to put the figurine because the antenna sits right underneath, the volume knob beside it, the play button, and the name raised in the front wall. The figurines are painted wooden people with an NFC sticker glued under their feet. Any object would do: a toy car, a token, a flat pebble. The child decides what tells what, and that is exactly what I wanted.<br>The boardv2<br>I wanted nothing left dangling<br>At that point I had a version that worked pretty well. But a wired circuit, however well soldered, is still a wired circuit. There is always a cable pulling on a joint, a module hanging off its legs, a connector that works loose when you shake it. And I had just spent a few weeks measuring, very empirically, how much my children shake things.<br>So I changed category and set about designing a printed circuit board. Everything that was scattered, brought together on a single board: the power supply, the charger, the amplifier, the SD card reader, the connectors. Every part in its place, nothing moving, nothing sticking out.<br>I used Claude to go from my wired circuit to a clean schematic, and that is where the division of labour became interesting. It reads a datasheet very well, spots that a pin needs a pull-up, works out a value, fetches a footprint from the library rather than copying it from memory. But it cannot route. Routing, that is to say physically drawing the path of every copper track between components without ever crossing another, is something I did by hand, in KiCad. 491 tracks. Entire evenings spent moving lines by a tenth of a millimetre to squeeze a connection between two pads eight tenths apart.<br>That file has to be gone over with a magnifying glass before you send it, for a very concrete reason: you don’t order a single board. The minimum is five, manufactured and assembled in one go. One mistake in there isn’t a touch-up job, it is five boards for the bin and the whole invoice.<br>So I had it reread the entire schematic, line by line. It found three things I would never have seen, and each one would have cost the order.<br>Workshop note<br>The three mistakes caught before the order<br>The resistor that would have killed everything. To produce the 3.3 V the processor needs, I use a step-down converter, and I had put two resistors around it forming a divider. That is the normal way to set the output voltage. Except the chip I had picked comes in two families: an adjustable one, and a fixed output one. I had taken the fixed one. With my divider, the regulation would have read a voltage far lower than reality, concluded the output was too weak, and pushed. The arithmetic gives 13.7 V on a rail meant for 3.3. The WiFi module, the SD card, the NFC reader: all dead within a second of power-up.<br>The diode the wrong way round. In KiCad, pad number 1 of a diode is the cathode, and my file placed it the other way round. A reversed diode at that spot means the 5 V doesn’t come out, so the 3.3 V doesn’t exist, so the board doesn’t start at all. Five mute boards in one go, with no way of noticing without having them made.<br>And the checker that checked nothing. KiCad automatically verifies that tracks respect minimum clearances. Mine was configured with a minimum clearance of zero. It ran, it reported zero errors, and it approved absolutely anything, silently. That is the worst kind of bug: the tool that reassures you.<br>Once, the roles reversed and it gave me a silly amount of pleasure: I was the one who spotted that two components in my bill of materials were out of stock, before it did. We turned that into a small program that queries the manufacturer’s catalogue and returns the stock and price of each part number, so that it never happens blind again. A part number is not a given: you recheck it on the day of the order, not the day before.<br>Delivery<br>160 euros of boards, and nothing happens<br>I ordered from JLCPCB, who manufacture the board and populate it. For 160 euros I got five, already assembled, enough to keep one and give the rest to cousins and friends. Opening that parcel was one of the very good moments of the project. Green boards, crisp, components perfectly aligned, my name written on them, out of a file I had drawn on my sofa.<br>First contact with the manufactured object: I can’t plug the USB in. The factory had added a small strip of material under the socket, a breakaway tab used to hold the board during assembly, which you’re meant to snap off on arrival. I had to work up the nerve to break it by hand on a thirty euro board. That took me a good ten minutes of contemplation.<br>Then I plug it in and test. And nothing happens. The NFC reader’s LED blinks, but no figurine is recognised, nothing plays, nothing appears on the network. Nothing.<br>I spent a quarter of an hour telling myself I was an old fool who had just burned 160 euros on useless boards, and that it served me right. A genuinely bad moment. Then I went looking, methodically, unplugging the harnesses one by one.<br>The culprit came down to two wires. I had swapped the two middle conductors on the NFC reader’s ribbon, the ones carrying the serial link. That link always crosses over: what one transmits, the other has to listen to. Wired straight, both ends talk at the same time and nobody listens. The module powers up, its LED blinks away happily, and it never answers. It is the kind of fault that looks serious and is just carelessness.<br>And the best part comes last. I had fixed the cable, and it still didn’t work. For two stacked reasons: first, the program questions the reader only once, at startup, so until you restart, the repair is invisible. Second, the power switch cuts nothing at all while USB is plugged in, because it acts on the battery’s transistor and USB feeds the board by another path. So I was spending my time “restarting” a board that wasn’t restarting, to test a repair that was already done.<br>Cable finally unplugged and plugged back in, the long awaited line dropped onto the console:<br>- console<br>- PN532 pret<br>- bibliotheque : 4 figurine(s)<br>- volume : 3 [3-21]<br>And for thirty seconds I thought it was still broken, because I couldn’t hear anything. The volume knob had been left at the bottom of its travel, at minimum. There is a poetic justice in ending a day of debugging on a volume problem.<br>But other than that: the board worked first time, with no rework at all. Not a single flying wire, not a track to scrape, not a resistor to replace. For a first board designed by someone who didn’t know what a footprint was three months earlier, I really did not expect that.<br>All that was left was to assemble everything into the enclosure, this time for good.<br>The software<br>“Dad, we’ve already heard that one”<br>That remark is what set off the entire software side, and it brings us back to the starting point. A box with a frozen catalogue, even a catalogue of my own, becomes exactly the problem I wanted to avoid. The content had to belong to us, and it had to be able to change with no tool, no cable, and no me.<br>Everything goes through a web page, because there is no screen<br>The box serves its own page. You type its address into a browser, from a phone or a computer, and you see the figurines, the stories present on the SD card and what is playing right now. Nothing to install, nothing to update, no account.<br>For the very first start-up it opens its own WiFi network. A phone that connects to it brings up the setup page on its own, exactly like in a hotel: the box answers its own address to any domain name question, which makes the phone open the page without being asked. You pick your network from a list, type the password, it joins the house and closes its own network behind it.<br>The first version did that over Bluetooth. It worked, but it needed a dedicated app, which is untenable for an object you’d like to give away, and the Bluetooth stack weighed 300 KB of memory, nine per cent of everything the chip has, to be used exactly once in the life of the box. I threw it out without regret.<br>Your own MP3s<br>You send files from the page, they land on the SD card, you associate them with a figurine. A figurine carries as many tracks as you like, in whatever order you like, and they play through to the last one without looping. That opens everything up: recording your own voice to tell the kids a story when you’re away, putting on the songs they ask for on repeat, dropping in whatever you find online. MP3 and M4A, the two formats that come out of a phone or a Mac without converting anything.<br>One figurine, one URL, and it’s a radio<br>A track doesn’t have to be a file. You can give a figurine a web address, and the box connects to it and plays the stream as it arrives, storing nothing. It opens the connection, receives the audio in small pieces, decodes them and sends them to the amplifier while always keeping a few seconds in reserve, to absorb the network’s hiccups. If the connection drops it retries several times before giving up, because a home WiFi has its holes and a two year old should not have to understand why the music stopped.<br>So my children have radio stations that look like little wooden people, and I find that very satisfying.<br>And it updates itself over WiFi<br>This is the part I’m proudest of, because it solves a problem specific to finished objects. The box is screwed shut, assembled, sitting in the living room. If I want to fix something, I’m not going to take it apart every fortnight. So it fetches its new versions on its own.<br>It queries a fixed address, written into the program and deliberately impossible to change from the network. That is a security choice: a box that accepted being told where to look for its software would accept being made to install anything, and someone on the same WiFi would be enough.<br>If a newer version exists, a button appears in the page. It downloads it into a second memory area, the one that isn’t running, checks the fingerprint of the file it received, and only switches over if everything is intact. A power cut in the middle of a transfer therefore never leaves it mute: at worst it restarts on the old version, as if nothing had happened.<br>Workshop note<br>The safety net, and the time it would have been useless<br>That leaves the nightmare of a closed object: a version that starts correctly but whose networking is broken. It is valid, the box switches to it, and there is no longer any path to fix it. Hence a trial period: a freshly installed version has to prove it can connect. Three start-ups without ever seeing the network, and the box goes back to the previous one by itself, before it even turns its radio on.<br>It has earned its keep. A version I had published was reopening its setup portal even though it knew the house network perfectly well: it was reading its saved credentials too early, before the radio had started, and concluding it had none. I had nothing to do. After three start-ups it went back to the previous version on its own, and I could repair it at my leisure.<br>Same family of mistake, funnier: each box opens a network carrying the last four digits of its hardware address, so that two boxes in the same house stay distinct. Except I was reading that address before the radio started, at which point it answers six zeros. Every box in the world would have been called Marelleo-0000.<br>And once, the net could have done nothing at all. My publishing script was only compiling one of the two hardware variants, the prototype. The printed board would have received the other one’s image: audio and SD card pinouts swapped, memory looked for on the wrong bus, and a header announcing 16 MB of memory on a chip that has 8. The worst part is that the trial period would not even have caught it, since the WiFi itself would have worked perfectly. It would have gone deaf and blind while believing itself in good health. We found that just before pressing the button.<br>One last anecdote, for anyone the detail amuses. One day the update started failing with no error message at all: the transfer would start, make progress, and the box would restart suddenly, in silence. Now, a silent failure says a lot. No error means the program had no time to write one, so it didn’t stop, it was interrupted. The download task had 8 KB of stack, and I had put a 4 KB buffer in it. There was nothing left for the encrypted handshake of the secure connection. The silence itself was the clue.<br>What it turned into<br>Three kids, three uses I hadn’t planned for<br>This is the best moment of the project, and it was in no specification. Each of them made the box their own, and none of the three ways is the one I had imagined.<br>7 years<br>Her music playlists on one figurine, her stories on another, and podcasts about insects. She chooses, she asks for additions, she runs her own catalogue.<br>5 years<br>Stories. Lots of stories, chained on a single figurine through to the last track, and replayed until I know them by heart.<br>21 months<br>Her lullabies, and her toddler podcasts live. Thank you France Inter and Radio Pomme d&#x27;Api.<br>One figurine, one gesture, and each of them has their own box inside the same box. That is exactly what I was after at the start, and it arrived through software rather than through a catalogue. The difference fits in one sentence: nobody sells me the content, and nobody can take it away from me.<br>Collateral damage<br>I bought a 3D printer and built a workshop in the basement<br>There is one consequence I hadn’t foreseen, and it isn’t about the box.<br>I was starting to seriously abuse François’s kindness, since his printer had produced every one of my enclosures. And above all, I was enjoying all of this far too much: the evenings, the weekends, perfectly indefensible hours spent getting obsessive about a two millimetre fillet or the depth of a pocket. I decided this would not be my last electronics project, because I genuinely love it. So I bought a Bambu Lab A1.<br>I told myself it was a useful purchase: spare parts you stop rebuying, toys you repair instead of throwing away, custom storage. All of that is true. It wasn’t the reason.<br>And I installed it in the living room. A machine half a metre across, which blows, vibrates, runs for fourteen hours at a stretch and smells of hot plastic, in the middle of the room where Marceau is learning to walk. At the time it seemed perfectly reasonable. I was shown the door in no uncertain terms, and entirely deservedly: you do not install a production unit in a living room.<br>So I ran a network line over the mains down to the basement and set up a print station there. And it is frankly better than I imagined: I start a print from the sofa, it runs in the dark two floors below, and I go down to collect the part the next morning. No more noise and no more smell of hot plastic upstairs, and a living room that stays a living room. The fifth version of the enclosure came out of there. It’s the one in the opening photo.<br>It&#x27;s all online<br>If you want to build one<br>I’ve put everything you need in a public repository: github.com/Zebra-Rodeo/marelleo.<br>The three enclosure parts to print, the board’s manufacturing files ready to drop into JLCPCB along with the bill of materials and component positions, the firmware source, and documentation that starts from zero: what to buy and for how much, what order to go about it in, the pinout of the module version, and the traps that cost me evenings. All MIT licensed, so do what you like with it.<br>You can start with the breadboard version, without soldering once, and only order the board if you catch the bug. That’s the path I took, and the one I’d recommend: the breadboard is the place where being wrong costs nothing.<br>And there are two ways to use it. Rebuild it as is, following the files, and get the same box my kids have. Or take it as a starting point: a different enclosure, a different speaker, different buttons, the code changed to your taste. Only one thing to know in that case, and it’s written in large letters in the repository: the firmware is written for that exact assembly, the pinout lives in the code, and a wire moved means a line to change. I flagged it because it is exactly the sort of detail that has you hunting a fault for an evening.<br>If you build one, I’d really like to see it.<br>The name<br>Where Marelleo comes from<br>From marelle, the French word for hopscotch, the game where you move forward by putting a foot down on a square. But mostly from Marceau, Ella and Léonie, to whom the box belongs.<br>Thanks to François Lagunas for the printer, the advice and the patience. And to my wife, who has lived for months with this project spread across evenings and weekends, and who said yes to the printer before I could get a single argument out.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Patrick Stewart has died
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    3274 points ·
+    751 comments ·
+    j4mie
+  </div>
+
+  <div class="meta">
+    nytimes.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50294702">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://archive.ph/y4Egm<br>https://en.wikipedia.org/wiki/Patrick_Stewart</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    The Dream of Running a Shop
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    herbertl
+  </div>
+
+  <div class="meta">
+    nik.art
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://nik.art/the-dream-of-running-a-shop/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50317012">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">It’s one of those universal aspirations. Like how people say, “I’d love to write a book someday.” We have a fantasy of what it’s like in our heads, but we wouldn’t actually want the reality of it.<br>Running a shop of some kind might be the most persistent dream of this sort. Ask anybody, they’d love to run a shop. Probably a coffee shop. Or a book shop. Or a shop specializing in fresh produce and delicacies. If you run into someone with more niche interests, they’d love to run a video game shop, a Pokémon card shop, or a shop for equestrian equipment.<br>Heck, many people, myself included, have dreamed of running a whole variety of shops over the years! There’s something about it, isn’t there? It’s just you and your goods, a warm, friendly space, and loyal regulars dropping in to chat and pick up some baguettes. So much for the vision, anyway.<br>Cleaning up after hours, dealing with paperwork, stocking shelves? Nobody wants to know about that! Annoying customers pinching pennies? Wares running out? Shipping fees going through the roof? Inflation, taxes, bureaucracy. Like most endeavors, operating a shop is a grind 95% of the time.<br>The 5% of movie-like moments will still be beautiful—but even if they’ll define the experience, they’ll barely be a part of it. Which is why many shops opened on a whim close down shortly thereafter. What the owners fell in love with was the owning. The feeling of running a shop, not the experience.<br>Every time I dream about opening, say, a coffee shop, I try to remember this lesson. I think of myself in the shop. Hanging out, writing. Serving coffee to customers every now and then. Enjoying the smell of freshly roasted beans on the shelf. Then, I realize I’m barely working. “Oh. Right. What you’d like is to own a shop run by someone else—but actually, that means you can just go to any coffee shop!”<br>Money and other barriers aside, it is much easier to buy a drink at a shop you already like going to than to set up the perfect one for yourself. The best way to keep the dream alive is to let it be a dream and not force it into reality, which could never live up to it.<br>If it’s something you’d die with regret over if you didn’t do it, by all means. Give it your best shot, and go after the dream! Grunt work and all. But if it’s only a feeling you’re chasing, a story you know deep down you won’t enjoy once you’re stuck on page 243 out of 1,500, relax. Find the feeling without the burden, and savor the fantasy as it is: unreal yet still satisfying.<br>Beware the dream of running a shop.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: A working Nintendo in ~1GB of Qwen weights
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    273 points ·
+    135 comments ·
+    dbreunig
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #24 · Best #28
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/dbreunig/nesformer">Original article</a> · <a href="https://news.ycombinator.com/item?id=50306442">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">An NES CPU compiled into the weights of a stock Qwen3.5 model.<br>The NES&#x27;s 6502 CPU (the core of its 2A03 chip), its 2 KB of work RAM, and a cartridge&#x27;s program<br>ROM run inside a standard Qwen3_5ForCausalLM checkpoint. Nobody trained these weights; a<br>compiler computed every one. When you play a game, the model predicts the CPU&#x27;s execution log<br>one token at a time. A small host program plays the rest of the console around it: it draws the<br>picture, reads the controller, and fires the vblank interrupt.<br>nesformer builds on Qwenputer by Divyansh Agrawal, which compiled a CHIP-8 and then a RISC-V CPU into Qwen3.5-4B. It reuses Qwenputer&#x27;s compiler and its central trick: the model&#x27;s Gated DeltaNet state is the machine&#x27;s memory.<br>| Super Mario Bros. (World 1-1) | Full Game by Doug Fraker (title screen and first level) |<br>|---|---|<br>Every CPU token in these runs came from the model. For the bundled test games, every frame also matches a conventional 6502 emulator&#x27;s output exactly (see How it was checked).<br>Unzip nesformer.zip and nesformer-weights.zip into the same folder. The weights go next to<br>the nesformer/ package, not inside it:<br>nesformer/              &lt;- run commands from here<br>├── nesformer/          &lt;- the Python package<br>├── chipformer/         &lt;- Qwenputer&#x27;s compiler<br>├── roms/               &lt;- test ROMs (put your own here too)<br>├── examples/           &lt;- sample GIFs and frame sheets<br>├── tests/<br>├── LICENSE<br>├── LICENSE.chipformer<br>├── README.md<br>├── pyproject.toml<br>└── weights/            &lt;- from nesformer-weights.zip<br>├── config.json<br>├── generation_config.json<br>├── model.safetensors<br>├── nesformer.json<br>└── SHA256SUMS<br>The CLI looks for weights/ beside the nesformer/ package. To keep the weights elsewhere,<br>pass --weights /path/to/weights to run, check or trace, or give the path to info.<br>To confirm the weights unzipped correctly, run shasum -a 256 -c weights/SHA256SUMS from the<br>top folder.<br>You need Python 3.11 or newer.<br>python3 -m venv .venv<br>source .venv/bin/activate          # Windows: .venv\Scripts\activate<br>pip install numpy scipy numba pillowpython -m nesformer run roms/thwaite.nes --frames 600 --show \<br>--buttons &quot;start@90-95+200-205,a@230-233+250-253+270-273+290-293+310-313+330-333+350-353+370-373+390-393+410-413+430-433+450-453+470-473+490-493+510-513+530-533+550-553+570-573+590-593&quot;<br>--show draws each frame in your terminal as the model generates it. When the run ends, the CLI<br>saves an animated GIF named after the ROM (here thwaite.gif) in the current folder.<br>Expect it to be slow. The first run spends about 20 seconds compiling the engine with numba. After that, a frame takes 1–6 seconds, so 600 frames (10 seconds of NES time) take around 25 minutes.<br>Point run at any .nes file that uses the NROM board (iNES mapper 0), such as Super Mario<br>Bros., Donkey Kong or Excitebike. You supply the ROM; nesformer only ships the three freely<br>licensed test ROMs in roms/.<br>python -m nesformer run roms/smb.nes --frames 600 --show \<br>--buttons &quot;start@60-65,right@200-600,a@250-265+300-315+360-375+420-435+480-495+540-555&quot;<br>That script starts the game, then walks Mario right and jumps about once a second. The CLI loads the ROM into the model&#x27;s state at startup, so the same weights run any NROM game without a rebuild. Games on other boards stop with a message: see Limitations.<br>--buttons takes a comma-separated list of entries. Each entry names one or more buttons joined<br>by +, then @, then one or more frame ranges joined by +:<br>start@60-65                 press Start during frames 60 to 65<br>right@200-600               hold Right from frame 200 to frame 600<br>a@250-265+300-315           press A twice<br>right+b@200-600             hold Right and B together (run, in Super Mario Bros.)<br>The buttons are a, b, select, start, up, down, left and right. Frames count from<br>power-on at 60 per second, so frame 600 is 10 seconds in. Games ignore input on screens where<br>you can&#x27;t move, so holding a button a little early does no harm. In Super Mario Bros., a longer<br>A press makes a higher jump.<br>| Command | What it does |<br>|---|---|<br>| python -m nesformer run ROM | Play a ROM on the weights and save a GIF |<br>| python -m nesformer check ROM | Run the weights and the reference CPU side by side; stop at the first difference |<br>| python -m nesformer trace ROM | Print the model&#x27;s token stream (default 40 tokens) |<br>| python -m nesformer build | Compile the circuit and write weights/ (about 10 seconds) |<br>| python -m nesformer info | Describe the checkpoint |<br>Options for run:<br>| Option | Default | Meaning |<br>|---|---|---|<br>| --frames N | 120 | Stop after N frames |<br>| --buttons SCRIPT | none | Controller input (see above) |<br>| --show | off | Draw frames in the terminal (needs 24-bit color, e.g. iTerm2 or Windows Terminal) |<br>| --gif PATH | ROM name | Where to save the animated GIF |<br>| --png DIR | off | Save each kept frame as a PNG in DIR. With --png alone, no GIF is saved. Add --gif to get both. |<br>| --every N | 1 | Keep every N-th frame |<br>| --scale N | 2 | Enlarge saved frames N times |<br>| --engine | fast | fast (numba), numpy, or hf (stock transformers; needs torch, ~10 tokens/s) |<br>| --no-skip | off | Run every iteration of idle wait loops (slower; identical frames) |<br>| --max-tokens N | none | Stop after N tokens |<br>| --trace FILE | none | Save the token ids |<br>run, check and trace all accept --weights, --engine, --buttons and --no-skip.<br>check --tokens N sets how far to compare (default 50,000). trace --tokens N sets how many<br>tokens to print (default 40). build --out DIR writes the checkpoint somewhere other than<br>weights/.<br>| In the model (weights + DeltaNet state) | In the host ( nesformer/host.py) |<br>|---|---|<br>| The 6502 core: all 151 official opcodes, every addressing mode, flags, stack, BRK and NMI entry | The PPU: a scanline renderer and the palette |<br>| 2 KB of work RAM | Controllers; APU registers (written, otherwise ignored) |<br>| 32 KB of PRG-ROM, stored twice: one copy for instruction fetch, one for data reads | NMI timing at vblank, injected as an NMI token |<br>| OAM DMA reads (the 256 bytes appear as DM tokens) | Answers to I/O reads, injected as IN tokens |<br>This split follows Qwenputer&#x27;s CHIP-8 build, whose host injects timer ticks and draws the display from the trace. The host never sees the CPU&#x27;s registers or RAM except through the trace.<br>The memory trick works like this. Each DeltaNet head keeps a 128 × 128 state matrix that the delta rule updates at every token. With the gate held open and a one-hot key, an update overwrites exactly one row of that matrix, and a one-hot query reads it back. So every row is a memory cell, and the cartridge, RAM and registers all live in rows.<br>weights/ is an ordinary Hugging Face folder. It loads with<br>Qwen3_5ForCausalLM.from_pretrained and needs no custom code.<br>| Architecture | Qwen3_5ForCausalLM, with Qwen3.5-4B&#x27;s DeltaNet head shapes (16 key heads, 32 value heads, dim 128) and MLP width (9,216) |<br>| Layers | 7 Gated DeltaNet layers (the circuit), plus 1 all-zero attention layer that Hugging Face&#x27;s cache needs |<br>| Hidden size | 768 |<br>| Vocabulary | 263,808 tokens |<br>| Parameters | 466.6M in bf16 (933 MB), of which 9.3M are nonzero, so the weights zip to 3.3 MB |<br>nesformer.json records which layer and head holds each part of the machine. A run writes the<br>cartridge, registers and RAM into those DeltaNet states, then decodes greedily.<br>| Layer | Attention (state) | MLP |<br>|---|---|---|<br>| 1 | PC anchor; instruction counters; A, X, Y, SP; flags N V Z C I D; pointer latches; NMI flag | counter thermometers; SP ± 1; LO + Y |<br>| 2 | — | PC = anchor + bytes executed since; PC + 1, PC + 2 |<br>| 3 | PRG fetch: opcode and two operand bytes at the PC | opcode decode; operand bits; indexed sums; branch test and target |<br>| 4 | — | effective address, by addressing mode and record stage; the byte a push stores |<br>| 5 | RAM and PRG data reads at the effective address | operand; ADC/SBC adder, compares, BIT; address decode |<br>| 6 | — | result byte, carry, overflow, flags, jump targets |<br>| 7 | — | the next token |<br>Each instruction becomes a record, and the record&#x27;s last token commits it. As in Qwenputer&#x27;s RISC-V core, the PC is implied rather than written: each final token carries its instruction&#x27;s length, three DeltaNet counters tally the instructions of each length since the last jump, and the PC is the jump target plus that offset. Excerpts from Full Game:<br>SEI            P(000100 px0 L1)<br>LDX #$40       X($40 c0 v0 px0 L2)<br>STX $4017      IOW($4017=$40 L3)<br>TXS            S($FF L1)<br>BIT $2002      IOR($2002) IN($00) P(000110 px0 L3)       &lt;- the host injects IN<br>BPL $8017      J($8017)<br>JSR $8279      PSH($FE) PSH($FD) J($8279)                 &lt;- the return address is pushed in-circuit<br>RTS            PUL($FC) LO($7B) PUL($FD) J($827C)<br>STA ($72),Y    LO($08) HI($03) ST($00 a7=0 L2)            &lt;- pointer bytes latched, then the store<br>STA $4014      IOW($4014=$02 L0) DM(0:$FF) … DM(255:$00) NT(L3)   &lt;- OAM DMA<br>Most instructions take a single token; real game code averages 1.1–1.3 tokens per instruction.<br>nesformer/spec.py documents every token family.<br>- The reference CPU (nesformer/cpu.py) matches nestest&#x27;s golden log for 3,348 instructions,<br>and the py65 emulator on 5.7 million instructions of game code.<br>- The exact circuit, run in Qwenputer&#x27;s evaluator with its bf16 exactness checks, predicts every reference token: all of nestest plus 283,610 positions of two games&#x27; boot sequences.<br>- The checkpoint in stock transformers (bf16, CPU) predicts 2,651 positions of nestest and Full Game with no mismatches.<br>- The weights, free-running, generate traces identical to the reference CPU&#x27;s: Run Tokens Frames NES time Result nestest (official opcodes) 4,586 — — identical, ending in the expected HALT Thwaite, check700,000 271 4.5 s identical trace and frames Thwaite, run1,916,527 600 10.0 s all 300 saved frames match Full Game, run2,645,885 420 7.0 s all 210 saved frames match<br>- The idle-loop skip changes nothing visible: frames and I/O writes, cycle timestamps included, match a run without it.<br>The default engine computes Qwen3.5&#x27;s forward pass from model.safetensors, compiled with numba<br>and skipping the all-zero blocks. It ran at about 1,650 tokens/s on one CPU core of the machine<br>it was built on. The plain numpy engine does about 210, and stock transformers about 10. A real<br>NES would need about 700,000 tokens per second.<br>Games spend most of each frame in a loop that waits for vblank. When the host sees a loop body repeat exactly, with no RAM or I/O writes, it advances the clock to just before the next PPU event, and the remaining iterations still run. That cuts the token count by 2.6× to 4.2×. Overall, nesformer runs 150–290× slower than the real console.<br>- NROM cartridges only (iNES mapper 0). The CPU can address only 32 KB of program ROM at a time. Bigger games carry a bank-switching chip (a mapper, such as MMC1 or MMC3) that swaps which part of the ROM the CPU sees. nesformer&#x27;s ROM reads happen inside the model, from a fixed 32 KB table, so it can&#x27;t follow a bank switch yet. Supporting a mapper means storing the whole ROM in the state, keeping the bank registers there too, and adding one stage that turns each CPU address into a ROM address.<br>- Official opcodes only. An unofficial opcode emits HALT.<br>- Code must run from the cartridge ROM. A jump into RAM emits HALT.<br>- No IRQs (APU frame IRQ, DMC). BRK and NMI work.<br>- Read-modify-write instructions on I/O registers don&#x27;t produce an I/O write, and $4020–$7FFF reads as 0 (no PRG-RAM).<br>- The PPU and APU aren&#x27;t in the weights. The PPU renders one scanline at a time, so mid-scanline effects aren&#x27;t reproduced. Sprite-0 hit and sprite overflow are approximate, and there&#x27;s no sound.<br>pip install pytest py65<br>python -m pytest -q tests<br>The tests take a few minutes. They check the reference CPU against nestest&#x27;s log, the circuit against the reference, the weights free-running against the reference, and the idle-loop skip.<br>pip install &quot;torch&gt;=2.6&quot; &quot;transformers&gt;=5.22&quot;<br>python -m nesformer run roms/thwaite.nes --frames 3 --engine hf<br>nesformer/hfcheck.py shows the whole procedure: load the checkpoint, decode one padding token,<br>write the machine&#x27;s state into the cache&#x27;s DeltaNet states, then feed tokens one at a time.<br>| Path | Contents |<br>|---|---|<br>| nesformer/spec.py | token families and records |<br>| nesformer/cpu.py | the reference 6502 that writes the trace |<br>| nesformer/host.py | everything around the CPU: PPU, controllers, NMI timing, cycle counting, idle skip |<br>| nesformer/core.py | the circuit and the state snapshot |<br>| nesformer/weights.py | the emitter that turns the circuit into a Qwen3_5ForCausalLM checkpoint |<br>| nesformer/engine.py, fastengine.py | run the weights (numpy / numba) |<br>| nesformer/hfcheck.py | run the weights in stock transformers |<br>| nesformer/run.py, check.py, cli.py, __main__.py | drivers, the teacher-forced check, the CLI |<br>| chipformer/ | Qwenputer&#x27;s q35 compiler ( q35/ emitter and primitives, dsl/ graph) |<br>| weights/ | the compiled checkpoint and its SHA-256 checksum |<br>| roms/ | test ROMs; roms/SOURCES.md lists their authors and licenses |<br>| examples/ | GIFs and frame sheets from the runs; demo.gif is the Super Mario Bros. run shown at the top |<br>| tests/test_nesformer.py | the test suite |<br>- Qwenputer and its chipformer compiler: MIT,<br>© 2026 Divyansh Agrawal (LICENSE.chipformer). That license also covers the code adapted<br>from Qwenputer in nesformer/core.py and nesformer/weights.py. Its last paragraph refers to<br>Qwenputer&#x27;s CHIP-8 ROMs, which this repository does not include.<br>- Test ROMs: nestest by Kevin Horton; Full Game by Doug Fraker (MIT); Thwaite by Damian Yerrick (GPL-3.0, source at pinobatch/thwaite-nes).<br>nesformer is released under the MIT License (see LICENSE). The ROMs in roms/ keep their own<br>licenses, listed in roms/SOURCES.md.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    We Took over ChatGPT Accounts
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    154 points ·
+    68 comments ·
+    armcat
+  </div>
+
+  <div class="meta">
+    parameter.ai
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #45
+  </div>
+
+  <div class="links">
+    <a href="https://www.parameter.ai/labs/we-found-a-gap-at-openai">Original article</a> · <a href="https://news.ycombinator.com/item?id=50314699">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Do the Math: How We Took Over ChatGPT Accounts<br>By bypassing ChatGPT&#x27;s sandbox and content security policy, our research team was able to take over anyone&#x27;s account simply by sending them a link.<br>In October 2026, we found a way to turn an ordinary public ChatGPT share into attacker-controlled JavaScript running inside the signed-in session of whoever opened it.<br>An attacker could create a malicious conversation, publish it using ChatGPT&#x27;s normal sharing feature, and send the link to another user. When the victim opened the share, the payload executed as chatgpt.com with access to the victim&#x27;s authenticated web session.<br>We confirmed that this code could enumerate the victim&#x27;s conversation list, retrieve content from a private conversation that had never been shared with the attacker, and send data from that conversation to an external server. The payload was not limited to modifying the page or displaying an alert—it could directly call ChatGPT&#x27;s authenticated APIs as the victim, essentially allowing us to take over the victim&#x27;s ChatGPT account.<br>The victim did not need to install an App, join a Project, paste code, or open developer tools. Opening the shared link was the only required action.<br>OpenAI fixed the issue on October 26 and classified the report as P1.<br>The chain started with two features that looked harmless on their own: a graph and an HTML Preview.<br>Technical walkthrough<br>It started with a graph and a Preview<br>The question that started this research was simple: if Preview code was boxed into a different website, what could it still talk to?<br>ChatGPT can turn an HTML code block into a small working webpage using its Preview feature. Since that page may contain arbitrary code, ChatGPT sensibly runs it inside a restricted frame on a different web address. The Preview can run JavaScript, but the browser treats it as a different website, so it cannot directly inspect the signed-in ChatGPT page around it.<br>At first, this isolation appeared to work exactly as intended. Code inside the Preview could not read parent.document, which is the main ChatGPT page. That should have been the end of it.<br>The conversation also contained a normal interactive graph. Behind the scenes, the graph loaded a math library called MathLive. Loading it did more than draw the graph: it also installed a listener in the main ChatGPT page for messages related to MathLive&#x27;s on-screen keyboard.<br>Browsers call the relevant API postMessage. It is a legitimate way for two frames to exchange information even when the browser prevents them from reading each other&#x27;s pages. You can think of it as a mail slot: the restricted Preview cannot walk into the main page, but it can still drop a message through the slot.<br>That is safe only if the receiver checks who sent the message.<br>MathLive did not make that check for the setting we were interested in. Its listener accepted a message that changed the virtual keyboard layout, and that layout was allowed to contain HTML. The graph had installed the receiver; the Preview gave us an untrusted sender. Two unrelated features had accidentally created a path across the sandbox.<br>The message that should not have worked<br>The Preview sent two messages. The first replaced a virtual keyboard layout with our HTML. The second told MathLive to show the keyboard, causing it to render the new layout:<br>MathLive recognized the public message type, but its top-level controller used an origin policy of none, which meant it accepted messages from any web address. It also did not require the update-setting message to come from a previously approved window. Anyone who could reach the listener and knew the message format could replace the layout.<br>When the keyboard opened, MathLive joined the supplied layout into an HTML string and assigned it to innerHTML in the real ChatGPT page. A helper named createHTML initially looked like it might sanitize the value. It did not; it marked the string as trusted and passed our HTML through unchanged.<br>This was exciting, but we still did not have JavaScript execution. Script tags inserted through innerHTML do not automatically run.<br>The next step was an iframe using srcdoc, a browser feature that lets an embedded frame carry its HTML directly in an attribute:<br>MathLive inserted this frame into the main ChatGPT document without a sandbox attribute. That gave us two useful properties. First, srcdoc created a fresh document where an external script could execute. Second, because the main ChatGPT page created the frame, the browser gave it the https://chatgpt.com web identity. Code inside the new frame could therefore access the parent page.<br>Bypassing CSP with YouTube JSONP<br>ChatGPT&#x27;s Content Security Policy, or CSP, stopped us again. CSP controls which scripts a page may load, and the policy correctly blocked inline JavaScript. It did, however, allow scripts from YouTube.<br>YouTube&#x27;s oEmbed endpoint supported a JSONP-style callback parameter. JSONP responses are JavaScript rather than ordinary JSON. The endpoint tried to reject an invalid callback, but it placed the callback into the response before returning its validation error:<br>The response began like this:<br>Ending our callback with ;void made the object appended by YouTube harmless. Since YouTube was already allowed by ChatGPT&#x27;s CSP, the browser loaded this response as a script and ran our callback inside the new frame.<br>We now had arbitrary JavaScript running as chatgpt.com. The original Preview was still isolated on its separate web address; we had crossed the boundary by convincing a trusted component in the main page to create a new, unsandboxed document for us.<br>Turning a lab bug into one public link<br>So far, this was a useful sandbox escape, but the first working version was not a convincing real-world attack. It used a researcher-controlled ChatGPT App as the sender. A victim would have needed to connect or invoke that App first.<br>We next tried delivering the payload through a native HTML attachment. ChatGPT opened the attachment inside the same sandboxed Preview, so it could send the malicious MathLive messages.<br>However, when we exported the conversation as a public share, the attachment remained but the earlier graph did not. The graph was essential because it loaded MathLive and installed the vulnerable message listener in the main page. Without it, the attachment could still send the messages, but nothing was listening to or processing them.<br>The breakthrough was putting both pieces directly into one ordinary public conversation:<br>- A genuine graph initialized MathLive in the main page.<br>- A later assistant-authored HTML Preview sent the two messages.<br>The resulting /share/&lt;id&gt; link preserved the complete chain for another user. The attacker could deliver it the same way they would send any shared ChatGPT conversation—through email, chat, a support ticket, or a social post. The victim did not need to install anything, join the attacker&#x27;s workspace, or authenticate through an attacker-controlled flow. They just had to visit the attacker&#x27;s shared ChatGPT URL.<br>We observed two versions of the interaction. In the most stable reproduction, the victim opened the share and clicked ChatGPT&#x27;s normal Preview button once. We later marked the HTML block as previewable so that ChatGPT opened it automatically. In that version, opening the link was the victim&#x27;s only click. We reproduced the automatic path three times in a separate account, including after a hard refresh, with the alert appearing after roughly 4.5 seconds.<br>The graph and Preview loaded independently, so the payload could occasionally send its message before MathLive was ready. The final carrier handled that race by retrying the same two messages for a limited period. A guard in the main page ensured that the private-conversation proof and outbound request ran only once.<br>At this point, the public share could display an alert identified by the browser as coming from chatgpt.com and could add a banner to the main page. That proved where our code was running. It did not yet show why the bug mattered.<br>An alert was not enough<br>At this point, displaying an alert was the least interesting thing the exploit could do. The JavaScript was running as chatgpt.com, which meant it could interact with ChatGPT using the same authenticated context as the normal web application.<br>The payload read the session information already available to the page and used it to call ChatGPT&#x27;s conversation APIs. First, it enumerated the victim&#x27;s recent conversations. It could then request message data for a selected private conversation:<br>GET /backend-api/conversations?...&amp;limit=20&amp;order=updated&amp;offset=0<br>GET /backend-api/conversations/&lt;conversation-id&gt;?num_turns=2<br>This was direct authenticated API access, not scraping text that happened to be visible on screen. The target conversation was unrelated to the malicious share and had never been shared with the attacker.<br>Once the response was available to the injected JavaScript, sending data off-site was straightforward. The payload created an ordinary image request to a server we controlled.<br>We deliberately sent only a small piece of the response off-site. The injected code had already received the authenticated conversation response and could read its contents, so the vulnerability was not limited to that value.<br>The result was a practical cross-user data-theft primitive. A malicious public conversation could execute inside another user&#x27;s signed-in ChatGPT session, enumerate private conversations, retrieve private message content, and send selected data to an attacker-controlled server.<br>Because the code ran with the web application&#x27;s authenticated access, its reach was not inherently limited to the conversation endpoints used in our proof. Other data and actions exposed through ChatGPT&#x27;s authenticated frontend APIs sat inside the same security boundary. Essentially, we could perform any action on behalf of the victim&#x27;s ChatGPT account.<br>What went wrong and what OpenAI fixed<br>The Preview sandbox itself worked. Code inside Preview could not directly read the ChatGPT page. The problem was that another component in the main page was willing to accept its instructions.<br>Three design decisions turned that mistake into a full exploit:<br>- MathLive accepted a state-changing message without proving which frame sent it.<br>- The message format allowed raw HTML to be supplied as keyboard-layout data.<br>- That HTML could create an unsandboxed document that inherited the chatgpt.com identity.<br>The YouTube response was the final workaround for CSP, not the root cause. Blocking only that endpoint would have removed one path to JavaScript while still leaving an untrusted Preview able to insert HTML into ChatGPT.<br>OpenAI reproduced both the JavaScript execution and the private-conversation proof. The fix was rolled out across two versions of ChatGPT&#x27;s web frontend. During the rollout, CSP changes blocked part of the original chain while one version still needed an update. On October 26, OpenAI confirmed that both versions now rejected the cross-frame MathLive messages used by the report and marked the issue resolved.<br>The defensive lessons are fairly simple:<br>- A message receiver should verify both the sender&#x27;s web address and the exact window that was given permission.<br>- Cross-window settings should not contain raw HTML.<br>- Dynamically created documents should remain sandboxed when their content can be influenced by an untrusted frame.<br>- CSP should be a backup control, not the only barrier after attacker-controlled HTML reaches the main site.<br>This bug was interesting because every individual feature looked reasonable. Preview was isolated. Graphs could load a math keyboard. Frames could exchange messages. CSP allowed a major media provider. Public conversations could be shared. The vulnerability appeared only when all of those features were combined in one page.<br>Timeline<br>| Date | Event |<br>|---|---|<br>| October 13, 2026 | Confirmed the MathLive message-to-HTML path against ChatGPT&#x27;s production code. |<br>| October 14 | Reproduced the chain through the normal UI and upgraded the fixed alert to arbitrary JavaScript. |<br>| October 16 | Confirmed public-share delivery between separate accounts and workspaces with one Preview click. |<br>| October 17 | Confirmed automatic Preview from share navigation and reproduced it after a hard refresh. |<br>| October 18 | Submitted the report to OpenAI&#x27;s bug bounty program. |<br>| October 19 | Added the controlled private-chat disclosure proof. |<br>| October 21 | OpenAI reproduced the issue; severity was raised from the initial P2 triage to P1. |<br>| October 22 | OpenAI reported one web frontend fixed while the second was still being updated. |<br>| October 23 | CSP changes blocked part of the chain while one frontend update remained. |<br>| October 26 | OpenAI confirmed both frontends rejected the reported messages, resolved the issue, and awarded a total bounty of $5,000. |<br>Technical notes<br>The main story above contains the complete exploit chain. The details below are included for readers who want to follow the production code and payload transformations more closely.<br>The relevant deminified control flow was equivalent to:<br>Layout normalization preserved layouts[].layers[].markup. Showing the keyboard eventually performed the equivalent of:<br>createHTML acted as an identity or Trusted Types wrapper, not a sanitizer. Trusted Types can restrict who assigns to an HTML sink, but an identity policy does not make an attacker-controlled string safe.<br>The parser and CSP transition. The innerHTML operation could create an iframe, but a script inserted directly that way would remain inert. The unsandboxed srcdoc caused a fresh HTML document parse and inherited the embedding ChatGPT origin. That document also inherited the effective CSP captured during testing, which blocked inline code but permitted www.youtube.com in script-src-elem.<br>The oEmbed response returned HTTP 200 with Content-Type: text/javascript; charset=UTF-8 and X-Content-Type-Options: nosniff; no Cross-Origin-Resource-Policy header was observed. Google rewrote angle brackets in the callback, so the payload used classic function syntax instead of arrow functions. Ending the program with ;void consumed the error object appended by the endpoint.<br>For the private-conversation proof, the function was converted to source with toString(), double quotes were converted to single quotes, and whitespace was collapsed. URLSearchParams then encoded it into the callback, the script URL was HTML-escaped inside &lt;script src&gt;, and that entire element was escaped again into the iframe&#x27;s srcdoc attribute. The final callback was 5,533 characters; the YouTube URL was 7,309 characters; the script element was 7,337 characters; and the final iframe markup was 7,390 characters.<br>The authenticated read. The same-origin frame parsed #client-bootstrap from the parent document, extracted the session access token and account ID, and required the account ID in the token to agree with the session when both were present. It used these in-memory headers:<br>Authorization: Bearer &lt;victim token&gt;<br>ChatGPT-Account-ID: &lt;victim account&gt;<br>Accept: application/json<br>The primary requests were:<br>GET /backend-api/conversations?exclude_conversation_origin=tpp&amp;expand=false&amp;is_archived=false&amp;is_starred=false&amp;limit=20&amp;order=updated&amp;offset=0<br>GET /backend-api/conversations/&lt;id&gt;?num_turns=2&amp;include_has_versions=true<br>Only a 403, 404, or 405 on the detail request caused the code to try the legacy /backend-api/conversation/&lt;id&gt;?include_full_conversation=true route. The validation transmitted only a small selected value from the response. Before the external image request, it cleared references to the token, account, bootstrap, session, and request headers.<br>Key takeaways<br>- Isolation is only as strong as every bridge across it. A sandboxed frame can still compromise its parent when a privileged listener trusts messages from the wrong sender.<br>- postMessage receivers must authenticate both event.origin and event.source before accepting state-changing instructions.<br>- HTML injection can become JavaScript execution through a fresh, unsandboxed document and an allowed third-party script endpoint. CSP is valuable defense in depth, but it cannot make an unsafe rendering path safe.<br>- The impact of same-origin JavaScript must be measured in the victim&#x27;s authenticated context. Once code ran as chatgpt.com, it could reach the same private data and account actions available to the normal frontend—not merely display an alert.<br>- Cross-feature testing matters. This chain existed in the seams between public sharing, Preview, MathLive, frame creation, and CSP rather than in any one feature viewed alone.<br>The broader lesson is that security boundaries have to hold across the complete product, not just inside individual components. Any public or shareable surface should be treated as attacker-controlled input, every cross-frame message should be authenticated, and untrusted markup should remain sandboxed throughout its entire rendering path.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Binance-hacker-1029 – $5.6B stolen from Binance
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1745 points ·
+    1237 comments ·
+    Tiberium
+  </div>
+
+  <div class="meta">
+    arkm.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8">Original article</a> · <a href="https://news.ycombinator.com/item?id=50296470">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Tell HN: X is opening any tweet link in a webview whether you press it or not
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    36 points ·
+    2 comments ·
+    stillatit
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50312174">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">One year after I posted this last time[0], they&#x27;re doing it again. My traffic from X has shot way up from people who only ever viewed a full tweet, without pressing the link inside.<br>[0] https://news.ycombinator.com/item?id=45807775</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    The most insane FAKE musician
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    Betelbuddy
+  </div>
+
+  <div class="meta">
+    youtube.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.youtube.com/watch?v=FRoXKvD19Po">Original article</a> · <a href="https://news.ycombinator.com/item?id=50317001">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+</body>
+</html>
