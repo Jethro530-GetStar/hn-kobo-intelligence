@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-02 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-02 AM · Generated 2026-11-02 00:11 CST</div><div class="issue-sub">Stories 10 · Full 4</div><div class="issue-sub">Sources: arxiv.org, curtin.edu.au, hackerbooks.org, karpathy.bearblog.dev, kevs3d.co.uk, news.ycombinator.com, newsletter.signoz.io, outcrop.rocks, science.org</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    HackerTube: YouTube built from videos recommended by HN
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1709 points ·
+    451 comments ·
+    karpathy
+  </div>
+
+  <div class="meta">
+    karpathy.bearblog.dev
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://karpathy.bearblog.dev/hacker-tube/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50319510">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">HackerTube<br>It was Friday night at 11pm, I was tired, I went to YouTube to watch something and realized that I was looking at an enshittified wall of slop. Insanely exaggerated thumbnails, dumb recommendations of the same tired topics, truly terrible idiocracy-grade content. I&#x27;m sure this algorithm works well for the median person on the internet, but it definitely does not work for me. So this morning (Saturday) I took a hold of my Opus 5.5 and gave it the task: Let&#x27;s write our own YouTube clone based on whatever videos have been recommended on Hacker News. And Opus came back with: hackertube.org!<br>Opus downloaded all comments of HackerNews, filtered them, ran Sonnet over them in a Workflow (Claude Code feature), got rid of spam, and narrowed everything down to 40K comments recommending a YouTube video. In total, we get 6,454 YouTube videos that have been recommended by a few people on HN from 2007-2026 across 150 topics. Then we wrap it up in a YouTube UI, get a domain, push to a VPS, secure, harden, optimize and voila!<br>HackerTube:<br>- Contains quality content<br>- Uses the 50% thumbnail instead of the uploaded thumbnail<br>- Custom and good ForYou recommendations without any user accounts, storing state in local browser session<br>- Keyboard shortcuts<br>- Export of the site&#x27;s data available to give to your agent to easily create your own version<br>This takes ~2 hours now. I can breathe again. Thank you Opus 5.5 &lt;3.<br>EDIT: A little bit more on my process. I use Claude Code (desktop app for Mac). I use Opus 5.5 on Medium effort as my default. I don&#x27;t actually do anything resembling traditional engineering anymore (read/write code, run commands in a terminal, or etc.), I only talk to Claude and have it do everything. In this case, the only &quot;manual work&quot; I did was: 1) I had to create some kind of API key from Google Cloud UI to query YouTube for video metadata, 2) I booted up a VPS box and 3) I bought the domain name. I worked on this in between Claude&#x27;s actual work so it still feels a little bit like team work :) Once the box was up I gave Claude the IP and told it update, deploy, secure, harden and optimize the code, and it did the whole thing.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: I rebuilt my old canvas 3D library as a small WebGL 2 library – phoria2
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    25 points ·
+    3 comments ·
+    kevs3d
+  </div>
+
+  <div class="meta">
+    kevs3d.co.uk
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #6
+  </div>
+
+  <div class="links">
+    <a href="https://kevs3d.co.uk/phoria2/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50314508">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Anthropic&#x27;s Mythos-class model allegedly leaked on Hugging Face
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    1 comments ·
+    handfuloflight
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · New #18
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50326727">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">URL deleted for malware concerns.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Breakthrough could help police trace 3D-printed &#x27;ghost guns&#x27;
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    geox
+  </div>
+
+  <div class="meta">
+    curtin.edu.au
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.curtin.edu.au/news/media-release/new-breakthrough-could-help-police-trace-3d-printed-ghost-guns/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50326909">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Curtin University researchers may have found a new way to help police trace 3D-printed firearms, after developing a new method of analysing the plastic used to make them.<br>Homemade plastic weapons present a growing challenge for law enforcement globally, due to being privately manufactured without the serial numbers and registration used to trace conventional firearms.<br>When discharged, they also often lack the conventional marks left on bullets, limiting another crucial avenue for forensic investigation.<br>These significant challenges have seen law enforcement commonly refer to 3D-printed firearms as ‘ghost guns’ – however, a new approach to analysis may lead to a significantly greater chance of tracing weapons to their owners.<br>A new study published in Forensic Science International investigated whether the plastic used in creating these weapons could provide clues capable of connecting a printed firearm to the material used to manufacture it.<br>Study author Dr Georgina Sauzier from Curtin’s School of Molecular and Life Sciences said the team, including forensic experts at ChemCentre, analysed samples of polylactic acid (PLA), a common 3D-printing plastic sourced from the Australian market.<br>“We wanted to see whether the plastic used to print the firearm could provide another source of information, by looking closely at how different 3D-printing materials responded when they are heated,” Dr Sauzier said.<br>“We used a technique known as differential scanning calorimetry, which measures changes in a material as it is heated.”<br>They found they were able to distinguish 26 of 28 PLA filament samples based on differences in their thermal properties, including some samples that were the same colour but produced by different brands.<br>Dr Sauzier said 3D printing itself changed how plastic behaves under testing, initially making it difficult to compare a printed object with the original filament used to make it.<br>“When plastic is fed through a 3D printer it is heated and cooled, which effectively changes its thermal history, so at first the printed material could behave differently to the raw filament it came from,” Dr Sauzier said.<br>“But we found by giving both materials a controlled heating and cooling treatment, we could account for those differences and correctly match the printed samples with the corresponding filament material.”<br>ChemCentre senior forensic scientist Dr Kari Pitts said the research will help forensic laboratories assess evidence more confidently in complex cases involving 3D-printed firearms.<br>“This approach potentially gives forensic investigators another avenue to explore when a 3D-printed firearm and printing materials are seized, or when trying to establish links between firearms recovered in separate investigations,” Dr Pitts said.<br>However, Dr Sauzier cautioned the research was an important first step rather than a ready-made method for uniquely identifying where every 3D-printed firearm originated.<br>“This shows there is potentially valuable forensic information hidden in the material itself, but there is more work to do before we understand how reliably it can be applied across the huge range of materials and conditions investigators might encounter,” Dr Sauzier said.<br>“The next step is to test a much wider range of samples, including printed materials exposed to environments where someone might try to conceal a firearm, such as being buried in soil or submerged in water.<br>“Ultimately, the aim is to give forensic investigators more tools to extract useful information from weapons specifically designed or manufactured in ways that make conventional tracing difficult.”<br>The study, Same polymer, different story: DSC analysis of commercial PLA 3D-printing filaments for forensic comparisons, was published in Forensic Science International.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Serbia just elected the world&#x27;s brainiest parliament
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    877 points ·
+    488 comments ·
+    input_sh
+  </div>
+
+  <div class="meta">
+    science.org
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #51
+  </div>
+
+  <div class="links">
+    <a href="https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament">Original article</a> · <a href="https://news.ycombinator.com/item?id=50314654">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Tell HN: Scribd Breached
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    346 points ·
+    122 comments ·
+    x______________
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · Best #13
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50312756">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Not seeing anything posted about this anywhere, received on Monday, 26th of Oct 2026:<br>Subject: Notice of Security Incident<br>This notice is being sent on behalf of Scribd, Inc., the parent company of Scribd, Slideshare, Everand, and Fable, by Epiq, Scribd Inc.’s notification partner.<br>Hello,<br>We are writing to let you know that Scribd, Inc. recently experienced a security incident that may have affected your data.<br>We detected that an unauthorized third party may have gained access to certain user data in one of our systems. After investigating this activity, we found that the third party may have accessed your email address and the following of your information: last 4 digits of your credit card and country, credit card issuer, credit card expiry date, payment history (not including credit card details).<br>We have no evidence that this data has been misused, but we are notifying you out of an abundance of caution so that you can take steps to protect your information.<br>Watch for phishing<br>We encourage you to stay vigilant for phishing attempts by bad actors pretending to be Scribd, Inc. or Scribd, Slideshare, Everand or Fable.<br>Remember that Scribd, Inc. will never ask you for your username and password or other sensitive information via email or text. If you did receive a message like that:</div>
+<div class="para">Don&#x27;t click on any links in it. Instead type scribd.com, slideshare.net, everand.com, or fable.co directly into your browser.<br>Call us at: +1-877-361-9887. Hours of operation are Monday-Friday, 11:00 a.m.-11:00 p.m., Central European Time.<br>Report it through Scribd, Inc.&#x27;s Help Center.</div>
+<div class="para">For more information<br>We regret that this incident occurred and any concern it may cause you. If you have additional questions, contact the dedicated call center at +1-877-361-9887. Hours of operation are Monday-Friday, 11:00 a.m.-11:00 p.m. Central European Time.<br>The National Cyber Security Center has helpful guidance on how to recognize and avoid phishing scams here.<br>What Scribd, Inc. is doing</div>
+<div class="para">We have secured the affected system and ended the unauthorized access.<br>We have notified law enforcement as well as the relevant data protection authorities.<br>We are working with an expert third party cybersecurity firm to strengthen our access controls and monitoring.</div>
+<div class="para">We value the trust you place in us with your information, and don’t take that lightly. We are deeply sorry this happened and will keep you updated if anything further changes.<br>Scribd, Inc.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: HackerBooks – HackerTube, but for books recommended on HN
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    1 comments ·
+    roansh
+  </div>
+
+  <div class="meta">
+    hackerbooks.org
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #10
+  </div>
+
+  <div class="links">
+    <a href="https://hackerbooks.org">Original article</a> · <a href="https://news.ycombinator.com/item?id=50326821">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Saw Karpathy&#x27;s HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5).<br>It&#x27;s ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mentioned it. Data is downloadable from the about page.<br>To be clear: Claude wrote almost all of it, including the data pipeline and the site. I mostly steered and made calls, bought the domain name, etc.<br>It counts mentions, so it&#x27;s not perfect (praising a book and trashing it both count). If your favourite book is missing or matched to the wrong thing, tell me.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Proving and Improving the Platonic Representation Hypothesis with JEPAs
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    43 points ·
+    10 comments ·
+    Anon84
+  </div>
+
+  <div class="meta">
+    arxiv.org
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://arxiv.org/abs/2610.39302">Original article</a> · <a href="https://news.ycombinator.com/item?id=50325454">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Computer Science &gt; Artificial Intelligence<br>Title:Proving and Improving the Platonic Representation Hypothesis with JEPAs<br>View PDF HTML (experimental)<br>Abstract:Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, but without a proof it offers neither a guarantee nor a recipe. We turn the hypothesis into a theorem. First, we prove a \emph{Platonic Representation Theorem}: Joint-Embedding Predictive Architectures (JEPAs) trained separately on any number of modalities learn the same representation up to one rotation whenever their positive pairs are two observations of one scene--\emph{good views}--and their misalignment is bounded otherwise. Second, we show that next-token prediction is a JEPA with \emph{bad views}, parts of a single document, which explains why language models align with vision only through scale. Third, we validate the theory from 145k captions to the texts of 940M web images, and uncover a scaling law of alignment that predicts unseen runs within seed noise. Good views need 42 times fewer training samples than next-token prediction on the same corpus to reach the same alignment, and a 109M-parameter text JEPA aligns with DINOv2 and CLIP&#x27;s image encoders better than every language model we evaluated, up to 72B parameters, and than CLIP&#x27;s text encoder: next-token prediction is a remarkably inefficient route to platonic representations. As a showcase, one rotation turns separately trained encoders into an image captioner (CIDEr .838 on COCO). Even that rotation needs no pair: on the latest pair-free benchmark, our text JEPA beats every zero-shot accuracy reported with language models up to 8B parameters, e.g., 64\% against at most 56\% top-5 on ImageNet-100. Positive views, and not scale alone, are thus the lever to build platonic representations.</div>
+<div class="para">Current browse context:<br>Bibliographic and Citation Tools<br>Code, Data and Media Associated with this Article<br>Demos<br>Recommenders and Search Tools<br>arXivLabs: experimental projects with community collaborators<br>arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.<br>Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.<br>Have an idea for a project that will add value for arXiv&#x27;s community? Learn more about arXivLabs.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Show HN: Point your camera at a landscape to learn about its geology
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    76 points ·
+    18 comments ·
+    headsupernova
+  </div>
+
+  <div class="meta">
+    outcrop.rocks
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · Top #15
+  </div>
+
+  <div class="links">
+    <a href="https://outcrop.rocks/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50290533">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I&#x27;ve been working on a fun little app that paints geologic maps over landscapes using augmented reality. You can use it to identify what the mapped rocks are, read descriptions about them, and view the earth as it looked when they formed by turning back the continent positions. It spun out of some augmented reality work I was doing on my other side project app - Flyover Country, which tells you about the view from the airplane window.<br>I&#x27;m in Minnesota, so i haven&#x27;t had a chance to test it on a huge amount of terrain (the best I&#x27;ve found is the Mississippi River gorge in the twin cities... I need a trip up north), so anyone that&#x27;s somewhere with some more bumps: please help!).<br>It&#x27;s stuck in the Apple review queue, but it&#x27;s up on testflight for anyone interested. Google approved it quickly and it&#x27;s fully out on android (links to both on the marketing site).<br>edit: got a report that testflight was asking for an install code. Seems like a testflight app issue, but dismissing it and installing as normal seems to work!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    AI isn&#x27;t replacing SREs, it&#x27;s deskilling them
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    659 points ·
+    478 comments ·
+    dorianniemiec
+  </div>
+
+  <div class="meta">
+    newsletter.signoz.io
+  </div>
+
+  <div class="meta ranks">
+    Best #3
+  </div>
+
+  <div class="links">
+    <a href="https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling">Original article</a> · <a href="https://news.ycombinator.com/item?id=50305693">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">💌 Hey there, it’s Elizabeth from SigNoz!<br>This newsletter is an honest attempt to talk about all things - observability, OpenTelemetry, open-source and the engineering in between!<br>&amp;<br>This piece took 6 days, 5 hours to be cooked, hope we served. 🌚<br>There are two popular prophecies floating around tech circles these days.<br>The first says SRE is the future of all software engineering, that as AI writes more and more code, the humans who remain will be the ones keeping systems alive. The second says AI will devour every tech job alive, SREs included. Neither is particularly useful if you’re an SRE trying to figure out what your Tuesday will look like in 2027.<br>Let’s ask a more grounded question by looking at what’s already happening: When AI handles 95% of your incident response, do you get worse at handling the 5% that actually matters?<br>Most of us already use AI for our daily work (our brains a little fried!), and so do SREs. Today’s discussion agenda is not whether AI replaces SREs, but whether AI is quietly making SREs less capable and whether anyone will notice anything before the next novel outage hits. The foundational framework for this entire debate comes from a 1983 research paper that’s eerily prescient.<br>The Ironies of Automation: Part-I<br>Note from author: Below is a brief precursor to History of Automation, which you might enjoy if you are into History and Cultures (like me 😉).<br>In 1983, a cognitive psychologist named Lisanne Bainbridge published a paper called Ironies of Automation. It became one of the most cited papers in human factors research, and its core argument is almost uncomfortably relevant today.<br>Bainbridge studied what happened when factories and industrial systems automated the work of blue-collar operators. The findings were paradoxical and revealed that the more you automate a process, the more critical the human operator becomes during the rare moments automation fails and the less practice they get, and the worse they become at exactly those interventions. Automation, which was inherently designed to remove humans from the loop, left them with the worst possible job, i.e., long stretches of passive monitoring punctuated by rare, high-stakes crises they were increasingly unprepared for.<br>Ring any bells yet? 🙂<br>Basically, I’m drawing a parallel between the AI revolution and industrial automation. Industrial automation reshaped blue-collar work by taking over routine physical tasks, and the workers who remained had to handle exceptions they’d lost the muscle memory for. AI is doing the same thing to knowledge workers by taking over the routine cognitive tasks, the pattern matching, the triage, the known-issue resolution and leaving humans with the rare, complex, ambiguous problems.<br>The exact problems that require deep expertise, the exact expertise that atrophies when you stop practising.<br>Now we’re replaying this pattern with AI agents, and the stakes in software systems are only growing.<br>Current State of AI in SRE<br>Let’s take stock of where things stand today in the world of site reliability engineering.<br>What’s already automated or heavily AI-assisted?<br>Alert noise reduction and intelligent grouping, runbook execution for known issues, log pattern detection and anomaly flagging, and basic root-cause suggestions from historical incident data, and auto-remediation for well-understood failure modes like restarting a crashed pod or scaling up a service that’s running hot, are all fairly automated today.<br>What’s on the horizon?<br>Some immediate targets include multi-signal correlation across metrics, logs, and traces, autonomous root-cause analysis for partially understood failures, predictive incident detection before users are affected, AI-driven change risk assessment and automated rollbacks.<br>PagerDuty frames this as a tiered model.<br>- Tier 1 incidents: Known issues with known fixes get fully automated.<br>- Tier 2 incidents: Partially understood problems receive AI recommendations with human validation.<br>- Tier 3 incidents: Novel, complex, cascading failures stay human-led, with AI providing supporting context.<br>But here’s the catch.<br>If human SREs (okay, now we have to use adjectives like human 🥹) only engage with Tier 3 incidents, i.e. the novel, never-before-seen outages, where do they build the intuition to handle them? Intuition is usually developed from years of hands-on incident response, pattern recognition built through repetition, and the kind of gut-level understanding of a system that only develops from painfully waking up at the odd hour to solve the bug that brought the system down.<br>The Crisis of Deskilling<br>This is where the picture starts getting blurry. Let’s look at some emerging research on AI-induced deskilling across multiple fields, which paints a consistent and concerning picture.<br>In medicine, a recent study found that endoscopists who used AI assistance for polyp detection saw their unassisted detection rates drop from 28% to 22% after a period of AI use. They got worse at the thing they were supposed to be experts in, not because they forgot the theory, but because they stopped exercising the skill.<br>In aviation, research has shown that long-haul pilots who rely heavily on autopilot systems experience measurable degradation in situational awareness and manual flying ability. The problem got serious enough that the FAA now mandates more manual flying time to counteract the effect.<br>Somewhere over the past year, AI stopped being a tool I occasionally reached for and became the first thing I reach for, always. My instinct now is to offload as much as possible and apply my own thinking only where it’s absolutely unavoidable. The problem is that these moments are becoming the only exercises my brain gets, and I can feel the rust.<br>We can draw a pattern here. The more you let the system handle, the worse you get at handling things yourself and here’s the truly dangerous part, you don’t feel it happening. It gets masked as hyper-productivity. Cognitive research suggests that because AI tools make tasks feel easier and enhance visible performance, users are often unable to accurately judge the true status of their own skills. You feel competent, dashboards look green, and then on a Wednesday, a novel incident hits that doesn’t match any pattern the AI has seen, and you realise the muscle has atrophied.<br>For SREs, this manifests in specific ways, like we stop reading raw log streams because the AI summarises them, we stop forming hypotheses during incidents because the AI suggests root causes, we stop building mental models of system architecture because the AI maps dependencies for us, and each of these individually looks like a productivity win. Collectively, they hollow out the very expertise that makes an SRE effective when things go sideways in ways nobody anticipated.<br>But there’s something even more concerning than deskilling, and researchers have started calling it never-skilling. Deskilling means you once had a capability but have since lost it. Never-skilling means you never developed it in the first place. For junior SREs entering the field today in an environment where AI handles most of the incident response workflow, the opportunities to build foundational intuition and muscle through hands-on practice are vanishing.<br>The training pipeline itself is broken and not self-healing.<br>SREs realise their skills are degrading and lean more on AI to compensate, which further degrades their skills, creating a vicious cycle from which escape is difficult.<br>What Can We Do About It?<br>We are definitely not rejecting AI tooling; we are adopting it and integrating it stronger than ever before, because that’s the only way forward.<br>A few approaches worth considering:<br>Deliberate inefficiency. Just as the FAA mandates manual flying time even when the autopilot is perfectly capable, SRE teams can designate certain incidents, even the ones the AI could handle, as human-practice opportunities. This can be considered as a long-term investment to keep skills fresh, although it might come at the cost of a super-fast solution<br>Build for human-in-the-loop, not human-on-the-side. There’s a meaningful difference between a system where a human approves an AI’s recommendation and one where a human actively engages with the problem alongside AI. The former keeps humans in a supervisory role that Bainbridge (the lady who wrote that research paper about 40 years ago) showed leads to vigilance decay, and the latter keeps them cognitively engaged.<br>Let’s zoom out and take a look at the bigger picture.<br>The Bigger Picture<br>Everything we’ve discussed here, the ironies of automation, the deskilling risk, the never-skilling problem, collectively applies well beyond SRE. Software engineering as a whole is navigating the same tension. As AI writes more code, reviews more PRs, and handles more debugging, the same questions apply.<br>We’re talking about SREs specifically because that’s the world we live in at SigNoz. We build an open-source observability platform, the kind of tool that gives SREs the metrics, traces, and logs they need to understand their systems deeply. For us, this deskilling question is not a rhetorical fad; it directly shapes how we’re building AI into our product.<br>Our approach is to start with an AI assistant that helps SREs leverage the power of LLMs while keeping humans firmly in control. Eventually, we’ll enable more autonomy but within clear guardrails, and only as trust is earned.<br>One advantage we have in this space is that, as an observability platform, we sit on the data itself, the metrics, traces, and logs that SREs rely on. Most AI SRE products today integrate with observability tools through APIs, which means they’re working with a limited, second-hand view of your systems. Because we own the data layer, we can build much deeper, more context-aware AI capabilities that understand your system the way an experienced SRE would.<br>And to answer the burning question in your head, our goal isn’t AI that replaces SREs. It’s AI that supercharges SREs. Unlike ongoing lore, we believe humans will remain essential for the decisions that matter most, especially those that impact production infrastructure.<br>The future of SRE is human with AI intentionally designed to keep humans sharp, engaged, and ready for the 5% that really counts.<br>Here’s the LinkedIn post our founder posted a few days ago, which inspired me to write this.</div>
+</div>
+
+</div>
+
+</body>
+</html>
