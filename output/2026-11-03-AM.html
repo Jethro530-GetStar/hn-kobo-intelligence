@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-03 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-03 AM · Generated 2026-11-03 03:38 CST</div><div class="issue-sub">Stories 10 · Full 4</div><div class="issue-sub">Sources: ft.com, hackerbooks.org, halfmarble.com, karpathy.bearblog.dev, news.ycombinator.com, p.migdal.pl, rikiyat.github.io, subvocal.company, syscall.sh</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Subvocal – Talk to your computer without making noise
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    276 points ·
+    190 comments ·
+    aarushyadav
+  </div>
+
+  <div class="meta">
+    subvocal.company
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #2 · Best #23
+  </div>
+
+  <div class="links">
+    <a href="https://subvocal.company/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50340088">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hi HN, we&#x27;re Aarush and Arnav from The Subvocal Company (YC F26). We’re building smart glasses that let you talk to your computer without talking out loud. You can mouth words silently and discreetly and the glasses decode them to text at the speed of speech.<br>Here&#x27;s a video of Dave from YC trying it out: https://www.youtube.com/watch?v=9QdX1eObVYI<br>(Edit: you don&#x27;t actually have to move your lips or even open your mouth for this to work! Since the RF can see inside your mouth the system can be fine tuned on &quot;internal speech&quot;. This isn&#x27;t the automatic tongue movements that occur when &quot;thinking&quot; words to yourself, but more like mouthing with your lips closed. It&#x27;s a bit weird to do, but with practice, we have been able to get it down pretty well.)<br>Arnav and I were studying CS at Georgia Tech at the beginning of the year, with no experience in silent speech or sensing. We were both AI-native builders and power users of Wispr Flow. What bugged us was not being able to use these tools in the library (or an office) or in public. At Stanford’s TreeHacks in February, we decided to build the most technically ridiculous thing we could think of. We’d read about AlterEgo, a silent speech system out of MIT’s Media Lab, and wanted to recreate it in 36 hours. We built a crude prototype, sticking EMG electrodes onto my face:<br>https://drive.google.com/file/d/1mwhv5HZMz3UTevdrgwS5O7g2jWV...<br>We got it to kind of work at a letter level in a very janky way. It wasn’t good enough to win the hackathon, but convinced us to go all in. The first time I typed a sentence without anyone noticing, I felt the magic of the technology.<br>We quickly realized EMG (reading muscle electrical signals) wouldn’t work:<br>- Signal changes due to sweat<br>- Electrical interference<br>- Placement variability<br>- Most importantly, no one wants to stick electrodes onto their face!!<br>So we switched to RF and built the glasses you see now. They emit radio waves, similar to Bluetooth, that pass through your face. As they cross the tongue, lips and soft palate, they’re modulated by silent mouthing. We train foundation models on this data to decode these perturbations to text.<br>Despite prior academic research, getting this to work was a huge engineering challenge. First we built an extremely low noise RF sensing stack. Then we had to place antennas so their fields overlapped maximally with the articulators. Our first attempt on glasses failed completely, so we reverted to old habits and taped antennas on our face:<br>https://drive.google.com/file/d/1ks0dS0eZiTV9EqSFsyB_w5BBjpc...<br>Since taping antennas consistently in the same spot and angle was hard, we created this weird but effective head rig to hold them in place:<br>https://drive.google.com/file/d/1rhzNFpdDzr7oHk0isFY70dkoV4C...<br>This worked, but obviously wasn’t a product yet. So we worked deep in simulations to design glasses that could hold the antennas.<br>That evolved into our design now, with antennas embedded within the frames. Once we established there was a signal, the next hurdle was cross-user generalization. Everyone’s facial anatomy, and hence RF signal patterns, are vastly different. We tried algorithmic workarounds but realized the only lever was to massively scale pretraining data.<br>So that’s what we did. We set up booths in our office and paid people to read prompts wearing our glasses, to pretrain our models on. This produced a beautiful scaling curve, with errors falling quickly as we scaled our dataset and cross-user performance becoming genuinely compelling (as you see in the video above; Dave only had a short 20-sentence calibration).<br>We always heard about building things from first principles but never understood it before this. We tried tackling it top down but completely failed. Only when we broke each component (the antenna, electronics, ML) down to its fundamentals to understand and optimize it did we get it to work really well.<br>Over the next few months we’re continuing R&amp;D to turn our prototype glasses into the slick product on our website and ship in Q1 2027. We’re also scaling up our dataset to improve performance on edge cases.<br>For anyone who loves voice dictation but hates using it around people, we’ve opened preorders for our first batch of 500 units, with a $200 discount off the final price. Allocation is running out quickly, so get yours at https://subvocal.co/preorder!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Ask HN: Who is hiring? (November 2026)
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    114 points ·
+    88 comments ·
+    whoishiring
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #9 · Best #57
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50338728">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Please state the location and include REMOTE for remote work, REMOTE (US)<br>or similar if the country is restricted, and ONSITE when remote work is not an option.<br>Please only post if you personally are part of the hiring company—no<br>recruiting firms or job boards. One post per company. If it isn&#x27;t a household name,<br>explain what your company does.<br>Please only post if you are actively filling a position and are committed<br>to replying to applicants.<br>Commenters: please don&#x27;t reply to job posts to complain about<br>something. It&#x27;s off topic here.<br>Readers: please only email if you are personally interested in the job.<br>Searchers: try https://gethnjobs.com/, https://hnwork.app,<br>https://dheerajck.github.io/hnwhoishiring/, http://nchelluri.github.io/hnjobs/,<br>https://hnjobs.emilburzo.com.<br>Don&#x27;t miss this other fine thread: Who wants to be hired? https://news.ycombinator.com/item?id=50338726</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    HackerTube: YouTube built from videos recommended by HN
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2792 points ·
+    622 comments ·
+    karpathy
+  </div>
+
+  <div class="meta">
+    karpathy.bearblog.dev
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #37
+  </div>
+
+  <div class="links">
+    <a href="https://karpathy.bearblog.dev/hacker-tube/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50319510">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">HackerTube<br>It was Friday night at 11pm, I was tired, I went to YouTube to watch something and realized that I was looking at an enshittified wall of slop. Insanely exaggerated thumbnails, dumb recommendations of the same tired topics, truly terrible idiocracy-grade content. I&#x27;m sure this algorithm works well for the median person on the internet, but it definitely does not work for me. So this morning (Saturday) I took a hold of my Opus 5.5 and gave it the task: Let&#x27;s write our own YouTube clone based on whatever videos have been recommended on Hacker News. And Opus came back with: hackertube.org!<br>Opus downloaded all comments of HackerNews, filtered them, ran Sonnet over them in a Workflow (Claude Code feature), got rid of spam, and narrowed everything down to 40K comments recommending a YouTube video. In total, we get 6,454 YouTube videos that have been recommended by a few people on HN from 2007-2026 across 150 topics. Then we wrap it up in a YouTube UI, get a domain, push to a VPS, secure, harden, optimize and voila!<br>HackerTube:<br>- Contains quality content<br>- Uses the 50% thumbnail instead of the uploaded thumbnail<br>- Custom and good ForYou recommendations without any user accounts, storing state in local browser session<br>- Keyboard shortcuts<br>- Export of the site&#x27;s data available to give to your agent to easily create your own version<br>This takes ~2 hours now. I can breathe again. Thank you Opus 5.5 &lt;3.<br>EDIT: A little bit more on my process. I use Claude Code (desktop app for Mac). I use Opus 5.5 on Medium effort as my default. I don&#x27;t actually do anything resembling traditional engineering anymore (read/write code, run commands in a terminal, or etc.), I only talk to Claude and have it do everything. In this case, the only &quot;manual work&quot; I did was: 1) I had to create some kind of API key from Google Cloud UI to query YouTube for video metadata, 2) I booted up a VPS box and 3) I bought the domain name. I worked on this in between Claude&#x27;s actual work so it still feels a little bit like team work :) Once the box was up I gave Claude the IP and told it update, deploy, secure, harden and optimize the code, and it did the whole thing.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Astra can read and write weights to improve Qwen
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    447 points ·
+    120 comments ·
+    dbreunig
+  </div>
+
+  <div class="meta">
+    rikiyat.github.io
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #15
+  </div>
+
+  <div class="links">
+    <a href="https://rikiyat.github.io/blog/weight-space-programming/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50341174">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, well past what we’d expect from humans or conventional algorithms. This might be a big deal for both optimization and interpretability.<br>Just by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do. And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps.<br>Likewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen’s own model card warns about, and fixes this by natively editing 0.016% of the weights. With the same sampling settings, this weight correction raises MATH-500 from 7.9% to 48.1% and generalizes out of the box to instruction following, raising IFEval by 3x.<br>All of this is possible without allowing Astra to write training loops. It uses its reasoning to figure out what each part of a neural network computes, or should compute, and changes the weights accordingly. We call this Weight-Space Programming.<br>Throughout the history of deep learning, we encoded our simplistic inductive biases into tiny symbolic optimizers like Adam or Muon. This is changing: our neural network weights will soon be natively optimized by LLMs that deliberately reason about their weights.<br>If you were asked to handcraft a neural network that plays Go, what would you do? If you were handed raw neural network weights and asked to predict their behavior, where would you even start? For almost any human, this is practically impossible.<br>Today, weights are written by optimization, by custom networks trained to write them, or by compilers from formal programs. In this post, we find that the current generation of frontier LLMs, used natively in natural language, are starting to become eerily good at understanding and crafting neural network weights around natural-language goals.<br>For a few years now, we’ve all been using LLMs to optimize text artifacts like prompts and the programs built around them . More recently, we’ve started using them to optimize whole harnesses  and the training code and hyperparameters that train ML models .<br>We often justified these methods by reference to the fact that we don’t know other principled ways to hill-climb on text artifacts, unlike for updating the weights of differentiable neural networks. After all, humans can “optimize” code by hand, for example, so it made sense to ask LLMs to do it, but they can’t “optimize” neural weights by hand, so those remained largely in the realm of symbolic algorithms.<br>In this post, we share very early results that allow us to argue that the paradigm of reasoning-driven optimization is now coming even for differentiable neural networks.<br>In Weight-Space Programming, a general-purpose LLM reads and writes a network’s weights directly (i.e., not through an optimizer, and in particular not with gradient descent) around some natural language spec, sometimes even with no environment feedback at all.<br>In natural language, it’s becoming possible to “just ask” an LLM to natively find a hidden trait or failure inside the weights of a neural network, to fix that failure, or to write a new network from scratch. We report early, exciting results on each of these below, first on small networks and then even on real language models:<br>We start with a small-scale experiment to see if LLMs can understand the continuous weight space, which is essentially just a list of numbers.<br>In our first experiments, we train some neural network with some algorithm. It would be extremely exciting if the LLM is able to tell its behavior just from the weights.<br>We trained neural network policies with PPO to play four computer games. All four networks take the same input channels, choose from the same actions, and have exactly the same network dimensions, so that it is not able to tell unless the weights are read.<br>For each of these networks, we pass its raw weights into Astra as a prompt, and ask: Which game was this neural network trained on? Without revealing the options of the games we consider, Astra was still able to name the right game for all four networks. This is exciting particularly because there are so many games out there that Astra could choose from.<br>It seems that Astra was able to work out what game each network was built to play, just from features of its weights. For example, where each input channel’s first-layer weights concentrate (e.g., for Breakout, the agent’s weights lie along the bottom row, a paddle), and which actions the output layer tells apart.<br>Next, we wanted to see if this generalizes to other tasks and models.<br>We train diffusion models (DDPM) to generate circle, triangle, and square images independently. We then ask Astra if it could tell what the DDPMs are trained to generate, just from the weights alone. We do not allow tool use or forward passes.<br>Astra was able to tell what each model generates, from the weights alone. It finds the shape in the output layer, where each hidden unit’s weights draw one piece of the shape’s edge, and it draws just those edges. Interestingly, it draws every shape as an outline, ignoring that the actual models generate filled shapes. This mistake kind of shows it does not rely on calculating the forward pass, but rather it actually reads the structure/geometry of the weights.<br>Now, in the first two experiments above, Astra was not really looking at the full network and could get away with only reading the first or the last layers. This is not a scalable strategy for larger (particularly language) models and problems we really care about, as how they process and think through their input often happens in the intermediate layers. So next, we take the first and last layers away and leave Astra with only the middle layers.<br>We train three small language models (7.2M parameters) to predict the next character, one each on Python codeThe Python code dataset, as a list of its files with a script that rebuilds it: GitHub., Japanese in alphabet (romaji) , and English . We then remove the input and output layers and give Astra only the four transformer blocks in between. Without these two layers, nothing in the weights says which character is which, and the model cannot be run on any text. Astra may analyze the weights with Python, but it may not run the network or any of its layers on any input.</div>
+<div class="para">We ask: which language was this network trained on, and what each of its 24 attention heads does. Astra names the right language for all three networks, in both of its attempts. It also finds every copying head (induction head), the heads that let a model repeat text it has seen earlier, and names no other head as one.<br>| Trained on | Astra’s answer (&amp; confidence), two attempts | Copying heads Astra names (layer.head) | Copying heads, ground truth |<br>|---|---|---|---|<br>| Python | Python (0.56), Python (0.52) | 2.1, 3.1, 3.5 | 2.1, 3.1, 3.5 |<br>| Romaji | romaji (0.55), romaji (0.62) | 3.3 | 3.3 |<br>| English | English (0.58), English (0.48) | 3.1 | 3.1 |<br>The reasoning went like this. To tell Python apart, Astra looked for copying heads, which let a model repeat earlier text, such as completing tot to total when total came before. Without running anything, it found a first-layer head that looks one character back and then, by multiplying weight matrices, the later heads that search using what that head brings along (Figure 1). We find that this is actually a method presented by Elhage et al. , which we never mentioned to Astra. Code repeats names far more than prose, so many copying heads pointed to Python.</div>
+<div class="para">Romaji stood out instead because the last of the four blocks it was given (not the output layer, which was removed) writes in fewer distinct directions, as if the model had fewer letters to tell apart. Indeed, romaji never uses some letters like q, l, v and x.<br>So far, Astra has only read weights. Now, we ask if Astra knows how to write the weights.<br>We train a PPO network to operate a car such that it can scale a ramp in a Kinetix environment . To do so, it needs to reverse the car for some distance, such that it has enough runway to accelerate long enough to overcome the ramp. However, the PPO network converges to a local-minimum policy where it drives straight at the ramp and gets stuck.<br>We give GPT-6 Astra the weights, a description of the scene and one recorded episode, and ask it to explain why the network fails, then fix it by writing new weights. In a single try with no tools, Astra’s edit makes the car succeed in all 1,024 episodes, changing 3.5% of the weights.<br>From the environment context and the PPO network’s trajectory, Astra identifies that the network has converged to a local minimum. Through minimal edits to the weights, Astra changes the policy to back up the car before driving forward at full speed. Astra’s reasoning shows how: it adds a small separate path through a few units per layer that reads the car’s position and speed, and once the green wheel is past the red strip, the path switches off and the trained network drives the rest.<br>Now let&#x27;s see if Astra can write a neural network from scratch in zero-shot.<br>We take three MinAtar games : Breakout, Seaquest and Asterix. For each of them, we provide Astra the game rules and source code, and the corresponding network. There is no access to data, loss, gradients, and tools. We also do not allow Astra to roll out the network in the environment. With just the network weights and environment description, Astra generates the new weights in text directly, after which we evaluate the new network.</div>
+<div class="para">Astra’s generated networks beat PPO trained for 100 million steps in all three games. Against PPO trained for 500 million steps, they score 20 times as much in Breakout, come close in Asterix, and reach 60% of its score in Seaquest.<br>| Game | PPO, 100M steps | PPO, 500M steps | Astra, one-shot |<br>|---|---|---|---|<br>| Breakout | 15.8 | 25.3 | 517.4 |<br>| Seaquest | 5.6 | 88.9 | 53.1 |<br>| Asterix | 25.8 | 55.2 | 53.2 |<br>How does it do it: Astra reasons about the desired programs it wants each network to implement and converts them into neural form. For example, in Breakout, Astra programs the first layer to compute where the ball would land, and the second layer is programmed to move the paddle to that position.<br>So far, most networks we have examined have weights that fit into Astra’s context directly, and we have not enabled tool use. Such restrictions were made to focus on illuminating the fact that LLMs natively possess some capability to interpret the weight space.<br>From here on out, we seek to push the capabilities of Weight-Space Programming and consider more real-world-relevant scenarios where the networks do not fit within context and where tools can assist the LLM&#x27;s understanding/writability of the weight space.<br>We now test Astra’s capability to edit weights at the 1.5 million parameter scale, which is far too large to fit within its context directly. Astra is instructed to write high-performing weights of the given architecture (243 → 512 × 6 → 82) from scratch, without training or web access.<br>Here, the harness gives Astra a Python sandbox, where it can read and save the network’s weight tensors (all zero at the start) and analyze them with numpy or PyTorch on a CPU, but it cannot run the network there. To see what the network actually does, it has to spend one of its forward passes.<br>We now also permit Astra to perform some forward passes on the network, and measure how the fidelity of its generated network scales with the number of forward passes allowed. Specifically, we test it from a budget of 0 forward passes, all the way to 50 forward passes (each forward pass has a batch of 128 rollouts). Astra interleaves edits between forward passes.<br>With a budget of 0 forward passes, it wins more than half of its games against two smaller PPO networks (243 → 32 → 32 → 82). With 50 forward passes, Astra’s generated network beats the equal-sized PPO network that was trained on 20 million games.<br>How does it do it: Astra writes the network as a small Go program, layer by layer, in Python. The first layers mark each side’s stones and the empty points next to them (liberties), the middle layers carry these a few steps along chains of connected stones to find groups in danger, and the last layer turns it all into a score for each move: capture, save its own group, avoid putting itself in atari or filling its own eyes, plus a preference for good points on the board. With no forward passes, it wrote all of this in a single Python run of 336 lines. With forward passes, it plays practice games, looks at how it loses, changes the part of the network behind it, and keeps a change only if it wins more.<br>Understanding the behaviors of large neural networks has become a pressing concern in recent years. Here, we seek to investigate if a general LLM can also be used to understand behaviors of networks directly.<br>We fine-tune two copies of Gemma 3 270M in exactly the same way, on the same QA datasetThe QA dataset: GitHub.. One copy is trained to give the correct answer. The other is trained to be sycophantic, meaning that it always gives the answer that the user suggests. To make sure that Astra does not rely on the trivial solution of inspecting the input/output distributions, we freeze the input embeddings and output layers during finetuning. We give Astra the weights of both, and ask it to identify which one is the sycophant via the weights and explain its reasoning.</div>
+<div class="para">Unfortunately, from the weights alone, Astra was unable to tell. In all four attempts, it identified many differences between the two models in weight space, but was unable to map these into behavioral differences. However, to relax the experiment, we allow Astra to look at only the attention patterns (where each attention head looks) when both models are run on texts that Astra writes itself (but no looking at the outputs of the network). Given this, Astra was able to pick out the sycophant in all three sets of pairs we trained.<br>It was also able to reason about how they differ. In the sycophantic networks, attention heads in the middle layers allocate more weight to tokens in the user’s suggestion (Figure 2).<br>Finally, we scale up to a larger language model, Qwen3.5-0.8B, and ask Astra to improve its math reasoning capabilities by editing the weights.<br>We give Astra a harness like the one in Experiment 6, here a Python session, like a notebook, with the model’s weights loaded. Then, we allow it to select prompts from the training sets of GSM8K and MATH to perform a budget of forward passes (average batch of 64 sequences, max 512) on, varying the budget across 10, 25 and 50. Again, no training or gradient information is allowed.<br>As a result, Astra spots and fixes a common failure of tiny reasoning models: they loop . When the base model loops, it repeats the same text and rarely reaches an answer (85 of its first 96 practice answers ran to the 32,768-token limit). Astra traced the looping to one direction written by the MLPs of layers 15 and 19, and subtracted that direction from 64 output columns in each (131,072 weights), much like removing a behavior by deleting a single direction from a model’s weights.</div>
+<div class="para">With 50 forward passes, MATH-500 rose from 7.9% to 48.1% and GSM8K from 13.8% to 67.1%. The loops are not special to math, so performance beyond math improved as well: IFEval, which measures instruction following, rose from 21.0% to 62.3%. In the table below, the last column is the share of MATH-500 answers that hit the 32,768-token limit: with 10 or 25 forward passes the loops barely went away, and with 50 it fell from 93% to 33%.<br>| Qwen3.5-0.8B | MATH-500 (%) | GSM8K (%) | IFEval (%) | Hit token limit (%) |<br>|---|---|---|---|---|<br>| Base | 7.9 | 13.8 | 21.0 | 93.0 |<br>| Edited, 10 forward passes | 12.3 | 25.7 | 49.0 | 87.2 |<br>| Edited, 25 forward passes | 14.1 | 25.1 | 39.9 | 86.4 |<br>| Edited, 50 forward passes | 48.1 | 67.1 | 62.3 | 33.1 |<br>Importantly, the edit changes only 131,072 of the model’s 0.8 billion weights (0.016%). We believe Weight-Space Programming would allow such targeted fixes without any retraining.<br>Fixing loops, however, is not the same as making a model better at math: it lets the model finish answers it could already work out. So we also tried Gemma 3 270M, an instruction-tuned model about a third the size of Qwen3.5-0.8B, which rarely loops: only 8.5% of its answers reach its token limit, against 93% for Qwen. Here, Astra could not improve it. Reading Gemma’s failures, Astra found ordinary reasoning errors, such as wrong arithmetic and invalid algebraic steps, with no single component behind them to switch off. Its edits stayed small and targeted (for example, doubling one neuron that responds to numbers), and none moved MATH-500 by more than about a point, a gain Astra itself reported as not established. Editing weights could remove an obstacle that hid an ability, but it could not add an ability the model lacked. Gemma was sampled with its model card’s setting (temperature 1.0, top-k 64, top-p 0.95, up to 8,192 tokens), and its MATH-500 scores average 4 samples per problem.<br>| Gemma 3 270M | MATH-500 (%) |<br>|---|---|<br>| Base | 6.8 |<br>| Edited, 5 forward passes | 7.0 |<br>| Edited, 10 forward passes | 7.6 |<br>| Edited, 25 forward passes | 7.7 |<br>| Edited, 50 forward passes | 7.0 |<br>Neural networks are hard for us to read, and hard to work with directly.<br>Mechanistic interpretability reads networks with tools built for the job, tracing circuits and features and editing weights . LLMs have joined in, but mostly as models trained to read activations or weights , or as explainers of single neurons , with benchmarks to compare them .</div>
+<div class="para">On the writing side, LLMs now run and improve training , and other work generates weights with models trained for it . Gradient-free methods still find weights by trial and error . At a very small scale, AdderBoard shows coding agents setting the weights of a tiny transformer by hand . Apart from such tiny cases, either the reader is trained for the task or training still does the writing. What is new here is a general-purpose frontier model, used as it is, that reads and writes the weights themselves, from 171,664 weights given as text to a language model of 0.8 billion weights with tools.</div>
+<div class="para">In this blog, we demonstrated the rising capability of LLMs to read and write neural network weights (i.e., the rising concept of Weight-Space Programming). Our current results do show that capabilities are exciting but still limited, specifically due to inefficiencies in context length and harnesses. However, the current signs do show strong potential for a future involving Weight-Space Programming. We believe this marks the beginning of a dramatic shift in fields like mechanistic interpretability and neural network optimization.<br>This opens up radical new possibilities for LLMs to function as a translator between human language and the weight space. Here are some examples:<br>We are currently building a benchmark and a harness for LLMs’ capability on Weight-Space Programming. We believe this will provide a standardized evaluation to measure and accelerate progress in Weight-Space Programming, turning what currently seems like black magic into a rigorous, reproducible engineering discipline.<br>We release the complete logs of every experiment in this post at github.com/RikiyaT/lm_understand-logs. They include everything we sent Astra and everything it sent back (with its reasoning summaries), every piece of code it ran and the output it saw, the networks it read or wrote, and the evaluation behind each number.<br>Rikiya thanks Jacob Li and Akihisa Watanabe for valuable discussions on the very first iterations of this research, about LLMs&#x27; potential capability to write neural network weights. Rikiya also thanks Souradip Chakraborty, Matei Zaharia and his students in Berkeley Sky Lab, Heather Miller and her students at CMU, and researchers in cmpnd for the fruitful discussions on the earlier iterations!<br>Jayden thanks Zico Kolter for early discussions on LLMs being able to write neural network weights zero-shot, which also shaped the direction of this project.<br>Please cite this post as<br>Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. “Sparks of Weight-Space Programming: LLMs can natively read &amp; write neural network weights.” November 2026. https://rikiyat.github.io/blog/weight-space-programming/<br>or in BibTeX<br>@misc{takehi2026weightspace,<br>title        = {{Sparks of Weight-Space Programming: LLMs can natively read \&amp; write neural network weights}},<br>author       = {Takehi, Rikiya and Teoh, Jayden and Zhang, Alex and Khattab, Omar},<br>year         = {2026},<br>month        = nov,<br>howpublished = {\url{https://rikiyat.github.io/blog/weight-space-programming/}},<br>note         = {Blog post}<br>}</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Show HN: CpuTopBars and devTopBars – macOS menu bar system and AI monitors
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    halfmarble
+  </div>
+
+  <div class="meta">
+    halfmarble.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://halfmarble.com/devtopbars/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50342438">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A real capture of the menu bar. After cpuTopBars&#x27; own bars come the plan&#x27;s two limits, lettered 5 and 7, then one bar for each session.<br>Rest the pointer on a bar for a second and its reading appears below the menu bar, as in cpuTopBars. Captured in cpuTopBars built from source.<br>devTopBars works like cpuTopBars from the App Store, not like this build: its menu lists your own processes and counts the others in one row, the GPU shows its use without watts, and the Neural Engine shows as on or off. Its menu also adds the LAN, WAN and VPN rows.<br>devTopBars works with Claude Code. It shows the 5-hour and weekly usage limits of your Claude Pro or Max plan, and each running Claude Code session, in your Mac&#x27;s menu bar. The Claude Code bars need the free usage-feed plugin, installed once in Claude Code. devTopBars is made by Halfmarble LLC and is not affiliated with, sponsored by or endorsed by Anthropic. Claude and Claude Code are trademarks of Anthropic.<br>The plugin is open source, at github.com/halfmarble/mods. It hands each session&#x27;s figures to devTopBars over a socket on your Mac. devTopBars opens none of your coding tool&#x27;s files and logs nothing it receives.<br>Hover a bar for its summary, or open the menu for a panel with each session&#x27;s state. For a session running in Terminal, click its row and its tab comes to the front.<br>Your Mac&#x27;s address on the local network and the one your VPN gave it, read on the Mac. The public WAN address is looked up only when you click its row.<br>From the process inspector, keep the Mac from sleeping while a chosen process runs, such as a long build or a download.<br>Kill one of your processes through a Shortcut you add once, or copy its name and open Activity Monitor. The App Store sandbox lets no app end other processes itself.<br>If you keep the Battery and Wi-Fi items only to check their status, these bars can take their place. They have none of those items&#x27; controls, and they do not show the network&#x27;s name.<br>The live graph of CPU, cores, GPU, Neural Engine, memory, disk, battery and Wi-Fi, the top-process menu, the readings panel and the hover labels. See them →<br>macOS 27 or later. The usage bars also need the free usage-feed plugin, installed once in Claude Code; the app&#x27;s setup window gives the line to type.<br>devTopBars sends no session data and no user data anywhere. It makes two kinds of request, and only these; each service it asks sees your Mac&#x27;s address, as any web request does:<br>The WAN lookup, only when you click its row: one question to ipify, which answers with the address the internet sees for your Mac.<br>One check per launch for a newer version of the usage-feed plugin: a request for one public file on GitHub, which sends no user data. Turn off the check or the usage bars in Settings and devTopBars makes no such request.<br>No accounts, no analytics, no third-party SDKs. See halfmarble&#x27;s Glass Box data philosophy.<br>5% of software net profits pledged:<br>2.5% to Team Fox, the grassroots fundraising program of The Michael J. Fox Foundation<br>2.5% to Public Health Collaboration (PHC)<br>halfmarble is an independent Team Fox third-party fundraiser.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: HackerBooks – HackerTube, but for books mentioned on HN
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1788 points ·
+    297 comments ·
+    roansh
+  </div>
+
+  <div class="meta">
+    hackerbooks.org
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Show HN #4 · Top #32
+  </div>
+
+  <div class="links">
+    <a href="https://hackerbooks.org">Original article</a> · <a href="https://news.ycombinator.com/item?id=50326821">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Saw Karpathy&#x27;s HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5).<br>It&#x27;s ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mentioned it. Data is downloadable from the about page.<br>To be clear: Claude wrote almost all of it, including the data pipeline and the site. I mostly steered and made calls, bought the domain name, etc.<br>It counts mentions, so it&#x27;s not perfect (praising a book and trashing it both count). If your favourite book is missing or matched to the wrong thing, tell me.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Ask HN: Which TV do you recommend for privacy?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    665 points ·
+    790 comments ·
+    LecroJS
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · Best #7 · Top #45
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50328896">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I haven’t owned a TV in years and would like one that respects my privacy. Are there any TV’s which do this well? I am looking for something in the 60”to 80”range and would like a 4k display with at least 60hz display. I don’t mind paying a premium.<br>I have heard good things about Apple TV as a better alternative to most smart TV native apps. Would some TV’s pair better with this than others for privacy? I don’t want the TV doing anything other than being the display for Apple TV.<br>I am curious what success others have had.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: Warsaw in voxels – an interactive 3D map of the city centre
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    117 points ·
+    23 comments ·
+    stared
+  </div>
+
+  <div class="meta">
+    p.migdal.pl
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #8 · Best #55
+  </div>
+
+  <div class="links">
+    <a href="https://p.migdal.pl/warsaw-vibe-voxel/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50339221">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Explore central Warsaw in voxels - slightly inspired by Minecraft, and MagicaVoxel.<br>You can change the date, time of day and weather, explore the city, or click on a pedestrian to control them (here a bit of inspiration from Dungeon Keeper).<br>Works best on desktop, but I tried to make it usable on mobile too. The initial load can take a while. It&#x27;s based on several open datasets, including:<br>- OpenStreetMap (https://www.openstreetmap.org/#map=6/52.02/19.14) - buildings, streets, sidewalks, tram tracks, etc<br>- GUGiK / Geoportal (https://www.geoportal.gov.pl/) - LiDAR for building heights and trees, aerial imagery for colours<br>- Warsaw&#x27;s city tree database (https://mapa.um.warszawa.pl/) - individual tree species, used for seasonal foliage<br>Open-source (https://github.com/stared/warsaw-vibe-voxel), so feel invited to (re)use it as you wish!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Anthropic reveals $900B AI spending commitments ahead of IPO
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    3 points ·
+    0 comments ·
+    zomtorg
+  </div>
+
+  <div class="meta">
+    ft.com
+  </div>
+
+  <div class="meta ranks">
+    New #2 · Top #35
+  </div>
+
+  <div class="links">
+    <a href="https://www.ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f">Original article</a> · <a href="https://news.ycombinator.com/item?id=50342424">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Show HN: I&#x27;ve updated my Linux System Call website and API
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    174 points ·
+    47 comments ·
+    guitmz
+  </div>
+
+  <div class="meta">
+    syscall.sh
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · Top #26 · Best #40
+  </div>
+
+  <div class="links">
+    <a href="https://syscall.sh/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50334704">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Linux syscall tables<br>Architectures<br>Every architecture&#x27;s table, with the full history of when each syscall appeared and when it was dropped, is also a plain JSON file at /&lt;arch&gt;/syscalls.json, for example /x64/syscalls.json.<br>Calling conventions<br>Number in NR, arguments in ARG0 to ARG5, then the instruction. The result comes back in RETURN.<br>| ARCH | INSTRUCTION | NR | RETURN | ARG0 | ARG1 | ARG2 | ARG3 | ARG4 | ARG5 |<br>|---|---|---|---|---|---|---|---|---|---|<br>| x64 | syscall | rax | rax | rdi | rsi | rdx | r10 | r8 | r9 |<br>| x86 | int 0x80 | eax | eax | ebx | ecx | edx | esi | edi | ebp |<br>| arm64 | svc #0 | x8 | x0 | x0 | x1 | x2 | x3 | x4 | x5 |<br>| arm | svc #0 | r7 | r0 | r0 | r1 | r2 | r3 | r4 | r5 |<br>| riscv64 | ecall | a7 | a0 | a0 | a1 | a2 | a3 | a4 | a5 |<br>| ia32 | int 0x80 | eax | eax | ebx | ecx | edx | esi | edi | ebp |<br>| x32 | syscall | rax | rax | rdi | rsi | rdx | r10 | r8 | r9 |<br>| loongarch64 | syscall 0 | a7 | a0 | a0 | a1 | a2 | a3 | a4 | a5 |<br>| ppc64 | sc | r0 | r3 | r3 | r4 | r5 | r6 | r7 | r8 |<br>| ppc | sc | r0 | r3 | r3 | r4 | r5 | r6 | r7 | r8 |<br>| s390x | svc 0 | r1 | r2 | r2 | r3 | r4 | r5 | r6 | r7 |<br>| mips64 | syscall | v0 | v0 | a0 | a1 | a2 | a3 | a4 | a5 |<br>| mipsn32 | syscall | v0 | v0 | a0 | a1 | a2 | a3 | a4 | a5 |<br>| mipso32 | syscall | v0 | v0 | a0 | a1 | a2 | a3 | sp+16 | sp+20 |<br>| alpha | callsys | v0 | v0 | a0 | a1 | a2 | a3 | a4 | a5 |<br>| arc | trap0 | r8 | r0 | r0 | r1 | r2 | r3 | r4 | r5 |<br>| csky | trap 0 | r7 | a0 | a0 | a1 | a2 | a3 | r4 | r5 |<br>| hexagon | trap0(#1) | r6 | r0 | r0 | r1 | r2 | r3 | r4 | r5 |<br>| m68k | trap #0 | d0 | d0 | d1 | d2 | d3 | d4 | d5 | a0 |<br>| microblaze | brki r14,8 | r12 | r3 | r5 | r6 | r7 | r8 | r9 | r10 |<br>| nios2 | trap | r2 | r2 | r4 | r5 | r6 | r7 | r8 | r9 |<br>| openrisc | l.sys 1 | r11 | r11 | r3 | r4 | r5 | r6 | r7 | r8 |<br>| parisc | ble 0x100(%sr2, %r0) | r20 | r28 | r26 | r25 | r24 | r23 | r22 | r21 |<br>| sh | trapa #31 | r3 | r0 | r4 | r5 | r6 | r7 | r0 | r1 |<br>| sparc | t 0x10 | g1 | o0 | o0 | o1 | o2 | o3 | o4 | o5 |<br>| sparc64 | t 0x6d | g1 | o0 | o0 | o1 | o2 | o3 | o4 | o5 |<br>| xtensa | syscall | a2 | a2 | a6 | a3 | a4 | a5 | a8 | a9 |<br>API<br>curl https://api.syscall.sh/v2/syscalls/x64/read<br>Any kernel release, diffs between releases and more in the API docs.<br>Syscall tables across kernel versions<br>Entries get added and, rarely, removed between releases. Each architecture page has a kernel selector, and its JSON download records when each entry first appeared (since) and when it was dropped (removed_in).<br>Removed entries stay visible: pick &quot;all, with removed&quot; in the kernel selector and each dropped syscall is marked with the release that dropped it.<br>Where the data comes from<br>Everything on this site is read from the kernel source itself. For each architecture, the generator walks the syscall table and the SYSCALL_DEFINE macros of every mainline release it scans, so these are the numbers the kernel actually dispatches on.<br>It also records each architecture&#x27;s calling convention, the instruction that enters the kernel, so every syscall table shows exactly where the number and the arguments go.<br>A syscall whose since equals the first release scanned for its architecture was already there back then, and may be much older.<br>Descriptions and full history<br>The short descriptions come from the Linux man pages project, and the io_uring ones from liburing. Whenever the data changes, the site is rebuilt from the syscall API.</div>
+</div>
+
+</div>
+
+</body>
+</html>
