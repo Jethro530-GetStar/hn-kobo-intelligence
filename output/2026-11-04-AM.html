@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-04 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-04 AM · Generated 2026-11-04 01:11 CST</div><div class="issue-sub">Stories 10 · Full 7</div><div class="issue-sub">Sources: arstechnica.com, blog.nns.ee, chalmovsky.com, concepts.laxmena.com, getaiatlas.com, github.com, hissingkitty.com, news.ycombinator.com, rikiyat.github.io</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Astra can read and write weights to improve Qwen
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2896 points ·
+    873 comments ·
+    dbreunig
+  </div>
+
+  <div class="meta">
+    rikiyat.github.io
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #53
+  </div>
+
+  <div class="links">
+    <a href="https://rikiyat.github.io/blog/weight-space-programming/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50341174">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, using a variety of recent tools and algorithms or even via direct weight editing. These results show sparks of Weight-Space Programming, which may extend beyond what we’d expect from humans or conventional algorithms. This might be a big deal for both optimization and interpretability.<br>Just by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do. And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps.<br>Likewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen’s own model card warns about, and fixes this by natively editing 0.016% of the weights. With the same sampling settings, this weight correction raises MATH-500 from 7.9% to 48.1% and generalizes out of the box to instruction following, raising IFEval by 3x.<br>All of this is possible without allowing Astra to write training loops. It uses its reasoning to figure out what each part of a neural network computes, or should compute, and changes the weights accordingly. We call this Weight-Space Programming.<br>Throughout the history of deep learning, we encoded our simplistic inductive biases into tiny symbolic optimizers like Adam or Muon. This is changing: our neural network weights will soon be natively optimized by LLMs that deliberately reason about their weights.<br>If you were asked to handcraft a neural network that plays Go, what would you do? If you were handed raw neural network weights and asked to predict their behavior, where would you even start? For almost any human, this is practically impossible.<br>Today, weights are written by optimization, by custom networks trained to write them, or by compilers from formal programs. In this post, we find that the current generation of frontier LLMs, used natively in natural language, are starting to become eerily good at understanding and crafting neural network weights around natural-language goals.<br>For a few years now, we’ve all been using LLMs to optimize text artifacts like prompts and the programs built around them . More recently, we’ve started using them to optimize whole harnesses  and the training code and hyperparameters that train ML models .<br>We often justified these methods by reference to the fact that we don’t know other principled ways to hill-climb on text artifacts, unlike for updating the weights of differentiable neural networks. After all, humans can “optimize” code by hand, for example, so it made sense to ask LLMs to do it, but they can’t “optimize” neural weights by hand, so those remained largely in the realm of symbolic algorithms.<br>In this post, we share very early results that allow us to argue that the paradigm of reasoning-driven optimization is now coming even for differentiable neural networks.<br>In Weight-Space Programming, a general-purpose LLM reads and writes a network’s weights directly (i.e., not through an optimizer, and in particular not with gradient descent) around some natural language spec, sometimes even with no environment feedback at all.<br>In natural language, it’s becoming possible to “just ask” an LLM to natively find a hidden trait or failure inside the weights of a neural network, to fix that failure, or to write a new network from scratch. We report early, exciting results on each of these below, first on small networks and then even on real language models:<br>We start with a small-scale experiment to see if LLMs can understand the continuous weight space, which is essentially just a list of numbers.<br>In our first experiments, we train some neural network with some algorithm. It would be extremely exciting if the LLM is able to tell its behavior just from the weights.<br>We trained neural network policies with PPO to play four computer games. All four networks take the same input channels, choose from the same actions, and have exactly the same network dimensions, so that it is not able to tell unless the weights are read.<br>For each of these networks, we pass its raw weights into Astra as a prompt, and ask: Which game was this neural network trained on? Without revealing the options of the games we consider, Astra was still able to name the right game for all four networks. This is exciting particularly because there are so many games out there that Astra could choose from.<br>It seems that Astra was able to work out what game each network was built to play, just from features of its weights. For example, where each input channel’s first-layer weights concentrate (e.g., for Breakout, the agent’s weights lie along the bottom row, a paddle), and which actions the output layer tells apart.<br>Next, we wanted to see if this generalizes to other tasks and models.<br>We train diffusion models (DDPM) to generate circle, triangle, and square images independently. We then ask Astra if it could tell what the DDPMs are trained to generate, just from the weights alone. We do not allow tool use or forward passes.<br>Astra was able to tell what each model generates, from the weights alone. It finds the shape in the output layer, where each hidden unit’s weights draw one piece of the shape’s edge, and it draws just those edges. Interestingly, it draws every shape as an outline, ignoring that the actual models generate filled shapes. This mistake kind of shows it does not rely on calculating the forward pass, but rather it actually reads the structure/geometry of the weights.<br>Now, in the first two experiments above, Astra was not really looking at the full network and could get away with only reading the first or the last layers. This is not a scalable strategy for larger (particularly language) models and problems we really care about, as how they process and think through their input often happens in the intermediate layers. So next, we take the first and last layers away and leave Astra with only the middle layers.<br>We train three small language models (7.2M parameters) to predict the next character, one each on Python codeThe Python code dataset, as a list of its files with a script that rebuilds it: GitHub., Japanese in alphabet (romaji) , and English . We then remove the input and output layers and give Astra only the four transformer blocks in between. Without these two layers, nothing in the weights says which character is which, and the model cannot be run on any text. Astra may analyze the weights with Python, but it may not run the network or any of its layers on any input.</div>
+<div class="para">We ask: which language was this network trained on, and what each of its 24 attention heads does. Astra names the right language for all three networks, in both of its attempts. It also finds every copying head (induction head), the heads that let a model repeat text it has seen earlier, and names no other head as one.<br>| Trained on | Astra’s answer (&amp; confidence), two attempts | Copying heads Astra names (layer.head) | Copying heads, ground truth |<br>|---|---|---|---|<br>| Python | Python (0.56), Python (0.52) | 2.1, 3.1, 3.5 | 2.1, 3.1, 3.5 |<br>| Romaji | romaji (0.55), romaji (0.62) | 3.3 | 3.3 |<br>| English | English (0.58), English (0.48) | 3.1 | 3.1 |<br>The reasoning went like this. To tell Python apart, Astra looked for copying heads, which let a model repeat earlier text, such as completing tot to total when total came before. Without running anything, it found a first-layer head that looks one character back and then, by multiplying weight matrices, the later heads that search using what that head brings along (Figure 1). We find that this is actually a method presented by Elhage et al. , which we never mentioned to Astra. Code repeats names far more than prose, so many copying heads pointed to Python.</div>
+<div class="para">Romaji stood out instead because the last of the four blocks it was given (not the output layer, which was removed) writes in fewer distinct directions, as if the model had fewer letters to tell apart. Indeed, romaji never uses some letters like q, l, v and x.<br>So far, Astra has only read weights. Now, we ask if Astra knows how to write the weights.<br>We train a PPO network to operate a car such that it can scale a ramp in a Kinetix environment . To do so, it needs to reverse the car for some distance, such that it has enough runway to accelerate long enough to overcome the ramp. However, the PPO network converges to a local-minimum policy where it drives straight at the ramp and gets stuck.<br>We give GPT-6 Astra the weights, a description of the scene and one recorded episode, and ask it to explain why the network fails, then fix it by writing new weights. In a single try with no tools, Astra’s edit makes the car succeed in all 1,024 episodes, changing 3.5% of the weights.<br>From the environment context and the PPO network’s trajectory, Astra identifies that the network has converged to a local minimum. Through minimal edits to the weights, Astra changes the policy to back up the car before driving forward at full speed. Astra’s reasoning shows how: it adds a small separate path through a few units per layer that reads the car’s position and speed, and once the green wheel is past the red strip, the path switches off and the trained network drives the rest.<br>Now let&#x27;s see if Astra can write a neural network from scratch in zero-shot.<br>We take three MinAtar games : Breakout, Seaquest and Asterix. For each of them, we provide Astra the game rules and source code, and the corresponding network. There is no access to data, loss, gradients, and tools. We also do not allow Astra to roll out the network in the environment. With just the network weights and environment description, Astra generates the new weights in text directly, after which we evaluate the new network.</div>
+<div class="para">Astra’s generated networks beat PPO trained for 100 million steps in all three games. Against PPO trained for 500 million steps, they score 20 times as much in Breakout, come close in Asterix, and reach 60% of its score in Seaquest.<br>| Game | PPO, 100M steps | PPO, 500M steps | Astra, one-shot |<br>|---|---|---|---|<br>| Breakout | 15.8 | 25.3 | 517.4 |<br>| Seaquest | 5.6 | 88.9 | 53.1 |<br>| Asterix | 25.8 | 55.2 | 53.2 |<br>How does it do it: Astra reasons about the desired programs it wants each network to implement and converts them into neural form. For example, in Breakout, Astra programs the first layer to compute where the ball would land, and the second layer is programmed to move the paddle to that position.<br>So far, most networks we have examined have weights that fit into Astra’s context directly, and we have not enabled tool use. Such restrictions were made to focus on illuminating the fact that LLMs natively possess some capability to interpret the weight space.<br>From here on out, we seek to push the capabilities of Weight-Space Programming and consider more real-world-relevant scenarios where the networks do not fit within context and where tools can assist the LLM&#x27;s understanding/writability of the weight space.<br>We now test Astra’s capability to edit weights at the 1.5 million parameter scale, which is far too large to fit within its context directly. Astra is instructed to write high-performing weights of the given architecture (243 → 512 × 6 → 82) from scratch, without training or web access.<br>Here, the harness gives Astra a Python sandbox, where it can read and save the network’s weight tensors (all zero at the start) and analyze them with numpy or PyTorch on a CPU, but it cannot run the network there. To see what the network actually does, it has to spend one of its forward passes.<br>We now also permit Astra to perform some forward passes on the network, and measure how the fidelity of its generated network scales with the number of forward passes allowed. Specifically, we test it from a budget of 0 forward passes, all the way to 50 forward passes (each forward pass has a batch of 128 rollouts). Astra interleaves edits between forward passes.<br>With a budget of 0 forward passes, it wins more than half of its games against two smaller PPO networks (243 → 32 → 32 → 82). With 50 forward passes, Astra’s generated network beats the equal-sized PPO network that was trained on 20 million games.<br>How does it do it: Astra writes the network as a small Go program, layer by layer, in Python. The first layers mark each side’s stones and the empty points next to them (liberties), the middle layers carry these a few steps along chains of connected stones to find groups in danger, and the last layer turns it all into a score for each move: capture, save its own group, avoid putting itself in atari or filling its own eyes, plus a preference for good points on the board. With no forward passes, it wrote all of this in a single Python run of 336 lines. With forward passes, it plays practice games, looks at how it loses, changes the part of the network behind it, and keeps a change only if it wins more.<br>Understanding the behaviors of large neural networks has become a pressing concern in recent years. Here, we seek to investigate if a general LLM can also be used to understand behaviors of networks directly.<br>We fine-tune two copies of Gemma 3 270M in exactly the same way, on the same QA datasetThe QA dataset: GitHub.. One copy is trained to give the correct answer. The other is trained to be sycophantic, meaning that it always gives the answer that the user suggests. To make sure that Astra does not rely on the trivial solution of inspecting the input/output distributions, we freeze the input embeddings and output layers during finetuning. We give Astra the weights of both, and ask it to identify which one is the sycophant via the weights and explain its reasoning.</div>
+<div class="para">Unfortunately, from the weights alone, Astra was unable to tell. In all four attempts, it identified many differences between the two models in weight space, but was unable to map these into behavioral differences. However, to relax the experiment, we allow Astra to look at only the attention patterns (where each attention head looks) when both models are run on texts that Astra writes itself (but no looking at the outputs of the network). Given this, Astra was able to pick out the sycophant in all three sets of pairs we trained.<br>It was also able to reason about how they differ. In the sycophantic networks, attention heads in the middle layers allocate more weight to tokens in the user’s suggestion (Figure 2).<br>Finally, we scale up to a larger language model, Qwen3.5-0.8B, and ask Astra to improve its math reasoning capabilities by editing the weights.<br>We give Astra a harness like the one in Experiment 6, here a Python session, like a notebook, with the model’s weights loaded. Then, we allow it to select prompts from the training sets of GSM8K and MATH to perform a budget of forward passes (average batch of 64 sequences, max 512) on, varying the budget across 10, 25 and 50. Again, no training or gradient information is allowed.<br>As a result, Astra spots and fixes a common failure of tiny reasoning models: they loop . When the base model loops, it repeats the same text and rarely reaches an answer (85 of its first 96 practice answers ran to the 32,768-token limit). Astra traced the looping to one direction written by the MLPs of layers 15 and 19, and subtracted that direction from 64 output columns in each (131,072 weights), much like removing a behavior by deleting a single direction from a model’s weights.</div>
+<div class="para">With 50 forward passes, MATH-500 rose from 7.9% to 48.1% and GSM8K from 13.8% to 67.1%. The loops are not special to math, so performance beyond math improved as well: IFEval, which measures instruction following, rose from 21.0% to 62.3%. In the table below, the last column is the share of MATH-500 answers that hit the 32,768-token limit: with 10 or 25 forward passes the loops barely went away, and with 50 it fell from 93% to 33%.<br>| Qwen3.5-0.8B | MATH-500 (%) | GSM8K (%) | IFEval (%) | Hit token limit (%) |<br>|---|---|---|---|---|<br>| Base | 7.9 | 13.8 | 21.0 | 93.0 |<br>| Edited, 10 forward passes | 12.3 | 25.7 | 49.0 | 87.2 |<br>| Edited, 25 forward passes | 14.1 | 25.1 | 39.9 | 86.4 |<br>| Edited, 50 forward passes | 48.1 | 67.1 | 62.3 | 33.1 |<br>Importantly, the edit changes only 131,072 of the model’s 0.8 billion weights (0.016%). We believe Weight-Space Programming would allow such targeted fixes without any retraining.<br>Fixing loops, however, is not the same as making a model better at math: it lets the model finish answers it could already work out. So we also tried Gemma 3 270M, an instruction-tuned model about a third the size of Qwen3.5-0.8B, which rarely loops: only 8.5% of its answers reach its token limit, against 93% for Qwen. Here, Astra could not improve it. Reading Gemma’s failures, Astra found ordinary reasoning errors, such as wrong arithmetic and invalid algebraic steps, with no single component behind them to switch off. Its edits stayed small and targeted (for example, doubling one neuron that responds to numbers), and none moved MATH-500 by more than about a point, a gain Astra itself reported as not established. Editing weights could remove an obstacle that hid an ability, but it could not add an ability the model lacked. Gemma was sampled with its model card’s setting (temperature 1.0, top-k 64, top-p 0.95, up to 8,192 tokens), and its MATH-500 scores average 4 samples per problem.<br>| Gemma 3 270M | MATH-500 (%) |<br>|---|---|<br>| Base | 6.8 |<br>| Edited, 5 forward passes | 7.0 |<br>| Edited, 10 forward passes | 7.6 |<br>| Edited, 25 forward passes | 7.7 |<br>| Edited, 50 forward passes | 7.0 |<br>Neural networks are hard for us to read, and hard to work with directly.<br>Mechanistic interpretability reads networks with tools built for the job, tracing circuits and features and editing weights . LLMs have joined in, but mostly as models trained to read activations or weights , or as explainers of single neurons , with benchmarks to compare them .</div>
+<div class="para">On the writing side, LLMs now run and improve training , and other work generates weights with models trained for it . Gradient-free methods still find weights by trial and error . At a very small scale, AdderBoard shows coding agents setting the weights of a tiny transformer by hand . Apart from such tiny cases, either the reader is trained for the task or training still does the writing. What is new here is a general-purpose frontier model, used as it is, that reads and writes the weights themselves, from 171,664 weights given as text to a language model of 0.8 billion weights with tools.</div>
+<div class="para">In this blog, we demonstrated the rising capability of LLMs to read and write neural network weights (i.e., the rising concept of Weight-Space Programming). Our current results do show that capabilities are exciting but still limited, specifically due to inefficiencies in context length and harnesses. However, the current signs do show strong potential for a future involving Weight-Space Programming. We believe this marks the beginning of a dramatic shift in fields like mechanistic interpretability and neural network optimization.<br>This opens up radical new possibilities for LLMs to function as a translator between human language and the weight space. Here are some examples:<br>We are currently building a benchmark and a harness for LLMs’ capability on Weight-Space Programming. We believe this will provide a standardized evaluation to measure and accelerate progress in Weight-Space Programming, turning what currently seems like black magic into a rigorous, reproducible engineering discipline.<br>We release the complete logs of every experiment in this post at github.com/RikiyaT/lm_understand-logs. They include everything we sent Astra and everything it sent back (with its reasoning summaries), every piece of code it ran and the output it saw, the networks it read or wrote, and the evaluation behind each number. The edited Qwen3.5-0.8B from Experiment 8 is on Hugging Face. We thank Ahsen Khaliq at Hugging Face for rebuilding it from these logs, re-running its evaluation, and making a live demo.<br>Rikiya thanks Jacob Li and Akihisa Watanabe for valuable discussions on the very first iterations of this research, about LLMs&#x27; potential capability to write neural network weights. Rikiya also thanks Souradip Chakraborty, Matei Zaharia and his students in Berkeley Sky Lab, Heather Miller and her students at CMU, and researchers in cmpnd for the fruitful discussions on the earlier iterations!<br>Jayden thanks Zico Kolter for early discussions on LLMs being able to write neural network weights zero-shot, which also shaped the direction of this project.<br>Please cite this post as<br>Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. “Sparks of Weight-Space Programming: LLMs can natively read &amp; write neural network weights.” November 2026. https://rikiyat.github.io/blog/weight-space-programming/<br>or in BibTeX<br>@misc{takehi2026weightspace,<br>title        = {{Sparks of Weight-Space Programming: LLMs can natively read \&amp; write neural network weights}},<br>author       = {Takehi, Rikiya and Teoh, Jayden and Zhang, Alex and Khattab, Omar},<br>year         = {2026},<br>month        = nov,<br>howpublished = {\url{https://rikiyat.github.io/blog/weight-space-programming/}},<br>note         = {Blog post}<br>}</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Jailbreaking my car&#x27;s navigation system just so I can change the time
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    174 points ·
+    47 comments ·
+    xx_ns
+  </div>
+
+  <div class="meta">
+    blog.nns.ee
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #47
+  </div>
+
+  <div class="links">
+    <a href="https://blog.nns.ee/2026/11/02/renault-hack/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50339288">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The car that I drive is a 2014 Renault Latitude. It&#x27;s not a fancy car by any means and is starting to show its age, but it gets me from point A to point B and does everything else reasonably well so I&#x27;ve never really had any reason to complain.<br>When I bought the car, the previous owner asked me whether I wanted a &quot;navigation map SD card&quot; with it.<br>They mentioned that the car apparently needs this SD card just to change the time on the clock, but I didn&#x27;t really find that believable - not that they were lying to me, but perhaps they couldn&#x27;t figure out how to enter the correct settings menu. After all, videos of similar head units online showed the menu with the clock settings option right there.<br>Since the maps on the SD card were apparently very out of date and didn&#x27;t function properly, I decided I didn&#x27;t need it and the previous owner tossed it.<br>I didn&#x27;t really miss it. The dashboard display did show a large &quot;No maps found!&quot; message taking up the majority of the display, but it didn&#x27;t bother me too much.<br>Like most other European countries, Estonia uses daylight saving time, and we recently switched from summer time (UTC+3) to &quot;winter time&quot; (UTC+2), which meant that the time displayed on the dashboard was out of sync by an hour. I dived into the settings menu, hoping to easily find the &quot;Set time&quot; option in there.<br>That never happened.<br>The menu where the &quot;Set time&quot; option should&#x27;ve been simply didn&#x27;t have that option. I compared the menus with the ones in online videos, and the option was simply missing. There were two &quot;Settings&quot; buttons on the dash, and one of them worked but only let me change various Bluetooth and phonebook settings, with no time &amp; date settings in sight. The second Settings button did not work whatsoever, instead showing a &quot;No maps detected!&quot; pop up message every time I pressed it.<br>I must&#x27;ve spent an hour going through various menus, pressing various buttons or button combinations hoping to land in the correct menu, searching the web for information on this particular unit simply because I refused to believe that there was no option to change the time and I clearly must&#x27;ve been missing something obvious.<br>Still in denial, I decided to fetch the firmware and dig into it, hoping to find some indication on how to open the correct settings menu.<br>Luckily, I wasn&#x27;t the first to embark on this journey and someone had already done some reverse engineering work on this particular unit (https://github.com/andronedev/carminat-tomtom-live-re/blob/main/README.md). While it was in French and seemingly heavily LLM-assisted, it did point me to the correct URLs for fetching the update files themselves.<br>When extracted, the update files included a ttsystem file which turned out to be an ext3 filesystem containing the device&#x27;s root filesystem, which was pretty much exactly what I was looking for. The unit itself (TomTom Carminat LIVE, codename beaumont) is built around a Samsung S5P6440 SoC running TomTom&#x27;s custom OS based on Linux 2.6.28.10.<br>After reverse engineering it for a while, I came to the conclusion that the previous owner was completely correct. There was absolutely no way to enter the correct settings menu without a navigation SD card inserted. In fact, the menu definition pointing to the Settings applet was read from the SD card itself, and without one inserted containing the right menu definition, the unit didn&#x27;t even know how to enter the Settings applet.<br>This decision by TomTom (or Renault) is still baffling to me.<br>What made things worse was that this needed to be a legitimate SD card. The system had DRM checks which rejected SD cards without the correct CID (a unique ID burned into the card) and files with signatures based on that specific CID, so I couldn&#x27;t even copy the files to a blank SD card. I&#x27;m guessing the DRM was in place to prevent people from pirating maps.<br>I don&#x27;t want maps. I have a phone that I use for navigation. I just want to change the damn time.<br>I checked online and found some third parties selling the card I presumably needed, but with shipping to Estonia, it would&#x27;ve cost me roughly 60 EUR, which I really didn&#x27;t feel like paying.<br>Fine. I&#x27;ll just root it and do it myself.<br>I couldn&#x27;t find anyone online who&#x27;d jailbroken one of these before. I found some old forum threads with long-expired image links that had some pretty generic information about the unit itself and the general consensus was that it was difficult to root.<br>I didn&#x27;t expect a Linux 2.6 system from 2011 to be incredibly hard to hack, so I naively went in looking for some easy wins.<br>My first idea was to modify the ext3 update image itself. It seemed like I could easily just mount the filesystem, modify some init scripts to do what I want, and copy it to a blank SD card for the unit to pick up my modified image and flash it.<br>While the system showed confirmation prompts to install vanilla, unmodified ttsystem images with no problem, I could never get it to update to my modified image, and I had no idea why. I checked the updater logic present in the update file itself and couldn&#x27;t see any reason why my image would be rejected.<br>It was at this point that I set up an emulator with QEMU, a custom kernel also based on the same 2.6 version, some patches and a very simple CAN emulator for the system to actually boot - albeit reluctantly, wanting to reboot every 3 seconds, which I just patched out by ignoring reboot syscalls.<br>I used this to test installing the modified update image in there. I then realized that I don&#x27;t actually have the recovery partition that the device boots into to perform the update, and came to the conclusion that there must be some sort of verification layer there that I&#x27;m missing.<br>Taking a closer look at the ttsystem image also pretty much confirmed this, as it had a bunch of high-entropy data appended to it, followed by some zero blocks, followed by 40 high-entropy bytes. I assumed this was a signature of some sort (40 bytes could be DSA with SHA-1), but with no access to the actual binary doing the verification, I couldn&#x27;t really figure out how to attack this or if I even could.<br>I&#x27;d been reluctant to put the effort into building the emulator, but it turned out to be extremely useful for testing out various attacks and getting an overview of how the system behaved.<br>For example, I found out that most partitions were mounted either read-only, noexec or both. Mounts from a live system:<br>rootfs on / type rootfs (rw)<br>none on /sys type sysfs (rw,nosuid,noexec)<br>none on /proc type proc (rw,nosuid,noexec)<br>/dev/mmcblk0p5 on /content type ext3 (rw,nosuid,nodev,noexec,noatime,nodiratime,errors=continue,data=ordered)<br>/dev/loop0 on / type ext2 (ro,noatime,nodiratime,errors=continue)<br>none on /dev type tmpfs (rw,nosuid,noexec,size=1024k)<br>none on /tmp type tmpfs (rw,nosuid,noexec,size=2048k)<br>none on /var type tmpfs (rw,nosuid,noexec,size=5120k)<br>none on /dev/pts type devpts (rw,nosuid,noexec,gid=5,mode=620)<br>none on /var/log type tmpfs (rw,nosuid,noexec,size=1024k)<br>/dev/mmcblk0p3 on /mnt/flash type ext3 (rw,sync,nosuid,nodev,noexec,errors=continue,data=ordered)<br>/dev/mmcblk1p1 on /media/sdcard type vfat (rw,sync,nosuid,nodev,noexec,noatime,nodiratime,fmask=0022,dmask=0022,codepage=cp437,iocharset=iso8859-1)<br>/dev/loop1 on /media/loopback type ext3 (rw,nosuid,nodev,noexec,noatime,nodiratime,errors=continue,commit=3600,data=journal)<br>none on /mnt/movi type unionfs (rw,nosuid,nodev,noexec,noatime,nodiratime,dirs=/media/loopback=rw:/media/sdcard=ro)<br>Notably, the base FAT32 filesystem of the SD card was mounted to /media/sdcard, and the system mounted a unionfs on top of it in /mnt/movi, which had a writable layer pointing to an ext3 filesystem which lived as a file on the external SD. I&#x27;m not 100% sure what the point of this setup was (maybe so they can use data=journal, which survives power loss better?), but nevertheless all of these mounts were noexec.<br>This seemed like surprisingly strong security for something from 2011.<br>Something else that the emulator helped me with was identifying all of the files that the system tried to read from the external SD card. One of these files was master.script, a script in a custom language for automating certain UI navigation actions. This was loaded every boot and I hoped this would allow me to somehow open the correct settings menu for setting the time.<br>I reversed ttn, the binary responsible for parsing this script, documenting its functionality as I went, but unfortunately I didn&#x27;t find any way to open the menu I needed.<br>I still thought master.script was what I should be putting my effort into, since it had a lot of functionality that could be a potential attack vector.<br>As usual, I checked for any system or popen calls that would allow me to perform command injection. Unfortunately, I didn&#x27;t find any constructed with user input.<br>I thought I had hit the jackpot when, while reversing the parser, I came across a SHEX/SHELLEXECUTE command. It passed an arbitrary argument to launchserver, which launched whatever command line was provided with execve.<br>This had two obstacles. The first one was that there was still no way to get it to execute a custom executable directly, as the SD card was mounted noexec which prevents executables and scripts on it from running. However, this could be bypassed by not executing the script directly, but rather executing something like /bin/sh /media/sdcard/payload.sh, which would go through /bin/sh on the rootfs, which was not mounted noexec.<br>The second hurdle was bigger, however. It turned out that while launchserver would happily launch anything, SHEX accepts only a single whitespace-delimited token. This means that I could only control which binary was executed, but not pass it any arguments. Combined with the previous obstacle, this then also seemed like a dead end because I could only run scripts or binaries that were already on the rootfs. I did look through most of them, but nothing seemed very helpful.<br>Defeated, I started looking at file writes. Maybe if I could write files to places I shouldn&#x27;t be able to, that would give me some sort of leverage.<br>Sure enough, I discovered the LOG command, which let me truncate a file (defined with #define LOGFILE log.txt) and write a single line to a file of my choosing. This one actually allowed spaces and regular ASCII characters, but only bytes 0x20 to 0x7E, meaning writing binary data is out of the question. As ttn runs as root, any writes would also be written as root.<br>It also had a classic path traversal vulnerability. Defining LOGFILE with ../ in it allowed me to write outside the intended logfile directory, theoretically allowing me to write printable ASCII to anywhere on the system.<br>However, I once again ran into a wall with how the mount points were set up. I couldn&#x27;t overwrite anything on the rootfs since it was mounted read-only, and everything else was mounted noexec and would never be executed anyways. I also looked into whether there were any useful config files I could overwrite, but most files were a custom binary format that I couldn&#x27;t write with LOG or were otherwise unhelpful. This also looked like a dead end.<br>Among other things, master.script allowed displaying images on the screen (GIFs/BMPs). I spent some time setting up a fuzzing environment using Unicorn to see if I could hit any image decoder bugs causing memory corruption, and while I did get quite a few OOB reads, I didn&#x27;t find any useful writes.<br>I had been researching, reverse engineering and trying to come up with different strategies to run arbitrary code for a while. Much to my frustration, none of my strategies ended up working, and I took a step back to look at the bigger picture and figure out if I can make any of the puzzle pieces that I already have fit together.<br>Among other things, I knew I could:<br>- Execute arbitrary binaries, but with no arguments and only the ones already on the rootfs<br>- Write ASCII to paths of my own choosing<br>This is when I had a brainwave and was reminded of a trick that kernel exploits often use: Instead of trying to get the userland to execute our script, why don&#x27;t I get the kernel to execute our script instead?<br>Often, Linux kernel exploits, when being able to write arbitrary memory, overwrite the core_pattern string. Normally, this dictates how coredumps are stored when a process crashes, but it also accepts special syntax for piping these coredumps to a process instead (|/bin/my-coredump-handler). When a crash occurs, the kernel spawns the process specified in core_pattern and pipes the data in there.<br>core_pattern also supports cmdline arguments for the spawned process. I got lucky here, since support for this landed in 2.6.24 whereas the unit&#x27;s kernel was 2.6.28.<br>Importantly, you&#x27;re also able to set core_pattern from userland by writing the pattern to /proc/sys/kernel/core_pattern.<br>I can easily use this to point LOGFILE to ../../proc/sys/kernel/core_pattern and LOG the string |/bin/sh /media/sdcard/payload.sh. This would run the rootfs /bin/sh and execute our script with it as root.<br>Being able to execute arbitrary binaries also turned out to be useful even without arguments, since I needed to somehow get a program to crash, triggering a coredump. Using a DoS vuln to crash the script parser or the main UI itself wouldn&#x27;t work very well, because this would immediately trigger a reboot of the whole system, killing my script.<br>I used my emulator setup to execute pretty much every single binary on the system, and found that /bin/dbus-monitor raised a SIGABRT if it couldn&#x27;t connect to the system bus (which the unit didn&#x27;t run), triggering a coredump. This was perfect.<br>My final master.script turned out to be quite simple:<br>#define LOGFILE ../../proc/sys/kernel/core_pattern<br>LOG |/bin/sh /media/sdcard/payload.sh<br>SHEX /bin/dbus-monitor<br>I initially confirmed success by simply calling reboot in the payload.sh script. I was very pleasantly surprised when booting the unit with the SD card inserted and pressing &quot;Yes&quot; at the &quot;Execute master.script?&quot; prompt, the unit rebooted, confirming that I had code execution.<br>The first thing I did was use this to create a full backup of the internal eMMC using dd. With a more complete dump of the system, I pretty quickly figured out that the date &amp; time settings that I&#x27;m interested in are in /mnt/flash/settings.dat, which is a custom binary format. After some more reverse engineering, it turned out the unit doesn&#x27;t really have a concept of timezones at all. It gets the time from GPS and stores the local offset as a number of minutes. Mine was set to 180.<br>I changed it to 120.<br>That is how I was finally able to fix my car&#x27;s timezone.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    OpenAI seems to be silently re-enabling model training on Codex chats
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    99 points ·
+    35 comments ·
+    user052919
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #11
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50352757">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">My company is pretty paranoid about leaking IP to the frontier labs through prompts, so we&#x27;ve all been diligent about disabling data sharing in Codex/Claude Code/etc. But yesterday my coworkers and I noticed that the setting had been silently reenabled in Codex. None of us knowingly opted back in.<br>You can check your settings here: https://chatgpt.com/settings/data-controls. Look for &quot;Improve the model for everyone&quot;.<br>Curious if this is an isolated issue or something more widespread.<br>EDIT: looks like this has been noted before https://news.ycombinator.com/item?id=49643556<br>EDIT: apparently you can also turn off data sharing here: https://privacy.openai.com/policies?modal=take-control</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Show HN: HackerChurn – which SaaS tools HN wants to cancel
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    27 points ·
+    10 comments ·
+    drewlem
+  </div>
+
+  <div class="meta">
+    hissingkitty.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #9
+  </div>
+
+  <div class="links">
+    <a href="https://hissingkitty.com/hacker-churn">Original article</a> · <a href="https://news.ycombinator.com/item?id=50353386">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">HackerChurn<br>The Software Hacker News Wants to Cancel<br>Built from what Hacker News commenters really think of the software they pay for.<br>We read a sample of public Hacker News comments from the last 3 years that name software we track, and counted which ones had the most complaints. Did your least favorite platform make the list?<br>101<br>platforms made the cut<br>1,551<br>negative comments matched<br>139<br>built their own replacement<br>- 1 Security breaches, weak encryption and lost trust. → Bitwarden 49 complaints<br>- 2 Disruptive updates, poor testing and performance costs. 47 complaints<br>- 3 Slow performance, lost notes and post-acquisition decline. Built their own · 2→ Obsidian 44 complaints<br>- 4 Rent inflation, price fixing and intrusive payment prompts. 41 complaints<br>- 5 Lock-in, poor quality, intrusive AI and telemetry. Built their own · 1 39 complaints<br>- 6 Poor quality, frustrating workflows and integration issues. Built their own · 5→ Xero 38 complaints<br>- 7 Unwanted rewrites, AI focus and repetitive ads. 35 complaints<br>- 8 Intrusive popups, clunky tools and restrictive licensing. 33 complaints<br>- 9 Overblocking, traffic interception and broken workflows. 33 complaints<br>- 10 Reset feed preferences, unwanted alerts and vapid content. 31 complaints<br>- 11 Unreliable code, context limits and compliance hurdles. 31 complaints<br>- 12 Broken tooling, poor performance and unwanted features. 31 complaints<br>- 13 Unfair pricing, dark patterns and clunky interfaces. Built their own · 3 29 complaints<br>- 14 Clunky workflows, high costs and obscure internals. Built their own · 2 26 complaints<br>- 15 Lock-in, poor usability and limiting abstractions. Built their own · 1→ WordPress 26 complaints<br>- 16 Unwanted upgrades, poor AI and email delivery problems. Built their own · 1 25 complaints<br>- 17 Security failures, high costs and integration difficulties. 25 complaints<br>- 18 Overcomplicated boards, navigation and integration issues. Built their own · 4 25 complaints<br>- 19 Slow interfaces, licensing restrictions and poor support. Built their own · 3 25 complaints<br>- 20 Pricing, signing limitations and confusing documentation. Built their own · 10 24 complaints<br>- 21 High costs, noisy alerts and integration limitations. Built their own · 1 24 complaints<br>- 22 High costs, clunky workflows and slow performance. Built their own · 1 23 complaints<br>- 23 Platform constraints, lock-in and confusing design. Built their own · 3 23 complaints<br>- 24 High costs, poor integration and security handling. Built their own · 7 23 complaints<br>- 25 Slow queries, complex charts and rate limits. → Grafana 22 complaints<br>- 26 Stalled development, outages and cumbersome tooling. Built their own · 7 22 complaints<br>- 27 Manual task transfers, lost context and bloated workflows. Built their own · 3 21 complaints<br>- 28 Poor support, limited features and frustrating site editing. Built their own · 2→ WordPress 21 complaints<br>- 29 Poor usability and frustrating ticketing experiences. → Linear 21 complaints<br>- 30 High costs, confusing naming and false positives. 20 complaints<br>- 31 High prices, complexity and overstated automation. 20 complaints<br>- 32 Complexity, slow performance and licensing costs. Built their own · 4 19 complaints<br>- 33 Rigid templates, wasted time and cloud file headaches. Built their own · 8→ ChatGPT 18 complaints<br>- 34 Outdated data, clutter, accuracy and usage restrictions. Built their own · 2 18 complaints<br>- 35 Poor overall quality and inaccurate captions. 18 complaints<br>- 36 Resume submission friction, poor screening and AI hype. 18 complaints<br>- 37 Slow, bloated software and weak engineering. Built their own · 1→ Basecamp 18 complaints<br>- 38 Enterprise focus, missing features and poor performance. Built their own · 3→ Linear 17 complaints<br>- 39 Cumbersome setup, bloated UX and limited flexibility. Built their own · 6 17 complaints<br>- 40 Scaling limits, adoption friction and administrative burden. Built their own · 3→ Basecamp 17 complaints<br>- 41 High costs and lack of community contributions. 17 complaints<br>- 42 High markups, security concerns and awkward authentication. 16 complaints<br>- 43 High prices, inflexibility and excessive customization. Built their own · 3→ Notion 16 complaints<br>- 44 Poor support, slow syncing, privacy and spam concerns. 16 complaints<br>- 45 Limited notifications, high costs and restrictive terms. 15 complaints<br>- 46 High prices, poor design and file privacy concerns. Built their own · 8 15 complaints<br>- 47 Lock-in, benchmark restrictions and failed projects. 15 complaints<br>- 48 High prices, limited features and juggling tools. Built their own · 3 14 complaints<br>- 49 Proxy practices and weak safeguards. 14 complaints<br>- 50 Excessive complexity, bundle bloat and poor IPv6 support. Built their own · 2 13 complaints<br>- 51 Limited compatibility, rough features and monitoring gaps. 13 complaints<br>- 52 Declining relevance, ownership concerns and bandwidth costs. 13 complaints<br>- 53 Weak differentiation and poor mobile layouts. Built their own · 3→ Claude 13 complaints<br>- 54 Inaccurate data, AI errors and invasive profiling. 13 complaints<br>- 55 Data consistency risks and service outages. Built their own · 1 12 complaints<br>- 56 Blocked real emails, slow support and thin training. 11 complaints<br>- 57 Feature bloat, sync limitations and vendor dependence. Built their own · 1 10 complaints<br>- 58 Weak disaster planning, messy HTML and animation bloat. Built their own · 1 10 complaints<br>- 59 High costs, complexity, poor usability and slow innovation. Built their own · 4 10 complaints<br>- 60 Manual setup, complex dependencies and unsafe defaults. Built their own · 1 9 complaints<br>- 61 Platform control, dependence and custom store costs. Built their own · 5 9 complaints<br>- 62 High costs, frustrating usability and unhelpful alerts. Built their own · 1 9 complaints<br>- 63 Unreliable AI, API limits and cumbersome task workflows. Built their own · 1 9 complaints<br>- 64 High costs, generic templates and questionable incentives. 9 complaints<br>- 65 Blocked access and intrusive tracking links. → Substack 9 complaints<br>- 66 Lock-in, price increases and canvas design limitations. Built their own · 1 8 complaints<br>- 67 Inaccurate traffic data and invasive tracking. 8 complaints<br>- 68 Paywalled features, fragmented tools and intrusive branding. Built their own · 5 8 complaints<br>- 69 Poor support, payroll errors and premature billing. → ADP 8 complaints<br>- 70 Closed source, subscriptions and ineffective motivation. Built their own · 2 7 complaints<br>- 71 Restrictive workflows and limited features. 7 complaints<br>- 72 Sales calls, weak search, account deletion and lock-in. Built their own · 1 7 complaints<br>- 73 Repetitive training and obvious test phishing. 7 complaints<br>- 74 Vendor dependence and scheduling limitations. 6 complaints<br>- 75 Unwanted crawling, data use and SEO practices. 6 complaints<br>- 76 Subscription costs, lock-in and unnatural avatar behavior. Built their own · 3 6 complaints<br>- 77 Data logging, scraping limits and traffic costs. 6 complaints<br>- 78 Security failures and authentication outages. 6 complaints<br>- 79 High costs, lock-in and a product falling behind. 6 complaints<br>- 80 Complexity, hard setup and awkward integrations. 6 complaints<br>- 81 Complaints focus on high costs, poor support, difficult integrations, and restrictive contracts. Built their own · 1 6 complaints<br>- 82→ Teams 5 complaints<br>- 83 5 complaints<br>- 84 Integration failures, outages, lock-in and high prices. 5 complaints<br>- 85 Rising contact-based pricing and steep markups. 5 complaints<br>- 86 High pricing, complexity and poor user experience. 5 complaints<br>- 87 4 complaints<br>- 88 4 complaints<br>- 89 Scaling pains, lock-in, bugs and slow support. → Mailchimp 4 complaints<br>- 90 High costs, complexity and slow performance. Built their own · 3 4 complaints<br>- 91 Overlapping subscriptions, unused seats and rigid design. Built their own · 2→ Asana 4 complaints<br>- 92 Unnecessary complexity, bloat and account recovery gaps. Built their own · 1 4 complaints<br>- 93 Cost, limited control and intrusive popovers. Built their own · 1 3 complaints<br>- 94 3 complaints<br>- 95 3 complaints<br>- 96 Subscription pricing and slow feature updates. Built their own · 2 3 complaints<br>- 97 Limited accuracy and weak video quality. 3 complaints<br>- 98 Costs and trouble scraping protected sites. 3 complaints<br>- 99 3 complaints<br>- 100 Tedious invoicing, slow pages and extra admin work. 3 complaints<br>- 101 Login restrictions and frustrating usability. 3 complaints<br>Tools need 3 complaints from 2 threads to be listed. Source: public comments via the Hacker News search API, labeled by AI and counted. Every counted complaint links to the original comment. Hacker News is one source; HissingKitty reviews are another. Counts update nightly. Spot a mistake? Tell us.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Show HN: AI-Atlas – scores the AI projects in your GitHub from their actual code
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    pop123-ux
+  </div>
+
+  <div class="meta">
+    getaiatlas.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://getaiatlas.com">Original article</a> · <a href="https://news.ycombinator.com/item?id=50354765">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">AI engineering · mapped from public work<br>Map what<br>you’ve built.<br>A shareable, evidence-backed profile of your AI work, for recruiters, collaborators and networking, or just to stay competitive in the AI space.<br>AI-Atlas reads your public GitHub projects and maps the AI capabilities your work actually demonstrates — judged on what you built, not on what you imported. Ranked only when claimed.<br>- Public repositories only<br>- No account required<br>- Code is never executed<br>Live Atlas coverage<br>- Discover Find the public repositories your GitHub account owns and remove obvious noise such as forks and empty projects.<br>- Understand Read the code and project structure to see what it actually implements, not merely which libraries it imports.<br>- Map Place demonstrated work across six AI domains, giving deeper projects more influence than repeated shallow ones.<br>- Explain Turn the result into a profile that shows the shape of your public AI portfolio and where its evidence came from.<br>- 01. Machine Learning Model architectures, training loops, optimisation, classical and deep learning method work — the mathematics and mechanics of learning systems.<br>- 02. Computer Vision Image and video understanding: classification, detection, segmentation, generative vision, multimodal perception and vision architectures.<br>- 03. Data Science Data acquisition, cleaning, feature engineering, statistics, analysis, experimentation and visualisation that supports decisions or models.<br>- 04. NLP &amp; LLMs Language modelling, transformer architectures, tokenisation, fine-tuning, retrieval augmented generation, evaluation and inference of LLMs.<br>- 05. AI Agents Tool-using and autonomous systems: planning, orchestration, memory, multi-agent coordination, function calling and agent evaluation.<br>- 06. MLOps Getting models into and keeping them in production: serving, pipelines, experiment tracking, reproducibility, monitoring and infrastructure.<br>Evidence, not buzzwords.<br>A score should reflect what the work can prove.<br>AI-Atlas reads implementation, weighs depth and ownership, then keeps each conclusion connected to the source evidence that supports it.<br>implementation, not labels<br>depth over repetition<br>claims back to files</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Gitbook Breached
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    17 points ·
+    3 comments ·
+    punchmesan
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · Top #14 · New #41
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50354336">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We opened a ticket with support about Gitbook availability issues and got this in reply. We have yet to see any official customer communication or breach notification. Apologies for the formatting, did the best I could as it&#x27;s a mobile paste.<br>Update:<br>GitBook security incident update<br>Hey &lt;$name&gt;,<br>The GitBook app, the GitBook API, and published docs are available again. A few services may still be degraded as we finish restoring everything to full performance.<br>*What happened*<br>GitBook has been the target of a sophisticated, highly targeted attack using AI agents.<br>At 19:00 CET, November 2, the attacker gained unauthorized access to some of our infrastructure credentials. We detected the attack immediately and acted swiftly to block further impact.<br>To make sure our infrastructure was fully secure, we then took the GitBook app and authenticated docs sites offline. We kept publicly published content live for as long as possible, using cached data.<br>*What we did immediately*<br>* Blocked the attacker and closed the vulnerabilities involved<br>* Replaced every credential and secret across our infrastructure<br>* Brought services back only once we were confident they were secure<br>* Invalidated every customer’s API tokens on our platform<br>*Your data*<br>Our investigation shows that the attacker may have accessed the following:<br>* Git Sync secrets.<br>* GitBook API tokens.<br>* Third-party API tokens used to connect external tools to GitBook.<br>* Questions asked to GitBook Assistant by your site visitors.<br>At this stage, we have found no evidence that any of your content in GitBook was modified.<br>*What you need to do now*<br>* Rotate any existing GitBook API tokens. We revoked all personal API tokens during the incident.<br>* Rotate any third-party API tokens or secrets you use to connect other tools to GitBook.<br>* If you have published integrations that use secrets, rotate those secrets.<br>* If you use the GitBook MCP server, re-authenticate it.<br>Please contact your GitBook organization’s admin to assist with this process.<br>*What we are doing next*<br>* Monitoring the situation in case of further attacks.<br>* Introducing further security measures to our platform.<br>* Writing a full post mortem that will be published soon with more detailed information about the incident.<br>* If you have any further questions, please reach out to your account manager or our support team. You can also check status.gitbook.com for updates<br>Thank you for your patience, and we apologize again for the disruption<br>The GitBook team</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Fujifilm to boost tape production 5x as AI fuels archiving demand
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    173 points ·
+    73 comments ·
+    bookofjoe
+  </div>
+
+  <div class="meta">
+    arstechnica.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #48
+  </div>
+
+  <div class="links">
+    <a href="https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50336918">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In an announcement released Thursday, Fujifilm said it will invest roughly 10 billion yen (about $63 million) to increase its production capacity fivefold for an unlikely beneficiary of the AI era: magnetic tape.<br>Fujifilm attributes the surge in archiving demand to the spread of generative AI, which the company remarked is producing “exponential growth” in data needs worldwide. The 5x increase in production capacity will be measured against fiscal year 2025 production levels.<br>The investment in Fujifilm’s Kanagawa Factory, Odawara site will make it “the largest investment Fujifilm has made to date in dedicated LTO tape facilities.” The project will run from fiscal years 2026 through 2028 to fund manufacturing expansion and additional personnel, primarily to produce the latest-generation “FUJIFILM LTO Ultrium10” tape.<br>Mainstream consumers may have abandoned tape decades ago, but the enterprise world never did. Cloud giants rely on tape to back up vast troves of data. Fujifilm’s work with magnetic tape as a data storage medium dates back to the 1950s, and in 2000, the company released its first LTO Ultrium storage tape. In 2011, the company was the first to commercially produce tape with barium ferrite magnetic particles, and in 2025 it debuted the LTO Ultrium10, the first storage solution in the medium to use what the company calls “fine hybrid magnetic particles” by combining barium ferrite with strontium ferrite tech. Each generation of tape (currently Gen 10) has seen meaningful increases in both compressed and uncompressed storage limits.<br>According to Fujifilm, “major cloud service and data center operators” have been expanding their use of magnetic tape because it can store large data volumes at relatively low cost. Tape backups can be easily disconnected and stored in a drawer, a vault, or a separate facility. Fujifilm highlights the ability to air-gap tape cartridges as a last defense for user data: “Given the sophistication of cyberattacks, magnetic tape is attracting increasing attention as a means of protecting data from threats such as ransomware.”</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: Interactive notes on RLHF, attention, LoRA and LLM evals
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    20 points ·
+    2 comments ·
+    laxmena
+  </div>
+
+  <div class="meta">
+    concepts.laxmena.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #16
+  </div>
+
+  <div class="links">
+    <a href="https://concepts.laxmena.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50353468">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    WTF Ubuntu?
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1586 points ·
+    659 comments ·
+    chalmovsky
+  </div>
+
+  <div class="meta">
+    chalmovsky.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://chalmovsky.com/posts/wtf-ubuntu">Original article</a> · <a href="https://news.ycombinator.com/item?id=50337608">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">WTF Ubuntu?<br>2026-11-02<br>What the fuck, Ubuntu?<br>In case you missed it: CVE-2026-98432 is a critical (CVSS 9.8) bug in the Linux kernel&#x27;s TCP code. It&#x27;s been there since 2016, so virtually every Linux server on the planet has it, and it can be hit remotely. Anthropic says it built a working exploit that gets root on a server. A total takeover.<br>Debian patched it on October 16. Ubuntu still doesn&#x27;t have a patch more than two weeks later. Every supported release, LTS included, is listed as &quot;Vulnerable&quot;.<br>Ubuntu&#x27;s website promises &quot;timely patches for critical vulnerabilities.&quot; Ubuntu hasn&#x27;t shipped the patch nine days after it was rated 9.8 and six days after a working root exploit. Very fucking timely indeed.<br>Software is full of this blabber where words mean nothing. Ubuntu uses words like these: &quot;Timely.&quot; &quot;Enterprise-grade.&quot; &quot;Production grade.&quot; &quot;Enterprise resilience. Developer velocity. Build with confidence on Ubuntu.&quot;<br>Somebody, or perhaps worse, some special team at Canonical is dedicated to writing these........<br>So I&#x27;m asking again... What the fuck, Ubuntu?<br>I&#x27;m moving all my servers off Ubuntu. I&#x27;ve completely lost trust in it. On the desktop I always hated it anyway. On servers I mostly used it because it&#x27;s the default on most VPS providers, and I considered it the solid, no-drama LTS distro. Fuck that now.<br>I can&#x27;t express how crazy this is. I didn&#x27;t have time to migrate my services and data when I learned about this, so I had to take all my servers that run Ubuntu offline.<br>Oh and btw, distros run by volunteers (Debian, Arch, Alpine...) hve shipped the fix. Meanwhile Ubuntu, made by a company that sells security subscriptions, hasn&#x27;t. This is true as of 2026-11-02 14:48 UTC.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    ZeBridge – PostgreSQL replicas on devices, synchronized over NATS
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    ndrean
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/ndrean/ZeBridge">Original article</a> · <a href="https://news.ycombinator.com/item?id=50354763">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Local PostgreSQL replicas for apps and services, over NATS.<br>ZeBridge keeps a local database on each device, queues writes while it is offline, and synchronizes through NATS when it reconnects. PostgreSQL remains authoritative: it applies the rules, resolves conflicting writes, and returns a verdict to the app.<br>The client library provides one interface to read the local replica, submit mutations, and query remote responders such as routing or analytics services. Optional regional NATS leaves serve snapshot caches near devices and host those services.<br>Strongest use cases: B2B operational apps, where each customer organisation is a tenant (a column in your schema) whose devices share a working dataset: field teams, fleets, depots, sites. They keep working on poor connections or while a team is cut off, and every write still ends with an authoritative decision from PostgreSQL. It is not built for consumer (B2C) apps with one tenant per user.<br>See it running: https://bridge.zebridge.eu/demo. Five trucks on a map of France&#x27;s 16,173 charge points. Pick a truck and a destination, and it drives along the road on every open screen; change its destination from any screen and it turns from where it is. The chargers are a query on the browser&#x27;s own replica, the route comes from a routing service over the same NATS connection, and PostgreSQL holds only the decisions. Open it in two tabs, or on a phone and a laptop: each visit gets its own identity in a shared demo tenant, from a one-hour invite. How it is built: the depot example.<br>You need Docker Compose. No repository clone or local build is required.<br>curl -O https://raw.githubusercontent.com/ndrean/ZeBridge/main/docker-compose.quickstart.yml<br>docker compose -f docker-compose.quickstart.yml up<br>This starts PostgreSQL, NATS, the bridge, its tombstone-cleanup process (the sweeper), and two browser demos using published images. This evaluation Compose file has no separate mutation admission service; the production layout described below includes one. The Compose file selects the image version; it does not build the current repository checkout.<br>When the init service prints the invite links, open these in separate tabs:<br>| Link | Device |<br>|---|---|<br>| http://localhost:5173/?invite=quickstart-alice-1 | Alice, tenant acme |<br>| http://localhost:5173/?invite=quickstart-alice-2 | A second Alice device, tenant acme |<br>| http://localhost:5173/?invite=quickstart-bob-1 | Bob, tenant globex |<br>Each invite is single-use. The tab creates its own device key, enrolls with the bridge, and receives scoped NATS credentials. Wait for the four phase badges to turn green; the first snapshots can take up to a minute.<br>See tenant isolation. Change counter_tenant in an Alice tab: the other Alice tab follows, while Bob&#x27;s does not. Change counter_public: all three follow. The page also demonstrates foreign keys, refused writes and cooperative editing.<br>Try offline writes. Keep the tabs open, then stop the services:<br>docker compose -f docker-compose.quickstart.yml down<br>Click the counters while disconnected. Each tab reads its own local replica and keeps its pending writes in an outbox. Start the services again:<br>docker compose -f docker-compose.quickstart.yml up<br>The tabs reconnect, submit their queued writes and catch up. Counters use last-writer-wins: the final value is the winning write, not the sum of offline clicks.<br>The initialization log also prints links to a shared-record demo on port 5174. It shows several editors changing separate fields of the same record.<br>To erase this evaluation stack and start again, run docker compose -f docker-compose.quickstart.yml down -v. This removes its database and NATS volumes, including the identities those invites depend on. The quick start uses local evaluation settings without NATS TLS; use the deployment guides for a server.<br>Three parts: the hub, which you install; your backend, which signs users in and issues invites; and the app, which uses the client library on the local database you choose. Services your apps can ask, such as routing or analytics, are optional and run as separate processes on the same library.<br>The hub is NATS, the bridge, mutation admission and the sweeper on one server. PostgreSQL can run on the same server or be managed elsewhere (it needs logical replication). Two routes are ready to use:<br>- Docker Compose: two files on the server. HAProxy and Let&#x27;s Encrypt are included, and PostgreSQL optionally: V=0.2.11 mkdir zebridge &amp;&amp; cd zebridge curl -fsSLO https://raw.githubusercontent.com/ndrean/ZeBridge/v$V/deploy/compose/compose.yml curl -fsSL -o .env https://raw.githubusercontent.com/ndrean/ZeBridge/v$V/deploy/compose/.env.example chmod 600 .env # In .env: three domain names, the Let&#x27;s Encrypt e-mail and the passwords (see the guide). docker compose up -d The first start issues the certificates, generates the NATS identities and installs ZeBridge&#x27;s SQL objects, including zb_inviter, the login your backend uses below. See the Compose guide.<br>- Ansible, for a Debian VPS with systemd services: fill in the inventory and the vault, then ansible-playbook site.yml --ask-vault-pass. It can be run again at any time and changes only what differs. See the Ansible guide.<br>Then enable your tables (Prepare your tables) and check the hub with bridge --diagnose. Other routes, such as a manual install or Supabase, are listed in Deploy.<br>Your backend has one job: sign users in, then issue invites. ZeBridge does not authenticate users, and it does not care how you do it: OAuth, passwords, magic links, any language or framework. After your backend has signed a user in, it decides the user&#x27;s principal and tenant and asks PostgreSQL for a one-time invite code, with a login that can create invites and nothing else. That is the only server code you write: there is no write API or sync endpoint to build, because writes go through the library and PostgreSQL&#x27;s own rules judge them.<br>// Your backend, after it has signed the user in. Its database login holds only zebridge_inviter.<br>const { rows } = await db.query(<br>&quot;SELECT zebridge_invite($1, $2, interval &#x27;1 hour&#x27;) AS code&quot;,<br>[user.id, user.tenant],<br>);<br>return { invite: rows[0].code };   // in the login response<br>The app passes the code to the library on its first start. The library enrolls the device, stores its identity, seeds its replica and follows changes; later starts need no code, and the library renews the device&#x27;s credentials by itself. See Users: invites for other ways to deliver the code (a link, an email) and the enrollment steps.<br>For a browser app:<br>npm install @zebridge/clientimport { ZeBridge } from &#x27;@zebridge/client&#x27;;<br>// From your own login flow; only the first start needs it. The DBA has enabled the orders table.<br>const { invite } = await signIn(email, password);<br>const zb = new ZeBridge({<br>bridgeUrl: &#x27;https://bridge.example.com&#x27;,<br>invite,<br>tables: [&#x27;orders&#x27;],<br>});<br>zb.onChange(&#x27;orders&#x27;, () =&gt; refreshOrders());<br>zb.onVerdict(verdict =&gt; showWriteOutcome(verdict));<br>await zb.connect();<br>// SQL reads the local replica, including while offline.<br>const orders = await zb.query(<br>&#x27;SELECT id, status FROM orders WHERE status = ?&#x27;,<br>&#x27;pending&#x27;,<br>);<br>// Mutations apply optimistically and enter the durable outbox.<br>if (orders.length &gt; 0) {<br>await zb.mutate(&#x27;orders&#x27;, &#x27;UPDATE&#x27;, { id: orders[0].id }, { status: &#x27;done&#x27; });<br>}<br>query() reads local data. mutate() owns the write path: local changes, versioning, the outbox, retries and verdicts. Completing mutate() does not mean PostgreSQL has accepted the write; handle its outcome through the library. Use request() to query a remote responder, and ingest() when its answer should be retained locally.<br>The TypeScript client drives its own synchronization loop. With native libzb, the host drives sync() and poll(); see the binding&#x27;s example for its threading or worker model.<br>The replica is a real database on the device, and the app reads it with that database&#x27;s SQL:<br>- SQLite, the default everywhere: a file on phones, desktops and Node, OPFS in the browser.<br>- PGlite, PostgreSQL compiled to WebAssembly, in the browser or Node (engine: &#x27;pglite&#x27;): the same SQL dialect as the server.<br>- DuckDB, through libzb (engine: &quot;duckdb&quot;): an analytical replica for dashboards and services, which DuckDB can open directly once libzb closes it.<br>- PostgreSQL, through libzb (dbUrl): a server-side replica, for a service that wants the full PostgreSQL.<br>The table below shows which host offers which; CLIENTS has the options and the type mapping for each engine.<br>| Host | Package | Local database |<br>|---|---|---|<br>| Browser | @zebridge/client | SQLite in OPFS or PGlite |<br>| Node | @zebridge/client, better-sqlite3, @nats-io/transport-node | SQLite or PGlite |<br>| Python | zebridge | SQLite, PostgreSQL or DuckDB through libzb |<br>| Dart / Flutter | zebridge | libzb; see the binding&#x27;s platform support |<br>| React Native | @zebridge/react-native | SQLite through libzb; requires a native build |<br>| Android / Kotlin / Java | eu.zebridge:zebridge-android | SQLite through libzb |<br>| Other native hosts | libzb&#x27;s C ABI | SQLite, PostgreSQL or DuckDB |<br>The native core is written in Zig. The TypeScript client reuses shared core rules through WebAssembly; the platform bindings wrap libzb rather than implementing another synchronization engine.<br>A responder is a service your apps can ask questions: routing, search, analytics, an external API. It is a separate process built on the same client library: it connects to NATS with its own identity, keeps its own replica if it needs data, and answers query.&lt;tenant&gt;.&lt;name&gt;. Any client of that tenant can call it, and none needs an HTTP endpoint, a URL or another credential:<br>// The service, in its own process: a client opened with credsPath: &#x27;pois.creds&#x27;<br>// (minted by `bridge --mint-responder --name pois --tenant acme`) instead of an invite.<br>await service.serve({<br>tenants: [&#x27;acme&#x27;],<br>handlers: { nearby: ({ lat, lon }, tenant) =&gt; findNearby(lat, lon) },<br>});<br>// Any app of tenant acme.<br>const pois = await zb.request(&#x27;query.acme.nearby&#x27;, { lat: 47.2, lon: -1.55 });<br>Several instances of a responder share the load (one NATS queue group), and a responder can run on a regional leaf, near its users. It can read but never write: NATS refuses a mutation from its identity. ingest() keeps an answer in the app&#x27;s replica. See Services and sensors for the identities, and the routing example for Valhalla served this way.<br>Start with the first calls in each language, then use CLIENTS for options, lifecycle and differences between clients. Installation and platform artifacts are covered in DISTRIBUTION.<br>Both ZeBridge and PowerSync keep a local SQLite replica of PostgreSQL on each device. They differ in where the write path lives, what you run, and services, which ZeBridge carries on the same connection.<br>flowchart LR<br>subgraph ZB[&quot;ZeBridge: you run one hub&quot;]<br>direction LR<br>PG[(PostgreSQL&lt;br/&gt;local or managed)] &lt;--&gt; B[Bridge]<br>S[Sweeper] --&gt; PG<br>B &lt;--&gt; N[NATS JetStream]<br>A[Mutation admission] &lt;--&gt; N<br>end<br>N &lt;--&gt; C[libzb or zb-client-ts&lt;br/&gt;+ local replica]<br>flowchart LR<br>subgraph PS[&quot;PowerSync: hosted or self-hosted service&quot;]<br>direction LR<br>PG2[(PostgreSQL)] --&gt; P[PowerSync service]<br>P &lt;--&gt; BS[(Bucket storage&lt;br/&gt;PostgreSQL or MongoDB)]<br>end<br>P --&gt; C2[PowerSync SDK&lt;br/&gt;+ local SQLite]<br>C2 --&gt;|&quot;uploadData(): your code&quot;| API[Your backend API]<br>API --&gt; PG2<br>AUTH[&quot;Your auth: signs the JWT&quot;] -.-&gt; C2<br>|  | ZeBridge | PowerSync |<br>|---|---|---|<br>| What you run | NATS, the bridge, admission and the sweeper on one server | The PowerSync service and its bucket storage, or their hosted cloud |<br>| Server code you write | Your sign-in, then one SQL call per invite | Your sign-in, a JWT signer the service trusts, and the write API that applies each upload |<br>| Table schema on the client | Sent by the bridge | Declared again in the app |<br>| Reads | SQL on the local replica | SQL on the local replica |<br>| Writes | mutate(); the library sends them, PostgreSQL judges them and returns a verdict | Plain SQL on local tables; your uploadData() sends them to your backend, which applies its own rules |<br>| Exactly once, authorization, refusals | Built in: receipts, tenant credentials and row-level security, a verdict per write | Your backend&#x27;s job; the SDK retries until uploadData() succeeds |<br>| Services for the app | Responders on the same NATS connection and credentials, on the hub or a regional leaf (Connect a service) | No built-in equivalent: services are your own APIs, reached outside the sync connection and authenticated separately |<br>| Client platforms | Browser, Node, Python, Dart/Flutter, React Native, Android, C ABI | Many mature SDKs, including web, React Native, Flutter, Kotlin, Swift and Node |<br>Measured, same workload: 500 clients, one Supabase database, the same table rules for both (2026-11-02).<br>|  | ZeBridge | PowerSync |<br>|---|---|---|<br>| Delivery: 500 clients starting cold receive the 10,000-row table, median (excluding local apply) | 5.3–5.7 s: one shared compressed snapshot, 0.23 MB a client | 61–76 s: every operation of the bucket, 4.63 MB a client |<br>| Writes, offered at 1,000/s / 2,000/s | 990/s, verdict median 0.69 s / 1,572/s | 879/s through PostgREST, acknowledgement median 4.8 s / 1,702/s |<br>| A write reaching every client, one write to each of the 500, median | 0.4–0.8 s | 0.7–1.6 s |<br>The configurations, both servers&#x27; figures, what the runs do not measure, and what a disconnect does to a write in each are in COMPARISON.<br>The hub runs NATS and three ZeBridge processes. They have separate responsibilities:<br>| Process | Responsibility |<br>|---|---|<br>| Bridge ( bridge) | Reads PostgreSQL changes, builds snapshots, manages enrollment, and applies admitted mutations to PostgreSQL. |<br>| Mutation admission ( bridge --mutation-ingress) | Validates incoming mutation requests and enforces per-principal queue budgets before storing them for the bridge to process. |<br>| Sweeper ( bridge_sweeper) | Advances the database&#x27;s GC floor, then reaps the tombstones older than it. One active sweeper per database. |<br>flowchart LR<br>PG[(PostgreSQL)] &lt;--&gt; B[Bridge]<br>B &lt;--&gt; H[NATS hub]<br>H --&gt;|Mutation requests| A[Mutation admission]<br>A --&gt;|Admitted queue| H<br>S[Sweeper] --&gt;|Tombstone cleanup| PG<br>H &lt;--&gt; C[Client library]<br>H &lt;--&gt; L[Optional regional leaf]<br>L &lt;--&gt; C2[Client library]<br>L &lt;--&gt; R[Routing / analytics responders]<br>C &lt;--&gt; DB[(Local replica)]<br>C2 &lt;--&gt; DB2[(Local replica)]<br>- Changes: the bridge reads PostgreSQL&#x27;s logical replication feed and publishes schemas and changes to NATS JetStream. Connected clients apply those changes to their local databases.<br>- Seeding and recovery: the bridge builds compressed snapshot chains per table and tenant: fulls and deltas. Clients fetch these from NATS and follow CDC after the chain&#x27;s cut. Eligible reconnects can use deltas to replace a larger CDC backlog.<br>- Writes: clients publish mutation requests to NATS. The separate admission process validates them and bounds each principal&#x27;s queued work. The bridge consumes admitted writes, applies them to PostgreSQL and records durable receipts with their outcomes. Matching retries reuse the receipt rather than committing the mutation again.<br>- Housekeeping: the sweeper holds a database-wide lock, advances the GC floor (a watermark that never goes down: a write stamped before it is refused, not replayed) and then reaps tombstones older than it, under one retention (GC_THRESHOLD_MS) for the whole database. A second sweeper idles. See the floor.<br>- Services: responders answer requests over NATS, using their own replica or an external service. A routing responder can wrap Valhalla; an analytics responder can query DuckDB.<br>Devices seed from shared snapshot objects rather than querying PostgreSQL individually. This keeps a connection storm from becoming a snapshot-query storm on the primary database. PostgreSQL still carries mutation execution and the bridge&#x27;s snapshot-building work.<br>Start with a hub. Add leaves when regional connections, seed traffic or services justify them.<br>A seeding leaf runs its own JetStream domain and mirrors the authorized tenants&#x27; snapshot data. Clients can download fulls and deltas locally; authoritative CDC streams, mutation processing and verdicts remain at the hub. Leaves can also host responders near their users.<br>This offloads snapshot serving and client connections. It does not make the hub highly available or move authoritative writes to a region. Enrollment supplies an assigned leaf followed by the hub for ordered connection failover; a live connection to a leaf with a broken hub link is a separate failure case. See leaf boundaries, configuration and fallback behavior.<br>You need PostgreSQL with logical replication and the privileges needed to install ZeBridge&#x27;s SQL objects, plus a server for NATS, the bridge, mutation admission and the sweeper. PostgreSQL may be managed and run on another machine; keep its network latency to the bridge in mind.<br>| Route | Guide |<br>|---|---|<br>| Hub with Docker Compose | Compose deployment |<br>| Hub on a Debian VPS with systemd | Ansible deployment |<br>| Manual installation and managed PostgreSQL | DEPLOYMENT |<br>| A managed PostgreSQL, from an empty project (Supabase) | SUPABASE_TEST |<br>| Optional regional leaves | LEAF_NODES |<br>The setup establishes NATS identities and TLS, installs the database functions and roles, enables the tables, starts admission, the bridge and the sweeper, and issues device invites. Follow the selected deployment guide rather than combining initialization commands from different layouts.<br>Before starting or after changing configuration, run bridge --diagnose with the same environment and credentials as the service. It reads the database, NATS and the bridge&#x27;s status without changing them. In Compose:<br>docker compose exec bridge sh -c \<br>&#x27;set -a; . /etc/zebridge/.env.nats; set +a; bridge --diagnose&#x27;<br>Use OPERATIONS to interpret the report, including checks skipped because a service is unavailable. Diagnosis is a configuration and health check, not proof that every device has converged. For upgrades, follow the receipt upgrade order: install the matching SQL before starting the new bridge workers.<br>Use zebridge_enable() to declare each table&#x27;s replication and write rules. Its dry_run mode reports schema requirements before enabling the table. Run bridge --diagnose to check the wider deployment.<br>Writable tables need deliberate choices about keys, versions, tenants and deletes. Client-generated UUIDs support offline inserts; version stamps resolve competing writes; tombstones preserve deletions for absent devices. Row widths and schema descriptors must fit the bridge&#x27;s configured buffers and NATS payload limits.<br>See database schema requirements, migrations, and configuration and sizing.<br>The supported architecture is offline-capable clients, optional regional seeding leaves, and a single active hub (PostgreSQL, NATS, the bridge, mutation admission and the sweeper) under supervised restart. It is not automatic high availability, and running duplicate containers would not make it one safely. Offline operation buys time; it does not remove the retention and storage limits below.<br>One bridge deployment per database is the recommended setup. More than one is a constrained configuration, for what it does buy: different table sets, isolated workloads or deployment lifecycles, or separate NATS deployments from one PostgreSQL database. It is not HA, a second bridge following the same tables adds no useful throughput, and every extra bridge adds replication, snapshot and coordination cost. The constraints (one shared GC policy and one sweeper per database, one publication per table) are in DEPLOYMENT.<br>What an outage of one component does in the production layout (the Compose and Ansible hubs, which run all three ZeBridge processes; the evaluation quick start above has no admission process: without MUTATION_ADMISSION=1 the bridge takes writes directly, and the Admission row does not apply to it). Each row is played by scripts/scenarios/outage_matrix.py (the effect while the component is down, and that the hub converges when it is back; how long it may stay down depends on queue retention and storage limits that are still to be verified under load):<br>| Unavailable | Expected effect |<br>|---|---|<br>| Bridge | PostgreSQL changes stop reaching clients; mutation execution and generation building pause. |<br>| Admission | New mutations cannot enter the queue; clients keep them locally and retry. |<br>| Sweeper | Cleanup pauses; storage pressure grows with the length of the outage. |<br>| Hub NATS | Hub CDC and mutation transport stop. Leaves can serve cached seeds and reachable regional responders, within the trust-staleness policy (LEAF_NODES). |<br>Supervision, backups, rebuilding the hub on another machine, and what automatic failover would need: A supported deployment. Leaves add seeding capacity, not hub availability.<br>ZeBridge fits mobile apps, intermittently connected devices, field equipment and services that benefit from local SQL reads. The depot example uses trucks, shared plans and routing; the same pattern applies to equipment working through periods of poor connectivity.<br>- Replication is tenant-based. A followed table brings the tenant&#x27;s rows into the replica. A local SQL WHERE clause filters what the app reads, not what the device receives. One tenant per consumer at B2C scale is outside the intended topology.<br>- PostgreSQL is the authority. Offline writes are provisional until judged by the server. This is not peer-to-peer or multi-master replication.<br>- Conflict semantics are explicit. Ordinary writes use last-writer-wins. Cooperative editing can merge per-field registers; it is not collaborative text editing. See COOPERATIVE_EDITING.<br>- Recovery has retention requirements. CDC retention, chain availability, tombstone GC and mutation receipt retention serve different purposes. An offline duration that permits reads to recover does not automatically permit every old pending write to execute: a write stamped before the GC floor is refused, because the tombstone that would have overruled it may be gone. See catching up and indeterminate write recovery.<br>- Local persistence matters. Deleting a replica or reinstalling an app can destroy unsent writes. Protect device identity and storage as application data.<br>- Operate NATS and PostgreSQL deliberately. Credentials, replication slots, disk budgets, backups and restore procedures are part of the deployment.<br>See SCOPE for the boundaries and SECURITY for tenant isolation, permissions and revocation.<br>| Explore | Example |<br>|---|---|<br>| Local reads, optimistic writes and refused mutations | Tables demo |<br>| Large replicas and mobile seeding | Large table |<br>| A DuckDB replica | DuckDB |<br>| Mutations and analytical queries under load | Events |<br>| Routing through a responder | Valhalla routing |<br>| Shared plans, a map and routing | Depot, running live |<br>| Several editors on one record | Shared record |<br>| Archiving readings to Parquet | Archive |<br>TEST_SCENARIOS describes the scenarios and what each checks. The repository includes client fixtures, database and authorization checks, recovery scenarios, and load harnesses. Consult the code and tests when a reference document disagrees with the implementation.<br>Measure CDC distribution, snapshot download/apply, mutation commits and outbox recovery separately. They have different bottlenecks. Results depend on the build, database latency, disk, lane count, principal count and recovery load; a historical peak is not a deployment capacity guarantee. The event ramp and storm harness provide starting points for evaluating your topology; SPEED_TEST is one measured example, with its machine and load stated.<br>Each figure is one run on the hardware named, not a capacity guarantee.<br>On a production hub, 0.2.10. The bridge, admission, the sweeper and NATS on one VPS (6 vCPU, 11.7 GB, 4 ingress lanes); PostgreSQL on Supabase in London, 17 ms per query from the hub; the clients on one Mac, 23 ms from the hub, with the published Python package; a table of 10,000 rows of about 200 bytes. Measured 2026-11-02.<br>| Direction | What | Figure |<br>|---|---|---|<br>| PostgreSQL → clients | 10 clients seeding the table | synced in 0.98 s (median), 0.35 s when their replicas were already seeded |<br>| PostgreSQL → clients | 100,000 rows inserted in one statement | the bridge published them at about 46,700 events/s; one client held them all 2.95 s after the commit |<br>| both | one client&#x27;s write reaching all 10 clients through PostgreSQL | median 117–121 ms |<br>| clients → PostgreSQL | writes judged and answered, one client | 263 writes/s |<br>| clients → PostgreSQL | 10 clients | 1,414 writes/s |<br>| clients → PostgreSQL | 50 clients, each sending 400 at once | 1,447 writes/s, median verdict 3.2 s |<br>What the write figures are. They are the hub&#x27;s total, shared by every tenant: all writes go through the same ingress lanes, each with one connection to PostgreSQL, so more tenants do not add capacity. More ingress lanes can, until the database&#x27;s round trips dominate: 8 lanes are measured in the comparison above. The runs used one tenant, which is not the designed topology but shows what one tenant can take when nothing else writes. During them PostgreSQL and the bridge were nearly idle: a batch of writes costs its round trips to the database, so the distance between the bridge and PostgreSQL sets the ceiling. 1,450 writes/s is 14,500 devices each sending one write every 10 seconds.<br>The rate limit sets what one tenant gets. By default there is none (MUTATION_RATE_PER_PRINCIPAL=0), and a tenant can use the whole ceiling, as above. Set, it applies to each principal and to each tenant: at 100 per second (burst 200, this hub&#x27;s setting) one tenant is held to about 100 writes/s, whatever the hub could take. These runs used 2,000 (burst 4,000) and no write was delayed. See Write limits, as a client sees them.<br>On one machine, and earlier deployments.<br>| What | Figure | Conditions | Details |<br>|---|---|---|---|<br>| The bridge, PostgreSQL → NATS | ~100k events/s in Docker, 200k+ native | Apple M2 Pro, a 2,000,000-row burst, PostgreSQL and NATS on the same host | SPEED_TEST |<br>| A client applying a busy table live | libzb ~50k events/s, zb-client-ts ~33k | one Mac, a table under a steady write load |  |<br>| A change reaching a replica | median 12 ms | dev stack on one Mac, libzb on the DuckDB engine |  |<br>| Seeding a large table on a phone | libzb 35.0 s (React Native), 70.8 s (Flutter); JavaScript client 725 s | iPhone 12, the same table | Large table |<br>| Client writes into PostgreSQL | ~8,500 writes/s on one ingress lane, ~19,500 on four | one Mac, PostgreSQL on the same machine, before 0.2.7&#x27;s durable mutation receipts | the ramp |<br>| 500 clients starting at once, empty replicas | all synced, the slowest in 8.6 to 12 s; NATS at 140–165 % CPU, about 1 MB per client; PostgreSQL under 16 % CPU; the bridge near idle | 2-vCPU, 3.7 GB VPS, clients 100 ms away | storm |<br>| One write reaching those 500 | median 288 ms, p95 491 ms (100 ms of it network) | same |  |<br>| NATS restarted under the 500 | none lost; half back within 6 s, the last at 23 s | same |  |<br>| 100 clients through a leaf across the Atlantic | cold sync median 13.2 s, slowest 14.7 s; warm 1.7 s; after a NATS restart, longest gap 2.9 s, none lost | 0.2.8 test hub in Canada, clients on a Mac in Europe (~100 ms) |  |<br>| The bridge&#x27;s memory under a steady stream | ~8 MB resident, allocation flat over 70 minutes | 20,246 ticks of insert, update, delete | scripts/scenarios/drip.py |<br>A comparison with PowerSync on the same workload is in Compared with PowerSync.<br>Not measured: the production hub&#x27;s write ceiling with more than 4 ingress lanes (8 were measured only on the comparison&#x27;s server); how long each component may stay down before recovery needs a re-seed; NATS memory at a steady load (it follows recent load, not stored data); a long network partition under load.<br>| Task | Reference |<br>|---|---|<br>| Install and connect PostgreSQL | DEPLOYMENT |<br>| Diagnose, tune, upgrade, back up and recover | OPERATIONS |<br>| Integrate a client library | CLIENTS |<br>| Enroll, renew and revoke identities | AUTHENTICATION |<br>| Understand permissions and table rules | SECURITY |<br>| Add regional caches and responders | LEAF_NODES |<br>| Change schemas and datasets | MIGRATIONS |<br>| Configure metrics and logs | OBSERVABILITY_TELEMETRY |<br>| Understand the wire and recovery contracts | PROTOCOL, GENERATION (a client&#x27;s position on the tenant and public streams) |<br>| Check platform artifacts and packaging | DISTRIBUTION |<br>| Assess scope and tested behavior | SCOPE, TEST_SCENARIOS |<br>| Edit one record from several places | COOPERATIVE_EDITING |<br>| Read the design log (numbered § sections that code comments cite) | NOTES |<br>Published packages and images are the simplest starting point. To work on the implementation, use the repository&#x27;s Zig 0.17 toolchain requirements and dependency pins in build.zig.zon. The NATS client is a submodule: the fork ndrean/nats.zig, branch zebridge (upstream plus our patches, one commit each); see DISTRIBUTION for platform builds and packaging, PG for the pgoutput binary formats the bridge decodes, and CLAUDE.md for a map of the tree, the build and test commands and the scenarios that act as the real tests.<br>ZeBridge is licensed under Apache 2.0.</div>
+</div>
+
+</div>
+
+</body>
+</html>
