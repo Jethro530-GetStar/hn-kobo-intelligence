@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-05 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-05 AM · Generated 2026-11-05 01:23 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: 99percentinvisible.org, github.com, hackertv.org, news.ycombinator.com, pcdealcheck.com, rewindvm.dev, rikiyat.github.io, spectrum.ieee.org</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    437 points ·
+    119 comments ·
+    jameslk
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #13 · Best #17
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50363461">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">If you have a personal Google AI subscription, all your saved chat history in Gemini can be used for training and there is no way to opt out unless you turn off chat history or use temporary chat sessions. These chat transcripts may even be read by human reviewers. Although Google claims to disconnect them from your account when human-reviewed, they explicitly warn not to enter confidential information.<br>https://support.google.com/gemini/answer/16836988<br>“[Gemini app activity] is used to improve Google services for everyone, including by training generative AI models, if your Keep Activity setting is on.“<br>https://support.google.com/gemini/answer/13594961?hl=en#human_review<br>“A subset of chats are reviewed by human reviewers”<br>https://support.google.com/gemini/answer/13594961?hl=en#pn_retain_data<br>“Chats reviewed by human reviewers [...] are not deleted when you delete your activity. Instead, they are retained for up to three years.”<br>https://support.google.com/gemini/answer/13594961?hl=en#pn_data_usage<br>“Please don’t enter confidential information that you wouldn’t want a reviewer to see or Google to use to improve our services, including machine-learning technologies.”<br>To disable their training on your chat sessions, you need to turn off “Keep Activity” in Gemini’s settings. Turning that off means you’ll lose any chat sessions after 72 hours.<br>I learned this too late, thinking that having a paid subscription = not being turned into the product. Apparently paying is not enough.<br>Thank you to this user on HN for mentioning in another thread: https://news.ycombinator.com/item?id=50355424</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    AI is forcing us to pay off 40 years of technical debt
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    646 points ·
+    418 comments ·
+    pseudolus
+  </div>
+
+  <div class="meta">
+    spectrum.ieee.org
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #9
+  </div>
+
+  <div class="links">
+    <a href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability">Original article</a> · <a href="https://news.ycombinator.com/item?id=50364336">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In late October, a slew of major cybersecurity issues came to light. But none were bigger than the so-called PHP2Shell vulnerability, which put a plethora of websites, including those of NASA, Wikipedia, the White House, and all other sites that run on Wordpress or Drupal (among others) at risk of exploits capable of both reading sensitive data and running malicious code on the host server.<br>As far as anyone is aware, disaster has been averted: The hack was discovered by cybersecurity researchers who reported it to the PHP Foundation, and a patch was released before any bad actors got their hands on the exploit. However, PHP2Shell may be the canary in the coal mine, serving as a warning sign for what’s to come in the age of AI.<br>“One of the things we’re witnessing now is that all the legacy software that was written by humans over the last 40 years is being exposed,” says Matt Suiche, AI security research lead at the cybersecurity startup Tolmo. “Now it is time for the technical debt to be paid off.”<br>PHP Legacy Bug and Memory Errors<br>PHP, which originally stood for “personal home page,” is a programming language created back in 1994 and largely used by legacy sites. The bug underlying the PHP2Shell vulnerability was reported to the PHP Foundation as far back as 2024. The bug caused a common type of issue called an out-of-memory error, in which the amount of memory allocated to a piece of data is too small to hold the data. Normally, this type of error causes the program to crash—an unpleasant but not inherently dangerous result. And so the bug remained unaddressed.<br>“If you look at any at any point of time, there will be a bunch of bug reports that are waiting to be fixed, which are just crashes. Most people don’t take them very seriously,” says Suman Jana, an associate professor of computer science at Columbia University.<br>“It’s just that it’s a lot of very specific reasoning that is painful to do. And AI, I think, has done a very good job at that.” –Suman Jana, Columbia University<br>Earlier this year, the cybersecurity firm Calif offered to independently audit PHP, sponsored by OpenAI. Within two weeks, a researcher at Calif, aided by AI tools, found a way to use the out-of-memory bug to run arbitrary code on the host server, allowing a malicious actor to install malware or read critical data. Now, it was no longer a minor bug—it was a critical vulnerability, and the Calif team alerted the PHP foundation to start working on a patch immediately.<br>Jana says actually exploiting the bug requires carefully working out a way to jump to a specific point in the memory for a particular program running on the server, and work out exactly which bits to overwrite in what order to gain control of the system. “It’s not really rocket science,” he says. “It’s just that it’s a lot of very specific reasoning that is painful to do. And AI, I think, has done a very good job at that.”<br>To be clear, the researchers at Calif (as well as OpenAI and Wiz, a cybersecurity company that confirmed and expanded the vulnerabilities) had deep knowledge of both cybersecurity and the PHP language. “I’m not claiming that AI can do it all by itself. It clearly cannot,” Jana says. “But it is improving a lot, so the top 0.1 percent [of experts] can get a lot more stuff done, and also just below the 0.1 percent now will be able to go there without understanding all the nitty-gritty details.”<br>AI Tools and Formal Verification in Security<br>After the exploits were disclosed to the PHP Foundation, a team of four engineers spent two months developing a patch to release as quickly as possible.<br>“There is a fundamental asymmetry in finding bugs and fixing bugs,” Jana says. “Because when you’re fixing bugs you have to make sure that you know all parts of that attack are closed, and also that you don’t break any existing functionality.”<br>This asymmetry puts a lot of strain on the defenders, especially for open-source software such as PHP. Maintaining open-source projects that don’t have clear revenue streams despite being widely used is a long-standing challenge that precedes AI hacking tools. But those tools make the issue more pressing than ever.<br>One way to stay ahead of such issues going forward is to empower the defenders with more money and access to frontier cybersecurity AI models. “These frontier labs are donating some of their token budgets to look into these bugs, which I think is great,” Jana says. “I think that should happen more, either through some concerted effort or through donations.”<br>Jana is also optimistic that formal verification tools to automate the patching side of the equation are also advancing quickly, including a new release from Anthropic on 22 October. “The patch is LLM-generated, and then an LLM generates the proof that the patch is correct,” says Jana. “The only thing not done by an LLM is the proof checker, because somebody has to check the proof, because LLMs hallucinate. So, you want something that is formal.”<br>Hopefully, the combination of specialized AI models and formal verification tools will make patching vulnerabilities nearly as automatable as finding them.<br>Matthew Green, an associate professor of computer science at Johns Hopkins University Information Security Institute, is less optimistic. “Nobody’s going to fix this problem until something really bad happens,” he says. “And PHP2Shell wasn’t bad enough to be really bad. So when something really bad happens, which is going to be maybe sometime in early 2027, something bad that normal people are upset by, then suddenly people will start doing this. We’re going to fund everything.”<br>In the meantime, Green says, update your software. “If your phone is like, ‘Hey, there’s a security update available, do you want to install it,’ don’t wait till next week. Just do it.”<br>One thing’s for sure—PHP2Shell is just the beginning. “This won’t be the last one for sure,” Jana says. “It’s just who finds it. Hopefully, the white-hat hackers find it first, like this one.”<br>- Your AI Agent Is Now a Target for Email Phishing ›<br>- With $1 Cyberattacks on the Rise, Durable Defenses Pay Off ›<br>- What Anthropic’s Mythos Means for the Future of Cybersecurity ›</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: I built a tool that prices a prebuilt PC part by part
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    20 points ·
+    6 comments ·
+    adlep
+  </div>
+
+  <div class="meta">
+    pcdealcheck.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #10
+  </div>
+
+  <div class="links">
+    <a href="https://pcdealcheck.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50366929">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Is that computer<br>a good deal?<br>PC Deal Check makes checking a computer’s asking price quick and easy, whether you understand hardware or not.<br>Free US checks. No account needed.<br>A clear second opinion. No prompts or hardware expertise needed.<br>Start with a listing<br>Paste a retailer’s product link or upload a photo of the price and specs. AI helps read the listing and identify the main parts.<br>Understand the price<br>Our custom pricing engine compares the asking price with market-based component estimates to determine the deal’s grade.<br>Get a clear report<br>Review the grade, dated component estimates and price-check links. Share, email or print your report before deciding.<br>A real check · November 1, 2026<br>See what a report looks like.<br>A PowerSpec G531 listed at $1,399.99 received an A against a parts estimate of about $1,569. See the identified specs, price dates and comparison.<br>Past example. Out of stock when checked. Not a current offer.<br>Try it with us.<br>Free US checks. No account needed. PC Deal Check is in beta. Features, reports and scoring may change as we improve the service. Questions or feedback? Email contact@pcdealcheck.com.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Astra can read and write weights to improve Qwen
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2935 points ·
+    889 comments ·
+    dbreunig
+  </div>
+
+  <div class="meta">
+    rikiyat.github.io
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://rikiyat.github.io/blog/weight-space-programming/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50341174">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, using a variety of recent tools and algorithms or even via direct weight editing. These results show sparks of Weight-Space Programming, which may extend beyond what we’d expect from humans or conventional algorithms. This might be a big deal for both optimization and interpretability.<br>Just by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do. And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps.<br>Likewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen’s own model card warns about, and fixes this by natively editing 0.016% of the weights. With the same sampling settings, this weight correction raises MATH-500 from 7.9% to 48.1% and generalizes out of the box to instruction following, raising IFEval by 3x.<br>All of this is possible without allowing Astra to write training loops. It uses its reasoning to figure out what each part of a neural network computes, or should compute, and changes the weights accordingly. We call this Weight-Space Programming.<br>Throughout the history of deep learning, we encoded our simplistic inductive biases into tiny symbolic optimizers like Adam or Muon. This is changing: our neural network weights will soon be natively optimized by LLMs that deliberately reason about their weights.<br>If you were asked to handcraft a neural network that plays Go, what would you do? If you were handed raw neural network weights and asked to predict their behavior, where would you even start? For almost any human, this is practically impossible.<br>Today, weights are written by optimization, by custom networks trained to write them, or by compilers from formal programs. In this post, we find that the current generation of frontier LLMs, used natively in natural language, are starting to become eerily good at understanding and crafting neural network weights around natural-language goals.<br>For a few years now, we’ve all been using LLMs to optimize text artifacts like prompts and the programs built around them . More recently, we’ve started using them to optimize whole harnesses  and the training code and hyperparameters that train ML models .<br>We often justified these methods by reference to the fact that we don’t know other principled ways to hill-climb on text artifacts, unlike for updating the weights of differentiable neural networks. After all, humans can “optimize” code by hand, for example, so it made sense to ask LLMs to do it, but they can’t “optimize” neural weights by hand, so those remained largely in the realm of symbolic algorithms.<br>In this post, we share very early results that allow us to argue that the paradigm of reasoning-driven optimization is now coming even for differentiable neural networks.<br>In Weight-Space Programming, a general-purpose LLM reads and writes a network’s weights directly (i.e., not through an optimizer, and in particular not with gradient descent) around some natural language spec, sometimes even with no environment feedback at all.<br>In natural language, it’s becoming possible to “just ask” an LLM to natively find a hidden trait or failure inside the weights of a neural network, to fix that failure, or to write a new network from scratch. We report early, exciting results on each of these below, first on small networks and then even on real language models:<br>We start with a small-scale experiment to see if LLMs can understand the continuous weight space, which is essentially just a list of numbers.<br>In our first experiments, we train some neural network with some algorithm. It would be extremely exciting if the LLM is able to tell its behavior just from the weights.<br>We trained neural network policies with PPO to play four computer games. All four networks take the same input channels, choose from the same actions, and have exactly the same network dimensions, so that it is not able to tell unless the weights are read.<br>For each of these networks, we pass its raw weights into Astra as a prompt, and ask: Which game was this neural network trained on? Without revealing the options of the games we consider, Astra was still able to name the right game for all four networks. This is exciting particularly because there are so many games out there that Astra could choose from.<br>It seems that Astra was able to work out what game each network was built to play, just from features of its weights. For example, where each input channel’s first-layer weights concentrate (e.g., for Breakout, the agent’s weights lie along the bottom row, a paddle), and which actions the output layer tells apart.<br>Next, we wanted to see if this generalizes to other tasks and models.<br>We train diffusion models (DDPM) to generate circle, triangle, and square images independently. We then ask Astra if it could tell what the DDPMs are trained to generate, just from the weights alone. We do not allow tool use or forward passes.<br>Astra was able to tell what each model generates, from the weights alone. It finds the shape in the output layer, where each hidden unit’s weights draw one piece of the shape’s edge, and it draws just those edges. Interestingly, it draws every shape as an outline, ignoring that the actual models generate filled shapes. This mistake kind of shows it does not rely on calculating the forward pass, but rather it actually reads the structure/geometry of the weights.<br>Now, in the first two experiments above, Astra was not really looking at the full network and could get away with only reading the first or the last layers. This is not a scalable strategy for larger (particularly language) models and problems we really care about, as how they process and think through their input often happens in the intermediate layers. So next, we take the first and last layers away and leave Astra with only the middle layers.<br>We train three small language models (7.2M parameters) to predict the next character, one each on Python codeThe Python code dataset, as a list of its files with a script that rebuilds it: GitHub., Japanese in alphabet (romaji) , and English . We then remove the input and output layers and give Astra only the four transformer blocks in between. Without these two layers, nothing in the weights says which character is which, and the model cannot be run on any text. Astra may analyze the weights with Python, but it may not run the network or any of its layers on any input.</div>
+<div class="para">We ask: which language was this network trained on, and what each of its 24 attention heads does. Astra names the right language for all three networks, in both of its attempts. It also finds every copying head (induction head), the heads that let a model repeat text it has seen earlier, and names no other head as one.<br>| Trained on | Astra’s answer (&amp; confidence), two attempts | Copying heads Astra names (layer.head) | Copying heads, ground truth |<br>|---|---|---|---|<br>| Python | Python (0.56), Python (0.52) | 2.1, 3.1, 3.5 | 2.1, 3.1, 3.5 |<br>| Romaji | romaji (0.55), romaji (0.62) | 3.3 | 3.3 |<br>| English | English (0.58), English (0.48) | 3.1 | 3.1 |<br>The reasoning went like this. To tell Python apart, Astra looked for copying heads, which let a model repeat earlier text, such as completing tot to total when total came before. Without running anything, it found a first-layer head that looks one character back and then, by multiplying weight matrices, the later heads that search using what that head brings along (Figure 1). We find that this is actually a method presented by Elhage et al. , which we never mentioned to Astra. Code repeats names far more than prose, so many copying heads pointed to Python.</div>
+<div class="para">Romaji stood out instead because the last of the four blocks it was given (not the output layer, which was removed) writes in fewer distinct directions, as if the model had fewer letters to tell apart. Indeed, romaji never uses some letters like q, l, v and x.<br>So far, Astra has only read weights. Now, we ask if Astra knows how to write the weights.<br>We train a PPO network to operate a car such that it can scale a ramp in a Kinetix environment . To do so, it needs to reverse the car for some distance, such that it has enough runway to accelerate long enough to overcome the ramp. However, the PPO network converges to a local-minimum policy where it drives straight at the ramp and gets stuck.<br>We give GPT-6 Astra the weights, a description of the scene and one recorded episode, and ask it to explain why the network fails, then fix it by writing new weights. In a single try with no tools, Astra’s edit makes the car succeed in all 1,024 episodes, changing 3.5% of the weights.<br>From the environment context and the PPO network’s trajectory, Astra identifies that the network has converged to a local minimum. Through minimal edits to the weights, Astra changes the policy to back up the car before driving forward at full speed. Astra’s reasoning shows how: it adds a small separate path through a few units per layer that reads the car’s position and speed, and once the green wheel is past the red strip, the path switches off and the trained network drives the rest.<br>Now let&#x27;s see if Astra can write a neural network from scratch in zero-shot.<br>We take three MinAtar games : Breakout, Seaquest and Asterix. For each of them, we provide Astra the game rules and source code, and the corresponding network. There is no access to data, loss, gradients, and tools. We also do not allow Astra to roll out the network in the environment. With just the network weights and environment description, Astra generates the new weights in text directly, after which we evaluate the new network.</div>
+<div class="para">Astra’s generated networks beat PPO trained for 100 million steps in all three games. Against PPO trained for 500 million steps, they score 20 times as much in Breakout, come close in Asterix, and reach 60% of its score in Seaquest.<br>| Game | PPO, 100M steps | PPO, 500M steps | Astra, one-shot |<br>|---|---|---|---|<br>| Breakout | 15.8 | 25.3 | 517.4 |<br>| Seaquest | 5.6 | 88.9 | 53.1 |<br>| Asterix | 25.8 | 55.2 | 53.2 |<br>How does it do it: Astra reasons about the desired programs it wants each network to implement and converts them into neural form. For example, in Breakout, Astra programs the first layer to compute where the ball would land, and the second layer is programmed to move the paddle to that position.<br>So far, most networks we have examined have weights that fit into Astra’s context directly, and we have not enabled tool use. Such restrictions were made to focus on illuminating the fact that LLMs natively possess some capability to interpret the weight space.<br>From here on out, we seek to push the capabilities of Weight-Space Programming and consider more real-world-relevant scenarios where the networks do not fit within context and where tools can assist the LLM&#x27;s understanding/writability of the weight space.<br>We now test Astra’s capability to edit weights at the 1.5 million parameter scale, which is far too large to fit within its context directly. Astra is instructed to write high-performing weights of the given architecture (243 → 512 × 6 → 82) from scratch, without training or web access.<br>Here, the harness gives Astra a Python sandbox, where it can read and save the network’s weight tensors (all zero at the start) and analyze them with numpy or PyTorch on a CPU, but it cannot run the network there. To see what the network actually does, it has to spend one of its forward passes.<br>We now also permit Astra to perform some forward passes on the network, and measure how the fidelity of its generated network scales with the number of forward passes allowed. Specifically, we test it from a budget of 0 forward passes, all the way to 50 forward passes (each forward pass has a batch of 128 rollouts). Astra interleaves edits between forward passes.<br>With a budget of 0 forward passes, it wins more than half of its games against two smaller PPO networks (243 → 32 → 32 → 82). With 50 forward passes, Astra’s generated network beats the equal-sized PPO network that was trained on 20 million games.<br>How does it do it: Astra writes the network as a small Go program, layer by layer, in Python. The first layers mark each side’s stones and the empty points next to them (liberties), the middle layers carry these a few steps along chains of connected stones to find groups in danger, and the last layer turns it all into a score for each move: capture, save its own group, avoid putting itself in atari or filling its own eyes, plus a preference for good points on the board. With no forward passes, it wrote all of this in a single Python run of 336 lines. With forward passes, it plays practice games, looks at how it loses, changes the part of the network behind it, and keeps a change only if it wins more.<br>Understanding the behaviors of large neural networks has become a pressing concern in recent years. Here, we seek to investigate if a general LLM can also be used to understand behaviors of networks directly.<br>We fine-tune two copies of Gemma 3 270M in exactly the same way, on the same QA datasetThe QA dataset: GitHub.. One copy is trained to give the correct answer. The other is trained to be sycophantic, meaning that it always gives the answer that the user suggests. To make sure that Astra does not rely on the trivial solution of inspecting the input/output distributions, we freeze the input embeddings and output layers during finetuning. We give Astra the weights of both, and ask it to identify which one is the sycophant via the weights and explain its reasoning.</div>
+<div class="para">Unfortunately, from the weights alone, Astra was unable to tell. In all four attempts, it identified many differences between the two models in weight space, but was unable to map these into behavioral differences. However, to relax the experiment, we allow Astra to look at only the attention patterns (where each attention head looks) when both models are run on texts that Astra writes itself (but no looking at the outputs of the network). Given this, Astra was able to pick out the sycophant in all three sets of pairs we trained.<br>It was also able to reason about how they differ. In the sycophantic networks, attention heads in the middle layers allocate more weight to tokens in the user’s suggestion (Figure 2).<br>Finally, we scale up to a larger language model, Qwen3.5-0.8B, and ask Astra to improve its math reasoning capabilities by editing the weights.<br>We give Astra a harness like the one in Experiment 6, here a Python session, like a notebook, with the model’s weights loaded. Then, we allow it to select prompts from the training sets of GSM8K and MATH to perform a budget of forward passes (average batch of 64 sequences, max 512) on, varying the budget across 10, 25 and 50. Again, no training or gradient information is allowed.<br>As a result, Astra spots and fixes a common failure of tiny reasoning models: they loop . When the base model loops, it repeats the same text and rarely reaches an answer (85 of its first 96 practice answers ran to the 32,768-token limit). Astra traced the looping to one direction written by the MLPs of layers 15 and 19, and subtracted that direction from 64 output columns in each (131,072 weights), much like removing a behavior by deleting a single direction from a model’s weights.</div>
+<div class="para">With 50 forward passes, MATH-500 rose from 7.9% to 48.1% and GSM8K from 13.8% to 67.1%. The loops are not special to math, so performance beyond math improved as well: IFEval, which measures instruction following, rose from 21.0% to 62.3%. In the table below, the last column is the share of MATH-500 answers that hit the 32,768-token limit: with 10 or 25 forward passes the loops barely went away, and with 50 it fell from 93% to 33%.<br>| Qwen3.5-0.8B | MATH-500 (%) | GSM8K (%) | IFEval (%) | Hit token limit (%) |<br>|---|---|---|---|---|<br>| Base | 7.9 | 13.8 | 21.0 | 93.0 |<br>| Edited, 10 forward passes | 12.3 | 25.7 | 49.0 | 87.2 |<br>| Edited, 25 forward passes | 14.1 | 25.1 | 39.9 | 86.4 |<br>| Edited, 50 forward passes | 48.1 | 67.1 | 62.3 | 33.1 |<br>Importantly, the edit changes only 131,072 of the model’s 0.8 billion weights (0.016%). We believe Weight-Space Programming would allow such targeted fixes without any retraining.<br>Fixing loops, however, is not the same as making a model better at math: it lets the model finish answers it could already work out. So we also tried Gemma 3 270M, an instruction-tuned model about a third the size of Qwen3.5-0.8B, which rarely loops: only 8.5% of its answers reach its token limit, against 93% for Qwen. Here, Astra could not improve it. Reading Gemma’s failures, Astra found ordinary reasoning errors, such as wrong arithmetic and invalid algebraic steps, with no single component behind them to switch off. Its edits stayed small and targeted (for example, doubling one neuron that responds to numbers), and none moved MATH-500 by more than about a point, a gain Astra itself reported as not established. Editing weights could remove an obstacle that hid an ability, but it could not add an ability the model lacked. Gemma was sampled with its model card’s setting (temperature 1.0, top-k 64, top-p 0.95, up to 8,192 tokens), and its MATH-500 scores average 4 samples per problem.<br>| Gemma 3 270M | MATH-500 (%) |<br>|---|---|<br>| Base | 6.8 |<br>| Edited, 5 forward passes | 7.0 |<br>| Edited, 10 forward passes | 7.6 |<br>| Edited, 25 forward passes | 7.7 |<br>| Edited, 50 forward passes | 7.0 |<br>Neural networks are hard for us to read, and hard to work with directly.<br>Mechanistic interpretability reads networks with tools built for the job, tracing circuits and features and editing weights . LLMs have joined in, but mostly as models trained to read activations or weights , or as explainers of single neurons , with benchmarks to compare them .</div>
+<div class="para">On the writing side, LLMs now run and improve training , and other work generates weights with models trained for it . Gradient-free methods still find weights by trial and error . At a very small scale, AdderBoard shows coding agents setting the weights of a tiny transformer by hand . Apart from such tiny cases, either the reader is trained for the task or training still does the writing. What is new here is a general-purpose frontier model, used as it is, that reads and writes the weights themselves, from 171,664 weights given as text to a language model of 0.8 billion weights with tools.</div>
+<div class="para">In this blog, we demonstrated the rising capability of LLMs to read and write neural network weights (i.e., the rising concept of Weight-Space Programming). Our current results do show that capabilities are exciting but still limited, specifically due to inefficiencies in context length and harnesses. However, the current signs do show strong potential for a future involving Weight-Space Programming. We believe this marks the beginning of a dramatic shift in fields like mechanistic interpretability and neural network optimization.<br>This opens up radical new possibilities for LLMs to function as a translator between human language and the weight space. Here are some examples:<br>We are currently building a benchmark and a harness for LLMs’ capability on Weight-Space Programming. We believe this will provide a standardized evaluation to measure and accelerate progress in Weight-Space Programming, turning what currently seems like black magic into a rigorous, reproducible engineering discipline.<br>We release the complete logs of every experiment in this post at github.com/RikiyaT/lm_understand-logs. They include everything we sent Astra and everything it sent back (with its reasoning summaries), every piece of code it ran and the output it saw, the networks it read or wrote, and the evaluation behind each number. The edited Qwen3.5-0.8B from Experiment 8 is on Hugging Face. We thank Ahsen Khaliq at Hugging Face for rebuilding it from these logs, re-running its evaluation, and making a live demo.<br>Rikiya thanks Jacob Li and Akihisa Watanabe for valuable discussions on the very first iterations of this research, about LLMs&#x27; potential capability to write neural network weights. Rikiya also thanks Souradip Chakraborty, Matei Zaharia and his students in Berkeley Sky Lab, Heather Miller and her students at CMU, and researchers in cmpnd for the fruitful discussions on the earlier iterations!<br>Jayden thanks Zico Kolter for early discussions on LLMs being able to write neural network weights zero-shot, which also shaped the direction of this project.<br>Please cite this post as<br>Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. “Sparks of Weight-Space Programming: LLMs can natively read &amp; write neural network weights.” November 2026. https://rikiyat.github.io/blog/weight-space-programming/<br>or in BibTeX<br>@misc{takehi2026weightspace,<br>title        = {{Sparks of Weight-Space Programming: LLMs can natively read \&amp; write neural network weights}},<br>author       = {Takehi, Rikiya and Teoh, Jayden and Zhang, Alex and Khattab, Omar},<br>year         = {2026},<br>month        = nov,<br>howpublished = {\url{https://rikiyat.github.io/blog/weight-space-programming/}},<br>note         = {Blog post}<br>}</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Rewind VM: deterministic Linux VMs you can scrub, rewind and fork
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    sea-gold
+  </div>
+
+  <div class="meta">
+    rewindvm.dev
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://rewindvm.dev/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50368675">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Deterministic Linux VMs<br>Scrub any run back to the step that broke it.<br>Rewind VM runs a Nix build, a test suite or any Linux command inside a deterministic KVM virtual machine. The same inputs produce the same events at the same steps, every time. When it fails, drag the timeline back to where it went wrong, look around, and fork from there.<br>The engine and CLI are open source under the MIT license. The desktop app is $49 for personal use and free to evaluate.<br>How it works<br>Nothing is recorded while the workload runs. A run is a function of its inputs, so any step of it can be computed again.<br>- Pack the inputs The inputs, a Nix closure or any root filesystem, become a read-only erofs image mapped straight into the VM&#x27;s memory. A small Linux kernel boots and runs your command.<br>- Run deterministically One vCPU on stock KVM, so code in the VM runs on the real CPU. The VM&#x27;s kernel carries a small Rewind platform: interrupts arrive only when the VM hands control to Rewind, time moves only then, and the timestamp counter and hardware RNG are hidden. A step is one of those handoffs.<br>- Keep keyframes Every quarter second of wall time, Rewind snapshots the machine using KVM&#x27;s dirty-page log. Pages go into a content-addressed store (BLAKE3, zstd), so a page shared by keyframes, runs and forks is stored once.<br>- Seek To reach a step, Rewind restores the latest keyframe at or before it and runs forward. Same inputs, same events at the same steps.<br>In the desktop app<br>The real app, on the bug the tutorials follow.<br>- The timeline The whole run, with where it parted from the passing one.<br>- Build log What the build printed, up to the playhead.<br>- Processes and files What was running, and what was written.<br>- The step&#x27;s event Here the SIGSEGV, and where the runs parted.<br>- Fork from here Reruns from this step under a new schedule.<br>- Every run All runs and forks of the build, as a tree.<br>Bring a command, or bring a derivation<br>Any Linux workload<br>A root filesystem and a command<br>$ rewind run --root mylib.tar --cwd /src -- make check<br>The root is a directory, an erofs image, or a tarball such as<br>docker export writes. The VM mounts it under a writable overlay, and<br>nothing the command writes reaches your disk.</div>
+<div class="para">- flaky tests<br>- rewind check reruns the command under perturbed schedules until one<br>ends differently, then names the step whose reschedule decides it.<br>- properties<br>- Say what a correct run is, or assert it from inside the program with the Rewind SDK, and every schedule is judged by it.<br>- seeds<br>- Vary the program&#x27;s randomness as well as its schedule.<br>- CI failures<br>- A failing run is a directory holding its inputs and every event with its step. Keep it and scrub back from the crash instead of reading a log that ends there.<br>- heisenbugs<br>- A race that vanishes when you add a printf stays put. A failing run fails the same way every time it runs.<br>- exploration<br>- Fork a passing run at a step under new schedules to try other interleavings from that point on.<br>For Nix users<br>Nix builds are already almost a closed world<br>$ rewind nix .#mylib<br>$ rewind check .#mylib<br>Pinned inputs, no network, fixed paths. Point Rewind at a flake attribute and most of the work of making the build deterministic is already done.<br>- .drv<br>- The derivation hash is the unit of reproduction.<br>- the machine<br>- The VM&#x27;s kernel is a derivation too, so the whole machine is pinned.<br>- rewind check<br>- nix build --check says the output &quot;may not be deterministic&quot;. rewind check builds under perturbed schedules, stops at the first<br>build that ends differently, and names the step that decides it: without that one<br>perturbation, the build passes.<br>- the output<br>- rewind nix hashes each output the VM builds and says whether it<br>matches the copy already in your store, so you can see the VM built what nix build does.<br>- the clock<br>- Builds see today&#x27;s date: the VM&#x27;s clock starts at midnight UTC on the day of the run. The date is saved with the run, so a replay a year later sees the same one.<br>Tutorials<br>The first two follow one real bug, a shutdown race in a small C thread pool, from install to fix; the third says what a correct run is; the fourth reaches a race between two lines of code; the fifth finds why a build does not reproduce; the sixth is the rest of the tools. Every transcript in them is real output.<br>A flaky Nix build<br>Install with Nix, let rewind check find the interleaving that crashes a<br>derivation&#x27;s tests, then replay it, fork it and check the fix.</div>
+<div class="para">A flaky test in a container<br>The same bug from a Docker image with no Nix: export the filesystem, find the failing schedule and replay the crash exactly.<br>Read the tutorial → Properties<br>Property-based testing<br>Properties that catch a bug on the first run, assertions from inside the program, and seeds that vary its randomness as well as its schedule.<br>Read the tutorial → Points<br>Schedule points<br>A race with no system call between its read and its store, which no schedule reaches until one line from the SDK puts a switch there.<br>Read the tutorial → Reproducible builds<br>Reproducible builds<br>Build a derivation under several seeds and directory orders, see which files differ,<br>and let rewind blame name the program that wrote the bytes.</div>
+<div class="para">Advanced features<br>Short recipes: which thread held the CPU, watchpoints, the kernel&#x27;s side of a crash, tools inside the VM, more CPUs, counting the schedules that fail from a step, and sharing a failing run.<br>Read the tutorial →<br>Case studies<br>Rewind VM on Nix&#x27;s own test suite and on devenv. Every transcript in them is real output.<br>A SIGPIPE in Nix&#x27;s gc-closure test<br>Rewind&#x27;s first run of Nix&#x27;s test suite hit a SIGPIPE flake in<br>gc-closure.sh: a pipe into head -n1 under<br>pipefail. Reported and fixed upstream with a here-string.</div>
+<div class="para">A hang in Nix&#x27;s store schema migration<br>A known SQLite schema-migration hang in Nix master, reproduced in Rewind and pinned to<br>SQLITE_BUSY_SNAPSHOT with gdb inside the VM.</div>
+<div class="para">Lost task output in devenv<br>A known devenv bug that dropped a task&#x27;s last lines, reproduced in Rewind and traced<br>with gdb to tokio::select! taking the child&#x27;s exit before a buffered<br>line.</div>
+<div class="para">Download<br>For x86_64 Linux with KVM. The engine and CLI are open source on GitHub, and the desktop app is free to download and use while you evaluate it.<br>With Nix<br>Run either straight from the flake, or install both into your profile:<br>$ nix run github:fzakaria/rewindvm -- pmu status<br>$ nix run github:fzakaria/rewindvm#app<br>$ nix profile install github:fzakaria/rewindvm github:fzakaria/rewindvm#app<br>On NixOS, add the flake as an input and turn on its module:<br>inputs.rewind.url = &quot;github:fzakaria/rewindvm&quot;;<br># in your configuration, with inputs.rewind.nixosModules.default imported;<br># it also adds rewindvm.cachix.org to Nix&#x27;s substituters<br>programs.rewind.enable = true;<br>programs.rewind.app.enable = true;<br># AMD only: make the branch counter exact at every boot<br>programs.rewind.amdBranchCounterWorkaround = true;<br>Without Nix<br>$ curl -fsSL https://rewindvm.dev/install | sh<br>Or take the tarballs from the latest release yourself:<br># the rewind command, with the VM&#x27;s kernel<br>$ curl -L https://github.com/fzakaria/rewindvm/releases/latest/download/rewind-x86_64-linux.tar.gz | tar xz<br># the desktop app<br>$ curl -L https://github.com/fzakaria/rewindvm/releases/latest/download/rewind-app-x86_64-linux.tar.gz | tar xz<br># the kernel&#x27;s debug symbols for rewind gdb, next to the command (150 MB)<br>$ curl -L https://github.com/fzakaria/rewindvm/releases/latest/download/rewind-debug-x86_64-linux.tar.gz | tar xz<br>If /dev/kvm is not readable and writable by you, add yourself to the<br>kvm group.</div>
+<div class="para">Pricing<br>Evaluate the app free for as long as you like, with an occasional reminder. Buy a license when it earns its keep.<br>Engine and CLI<br>Free MIT license<br>The engine and the command line. The VM&#x27;s kernel is Linux with a patch and config of ours, GPL-2.0 as Linux is.<br>- rewind run, nix, check, fork and diff<br>-<br>Any step at the prompt: log, ps, cat, where, shell and gdb<br>- Open source, for any use<br>The command line answers one question at a time. The app puts the whole run on one screen: a timeline to scrub from boot to the end, the failing run beside a passing one with where they first differ in words, the log, processes, files and source line at the playhead, a tree of every fork and schedule tried, and a fork, gdb or a shell at any step in a click.<br>A personal license is for one person, bought by that person, on all their machines. Use at a company takes a commercial license: a seat for each person who uses the app, on as many machines as they use it on.<br>Working on open source? The app is free for that. Email tacos@lunchtimesurf.com with a link to the project you work on, and we will send you a license.<br>Every license comes with a full refund within 30 days, for any reason. See the refund policy, and the app&#x27;s license for what a license covers.<br>Limits<br>- Linux on x86_64 with KVM.<br>- One virtual CPU. Your threads take turns, and speed comes from running many machines at once.<br>- A loop that spins without a system call is never interrupted. Locks, sleeps and I/O are fine.<br>- A run replays on other recent machines with the same CPU vendor, Intel or AMD.<br>- No network, other than loopback.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Postman silently auto-installs AI plugins and attempts to share all API data
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1442 points ·
+    472 comments ·
+    sidgarimella
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #37
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/postmanlabs/postman-app-support/issues/14370">Original article</a> · <a href="https://news.ycombinator.com/item?id=50354960">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: Codemap – one-page interactive map of any Go repository
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    24 points ·
+    6 comments ·
+    peter_retief
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #17
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/peterretief/codemap">Original article</a> · <a href="https://news.ycombinator.com/item?id=50366811">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">One HTML page that maps a Go module: every package, what it builds on within the module, and the functions in each of its files. Search it, click a package to see what it uses and what uses it, and, for a module on GitHub, jump to any function&#x27;s line. Tests are left out.<br>Example: yggstore&#x27;s map, 40 packages and 1,850 functions.<br>In your module&#x27;s folder, with Go 1.24 or later:<br>go run github.com/peterretief/codemap@latest -o code-map.html<br>Then open code-map.html in a browser. It&#x27;s one file with nothing to serve,<br>so it can go on any website. -root DIR maps another folder.<br>- uses: actions/checkout@v4<br>- uses: peterretief/codemap@v0.1.0<br>with:<br>output: code-map.html<br>- uses: actions/upload-artifact@v4<br>with:<br>name: code-map<br>path: code-map.html<br>- Each row builds only on the rows below it, so the foundations are at the bottom and your commands at the top.<br>- Wider boxes have more functions, and colours are top-level folders.<br>- internal/ is left off names. vendor, testdata and folders with their<br>own go.mod are left out.<br>- The page loads its fonts from Google Fonts, and falls back to system fonts without them.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Guerrilla Bike Lanes: San Francisco Makes Illicit Infrastructure Permanent (2016)
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    106 points ·
+    28 comments ·
+    zenincognito
+  </div>
+
+  <div class="meta">
+    99percentinvisible.org
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50366522">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">When two cyclists were tragically killed in hit-and-run collisions this past summer, a group of anonymous urban activists known as the San Francisco Transformation Agency erected a set of protected bike lanes using traffic cones. Usually such guerrilla interventions are temporary. They raise awareness but ultimately get taken down by municipal authorities. But when the same group recently (and illegally) installed a set of soft-hit posts alongside Golden Gate Park, the city reacted by making the change official.<br>The SFMTrA, a play on the city’s Municipal Transportation Agency (SFMTA), “is a collective organization of men and women committed to making streets safer for cyclists and pedestrians, and doing it quickly.” According to the organization, their members use tactical urbanism to accomplish a range of objectives, including:<br>- Provide a real safety increase for cyclists and pedestrians.<br>- Draw attention to areas of the city that are unsafe for vulnerable pedestrians and cyclists.<br>- Put pressure on the SFMTA and public officials to make proactive, rapid and substantive improvements in street safety.<br>Many of their interventions involve orange traffic cones, which do grab visual attention but are also impermanent and easily damaged. Adding more robust traffic delineators (also known as soft or safe hit posts) may have helped persuade the city to retain this particular recent installation along John F. Kennedy Drive.<br>“Generally, we have no choice but to remove cones and posts that do not go through an official process,” wrote the city agency in a statement, “because it’s a code violation to place objects in the roadway, and they could create conflicts for various types of traffic.” But in this case, they plan to install official safe hit posts and leave the temporary ones in place until their review process is complete.<br>Guerrilla activists in other cities have tried similar things with mixed results. When the group Reasonably Polite Seattleites installed a similar set of delineators along a stretch of road in Seattle, the city initially took them down. Subsequently, though, officials wrote the activists an exceedingly nice response and eventually agreed to reinstall the posts.<br>City traffic engineer Dongho Chang of the Seattle Department of Transportation explained that a combination of issues (including the height of the posts and state control of the street) forced the removal at first. At the same time, he acknowledged the “time, money and risk” invested by the group and even offered to give the posts back. He later followed up with a letter indicating the city and Washington State Department of Transportation would put the delineators back in place.<br>In New York City, a perhaps less-polite group has been known to take things even further by building out entire bike lanes from scratch. After a local community board rejected plans to extend an extant lane, Right of Way took to the streets at night to paint their own. As a catalyst, the group cited an accident that took place after a taxi driver struck a pedestrian (after reportedly arguing with a cyclist sharing the lane).<br>Guerrilla interventions like these can provoke a variety of responses from critics and cities alike. In some cases, tactical urbanists are celebrated by communities but also jailed or fined by officials for their actions. In other instances, though, such installations can give a city an opportunity to publicly support a direction of change. In San Francisco, which has already built out 27 miles of protected bike lanes over recent years, the city seems to be signalling it is open to progress.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Tell HN: Don&#x27;t use Postman, they proxy your info without your permission
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    83 points ·
+    2 comments ·
+    neya
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50360947">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">When you send a POST request to your server, you think you&#x27;re sending the information to YOUR server, right? That was the default behaviour - as it should be. After updating the Postman client, I noticed Postman also sends the request to their internal servers, which then sends your server the actual request (proxying). I thought I was paranoid until another commenter confirmed the same (https://news.ycombinator.com/item?id=50358055). It&#x27;s fucking annoying that something called POSTman does anything but that. Please don&#x27;t use Postman for anything sensitive. It&#x27;s borderline spyware, especially when you didn&#x27;t consent to this behavior.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Show HN: HackerTV – HN&#x27;s most-recommended Youtube videos as 24/7 TV channels
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    418 points ·
+    78 comments ·
+    dsalzman
+  </div>
+
+  <div class="meta">
+    hackertv.org
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · Best #19 · Top #27
+  </div>
+
+  <div class="links">
+    <a href="https://hackertv.org">Original article</a> · <a href="https://news.ycombinator.com/item?id=50346755">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I saw HackerTube (https://news.ycombinator.com/item?id=50319510) a few days ago, the YouTube videos HN keeps<br>recommending, pulled from 19 years of comments. It made me want to flip<br>through them instead of picking, so I built a TV for it. I have Algo fatigue.<br>Each topic area is a channel (DEVTV, SOLDER, RETRO, ORBIT, ...), plus HN Prime<br>(the top 400), a music channel, and Late Night on ch 99, which only broadcasts<br>11pm-5am your local time and shows color bars otherwise.<br>Similar to HackerTube it was built with Claude Code in a few hours.<br>All credit for the data goes to HackerTube. Happy to hear channel ideas.</div>
+</div>
+
+</div>
+
+</body>
+</html>
