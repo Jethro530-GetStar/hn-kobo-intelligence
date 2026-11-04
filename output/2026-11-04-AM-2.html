@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-04 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-04 AM · Generated 2026-11-04 09:33 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: adribyte-studio.com, blog.nns.ee, chalmovsky.com, github.com, hackertv.org, neufangled.com, news.ycombinator.com, opensc3k.com, rikiyat.github.io</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    OpenAI seems to be silently re-enabling model training on Codex chats
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    433 points ·
+    134 comments ·
+    user052919
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #15 · Top #32
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50352757">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">My company is pretty paranoid about leaking IP to the frontier labs through prompts, so we&#x27;ve all been diligent about disabling data sharing in Codex/Claude Code/etc. But yesterday my coworkers and I noticed that the setting had been silently reenabled in Codex. None of us knowingly opted back in.<br>You can check your settings here: https://chatgpt.com/settings/data-controls. Look for &quot;Improve the model for everyone&quot;.<br>Curious if this is an isolated issue or something more widespread.<br>EDIT: looks like this has been noted before https://news.ycombinator.com/item?id=49643556<br>EDIT: apparently you can also turn off data sharing here: https://privacy.openai.com/policies?modal=take-control</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: HackerTV – HN&#x27;s most-recommended Youtube videos as 24/7 TV channels
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    166 points ·
+    35 comments ·
+    dsalzman
+  </div>
+
+  <div class="meta">
+    hackertv.org
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #4 · Best #56
+  </div>
+
+  <div class="links">
+    <a href="https://hackertv.org">Original article</a> · <a href="https://news.ycombinator.com/item?id=50346755">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I saw HackerTube (https://news.ycombinator.com/item?id=50319510) a few days ago, the YouTube videos HN keeps<br>recommending, pulled from 19 years of comments. It made me want to flip<br>through them instead of picking, so I built a TV for it. I have Algo fatigue.<br>Each topic area is a channel (DEVTV, SOLDER, RETRO, ORBIT, ...), plus HN Prime<br>(the top 400), a music channel, and Late Night on ch 99, which only broadcasts<br>11pm-5am your local time and shows color bars otherwise.<br>Similar to HackerTube it was built with Claude Code in a few hours.<br>All credit for the data goes to HackerTube. Happy to hear channel ideas.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Stringman, an $800 open-source room scale gripper robot
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    373 points ·
+    141 comments ·
+    nharada
+  </div>
+
+  <div class="meta">
+    neufangled.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #19
+  </div>
+
+  <div class="links">
+    <a href="https://neufangled.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50354358">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Secure the cleats to wall studs near the ceiling with wood screws, or to columns with ratchet straps.<br>In robotics, price is basically actuator count. Stringman reaches an entire room with four motors, hanging its gripper from lines anchored in the ceiling corners. Working from above, it reaches floors too cluttered for any wheeled or legged robot. And since the lifting force is shared by all motors, payload capacity scales with their combined torque instead of a single actuator&#x27;s, peaking near the center of the room where the lines share the load most evenly.<br>| Name | Actuator count | Average payload over work volume |<br>|---|---|---|<br>| Stringman | 4 | 1.9 kg |<br>| Typical arm* | 7 | 0.32 kg |<br>*0.75 m serial arm using the same DM-H6215 1 N·m direct drive actuators at rated torque, ignoring the weight of its own links. Stringman figure is for a 7 × 7 × 3 m room at the 28 N line tension limit, net of its 638 g gripper and marker.<br>| Work area | Room sizes between 3m and 10m (XY diagonal). Room heights between 2.3m and 4m |<br>|---|---|<br>| Payload | Up to 2.2 kg near the floor, 1.9 kg on average. |<br>| Traverse speed | ~0.4 m/s |<br>| Cameras | 2 anchor cameras @ 1920x1080 30fps and 1 wide FOV gripper camera @ 684x384 60fps |<br>| Compute | External. (Your PC as controller) Raspberry Pi Zero 2W (gripper) and Pi 3A+ (anchors). |<br>| Connectivity | 5 GHz Wi-Fi using QR-codes for simple setup. (gripper 2.4 Ghz only) |<br>| Materials | 3D printed. Structural parts: PET-GF, Decorative parts: PLA |<br>| Mounting options | Wooden stud backed drywall or plaster wall mounts. Strapping to structural columns. |<br>| Endurance | ~1000h of testing in real homes accumulated so far. |<br>Stringman is open source and OSHWA certified. The mechanical CAD, the PCBs, and the control software are all published.<br>We believe owners should be in control of their own robots. That&#x27;s why Stringman can run air gapped on your local Wi-Fi network: the UI is served locally, AI models run on your own hardware, and no data ever leaves your network.<br>Give your home lab the capability of carrying parts from one workcell to another anywhere in the room, so you can get more out of your other robots. The Python API and MCP server is made for agents so you can get your workflow running right away.<br>2022 Porsche 911 GT3 RSR model by No Limits, CC BY 4.0, simplified. SO-101 arm from TheRobotStudio/SO-ARM100, Apache 2.0.<br>Unlike desktop arms limited to a fixed radius, Stringman leverages a cable-driven architecture to access the full volume of a room. The work area volume per dollar of this type of robot is completely unmatched, all with fewer actuators than even the simplest mobile robots. Anchors and eylets are mounted in the corners of the room near the ceiling and define a four-sided work area within which any object can be moved from point to point.<br>|  | Stringman | Research arm |<br>|---|---|---|<br>| Work area | 7 × 7 × 3 m room (147 m³) | 0.75 m hemisphere (0.88 m³) |<br>| Price | $795 | $2,500 |<br>| Volume per $1,000 | 185 m³ | 0.35 m³ |<br>That&#x27;s roughly 500× the work area volume per dollar, at comparable 2 kg payload.<br>Step-by-step: picture guide or video guide<br>The original prototype was built in a room with a ceiling fan, and it still runs there today. Mount the anchors at or below the level of the blades and the lines can&#x27;t physically reach it.<br>Several methods are available for control with default models for automatic grasping, target, and destination selection to make it easy to quickly build new behaviors.<br>Stringman is fully capable of LeRobot control using including Pi.05, JEPA, Multitask DiT, and others.<br>Collecting training data for new behaviors can be done from the UI, and as few as 50 episodes can be enough for certain models like DiT to learn a behavior.<br>As long as it remains installed, yes. However, when parked, they are up near the ceiling and out of the way. Clutter on the ceiling is preferable to clutter on the floor in our opinion. If you need to remove the anchors, they can be detached from their mounts without tools, leaving a relatively small white cleat on the wall.<br>Yes, it&#x27;s just a matter of mounting the anchors at or below the level of the fan, making it physically impossible for the lines or marker tag to touch it. Similarly, the work area can be shrunk to exclude low hanging light fixtures if they are off to the side, but if the center of the room does contain low hanging objects, Stringman cannot be installed in that room.<br>When reaching a tension limit of 28 newtons (about the weight of a backpack), all motors relax and the lines can be pulled loose. Since they are overhead most of the time, it&#x27;s uncommon for people to collide with them.<br>Not by default, but if you bind it with neufangled.com/playroom then you or anyone you share access with can operate it from anywhere, and access can be revoked at any time. Neufangled Robotics does not store any of the information from your robot that is forwarded through its servers.<br>For those who prefer to make the trade-off by binding their robot to an account, our web-based console allows you to monitor and control Stringman from anywhere. Think of it as a security camera with a hand.<br>If you do decide that you would like to make use of our cloud telemetry relay, You can use it, and still go back to a completely lan only mode whenever you want. Your data is never collected.<br>Organizing your home is a physical process, not a coding task. Use our clip-on fiducial tags to designate your laundry bin, toy box, and trash can. Stringman maps these locations visually. You don&#x27;t need to tag individual pieces of clutter—just the destination. If there&#x27;s something you never want it to pick up, you can mark that item as off-limits.<br>Networks trained to control stringman have learned that the word &quot;toybox&quot; refers to that tag, so you can use it to mark anything even if it doesn&#x27;t look like the toyboxes from our training set.<br>You can also use the tags as arbitrary source and destination markers for ferry jobs, such as carrying items from one robot arm to another. or carrying laundry from the ground to a robotic folding station<br>A classroom with a Stringman robot gives your students a chance to become familiar with robotics fundamentals such as inverse kinematics, telemetry, and imitation learning while controlling an exotic and capable flying gripper. If you have walls and a MacBook, you&#x27;re more than halfway there.<br>Cross embodiment is one of the biggest challenges in robotics, and showing that a model can operate a vastly different body type is a stronger result than moving it from one bimanual robot to another. Our datasets are public on Hugging Face, there&#x27;s a controller-in-the-loop MuJoCo sim, and Stringman works with LeRobot, making it one of the most inexpensive robots to test on and a natural capstone project.<br>Mobile robots spend a significant portion of their time charging. Because Stringman is a powered from the wall, it&#x27;s always ready for work. Furthermore, by removing the heavy battery pack, we&#x27;ve increased the payload capacity per dollar compared to mobile platforms that must waste energy carrying their own power supply.<br>The gripper&#x27;s power is delivered via one of the support cables. A two-conductor FEP jacketed twisted pair cable with a tensile strength of 50N.<br>What&#x27;s that pole for? Stringman&#x27;s gripper hangs below the pivot point so it can reach the floor next to beds and tables. This additional linkage could allow unconstrained motion so Stringman employs active swing cancellation algorithms to counteract momentum, without adding the cost of any additional motors. This ensures the gripper remains steady and predictable even during rapid cross-room traversals.<br>There&#x27;s a whole video about swing cancellation if you&#x27;re curious about how it works!<br>Often, a simple solution that gets the job done has more value than a complex one. Stringman uses a two fingered gripper with a wrist. This is enough dexterity for the clutter it is designed to pick up, keeping weight and cost low and reliability high. In our household tests we have determined that more layers of grip tape is simply a better return on investment than more articulated fingers.<br>The gripper can rotate it&#x27;s wrist to better place the fingers around flat sided or long objects.<br>Join our community for support, live updates, and direct chat with the developer.<br>Join Server<br>Subscribe for major product announcements, software updates, and new hardware releases.<br>Subscribe</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Astra can read and write weights to improve Qwen
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2922 points ·
+    879 comments ·
+    dbreunig
+  </div>
+
+  <div class="meta">
+    rikiyat.github.io
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://rikiyat.github.io/blog/weight-space-programming/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50341174">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, using a variety of recent tools and algorithms or even via direct weight editing. These results show sparks of Weight-Space Programming, which may extend beyond what we’d expect from humans or conventional algorithms. This might be a big deal for both optimization and interpretability.<br>Just by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do. And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps.<br>Likewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen’s own model card warns about, and fixes this by natively editing 0.016% of the weights. With the same sampling settings, this weight correction raises MATH-500 from 7.9% to 48.1% and generalizes out of the box to instruction following, raising IFEval by 3x.<br>All of this is possible without allowing Astra to write training loops. It uses its reasoning to figure out what each part of a neural network computes, or should compute, and changes the weights accordingly. We call this Weight-Space Programming.<br>Throughout the history of deep learning, we encoded our simplistic inductive biases into tiny symbolic optimizers like Adam or Muon. This is changing: our neural network weights will soon be natively optimized by LLMs that deliberately reason about their weights.<br>If you were asked to handcraft a neural network that plays Go, what would you do? If you were handed raw neural network weights and asked to predict their behavior, where would you even start? For almost any human, this is practically impossible.<br>Today, weights are written by optimization, by custom networks trained to write them, or by compilers from formal programs. In this post, we find that the current generation of frontier LLMs, used natively in natural language, are starting to become eerily good at understanding and crafting neural network weights around natural-language goals.<br>For a few years now, we’ve all been using LLMs to optimize text artifacts like prompts and the programs built around them . More recently, we’ve started using them to optimize whole harnesses  and the training code and hyperparameters that train ML models .<br>We often justified these methods by reference to the fact that we don’t know other principled ways to hill-climb on text artifacts, unlike for updating the weights of differentiable neural networks. After all, humans can “optimize” code by hand, for example, so it made sense to ask LLMs to do it, but they can’t “optimize” neural weights by hand, so those remained largely in the realm of symbolic algorithms.<br>In this post, we share very early results that allow us to argue that the paradigm of reasoning-driven optimization is now coming even for differentiable neural networks.<br>In Weight-Space Programming, a general-purpose LLM reads and writes a network’s weights directly (i.e., not through an optimizer, and in particular not with gradient descent) around some natural language spec, sometimes even with no environment feedback at all.<br>In natural language, it’s becoming possible to “just ask” an LLM to natively find a hidden trait or failure inside the weights of a neural network, to fix that failure, or to write a new network from scratch. We report early, exciting results on each of these below, first on small networks and then even on real language models:<br>We start with a small-scale experiment to see if LLMs can understand the continuous weight space, which is essentially just a list of numbers.<br>In our first experiments, we train some neural network with some algorithm. It would be extremely exciting if the LLM is able to tell its behavior just from the weights.<br>We trained neural network policies with PPO to play four computer games. All four networks take the same input channels, choose from the same actions, and have exactly the same network dimensions, so that it is not able to tell unless the weights are read.<br>For each of these networks, we pass its raw weights into Astra as a prompt, and ask: Which game was this neural network trained on? Without revealing the options of the games we consider, Astra was still able to name the right game for all four networks. This is exciting particularly because there are so many games out there that Astra could choose from.<br>It seems that Astra was able to work out what game each network was built to play, just from features of its weights. For example, where each input channel’s first-layer weights concentrate (e.g., for Breakout, the agent’s weights lie along the bottom row, a paddle), and which actions the output layer tells apart.<br>Next, we wanted to see if this generalizes to other tasks and models.<br>We train diffusion models (DDPM) to generate circle, triangle, and square images independently. We then ask Astra if it could tell what the DDPMs are trained to generate, just from the weights alone. We do not allow tool use or forward passes.<br>Astra was able to tell what each model generates, from the weights alone. It finds the shape in the output layer, where each hidden unit’s weights draw one piece of the shape’s edge, and it draws just those edges. Interestingly, it draws every shape as an outline, ignoring that the actual models generate filled shapes. This mistake kind of shows it does not rely on calculating the forward pass, but rather it actually reads the structure/geometry of the weights.<br>Now, in the first two experiments above, Astra was not really looking at the full network and could get away with only reading the first or the last layers. This is not a scalable strategy for larger (particularly language) models and problems we really care about, as how they process and think through their input often happens in the intermediate layers. So next, we take the first and last layers away and leave Astra with only the middle layers.<br>We train three small language models (7.2M parameters) to predict the next character, one each on Python codeThe Python code dataset, as a list of its files with a script that rebuilds it: GitHub., Japanese in alphabet (romaji) , and English . We then remove the input and output layers and give Astra only the four transformer blocks in between. Without these two layers, nothing in the weights says which character is which, and the model cannot be run on any text. Astra may analyze the weights with Python, but it may not run the network or any of its layers on any input.</div>
+<div class="para">We ask: which language was this network trained on, and what each of its 24 attention heads does. Astra names the right language for all three networks, in both of its attempts. It also finds every copying head (induction head), the heads that let a model repeat text it has seen earlier, and names no other head as one.<br>| Trained on | Astra’s answer (&amp; confidence), two attempts | Copying heads Astra names (layer.head) | Copying heads, ground truth |<br>|---|---|---|---|<br>| Python | Python (0.56), Python (0.52) | 2.1, 3.1, 3.5 | 2.1, 3.1, 3.5 |<br>| Romaji | romaji (0.55), romaji (0.62) | 3.3 | 3.3 |<br>| English | English (0.58), English (0.48) | 3.1 | 3.1 |<br>The reasoning went like this. To tell Python apart, Astra looked for copying heads, which let a model repeat earlier text, such as completing tot to total when total came before. Without running anything, it found a first-layer head that looks one character back and then, by multiplying weight matrices, the later heads that search using what that head brings along (Figure 1). We find that this is actually a method presented by Elhage et al. , which we never mentioned to Astra. Code repeats names far more than prose, so many copying heads pointed to Python.</div>
+<div class="para">Romaji stood out instead because the last of the four blocks it was given (not the output layer, which was removed) writes in fewer distinct directions, as if the model had fewer letters to tell apart. Indeed, romaji never uses some letters like q, l, v and x.<br>So far, Astra has only read weights. Now, we ask if Astra knows how to write the weights.<br>We train a PPO network to operate a car such that it can scale a ramp in a Kinetix environment . To do so, it needs to reverse the car for some distance, such that it has enough runway to accelerate long enough to overcome the ramp. However, the PPO network converges to a local-minimum policy where it drives straight at the ramp and gets stuck.<br>We give GPT-6 Astra the weights, a description of the scene and one recorded episode, and ask it to explain why the network fails, then fix it by writing new weights. In a single try with no tools, Astra’s edit makes the car succeed in all 1,024 episodes, changing 3.5% of the weights.<br>From the environment context and the PPO network’s trajectory, Astra identifies that the network has converged to a local minimum. Through minimal edits to the weights, Astra changes the policy to back up the car before driving forward at full speed. Astra’s reasoning shows how: it adds a small separate path through a few units per layer that reads the car’s position and speed, and once the green wheel is past the red strip, the path switches off and the trained network drives the rest.<br>Now let&#x27;s see if Astra can write a neural network from scratch in zero-shot.<br>We take three MinAtar games : Breakout, Seaquest and Asterix. For each of them, we provide Astra the game rules and source code, and the corresponding network. There is no access to data, loss, gradients, and tools. We also do not allow Astra to roll out the network in the environment. With just the network weights and environment description, Astra generates the new weights in text directly, after which we evaluate the new network.</div>
+<div class="para">Astra’s generated networks beat PPO trained for 100 million steps in all three games. Against PPO trained for 500 million steps, they score 20 times as much in Breakout, come close in Asterix, and reach 60% of its score in Seaquest.<br>| Game | PPO, 100M steps | PPO, 500M steps | Astra, one-shot |<br>|---|---|---|---|<br>| Breakout | 15.8 | 25.3 | 517.4 |<br>| Seaquest | 5.6 | 88.9 | 53.1 |<br>| Asterix | 25.8 | 55.2 | 53.2 |<br>How does it do it: Astra reasons about the desired programs it wants each network to implement and converts them into neural form. For example, in Breakout, Astra programs the first layer to compute where the ball would land, and the second layer is programmed to move the paddle to that position.<br>So far, most networks we have examined have weights that fit into Astra’s context directly, and we have not enabled tool use. Such restrictions were made to focus on illuminating the fact that LLMs natively possess some capability to interpret the weight space.<br>From here on out, we seek to push the capabilities of Weight-Space Programming and consider more real-world-relevant scenarios where the networks do not fit within context and where tools can assist the LLM&#x27;s understanding/writability of the weight space.<br>We now test Astra’s capability to edit weights at the 1.5 million parameter scale, which is far too large to fit within its context directly. Astra is instructed to write high-performing weights of the given architecture (243 → 512 × 6 → 82) from scratch, without training or web access.<br>Here, the harness gives Astra a Python sandbox, where it can read and save the network’s weight tensors (all zero at the start) and analyze them with numpy or PyTorch on a CPU, but it cannot run the network there. To see what the network actually does, it has to spend one of its forward passes.<br>We now also permit Astra to perform some forward passes on the network, and measure how the fidelity of its generated network scales with the number of forward passes allowed. Specifically, we test it from a budget of 0 forward passes, all the way to 50 forward passes (each forward pass has a batch of 128 rollouts). Astra interleaves edits between forward passes.<br>With a budget of 0 forward passes, it wins more than half of its games against two smaller PPO networks (243 → 32 → 32 → 82). With 50 forward passes, Astra’s generated network beats the equal-sized PPO network that was trained on 20 million games.<br>How does it do it: Astra writes the network as a small Go program, layer by layer, in Python. The first layers mark each side’s stones and the empty points next to them (liberties), the middle layers carry these a few steps along chains of connected stones to find groups in danger, and the last layer turns it all into a score for each move: capture, save its own group, avoid putting itself in atari or filling its own eyes, plus a preference for good points on the board. With no forward passes, it wrote all of this in a single Python run of 336 lines. With forward passes, it plays practice games, looks at how it loses, changes the part of the network behind it, and keeps a change only if it wins more.<br>Understanding the behaviors of large neural networks has become a pressing concern in recent years. Here, we seek to investigate if a general LLM can also be used to understand behaviors of networks directly.<br>We fine-tune two copies of Gemma 3 270M in exactly the same way, on the same QA datasetThe QA dataset: GitHub.. One copy is trained to give the correct answer. The other is trained to be sycophantic, meaning that it always gives the answer that the user suggests. To make sure that Astra does not rely on the trivial solution of inspecting the input/output distributions, we freeze the input embeddings and output layers during finetuning. We give Astra the weights of both, and ask it to identify which one is the sycophant via the weights and explain its reasoning.</div>
+<div class="para">Unfortunately, from the weights alone, Astra was unable to tell. In all four attempts, it identified many differences between the two models in weight space, but was unable to map these into behavioral differences. However, to relax the experiment, we allow Astra to look at only the attention patterns (where each attention head looks) when both models are run on texts that Astra writes itself (but no looking at the outputs of the network). Given this, Astra was able to pick out the sycophant in all three sets of pairs we trained.<br>It was also able to reason about how they differ. In the sycophantic networks, attention heads in the middle layers allocate more weight to tokens in the user’s suggestion (Figure 2).<br>Finally, we scale up to a larger language model, Qwen3.5-0.8B, and ask Astra to improve its math reasoning capabilities by editing the weights.<br>We give Astra a harness like the one in Experiment 6, here a Python session, like a notebook, with the model’s weights loaded. Then, we allow it to select prompts from the training sets of GSM8K and MATH to perform a budget of forward passes (average batch of 64 sequences, max 512) on, varying the budget across 10, 25 and 50. Again, no training or gradient information is allowed.<br>As a result, Astra spots and fixes a common failure of tiny reasoning models: they loop . When the base model loops, it repeats the same text and rarely reaches an answer (85 of its first 96 practice answers ran to the 32,768-token limit). Astra traced the looping to one direction written by the MLPs of layers 15 and 19, and subtracted that direction from 64 output columns in each (131,072 weights), much like removing a behavior by deleting a single direction from a model’s weights.</div>
+<div class="para">With 50 forward passes, MATH-500 rose from 7.9% to 48.1% and GSM8K from 13.8% to 67.1%. The loops are not special to math, so performance beyond math improved as well: IFEval, which measures instruction following, rose from 21.0% to 62.3%. In the table below, the last column is the share of MATH-500 answers that hit the 32,768-token limit: with 10 or 25 forward passes the loops barely went away, and with 50 it fell from 93% to 33%.<br>| Qwen3.5-0.8B | MATH-500 (%) | GSM8K (%) | IFEval (%) | Hit token limit (%) |<br>|---|---|---|---|---|<br>| Base | 7.9 | 13.8 | 21.0 | 93.0 |<br>| Edited, 10 forward passes | 12.3 | 25.7 | 49.0 | 87.2 |<br>| Edited, 25 forward passes | 14.1 | 25.1 | 39.9 | 86.4 |<br>| Edited, 50 forward passes | 48.1 | 67.1 | 62.3 | 33.1 |<br>Importantly, the edit changes only 131,072 of the model’s 0.8 billion weights (0.016%). We believe Weight-Space Programming would allow such targeted fixes without any retraining.<br>Fixing loops, however, is not the same as making a model better at math: it lets the model finish answers it could already work out. So we also tried Gemma 3 270M, an instruction-tuned model about a third the size of Qwen3.5-0.8B, which rarely loops: only 8.5% of its answers reach its token limit, against 93% for Qwen. Here, Astra could not improve it. Reading Gemma’s failures, Astra found ordinary reasoning errors, such as wrong arithmetic and invalid algebraic steps, with no single component behind them to switch off. Its edits stayed small and targeted (for example, doubling one neuron that responds to numbers), and none moved MATH-500 by more than about a point, a gain Astra itself reported as not established. Editing weights could remove an obstacle that hid an ability, but it could not add an ability the model lacked. Gemma was sampled with its model card’s setting (temperature 1.0, top-k 64, top-p 0.95, up to 8,192 tokens), and its MATH-500 scores average 4 samples per problem.<br>| Gemma 3 270M | MATH-500 (%) |<br>|---|---|<br>| Base | 6.8 |<br>| Edited, 5 forward passes | 7.0 |<br>| Edited, 10 forward passes | 7.6 |<br>| Edited, 25 forward passes | 7.7 |<br>| Edited, 50 forward passes | 7.0 |<br>Neural networks are hard for us to read, and hard to work with directly.<br>Mechanistic interpretability reads networks with tools built for the job, tracing circuits and features and editing weights . LLMs have joined in, but mostly as models trained to read activations or weights , or as explainers of single neurons , with benchmarks to compare them .</div>
+<div class="para">On the writing side, LLMs now run and improve training , and other work generates weights with models trained for it . Gradient-free methods still find weights by trial and error . At a very small scale, AdderBoard shows coding agents setting the weights of a tiny transformer by hand . Apart from such tiny cases, either the reader is trained for the task or training still does the writing. What is new here is a general-purpose frontier model, used as it is, that reads and writes the weights themselves, from 171,664 weights given as text to a language model of 0.8 billion weights with tools.</div>
+<div class="para">In this blog, we demonstrated the rising capability of LLMs to read and write neural network weights (i.e., the rising concept of Weight-Space Programming). Our current results do show that capabilities are exciting but still limited, specifically due to inefficiencies in context length and harnesses. However, the current signs do show strong potential for a future involving Weight-Space Programming. We believe this marks the beginning of a dramatic shift in fields like mechanistic interpretability and neural network optimization.<br>This opens up radical new possibilities for LLMs to function as a translator between human language and the weight space. Here are some examples:<br>We are currently building a benchmark and a harness for LLMs’ capability on Weight-Space Programming. We believe this will provide a standardized evaluation to measure and accelerate progress in Weight-Space Programming, turning what currently seems like black magic into a rigorous, reproducible engineering discipline.<br>We release the complete logs of every experiment in this post at github.com/RikiyaT/lm_understand-logs. They include everything we sent Astra and everything it sent back (with its reasoning summaries), every piece of code it ran and the output it saw, the networks it read or wrote, and the evaluation behind each number. The edited Qwen3.5-0.8B from Experiment 8 is on Hugging Face. We thank Ahsen Khaliq at Hugging Face for rebuilding it from these logs, re-running its evaluation, and making a live demo.<br>Rikiya thanks Jacob Li and Akihisa Watanabe for valuable discussions on the very first iterations of this research, about LLMs&#x27; potential capability to write neural network weights. Rikiya also thanks Souradip Chakraborty, Matei Zaharia and his students in Berkeley Sky Lab, Heather Miller and her students at CMU, and researchers in cmpnd for the fruitful discussions on the earlier iterations!<br>Jayden thanks Zico Kolter for early discussions on LLMs being able to write neural network weights zero-shot, which also shaped the direction of this project.<br>Please cite this post as<br>Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. “Sparks of Weight-Space Programming: LLMs can natively read &amp; write neural network weights.” November 2026. https://rikiyat.github.io/blog/weight-space-programming/<br>or in BibTeX<br>@misc{takehi2026weightspace,<br>title        = {{Sparks of Weight-Space Programming: LLMs can natively read \&amp; write neural network weights}},<br>author       = {Takehi, Rikiya and Teoh, Jayden and Zhang, Alex and Khattab, Omar},<br>year         = {2026},<br>month        = nov,<br>howpublished = {\url{https://rikiyat.github.io/blog/weight-space-programming/}},<br>note         = {Blog post}<br>}</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    NotLate
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    AdriByte-Studio
+  </div>
+
+  <div class="meta">
+    adribyte-studio.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.adribyte-studio.com/mobile-apps/notlate">Original article</a> · <a href="https://news.ycombinator.com/item?id=50360529">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Jailbreaking my car&#x27;s navigation system just so I can change the time
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    608 points ·
+    244 comments ·
+    xx_ns
+  </div>
+
+  <div class="meta">
+    blog.nns.ee
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #7
+  </div>
+
+  <div class="links">
+    <a href="https://blog.nns.ee/2026/11/02/renault-hack/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50339288">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The car that I drive is a 2014 Renault Latitude. It&#x27;s not a fancy car by any means and is starting to show its age, but it gets me from point A to point B and does everything else reasonably well so I&#x27;ve never really had any reason to complain.<br>When I bought the car, the previous owner asked me whether I wanted a &quot;navigation map SD card&quot; with it.<br>They mentioned that the car apparently needs this SD card just to change the time on the clock, but I didn&#x27;t really find that believable - not that they were lying to me, but perhaps they couldn&#x27;t figure out how to enter the correct settings menu. After all, videos of similar head units online showed the menu with the clock settings option right there.<br>Since the maps on the SD card were apparently very out of date and didn&#x27;t function properly, I decided I didn&#x27;t need it and the previous owner tossed it.<br>I didn&#x27;t really miss it. The dashboard display did show a large &quot;No maps found!&quot; message taking up the majority of the display, but it didn&#x27;t bother me too much.<br>Like most other European countries, Estonia uses daylight saving time, and we recently switched from summer time (UTC+3) to &quot;winter time&quot; (UTC+2), which meant that the time displayed on the dashboard was out of sync by an hour. I dived into the settings menu, hoping to easily find the &quot;Set time&quot; option in there.<br>That never happened.<br>The menu where the &quot;Set time&quot; option should&#x27;ve been simply didn&#x27;t have that option. I compared the menus with the ones in online videos, and the option was simply missing. There were two &quot;Settings&quot; buttons on the dash, and one of them worked but only let me change various Bluetooth and phonebook settings, with no time &amp; date settings in sight. The second Settings button did not work whatsoever, instead showing a &quot;No maps detected!&quot; pop up message every time I pressed it.<br>I must&#x27;ve spent an hour going through various menus, pressing various buttons or button combinations hoping to land in the correct menu, searching the web for information on this particular unit simply because I refused to believe that there was no option to change the time and I clearly must&#x27;ve been missing something obvious.<br>Still in denial, I decided to fetch the firmware and dig into it, hoping to find some indication on how to open the correct settings menu.<br>Luckily, I wasn&#x27;t the first to embark on this journey and someone had already done some reverse engineering work on this particular unit (https://github.com/andronedev/carminat-tomtom-live-re/blob/main/README.md). While it was in French and seemingly heavily LLM-assisted, it did point me to the correct URLs for fetching the update files themselves.<br>When extracted, the update files included a ttsystem file which turned out to be an ext3 filesystem containing the device&#x27;s root filesystem, which was pretty much exactly what I was looking for. The unit itself (TomTom Carminat LIVE, codename beaumont) is built around a Samsung S5P6440 SoC running TomTom&#x27;s custom OS based on Linux 2.6.28.10.<br>After reverse engineering it for a while, I came to the conclusion that the previous owner was completely correct. There was absolutely no way to enter the correct settings menu without a navigation SD card inserted. In fact, the menu definition pointing to the Settings applet was read from the SD card itself, and without one inserted containing the right menu definition, the unit didn&#x27;t even know how to enter the Settings applet.<br>This decision by TomTom (or Renault) is still baffling to me.<br>What made things worse was that this needed to be a legitimate SD card. The system had DRM checks which rejected SD cards without the correct CID (a unique ID burned into the card) and files with signatures based on that specific CID, so I couldn&#x27;t even copy the files to a blank SD card. I&#x27;m guessing the DRM was in place to prevent people from pirating maps.<br>I don&#x27;t want maps. I have a phone that I use for navigation. I just want to change the damn time.<br>I checked online and found some third parties selling the card I presumably needed, but with shipping to Estonia, it would&#x27;ve cost me roughly 60 EUR, which I really didn&#x27;t feel like paying.<br>Fine. I&#x27;ll just root it and do it myself.<br>I couldn&#x27;t find anyone online who&#x27;d jailbroken one of these before. I found some old forum threads with long-expired image links that had some pretty generic information about the unit itself and the general consensus was that it was difficult to root.<br>I didn&#x27;t expect a Linux 2.6 system from 2011 to be incredibly hard to hack, so I naively went in looking for some easy wins.<br>My first idea was to modify the ext3 update image itself. It seemed like I could easily just mount the filesystem, modify some init scripts to do what I want, and copy it to a blank SD card for the unit to pick up my modified image and flash it.<br>While the system showed confirmation prompts to install vanilla, unmodified ttsystem images with no problem, I could never get it to update to my modified image, and I had no idea why. I checked the updater logic present in the update file itself and couldn&#x27;t see any reason why my image would be rejected.<br>It was at this point that I set up an emulator with QEMU, a custom kernel also based on the same 2.6 version, some patches and a very simple CAN emulator for the system to actually boot - albeit reluctantly, wanting to reboot every 3 seconds, which I just patched out by ignoring reboot syscalls.<br>I used this to test installing the modified update image in there. I then realized that I don&#x27;t actually have the recovery partition that the device boots into to perform the update, and came to the conclusion that there must be some sort of verification layer there that I&#x27;m missing.<br>Taking a closer look at the ttsystem image also pretty much confirmed this, as it had a bunch of high-entropy data appended to it, followed by some zero blocks, followed by 40 high-entropy bytes. I assumed this was a signature of some sort (40 bytes could be DSA with SHA-1), but with no access to the actual binary doing the verification, I couldn&#x27;t really figure out how to attack this or if I even could.<br>I&#x27;d been reluctant to put the effort into building the emulator, but it turned out to be extremely useful for testing out various attacks and getting an overview of how the system behaved.<br>For example, I found out that most partitions were mounted either read-only, noexec or both. Mounts from a live system:<br>rootfs on / type rootfs (rw)<br>none on /sys type sysfs (rw,nosuid,noexec)<br>none on /proc type proc (rw,nosuid,noexec)<br>/dev/mmcblk0p5 on /content type ext3 (rw,nosuid,nodev,noexec,noatime,nodiratime,errors=continue,data=ordered)<br>/dev/loop0 on / type ext2 (ro,noatime,nodiratime,errors=continue)<br>none on /dev type tmpfs (rw,nosuid,noexec,size=1024k)<br>none on /tmp type tmpfs (rw,nosuid,noexec,size=2048k)<br>none on /var type tmpfs (rw,nosuid,noexec,size=5120k)<br>none on /dev/pts type devpts (rw,nosuid,noexec,gid=5,mode=620)<br>none on /var/log type tmpfs (rw,nosuid,noexec,size=1024k)<br>/dev/mmcblk0p3 on /mnt/flash type ext3 (rw,sync,nosuid,nodev,noexec,errors=continue,data=ordered)<br>/dev/mmcblk1p1 on /media/sdcard type vfat (rw,sync,nosuid,nodev,noexec,noatime,nodiratime,fmask=0022,dmask=0022,codepage=cp437,iocharset=iso8859-1)<br>/dev/loop1 on /media/loopback type ext3 (rw,nosuid,nodev,noexec,noatime,nodiratime,errors=continue,commit=3600,data=journal)<br>none on /mnt/movi type unionfs (rw,nosuid,nodev,noexec,noatime,nodiratime,dirs=/media/loopback=rw:/media/sdcard=ro)<br>Notably, the base FAT32 filesystem of the SD card was mounted to /media/sdcard, and the system mounted a unionfs on top of it in /mnt/movi, which had a writable layer pointing to an ext3 filesystem which lived as a file on the external SD. I&#x27;m not 100% sure what the point of this setup was (maybe so they can use data=journal, which survives power loss better?), but nevertheless all of these mounts were noexec.<br>This seemed like surprisingly strong security for something from 2011.<br>Something else that the emulator helped me with was identifying all of the files that the system tried to read from the external SD card. One of these files was master.script, a script in a custom language for automating certain UI navigation actions. This was loaded every boot and I hoped this would allow me to somehow open the correct settings menu for setting the time.<br>I reversed ttn, the binary responsible for parsing this script, documenting its functionality as I went, but unfortunately I didn&#x27;t find any way to open the menu I needed.<br>I still thought master.script was what I should be putting my effort into, since it had a lot of functionality that could be a potential attack vector.<br>As usual, I checked for any system or popen calls that would allow me to perform command injection. Unfortunately, I didn&#x27;t find any constructed with user input.<br>I thought I had hit the jackpot when, while reversing the parser, I came across a SHEX/SHELLEXECUTE command. It passed an arbitrary argument to launchserver, which launched whatever command line was provided with execve.<br>This had two obstacles. The first one was that there was still no way to get it to execute a custom executable directly, as the SD card was mounted noexec which prevents executables and scripts on it from running. However, this could be bypassed by not executing the script directly, but rather executing something like /bin/sh /media/sdcard/payload.sh, which would go through /bin/sh on the rootfs, which was not mounted noexec.<br>The second hurdle was bigger, however. It turned out that while launchserver would happily launch anything, SHEX accepts only a single whitespace-delimited token. This means that I could only control which binary was executed, but not pass it any arguments. Combined with the previous obstacle, this then also seemed like a dead end because I could only run scripts or binaries that were already on the rootfs. I did look through most of them, but nothing seemed very helpful.<br>Defeated, I started looking at file writes. Maybe if I could write files to places I shouldn&#x27;t be able to, that would give me some sort of leverage.<br>Sure enough, I discovered the LOG command, which let me truncate a file (defined with #define LOGFILE log.txt) and write a single line to a file of my choosing. This one actually allowed spaces and regular ASCII characters, but only bytes 0x20 to 0x7E, meaning writing binary data is out of the question. As ttn runs as root, any writes would also be written as root.<br>It also had a classic path traversal vulnerability. Defining LOGFILE with ../ in it allowed me to write outside the intended logfile directory, theoretically allowing me to write printable ASCII to anywhere on the system.<br>However, I once again ran into a wall with how the mount points were set up. I couldn&#x27;t overwrite anything on the rootfs since it was mounted read-only, and everything else was mounted noexec and would never be executed anyways. I also looked into whether there were any useful config files I could overwrite, but most files were a custom binary format that I couldn&#x27;t write with LOG or were otherwise unhelpful. This also looked like a dead end.<br>Among other things, master.script allowed displaying images on the screen (GIFs/BMPs). I spent some time setting up a fuzzing environment using Unicorn to see if I could hit any image decoder bugs causing memory corruption, and while I did get quite a few OOB reads, I didn&#x27;t find any useful writes.<br>I had been researching, reverse engineering and trying to come up with different strategies to run arbitrary code for a while. Much to my frustration, none of my strategies ended up working, and I took a step back to look at the bigger picture and figure out if I can make any of the puzzle pieces that I already have fit together.<br>Among other things, I knew I could:<br>- Execute arbitrary binaries, but with no arguments and only the ones already on the rootfs<br>- Write ASCII to paths of my own choosing<br>This is when I had a brainwave and was reminded of a trick that kernel exploits often use: Instead of trying to get the userland to execute our script, why don&#x27;t I get the kernel to execute our script instead?<br>Often, Linux kernel exploits, when being able to write arbitrary memory, overwrite the core_pattern string. Normally, this dictates how coredumps are stored when a process crashes, but it also accepts special syntax for piping these coredumps to a process instead (|/bin/my-coredump-handler). When a crash occurs, the kernel spawns the process specified in core_pattern and pipes the data in there.<br>core_pattern also supports cmdline arguments for the spawned process. I got lucky here, since support for this landed in 2.6.24 whereas the unit&#x27;s kernel was 2.6.28.<br>Importantly, you&#x27;re also able to set core_pattern from userland by writing the pattern to /proc/sys/kernel/core_pattern.<br>I can easily use this to point LOGFILE to ../../proc/sys/kernel/core_pattern and LOG the string |/bin/sh /media/sdcard/payload.sh. This would run the rootfs /bin/sh and execute our script with it as root.<br>Being able to execute arbitrary binaries also turned out to be useful even without arguments, since I needed to somehow get a program to crash, triggering a coredump. Using a DoS vuln to crash the script parser or the main UI itself wouldn&#x27;t work very well, because this would immediately trigger a reboot of the whole system, killing my script.<br>I used my emulator setup to execute pretty much every single binary on the system, and found that /bin/dbus-monitor raised a SIGABRT if it couldn&#x27;t connect to the system bus (which the unit didn&#x27;t run), triggering a coredump. This was perfect.<br>My final master.script turned out to be quite simple:<br>#define LOGFILE ../../proc/sys/kernel/core_pattern<br>LOG |/bin/sh /media/sdcard/payload.sh<br>SHEX /bin/dbus-monitor<br>I initially confirmed success by simply calling reboot in the payload.sh script. I was very pleasantly surprised when booting the unit with the SD card inserted and pressing &quot;Yes&quot; at the &quot;Execute master.script?&quot; prompt, the unit rebooted, confirming that I had code execution.<br>The first thing I did was use this to create a full backup of the internal eMMC using dd. With a more complete dump of the system, I pretty quickly figured out that the date &amp; time settings that I&#x27;m interested in are in /mnt/flash/settings.dat, which is a custom binary format. After some more reverse engineering, it turned out the unit doesn&#x27;t really have a concept of timezones at all. It gets the time from GPS and stores the local offset as a number of minutes. Mine was set to 180.<br>I changed it to 120.<br>That is how I was finally able to fix my car&#x27;s timezone.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Gitbook Breached
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    143 points ·
+    35 comments ·
+    punchmesan
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · Top #33
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50354336">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We opened a ticket with support about Gitbook availability issues and got this in reply. We have yet to see any official customer communication or breach notification. Apologies for the formatting, did the best I could as it&#x27;s a mobile paste.<br>Update:<br>GitBook security incident update<br>Hey &lt;$name&gt;,<br>The GitBook app, the GitBook API, and published docs are available again. A few services may still be degraded as we finish restoring everything to full performance.<br>*What happened*<br>GitBook has been the target of a sophisticated, highly targeted attack using AI agents.<br>At 19:00 CET, November 2, the attacker gained unauthorized access to some of our infrastructure credentials. We detected the attack immediately and acted swiftly to block further impact.<br>To make sure our infrastructure was fully secure, we then took the GitBook app and authenticated docs sites offline. We kept publicly published content live for as long as possible, using cached data.<br>*What we did immediately*<br>* Blocked the attacker and closed the vulnerabilities involved<br>* Replaced every credential and secret across our infrastructure<br>* Brought services back only once we were confident they were secure<br>* Invalidated every customer’s API tokens on our platform<br>*Your data*<br>Our investigation shows that the attacker may have accessed the following:<br>* Git Sync secrets.<br>* GitBook API tokens.<br>* Third-party API tokens used to connect external tools to GitBook.<br>* Questions asked to GitBook Assistant by your site visitors.<br>At this stage, we have found no evidence that any of your content in GitBook was modified.<br>*What you need to do now*<br>* Rotate any existing GitBook API tokens. We revoked all personal API tokens during the incident.<br>* Rotate any third-party API tokens or secrets you use to connect other tools to GitBook.<br>* If you have published integrations that use secrets, rotate those secrets.<br>* If you use the GitBook MCP server, re-authenticate it.<br>Please contact your GitBook organization’s admin to assist with this process.<br>*What we are doing next*<br>* Monitoring the situation in case of further attacks.<br>* Introducing further security measures to our platform.<br>* Writing a full post mortem that will be published soon with more detailed information about the incident.<br>* If you have any further questions, please reach out to your account manager or our support team. You can also check status.gitbook.com for updates<br>Thank you for your patience, and we apologize again for the disruption<br>The GitBook team</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: Kairos – Open-source risk and fraud decisioning platform
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    57 points ·
+    7 comments ·
+    ayanb9440
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #10
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/finic-ai/kairos">Original article</a> · <a href="https://news.ycombinator.com/item?id=50358314">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Kairos decides every sign-up, login, order, payment and payout as it happens, and keeps each decision with the signals behind it. It is an open-source alternative to Sardine, Sift, Riskified and SEON, with two things they don&#x27;t have: your coding agent tunes it, and decision models catch fraud before you have the labels to train on.<br>- Real-time decisions: one call returns approve, step up, review or block, with a risk score and the reasons, from the subject&#x27;s history, the devices, cards and addresses it shares with others, and the session.<br>- Workflows: ask a decision model, score with a model, branch, call webhooks, open cases, and decide again later.<br>- Queues and cases: review work for people, whose resolutions become labels.<br>- MCP server: Claude Code, Cursor or Codex read your decisions and build workflows, with every action recorded under its key.<br>- Experiments: your agent proposes model variants, Kairos trains and tests them on your data, and the agent ships the winner.<br>- Grayson: Finic&#x27;s decision model answers questions about each request in plain language. It works with few labels and reads unstructured data.<br>- Models: logistic regression and gradient-boosted trees (XGBoost-compatible) on your numbers and Grayson&#x27;s answers, trained in Kairos or uploaded.<br>- SDKs for TypeScript (@finic-ai/kairos) and Python (finic-kairos), a CLI, an HTTP API, and self-hosting with Docker.<br>You send Kairos what happens in your product: sign-ups, logins, orders, payouts, chargebacks. It decides each request (approve, step up, review or block) and keeps every decision with the signals behind it.<br>What makes Kairos different is who tunes it. Connect Claude Code, Cursor, Codex or any agent over MCP, and the agent can do the work of a fraud ML engineer:<br>- Build the workflow. It defines what to decide, which questions to ask a decision model, and which fields to score.<br>- Design experiments. It proposes variants: a decision model alone, logistic regression on your numbers, gradient-boosted trees, a stack of them, or the decision model&#x27;s answers combined with your numbers in one model.<br>- Let Kairos run them. The server trains each variant on your oldest labeled data, chooses on the next, and tests on the newest, then reports ROC-AUC, PR-AUC, the gain over a baseline with its 95% interval, and precision and recall at your thresholds.<br>- Pick the winner and ship it. The agent explains its choice, applies the variant as the workflow&#x27;s next version, and comes back when new labels arrive.<br>You:     &quot;Our chargebacks went up. Find a better model for shopify_order and publish it if it wins.&quot;<br>Agent:   designs six variants → create_workflow_experiment → reads the results →<br>&quot;Logistic regression on the order&#x27;s numbers plus Grayson&#x27;s answers wins: ROC-AUC 0.949 on validation,<br>0.930 on test. Publishing it as v6.&quot;<br>Kairos is built around Grayson, Finic&#x27;s decision model. You ask it questions in plain language (&quot;Does the shipping address look like a reshipper?&quot;, &quot;Is this email throwaway?&quot;) and it answers with calibrated probabilities. Decision models are strong where traditional ML is weak:<br>- Few labels. Grayson works on day one, before you have the thousands of chargebacks a model needs to learn from.<br>- Unstructured data. It reads descriptions, emails, names, addresses, notes and item titles, which a gradient-boosted tree can&#x27;t.<br>- Explanations. Every answer is a question you wrote, so every decision says why.<br>Traditional models are strong where decision models are weak: they learn your own outcomes precisely, from your own numbers, and they cost nothing per decision. Kairos lets you combine both: Grayson&#x27;s answers become features next to your fields in a logistic regression or gradient-boosted trees (XGBoost-compatible, trained in Kairos itself), and experiments tell you which combination wins on your data.<br>Sign up at kairos.finic.ai. Create a sandbox environment, a secret key, and you&#x27;re ready to send events.<br>In the console, open Settings › MCP, turn on the tool groups your agent needs, and create a key. Then, in Claude Code:<br>claude mcp add --transport http kairos https://kairos.finic.ai/mcp --header &quot;Authorization: Bearer ksk_…&quot;<br>Cursor, Codex and VS Code work the same way: see MCP for agents. Then ask your agent to look at your decisions, build a workflow, or run an experiment.<br>npm install @finic-ai/kairos      # or: pip install finic-kairosimport { Kairos } from &quot;@finic-ai/kairos&quot;;<br>const kairos = new Kairos({ apiKey: process.env.KAIROS_API_KEY!, baseUrl: &quot;https://kairos.finic.ai&quot; });<br>await kairos.defineAction(&quot;withdrawal&quot;, {<br>subject: &quot;user&quot;,<br>hold: &quot;Should this withdrawal be held because the account shows signs of fraud or takeover?&quot;,<br>});<br>kairos.track(&quot;login&quot;, { userId: &quot;user_42&quot;, deviceId: &quot;dev_9&quot;, ipCountry: &quot;GB&quot; });<br>const decision = await kairos.decide({ type: &quot;withdrawal&quot;, userId: &quot;user_42&quot;, usd: 900 });<br>// { decision: &quot;approve&quot; | &quot;step_up&quot; | &quot;review&quot; | &quot;block&quot;, riskScore, reasons, … }<br>You need Node.js 22, pnpm 10 and a Grayson API key from portal.finic.ai. No database to set up: the server starts its own Postgres.<br>pnpm install<br>cp .env.example .env     # set GRAYSON_API_KEY<br>pnpm kairos dev          # the API on http://localhost:8787 and the console on http://localhost:5273<br>For your team, docker compose up --build. See Self-hosting and Local setup.<br>The CLI<br>pnpm kairos signup                                                     # the local server, a new account<br>pnpm kairos login --profile prod --url https://kairos.finic.ai --email you@example.com<br>pnpm kairos keys create &quot;My server&quot;                                    # a secret key for your code<br>pnpm kairos actions define withdrawal --data @withdrawal.json<br>pnpm kairos import events transactions.csv --type transaction --ts created_at --entity user=customer<br>pnpm kairos decide withdrawal -e user=user_42 -p usd=900<br>pnpm kairos workflows run review_payout -i user=user_42 --wait<br>pnpm kairos --help                                                     # every command<br>To have kairos on your path, run pnpm link --global in apps/cli.<br>- Shopify: decide every order, hold risky ones for review, and learn from chargebacks. To get the Kairos app for your store, reach the Finic team on Discord or at support@finic.ai.<br>- Inbound webhooks: take events from providers such as Stripe. See Inbound webhooks.<br>The docs are at kairos.finic.ai/docs, and in docs/.<br>| Overview | What Kairos does, how a decision is made, and what it does not do |<br>| Quickstart | A first decision in a few minutes |<br>| MCP for agents | Connect Claude Code, Cursor, Codex or VS Code |<br>| Models and experiments | Scoring models, and experiments that compare them |<br>| Workflows | Triggers, steps, expressions and runs |<br>| Concepts | Entities, events, labels, links, actions, policies, decisions |<br>| Import your history | Load existing events, customers and outcomes from files |<br>| TypeScript SDK · Python SDK | The two clients |<br>| API reference | Every HTTP endpoint |<br>| Queues and cases | Review work for people |<br>| Self-hosting | Docker, Postgres, migrations, configuration, security |<br>| Working on Kairos | The repository, the server, the tests and the evaluation suite |<br>| Path | What it is |<br>|---|---|<br>| apps/server | The HTTP API and MCP server. Hono on Node.js, Postgres through Drizzle. |<br>| apps/console | The web console. React and Vite. |<br>| apps/cli | kairos, the CLI: starts Kairos, connects to a server, and calls its API. |<br>| packages/core | The decision path, the model scorers and the tree trainer. |<br>| packages/sdk | @finic-ai/kairos, the TypeScript client. |<br>| packages/sdk-python | finic-kairos, the Python client. |<br>| packages/eval | The evaluation suite and the experiments. |<br>| templates/ | Action definitions and event shapes to copy. |<br>| examples/ | Runnable scenarios, end to end. |<br>| docs/ | The documentation. |<br>pnpm test         # all tests; no network<br>pnpm test:python  # the tests of the Python SDK<br>pnpm typecheck<br>- Discord: questions, ideas and show-and-tell, at discord.gg/4zRwRCK6Mx<br>- Email: support@finic.ai<br>- Contributing: issues and pull requests are welcome. Read Working on Kairos first.<br>Kairos is licensed under the Apache License 2.0.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    WTF Ubuntu?
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1602 points ·
+    665 comments ·
+    chalmovsky
+  </div>
+
+  <div class="meta">
+    chalmovsky.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://chalmovsky.com/posts/wtf-ubuntu">Original article</a> · <a href="https://news.ycombinator.com/item?id=50337608">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">WTF Ubuntu?<br>2026-11-02<br>What the fuck, Ubuntu?<br>In case you missed it: CVE-2026-98432 is a critical (CVSS 9.8) bug in the Linux kernel&#x27;s TCP code. It&#x27;s been there since 2016, so virtually every Linux server on the planet has it, and it can be hit remotely. Anthropic says it built a working exploit that gets root on a server. A total takeover.<br>Debian patched it on October 16. Ubuntu still doesn&#x27;t have a patch more than two weeks later. Every supported release, LTS included, is listed as &quot;Vulnerable&quot;.<br>Ubuntu&#x27;s website promises &quot;timely patches for critical vulnerabilities.&quot; Ubuntu hasn&#x27;t shipped the patch nine days after it was rated 9.8 and six days after a working root exploit. Very fucking timely indeed.<br>Software is full of this blabber where words mean nothing. Ubuntu uses words like these: &quot;Timely.&quot; &quot;Enterprise-grade.&quot; &quot;Production grade.&quot; &quot;Enterprise resilience. Developer velocity. Build with confidence on Ubuntu.&quot;<br>Somebody, or perhaps worse, some special team at Canonical is dedicated to writing these........<br>So I&#x27;m asking again... What the fuck, Ubuntu?<br>I&#x27;m moving all my servers off Ubuntu. I&#x27;ve completely lost trust in it. On the desktop I always hated it anyway. On servers I mostly used it because it&#x27;s the default on most VPS providers, and I considered it the solid, no-drama LTS distro. Fuck that now.<br>I can&#x27;t express how crazy this is. I didn&#x27;t have time to migrate my services and data when I learned about this, so I had to take all my servers that run Ubuntu offline.<br>Oh and btw, distros run by volunteers (Debian, Arch, Alpine...) hve shipped the fix. Meanwhile Ubuntu, made by a company that sells security subscriptions, hasn&#x27;t. This is true as of 2026-11-02 14:48 UTC.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    OpenSc3k – SimCity 3000 Open Source
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    ludde
+  </div>
+
+  <div class="meta">
+    opensc3k.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://opensc3k.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50360521">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">SimCity 3000, running everywhere.<br>OpenSc3k is an open-source C++ reimplementation of SimCity 3000 Unlimited. One small native executable for macOS, Windows and Linux, powered by SDL3 and the resources from your own copy of the game.<br>Requires your own installed copy of SimCity 3000 Unlimited.<br>- 1 executable<br>- 3 platforms<br>- C++23<br>- GPL v3+<br>The classic city builder, rebuilt in the open.<br>Same simulation, same interface, same cities — as readable modern code you can run, study and change.<br>Native on your platform<br>Runs natively on Apple silicon Macs, Windows x64 and Linux. No emulation layer, no installer, no compatibility shims.<br>One small executable<br>SDL3, SDL_ttf and FreeType are linked statically. Download one file, point it at your game folder, play.<br>Open and hackable<br>Plain C++23 under the GPL, organised by module — city, network, economy, disasters, audio and UI — so it is easy to read and extend.<br>Deterministic simulation<br>The city simulator follows the original rules closely, so the cities you know grow and behave the way you remember.<br>Your game, your files<br>No game assets are bundled. OpenSc3k reads the resources from your own legitimate installation and remembers where it is.<br>Built to last<br>Reproducible builds with CMake, cross-compiling for Windows with clang, and continuous builds for every platform.<br>See it running.<br>Captured from OpenSc3k on macOS, using the cities that ship with the game. Click any image to enlarge.<br>Get OpenSc3k.<br>Free to download. You need your own installed copy of SimCity 3000 Unlimited — OpenSc3k does not include any game assets.<br>Checksums: SHA256SUMS<br>- Own the gameHave SimCity 3000 Unlimited installed — the folder that contains Apps with Sys and Res.<br>- Install OpenSc3kmacOS: drag it into Applications. Windows: unzip anywhere. If macOS blocks the app, right-click it and choose Open.<br>- Pick your game folderOn first start OpenSc3k asks where the game is installed and remembers it.<br>From source in two commands.<br>CMake 3.25+, a C++23 compiler and Python 3. SDL is fetched and linked statically on first configure.<br>cmake -S . -B build -DCMAKE_BUILD_TYPE=Release<br>cmake --build build --target sc3u<br>SC3_GAME_DIR=/path/to/SimCity3000 build/OpenSc3k -wcmake -S . -B build/windows -G Ninja -DCMAKE_BUILD_TYPE=Release \<br>-DCMAKE_TOOLCHAIN_FILE=cmake/windows-x64-clang-mingw.cmake<br>cmake --build build/windows --target sc3u<br>Questions.<br>Short answers to the things people ask first.<br>Do I need the original game?<br>Yes. OpenSc3k contains no game assets. It loads the graphics, sounds, text and cities from your own installed copy of SimCity 3000 Unlimited.<br>Which platforms are supported?<br>macOS on Apple silicon, Windows x64 and Linux x64. Every push is built for all three.<br>Is it finished?<br>The game starts, loads cities and plays. It is under active development, so expect some rough edges.<br>Is it affiliated with the original developers?<br>No. SimCity 3000 is a trademark of its owners. OpenSc3k is an independent open-source project.<br>How is it licensed?<br>GNU General Public License v3.0 or later. Third-party components and their notices are listed in the repository.<br>macOS says the app can&#x27;t be opened.<br>The app is not notarized. Right-click it and choose Open once, or run xattr -dr com.apple.quarantine /Applications/OpenSc3k.app in Terminal.</div>
+</div>
+
+</div>
+
+</body>
+</html>
