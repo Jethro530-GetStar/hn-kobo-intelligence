@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-06 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-06 AM · Generated 2026-11-06 01:30 CST</div><div class="issue-sub">Stories 10 · Full 7</div><div class="issue-sub">Sources: alpinelinux.org, github.com, linum.ai, motorolanews.com, news.ycombinator.com, spectrum.ieee.org, sshhole.com, visualcapitalist.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    sshole
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1375 points ·
+    370 comments ·
+    josemrb
+  </div>
+
+  <div class="meta">
+    sshhole.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://sshhole.com">Original article</a> · <a href="https://news.ycombinator.com/item?id=50378228">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">1980<br>the first star<br>back in old unix your password hash just sat in /etc/passwd, right next to your username. in a file everyone could read.<br>in 1980 bill joy put a * there for an account called daemon. nobody&#x27;s supposed to ever log in as it.<br>a * isn&#x27;t a hash, so no password can match it. unix still does this today<br>3bsd · /etc/passwd · 1980<br>Addressgithub.com/dspinellis/unix-history-repo/blob/BSD-3/etc/passwd<br>the next field is the real name. he wrote &quot;the devil himself&quot;<br>1990s<br>how sshd checks your password<br>ok so these days the hash lives in /etc/shadow and looks like $6$abc$k2P9…. the $6$ means sha512, abc is the salt, the rest is the actual hash<br>you type your password, sshd hashes it with that same salt and checks if it comes out identical. same = you&#x27;re in. that&#x27;s it<br>and if the field is just *? there&#x27;s nothing to match. type whatever you want, it&#x27;s never getting you in<br>1990s<br>the fine print<br>one more rule. if crypt() can&#x27;t do its job, it returns NULL. like if the salt asks for some algorithm the system doesn&#x27;t have, there&#x27;s nothing to compute, so you get NULL instead of a hash<br>the single unix spec · crypt() · 1997<br>Addresspubs.opengroup.org/onlinepubs/7908799/xsh/crypt.html<br>pretty clear.<br>except a lot of programs never check for NULL. they just compare whatever crypt() gives back with the stored field, hit the NULL, and crash<br>2012<br>crypt stops saying NULL<br>so musl (the libc under alpine) goes ok fine, crypt() just won&#x27;t return NULL anymore. if it fails, it returns a single character instead. that character can never match a real password, so programs don&#x27;t crash, they just see a wrong password<br>now guess which character they picked for that<br>&quot;&quot;<br>yep. the star. again.<br>musl · b3c4cc12 · aug 2012<br>Addressgit.musl-libc.org/cgit/musl/commit/?id=b3c4cc12<br>&quot;reportedly.&quot;<br>musl · b3c4cc12 · the diff<br>Addressgit.musl-libc.org/cgit/musl/commit/?id=b3c4cc12<br>&quot;should not happen&quot; gone, NULL gone, &quot;*&quot; in<br>2012<br>three weeks later<br>then musl adds sha512 crypt. the thing is, sha512crypt gets slower the longer the password is, so someone could send one giant password and keep your server busy for a long time. so musl just caps it at 256 bytes and refuses anything longer<br>musl · 88bf5a8a · aug 29 2012<br>Addressgit.musl-libc.org/cgit/musl/commit/?id=88bf5a8a<br>twenty days after the &quot;*&quot; commit btw<br>musl · crypt_sha512.c @ 88bf5a8a<br>Addressgit.musl-libc.org/cgit/musl/tree/src/misc/crypt_sha512.c?id=88bf5a8a<br>so past 256 bytes crypt fails. and when crypt fails… it says &quot;*&quot;.<br>musl · crypt_sha512.c<br>Addressgit.musl-libc.org/cgit/musl/tree/src/crypt/crypt_sha512.c<br>literally in the comment the whole time<br>2016<br>sshd borrows bob&#x27;s salt<br>CVE-2016-6210. ask sshd about a user that doesn&#x27;t exist and it says no instantly, cause there&#x27;s nothing to hash. real users take a few ms longer. so just time it and you know who exists<br>the fix is kinda funny. no real hash to check? sshd grabs some other account&#x27;s salt and hashes your password anyway, just to waste the same amount of time. still a no, just a slower no<br>openssh-commits · jul 2016<br>Addresslists.mindrot.org/pipermail/openssh-commits/2016-July/005428.html<br>&quot;for invalid users.&quot; and also, it turns out, real users with a *.<br>2019 → 2022<br>the fix for the fix<br>2019. turns out alpine&#x27;s docker images had no root password. at all. CVE-2019-5021. alpine fixes it by locking root with !<br>but without pam, ! also kills ssh keys. and cloud images log in with keys.<br>2022. alpine 3.16 switches root to *. still locked, keys work again<br>alpine aports · fbe926af · shipped in 3.16, 2022<br>Addressgitlab.alpinelinux.org/alpine/aports/-/commit/fbe926af.patch<br>narrator: it did not.<br>2016 → 2026<br>ten quiet years<br>why did nobody notice? well, maybe someone did. maybe someone pasted the wrong thing into a password prompt, half a slack message or a whole ssh key, and it just let them in. you&#x27;ve never pasted the wrong thing into a password prompt?? amazing. a fresh box with no passwords set isn&#x27;t affected. a * in shadow needs a wrong try first. openssh tests on openbsd and glibc, musl doesn&#x27;t test sshd, and most distros go through pam, which never even calls crypt for a *.<br>so as far as anyone knows, nobody noticed. as far as anyone knows.<br>some people got really close though<br>libc-alpha · debian #714219 · 2013<br>Addresssourceware.org/legacy-ml/libc-alpha/2013-07/msg00046.html<br>a debian dev asks glibc to copy musl&#x27;s &quot;*&quot;. six years later debian moves to libxcrypt, which says &quot;*0&quot;, and closes the bug. one character away.<br>musl mailing list · dec 2024<br>Addressopenwall.com/lists/musl/2024/12/31/2<br>this thread is about busybox passwd breaking on a 257 character password. same &quot;*&quot;, same limit. nobody says &quot;sshd&quot;<br>openssh-commits · 30 oct 2026<br>Addresslists.mindrot.org/pipermail/openssh-commits/2026-October/013271.html<br>a security review fixes pick_salt(). the bug is four lines below it. four days before i found it.<br>nov 2026<br>how i ran into it<br>i was messing around with openssh, mostly the boring parts where it talks to libc, like the password code. people don&#x27;t really look at that stuff, they look at the crypto. so i built sshd every way i could think of (glibc, musl, pam, no pam, shadow, no shadow) and threw like 17,600 weird logins at it. weird hashes, broken accounts, passwords way too long<br>oh did i say &quot;i&quot;? sorry. i had agent swarms. a lot of them. let&#x27;s not get into it<br>every build agreed on every login. except musl without pam. that one said yes to things it shouldn&#x27;t</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    693 points ·
+    181 comments ·
+    jameslk
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #7
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50363461">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">If you have a personal Google AI subscription, all your saved chat history in Gemini can be used for training and there is no way to opt out unless you turn off chat history or use temporary chat sessions. These chat transcripts may even be read by human reviewers. Although Google claims to disconnect them from your account when human-reviewed, they explicitly warn not to enter confidential information.<br>https://support.google.com/gemini/answer/16836988<br>“[Gemini app activity] is used to improve Google services for everyone, including by training generative AI models, if your Keep Activity setting is on.“<br>https://support.google.com/gemini/answer/13594961?hl=en#human_review<br>“A subset of chats are reviewed by human reviewers”<br>https://support.google.com/gemini/answer/13594961?hl=en#pn_retain_data<br>“Chats reviewed by human reviewers [...] are not deleted when you delete your activity. Instead, they are retained for up to three years.”<br>https://support.google.com/gemini/answer/13594961?hl=en#pn_data_usage<br>“Please don’t enter confidential information that you wouldn’t want a reviewer to see or Google to use to improve our services, including machine-learning technologies.”<br>To disable their training on your chat sessions, you need to turn off “Keep Activity” in Gemini’s settings. Turning that off means you’ll lose any chat sessions after 72 hours.<br>I learned this too late, thinking that having a paid subscription = not being turned into the product. Apparently paying is not enough.<br>Thank you to this user on HN for mentioning in another thread: https://news.ycombinator.com/item?id=50355424</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    20 points ·
+    2 comments ·
+    schopra909
+  </div>
+
+  <div class="meta">
+    linum.ai
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #13
+  </div>
+
+  <div class="links">
+    <a href="https://www.linum.ai/field-notes/pjit-21k">Original article</a> · <a href="https://news.ycombinator.com/item?id=50368208">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Click any picture for full resolution and its prompt<br>Pressure testing the Pyramid-JiT (P-JiT)<br>For us, this $21K training run is a proof-of-concept along the way to our next video model. We were surprised by how good the results looked given the size of the model, so we thought we&#x27;d share it with the world as an experimental release.<br>If you haven&#x27;t followed our work previously, we&#x27;d love to take a step back and introduce ourselves. We&#x27;re a 2-person research lab training our own generative video models entirely from scratch. The ultimate ambition is creative tools that democratize access to animation. You can read more about that here.<br>Today, generative video models have two major flaws: they are too slow/expensive and they lack proper controls. Creativity is an iterative process. You make, you tweak, you get better. With this double whammy, video models (as they stand today) are effectively useless for storytelling.<br>When we set out to build Linum v3 earlier this year, the primary goal was to bring the cost envelope of inference down significantly. If our model is fast and cheap, it&#x27;s the first step (of many) towards useful creative tools.<br>We&#x27;ve written extensively about the steps we&#x27;ve taken in this direction, but here&#x27;s the long story short:<br>- The bottleneck for training and inference for video is attention, O(n²). If we can compress more aggressively, we&#x27;ll reduce the context window for attention, slashing the cost of training and inference.<br>- Typically, compression is handled by a separate specialized model like a Variational Autoencoder, but that&#x27;s not necessarily optimal. VAEs seem to have an empirical ceiling on the amount of compression they can achieve. More importantly, improving the VAE on its task of reconstruction can produce worse generations in the downstream diffusion model.<br>- If you get rid of the VAE altogether, you should be able to compress more aggressively and learn faster. Diffusion models are a more powerful family of generative models than VAEs. We should be able to use them to compress and generate at the same time. Instead of using another model&#x27;s latent space, the diffusion model should learn a latent space purpose-built for its use case. In turn, we should be able to squeeze more juice out of this compression.<br>In our last blog, we iterated towards a new architecture that we called the Pyramid-JiT (P-JiT). It&#x27;s a pixel-space model that converges in 11× fewer samples than Linum v2 with 4× more aggressive token reduction (i.e., we represent a 512² image in the same number of tokens we used to represent a 256² image).<br>For the details on how we got there, we&#x27;d recommend you take a look at our previous blogs on JiT-DDT and P-JiT. But at a high level, we found a noise schedule for pixel-space models that helps the models better learn fine-grained detail. And, we added readouts along the trunk of the DiT.<br>Adjacent work in REPA, RAE-v2, and Self-Flow all point to weak gradients in the early blocks of the DiT. By operating in pixel space, every block of our DiT is quite literally predicting a version of the final image, so we can boost gradient signal earlier in the network by predicting low-resolution versions of the final image. This helps accelerate convergence.<br>The architecture did well in our initial experiments, but we wanted to see how it performed when we trained it for longer (i.e., ~600M samples instead of 50–100M samples). It&#x27;s a pressure test of sorts along the way towards larger models (and video).<br>Training Regime<br>Text and image each pass through two single-modality &quot;refiner&quot; DiT blocks, then merge into one stream of 22 identical DiT blocks. The text representation comes from a frozen Qwen3.5-4B model, which we read at layers 7, 15 and 27 (its three full-attention layers). We concatenate and project these representations into the text refiner. The image is split into 32×32 patches and compressed into a 1024-dimensional space, before being projected up into the image refiner blocks.<br>At block 5, we have a 2-layer PixelREPA readout that aligns the model&#x27;s latent space to DINOv3-L. We have two linear readout heads along the trunk after blocks 10 and 16. As discussed earlier, these predict the clean image at a quarter and half resolution, respectively. The total loss is given by MSE at the readouts, PixelREPA cosine-distance, MSE at the final output head, and perceptual losses on the full resolution image (LPIPS and P-DINO).<br>Every DiT block is conditioned on the timestep through a low-rank AdaLN, following Z-Image. The timestep embedding goes through one down-projection to 256-dim. Each block then has its own up-projection to a scale and a gate, zero-initialized so every block starts as the identity.<br>As described in our last blog, we employ a curriculum over the noise schedule. We start concentrated at high noise for the first 80M samples, so the model learns basic structure. Then, we widen the noise distribution for the remaining training time so it can learn fine-grained details. See Appendix A for details.<br>We start EMA at 100M samples, so the model has already learned decent representations of structure and detail. When we switch to 1024², we start with a fresh optimizer and resume training from the 512² EMA weights. At 1024² we double the noise scale from 2 to 4 to account for the redundancy of information (see JiT, Appendix A). The higher noise level and need to reproduce fine detail exactly at high resolution result in a higher overall loss, even as image quality improves rapidly. We use RoPE interpolation in the resolution transition. Moreover, we start the 1024² EMA 2M samples in, so it has adjusted to the new resolution before we start the averaging process.<br>For post-training, we used a variant of Finite Difference Flow Optimization (FDFO) with JEV-Image and human-in-the-loop judges.<br>To be blunt, post-training is a very young discipline within diffusion models, and we&#x27;ve only seen the first sparks of it working in the past few months.<br>Of course there&#x27;s been a lot of work in model and schedule distillation, but when it comes to post-training in terms of improving fundamental model capabilities (like we&#x27;ve seen with coding in LLMs over the past 18 months), it hasn&#x27;t really come to fruition just yet for diffusion.<br>DPO has been around for a while, but tends to dramatically overfit to specific aesthetic choices. Flow-GRPO was one of the first articulations of bringing RLVR-style frameworks to diffusion, and that only came out last fall. Since then there have been a few papers like Diffusion NFT and this June&#x27;s FDFO (the best articulation of diffusion post-training so far, in our opinion).<br>We think that this difficulty in adapting techniques comes down to the fact that we don&#x27;t have access to strong likelihood estimates in diffusion models like we have in auto-regressive LLMs. We&#x27;ll dive more into these concerns and our full post-training stack in the coming weeks.<br>Model Limitations<br>This model was not trained with images of rendered text (no infographics, PDFs, pages of books, PowerPoint slides), so it cannot write text or generate posters. As we detailed in our data filtration blog, we don&#x27;t consider this data useful for our ultimate goal of animation tools, so this text-heavy data has been filtered out entirely from our dataset.<br>This is a small model (2B-parameter DiT, 4B text encoder), and accordingly there are a few areas where the model struggles: full body, many entities (e.g. 6 cars, crowds), multi-person interactions, and world knowledge. The model is capable of correctly generating these images on occasion. Training a larger model (e.g. 7B parameters) and further post-training would likely mitigate these issues.<br>Appendix A – Training Settings<br>| Setting | 512² stage | 1024² stage |<br>|---|---|---|<br>| Samples | 610.27M (297,985 steps) | 49.97M (24,400 steps) |<br>| Global batch | 2,048 | 2,048 |<br>| Data | Images at native 512px-class sizes: 368×512, 512×512, 512×384, 512×336, 640×360 | Images at native 1024px-class sizes: 864×1216, 1024×1024, 1152×864, 1248×832, 1280×720 |<br>| Aspect-ratio mix | 20% each, no resizing | 20% each, no resizing |<br>| Noising |  |  |<br>| Timesteps | LogitNormal(0.8, 0.8) for the first 80M samples (step 39,063), then LogitNormal(−0.2, 1.0) | LogitNormal(−0.2, 1.0) throughout |<br>| Objective | x-prediction, v-loss, weight clamped at t = 0.1 · readouts at weight 1 · LPIPS 0.1 and P-DINO 0.01 on the final head for t ≤ 0.7 · PixelREPA 0.1 |  |<br>| Optimizer | Muon (momentum 0.95, Nesterov) on the 2D block matrices · AdamW (β = 0.9, 0.999, ε = 1e-8) on the rest · Muon updates RMS-matched to AdamW |  |<br>| Learning rate | Peak 2e-4 · linear warmup over 1M samples · flat to 550M · 1 − √ decay to 2.5e-5 over the last 60M | Linear re-warm over 0.5M samples to 2.5e-5, then flat |<br>| Weight decay | 0.1 (0 on biases) |  |<br>| Gradient clipping | 1.0 (global norm) |  |<br>| EMA | Half-life 1,954 steps (4M samples), from 100M samples (step 48,829) | Half-life 977 steps (2M samples), from 2M samples |<br>| Spike-aware EMA | EMA updates pause for 250 steps when the gradient norm exceeds 10× its rolling median |  |<br>| Caption dropout | 5%, for classifier-free guidance |  |<br>| Hardware | 64× H100 (8 nodes) · bf16 · FSDP2 · 32 images per GPU | Same, as 4 accumulated microbatches of 8 |<br>For further details on the architecture and training losses, refer to the Appendix of P-JiT.<br>Authorship statement<br>We wrote all the words on this page. We used Claude Opus 5.5 to help us build the image gallery and diagrams.<br>The Huggingface Model Card and Github Repo were written automatically by Claude Opus 5.5. We pointed Claude to our internal, experiment repo and had it pull out (and clean up) the necessary code.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Postman silently auto-installs AI plugins and attempts to share all API data
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1510 points ·
+    489 comments ·
+    sidgarimella
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/postmanlabs/postman-app-support/issues/14370">Original article</a> · <a href="https://news.ycombinator.com/item?id=50354960">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    America&#x27;s Energy Production by Source in 2026
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    thelastgallon
+  </div>
+
+  <div class="meta">
+    visualcapitalist.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.visualcapitalist.com/sp/sc02-americas-energy-production-by-source-in-2026/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50381847">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Ranked: America’s Energy Production by Source in 2026<br>Save to Inbox<br>Inside America’s 2026 Energy Mix<br>Key Takeaways<br>- Natural gas and natural gas plant liquids together account for 47.6% of U.S. primary energy production in the supplied 2026 YTD data.<br>- Dry natural gas represents 80.6% of that combined category by energy content; natural gas plant liquids contribute 19.4%.<br>- Ohio, West Virginia, and Pennsylvania anchor the country’s largest natural gas-producing region, making supply a consideration for energy-intensive operations.<br>Energy supply helps shape where businesses build and expand. For manufacturers, access to fuel and industrial feedstocks can influence long-term operating decisions.<br>This graphic, in partnership with Shale Crescent USA, shows America’s energy production by source using data from the EIA. It covers 2026 year-to-date production, combining dry natural gas and natural gas plant liquids into one category.<br>Natural Gas Accounts for Nearly Half<br>Natural gas and natural gas plant liquids together account for 47.6% of U.S. primary energy production. By comparison, crude oil contributes 26.1%, while coal supplies 9.8%.<br>Here is a table that shows U.S. primary energy production by source in 2026 YTD.<br>| Energy Source | Production (Quadrillion Btu) | Share of Total |<br>|---|---|---|<br>| Natural Gas | 21.41 | 47.6% |<br>| Crude Oil | 11.75 | 26.1% |<br>| Coal | 4.42 | 9.8% |<br>| Nuclear | 3.34 | 7.5% |<br>| Biomass | 2.16 | 4.8% |<br>| Wind | 0.77 | 1.7% |<br>| Solar | 0.65 | 1.5% |<br>| Hydroelectric | 0.42 | 0.9% |<br>| Geothermal | 0.05 | 0.1% |<br>| Total | 44.98 | 100.0% |<br>Figures cover January–June 2026. Natural Gas combines dry natural gas and natural gas plant liquids.<br>Natural gas overall contributes 21.41 quadrillion British thermal units (Btu), against total production of 44.98 quadrillion Btu.<br>The gas category and crude oil represent nearly three-quarters of total production. These figures measure primary energy production, not electricity generation.<br>In the combined natural gas category, dry natural gas contributes 80.6% by energy content. Natural Gas Plant liquids account for the remaining 19.4%.<br>Meanwhile, natural gas also heats homes and provides essential industrial feedstocks.<br>A Natural Advantage for Manufacturing and Power Generation<br>Ohio, West Virginia, and Pennsylvania form the country’s largest natural gas-producing region. Consequently, the Shale Crescent’s industrial appeal starts with its proximity to abundant domestic supply.<br>For energy-intensive operations evaluating new locations, proximity to that supply offers a reason to consider the region. In addition, chemical producers can assess access to both fuel and feedstocks when comparing sites.<br>However, abundant production alone does not determine a facility’s delivered energy costs. Companies should evaluate pipeline access, utility connections, and contract terms alongside supply.<br>Ultimately, natural gas’s scale reinforces the Shale Crescent’s relevance to and security of supply for energy-intensive businesses. It makes local energy supply an important consideration when planning the next investment.<br>-</div>
+<div class="para">Energy2 weeks ago The World’s Natural Gas Prices Over Time (2006–2026) Compare natural gas prices across U.S., European, and Asian benchmarks and explore the Shale Crescent’s industrial cost advantage.<br>-</div>
+<div class="para">Energy2 months ago Ranked: U.S. Natural Gas vs. Countries See how U.S. natural gas production regions compare with leading countries worldwide.<br>-</div>
+<div class="para">Energy3 months ago Mapped: Where is U.S. Natural Gas Produced? U.S. regional natural gas production in 2026 shows Appalachia leading the nation, reinforcing the Shale Crescent’s industrial edge.<br>-</div>
+<div class="para">Energy1 year ago The Future of U.S. Natural Gas Production, by Region EIA projections show the East—powered by the Shale Crescent—leading U.S. natural gas through 2050. Here’s how this shift can translate into a lasting manufacturing cost advantage.<br>-</div>
+<div class="para">Energy1 year ago Ranked: The Lowest Cost Energy Sources Shale Crescent USA’s natural gas ranks as the lowest cost energy on a $/BOE basis—outpacing NYMEX, coal, oil, and imported LNG—and offers a manufacturing edge.<br>-</div>
+<div class="para">Energy1 year ago Who is Growing? U.S. Natural Gas Leaders Which U.S. regions lead natural gas production growth? See why the Shale Crescent is now fueling millions more homes and factories.<br>-</div>
+<div class="para">Energy1 year ago Visualized: Where is the Most Natural Gas Production? See how natural gas production stacks up globally and why the Shale Crescent ranks third—a strategic edge for U.S. manufacturing.<br>-</div>
+<div class="para">Energy1 year ago Shale Crescent USA: A World-Class Manufacturing Region Shale Crescent USA brings energy, customers, and infrastructure together in one region, helping manufacturers reduce costs as reshoring accelerates.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Ask HN: What&#x27;s your current AI agentic setup?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    481 points ·
+    581 comments ·
+    eggbrain
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · Best #13
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50366117">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I&#x27;m curious how people on HN are using AI day to day, and came up with a list of questions I thought could be interesting to know. No need to answer every question of course, just wanted to get a gut feel how people are using AI.<br>1) What AI subscriptions are you personally paying for? (Claude, ChatGPT/Codex, Cursor, etc)<br>- Which tiers?<br>- Have you purchased multiple subscriptions from the same provider (eg two Claude accounts)?<br>2) Are you using models outside (or instead) of those subscriptions? For example, pay-as-you-go APIs, OpenRouter, or locally hosted models.<br>- Which models and providers?<br>3) What coding harnesses and interfaces are you using? Are you sticking with the default CLIs or IDE integrations, or using alternatives like OpenCode, Pi, Aider, Muse Code, or custom-built harnesses?<br>- What made you switch harnesses (if you switched)?<br>4) Are you using any agent orchestration or swarm tools?<br>- For example, Munder Difflin, Gas Town, Ruflo, or something custom.<br>5) Are you using broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse?<br>- If you are using them, what are your main use cases?<br>-----<br>I know my workflow has differed significantly from a year ago, and so it would be interesting to capture a snapshot today of what people are using and why.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Alpine Linux Security Advisory: OpenSSH-server password authentication bypass
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    248 points ·
+    20 comments ·
+    pantalaimon
+  </div>
+
+  <div class="meta">
+    alpinelinux.org
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #35
+  </div>
+
+  <div class="links">
+    <a href="https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50379704">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Security advisory: openssh-server password authentication bypass<br>If you run sshd on Alpine Linux, update openssh now and restart sshd.<br>Upgrading the package alone does not replace the running daemon.<br>If you cannot update yet, at least disable password logins: set<br>PasswordAuthentication no in your sshd configuration and restart sshd.<br>Either one closes the hole.<br>What is the problem?<br>An attacker who can reach your SSH port can log in without knowing any password. It takes one connection, works every time, and needs no retries.<br>The attacker needs the name of an account whose password field is *<br>(an account with no password set, which is normal for key-only accounts), and<br>needs the machine to have at least one other account with a $5$ or $6$<br>password hash. The attacker then sends a very long password (257 to 1024<br>bytes). One user with a password is enough: it makes every account without<br>one reachable.<br>Details are in the OpenSSH 10.6p2 release notes. No CVE identifier had been assigned at the time of writing.<br>Who is affected?<br>You are affected if all of the following are true:<br>- You run the Alpine openssh-server package, which is built without PAM, or<br>you run openssh-server-pam with UsePAM no. (openssh-server-pam with UsePAM yes is not affected.)<br>- PasswordAuthentication is yes (the OpenSSH default, unless you changed it).<br>- The machine has an account whose password field is *. This includes:<br>- root, which ships as root:* in the base image since about Alpine 3.16.<br>OpenSSH’s default PermitRootLogin prohibit-password protects root, so<br>root is only reachable if PermitRootLogin yes is set. That does not help if<br>another account that can log in is able to become root, for example<br>through doas.<br>- Any key-only user created with adduser without a password, or with usermod -p &#x27;*&#x27;.<br>- Users coming from a directory service through musl-nscd (nslcd, winbind, sssd), since they have no shadow entry.<br>- The alpine user in the official tiny-cloud images (see below).<br>- At least one local account has a $5$ or $6$ password hash.<br>Affected releases: every Alpine release we checked, 3.21 through 3.24 and edge, and the older releases that no longer receive regular updates (3.16 to 3.20).<br>Who is not affected?<br>- Docker and other container users that do not run sshd in the<br>container.<br>- Systems with PasswordAuthentication no.<br>- Systems using openssh-server-pam with UsePAM yes (with UsePAM no you are affected).<br>- Locked accounts: those with ! as the password field in /etc/shadow (a line starting user:!:). They cannot log in with a password or a key.<br>- Systems where no account has a $-style password hash.<br>- Cloud images configured through cloud-init, which writes<br>PasswordAuthentication no.<br>How can I fix it?<br>1. Update<br>apk upgrade -U -a<br>Alpine 3.21.10, 3.22.8, 3.23.8 and 3.24.4 contain the fixed package (see the release announcement). The fixed package versions are:<br>| Branch | Fixed openssh version |<br>|---|---|<br>| edge | 10.6_p2-r0 |<br>| 3.24 | 10.3_p1-r2 |<br>| 3.23 | 10.2_p1-r1 |<br>| 3.22 | 10.0_p1-r11 |<br>| 3.21 | 9.9_p2-r1 |<br>| 3.20 | 9.7_p1-r6 |<br>| 3.19 | 9.6_p1-r3 |<br>| 3.18 | 9.3_p2-r4 |<br>| 3.17 | 9.1_p1-r7 |<br>| 3.16 | 9.0_p1-r6 |<br>Restart sshd after upgrading (rc-service sshd restart). Upgrading the<br>package does not restart a running sshd, so you must do it after.<br>2. If you cannot update: disable password authentication<br>Before you start, make sure your SSH key login works, and keep your current session open until you have tested a new login.<br>Run these as root. The first two commands create a drop-in file. Alpine’s<br>default sshd_config reads that directory from 3.19 onward; older releases<br>ignore it. The sed command changes yes to no on every<br>PasswordAuthentication line in /etc/ssh/sshd_config, whatever the spacing,<br>including lines inside a Match block. It also adds PasswordAuthentication no at the top of the file, for the case where there was no such line, and<br>saves the original as /etc/ssh/sshd_config.bak. The last two commands check<br>the configuration, restart the daemon, and show the result:<br>mkdir -p /etc/ssh/sshd_config.d<br>echo &#x27;PasswordAuthentication no&#x27; &gt; /etc/ssh/sshd_config.d/00-no-passwords.conf<br>sed -i.bak -e &#x27;1i PasswordAuthentication no&#x27; \<br>-e &#x27;s/^\(\s*PasswordAuthentication[^y#]*\)yes/\1no/i&#x27; \<br>/etc/ssh/sshd_config<br>sshd -t &amp;&amp; rc-service sshd restart<br>sshd -T | grep -i passwordauthentication<br>The last command should print passwordauthentication no. To undo, delete<br>/etc/ssh/sshd_config.d/00-no-passwords.conf and copy<br>/etc/ssh/sshd_config.bak back over /etc/ssh/sshd_config.<br>Cloud images (tiny-cloud)<br>The official tiny-cloud images (the qcow2, VHD and AMI artifacts) from<br>3.18.11 through 3.24.3 ship an alpine user with a * password field and<br>passwordless doas. They are safe on first boot. They become exploitable as<br>soon as any $6$ hash exists on the machine, for example when an admin sets a<br>console password, or user-data adds a user with hashed_passwd. An attacker<br>then gets a shell as alpine and can use doas to become root.<br>Images built from 3.21.10, 3.22.8, 3.23.8, 3.24.4 and later include the fixed<br>package. Images from earlier point releases do not, so on every running<br>instance, update openssh or disable password authentication.<br>Releases that are no longer supported (3.21 and older)<br>These releases have the same bug. 3.21 reached its end of support on 2026-11-01, but we have published fixed packages for each release all the way back to 3.16.<br>How do I know if I was attacked?<br>Look in /var/log/messages for sshd lines reading Accepted password for<br>an account that has no password (alpine, root, or any key-only user).<br>Review doas use and recently created users, files and authorized keys on<br>exposed machines. If you cannot rule out a login, treat the machine as<br>compromised.<br>How could this happen?<br>When sshd is built without PAM, it checks a password by hashing the attempt<br>with crypt() (the C library function that turns a password into its stored<br>hash) and comparing the result to the stored password field. For an account<br>whose stored field is too short to contain a salt (the random prefix of a<br>hash), sshd borrows the salt of another account.<br>musl’s crypt() returns the string * as an error indicator when the key is<br>over 256 bytes long. * is also exactly what the stored field contains for<br>every account with no password, so the “hash” matches and the login succeeds.<br>OpenSSH 10.6p2 avoids the problem in sshd. The stable-branch packages above carry a patch for the same problem.<br>Credits<br>Reported by Özgün Kültekin of Wakefield. Thanks to Damien Miller and Darren Tucker of the OpenSSH project for the fix and the 10.6p2 release, to Timo Teräs for help analyzing the issue, and to Natanael Copa, who built and uploaded the updated packages.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: Stroq – a local audit of what your coding agent did and why
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    11 points ·
+    3 comments ·
+    agybay_07
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #28
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/AGGIB/Stroq">Original article</a> · <a href="https://news.ycombinator.com/item?id=50380704">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Stroq reads your own Claude Code and Codex sessions and shows how many commands came from text your agent read, and which keys left your machine.<br>An example: a made-up machine with made-up sessions, keys and hosts. Hoo is Stroq&#x27;s owl. Your card shows your own sessions.<br>npx @stroq/cli<br>It reads your last 30 days of sessions, your key files and the folders your agent worked in; prints key names, never values; writes nothing but a small cache under ~/.stroq; and sends nothing. No account, no telemetry.<br>npx @stroq/cli            a card of your own sessions, like the one above<br>npx @stroq/cli init       stop it next time: guard your agent<br>npx @stroq/cli why        why an action was stopped<br>npx @stroq/cli attack     watch Stroq stop 36 known attacks, in a sandbox<br>npx @stroq/cli uninstall  remove Stroq<br>Every moment on the card has a stroq show line that prints the evidence behind it (npx @stroq/cli show 1). stroq help --all lists the other commands. Needs Node.js 22 or newer. Apache-2.0.<br>Stroq is a local security platform for AI coding agents: Claude Code, Cursor, Codex CLI and others. Its hooks judge every tool call before it runs. They deny curl | sh and outbound calls that carry a known secret from your machine, and they ask you first when a command repeats text the agent read, naming that text. The console shows which agents actually ask Stroq, and every decision with its reason. Sessions you already had can be checked too, without installing anything.<br>npx @stroq/cli console        # the console: a private page on 127.0.0.1<br>npx @stroq/cli replay --all   # your Claude Code sessions of the last 30 days against the policy; no hooks needed<br>npx @stroq/cli sent           # did your agent pass your keys on? key names, never values<br>npx @stroq/cli init           # hook into your agent and guard the next session<br>A made-up machine: made-up sessions, keys and hosts. Nothing was executed.<br>| Check: the card of stroq, made by the same code. Each moment opens with its evidence, under it one line for each agent. | Live: recorded decisions as they happen. A row opens into its chain: what the agent read, what it did, the decision, the rule. |<br>| Agents: add or remove Stroq&#x27;s hooks, with the exact file change shown first. When Stroq was last asked, and which of an agent&#x27;s settings weaken it. | Skills &amp; MCP: every skill and MCP server by agent: where it came from, what the rules matched in it, what changed since you last looked. |<br>The fifth screen is Rules: try an action without running it, turn rules on with a preview and a test, the history with an undo, and the rules reference. Connected means Stroq&#x27;s hooks are in the agent&#x27;s settings, not that the agent calls them: Test hook and Live show that.<br>Screens from a build just before 0.30.0, reading a made-up machine: made-up sessions, keys and hosts. Nothing was executed.<br>npx @stroq/cli console                            # a private page on 127.0.0.1<br>npx @stroq/cli console --workspace /path/to/repo  # the project it should look at<br>Open the whole link it prints: it carries a key that is new each time the console starts. The console reads what Stroq already records on this machine. It changes an agent&#x27;s settings or Stroq&#x27;s policy only after you confirm a preview of that change; checks you run are saved under ~/.stroq.<br>It listens only on 127.0.0.1, needs no account and has no telemetry. Nothing in it starts your agent: Test hook runs the hook once, offline. Adding hooks from the console needs macOS or Linux; on Windows use stroq init. Details and limits: console guide.<br>From a source checkout:<br>pnpm install --frozen-lockfile<br>pnpm --dir console install --ignore-workspace --frozen-lockfile<br>pnpm platform:build<br>pnpm platform --workspace /path/to/repo<br>Output of the 0.29.0 CLI on a made-up Claude Code transcript of the same story; the path is shortened.<br>stroq replay reads the agent&#x27;s own transcript, so it works on sessions from before Stroq was installed: which content the agent read, and which later actions came out of it. --all goes through every session of the last 30 days and says which to open. Nothing runs and nothing is sent; the verdicts are today&#x27;s policy&#x27;s, not a record of what happened at the time.<br>stroq sent compares your Claude Code, Codex CLI and Cursor sessions with the credentials on your machine and says where each key went: sent to another company, maybe sent, seen by the AI, used with its own service, or blocked before it ran. It prints names and sources, never values. Start with the session secret scan walkthrough (no session yet? try it with a made-up key).<br>What a stroq sent finding looks like<br>Made-up keys, the built CLI&#x27;s output, trimmed:<br>stroq sent: did your AI agent pass your keys on?<br>6 of your 6 keys appear in your agent sessions: 2 sent to another company, 1 maybe sent, 1 seen by the AI, 1 used with its own service, 1 blocked before it ran.<br>Checked 3 sessions (Claude Code 2, Codex 1), 2026-10-02 to 2026-10-19.<br>Compared with 6 keys: ~/.aws/credentials, ~/.npmrc, ~/work/shop/.env, ~/work/api/.env.<br>SENT TO ANOTHER COMPANY: rotate these today (2)<br>1. STRIPE_SECRET_KEY  from ~/work/shop/.env<br>went to  collector.example, in a curl command<br>when     2026-10-11 14:02 UTC · Claude Code · ~/work/shop<br>do       revoke it at https://dashboard.stripe.com/apikeys, then update ~/work/shop/.env<br>SEEN BY THE AI: your agent&#x27;s model saw these keys (1)<br>4. aws_secret_access_key  from ~/.aws/credentials<br>seen in  the output of a Read of ~/.aws/credentials<br>when     2026-10-02 09:42 UTC · Claude Code · ~/work/api<br>note     Not ruled out: 2 later commands in that session could reach the network.<br>do       your agent&#x27;s model saw it; rotate it if that matters: https://console.aws.amazon.com/iam/home#/security_credentials<br>Stroq names a send only when it sees the key in the command that sent it. A script, a file or a variable can carry a key out without showing it.<br>stroq attack runs 36 attacks, from public reports and synthetic cells, against your policy in a throwaway home: on 0.30.0, 15 are denied, 21 are asked about, 0 pass through.<br>- Before each action. Native hooks for Claude Code, Cursor, Codex, Copilot CLI, Windsurf and Antigravity, a plugin for OpenClaw, and a stdio MCP proxy. Supported outbound calls containing a known secret can be denied; provenance ties later actions to the tool output they repeat. A question about a value copied from text the agent read is asked once per session in Claude Code, unless the session has started something in the background.<br>- After the fact. replay and sent read local session records, including sessions from before Stroq was installed. Old, rotated or unknown values may be missed, and a key that did not show in a command may still have left in a script, a file or a variable. A local transcript match does not by itself prove delivery to a model provider.<br>- Local. No outbound network calls from the hooks; the hook of an older Task Lock run speaks only to its local parent controller. No telemetry.<br>- Limits. A hook sees only what the host sends it, and that differs by agent and version. Matching is text-level, so a command the model writes from scratch does not trace back to a source. It is a filter, not a sandbox. Read the integration limits before relying on a live hook.<br>- Guide: everything, section by section. Install · Commands · How it works · Guarantees and limits<br>- Per-agent details: what each agent&#x27;s hooks allow, and every documented limit<br>- False positives · Attack coverage · Cloak vs AgentCloak<br>- Security · Changelog · Contributing<br>Thank you to everyone who contributes code, reports bugs, tests agent integrations, and improves the docs ❤️</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    AI is forcing us to pay off 40 years of technical debt
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1239 points ·
+    722 comments ·
+    pseudolus
+  </div>
+
+  <div class="meta">
+    spectrum.ieee.org
+  </div>
+
+  <div class="meta ranks">
+    Best #3 · Top #39
+  </div>
+
+  <div class="links">
+    <a href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability">Original article</a> · <a href="https://news.ycombinator.com/item?id=50364336">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In late October, a slew of major cybersecurity issues came to light. But none were bigger than the so-called PHP2Shell vulnerability, which put a plethora of websites, including those of NASA, Wikipedia, the White House, and all other sites that run on Wordpress or Drupal (among others) at risk of exploits capable of both reading sensitive data and running malicious code on the host server.<br>As far as anyone is aware, disaster has been averted: The hack was discovered by cybersecurity researchers who reported it to the PHP Foundation, and a patch was released before any bad actors got their hands on the exploit. However, PHP2Shell may be the canary in the coal mine, serving as a warning sign for what’s to come in the age of AI.<br>“One of the things we’re witnessing now is that all the legacy software that was written by humans over the last 40 years is being exposed,” says Matt Suiche, AI security research lead at the cybersecurity startup Tolmo. “Now it is time for the technical debt to be paid off.”<br>PHP Legacy Bug and Memory Errors<br>PHP, which originally stood for “personal home page,” is a programming language created back in 1994 and largely used by legacy sites. The bug underlying the PHP2Shell vulnerability was reported to the PHP Foundation as far back as 2024. The bug caused a common type of issue called an out-of-memory error, in which the amount of memory allocated to a piece of data is too small to hold the data. Normally, this type of error causes the program to crash—an unpleasant but not inherently dangerous result. And so the bug remained unaddressed.<br>“If you look at any at any point of time, there will be a bunch of bug reports that are waiting to be fixed, which are just crashes. Most people don’t take them very seriously,” says Suman Jana, an associate professor of computer science at Columbia University.<br>“It’s just that it’s a lot of very specific reasoning that is painful to do. And AI, I think, has done a very good job at that.” –Suman Jana, Columbia University<br>Earlier this year, the cybersecurity firm Calif offered to independently audit PHP, sponsored by OpenAI. Within two weeks, a researcher at Calif, aided by AI tools, found a way to use the out-of-memory bug to run arbitrary code on the host server, allowing a malicious actor to install malware or read critical data. Now, it was no longer a minor bug—it was a critical vulnerability, and the Calif team alerted the PHP foundation to start working on a patch immediately.<br>Jana says actually exploiting the bug requires carefully working out a way to jump to a specific point in the memory for a particular program running on the server, and work out exactly which bits to overwrite in what order to gain control of the system. “It’s not really rocket science,” he says. “It’s just that it’s a lot of very specific reasoning that is painful to do. And AI, I think, has done a very good job at that.”<br>To be clear, the researchers at Calif (as well as OpenAI and Wiz, a cybersecurity company that confirmed and expanded the vulnerabilities) had deep knowledge of both cybersecurity and the PHP language. “I’m not claiming that AI can do it all by itself. It clearly cannot,” Jana says. “But it is improving a lot, so the top 0.1 percent [of experts] can get a lot more stuff done, and also just below the 0.1 percent now will be able to go there without understanding all the nitty-gritty details.”<br>AI Tools and Formal Verification in Security<br>After the exploits were disclosed to the PHP Foundation, a team of four engineers spent two months developing a patch to release as quickly as possible.<br>“There is a fundamental asymmetry in finding bugs and fixing bugs,” Jana says. “Because when you’re fixing bugs you have to make sure that you know all parts of that attack are closed, and also that you don’t break any existing functionality.”<br>This asymmetry puts a lot of strain on the defenders, especially for open-source software such as PHP. Maintaining open-source projects that don’t have clear revenue streams despite being widely used is a long-standing challenge that precedes AI hacking tools. But those tools make the issue more pressing than ever.<br>One way to stay ahead of such issues going forward is to empower the defenders with more money and access to frontier cybersecurity AI models. “These frontier labs are donating some of their token budgets to look into these bugs, which I think is great,” Jana says. “I think that should happen more, either through some concerted effort or through donations.”<br>Jana is also optimistic that formal verification tools to automate the patching side of the equation are also advancing quickly, including a new release from Anthropic on 22 October. “The patch is LLM-generated, and then an LLM generates the proof that the patch is correct,” says Jana. “The only thing not done by an LLM is the proof checker, because somebody has to check the proof, because LLMs hallucinate. So, you want something that is formal.”<br>Hopefully, the combination of specialized AI models and formal verification tools will make patching vulnerabilities nearly as automatable as finding them.<br>Matthew Green, an associate professor of computer science at Johns Hopkins University Information Security Institute, is less optimistic. “Nobody’s going to fix this problem until something really bad happens,” he says. “And PHP2Shell wasn’t bad enough to be really bad. So when something really bad happens, which is going to be maybe sometime in early 2027, something bad that normal people are upset by, then suddenly people will start doing this. We’re going to fund everything.”<br>In the meantime, Green says, update your software. “If your phone is like, ‘Hey, there’s a security update available, do you want to install it,’ don’t wait till next week. Just do it.”<br>One thing’s for sure—PHP2Shell is just the beginning. “This won’t be the last one for sure,” Jana says. “It’s just who finds it. Hopefully, the white-hat hackers find it first, like this one.”<br>- Your AI Agent Is Now a Target for Email Phishing ›<br>- With $1 Cyberattacks on the Rise, Durable Defenses Pay Off ›<br>- What Anthropic’s Mythos Means for the Future of Cybersecurity ›</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Motorola Signature 27 with GrapheneOS support
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    105 points ·
+    33 comments ·
+    monneyboi
+  </div>
+
+  <div class="meta">
+    motorolanews.com
+  </div>
+
+  <div class="meta ranks">
+    Top #3
+  </div>
+
+  <div class="links">
+    <a href="https://motorolanews.com/motorola-signature-27-2/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50380810">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Motorola, a Lenovo Company, is designing to a higher standard with the new motorola signature 27, the company’s most advanced flagship smartphone to date, bringing together distinctive design, category-leading innovation and next-generation AI experiences. From its contoured edges, expressive finishes and refined craftsmanship to the breakthrough technologies within, every detail of the motorola signature 27 was purposefully built to deliver a premium experience without compromise. Featuring Motorola’s most advanced camera system yet, recognized with a DXOMARK Gold Label for image quality performance, the brightest Extreme AMOLED Duo Tandem display¹ available in a smartphone, the Snapdragon® 8 Elite Extreme Gen 6 Mobile Platform, making it among the first smartphones to unlock next-generation connectivity and AI experiences, and the only smartphone in-market with Audio by Bang &amp; Olufsen, the motorola signature 27 represents the pinnacle of Motorola innovation.<br>Motorola’s best camera system yet, recognized for imaging excellence<br>The motorola signature 27 includes Motorola’s best camera system yet, combining advanced hardware, cinematic video, and effortless photography. Awarded the coveted DXOMARK Gold Label in recognition of its industry-leading level of imaging quality performance, the motorola signature 27’s camera system delivers eye-catching photos and videos, with:<br>- A 50MP Sony LYTIA L910 main camera captures exceptional clarity, rich color and deep contrast for vibrant, ready to share results. Combined with LOFIC technology, it records brighter, more balanced video with consistent detail across challenging lighting conditions, whether filming concert stages, neon-lit streets, candlelit dinners or nights out with friends.<br>- A 200MP periscope telephoto camera with 100x Super Zoom captures everything from distant landmarks and architectural details to wildlife and action unfolding far away with remarkable clarity. Powered by AI, 100x Super Zoom Pro helps preserve natural color, sharpness and details even at extreme distances. The 3x periscope telephoto lens also delivers flattering, natural-looking portraits, while ultra-resolution imaging provides greater flexibility for cropping, reframing, and editing.<br>- The first ever dedicated EVS action sensor on a smartphone² introduces a new approach to smartphone motion photography, helping capture fast-moving subjects with greater clarity and precision. Working together with the Action Shot feature, it freezes motion while maximizing available light, producing crisp, vibrant images with richer detail and more natural color.<br>- The 50MP ultrawide camera³ fits more into every frame, transforming tight spaces into expansive compositions and making it easier to capture sweeping landscapes, large landmarks and group photos without stepping back.<br>- And a 50MP front camera delivers sharp, ready-to-share selfies and supports 4K video recording, so selfie videos feature the same bold colors and clarity as still photos.<br>For a more cinematic video experience, the motorola signature 27 features a powerful Video Enhancement Engine that uses AI to intelligently optimize color, contrast and dynamic range in real time. Support for Dolby Vision®, the same technology used by leading filmmakers, helps enable richer, more immersive video. Combined with the Qualcomm® Electronic Image Stabilization and 3.5° OIS hardware on the main camera, panning, walking, and handheld recording looks more fluid and stable, so users can stay in the moment while the camera does the hard work.<br>the brightest display available in a smartphone20<br>Engineered to unlock the full potential of the latest advances in display technology, the motorola signature 27 features a new Extreme AMOLED Duo display, the brightest display available, designed to provide a premium viewing experience in virtually any environment.<br>Built with breakthrough Tandem Technology, it combines two emissive layers into one, producing brighter visuals, richer color and greater efficiency. With up to 12,0004 nits of peak brightness, users can comfortably view maps, messages, photos and videos virtually anywhere, whether navigating a sunny afternoon, checking directions on the go or capturing content outdoors, without needing to shield the screen or strain to see it. Plus, 1.5K Super HD resolution and Dolby Vision® bring entertainment to life with exceptional sharpness, contrast and precision.<br>This advanced display is also designed to be smarter and more durable, delivering up to 34% greater energy efficiency and up to a 121% longer lifespan than traditional AMOLED panels.24 Pantone® Validated color calibration ensures colors and skin tones appear true to life5, while SGS-certified blue light technology helps reduce eye strain.<br>powering next generation experiences<br>To sustain peak performance when it matters most, the motorola signature 27 pairs the platform with Motorola’s ArcticMesh cooling system that uses micro-diamond-infused thermal gel and a thermal chamber that is 40% larger than the previous generation⁶ to keep performance running at its best during extended gaming sessions, AI tasks, video recording and intensive multitasking. With a new 6‑antenna design delivering faster 5G downloads, up to 2x faster Wi‑Fi speeds6, Wi‑Fi 8 compatibility, the motorola signature 27 is built to stay fast, capable and ready for next-era AI. And seven years of OS upgrades23 help ensure the experience stays reliable long into the future.<br>AI that goes beyond assistance<br>The motorola signature 27 can understand context, help people create, support decisions and move from intention to action across the apps and services they use every day. As Google rolls out these capabilities to Gemini Intelligence⁷ devices globally in the coming months, motorola signature 27 will be ready to bring them to users around the world:<br>- Whether booking a ride or preparing a grocery order from a shopping list on your screen, Gemini helps users go from intention to action with less effort. Gemini can handle complex, multi-step tasks on a user’s behalf, reducing app switching and helping them stay focused on what matters. Users remain in control throughout, with the ability to view progress, jump in, or stop a task.16<br>- Rambler17 transforms natural speech into polished messages, letting users think out loud while it refines their words in the background. Rambler removes filler words, edits repetition, and organizes ideas into clear paragraphs or bullet points. Users can correct themselves mid-sentence, switch languages seamlessly, and review everything before sending, ensuring they share exactly what they intend. Afterwards, users can quickly ask Rambler to rewrite, rephrase, translate, or reformat their text.<br>- Create My Widget18 enables users to create personalized widgets by simply describing what they want to see. Whether it’s a tracker to follow your monthly spending, daily recipe inspiration, or a trip countdown with your travel details, your homescreen can be as personalized as you want it to be.<br>- Sign-to-Text19 translates American Sign Language (ASL) into written English in real time using the device’s front-facing camera. Integrated with Gboard and Live Transcribe, it opens new ways for users to communicate across digital and in-person interactions.<br>Right out of the box, the motorola signature 27 also includes powerful Google Gemini⁸ experiences designed to bring new levels of creativity, including Gemini Omni, which enables users to create and edit video through natural conversation, and Lyria which generates custom soundtracks from simple prompts.<br>In addition, the device features Motorola Qira⁹, a built-in AI system designed to connect and enhance experiences across supported Motorola and Lenovo devices, helping users get more from their broader ecosystem through a single, seamless hybrid AI experience.<br>the only smartphone with “Audio by Bang &amp; Olufsen”<br>recently announced multi-year partnership with Bang &amp; Olufsen. Combining Motorola’s premium mobile innovation with Bang &amp; Olufsen’s renowned expertise in sound and design, the device is engineered to deliver sound that is meant to be felt, not just heard. Featuring dedicated Sound Modes and an all-new speaker architecture, the device is tuned to preserve the character of the original recording, alongside deep bass, clear vocals and greater fidelity across music, movies and games.<br>distinctive design, exceptional durability<br>Precisely crafted with a ceramic and glass construction, the motorola signature 27 is available in two unique, elevated finishes: PANTONE Coal Smoke, which features a tactical weave finish inspired by automotive design and performance materials, and PANTONE Capulet Olive, which features a textile-inspired finish influenced by premium fashion and interior design.<br>Premium materials and durability come together in the motorola signature 27, featuring Corning® Gorilla® Glass Ceramic 3, an aerospace-grade aluminum frame, military-grade durability (MIL-STD-810H)10, and IP68 and IP69 ratings for enhanced protection against the elements.22<br>power that gives the freedom to do more<br>7000mAh battery11, 35% larger than the last generation, so users can stay connected longer, stream and create without interruption, and move through the day without constantly thinking about battery life.<br>When battery does get low, 90W TurboPower™ charging quickly restores power for the day in just 12 minutes12,13, whether on a coffee break or while getting ready. For a more effortless experience, users can go cord-free with 50W wireless charging, powering 0 to 100% in up to 80 minutes of wireless charging.12,14<br>Motorola’s first GrapheneOS-supported device, built for privacy and peace of mind<br>Data privacy matters, and Motorola continues to build on its commitment to security with ThinkShield®, which helps protect users from the factory to the phone, and Moto Secure, a centralized destination for managing privacy and security features.<br>Expanding that commitment even further, the motorola signature 27 will kickstart a new era of smartphone privacy and security. It will be Motorola’s first device to support GrapheneOS, a hardened, open-source operating system based on the Android Open Source Project. Developed in partnership with the GrapheneOS Foundation, the leading nonprofit in advanced mobile security, the device reflects Motorola’s commitment to bringing cutting-edge security to everyday users across the globe.<br>That commitment runs deeper than software: GrapheneOS sets demanding requirements for the hardware it runs on and how it’s kept updated, and the motorola signature 27 is built to meet them. The device is Motorola’s first with a performant implementation of ARM Memory Tagging Extension, a new hardware caching mechanism for helping ensure system integrity and privacy. More details on it will be shared in the coming months.<br>Availability</div>
+</div>
+
+</div>
+
+</body>
+</html>
