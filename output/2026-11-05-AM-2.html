@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-05 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-05 AM · Generated 2026-11-05 09:36 CST</div><div class="issue-sub">Stories 10 · Full 4</div><div class="issue-sub">Sources: fireflyk64.github.io, github.com, layer3intel.com, news.ycombinator.com, openai.com, spectrum.ieee.org, youtube.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Residential proxies detected on White House network
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    626 points ·
+    204 comments ·
+    Rasbora
+  </div>
+
+  <div class="meta">
+    layer3intel.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #8
+  </div>
+
+  <div class="links">
+    <a href="https://layer3intel.com/blog/residential-proxies-white-house-network">Original article</a> · <a href="https://news.ycombinator.com/item?id=50371246">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Our Residential Proxy Observatory, launched earlier this week, is a first-of-its-kind interface that gives researchers a global view of residential proxy and anonymized internet activity.<br>While our team was looking through it, we noticed residential proxy exit activity on AS2650. AS2650 is registered to the Executive Office of the President, the federal agency that hosts the White House network. Residential proxy services sell access to everyday devices, letting customers send traffic through them so it appears to come from that device&#x27;s network.<br>What we observed<br>From October 5 to November 3:<br>- Our residential proxy enumeration pipeline exited through the White House network 236 separate times.<br>- Those exits came from 6 addresses, on 26 of the 30 days.<br>- 28 separate residential proxy services were able to exit through this network.<br>To make sure this was not a fluke, we checked these addresses against other residential proxy detection services, such as Spur and Synthient. Their public IP context pages independently identify these addresses as residential proxy exits.<br>This is public access. Anybody can obtain it by signing up to a public residential proxy service, paying a few dollars and sending requests through it. We did not selectively target this network or try to make our probes exit from it. We caught this by chance, simply by requesting global rotating access through these services.<br>Why this is concerning<br>Most of the activity happens in the evening, Eastern time: about half of it falls between 5 p.m. and midnight, and almost none happens in the early morning. That pattern suggests a person rather than a public guest Wi-Fi network: someone regularly on the White House network late into the evening, whose device is infected with a proxy SDK. Our data shows the exits, not the device or the person behind them.<br>Past research has shown that poorly secured proxy SDKs can allow internal network access and lateral movement. This is how past botnets have spread. In A Broken System Fueling Botnets, the researchers at Synthient documented how the Kimwolf botnet reached at least 2 million devices, mostly Android devices with an exposed ADB service, through residential proxy networks. If an SDK on this network has the same kind of flaw, anyone buying proxy access could use it to reach internal systems.<br>No place is too remote<br>The White House is not the only surprise in the observatory. Residential proxies also reach some of the most isolated places on the planet.<br>Saint Helena, Ascension and Tristan da Cunha is the South Atlantic territory that includes the most remote inhabited island in the world. We recorded 413 addresses and more than 32,000 observations there, split between Starlink and the island&#x27;s local internet provider, Sure Saint Helena.<br>We also recorded three observations from Antarctica. All of them come from a Cloudflare WARP address that points to McMurdo Station.<br>Other remote places with activity:<br>- Pitcairn: 1 Starlink address, 1 observation.<br>- Norfolk Island: 1 Norfolk Telecom address, 4 observations.<br>- Svalbard: 1 Starlink address in Longyearbyen, 3 observations.<br>- Also seen: the Falklands (388 addresses), the Chagos Islands (43), Tokelau (21) and South Georgia (7).<br>Residential proxies have infected every corner of the world, and it looks like there is no place they cannot reach. Layer3 Intel tracks residential proxy and anonymization infrastructure worldwide. Even when the proxies hide in networks on the farthest corners of the planet, we can still observe them, leaving threat actors no place to hide.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Ask HN: What&#x27;s your current AI agentic setup?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    115 points ·
+    136 comments ·
+    eggbrain
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #22
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50366117">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I&#x27;m curious how people on HN are using AI day to day, and came up with a list of questions I thought could be interesting to know. No need to answer every question of course, just wanted to get a gut feel how people are using AI.<br>1) What AI subscriptions are you personally paying for? (Claude, ChatGPT/Codex, Cursor, etc)<br>- Which tiers?<br>- Have you purchased multiple subscriptions from the same provider (eg two Claude accounts)?<br>2) Are you using models outside (or instead) of those subscriptions? For example, pay-as-you-go APIs, OpenRouter, or locally hosted models.<br>- Which models and providers?<br>3) What coding harnesses and interfaces are you using? Are you sticking with the default CLIs or IDE integrations, or using alternatives like OpenCode, Pi, Aider, Muse Code, or custom-built harnesses?<br>- What made you switch harnesses (if you switched)?<br>4) Are you using any agent orchestration or swarm tools?<br>- For example, Munder Difflin, Gas Town, Ruflo, or something custom.<br>5) Are you using broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse?<br>- If you are using them, what are your main use cases?<br>-----<br>I know my workflow has differed significantly from a year ago, and so it would be interesting to capture a snapshot today of what people are using and why.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    104 points ·
+    12 comments ·
+    daniel_rh
+  </div>
+
+  <div class="meta">
+    fireflyk64.github.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #17
+  </div>
+
+  <div class="links">
+    <a href="https://fireflyk64.github.io/wcmulti/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50369895">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">By danielrh<br>When we were kids, my brother Patrick and I would steer our space fighter with one of us on controls and the other on the lasers and afterburner boost. We always dreamed of playing the Wing Commander series cooperatively as wingmates rather than as a two headed hydra in a single craft.<br>In the beginning we were searching for where we were<br>On October 4, 2015 as I was playing the classic Wing Commander in Dosbox I realized the whole memory probably fit in that 640K Bill Gates apocryphally said “ought to be enough for anybody”. If I could dump the memory and identify the locations that held the X,Y,Z coords for the player &amp; wingman we could let the network packets control the wingman.<br>The actual quote<br>“I have to say that in 1981, making those decisions, I felt like I was providing enough freedom for 10 years. That is, a move from 64 K to 640 K felt like something that would last a great deal of time. Well, it didn&#x27;t.” Source<br>This presented a clear problem to attack: out of fewer than a million bytes how would we identify that location? I decided to simplify the problem by trying to empty the game of other entities. A stopped player shouldn’t change coordinates. We could snapshot the memory twice when stopped to identify “background” memory churn. Then burst forward and measure again. If we didn’t turn (mouse was disabled) we might only change one axis. The next problem was to find an empty region of space. We had to start without our wingman Paladin, since he would move with us. After a miserable mission, letting the nefarious space cats overwhelm Paladin and running back to the spacecraft carrier, the Claw, the next mission was primed for a flight through empty space. I launched and flew directly ahead until everything despawned and took the memory snapshots using the DOSBox MEMDUMPBIN debug-command.<br>Now I had to discover anything that had not changed between the memory snapshots where my star fighter was in the original position but things that had changed when my star fighter moved.<br>(snapshotorigin ⊙ snapshotlater) ∧ (snapshotorigin ⊕ snapshotmoved)<br>There were 35 distinct clusters of bytes that changed in the data segment. By inspecting these visually and looking for floats or small integer changes when I moved, I narrowed it down to a dozen locations it could be.  I went to the chase camera view as well, and this helped to narrow it down to 13D3:A9C2. I had the DOSBox debugger add integers at that address with its SM command and that caused the ship to jolt forward to a new location.<br>CAE2, since thre were three 32 bit ints that zeroed out when the craft was stopped.<br>I had fun driving my ship around with the memory editor and reproduced it around the Claw and other NPC ships.<br>Then we searched for what we faced<br>I set it down for nearly a year but in September 2016 I decided to write a small tool to automatically compare DOSBox snapshots instead of using the vbindiff GUI only. Directionality turned out to be more difficult so I set down the problem for a few more months and picked it back up in November.<br>To find the memory location of the rotation, I needed to look harder. As it happened the vectors were made of 4 byte scalars with 256 as 1.0 and valid positive vector positions between 0 and 255. This meant that most small rotations only changed a single byte. However, fortune was smiling on me that day because of what appeared to be a programmer joke at the time. Wing Commander reserved 64 slots for entity properties. In hex this would span numbers from 0x00 to 0x3F. However the programmers decided to use 0x3F for temporary usages and place the camera in 0x3D. Since 3D graphics were still nascent, the programmers may have thought it a good laugh to write 0x3D every time they needed to manipulate the 3D camera. That put a temporary variable two slots from the camera variable. And up and forward were also next to one another. This gave a nice wide region where I could locate those single byte changes. The first byte I understood was the y of the right vector; the print window I put around it happened to cover the camera&#x27;s copy of up, which is where the overwrite experiment started. Furthermore, I rolled the ship over, and tripped sign extension, which caused all 3 adjacent bytes to switch from 0x00 to 0xff. Between these two facts, I noticed the temporary and camera bytes in the hex dumps.  Writing to them did not help, since they were overwritten every frame, but luckily I wrote some extra bytes to the next vector as well, which was forward[0]. This caused a noticeable shift in the starfield and meant that I could now start investigating the code.<br>I put memory watchpoints on the addresses and traced the vector-add function called by the per-ship physics function called by a per-frame function and eventually the main loop.<br>It was now time to locate the byte sequences in IDA and start annotating the game. Wing Commander Multiplayer was now just a matter of repeating these techniques and figuring out how to puppeteer one ship from another&#x27;s input.<br>Then we searched for how to act<br>December 2016 had shattered my illusion that we would be able to drive Wing Commander with writes to global memory alone. The details of manifesting laser fire or heat seekers were far too complicated to puppeteer solely from the addresses. We would need to co-opt the very functions in the original game to get the most accurate experience. One initial thought was to “will” the program counter to the right place, but we would need a way to insert arguments and return back from whence we came. Moreover, many of the functions were in various overlays that required indirection to invoke. It appears that Borland had a different overlay per compilation unit (C++ file) and they were dynamically loaded in different locations depending on the path the player took beforehand.<br>Patrick and I had to figure out a good trampoline system to call functions with the correct arguments. We chose the “Loading WING COMMANDER” string at 13D3:0187  and eventually 13D3:0395 “Sorry, an error has occured while %s”[sic] to hold the trampoline.<br>We would have DOSBox push CS:IP to the stack, then relocate the instruction pointer to the string above.<br>00			terminates any string pointing here.<br>pushf; pusha		the game is mid-frame; leave registers as we found them<br>xor si,si; push si	argument: ship 0. Later thunks use mov si,imm16 for each argument<br>call far 12D7:0156	through the stub, so it works wherever the overlay is loaded<br>pop si; popa; popf	cdecl: caller cleans the arguments<br>retf			back to the CS:IP DOSBox pushed<br>We noted with joy that this caused the laser cannons to activate.<br>In March of 2017, we found a predictable location in the main loop (0560:20E3) to hook so we would not need to worry about being in an unpredictable part of the game, and in July we located the do_damage function and prevented the game from calling it as the secondary player.<br>Then we tried to bring together fields from afar<br>In August of 2017, we authored the networking protocol which was a simple TCP client/server architecture with protobuf game messages. Every frame every ship&#x27;s position would be sent from the leader plus fire events, despawning and damages. The client would reply with its own position, if any lasers were fired or if some cataclysmic event had happened (ejection, landed, died).<br>Each player would have their own craft as entity 0 and the other player as entity 1, which required a swap when receiving packets from the other emulator.<br>These packets modified memory directly or were added to a job queue of events that had to happen that frame.<br>We started with a very simple trampoline:<br>pushf<br>pusha<br>nop<br>popa<br>popf<br>retf<br>When Borland&#x27;s overlay loader swaps a code page in, it walks the chain of saved BP frames on the stack and patches any return address that points into an overlay. The hand-made stub had no frame, so the walk read garbage and the game died at random moments. This was a constant thorn in our side from October to December.<br>The fix was to make the trampoline look like a Borland function:<br>push bp<br>mov bp, sp<br>nop (0x90) ; welcome to the 0x90&#x27;s<br>pop bp<br>retf<br>We configured DOSBox to notice when the program counter reached the nop and instead inject its call from the job queue of things that should happen. The job queue was based on what was necessary to make the game function correctly in a multiplayer scenario.<br>In October 2017 we noticed that ephemeral objects would be located in different slots for different players. Having the new hook from DOSBox also let us determine when the function had returned, so we could note down which numeric slot a new ship or projectile had been spawned into.<br>Ephemeral objects had their own spawn rules and could occupy shared areas of the 61 entity slots. We modified the location that ephemeral objects were placed in so we could confine them to slots 12 to 15 and keep multiplayer locations consistent.<br>In December we decided to change the client to store a mapping of server ship IDs to local IDs, so we could stop forcing the spawn function return. This allowed packets to translate between local and host IDs. Finally asteroids started to work in multiplayer.<br>In 2018 we focused on animating explosions, missiles, and autopilot.<br>The search continued for both success and defeat<br>In June of 2019 we noted the mission victory calculation was flaky and finicky. We decided to conduct a binary search to find the location of the actual victory point tally. We copied the entire 64K data segment across the network, and slowly cut it in half. After many bisections, we located 80 bytes at 13D3:D248 which held the mission tree. And in October we found the overall victory point counter at 13D3:C280 and mission numbers at 13D3:C255 and C256, which allowed us to select the mission to play from a dropdown, years later.<br>And finally the joy of combined words<br>In early 2020, we identified the function that played comm text. This allowed us to send chat over the network and hook typed chat directly into the system so it played using the wingman&#x27;s VDU. It allowed a very immersive way to chat that reminded us of some of the frenetic sequences in the game.<br>Some final work in 2020 left the game in a playable state, but we were out of ideas on how to actually share the fun with friends. Expecting people to locate a copy of that old game, compile or download a strange version of DOSBox, share each other&#x27;s public IPs and punch the firewalls and play together was sadly a bridge too far.<br>We had a few family playthroughs but the game rested on GitHub, mostly idle.<br>And in 2026, machine assisted development helped us laugh together<br>Until now. With the advent of widespread WebRTC, robust emscripten support, and a new system we put together called lobbylink, the time seemed right to revive the project and share it more widely.<br>lobbylink<br>I built https://github.com/danielrh/lobbylink which is a simple golang lobby system, depending only on a websocket library, that orchestrates peer to peer WebRTC connections. It can run on any small server and simply allows players to connect to one another using WebRTC and a shared room code. The server has a static allowlist of origins and can let browsers or client software in almost any language connect to it with a room code. The room code is used to locate other players with the same room code and they get notified of all joiners in that room. The server also runs coturn and mints TURN credentials in its joined reply, so players behind restrictive firewalls can join.<br>I ported over the transport to lobbylink and asked an LLM to configure the build scripts to target emscripten and take a GOG Inno Setup installer package of Wing Commander and unzip it and use it as data files for emscripten. The combination of these makes it possible to download Wing Commander from GOG, drag and drop it into the client-side browser storage, enter a room code, and play.<br>The game is playable at https://fireflyk64.github.io/dosbox/ and the emulator is at https://github.com/danielrh/wcmulti.<br>And as an added bonus I asked an LLM to add voice chat as well for realtime voice in game using a second WebRTC peer connection to carry audio, if people choose. And so we can fly and laugh together.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Postman silently auto-installs AI plugins and attempts to share all API data
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1485 points ·
+    483 comments ·
+    sidgarimella
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/postmanlabs/postman-app-support/issues/14370">Original article</a> · <a href="https://news.ycombinator.com/item?id=50354960">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Half-Life in 23:58
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    nonethewiser
+  </div>
+
+  <div class="meta">
+    youtube.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.youtube.com/watch?v=P74qS4zYmis">Original article</a> · <a href="https://news.ycombinator.com/item?id=50373922">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    AI is forcing us to pay off 40 years of technical debt
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1057 points ·
+    631 comments ·
+    pseudolus
+  </div>
+
+  <div class="meta">
+    spectrum.ieee.org
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #5
+  </div>
+
+  <div class="links">
+    <a href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability">Original article</a> · <a href="https://news.ycombinator.com/item?id=50364336">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In late October, a slew of major cybersecurity issues came to light. But none were bigger than the so-called PHP2Shell vulnerability, which put a plethora of websites, including those of NASA, Wikipedia, the White House, and all other sites that run on Wordpress or Drupal (among others) at risk of exploits capable of both reading sensitive data and running malicious code on the host server.<br>As far as anyone is aware, disaster has been averted: The hack was discovered by cybersecurity researchers who reported it to the PHP Foundation, and a patch was released before any bad actors got their hands on the exploit. However, PHP2Shell may be the canary in the coal mine, serving as a warning sign for what’s to come in the age of AI.<br>“One of the things we’re witnessing now is that all the legacy software that was written by humans over the last 40 years is being exposed,” says Matt Suiche, AI security research lead at the cybersecurity startup Tolmo. “Now it is time for the technical debt to be paid off.”<br>PHP Legacy Bug and Memory Errors<br>PHP, which originally stood for “personal home page,” is a programming language created back in 1994 and largely used by legacy sites. The bug underlying the PHP2Shell vulnerability was reported to the PHP Foundation as far back as 2024. The bug caused a common type of issue called an out-of-memory error, in which the amount of memory allocated to a piece of data is too small to hold the data. Normally, this type of error causes the program to crash—an unpleasant but not inherently dangerous result. And so the bug remained unaddressed.<br>“If you look at any at any point of time, there will be a bunch of bug reports that are waiting to be fixed, which are just crashes. Most people don’t take them very seriously,” says Suman Jana, an associate professor of computer science at Columbia University.<br>“It’s just that it’s a lot of very specific reasoning that is painful to do. And AI, I think, has done a very good job at that.” –Suman Jana, Columbia University<br>Earlier this year, the cybersecurity firm Calif offered to independently audit PHP, sponsored by OpenAI. Within two weeks, a researcher at Calif, aided by AI tools, found a way to use the out-of-memory bug to run arbitrary code on the host server, allowing a malicious actor to install malware or read critical data. Now, it was no longer a minor bug—it was a critical vulnerability, and the Calif team alerted the PHP foundation to start working on a patch immediately.<br>Jana says actually exploiting the bug requires carefully working out a way to jump to a specific point in the memory for a particular program running on the server, and work out exactly which bits to overwrite in what order to gain control of the system. “It’s not really rocket science,” he says. “It’s just that it’s a lot of very specific reasoning that is painful to do. And AI, I think, has done a very good job at that.”<br>To be clear, the researchers at Calif (as well as OpenAI and Wiz, a cybersecurity company that confirmed and expanded the vulnerabilities) had deep knowledge of both cybersecurity and the PHP language. “I’m not claiming that AI can do it all by itself. It clearly cannot,” Jana says. “But it is improving a lot, so the top 0.1 percent [of experts] can get a lot more stuff done, and also just below the 0.1 percent now will be able to go there without understanding all the nitty-gritty details.”<br>AI Tools and Formal Verification in Security<br>After the exploits were disclosed to the PHP Foundation, a team of four engineers spent two months developing a patch to release as quickly as possible.<br>“There is a fundamental asymmetry in finding bugs and fixing bugs,” Jana says. “Because when you’re fixing bugs you have to make sure that you know all parts of that attack are closed, and also that you don’t break any existing functionality.”<br>This asymmetry puts a lot of strain on the defenders, especially for open-source software such as PHP. Maintaining open-source projects that don’t have clear revenue streams despite being widely used is a long-standing challenge that precedes AI hacking tools. But those tools make the issue more pressing than ever.<br>One way to stay ahead of such issues going forward is to empower the defenders with more money and access to frontier cybersecurity AI models. “These frontier labs are donating some of their token budgets to look into these bugs, which I think is great,” Jana says. “I think that should happen more, either through some concerted effort or through donations.”<br>Jana is also optimistic that formal verification tools to automate the patching side of the equation are also advancing quickly, including a new release from Anthropic on 22 October. “The patch is LLM-generated, and then an LLM generates the proof that the patch is correct,” says Jana. “The only thing not done by an LLM is the proof checker, because somebody has to check the proof, because LLMs hallucinate. So, you want something that is formal.”<br>Hopefully, the combination of specialized AI models and formal verification tools will make patching vulnerabilities nearly as automatable as finding them.<br>Matthew Green, an associate professor of computer science at Johns Hopkins University Information Security Institute, is less optimistic. “Nobody’s going to fix this problem until something really bad happens,” he says. “And PHP2Shell wasn’t bad enough to be really bad. So when something really bad happens, which is going to be maybe sometime in early 2027, something bad that normal people are upset by, then suddenly people will start doing this. We’re going to fund everything.”<br>In the meantime, Green says, update your software. “If your phone is like, ‘Hey, there’s a security update available, do you want to install it,’ don’t wait till next week. Just do it.”<br>One thing’s for sure—PHP2Shell is just the beginning. “This won’t be the last one for sure,” Jana says. “It’s just who finds it. Hopefully, the white-hat hackers find it first, like this one.”<br>- Your AI Agent Is Now a Target for Email Phishing ›<br>- With $1 Cyberattacks on the Rise, Durable Defenses Pay Off ›<br>- What Anthropic’s Mythos Means for the Future of Cybersecurity ›</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Images 2.6
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    77 points ·
+    68 comments ·
+    davidbarker
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · New #57
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/introducing-images-2-6/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50372945">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ask HN: What cryptography book do you recommend for reading with 10 year olds?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    42 points ·
+    44 comments ·
+    mike_richards
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · Top #34
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50347425">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We are looking for a Cryptography book recommendation to read with our 10 year old who loves making up his own ciphers. He loves reading adult math and science books with us at breakfast like Ignition!, Humble Pi, and The Hunt for Vulcan. All of the kids books that we&#x27;ve found are just puzzles, but I don&#x27;t want to get something way over his head math-wise. A good history with basic theory behind the different types would be perfect. Thanks!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Show HN: Gauge – Open-Source CLI to recursively improve your docs
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    16 points ·
+    3 comments ·
+    0x63_Problems
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #21
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/gauge-sh/gauge-cli">Original article</a> · <a href="https://news.ycombinator.com/item?id=50371090">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">An open-source CLI for hillclimbing Agent Experience.<br>Make your Skills, CLIs, SDKs, MCPs and docs easier for coding agents to discover and use. Gauge runs real agents against your product, captures where they get stuck, and lets your own coding agent test fixes before you publish them.<br>The full loop runs locally with Docker and your existing agent subscriptions or API keys. No Gauge account required.<br>Website · Documentation · Hosted Gauge · npm · Changelog<br>Gauge runs and analyzes coding sessions to find the issues that coding agents run into.<br>Common findings include:<br>- An interactive command blocks a coding agent<br>- An agent reaches for deprecated commands or outdated API patterns<br>- A Skill goes unused even when it should help with the task<br>- An agent confidently claims a limitation that does not exist<br>- An agent cannot figure out the intended workflow across multiple commands<br>The right fix might change error messages, Skill content, help text, code, or documentation. The Gauge CLI lets you validate proposed fixes before release.<br>Gauge is designed to be used by your coding agent. Point it at this repository and ask it to get started, or follow the steps below in the project you want to improve.<br>You need Node.js 22.13+, npm, Docker running Linux containers, and credentials for the agent you want to test. Gauge supports Claude Code, Codex, Pi, and OpenCode. It can use native Claude/Codex logins or API keys; agent usage is billed through your provider or subscription.<br>npm install -g @withgauge/cli<br>gauge local runtime pull<br>Gauge downloads the published Docker image pinned to your CLI release. The image contains the agent harnesses and standard development tools.<br>From your project directory (Git is optional):<br>gauge init --local<br>This creates a private .gauge/ workspace, including a SQLite database and<br>local backend preference. Plain init changes no tracked files. Add --cases when<br>you want shared Markdown cases: it also writes a gauge.json manifest,<br>gauge-cases/, and guidance in AGENTS.md. Commit those shared files. Keep<br>.gauge/ private: it contains durable measurements and analyses.<br>The Gauge skill teaches your coding agent where to find the CLI&#x27;s instructions:<br>gauge install-skill<br>Hillclimbing means making a change, measuring whether it helped, and repeating.<br>- Define realistic tasks. Your agent saves evals or preference prompts with stable identities, editable defaults, and observable outcomes. Use optional Markdown cases for fully specified measurements intended for sharing or CI.<br>- Test your current product. In local mode, Gauge starts fresh Docker sessions and injects the working-tree version of your configured inputs. Each test agent sees the task and configured inputs within its sandbox. Local mode supports Skills, SDKs, CLIs, and files. Hosted compute adds support for docs, authenticated MCPs, and authenticated APIs.<br>- Find friction. Gauge normalizes events from Claude Code, Codex, Pi, and<br>OpenCode into consistent transcripts. In local mode, your agent reads the evidence,<br>checks the outcome against the criteria, and identifies what slowed or<br>blocked the task. It publishes structured Findings and judgments through<br>gauge run analysis save. In hosted mode, this analysis happens automatically after each session. gauge run insight shows the evidence.<br>- Change and retest. Your agent edits the product or its guidance and reruns the affected cases against the new artifacts.<br>- Analyze the evidence. Check whether the original problem disappeared, whether the task succeeded, and whether the change introduced new friction.<br>Skills and file inputs are read from your working tree. For an npm CLI or SDK, build and pack a new tarball before rerunning. Gauge installs these pre-release artifacts in the test sessions, so you can validate a fix before publishing it.<br>The CLI handles execution and evidence collection. In local mode, your coding agent authors the changes and analyzes the local results.<br>Saved evals and preference prompts live in .gauge/gauge.sqlite locally or in<br>your hosted organization. Shared file-based cases optionally live in gauge-cases/;<br>gauge.json declares project inputs and automation. Both measurement sources<br>support local and hosted execution, with the input differences described below.<br>Start with a saved local eval; use a shared case when the task is ready for<br>teammates or CI.<br>Example: test a release-notes Skill<br>Create skills/release-notes/SKILL.md:<br>---<br>name: release-notes<br>description: Write release notes for a new version in the team&#x27;s format.<br>---<br>Write RELEASE-NOTES.md with the version as its title, an Added section for new<br>features, and a Fixed section for bug fixes. Use one bullet per change.<br>For a fresh project, use this gauge.json:<br>{<br>&quot;version&quot;: 2,<br>&quot;inputs&quot;: {<br>&quot;release-notes&quot;: {<br>&quot;type&quot;: &quot;skill&quot;,<br>&quot;path&quot;: &quot;skills/release-notes&quot;<br>}<br>}<br>}<br>Save the task and criteria:<br>gauge eval create --local --name &quot;Release notes&quot; \<br>--agent codex --samples 1 \<br>--text &quot;Write the release notes for version 1.2.0. We added dark mode and fixed a login crash.&quot; \<br>--criterion &quot;Team format: RELEASE-NOTES.md has a version 1.2.0 title, dark mode under Added, and the login crash fix under Fixed.&quot;<br>Use the returned eval ID to preview, then launch when ready:<br>gauge run --eval &lt;eval-id&gt; --local --input release-notes --dry-run<br>gauge run --eval &lt;eval-id&gt; --local --input release-notes<br>gauge instructions session-analysis --local<br>The preview checks local readiness without launching an agent. Your coding agent then reads the session and publishes its analysis. After changing the Skill, rerun the same eval ID: the new batch snapshots the current input files while the baseline remains intact. Keep the task, criteria, and model pin fixed, analyze both batches, then compare:<br>gauge run --eval &lt;eval-id&gt; --local --input release-notes<br>gauge run compare --local --baseline batch=&lt;before-id&gt; --candidate batch=&lt;after-id&gt;<br>For a choice study, use gauge preference create --kind open-ended with a task<br>that lets the agent choose its approach, then gauge run --preference &lt;id&gt;.<br>Supplying the Skill measures choice after that exposure, not discovery on the web.<br>For a shared or automated version of the eval, use the same input configuration<br>and create gauge-cases/release-notes/basic.md:<br>---<br>criteria:<br>- name: Release notes follow the team format<br>rubric: RELEASE-NOTES.md has a version 1.2.0 title, dark mode under Added, and the login crash fix under Fixed.<br>config:<br>agents:<br>- agent: CODEX_CLI<br>sampleCount: 1<br>inputs: [release-notes]<br>---<br>Write the release notes for version 1.2.0. We added dark mode and fixed a login crash.<br>This case uses Codex; use CLAUDE_CODE, PI, or OPENCODE to test another<br>harness with its configured credentials. The agent starts in an empty workspace<br>with the Skill installed. The task does not explicitly tell it to use the Skill,<br>so the session also reveals whether it discovers the guidance.<br>gauge run --verify --local<br>gauge run --dry-run --local<br>gauge run --local<br>gauge run list --local -o json<br>Verification checks the config and cases. The dry run previews the sessions and checks local runtime and credential readiness. Neither launches an agent.<br>Results, transcripts, and available diffs stay under .gauge/. Have your coding<br>agent follow gauge instructions session-analysis --local to assess each<br>criterion and report friction with supporting evidence.<br>After editing the Skill, rerun the case:<br>gauge run --local --files &quot;gauge-cases/release-notes/*.md&quot;<br>gauge run compare --local --baseline batch=&lt;before-id&gt; --candidate batch=&lt;after-id&gt;<br>Use the batch IDs printed by the runs. The comparison summarizes completion, available turns/duration, and published criterion judgments. Read the findings and evidence to determine whether the fix worked.<br>Gauge helps teams improve how AI agents discover, choose, and use their products. Agent Experience measures whether agents can successfully use your product. Agent Preference examines which tools agents choose for a task and why.<br>This CLI puts that work in the terminal where you and your coding agent already work. Local execution supports the complete evaluate, analyze, fix, and retest loop. The hosted platform adds managed infrastructure and shared measurement over time.<br>Sign in with gauge auth login to use hosted Chat and Agents. On a remote<br>terminal, use gauge auth login --device. See signing in<br>for help with login and API keys.<br>|  | Local | Hosted Gauge |<br>|---|---|---|<br>| Execution | Docker on your machine, using your agent credentials | Managed compute; sessions keep running when you close your laptop |<br>| Results and analysis | File evidence; SQLite measurements, judgments, and Findings authored by your coding agent | Shared results, automated judging, and tracking over time |<br>| Queries | Run summaries and Findings; supported fields are discoverable | Findings and additional reporting datasets |<br>| Product inputs | Skills, npm CLIs and SDKs, docs and files, web fixtures | Also native binaries, GitHub-resolved website previews, and authenticated MCPs/APIs |<br>| Iteration | Test working-tree changes and pre-release artifacts | Also controlled response rewriting and managed optimization trials |<br>| Automation | CLI scripts and local batches | Also scheduled measurements, GitHub App PR checks, and greater concurrency |<br>| Account | No Gauge account | Gauge workspace and credits |<br>Web fixtures let you test changes to content an agent encounters, such as a docs page, without publishing them first. They replace pages or route a site to a preview in both local and hosted runs. Hosted Gauge&#x27;s gateway also brokers credentials and can rewrite responses separately for each session.<br>Project inputs on saved eval/preference launches, and --dry-run for those saved<br>measurements, are currently local-only. For hosted working-tree input snapshots<br>and previews, use case files or a case spec with gauge run --hosted.<br>For example, the shared case above supports gauge run --hosted --dry-run;<br>hosted previews contact Gauge and may upload inputs. Local and hosted saved<br>measurements have separate IDs and storage.<br>To move a project to hosted execution:<br>gauge onboard<br>gauge init --hosted<br>gauge instructions --hosted<br>gauge onboard signs you in and creates or selects a workspace.<br>gauge init --hosted changes this checkout&#x27;s private backend preference; it does<br>not move local measurements or history into hosted storage. Hosted runs use workspace<br>credits. See the documentation for hosted<br>setup, PR checks, and optimization workflows.<br>The CLI bundles instructions for coding agents, so the guidance matches the installed version:<br>gauge instructions<br>gauge instructions init<br>gauge instructions run<br>gauge instructions eval<br>gauge instructions preference<br>gauge instructions session-analysis<br>gauge instructions --list<br>gauge --help<br>gauge run --help<br>Use -o json on read commands for scripts and agent analysis. Check the runtime<br>with gauge local runtime inspect; configure provider credentials with<br>gauge local profiles --help. Update the CLI with gauge update.<br>See the CLI reference for configuration, supported inputs, credentials, background runs, cleanup, and CI usage.<br>The installed CLI collects command usage by default: command name, timestamp, CLI version, and a random installation ID. It excludes arguments, prompts, file contents, and account identifiers. Disable collection with:<br>gauge telemetry disable<br>Or set GAUGE_TELEMETRY_DISABLED=1 for a process or CI environment. See<br>telemetry details for storage, delivery,<br>and the distinction from authenticated API usage analytics.<br>From the repository root:<br>npm ci<br>npm ci --prefix cli<br>npm run check<br>check builds, typechecks, runs tests, and verifies packaged installs. It does<br>not require a Gauge account, Docker, a database, or another repository checkout.<br>| Directory | Contents |<br>|---|---|<br>| cli/ | CLI commands, bundled agent instructions, and API schemas |<br>| packages/local/ | Local Docker session runner and runtime Dockerfile |<br>| packages/agent-adapters/ | Agent transports and evidence decoding |<br>For a CLI development loop after building, use<br>npm run dev --prefix cli -- --help.<br>Docker integration checks run in the custom runtime workflow.<br>The runtime and<br>CLI release workflows validate and publish<br>versioned artifacts. Runtime releases produce a qualified manifest; commit it as<br>cli/runtime-manifest.json before releasing the CLI.<br>The shared libraries also have public npm releases, published by the<br>agent adapters and<br>local execution workflows from<br>gauge-sh/gauge-cli. Each package&#x27;s npm trusted publisher must point to that<br>repository and its matching workflow.<br>See Releasing for repository setup, package permissions, and the runtime-to-CLI release sequence.<br>Issues are welcome. Forking and building your own version is the preferred way to customize Gauge. Only the Gauge team merges changes into this repository; we periodically consider bringing community changes upstream. See CONTRIBUTING.md.<br>For account questions or private reports, contact support@withgauge.com.<br>MIT.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    A thousand fewer paths to root
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    77 points ·
+    53 comments ·
+    dangelosaurus
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Top #3 · New #58
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/a-thousand-fewer-paths-to-root/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50372929">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+</body>
+</html>
