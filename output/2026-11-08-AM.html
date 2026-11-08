@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-08 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-08 AM · Generated 2026-11-08 08:49 CST</div><div class="issue-sub">Stories 10 · Full 8</div><div class="issue-sub">Sources: en.wikipedia.org, eyesrhythm.com, github.blog, github.com, hunch.net, mitchellh.com, nbcnews.com, news.ycombinator.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    185 points ·
+    39 comments ·
+    hedgerow-dev
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #8 · Best #37
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/hedgerow-dev/coldframe">Original article</a> · <a href="https://news.ycombinator.com/item?id=50406292">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A honeypot for supermarket refrigeration controllers.<br>In 2026, attackers broke into internet-facing refrigeration supervisors across Europe using default passwords and old, unpatched firmware, then forced defrost cycles. coldframe pretends to be one of those controllers. It records who connects, what passwords they try and which public exploits they use, and it never gives them anything real.<br>It is one Python file with no dependencies outside the standard library.<br>| Persona | Pretends to be | What it serves |<br>|---|---|---|<br>| danfoss | Danfoss AK-SM 800A system manager | StoreView login, a fake store dashboard, the XML API at /html/xml.cgi and /xml.cgi, HTTP and HTTPS |<br>| dixell | Copeland/Dixell XWEB EVO supervisor | Login page and the XWEB 500 CGI paths targeted by public exploits |<br>The Danfoss persona copies what internet scanners record for real AK-SM 800A units: the nginx server header and header order, the Danfoss StoreView page title, TLS 1.2 only, and a 1-year certificate for CN=DanfossSM800A issued by a SelfSigned-DanfossSM800A authority. Each build generates its own keys.<br>Weak logins (for example Supervisor / 12345) and a correct CVE-2025-41450 &quot;code of the day&quot; succeed. The attacker gets a session token and a dashboard of fake refrigerated cases with defrost buttons. Every action they take is logged as a control event; nothing is real.<br>The Dixell persona follows real XWEB EVO units the same way: no Server header, their security-header set and order, the same asset paths and page size. Its login uses the real /cgi-bin/login.lua flow: the documented factory login Admin / Admin succeeds, five failures in five minutes lock the user, and attempts at the XWEB Pro auth_mode bypass (CVE-2026-25085) are tagged.<br>Real units of both vendors serve their own favicon, and scanners match devices by its hash. That icon is the vendor&#x27;s artwork, so it is not in this repository. For a private deployment you can point FAVICON_FILE at a copy you have the right to use.<br>The same goes for the Danfoss start page. Real units serve a short Angular loader page from the firmware, and thousands share its exact hash. Point INDEX_FILE at that index.html (from the public firmware package) and the decoy serves it byte for byte, with its original date in Last-Modified and ETag. The loader&#x27;s main.*.js then shows the decoy&#x27;s own login page, laid out like the firmware&#x27;s remote login. If the firmware&#x27;s assets/images/Danfoss-logo.png sits beside that index.html, the page uses it.<br>Both personas can also run an optional Modbus TCP service with fake case temperatures, setpoints and a defrost register. Real AK-SM 800A units only use Modbus to talk to their own case controllers, so Modbus is off by default. Turn it on to catch generic industrial scanners.<br>Requests that match a public exploit get an exploit field in the log:<br>- CVE-2023-25914: AK-SM 800A path traversal via get_file<br>- CVE-2023-25915: AK-SM 800A command injection via load_cert<br>- CVE-2025-41452: AK-SM 800A nginx header overwrite via load_nginx_headers<br>- CVE-2025-41450: AK-SM 800A &quot;code of the day&quot; login bypass (getauth with eds_only or quantum_only), noting whether the attacker computed the correct code<br>- SM800 code-of-the-day bypass: eds_only / quantum_only on other commands<br>- CVE-2021-45420: XWEB 500 upload and command paths under /cgi-bin/<br>- CVE-2026-25085: XWEB Pro login bypass via an unexpected auth_mode<br>PERSONA=danfoss HTTP_PORT=8080 python3 -I honeypot.py<br>Open http://localhost:8080 and every request shows up as a JSON line on stdout and in events.jsonl.<br>Run the tests (they start the honeypot on loopback and attack it):<br>python3 -I test_honeypot.py<br>Create an Ubuntu 24.04 server (a $4 DigitalOcean droplet is plenty) and paste cloud-init.yaml into the User data box. Change PERSONA=danfoss to dixell if you want the XWEB persona. About two minutes after boot the decoy is listening on port 80 (and 443 for Danfoss), hardened as below.<br>Then, in your provider&#x27;s firewall, allow only the decoy&#x27;s ports from anywhere and SSH from your own address. Read the log with:<br>ssh root@&lt;server&gt; &#x27;podman logs coldframe&#x27;<br>Build the container. Each build makes a fresh self-signed certificate, so two deployments never share one.<br>podman build -t coldframe .<br>Run it with rootful podman or Docker. Rootless port forwarding rewrites the source address, which makes every attacker look like the same internal IP.<br>--userns=auto maps the container to an unused host UID range, so even the container user is nobody on the host. Podman needs a range to hand out, once per host:<br>echo &quot;containers:2147483647:2147483648&quot; | sudo tee -a /etc/subuid /etc/subgidsudo podman run -d --name coldframe --restart=always \<br>--read-only --cap-drop=ALL --security-opt no-new-privileges --userns=auto \<br>--memory 128m --pids-limit 512 --log-opt max-size=10m \<br>-p 80:8080 -p 443:8443 \<br>-v coldframe-logs:/logs:U \<br>-e PERSONA=danfoss \<br>coldframe<br>For Modbus, add -e MODBUS_PORT=5020 -p 502:5020.<br>On the host, only expose the ports the persona would really have, and block outbound traffic except DNS and package updates: the decoy never needs to connect out. Keep SSH reachable only from your own address: a fridge controller with SSH open to the world looks wrong.<br>| Variable | Default | Meaning |<br>|---|---|---|<br>| PERSONA | danfoss | danfoss or dixell |<br>| HTTP_PORT | 8080 | HTTP listener |<br>| HTTPS_PORT | 0 (off) | HTTPS listener, needs CERT_FILE and KEY_FILE |<br>| MODBUS_PORT | 0 (off) | Modbus TCP listener |<br>| LOG_PATH | events.jsonl | Where events are appended |<br>| FAVICON_FILE | none | Optional favicon to serve (private deployments only) |<br>| INDEX_FILE | none | Optional Danfoss firmware index.html to serve as the start page (private deployments only) |<br>Each line is one event:<br>{&quot;ts&quot;: &quot;2026-11-05T10:57:21.158+00:00&quot;, &quot;persona&quot;: &quot;danfoss&quot;, &quot;proto&quot;: &quot;http&quot;,<br>&quot;src_ip&quot;: &quot;203.0.113.7&quot;, &quot;src_port&quot;: 6782, &quot;event&quot;: &quot;login_attempt&quot;,<br>&quot;username&quot;: &quot;admin&quot;, &quot;password&quot;: &quot;admin&quot;}<br>| event | When |<br>|---|---|<br>| request | Any HTTP(S) request, with method, path, Host, User-Agent, Authorization and body |<br>| login_attempt | Credentials submitted through the login page or the XML API, with granted |<br>| control | An action from a logged-in session, such as starting a defrost |<br>| xml_cmd | A Danfoss XML API command, with its attributes and any exploit match |<br>| tls_error | A failed TLS handshake (often a scanner speaking plain HTTP to 443) |<br>| connect, read, write, device_id, unsupported, malformed | Modbus activity; writes to the defrost registers carry &quot;defrost&quot;: true |<br>summary.py turns a log into a short report:<br>python3 -I summary.py --hours 24 --ignore &lt;your-own-ip&gt; &lt; events.jsonl<br>- It never runs commands, reads files, or forwards traffic. Exploit payloads are logged and dropped.<br>- Request bodies, logged fields and connections are capped, including a per-source limit so one attacker cannot crowd out others. Idle sockets time out, and the event log rotates once it gets large.<br>- Connections that trickle data to stay open are cut after 30 seconds, and refused connections are logged.<br>- Over-long log lines are truncated, and summary.py neutralises terminal escape codes from attacker input.<br>- The container runs as a non-root user in its own user namespace, on a read-only filesystem with no capabilities.<br>- Log fields are attacker-controlled. Treat them as untrusted when you view or process them.<br>- Shallow interaction. Logged-in attackers see a small dashboard and a handful of XML commands, not the full StoreView app.<br>- Public code can be fingerprinted. Anyone can read this repository and spot its exact responses. Change the persona strings, page layout and certificate subject for your deployment.<br>- Unconfirmed details. Static paths, the full web app and some XML response shapes of real units are not public. Where they were missing, coldframe uses plausible values.<br>- Cloud IPs look suspicious. Some scanners flag industrial devices on cloud hosting as likely honeypots.<br>- Danfoss AK-SM 800A user guide (port table, login screen, StoreView Web): https://assets.danfoss.com/documents/latest/590332/BC337629891709en-001101.pdf<br>- Danfoss AK-SM XML interface guide: https://assets.danfoss.com/documents/latest/376199/AU342138209420en-000501.pdf<br>- Synacktiv, AK-SM 800A vulnerabilities (CVE-2023-25914, CVE-2023-25915): https://www.synacktiv.com/sites/default/files/2023-10/synacktiv-danfoss-sm800a-multiple-vulnerabilities.pdf<br>- Synacktiv, SM800 auth bypass: https://www.synacktiv.com/sites/default/files/2023-10/synacktiv-danfoss-sm800-sc255-sc355-auth-bypass.pdf<br>- Claroty Team82, Danfoss controller research (CVE-2025-41450 to 41452): https://blog.claroty.com/team82/research/freeze-the-controller-defrost-the-food-uncovering-vulnerabilities-in-danfoss-refrigeration-controllers<br>- Exploit-DB 50639, XWEB 500 (CVE-2021-45420): https://www.exploit-db.com/exploits/50639<br>- Copeland XWEB EVO operation manual r5.4.1 (default login, lockout): https://webapps.copeland.com/Dixell/Content/Pages/Manuals/XWEBEVO/XWEBEVOV5.4.1OPERATION/XWEB-EVO-r5.4.1-OPR-EN.pdf<br>- CISA ICSA-26-057-10 and Claroty Team82, XWEB Pro vulnerabilities: https://claroty.com/team82/research/chilling-discoveries-unpacking-vulnerabilities-in-copeland-xweb-pro-controllers<br>- Ironhackers, CVE-2025-41450 code-of-the-day analysis: https://ironhackers.es/en/danfoss-ak-sm-800a-cve-2025-41450/<br>- Shodan records of exposed units (header set, title, certificate fields), November 2026<br>eppser/danfoss-ak-sm-decoy is another AK-SM decoy, with SNMP and Service Tool listeners and a richer simulated store. coldframe focuses on matching real units&#x27; web fingerprints, detecting specific exploits, and Dixell XWEB support.<br>MIT. See LICENSE.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    The end of Microsoft Research&#x27;s AI Frontiers group
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    353 points ·
+    205 comments ·
+    srean
+  </div>
+
+  <div class="meta">
+    hunch.net
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #13
+  </div>
+
+  <div class="links">
+    <a href="https://hunch.net/?p=13764006">Original article</a> · <a href="https://news.ycombinator.com/item?id=50406563">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">In 2023 after the ChatGPT release, it was clear to me that research needed to be more organized to succeed than was typical within Microsoft Research. The amount of support and focus which other research groups were applying was great enough that even with a clever idea pursued by one person it was likely to arrive late and unconvincing because one person could not move fast enough and the baselines which one person could assemble just were not strong enough to really show that an idea was worth taking flight. Several other folks thought similarly and we organized to create the AI Frontiers sub-organization within MSR.<br>In AI Frontiers, we actively tried to organize coherent research efforts. This was not precisely “top down” or “bottom up”, but rather mostly somewhere in the messy middle. There were disagreements of course, and resolving them was sometimes quite challenging. Compute availability was also an often-severe bottleneck. But at a high level I was under the general impression that the organization was succeeding in doing pioneering things, particularly given the small size of AIF (~50 people) and relative to what we could do previously. Much of the work of AIF was figuring out how to make agents work, for example the Autogen orchestration framework and the Fara computer use agent. In NYC however, several of us were interested in developing new fundamental capabilities such as the Next Latent objective which enables extrapolation, Dion3 which creates an optimized/improved Muon, or the Full Bandwidth Transformer which efficiently makes models function substantially more powerfully via recursion.<br>We also actively tried to share with the rest of MSR. For example, AIF decided to develop a monorepo that was shared by default with all of Microsoft Research. In this monorepo for example was the proven-capable edge scale pretraining codebase I talked about in the COLM keynote last month. This might seem like a minor detail, but the amount effort required to create a well-formed model creation pipeline is substantial and I’m aware of at least 4 efforts (the other 3 not in public-within-MSR repos) trying to develop model building pipelines.<br>In early September we were reorged into Microsoft AI. On the surface this could make sense, because putting two different AI organizations together creates opportunities for better concentration of effort, and there were places where AIF was ahead of MAI and of course vice-versa (MAI is much larger). In practice, there are substantial issues because the philosophy of the ex-Inflection leadership of MAI is incompatible. The core philosophy there is scaling, and aggressively not research. This might shock some folks who naturally think that the way you make better models is via research but there is plenty of evidence that bigger models are better models as far as the quality of the predictions they make and from a business perspective returns to scale are far more predictable than returns to research. In a scaling-only environment of course the primary effort is on getting/making/refining data, which is quite a step away from what we were working on. Aside from the incompatible focus, there was plenty of evidence that they just did not really want us.<br>It’s a tough situation to find yourself in. I consider the scaling-only focus to be both misdirected and not fun. It is an understandable failure mode—scaling is straightforward and it’s common for people to give up on a tradeoff between multiple competing ideals (like innovation and size) by short-sightedly adopting one in totality and dropping the other. But returns to research are real and significant. For example, the Bytedance experiments suggest a variant of the Full Bandwidth Transformer might be comparable to a model of twice the size, implying significant savings in training and inference for the same capability. Do the math—how much is it worth to halve training and inference cost given that the industry has investments approaching a trillion dollars?<br>So I situated my folks as best I could and left. I am quite fortunate in that there are many other people in the world who are capable of seeing the value of research and innovation which is my intrinsic center of interest. Every other founding AIF leadership team member seems to have come to a similar conclusion.<br>This does leave a question: Why not go back to MSR? I chatted with folks a bit but could not get away from two serious obstacles. The first is that I am just not comfortable being at a company where the research I do has no path to real use. I could not get innovation into use (or even seriously considered) when I was in MAI, so the prospects for success from MSR seem quite small. The second is that I’m afraid there’s a breakdown of the basic deal in MSR: do good work and good things happen. As far as I can tell we did good work and were non-consensually reorged away. Unfortunately, I would not be surprised to see that kind of thing continue to happen until MSR leadership develops a will to effectively organize to meet the moment.<br>So AI Frontiers is over. I’m sorry to say that there will not be internships with the folks there in the coming year—I enjoyed working with interns on many occasions. And my best wishes for the folks I leave behind. It is not hard to imagine a Microsoft of the future which becomes attractive for research again if the people in control can develop a little bit more wisdom.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Ask HN: How did you convince family and friends to join your XMPP/Matrix server?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    74 points ·
+    69 comments ·
+    mtlynch
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #45
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50405250">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I love open-source software and open protocols, but my family and friends primarily communicate through SMS for exactly the reasons in https://xkcd.com/2365/<br>Whenever XMPP or Matrix threads pop up on HN, several commenters casually mention their &quot;friends and family XMPP (or Matrix) server.&quot;<br>How did you convince friends and family to move away from SMS/WhatsApp and replace it with a niche messaging app?<br>My family and friends aren&#x27;t hardcore nerdy, but they&#x27;re more tech-savvy than average. Their needs in messaging are mainly pragmatic: they want ease of use, reliability, and fun features. They don&#x27;t care that much about privacy, decentralization, or extensibility (though I care about those things a lot).<br>I&#x27;ve been experimenting with self-hosting XMPP and Matrix servers and clients in the past week, and the UX is even worse than I expected. It seems like all the clients either imitate Slack, imitate Discord, or imitate hot garbage. I haven&#x27;t seen any that try to be a simple, friendly replacement for SMS. I&#x27;m a software developer who uses computers all day, and I find the UX for most of the clients incredibly hard to use.<br>The only angle I could see to pitch XMPP/Matrix to people for non-philosophical reasons are that there&#x27;s a more consistent experience across iOS/Android. The biggest shortcoming I think is visible to regular users is that there&#x27;s feature degradation and missing information when iOS users have SMS conversations with Android users, especially in group chats.<br>For people who have successfully won family and friends to XMPP or Matrix, what was your pitch? What do you recommend others do to make XMPP or Matrix an attractive experience for a regular person?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Tesla to wind down Cybertruck production
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1125 points ·
+    2026 comments ·
+    PLenz
+  </div>
+
+  <div class="meta">
+    nbcnews.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817">Original article</a> · <a href="https://news.ycombinator.com/item?id=50391456">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Tesla will wind down Cybertruck production at its Texas gigafactory around mid-2027, CEO Elon Musk said on Friday, after years of persistently weak sales for a futuristic model once touted as a rival to legacy pickup trucks that ultimately only sold in just a handful of markets because of its heavy, angular design.<br>Musk said in an X post the production wind-down would enable the automaker to accommodate increased output of its newly launched Cybercab model, which the billionaire has made central to Tesla&#x27;s robotaxi ambitions.<br>While it was not immediately clear whether Cybertruck production would be moved to another facility or phased out entirely, the automaker&#x27;s Austin plant is the only known Tesla facility equipped to manufacture the model&#x27;s specialized components.<br>In response to a user on X, Musk called the Cybertruck the &quot;best vehicle Tesla has ever made&quot; and the wind-down the &quot;end of an era.&quot;<br>Tesla did not immediately respond to a Reuters request for comment sent outside regular business hours.<br>The US EV maker only began delivering the Cybertruck to customers in late 2023. According to Kelley Blue Book, the company only sold 20,237 Cybertrucks in the US last year, down 48% from 38,965 in 2024. Before the pickup truck launched, Musk had predicted annual sales of 250,000 units.<br>&quot;It doesn&#x27;t make sense to keep it going when it&#x27;s not meeting its targets,&quot; said former Aston Martin CEO Andy Palmer. &quot;Every rational auto guy would say the same.&quot;<br>&quot;It will no doubt only be a rounding error on Tesla&#x27;s balance sheet, but the statistics speak for themselves.&quot;<br>Right from its unveiling in 2019, the Cybertruck was a controversial choice for Musk. Its angular design was mocked by pickup truck purists and safety experts predicted it would be hard to gain approval for sale in key markets like Europe.<br>The unveiling event itself was marred when Musk tried to prove that its windows were shatterproof by having metal balls thrown at them - only to leave massive cracks in two of them.<br>During Cybertruck&#x27;s official launch in 2023, Musk touted it as a futuristic competitor to pickup trucks from General Motors and Ford, saying &quot;finally, the future will look like the future.&quot;<br>But the vehicle has struggled to meet those expectations.<br>Automotive analyst Automotive analyst Felipe Munoz said that although the Cybertruck has been called a failure because of its poor sales, electric pick-ups from Ford and others have also flopped in the US market.<br>&quot;All of them lost the competition because electric pick ups aren&#x27;t popular in the US,&quot; Munoz said.<br>But Cybertruck&#x27;s sharp-edged stainless-steel design limited its prospects in markets like Europe where EVs are more popular. Regulatory approval was impossible for Europe because of rules there concerning pedestrian impact.<br>&quot;Anywhere where you have crash regulation that takes into account pedestrian impact, that Cybertruck won&#x27;t go, can&#x27;t go,&quot; former Aston Martin CEO Palmer said.<br>The Cybercab, which has butterfly doors and no steering wheel, pedals or mirrors, is one of Musk&#x27;s key bets in his push to turn Tesla into an AI and robotics company rather than just an automaker.<br>Musk has said he sees it as Tesla&#x27;s main autonomous model supplying a global network of robotaxis.<br>After years of delays to Musk&#x27;s self-driving targets, Tesla began offering paid rides in a small fleet of Cybercabs in Austin in September. However, the automaker still has to answer the US auto safety agency&#x27;s questions on whether it has properly self-certified Cybercab to demonstrate compliance with federal motor vehicle safety standards.<br>&quot;Cybertruck was an incredible technology development platform and lives on through Cybercab,&quot; Cybertruck lead engineer Wes Morrill said on X.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Tempest Prognosticator
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    thunderbong
+  </div>
+
+  <div class="meta">
+    en.wikipedia.org
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://en.wikipedia.org/wiki/Tempest_prognosticator">Original article</a> · <a href="https://news.ycombinator.com/item?id=50409479">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The tempest prognosticator, also known as the leech barometer, is a 19th-century invention by George Merryweather in which leeches are used in a barometer. The twelve leeches are kept in small bottles inside the device; when they become agitated by an approaching storm, they attempt to climb out of the bottles and trigger a small hammer which strikes a bell. The likelihood of a storm is indicated by the number of times the bell is struck.<br>Dr. Merryweather, honorary curator of the Whitby Literary and Philosophical Society&#x27;s Museum, detailed the sensitivity that medicinal leeches displayed in reaction to electrical conditions in the atmosphere. He was inspired by two lines from Edward Jenner&#x27;s poem Signs of Rain: &quot;The leech disturbed is newly risen; Quite to the summit of his prison.&quot;[1] Merryweather spent much of 1850 developing his ideas and came up with six designs for what he originally referred to as &quot;An Atmospheric Electromagnetic Telegraph, conducted by Animal Instinct.&quot; These ranged from a cheap version, which he envisaged would be used by the government and the shipping industries, to a more expensive design. The expensive design, which took inspiration from the architecture of Indian temples, was made by local craftsmen and shown in the 1851 Great Exhibition at The Crystal Palace in London.[2]<br>On 27 February 1851, he gave a nearly three-hour essay to members of the Philosophical Society entitled &quot;Essay explanatory of the Tempest Prognosticator in the building of the Great Exhibition for the Works of Industry of All Nations.&quot;[2]<br>The tempest prognosticator comprises twelve pint bottles in a circle around and beneath a large bell. Atop the glasses are small metal tubes which contain a piece of whalebone and a wire connecting them to small hammers positioned to strike the bell. In his essay Merryweather described the workings of the device:<br>After having arranged this mouse trap contrivance, into each bottle was poured rain water, to the height of an inch and a half; and a leech placed in every bottle, which was to be its future residence; and when influenced by the electromagnetic state of the atmosphere a number of leeches ascended into the tubes; in doing which they dislodged the whalebone and caused the bell to ring.<br>The leech would have difficulty entering the metal tubes but would endeavour to do so if sufficiently motivated by the likelihood of bad weather.[1] By ringing the bell it would signify that that individual leech is indicating that a storm is approaching. Merryweather referred to the leeches as his &quot;jury of philosophical councilors&quot;[1] and that the more of them that rang the bell the more likely that a storm would occur.<br>In his essay Merryweather also noted other features of the design, including the fact that the leeches were placed in glass bottles placed in a circle to prevent them from feeling &quot;the affliction of solitary confinement&quot;.[1][2]<br>Merryweather spent all of 1850 testing the device, sending a letter to the president of the Philosophical Society and the Whitby Institute, Henry Belcher, to warn him of an impending storm.[1][2] The results of 28 of these predictions are kept in the library of Whitby Museum.[3] Merryweather stated in his essay the great success that he had had with the device.<br>Merryweather lobbied for the government to make use of his design around the British coastline but they instead opted for Robert FitzRoy&#x27;s storm glass.[2]<br>The original device has been lost, but at least three replicas have been made. The hundredth anniversary of the invention brought renewed interest as a replica was made for the 1951 Festival of Britain. This non-working version was made from the description in a printed copy of Merryweather&#x27;s essay and a copperplate drawing of the original. The device was shown in the Dome of Discovery and given to the Whitby Philosophical Society when the festival ended. This replica is still on display at Whitby Museum. Plans and photographs of this replica were then used to create faithful working models, one of which is on display at the UK National Meteorological Library and Archive at the Met Office in Exeter, Devon,[4] and another at the Great Dickens Christmas Fair in San Francisco.[2][failed verification]<br>- 1 2 3 4 5 The Weekly Dispatch. 22 March 1851. &quot;London: The Great Exhibition Archived 24 December 2001 at the Wayback Machine&quot;. Accessed 22 January 2007.<br>- 1 2 3 4 5 6 7 Packer, Martin. The Victorian Web. &quot;Dr. George Merryweather’s 1851 Tempest Prognosticator Archived 17 May 2008 at the Wayback Machine.&quot; Accessed 22 January 2007.<br>- ↑ Whitby Literary &amp; Philosophical Society. 9 July 2006. &quot;Miscellaneous Exhibits Archived 9 March 2007 at the Wayback Machine&quot; at Whitby Museum. Accessed 22 January 2007.<br>- ↑ https://library.metoffice.gov.uk/Portal/Default/en-GB/RecordView/Index/717656<br>| How Leeches Predicted Storms — zackdfilms |  |<br>|---|---|<br>| https://youtube.com/shorts/5CZE0tNekgE |  |</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Libghostty 1.0
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1024 points ·
+    176 comments ·
+    mfiguiere
+  </div>
+
+  <div class="meta">
+    mitchellh.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #39
+  </div>
+
+  <div class="links">
+    <a href="https://mitchellh.com/writing/libghostty-1-0">Original article</a> · <a href="https://news.ycombinator.com/item?id=50399933">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Libghostty 1.0<br>libghostty-vt 1.0 is here. libghostty is a<br>portable, high-performance C library for terminal emulation, extracted<br>directly from the core of Ghostty. The 1.0 release means both the library<br>itself and the C ABI are now stable.<br>A little over a year ago, I wrote that libghostty is coming. At the time, the Zig module had just been merged, the C API didn&#x27;t exist, and nobody but Ghostty was a consumer. Today, the C API is a complete terminal emulator, it runs in production for millions of people across hundreds of products, both free and commercial, and it has a real, enforced ABI stability policy.<br>This post is about how we got here and what 1.0 actually means.1<br>Who Is Already Using It<br>Since starting the Ghostty project in 2022, the most common question I&#x27;ve been asked is &quot;why?&quot;. I already answered this in the libghostty is coming post, so feel free to read that if you wish. Today, I&#x27;d rather answer this by showing the broad industry impact libghostty has already had. I believe this strongly validates its existence.<br>A year ago, I used a bug in JediTerm, the terminal emulator in JetBrains IDEs, as an example of why terminal emulation is hard to get right. A year later, the terminal in JetBrains IDEs now runs on libghostty. Every IntelliJ, PyCharm, GoLand, etc. user now has a libghostty-powered terminal. Based on a report by JetBrains, that&#x27;s over 12.5 million active users.<br>Neovim has an approved pull request<br>replacing libvterm with libghostty-vt. Among other things, it closes a<br>10-year-old issue<br>about reflowing scrollback on resize. The maintainers are waiting on a<br>tagged release before merging so that distributions can package the<br>dependency separately, and the release today should enable that.<br>KDE developers are experimenting with a Konsole replacement built on it. Vercel&#x27;s Turborepo uses it to render task output in its TUI. devenv uses it to drive shells. Antithesis used it to fuzz TUI programs and found real bugs in btop and others. Ghostel brings it to Emacs. ghostty-web is the WASM build with an Xterm.js-compatible API. Commercial products like OrbStack embed it. And a whole wave of new terminals and &quot;agentic&quot; coding tools, such as herdr and cmux, have been built on it rather than writing yet another emulator.<br>There are community bindings for Rust, Go, JavaScript, Swift, Python, .NET, Elixir, Dart, Java, and more, and the awesome-libghostty list tracks well over a hundred projects.<br>More people today use a terminal powered by libghostty than use Ghostty the application, by a very large multiple. And libghostty is having a much larger impact than being &quot;just&quot; a terminal emulator.2<br>ABI Stability<br>1.0 means libghostty-vt follows semantic versioning and has strict<br>ABI compatibility<br>promises so that packagers across distributions and operating systems<br>can be confident packaging libghostty-vt and program developers can be<br>confident dynamically linking against it.<br>Beyond providing useful features, I believe the hallmark of a high-quality and enduring C library is ABI stability. So from the start, I took inspiration from C libraries I enjoyed working with and designed the API to have a strong, stable ABI that allows for future additions.<br>Every object is an opaque handle. The hundreds of values you might read or<br>write go through a small set of enum-keyed getters and setters, so we<br>can add new values easily without introducing a new symbol. Programs with<br>newer headers linked against an older libghostty get GHOSTTY_UNSUPPORTED<br>results instead of crashes or undefined behavior. The few non-opaque structs<br>we have carry their size so that fields can be appended later, or contain<br>reserved padding. Enums are pinned to int on every compiler, as much as<br>the C standard allows.<br>Our CI enforces our ABI policy. Every change is checked with libabigail against a committed baseline on Linux, and against golden type manifests on macOS and WebAssembly.<br>On ELF platforms, every exported symbol is also versioned, so the dynamic loader refuses to load a mismatched library by name rather than failing in some mysterious way later.<br>Packaging<br>In addition to ABI stability, the 1.0 release brings along the proper<br>build tooling, tarballs, dependency licensing manifests, documentation,<br>and more to enable every major operating system and distribution to<br>package libghostty-vt through standard official tooling.<br>Libghostty has its own release cycle, separate from Ghostty the application. And it has its own tarballs with only the files and dependencies libghostty needs, resulting in smaller sizes and simpler licensing verification and compatibility.<br>Each release publishes a signed source tarball along with a companion<br>dependencies tarball containing every Zig package in Zig&#x27;s own cache<br>layout, so a distribution can build the library completely offline. The<br>build installs the shared and static libraries with a proper SONAME,<br>headers, pkg-config files, and a CMake package config, and it honors<br>--prefix, DESTDIR, and lib64. Debug info is kept by default so<br>distros can split it out. All of this is documented in<br>PACKAGING-LIBGHOSTTY.md,<br>which ships with the tarball.<br>Dependencies and Licensing<br>libghostty-vt is MIT licensed. At runtime it needs nothing beyond<br>libc, and it can be built fully freestanding if you don&#x27;t want that<br>either.3<br>The library compiles in a small number of permissively licensed dependencies: simdutf and Google Highway for SIMD, a compact Unicode table for grapheme data, and Wuffs for image decoding in the Kitty graphics protocol. Both simdutf and Highway are built without libc++, so there is no C++ standard library dependency.<br>There is no copyleft code anywhere in the dependency tree. Every dependency is listed in a machine-readable manifest with its version, SPDX license, and hash, specifically so distros can fill in their bundled-library metadata more easily.<br>If a distro would rather dynamically link the system simdutf or Highway, there&#x27;s a build flag for that.<br>Portability<br>libghostty-vt is highly portable. The table below lists all the platforms<br>and architectures that we build and test (full unit tests plus running all<br>examples) in CI:<br>| Platform | Architectures |<br>|---|---|<br>| Linux (glibc, musl) | x86_64, aarch64 |<br>| macOS 13+ | x86_64, aarch64 |<br>| iOS 13+ | aarch64 |<br>| FreeBSD | x86_64, aarch64 |<br>| Windows | x86_64 |<br>| Android | aarch64, x86_64, arm |<br>| WebAssembly | wasm32 (freestanding) |<br>There is a second set of platforms we build in CI but do not run tests for. These systems all have known users; we just haven&#x27;t set up the machinery for automated testing:<br>| Platform | Architectures |<br>|---|---|<br>| Bare metal | riscv32, thumb |<br>| WebAssembly (WASI) | wasm32 |<br>| Windows | arm64 |<br>| illumos | x86_64 |<br>| 32-bit x86 | x86 |<br>Each of the tested platforms gets the artifacts it expects:<br>- Linux and FreeBSD get a shared library with a proper SONAME and versioned symbols, a static library, headers, pkg-config files, and a CMake package config.<br>- macOS and iOS get a dylib with an @rpath install name and<br>compatibility version, plus an XCFramework covering macOS, iOS, and<br>the iOS simulator that drops straight into Xcode or Swift Package<br>Manager.<br>- Windows gets a DLL with a .pdb, an import library, and a static<br>library. The library is built with the GNU ABI, but MSVC programs<br>link against it through the import library and CI verifies this.<br>- Android gets a shared library built against the NDK with 16 KB page size support, as required by Android 15+.<br>- WebAssembly ships in two flavors, one optimized for speed and one<br>for size, and the small one is under a megabyte with every feature<br>enabled. If you only need a read-only viewer, subsystems like input<br>encoding, search, selection, and Kitty graphics can be compiled out<br>with a build flag, which roughly halves the module. Every function<br>stays exported and simply returns GHOSTTY_UNSUPPORTED so your code<br>doesn&#x27;t have to change.4<br>Portability isn&#x27;t just about the ability to build and run. It&#x27;s also about resource usage and being able to work in a wide variety of resource environments.<br>For resource usage, the library creates no threads, allocates only through<br>an allocator you can customize, and uses minimal compute and memory.<br>I&#x27;ve run 10,000 active terminals, each with a live shell producing output,<br>on a Linux server with 4 cores and 8 GB of RAM. In this test, I had to use<br>dash because bash used far more RAM than libghostty-vt and wouldn&#x27;t fit<br>into the 8 GB budget.<br>What&#x27;s Next<br>Libghostty 1.0 is a major milestone.<br>You can now create a terminal in ~1,500 lines of C that has more features and better performance than just about any terminal that existed in 2025, and most today in 2026.5 And thanks to the rich ecosystem of language bindings, you can do this in every major programming language. You get this for free. For almost no effort. You can just do it.<br>libghostty-vt is a generalized library, so we will focus on stability<br>while implementing as many terminal protocols as exist<br>(giving options to enable/disable them, of course) so that embedders<br>have the luxury of choice.<br>Every bug any libghostty-vt embedder reports makes everyone else in<br>the ecosystem better. Every feature we ship in libghostty-vt becomes<br>available to everyone quickly and safely. Terminals can move faster with<br>less fragmentation.<br>Thank you to everyone who contributed to the library, wrote bindings, filed bugs, and shipped something on top of it while the API was still experimental. As with all open source, this was the work of a large community.<br>Docs, examples, and downloads are at lib.ghostty.org.<br>Boo. 👻<br>Footnotes<br>- As usual, I hate that I have to do this for every post, but I want to note this post was completely hand-written with no AI assistance. ↩<br>- The numbers are rough because most consumers don&#x27;t report usage, but JetBrains alone reports 12.5 million recurring active users, and that&#x27;s before counting everything else on the list. ↩<br>- In the original post I wrote &quot;not even libc!&quot; The default build does<br>link libc, because the SIMD paths use it and the default allocator is<br>malloc. Turn off SIMD and the library is freestanding, which is<br>how it runs on bare-metal RISC-V and ARM targets. ↩<br>- The feature flags aren&#x27;t WASM-specific; they work on every target. They&#x27;re likely useful for things like embedded devices too. ↩<br>- &quot;Features&quot; here means the set of terminal protocols and sequences<br>understood, and &quot;performance&quot; means parsing throughput and memory<br>usage, since those are the parts libghostty-vt provides. ↩</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    GitHub New pull request overview page in public preview
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    39 points ·
+    25 comments ·
+    xiaoyu2006
+  </div>
+
+  <div class="meta">
+    github.blog
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · New #52
+  </div>
+
+  <div class="links">
+    <a href="https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50408931">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still need to work out what to do next. As people need to review more and more pull requests, time spent scrolling adds up. So we’ve begun to rethink the entire experience, beginning with addressing a familiar challenge: finding what’s blocking progress and determining what to do next.<br>Today, we’re introducing the Overview page as an opt-in public preview, with rollout continuing through the weekend. It brings merge status and next available actions to the top of the page in a compact readiness summary. It’s the first step toward making pull requests easier to follow as code, conversations, and reviews evolve.<br>We’re starting with the merge box, the place developers go to see whether a pull request can move forward. Rather than just moving it higher, we’ve also redesigned it to show the same information in less than half the space.<br>- Explore the supporting signals: A compact view of checks, comments, and approvals keeps the context nearby without making every detail compete for attention.<br>- Address what’s blocking: Take action to move the pull request forward, such as updating your branch.<br>- See if it’s ready to merge: Check merge readiness and merge when requirements are met.<br>Start with the summary, then follow the detail that matters to your next step (e.g., get to failing checks, see who still needs to approve, or open the relevant comments).<br>This first preview also introduces more ways to catch up on activity and focus the conversation so you can spend less time finding your place.<br>- Narrow the conversation: Filter for unresolved conversations or comments you wrote to find open questions or follow up on your feedback.<br>- Read the latest comments first: Sort comments from newest to oldest instead of starting with the earliest discussion.<br>- Catch up on activity: Use the summary in the upper-right to find review comments, review requests, and other updates.<br>You can also mark a draft ready for review or close a pull request from the header, with available actions depending on your permissions.<br>To join, select the ✨ Try the Overview page button in the header. We’re opening this preview early so you can try the new direction on your own pull requests and help shape what comes next. You can use the same menu to return to the classic overview during the preview.<br>This preview is very much a starting point, not the finished pull request experience. Try it on your next pull request. What is easier to find? Where do you still lose context? What sends you back to the classic overview?<br>Share your feedback and report issues in the overview preview feedback discussion.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: An offline desktop companion to help maintain a healthy blink rhythm
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    22 points ·
+    9 comments ·
+    prnysoni
+  </div>
+
+  <div class="meta">
+    eyesrhythm.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #15
+  </div>
+
+  <div class="links">
+    <a href="https://eyesrhythm.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50408350">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Stays beside the work. Counts only while you are at the screen.</div>
+<div class="para">Your eyes work hard for you. Screens make them work worse.<br>Focused computer use often cuts blink rate in half. Sparse, uneven<br>blinking is a known driver of digital eye strain, dryness, grit,<br>fatigue, blurred vision, and it is easy not to notice until the eyes<br>already hurt. EyesRhythm is a<br>blink rate detector that sits<br>beside that work.<br>Rate and regularity, together.<br>Rate is how often. Regularity is how steady. Enough blinks can still<br>arrive in bursts and droughts; a slow but even pattern still leaves<br>the surface dry. EyesRhythm folds both into the<br>Ocular Rhythm Index (0 to 100). Maximize your healthy<br>desk ORI, use practice daily, it helps to build muscle memory.<br>It watches, scores, and, if you ask, gently nudges.<br>ORI on a compact window. Alert is always on: Visual by default, a<br>quiet orange pulse, or Sound if you click A. Optional beep on each<br>blink. Practice is a two-minute coach so the habit is easier to feel.<br>Poise is the neck’s half of the same sit. The dial turns green where<br>you looked and stays red where you did not, so a still pose gets a<br>turn up, down, left, or right, and the neck and shoulders can relax<br>before you face the work again. A wellness companion, not a medical<br>device. Lasting discomfort belongs with an eye-care professional.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Is YouTube starting to protect channel RSS feeds?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    1 comments ·
+    kradeelav
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · New #24
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50409244">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">There have been previous outages that last 1-2 days, but I haven&#x27;t been able to get RSS feeds for the last 4 days now.<br>This goes for new channels and previous channels in a feed reader; Google displays a 404 page no matter what.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Skrongle Mini, a self hosted AI course generator and learning app on R. pi zero
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    skrongle-mini
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/alexbeeken/skrongle-mini">Original article</a> · <a href="https://news.ycombinator.com/item?id=50409456">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A learning app you run yourself, on a Raspberry Pi, for the people at home.<br>skrongle.ad.mov<br>Skrongle is one small binary that teaches from courses made of JSON files: lessons, adaptive quizzes, five-minute practice sessions, games, flashcards and an AI tutor. Spanish and French courses ship with it; any subject that fits units → lesson groups → lessons can be a course, written by hand, uploaded from files, or described to an AI that writes it for you.<br>It is built for a handful of people who know whoever runs it: a family, a class, a few friends. Up to eight accounts, no e-mail, no outside service of any kind except the AI providers you choose to give it a key for. A Raspberry Pi Zero 2 W runs it with room to spare.<br>For the step-by-step path, follow the home Wi-Fi guide, written for someone who has never run a server, and the Tailscale guide to reach it away from home. The technical reference is docs/self-hosting.md. The short form:<br>- Download the release<br>tarball for your machine: skrongle-&lt;version&gt;-aarch64.tar.gz for a Pi<br>(64-bit Raspberry Pi OS) or -x86_64 for a PC running Linux.<br>- Unpack it, install the systemd unit it contains and start the service. The server writes an owner link to its log: open it to make the first account, which is the owner&#x27;s.<br>- Everyone else joins with an invitation link the owner makes on the Manage Users page.<br>- Optional: paste an AI provider&#x27;s API key on the same page. It serves every account, and the owner can hide the AI features for everyone with one switch.<br>What you get, and what you are responsible for:<br>| Accounts | Up to 8, each with up to 4 signed-in devices |<br>| Who signs up | Only people the owner invites (the default, SKRONGLE_SIGNUP=invite) |<br>|  | None. Every link is shown on the page instead of sent |<br>| Password reset | The owner sets a temporary password from the Manage Users page or the command line |<br>| Second factor | An authenticator app, per account |<br>| AI | Your own keys: Anthropic, OpenAI, Google, DeepSeek, Mistral, xAI, OpenRouter, or an Ollama-compatible server on your network |<br>| Database | One SQLite file next to the binary. Back it up and you have everything |<br>| Reaching it from outside | You: Tailscale or a VPN, never a forwarded port (docs/self-hosting.md, &quot;Reaching it from outside&quot;) |<br>| Help | GitHub Discussions; bugs through the Self-hosting bug issue form with the output of skrongle doctor |<br>A database from before version 1.0 is not upgraded; start from a fresh one.<br>Every feature reads the same course files:<br>| Lessons | Lesson pages with vocabulary and paradigm tables, and a private note per lesson |<br>| Quizzes | Adaptive micro-quizzes with per-lesson mastery, decay and targeted practice |<br>| Guide | Each lesson as a stage of small steps, with stars and XP |<br>| Sprint mode | Phone-first five-minute sessions: sort, spot, build, ladder, pick, match, listening exercises, streaks, a lightning round |<br>| Games | Word Match with a leaderboard; a drill for paradigm tables such as verb conjugations |<br>| Tutor | A chat about the current lesson, on your AI key |<br>| Map | Every lesson of every unit with your mastery |<br>| Vocabulary | Terms collected by answering questions, studied as flashcards |<br>| History | Every answer and game |<br>Courses also carry music notation, clocks, protractors and algebra tiles as question types, so the format is not limited to languages.<br>A course is a folder: course.json (title, units, groups, labels, an<br>optional paradigm) plus lessons/**/*.json, one lesson per file. The format<br>is in docs/course-format.md, with a JSON Schema at<br>docs/course.schema.json; a minimal course is two<br>short files.<br>Ready-made. data/courses/&lt;id&gt;/ is loaded at start-up; the folder name<br>must equal the manifest id. Spanish (101 lessons, CEFR A1 to C2) and French<br>(75 lessons) ship with the app. Drop another folder next to them and restart.<br>Build your own. Courses → Build a course creates a starter course in the database. Edit the files in the browser or upload JSON files (or a whole folder). Every save validates the whole course and names the exact file and field that is wrong. The edit page links to the format reference, so you can also hand it to any LLM and upload what it writes.<br>Generate with AI. Courses → Describe a course takes a description and the number of lessons. The model plans the course and writes each lesson in turn; each file is validated against the format, with the validator&#x27;s message sent back to the model when it gets something wrong. One generation runs at a time.<br>The documentation lives in docs/ and is served by the app at /docs, so a<br>page can be handed to a person or an LLM; /llms.txt lists what an LLM needs<br>to write a course.<br>- docs/getting-started.md, the user guides and the FAQ.<br>- docs/self-hosting.md and the self-hosting FAQ.<br>- docs/course-format.md: the complete course format, also the specification the AI generator follows.<br>- docs/features.md: what each feature does, the mastery engine, and which lesson fields each feature reads.<br>- docs/architecture.md: source layout, request flow, database schema, configuration, security notes.<br>- docs/testing.md: how to run the checks.<br>./.dev-start             # build + run on a free port (printed), DB in ./dev.db, debug logging<br>./.dev-start --release   # the exact profile a release gets<br>./.dev-start --reset     # wipe ./dev.db first<br>./.dev-start --lan       # listen on 0.0.0.0 so a phone on your network can try it<br>./.dev-start --watch     # rebuild + restart on changes<br>cargo test --features dev   # unit tests (without the feature, the dev-only ones are left out)<br>scripts/smoke.sh         # fresh server + fixtures: main pages and one AI generation over HTTP<br>scripts/e2e.sh           # headless browser tests (Playwright, Node 22+); see docs/testing.md<br>cargo build --release    # hardened release profile (fat LTO, 1 codegen unit, stripped, panic=abort)<br>./.dev-start, the test scripts and CI build with --features dev; a release<br>build leaves the feature out and has none of what follows.<br>Dev mode (SKRONGLE_DEV=1, what ./.dev-start sets) adds /dev/login, a<br>simulated AI provider that answers from fixtures, and seeded accounts, so<br>every AI feature can be exercised without a key. Working on the code with an<br>LLM? Start with CLAUDE.md.<br>The app itself keeps no developer keys.<br>brew install zig &amp;&amp; cargo install cargo-zigbuild      # on a Mac<br>rustup target add aarch64-unknown-linux-gnu<br>scripts/build-pi.sh            # aarch64, to dist/aarch64-unknown-linux-gnu/<br>scripts/build-pi.sh x86_64     # 64-bit PC Linux<br>scripts/package-release.sh 0.2.0 aarch64    # the release tarball<br>Release tarballs are built by CI on a v* tag (.github/workflows/release.yml).<br>Everything is an environment variable; all are optional. The full table with defaults is in docs/self-hosting.md, &quot;Configuration&quot;. The ones most installs touch:<br>| Variable | Default | Meaning |<br>|---|---|---|<br>| SKRONGLE_BIND | 0.0.0.0:8080 | Listen address |<br>| SKRONGLE_DB | learn.db | SQLite file (WAL and SHM files are created next to it) |<br>| SKRONGLE_DATA_DIR | data | Directory containing courses/ |<br>| SKRONGLE_SIGNUP | open (invite in the shipped unit) | Who may make an account |<br>| SKRONGLE_PUBLIC_URL | — | The address the server is reached at, for the links it shows |<br>| SKRONGLE_BASE_PATH | (empty) | URL prefix behind a reverse proxy, e.g. /learn |<br>| SKRONGLE_SECURE_COOKIES | 0 | Set 1 behind a TLS proxy |<br>| SKRONGLE_SECRET_KEY | (generated) | Encrypts the saved API keys. Unset: created once at &lt;SKRONGLE_DB&gt;.key; back it up with the database |<br>| SKRONGLE_LOG | info | One level: error, warn, info, debug or trace |<br>skrongle doctor prints what the server would use: version, OS, database and<br>schema level, which secrets are set (yes or no, never their values), free<br>disk and memory.<br>Measured on the Pi, release build:<br>| Binary | about 15 MB, everything compiled in (SQLite, templates, CSS, JS, docs) |<br>| Memory | about 16 MB idle, about 21 MB in use; the unit caps it at 48 MB |<br>| Threads | one async worker, two for the database and password hashing |<br>| Sign-in | about 160 ms (argon2id, 8 MiB, t=3) |<br>| A page | 3 to 10 ms warm; the first page after a restart about 50 ms |<br>The limits that keep it there are in src/caps.rs: 8 accounts, 4 sessions<br>each, 32 open connections, 2 tutor replies at once, one course generation at<br>a time, and a course cache bounded by the account count. All state lives in<br>SQLite, so the process has no growth path.<br>- Passwords: argon2id with a per-user salt; unknown addresses verify against a dummy hash so login timing does not reveal whether an account exists.<br>- Sessions: 256-bit random tokens, 30-day TTL, deleted on logout, purged<br>hourly; HttpOnly; SameSite=Lax cookie, Secure behind TLS; at most four<br>per account.<br>- Every state-changing request passes a same-origin check; the JSON API only<br>accepts Content-Type: application/json.<br>- Course files are validated on every save (1 MiB per file, 400 per course). Lesson Markdown passes raw HTML through, so only load courses you trust.<br>- API keys are saved encrypted at rest (ChaCha20-Poly1305 under<br>SKRONGLE_SECRET_KEY or &lt;db&gt;.key) and never shown again; only owners see<br>the page that holds them.<br>- The person running it secures the login: a strong password per account, an authenticator app, and the server reachable only over Tailscale or a VPN, never through a forwarded port.<br>AGPL-3.0. See LICENSE.</div>
+</div>
+
+</div>
+
+</body>
+</html>
