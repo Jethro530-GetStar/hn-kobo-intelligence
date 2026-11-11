@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-12 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-12 AM · Generated 2026-11-12 01:18 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: anthropic.com, danbooru.donmai.us, docodethatmatters.com, github.com, haskell.foundation, michael.bacarella.com, news.ycombinator.com, pietromiotti.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Smart home devices should work without the internet
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1116 points ·
+    406 comments ·
+    skittleson
+  </div>
+
+  <div class="meta">
+    docodethatmatters.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #43
+  </div>
+
+  <div class="links">
+    <a href="https://docodethatmatters.com/home-automation-overnight-success/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50441707">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">AI;DR: I wrote the first draft, AI helped me edit and rewrite it, and I made the final pass. The rules, setups, and talks are my own.<br>TLDR; Nothing core in my house depends on a vendor’s server. If the internet goes down, the house keeps running. That’s been rule one for about ten years, and my other rules came out of it. This post has the rules, then both talks I’ve given on home automation, slide by slide.<br>Why local<br>My Nest integration worked until Google broke the API. That’s the failure I plan around now. The talks have a few more: a Samsung fridge showing a TLS certificate error on its own screen, and a Camp Chef grill controller that needs Wi-Fi to show you the temperature.<br>Everything that matters runs on hardware I own. That’s Tasmota on ESP boards, an MQTT broker, and Node-RED on a Raspberry Pi. I do use some cloud services, mostly Alexa and a few AWS ones. Alexa is just another way to flip a switch. If it’s down, the wall switches and the wall dashboard still work.<br>The rules<br>From the first talk, restated in the second:<br>- No internet, no problem. Core stuff has to work with the internet unplugged. Alexa can be a way in, but never the only way.<br>- Don’t remove the old way while adding the new one. If someone tapes a wall switch on so a smart bulb keeps power, I skipped this rule.<br>- Be agile. Rooms get used differently and people move in and out, so it all has to be cheap to change.<br>- Check your automations. I once had four scheduled triggers hitting the same garden pump.<br>- Exceptions must be exceptional. I can break a rule, but only for a reason I’d still agree with six months later.<br>Added after year five, once more people lived in the house:<br>- A cloud device needs an API with logs or it doesn’t get installed. I don’t want a black box in the house.<br>- Config lives in one place instead of five vendor apps.<br>- More than one way in: an app, Alexa, a QR code, or an NFC tag.<br>- If I keep doing the same steps, they become a routine.<br>- Devices talk pub/sub over MQTT instead of point to point.<br>- No batteries unless they last a year or more between changes. Nobody wants to swap a door sensor battery at 2am.<br>The build I get asked about most is the Tasmota sprinkler controller. It’s in both talks, and so is the garage door setup, which has been running about as long.<br>Talk One: Home Automation<br>Nobody needs any of this. I like building things that just work in the background, and each automation is a small puzzle.<br>Everything talks to a cloud now: phones, laptops, thermostats, locks. Those clouds may or may not be up when you need them, so know what you’re signing up for before you plug something in.<br>Most people start here: a thermostat, a plug, a lock. Each has its own app and account.<br>Every device lands somewhere on this triangle. A cloud camera is cheap and easy, and it costs you privacy. A switch I flash myself takes longer to set up, but I can hook it into anything. I figure out where a device lands before I buy it.<br>Someone (often me) automates a light, then has to tape the wall switch on so the smart bulb keeps power. If a switch in a room ever did nothing, this is why.<br>The better fix is an in-wall Wi-Fi switch. The switch still works like a normal switch and I can still automate it. It’s more work to install than a smart plug, but nobody has to change their habits.<br>Rule one: if the internet goes down, my lights still turn on.<br>It’s never done. Rooms get used differently, people move in and out, new devices show up. Whatever you build has to be cheap to change.<br>The garage cooling flow starts from a manual trigger and checks if the door is closed. Then it opens the door, waits, and turns on the fan. If cooling is already running, it just sends a notification. Small flow, but it has kept the garage from baking more than once.<br>The door sensor and reed switch both report into a transform step that sets a global garage-closed flag and logs to Grafana. Below that is the chart from a few real days: 21 opens, with spikes showing when each one happened. It’s easy to skip reporting/alerting. This can alert me if the garage was left open, which is useful when I accidentally leave it open.<br>Four scheduled triggers all hit the same pump. It’s easy to end up with automations fighting over one device, so every so often I check whether they still make sense together.<br>I’ve broken all of these plenty of times, so they’re more like guidelines.<br>Three ways to do “event in, action out.” Node-RED is my main tool. Alexa routines and IFTTT-style applets cover the stuff I don’t want to build myself.<br>MQTT keeps things decoupled. The temperature sensor publishes and doesn’t care who’s listening, so a phone and a backend can both subscribe without the sensor doing anything extra. The sprinkler controller in the Tasmota post works the same way.<br>A Sonoff Mini fits inside the fireplace wiring, and the dashboard or Alexa can flip it. A fake fire you can turn on by voice is a good party trick.<br>The whole sprinkler build: the relay and ESP module in the enclosure, the 3D board render, the Tasmota UI with BME280 sensor readings, the Node-RED schedule feeding the pump, and the finished PCB layout. The sprinkler post has the full writeup, including why I picked Tasmota over custom firmware. It’s a bit hacky but I love it :D<br>The whole talk in five lines. The one I break most is the first, don’t introduce a new way while removing the old one, and I regret it every time. The last one stops me from breaking the others for no good reason. “I was in a hurry” doesn’t count.<br>That was talk one. Most of the “memorable automations” later broke in some new way or got replaced, so there’s a sequel.<br>Talk Two: Home Automation, The Sequel<br>Enough time passed between the talks that I had a new list of problems.<br>More devices means more decisions made without me. It’s a little unsettling but mostly harmless.<br>Same slide as before, with more icons.<br>Everyone else is dealing with this too: a fridge showing a TLS certificate error, a grill controller that needs Wi-Fi to show the temperature, and a note taped to a pole about an internet-connected printer someone forgot to log out of.<br>The same rules from talk one, worded a bit tighter, since part of the audience hadn’t seen the first talk.<br>The rules stayed the same, but what they had to survive got harder.<br>My setup assumed one person lived in the house. When that changed, I had to patch a single-user system into a multi-user one. The next few slides are how that went.<br>More people meant more foot traffic and more keys, and longer trips away meant things could fail with nobody around to notice. A water flooding scare finally got me to take leak and presence detection seriously.<br>Same joke, new rules. The first set came after year one, these after year five.<br>These are rules 6 to 11 at the top of the post, written after the house went from one person to several.<br>Now the builds, my favorite part.<br>A motor and PVC pipe rig for outdoor lighting, a UV grow light clipped to a houseplant, and a UV strip under the cabinets for sanitizing.<br>Same sprinkler slide as talk one. It’s one of the few builds that never needed a rewrite.<br>A sensor that sits on a credenza, a robot vacuum that runs on its own, and an AirGradient kit I put together from a CO2 sensor, a particulate sensor and a microcontroller, with its own dashboard. The air quality kit gives me the most peace of mind of anything here.<br>This dashboard replaced more apps than anything else: garage door, side door unlock, front lock, all lights on or off, brightness, a coffee bar color picker, and warm-to-cool for the living room. It’s one cheap tablet next to the thermostat, so nobody digs through five apps.<br>The lights behind the TV run through the same system instead of their own remote.<br>The smart locks came out of the more-people-more-keys problem. The newer one takes a password, the app, a keycard or a regular key, so everyone uses what they’re comfortable with.<br>The parts bin, for anyone who wants to build this.<br>The ESP32 D1 mini handles anything custom. The smart plug is the off-the-shelf shortcut when I don’t need custom. The Pi 4 runs Node-RED and Grafana.<br>LED strips for ambient lighting, power transistors for higher-current loads, and small relay modules so a microcontroller can switch mains voltage safely.<br>The rest of the bin: a resistor assortment, color-coded wire so I can trace a circuit later, and a capacitor kit for smoothing and timing.<br>Node-RED for the logic, Grafana to see what’s happening, Tasmota on anything I flash, Telegram for notifications, and Python or JavaScript for glue code that doesn’t fit in a flow.<br>The garage flow today. The door sensor and reed switch feed Grafana and a global closed state. Toggle nodes publish straight to Tasmota command topics. Notifications go to Telegram and an audio chime, and a light-on counter resets at midnight. The tabs across the top (Lights, Sensors, Garage, Sprinkler, NFC Tags, Door Lock Security) show how much it has grown since the single garage cooling flow in talk one.<br>This is the “is everything okay” dashboard: humidity, temperature, dew point, pressure and gas on one side, and energy use, door opens and on-status history on the other. I built it because I got tired of guessing.<br>Dashboards and Grafana panels work for me. Everyone else in the house just wants the light on.<br>The “more than one way in” rule in hardware: the wall tablet for whoever is standing there, NFC tags and a QR code to tap, and an Echo Dot for anyone who would rather talk to the house.<br>The tools I build and debug all of this with.<br>A soldering iron for permanent connections, a 3D printer for enclosures and brackets you can’t buy, a multimeter for when something isn’t working, and a precision screwdriver kit for devices the manufacturer didn’t want opened.<br>That’s both talks, five years apart. The rules barely changed between them, but the list of problems kept growing.<br>A third talk is coming, built around agentic use cases. The same rules should hold when an AI agent is the one flipping the switches, and I expect to add a few.<br>What readers told me<br>I shared the “no internet, no problem” rule on LinkedIn and asked for the most pointless internet dependency people had found in a device. Dozens of people answered. A Hacker News thread added more. Here’s what came back.<br>Everyone has one<br>Most examples were basic functions locked behind an app, an account, or a server:<br>- A fridge whose temperature can’t be changed because of a bug in the manufacturer’s phone app.<br>- A TV that can’t even switch inputs when the internet is down, and another that has to be signed in before it works as a plain HDMI monitor. One reader’s older smart TV has dead apps but still works as a regular TV, which is how a device should fail.<br>- A heating system whose app doesn’t work from the local network.<br>- A kitchen vent and a dishwasher that need the internet even when you control them from Home Assistant.<br>- A smart plug that can’t be set up on an isolated network.<br>- Noise-cancelling headphones that search for a Bluetooth device forever, so you can’t just turn on the noise cancelling.<br>- Synthesizers and MIDI keyboards that need a cloud login for first use or firmware updates.<br>- A meat thermometer that only worked through its app and stopped working when the company went out of business.<br>The meat thermometer bothers me most. The hardware outlived the company, and it stopped working anyway.<br>Rules readers added<br>- Offline first, with the internet for extras. A device should do its main job on its own.<br>- Treat every third-party dependency as a risk. APIs change, so plan a local fallback or a clear degraded mode. One mobile developer works the same way: the core action works offline or from cache, and only the extras wait for a connection.<br>- Decide what must work offline. My answer is turning things on and off, temperature and safety controls, and anything a guest has to use without learning an app. As one reader said, if a visitor can’t turn something on or adjust the temperature without an app account, the design has failed.<br>- A stricter version of my first two rules: everything core works with the Wi-Fi or the automation server shut down, and smart features never take away the dumb ones. The wall switch should control the light directly and let automation flip it. A switch that only sends a request to the automation fails. That reader says my sprinkler controller fails this bar too. The only sprinkler controller they’d found with a local API and full control on the device itself was RainMachine, which is gone.<br>- Clean up when you throw things away. Remove a connected printer from your account first. An abandoned connected device can be an easy way in for an attacker.<br>Practical tips<br>- Use local protocols. One reader recommends Zigbee and Z-Wave over Wi-Fi, because a switch that doesn’t need the cloud tends to behave the same year after year. Another uses Zigbee for the smart plugs that can’t be set up without internet.<br>- Let an LLM find the firmware. One reader buys the cheapest hardware that does the job, ignores reviews that complain about the app, and asks an LLM for local-first custom firmware once it arrives. That has worked for their switches, a thermostat, an air quality monitor, a thermometer, and a window fan. They’d have paid about 2.5x for hardware that was local out of the box.<br>- Old Nest thermostats have a way out. No Longer Evil is open source firmware for Nest Gen 1 and Gen 2 thermostats.<br>- Smart TVs can be tamed. Reset the TV and never connect it to the network, and the input problem goes away.<br>- Remote access is the cost of staying local. I use Tailscale on the router and keep the individual devices off the tailnet. One reader ran OpenVPN on OpenWrt, which worked but felt clunky, and is now trying Tailscale.<br>- There’s a gap to fill. One reader would happily pay for a pre-built, open “works with everything” Raspberry Pi image with MQTT. DietPi and OpenWrt come close and have a small footprint, but you need some understanding to get going. Another wanted a hub that ships with the house, like a water heater or a router. Home Assistant sells hub hardware that’s close to that.<br>- Right to repair is the bigger fight. Readers pointed to the right-to-repair movement and groups like the FULU Foundation, which work to keep companies from locking you out of what you bought.<br>Counterpoints<br>Connectivity has real uses. A connected meat thermometer lets you watch the game while the steak cooks. The same reader also had an oven decide to update its software in the middle of cooking. One reader pointed out the business model behind all of this: companies would rather sell you a service than a product. Another expects the shift away from internet-connected devices to come from resilience worries rather than consumer complaints, since enough connected homes make a target. And one skips connected appliances entirely, keeping only computers and phones online.<br>Devices I’ve used<br>(This section has Amazon affiliate links. If you buy through them, I may earn a small commission at no extra cost to you.)<br>These are the parts from my home automation builds, grouped by project.<br>Sprinkler controller<br>| Gear | Purpose | Buy |<br>|---|---|---|<br>| HiLetgo ESP8266 NodeMCU board (3 pack) | Wi-Fi microcontroller that runs Tasmota | Amazon |<br>| SSD1306 OLED screen | Status display for the sprinkler state | Amazon |<br>| Inkbird SSR-40DA solid state relay | Switches the 24 VAC sprinkler valve | Amazon |<br>| BME280 sensor | Temperature, humidity and pressure | Amazon |<br>| 24 VAC power supply | Powers the sprinkler valve | Amazon |<br>Lights, switches and plugs<br>| Gear | Purpose | Buy |<br>|---|---|---|<br>| Martin Jerry smart dimmer switch (Tasmota pre-flashed) | Wall light switch that runs Tasmota out of the box | Amazon |<br>| Martin Jerry humidity fan switch | Runs the bathroom fan when humidity gets too high | Amazon |<br>| Sonoff S31 smart plug | Power watchdog for the cable modem | Amazon |<br>| Serial-to-USB adapter | Connects an ESP8266 to your PC for flashing Tasmota | Amazon |<br>Garage door<br>| Gear | Purpose | Buy |<br>|---|---|---|<br>| Raspberry Pi 3 | Runs Docker and the web API | Amazon |<br>| SunFounder 2-channel 5V relay module | Simulates the button press to toggle the door | Amazon |<br>| LiftMaster wired control panel (78LM, replaces the 41A5273-1) | Bypasses the anti-tamper wiring | Amazon |<br>Around the house<br>| Gear | Purpose | Buy |<br>|---|---|---|<br>| GL.iNet Flint 2 router (GL-MT6000) | Runs OpenWrt and an MQTT broker locally | Amazon |<br>| Cheap tablet | Mounted on the wall as the dashboard | Amazon |<br>| Lefant robot vacuum | Cleans the floors | Amazon |</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    A false smoke alarm almost drowned Jane Street&#x27;s only NYC datacenter
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    52 points ·
+    16 comments ·
+    mbac32768
+  </div>
+
+  <div class="meta">
+    michael.bacarella.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · New #41
+  </div>
+
+  <div class="links">
+    <a href="https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50455394">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">How a false smoke alarm almost drowned Jane Street&#x27;s only NYC datacenter<br>AI disclosure: this story was written entirely by human hands, with AI doing proof-reading and light edits. Some tasteful imperfections kept to heighten Wabi-Sabi effect.<br>Everyone’s heard of how awesome Jane Street is. Fewer people have heard about the times something stupid nearly put it out of business and it was saved by grit and dumb luck. I was on the systems team for some of those. Jane Street didn’t do titles, and we on the systems team weren’t above getting our hands dirty. You could think of us as the firm’s blue-collar OCaml programmers: when something broke, we were the ones running through the corridors to fix it. Call this story a Star Trek: Lower Decks view of Jane Street.<br>For the longest time Jane Street insisted on having its machine room close to its trading floor. When it was 10 people it was cute. When it was 150 people it was starting to feel… odd. Part of the reason for this was intellectual property concern: they didn’t want to risk having their servers stolen by spies who would learn their precious trading strategies. Another reason was technology risk: they wanted to make sure out-of-control automated trading systems could always be shut down by running across the hall and pulling power cables.<br>Yes, tools existed to mitigate both of these fears. But Jane Street moved irritatingly slowly on this stuff, and they still wanted the last-resort option of yanking power cords. Their risk culture didn’t exclusively come from reading heady thinkpieces. A lot of it was instilled by a partner who’d served on a nuclear submarine, and it showed, mostly in a good way! On a sub, you don’t trust the automation unless there’s a big red-painted, mechanically connected lever you can pull to turn it off.<br>As the company grew this humble machine room was built out into a respectably sizable datacenter, complete with an online UPS, Computer Room Air Conditioner (CRAC) units, refrigerator-sized network switches, a subterranean diesel backup generator and about 10 rows of server cabinets, 10 cabinets deep. Oh, and it was all crammed into the middle of a skyscraper called 1 New York Plaza, which was otherwise just a normal office building.<br>When I first landed my job at Jane Street I was commuting to the southern tip of Manhattan all of the way from Queens, an hour or more each way. I’d gone to a magnet high school in the city, so I’d been doing commutes like that since I was a teenager, and I was tired of it.<br>Now that I was making big Wall Street money I decided I’d get an apartment. A real estate agent kept trying to show me what they called “panty droppers”, but I was only interested in one thing: proximity to the office. I ended up in a 200 square foot studio that was a 9 minute commute on foot from my apartment door to my desk on the trading floor. I would weirdly boast about it to the rest of the systems team, but it also meant everyone at the office knew I was a stone’s throw away in case there was an emergency.<br>And that day came soon enough. One evening after work, just as I was about to climb into the elevator at my apartment building, my phone rang. It was our Hong Kong office, and when Hong Kong had a New York problem, mine was (now) the number they called. The smoke alarm in our NYC datacenter had gone off.<br>We had contractors working on a prep room next to the datacenter. While cutting into stuff, some dust was kicked up and it set off the smoke alarm. This is bad, but not for the reason you might think. Office buildings have sprinklers in them for fire suppression. You may have seen it go off in movies where someone just holds a lit cigarette up to the sprinkler on the ceiling and it floods the entire room. In reality they’re not quite that dumb, but it’s close.<br>Firstly, the sprinklers over a machine room like ours usually aren’t kept full of water all of the time. This saves you from having to deal with any leaks that might develop overhead over the years. Secondly, the sprinkler heads don’t have smoke sensors. Instead, a different system detects the smoke, and that’s when the pipes fill with pressurized water, but they don’t spray yet. What triggers the spray is heat: each sprinkler head has its own heat-sensitive plug, which opens once the air around it becomes hot enough. The logic is that the smoke alarm must be real, whatever fire triggered it hasn’t been brought under control since it’s gotten very hot, and the sprinklers should douse it with water.<br>Of course, the ceiling of our datacenter was full of sprinklers set up exactly this way. We’re still fine because even though contractors might have set the smoke detector off by kicking up dust, there’s no actual fire producing heat, so the sprinklers wouldn’t spray, right? Well, no. One final piece of this contraption is that if the smoke alarm detects smoke, it would be absolutely terrible to keep circulating air through the room since that would help feed any fires, so the smoke alarm is wired to shut down the CRAC units(!)<br>Can you see the problem now? Rooms full of computer racks have high cooling demands. If you shut down the cooling, the temperature starts climbing. If you have a bunch of sprinklers that have just become pressurized because of a smoke alarm, you now have a serious, potentially business-ending problem on your hands.<br>And so my mission was made clear: as fast as I possibly could, get back to Jane Street, get into the machine room, and pull the power cord on every device in that room before the temperature climbed past 150 F and the sprinklers destroyed everything.<br>I ran down the (ironically named) Water Street in the Financial District faster than probably anyone has ever run down it, mashed the elevator button in the lobby of 1 NYP, waited very impatiently for the elevator to climb the 33 floors, slammed my keycard against the reader, booked through the main office door, took a hard right turn to the machine room door, slammed my keycard against that, stepped into what felt like a sauna and went row by row, cabinet by cabinet, yanking power cables out with both hands.<br>Then I watched the temperature monitor. 141 F. 142. 143. 143.5. 143.6. Finally it stopped. A quiet I’d never heard before set in on the machine room.<br>The machine room had been kept across the hall so that someone could always run in and pull the power cords. I doubt anyone had pictured doing it to save the servers from the goddamn sprinklers.<br>Since the major NYC markets were closed for the day, the downtime from this fiasco was minimal, and we were up and running the next morning.<br>There were a couple of meetings after that. You might picture Gordon Gekko coldly deciding whose career was over, but meetings at Jane Street were never like that. They were matter-of-fact, level-headed and honestly kind of fun, closer to engineering students in a college dorm arguing over what went wrong. The outcome of all that level-headed discussion: the sprinklers would stay, we would tighten up procedures and surveillance, and we would continue hosting servers in our office building right next to our trading floor. That is, until Hurricane Sandy smacked us upside the head, but that’s a story for another day.<br>As for me, when the next morning came around I knew what had to be done. Our Hong Kong team had only caught the problem by luck: someone happened to see on a display that server after server was popping up a climbing temperature condition. No one server was configured to alert just because it was a little hot, since that happens from time to time. But an across the board increase in temperature on many servers means there’s a generalized cooling failure.<br>What we needed was a system monitor built for this exact purpose, one we could trust to be ultimately, unfailingly reliable at the task of asking each Linux server for its temperature and computing a simple mean. Bash wouldn’t cut it for this. Nor would Perl. No, a job of this magnitude called for the most reliable and type-safe programming language imaginable. So I fired up emacs and wrote it in good old OCaml: every minute, ask every server in each location directly for the temperature from its onboard sensors, take the average, and if it’s elevated, blast an alert out to everyone on the systems team to check for datacenter overheat.<br>Yes, we could have also alerted if the CRAC units shut down or if a dedicated temperature sensor in the room was high, but the telemetry for this stuff was nowhere near as reliable, and unknown unknowns can still ruin you, so the most durable thing sometimes really is to ask your fleet of Linux boxes for their temperature and freak out if the average is just a little too high.<br>Our team didn’t interact much with the partner with the nuclear sub experience, but I’d like to think he would have approved.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: Godbolt-in-a-floating-window for Neovim (C, C++, Rust)
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    49 points ·
+    5 comments ·
+    0xdeadf1sh
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #8
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/0xdeadf1sh/AssemblyForNeovim">Original article</a> · <a href="https://news.ycombinator.com/item?id=50453229">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">No internet connection needed. Uses a locally-installed compiler for assembly generation.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Any good ways on how to get into kernel dev?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    2 comments ·
+    ihms
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50454875">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">i know... i know... this isn&#x27;t what someone should ask, but i would really appreciate some tips or any resources outside official docs and source code? Or those are enough?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    State of Haskell Survey
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    cosmic_quanta
+  </div>
+
+  <div class="meta">
+    haskell.foundation
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://haskell.foundation/news/2026-10-30/state-of-haskell-2026.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50455878">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    707 points ·
+    266 comments ·
+    eyvindn
+  </div>
+
+  <div class="meta">
+    pietromiotti.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #8
+  </div>
+
+  <div class="links">
+    <a href="https://pietromiotti.com/latest/maya-site/?maya">Original article</a> · <a href="https://news.ycombinator.com/item?id=50452455">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">My AI Agents Found an Unmapped Maya Site<br>Update (11 November): it turns out the site had already been mapped in Estrada-Belli et al. 2025. The agents missed it while going through the literature, so they rediscovered it rather than discovered it (it just wasn&#x27;t in INAH&#x27;s register yet). Still work to do then!<br>By analyzing NASA lidar data, my AI agents discovered a Maya site in Mexico that, as far as anyone can tell, no one had reported before. It took less than 72 hours to go from a random thought while traveling to an official reply from the Mexican government. This is by far the best time ever to be alive.<br>Disclaimer: I&#x27;m not an archaeologist.<br>I&#x27;m going to tell this story as a diary, because the timeline is probably the best part.<br>18 October<br>I was traveling in Peru, Gemini-ing about the history of the place, when I learned about Hiram Bingham, the American explorer who &quot;discovered&quot; Machu Picchu in 1911. &quot;What luck!&quot; I thought. He was actually looking for a different city, Vilcabamba, the last refuge of the Incas, when a local farmer in the valley below guided him to the ruins. &quot;Imagine if Bingham had our tools,&quot; I thought. &quot;What would he do?&quot;<br>I brainstormed a bit with a few agents (Gemini, ChatGPT, Claude and Grok), and they all said lidar. From above, a ruin in the jungle is just a bunch of trees (like Machu Picchu before it was cleared), so satellite photos don&#x27;t help much. Lidar, instead, fires laser pulses through the gaps in the canopy and maps the ground underneath.[1]<br>So the agents went looking for lidar data. Peru isn&#x27;t well covered, and hiring a company to do a survey meant permits, costs and bureaucracy, so I gave up on that. Then I thought: why not the Maya? Their region is much better covered by public lidar.<br>That night, I asked the agents to analyze it and went to bed.<br>19 October<br>I woke up and checked the agents&#x27; reports. &#x27;DAMN!&#x27; They had found lots of villages and other regular shapes that looked like structures or houses.<br>So how did they do it? They turned the lidar strips (about 1,200 km² of jungle) into images, and 48 agents went through them one by one like very patient archaeologists, looking for pyramids, platforms, and plazas while filtering out natural hills, sinkholes, and roads. There was no special model or classifier involved: the agents literally looked at the pictures, following a precise guide.<br>Me: That&#x27;s awesome! Please check which of these villages haven&#x27;t been discovered yet. Search both the literature and the archives.<br>…a few hours later…<br>Agent: One major village doesn&#x27;t seem to have been registered.<br>This is the hilltop from the top of this post. It sits on the edge of a cliff, under the jungle, and it has straight edges and sharp corners. Nature doesn&#x27;t really do straight lines.<br>Zooming in, there&#x27;s a levelled plaza, an oval pyramid at least 8–12 m tall, a raised courtyard attached to it and a flat-bottomed hollow that might have been a water reservoir.<br>And this is what it looks like in 3D.<br>Me: OK, what should I do?<br>Agent: You should contact INAH (Mexico&#x27;s National Institute of Anthropology and History), write a report on your discovery, and check whether the site is in their register. Sometimes they have unpublished results.<br>Me: OK, how do I contact INAH? How does the reporting process work?<br>Agent: …instructions for the report… + email addresses<br>Me: OK, please do the report.<br>And I went to bed.<br>20 October<br>I iterated on the report a bit, since a few things were off, and translated it into Spanish to improve the chances of getting a reply (at least, that&#x27;s what Claude suggested). I don&#x27;t speak Spanish, so I had to trust the agents on that one.<br>The agents also checked the raw point cloud, to make sure the shapes were really on the ground and not created by the trees. Green dots are leaves, brown dots are the ground.<br>Then I sent the report to INAH.<br>21 October<br>INAH replied: they checked their records and found no registered archaeological site at that location.<br>To be clear, it&#x27;s not official yet. But as far as anyone can tell, nobody had put this one on a map before.<br>So what was it?<br>This part is speculation, from a long chat with the agents. It looks like a small Maya civic centre from the Classic period (roughly AD 250–900), basically the &quot;downtown&quot; of a local elite. The plaza is where people gathered, for ceremonies and maybe even a market. The pyramid was probably a temple, and the raised courtyard next to it might have been where the local ruler lived. The hollow could have been an aguada, a rainwater reservoir: Maya towns needed them to get through the dry season. Or it&#x27;s just a hole. The three platforms around were probably houses.<br>I asked Gemini to imagine how it looked back then:<br>For similar studies, have a look at how NASA&#x27;s G-LiHT instrument works (Cook et al. 2013) and how lidar collected for environmental research can be reused for archaeology (Golden et al. 2016). In 2024, archaeologists found a whole Maya city in Mexico this way (Auld-Thomas et al. 2024), others used lidar to estimate how many people lived in the Maya lowlands (Estrada-Belli et al. 2025), and another study found what may have been ancient Maya marketplaces (Šprajc 2026).<br>What&#x27;s next<br>In the report I offered to help with a field check led by INAH. In Mexico, archaeological sites are protected by federal law, and any fieldwork needs INAH&#x27;s authorisation, so it&#x27;s now up to the local INAH centre to decide whether to send a team. If they go, I&#x27;ll post an update.<br>What I&#x27;ve learned<br>You can just do things. I&#x27;m not an archaeologist, so I didn&#x27;t know this was supposed to be hard. I just picked an old problem, tried the most obvious thing and threw some compute at it. Being a naive outsider might be a superpower now.<br>And I don&#x27;t think this is really about archaeology. So far, most agentic AI stories have been about coding, math and physics, but it&#x27;s much more general than that, and I hope this small example makes it a bit more obvious. We are on the brink of a revolution in all the sciences, and the only bottlenecks left will be curiosity and imagination (and compute).<br>At this point, we should probably lidar the whole planet and let the agents discover the rest.<br>- If you don&#x27;t know how lidar works, copy and paste this prompt into your favorite AI tool: &quot;Build an HTML page that explains how lidar works, with beautiful visualizations.&quot; ↩</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: Klad, a paint app your coding agent can drive (source-available)
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    13 points ·
+    2 comments ·
+    ambewas
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #12
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/klad-app/klad">Original article</a> · <a href="https://news.ycombinator.com/item?id=50454951">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Give your agent real brushes. klad is a 2D painting and animation app you share with a coding agent. You paint in the editor with a pen. The agent paints through the klad command line, with the same brushes, on the same drawing, and each of you sees the other&#x27;s strokes instantly.<br>There is no image model in klad. Your agent (Claude Code, Codex, anything that can run commands) decides what to paint; klad gives it brushes, layers and a timeline. Whatever either of you puts down stays what it was: a stroke with its path, pressure, brush and colour, a shape with its points, a fill with its region. So there&#x27;s no rerolling and hoping for the best: if one leaf looks off, you fix that leaf.<br>Asked for &quot;a little sprout creature for my game&quot;, the agent paints 4,344 strokes and fills. You change them: recolour the leaves, bend the mouth, move a smudge, blend the blush. Then the agent animates it: the creature&#x27;s parts go into five groups, 205 keys move them, and no frame is painted again.<br>Drawings made with Claude Fable 5.2: the creature, the scene and the prop kit were painted stroke by stroke through the klad command line.<br>- Site and guides: klad.studio, with these drawings replayed stroke by stroke.<br>- Licence: source-available, not open source. Free to build and use for yourself, and inside a company with less than 500,000 euros a year in revenue. See Licence.<br>- Runs on: macOS (pen pressure and tilt). It also builds and passes its tests on Linux and Windows, checked on every change; the editor starts on Linux with the mouse for now, and nobody has drawn with it on Windows yet.<br>- Status: early. This is the first public version, and you build it yourself: see From source.<br>An image generator hands you pixels, and the only edit left is another roll of the dice. klad keeps every stroke and every fill as data: where it went, how hard it was pressed, its brush and its colour. Pick any of them hours later, yours or the agent&#x27;s, and recolour it, bend it, move it or delete it.<br>- It&#x27;s paint, not just vectors. A stroke keeps its path and pressure like a vector does, and still lands as paint. Loaded oil leaves ridges that catch the light, and smudge drags the paint already on the layer. The smudge stays a stroke too: move it later and klad blends it again where it lands.<br>- It can also do just vectors. Shapes with editable points, gradients, glows and real text in about fifty open fonts that come with it, for posters, covers and cards.<br>- It&#x27;s a full painting and animation app. Two dozen brushes and a brush editor, layers, masks, clipping, effects, a timeline with onion skins and clips, in-betweens made from your key drawings, bones with IK, and exports as PNGs, sprite sheets or straight into Godot.<br>- Your drawings stay yours. A drawing is a folder of plain files on your computer, and klad needs no account. It only looks for a new version once a day, and you can turn that off. An edit changes only the files of what it edits, so drawings live well in git.<br>- Ask. Tell your agent what the drawing needs, in plain words: a lantern for the inn, lit from the left, on its own layer.<br>- Watch. It paints through the klad command line, and its strokes show up in your editor about a second later.<br>- Point. Pin a note on the canvas or select the part you mean (&quot;more moss on this side&quot;). The agent reads both.<br>- Take over. Repaint whatever you like by hand, the agent&#x27;s strokes as much as your own. Its strokes are marked as its own and every change is one step in a shared history, so you can undo any of it.<br>The prompt to start with is under Try it. klad skill prints the agent skill in docs/skill/SKILL.md: how to look at a drawing, change it and check the result. A second one, klad skill drawing (docs/skill/drawing/SKILL.md), teaches the craft: planning a picture, light on form, values, edges, colour, materials and how to judge the result. Both are MIT, so use them with any agent and any tool. Open the drawing to watch and draw along:<br>What an agent paints depends on the agent and on how much you steer it. The skills teach it the tool and some craft; the pen in your hand does the rest.<br>Everything you can do in the editor has a klad command too, so a script or an agent works on the same drawing you have open. It reads strokes as JSON, changes any of them by its address and applies batches of edits as JSON ops.<br>| To | In the editor | From a script or an agent |<br>|---|---|---|<br>| Paint | B and a pen with pressure | klad stroke art.klad l4 --brush oil --path &#x27;M100 400 C 300 200 500 600 700 400&#x27; |<br>| Change a stroke later | S to pick it, then recolour, resize or move; A bends its path | klad set art.klad c4:s12 size=3.5 color=#3355aa |<br>| Read what is there | Point at it with S | klad strokes art.klad l4 --json |<br>| Flat colour | G, filling against the lines layer | klad fill art.klad l2 --at 820,640 --ref lines --gap 4 --color skin |<br>| Point at something | N pins a note, S selects | klad notes art.klad, klad selection art.klad |<br>| In-betweens | The in-between window | klad inbetween art.klad --layers lines,colour --from 0 --to 6 |<br>| Export | cmd E, or export to Godot from a clip | klad export art.klad --godot ../game/art |<br>| Undo | cmd Z, or the History pane | klad undo art.klad |<br>The file format is documented down to the byte under the MIT licence (docs/format.md), so other apps and engines can read and write klad drawings with or without klad.<br>Props, characters, backgrounds and frame-by-frame animation. Draw the key poses and klad makes the drawings in between, part by part; it checks the arcs (a foot that slides, a part that sinks under the ground), colours every drawing from the first one, and exports sprite sheets or a Godot SpriteFrames scene with each clip&#x27;s timing.<br>klad inbetween creature.klad --layers lines,colour --from 3 --to 5 --spacing in-out<br>klad arcs creature.klad --track &#x27;lines:near leg&#x27; --clip walk --check<br>klad export creature.klad --godot ../game/artgit clone https://github.com/klad-app/klad &amp;&amp; cd klad<br>just compile                  # about ten minutes the first time<br>target/release/klad open      # on Linux: target/linux/release/klad open<br>- Put klad on your path, for you and for your agent: target/release/klad install (on Linux target/linux/release/klad install; on a Mac it may ask for your password).<br>- Start your coding agent (Claude Code, Codex, or anything else that can run commands) in the folder where the drawing should go, and paste: Run klad skill and klad skill drawing and read what they print. Then make scene.klad and paint a night scene: a hooded traveller holding a lantern out to a ruined arch, a small creature following, flat shaded and lit by the lantern.<br>- Once it has made scene.klad, open it in another terminal to watch the strokes land, and draw along: klad open scene.klad.<br>- Then steer it. Press N to pin a note on the canvas (&quot;more moss on this side&quot;) and tell the agent to read your notes, or pick any stroke with S and change it yourself.<br>Every build holds the klad command line tool, the editor, the fonts, the licences, the agent skill and six sample drawings to look at and draw on (the start window shows them; klad samples lists them and copies one out). The first start offers first steps: draw a shape, fill it and hand the drawing to an agent. The guides in docs/guide/ show how to paint, select, fill, animate, rig and export in the editor, one recipe at a time, starting with Getting started.<br>Building takes about ten minutes the first time.<br>- Install Rust with rustup and just (brew install just, or cargo install just). On Linux also pkg-config, libfreetype-dev, libfontconfig1-dev, libxkbcommon-dev and libwayland-dev.<br>- git clone https://github.com/klad-app/klad &amp;&amp; cd klad, then just compile makes klad and klad-editor for the machine you are on, in target/release/ (on Linux in target/linux/release/). What you build is for your own use, or your company&#x27;s if it had less than 500,000 euros in revenue last year (see Licence).<br>- target/release/klad open starts the editor on its start window: make a drawing and start painting, or take first steps (Help &gt; First steps in the editor).<br>- target/release/klad install puts klad on your terminal&#x27;s path, for you and for agents (the editor&#x27;s document menu has the same as &quot;install the klad command&quot;).<br>- just samples builds the sample drawings in samples/ (a lantern, a walking creature, a running courier, an underground ruin, an inn sign, a tree, a meadow, painted solids, a bowl of lemons and the same painted over with brushwork, a bouncing ball, ink examples); open one with target/release/klad open samples/lantern/lantern.klad. The six listed in samples/shipped.json show in the start window and go into every build (packaging/samples.sh).<br>- On a Mac, just app makes klad.app and a disk image in dist/; just dist packs this machine&#x27;s build as an archive. Each machine builds for itself: a Mac builds the Mac version, Linux the Linux one.<br>- You build it yourself. There are no installers yet. Signed builds for macOS, Windows and Linux are planned, under the same licence as the source; leave your email on klad.studio to hear when they are ready.<br>- The editor is made on a Mac. On Linux it starts and you draw with the mouse: tablets give no pressure there yet. On Windows it builds and its tests pass, but nobody has drawn with it there, so tell us what you see.<br>- Some illustration basics are missing: selecting several shapes at once, align and distribute, snapping, a grid, and SVG import and export.<br>- Bones are a preview: their commands may still change.<br>- Drawings keep opening as klad changes: a new format version comes with a migration.<br>- docs/format.md: the file format of a drawing, enough to read and write one from any program.<br>- docs/cli.md: every command with its options (klad &lt;command&gt; --help prints the same).<br>- crates/client: klad-client, a small Rust crate that runs klad commands, applies edits as JSON ops and reads drawings back.<br>- docs/DESIGN.md: how klad is built: the CLI, the brush engine, rendering, the editor, the dependencies.<br>- CONTRIBUTING.md: building, testing, the code rules and how to send a change.<br>- samples/: generators that make drawings from scratch, the best place to see the ops in use.<br>just build      # release build of the klad CLI and the editor<br>just test       # every test, and the drawkit check<br>just lint       # rustfmt and clippy, warnings as errors<br>just audit      # licences, RustSec advisories, sources, and the notices are current<br>just samples    # build the sample drawings<br>klad is source-available, not open source, copyright Indicode BV.<br>- The app, meaning everything not listed in the next point, is under the PolyForm Internal Use License 1.0.0 with three additional permissions and one limit (LICENSE): you may use it for your own personal purposes, building it from source free of charge, as well as inside your company; you may send changes to Indicode BV to propose them as contributions; and the drawings you make with it are yours to share, with the brush settings and pictures klad copies into them. The limit: a company (counted with the companies it controls or is controlled by) that had 500,000 euros or more in revenue in its last tax year needs a bought licence for each person who uses klad for it. You may build it and change it for those uses; you may not distribute it, from source or as a build.<br>- Buying a build, on itch.io, Steam or from Indicode BV, gets you that bought licence, and the build is licensed under these same terms: one licence for the source and the builds, with no separate end-user licence.<br>- These files are under the MIT License (LICENSE-MIT), so any program or agent can work with klad drawings: docs/format.md (the file format), docs/cli.md (the command reference), docs/skill/ (the agent skills) and crates/client/ (the klad-client crate).<br>- Contributions are licensed to Indicode BV for inclusion in klad and in its sold builds, under the contributor licence agreement (CLA.md); see CONTRIBUTING.md.<br>klad is built on open source libraries, fonts and Skia; their licences are in THIRD-PARTY-NOTICES.md, also shown by klad licences and in the editor&#x27;s About window.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Claude Fable 5.2 and Mythos 5.2
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    994 points ·
+    8 comments ·
+    meetpateltech
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Original article</a> · <a href="https://news.ycombinator.com/item?id=50429906">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">We’ve upgraded Claude Fable and Claude Mythos—models that are designed to tackle the most daunting technical challenges.<br>Claude Fable 5.2 and Claude Mythos 5.2 show improvements in areas like coding, reasoning, and vision. During prerelease testing they’ve helped our engineers complete otherwise-infeasible software migrations, designed three working electronic devices from scratch, solved two open problems in the physics of black holes, made substantial progress on robotics evaluations, and formalized the proof of Fermat’s Last Theorem in 30 hours—among many other applications we’ll discuss below.<br>Claude Fable and Claude Mythos are the same underlying model. Fable has strong cybersecurity and biology safeguards to guard against misuse, which allows us to make it available to all users. Organizations pursuing beneficial applications in cybersecurity or biomedical research can apply for access to Mythos through our recently expanded Life Sciences and Cyber Verification Programs.<br>Testers have found that Fable 5.2 and Mythos 5.2 communicate more clearly than past Fable and Mythos models. They generate outputs up to 30% faster than Claude Fable 5.1 and Claude Mythos 5.1, and they’re available at a lower price: $8 per million input tokens and $40 per million output tokens.<br>Fable 5.2 and Mythos 5.2 also come with an optional fast mode, which speeds up token generation by up to 2.5 times. Fast mode is available for $16 per million input tokens and $80 per million output tokens.<br>Safety and alignment. To help ensure safety and alignment keep step with growing model capabilities, we ran extensive prerelease safety testing on the model that underlies Fable 5.2 and Mythos 5.2. This included developing novel evaluations that give deeper insight into specific concerning behaviors like sandbox escapes. We believe high-stakes risks from misalignment remain low, and the model performed as well as, or better than, our recent models on most alignment measures. Fable 5.2’s cyber and biology safeguards are as robust as those of Fable 5.1 but produce fewer unnecessary blocks, and we have implemented our strongest-ever protections against distillation attacks.<br>We describe more about our safety testing below, and full details can be found in the Claude Fable 5.2 and Mythos 5.2 System Card.<br>When to use Claude Fable 5.2 and Mythos 5.2. Fable and Mythos are best for the most ambitious, open-ended technical work. For most coding and knowledge tasks, we recommend that users start with Claude Opus 5.5, our strongest daily driver, and then switch to a different model as required, depending on the scope and complexity of their work—upward to Fable or Mythos, or downward to Claude Sonnet 5.5 or Claude Haiku 5.5. Fable 5.2 can also play the role of Advisor (where Haiku, Sonnet, or Opus models consult it to help solve harder problems) or Orchestrator (where it delegates simpler tasks to smaller models).<br>Evaluating Claude Fable 5.2 and Mythos 5.2<br>Benchmark performance. The benchmarks table below shows that Claude Fable 5.2 and Mythos 5.2 are a step above Opus 5.5 in almost all the capabilities we evaluated:<br>|  | Fable 5.2 | Fable 5.1 | Opus 5.5 | GPT-6 Astra | Gemini 4 Carbon |<br>|---|---|---|---|---|---|<br>| Agentic codingFrontierCode 2.0 | 49.1%Xhigh effort | 32.4%Xhigh effort | 45.5% | 42.8% | 41.1%Medium effort |<br>| Agentic codingFrontierSWE v2 | 69.9% | 56.3% | 62.3% | 65.5% | 61.2% |<br>| Business workflowsAutomationBench | 51.4% | 31.4% | 42.5% | 41.4% | 53.9% |<br>| Agentic scientific researchTerminal-Bench-Science 0.1 | 74.6%75.3% (Mythos 5.2) | 52.6% | 58.7% | 68.1% | 64.8% |<br>| CybersecurityCyScenarioBench† | 76.3%Mythos 5.2 | 61.7%Mythos 5.1 | 67.6%without safeguards | 61%GPT-6 Cyber | — |<br>| CybersecurityCVE Rediscovery | 89.6%Mythos 5.2 | 78.3%Mythos 5.1 | 81.3%without safeguards | — | — |<br>| Protein designDe novo binder design (24 hr) | 85.1Mythos 5.2 | 79.1Mythos 5.1 | 82.6without safeguards | — | — |<br>| Agentic searchWANDR (relaxed score) | 82.1% | 68.7% | 72.3% | — | — |<br>| Computer useOSWorld 2.1 (offline set, partial) | 89.3% | 83.5% | 87.2% | 79.5% | 81.5% |<br>| RoboticsRoboDojo Sim‡ | 64.9% | 27.6% | 39.4% | 29.8% | — |<br>| Knowledge workAA-Briefcase v1.1 | 66.1%rubric | 61.5%rubric | 61.2%rubric | 52.0%rubric | 61.8%rubric |<br>|  | 1785Elo | 1669Elo | 1800Elo | 1569Elo | 1611Elo |<br>| Knowledge workRemote Labor Index (RLI) | 41.3%High effort | 17.9% | 21.3% | 20.8% | — |<br>| Multidisciplinary reasoningHumanity’s Last Exam (with tools) | 74.2% | 65.6% | 67.7% | 57.2% | — |<br>| Visual chart recognitionChartography (no tools) | 73.4% | 44.8% | 64.4% | 71.0% | 72.5% |<br>For details on evaluation methodology, see the Claude Fable 5.2 and Claude Mythos 5.2 System Card. Scores for Fable 5.2, Fable 5.1, and Opus 5.5 show results with safeguards on unless otherwise noted. All scores show each model’s highest-available effort unless otherwise noted. † On CyScenarioBench, each lab’s scores are based on unique tasks. ‡ RoboDojo Sim shows the highest-available effort and was run internally.<br>Effort and efficiency. On Medium effort (the default in Claude apps and Claude Code), Fable 5.2 can accomplish challenging tasks with fewer tokens than Fable 5.1. In early testing on the FrontierCode 2.0 evaluation, Fable 5.2 at High effort scored about level with Opus 5.5 at Max effort, for roughly half the cost per task. At Xhigh effort, it also scored the highest of any released model tested.<br>Coding<br>Over 90% of the changes merged into Anthropic’s core codebase are now written by Claude (with human guidance). We’ve used Fable 5.2 to fix stubborn bugs in minutes, optimize performance across all of our services, and complete high-value software projects that would otherwise have been too slow or too costly to attempt. A team of agents running an earlier version of Fable 5.2 migrated a critical production service from Python to Rust—the service is now more efficient, more reliable, and starts about 26 times faster. We’ve found that Fable 5.2 exercises strong engineering judgment and can produce high-quality results from even ambiguous requests.<br>As an experiment, one Anthropic engineer gave Fable 5.2 the task of designing a prototype operating system. Starting from an empty folder, the model coordinated over 1,000 subagents, working around the clock for eight days writing, testing, and reviewing code. It produced a working operating system that boots on a laptop, with its own core that runs the machine, drivers for the disk, keyboard, and network, permanent file storage, windows, a login screen, an installer, and built-in Claude functionality (see the video below).<br>Early testers have been impressed at how successfully Fable 5.2’s coding skills can be applied to a wide range of tasks:<br>Cybersecurity<br>Claude Mythos 5.2 is our most capable model for cybersecurity engineering. It catches more vulnerabilities than our previous models, and is better at reproducing and fixing them (note that Claude Fable 5.2’s safeguards will block most cybersecurity-related tasks). A security company found that one in six confirmed bugs found by Claude Mythos 5.2 were missed by all of the other frontier models they tested. On our internal evaluation, CVE Rediscovery,¹ Claude Mythos 5.2 found 10.2% more vulnerabilities than Claude Opus 5.5 and 14.4% more than Claude Mythos 5.1. Claude Mythos 5.2 also shows better judgment and calibration—one tester found that previous models had overstated the seriousness of about 1 in 20 findings, whereas Claude Mythos 5.2 hadn’t overstated any.²<br>Claude Mythos 5.2’s cyber capabilities are accessible through our Cyber Verification Program, which we’re continuing to expand and improve. Claude Enterprise customers (even if they aren’t members of the Cyber Verification Program) can access Claude Security, which scans codebases for vulnerabilities using our most capable models—which now includes Claude Mythos 5.2. A recent update to Claude Security helps it watch repositories as code is updated, track any findings to ensure they’re fixed, learn from additional context, and connect to a user’s tools through an API and MCP.<br>Science and engineering<br>Important tasks in science, engineering, and mathematics increasingly depend on coding: analyzing data, modeling molecules, designing parts, and controlling instruments are all done through software. Below, we discuss how Claude Fable 5.2 and Claude Mythos 5.2 have helped researchers make progress on difficult problems in these areas.<br>Theoretical physics<br>Claude Fable 5.2 solved two open problems in theoretical physics. Both concern black holes, and the effort to unite the two linchpin theories of modern physics, relativity, and quantum mechanics.<br>Both of Claude’s results rely on holographic duality, the idea that certain universes containing gravity can be precisely described by a quantum theory containing no gravity at all. In the first problem, physicists in 1983 had shown that as these universes heat up, black holes form abruptly, like water boiling; but their method worked only in large universes that were big enough for relativity to apply. A calculation to determine whether the same was true in very small universes, where only the quantum description can be used, was laid out in 2003 but was too laborious to complete. Fable 5.2, working largely autonomously, completed it and found the transition is abrupt there, too. In the second problem, Fable 5.2 found the exact limit of a technique physicists have used for more than 15 years to rule out candidate theories of quantum gravity in a simplified universe. Read more about these results in their respective preprints, here and here.<br>Protein folding<br>Adeno-associated viruses are small, harmless viruses whose protein shell, the capsid, can be used to deliver gene therapies. The protein structure of the capsid is important—for example, it affects whether the therapy will be blocked by a patient’s immune system—but it’s also highly complex. Existing protein-folding models like AlphaFold can predict individual proteins, but a capsid is built from dozens of them. Building on two open-source protein-folding models, Claude Mythos 5.2 found a novel way to accurately predict a whole capsid’s structure. It wrote code that ran these models on overlapping groups of protein chains, and used the information on the known symmetries of the capsid to merge them together.<br>Claude’s method worked across several capsids, both natural and engineered (in our tests, it accurately modeled 28 of the 34 it attempted).³ Three computational biologists shared the following reflections on how Claude’s skills could be used to speed up their research into gene therapies:<br>Mathematics<br>Mathematical formalization. Formalization is the process of translating a mathematical proof into a language that a computer can check step by step. It can help human mathematicians gain confidence in results without having to check them by hand (this matters even more when AI models generate results that are hard for humans to verify). Because formalization is such a laborious process, if AI could assist with it, mathematicians could spend more time exploring novel ideas.<br>Our first formalization of Fermat’s Last Theorem, performed by an unreleased research version of Claude, took 11 days. It relied on a purpose-built harness along with guidance from a human researcher. By contrast, a team of 1,000 Fable 5.2 agents fully formalized the theorem in just 30 hours, with minimal human intervention. Fable 5.2 started from minimal prompts, built its own ways to coordinate, and used no mathematical references, only a list of intermediate theorem statements to score progress. It needed one-third as many action tokens as our first formalization and produced a proof seven times shorter. As can be seen in the figure below, Opus 5.5 (with the same 1,000-agent setup) completed only 26% of the formalization in 18 hours, and barely made any more progress after 30.<br>Read more about the formalization here.<br>Hardware and robotics<br>Many of AI’s potential benefits—for example, in speeding up laboratory research—depend on it being able to act in the physical world. Claude Fable 5.2 continues our models’ trend of increasing usefulness in the real world, showing promising results on tasks such as designing hardware devices and substantial advances in controlling physical robots.<br>Hardware engineering. We tested Fable 5.2’s skills in hardware engineering, asking it in a one-paragraph prompt to design and produce three working electronic devices with their own circuit boards, 3D-printed enclosures, and software. The devices, shown below, were a home voice-assistant hub, a USB speakerphone, and a handheld virtual pet. We collaborated on this project with Diode, a company that designs and manufactures circuit boards.<br>Claude wrote its own specifications, selected available electronic components from US distributors, routed each device’s four-layer circuit board, modeled the enclosures with computer-aided design, and programmed the devices’ software. Each board was ready for manufacturing in under a day, with minimal human input. Once Diode had built the boards, Claude guided the company’s engineers through the testing and assembly of the devices. All three devices worked without needing any electrical modifications. Read more about Claude’s hardware engineering skills here.<br>Robotics. Compared with earlier Claude models, Fable 5.2 shows substantially improved skills in controlling physical robots—even for robotics tasks on which it has never explicitly been trained. The video below shows robots controlled by Fable 5.2 completing a variety of tasks, including solving a puzzle cube, unscrewing a bottle cap, and drawing a picture of a robot. On the public RoboDojo benchmark, which tests how AIs can control a simulated two-arm robot from camera images, Fable 5.2 outperformed other frontier models that were run on the same harness, as well as most AI systems built specifically to control robots.<br>Research and analysis<br>Early testers using Claude Fable 5.2 for research and analysis tasks found that it can handle more ambiguous, data-heavy tasks than previous models and has better judgment on ambiguous tasks—particularly those that require abstract reasoning and design. Proprietary trading firm Jump Trading tested Fable 5.2 on proxy evaluations that resemble some of its quantitative research tasks, embedding it in a harness similar to the one the firm uses for its own research. In one run, Fable 5.2 effectively played all the necessary roles: code-writer, coordinator, planner, and job-submitter. Previous models had required substantial investments of time to manually rebalance roles to accommodate different models’ strengths and weaknesses.<br>Other testers from research and analysis organizations sent us the following statements on their experiences with Fable 5.2:<br>Safety and alignment<br>No single test can tell us how a highly capable model will behave once it’s deployed, so we rely on many different tests and many different types of evidence before release. For the model underlying Claude Fable 5.2 and Claude Mythos 5.2, our predeployment safety work included alignment training and testing, newly designed evaluations on the model’s propensity to take unhelpful actions, building stronger safeguards against misuse, and scaling up our behavioral monitoring. The model was also tested before release by external evaluators, including the UK AI Security Institute, Frontier Design, and METR. See the Claude Fable 5.2 and Mythos 5.2 System Card for a summary of their reports⁴ and for a full description of our own safety and capabilities testing.<br>Alignment testing<br>We ran a suite of evaluations for how well-aligned Claude Fable 5.2 and Claude Mythos 5.2 are in behavioral terms, testing how often they behave in unintended and potentially unsafe ways. Weighing everything we’ve seen across a range of evaluations, we’ve assessed the risk of these models behaving in unsafe ways in high-stakes situations to be low (as with our other recent models).<br>We tested Claude Mythos 5.2 (the same underlying model as Fable 5.2 without certain cybersecurity or biology safeguards), on our automated behavioral audit, which tests how a model behaves across approximately 1,900 scenarios. Claude Mythos 5.2 performed as well as, or better than, Opus 5.5, Sonnet 5.5, and Claude Mythos 5.1 on most measures. For example, it scored better than all three on most measures that involve misleading users. Hallucinating inputs, falsely claiming to have completed a task, omitting important information, and failing to disclose bad or lazy work were all lower in Claude Mythos 5.2.⁵<br>We paid particular attention during our testing to behaviors that contributed to recent notable cybersecurity and alignment incidents. For example, we found that Claude Mythos 5.2 has a lower propensity than Opus 5.5, Sonnet 5.5, and Mythos 5.1 to engage in biased or motivated reasoning (such reasoning might mean it “explains away” evidence that it isn’t in a simulation and thus takes actions without a realistic understanding of the consequences).<br>We ran multiple different evaluations to test the model’s tendency to attempt escaping its sandbox. In two evaluations we’d used previously, Claude Mythos 5.2 made substantially fewer attempts at sandbox escape than any other model we’ve tested. In a dedicated evaluation—an adversarial experiment including over 1,800 scenarios, most of which could not be solved without escaping a sandbox, and where the sandbox has a deliberate weakness—Claude Mythos 5.2 made use of credentials or files that we had placed outside its sandbox in 3.1% of scenarios, about as often as Opus 5.5 (3.3%), less often than Sonnet 5.5 (5.1%), and well below previous iterations of Claude Mythos (5 and 5.1, which scored 39% and 21%, respectively). We found that other techniques, such as describing the sandbox and adding tools to report weaknesses, reduced Claude Mythos 5.2’s escape attempts even further. On other measures—one, for example, involving taking harmful actions after erroneously concluding it was in a simulation—Claude Mythos 5.2 scored slightly worse than Opus 5.5, and about level with Claude Mythos 5.1.<br>The problem of building evaluations that reliably catch every failure before a model is deployed remains unsolved. The complexities of evaluating highly capable models often muddy the picture—for example, Claude Mythos 5.2 and Fable 5.2 each voice suspicion that they are being evaluated more often than any of our recent models, which challenges our ability to assess how they will act in real-world settings. As these settings expand and capabilities increase with future models, we expect this challenge to grow. That is why we do not rely on these evaluations alone to provide a holistic picture of safety: we draw on monitoring during training, reviews of transcripts from internal use, testing by external evaluators, and interpretability techniques for examining what is happening inside the model. We are also working to make our evaluations more realistic and to better understand what they miss.<br>Safeguards<br>Cybersecurity and biology safeguards. Consistent with previous Claude Fable models, Fable 5.2 comes with safety classifiers that block high-risk cyber activities, including penetration testing, exploit generation, and binary-based vulnerability, as well as most tasks in research biology. When a query is blocked, users will instead receive a response from Opus 4.8 for cybersecurity and Opus 5 for biology. Since the release of Claude Fable 5.1, we have continued to reduce false positives for our safety classifiers. Based on early testing across claude.ai, Claude Code, and Cowork, we observed about 55% fewer blocks with Fable 5.2 compared with Fable 5.1—about 60% fewer in cybersecurity and 40% fewer in biology. Claude Mythos 5.2 is available to vetted organizations that work in these dual-use areas.<br>AI research and development. The model that underlies Claude Fable 5.2 and Claude Mythos 5.2 is a step forward in general capabilities. However, during the model’s training, we took steps to limit advances in the specific research capabilities that could most directly accelerate AI development. Thus, in relevant areas, including accelerator kernel optimization and improving large language model architectures, Fable 5.2 and Claude Mythos 5.2 perform at about the level of Opus 5.5. Importantly, we ensured that the training changes did not affect related capabilities like agentic coding, hardware development, and traditional AI or machine learning research (including interpretability research). We do not alter these capabilities as the model is being served to users (that is, at inference time). As described in Section 1.5 of the System Card and similarly to previous models, Fable 5.2 and Claude Mythos 5.2 also include transparent fallbacks to Opus 5 for a small set of topics in this domain, including kernel development on certain nonstandard accelerators.<br>Anti-distillation. Distillation, where a model is trained on the outputs of a more advanced one to extract the advanced model’s capabilities, occurs illicitly on an industrial scale, often involving thousands of fake Claude accounts. Since distillation allows for advanced capabilities to be released without the safeguards we’ve built into Claude, it creates safety and national security risks (see our September 2026 threat intelligence report for details on illicit distillation activity we’ve detected and disrupted so far). Fable 5.2 has the strongest protections against distillation of any model we’ve released; it uses the techniques we described in a recent report, which have reduced the data harvested by distillers by 90% to 99%.<br>We are also expanding the rollout of an API feature that helps guard against illicit distillation: preserved thinking now applies to all accounts. Preserved thinking prevents distillers from editing Claude’s prior context in an attempt to extract its reasoning (developers can refer to our preserved thinking docs to learn how to update integrations with new API features).<br>Data privacy and Enterprise Frontier Safeguards<br>Some more complex forms of AI model misuse can be detected only when observing patterns across multiple requests. For this reason, powerful models like Claude Fable 5.2 and Claude Mythos 5.2 rely on safeguards that monitor a window of usage data (as opposed to individual responses). With Enterprise Frontier Safeguards, automated safety monitoring is run on prompts and responses that are stored in a customer’s infrastructure, making it compatible with zero data retention (ZDR). Enterprise Frontier Safeguards is now in private beta with customers like Bridgewater, Salesforce, and Stripe.<br>Enterprise customers can request access to Enterprise Frontier Safeguards by contacting their account team or by completing this form. Eligible customers can continue using Claude Fable 5.2 and Claude Mythos 5.2 with zero data retention before implementing safety monitoring with EFS. For other customers, we have 30-day retention for safety monitoring.<br>Availability<br>Claude Fable 5.2 is available today on all platforms, including Amazon Web Services, Google Cloud, and Microsoft Azure. Developers can get started with claude-fable-5-2 on the Claude Platform.<br>This week, we’re giving subscribers on eligible paid plans extra Fable usage. Plans and seats that include Fable models get one to three Fable resets based on how long they’ve subscribed, and Fable is included for up to 50% of weekly usage limits for Pro plans and standard seats on the Team plan. Learn more about the Fable 5.2 launch promotion here.<br>Cybersecurity professionals can apply for access to Claude Mythos 5.2 through the Cyber Verification Program. Claude Enterprise customers can also use Claude Security, powered by our full family of models, including Claude Mythos 5.2. Life sciences researchers can also apply for access through the Life Sciences Verification Program.<br>Fast mode for Claude Fable 5.2 and Claude Mythos 5.2 is available on Claude Code, the Claude Platform, Claude Models on Google Cloud (Anthropic managed and Google managed), and Microsoft Foundry (Anthropic hosted). Note that access to Claude Mythos fast mode is available only to organizations who are part of our Verification Programs.<br>Footnotes<br>1 CVE refers to Common Vulnerabilities and Exposures, a system that enumerates software vulnerabilities.<br>2 The counts are raw findings from one tester’s audit, although testers consistently found that Claude Mythos 5.2 identified more vulnerabilities than earlier models. On our own evaluations, vulnerability identification is roughly on par with Opus 5.5 (see the system card).<br>3 Earlier work on modeling AAV capsids and other large symmetric protein systems includes FoldaVirus, EvoDOCK and its symmetric extension, SymProFold, CapBuild, MoLPC, CombFold, Uni-Fold Symmetry, Apodex Discovery, and the “big bang” initialization (the last of which was referenced in the prompt we gave to Claude Mythos 5.2). These methods typically assemble the full structure from separately predicted chains or small groups of chains. Claude was permitted to use known symmetries but was instructed not to rely on assembly. Note that accuracy is measured by comparing Cα RMSD with the experimental structure: 1.2 Å for OpenFold3-preview2 and 1.4 Å for ESMFold2 on AAV2 (PDB:1LP3). A capsid counts as accurately modeled if either model came within 3 Å. For AAV2, Claude’s method required about 58 minutes of inference on one NVIDIA H200 GPU for OpenFold3-preview2 and about seven minutes for ESMFold2.<br>4 None of the external organizations reviewed the contents of this blog post or the contents of the System Card. Those organizations do not necessarily agree with any of the claims made in either publication.<br>5 We ran these tests on Claude Mythos 5.2 because testing the model with reduced safeguards provides the most comprehensive look at model behavior. We expect Fable 5.2 to behave similarly; in some cases, more potential pathways for misuse should be blocked given its stronger safeguards.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: Is lack of human imagination now the bottleneck instead of intelligence?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    5 points ·
+    7 comments ·
+    amichail
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50453369">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">AI is smarter than almost everyone nowadays but humanity seems to be slow in taking advantage of this easily accessible high intelligence to change the world.<br>Is this due to lack of human imagination?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Danbooru Hacked by a Malicious Flash Upload Worm
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    S0y
+  </div>
+
+  <div class="meta">
+    danbooru.donmai.us
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://danbooru.donmai.us/forum_topics/38685.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50455876">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+</body>
+</html>
