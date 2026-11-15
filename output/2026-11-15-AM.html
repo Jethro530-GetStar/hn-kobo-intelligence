@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-15 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-15 AM · Generated 2026-11-15 09:10 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: bobbiec.github.io, crissyfield.de, datarootlabs.com, english.elpais.com, github.com, nbcnews.com, news.ycombinator.com, spacex.com, techpowerup.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: DeepSeek V3 in ~200 lines of pure Jax
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    167 points ·
+    8 comments ·
+    VaibhaavTiwari
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #9 · Best #53
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax">Original article</a> · <a href="https://news.ycombinator.com/item?id=50497589">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The architecture from the DeepSeek-V3 technical report in 190 lines of pure JAX, pretrained from scratch on a MacBook Air on public-domain detective fiction.<br>No Flax, no Equinox, no PyTorch. Params are plain dicts of arrays and every part of the model is a function you can read top to bottom in deepseek_v3.py.<br>Read the write-up: DeepSeek V3 in 190 lines of pure JAX, with diagrams, the code explained piece by piece, and the results.<br>| Idea from the paper | What it does | Where |<br>|---|---|---|<br>| Multi-head Latent Attention (MLA) | Caches one small latent per token instead of full keys and values: 480 → 144 numbers per token per layer here | mla, init_cache |<br>| Decoupled RoPE | One rotary key shared by all heads, kept outside the compressed latent | rope, apply_rope, mla |<br>| DeepSeekMoE | 1 shared expert that always runs + 16 routed experts, top-4 per token | route, moe |<br>| Auxiliary-loss-free balancing | A per-expert bias nudges routing toward idle experts; it changes which experts are picked, not their weights | update_bias, route |<br>| Sequence-wise balance loss | The small complementary loss from the paper (α = 1e-4) | seq_balance_loss |<br>| Multi-token prediction (MTP) | An extra module also predicts the token after next, weighted λ = 0.3 in the loss | forward, loss_fn |<br>| Training and generation | bf16 compute on f32 master weights; prefill + decode with the MLA cache | make_train_step, generate |<br>One run of the default config on a MacBook Air M5 (24 GB):<br>| Model | 36.2M parameters, 13.6M active per token |<br>| Data | 207 books, 21.7M training tokens (Hammett repeated 3×); validation is held-out crime fiction |<br>| Training | 12,000 steps, ~98M tokens (~4.5 epochs), ~2.6 h |<br>| Speed | ~10.7k tokens/s (median) |<br>| Validation loss | 5.02 (step 250) → 3.51 |<br>| Expert load, with bias | 5.7–6.9% per expert (even is 6.25%), at step 2000 |<br>| Expert load, without bias | 0.09–18.6% per expert, at step 2000 |<br>With balancing on and off, validation loss at step 2000 was the same (3.921 vs 3.923). The bias evens out the experts without costing anything, which is the paper&#x27;s claim.<br>Its own words, from the prompt &quot;The fog came in off the&quot;:<br>The fog came in off the bay, and the great trees were spreading and the stars were shining.<br>This is an architecture demo, not a strong language model. See the write-up for what worked, what didn&#x27;t, and what&#x27;s missing.<br>The v1.0 release has the exact checkpoint and data from the published run. After installing (step 1):<br>mkdir -p data runs/main<br>curl -L -o runs/main/ckpt.pkl      https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax/releases/download/v1.0/ckpt.pkl          # 138 MB<br>curl -L -o data/tokenizer.json     https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax/releases/download/v1.0/tokenizer.json<br>.venv/bin/python sample.py --prompt &quot;The fog came in off the&quot; --num 3<br>The checkpoint is a Python pickle, which can run code when loaded. Only load checkpoints from sources you trust.<br>You need an Apple Silicon Mac, Python 3.12 and uv. The published run used 24 GB of memory. No Mac? See Running on CPU.<br>1. Install<br>git clone https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax.git &amp;&amp; cd deepseek-v3-jax<br>uv venv -p 3.12 .venv<br>uv pip install --python .venv/bin/python -r requirements.txt<br>Every version in requirements.txt is pinned. jax-metal 0.1.1 only works with jax==0.4.34, so don&#x27;t upgrade JAX.<br>2. Check your setup<br>JAX_PLATFORMS=cpu .venv/bin/pytest tests.py -q    # 39 passed<br>.venv/bin/python smoke_metal.py                   # optional: what jax-metal supports on your Mac<br>In smoke_metal.py, &quot;grad through 2-axis contraction&quot; fails on jax-metal 0.1.1. That&#x27;s expected, and the model is written to avoid it.<br>3. Build the dataset<br>.venv/bin/python prepare_data.py<br>This downloads the 207 books in sources.txt (~120 MB, about 7 minutes), cleans them, trains an 8,192-token BPE tokenizer and writes data/train.bin, data/val.bin and data/tokenizer.json. It should print:<br>train: 211 docs, 83.4M chars, 21.69M tokens<br>val: 4 docs, 1.1M chars, 0.30M tokens<br>The published run&#x27;s data had these hashes:<br>shasum -a 256 data/train.bin data/val.bin data/tokenizer.jsond37aca97e707bb81b6e4d266cc1adfd1f3e3556457c6eb724e495118a734e0bb  data/train.bin<br>b7ac285b115e6793b5d36aa5b4bc6e81a5fccfc7af0908a306d3828ebca9c31c  data/val.bin<br>c5a142b4006a967c880dda44ad792719d53c16d947da3b6c2332d6132d9967cc  data/tokenizer.json<br>You will most likely get different hashes. The Hammett books are pinned to exact Standard Ebooks commits and come out identical, but Project Gutenberg files can&#x27;t be pinned, and Gutenberg has since re-issued 28 of the 203 books with small edits (mostly accents stripped, like &quot;José&quot; → &quot;Jose&quot;). The token counts come out the same, so training should behave the same.<br>To train on the exact same bytes, skip prepare_data.py and download the published data instead:<br>mkdir -p data<br>for f in train.bin val.bin tokenizer.json; do curl -L -o data/$f https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax/releases/download/v1.0/$f; done<br>shasum -a 256 data/*.bin data/tokenizer.json    # should match the hashes above<br>4. Train<br>.venv/bin/python train.py                                         # the main run: 12k steps, ~2.6 h<br>.venv/bin/python train.py --steps 2000 --out runs/bias_on         # balancing ablation, with the bias<br>.venv/bin/python train.py --steps 2000 --out runs/bias_off --no-bias   # ...and without it<br>Each run writes metrics.jsonl (loss, validation loss, per-expert load, biases, tokens/s) and ckpt.pkl (saved at every evaluation) into its --out folder, which defaults to runs/main. Seeds are fixed, but GPU math on Metal isn&#x27;t bit-for-bit deterministic, so expect your numbers to land close to the ones above rather than match them exactly.<br>5. Generate<br>.venv/bin/python sample.py --prompt &quot;The fog came in off the&quot; --num 3<br>Defaults: temperature 0.8, top-k 50, 300 new tokens per sample (--temp, --top-k, --n).<br>6. Make the figures<br>.venv/bin/python plots.py                    # needs runs/main, runs/bias_on, runs/bias_off<br>JAX_PLATFORMS=cpu .venv/bin/python charts.py # the rest of the write-up&#x27;s charts<br>Both write into post/figures/.<br>To redraw the figures without training, download the logs from the release: metrics-main.jsonl, metrics-bias_on.jsonl and metrics-bias_off.jsonl go into runs/main/, runs/bias_on/ and runs/bias_off/ as metrics.jsonl. charts.py also needs the checkpoint and the data.<br>Everything runs without jax-metal. It&#x27;s much slower, so use the smaller config:<br>JAX_PLATFORMS=cpu .venv/bin/python train.py --config small<br>--config small (4 layers, 8 experts, top-2, 128-token context) is meant for 8–16 GB Macs too. It has only been checked for a couple of steps, not trained to the end.<br>| File | What it is |<br>|---|---|<br>| deepseek_v3.py | The model: config, MLA, MoE, balancing, MTP, loss, train step, cached generation. The 190 lines. |<br>| train.py | Training loop: AdamW with warmup and cosine decay, evaluation, checkpoints, logging |<br>| prepare_data.py, sources.txt | Download, clean and tokenize the corpus |<br>| sample.py | Text generation from a checkpoint |<br>| tests.py | 39 tests: causal masking, cache vs full forward, routing, balancing, MTP targets, NaN handling, bf16 master weights, and more |<br>| smoke_metal.py | Which JAX operations work on Apple&#x27;s GPU |<br>| plots.py, charts.py | The figures, all drawn from the logs, checkpoint and corpus |<br>| post/ | Diagrams, figures and screenshots from the write-up |<br>&quot;190 lines&quot; counts the non-blank, non-comment lines of deepseek_v3.py after its docstring:<br>tail -n +5 deepseek_v3.py | grep -cvE &#x27;^\s*(#|$)&#x27;    # 190<br>- Dense MoE compute. Every expert runs on every token and the unpicked ones are zeroed. The routing math is exact, but there&#x27;s no sparse dispatch or expert parallelism.<br>- No weight absorption in MLA. The latent is decompressed explicitly, which is easier to read and slower at inference.<br>- Not included: FP8 training, DualPipe, node-limited routing, YaRN context extension, and any post-training.<br>- Scale. 36.2M parameters vs 671B, 6 layers vs 61, a 256-token context vs 128K.<br>All training text is public domain in the United States: Dashiell Hammett&#x27;s Red Harvest, The Dain Curse, The Maltese Falcon and Continental Op stories (CC0 editions from Standard Ebooks), plus about 200 detective and crime novels from Project Gutenberg. Every source is listed in sources.txt. Public-domain status outside the US may differ.<br>DeepSeek-AI, DeepSeek-V3 Technical Report, 2024.<br>Code: MIT. The training text is public domain in the US (see above).</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    SpaceX catches the Starship to end Flight 15
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    638 points ·
+    437 comments ·
+    ls612
+  </div>
+
+  <div class="meta">
+    spacex.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #5
+  </div>
+
+  <div class="links">
+    <a href="https://www.spacex.com/launches/starship-flight-15">Original article</a> · <a href="https://news.ycombinator.com/item?id=50500963">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">https://x.com/SpaceX/status/2121316300702056595<br>https://youtu.be/jHlpfNSpBmw?t=3233</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    FAA issues national ground stop – lifted 4.5 hours later
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1637 points ·
+    1270 comments ·
+    zulln
+  </div>
+
+  <div class="meta">
+    nbcnews.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247">Original article</a> · <a href="https://news.ycombinator.com/item?id=50489641">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Thousands of flights were canceled or delayed Saturday morning as airlines struggled to recover from a nationwide ground stop that halted U.S. departures for more than four hours Friday.<br>By 9:30 a.m. ET Saturday, flight tracking service FlightAware had logged more than 3,700 cancellations and 1,990 delays. Hartsfield-Jackson Atlanta International Airport, Chicago O’Hare International Airport and New York’s John F. Kennedy International Airport were among the hubs experiencing the most disruptions, according to FlightAware.<br>The Federal Aviation Administration lifted the ground stop at 8:15 p.m. ET Friday. More than 7,000 flights were canceled Friday, and airports across the country filled with stranded passengers. Delta Air Lines, United Airlines and American Airlines said Friday evening that they were resuming flights.<br>A senior government official told NBC News on Saturday that the system that caused the outage had been identified and taken offline. The FAA said a router sent too much data, overloading older air traffic control equipment.<br>What caused the ground stop<br>Transportation Secretary Sean Duffy said Friday evening that controllers began seeing inconsistencies in radar data and communications with aircraft at 3:36 p.m. ET. The FAA issued the ground stop at 3:54 p.m. ET, “due to extraordinary circumstances and for reasons of safety.”<br>Duffy said the FAA retained some radar and communications capabilities and halted departures as a precaution. Medical flights, including those transporting organs for transplant, were allowed to continue.<br>Homeland Security Secretary Markwayne Mullin said Friday night that authorities had found no evidence of a cyberattack.<br>“FAA was able to handle it. We did it out of an abundance of caution,” he said in a news conference from the White House Friday night. Earlier on Friday, he described the issue as a telecommunications outage.<br>Why disruptions continued Saturday<br>Airlines had to get planes and crews back into position after the ground stop, and some crews may have reached limits on how long they could stay on duty. Duffy said he expected air traffic to recover before the Thanksgiving rush.<br>But by 6 p.m., Reagan Washington National Airport had run out of room to park aircraft and Chicago O’Hare International Airport was nearing capacity, a source with knowledge told NBC News.<br>Deveren Werne was on an American Airlines jet that was about to take off from Indianapolis to Chicago when suddenly the pilots announced that all flights were grounded.<br>“At first, the pilot announced that there was some kind of radio issue,” Werne, 55, of Greenville, South Carolina, told NBC News in a telephone interview. “Then a little while later, the pilot said something like, ‘There is something going on that’s more serious than that.’”<br>Werne said he began hearing from friends who were also stuck on planes, including one on a runway in Chicago. His plane headed back to the terminal so passengers could get off.<br>Friday’s ground stop is perhaps the most severe consequence of what Duffy described as a decades-old air traffic control system that uses analog equipment, which has led to several issues and outages over the past few years.<br>In May 2025, radar screens at Newark Liberty International Airport went black during a 90-second outage.<br>Duffy said the legacy equipment will continue to fail and pushed Congress to approve $50 billion to overhaul the system. Congress last year approved $12.5 billion over five years to upgrade air traffic control, Reuters reported.<br>Mullin said although authorities cannot rule out a cyberattack, there was no evidence to suggest there was one. “There’s nothing completely certain right now. It doesn’t appear that way,” he said.<br>Meanwhile, Air Space Intelligence, the AI tech startup that is a vendor for the FAA on its new SMART system for air traffic control, insisted its software was not responsible for the nationwide ground stop.<br>“The current ground stop is not based on or a result of the SMART system, any product of ASI or our integration with FAA and ATC,” the company said in a statement posted to X.<br>Duffy said the SMART system is “completely disconnected” from the equipment that suffered issues Friday.<br>Several hours after the ground stop was announced, a top aviation expert estimated that anywhere from 300,000 to 400,000 passengers were stranded — and it was anybody’s guess when they would get to their destinations.<br>“Daily, we have about 25,000 flights in U.S. domestic markets,” Vikrant Vaze, a Dartmouth professor who specializes in commercial aviation logistics, wrote in an email to NBC News. “I would say we should have around 3,000 to 4,000 flights held up at this time over the past 2 plus hours.”<br>With planes stranded on runways, the likelihood increased that some of these planes would have to be diverted to other airports, the source said.<br>Aviation safety expert Jeff Guzzetti called the outage “extraordinary.”<br>Guzzetti emphasized that pilots are trained to operate through communications outages and that there are redundancies in place for such instances. Pilots “could get information relayed through other means” to ensure planes are spaced properly for landing.<br>There are different layers of communications — high-altitude, midlevel and the towers on the ground. The high-altitude control centers are the ones affected by the outage.<br>Nationwide ground stops are extremely rare<br>Ground stops across the nation are a rarity in U.S. history.<br>After the Sept. 11, 2001, terrorist attacks, the FAA ordered an unprecedented nationwide ground stop. All civilian air traffic across U.S. airspace was halted and airborne planes were ordered to land at the nearest available airports.<br>In January 2023, the FAA grounded all flights for a few hours, blaming a failure in the Notice to Air Missions system, which alerts pilots to a host of potential dangers.<br>Officials at the time blamed contract personnel for the outage, saying they accidentally deleted files while working to correct the synchronization between databases. The error prompted a computer outage that lasted approximately an hour and a half, Department of Transportation officials said at the time.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Vercel should fork and maintain Deno
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    14 points ·
+    9 comments ·
+    gfalcao
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50497196">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Given the news of Deno being acquired by Cloudflare and its already stated eventual sunset, someone has to take over deno.<br>Vercel certainly has the resources, I am looking for a job and would love to work on Vercel&#x27;s deno maintenance (which I suggest should be renamed to &quot;veno&quot;, or &quot;vino&quot;)<br>Thoughts on the future of deno post Cloudflare?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Screens, we have learned another way of reading that short-circuits the brain
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    myth_drannon
+  </div>
+
+  <div class="meta">
+    english.elpais.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://english.elpais.com/science-tech/2026-11-14/maryanne-wolf-neuroscientist-because-of-screens-we-have-learned-another-way-of-reading-that-short-circuits-the-brain.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50502924">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Maryanne Wolf is a neuroscientist who has has specialized in something as specific as studying the neural connections that are activated when you open a book and read. She is the author of Proust and the Squid and Reader, Come Home. She has also authored more than 160 scientific publications on dyslexia and reading. In these, she argues that humans were not born to read. It is not natural. The brain must make an effort to transform marks into letters, letters into words, give them meaning and combine them to create a complex, emotional narrative. Reading, at bottom, is focusing on strange symbols until you are transported. This emotional alchemy was one of the most important evolutionary achievements of Homo sapiens. It added an entirely new circuit to the repertoire of our hominid brain, and that transformed the nature of human thought.<br>Wolf’s analysis goes beyond the brain and connects with history and anthropology, since she has studied how the shift from an oral to a written culture affected classical Greece. Reading became the catalyst for the development of individuals and cultures. It led to the greatest explosion of creativity, invention and discovery in our history.<br>This idea is very appealing, but it has a less inspiring flip side. The unnatural, cultural origin of literacy means we can lose this ability because of environmental factors. In the brain there is a rule: “Use it or lose it.” That is what we are facing. Wolf argues that today we are in the middle of a transition similar to the one the ancient Greeks experienced. We are moving from a written culture to a digital one. But she is not entirely pessimistic. She believes this change can be positive if we preserve certain things before it is too late. Via video call, in a room where books are stacked in columns, she spoke with EL PAÍS about reading, screens and history.<br>Question. You say that we are not biologically programmed to read.<br>Answer. Unlike vision, language or motor skills, which we are born with, there is no innate endowment for reading. Reading is a recent invention of our species and required an entirely new circuit. No baby is born to read; all are born to speak, see and walk. But the brain has a beautiful design principle: when a species invents a new function, it creates new connections between structures it already has. It’s like a circuit of circuits: it links the visual circuit with the language circuit, with cognitive networks, with motor networks and, over time, with affective ones as well.<br>Q. Reading isn’t one thing but many.<br>A. Exactly. It is the sum of many connections among many processes, especially across these five broad areas: vision, language, cognition, motor skills and affect. It is also recursive and self-perpetuating: the more it does, the more it expands. At the start, a poor child barely makes sense of the text. Over time, the more they read, the more the circuit grows across all those areas, until you and I, as adults, have a very broad and deep set of reading-related connections.<br>Q. That is what happens to us individually, but what about the species level? How did humanity change in classical Greece when we moved from an oral tradition to a written one?<br>A. It’s a beautiful story, because attachment to the oral culture was so strong that, even though the alphabetic principle was discovered around 800 B.C., not everyone celebrated it. Of the different branches in the history of writing, the one that went to the Phoenicians and was later used by the Greeks to create their own alphabet is very interesting, because people wanted to preserve their loyalty to the oral tradition. For 300 or 400 years, they did not embrace reading. Socrates did not want us to read, but his students, Plato and then Aristotle, shifted the emphasis from the oral to the literary. That was by no means immediate.<br>Q. Do you see a parallel between the fear of novelty then — the books — and what is happening now with screens?<br>A. There are similarities and major differences. Every new technology throughout history has had its detractors, because with it you gain some things and lose others. The Greeks took 400 years to fully embrace literature. The big difference is that we can evaluate almost immediately what technology gives us and what it takes away. They could not know that this would be an epistemological revolution; it took them time to understand what reading meant compared with the oral tradition. We, instead of 400 years of loyalty and fear, have only a few years to begin to understand what will be displaced within us. Socrates said that reading would supplant memory. It is true that it displaces memory, but it does not entirely replace it: we still retain forms of memory. Today we can almost instantly see what it adds and what it takes away. It is a hinge moment; we are at the point of recognizing that the strengths are extraordinary — and the weaknesses too.<br>Q. So could young people, by swapping books for screens, not only be losing comprehension skills but also gaining something — building new neural networks we don’t yet see?<br>A. Of course there will be new functions learned, particularly in visual-motor areas, but the point is to preserve as we expand. That gives us an opportunity that the Sumerians and Akkadians already took advantage of: keeping both the new and the old. What I hope is that the parallel with the Greeks does not hold, and that we maintain literacy to the extent that we preserve each individual’s ability to evaluate any information, no matter the source. If we lose that capacity to think about what is true, we will replace our culture with another that has the potential to destroy us.<br>Q. How do you interpret the disastrous results from the latest PISA report, the world’s largest international comparative survey of 15-year-old students?<br>A. It’s something we see worldwide. Andreas Schleicher [the architect of the PISA report] talks about the “hasty reader.” These 15-year-olds rush and never go beneath the surface. That view is correct, but it is not enough to understand what is happening: beneath that haste is an inability to devote time and attention to the processes of deep reading. That is why I prefer to talk about the “skimmer.” Because of the screen, we have learned another way of reading — skimming — and when we skim, we don’t give the time, attention or effort required for real comprehension; this short-circuits the reader’s brain.<br>Q. We consume an enormous amount of information today and are not better informed as a result. It’s not only what we read but how we read it.<br>A. We can read deeply on any medium, but we must be very attentive to how we do it. My intellectual property lawyer, for example, freezes the screen and forces himself to read thoroughly: he does not scroll, because there is a spatial quality to all of this. That way there are fewer notifications or new items to distract you. I read The New York Times in print on Sundays and, like everyone else, on screens during the week. There I am bombarded with ads. So my screen reading is interrupted even when I intend to read deeply. It’s an example of what society has done with our attention.<br>Q. We are not programmed to read, but we are programmed to notice novel stimuli.<br>A. That is what is called the novelty bias. It is part of our fight-or-flight survival mechanism: 50,000 years ago, being able to notice at once an animal that could be dangerous saved our lives. It did not only protect us from danger: it also alerted us to things we needed for food and survival. Novelty bias is therefore a Darwinian survival mechanism. But today digital platforms have in some way hijacked that sense. They have hijacked the natural to serve the unnatural. They exploit that novelty bias in an insidious way.<br>Q. You say we don’t memorize as much, but we have immediate access to a lot of information: we’ve moved from an internal knowledge platform to an external one. Is that a gift or a curse?<br>A. It depends entirely on how we use it. As a complement to our knowledge base, the contributions are enormous. In neuroscience or medicine, in places without doctors or where a physician needs more information, there are many good uses. The misuse comes with excessive dependence: if we over-rely on it, we lose the ability to make our own judgments. We need a brain that is prepared to use AI in the best of ways because now it adapts to us and, in essence, misleads us. The Sumerians and Akkadians kept both languages alive: with scribes from both cultures working together for centuries, they preserved their ability to learn from the other. My hope is that we do the same. If we rely too much on the external platform, we will not have the grounding to judge what is true and what is not, nor the equally important opportunity to expand our own knowledge base.<br>Q. You can read a book or ask Claude to summarize it for you. You get the same knowledge, but the experience is nothing alike…<br>A. Exactly. It’s like Woody Allen’s joke when he said he took a speed-reading course and had read War and Peace in no time. “It’s about Russia,” he said [in the film Annie Hall]. One aspect of deep reading is the aesthetic perception of beauty and what that adds to the reading circuit. Marilynne Robinson, one of my favorite novelists, said that beauty within language, when conveyed, is what adds a true understanding of what we read. Take a book like This Is Happiness by Niall Williams: it has no sex or mystery, but the beauty of its language is an experience that gives you chills. You realize this is life, this is our existence. It gives you something AI cannot convey.<br>Q. Today many people are like Woody Allen in that film. There are many booktubers who boast of reading 10 or 20 books a month. There are annual reading challenges on Goodreads… What do you make of this trend?<br>A. Turning the reading experience into a product that proves how good or competent we are makes no sense; it loses sight of the purpose of deep reading. I don’t worry about how many books you read but how you read them, how you experience them, how your appreciation and knowledge grow… That is reading, not quantity. But, on the other hand, the positive aspect of those book clubs and those influencers is that they keep people reading, even with the worst intentions. Reading has a subversive quality: it leads you to think beyond your own experience, no matter what. And that is good for a species as egocentric as ours.<br>Sign up for our weekly newsletter to get more English-language news coverage from EL PAÍS USA Edition</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1032 points ·
+    617 comments ·
+    speckx
+  </div>
+
+  <div class="meta">
+    techpowerup.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #55
+  </div>
+
+  <div class="links">
+    <a href="https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus">Original article</a> · <a href="https://news.ycombinator.com/item?id=50493251">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Lovable apps expose passport details and more than 200K private messages
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    623 points ·
+    260 comments ·
+    armcat
+  </div>
+
+  <div class="meta">
+    crissyfield.de
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #6
+  </div>
+
+  <div class="links">
+    <a href="https://www.crissyfield.de/research/lovable-en/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50499017">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Lovable: Many Apps Built on the Platform Expose Sensitive Data<br>AI makes it easier to build your own web applications, but handling sensitive data still requires special care. We examined 159,041 Lovable projects and found many cases where personal and confidential information was accessible without logging in.<br>About Lovable<br>Lovable is a Swedish AI startup founded in Stockholm in 2023 by Anton Osika and Fabian Hedin. The platform turns plain-language descriptions into web applications and is designed to be accessible even to people with little or no programming experience.<br>Lovable grew out of Osika’s open-source project “GPT Engineer”, released in 2023. The project evolved into the GPT Engineer App before being renamed Lovable in late 2024 and launching publicly that November.<br>The Promise<br>Lovable can build impressively sophisticated web projects with AI, from static websites to full applications with user management and database connections. But as soon as an application handles confidential information, one question becomes crucial: Is that data protected against unauthorized access?<br>In its marketing, Lovable repeatedly emphasizes that no technical knowledge is needed to build projects. This can give the impression that the platform takes care of security too. Yet Lovable’s Terms &amp; Conditions place responsibility for applications and data handling on the customers themselves.<br>That leaves a troubling gap between the promise of an easy-to-use, all-in-one service and the responsibilities customers are expected to take on.<br>Against this backdrop, we investigated how well sensitive data in Lovable applications is protected, in collaboration with Handelsblatt. Lina Knees reported on the findings on November 2, 2026 (in German).<br>Research Question<br>We wanted to find out whether sensitive data in Lovable applications was accessible without logging in. We looked separately at data sent when a website first loaded and additional content we checked by making further read-only requests with the same API key.<br>The result: We found many clear examples of sensitive data left unprotected.<br>Methodology<br>We focused on the database service Supabase. Its integration is relatively easy to analyze, and we believe it is the most widely used database service among Lovable projects. Lovable’s own database features, introduced in late 2025, are still less widely used. Similar misconfigurations may occur there too, but we did not examine them in this analysis.<br>Using datasets from the open web archive Common Crawl, we identified and analyzed 159,041 Lovable projects from December 2025 to September 2026. Of these, 34,545 used Supabase.<br>24,664 websites sent database records from Supabase as soon as they loaded, without requiring a login or any other interaction. That alone is not a security issue: the data may be intended for public display. But by making additional read-only requests, we were able to retrieve more database content. We found records containing email addresses in 10,560 tables across 7,403 of the 24,664 websites (30%).<br>Limitations<br>Email addresses can help identify records containing personal data, but they may also be public contact addresses or test data. At the same time, this approach misses personal records that contain no email address. These effects partly offset one another, though we could not establish to what extent. The 30% figure should therefore not be read as a confirmed data leak rate. It applies only to the 24,664 websites we examined more closely. Our sample, drawn from Common Crawl, is also not representative of all Lovable applications.<br>We retrieved only parts of the datasets rather than downloading them in full. The figures below reflect the records we actually downloaded; the affected datasets may contain more. We are not publishing details of how to access them, as doing so could make further access easier.<br>Data Leaks<br>We found many serious cases of exposed data, including:<br>- A German lifestyle forum exposed more than 80,000 profiles containing full names, email addresses, dates of birth, and gender information. More than 200,000 chat messages were also accessible.<br>- Several event organizers and restaurants exposed tens of thousands of records relating to ticket and food sales, with no login required. The records we inspected included email addresses, phone numbers, postal addresses, payment information, and ticket codes.<br>- A property management company exposed AI-generated summaries of internal emails containing sensitive information about tenants, property owners, and business partners.<br>- In a particularly serious case, a service provider exposed more than 1,000 records containing identity document details, including passport numbers, expiration dates, and nationalities. These highly sensitive identity details could be used for identity theft.<br>- Other accessible content included tens of thousands of contracts, invoices, personal photo albums, and internal WhatsApp communications.<br>- We also found numerous newsletter subscriptions, waiting lists, and contact and support inquiries. In one case, 280,000 emails sent to a provider’s customers were accessible.<br>Depending on what it contains, exposed data like this could be used for phishing, ticket fraud, or identity theft. We could not establish whether any of it had been misused.<br>Handelsblatt contacted Lovable with the findings of our investigation.<br>Implications<br>Our analysis shows that many Lovable applications leave even highly sensitive data unprotected, with potentially serious consequences for the people affected.<br>Access control mistakes can happen in any application, whether written by people or built with AI. With Lovable, database integrations follow recurring patterns, making it easier for attackers to look for similar misconfigurations across many applications. An approach that works against one app may then work against others with little extra effort. Users without a technical background also face a harder task spotting and preventing these flaws.<br>An easy-to-use development platform does not remove the need for an expert review of access permissions before an application handles confidential data.<br>Automated checks are no substitute for a professional security assessment.<br>Before an application handles real customer or business data, its access permissions, interfaces, and separation between user accounts should be reviewed. These checks should be repeated after significant changes. If the necessary expertise is not available in-house, bring in qualified support.<br>If you would like help securing your application, please get in touch.<br>Note: This research report presents a more recent analysis and updated figures compared with the Handelsblatt article published on November 2, 2026.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: A custom font based on the Jamaican flag alphabet
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    3 points ·
+    0 comments ·
+    bobbiechen
+  </div>
+
+  <div class="meta">
+    bobbiec.github.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #7
+  </div>
+
+  <div class="links">
+    <a href="https://bobbiec.github.io/jamaican-font.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50502839">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: Best books you read in 2026?
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    3 points ·
+    0 comments ·
+    013
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50501990">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Data Science and Machine Learning Projects for Your Portfolio, by Role
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    frolovmx
+  </div>
+
+  <div class="meta">
+    datarootlabs.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://datarootlabs.com/blog/data-science-projects-for-portfolio">Original article</a> · <a href="https://news.ycombinator.com/item?id=50502898">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Two candidates apply for the same junior role. The first has twelve repositories: Titanic survival, MNIST digits, house prices, a chatbot that answers questions about a PDF. The second has two. One of them forecasts electricity demand, shows by how much the model beats a simple &quot;same week last year&quot; guess, and lists the weeks where it fails. A reviewer with five minutes can check the second candidate&#x27;s claims. The first candidate&#x27;s work looks like everyone else&#x27;s.<br>This guide lists 15 data science projects and machine learning projects, three for each of five roles. DataRoot Labs, an AI research and engineering company, wrote it from what practitioners who hire have published and from research into common modeling mistakes, checked in November 2026. We ran no survey of our own, and we found no rigorous survey that measures how much a portfolio weighs in hiring. Where the evidence is one person&#x27;s experience, we say so.<br>The 15 projects at a glance<br>- Data or product analyst: 1. A real question answered from messy data · 2. An experiment analysis · 3. A funnel or retention analysis<br>- Data scientist: 4. A predictive model built around a decision · 5. A forecast against naive baselines · 6. A causal estimate<br>- ML engineer: 7. An end-to-end service · 8. Monitoring and retraining · 9. Faster, cheaper inference<br>- AI or LLM engineer: 10. Question answering over real documents · 11. Structured extraction · 12. A tool-using agent<br>- Research scientist or engineer: 13. A replication · 14. A re-implementation from the paper alone · 15. A small original study<br>Data engineering and analytics engineering are outside this list; they deserve their own.<br>How to choose: start from the role<br>Chip Huyen, author of O&#x27;Reilly&#x27;s Designing Machine Learning Systems, writes in her book on machine learning interviews that the strongest signal is past experience, and that experience includes projects you do independently and competitions you enter. Eugene Yan, who worked as an applied scientist at Amazon, describes how he interviews ML and AI engineers: he asks candidates how they evaluated a system, what error analysis they did, which trade-offs they made and what they would change.<br>Our reading of those two accounts: a portfolio can help you past a screen when you have no job history, and it supplies the project an interviewer will ask about. One project you can discuss at that depth serves you better than several you cannot. So choose a small number of projects for one role, and finish them:<br>- Pick one target role and read ten to twenty current postings for it.<br>- Note the three or four skills that keep recurring.<br>- Choose a main project that looks like the daily work of that role.<br>- Add one or two projects that cover a different skill from the postings.<br>- Decide the metric and the baseline before you train anything. A baseline is the simplest method that could work, such as always predicting the most common class. Your model has to beat it to mean anything.<br>- Finish each project to the checklist below, then archive the tutorial notebooks.<br>Data science projects by role<br>Each project names what to build, data you can legally use, what to compare against and a common mistake. Dataset licenses were checked on 12 November 2026; check them again before you publish your own work. None of these needs more than a laptop unless the entry says so.<br>Data and product analyst projects<br>Analyst work is mostly querying, joining and cleaning data, then explaining what it means to someone who has to act on it. Each of these projects should end in a recommendation.<br>1. Answer a real question from messy, multi-source data. Join at least two sources with SQL and write up the answer for a non-technical reader. An example question: which neighborhoods wait longest for a noise complaint to be closed, and does that hold after you account for the number of complaints? New York City&#x27;s 311 service requests are updated daily and join with other city tables; the city&#x27;s open-data FAQ says there are no restrictions on the use of Open Data. TidyTuesday publishes a smaller dataset every week with its original source. Compare your answer against the obvious explanation before you offer your own. Common mistake: a dashboard with no question behind it.<br>2. Analyze an experiment. Take data with a treatment group and a control group, choose the right statistical test, and report the size of the effect with its uncertainty. The Upworthy Research Archive holds 32,487 headline experiments under a CC BY 4.0 license. Its authors reported in June 2024 that they had found possible problems with 22% of the tests, starting from an imbalance in how many readers each version received. Checking for that imbalance is a good first step in your own analysis. ASOS has published a dataset of its online experiments, also under CC BY 4.0. Common mistake: reporting a p-value and stopping there.<br>3. Analyze a funnel or retention. Work from event-level data to show where users drop off or which groups of users come back. Google&#x27;s GA4 sample dataset has three months of event data from the Google Merchandise Store. Google says the BigQuery sandbox or free tier is enough to explore it, that the data is obfuscated with placeholder values, and that its internal consistency is limited, so treat odd numbers with suspicion. It states no license of its own. For retention without a cloud account, UCI Online Retail II (CC BY 4.0) has invoices by customer, though no page views or carts. Common mistake: counting events when you need to count users.<br>Data scientist projects<br>Yan calls machine learning an empirical discipline: the job is to measure whether something works. Two habits run through all three projects. One is the baseline. The other is avoiding data leakage, which happens when information from the data you test on slips into training and makes the score look better than it is.<br>4. Build a predictive model around a decision. Frame the model by what someone would do with its output: whom to call, which loan to review, which machine to inspect. With the U.S. Department of Education&#x27;s College Scorecard, which covers completion, debt and earnings by institution, you could predict which colleges are likely to have low completion rates, for an agency deciding where to look first. UCI Bank Marketing (CC BY 4.0) is common but teaches a useful lesson: its duration column is the length of the last call, which you would not know when deciding whom to call. Using it is leakage. Start with a baseline, choose a metric that reflects the cost of each kind of error, and show where the model fails by segment. Common mistake: reporting accuracy when one class is rare.<br>5. Forecast a time series against naive baselines. Predict demand, load or traffic, and compare with two simple forecasts: &quot;same as last period&quot; and &quot;same as this period last year&quot; (the seasonal-naive forecast). The U.S. Energy Information Administration publishes hourly electricity data and states that its publications are in the public domain; the API needs a free registration. The Monash Time Series Forecasting Repository collects 30 datasets. Its records carry a CC BY 4.0 license, and the site adds that the datasets are intended for research use. Split by time, with the test period after the training period. Common mistake: a random split, which lets the model see the future.<br>6. Estimate a causal effect. Use data from an experiment or a well-known observational study, and explain which assumptions your estimate depends on. Tennessee&#x27;s Project STAR, a randomized class-size experiment, is on Harvard Dataverse under CC0. The LaLonde job-training data, the standard teaching case for comparing experimental and observational estimates, is distributed for non-commercial use with attribution. Compare the simple difference in averages with your adjusted estimate and explain the gap. Common mistake: describing a correlation in causal language.<br>Machine learning engineer projects<br>For ML engineers the model is a small part of the work. Google&#x27;s Rules of Machine Learning put it directly in rule 4: keep the first model simple and get the infrastructure right.<br>7. Ship an end-to-end service. Build the path from raw data to a prediction API in a container, with tests. An example: an API that takes a photo of a piece of clothing and returns its category. Fashion-MNIST (MIT license) is deliberately ordinary data for this; it trains on a laptop, and the project is judged on its engineering. Run the evaluation automatically on every change, so that a change which hurts the metric fails the build. Made With ML is a useful reference for the standard. Common mistake: a notebook with a Dockerfile added at the end.<br>8. Monitor a model and retrain it. Train on one period, serve on later ones, detect when the incoming data starts to look different from the training data, and show what retraining recovers. New York&#x27;s taxi trip records are published monthly and add and change columns over the years. arXiv metadata, which arXiv releases under CC0, lets you classify papers by field and watch the topics shift. Compare against a model that is never retrained. Common mistake: detecting a shift without showing that it affects the metric.<br>9. Make inference faster or cheaper. Take a pretrained model and reduce the time or memory it needs to make a prediction, for example by storing its numbers at lower precision (quantization) or by training a smaller model to imitate it (distillation). Two Apache-2.0 checkpoints on Hugging Face are small enough to work on without a GPU: a DistilBERT sentiment classifier and ResNet-50. The license covers the model weights, not the data they were trained on. Report the hardware, batch size, input size, warm-up and number of runs, and show the accuracy you gave up. Common mistake: a speed-up figure with no conditions attached.<br>AI and LLM engineer projects<br>An application built on a large language model is easy to demo and hard to trust. Hamel Husain, a machine learning engineer who worked at GitHub and now advises companies on LLM products, writes that, in his experience, unsuccessful LLM products almost always share one root cause, the lack of a robust evaluation system. OpenAI&#x27;s evaluation guide lists &quot;vibe-based evals&quot; among its anti-patterns. Every project here therefore starts with an evaluation set: a list of inputs with the correct outputs, written by you, that you run after every change. These projects call a hosted model, so they cost some money per run; keep the set small at first.<br>10. Build question answering over real documents. This is usually called retrieval-augmented generation, or RAG: the system first finds relevant passages, then asks the model to answer from them. Choose documents from a field you understand, write your questions and answers before you tune anything, and measure the retrieval step and the answer separately. Legal text has structure you can test against. EUR-Lex allows re-use of EU legal documents for commercial and non-commercial purposes, and U.S. federal documents on GovInfo are generally free to reprint. Compare with plain keyword search and with the model answering alone, and show your types of failure with examples. Common mistake: a chatbot with no question set.<br>11. Extract structured data from documents. Pull fields from receipts or forms into a fixed schema, and score each field against a set of hand-checked correct answers. CORD (CC BY 4.0) pairs receipt images with field-level labels, which gives you those answers from the start. Compare with a rule-based extractor or a smaller model. Common mistake: checking a handful of outputs by eye.<br>12. Build an agent that uses tools. Give a model a small set of tools and a set of tasks whose outcome can be checked automatically. tau2-bench (MIT license) provides such tasks in domains like airline and retail, with a simulated user. Report the share of tasks completed, the cost per task and the response time, with the model version and date. Common mistake: showing one successful run.<br>If you use a model to grade outputs, check its grades against your own on a sample. Husain and the OpenAI guide both recommend calibrating automated scores against human judgment.<br>Research scientist and research engineer projects<br>These roles have a different entry bar. Huyen notes that a research scientist role typically requires a PhD or first-author papers at top conferences, while a research engineer role does not, though papers help. For all three projects, choose a paper whose experiments fit the hardware you have.<br>13. Replicate a recent paper. Start from the authors&#x27; code, reproduce the main result, then remove or change one component at a time to see what the result depends on (an ablation). Report what did not reproduce. The journal TMLR accepts replications, and its reproducibility certification requires more than a re-run: added baselines, analysis or ablations. Common mistake: hiding the numbers that fell short.<br>14. Re-implement a method from the paper alone. Write the method without looking at the official code, then compare your numbers with the published ones over several random seeds. This tests whether you understood the paper; project 13 tests whether the paper holds up. Papers with Code, long the usual index of papers with official code, now redirects to Hugging Face&#x27;s paper pages, which link arXiv papers to code and models. Common mistake: reporting a single run.<br>15. Run a small original study. Ask one narrow question, state the hypothesis in advance, and write the result up as a short paper, including a negative result. Openly licensed benchmarks such as MMLU (MIT license) are cheap to score. Many models have probably seen them in training, so measure a difference, such as the effect of prompt format or answer order; a leaderboard number would tell you little. Common mistake: a scope that needs a lab&#x27;s compute budget.<br>What makes a project convincing: a checklist a reviewer can verify<br>- Problem framing. Who would use this, what decision it changes, what success means. Basis: Yan&#x27;s interview questions.<br>- Data and license. Where the data came from, when, under which license. Basis: our judgment. Licensing information is often missing at the source: an audit of more than 1,800 text datasets found that over 70% omitted some.<br>- Baseline. A simple result in the same table as the model. Basis: Andrej Karpathy, a founding member of OpenAI and former director of AI at Tesla, calls in his training recipe for an input-independent baseline before any real model.<br>- Metric. A metric tied to the cost of errors, with the threshold explained. Basis: Google&#x27;s Rules of Machine Learning, rule 2: define and track metrics before building the system. Tying the metric to the cost of errors is our advice.<br>- Leakage-safe split. Split first, then prepare the data inside a pipeline; split by time or by customer where needed. Basis: The scikit-learn guide to common pitfalls (split first, prepare inside a pipeline). Splitting by time or customer is our addition.<br>- Error analysis. Segments where the model fails, with examples. Basis: Yan&#x27;s interview questions.<br>- Reproducibility. Listed dependencies, training and evaluation code, and a README with the exact commands that reproduce the results; fixed seeds help too. Basis: The five-item ML Code Completeness Checklist.<br>- Demo or API. A hosted demo, a container, or a local run that works. Basis: our judgment.<br>- README. Problem, data, baseline against model, limitations, how to run. Basis: our judgment.<br>- Evaluation set (LLM projects). Labeled examples, automated checks, results tracked across changes. Basis: Husain; OpenAI&#x27;s guide.<br>Three ways good-looking machine learning projects fail<br>Tutorial clones. Titanic, Iris and MNIST are fine for learning and poor as the subject of a portfolio project. The authors of Fashion-MNIST proposed their dataset as a replacement because, in their words, MNIST is too easy: convolutional networks reach 99.7% and classic algorithms 97%. A result everyone can reach tells a reviewer nothing about you. Ordinary data is acceptable when the model is not the point, as in project 7.<br>Data leakage. The scikit-learn documentation has a worked example: on random data, where no model should beat a coin flip, selecting features before splitting the data produces 0.76 accuracy. Splitting first gives the honest 0.5. The same error appears in published science. As of May 2024, Sayash Kapoor and Arvind Narayanan list 41 papers across 30 fields that found such errors, affecting 648 papers in total. In a portfolio it usually takes the form of scaling on all the data, a random split on a time series, or the same customer appearing in both training and test sets.<br>No baseline. A 2019 study of neural recommendation methods from top conferences could reproduce 7 of 18 with reasonable effort, and 6 of those 7 were often outperformed by simple heuristic methods. If published models lose to simple ones, a score with nothing beside it has not shown much.<br>Two smaller ones: a side project has no customers, so it cannot claim that it reduced churn by 15%; and a repository without a license file gives no one permission to reuse it.<br>Kaggle, open source, replications and hackathons: what each proves<br>Kaggle. Competitions give you a hidden test set, which keeps your evaluation honest. A title does less on its own than people expect. Tatiana Gabruseva, a Kaggle Competitions Master, says in a DataTalks.Club interview that the title did not bring her opportunities. A clean repository from one competition, listed on her résumé next to a top-5% result, did: an interviewer read it, and she got an offer. That is one person&#x27;s account. It suggests writing a competition up as a project.<br>Open source. A merged contribution has been reviewed by someone else, which a personal project has not. Expect it to be slower than tutorials suggest. The scikit-learn contributing guide says maintainers rarely use the &quot;good first issue&quot; label because such issues often prove harder than expected. It also tells contributors not to open AI-generated pull requests unless they have read the related issues, reviewed every change by hand and can explain their reasoning. Bug reports with a minimal reproduction, documentation fixes and reviews all count as contributions there.<br>Replications. The ML Reproducibility Challenge began at ICLR 2018, has published through TMLR since 2023, and became an official track at NeurIPS in 2026. A replication is useful for research-track roles even if you never submit it.<br>Hackathons. They teach you to frame a problem under time pressure. A 2020 study of hackathon projects on Devpost found that about 35% had at least one code commit after the event and about 5% were still being worked on five months later. A hackathon project becomes a portfolio piece if you are in that 5%: add the baseline, the reasoning behind the metric and the limitations. At Plasma Code, a hackathon at Kyiv Polytechnic Institute in October 2026 that DataRoot Labs supported with organization and mentoring, one question among the prize-winning work was how an early-warning model should balance a missed event against a false alarm. A question like that, written down and answered, is the part worth keeping.<br>How to present a data science portfolio<br>Put the result at the top of the README. A reviewer should see what you built, how well it works and against what, without opening a notebook.<br># Project name: one line on what it does and for whom<br>Demo: link, or the command that runs it locally<br>## Result<br>| Approach | Metric | Test set |<br>| -------- | ------ | -------- |<br>| Baseline | 0.00   | name     |<br>| Model    | 0.00   | name     |<br>How the baseline was computed; date and seeds.<br>## Problem<br>Who needs this, what decision it supports, what &quot;good&quot; means.<br>## Data<br>Source, date retrieved, license, known gaps and biases.<br>## Approach<br>What you tried, in order, and why you kept what you kept.<br>## Where it fails<br>Segments or examples the model gets wrong, and what you would try next.<br>## Run it<br>One command to install, one to train, one to evaluate.<br>## Scope and license<br>What this project does not show. The license for your code.<br>Pin your two or three finished projects on your GitHub profile and archive the rest. Then write one short post about each. Rachel Thomas, co-founder of fast.ai, puts the audience question simply: write for yourself six months ago.<br>Where a course project fits<br>Andrew Ng describes a progression from class projects to personal projects to work that others find valuable, and tells readers not to worry about starting too small. A course capstone sits at the first stage. It becomes a portfolio project when you change something that matters: your own data, a baseline, an error analysis, a write-up.<br>DataRoot Labs runs DataRoot University, a free online program. The final project of its Data Science Fundamentals course is a machine learning application with a prediction API and a Docker container. The course assumes basic programming and university-level mathematics, so it suits readers who already have that background. The advice in this guide applies whatever course you take.<br>Frequently asked questions<br>How many data science projects do I need?<br>Two or three finished ones for the role you are applying to. We found no study that sets a number; this is our judgment from how interviews use a project. Huyen warns hiring managers that not everyone can afford to contribute to open source or enter competitions. If your time is limited, depth on two projects is a realistic target.<br>What are good AI projects for beginners?<br>Before an LLM project, learn the habits every project depends on: a baseline, a split that does not leak, and a look at the errors. Projects 4 and 5 on a small dataset teach all three. Move to project 10 once you can write an evaluation set.<br>Can I use AI coding assistants for portfolio code?<br>Yes, if you understand every line. Expect interviewers to ask why you made each choice, and the scikit-learn policy described above shows how one large open-source project treats code its contributors cannot explain.</div>
+</div>
+
+</div>
+
+</body>
+</html>
