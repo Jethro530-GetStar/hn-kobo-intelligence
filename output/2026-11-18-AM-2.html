@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-18 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-18 AM · Generated 2026-11-18 11:01 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: alloyhtml.com, calif.io, consumerrights.wiki, cs.cmu.edu, devblogs.microsoft.com, news.ycombinator.com, nytimes.com, petapixel.com, portalkinetic.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    181 points ·
+    32 comments ·
+    prafandy
+  </div>
+
+  <div class="meta">
+    alloyhtml.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #32 · Best #47
+  </div>
+
+  <div class="links">
+    <a href="https://alloyhtml.com/example.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50532385">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Invoices<br>24 invoices in the last 90 days<br>| Select | Invoice | Client | Due | Status | Amount |<br>|---|---|---|---|---|---|<br>|  | INV-0149Nov 15 | Okafor Legal | Nov 29 | editDraft | $950.00 |<br>|  | INV-0148Nov 14 | Tidewater Coffee | Nov 28 | editDraft | $1,250.00 |<br>|  | INV-0147Nov 12 | Lumen Architects | Nov 26 | sendSent | $4,800.00 |<br>|  | INV-0146Nov 10 | Brightline Studio | Nov 24 | visibilityOpened | $2,340.00 |<br>|  | INV-0145Nov 3 | Okafor Legal | Nov 17 | check_circlePaid | $3,600.00 |<br>|  | INV-0144Oct 28 | Harbor &amp; Pine | Nov 11 5 days late | scheduleOverdue | $1,980.00 |<br>|  | INV-0143Oct 24 | Northfield Clinic | Nov 7 9 days late | scheduleOverdue | $2,150.00 |<br>|  | INV-0142Oct 20 | Vega Logistics | Nov 3 | check_circlePaid | $6,400.00 |<br>| Invoice | Client | Due | Amount |<br>|---|---|---|---|<br>| INV-0144Oct 28 | Harbor &amp; Pine | Nov 11 5 days late | $1,980.00 |<br>| INV-0143Oct 24 | Northfield Clinic | Nov 7 9 days late | $2,150.00 |<br>| INV-0141Oct 15 | Marlow Books | Oct 29 18 days late | $730.00 |<br>| Invoice | Client | Paid on | Amount |<br>|---|---|---|---|<br>| INV-0145 | Okafor Legal | Nov 11, by card | $3,600.00 |<br>| INV-0140 | Brightline Studio | Nov 9, bank transfer | $2,900.00 |<br>| INV-0139 | Tidewater Coffee | Nov 6, by card | $1,100.00 |<br>| INV-0142 | Vega Logistics | Nov 2, bank transfer | $6,400.00 |<br>INV-0149 for Okafor Legal and INV-0148 for Tidewater Coffee, $2,200.00 together.<br>Top clients<br>Last 90 days<br>Recent activity<br>- check Okafor Legal paid INV-0145$3,600.00 by card Nov 11<br>- visibility Brightline Studio opened INV-0146Twice, from an email Nov 12<br>- send You sent INV-0147 to Lumen Architects$4,800.00, due Nov 26 Nov 12<br>- schedule INV-0144 is overdueHarbor &amp; Pine, $1,980.00 Nov 12<br>Questions<br>Can a client pay part of an invoice? expand_more<br>Yes. The invoice stays open, showing what&#x27;s left, until the rest arrives.<br>Ledger is a made-up app. This page is one HTML file with Alloy CSS and no JavaScript. See its source.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Carnegie Mellon is putting computer science courses on YouTube for free
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    2286 points ·
+    311 comments ·
+    pcompeau
+  </div>
+
+  <div class="meta">
+    cs.cmu.edu
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #35
+  </div>
+
+  <div class="links">
+    <a href="https://www.cs.cmu.edu/learn/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50522980">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Java4Shell: RCE in OpenJDK when processing Base64
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    589 points ·
+    153 comments ·
+    werrett
+  </div>
+
+  <div class="meta">
+    calif.io
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #13
+  </div>
+
+  <div class="links">
+    <a href="https://calif.io/java4shell/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50538240">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A memory-corruption vulnerability in OpenJDK&#x27;s Base64 decoder. A remote attacker with no credentials can overwrite heap memory, read it in the style of Heartbleed, and reach remote code execution.<br>After we disclosed PHP2Shell, we realized many people didn&#x27;t know what PHP was. So we decided to go after something a little more familiar: Java.<br>Today, we are disclosing Java4Shell (CVE-2026-114938), a memory-corruption vulnerability in OpenJDK&#x27;s Base64 decoder. OpenJDK is the most popular Java runtime. Under CVSS 4.0, this vulnerability scores 9.2 out of 10 (CRITICAL).<br>While PHP is a high-level web technology, Java sits much deeper. Java is the world&#x27;s third most popular programming language, powering 90% of Fortune 500 companies. It is the beating heart of the modern economy. Banking, aviation, telecommunications, nearly every critical sector runs on Java, including national security systems.<br>Base64 is a very common way of representing binary data as text. It is used in authentication protocols, to encode file uploads, and to deliver network messages. To decode Base64 faster, OpenJDK uses specialized x86-64 CPU instructions to process many bytes at once. We discovered a bug in that optimized machine-level code that lets malformed input overwrite neighboring memory. With careful exploitation, the corruption can reveal sensitive memory, as Heartbleed did, or lead to remote code execution. The corruption itself can be triggered by just 64 A characters followed by a single =:<br>In older OpenJDK 17, the trigger input is 128 of A followed by =.<br>Write once, RCE everywhere<br>Our initial testing demonstrated remote code execution in the following widely deployed Java applications, in their default configs.<br>Pre-auth RCE:<br>Keycloak<br>Atlassian Jira<br>Atlassian Confluence<br>JFrog Artifactory<br>Jenkins<br>PingFederate<br>Post-auth RCE:<br>Apache Kafka Broker<br>Apache Solr<br>Elasticsearch<br>Gerrit<br>Spinnaker<br>The lists are non-exhaustive. We also demonstrated RCE in sample applications built on widely used frameworks, including Apache Struts and Spring Boot. Ordinary features such as authentication and file uploads can expose the vulnerable Base64 decoder, extending the potential impact far beyond the products we tested. samczsun also shared a client-side exploit with us. A Java program that opens a TLS connection to a malicious server can be compromised, even if it exposes no service of its own.<br>Here are a demo video of the exploits running:<br>Wait, Java has a memory-corruption vulnerability, in Base64?!<br>Yes. First time?<br>Memory corruption is the most common class of vulnerability on the Internet. But one of Java&#x27;s biggest selling points is memory safety. Java manages memory on developers&#x27; behalf and checks memory accesses, protecting applications from the memory-corruption bugs common in other software.<br>But like PHP and many other technologies, much of Java itself is written in low-level languages like C, C++, and, in this case, assembly, where memory corruption is still a part of life.<br>To speed up Base64 decoding, OpenJDK uses specialized AVX-512 VBMI instructions on supported x86-64 processors. The bug sits in the hand-rolled assembly code that handles the final few characters. For the 65-character input above, OpenJDK allocates a 50-byte result array. After decoding the first 64 characters, the routine mishandles the stray = and calculates a negative output length. That invalid length becomes a full 64-byte write, sending 62 bytes past the end of the array. Java eventually rejects the input, but by then neighboring objects may already be corrupted.<br>Era of the centaur hacker<br>As with PHP2Shell, Calif used AI to find and weaponize Java4Shell. AI brings the horsepower. Our researchers bring the context. The best hacker today is neither AI nor human. It is the centaur hacker, part human, part AI.<br>It took our own Quang Luong an hour to discover the vulnerability, and two more hours to develop the first working exploit. The total token cost was less than $200.<br>One thing to note about this vulnerability is that there is no universal exploit. Depending on how Base64 is used and how the application works, different steps may be required for exploitation. Calif was able to accelerate the exploit development by spending initial effort building pipelines and strategies, then directing AI agents to use those for initial exploitation. Afterwards, most of the later chains are built almost autonomously with AI.<br>The tragedy of the commons<br>Java is one of many shared software stacks we all rely on. Over the years, it has grown to serve many different needs. Each feature request may make sense on its own, but everyone inherits the added complexity. Those who need a feature get the benefit. Everyone else carries the code and its risks, even if they never use it.<br>Java4Shell is a concrete example. The Base64 optimization helps applications that decode enormous amounts of data. But the code ships to everyone else too, including applications that gain little from it. On affected systems, an optimization few applications needed became a serious security risk.<br>Features can be useful, and most bugs can be fixed. But why do we have to worry about code we never needed in the first place?<br>A call for vibe-uncoding<br>If you don&#x27;t need something, there is little reason to keep it running in your systems. Do you need that hand-rolled assembly Base64 decoder to process a few hundred bytes? Probably not.<br>Earlier this year we found Squidbleed, an older cousin of Heartbleed, hiding in the Squid proxy since 1997. The bug was in Squid&#x27;s FTP module. But who uses FTP anymore? It&#x27;s a dead protocol and should be removed.<br>Removing code is harder than it sounds. An apparently unused feature may have hidden dependencies. Someone has to understand what can be removed, make the change, and test what remains.<br>This is where AI can help to make that work practical at a scale we could not previously afford.<br>The same centaur hacker that discovered PHP2Shell and Java4Shell can comb a large codebase and flag dead code, bloated features, and needless optimizations. We call this vibe-uncoding: identify the parts a system actually needs, then remove everything else to reduce its attack surface.<br>With AI, everyone is asking, “What can we build?” But maybe the right question for security is, “What can we delete?”<br>The Tail of Base64<br>By Quang Luong<br>On affected OpenJDK builds, malformed Base64 data can cause a constant-value overwrite of allocated heap memory. Through remote Heap Feng Shui, we turn that overwrite into a heap leak and remote code execution.<br>Discovery<br>A few months back, I was developing a 0-click exploit on a certain phone vendor. The bug was constrained: it is a linear out-of-bounds write and we have no way to bypass ASLR. I almost considered it unexploitable until I audited the Android Runtime. Turns out, it has some predictable memory allocation pattern and if you align the registers from the starting memory corruption just right you can make the runtime interpret attacker&#x27;s bytecode.<br>After completing that exploit chain, inspired (and bored), I decided to look into some thing completely different. So I pulled the official JVM implementation (OpenJDK HotSpot) and started auditing. Java is a mature platform, so I was aware that having a &quot;good&quot; bug here would be hard, but I wanted to give it my best attempt anyway.<br>Recalling my earlier lesson that complex systems and code crossing multiple boundaries are difficult to get right, I focused the audit on the JIT compiler, intrinsics, widely accessible APIs, and cryptography. Well, more precisely, I told Codex to look at those areas like any serious security researcher in 2026. To be honest, I didn&#x27;t expect to find anything trivially exploitable, perhaps only some logic flaws or side-channel issues.<br>Most early results Codex brought me were slops, either unreachable or the requirement of exploitation is not realistic at all. This looks like a gamble I am going to lose. But you know what, fortune favors the bold. So I just prompted harder...<br>Eventually, Codex brought me a finding for a memory corruption in the Base64 decoder itself. I came looking for copper and found gold, through sheer persistence. But wait, is it really gold, or just fool&#x27;s gold?<br>The vulnerability<br>The issue lies in OpenJDK HotSpot&#x27;s x86-64 Base64 intrinsic. C2 is the most aggressive JIT compiler in the Java Virtual Machine. Specifically, if you trigger a function repeatedly, then it will compile that function into native code. Even then, ordinary native code itself is not fast enough. Modern CPUs have specialized instructions that allow processing data even faster. HotSpot uses them in optimized routines called intrinsics. The x86-64 Base64 intrinsic miscalculated the padded tail&#x27;s store mask, causing an out-of-bounds write.<br>The x86-64 Base64 intrinsic iterates through the input in 256-byte blocks; if it is less than 256, then it will do so in 64-byte blocks. When the input is less than 64 bytes, it uses evmovdqub, the intrinsic for the VMOVDQU8 instruction. This instruction takes a 64-bit mask that decides which bytes are read from or written to memory. The mask is first calculated from the input and output length, then updated to reflect the number of padding bytes (&#x27;=&#x27;) in the Base64-encoded string. This is shown in the following (pseudocode):<br>// Zero High Bits Starting with Specified Bit Position<br>input_mask := bzhiq(-1, input_length)<br>output_len := (input_length / 4) * 3<br>// handle padding<br>if input[input_length - 1] == &#x27;=&#x27;:<br>output_len -= 1<br>input_mask &gt;&gt;= 1<br>if input[input_length - 2] == &#x27;=&#x27;:<br>output_len -= 1<br>input_mask &gt;&gt;= 1<br>output_mask := bzhiq(-1, output_len)<br>In the above code, if the remaining input is of the form =, ==, X=, X==, XY=, or ===, then output_len will be computed as zero. However, since there is padding, output_len is decremented, resulting in an underflowed value of -1 or -2. Since bzhiq(-1, output_len) doesn’t change any bits if output_len &gt;= 64, this results in output_mask == -1u64.<br>Later the code uses evmovdqub to read and write multiple bytes at a time. For a write, if the mask bit is 1, the byte at that index in the vector register is written to memory. So when output_mask == -1u64, all 64 bytes are written during the following operation:<br>The generated stub returns the number of bytes it successfully decoded, and returns early when it detects invalid input. The remaining bytes are handled by the Java code, which throws IllegalArgumentException if the input is invalid.<br>At runtime, the decoded buffer length is calculated as (ceil(inp_len / 4) * 3) - padding. When the bug is triggered, with 65 bytes ([64 bytes] + &#x27;=&#x27;) as input, that calculation allocates a 50-byte buffer. During decoding the bug makes output_mask == -1 for evmovdqub, so 64 bytes are written starting at offset 48, an out-of-bounds write past the end of the buffer.<br>On OpenJDK 17, the trigger input is &#x27;A&#x27; * 128 + &#x27;=&#x27; instead of &#x27;A&#x27; * 64 + &#x27;=&#x27;, because the length threshold to reach the code path is higher.<br>Exploitation strategy<br>The Base64 bug was gold, but not the type that sits on the riverbed waiting to be panned out. It was the type that was deep, dark, and hard to access. While we had memory corruption, exploiting it looked difficult, perhaps even borderline unexploitable, since it only wrote fixed bytes to the heap. Only the landing position of the out-of-bounds write is controllable.<br>We get the following 64 bytes write starting from the position in buffer where the remaining sets of Base64 decoded bytes would have been written to:<br>Full controlled write to byte 0 (in bound)<br>4-bit controlled write to byte 1 (in bound)<br>Uncontrolled write to bytes [2, 63]. For bytes 48..63, the value will always be 0x9a.<br>The uncontrolled out-of-bounds write turned out not to be a big problem. We reused a common JavaScript engine exploitation primitive, the classic technique of overwriting a buffer length.<br>We call the buffer whose length we overwrite the writer. Once its length is corrupted, it keeps accepting our chosen bytes, so if we place another array or object after it, we can corrupt that neighbor with all of our chosen values. That upgrades the fixed write into a bounded, chosen-value linear write.<br>If we then corrupt another array&#x27;s length and its data is copied back into the response, we have built a heap disclosure primitive, the reader, from the out-of-bounds read. At this point, before any code execution, we already had JavaBleed, the ability to leak contents from the Java heap, which may hold PII, private keys, other secret keys, and tokens.<br>From the writer and reader, the rest of this write-up builds the full attack. We repair the objects the linear write damaged to keep the JVM running, mount data-only attacks on application logic, and escalate the bounded write into arbitrary writes that reach the Code Cache and JVM hooks for code execution.<br>But first things first, we need to align the heap to our advantage.<br>HotSpot normally gives each Java thread a thread-local allocation buffer (TLAB), a private slice of Eden. Objects created by different request threads advance different cursors, which gives us no useful order between a Base64 decoder in one TLAB and a writer in another.<br>The first grooming layer controls the allocation route. The critical array&#x27;s size and the space left in the worker&#x27;s TLAB decide whether HotSpot refills that TLAB or takes the attacker-preferred outside-TLAB allocation path.<br>The second layer controls the layout. However, we do not choose how G1 allocates memory, and we don&#x27;t know the current heap state. To approach this limitation, Calif used the tried and tested method of Spray and Pray.<br>Object sizes and padding fix offsets inside region-sized spans. We spray several live writer and reader pairs to give the decoder output several possible neighbors. When its region lands immediately below a writer region, the widened reader produces a larger application response. We discard misses and retry until successful.<br>One early challenge during exploit development was that the AI would get stuck during heap grooming primitive development. In order to save tokens and time, Calif wrote a small heap tracer and visualizer to give the agent information about the heap state, combined with our expertise on specific cases.<br>Remote Heap Feng Shui<br>In order to perform remote grooming, each request data would be sent up until the critical heap allocation would occur. By ensuring the data that was previously sent had a TCP acknowledgement, the exploit would have control over the allocations up to date. Once we were confident our data so far is buffered on the target, we then sent the rest, completing the http request. This allows both heap allocation control and more precise schedule as delivering small network packets is more stable than big ones.<br>The exact allocation and free order schedule belongs to the targeted application profile, while we are able to control the adding, writer, reader, and decoder pieces.<br>The current attack is sensitive to network conditions, like RTT and jitter. Low, stable round-trip times are preferred for a more reliable attack. In our controlled environment, we performed this attack over the internet through public IP addresses instead of just assuming perfect laboratory conditions. For the current attack path to achieve optimal stability and reliability in exploitation, Calif turned to physics and utilized money to solve the problem, rather than experimenting with TCP/IP stack configuration. In other words, Calif rented another VM in the same region as our target.<br>Warm-up, rehearsal, and retries<br>To summarize the chain so far, we will warm up the Base64 decoder to C2 tier. We can rehearse the exploit run to calibrate timing and responses against the target before causing corruption to occur. Once the required information has been obtained, we can trigger the vulnerability. Incorrect placement could cause the JVM to crash, but in many instances, we can simply try again.<br>WARM<br>Run valid decodes until the JIT selects the affected fast path. No memory is corrupted.<br>REHEARSE<br>Optional safe round for calibration.<br>TRIGGER<br>Send the malformed tail. If the objects line up, the fixed spill enlarges the writer.<br>DISCLOSE<br>Continue the writer so chosen bytes enlarge the reader, then collect the response-derived heap bytes.<br>REPAIR<br>Use the disclosed originals to restore temporary headers and untouched neighbors when the chain has a repair path.<br>FINISH<br>Make the application-specific change and verify it through a live request.<br>Limitations<br>Request streaming. Some current grooming profiles need partial request bodies to reach the application. A proxy that waits for the complete body removes their release timing. nginx buffers request bodies by default.<br>Request buffering is not a general mitigation. Elasticsearch runs from one complete request, so this setting does not stop that chain. After a configured WebSocket upgrade, later frames pass through a tunnel and request-body buffering no longer applies to them.<br>Application profiles. There is no universal payload. Each chain needs a decoder route, a live writer, a returned reader or another feedback path, a heap layout, and an application action. Every target needs a bespoke profile. The exploit is not a universal point-and-shoot.<br>PoC<br>Here is a self-contained proof of concept. It warms the Base64 decoder until the vulnerable intrinsic is used, then decodes the malformed 64 × &quot;A&quot; + &quot;=&quot; input into a 4096-byte array. On an affected JDK it prints REPRODUCED: the decoder rejects the input, but 62 bytes (offsets 50 to 111) past the decoded output have already been overwritten. Every write lands inside a real array, so the trigger is safe to run.<br>import java.nio.charset.StandardCharsets;<br>import java.util.Arrays;<br>import java.util.Base64;<br>/** Bounded standalone trigger: every write stays inside a real 4096-byte array. */<br>public final class Base64Trigger {<br>private static volatile int sink;<br>public static void main(String[] args) {<br>Base64.Decoder decoder = Base64.getDecoder();<br>byte[] valid = &quot;A&quot;.repeat(64).getBytes(StandardCharsets.US_ASCII);<br>byte[] malformed = (&quot;A&quot;.repeat(64) + &quot;=&quot;).getBytes(StandardCharsets.US_ASCII);<br>byte[] target = new byte[4096];<br>for (int i = 0; i &lt; 200_000; i++) {<br>sink += decoder.decode(valid, target);<br>}<br>Arrays.fill(target, (byte) 0x5a);<br>boolean rejected = false;<br>try {<br>decoder.decode(malformed, target);<br>} catch (IllegalArgumentException expected) {<br>rejected = true;<br>}<br>int changed = 0;<br>int first = -1;<br>int last = -1;<br>for (int i = 50; i &lt; target.length; i++) {<br>if (target[i] != (byte) 0x5a) {<br>changed++;<br>if (first &lt; 0) first = i;<br>last = i;<br>}<br>}<br>System.out.println(&quot;runtime=&quot; + System.getProperty(&quot;java.runtime.version&quot;));<br>System.out.println(&quot;vm=&quot; + System.getProperty(&quot;java.vm.name&quot;));<br>System.out.printf(&quot;rejected=%s changed=%d first=%d last=%d%n&quot;,<br>rejected, changed, first, last);<br>if (!rejected || changed != 62 || first != 50 || last != 111) {<br>System.err.println(&quot;NOT REPRODUCED&quot;);<br>System.exit(1);<br>}<br>System.out.println(&quot;REPRODUCED&quot;);<br>}<br>}<br>We are holding back the application-specific exploits for now. This write-up covers the vulnerability and the general exploitation technique. The weaponized chains for individual products stay private until everyone has had a chance to upgrade. We will publish them later.<br>Affected products<br>Java4Shell affects OpenJDK from version 17.0.6 or newer.<br>Because they are built from OpenJDK, the following Java distributions are also vulnerable:<br>Amazon Corretto<br>Eclipse Temurin<br>Microsoft Build of OpenJDK<br>Azul Zulu<br>BellSoft Liberica<br>SAP SapMachine<br>Red Hat OpenJDK<br>Oracle OpenJDK<br>Oracle Java SE<br>Oracle GraalVM for JDK<br>According to Oracle, the following Oracle Java SE versions are vulnerable: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3. We thank Oracle for providing this information ahead of publication time.<br>Because the vulnerable code is hardware-specific, Java4Shell also requires an x86-64 processor with AVX-512 VBMI support. ARM64 CPUs are not affected.<br>These mainstream CPU families meet the hardware requirements:<br>Intel Xeon: Ice Lake, Sapphire Rapids, Emerald Rapids, Granite Rapids<br>AMD EPYC and Ryzen: Zen 4 or newer<br>On Linux, you can check whether your CPU is vulnerable with this command:</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: If AI tools are so good, why isn&#x27;t your bug backlog empty?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    90 points ·
+    108 comments ·
+    ex-aws-dude
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50520076">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A lot of people outside tech ask me if AI is going to replace programmers and I just think: if that were the case we should be running out of things to do<br>The bug backlog should be empty and we&#x27;ve caught up to every feature request from PMs to the point that we are bottlenecked on the business side<br>But that does not seem to be the case with my own company or most devs I talk to in the industry<br>So what gives?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    How can a second program show a dialog box as if it came from my first program?
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    ibobev
+  </div>
+
+  <div class="meta">
+    devblogs.microsoft.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://devblogs.microsoft.com/oldnewthing/20261116-01/?p=112863/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50541310">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Suppose you have two programs, one a GUI program and another a program that runs in the background. The GUI program asks the background program to do some work, and then the background program realizes that it needs to display a dialog box. How do you get that dialog box to appear as if it were shown by the GUI program?<br>If you have the background program simply try to show a dialog box with no owner, then that dialog box has no relationship to the GUI program’s main window, which means that there is no requirement that the dialog box appear in front of the GUI program’s main window. If the GUI program didn’t disable its main window, then you have the situation where both windows (the GUI program main window and the dialog box) can be clicked on and interacted with. But if the GUI program did disable its main window, the fact that the main window can end up in front of the dialog box from the background program means that the user can’t see the dialog box that is preventing them from making progress.<br>The GUI program should include its window handle as part of the call into the background program, so that the background program can use that window handle as the owner for the dialog box. If the dialog box is modal, this also disables the GUI program’s window, and if the user tries to click on the GUI program’s window, the window manager will instead put focus on the dialog box (and blink its title bar).<br>Note that a cross-thread owner/owned relationship implicitly attaches the two threads’ input queues, which means that both threads need to to remain responsive to window messages in order for things to work properly until the attachment is implicitly broken when the dialog box is destroyed.<br>That’s the ideal situation, but maybe you aren’t in the ideal situation.<br>For example, maybe the GUI program is written in a framework that doesn’t give you access to the window handle.<br>You could have the GUI program call AllowSetForegroundWindow() with the process ID of the background program, so that the background program can call SetForegroundWindow() on its dialog box and try to bring it to foreground.<br>Now, if the GUI program didn’t have foreground, then  it can’t give away a permission that it doesn’t itself possess, and the call to SetForegroundWindow will fail.<br>There’s not much more you can do at this point. The system doesn’t want to let random programs steal focus, and since there was no coordination with the window that has focus, you look like a random program as far as the system is concerned.<br>But really, the solution is to fix the design.<br>You’ve already separated the problem into a GUI process and a background process, so honor that separation: Don’t make the background process try to do UI. UI is the job of the GUI process.<br>If the background process wants to display UI, it can ask the GUI process to do it, and then the GUI process can send back the dialog box result. One way to do this would be to have the background process return an error code like “UI required” and information about what UI it needs. The GUI process can then display the UI, gather the answer, and then call the background process again. Another way to do it is to have the background process call back into the GUI process when it needs UI, and the GUI process displays the UI, gathers the answer, and returns it to the background process. There are pros and cons to both of these designs, so you can choose the one that works best for you.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    New Evidence Shows School Phone Bans Are Gradually Improving Test Scores
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1179 points ·
+    586 comments ·
+    donohoe
+  </div>
+
+  <div class="meta">
+    nytimes.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #31
+  </div>
+
+  <div class="links">
+    <a href="https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50530163">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    ID.me terms required for IRS sign-in
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    135 points ·
+    48 comments ·
+    DeepLogin
+  </div>
+
+  <div class="meta">
+    consumerrights.wiki
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #58
+  </div>
+
+  <div class="links">
+    <a href="https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in">Original article</a> · <a href="https://news.ycombinator.com/item?id=50540437">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Taxpayers who sign in to Internal Revenue Service (IRS) online services with ID.me, a private-sector sign-in provider,[1][2] use it under ID.me&#x27;s own Terms of Service, which send disputes outside small claims court to a neutral arbitrator instead of a judge or jury unless the user opts out within 30 days of accepting them.[3] ID.me&#x27;s Privacy Policy says it &quot;may use information for marketing purposes&quot; &amp; may transfer information in a sale, merger or other corporate transaction,[4] though it says information from state or federal government identity verification is not used for marketing for ID.me Shop, its shopping-discount site, unless the user consents or meets another listed exception.[4][5]<br>Login.gov, which the U.S. government maintains, also works for IRS sign-in,[2] &amp; the IRS&#x27;s Direct Pay service takes bank-account tax payments with &quot;No sign-in required&quot;.[6] ID.me replaced the traditional login for Treasury&#x27;s savings-bond site TreasuryDirect on October 28, 2026,[7] &amp; on October 29, 2026 senators Ron Wyden &amp; Elizabeth Warren asked Treasury &amp; the IRS to explain why they continue to use ID.me &quot;instead of the government-run Login.gov platform&quot;.[8]<br>The IRS describes ID.me as &quot;a private sector sign-in provider for secure access to government and non-government websites&quot;.[2] ID.me&#x27;s Terms of Service say the company provides &quot;a level of assurance to businesses and government agencies&quot; that a user&#x27;s identity and attributes are verified &quot;based upon widely-recognized standards&quot;,[3] &amp; that &quot;ID.me does not charge members any fees for registering and/or using the Service or Website.&quot;[3]<br>The IRS sign-in page says taxpayers &quot;need an ID.me or Login.gov account&quot; to access tax information online.[1] The IRS says it uses these sign-in providers &quot;to protect your privacy and data through identity verification&quot;.[2] One account covers the IRS online services: &quot;Individual Online Account, Business Tax Account, Tax Pro Account, e‑Services and more&quot;.[1] ID.me&#x27;s Privacy Policy says some partners, &quot;such as the IRS&quot;, may require identity verification &quot;to a higher level of certainty&quot; under National Institute of Standards and Technology guidelines.[4]<br>Treasury&#x27;s savings-bond site TreasuryDirect says it uses ID.me because it &quot;aligns with Treasury security requirements and those used by the Internal Revenue Service&quot;.[7] The IRS said on December 7, 2021 that it was &quot;using ID.me to provide verification services&quot;.[9] It announced on February 7, 2022 that it would &quot;transition away from using a third-party service for facial recognition&quot;,[10] &amp; said on February 21, 2022 that taxpayers could still choose biometric verification &quot;through ID.me’s self-assistance tool&quot;.[11]<br>A user accepts ID.me&#x27;s Terms of Service, with the Credential Policy made available at that time, by selecting &quot;I agree&quot; or &quot;taking another affirmative action clearly identified as acceptance when these Terms are presented to you&quot;.[3] The Terms say ID.me&#x27;s Credential Policy &quot;gives further details of how we accomplish our identity proofing&quot;.[3] The Terms say the company keeps a wallet for each user &quot;that contains your identity and group affiliation information&quot;.[3] ID.me&#x27;s personal-information obligations are governed &quot;at all times&quot; by the Credential Policy &amp; Privacy Policy.[3]<br>A taxpayer emailed consumer advocate Louis Rossmann a screenshot of the &quot;UPDATED TERMS &amp; CONDITIONS&quot; screen the taxpayer said they saw while signing in to IRS.gov through ID.me, showing ID.me &amp; IRS logos and one button, &quot;Accept Terms &amp; Continue&quot;.<br>ID.me&#x27;s Privacy Policy dated November 2, 2026 says by using the platform &quot;you agree that ID.me. determines how personal information may be used&quot; for the user&#x27;s wallet.[4] The policy&#x27;s May 7, 2026 text lacked it.[12]<br>The current Terms, Version 10.1.0 dated November 13, 2026, count continued use after revised Terms take effect as &quot;acceptance of those changes&quot;, &quot;Unless we expressly state otherwise&quot;; a user who disagrees may stop using the Service &amp; close the wallet first.[3] Version 10.0.3, dated March 3, 2023, said continuing use after notice &quot;will indicate your agreement to all changes&quot;, &quot;Unless otherwise noted by us&quot;.[13] The Credential Policy, Version 10.1, published July 1, 2024, requires users to reaffirm acceptance of &quot;the prevailing Terms of Service, Privacy and other Policies and any other required agreements&quot; &quot;at least once every 5 years&quot; or face credential suspension.[14]<br>Public radio program Marketplace reported that Nancy Kim, a professor emerita at Illinois Tech&#x27;s Chicago-Kent College of Law, said she found nothing reassuring in ID.me&#x27;s terms, pointing out that although they state ID.me won&#x27;t sell data, ID.me can change them.[15]<br>ID.me&#x27;s Privacy Policy says:<br>We may use information for marketing purposes. We may use your information to send promotional messages and newsletters via email, or otherwise alert you to products or Services we think might be of interest to you, including for ID.me Shop.[4]<br>ID.me Shop, a page of deals &amp; discounts, says it &quot;is part of the Amazon Associates program and other affiliate programs&quot; &amp; &quot;may earn money when you buy products through links on Shop&quot;.[5]<br>The policy also says:<br>We may share your information in connection with a corporate transaction. We may disclose or transfer your information as part of, or during negotiations for, any purchase, sale, lease, merger, or any other type of acquisition, disposal, or financing involving our brands.[4]<br>A capitalized notice atop ID.me&#x27;s Terms of Service says they contain &quot;A MUTUAL ARBITRATION PROVISION, JURY TRIAL WAIVER, AND CLASS-ACTION WAIVER&quot; &amp; that users may opt out &quot;WITHIN THIRTY (30) DAYS OF ACCEPTING THESE TERMS&quot;.[3] Section 20 covers disputes &quot;arising out of or relating to&quot; the Terms, the Privacy Policy, the website or the service.[3] A dispute not resolved within 45 calendar days after the notice of dispute is received goes to arbitration, where &quot;a neutral arbitrator will resolve all Disputes&quot;; both sides give up suing before a judge or jury, individually or in a class action, except in small claims court.[3] Subject to an age exception, a valid opt-out &amp; &quot;nonwaivable statutory rights&quot;, disputes proceed &quot;solely on an individual basis&quot;.[3]<br>A user may opt out by emailing a notice titled &quot;Opt-Out Notice&quot; to [email protected] within 30 calendar days &quot;after you first accept these Terms&quot; or within 30 calendar days &quot;after a material change to the Opt-Out Provisions takes effect&quot;.[3] Section 10 caps ID.me&#x27;s aggregate liability at $1,000.00 &quot;To the extent allowed by law&quot;.[3]<br>Version 10.0.3, dated March 3, 2023, had the same cap, &amp; its notice listed &quot;A BINDING ARBITRATION CLAUSE AND A CLASS ACTION WAIVER&quot; with no opt-out.[13] The opt-out appears in Version 10.1.0, in a copy last updated September 18, 2025 whose opt-out text matches the November 13, 2026 version.[16][3]<br>Closing a wallet directs ID.me to deactivate the credential &amp; &quot;purge the associated data from active use&quot;, but ID.me &quot;does retain&quot; account &amp; verification history &quot;for up to three (3) years&quot;.[4] Use of the credential with state or federal government agencies &quot;will be stopped&quot; if the account is deleted.[4] Information given &quot;in connection with a public sector agency&quot; for verification &quot;may be retained for up to three (3) years after wallet closure&quot;, &quot;unless applicable regulations require a shorter retention period&quot;.[4]<br>ID.me reserves the right to keep data from &quot;certain high-risk transactions, particularly in government and healthcare settings&quot;, &quot;exclusively for fraud prevention and government audit purposes&quot;.[4] The policy says biometric deletion requests &quot;may be subject to an internal investigation prior to completion&quot;, &quot;where determined as necessary to protect the platform against fraud&quot;, followed by &quot;ID.me reserves the right to decline such requests&quot;.[4]<br>Marketplace reported that Kim said ID.me can keep a user&#x27;s data for up to three years even after a deletion request.[15]<br>| ID.me Privacy Policy clauses, earlier and current |  |  |<br>|---|---|---|<br>| Clause | Earlier: Privacy Policy Version 7.1.5, dated December 1, 2023[17] | Current: Privacy Policy Version 7.1.8, dated November 2, 2026[4] |<br>|---|---|---|<br>| Marketing use of information | Included[17] | Included[4] |<br>| Disclosure or transfer in a corporate transaction | Included, in the same two sentences as the current text[17] | Included[4] |<br>ID.me&#x27;s Privacy Policy adds after its marketing clause:<br>Please note, if you are using ID.me Services in connection with legal identity verification for a state or federal government agency, or in association with Electronic Prescriptions for Controlled Substance Services, ID.me does not use any Personal Information provided as part of your verification for any type of marketing or promotional purposes related to ID.me Shop without your consent, or unless you otherwise use your ID.me credential for verification with any ID.me customer who is not a state or federal government agency customer, use your ID.me wallet in connection with ID.me Shop, ID.me Jobs, or ID.me Rx, or otherwise opt-in to receiving marketing communications from ID.me.[4]<br>ID.me&#x27;s policy says the company &quot;may share&quot; a user&#x27;s name, date of birth &amp; contact details for reporting with the government agency the user verifies for, &amp; that verifying &quot;constitutes consent&quot; to it.[4] Terms of Service 10.1.0, dated September 18, 2025 &amp; November 13, 2026, &quot;do not provide consent to marketing calls or text messages&quot;.[16][3]<br>The August 18, 2026 IRS help page said ID.me &quot;will not share, sell, rent or trade&quot; personally identifiable information &quot;with other parties, except to verify your identity and eligibility&quot;;[18] the October 29, 2026 version points readers to &quot;their privacy policies at Login.gov and IDMe&quot;.[2]<br>The IRS help page last reviewed or updated on October 29, 2026 says that &quot;The U.S. government maintains the Login.gov system&quot;, &amp; that taxpayers who cannot verify their identity with one provider should &quot;try the other provider&quot;.[2] The version last reviewed or updated on August 18, 2026 named only ID.me as the sign-in account.[18] The IRS sign-in page says to &quot;choose ID.me&quot; for anyone who does not have &quot;an SSN, U.S. address, and smartphone, or tablet with a camera&quot;, SSN being a Social Security number.[1]<br>Login.gov is provided by the federal General Services Administration (GSA).[19] Login.gov&#x27;s privacy page says a user who creates an account &amp; verifies their identity consents to Login.gov &quot;collecting, using, keeping, and sharing your personal information&quot; as its policies describe, &quot;including to verify your identity and to help detect and prevent fraud&quot;.[20]<br>Login.gov&#x27;s Rules of Use say customer-support feedback may be used &quot;for other purposes as we see fit, such as for marketing&quot;, though Login.gov &quot;will not reveal your personal information outside of the Login.gov service&quot; except &quot;as required by applicable law or as stated elsewhere in these terms&quot;.[19] They also say disputes &quot;shall be governed by federal law&quot; &amp; that no fees are charged for registering or using the service.[19] In a 2026 blog post, GSA wrote that Login.gov&#x27;s privacy protections let people access government services &quot;without their information being used for commercial purposes&quot;.[21]<br>Direct Pay, the IRS service for paying taxes from a bank account, lists &quot;No sign-in required&quot;; people who have never filed, or who last filed over six years ago, are told they &quot;can pay another way&quot;.[6] Taxpayers who cannot register online can have a tax return or tax account transcript mailed; the IRS lists &quot;transcripts of past tax returns&quot; &amp; &quot;tax account information&quot; among their tax records.[22]<br>ID.me became available for TreasuryDirect logins on September 13, 2026 &amp; replaced the traditional TreasuryDirect login on October 28, 2026.[7] TreasuryDirect says Login.gov &quot;cannot be used to log in to your TreasuryDirect account&quot;, &amp; a user who declines to let ID.me share their verified identity information cannot log in.[7] Its FAQ states neither TreasuryDirect nor ID.me &quot;sells, rents, or shares your personal information with third parties for marketing or advertising purposes&quot;.[7] An ID.me spokesman wrote to Marketplace, &quot;We do not sell, rent, or trade users’ personal information&quot;.[15]<br>On October 29, 2026, Senate Finance Committee Ranking Member Ron Wyden, D-Ore., &amp; Senate Banking, Housing, and Urban Affairs Committee Ranking Member Elizabeth Warren, D-Mass., demanded that Treasury halt &quot;a rushed transition&quot; to ID.me for Americans trying to access their savings bonds online.[8] The senators wrote:<br>Americans should not have to provide sensitive personal information to ID.me as the price of accessing essential government services when a secure government-operated alternative is available[8]<br>They asked the agencies to delay the ID.me requirement until after the 2027 tax filing deadline.[8]<br>Their letter, dated October 27, 2026, said federal law requires agencies to implement &quot;a single sign-on trusted identity platform&quot; developed by the General Services Administration, citing 6 U.S.C. § 1523(b)(1)(D).[23] It said ID.me was awarded a five-year agreement with a ceiling of more than $1 billion for identity verification, authentication, and fraud prevention services.[23] The letter requested a response by November 9, 2026.[23]<br>Trade publication Biometric Update reported that two Treasury orders for ID.me subscriptions were placed under &quot;a five-year Treasury blanket purchase agreement for ID.me identity verification and authentication services&quot; with &quot;a ceiling of approximately $1.03 billion&quot;, and that &quot;Federal procurement records show about $93 million obligated against the vehicle so far&quot;.[24]<br>An August 31, 2026 memorandum from the Office of Management and Budget, M-26-18, says agencies offering other identity solutions must promote Login.gov as the default option for new account creation &quot;for any user population that Login.gov is able to serve&quot;.[25] The IRS said in an emailed statement, quoted by news site FedScoop, that &quot;Taxpayers can use Login.gov or ID.me&quot; ahead of the 2027 filing season.[26]<br>- ↑ 1.0 1.1 1.2 1.3 &quot;Sign in or create an account&quot;. Internal Revenue Service. Retrieved 2026-11-16.<br>- ↑ 2.0 2.1 2.2 2.3 2.4 2.5 &quot;Creating an account for IRS.gov&quot;. Internal Revenue Service. 2026-10-29. Archived from the original on 2026-11-16. Retrieved 2026-11-16.<br>- ↑ 3.00 3.01 3.02 3.03 3.04 3.05 3.06 3.07 3.08 3.09 3.10 3.11 3.12 3.13 3.14 3.15 &quot;Terms and Conditions&quot;. ID.me. 2026-11-13. Archived from the original on 2026-11-13. Retrieved 2026-11-16.<br>- ↑ 4.00 4.01 4.02 4.03 4.04 4.05 4.06 4.07 4.08 4.09 4.10 4.11 4.12 4.13 4.14 4.15 &quot;Privacy Policies&quot;. ID.me. 2026-11-02. Archived from the original on 2026-11-08. Retrieved 2026-11-16.<br>- ↑ 5.0 5.1 &quot;ID.me Shop | Exclusive Deals, Discounts &amp; Cash Back Offers&quot;. ID.me. Retrieved 2026-11-16.<br>- ↑ 6.0 6.1 &quot;Direct Pay with bank account&quot;. Internal Revenue Service. 2026-09-17. Archived from the original on 2026-11-09. Retrieved 2026-11-16.<br>- ↑ 7.0 7.1 7.2 7.3 7.4 &quot;FAQs about ID.me&quot;. TreasuryDirect, U.S. Department of the Treasury. Archived from the original on 2026-11-16. Retrieved 2026-11-16.<br>- ↑ 8.0 8.1 8.2 8.3 &quot;Wyden, Warren Press Treasury and IRS on Rushed Transition to ID.me for Savings Bond Investors&quot;. United States Senate Committee on Finance. 2026-10-29. Archived from the original on 2026-11-16. Retrieved 2026-11-16.<br>- ↑ &quot;New online identity verification process for accessing IRS self-help tools&quot;. Internal Revenue Service. 2021-12-07. Archived from the original on 2026-10-13. Retrieved 2026-11-16.<br>- ↑ &quot;IRS announces transition away from use of third-party verification involving facial recognition&quot;. Internal Revenue Service. 2022-02-07. Archived from the original on 2026-11-16. Retrieved 2026-11-16.<br>- ↑ &quot;IRS Statement — New features put in place for IRS Online Account registration; process strengthened to ensure privacy and security&quot;. Internal Revenue Service. 2022-02-21. Archived from the original on 2026-11-16. Retrieved 2026-11-16.<br>- ↑ &quot;Privacy Policy&quot;. ID.me. 2026-05-07. Archived from the original on 2026-10-30. Retrieved 2026-11-16.<br>- ↑ 13.0 13.1 &quot;Terms of Service&quot;. ID.me. 2023-03-03. Archived from the original on 2026-11-02. Retrieved 2026-11-16.<br>- ↑ &quot;ID.me Identity Gateway Credential Policy&quot; (PDF). ID.me. 2024-07-01. Archived from the original (PDF) on 2025-09-03. Retrieved 2026-11-16.<br>- ↑ 15.0 15.1 15.2 Janet Nguyen (2026-11-06). &quot;What you should know about the new I Bond rate and the Treasury&#x27;s new login process&quot;. Marketplace. Retrieved 2026-11-16.<br>- ↑ 16.0 16.1 &quot;Terms and Conditions&quot;. ID.me. 2025-09-18. Archived from the original on 2026-11-05. Retrieved 2026-11-16.<br>- ↑ 17.0 17.1 17.2 &quot;Privacy Policy&quot;. ID.me. 2023-12-01. Archived from the original on 2024-01-10. Retrieved 2026-11-16.<br>- ↑ 18.0 18.1 &quot;Creating an account for IRS.gov&quot;. Internal Revenue Service. 2026-08-18. Archived from the original on 2026-10-07. Retrieved 2026-11-16.<br>- ↑ 19.0 19.1 19.2 &quot;Rules of Use&quot;. Login.gov, General Services Administration. Archived from the original on 2026-11-06. Retrieved 2026-11-16.<br>- ↑ &quot;Privacy &amp; security&quot;. Login.gov, General Services Administration. Archived from the original on 2026-11-06. Retrieved 2026-11-16.<br>- ↑ &quot;Login.gov Strengthens Service for the Public and Agency Partners Ahead of 10-year Milestone&quot;. U.S. General Services Administration. 2026-08-03. Retrieved 2026-11-16.<br>- ↑ &quot;Get your tax records and transcripts&quot;. Internal Revenue Service. 2026-06-27. Archived from the original on 2026-11-11. Retrieved 2026-11-16.<br>- ↑ 23.0 23.1 23.2 Ron Wyden; Elizabeth Warren (2026-10-27). &quot;Letter to Bessent and Bisignano on ID.me&quot; (PDF). Office of Senator Ron Wyden. Archived from the original (PDF) on 2026-10-29. Retrieved 2026-11-16.{{cite web}}:  CS1 maint: multiple names: authors list (link)<br>- ↑ Anthony Kimery (2026-10-30). &quot;US Treasury makes ID.me mandatory as federal policy shifts toward Login.gov&quot;. Biometric Update. Retrieved 2026-11-16.<br>- ↑ Russell T. Vought (2026-08-31). &quot;M-26-18: Scaling Use of Login.gov to Deliver a Universal Sign-on for Public Services&quot; (PDF). Office of Management and Budget. Archived from the original (PDF) on 2026-11-16. Retrieved 2026-11-16.<br>- ↑ Matt Bracken (2026-10-29). &quot;Treasury, IRS use of third-party ID verification under fire from top Senate Finance, Banking Dems&quot;. FedScoop. Archived from the original on 2026-11-16. Retrieved 2026-11-16.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: PortalKinetic – Clear your head and leave with one next move
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    sprasain
+  </div>
+
+  <div class="meta">
+    portalkinetic.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #15
+  </div>
+
+  <div class="links">
+    <a href="https://www.portalkinetic.com">Original article</a> · <a href="https://news.ycombinator.com/item?id=50541116">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: UK Equivalent for Power Switch Tail/IoT Power Relay?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    a2fz
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50538108">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Basically I just want a 230 volt relay that I can turn on/off with a Raspberry Pi/Ardunio, but I don&#x27;t feel confident enough to tinker with mains electricity myself. I saw the Powerswitch tail 2 (https://www.adafruit.com/product/268) a while ago, which has been discontinued but replaced with the IoT Power Relay (https://www.adafruit.com/product/2935). Both look great, the problem is that they&#x27;re only made for US plugs at American voltage and I want something I can use with a UK plug. Anyone know of anything for this?<br>I have a few Wi-Fi smart plugs but I&#x27;d like something simple that I can hardwire and control myself without any wireless connectivity. Just a pre-made relay cable. This feels like something I should be able to easily find online but I guess I&#x27;m just bad at googling?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    The TRMNL Frame Is a Gorgeous 31.5-Inch ePaper Picture Frame
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    CharlesW
+  </div>
+
+  <div class="meta">
+    petapixel.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://petapixel.com/2026/11/17/the-trmnl-frame-is-a-gorgeous-31-5-inch-epaper-picture-frame/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50541309">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">TRMNL, best known for its ePaper screens, is launching a new product that photographers may find particularly appealing. TRMNL Frame is the company’s biggest product to date: a 31.5-inch ePaper display built for showcasing art, including photography, in style.<br>ePaper picture frames are becoming increasingly common. Just last week, Aura released the Ink 10″, its latest digital picture frame featuring an E Ink screen. Last year, InkPoster arrived in sizes from 13.3 to 31.5 inches, the latter of which matches what TRMNL is doing with Frame.<br>As TRMNL explains, Frame uses E Ink Spectra 6 technology, powered by TRMNL’s in-house Lazarus color conversion engine. E Ink Spectra 6 has six base colors—black, white, red, yellow, blue, and green—and supports up to three additional custom colors. TRMNL says it will release its dithering algorithms as open-source code, too, so people can tinker with Frame for their own applications.<br>Since it’s designed to beautifully showcase artwork in the home, Frame needs a frame to match. It comes in a handmade wooden body built by TRMNL itself. The company says it opened a woodshop a few miles from its American headquarters for this new product.<br>TRMNL says Frame will be available with multiple types of wood, including walnut, white oak, sapele, “and beyond.”<br>Frame can be hung in portrait or landscape orientation without any additional hardware and also supports tabletop display via a kickstand.<br>TRMNL says it’s working with developers on several notable features, including an online art platform where people can submit their work and sell it through TRMNL. Frame is network-connected, of course, although users can also display images via a microSD card. The device recharges via USB-C and, since it’s ePaper, will have an extremely long battery life. It will effectively be a wireless digital picture frame.<br>As Engadget reports, Frame will begin shipping later this year or in early 2027, and the first batch will comprise around 470 units. Frame will cost $1,300.<br>ePaper displays have come a long way in recent years, and while they still cannot match the color reproduction and sharpness of a traditional LCD panel, they do come significantly closer to replicating the look of a paper print. For photographers, there’s a lot to like about the idea of displaying photos on ePaper, especially as dithering algorithms improve.<br>Image creditsTRMNL<br>Affiliate Disclosure PetaPixel articles may include affiliate links; we may earn a commission if you buy through one.</div>
+</div>
+
+</div>
+
+</body>
+</html>
