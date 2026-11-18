@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-19 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-19 AM · Generated 2026-11-19 02:16 CST</div><div class="issue-sub">Stories 10 · Full 3</div><div class="issue-sub">Sources: botshub.com, cs.cmu.edu, exitpath-ruddy.vercel.app, microsoft.ai, nebusec.ai, news.ycombinator.com, openai.com, rshekhar.com, wiz.io</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Pre-auth RCE in Nginx HTTP/2 handling
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    409 points ·
+    137 comments ·
+    speedping
+  </div>
+
+  <div class="meta">
+    wiz.io
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #21
+  </div>
+
+  <div class="links">
+    <a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">Original article</a> · <a href="https://news.ycombinator.com/item?id=50547374">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Wiz Research, Ikotas Labs, Metnir, Rapid7, and Xint independently uncovered two critical remote code execution vulnerabilities in NGINX, software used to receive and route traffic to production applications and APIs.<br>Successful exploitation could let attackers take control of affected NGINX servers, steal sensitive data, tamper with websites, or disrupt services.<br>The vulnerabilities, tracked as CVE-2026-123633 and CVE-2026-123007, are both rated Critical, with a CVSS 4.0 score of 9.2. The flaws are in NGINX itself. Websites and APIs can be exposed even when their own application code is secure. Both vulnerabilities require HTTP/2 to be enabled on the affected NGINX server. Additional conditions are described below. CVE-2026-123007 affects versions dating back to NGINX 1.9.5 in 2015.<br>We reported our findings to F5, the company behind NGINX, and collaborated with its security team on remediation and coordinated disclosure. Organizations should identify affected deployments and apply the security updates when released.<br>We recommend updating affected NGINX deployments to the latest release which includes multiple security fixes.<br>Responsible disclosure timeline<br>October 21, 2026: Wiz reports the HTTP/2 use-after-free vulnerability, later assigned CVE-2026-123633, to F5, including confirmed remote code execution with an ASLR bypass and a proposed fix. F5 confirms that another research team had previously reported the same vulnerability.<br>November 10, 2026: F5 supplies a patch for CVE-2026-123633 for review.<br>November 16, 2026: Wiz reports the second HTTP/2 vulnerability, later assigned CVE-2026-123007, to F5.<br>November 17, 2026: F5 confirms that the second report matches CVE-2026-123007 and is included in the planned November 18 security release.<br>November 18, 2026: F5 security release and coordinated public disclosure.<br>Overview<br>Wiz Research, Ikotas Labs, Metnir, Rapid7, and Xint independently uncovered CVE-2026-123633 and CVE-2026-123007, two critical unauthenticated remote code execution vulnerabilities in NGINX, and reported them to F5, the company behind NGINX. Successful exploitation can compromise the server running NGINX, allowing attackers to execute code, steal sensitive data, tamper with websites, or disrupt services.<br>NGINX often handles traffic for several applications, so a single affected deployment can put multiple services at risk. The flaws are in NGINX itself and can affect websites even when their own application code is secure. Both vulnerabilities require HTTP/2 to be enabled on the affected NGINX server. Our testing of CVE-2026-123007 demonstrated code execution on NGINX serving ordinary static files, without a backend application or third-party modules.<br>Wiz Research used Wiz Atlas, the harness powering Wiz’s AI Code scanning solution, to discover both vulnerabilities. Our researchers used Gemini 4 Carbon and ChatGPT 5.6 Sol to validate the impact of both vulnerabilities, confirming that each could allow an unauthenticated attacker to execute code on the server. We reported our findings to F5 and worked with its security team on remediation and coordinated disclosure.<br>The integer underflow vulnerability dates back to NGINX 1.9.5 in 2015, meaning it had been hiding in the code for more than a decade. The use-after-free vulnerability had been there for nearly six years. Like the PHP2Shell vulnerabilities we reported last month and Java4Shell, disclosed yesterday by Calif, these are memory-safety flaws that have historically been extremely difficult to discover and exploit. Finding them often requires tracing subtle interactions between memory operations and multiple code paths. For years, that complexity itself created a practical barrier. AI is fundamentally dissolving that barrier. As AI models get better at following those interactions, both researchers and attackers can uncover longstanding flaws in software that powers the internet and modern applications. The fact that multiple independent research teams uncovered the same vulnerabilities in both PHP and NGINX, after they had remained in the code for years, makes this shift particularly striking. And as AI capabilities advance, each new generation of models may uncover even more complex vulnerabilities that were previously beyond practical reach. Complexity can no longer be relied upon as a barrier to discovery or exploitation. This changes not only which vulnerabilities can be found, but how quickly longstanding risks can become real threats.<br>Over time, finding and fixing these flaws can harden the software we all depend on. In the near term, faster discovery and a shorter window between disclosure and exploitation add to an already demanding workload for security teams. Turning a published fix into protection in production still takes substantial manual work, from validating patches to coordinating rollouts with service owners. We recommend focusing on how quickly you can reduce exposure in production. Identify deployments running the affected version and configuration, prioritize those an attacker can reach, and apply mitigations while patches are tested and rolled out.<br>In this post, we explain the vulnerabilities and their impact, and provide mitigation and detection guidance. Organizations should identify affected deployments and apply the security updates as soon as they are available. If upgrading is not immediately possible, temporarily disable HTTP/2.<br>NGINX can also serve web content directly and act as a load balancer, distributing traffic across multiple servers. A single NGINX deployment can serve several applications, making it a shared entry point for the websites and APIs behind it.<br>The Vulnerabilities<br>Both vulnerabilities are memory-safety issues in how NGINX handles HTTP/2 traffic. In CVE-2026-123633, a connection&#x27;s memory is freed while a request still needs it, creating a use-after-free. In CVE-2026-123007, incorrect flow-control accounting leads to an invalid memory copy. Each can lead to unauthenticated remote code execution on the NGINX server.<br>Tracking ID<br>The bug<br>What an attacker can achieve<br>CVE-2026-123633<br>HTTP/2 connection use-after-free<br>Execute arbitrary code on the NGINX server without authentication.<br>CVE-2026-123007<br>HTTP/2 send_window integer underflow<br>Execute arbitrary code on the NGINX server without authentication.<br>Both vulnerabilities require HTTP/2 to be enabled, but their additional requirements differ. CVE-2026-123633 affects reverse-proxy processing when available connection slots run low. CVE-2026-123007 can also affect NGINX serving content directly, as demonstrated in our testing over HTTPS on 64-bit systems. Typical memory safety mitigations such as ASLR do not protect against these issues, as attackers can use either vulnerabilities for memory read access prior to code execution.<br>Impact<br>On affected NGINX versions with HTTP/2 enabled, these vulnerabilities can allow an unauthenticated attacker to execute arbitrary code on the server.<br>The flaws are in NGINX itself. Exploitation does not depend on a bug in the website or API behind it, so applications with secure code can still be exposed. For CVE-2026-123007, we demonstrated remote code execution on a server serving ordinary static files, without a backend application or third-party module.<br>An attacker could use this access to run commands, steal sensitive data, tamper with websites, or disrupt services. Because one NGINX deployment can serve several applications, the impact could extend across multiple websites and APIs.<br>Coordinated disclosure<br>We reported both vulnerabilities to F5 and collaborated with its security team on remediation and coordinated disclosure. We also shared proposed fixes. Ikotas Labs, Metnir, Rapid7, and Xint also independently discovered and reported these issues to F5. We thank the F5 and NGINX teams for their work on the fixes.<br>Mitigation and detection<br>Identify affected NGINX deployments with HTTP/2 enabled and upgrade to a release that fixes both vulnerabilities as soon as it is available.<br>Product<br>CVE and first affected version or branch<br>Fixed releases<br>NGINX OSS<br>CVE-2026-123633: 1.19.7<br>1.30.7 stable; 1.31.9 mainline<br>NGINX Plus<br>CVE-2026-123633: R33; 37.0.0<br>37.0.7.1; 37.2.0.1<br>NGINX OSS<br>CVE-2026-123007: 1.9.5<br>1.30.7 stable; 1.31.9 mainline<br>NGINX Plus<br>CVE-2026-123007: R33; 37.0.0<br>37.0.8.1; 37.3.0.1<br>If you cannot upgrade immediately, temporarily disable HTTP/2 on affected NGINX instances:<br>Test application compatibility, reload NGINX, and confirm the old workers have exited.<br>Re-enable HTTP/2 after upgrading.<br>Investigate unexpected NGINX worker crashes or commands launched by NGINX; these are general warning signs, not confirmed indicators of these vulnerabilities.<br>Technical deep dive<br>CVE-2026-123633: An active connection marked as reusable<br>NGINX keeps a list of connections that it can close when it needs room for new ones. An HTTP/2 connection can join this list when it has no active requests, but must leave it when a request starts.<br>We start by sending only part of a HEADERS frame, which carries an HTTP/2 request&#x27;s headers. With no active request streams,ngx_http_v2_handle_connection() marks the connection as reusable while waiting for the rest:<br>ngx_reusable_connection(c, 1);<br>if (h2c-&gt;state.incomplete) {<br>return;<br>}<br>When we send the rest of the frame,ngx_http_v2_create_stream() creates a request stream and increments h2c-&gt;processing. However, it does not remove the connection from the reusable list. We now have a request being processed on a connection that NGINX still considers safe to close.<br>Triggering the use-after-free<br>Next, we need NGINX to close this connection while the request is still running. Forwarding the request to an application server can trigger this.<br>Opening an upstream connection calls ngx_get_connection(). When free connection slots run low, ngx_drain_connections()selects reusable connections to close. Our HTTP/2 connection is still on that list, so NGINX can select it while processing its own request.<br>Before closing it, NGINX tries to send a GOAWAY frame to notify the client. Even creating this frame can fail, for example, if NGINX has reached its internal frame limit for the connection and has no frame available for reuse. In that case, the error path closes the connection and frees the memory associated with it. Processing then resumes in the original request, which still uses that memory. We have reached the use-after-free.<br>From use-after-free to remote code execution<br>The freed memory can now be reused for other data. The request-processing code still follows its old pointers, treating the new contents as the original request or connection.<br>This use-after-free can lead to unauthenticated remote code execution on the NGINX server.<br>HTTP/2 allows several requests, called streams, to share one connection. Flow control limits how much response data NGINX can send before the client is ready to receive more. NGINX tracks the connection&#x27;s remaining allowance in a counter called h2c-&gt;send_window.<br>When NGINX queues response data, it subtracts that data&#x27;s size from the counter before sending it. If a stream is canceled while its data is still queued, ngx_http_v2_filter_cleanup() removes the unsent data and returns the unused allowance:<br>h2c-&gt;send_window += window;<br>This refund does not check HTTP/2&#x27;s maximum allowed window. If the client has already increased the allowance while data was waiting to be sent, the refund can push the counter above that maximum. NGINX is now tracking a value the rest of its HTTP/2 code assumes cannot occur.<br>A bounds check that no longer works<br>The next problem is in ngx_http_v2_state_window_update(), which checks whether an increase would exceed the limit:<br>if (window &gt; NGX_HTTP_V2_MAX_WINDOW - h2c-&gt;send_window)<br>The check subtracts the current allowance from the maximum to calculate how much room remains. But the refund has already pushed the allowance past that maximum. Because the calculation uses an unsigned integer, which cannot represent a negative number, the subtraction wraps around and underflows to a very large positive value. The check now treats an invalid counter as though it has plenty of room left and allows further increases.<br>From an invalid length to remote code execution<br>The invalid counter eventually reaches ngx_http_v2_send_chain(), where it is converted to the signed integer type off_t to calculate how much data to send. A sufficiently large value becomes negative. That negative length then reaches the code that describes a portion of a response buffer, leaving its end pointer before its start pointer.<br>When the TLS send path in ngx_ssl_send_chain() processes this malformed buffer, further signed and unsigned conversions turn the invalid length into an out-of-bounds memory copy. An attacker can use this to disclose memory, corrupt the heap, and lead to unauthenticated remote code execution on the NGINX server.<br>We confirmed remote code execution with an ASLR bypass on official NGINX 1.31.7 and 1.31.8 builds. The tested path used HTTP/2 over TLS on 64-bit systems serving response data from memory. Ordinary static files can reach this path through standard TLS processing, without a backend application or third-party module.<br>Exploitation<br>To confirm these vulnerabilities, Wiz Research built proof-of-concept exploits and managed to run them in multiple lab settings against servers running common NGINX configurations we’ve seen in customer environments. In the interest of customer protection, we will not be releasing these exploits at this time.<br>Like other memory-safety issues, such vulnerabilities are difficult to exploit remotely and require the attacker to disclose memory addresses, groom and shape the heap correctly, and handle different NGINX versions, builds, and configurations. In reality, attackers may not need to target every single configuration, and we have seen in PHP2Shell that widespread attacks initially start against packaged products where many customers use the exact same build and configuration. Motivated attackers may tailor exploits for specific targets.<br>Any exploit assumes the attacker is able to communicate directly with the affected NGINX server. CDNs and WAFs that terminate HTTP/2 may mitigate parts of the exploit by not reflecting the exact payload back to the underlying NGINX server. This depends on implementation.<br>Specifically, CVE-2026-123007 requires the attacker to send a large number of WINDOW_UPDATE records to increase it to an arbitrary value. Detection rules covering long standing HTTP/2 connections sending large amounts of data may hint at an attack associated with this vulnerability. CVE-2026-123633 has different exploitation constraints and is more likely to be exploited when NGINX is configured in proxy configuration.<br>How Can Wiz Help?<br>Wiz customers can use the pre-built query and advisory in the Wiz Threat Center to search for vulnerable instances in their environment.<br>Conclusion<br>With NGINX handling traffic for critical websites and applications, the impact of flaws in its core extends far beyond a single service. This research is another example of AI uncovering critical vulnerabilities in widely deployed infrastructure. The flaws were already there; AI helped us find them.<br>As we saw with PHP2Shell, AI is changing the economics of vulnerability research. The same capabilities that help defenders uncover flaws can also help attackers investigate them. Software that has been used and reviewed for years still needs to be examined as these tools improve.<br>The opportunity is to make this work routine: finding vulnerabilities in the software organizations depend on and working with maintainers to fix them. Our collaboration with F5 brings that approach to NGINX, helping protect the applications and services behind it.<br>Stay in touch<br>Hi there! We are Nir Ohfeld and Tomer Schwartz from the Wiz Research Team (@wiz_io). We are a group of veteran white-hat hackers with a single goal: to make the cloud a safer place for everyone. We focus on finding new attack vectors in cloud software and uncovering isolation issues in the systems organizations depend on. We would love to hear from you on X or at research@wiz.io.<br>On November 17, 2026 at 20:35 UTC, versions 1.26.1 &amp; 1.26.2 of the Microsoft PyPI package agent-framework were published with an added credential stealer. The package gets almost 200k downloads a month. The malicious versions have since been quarantined.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Show HN: Take Voyager 1 apart, down to a single memory chip
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    44 points ·
+    8 comments ·
+    raj-shekhar
+  </div>
+
+  <div class="meta">
+    rshekhar.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #9
+  </div>
+
+  <div class="links">
+    <a href="https://rshekhar.com/voyager/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50548161">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Voyager 1 reached one light-day from Earth today.<br>On the site you can:<br>- see where both Voyagers are right now<br>- open a nuclear battery to its 24 plutonium spheres<br>- go into the data computer, down to a single memory chip<br>- see how the Golden Record&#x27;s cover explains how to play it<br>- watch how Voyager 1 was fixed by radio<br>- see which dish on Earth is listening to them, live<br>I also made a 4-minute film from it: https://www.youtube.com/watch?v=kpzsRo-c1_A</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Carnegie Mellon is putting computer science courses on YouTube for free
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    2346 points ·
+    319 comments ·
+    pcompeau
+  </div>
+
+  <div class="meta">
+    cs.cmu.edu
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.cs.cmu.edu/learn/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50522980">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: How do you reach the flow with vibe coding?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    3 comments ·
+    varlock
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50548343">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">When I used to code without AI (probably not even one year ago), I sometimes reached a state of &quot;flow&quot; and it truly was a great feeling.<br>Nowadays, I rarely code from scratch and most of my development (at work, at least) comes through AI.<br>I get it that I can still code &quot;the old way&quot; in my free time, but I&#x27;m more curious to understand if people in a similar situation can reach the same state by vibe/AI coding, and how.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    AI chatbots and agents, ranked for your country (sovereignty first)
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    gagan2020
+  </div>
+
+  <div class="meta">
+    botshub.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://botshub.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50549917">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Microsoft AI: Seven new world-class models at scalable price-performance
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    176 points ·
+    116 comments ·
+    gmays
+  </div>
+
+  <div class="meta">
+    microsoft.ai
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #50
+  </div>
+
+  <div class="links">
+    <a href="https://microsoft.ai/news/microsoft-ignite-2026/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50548021">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">MAI Licensed Weights: Frontier performance you control<br>At MAI, our mission is to build you the very best models in the world and keep every developer and every enterprise at the frontier of capability.<br>But as token spend skyrockets, we know that you also want models at a price point that lets you run agents 24-7 doing real engineering work.<br>That’s why today we’re releasing a family of seven new world class models at a truly exceptional price-performance:<br>Here’s the lineup:<br>Security, alignment and containment are the most important priorities for agent development in 2027 and beyond. That’s our top priority. We need to run monitoring and control agents defending and patching live production systems 24-7. That’s why MAI Cyber 2 Flash was designed to deliver frontier intelligence at a fraction of the cost.<br>Built with Microsoft’s decades of proprietary data and world class security expertise, our models help defenders stay safe in this new era where attackers have cheap and abundant offensive tools.<br>MAI Cyber 2 Flash builds on earlier MAI Cyber models that defenders already rely on. MAI Cyber accounts for almost 40% of scans in MDASH, and 90% of scans that started with MAI continued to use it. Our latest model is now priced 86% lower on output tokens than MAI Cyber 1.1 Flash, giving existing MDASH customers a stronger model at a lower price.<br>MAI Code 2 is built for the best price-performance for everyday enterprise coding tasks. Averaged over four widely used benchmarks that target the everyday enterprise coding tasks we see in GitHub Copilot (DeepSWE 1.1, Terminal Bench 2.1, SWE-Atlas and FrontierCode v1.1), MAI Code 2 gives you 98% of the performance of GPT-6.1 Sol at 40% of the price, and 96% of Claude Opus 5.5’s performance at just 5% of the price.<br>We’ve built these models to prioritize the coding work our customers do every day. They’re explicitly not yet tuned for harder problems, like fundamental science research and very long horizon agentic work.<br>MAI Code 2 also been tuned to generate great dashboards and visualizations. In a blind, side-by-side evaluation of frontend work, developers preferred MAI Code 2 over GPT-6 Sol 64% of the time. Try MAI Code 2 in GitHub Copilot today. Read more here.<br>MAI Code 2 Flash is designed for high-volume, everyday tasks like code explanations, targeted edits, routine fixes, and rapid iterations, while bringing quality at a much lower cost. It performs comparably to GPT-6 Luna and Claude Haiku 5.5 at 65% and 20% of the price, respectively, across three coding benchmarks measuring day-to-day, high-volume routine coding tasks (DeepSWE 1.1, Terminal Bench 2.1 and SWE-Atlas). It’s available in GitHub Copilot and in a limited-access preview in Microsoft Foundry.<br>MAI Image 2.7 is the best image editing model in the world, taking the #1 spot on Artificial Analysis, outperforming GPT Image 2.6 Sunburst (max) at just one-fifth of the price. At text-to-image generation, our model is ranked #4, making us the second-best lab. And MAI Image 2.7 Flash brings world class image generation for high-volume scenarios at ~$10 per 1,000 images. Both are available in Microsoft Foundry here.<br>MAI Realtime 1 is our first live speech-to-speech model, designed for natural, low-latency conversations. In our evaluations, it outperformed GPT-Realtime 2.1 across external and Dynamics 365 benchmarks. It’s priced for enterprise-scale use, starting at a budget-saving price of $0.01 per audio minute. You can try it out in MAI Labs and register your interest here.<br>Dragon Copilot Transcribe, built on MAI Transcribe 2, is now live in Dragon Copilot, powering 100% of doctor–patient conversation transcriptions. It covers 10 million encounters a month, halves error rates in multilingual workflows, and is in the hands of a third of US physicians.<br>Decision 1.1 provides model routing integrated right into your applications so that the bigger, pricier models are only used when you really need them. On the AA Decision Index Microsoft is ahead of Jev, Google and OpenAI, while being faster and cheaper. Used by 4,000 customers, it’s 50x faster and 79x cheaper than GPT-6.1 Sol.<br>We’ve heard again and again from leaders that no one wants to pour their IQ into someone else’s model.<br>And if you build on open weights, can you really trust where they came from, or how they’ll behave when you use one as the foundation for your most valuable IP and data?<br>We heard you. We started with Custom Models. AT&amp;T developed an MAI custom model for 5G network operation analytics and it outperformed GPT-6.1 Sol at 50x cheaper cost. On complex scenarios, they found that Code 2 delivered frontier-level performance at a significantly lower price than alternatives.<br>Today, we’re taking a big step forward with MAI Licensed Weights: models under your control.<br>Take a frontier MAI model, customize it using your proprietary data if you want to. Then run it securely in your own Azure environment.<br>You control who can access it. Your data and adaptations stay yours. And we’ll work with you through Frontier Company to deliver the custom model and embed it in your own products and agents.<br>So that’s MAI, a family of world class models with exceptional price performance: the world’s best image editing model; the world’s best transcription model; frontier cyber defense at 2% of the cost; and world class everyday coding models at a price you can scale.<br>And crucially all of it with Your IQ. Your agents. Your weights. All under your control.<br>This is Frontier Intelligence you can trust, from the company you can trust.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    45 points ·
+    5 comments ·
+    zerocool0101
+  </div>
+
+  <div class="meta">
+    exitpath-ruddy.vercel.app
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #14
+  </div>
+
+  <div class="links">
+    <a href="https://exitpath-ruddy.vercel.app/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50547980">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    GPT‑6.2 Astra and Sol
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1328 points ·
+    841 comments ·
+    jasondavies
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/introducing-gpt-6-2-astra-sol/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50535230">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: How do you use AI to get more relevant content?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    3 points ·
+    2 comments ·
+    anoojb
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50548260">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The &quot;algorithm&quot; tries to give your attention something to eat. Sometimes, it&#x27;s exactly what you want/need. Sometimes it&#x27;s just meh, and not particularly enriching.<br>Are any folks using AI to aggregate and rank content across YouTube, HackerNews, Twitter/X, Instagram etc. that&#x27;s learns from your preferences to find enriching content not just entertaining content?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Lessons from Telegram&#x27;s RCE
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    shcallaway
+  </div>
+
+  <div class="meta">
+    nebusec.ai
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://nebusec.ai/research/telegram-widget-hardening/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50549903">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">On Nov. 10, Telegram CEO Pavel Durov announced that any Telegram message can now become an app. A day later, a message became remote code execution instead. Telegram patched it with a seccomp filter, and two days after that we bypassed the filter.<br>Two exploits in four days suggest the issue is architectural, and that it needs more than another patch. So this post does two things. It recaps what happened, and it shows how to run JavaScript inside a chat message properly, using the hardened design we built.<br>Summary<br>Running third-party code inside a messenger is the same problem browsers face, and their answers carry over:<br>- Assume the engine is already compromised, and design for what the attacker holds next.<br>- Run it outside the process that holds accounts, messages and keys.<br>- Confine it inside that process with SFI, one instance per widget.<br>- Treat everything it says as tainted until the host validates it.<br>- Make seccomp an allowlist, and remember it can’t fix the kernel behind the calls it allows.<br>With those layers in place, an engine bug should end as a crashed widget instead of a compromised account. The same list applies to any app that runs code arriving in a message, a document or a file.<br>Four Days, Two Exploits<br>| Date | What happened |<br>|---|---|<br>| Nov. 10 | Pavel Durov announces the feature: Any Telegram message can now become an app. |<br>| Nov. 11 | V12 posts a video showing that any Telegram message can turn into RCE. |<br>| Nov. 12 | Telegram adds a seccomp filter to address the problem and makes the feature allowlist-only. |<br>| Nov. 14 | We demonstrate that the seccomp filter can be bypassed. |<br>If you missed it: Widgets arrived with Bot API 10.4. A widget is a small HTML document that a bot sends inside a message, and Telegram runs its JavaScript on your device in QuickJS, a compact engine written in C.<br>The attacker is anyone who can register a bot. The input is a full programming language.<br>The Sandbox That Wasn’t<br>Telegram’s documentation describes the widget sandbox as a set of JavaScript-level rules: no network access, checked page changes, and caps on CPU and memory.<br>Those rules live in the engine’s own code. One use-after-free or out-of-bounds write in QuickJS, and the script is reading and writing process memory. The rules stop mattering.<br>That is how the first release fell. At launch the engine ran on a thread inside the Telegram app, so an engine bug ran with everything the app holds.<br>The Nov. 12 fix moved the engine into its own process and put a seccomp filter on it. That was a real step forward, and it still wasn’t enough:<br>- The seccomp rules are a denylist. The filter names roughly 30 calls, such as ptrace, bpf and mount. Everything else goes through, including every ioctl.<br>- One process serves every widget. The app manifest says so in a comment. A compromised widget from one bot shares an address space with every other bot’s widgets.<br>- Nothing confines QuickJS inside that process. The engine sits in one native library with the validator and the renderer. A bug in the engine is a bug in everything next to it.<br>Seccomp decides which calls are permitted. It can’t make the permitted implementations safe.<br>We reached code execution outside the seccomp filter in two independent ways. The first uses a widget vulnerability that seccomp does not cover to get RCE directly. The second chains two vulnerabilities, a widget vulnerability that seccomp does cover and a kernel vulnerability, to break through seccomp. Given how the current implementation works, both paths admit many variants that would yield further bugs, so we are holding the details for now.<br>The lesson for anyone shipping a script engine: Assume the engine is already compromised, and design for what the attacker holds next.<br>NebuSec Hardening for the Widget Runtime<br>Pointing out gaps is only useful if we can also show how to close them, so we built a hardened version of the widget runtime.<br>The goal is to strike a balance between flexibility, security and high performance. Our hardened widget runtime puts three boundaries around QuickJS:<br>- A dedicated process. Widget JavaScript runs in an Android isolated service and reaches Telegram only through explicit, validated instructions, with stricter seccomp rules on top.<br>- Software fault isolation. QuickJS is compiled with a constrained memory and execution model that confines memory corruption to a designated memory region.<br>- A tainted boundary. RLBox marks every value that leaves the engine as untrusted until the host validates it.<br>The rest of this post walks through each choice, starting with the one we didn’t make.<br>Why Not Just Use V8?<br>QuickJS was not designed to run untrusted code. The first option to consider is replacing it with a more battle-tested JavaScript engine, such as V8, SpiderMonkey or JavaScriptCore.<br>How many V8 engines are running on your device?<br>Had we made this decision before 2023, the only drawback might have been the size of these engines. Today, memory read/write primitives inside a complex JavaScript engine are within reach of a wide range of attackers, and a JIT compiler only adds more attack surface. We would be trading substantial storage overhead for little improvement in the isolation guarantees we actually need.<br>If attackers are ultimately destined to acquire arbitrary memory read and write primitives, why not embrace that inevitability and focus instead on fundamentally constraining the reach and capabilities of those primitives? Luckily, modern software development has set a clear path.<br>If It Looks Like a Duck and Quacks Like a Duck<br>Telegram widgets parse HTML, run JavaScript and respond to user interaction. This is the same combination a web browser handles.<br>To be clear, we’re not going to embed an entire browser into an IM application, although some companies have already done that. Instead, we’re borrowing a page from the browser’s architecture.<br>At launch, their biggest shortcoming lay in their approach to isolation: They relied on threads, which provide no memory isolation from the host application, since threads share the same address space.<br>To establish a proper isolation boundary, we run widget JavaScript in an Android isolated service, separate from Telegram’s main process. The isolated process communicates layout changes through explicit instructions. For example, consider the following JavaScript:<br>The widget’s DOM layer records this modification and sends a batch of operations over a Unix domain socket from the isolated engine process. Telegram’s app process validates the batch and forwards accepted operations over a second IPC channel to an isolated LiteHTML renderer. Render output returns to the app, where the native graphics path redraws the widget. User interactions, dimensions and other events travel back through the engine socket to the JavaScript process.<br>Inside the trusted app process, the widget host coordinates those boundaries: one IPC client talks to the engine, a Rust validator checks every returned operation, a second client talks to the renderer, and Skia remains the final native drawing path.<br>So the application keeps its flexibility while QuickJS runs in a dedicated process. What’s more, that process can be further confined with stricter seccomp rules, which limit what attackers can do after gaining code execution in the widget process.<br>Inside that engine process, framed IPC reaches SandboxEngine, which can enter the per-widget QuickJS sandbox only through the RLBox bridge.<br>Stricter means an allowlist built from the calls the service actually makes, with arguments filtered too, ioctl included. A denylist only covers the kernel bugs someone has already thought of.<br>Le Pouvoir Arrête le Pouvoir<br>Power checks power, as Montesquieu put it. Process isolation and seccomp are necessary, but they are not silver bullets. A vulnerability in the kernel code behind an allowed syscall can remain reachable after an attacker compromises QuickJS. Seccomp decides which calls are permitted, but it can’t make the permitted implementations safe.<br>This is where software fault isolation, or SFI, enters the picture.<br>SFI is a way to run a potentially vulnerable component inside a restricted part of a process. The component still executes native machine code, but its memory accesses and indirect calls are constrained. It can’t treat an arbitrary number as a pointer into the rest of the process or as an address to jump to.<br>That distinction matters here. Android process isolation keeps the widget service separate from Telegram’s main process, and seccomp restricts the service’s syscalls. Neither prevents a memory corruption bug in QuickJS from taking control of other native code in the widget service. If that happened, the attacker could try to use syscalls that the service legitimately needs and seccomp therefore permits. SFI places another boundary around QuickJS itself.<br>We’d like to enforce the following rules:<br>- Memory access stays within a specific range of linear memory. We want to transform all absolute memory access into relative access by offset. Even if a corrupted QuickJS state produces an address outside the permitted memory, execution traps instead of accessing the service’s native heap.<br>- Indirect calls have constrained targets. Attackers love gaining arbitrary function calls by abusing indirect calls or dynamic binding mechanisms. One possible approach is turning function calls into function table indexing, where type checking can be applied.<br>WebAssembly offers precisely the execution semantics we require. Our implementation enforces that boundary by compiling the C version of QuickJS to WebAssembly, translating the WebAssembly to C with wasm2c, and compiling the generated C into the Android library.<br>Here is an example. A QuickJS pointer becomes an offset into WebAssembly linear memory. A generated load looks like this:<br>i32_load_default32 checks that the 4-byte read stays in linear memory before accessing memory_base + offset. Depending on the platform, wasm2c uses an explicit bounds check or guarded memory that traps on an invalid access. The offset cannot be used as a raw address into the widget service’s native heap.<br>In the same generated sequence, that loaded value is used as a function table index:<br>Conceptually, CALL_INDIRECT does this:<br>The real implementation has a fast type check and a slower fallback, but it enforces both the table bound and function type before calling. A corrupted index can select a permitted and type-compatible table entry or cause a trap, but it can’t directly call an arbitrary address.<br>SFI doesn’t make QuickJS correct. A memory bug still lets the script corrupt anything inside its own linear memory, and with it everything the engine reports to the host. What changes is where the damage stops.<br>Two bonuses come along. The generated code is portable C, so the same layer works on platforms where an app can’t easily spin up a locked-down helper process. The approach also has production precedent: Firefox has sandboxed libraries such as Hunspell and Ogg the same way since 2021.<br>Bridge the Gap<br>But as always, the devil is in the details. QuickJS doesn’t run a widget entirely on its own. It must receive scripts, return results and call a small set of host functions, and each exchange crosses the SFI boundary. In other words, we have to handle all of this cross-boundary traffic. RLBox is the framework we use to manage that boundary, making sandbox values visibly untrusted and giving the host checked ways to call QuickJS and copy data in and out.<br>RLBox provides an elegant solution to this problem by leveraging the C++ type system to enforce security constraints at compile time.<br>At its core lies a simple yet powerful abstraction: tainted&lt;T&gt;. Any value originating from the sandbox is treated as untrusted, and the host must explicitly validate it before using it in trusted operations. RLBox also mediates pointer conversions, memory transfers and callbacks across the sandbox boundary.<br>Two habits make the boundary stronger:<br>- Keep the list of host functions short. Each function the engine can call is a capability. A widget needs to emit page changes, set timers, read its state and post a request to the bot. It doesn’t need files, sockets or the host’s allocator.<br>- Give each widget its own sandbox instance. Every instance has its own linear memory, so a compromised widget from one bot can’t read another bot’s widget, even inside one process.<br>In short, WebAssembly constrains what QuickJS can access, while RLBox governs how QuickJS interacts with the outside world.<br>The renderer repeats the same containment pattern independently. Its IPC service enters a separate RLBox bridge, and LiteHTML parses and lays out the widget inside its own wasm2c sandbox.<br>Together, these modules preserve the flexibility of native integration without collapsing their isolation boundaries. Zooming out, the complete runtime has three process modules and two explicit IPC relationships:<br>This architecture, however, is by no means a guarantee of security. It merely isolates QuickJS and LiteHTML, while other code paths involved in rendering, such as Skia, remain outside the sandbox’s protection. In fact, we successfully exploited a vulnerability in Skia to achieve arbitrary code execution once again.<br>Conclusion<br>The broader lesson is not that applications can never run untrusted JavaScript; it is that the engine cannot also serve as the security boundary. Start from compromise: isolate the runtime from application secrets, confine each widget’s memory, keep host capabilities narrow and validate every value that crosses back. No layer is perfect, but together they can change the outcome of an engine exploit from application compromise to a contained widget failure.<br>Sources<br>- Telegram, Bot API changelog: Bot API 10.4 and Telegram Widgets documentation<br>- Telegram for Android source, master at version 13.2.2 (7303), read Nov. 15, 2026: AndroidManifest.xml, WidgetEngineService.java, twidget-seccomp.cpp<br>- Mozilla Hacks, WebAssembly and Back Again: Fine-Grained Sandboxing in Firefox 95, Dec. 6, 2021</div>
+</div>
+
+</div>
+
+</body>
+</html>
