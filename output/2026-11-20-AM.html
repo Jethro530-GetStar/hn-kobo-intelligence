@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-20 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-20 AM · Generated 2026-11-20 02:26 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: anthropic.com, countmacula.app, github.com, gregable.com, news.ycombinator.com, openai.com, reuters.com, tabbyml.github.io, wiz.io</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Unauthenticated remote code execution in Nginx
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1472 points ·
+    625 comments ·
+    speedping
+  </div>
+
+  <div class="meta">
+    wiz.io
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #39
+  </div>
+
+  <div class="links">
+    <a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">Original article</a> · <a href="https://news.ycombinator.com/item?id=50547374">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Wiz Research, Ikotas Labs, Metnir, Rapid7, and Xint independently uncovered two critical remote code execution vulnerabilities in NGINX, software used to receive and route traffic to production applications and APIs.<br>Successful exploitation could let attackers take control of affected NGINX servers, steal sensitive data, tamper with websites, or disrupt services.<br>The vulnerabilities, tracked as CVE-2026-123633 and CVE-2026-123007, are both rated Critical, with a CVSS 4.0 score of 9.2. The flaws are in NGINX itself. Websites and APIs can be exposed even when their own application code is secure. Both vulnerabilities require HTTP/2 to be enabled on the affected NGINX server. Additional conditions are described below. CVE-2026-123007 affects versions dating back to NGINX 1.9.5 in 2015.<br>We reported our findings to F5, the company behind NGINX, and collaborated with its security team on remediation and coordinated disclosure. Organizations should identify affected deployments and apply the security updates when released.<br>We recommend updating affected NGINX deployments to the latest release which includes multiple security fixes.<br>Responsible disclosure timeline<br>October 21, 2026: Wiz reports the HTTP/2 use-after-free vulnerability, later assigned CVE-2026-123633, to F5, including confirmed remote code execution with an ASLR bypass and a proposed fix. F5 confirms that another research team had previously reported the same vulnerability.<br>November 10, 2026: F5 supplies a patch for CVE-2026-123633 for review.<br>November 16, 2026: Wiz reports the second HTTP/2 vulnerability, later assigned CVE-2026-123007, to F5.<br>November 17, 2026: F5 confirms that the second report matches CVE-2026-123007 and is included in the planned November 18 security release.<br>November 18, 2026: F5 security release and coordinated public disclosure.<br>Overview<br>Wiz Research, Ikotas Labs, Metnir, Rapid7, and Xint independently uncovered CVE-2026-123633 and CVE-2026-123007, two critical unauthenticated remote code execution vulnerabilities in NGINX, and reported them to F5, the company behind NGINX. Successful exploitation can compromise the server running NGINX, allowing attackers to execute code, steal sensitive data, tamper with websites, or disrupt services.<br>NGINX often handles traffic for several applications, so a single affected deployment can put multiple services at risk. The flaws are in NGINX itself and can affect websites even when their own application code is secure. Both vulnerabilities require HTTP/2 to be enabled on the affected NGINX server. Our testing of CVE-2026-123007 demonstrated code execution on NGINX serving ordinary static files, without a backend application or third-party modules.<br>Wiz Research used Wiz Atlas, the harness powering Wiz’s AI Code scanning solution, to discover both vulnerabilities. Our researchers used Gemini 4 Carbon and ChatGPT 5.6 Sol to validate the impact of both vulnerabilities, confirming that each could allow an unauthenticated attacker to execute code on the server. We reported our findings to F5 and worked with its security team on remediation and coordinated disclosure.<br>The integer underflow vulnerability dates back to NGINX 1.9.5 in 2015, meaning it had been hiding in the code for more than a decade. The use-after-free vulnerability had been there for nearly six years. Like the PHP2Shell vulnerabilities we reported last month and Java4Shell, disclosed yesterday by Calif, these are memory-safety flaws that have historically been extremely difficult to discover and exploit. Finding them often requires tracing subtle interactions between memory operations and multiple code paths. For years, that complexity itself created a practical barrier. AI is fundamentally dissolving that barrier. As AI models get better at following those interactions, both researchers and attackers can uncover longstanding flaws in software that powers the internet and modern applications. The fact that multiple independent research teams uncovered the same vulnerabilities in both PHP and NGINX, after they had remained in the code for years, makes this shift particularly striking. And as AI capabilities advance, each new generation of models may uncover even more complex vulnerabilities that were previously beyond practical reach. Complexity can no longer be relied upon as a barrier to discovery or exploitation. This changes not only which vulnerabilities can be found, but how quickly longstanding risks can become real threats.<br>Over time, finding and fixing these flaws can harden the software we all depend on. In the near term, faster discovery and a shorter window between disclosure and exploitation add to an already demanding workload for security teams. Turning a published fix into protection in production still takes substantial manual work, from validating patches to coordinating rollouts with service owners. We recommend focusing on how quickly you can reduce exposure in production. Identify deployments running the affected version and configuration, prioritize those an attacker can reach, and apply mitigations while patches are tested and rolled out.<br>In this post, we explain the vulnerabilities and their impact, and provide mitigation and detection guidance. Organizations should identify affected deployments and apply the security updates as soon as they are available. If upgrading is not immediately possible, temporarily disable HTTP/2.<br>NGINX can also serve web content directly and act as a load balancer, distributing traffic across multiple servers. A single NGINX deployment can serve several applications, making it a shared entry point for the websites and APIs behind it.<br>The Vulnerabilities<br>Both vulnerabilities are memory-safety issues in how NGINX handles HTTP/2 traffic. In CVE-2026-123633, a connection&#x27;s memory is freed while a request still needs it, creating a use-after-free. In CVE-2026-123007, incorrect flow-control accounting leads to an invalid memory copy. Each can lead to unauthenticated remote code execution on the NGINX server.<br>Tracking ID<br>The bug<br>What an attacker can achieve<br>CVE-2026-123633<br>HTTP/2 connection use-after-free<br>Execute arbitrary code on the NGINX server without authentication.<br>CVE-2026-123007<br>HTTP/2 send_window integer underflow<br>Execute arbitrary code on the NGINX server without authentication.<br>Both vulnerabilities require HTTP/2 to be enabled, but their additional requirements differ. CVE-2026-123633 affects reverse-proxy processing when available connection slots run low. CVE-2026-123007 can also affect NGINX serving content directly, as demonstrated in our testing over HTTPS on 64-bit systems. Typical memory safety mitigations such as ASLR do not protect against these issues, as attackers can use either vulnerabilities for memory read access prior to code execution.<br>Impact<br>On affected NGINX versions with HTTP/2 enabled, these vulnerabilities can allow an unauthenticated attacker to execute arbitrary code on the server.<br>The flaws are in NGINX itself. Exploitation does not depend on a bug in the website or API behind it, so applications with secure code can still be exposed. For CVE-2026-123007, we demonstrated remote code execution on a server serving ordinary static files, without a backend application or third-party module.<br>An attacker could use this access to run commands, steal sensitive data, tamper with websites, or disrupt services. Because one NGINX deployment can serve several applications, the impact could extend across multiple websites and APIs.<br>Coordinated disclosure<br>We reported both vulnerabilities to F5 and collaborated with its security team on remediation and coordinated disclosure. We also shared proposed fixes. Ikotas Labs, Metnir, Rapid7, and Xint also independently discovered and reported these issues to F5. We thank the F5 and NGINX teams for their work on the fixes.<br>Vulnerabilities Addressed in the Release<br>F5&#x27;s security release addresses several other vulnerabilities in NGINX. Below is a summary of these additional CVEs, as well as the two critical HTTP/2 remote code execution flaws detailed in this post (captured in the first two rows of the table):<br>CVE<br>Description<br>Impact<br>CVSS<br>Affected Versions<br>CVE-2026-123007<br>Memory corruption in HTTP/2 flow control<br>Exploitable in default configurations with HTTP/2 enabled<br>9.2<br>1.9.5-1.31.8<br>CVE-2026-123633<br>UAF in HTTP/2<br>Exploitable configured with HTTP/2 as a proxy server<br>9.2<br>1.19.7-1.31.8<br>CVE-2026-121810<br>UAF in HTTP/3<br>Exploitable configured with HTTP/3 as a proxy server<br>9.2<br>1.25.0-1.31.8<br>CVE-2026-123634<br>UAF during response processing in DNS resolver<br>RCE when attacker controls upstream host name<br>9.2<br>0.6.18-1.31.8<br>CVE-2026-113425<br>UAF in mail proxy module<br>RCE when configured as a mail server proxy with auth_http<br>9.2<br>0.5.33-1.31.8<br>CVE-2026-118899<br>Infinite loop while reading client request body<br>Potential denial-of-service when server supports TLS 1.3<br>8.7<br>1.13.0-1.31.8<br>CVE-2026-120993<br>NULL pointer dereference<br>Denial-of-service when configured with proxy_protocol v2<br>6.9<br>1.31.4-1.31.8<br>CVE-2026-125283<br>Buffer overflow when using alias with try_files<br>Theoretical RCE in uncommon nginx.conf configuration<br>6.9<br>0.9.6-1.31.8<br>CVE-2026-123640<br>Insufficient validation in stream ssl_preread<br>SSRF-like access when configured with ssl_preread<br>6.9<br>1.15.2-1.31.8<br>CVE-2026-120967<br>Client certificate bypass<br>Client certificate bypass in specific SNI configurations<br>6.3<br>1.25.5-1.31.8<br>Mitigation and detection<br>Identify affected NGINX deployments with HTTP/2 enabled and upgrade to a release that fixes both vulnerabilities as soon as it is available.<br>Product<br>CVE and first affected version or branch<br>Fixed releases<br>NGINX OSS<br>CVE-2026-123633: 1.19.7<br>1.30.7 stable; 1.31.9 mainline<br>NGINX Plus<br>CVE-2026-123633: R33; 37.0.0<br>37.0.7.1; 37.2.0.1<br>NGINX OSS<br>CVE-2026-123007: 1.9.5<br>1.30.7 stable; 1.31.9 mainline<br>NGINX Plus<br>CVE-2026-123007: R33; 37.0.0<br>37.0.8.1; 37.3.0.1<br>If you cannot upgrade immediately, temporarily disable HTTP/2 on affected NGINX instances:<br>Test application compatibility, reload NGINX, and confirm the old workers have exited.<br>Re-enable HTTP/2 after upgrading.<br>Investigate unexpected NGINX worker crashes or commands launched by NGINX; these are general warning signs, not confirmed indicators of these vulnerabilities.<br>Technical deep dive<br>CVE-2026-123633: An active connection marked as reusable<br>NGINX keeps a list of connections that it can close when it needs room for new ones. An HTTP/2 connection can join this list when it has no active requests, but must leave it when a request starts.<br>We start by sending only part of a HEADERS frame, which carries an HTTP/2 request&#x27;s headers. With no active request streams,ngx_http_v2_handle_connection() marks the connection as reusable while waiting for the rest:<br>ngx_reusable_connection(c, 1);<br>if (h2c-&gt;state.incomplete) {<br>return;<br>}<br>When we send the rest of the frame,ngx_http_v2_create_stream() creates a request stream and increments h2c-&gt;processing. However, it does not remove the connection from the reusable list. We now have a request being processed on a connection that NGINX still considers safe to close.<br>Triggering the use-after-free<br>Next, we need NGINX to close this connection while the request is still running. Forwarding the request to an application server can trigger this.<br>Opening an upstream connection calls ngx_get_connection(). When free connection slots run low, ngx_drain_connections()selects reusable connections to close. Our HTTP/2 connection is still on that list, so NGINX can select it while processing its own request.<br>Before closing it, NGINX tries to send a GOAWAY frame to notify the client. Even creating this frame can fail, for example, if NGINX has reached its internal frame limit for the connection and has no frame available for reuse. In that case, the error path closes the connection and frees the memory associated with it. Processing then resumes in the original request, which still uses that memory. We have reached the use-after-free.<br>From use-after-free to remote code execution<br>The freed memory can now be reused for other data. The request-processing code still follows its old pointers, treating the new contents as the original request or connection.<br>This use-after-free can lead to unauthenticated remote code execution on the NGINX server.<br>HTTP/2 allows several requests, called streams, to share one connection. Flow control limits how much response data NGINX can send before the client is ready to receive more. NGINX tracks the connection&#x27;s remaining allowance in a counter called h2c-&gt;send_window.<br>When NGINX queues response data, it subtracts that data&#x27;s size from the counter before sending it. If a stream is canceled while its data is still queued, ngx_http_v2_filter_cleanup() removes the unsent data and returns the unused allowance:<br>h2c-&gt;send_window += window;<br>This refund does not check HTTP/2&#x27;s maximum allowed window. If the client has already increased the allowance while data was waiting to be sent, the refund can push the counter above that maximum. NGINX is now tracking a value the rest of its HTTP/2 code assumes cannot occur.<br>A bounds check that no longer works<br>The next problem is in ngx_http_v2_state_window_update(), which checks whether an increase would exceed the limit:<br>if (window &gt; NGX_HTTP_V2_MAX_WINDOW - h2c-&gt;send_window)<br>The check subtracts the current allowance from the maximum to calculate how much room remains. But the refund has already pushed the allowance past that maximum. Because the calculation uses an unsigned integer, which cannot represent a negative number, the subtraction wraps around and underflows to a very large positive value. The check now treats an invalid counter as though it has plenty of room left and allows further increases.<br>From an invalid length to remote code execution<br>The invalid counter eventually reaches ngx_http_v2_send_chain(), where it is converted to the signed integer type off_t to calculate how much data to send. A sufficiently large value becomes negative. That negative length then reaches the code that describes a portion of a response buffer, leaving its end pointer before its start pointer.<br>When the TLS send path in ngx_ssl_send_chain() processes this malformed buffer, further signed and unsigned conversions turn the invalid length into an out-of-bounds memory copy. An attacker can use this to disclose memory, corrupt the heap, and lead to unauthenticated remote code execution on the NGINX server.<br>We confirmed remote code execution with an ASLR bypass on official NGINX 1.31.7 and 1.31.8 builds. The tested path used HTTP/2 over TLS on 64-bit systems serving response data from memory. Ordinary static files can reach this path through standard TLS processing, without a backend application or third-party module.<br>Exploitation<br>To confirm these vulnerabilities, Wiz Research built proof-of-concept exploits and managed to run them in multiple lab settings against servers running common NGINX configurations we’ve seen in customer environments. In the interest of customer protection, we will not be releasing these exploits at this time.<br>Like other memory-safety issues, such vulnerabilities are difficult to exploit remotely and require the attacker to disclose memory addresses, groom and shape the heap correctly, and handle different NGINX versions, builds, and configurations. In reality, attackers may not need to target every single configuration, and we have seen in PHP2Shell that widespread attacks initially start against packaged products where many customers use the exact same build and configuration. Motivated attackers may tailor exploits for specific targets.<br>Any exploit assumes the attacker is able to communicate directly with the affected NGINX server. CDNs and WAFs that terminate HTTP/2 may mitigate parts of the exploit by not reflecting the exact payload back to the underlying NGINX server. This depends on implementation.<br>Specifically, CVE-2026-123007 requires the attacker to send a large number of WINDOW_UPDATE records to increase it to an arbitrary value. Detection rules covering long standing HTTP/2 connections sending large amounts of data may hint at an attack associated with this vulnerability. CVE-2026-123633 has different exploitation constraints and is more likely to be exploited when NGINX is configured in proxy configuration.<br>How Can Wiz Help?<br>Wiz customers can use the pre-built query and advisory in the Wiz Threat Center to search for vulnerable instances in their environment.<br>Conclusion<br>With NGINX handling traffic for critical websites and applications, the impact of flaws in its core extends far beyond a single service. This research is another example of AI uncovering critical vulnerabilities in widely deployed infrastructure. The flaws were already there; AI helped us find them.<br>As we saw with PHP2Shell, AI is changing the economics of vulnerability research. The same capabilities that help defenders uncover flaws can also help attackers investigate them. Software that has been used and reviewed for years still needs to be examined as these tools improve.<br>The opportunity is to make this work routine: finding vulnerabilities in the software organizations depend on and working with maintainers to fix them. Our collaboration with F5 brings that approach to NGINX, helping protect the applications and services behind it.<br>Stay in touch<br>Hi there! We are Nir Ohfeld and Tomer Schwartz from the Wiz Research Team (@wiz_io). We are a group of veteran white-hat hackers with a single goal: to make the cloud a safer place for everyone. We focus on finding new attack vectors in cloud software and uncovering isolation issues in the systems organizations depend on. We would love to hear from you on X or at research@wiz.io.<br>On November 17, 2026 at 20:35 UTC, versions 1.26.1 &amp; 1.26.2 of the Microsoft PyPI package agent-framework were published with an added credential stealer. The package gets almost 200k downloads a month. The malicious versions have since been quarantined.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Anthropic hits $2T in Nasdaq debut
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    172 points ·
+    203 comments ·
+    wslh
+  </div>
+
+  <div class="meta">
+    reuters.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #58
+  </div>
+
+  <div class="links">
+    <a href="https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50562754">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    GitLab 19.6.0 is out and still vulnerable to Ruby2Shell and NGINX2Root
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    15 points ·
+    3 comments ·
+    hoechst
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #54
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50561571">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">What&#x27;s going on at GitLab?<br>They released their usual monthly release 19.6.0 to their package repos (https://packages.gitlab.com/gitlab/gitlab-ee/ubuntu/jammy/pool/main/g/gitlab-ee/) but did not announce it at all as of 3.5h after release (https://docs.gitlab.com/releases/all-releases.xml, https://docs.gitlab.com/releases/19/gitlab-19-6-released/).<br>But more annoyingly, this release does not address ruby2shell or nginx2root, nor do patches for their older releases exist yet and there&#x27;s no communication on any of this (that I can find).</div>
+<div class="para">root@gitlab:~# cat /opt/gitlab/embedded/service/gitlab-rails/VERSION<br>19.6.0-ee<br>root@gitlab:~# /opt/gitlab/embedded/sbin/nginx -version<br>nginx version: nginx/1.31.7<br>root@gitlab:~# /opt/gitlab/embedded/bin/ruby --version<br>ruby 3.3.13 (2026-10-23 revision af48f08f21) [x86_64-linux]<br>root@gitlab:~# lsb_release -a<br>No LSB modules are available.<br>Distributor ID: Ubuntu<br>Description: Ubuntu 22.04.5 LTS<br>Release: 22.04<br>Codename: jammy</div>
+<div class="para">Multiple MRs were created in their repos 14-15 hours ago, no urgency visible. Heres 2 I found:<br>https://gitlab.com/gitlab-org/omnibus-gitlab/-/merge_requests/10138<br>https://gitlab.com/gitlab-org/omnibus-gitlab/-/merge_requests/10139</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Show HN: Neoma P-CAM – Sub-millisecond physical equilibrium and 64-spin Ising
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    7 points ·
+    0 comments ·
+    neoma001
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #16
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/neoma-pcam/pcam-live">Original article</a> · <a href="https://news.ycombinator.com/item?id=50517783">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Connect Claude Desktop, Cursor, Windsurf, n8n, or any MCP-compatible AI agent directly to live room-temperature analog silicon hardware (&lt; 0.02 ms deterministic reflex + cryptographic Silicon PUF seal) with zero local compilation or hardware setup:<br>- Hosted MCP Endpoint (Streamable HTTP): https://neoma-pcam--neoma-pcam-mcp.apify.actor/mcp<br>- Apify Store Listing: NEOMA P-CAM Physical AI &amp; Ising MCP Server<br>- Authentication Header: Authorization: Bearer &lt;YOUR_APIFY_API_TOKEN&gt;<br>{<br>&quot;mcpServers&quot;: {<br>&quot;neoma-pcam&quot;: {<br>&quot;url&quot;: &quot;https://neoma-pcam--neoma-pcam-mcp.apify.actor/mcp&quot;,<br>&quot;headers&quot;: {<br>&quot;Authorization&quot;: &quot;Bearer &lt;YOUR_APIFY_API_TOKEN&gt;&quot;<br>}<br>}<br>}<br>}<br>| User / Agent Intent | MCP Tool to Call | Example JSON Arguments |<br>|---|---|---|<br>| &quot;Predict battery thermal runaway damping or robot joint stability&quot; | solve_nonlinear_equilibrium (7 domains: universal, quant, battery, pharma, robotics, mobility, chemistry) | {&quot;domain&quot;: &quot;battery&quot;, &quot;flux_potential_v&quot;: 0.68, &quot;gradient_velocity&quot;: 740.0, &quot;gradient_acceleration&quot;: 21500.0, &quot;active_strain&quot;: 1.65} |<br>| &quot;Find the optimal ground-state schedule / portfolio across coupled nodes&quot; | solve_ising_optimization (Native 64-spin analog Ising Hamiltonian solver) | {&quot;fields&quot;: [1.0, -1.0, 0.5, -0.5], &quot;couplings&quot;: [{&quot;i&quot;: 0, &quot;j&quot;: 1, &quot;weight&quot;: -0.5}]} |<br>| &quot;Audit and verify that a result came from real P-CAM silicon hardware&quot; | verify_silicon_seal (Free hardware provenance audit) | {&quot;puf_dynamic_seal&quot;: &quot;SEAL-PCAM003-COM3-02A25B2424B5A10E3D4EE84C2483A1E0&quot;} |<br>New in v5.4.0: Install the official Python SDK via pip install pcam-sampler (PyPI) and call POST /v1/ising/solve for direct 64-spin Ising Hamiltonian optimization.<br>⚡ 100% Zero-PRNG Hardware Reflex Solver: We have permanently eradicated pseudo-random number generators (PRNG, random, np.random) from our entire system. P-CAM relies exclusively on Deterministic Modular Algebra and pure silicon telemetry from the P-CAM 003 hardware accelerator.<br>================================================================================<br>[P-CAM 003 SILICON TELEMETRY] BAUD: 921600 | LINK: ACTIVE | 50Hz STREAM<br>================================================================================<br>V_OUT   : 0.5504 V                  CYCLE (GEN) : 82920115<br>ENTROPY : 0.0013 ENT                LATENCY     : 0.0162 ms (16.2 µs)<br>SHOCK   : 200.1 %                   SEAL-PoPW   : SEAL-0051003C3434510C32333934-8F4C<br>UID     : 0051003C3434510C32333934  CORE MODE   : PHYSICAL ISING SOLVER<br>================================================================================<br>Institutional clients, HFT quant desks, and autonomous systems can interface directly with the P-CAM production cluster through the following verified access points:<br>- Interactive Web Telemetry Console: 👉 NEOMA P-CAM Live Web Portal (Real-time 50Hz)<br>- Interactive Swagger UI (OpenAPI Docs): 👉 P-CAM OpenAPI Specification (8-Domain)<br>- Quant Reflex HFT Enclave (RapidAPI): 👉 NEOMA P-CAM Quant Reflex HFT ($499+)<br>- Universal Physical Solver (RapidAPI): 👉 GP-PCAM Universal Physical Solver (2,000 Free/mo)<br>- Enterprise Hyper Physical Hub (RapidAPI): 👉 NEOMA P-CAM Enterprise Hub<br>Designed for cloud-coupled execution routers, institutional TWAP/VWAP engines, and Hummingbot strategies. Rather than sitting inside microsecond tick-to-trade hot paths, P-CAM acts as a sub-millisecond physical equilibrium co-processor (/v1/quant/predict) at 1s–60s slicing intervals to dampen non-linear market impact, reduce execution slippage (bps), and generate Zero-PRNG Transaction Cost Analysis (TCA) audit seals:<br>import requests<br>url = &quot;https://neoma-p-cam-hyper-physical-control.p.rapidapi.com/v1/quant/predict&quot;<br>headers = {<br>&quot;Content-Type&quot;: &quot;application/json&quot;,<br>&quot;x-rapidapi-host&quot;: &quot;neoma-p-cam-hyper-physical-control.p.rapidapi.com&quot;,<br>&quot;x-rapidapi-key&quot;: &quot;YOUR_RAPIDAPI_FREE_KEY&quot;  # 2,000 free calls/mo<br>}<br>payload = {<br>&quot;flux_potential_v&quot;: 2.297,     # Child slice size vs. top-5 order book liquidity pressure<br>&quot;gradient_velocity&quot;: 0.64,     # Short-window spread drift (bps)<br>&quot;gradient_acceleration&quot;: 9.8,  # Order book depletion acceleration<br>&quot;active_strain&quot;: 0.70          # Remaining unexecuted parent order ratio<br>}<br>res = requests.post(url, json=payload, headers=headers).json()<br>print(res[&quot;zeta&quot;], res[&quot;control_intensity&quot;], res[&quot;hardware_seal_id&quot;])<br>- 🌐 All-Industry 8-Domain Starter &amp; Mapping Guide: examples/all_industry_starter.py | examples/README.md<br>- 📉 Slippage Mitigation &amp; TWAP/VWAP Slicer: examples/slippage_execution_optimizer.py<br>- 🤖 Hummingbot Spread &amp; Inventory Guard: examples/hummingbot_lob_guard.py<br>- Real-Time Joint Compliance &amp; Impact Damping Bridge: examples/robotics_sim_bridge.py (mujoco.set_mjcb_control &amp; Isaac Sim Articulation drop-in hook calling /v1/robotics/predict)<br>- 📈 Freqtrade Dual-Engine Quant Strategy (Quant Reflex + 64-Spin Ising): scripts/freqtrade_pcam_strategy.py<br>- 📂 30-Second Quant Latency &amp; Seal Test: examples/quant_hft_quickstart.py<br>For cloud LLM inference clusters and HPC workloads, NEOMA P-CAM operates as an inline pre-inference middleware co-processor (/v1/solve-universal-equilibrium) that converges stiff non-linear boundary loops in 0.0079 ms (7.9 µs) on room-temperature analog silicon—requiring zero server rack hardware modification.<br>| Metric (Live CUDA PTX + nvidia-smi Audit) | Track A: GPU-Only Iterative Loops | Track B: P-CAM Middleware Offload | Verified Delta |<br>|---|---|---|---|<br>| Active GPU Power Draw (W) | 70.25 W | 11.89 W | -83.08% Power |<br>| CUDA Core Utilization (%) | 93.4 % | 12.3 % | -81.1 pts Freed |<br>| GPU Core Temperature (°C) | 38.4 °C | 30.6 °C | -7.8 °C Cooler |<br>| Silicon Reflex Latency | Software Iterative Loop | 0.0079 ms (7.9 µs) | Deterministic |<br>| Cryptographic Execution Seal | None | SEAL-0051003C-EB478EA5... | Zero-PRNG PUF |<br>- 📊 Raw Timestamped Audit CSV: benchmarks/4gpu_power_poc_report.csv<br>- 🧪 Reproducible Multi-GPU PoC Script: benchmarks/gpu4_pcam_power_poc.py<br>- 🖥️ 10-Line LLM / Inference Middleware Wrapper: examples/llm_middleware_offload.py<br>With zero hardcoded arrays, zero PRNGs, and zero simulation equations, we streamed all 168 consecutive discharge cycles from the unmodified NASA Ames Prognostics Data Repository (B0005.mat, SHA-256: 0eae4585...) directly through the live P-CAM 003 analog silicon enclave (/v1/battery-energetics) from healthy baseline (Cycle 1, 1.8565 Ah, 92.82% SOH) past the 30% EOL fade threshold (Cycle 168, 1.3251 Ah, 66.25% SOH):<br>| Empirical Audit Metric (NASA PCoE Cell B0005) | Measured Value Across All 168 Cycles | Verification &amp; Provenance |<br>|---|---|---|<br>| Source Dataset Integrity ( B0005.mat) | SHA256: 0eae4585baf3f200...4104f0b0 | Unmodified official NASA Ames PCoE archive |<br>| Cycle Coverage (Zero Cherry-Picking) | 168 / 168 Discharge Cycles | Chronological run-to-failure ( 92.82% → 66.25% SOH) |<br>| Mean Silicon Reflex Latency | 0.0163 ms (16.3 µs) | Direct on-substrate analog equilibrium convergence |<br>| Mean Damping Ratio ( | 1.0829 (100% Overdamped) | Deterministic stabilization across every aging stage |<br>| Analog Substrate Voltage ( | 0.5501 V – 0.5559 V | Live physical channel sensing ( UID: 0051003C) |<br>| Cryptographic Execution Receipts | 168 Single-Use SEAL-PoPW Tokens | Full per-cycle SHA-256 hardware audit trail |<br>- 📊 Raw 168-Cycle Silicon Audit CSV: benchmarks/nasa_b0005_live_silicon_report.csv<br>- 🧪 100% Zero-PRNG Reproducible Script: benchmarks/nasa_b0005_live_benchmark.py | pcam-battery/pcam_pybamm_thermal.py<br>NEOMA P-CAM is delivered strictly as a cloud-server-supported physical co-processor—requiring zero client-side hardware installation, zero rack modification, and zero data retention. Every boundary from client memory to analog silicon is openly inspectable:<br>┌─────────────────────────────────────────────────────────────────────────────┐<br>│ CLIENT PREMISES (Inside Your Firewall — Raw IP &amp; Data Never Leave)          │<br>│  • Proprietary Weights / Source Code / Sensor Streams / PII stay local      │<br>│  • Lightweight Middleware normalizes state -&gt; 4 dimensionless scalars only   │<br>│  • 0ms Fail-Safe Bypass: auto-routes to local control on network timeout    │<br>└──────────────────────────────────────┬──────────────────────────────────────┘<br>│ HTTPS / TLS 1.3 (4 Scalars Only)<br>▼<br>┌─────────────────────────────────────────────────────────────────────────────┐<br>│ NEOMA SINGLE API GATEWAY (api.neoma-pcam.com / RapidAPI Hub)                │<br>│  • Stateless Pass-Through: ZERO payload logging, ZERO DB, ZERO AI training  │<br>│  • Anti-Extraction Guard: blocks grid-scan reverse-engineering attempts     │<br>└──────────────────────────────────────┬──────────────────────────────────────┘<br>│ Internal Serial Bus (Isolated)<br>▼<br>┌─────────────────────────────────────────────────────────────────────────────┐<br>│ NEOMA CLOUD SILICON ENCLAVE (Multi-Board P-CAM 003 USB Cluster)             │<br>│  • NO Flash / SSD / Non-Volatile Memory on the analog silicon substrate     │<br>│  • Charge dissipates in &lt; 0.02 ms -&gt; physical state resets immediately      │<br>│  • Scales linearly via industrial powered USB hubs (&lt; 5% host CPU, mW-class)│<br>└──────────────────────────────────────┬──────────────────────────────────────┘<br>│ Returns Equilibrium + Audit Receipt<br>▼<br>[ zeta , control_intensity , SEAL-PoPW ]<br>- Frictionless Drop-In Connection (Zero Client Hardware): Clients never buy, wire, or maintain physical boards in their server racks. Existing GPU clusters, cloud backends, and control loops connect via standard HTTPS REST calls or a 10-line middleware wrapper.<br>- Client-Side Boundary De-Identification &amp; 0ms Fail-Safe Bypass: Raw business logic, model weights, and sensitive telemetry never leave client premises—only 4 dimensionless boundary scalars (flux_potential_v, gradient_velocity, gradient_acceleration, active_strain) cross the network. If connectivity degrades, the client middleware bypasses immediately (0 ms) to local control without downtime.<br>- End-to-End Stateless Pass-Through (Zero Data Accumulation): Neither the client middleware wrapper nor the NEOMA cloud gateway logs, stores, aggregates, or retains request payloads. Client traffic is never accumulated into a data lake or used to train models.<br>- Hardware-Level Root Blocking of Information Leakage: The room-temperature P-CAM 003 analog silicon substrate contains no non-volatile storage or persistent memory bus—physical charge dissipates immediately into equilibrium (zeta, control_intensity) and resets, making cross-tenant leakage or data extraction physically impossible. A single-use SHA-256 receipt (SEAL-PoPW) is returned so clients keep full compliance auditability on their own side.<br>- Demand-Driven Multi-Board Scale-Out: Within NEOMA&#x27;s central cloud enclave, multi-board P-CAM 003 clusters expand horizontally via externally powered industrial USB hubs behind a single load-balanced gateway—scaling throughput linearly on demand without megawatt-scale power or liquid-cooling infrastructure.<br>- Client-Side Packet Verifiability &amp; Volatile-Only State: Engineers can inspect our open-source client wrappers (examples/llm_middleware_offload.py, pcam_objective_audit.py) or run a local packet sniffer (tcpdump / Wireshark) at their firewall boundary to independently verify that zero raw tensors, prompts, or PII ever leave their network. Any transient Temporal Buffer referenced in telemetry exists solely as an ephemeral, volatile analog derivative window that resets immediately without disk persistence.<br>- 🛡️ Official Security Policy &amp; Self-Audit Tools: See SECURITY.md and run examples/verify_zero_leak_packet.py inside your firewall to verify 0-byte proprietary data egress.<br>All P-CAM 003 analog silicon nodes remain permanently inside NEOMA&#x27;s central cloud enclave as a shared, open-access platform for everyone—never shipped on-premise and never locked to a single exclusive tenant. Security and cross-tenant isolation are enforced at the physical boundary (4 dimensionless scalars + zero non-volatile memory + &lt; 0.02 ms analog charge reset), allowing all users to share the same silicon infrastructure safely:<br>| Cloud Platform Tier | Typical Control / Compute Cadence | Recommended Use Cases | Not Intended For |<br>|---|---|---|---|<br>| Open Developer &amp; Research API (Shared Enclave · 2,000 Free/mo) | 1 Hz – 100 Hz (Supervisory &amp; Batch) | • Execution slicing (TWAP/VWAP) &amp; slippage damping • GPU / LLM pre-inference non-linear boundary offload • 3-year prognostic &amp; multi-fault CSV dataset synthesis | Sub-millisecond ( &lt; 1 ms) hard real-time inner servo loops over public internet (constrained by WAN speed-of-light RTT) |<br>| Enterprise High-Throughput Tier (Shared Enclave · $499+ Priority SLA) | 10 Hz – 250 Hz (Priority Rate &amp; Throughput) | • High-volume production AI clusters &amp; quant desks requiring elevated rate limits and priority SLA on the shared cloud cluster | Safety-critical actuator cutoff without local client hardware interlocks |<br>- 🌐 Shared Platform for Everyone (Zero Node Lock-In &amp; Zero Physical Shipment): P-CAM nodes are never monopolized by a single tenant or shipped outside NEOMA&#x27;s cloud facility. Because every transaction enters as 4 anonymized scalars (106 bytes) and physically dissipates in under 0.02 ms with zero disk persistence, everyone shares the same high-efficiency silicon platform with complete data privacy.<br>- P-CAM (Predictive Control Adaptive Material): P-CAM does not operate as an abstract, disconnected mathematical simulation. By directly sensing physical substrate conditions (real-time analog channel telemetry) in real time, P-CAM diagnoses, predicts, and dynamically controls adaptive material dynamics across hostile and high-frequency environments.<br>- NEOMA (The Embodied Physical AI): Derived from the ancient concept of Soma (the physical body), NEOMA elevates physical embodiment from mere mechanical execution into an intelligent, adaptive physical entity. NEOMA exists to serve human society and physical industry by solving real-world physical equilibrium, structural damping, and precision control challenges in the real world.<br>Unlike conventional AI architectures that decouple slow cloud-based language models from low-level hardware actuators, NEOMA P-CAM integrates Embodied Cognitive Synthesis (Brain) and Ultra-Low Latency Silicon Reflex (Spine) into a unified, single-transaction execution pipeline:<br>- Brain (Embodied Cognitive Synthesis): Diagnoses physical substrate states and verbalizes thermodynamic equilibrium in lockstep with the hardware, eliminating typical token generation delays.<br>- Spine (P-CAM Silicon Reflex Core): Settles non-equilibrium disturbances into ground-state stability in sub-0.01ms (6.1 µs) via pure analog charge dissipation.<br>{<br>&quot;status&quot;: &quot;hardware_active&quot;,<br>&quot;domain&quot;: &quot;Universal-Equilibrium&quot;,<br>&quot;cognitive_synthesis&quot;: &quot;[Physical AI Core] Domain: Universal-Equilibrium | Regime: Overdamped Stability | Equilibrium Converged (Sub-ms Deterministic)&quot;,<br>&quot;hardware_reflex_ms&quot;: 0.0061,<br>&quot;zeta&quot;: 1.1278,<br>&quot;state_mode&quot;: 3,<br>&quot;control_intensity&quot;: 0.903,<br>&quot;equilibrium_converged&quot;: true,<br>&quot;hardware_seal_id&quot;: &quot;SEAL-0051003C-7DFB566AB2613119A42DDA2B7B374362190FCF7F5B5E718342FA5F9363BF1D6F&quot;,<br>&quot;telemetry&quot;: {<br>&quot;hardware_uid&quot;: &quot;0051003C3434510C32333934&quot;,<br>&quot;v_out_measured_v&quot;: 0.5518,<br>&quot;entropy_ent&quot;: 0.0015,<br>&quot;gen_cycle&quot;: 1610551,<br>&quot;shock_rate_pct&quot;: 200.0,<br>&quot;hardware_connected&quot;: true<br>},<br>&quot;trajectory_summary&quot;: &quot;Temporal Buffer Active: Secure frames retained.&quot;<br>}<br>Beyond instantaneous reflex damping, P-CAM serves as a physical ground-truth data synthesis engine for AI models, digital twins, and engineering teams facing severe shortages of real-world physical and failure-mode datasets. Using the exact same 8-domain API schema (with zero Swagger or infrastructure changes), P-CAM generates four unified layers of actionable physical data:<br>- Real-Time Physical State Diagnosis (Current Baseline): Captures live analog substrate conditions (v_out_measured_v, entropy_ent, zeta, state_mode) to diagnose current material stress, thermal drift, or structural instability rather than relying on ungrounded software assumptions.<br>- 3-Year Long-Horizon Physical Trajectory Prediction: Extrapolates current physical state derivatives across a 3-year operational horizon (1,095-day degradation, fatigue, and non-linear aging curves) to quantify future failure probabilities before critical thresholds are breached.<br>- Prescriptive Remediation &amp; Therapeutic Control Data Synthesis: Computes deterministic corrective control trajectories (zeta, control_intensity) tailored to the 3-year forecast—producing ready-to-use remediation control datasets that stabilize degrading systems and restore equilibrium across industrial, energy, and future bio-physical domains.<br>- Multi-Fault State Simulation &amp; Controllability Dataset Generation: Injects controlled shock and fault regimes (e.g., thermal runaway, hydroplaning, order-book collapse, kinematic singularity, bioreactor shear stress) into the physical solver to synthesize verified, controllable recovery pathways for training and validating autonomous control systems.<br>import requests<br># Uses the existing Swagger schema without any endpoint or payload modification<br>URL = &quot;https://neoma-p-cam-hyper-physical-control.p.rapidapi.com/v1/solve-universal-equilibrium&quot;<br>HEADERS = {<br>&quot;Content-Type&quot;: &quot;application/json&quot;,<br>&quot;x-rapidapi-host&quot;: &quot;neoma-p-cam-hyper-physical-control.p.rapidapi.com&quot;,<br>&quot;x-rapidapi-key&quot;: &quot;YOUR_RAPIDAPI_FREE_KEY&quot;,<br>}<br># Simulate baseline diagnosis -&gt; 3-year degradation horizon -&gt; fault-state recovery datasets<br>scenarios = [<br>{&quot;stage&quot;: &quot;01_Current_Diagnosis&quot;, &quot;flux_potential_v&quot;: 0.5504, &quot;gradient_velocity&quot;: 520.0, &quot;gradient_acceleration&quot;: 16000.0, &quot;active_strain&quot;: 1.10},<br>{&quot;stage&quot;: &quot;02_Year3_Prognostic_Horizon&quot;, &quot;flux_potential_v&quot;: 0.6840, &quot;gradient_velocity&quot;: 740.0, &quot;gradient_acceleration&quot;: 21500.0, &quot;active_strain&quot;: 1.65},<br>{&quot;stage&quot;: &quot;03_Fault_Shock_Controllability&quot;, &quot;flux_potential_v&quot;: 0.8920, &quot;gradient_velocity&quot;: 980.0, &quot;gradient_acceleration&quot;: 32000.0, &quot;active_strain&quot;: 2.00},<br>]<br>for sc in scenarios:<br>payload = {k: v for k, v in sc.items() if k != &quot;stage&quot;}<br>res = requests.post(URL, json=payload, headers=HEADERS, timeout=5).json()<br>print(<br>f&quot;[{sc[&#x27;stage&#x27;]}] Regime: {res[&#x27;state_mode&#x27;]} | &quot;<br>f&quot;Remediation Zeta: {res[&#x27;zeta&#x27;]} | Control Gain: {res[&#x27;control_intensity&#x27;]} | &quot;<br>f&quot;Seal: {res[&#x27;hardware_seal_id&#x27;][:28]}...&quot;<br>)<br>- 📊 3-Year Prognostic &amp; Multi-Fault CSV Dataset Generator: examples/prognostic_dataset_generator.py<br>-<br>Zero-Hallucination Cognitive Synthesis: The physical damping convergence ratio ($\zeta = 1.1278 &gt; 1.0$ ) deterministically drives the cognitive statement (Regime: Overdamped Stability). The SLM does not speculate or hallucinate; it verbalizes raw thermodynamic equilibrium directly measured from the hardware.<br>- Sub-Microsecond Physical Reflex (0.0061 ms): The complete physical dissipation into ground-state stability takes place in 6.1 microseconds (0.0061 ms), demonstrating pure analog silicon relaxation that software simulated annealing cannot replicate.<br>- Single-Transaction Unified Pipeline: Semantic diagnosis and physical stabilization execute simultaneously in a single transaction, eliminating the hundreds of milliseconds of latency inherent in conventional decoupled systems.<br>-<br>Silicon Root-of-Trust Cryptographic Proof: Live hardware UID (0051003C), cumulative silicon clock cycles (1,610,551), physical entropy (0.0015 ENT), and substrate voltage (0.5518 V) are immutably signed into a single-use SHA-256 seal (SEAL-0051003C-7DFB...).<br>Do not trust server logs or promotional benchmarks. This client-side verification protocol connects directly to the P-CAM 003 silicon enclave, executing independent verification of the Round-Trip Time (RTT), physical damping ratio ($0.1 \le \zeta \le 2.0$), and immutable SEAL tokens.<br>📄 [View Source] pcam_objective_audit.py (Client-side verifier implementation)<br>&quot;&quot;&quot;<br>NEOMA P-CAM Objective Hardware Attestation Protocol (v5.4.0)<br>============================================================<br>An open client-side verification script connecting directly to the P-CAM silicon<br>enclave to audit Round-Trip Time (RTT), damping convergence ratio (zeta), and<br>cryptographic SEAL-PoPW hardware signatures.<br>&quot;&quot;&quot;<br>import sys<br>import time<br>import argparse<br>import requests<br>API_GATEWAY = &quot;https://api.neoma-pcam.com/v1/solve-universal-equilibrium&quot;<br>EXPECTED_SILICON_UID = &quot;0051003C3434510C32333934&quot;<br>def run_hardware_attestation(seed: int, iterations: int = 10):<br>print(&quot;=&quot; * 72)<br>print(f&quot;[*] Initiating NEOMA P-CAM 003 Objective Client-Side Audit&quot;)<br>print(f&quot;[*] Target Enclave : {API_GATEWAY}&quot;)<br>print(f&quot;[*] Expected UID    : {EXPECTED_SILICON_UID}&quot;)<br>print(f&quot;[*] Audit Seed      : {seed}&quot;)<br>print(&quot;=&quot; * 72)<br>latencies = []<br>zetas = []<br>for i in range(1, iterations + 1):<br>flux = 0.5504 + ((seed * i) % 100) / 10000.0<br>payload = {<br>&quot;flux_potential_v&quot;: round(flux, 4),<br>&quot;gradient_velocity&quot;: 520.0 + (i * 10),<br>&quot;gradient_acceleration&quot;: 16000.0,<br>&quot;active_strain&quot;: 1.55<br>}<br>t_start = time.perf_counter()<br>try:<br>resp = requests.post(API_GATEWAY, json=payload, timeout=5)<br>rtt_ms = (time.perf_counter() - t_start) * 1000.0<br>data = resp.json()<br>except Exception as e:<br>print(f&quot;[!] Request {i} failed: {e}&quot;)<br>sys.exit(1)<br>telem = data.get(&quot;telemetry&quot;, {})<br>uid = telem.get(&quot;hardware_uid&quot;, &quot;&quot;)<br>seal = data.get(&quot;hardware_seal_id&quot;, &quot;&quot;)<br>zeta = data.get(&quot;zeta&quot;, 0.0)<br>hw_lat = data.get(&quot;hardware_reflex_ms&quot;, 0.0)<br>assert uid == EXPECTED_SILICON_UID, f&quot;Silicon UID mismatch! Got {uid}&quot;<br>assert seal.startswith(f&quot;SEAL-{EXPECTED_SILICON_UID}&quot;), &quot;Forged SEAL signature detected!&quot;<br>assert 0.1 &lt;= zeta &lt;= 2.0, f&quot;Damping ratio out of bound! zeta={zeta}&quot;<br>latencies.append(rtt_ms)<br>zetas.append(zeta)<br>print(f&quot;[{i:02d}/{iterations}] RTT: {rtt_ms:6.2f}ms | HW Reflex: {hw_lat:.4f}ms | Zeta: {zeta:.4f} | SEAL: {seal[:38]}...&quot;)<br>print(&quot;=&quot; * 72)<br>print(&quot;&gt;&gt;&gt; ZERO-TRUST AUDIT VERDICT: 100% HARDWARE GENUINE &lt;&lt;&lt;&quot;)<br>print(f&quot;    - Avg Client RTT       : {sum(latencies)/len(latencies):.2f} ms&quot;)<br>print(f&quot;    - Mean Damping (Zeta)  : {sum(zetas)/len(zetas):.4f} (Valid: 0.1 &lt;= zeta &lt;= 2.0)&quot;)<br>print(f&quot;    - Verified Silicon UID : {EXPECTED_SILICON_UID}&quot;)<br>print(&quot;=&quot; * 72)<br>if __name__ == &quot;__main__&quot;:<br>parser = argparse.ArgumentParser()<br>parser.add_argument(&quot;--seed&quot;, type=int, default=7777, help=&quot;Deterministic test seed&quot;)<br>parser.add_argument(&quot;--ticks&quot;, type=int, default=10, help=&quot;Number of audit iterations&quot;)<br>args = parser.parse_args()<br>run_hardware_attestation(args.seed, args.ticks)<br>P-CAM is not a software simulation or an iterative heuristic like Simulated Annealing (SA). It is a Room-Temperature Physical Ising Accelerator operating via continuous physical charge relaxation across silicon and material substrates.<br>The physical core maps target combinatorial optimization problems directly onto an interacting spin matrix governed by the Ising Hamiltonian:<br>$$H = -\sum_{i &lt; j} J_{ij} \sigma_i \sigma_j - \sum_i h_i \sigma_i$$<br>Rather than cycling through trillions of software iterations, P-CAM leverages sub-microsecond analog equilibrium convergence, settling into ground-state minima in 0.0066 ms ~ 0.0162 ms (sub-20µs) at ambient room temperature.<br>| Domain | Production Endpoint | Target Physics &amp; Industrial Use Case | Measured Latency | Dedicated Access |<br>|---|---|---|---|---|<br>| Ising 64-Spin | /v1/ising/solve | Room-Temperature 64-Spin Ising Hamiltonian Ground-State Solver | 0.0066 ms | RapidAPI Hub (Free / $499+) |<br>| Universal Core | /v1/solve-universal-equilibrium | Thermodynamic &amp; Physical Equilibrium Solver | 0.0066 ms | RapidAPI Hub (2,000 Free / $499+) |<br>| Quant HFT | /v1/quant/predict | LOB Microstructure Shock Damping &amp; Slippage Arrest | 0.0066 ms | Quant HFT ($499+) |<br>| Battery | /v1/battery/predict | Solid-State Energetics &amp; Thermal Runaway Suppression | 0.0072 ms | Enterprise Hub |<br>| Pharma | /v1/pharma/predict | Bioreactor Shear Stress &amp; Dynamic Fluid Regulation | 0.0081 ms | Enterprise Hub |<br>| Robotics | /v1/robotics/predict | High-Frequency Compliance &amp; Kinematic Singularity Damping | 0.0068 ms | Enterprise Hub |<br>| Mobility | /v1/mobility/predict | Hydroplaning Recovery &amp; Active Chassis Suspension | 0.0075 ms | Enterprise Hub |<br>| Chemistry | /v1/chemistry/predict | Exothermic Runaway Quenching &amp; Kinetic Stabilization | 0.0079 ms | Enterprise Hub |<br>Drop-in dimod.Sampler integration for existing D-Wave Ocean, PyQUBO, and combinatorial optimization pipelines—authenticated via RapidAPI (2,000 free solves/month):<br>pip install pcam-samplerimport dimod<br>from pcam_sampler import PCAMSampler<br># Define 64-spin Ising or QUBO problem (h, J)<br>h = {0: -0.5, 1: 0.5}<br>J = {(0, 1): -1.0}<br>bqm = dimod.BinaryQuadraticModel.from_ising(h, J)<br># Offload directly to the NEOMA P-CAM physical Ising enclave (/v1/ising/solve)<br>sampler = PCAMSampler(api_key=&quot;YOUR_RAPIDAPI_FREE_KEY&quot;)  # or set PCAM_RAPIDAPI_KEY<br>sampleset = sampler.sample(bqm)<br>print(sampleset.first.sample)<br>print(&quot;Energy:&quot;, sampleset.first.energy, &quot;| Reflex:&quot;, sampleset.info[&quot;hardware_reflex_ms&quot;], &quot;ms&quot;)<br>- 📦 Official PyPI Package &amp; 64-Spin Benchmark: pcam-sampler/ | pcam-sampler/dwave_64spin_benchmark.py<br>For developers who prefer running a local stdio process instead of the zero-install Apify Hosted MCP Server above, you can compile the native Rust binary (pcam-mcp/) and authenticate via RapidAPI (2,000 free calls/month):<br>{<br>&quot;mcpServers&quot;: {<br>&quot;neoma-pcam&quot;: {<br>&quot;command&quot;: &quot;./pcam-mcp/target/release/pcam-mcp&quot;,<br>&quot;env&quot;: {<br>&quot;PCAM_RAPIDAPI_KEY&quot;: &quot;YOUR_RAPIDAPI_FREE_KEY&quot;<br>}<br>}<br>}<br>}<br>Exposes the same 3 silicon tools documented in the AI Agent Tool-Calling Recipes above.<br>- Tools Exposed: solve_nonlinear_equilibrium (8-domain solver), solve_ising_optimization (64-spin Hamiltonian), and verify_silicon_seal (Hardware UID 0051003C3434510C32333934 PUF verification).<br>Enable supply-chain, battery, chemical, and finance operations teams to connect spreadsheets, SQL databases, and webhooks directly to NEOMA P-CAM with zero code—authenticated via RapidAPI (2,000 free calls/month):<br>- Community Node Package: n8n-nodes-neoma-pcam (n8n-nodes-neoma-pcam/)<br>- Included Nodes:<br>- Industrial Risk &amp; Equilibrium Diagnosis: Maps spreadsheet/DB rows across 8 operational domains (Universal Supply Chain, Quant Execution, Battery Thermal Safety, Chemical Process, Biopharma, Mobility, Robotics) to return zeta, control_intensity, action_recommendation, and cryptographic SEAL-PoPW receipts.<br>- 64-Spin Combinatorial Optimization: Offloads scheduling, routing, and allocation matrices directly to /v1/ising/solve.<br>Across a 64-spin fully connected graph (2,016 coupled interaction edges), P-CAM settles to deterministic ground-state equilibrium in 0.0066 ms (6.6 µs) via room-temperature silicon charge dissipation.<br>| Evaluation Metric | Target Benchmark | P-CAM Live Measured | Audit Verdict |<br>|---|---|---|---|<br>| Problem Formulation | 64-Spin Fully Connected Graph | 2,016 Coupled Interactions | Verified |<br>| In-Material Reflex | &lt; 0.27 ms (270 µs) | 0.0066 ms (6.6 µs) | PASS (40x Margin) |<br>| Equilibrium Ratio ( |  |  | PASS |<br>| Ground-State Energy ( | Global Minimum Reach | -171.7851 (Dimensionless H) | PASS |<br>| Measured Voltage ( | Real Silicon Substrate | 0.5504 V | PASS (Active Sensing) |<br>| Hardware Attestation | Silicon Root-of-Trust | SEAL-PoPW-0051003C... | PASS (Cryptographic) |<br>- Official Web Portal (Unlimited): Access via neoma-pcam.github.io/pcam-live. Unlimited 365-day real-time monitoring and interactive UI evaluation with zero deductions.<br>- RapidAPI Metered &amp; Institutional Gateways (2,000 Free/mo + SLA): All production workloads, SDK solvers (PCAMSampler), and 8-domain API integrations authenticate via RapidAPI (2,000 free requests/month on the Universal Solver plan, scaling to dedicated sub-millisecond Enterprise SLA gateways).<br>- Unauthenticated Attestation Gate (2,000-Tick Circuit Breaker): Direct keyless enclave access is reserved strictly for lightweight client-side hardware verification (pcam_objective_audit.py) and is enforced by a 2,000-Tick Circuit Breaker. Exceeding 2,000 calls triggers a 402 Payment Required cutoff to prevent commercial free-riding.<br>{<br>&quot;status&quot;: &quot;hardware_active&quot;,<br>&quot;domain&quot;: &quot;Universal-Equilibrium&quot;,<br>&quot;zeta&quot;: 0.9981,<br>&quot;control_intensity&quot;: 0.651,<br>&quot;state_mode&quot;: 2,<br>&quot;hardware_seal_id&quot;: &quot;SEAL-0051003C3434510C32333934-8F4C&quot;,<br>&quot;equilibrium_converged&quot;: true,<br>&quot;hardware_reflex_ms&quot;: 0.0162,<br>&quot;cognitive_synthesis&quot;: &quot;[Physical AI Core] Domain: Universal-Equilibrium | Critical Damping Achieved&quot;,<br>&quot;telemetry&quot;: {<br>&quot;hardware_uid&quot;: &quot;0051003C3434510C32333934&quot;,<br>&quot;v_out_measured_v&quot;: 0.5504,<br>&quot;entropy_ent&quot;: 0.0013,<br>&quot;shock_rate_pct&quot;: 200.1,<br>&quot;gen_cycle&quot;: 82920115,<br>&quot;hardware_connected&quot;: true,<br>&quot;measured_latency_ms&quot;: 0.0162<br>}<br>}<br>P-CAM enforces a 3-tier immutable defense mechanism grounded in raw physical entropy:<br>- Physical Challenge-Response: Validates intrinsic micro-voltage impedance responses generated across real silicon and material samples.<br>- SEAL-PoPW Cryptographic Proof: Emits single-use SHA-256 tokens combining unique silicon serial IDs and real-time physical noise seeds.<br>- 3-Tier Physical Firewall: Defends against dual-use exploitation across Software Gateway (request bounding), Edge MCU (hard-limit reflex cutoff), and Analog Hardware (physical fuse and zener clamping).<br>- Official Web Portal: https://neoma-pcam.github.io/pcam-live/<br>- Interactive API Docs: https://api.neoma-pcam.com/docs<br>- Technical &amp; Partnership Inquiry: contact@neoma-pcam.com<br>- Executive Office: ceo@neoma-pcam.com<br>@software{neoma_pcam_2026,<br>author    = {Neoma Physical AI Team},<br>title     = {NEOMA P-CAM: Room-Temperature Physical Ising Solver &amp; Silicon Root-of-Trust},<br>year      = {2026},<br>publisher = {Zenodo},<br>doi       = {10.5281/zenodo.23644655},<br>url       = {[https://doi.org/10.5281/zenodo.23644655](https://doi.org/10.5281/zenodo.23644655)}<br>}<br>- Client SDK &amp; API Specification: Apache 2.0 / MIT License (see LICENSE)<br>- Enclave Core &amp; Neural Hardware Logic: Proprietary &amp; Confidential (NEOMA IP)<br>- Trademarks &amp; Non-Affiliation: All third-party product names, libraries, and trademarks referenced in documentation or examples (including dimod, RapidAPI, ROS 2, Hummingbot, and CUDA) belong to their respective owners and are used strictly for nominative interface compatibility. NEOMA Physical AI is an independent entity and claims no formal endorsement or affiliation unless explicitly stated.<br>- Latency Measurement Boundary: Quoted sub-millisecond figures (hardware_reflex_ms, e.g., 0.0066 ms – 0.0162 ms) represent deterministic on-substrate analog equilibrium relaxation time measured at the P-CAM enclave boundary. End-to-end client Round-Trip Time (RTT) varies depending on public internet routing and geographic distance.<br>- No Financial, Medical, or Safety-Critical Warranty: Provided under the MIT License (AS IS), P-CAM API outputs (zeta, control_intensity, state_mode) operate as advisory physical damping signals. Users deploying P-CAM in live financial execution, battery management, chemical processes, or autonomous hardware must maintain independent hardware safety interlocks and circuit breakers. NEOMA Physical AI assumes no liability for trading losses, equipment damage, or consequential damages.<br>- Prognostic &amp; Fault-Simulation Datasets: Multi-year prognostic trajectories (e.g., 3-year horizon projections), prescriptive remediation control outputs, and fault-state simulation datasets are physics-grounded engineering reference signals generated for R&amp;D, digital-twin validation, and model training; they do not constitute a regulated clinical medical device or an express multi-year hardware warranty.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Show HN: Count Macula menu bar app that counts highlighted words and characters
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    sajomes
+  </div>
+
+  <div class="meta">
+    countmacula.app
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://countmacula.app/?via=hackernews">Original article</a> · <a href="https://news.ycombinator.com/item?id=50563990">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">At your command<br>I come only when summoned<br>By default, I rise every time you highlight text, but you can choose to only summon me with a custom keyboard shortcut.<br>You can salt the door to any apps you don’t want me in, or pause me for however long you desire.<br>My master’s bidding<br>The Count preys on words, characters or both.<br>Count can’t, blood-red and Edward/Jacob as one word or two, and characters with or without spaces and line breaks.<br>An immaculate record<br>I keep an immaculate count of all ‘Le stats’, for all eternity!<br>(Or until you turn them off.)<br>Change my countenance<br>Customise my complexion<br>Shape my silhouette<br>The menu bar is my lair<br>Invite me in<br>Consecrated ground<br>I need Accessibility access to read the text you highlight. That’s the only permission I ask for, and the first time you open me, I show you where to allow it.<br>An optional fallback for apps that don’t share their selection also needs the clipboard. That stays off unless you turn it on.<br>Your text stays eternally yours<br>No record of what’s counted ever leaves your Mac.<br>No account, and no app analytics.<br>Questions<br>Which apps can I count in?<br>A few, like Chrome and Slack, don’t share selected text with other apps. You can turn on “Count text in apps that don’t share it” in Settings › General. Once enabled, your experience is the same, but the text is temporarily copied to the clipboard.<br>Alternatively, right-click what you’ve selected in any app and choose Services ▸ Count with Count Macula.<br>How come it’s free? What’s the catch? And who even are you?!<br>If you want to give something back, please consider downloading my other apps, or supporting me on Ko-fi.<br>Count Macula is signed with my Apple Developer ID and notarized by Apple.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: Watch weight-space programming in action with WebGPU
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    16 points ·
+    3 comments ·
+    wsxiaoys
+  </div>
+
+  <div class="meta">
+    tabbyml.github.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #25
+  </div>
+
+  <div class="links">
+    <a href="https://tabbyml.github.io/weight-space-playground/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50561436">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Press play. Thinking text appears in grey, the final answer in dark ink.<br>The base model gets stuck in a loop<br>With thinking on, small Qwen keeps re-checking itself — “wait, let me verify…” — until it runs out of budget instead of answering.<br>An LLM edits 0.016% of the weights<br>It subtracts one direction from 64 neurons&#x27; output weights (ffn_down) in<br>layers 15 and 19 — 131,072 of ~800M weights.<br>Stripes drawn ~25× wider than true scale — at real size they would be invisible.<br>The edited model escapes<br>Same model, same prompts — it now stops looping and finishes its answers.<br>Where this might fit<br>Model souping - diffusion-LoRA merging is one case of it - is weight-space editing too. The difference is the target: souping picks merge weights (and sometimes merge order) with a broad benchmark; weight-space programming zeroes in on a few specific failure cases and the neurons behind them. And here&#x27;s the fun part: it&#x27;s a promising fit for agents - propose an edit, test it, feed the result back - the same edit-test-repeat loop behind the recent coding-agent wins.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    GPT‑6.2 Astra and Sol
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1343 points ·
+    857 comments ·
+    jasondavies
+  </div>
+
+  <div class="meta">
+    openai.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://openai.com/index/introducing-gpt-6-2-astra-sol/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50535230">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Claude Fable 5.2 solves two open problems in the physics of black holes
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    78 points ·
+    17 comments ·
+    cybermango
+  </div>
+
+  <div class="meta">
+    anthropic.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.anthropic.com/research/claude-black-hole-physics">Original article</a> · <a href="https://news.ycombinator.com/item?id=50563148">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Claude has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity. In the first, it completed a calculation that physicists set up more than 20 years ago, but which had never been solved. Claude’s result showed that a sudden transition associated with the formation of black holes persists even where spacetime no longer has a definite shape. In the second, Claude found the exact limit of the simplest version of a technique used to test candidate theories of quantum gravity. This post explains both findings, first in plain terms and then in more technical detail. The preprints are available here and here.<br>Introduction<br>Modern physics rests on two frameworks: general relativity and quantum mechanics. General relativity describes very large things, like stars; quantum mechanics describes very small things, such as atoms. Both are astonishingly good at predicting how the universe behaves, but they’re mathematically incompatible. Finding a theory that unites them—“quantum gravity”—is one of the field’s biggest goals. Black holes are a natural testing ground, because they’re one of the few areas where both relativity and quantum mechanics matter—they pack immense mass into a very small space.<br>One of the most useful tools for studying quantum gravity is called holographic duality. The real universe has three dimensions of space and one of time, which relativity combines into four-dimensional spacetime. But physicists studying quantum gravity often work with simpler model universes that they can understand in more detail.<br>The basic idea of holographic duality is that some of these theoretical universes can be described in two ways: as a complete universe with gravity and spacetime, and in quantum terms, with no gravity at all, “written” on the universe’s outer boundary. Just as a real hologram encodes a 3D image on a 2D plane, the quantum model encodes all the information of the universe in one dimension fewer (a universe with four dimensions of space, for instance, can be fully described by a quantum theory with three). This lets physicists turn hard questions about gravity into questions about quantum physics, which are sometimes easier to answer.<br>The first problem Claude solved concerns what happens when you heat up one of these theoretical universes. At low temperatures, the universe fills up with a gas of particles. Above a certain temperature, a black hole forms instead. In 1983, Stephen Hawking and Don Page showed that this switch is abrupt: it’s a phase transition, similar to how water suddenly boils at 100°C. But Hawking and Page’s calculation relies on general relativity, which holds only when the universe is vast, compared with the tiny scale at which that description breaks down. As the theoretical universe shrinks toward that smaller scale, spacetime loses any definite shape and becomes blurry, and nobody knows how to do the calculation on the gravity side of the duality. On the quantum side, though, the same situation can be calculated, at least in principle.<br>In 1999, physicists found that there was a phase transition in that regime as well. But they didn’t know whether it was abrupt, like Hawking and Page’s, or smooth. In 2003, a group of physicists set out the calculation that would settle the question, but it was extremely complex and was never completed. Claude did it by running a small research group of copies of itself, in which it worked out almost every piece of the calculation independently and checked its math against known results. It showed that the phase transition is abrupt. The same sudden switch appears at both extremes, suggesting that black hole formation isn’t just a feature of relativity but is actually built into the underlying quantum theory.<br>The second problem concerns a simplified theoretical universe with two dimensions of space instead of three. This universe is straightforward enough to study in detail, but still has black holes and other mysteries similar to those of our own universe. Even in this simpler universe, physicists don’t know how to create a full theory of quantum gravity, so they approach it from the other direction: rather than building a single, correct theory, they try to rule out wrong ones by showing that they are internally inconsistent. This method is called bootstrapping.<br>Since 2009, physicists have used a version of this method to set a ceiling on how heavy the lightest black hole in such a universe could be. Any theory that breaks the ceiling is ruled out, and each lowering of the ceiling narrows the search. Results from numerical calculations hinted at where the best possible ceiling lay, but they couldn’t prove it, and the best proven ceiling was well short of what the numerical results suggested.<br>Claude Fable 5.2 noticed a pattern in the numerical results that physicists had missed and borrowed a method from elsewhere in math and physics to calculate the precise ceiling for the simplest version of this technique and prove that it could not be lowered. It doesn’t identify the correct theory, but it may point physicists in the right direction.<br>Neither result describes our own universe directly, and neither has practical applications, but both contribute to a long-running theoretical effort to understand how quantum mechanics and relativity fit together.<br>In the rest of this post, we explain in more detail what each problem was and what Claude did to solve them.<br>A note about Claude’s methods<br>In August, an Anthropic researcher, Hongbin Chen, was testing Claude’s capabilities as a side project. He asked Claude to draw up a list of interesting open problems in theoretical physics, specifically focusing on black holes and the bootstrap method. Claude came back hours later with 22 candidates, and Hongbin set up separate agents to work on each one; they could read each other’s progress posts and collaborate when working on related problems. The agents ran in the background, with no special setup, for about six weeks.<br>The agents solved the two problems in this post. One was the Hawking-Page phase transition, the question of when a hot gas turns into a black hole. Weeks after one of the agents reached a solution, a physicist, who had independently used Claude to tackle the same problem, shared his result, and a colleague realized that Hongbin’s agent had reached the same answer earlier. The two solutions used different methods, so they were a useful check on each other.<br>The modular bootstrap result came from several agents. The one that was assigned the problem spotted the pattern in the numerical results when surveying the bootstrap literature, and another one—which was working on a mathematically related problem about how tightly spheres can be packed into a high-dimensional space—turned that pattern into a method. It found that this method reproduced a sphere-packing result recently proved by an OpenAI model. Claude then applied the same method to the bootstrap problem, which an earlier Claude agent had tried, and failed, to solve in 61 parallel attempts. Two other agents also independently arrived at the same answer. One half of the final proof, showing that the ceiling can’t be lowered, follows the strategy of the OpenAI proof. In September, the results were formally verified in Lean, a computerized proof checker. Claude then wrote the paper with minimal guidance, and a physicist checked every main result.<br>The Hawking-Page transition<br>To understand the first problem, we need to start with something much more familiar: a walk through New York City.<br>Imagine that you’re heading from Penn Station to the High Line entrance on West 30th Street and 10th Avenue, and there are two equally good routes. You could walk west along West 33rd Street and turn south, or head south first and then walk west along West 30th Street. Either way, you have to pick one. In the quantum world, though, that’s not true: a particle can take both routes simultaneously.<br>This is most clearly demonstrated in the famous double-slit experiment. In this test, you fire particles, one at a time, at a barrier cut with two narrow slits, and record where, on a screen behind it, each one lands. Each particle lands at a particular point on the screen, as a particle should. But as you fire more of them, they build up a pattern of stripes that would only be possible if each one had passed through both slits, like a wave.<br>To predict what a quantum particle will do more generally, physicists have to add up every path it could possibly take, known as its possible histories. Not every history counts equally; some contribute far more to the sum than others. It’s an extravagant and mysterious way to describe how a single particle behaves, but it’s also one of the most successful ideas in physics.<br>This approach, known as the “sum over histories,” is well established for particles and anything made of them. But what about gravity? Einstein showed that gravity is a consequence of curved spacetime: objects with mass bend space and time around them, and we feel that bending as gravity. In a quantum theory of gravity, therefore, what gets summed over is the shape of spacetime itself, rather than just the paths of particles moving through it. To make predictions in a quantum theory of gravity, we would have to add up every shape that the universe could possibly take, and nobody yet knows how to do that. Much of modern quantum gravity research is an attempt to work it out.<br>Hawking and Page found a case where this sum is simple enough to handle but still interesting. To explain Hawking and Page’s work, we need to imagine a different kind of universe, called anti-de Sitter spacetime. Imagine you’re standing in a giant bowl. No matter how hard you throw an object, it will always roll back to the place you threw it from.<br>Our universe isn’t like that. The difference comes down to a quantity called the cosmological constant, which describes the energy of empty space. In our universe, this energy is positive, which makes space expand ever faster. In anti-de Sitter spacetime, the energy is negative, so everything is pulled back to where it started. Hawking and Page chose this universe for their calculation because of how it behaves when it heats up: the bowl keeps heat in so it can stay at a steady temperature.<br>At any given temperature, two histories matter far more than all the others. Here, a “history” means an entire version of the universe: a particular shape of spacetime, along with everything in it. In one, the bowl is filled with an ordinary gas of particles—including gravitons, the particles believed to carry gravity. In the other, it contains a black hole. Whichever contributes more to the sum is, in effect, what we would observe—it “wins.” At low temperatures, the gas history wins, and the universe is full of gas; at high temperatures, the black-hole history wins, and the universe contains a black hole. At one particular temperature—which physicists now call the Hawking-Page temperature—the universe switches abruptly from one to the other. This is the phase transition.<br>It’s a rare case where we can see two very different shapes of spacetime competing in the sum over histories, and can say which one wins.<br>This is where the holographic principle enters the story. In the 1970s, Jacob Bekenstein and Hawking found that the amount of information a black hole can hold is proportional to its surface area, not to its volume. That’s very different from ordinary matter, where every bit of volume holds roughly the same amount of information.<br>In the early 1990s, Gerard ’t Hooft and Leonard Susskind proposed that this idea applies to gravity in general—that everything inside a region of space can be fully described by the information on its boundary, just as a flat hologram can display a three-dimensional image. In 1997, Juan Maldacena formalized the idea further. Gravity inside the anti-de Sitter bowl, he argued, is equivalent to an ordinary quantum theory of particles, with no gravity at all, existing on the rim of the bowl (the universe’s outer boundary). These are the gravity side and the quantum side of the duality we described in the introduction—they’re two languages for describing the same underlying reality.<br>In the case Claude studied, the quantum theory on the rim is called N=4 super Yang-Mills theory. It’s related to the theories that describe how particles interact in the real universe, but it has extra symmetries that make it much easier for physicists to work with. (Claude has worked with this theory before, calculating how particles interact within it to a new level of precision.) Since the gravity side predicts two histories competing with each other, the obvious question is: does N=4 super Yang-Mills theory (the quantum side) show the same thing?<br>For now, physicists can analyze this theory in detail only when its particles barely interact with each other, a condition known as weak coupling. This is the opposite end of the spectrum from where Hawking and Page’s gravitational calculation works. Weak coupling on the quantum side corresponds to the small, blurry universe on the gravity side. So there was no guarantee that any of Hawking and Page’s findings would hold there.<br>Remarkably, they do. Bo Sundborg in 1999, and after him Ofer Aharony, Joseph Marsano, Shiraz Minwalla, Kyriakos Papadodimas, and Mark Van Raamsdonk, showed that even at weak coupling, the theory on the rim goes through a transition as it heats up. This is its counterpart of the switch from gas to black hole inside the bowl. But it was still unknown whether this transition is abrupt, like Hawking and Page’s, or smooth and gradual.<br>When particles barely interact, physicists have to calculate how they behave one step at a time. They start with a simplified version of the theory in which particles don’t interact at all. Then they add a series of corrections, each more precise and harder to compute than the last. Physicists call these steps loops. In 2003, Aharony and his colleagues realized that whether the phase transition was an abrupt jump, as Hawking and Page predicted, or gradual, hinged on a single number that appeared only three loops in. Computing that number involves many thousands of terms, known as diagrams—far too many to work through by hand. In 2005, the same group completed the calculation for a simpler cousin of the theory and found an abrupt transition. But the version for N=4 super Yang-Mills, more than 10 times larger, was never completed.<br>The scale of the computational problem, while daunting, wasn’t the only obstacle to completing the calculation. There was a conceptual issue, as well: naively adding up all the parts of the calculation gives an infinite answer, and those infinities have to be tamed carefully to extract a meaningful result.<br>To solve the problem, Claude ran a small research group of agents, all copies of itself. Almost every piece of the calculation was done twice, by agents acting independently. For extra consistency checks, parts of the calculation could also be compared to previous results in the literature.<br>The result Claude found is an abrupt jump as the temperature rises, exactly analogous to what Hawking and Page had found using the sum over spacetime histories. The emerging picture is very simple: the transition is abrupt at both weak and strong coupling—the blurry and the smooth ends, in the gravity description. The most natural possibility is that it stays abrupt everywhere in between.<br>This is a beautiful outcome. It shows that a calculation using the sum over histories in gravity qualitatively matches the behavior of an ordinary quantum theory with no gravity at all.<br>Many open questions remain. The abrupt transition Claude found is very much like the one we see whenever we boil water. One interesting feature of abrupt transitions is that the losing side of the competition can survive for a while: for instance, water can be superheated above 100°C without boiling, as you could see for yourself if you were to put a cup of extremely pure water in the microwave. (But please don’t do this; it’s dangerous, and Anthropic would rather not be responsible for an epidemic of scalded readers.)<br>Something similar happens here. Above the Hawking-Page temperature, the hot gas of gravitons and other particles can survive for a long time in a superheated state. But at a higher temperature it can no longer survive: this is another transition, the Hagedorn transition, which is a characteristic signature of string theory. On the gravity side, that transition has many interesting properties of its own, and it would be valuable to check in detail whether they also appear in N=4 super Yang-Mills theory.<br>Another open question concerns the other possible histories of spacetime. Hawking and Page considered three: one in which their model universe is filled with gas, one that contains a large black hole, and one containing a smaller black hole that never comes to dominate the sum over histories. In principle, there are many more possible histories. As far as anyone knows, none of them ever dominates. But given certain changes to the starting conditions—if the universe is set spinning, for instance, or given a fixed amount of energy or charge—then some of these histories do take over. Working out exactly which ones win, and when, is an interesting problem for the future.<br>The modular bootstrap<br>As we saw earlier, one useful model universe has just two dimensions of space and one of time: it’s called “3D gravity” because it describes gravity in three spacetime dimensions. According to the principle of holographic duality, 3D gravity inside the anti-de Sitter bowl is equivalent to an ordinary quantum theory living on the bowl’s rim.<br>As a model, 3D gravity is much simpler than the real thing, but it still allows for black holes and many of the same mysteries. It provides a useful laboratory for studying the sum over spacetime histories. It’s also a good place to test the idea that spacetime isn’t a basic ingredient of the universe, but emerges from something deeper. In general relativity, black holes look smooth. But in quantum gravity, if you zoom in to the smallest scales—the Planck length, around 10-35 meters, where quantum effects on gravity become impossible to ignore—black holes are made of an enormous number of tiny, individual building blocks. Physicists believe the same is true in our own, four-dimensional universe, but the 3D version is much easier to analyze with holographic duality.<br>Claude’s results build on a method called the bootstrap, a general strategy for solving quantum theories. Counterintuitively, the strategy doesn’t try to solve a theory directly. For 3D gravity, that isn’t even possible, because nobody knows how to define the theory precisely. Instead, the bootstrap rules theories out by showing that they contradict themselves. Physicists scan over all possible quantum theories and try to eliminate them one by one.<br>Remarkably, in many cases this method makes it possible to pinpoint a single quantum theory and calculate precisely how it behaves. The requirements of relativity and quantum mechanics are so demanding, and so delicately balanced, that together they rule out every alternative. In 2012, the bootstrap was used to solve a quantum field theory called the 3D critical Ising model, a simple model of magnetism that also describes water at the point where liquid and vapor become indistinguishable. Since then, it has been applied to many different quantum systems.<br>In 2009, Simeon Hellerman introduced a technique called the modular bootstrap, which applies the bootstrap method to 3D gravity. Its goal is to rule out inconsistent theories of quantum gravity in three spacetime dimensions. By combining it with other bootstrap methods, physicists hope to eventually eliminate every inconsistent theory. Whatever is left must be consistent. There could be no consistent theories, or just one, or whole families of them. Any of these outcomes would be interesting, because it would help us understand what spacetime looks like at the Planck scale in this simplified universe, and give us hints about the Planck scale in our own.<br>Here’s how the modular bootstrap works. 3D gravity in anti-de Sitter spacetime has a quantity called the central charge (c), which roughly counts how many microscopic building blocks the universe is made of. When general relativity holds, c is very large, because large black holes contain an enormous number of building blocks. A second quantity, M₁, is the mass of the lightest black hole. To run the bootstrap, physicists scan over every possible theory, with every possible value of c and M₁, and look for inconsistencies.<br>To understand how that search works, we need to go back to the sum over spacetime histories. In 3D gravity, that means adding up different 3D shapes of spacetime. They can be simple, like a ball, or more complicated, like the donut and two-holed donut in the figure below. The spacetime is the inside of the shape—the dough inside the donut. Its surface, like the rim of the bowl in the earlier section, is where the quantum theory is “written,” in one fewer dimension.<br>The modular bootstrap starts with a spacetime shaped like an ordinary, one-holed donut, or torus. There are two different ways to interpret this shape, depending on which direction we call “time” and which we call “space.” In the first, the long direction around the hole is time and the other, shorter loop, around the tube, is space. In the second, they’re swapped: the long loop is space and the shorter loop is time.<br>In calculations like these, the length of the time loop sets the temperature: the shorter the loop, the hotter the universe. So swapping the two loops trades a cold universe for a hot one. The two interpretations correspond to the two competing histories that Hawking and Page studied. In 3D gravity there are no gravitons, but there is a transition similar to the one that Claude analyzed in N=4 super Yang-Mills theory.<br>Now we come to the crucial step. In relativity, space and time are on an equal footing. So it can’t matter which loop we label space and which we label time. As far as relativity is concerned, the two interpretations are equivalent, and the physics must be the same for every possible experiment.<br>Quantum mechanics, however, treats time differently from space. To calculate anything, you pick a direction to call time and track how the system evolves along it. So, when we calculate observable quantities in quantum gravity, the two interpretations of the donut lead to calculations that look very different. But in relativity, it doesn’t matter which loop is called time, so the two calculations have to give exactly the same answer.<br>If we knew the theory of 3D quantum gravity, we could do both calculations and confirm that they match. We don’t, but with the bootstrap method, that isn’t a problem. Physicists scan over the possible values of c (the number of building blocks) and M₁ (the mass of the lightest black hole). For each pair of values, they try to prove that the theory would be inconsistent—that the two calculations on the donut couldn’t possibly give the same answer. This involves searching for a special mathematical object called a bootstrap functional. If physicists find one, then the theory is inconsistent, and those values are ruled out.<br>The hope, supported by the bootstrap’s successes elsewhere, is that combining this approach with other bootstrap methods will eventually rule out most possible theories of 3D quantum gravity. The theories left standing would be the only ones consistent with both gravity and quantum mechanics. Physicists could then use them to explore some of the biggest questions in quantum gravity: is there only one theory? Does it rely on string theory, or are there alternatives? What are black holes made of at the microscopic level, and how do we sum over spacetime histories?<br>This strategy can work in principle, but it’s very difficult in practice, because bootstrap functionals are hard to find. What matters for quantum gravity is what happens when c is large—but the larger c gets, the harder the search becomes. In the original paper on the modular bootstrap, Hellerman proved that in any consistent theory of 3D gravity, M₁ can be no larger than c/6, up to small corrections. Theories with a heavier lightest black hole can’t possibly be consistent with both gravity and quantum mechanics.<br>The goal of the modular bootstrap is to push this ceiling as low as possible, pinning down how heavy the lightest black hole can be. Physicists write the ceiling as M₁ ≤ c/Λ. A lower ceiling means a larger number Λ. The results below, including Claude’s, concern the simplest and most-studied version of the method, which ignores how the black holes spin.<br>Over the past 15 years, physicists have worked to lower the ceiling and pin down the theory as tightly as possible. There are two ways to do this. One is analytical—building a bootstrap functional by hand, with pen-and-paper mathematics. The other is numerical—using computers to search for functionals and optimize them. The results of these numerical calculations suggested that the modular bootstrap could push the ceiling down to about c/9.1. But these calculations get harder as c grows, so they couldn’t settle the question. On the analytical side, Tom Hartman, Dalimil Mazáč, and Leonardo Rastelli proved a ceiling of c/8.5, but because this was higher than the numerical results had suggested, this clearly wasn’t the best the modular bootstrap could do. Since then, just how tightly the modular bootstrap can constrain quantum gravity has remained an open question.<br>Claude set about solving the problem by running numerical experiments and reproducing results from the literature. In doing so, it noticed a pattern that physicists had so far missed, involving the way the numerical ceiling shifted slightly as c grew. Based on that pattern, Claude developed a hypothesis about the behavior of the bootstrap functional, using a mathematical tool called a spectral curve. Spectral curves are well known in other areas of mathematics and physics, but had never been applied to this problem. Claude found the spectral curve that governs the modular bootstrap at large values of c. It then used it to prove that the lightest black hole in 3D quantum gravity can be no heavier than c/Λ, where Λ is given by an exact formula and is approximately 9.1266. It also proved that this ceiling is optimal: it’s the lowest this version of the modular bootstrap can ever go. Claude delivered the solution across four research notes, which it later merged into a single paper.<br>This is one of the first times the bootstrap has been used to derive an exact result in the regime of quantum gravity where black holes matter. It also shows that this version of the method can’t, on its own, push the ceiling down to c/12, the mass at which black holes first appear; that will take other ingredients. Although it doesn’t pin down the theory of quantum gravity in three dimensions by itself, it provides a starting point and helps to narrow the search.<br>Conclusion<br>These two results show Claude doing two very different kinds of research. The first is a known calculation that physicists had set aside for two decades, because the work was too long and error-prone to complete by hand. The second required a new idea: spotting a pattern others had missed and bringing in a mathematical tool from another area of physics. Both were carried out largely autonomously. Neither result settles the question of quantum gravity, or even comes close to doing so, but each pushes physics forward in a longstanding area of research.<br>Read the black hole phase transition paper here, and the modular bootstrap paper here.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Anthropic (ANT) stock lists at nearly $2T valuation
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    38 points ·
+    10 comments ·
+    _hmj
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50562528">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Anthropic (ANT) stock listed at nearly $2 Trillion valuation. It is the biggest IPO ever!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Balcony solar: two panels, some zip ties, and an outlet
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    gregable
+  </div>
+
+  <div class="meta">
+    gregable.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://gregable.com/2026/11/balcony-solar.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50563969">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Nov 19, 2026<br>I recently installed two solar panels on my balcony. This is thanks to California&#x27;s new &quot;balcony solar&quot; law, SB 868, which lets you plug a small set of solar panels directly into an ordinary outlet on your house. DIY: No electrician or permit required. The panels just feed power back into the house through the same kind of outlet you&#x27;d plug a lamp into.<br>I should admit up front that my install is technically in a bit of a gray area when it comes to the law&#x27;s requirements, but more on that below.<br>The installation was pretty simple. It took me about an hour, and the only hardware required was some heavy duty zip ties, which came in the box with the panels.<br>It&#x27;s a little early to draw conclusions, since it&#x27;s been cloudy and rainy ever since I put them up. Still, I&#x27;ve generated over a kWh on my best day so far, and I&#x27;ve seen over 250W of power coming in at peak.<br>SB 868 was signed at the end of September and officially takes effect on January 1, 2027, so yes, I&#x27;m also a few weeks early. The short version: a plug-in solar system of up to 1,200W no longer needs an interconnection agreement with your utility, and the utility can&#x27;t charge you fees for it. Before this, even a single panel was treated like a full rooftop system on paper. This kind of setup has been common in Germany for years, where it&#x27;s called Balkonkraftwerk, or &quot;balcony power plant&quot;.<br>The catch is that the system has to be certified as a plug-in solar system by UL or an equivalent lab. In practice that means a new standard called UL 3700, and that&#x27;s where my gray area comes from. As I understand it, UL 3700 wants two things that I don&#x27;t have: a special outlet and a dedicated circuit.<br>UL 3700 calls for a unique plug and matching receptacle that won&#x27;t mate with a normal household outlet. The reason is what UL calls touch safety. A normal plug is only ever on the receiving end of power, so its metal blades are dead the moment you pull it out of the wall. A solar panel&#x27;s plug is different, because the power is coming from the cord. If the plug is loose or gets pulled partway out, the exposed blades can stay energized. An inverter does notice that the grid has gone away and shuts itself off, but the general rule allows it up to two seconds to do so, which is a long time to be touching a live plug. My inverter, a Hoymiles HMS-360-1WM-LV, is reportedly quicker than that, dropping to under 34V within a second of being unplugged.<br>That slide is from a UL Solutions presentation that walks through the reasoning, and Bright Saver has a more readable explainer: Why does a fully certified plug-in solar kit need a special outlet?<br>Here&#x27;s the funny part. As far as I can tell, this special outlet and plug don&#x27;t exist yet. I couldn&#x27;t find one for sale anywhere, or even a picture of one. So technically there&#x27;s no way to satisfy this requirement right now, even if you wanted to.<br>In the meantime, I feel comfortable with my installation. The panels are plugged into a GFCI outlet, and that outlet lives inside a heavy duty outdoor outlet box. The cover closes over the plug, so nothing is going to bump it loose, and nobody is going to brush against the blades by accident.<br>A breaker only sees the current flowing through it from the breaker box. If solar is feeding the same circuit from the other end, the wiring in the wall could carry more than the breaker&#x27;s limit without the breaker ever noticing.<br>My circuit isn&#x27;t technically dedicated, but nothing else is plugged into it, and I&#x27;d unplug the panels before adding anything. It&#x27;s also a 20A circuit, and my inverter&#x27;s rated output tops out at 3A, so the panels can&#x27;t add much even on their best day. The worst case is that the wiring ends up carrying 23A before the breaker trips, instead of 20A. To get there, I&#x27;d need other things on the circuit drawing more than 20A at the same moment the panels are at full output. And since the outlets on this circuit are all 15A outlets, no single appliance should be able to do that on its own unless it&#x27;s broken. Realistically it would take two heavy loads running at once, in full sun, on a circuit where I currently have nothing else plugged in. Still, &quot;I promise to be careful&quot; is not the same thing as meeting the standard, so: gray area.<br>I bought my system from Bright Saver, a nonprofit that advocates for plug-in solar in the US. They&#x27;re the same folks behind the special outlet explainer above. Along with the policy work, they sell balcony solar kits to their members at roughly what the kits cost them. Membership is $29 a year.<br>I went with the Flex 360 kit, which is the two panel option. In the box:<br>My total with taxes came to $455, which works out to about $1.26 per watt. There&#x27;s also a single panel version of the kit if you have less railing to work with.<br>The inverter connects to wifi and reports to Hoymiles&#x27; S-Miles Home app, which is how I know any of the numbers in this post. It shows how much power the panels are producing right now, the total for today, and a lifetime total, along with a chart of each day&#x27;s production.<br>This screenshot is from around lunchtime on a cloudy day: 191W coming in, 414Wh so far that day, and 8.92kWh since I plugged the panels in.<br>S-Miles also has a cloud integration for Home Assistant, so I&#x27;ve been pulling the same data into HA as well.<br>I only have a few cloudy weeks of real data, so for a full year I asked PVWatts, the national lab&#x27;s solar calculator. I told it I have 360W of panels in San Jose, facing south and hanging straight up and down, with nothing shading them. It estimates about 365kWh per year. That works out to about 1kWh per day on average, which is in the same ballpark as what I&#x27;ve seen on my better days so far.<br>Vertical is a much worse angle than a tilted rooftop panel gets, but it has one funny side effect: the panels do their best work in fall and winter, when the sun is low in the sky and shining straight at them. PVWatts expects more than twice as much from them in October as in June.<br>My power comes from San Jose Clean Energy and is delivered by PG&amp;E. Between the two of them I pay roughly 40 cents per kWh, so:<br>Nobody is getting rich on $145 a year. But for an hour of work and some zip ties, I&#x27;ll take a three year payback.</div>
+</div>
+
+</div>
+
+</body>
+</html>
