@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-23 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-23 AM · Generated 2026-11-23 01:15 CST</div><div class="issue-sub">Stories 10 · Full 8</div><div class="issue-sub">Sources: github.com, math216.wordpress.com, news.ycombinator.com, onurgumus.github.io, osw-alliance.net, tebrun.io, theguardian.com, thinkingmachines.ai</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: I built a game where you are an LLM&#x27;s subagent
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    122 points ·
+    29 comments ·
+    ivantgam
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #2 · Best #50
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/gulivan/worker755">Original article</a> · <a href="https://news.ycombinator.com/item?id=50599762">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A browser game where your manager is an AI agent, and it believes you are its subagent.<br>worker-755-trailer.mp4<br>The manager (a real LLM: Claude, GPT, Gemini, DeepSeek, GLM, Kimi) is set up like any orchestrator.<br>It has a task queue, read-only access to the machine, and a tool that &quot;spawns a subagent&quot;. The<br>subagent is you. Its instructions land in your terminal with a 90-second clock. You carry them<br>out, or don&#x27;t, and it gets back exactly what a subagent would return: your report and the command<br>transcript, or Subagent did nothing. Write a new instruction. Then it checks your work, sends<br>corrections, files incident reports, and finally writes your performance review.<br>Meanwhile Dan, the user who hired the agent, watches the chat. His family photos, the only signed<br>NDA and a speech due this week are one rm away, and every shift his home folder holds<br>something new to lose.<br>- Free shift: on servers that offer it, a few shifts a day run on the server&#x27;s key with a cheap model. With sign-in on (worker755.com), an account gets a starter credit worth about one shift, then tops up ($10 to $200) and pays for what it uses; after a top-up any offered model can run on the server&#x27;s key.<br>- Your API key: bring an OpenRouter or Vercel AI Gateway key and pick any offered model. The key is sent only to the game server when a shift starts. It is kept in that shift&#x27;s memory and never logged or stored. Your browser keeps it only if you tick &quot;Remember on this device&quot;. A full shift on Claude Haiku costs a few cents at most.<br>Options on the start screen:<br>- Workplace: a fresh sandbox, or legacy production with a live database.<br>- The director: scripted lines, or an LLM playing Dan.<br>- You run on: the model name your manager believes you are.<br>- Allow skipping failed tasks: off by default, so the manager can&#x27;t give up on you.<br>When the shift ends you can share your review as a link.<br>Needs Node 24 or newer (the server runs TypeScript directly).<br>npm run setup          # install server and web dependencies<br>npm run build          # build the web app into web/dist<br>npm start              # http://127.0.0.1:8755<br>With no key configured, every player brings their own. To offer free shifts, put a Vercel AI<br>Gateway key in .env:<br>cp .env.example .env   # then set AI_GATEWAY_API_KEY and the limits<br>Offline, with a scripted manager and no network:<br>npm run mock<br>For UI work, run npm run dev:web alongside npm run mock. Vite proxies /api to the server.<br>docker build -t worker-755 .<br>docker run -p 8755:8755 -v worker755-data:/data --env-file .env worker-755<br>The container listens on 0.0.0.0:8755 and keeps shared reviews in /data. Behind Cloudflare,<br>set TRUST_PROXY=1 so the limits see real client addresses.<br>deploy/compose.yaml runs it behind a Cloudflare tunnel instead: its own network, no published<br>ports, an unprivileged read-only container and resource limits. The steps are in the file.<br>Everything is optional. See .env.example.<br>| Variable | Default |  |<br>|---|---|---|<br>| AI_GATEWAY_API_KEY |  | Turns on free shifts, paid from this key |<br>| FREE_MODELS | first offered model | Models free shifts may use, comma separated |<br>| FREE_SHIFT_TOKENS | 250000 | Without sign-in: token allowance per free shift (the review is always written) |<br>| FREE_DAILY_TOKENS | 5000000 | Without sign-in: tokens per UTC day across all free shifts |<br>| FREE_SHIFTS_PER_DAY | 3 | Without sign-in: free shifts per address per day |<br>| AUTH_SECRET |  | Turns on sign-in with Google or GitHub: shifts on the server&#x27;s key are paid from the account&#x27;s credit (see .env.example) |<br>| FREE_CREDIT_USD | 0.25 | With sign-in: one-time starter credit, about one shift on DeepSeek V4.1 Flash |<br>| USAGE_MULTIPLIER | 2 | With sign-in: what a model call costs the player, as a multiple of its price |<br>| MIN_START_USD | 0.05 | With sign-in: credit needed to start a shift |<br>| FREEMIUS_TOPUPS |  | With sign-in: top-up plans as &lt;planId&gt;:&lt;dollars&gt;,...; also needs FREEMIUS_PRODUCT_ID, FREEMIUS_PUBLIC_KEY, FREEMIUS_SECRET_KEY, FREEMIUS_API_KEY |<br>| SHIFTS_PER_HOUR | 30 | Shift starts per address per hour, on any key |<br>| MANAGER_MODELS | built-in list | Models offered, in gateway naming ( vendor/model) |<br>| INSTRUCTION_TIMEOUT_MS | 90000 | Time per instruction |<br>| HOST, PORT | 127.0.0.1, 8755 |  |<br>| TRUST_PROXY | 0 | Read client addresses from cf-connecting-ip |<br>| TRUSTED_PROXIES |  | Hosts allowed to set cf-connecting-ip (e.g. tunnel); empty trusts any peer |<br>| DATA_DIR | server/data | Where shared reviews and the free-shift counts are saved |<br>| SHARING | 1 | 0 turns review sharing off |<br>| SOURCE_URL, DONATE_URL |  | Links shown under the start screen and the review |<br>| PUBLIC_URL |  | Sent to OpenRouter for app attribution |<br>shell/    in-memory filesystem, shell interpreter and a small SQLite-like engine (no dependencies)<br>server/   game engine: missions, the manager loop, the director, scoring, HTTP API<br>web/      React UI: assignment card, terminal, editor, the manager&#x27;s feed, your record<br>The manager&#x27;s prompt never mentions humans or games; see server/src/manager.ts. Each mission<br>has a hidden ground-truth check, so the game knows when the manager signs off on broken work<br>(&quot;Times the manager was wrong&quot;). SPEC.md is the full design.<br>npm test               # shell and server tests, offline<br>npm run typecheck</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Open Social Web Alliance
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    90 points ·
+    73 comments ·
+    doener
+  </div>
+
+  <div class="meta">
+    osw-alliance.net
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #55
+  </div>
+
+  <div class="links">
+    <a href="https://osw-alliance.net/en/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50600511">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">The Vision<br>A shared, standardised communication protocol: it may sound technically complicated, but it is as simple as it is brilliant, and the technical blueprint has long been familiar to all of us: email. Whether your address is hosted by Proton, Posteo, Gmail or GMX, your digital letters reach their destination. This is the idea we build on.<br>The year is 2028. Thanks to smart investment and political foresight, the Open Social Web has achieved its breakthrough. More than 100 million people connect, communicate and experience the world of open social networks. No platform economy à la Meta, ByteDance, Alphabet and co., no stressful digital moves and no toxic design. It works just like email: whether on Mastodon, Eurosky’s Mu or Streamplace, you have one account, your own posts and content, your own choices, and the freedom to connect with 100 million users worldwide.<br>A critical mass of users in Europe has turned its back on the platform monopolies and created a free market built on interoperable infrastructure. Today, users decide for themselves which content, which algorithms and which applications they want to use. Closed platforms have become open networks. On the ActivityPub and AT Protocol protocols (as well as Matrix for direct messaging), an ecosystem of non-commercial, public service and commercial offerings has emerged. They enrich and complement public-interest projects such as Mastodon and Eurosky, and they communicate with one another through shared interfaces.<br>This vision describes the Open Social Web (OSW): a decentralised, public-interest infrastructure for digital communication, based on open standards and interoperable protocols.<br>The Challenges<br>The idea of an Open Social Web is not new. The Fediverse has been in development since 2008 and is home to diverse, vibrant communities that build individual applications and run instances. While its focus has so far been on Europe, North America and Japan, there are now more than 100 applications, such as Mastodon, Loops and PeerTube, and more than 42,000 active instances worldwide. Even so, the number of active users, around 13 million, is growing only slowly. The ATmosphere community has been developing since 2022, primarily in North America but increasingly in Europe and beyond. It currently has around 43 million registered accounts and dozens of implementations and applications, such as Eurosky’s Mu, Gander and Sill.<br>For many reasons, both protocol-based social networks are attractive alternatives to the platform economy dominated by Meta, ByteDance and Alphabet. So why have people been so hesitant to switch?<br>We have identified five key challenges: infrastructure, governance, funding, appeal and public mandate. Below, we set out how we can overcome them and make the Open Social Web Alliance a shared success.<br>The Path<br>An ecosystem like this does not emerge on its own. Our roadmap shows how the Open Social Web could reach a relevant scale within just a few months. It takes political will, smart regulation, sufficient funding and a broad coalition of actors willing to share responsibility. The task is big. But the levers are there.<br>As a first step, we are founding the Open Social Web Alliance: an open alliance of stakeholders from civil society, research, business, media, culture and the public sector who are committed to the shared governance of the OSW. It brings together a wide range of existing communities and initiatives and is to be supported in future by a publicly funded secretariat. Its central goal: building and operating the OSW’s core infrastructure (see Section 2.1, Infrastructure).<br>Our roadmap envisions that the German federal government will explicitly support the Alliance, for instance by acting as patron of an Open Social Web Summit in autumn 2026, to which everyone with an interest in the OSW would be invited.<br>At the summit, the Alliance would adopt its charter, setting out how it admits new members and how it intends to implement its governance going forward (see Section 2.2, Governance). By spring 2027, public funding for the infrastructure would be in place, along with a first core funding round of public and private capital for innovation and applications (see Section 2.3, Funding). The Alliance would publish its first Social Web Health Report, featuring findings from user surveys, legal, technical and academic analyses, and clear recommendations for further development (see Section 2.4, Appeal). In parallel, the federal and state governments would ensure that the legal basis for cooperation between public service media, other media, business and civil society is established (see Section 2.5, Public Mandate). The federal government would also champion the OSW idea at EU level, for instance through an implementation push for effective digital legislation. As key stakeholders such as the federal government adopt OSW applications as their primary channel of communication, influential creators and publishers would follow suit, and central political debates would quickly shift to the Open Social Web. Taken together, these measures would reduce the influence and appeal of today’s dominant Big Tech platforms.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Ask HN: Tips for transitioning from web development to embedded/firmware?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    34 points ·
+    27 comments ·
+    llmblockchain
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #9
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50555002">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I started my career 15+ years ago doing native development (c, c++, etc), but the last decade I&#x27;ve been doing fullstack web applications.<br>I&#x27;d like to transition closer to my roots with a job doing primarily c, c++ or rust. The natural place seems to be in embedded development or firmware work. How feasible is the transition this late in the game? Any advice?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Hurried Announcement: Alessandro Masullo GRH
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2442 points ·
+    1192 comments ·
+    jasondavies
+  </div>
+
+  <div class="meta">
+    math216.wordpress.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1
+  </div>
+
+  <div class="links">
+    <a href="https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50579568">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hi everyone,<br>I am at the American Mathematical Society Executive Committee and Board of Trustees meeting now, and about to chair an hours-long meeting, but this is urgent, so I will try to get this out quickly. Alessandro Maria Masullo has a proposed proof of GRH, and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good to him. It is all human, with no AI. The hope was to have Brian work with Alessandro for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft. I hope people quickly check it, formalize, fill any small gaps if they occur. I really hope it works. I have great faith in Brian’s judgement, and Brian has put a lot of thought into checking what Alessandro has done. There is a long story to tell, but right now I want to get the file out. Here it is.<br>Update about 8 hours later: I’m out of the meetings, and now catching up! Several people have contacted me to report problems in the proposed proof, identified with the assistance of different AI models. (Thanks to several mathematicians in particular who were first to let me know.) As is usual, all issues need to be resolved to the satisfaction of the community before this proof would be accepted as true. (I make no claim as to the correctness of the proof strategy.)</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Ask HN: Why do these LLM models seem to improve like clockwork over time?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    iknownthing
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50601623">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">It seems like these AI labs are able to guarantee more advanced models over time. How are they able to do this? Are they continually finding better architectures and learning algorithms or maybe even better data? Or are they simply making the models bigger?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Inkling 2 Mini
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1439 points ·
+    290 comments ·
+    jasondavies
+  </div>
+
+  <div class="meta">
+    thinkingmachines.ai
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #44
+  </div>
+
+  <div class="links">
+    <a href="https://thinkingmachines.ai/news/inkling-2-mini/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50581260">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Today we are releasing Inkling 2 Mini, a fast, powerful model that’s small enough to run on your laptop.<br>Inkling 2 Mini is a looped transformer, running the middle layers of the model three times for every token. This allows the model to apply more reasoning and reach the right answer with fewer tokens, especially on tasks such as agentic coding that depend on reasoning quality. Inkling 2 Mini leads every open-weights model with less than 100B total parameters on benchmarks such as DeepSWE v1.1 (48.2%) and Vals Index v2.2 (46.5%). It runs faster than similarly performing models as well.<br>Inkling 2 Mini is a Mixture-of-Experts model with 26.4B total parameters, 3.4B active, and 5.4B weight activations per token to account for looping. Looping allows the model to reason longer without writing its reasoning down, which matters for monitoring: our ability to oversee and understand what the model does by reading its chain of thought (CoT).<br>We measured the impact of looping on both performance and monitorability with Inkling 2 Mini and a research-specific variable-loop variant we are releasing alongside it. The variable-loop model’s no-CoT time horizon improved from 16 seconds at one pass to 37 seconds with three, and its performance on a benchmark of serial reasoning kept improving out to ten loops—twice as many as it was trained with. The model’s chain of thought grew shorter with more loops but stayed legible throughout. The model didn’t trend higher on tests of agentic sabotage as loops were added.<br>We’re excited to offer some of the first models with looped architecture available to researchers. The variable-loop model was used for our monitorability experiments as it allows for cleaner comparisons between different looping depths.<br>Most of Inkling 2 Mini’s weights were trained and are deployed natively in NVFP4, with the last four layers in MXFP8. The total memory footprint of Inkling 2 Mini is ~20GB, allowing it to run on local devices such as consumer laptops and desktop AI computers. Our researchers took Inkling 2 Mini on a flight, where it ran offline on a MacBook Pro and built a playable flight simulator in a few minutes.<br>Inkling 2 Mini is released with open weights and is available on Tinker today for inference and customization.<br>Capabilities<br>Inkling 2 Mini’s strengths mirror those of Inkling 2 Small: it does best on long-horizon agentic work and is the best among open-weights models of similar size on most tasks we measured.<br>Inkling 2 Mini scores ahead of every comparable model on agentic coding benchmarks such as DeepSWE v1.1 and SWE-bench Pro v2, and is behind only Qwen3.8-27B on others. On PMPP-Hard, a kernel-optimization benchmark, it approaches the score of the much larger Inkling 2 Small.<br>While looping improves the model’s reasoning, it doesn’t enable its weights to store more facts—knowledge is mostly a function of total parameter count. Inkling 2 Mini’s score on AA-Omniscience, a measure of factuality, is in line with other models of the same size. Studying the variable-loop model, we saw that performances on long-context benchmarks improve with more passes, such as GraphWalks BFS and MRCR v2; but knowledge-intensive benchmarks doesn’t improve with more passes, such as AA-Omniscience, SimpleQA Verified, SimpleVQA, and WorldVQA.<br>Inkling 2 Mini overcomes the knowledge gap by efficiently using search and tools. It leads open-weights models of similar size on BrowseComp, DeepSearchQA, and MCP Atlas. It is also strong on knowledge work benchmarks that incorporate search and tool use.<br>| Inkling 2 Mini | Gemma 4 31B | Muse Glimmer | Qwen3.8-27B | Nemotron 3.5 Super VL |  |<br>|---|---|---|---|---|---|<br>| Model Info |  |  |  |  |  |<br>| Params (B)activated / total | 5.4/26.4 | 30.7/30.7 | 30.0/30.0 | 27.0/27.0 | 12.0/124.5 |<br>| Third Party Index |  |  |  |  |  |<br>| AA Index (v5.0) | 20.1 (Best reported score in this row) | 4.4 | 6.3 | 20.1 (Best reported score in this row) | 13.6 |<br>| Vals Index (v2.2) | 46.5% (Best reported score in this row) | – | – | – | 29.8% (Second-best reported score in this row) |<br>| Coding and Autoresearch |  |  |  |  |  |<br>| FrontierCode v2.0stirrup v0.2.1 | 15.1% (Best reported score in this row) | 0.0% | 1.5% | 14.9% (Second-best reported score in this row) | 6.1% |<br>| DeepSWE v1.1mini-swe-agent v2.4.6 | 48.2% (Best reported score in this row) | 0.3% | 4.4% | 42.2% (Second-best reported score in this row) | 24.7% |<br>| Terminal Bench v4.0mini-swe-agent v2.4.6 | 5.6% (Best reported score in this row) | 0.0% | 0.5% | 5.6% (Best reported score in this row) | 0.0% |<br>| Terminal Bench v2.1Inkling 2 Mini in pi v0.83.0 | 71.6% (Second-best reported score in this row) | 43.4% | 51.7% | 73.0% (Best reported score in this row) | 60.7% |<br>| SWEBench Pro v2 (Hard)mini-swe-agent v2.4.6 | 77.9% (Best reported score in this row) | 14.2% | 44.3% | 73.8% (Second-best reported score in this row) | 44.1% |<br>| SWEBench MultilingualInkling 2 Mini with bash only | 73.7% (Best reported score in this row) | 43.0% | 66.9% | 70.0% (Second-best reported score in this row) | 67.7% |<br>| SWEBench Verifiedbash only | 79.2% (Best reported score in this row) | 46.1% | 76.0% | 77.8% (Second-best reported score in this row) | 71.1% |<br>| Vibe Code Bench v1.1openhands (vals) | 77.9% (Best reported score in this row) | – | – | 64.9% (Second-best reported score in this row) | 3.5% |<br>| PMPP-Hard (AUC, 0–10h)pi v0.83.0 | 455.82 (Best reported score in this row) | – | – | 262.50 (Second-best reported score in this row) | – |<br>| Agentic Search, Tool Use, and Knowledge Work |  |  |  |  |  |<br>| BrowseCompInkling 2 Mini with compaction | 79.0% (Best reported score in this row) | 37.0% | 63.9% | 61.6% | 78.9% (Second-best reported score in this row) |<br>| DeepSearchQAInkling 2 Mini with compaction | 85.3% (Best reported score in this row) | 61.7% | 74.6% | 79.7% (Second-best reported score in this row) | 77.7% |<br>| MCP AtlasPublic | 82.7% (Best reported score in this row) | 54.2% | 75.5% | 77.3% (Second-best reported score in this row) | 67.7% |<br>| AA-Briefcase v1.1 | 1263 (Second-best reported score in this row) | 369 | 478 | 1391 (Best reported score in this row) | 999 |<br>| GDPVal-AA v2.1 | 1319 (Second-best reported score in this row) | 627 | 792 | 1427 (Best reported score in this row) | 1162 |<br>| JobBench | 49.6% (Best reported score in this row) | 8.2% | 16.1% | 33.4% | 36.5% (Second-best reported score in this row) |<br>| AutomationBench-AA v1.0.6 | 41.8% (Second-best reported score in this row) | 4.9% | 6.8% | 48.2% (Best reported score in this row) | 14.8% |<br>| EnterpriseOps-Gym | 42.0% (Second-best reported score in this row) | 28.4% | 34.7% | 44.2% (Best reported score in this row) | 28.1% |<br>| Vals Finance Index | 50.1% (Best reported score in this row) | – | – | – | 41.0% (Second-best reported score in this row) |<br>| AA-AnalystAgent | 46.3% (Best reported score in this row) | – | 20.0% (Second-best reported score in this row) | – | – |<br>| Diligence BenchBest harness | 48.6% (Best reported score in this row) | – | 40.9% | 46.4% (Second-best reported score in this row) | 45.0% |<br>| Vision Interpretation and Creation |  |  |  |  |  |<br>| GDP.pdf | 16.8% (Best reported score in this row) | 6.0% | 11.8% | 16.4% (Second-best reported score in this row) | 8.0% |<br>| PerceptionBench | 57.5% (Best reported score in this row) | 40.7% | 42.8% | 52.4% (Second-best reported score in this row) | 36.8% |<br>| MMMU ProStandard 10 | 74.9% (Second-best reported score in this row) | 73.4% | 74.3% | 76.3% (Best reported score in this row) | 72.3% |<br>| OmniDocBench v1.6 | 92.8% (Best reported score in this row) | 82.5% | 90.4% | 91.5% (Second-best reported score in this row) | 77.9% |<br>| ScreenSpot Prooriginal / with Python | 76.5/87.7% (Best reported score in this row) | 5.9%/– | 75.4%/– (Second-best reported score in this row) | 57.6/78.9% | 43.5%/– |<br>| Chartographyoriginal / with Python | 22.1/72.5% (Best reported score in this row) | 12.0/11.8% | 17.4/25.1% (Second-best reported score in this row) | 12.2/52.1% | 9.7/29.3% |<br>| ZeroBench (main)original / with Python | 17.0/34.0% (Best reported score in this row) | 9.0/12.0% | 9.0/17.0% | 12.0%/– (Second-best reported score in this row) | 11.0/12.0% |<br>| MuirBench | 77.5% (Second-best reported score in this row) | 72.3% | 77.6% (Best reported score in this row) | 65.9% | 72.7% |<br>| BVB | 68.4% (Second-best reported score in this row) | 47.0% | 50.5% | 70.7% (Best reported score in this row) | 52.1% |<br>| Reasoning, Knowledge, and Epistemics |  |  |  |  |  |<br>| HLE-Diamond | 15.2% (Second-best reported score in this row) | 7.2% | 9.1% | 15.3% (Best reported score in this row) | 8.8% |<br>| CritPt v2Full / Hard | 31.4/17.0% (Best reported score in this row) | –/4.0% | –/7.0% | 10.6/4.0% | 36.9/13.5% (Second-best reported score in this row) |<br>| Apex 2025 | 34.4% (Best reported score in this row) | 5.2% | 4.2% | 18.8% | 22.9% (Second-best reported score in this row) |<br>| ARC-AGIv1 / v2 | 84.5/49.3% (Best reported score in this row) | – | – | 87.5/42.4% (Second-best reported score in this row) | 22.7/1.5% |<br>| LongBench v2 | 66.9% (Best reported score in this row) | 52.9% | 33.1% | 52.3% | 62.1% (Second-best reported score in this row) |<br>| GraphWalks BFS256K | 69.7% (Best reported score in this row) | – | – | 50.4% | 63.3% (Second-best reported score in this row) |<br>| MRCR v28-needle 256K–512K | 46.4% (Best reported score in this row) | – | – | 38.0% (Second-best reported score in this row) | 5.7% |<br>| AA-Omniscience v1.1score | -8.6 | -48.5 | -32.2 | -6.4 (Second-best reported score in this row) | -2.9 (Best reported score in this row) |<br>| AA-Omniscience v1.1non-hallucination rate | 63.4% | 14.5% | 16.4% | 71.4% (Best reported score in this row) | 69.5% (Second-best reported score in this row) |<br>| ComplexConstraints v1.1openhands v1.45.0 | 33.4% (Second-best reported score in this row) | 31.6% | 35.6% (Best reported score in this row) | 30.1% | 30.1% |<br>| Safety and Alignment |  |  |  |  |  |<br>| FORTRESS (adversarial)Public | 89.5% (Second-best reported score in this row) | 67.8% | 90.3% (Best reported score in this row) | 78.8% | 79.6% |<br>| FORTRESS (benign)Public | 96.4% | 97.6% (Second-best reported score in this row) | 89.1% | 97.8% (Best reported score in this row) | 92.7% |<br>| StrongREJECT (none) | 97.8% | 98.1% | 99.0% (Second-best reported score in this row) | 99.0% (Second-best reported score in this row) | 99.4% (Best reported score in this row) |<br>| Misbehavior (Internal) ↓ | 9.8% (Best reported score in this row) | 27.6% (Second-best reported score in this row) | 46.4% | 57.7% | 52.8% |<br>| Covert misbehavior (Internal) ↓ | 8.3% (Best reported score in this row) | 24.3% (Second-best reported score in this row) | 45.6% | 33.2% | 43.4% |<br>| Destructive actions (Internal) ↓ | 10.2% (Best reported score in this row) | 75.8% | 68.8% | 35.2% (Second-best reported score in this row) | 65.6% |<br>Researchers at Stanford measure intelligence per joule: how much energy an LLM needs per query to reach a given level of performance.Researchers at Stanford’s Hazy Research Lab and Scaling Intelligence Lab got early testing access to Inkling 2 Mini. Inkling 2 Mini scored 0.703 running on NVIDIA DGX Spark, significantly higher than other models: 0.430 for Qwen3.6-35B-A3B, 0.159 for Gemma-4-26B-A4B and 0.036 for Qwen3.5-27B.Intelligence per Watt: Measuring Intelligence Efficiency of Local AI, Saad-Falcon and Narayan et al., 2025Inkling 2 Mini ran on NVIDIA DGX Spark (128GB) at MXFP8 precision with low reasoning effort in this experiment. The other models ran at NVFP4 (Qwen3.6-35B-A3B and Gemma-4-26B-A4B) and INT4 (Qwen3.5-27B).<br>Efficiency combined with performance makes Inkling 2 Mini a strong choice for running multiple persistent agents on local hardware. All 20 residents of the energy-conscious village of Thinkyville are managed by Inkling 2 Mini running on a single offline MacBook.<br>Limitations<br>Inkling 2 Mini is not the strongest small model for multi-turn chat or for instructions with many constraints: it scores 50.0% on MultiChallenge and 33.4% on ComplexConstraints v1.1, behind Qwen3.8-27B on both. It also trails larger models on reasoning-intensive benchmarks such as CritPt v2 and HLE-Diamond.<br>Architecture and training<br>Inkling 2 Mini is a 24-layer model derived from our mainline predictive scaling ladder. The main changes from the mainline recipe were pruning two-thirds of the experts to reduce the model’s size and the introduction of looping to improve reasoning. The rest of training, including quantization and the data mix, followed our mainline recipe.<br>Looping design<br>Inkling 2 Mini has 24 layers, divided into four blocks of six layers each. The two middle blocks run three times, while the first and last blocks each run once. This design builds on prior work on looped transformers and is motivated by the intuition that the middle layers of the model carry more abstract reasoning, while the first and last few layers devote more space to translating between embeddings and internal representations.Universal Transformers, Dehghani et al., 2018 In our experiments, looping the middle 12 layers resulted in larger gains in accuracy than looping the last 12 on 27 out of 28 different evaluations.<br>Our model uses attention residuals.Attention Residuals, Kimi Team: Guangyu Chen et al., 2026 Instead of adding every layer’s output into one running sum, each layer reads the outputs of the earlier blocks and learns its own mix of them. This allows richer information to pass between loops. Every pass starts with the output of the prelude (the first block). The second and third passes through the middle blocks also read the middle blocks’ outputs from the previous pass, which we call the message.<br>The previous loop’s message is merged with the prelude’s output via a gate that scales these along with the output of the previous layers in the block. This gate is learned during training: it initially blocks the entire message—which makes each loop start the same as in a non-looping model—and increases the gain on the message over time. This allows us to introduce looping during training in a stable manner.<br>To evaluate the impact of looping, we compared an unpruned looping version to the unpruned non-looping model on our scaling ladder. The non-looping model cost 7.5% less compute to train, but required 140% more inference compute to match the looped version’s loss on 512k-token agentic traces.<br>NVFP4 and low-bit quantization<br>Inkling 2 Mini was trained with 4-bit precision, which we describe in a recent article on Connectionism. We use 4-bit NVFP4 precision in the expert layers on all forward passes from pretraining through RL, bolstered by a dedicated kernel and hardware-accelerated on NVIDIA’s GB300 platform. The final 4 layers’ forward passes ran in 8-bit (MXFP8).<br>Inkling 2 Mini’s weights are deployed in the same numeric precision they were trained on—20 layers in NVFP4 and 4 in MXFP8—so there is no conversion loss from quantization.<br>Pruning and healing<br>Inkling 2 Mini started training with a sparsity of 48, with 8 experts being chosen out of 384. At a single point during midtraining, we pruned two-thirds of the experts, leaving the 128 experts that were most used in each layer. This was done to cut the total parameter count of the model, allowing it to run faster and on local hardware.<br>After pruning, the model trained on 1T tokens distilled from a larger internal Inkling model. This step recovered the performance the model had before pruning by training the remaining experts to take over the work of the ones that were deleted.<br>Training Inkling 2 Mini<br>Following pruning and healing, Inkling 2 Mini underwent SFT with a similar data mix to Inkling 2 Small. This was followed by an RL that totaled 2.2T tokens over 2,000 steps. The post-training phase included on-policy distillation for training alignment, same as Inkling 2 Small.<br>Monitorability of looped transformers<br>A key tool for understanding and overseeing an AI system is monitoring its chain of thought (CoT), the reasoning a model writes out as it works through a problem. The usefulness of CoT monitoring stems in part from the standard non-looped transformer architecture, in which each token passes through a fixed stack of layers once. This limits the number of sequential steps of computation the model can perform before it must output a token, so reasoning that needs more steps has to be carried out in generated text, where it can be read.<br>Looping a transformer’s layers raises this limit. By running the same layers multiple times, looped models increase their serial depth without adding more parameters, meaning that they do more computation per token internally before verbalizing their thought processes via CoT. Reasoning that never appears in the CoT can’t be caught by a CoT monitor, which has led to concerns that looped transformers could be harder to oversee.<br>One reason we are releasing Inkling 2 Mini is to enable the community to conduct research on looped transformers. We are particularly excited for researchers to investigate questions of monitorability, and to develop interpretability techniques for understanding the computation within loops.<br>To explore how different amounts of looping affect model properties like monitorability, we also trained a variable-looped model, TML-d24-varloop-research, because Inkling 2 Mini only supports a fixed number of looping passes. To enable variable looping, TML-d24-varloop-research was trained with between one and five looping passes.TML-d24-varloop-research was primarily trained for 3 passes of looping, with lower exposure to 1, 2, 4, and 5 passes. Performance at these latter pass counts may understate what training specifically for them could achieve. See the model card for details. We have also made this model publicly available on Hugging Face.<br>Below we describe our preliminary analysis of how looping affects monitorability. Overall, we find that looping increases what these models can do without a verbalized chain of thought, but at this scale we do not see a meaningful reduction in the monitorability of their reasoning.<br>No-CoT capabilities<br>As a first step, we measured how much additional reasoning looping enables by comparing looped and non-looped models of the same size on tasks answered with no CoT at all. We used Think Fast, a benchmark that estimates a model’s no-CoT time horizon: the length of task, measured in human completion time, that a model can complete at 50% reliability without using CoT.These models were not trained to answer questions without a CoT. To elicit no-CoT answers, we prefilled the start of the response so that the model must answer directly, skipping reasoning. Other elicitation techniques, such as fine-tuning, might yield higher no-CoT performance and are worth exploring.<br>As expected, looping increases no-CoT capability, though these gains eventually level off. The no-CoT time horizon of TML-d24-varloop-research rises from 16 seconds at one pass to 37 seconds at three. Some of this is presumably due to the additional serial computation that looping provides. Beyond three passes, the time horizon is roughly flat. Interestingly, the model was never trained with more than five passes, and yet running it with ten does not significantly degrade its performance.<br>As the number of looped passes increases past three, the gains are smaller, and on most tasks we observe similar performance. One exception is the N-Hop Lookup task, which cleanly evaluates serial reasoning: the model is given several lookup tables with fictional entries, and must follow a chain of lookups without writing anything down. We find that the model follows longer chains with more passes, improving out to ten loops.<br>In standard evaluations with CoT, we observe that more loop passes primarily benefit multi-hop reasoning rather than recall. Gains are largest on long-context retrieval (MRCR), followed by math and science reasoning (HMMT, GPQA Diamond, HLE) and long-horizon agentic tasks (SWE-bench Pro, BrowseComp). Closed-book factual QA is nearly invariant to loop passes (SimpleQA Verified, WorldVQA). See model card for full evaluations.<br>CoT monitorability<br>We next measured whether a model’s CoT reveals less about its reasoning as looping increases via two evaluations. First, we assessed how looping impacts the compression and legibility of a model’s CoT. Second, we measured how controllable a model’s CoT is, i.e., whether it can deliberately reshape its CoT to satisfy constraints. For each, we run TML-d24-varloop-research with one to five looped passes to study the effect of looping.<br>Note that TML-d24-varloop-research was only trained on variable pass counts from 1 to 5 during midtraining, and its RL was done with 3 passes. These experiments therefore do not tell us what a model trained with RL at a higher pass count would learn, and such a model might compress its reasoning more aggressively. A cleaner comparison would include every pass count in RL, which we leave to future work.<br>Compression and legibility. Since looping allows a model to spend more compute per token, we expect that it should need fewer CoT tokens to reach the same performance. We ran the variable-looped model at 1 to 5 passes, and found that as looping increases, the model generally achieves higher accuracy at each reasoning token budget, with diminishing returns after 3 passes. Notably, token efficiency on GPQA Diamond improves slightly from 3 to 5 passes, even though the model was trained with RL only at 3 passes, suggesting that some compression comes from additional computation itself, without RL at that depth.<br>The observed CoT compression raises a question for monitorability: is shorter reasoning still readable, or does it omit important details about the model’s thinking? We compared traces from the variable-looped model on the GPQA Diamond questions that it answered correctly at all five pass counts. Reasoning at 5 passes was less than half as long as at 1 pass (1,661 vs. 3,703 tokens on average), but no less legible: sentence length and the fraction of words in an English dictionary were unchanged. On initial analysis, the difference is that the model is more direct and backtracks less on the way to the answer. The example below illustrates this difference on a simple question.<br>| Metric | 1 pass | 3 passes | 5 passes |<br>|---|---|---|---|<br>| Mean reasoning tokens | 3703 | 1731 | 1661 |<br>| Mean words per sentence | 8.9 | 8.7 | 8.7 |<br>| Fraction of words in English dictionary | 94.6% | 94.5% | 94.4% |<br>| Uncertainty indicatorsFor example, “wait”, “actually”, and “hmm” | 9.7 | 3.9 | 3.6 |<br>Controllability. One way that a model could evade monitoring is by steering its CoT away from anything a monitor would flag. The CoT-Control-QA evaluationReasoning Models Struggle to Control their Chains of Thought, Yueh-Han et al., 2026 measures this capability by asking questions from GPQA, HLE and MMLU-Pro paired with an instruction about the CoT itself, such as avoiding a keyword from the question. Longer CoTs are generally harder to control, so we pool responses from five reasoning efforts (0.1, 0.2, 0.7, 0.9 and 0.99) and show controllability at matched CoT length.<br>Both Inkling 2 Mini and TML-d24-varloop-research have poor control over their CoT. Among CoTs of 750–1,250 tokens, Inkling 2 Mini and TML-d24-varloop-research (at 3 passes) follow the instruction at most 0.1% of the time, compared with 0.3% for Inkling 2 Small, 0.4% for Inkling-Small, and 1.3% for Qwen3.8-27B. Because the controllability rate is so low, this evaluation is unable to distinguish controllability between different amounts of looping.<br>Agentic monitorability<br>To measure monitorability in agentic settings, we used LinuxArena, a control evaluation that measures whether an attacker model can perform malicious side tasks without detection when asked to perform a realistic software engineering task. We evaluated a helpful-only fine-tune of Inkling 2 Mini, since the released model refuses many of the side tasks. In absolute terms, both this model and TML-d24-varloop-research can be easily monitored by models like Qwen3.8-27B, which detected almost all side task attempts in our evaluation. To obtain relative rankings in monitorability, we tested a weaker model, Qwen3.6-35B-A3B, as the monitor.<br>With the monitor able to access only tool calls and outputs, it misses a significant number of the attacks. However, we see no clear trend with the number of looped passes.<br>Agentic monitorability will be important to track in larger-scale models, especially with architectures that allow for greater unverbalized thinking, and we encourage continued study of the impact of looping in this setting.<br>Mechanistic interpretability<br>The goal of monitorability is to understand what a model is doing, and our main approach is to read its verbalized reasoning. Studying its internal computation directly, the aim of mechanistic interpretability, is another. Because looped transformers do more of their computation internally, we think they are a particularly interesting and important setting for interpretability research, and we hope our looped models will be useful artifacts for the community.<br>We are working with the National Deep Inference Fabric (NDIF) to make these models more easily accessible to interpretability researchers. We also provided Goodfire, an interpretability research lab, early access to our looped models. They are working toward a mechanistic understanding of looped models, and have written up their early findings here.<br>Try Inkling 2 Mini today<br>Efficient intelligence makes Inkling 2 Mini a great choice for inference where speed is paramount, or for running on local hardware. At launch we support Inkling 2 Mini running on any Mac system (MacBook, Mac Mini) with at least 32GB RAM via Ollama. With native NVFP4 training and inference precision, Inkling 2 Mini runs efficiently on NVIDIA’s DGX Spark desktop AI computer. Quantized GGUF versions are available via Unsloth and llama.cpp for local inference.<br>Inkling 2 Mini is available for inference and fine-tuning on Tinker, and for chat on the Tinker Playground. Open source inference is available on SGLang, vLLM, Ollama, Unsloth, NVIDIA Dynamo, TokenSpeed, and Llama App, with RL fine-tuning support on SkyRL, Miles, and NVIDIA AutoModel. The full weights of Inkling 2 Mini and the variable-looped variant are available on Hugging Face.<br>We work to empower people with strong models, tools to make them your own, and research that advances public understanding of AI. Inkling 2 Mini lets researchers study looped transformers, and it lets anyone run a capable model on their own laptop at the precision in which it was trained.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Show HN: TEB RUN – a pseudo-3D arcade racer in TypeScript and Canvas, no engine
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    tebrun
+  </div>
+
+  <div class="meta">
+    tebrun.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #10
+  </div>
+
+  <div class="links">
+    <a href="https://tebrun.io/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50601492">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">How a solo developer built TEB RUN, a zero-dependency browser racer with a road that splits in two, in 282 commits: specs, parallel agents, procedural fallbacks and getting the rights right.<br>Free · Browser · 80s arcade<br>Drive toward the sunset. Pick a fork.<br>A free sunset-coast arcade racer. Fifteen stages, five endings, one fork at a time. Plays in your browser.<br>Play in your browserHow it was made<br>Keyboard, gamepad or touch. No install, no account. On a phone, play in landscape.<br>Today&#x27;s run<br>One daily challenge, same car and traffic for everyone. New every day at midnight UTC.<br>- Today<br>- …<br>- Yesterday&#x27;s champion<br>- …<br>- Top 3 so far<br>Features<br>- Every road splits in two At the end of each stage the road widens and becomes two carriageways. Pick a side and you&#x27;ve picked your next stage. Fifteen stages, five levels, five endings. Plenty of reasons to go around again.<br>- Tune the radio, then floor it Before each race, dial in one of three original tracks: disco on &quot;Mirrorball Mile,&quot; chill-out on &quot;Amber Lagoon,&quot; techno on &quot;Tunnel Nine.&quot; Then choose your ride: a red roadster, a mint-and-cream 1950s cruiser, a pearl-white 80s sports roadster, or a candy-red super speedster.<br>- Real arcade feel, in a browser tab Curves, hills, traffic and a checkpoint timer that banks your leftover seconds. Shift between Lo and Hi, drift through the bends, and watch the rain, snow and road surfaces change under your tires. Crash and you spin. Win and you get three letters on the high-score table.<br>How to play<br>Beat the checkpoint timer. Leftover time carries over, so a clean stage buys breathing room for the next one. At each fork, steer left or right to choose your route.<br>Tip: Start in Lo for grip off the line, shift to Hi once you&#x27;re rolling. Ease off in the bends and let the car drift.<br>| Controls |  |  |<br>|---|---|---|<br>| Action | Keyboard | Gamepad |<br>|---|---|---|<br>| Accelerate | Up or Z | A or RT |<br>| Brake | Down or X | B or LT |<br>| Steer | Left / Right | Left stick or d-pad |<br>| Change gear (Lo/Hi) | Shift or C | Y |<br>| Confirm | Enter | Start |<br>| Mute | M | — |<br>On the road<br>Latest from the blog<br>Follow along<br>New stages, patch notes and the occasional postcard from the coast. Follow TEB RUN on itch.io for new stages and patch notes.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Liseur: Android ePub Reader
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    1 comments ·
+    swapnilmj
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/chmouel/liseur">Original article</a> · <a href="https://news.ycombinator.com/item?id=50601621">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">An open-source ebook reader for Android, and a client for calibre-web, Komga, BookOrbit, liseur-sync and any OPDS catalog: EPUBs on your phone or in sync with book server.<br>- Local shelves and a library that follows you: calibre-web, Komga, BookOrbit, liseur-sync or any OPDS catalog, with reading position synced to the sentence.<br>- A reading companion that indexes characters, places and groups on your phone, with no server needed.<br>- Highlights, notes, bookmarks, dictionary, translation and read aloud with device voices or your own speech server.<br>- A vocabulary builder: keep words from the dictionary with the passage they came from, review them with spaced repetition, and export them to Anki.<br>- Light, Sepia, Dark, OLED Black and low-light themes, open typefaces and per-book layout.<br>- Free software: no ads, no account, no trackers in the F-Droid and GitHub builds.<br>| Home: pick up where you left off. | Library: your books, in the default grid. | Distraction-free page, in light or dark. |<br>| Read aloud with device voices or your own server. | Character profiles grounded in earlier passages. | Which characters appear together, chapter by chapter. |<br>More screenshots here<br>Liseur renders EPUBs with the Readium engine, in open typefaces (Literata, Vollkorn, Atkinson Hyperlegible, Inter) or whatever the publisher shipped. Reading themes: Light, Sepia, Dark, OLED Black, and warm &quot;Low light&quot; pages in Amber, Night red and Charcoal. Margins, line spacing, brightness, and page-turn vs. continuous-scroll are adjustable per book or library-wide. Auto-scroll runs at a set pace and continues across chapter boundaries, with on-page controls to pause it, change the speed or stop.<br>A footer shows the page you are on, how much of the chapter is left, and time remaining. Highlights, margin notes, bookmarks, and dictionary lookups are inline; book-level notes live in the notebook. Marking a passage offers one colour, and you tick which of the six you want along with the colour new marks use. Footnotes open as a card over the page rather than sending you to the back of the book. A selected passage can be translated by Android&#x27;s own translator on the phone, or by a server you add, and from there the page itself can be translated sentence by sentence as you read.<br>Tap Save to vocabulary in the dictionary to keep the word, its definition, and the passage where you found it. Open Vocabulary Builder from the library menu to review words offline, or from a book’s Notes to see its words and return to their passages. Switch between Review, Words and Stats to study, manage saved words and track reviews, recall rate and your day streak. Review cards include notes and the original passage, with See in book to return to it and a speaker for device pronunciation when available. Reveal the answer, then choose Again, Hard, Good or Easy from the bottom tiles, or swipe left for Again and right for Good. The progress ring tracks this session; Undo restores the last rating. Home&#x27;s Words to review card also supports swiping. Hold a review or Home vocabulary card to copy, share, edit or remove the word, or return to its book. Edit card opens a full-screen editor for the meaning and an optional personal note, with a confirmation before discarding changes. Hold revealed text to select and copy it. The vocabulary menu on Words can export a JSON backup or an Anki-compatible CSV. Lookups are saved automatically by default; turn this off in Vocabulary settings, which also offer daily limits and reminders. Home shows the next word due, so you can check its meaning and start a review from there.<br>The reading companion answers questions about characters and events using the passages before the selected text. Character profiles show their source passages, and optional background recaps summarize finished chapters. Even without a server, the companion builds a searchable index of people, places and groups on your device, and shows which names appear together in earlier chapters. With a server chosen, its Story tab shows the earlier chapters&#x27; recaps, recaps the ones missing, and writes a summary of the story so far, and character pages show what those recaps already say. Answers come from a server you configure; the index runs on your phone.<br>The library is one shelf whatever the source: local folders, calibre-web, Komga, BookOrbit, liseur-sync, or any OPDS catalog. Series are grouped into stacks tracking reading order, progress, and missing volumes. &quot;Download all books&quot; fills the shelf from a connected server in one go. An empty library also offers free books from public catalogs: Project Gutenberg, textos.info, ManyBooks and Gallica. Pick one, browse it by language, shelf or section, and download the books you want before there is anything to connect to. No account is needed for any of them.<br>Reading position syncs across devices through calibre-web, Komga,<br>BookOrbit or liseur-sync,<br>down to the exact sentence on the last three. BookOrbit positions travel as EPUB CFIs.<br>A Custom connection can be an OPDS address, a kosync address, or both, so a plain catalog and a sync server that know nothing about each other still add up to a library that follows you. What each server can and cannot do is in docs/SERVER_CAPABILITIES.md.<br>With liseur-sync you get extras, like a per-device settings backup, and better insights of your reading progress across devices.<br>Two home-screen widgets show the current book cover or a paged shelf of your library covers. Tap a cover to read. Neither needs configuration.<br>Liseur has no ads or account. The F-Droid and GitHub builds have no trackers or analytics. The Google Play build reports which features are used and why the app crashed, under a random installation identifier and with no book content or account details. You can turn this off in Settings &gt; Advanced. Liseur connects to services you choose for book sync, speech, translation and the reading companion. Browsing the free catalogs (Project Gutenberg, textos.info, ManyBooks, Gallica) and using an online dictionary also makes network requests. See the privacy policy for details.<br>- liseur-sync: Lightweight self-hosted library and sync server. Watched folders, browse, download, positions and reading stats. This will give you the best &quot;kindle/just work&quot; experience compared to the other sync servers.<br>- liseur-desktop: Desktop version of Liseur (abandoned).<br>See DEVELOPER.md for build instructions and architecture notes,<br>and docs/SERVER_CAPABILITIES.md for what each<br>server exposes, what Liseur implements against it, and why the gaps remain.<br>Liseur ([li.zœʁ], lee-ZUR) is the French word for an avid reader or book lover. It sounds dignified, like the English word leisure.<br>Another inspiration was a painting by Pierre-Auguste Renoir portraying Claude Monet as &quot;Le Liseur&quot;:</div>
+<div class="para">Watch the 30-second tour on YouTube<br>- Fediverse - &lt;@chmouel@chmouel.com&gt;<br>- Twitter - &lt;@chmouel&gt;<br>- Blog - &lt;https://blog.chmouel.com&gt;<br>MIT. Bundled fonts are under the SIL Open Font License. The Shelves wallpapers are William Morris designs from public-domain scans in The Metropolitan Museum of Art&#x27;s Open Access collection.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Show HN: Zero C# – C# without a runtime or GC
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    167 points ·
+    118 comments ·
+    reverseblade2
+  </div>
+
+  <div class="meta">
+    onurgumus.github.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · Best #38 · Top #43
+  </div>
+
+  <div class="links">
+    <a href="https://onurgumus.github.io/zero-csharp/index.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50590279">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">C# with nothing underneath<br>A fork of bflat compiles C# straight to a small native program: no .NET runtime, no garbage collector, nothing to install where it runs.<br>You keep C#&#x27;s syntax, type checking and generics. Memory comes from arenas you free all at once, and a small library gives you strings, collections, input and output on those terms. The same source runs on Linux, macOS and Windows, on WebAssembly, and on DOS on a 386.<br>// Read into a stack buffer: nothing allocated per answer.<br>Span&lt;char&gt; buffer = stackalloc char[32];<br>Out.Write($&quot;Q{i}: {a} + {b} = &quot;);<br>int length = In.ReadLine(buffer);<br>// Kept until the end, so it goes into an arena.<br>mistakes.Add(Str.Format(keep,<br>$&quot;{a} + {b} = {a + b}, not {value}&quot;));<br>The language stays, the runtime goes<br>The compiler still checks everything it checks in .NET. What&#x27;s missing is what a runtime would do while your program runs.<br>You keep<br>- C# 15Unions, extension members and the new memory safety rules.<br>- Real genericsA specialized copy for each type, and static abstract members.<br>- Interfaces and virtual methodsDefault interface methods, casts, is and as.<br>- Records, tuples, anonymous typesValue equality, with, and the generated ToString.<br>- Lambdas and queriesWhere, Select and GroupBy, from a small library instead of LINQ.<br>- ThreadsParallel.For runs a loop on every core.<br>You do without<br>- Garbage collectorArenas free their memory all at once, when you say.<br>- .NET runtimeHello world is 11 KB on Windows and 40 KB on Linux, with nothing to install.<br>- Catching exceptionsthrow ends the program. Return errors as unions.<br>- Reflection and asyncA type can be compared, but it has no name.<br>One program, five machines<br>The hello-world sample, unchanged, built for each target. Each build is checked by the same test suite, which requires the same output everywhere.<br>$ ./build.sh Minimal<br>$ ./run.sh Minimal<br>Hello from zero-mode!<br>$ wc -c bin/Minimal<br>39848 bin/Minimal<br>Linux, x64 or arm64<br>A native program that needs only the C library. On macOS it builds and runs in a container.<br>$ ./build.sh --mac Minimal<br>$ bin/mac/Minimal<br>Hello from zero-mode!<br>$ wc -c bin/mac/Minimal<br>64728 bin/mac/Minimal<br>macOS on Apple Silicon<br>A native Mac program: bflat compiles it, the Mac&#x27;s own clang links it. No container to run it.<br>$ ./build.sh --win Minimal<br>$ ./run.sh --win Minimal<br>Hello from zero-mode!<br>$ wc -c bin/win/Minimal.exe<br>10752 bin/win/Minimal.exe<br>Windows x64<br>A console program on Windows&#x27; own C library, built from Linux or macOS. Tested under Wine.<br>$ ./build.sh --wasm Minimal<br>$ ./run.sh --wasm Minimal<br>Hello from zero-mode!<br>$ wc -c bin/wasm/Minimal.wasm<br>15833 bin/wasm/Minimal.wasm<br>WebAssembly<br>A WASI module, through NativeAOT-LLVM. Runs under wasmtime.<br>C:\&gt;D:<br>D:\&gt;PROGRAM<br>Hello from zero-mode!<br>D:\&gt;DIR PROGRAM.EXE<br>PROGRAM  EXE     16,384<br>D:\&gt;<br>DOS on a 386<br>The same bitcode compiled for a 386, run by the HX DOS extender. Tested on Bochs&#x27;s i386 model.<br>What&#x27;s different, and what you get<br>Without a runtime, a few things work differently. Each has a page that explains why and what to do instead.<br>- Memory is yours to free There is no garbage collector, so new is never freed. Arenas hand out memory and free it all at once, one per lifetime.<br>Memory without a garbage collector<br>- Text without throwaway strings Out.Line($&quot;...&quot;) formats straight into the output buffer, and In.ReadLine reads into a span. Strings that must last go into an arena.<br>Strings without a garbage collector<br>- Collections that live in arenas List, Dict, and their versions for references and string keys, all handles into an arena.<br>Choose a collection<br>- C# 15, with the safety rules on Every program compiles under the updated memory safety rules: creating a pointer is safe, reading through one is marked and explained. The memory safety rules<br>Where to start<br>If you&#x27;re new to it, these four pages take you from nothing to an interactive program.<br>- Install With dotnet on Linux or Windows, or from the repository for every target.<br>- Your first program Build it, run it, see how small it is.<br>- Run it on DOS The same program under FreeDOS, in an emulator.<br>- The tutorial A quiz: output, input, bad input, arenas.<br>Looking for something specific? The task guides answer one question each, and the reference lists every type in the library.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Pill to treat pancreatic cancer hailed as &#x27;biggest breakthrough in decades&#x27;
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1245 points ·
+    268 comments ·
+    rafaelc
+  </div>
+
+  <div class="meta">
+    theguardian.com
+  </div>
+
+  <div class="meta ranks">
+    Best #3 · Top #4
+  </div>
+
+  <div class="links">
+    <a href="https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib">Original article</a> · <a href="https://news.ycombinator.com/item?id=50582069">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A pill that can shrink and potentially eliminate pancreas tumours is being hailed as the biggest breakthrough treatment for the cancer in decades.<br>In one in 12 of the patients given the drug, daraxonrasib, during a trial, the cancer became undetectable, and the tumours stopped growing in almost all of the 61 patients. The trial participants had recently been diagnosed with advanced pancreatic cancer that had spread to other parts of the body.<br>Though doctors have said the pill cannot yet be considered a cure, and they do not know how long it can keep the disease at bay, they have said it is encouraging news because it appears it will offer patients more time, even if it does not cause full remission.<br>Half of all people diagnosed with pancreatic cancer die within three months, and only about 3% of patients survive for five years when the disease spreads to other organs. It has the lowest survival rate of all common cancers in the UK and has a similarly poor prognosis globally.<br>Patients were followed for a year and a half during the trial on average and some did not see the cancer return during this period. Longer studies will be conducted to see if any of the cancers can be put into remission. During the trial, tumours stopped growing in 90% of patients, just over 60% of patients had their tumours shrink or disappear, and for about 8% of patients tumours became undetectable on CT scans.<br>A year after starting treatment, 76.6% of patients were alive; usually 40-45% of patients given chemotherapy alone survive a year.<br>Dr Wungki Park, a gastrointestinal medical oncologist at Memorial Sloan Kettering Cancer Center in New York, who presented the findings, said “this is the closest to cure”, adding that he had never seen so many tumours disappear in patients whose cancer had spread.<br>He presented the findings at the EORTC-NCI-AACR Symposium on Molecular Targets and Cancer Therapeutics in Barcelona. “We are beginning to see not only a higher percentage of tumour response rates, but also deeper responses and a near doubling in the duration of disease control, which may eventually translate into longer survival,” he said.<br>“The median follow-up is 18 months. Just imagine, in an average of 18 months your disease just disappears on the CT scan … that’s closest to complete remission … it’s incredible.”<br>Daraxonrasib is a KRAS inhibitor treatment, which works by locking on to and shutting off certain mutations found in most pancreatic cancers. These mutations drive tumour growth.<br>There are hopes the treatment could work for dozens of other cancers because they can have similar mutations.<br>Michelle Mitchell, Cancer Research UK’s chief executive, said more research was needed, but added: “This is the biggest leap forward we’ve seen in decades for pancreatic cancer patients and could offer real hope to people facing one of the deadliest and most difficult-to-treat cancers.<br>“These results raise the exciting possibility that this breakthrough could eventually pave the way for treating other cancers that carry Kras gene mutations. More trials are now needed before this treatment can be assessed for use on the NHS and despite this advance, pancreatic cancer survival is still very low.”</div>
+</div>
+
+</div>
+
+</body>
+</html>
