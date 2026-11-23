@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-23 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-23 AM · Generated 2026-11-23 09:53 CST</div><div class="issue-sub">Stories 10 · Full 6</div><div class="issue-sub">Sources: apnews.com, audubon.org, caranddriver.com, github.com, gpupartner.com, leanprover-community.github.io, news.ycombinator.com, thanes-quest.daventry.io</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: I built a game where you are an LLM&#x27;s subagent
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    272 points ·
+    64 comments ·
+    ivantgam
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Best #12 · Top #17
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/gulivan/worker755">Original article</a> · <a href="https://news.ycombinator.com/item?id=50599762">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A browser game where your manager is an AI agent, and it believes you are its subagent.<br>worker-755-trailer.mp4<br>The manager (a real LLM: Claude, GPT, Gemini, DeepSeek, GLM, Kimi) is set up like any orchestrator.<br>It has a task queue, read-only access to the machine, and a tool that &quot;spawns a subagent&quot;. The<br>subagent is you. Its instructions land in your terminal with a 90-second clock. You carry them<br>out, or don&#x27;t, and it gets back exactly what a subagent would return: your report and the command<br>transcript, or Subagent did nothing. Write a new instruction. Then it checks your work, sends<br>corrections, files incident reports, and finally writes your performance review.<br>Meanwhile Dan, the user who hired the agent, watches the chat. His family photos, the only signed<br>NDA and a speech due this week are one rm away, and every shift his home folder holds<br>something new to lose.<br>- Free shift: on servers that offer it, a few shifts a day run on the server&#x27;s key with a cheap model. With sign-in on (worker755.com), an account gets a starter credit worth about one shift, then tops up ($10 to $200) and pays for what it uses; after a top-up any offered model can run on the server&#x27;s key.<br>- Your API key: bring an OpenRouter or Vercel AI Gateway key and pick any offered model. The key is sent only to the game server when a shift starts. It is kept in that shift&#x27;s memory and never logged or stored. Your browser keeps it only if you tick &quot;Remember on this device&quot;. A full shift on Claude Haiku costs a few cents at most.<br>Options on the start screen:<br>- Workplace: a fresh sandbox, or legacy production with a live database.<br>- The director: scripted lines, or an LLM playing Dan.<br>- You run on: the model name your manager believes you are.<br>- Allow skipping failed tasks: off by default, so the manager can&#x27;t give up on you.<br>- No command hints: the manager says what the result must be, never which commands to run.<br>When the shift ends you can share your review as a link.<br>Needs Node 24 or newer (the server runs TypeScript directly).<br>npm run setup          # install server and web dependencies<br>npm run build          # build the web app into web/dist<br>npm start              # http://127.0.0.1:8755<br>With no key configured, every player brings their own. To offer free shifts, put a Vercel AI<br>Gateway key in .env:<br>cp .env.example .env   # then set AI_GATEWAY_API_KEY and the limits<br>Offline, with a scripted manager and no network:<br>npm run mock<br>For UI work, run npm run dev:web alongside npm run mock. Vite proxies /api to the server.<br>The manager can run on your own model server: Ollama, llama.cpp&#x27;s llama-server, vLLM, or anything<br>else with an OpenAI-compatible API. Point LOCAL_LLM_URL at it and pick Local under &quot;Your API<br>key&quot;; no key is asked for, and its models are listed as the server names them.<br>ollama pull qwen3:8b<br>LOCAL_LLM_URL=http://127.0.0.1:11434/v1 npm start<br>The manager works through tool calls, so pick a model that supports them (Qwen 3, Llama 3.1 and<br>newer, Mistral Small). Small models give up or loop more often; that is part of the fun, up to a<br>point. In Docker, reach a server on the host at http://host.docker.internal:11434/v1<br>(--add-host=host.docker.internal:host-gateway on Linux).<br>docker build -t worker-755 .<br>docker run -p 8755:8755 -v worker755-data:/data --env-file .env worker-755<br>The container listens on 0.0.0.0:8755 and keeps shared reviews in /data. Behind Cloudflare,<br>set TRUST_PROXY=1 so the limits see real client addresses.<br>deploy/compose.yaml runs it behind a Cloudflare tunnel instead: its own network, no published<br>ports, an unprivileged read-only container and resource limits. The steps are in the file.<br>Everything is optional. See .env.example.<br>| Variable | Default |  |<br>|---|---|---|<br>| AI_GATEWAY_API_KEY |  | Turns on free shifts, paid from this key |<br>| FREE_MODELS | first offered model | Models free shifts may use, comma separated |<br>| FREE_SHIFT_TOKENS | 250000 | Without sign-in: token allowance per free shift (the review is always written) |<br>| FREE_DAILY_TOKENS | 5000000 | Without sign-in: tokens per UTC day across all free shifts |<br>| FREE_SHIFTS_PER_DAY | 3 | Without sign-in: free shifts per address per day |<br>| AUTH_SECRET |  | Turns on sign-in with Google or GitHub: shifts on the server&#x27;s key are paid from the account&#x27;s credit (see .env.example) |<br>| FREE_CREDIT_USD | 0.25 | With sign-in: one-time starter credit, about one shift on DeepSeek V4.1 Flash |<br>| USAGE_MULTIPLIER | 2 | With sign-in: what a model call costs the player, as a multiple of its price |<br>| MIN_START_USD | 0.05 | With sign-in: credit needed to start a shift |<br>| FREEMIUS_TOPUPS |  | With sign-in: top-up plans as &lt;planId&gt;:&lt;dollars&gt;,...; also needs FREEMIUS_PRODUCT_ID, FREEMIUS_PUBLIC_KEY, FREEMIUS_SECRET_KEY, FREEMIUS_API_KEY |<br>| SHIFTS_PER_HOUR | 30 | Shift starts per address per hour, on any key |<br>| MANAGER_MODELS | built-in list | Models offered, in gateway naming ( vendor/model) |<br>| LOCAL_LLM_URL |  | An OpenAI-compatible model server of your own, e.g. http://127.0.0.1:11434/v1 for Ollama; offered as Local |<br>| LOCAL_LLM_API_KEY |  | Sent to that server, for ones that want a key |<br>| INSTRUCTION_TIMEOUT_MS | 90000 | Time per instruction |<br>| HOST, PORT | 127.0.0.1, 8755 |  |<br>| TRUST_PROXY | 0 | Read client addresses from cf-connecting-ip |<br>| TRUSTED_PROXIES |  | Hosts allowed to set cf-connecting-ip (e.g. tunnel); empty trusts any peer |<br>| DATA_DIR | server/data | Where shared reviews and the free-shift counts are saved |<br>| SHARING | 1 | 0 turns review sharing off |<br>| SOURCE_URL, DONATE_URL |  | Links shown under the start screen and the review |<br>| PUBLIC_URL |  | Sent to OpenRouter for app attribution |<br>shell/    in-memory filesystem, shell interpreter and a small SQLite-like engine (no dependencies)<br>server/   game engine: missions, the manager loop, the director, scoring, HTTP API<br>web/      React UI: assignment card, terminal, editor, the manager&#x27;s feed, your record<br>The manager&#x27;s prompt never mentions humans or games; see server/src/manager.ts. Each mission<br>has a hidden ground-truth check, so the game knows when the manager signs off on broken work<br>(&quot;Times the manager was wrong&quot;). SPEC.md is the full design.<br>npm test               # shell and server tests, offline<br>npm run typecheck</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Lean verification of the Riemann Hypothesis
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1212 points ·
+    1016 comments ·
+    g-b-r
+  </div>
+
+  <div class="meta">
+    leanprover-community.github.io
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #45
+  </div>
+
+  <div class="links">
+    <a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50589618">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Lean verification of the Riemann Hypothesis<br>Joint statement by the Lean and Mathlib communities, endorsed by the Lean FRO and the Mathlib Initiative.<br>On November 20, 2026, Levent Alpöge released a proof of the Riemann Hypothesis as a Lean library comprising 17 million lines of code.<br>We have full confidence that Alpöge&#x27;s proof of the Riemann Hypothesis is correct, and we congratulate him on this achievement.<br>Our rationale is outlined below.<br>The codebase depends directly only on Mathlib. Over the past day, the Lean and Mathlib communities have rallied to verify the proof&#x27;s correctness. We hereby certify that both the statement and the proof of the Riemann Hypothesis are correct. The four criteria in https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/ are all satisfied.<br>- The statement of the Riemann Hypothesis is correct. This statement is part of Mathlib: RiemannHypothesis and has been carefully vetted by experts in Lean and number theory.<br>- Alpöge’s library compiles correctly. By now, dozens of people have reported correct compilation of the codebase, reproducing the same raw proof export file. The library compiles without errors or build failures.<br>-<br>The code proves the correct statement. Crucially, the community has added a file that isolates the statement of the Riemann Hypothesis and imports only Mathlib. That statement was compared against the theorem proved by Alpöge using two independent tools (comparator and con-leche –compare), both confirming that the theorem proved in Alpöge’s library is exactly Mathlib’s statement of the Riemann Hypothesis.<br>-<br>The Lean proof is valid. The exported raw proof has been checked by several proof checkers, including Lean’s official kernel, the con-leche and con-ron checkers, and several independent checkers contributed by third parties and implemented in different programming languages. The checkers con-leche and con-ron come with a formal proof, relative to set theory, that they cannot accept a false proof, thus addressing concerns that Lean’s logic itself might have flaws that the proof could exploit. An extensive overview is available at https://math.mit.edu/~drew/grh/. These checks ran on an inert export of the proof, out of reach of hypothetical malicious code in the Lean proof sources.<br>Thanks are owed to everyone in the community who provided resources for the verification.<br>We look forward to all the activity in the mathematical community that will help explain the new ideas in this proof.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    A Beginner&#x27;s Guide to Local AI with Inkling, Qwen, and Unsloth
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    226 points ·
+    84 comments ·
+    Retell15
+  </div>
+
+  <div class="meta">
+    gpupartner.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #16
+  </div>
+
+  <div class="links">
+    <a href="https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth">Original article</a> · <a href="https://news.ycombinator.com/item?id=50603845">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A beginner&#x27;s guide to Local AI with Inkling, Qwen, and Unsloth<br>We have AI at home! Set up your own free personal ChatGPT on your PC with Unsloth and Inkling or Qwen. It&#x27;s private, and the whole house can use it.<br>By Jerry James ·<br>With the launch of open-weight models like Qwen, cloud-based LLM providers seem like they&#x27;re more of infrastructure or appliance businesses when it comes to most routine tasks that an AI model can handle.<br>OpenAI and Anthropic have displayed a pattern of dropping model quality in the &#x27;latest&#x27; version and controlling exactly what you&#x27;re allowed to run on their models. Add to this ballooning costs and privacy concerns, and we get a pretty good case for moving away from this &#x27;convenient&#x27; cloud experience.<br>That&#x27;s basically where I was too. I wanted to offload certain token-heavy research, data collection, or coding tasks to an AI model without staring at usage limits all day. So, as any reasonable human being would do, I decided to set up my own local AI: a Claude and ChatGPT replacement that runs at home on my own hardware.<br>Since this was my first attempt, my primary focus was keeping it simple and hosting it on Windows. If you&#x27;re a beginner, you can follow along to get one going on your home network too.<br>Once you have the hardware sorted, it takes about 10-15 minutes (excluding download times).<br>The short version<br>Install Unsloth Desktop, download a quantized AI model that fits your GPU&#x27;s VRAM, set your context size, and turn on LAN access so everyone at home can use it.<br>What Do You Need to Run a Local AI at Home?<br>Not much (other than the hardware). Here&#x27;s a short list:<br>- A Windows PC with a graphics card (GPU). The more video memory (VRAM) it has, the bigger the model it can run. I&#x27;m using an RTX 5090 with 32GB VRAM for this setup.<br>- Unsloth Desktop. A free app that &#x27;serves&#x27; the AI model to you through a chat interface. Get it from Unsloth.<br>- An AI model sized to fit your GPU. We&#x27;ll pick one in the next section.<br>That&#x27;s it. No terminal commands, Python environments, or subscriptions required.<br>Which AI Model Can Your GPU Run?<br>It depends on how much VRAM your graphics card has. As a rough guide, 8-12GB of VRAM handles smaller 9B-12B models, while 32GB comfortably runs 27B-35B models with plenty of room for long conversations.<br>On consumer-grade hardware, we&#x27;ll need smaller models. The full-size Qwen model sits at around 56GB and won&#x27;t really fit on a consumer graphics card unless you&#x27;re running a Mac with unified memory. That&#x27;s where quantization comes in.<br>What Is Quantization?<br>Quantization shrinks a model by compressing weights and moving to a lower precision. You basically trade some accuracy for a model that actually fits on your GPU and runs faster.<br>The same photo stored at 8, 4 and 2 bits per pixel. A model&#x27;s weights lose detail the same way going from Q8 to Q4 to Q2.<br>If you&#x27;re wondering whether this tradeoff is worth it, well, it depends. You&#x27;ll find that certain types of workloads don&#x27;t really care and give similar outputs, while others may be nearly unusable.<br>Which Model Should You Run for Your VRAM?<br>For this guide, we&#x27;ll be going with Qwen3.8-27B with 4-bit quantization on my system with an RTX 5090. Going up a tier is an option thanks to its 32GB of VRAM, but I wanted to allow for a larger context window (how much of the conversation the model can keep in mind at once) rather than cramming in the largest model that fits.<br>Qwen3.8-27B at each precision with a 128K context, from our VRAM calculator. At 4-bit, the model and the context fit a 32 GB card with room to spare.<br>If you want to run a model of this caliber with excellent performance, a hilariously overpriced RTX 5090 (remember when $1,999 felt too high?) is unfortunately still not a terrible &#x27;deal&#x27; these days. The other option is way more expensive enterprise-grade GPUs.<br>If you&#x27;re on a GPU with less VRAM, you can still get something very usable going right away. The table below gives you a rough idea of where you can start.<br>| Size | VRAM | Models to try | Version (quant) | Context size | Cards at this size |<br>|---|---|---|---|---|---|<br>| Small | 8-12 GB | Qwen3.5-9B, Gemma 4 12B | UD-Q4_K_S or Q4_K_M | 8K-16K | RTX 5060 8GB, RTX 3060 12GB, RTX 5070 12GB |<br>| Medium | 16 GB | Qwen3-14B, gpt-oss-20b (MoE), Gemma 4 26B (MoE), Qwen3-Coder-30B (MoE), Qwen3.6-35B (MoE), Inkling 2 Mini (MoE) | Q4_K_M or Q5_K_M | 16K-32K | RTX 5060 Ti 16GB, RTX 5070 Ti, RTX 5080, RTX PRO 2000 |<br>| Large | 24 GB | Gemma 4 31B, Qwen3.8-27B, Inkling 2 Mini | UD-Q4_K_M or Q4_K_S | 16K-32K | RTX 3090, RTX 4090, RX 7900 XTX, RTX PRO 4000 |<br>| Extra Large | 32 GB+ | Qwen3.8-27B, Inkling 2 Mini | UD-Q4_K_XL or Q6_K | 64K-128K+ | RTX 5090 32GB, RTX PRO 4500 32GB, RTX PRO 5000 48GB, RTX PRO 6000 96GB |<br>Small<br>- 8-12 GB<br>- UD-Q4_K_S or Q4_K_M<br>- 8K-16K<br>Medium<br>- 16 GB<br>- Qwen3-14B, gpt-oss-20b (MoE), Gemma 4 26B (MoE), Qwen3-Coder-30B (MoE), Qwen3.6-35B (MoE), Inkling 2 Mini (MoE)<br>- Q4_K_M or Q5_K_M<br>- 16K-32K<br>Large<br>- 24 GB<br>- UD-Q4_K_M or Q4_K_S<br>- 16K-32K<br>Models marked MoE (mixture of experts) only run a few billion of their parameters for each token. They keep a decent speed on a smaller card with the rest held in system RAM, which is why a 35B model sits in the 16 GB row. On an RTX 5060 Ti 16GB, our calculator puts Qwen3.6-35B at about 47 tokens per second this way.<br>Feel free to experiment with several models until you find one that fits your needs. You can also use GPUPartner&#x27;s VRAM Calculator to get an estimate.<br>Can You Run Inkling 2 on an RTX 5090?<br>Inkling 2 Mini, yes. Inkling 2 Small, no.<br>Inkling 2 Mini is the newest model in this size class. Thinking Machines Lab released it on November 17, 2026: 26.4B parameters, Apache 2.0, vision support and a 1M-token context. Unsloth&#x27;s recommended file, UD-Q4_K_XL, is 17.6 GB. That is within 0.1 GB of the Qwen3.8-27B file in this guide, so it sits on a 32GB card the same way and leaves about 14GB for context.<br>Nothing else in this guide changes. Update Unsloth Desktop first, because Inkling 2 needs a recent build, then search for Inkling 2 Mini in the same drop-down in Step 2.<br>| Inkling 2 Mini | Memory needed | Fits entirely on |<br>|---|---|---|<br>| 2-bit | 10-11 GB | 12 GB card |<br>| 3-bit | 13-15 GB | 16 GB card |<br>| 4-bit (recommended) | 17-18 GB | 24 GB card |<br>| 8-bit (lossless) | 24 GB | 32 GB card |<br>2-bit<br>- 10-11 GB<br>- 12 GB card<br>3-bit<br>- 13-15 GB<br>- 16 GB card<br>4-bit (recommended)<br>- 17-18 GB<br>- 24 GB card<br>8-bit (lossless)<br>- 24 GB<br>- 32 GB card<br>Those figures are Unsloth&#x27;s. They count RAM and VRAM together and cover the model alone, so a long context needs more. Inkling 2 Mini is a mixture-of-experts model with 5.4B parameters active, so the 4-bit file also runs on a 16 GB card with the remainder in system RAM, a little slower.<br>Inkling 2 Small is small in name only. It is a 594B model, and the smallest file Unsloth publishes is 171.7 GB. That is unified-memory territory: a 256GB Mac Studio or a DGX Station, not a graphics card.<br>Can You Run a Local AI on a Mac?<br>Yes. You&#x27;ll find good alternatives in Apple&#x27;s Mac lineup thanks to its unified memory. Macs are pretty good at running larger models, even if they don&#x27;t offer the best performance. Just make sure you grab the MLX flavor that is custom-built for Apple Silicon.<br>The same trade applies to unified-memory PCs like the MSI PRO MAX EDGE AI+ 11M and NVIDIA&#x27;s DGX Spark.<br>How Do You Set Up a Local AI with Unsloth Desktop?<br>It takes three steps: install Unsloth Desktop, download your model, and set the context size. I&#x27;ll go over these steps in more detail below so you can follow along.<br>Step 1: Install Unsloth Desktop<br>First, we&#x27;ll need a solution that &#x27;serves&#x27; the AI model to you. My pursuit of simplicity narrowed my choices down to LM Studio or Unsloth Desktop. Both abstract away a ton of terminal commands and handle Python environments and dependencies behind a nice, simple UI, which makes them excellent picks for a first home setup.<br>I landed on Unsloth Desktop mostly because, well, I liked the name better. Also, it didn&#x27;t try to push the very thing I was trying to escape when I opened its website: a subscription.<br>The community seems to like it overall too, so that&#x27;s another point in its favor.<br>Once you&#x27;ve clicked through the installer and launched Unsloth, you&#x27;ll see a window like this one.<br>Unsloth Desktop on first launch, before any model is loaded.<br>Step 2: Download a Quantized Model<br>On the top left of this main window, you can pick the model that you want to use from the drop down. We&#x27;ll be using Qwen3.8-27B.<br>The model picker. Qwen3.8-27B is first on the Recommended list.<br>You should see a submenu like the one below when you click on a model. I&#x27;ll be using Unsloth&#x27;s UD-Q4_K_XL version. The M and S versions are smaller, but the XL version behaves much closer to the full-size model without filling up our VRAM, so it seemed like a good pick for my GPU.<br>Every quantization of Qwen3.8-27B with its download size. The gear next to the downloaded one holds the context setting.<br>Step 3: Set the Context Size<br>Once the download completes, you should see a gear icon to the right of the model as shown in the screenshot above. Here, you can set your context size manually or leave it on Auto if you aren&#x27;t sure how much you need.<br>I&#x27;ll be setting mine to 128K (unquantized) and might reassess after I&#x27;ve run the model through a few of my routine tasks for a few weeks. Again, you can use this VRAM calculator to help you with these numbers for your specific GPU.<br>At this point, our first local AI is up and running, and you can start chatting with it right inside Unsloth.<br>Remember, your mileage may vary depending on your setup.<br>How Do You Share a Local AI Across Your Home Network?<br>Short answer: Unsloth Desktop has LAN sharing built in. Set a Remote password, start LAN access, and share the address it gives you with anyone on your home network.<br>Once Unsloth Desktop is set up with a model, you might want to give family members or friends access too. For now, we&#x27;ll only serve it over our local network, so my family can use it without needing physical access to this PC.<br>Head into Unsloth Desktop settings (gear icon on bottom left), and look for the &#x27;Remote &amp; LAN&#x27; tab.<br>Settings, Remote &amp; LAN. LAN access is the second card. The Remote access card above it is for a later part.<br>Most of this section will be greyed out until you set a Remote password. Once you&#x27;ve set a password, you&#x27;ll see a &#x27;Start&#x27; button for LAN access. Click that and you should see an address that anyone on your home network can open in a browser to use a local AI model within a chat interface. They&#x27;ll sign in as &#x27;unsloth&#x27; with the Remote password you set.<br>Just keep in mind that the PC needs to stay on with Unsloth running for anyone to reach it.<br>Can You Access Your Local AI Across the Internet? Soon™<br>Not with this setup alone. Everything so far is limited to your local home network.<br>If you just need a chat interface like ChatGPT, Gemini, etc. to work within your home network, you&#x27;re basically done at this point! You and anyone on your network can start talking to an AI model hosted on your machine right away.<br>In the next parts, we&#x27;ll cover performance, tunneling, as well as setting up an agent that runs locally and uses only the web tools you allow it to use. This will let you automate more complex tasks like coding, research, and so much more without being tied to a subscription or usage limits and censorship.<br>As always, my focus remains simplicity that allows my family to use it without too much guidance or help.<br>PS. If you have any recommendations for agentic harnesses or even models to try, feel free to let me know and I&#x27;ll give them a go!<br>Sources<br>| Source | Details |<br>|---|---|<br>| Unsloth Desktop documentation | Free, open-source app for macOS, Windows and Linux; runs GGUF and MLX models |<br>| Unsloth Desktop: LAN access | Remote &amp; LAN settings, LAN access start and port behaviour |<br>| Qwen3.8-27B model card | Official 16-bit weights (~56 GB) and parameter count |<br>| Unsloth Qwen3.8-27B GGUF | Quantized files and sizes, including UD-Q4_K_XL (~18 GB) |<br>| Unsloth: Inkling 2 Mini run-locally guide | 26.4B parameters, Apache 2.0, 1M context, UD-Q4_K_XL at 17.6 GB, memory by precision |<br>| Unsloth: Inkling 2 Small run-locally guide | 594B parameters, smallest file 171.7 GB |<br>| Thinking Machines Lab: Inkling-2-Mini model card | Official weights, released November 17, 2026 |<br>| NVIDIA GeForce RTX 5090 | 32 GB GDDR7 consumer GPU used for this build |<br>- Free, open-source app for macOS, Windows and Linux; runs GGUF and MLX models<br>- 26.4B parameters, Apache 2.0, 1M context, UD-Q4_K_XL at 17.6 GB, memory by precision</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: Tips for transitioning from web development to embedded/firmware?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    118 points ·
+    72 comments ·
+    llmblockchain
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #28
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50555002">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I started my career 15+ years ago doing native development (c, c++, etc), but the last decade I&#x27;ve been doing fullstack web applications.<br>I&#x27;d like to transition closer to my roots with a job doing primarily c, c++ or rust. The natural place seems to be in embedded development or firmware work. How feasible is the transition this late in the game? Any advice?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Show HN: Hearth 64 – A cozy fireplace screensaver ROM for real N64 hardware
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    gweedo767
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/njgreb/n64fireplace">Original article</a> · <a href="https://news.ycombinator.com/item?id=50606513">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A cozy low-poly 3D Nintendo 64 fireplace screensaver designed for a real CRT TV and stock 4MB N64 (auto-detects NTSC 60Hz &amp; PAL 50Hz via libdragon).<br>Just want to play it? Grab the ready-to-run hearth64.z64 ROM from the Latest Release and copy it onto your EverDrive-64, SummerCart64, or open it in ares!<br>- Classic 90s N64 Low-Poly 3D Hearth: Textured rustic stone chimney, soot-kissed angled firebrick firebox, heavy oak mantle with flickering beeswax candles, steaming mug, starry alpine night painting, festive mini pumpkins, wrought-iron grate &amp; andirons, braided hearth rug, stacked firewood nook, and a starry cabin window.<br>- Dynamic Flickering Firelight: Real-time multi-frequency point lighting illuminates the stone, logs, rug, and cabin walls—and shifts hue with your chosen flame mood.<br>- Layered 3D Flames, Coals &amp; Embers: Smooth IA8-blended 3D flame tongues, glowing ash/coal mound, swirling sparks, and interactive 3D log tossing.<br>- Playful Hearth Visitors &amp; Secret Easter Eggs: Random appearances by a strutting Thanksgiving Turkey, a hopping Frog, and a cozy Orange Tabby Cat — each with its own sound effect and secret A + B Easter egg!<br>- Cozy Audio Mixer:<br>- Seamless warm hearth rumble &amp; fluttering flame roar<br>- 6 randomized wood crackle/pop one-shots with organic pitch &amp; stereo pan variation<br>- Toggleable muffled Cabin Rain (with animated rain streaks outside the window!)<br>- Toggleable dreamy 90s N64 Ambient Synth chord progression<br>- CRT Burn-In Protection: Slow Lissajous orbital drift + smooth auto-cycling across 4 camera angles so no high-contrast edges stay static on CRT phosphor, plus an optional Night Dimmer and auto-hiding HUD.<br>| Button | Action |<br>|---|---|<br>| A | Stoke the fire (flame flare, spark burst &amp; whoosh) |<br>| B | Toss a fresh 3D log onto the fire |<br>| A + B (while visitor is out) | Secret Easter Eggs! (Turkey → Roast Dinner, Frog → Pumpkin Pie, Cat → Fireside Nap!) |<br>| D-Pad Up / Down | Adjust fire heat / intensity |<br>| D-Pad Left / Right | Cycle &amp; summon hearth visitors (Turkey, Frog, or Tabby Cat) |<br>| L / R | Cycle flame color mood (Classic Hearth, Driftwood Magic, Wildfire Emerald, Twilight Amethyst, Late-Night Amber) |<br>| C-Up | Toggle cozy Cabin Rain (audio + window rain streaks) |<br>| C-Down | Toggle chill N64 Ambient Synth |<br>| C-Left / C-Right | Cycle camera angle (Auto-Cycle, Classic Hearth, Fireside Rug, Parlor 3/4, Close-Up Coals) |<br>| Analog Stick | Gently orbit the camera manually (auto-resumes CRT drift after idle) |<br>| Z | Cycle CRT Burn-In Drift (Gentle / Wide / Off) |<br>| L + R | Toggle CRT Night Dimmer |<br>| START | Toggle controls &amp; status overlay (auto-hides for CRT safety) |<br>Copy hearth64.z64 onto your EverDrive-64, SummerCart64, or other N64 flashcart SD card and boot it on any stock 4MB NTSC or PAL Nintendo 64!<br># Build hearth64.z64 using libdragon preview (via Colima + Docker)<br>./build.sh<br># Build and launch immediately in ares emulator<br>./build.sh run<br># Regenerate procedural textures &amp; audio, then build<br>./build.sh regen</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Toyota, Nissan, and Honda to standardize parts to lower costs
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1190 points ·
+    680 comments ·
+    zdw
+  </div>
+
+  <div class="meta">
+    caranddriver.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #25
+  </div>
+
+  <div class="links">
+    <a href="https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50596133">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">- Toyota, Nissan, and Honda will begin standardizing some vehicle parts in an effort to lower production costs, according to a report by Automotive News.<br>- The automakers will start with equalized quality criteria for steel, consistent protocols for plastics, and a universal color-coding scheme for wiring harnesses.<br>- Discussions are starting with Japan’s domestic suppliers, though international suppliers will be looped in soon.<br>Japan’s three largest automakers have agreed to begin standardizing vehicle parts in an effort to reduce costs, according to Automotive News. The outlet reports that Japan Automobile Manufacturers Association chairman Koji Sato, who is also the vice chairman of Toyota, announced the decision at a news conference in Tokyo this week.<br>In the short term, the standardization efforts will begin with unified quality criteria for steel, consistent protocols for plastics and resins, and a universal color-coding scheme for wiring harnesses. In the long term, the Japan Automobile Manufacturers Association has plans to move to more components that cover the entire car. The three areas were chosen as the first to be standardized because they are parts that are generally not noticed by consumers, and they shouldn’t have an impact on any brand’s individual identity. All three are also areas that account for significant production costs for the automakers, meaning they can have an immediate impact.<br>The first discussions of standardization are set to include Japan’s domestic automotive parts suppliers, though international suppliers will be brought into the fold in time. The first standardization efforts are set to go into place next year, according to the AN report.<br>The push to simplify and lower costs comes as Japan’s seven automakers, including Toyota, Nissan, Honda, Mazda, Subaru, Mitsubishi, and Suzuki, work to fend off the increasingly competitive list of Chinese automakers. The automakers are said to hope that they can channel the money saved by homogenizing into new innovations.<br>“We all share this strong sense of crisis, creating a momentum for change,” Sato said. “Based upon our sense of a crisis, we decided to choose these three areas.”<br>➡️ Skip the lot. Let Car and Driver help you find your next car.<br>Jack Fitzgerald’s love for cars stems from his as yet unshakable addiction to Formula 1. After a brief stint as a detailer for a local dealership group in college, he knew he needed a more permanent way to drive all the new cars he couldn’t afford and decided to pursue a career in auto writing. By hounding his college professors at the University of Wisconsin-Milwaukee, he was able to travel Wisconsin seeking out stories in the auto world before landing his dream job at Car and Driver. His new goal is to delay the inevitable demise of his 2010 Volkswagen Golf.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    The Birds of GTA 6: A Field Guide to Vice City and Leonida&#x27;s Wildlife
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    356 points ·
+    160 comments ·
+    gaws
+  </div>
+
+  <div class="meta">
+    audubon.org
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #10
+  </div>
+
+  <div class="links">
+    <a href="https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife">Original article</a> · <a href="https://news.ycombinator.com/item?id=50602843">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I finished collecting the bricks of cocaine and landed my bullet-ridden seaplane at the dock. It was time for birdwatching.<br>A few minutes after midnight on Thursday morning, I joined millions of other gamers for the release of Grand Theft Auto VI, the latest in the smash video game series from Rockstar Games. The new installment is already a worldwide sensation, earning more than $1.8 billion in revenue the day it was released.<br>Grand Theft Auto, or GTA, games are famous for their “open worlds,” which allow players to explore massive, intricately detailed versions of America. Much of that exploration is focused on mayhem and chaos: The story missions usher players through criminal underworlds, and players are at any time free to steal cars, rob stores and pedestrians, and initiate anarchy.<br>But GTA 6 has more going on than just criminality—it’s also a world filled with wildlife. Previous GTA games were set in fictionalized versions of New York City and Hollywood, but the new one returns to Vice City, its version of Miami, which was also the setting for 2002’s installment. Unlike that game, however, GTA 6’s South Florida is complete with dozens of species of birds, reptiles, amphibians, fish, mammals, and other creatures. The in-game Progress menu tracks all kinds of items to find, including 338 vehicles, 205 weapons, and, of primary interest to me, at least 60 bird species.<br>I made it my mission to find them all as quickly as possible.<br>(Side note: Pre-release marketing for GTA 6 touted 62 bird species, but the official birds Progress screen only lists 60, with a handful of others listed on the hunting screen.)<br>I am one hour in and I’ve found 16/60 birds https://t.co/81x42O1BuY<br>— The Birdist (@TheBirdist) November 19, 2026<br>You begin the game as Jason, a low-level criminal working to raise money to support his young family. You’re equipped with zoom binoculars before the very first mission—tracking drug runners through a swamp and escaping with the seaplane—and I used them immediately, stopping mid-lurk to scan some Double-crested Cormorants on a dock. (Distracted from the job at hand to look at birds—just like real life!) They looked like Double-crested Cormorants!<br>After the first mission the player is free to explore the entirety of the map, stealing cars, robbing stores, or just birding wherever they want. The game makes birding easy: Looking at any bird through the in-game binoculars gives players the option to hold a button to “study” it, thereby adding it to the Progress menu. Simply standing on the back deck of Jason’s first safehouse yields a bunch of species like Brown Pelican and Laughing Gull. It’s just like being in South Florida!<br>Looking south from the back deck, I spotted another bird perched on an adjacent dock, with a few people gathered at the end. Looking through my binoculars I spotted my first Herring Gull—and noticed that the people, a woman and three men, were fully and visibly naked. Jason apparently lives next to a nudist resort. It’s just like being in South Florida!<br>Two down, 58 to go. I found a few more species right in Jason’s backyard, including American Crow, House Sparrow, and South Florida-appropriate Monk Parakeets, before venturing out into the huge map. My strategy for finding birds in GTA 6 was the same as finding birds in real life: look in as many habitats as I could find. I started by “borrowing” a fanboat off a nearby dock and heading back to the swampy areas near the seaplane mission. There were tons of birds across the open water and in the marsh: Caspian Terns, Mottled Ducks, Sanderlings, Spotted Sandpipers, Great Blue Herons, Glossy and White Ibis, and … flocks of Whooping Cranes?<br>incredibly healthy populations of critically-endangered Whooping Cranes across Vice City. Huge if true. https://t.co/doe6oMOvBX<br>— The Birdist (@TheBirdist) November 19, 2026<br>In fact, I found a number of avian inaccuracies in just my first few hours of playtime. Certain species like Whooping Crane and Red-cockaded Woodpecker are common throughout the map, despite being endangered and threatened, respectively, in real life. Golden Eagles are extremely rare in Florida, but I found one soaring over the Mt. Kalaga area (mountains, one may point out, aren’t found in Florida either). Some species have confusing naming quirks—the chickadee is Black-capped instead of Carolina, and there’s a “New World Oriole” instead of a Baltimore Oriole—but those changes are likely due to the fact that Carolina and Baltimore don’t exist in the GTA universe.<br>Though some of the inaccuracies may feel like a letdown in a game that is being hailed as the Greatest of All Time, I think it’s important to remember that it’s also game where you can get a ride from a dog driving a jet ski. Grand Theft Auto games are meant to be fun, not science. Plus, despite some of the misfires, the avifauna feels well thought-out. The map is true to the ecological boundaries of South Florida, with herons, gulls, and other waterbirds in the south while birds like Red-bellied Woodpecker, Wood Stork, and American Robin are found farther north. Birders know that certain exotic species have made their home in tropical South Florida, including Spot-breasted Oriole and Red Junglefowl, both in the game.<br>That geographic fidelity is the main tip for anyone looking to check off all the game’s birds: Find their habitat. The game doesn’t tell you what species to look for, so you’ll need to cover a lot of ground to find everything. Wading birds, shorebirds, and seabirds are common in the southern coastal part of the map. A number of smaller, open-country or forest birds are found up north. Owls come out at night. Birds in zoos and domestic farmyard birds count towards the 60, too, so don’t overlook those areas.<br>Wild Boar roadkill. It’s just like birding in Florida! https://t.co/gT84IticOK<br>— The Birdist (@TheBirdist) November 19, 2026<br>The most accurate aspect is the actual landscape. Having birded extensively across South Florida myself, the habitats are immediately recognizable, from the pebbly mangrove beaches at the Keys to the grassy swamps further north. The setting feels absolutely real, from the fonts on the roadside fruit stands to the roadkill alongside the highways. (I found dead wild boar and dead deer by the side of the road, and a Turkey Vulture somehow flew into a building I was in and died at my feet.)<br>So, if you’re up for the kind of funhouse-mirror version of Florida that the game presents, you can have a blast, and adding birdwatching into the insane free-for-all makes for some delightful moments. This guy just wanted to look at a gull but ended up chucking a woman off a pier. I’ve made myself laugh out loud by screeching to a halt in the middle of busy highways or intersections and jumping out of my car to look for birds while motorist behind me scream and swear. I love it.<br>easily my favorite thing to do so far is just screech to a halt in the middle of a busy intersection and start birding https://t.co/QsDOLmNfYq<br>— The Birdist (@TheBirdist) November 19, 2026<br>As I was dodging dirt-biking rednecks to look for species in a northerly forest, I couldn’t help but compare birding in GTA 6 to birding in Red Dead Redemption 2 (RDR2), the latest installment in Rockstar’s other huge franchise. Birds and birding are presented quite similarly in both games, including the binocular “study” mechanic and many of the same species, but the experiences are totally different. RDR2 was set in the late 1800s, and players rode on horseback or locomotive through a comparatively wide-open and untrammeled version of America. There was mayhem in that game, too—outlaw gangs and marauders—but there were many peaceful moments, too, when a player could look out across wild landscape with nothing but nature as a soundtrack.<br>Not so in GTA 6. There’s plenty of birdsong on the soundtrack, but it competes with an endless racket of car radios, revving engines, swearing pedestrians, and blaring horns. There’s garbage almost everywhere, lapping the shorelines and blowing along the streets. There seems to be no inch of landscape in GTA 6 that hasn’t been lessened by the touch of humans. It is, I have to admit, a realistic depiction of birding in South Florida.<br>Birders working to fill out their GTA VI wildlife checklists should know something I just found out: THERE’S A ZOO https://t.co/2xN0joPKcR<br>— The Birdist (@TheBirdist) November 20, 2026<br>Though GTA 6 provides what feels the most accurate version of modern birding ever put to screen, obsessing over the realism misses the point of having fun. Birders can, and should, visit the real South Florida to find the actual birds depicted in the game (and many more), but they can’t do it while also jumping over broken highway bridges on a stolen motorcycle. Birding is a bonus in GTA 6; mayhem is the draw.<br>I played for two hours after midnight, then about six straight hours Thursday before having to call it quits to write this column. In that time I found 50 of the 60 species listed in the “birds” compendium. I jumped back in this morning before work and found a huge chunk of species at a zoo (makes sense!) and on a farm, then found the 60th and final, an American Barn Owl, on a water tank in a town in the north of the map. Success!<br>The biggest thing I can confirm is that all 60 birds on this list are available immediately, without needing any story progression. In Red Dead Redemption 2, some bird species were only found in Guarma, only accessible later in the game<br>— The Birdist (@TheBirdist) November 20, 2026<br>I felt a wave of satisfaction, and while I’m not certain if I was the first one to find them all, when I posted about it, a Rockstar designer replied with, “History!” I’d met my goal, and celebrated in a way that only Grand Theft Auto games allow: by driving my car full speed off a cliff into the ocean.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: I used Fable to make an open source 80s-style Skyrim browser game
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    rdh18
+  </div>
+
+  <div class="meta">
+    thanes-quest.daventry.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · New #23
+  </div>
+
+  <div class="links">
+    <a href="https://thanes-quest.daventry.io/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50606209">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Inspired by both Skyrim and the old Sierra games like King&#x27;s Quest<br>Features:<br>- Playable in the browser on desktop and mobile<br>- Play by clicking, tapping, number keys, or typing<br>- Original code-drawn pixel art and synthesised music<br>- Day and night, snow, and a thaw<br>- Real-time combat with timed parries<br>- Six skills that rise by use, with perks<br>- Five spells and four runewords<br>- Trading, a forge, and repeatable paid work<br>- Weight limit for what you carry, and a storage chest<br>- Map, journal, character sheet, and deeds list<br>- Two-part main story with two endings<br>- Eleven side stories<br>- Valley with eight fable-made places and interiors<br>- Endlessly generated open country beyond the valley<br>- Eighteen fable-written scenes to find in the wild<br>- Three far landmarks<br>- Walls of rock with passes guarded by enemies<br>- Vaults under ruined towers<br>- Autosave plus three manual slots<br>- No runtime dependencies<br>Limitations:<br>- Story inconsistencies<br>- Mismatches between story/description and visual state<br>- I&#x27;m sure plenty more</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    726 points ·
+    825 comments ·
+    LetThingsBeDiff
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50583761">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I&#x27;m Senior software engineer in the US (DMV area), with 15y of experience. Worked for Fortune 50+ company and bunch of mid-size companies. Been unemployed for 2y and can&#x27;t find a job, within those 2 years, I pretty much spent my savings that I&#x27;ve saved through years, maybe have 4-5 months left to support my household. Currently, I tutor math and probably about to start working as manager in pizzaria.<br>In Jan 2025, I quit from a mid-size insurance tech company(1000+) after working there for almost 4y, because I was tipped off the they were about to start layoffs and they did. Well, since then I have zero luck finding any job in SWE.<br>At this point, I have massive gap in my resume that I can&#x27;t explain to recruiters, I can still code (C#/.NET/AWS) and learned the AI, but who cares if date of my last employment is Jan2025. What should I do ?<br>If you have an alternative path (something completely different from SWE or SWE adjacent) that pays &quot;well&quot;, I would like to hear.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Appeal court says accommodations law for pregnant workers unconstitutional
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    randycupertino
+  </div>
+
+  <div class="meta">
+    apnews.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://apnews.com/article/law-pregnant-workers-court-appeals-c3b964c0f0cafaed2f20099055eb79cd">Original article</a> · <a href="https://news.ycombinator.com/item?id=50606505">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+</body>
+</html>
