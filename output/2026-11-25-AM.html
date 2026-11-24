@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-25 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-25 AM · Generated 2026-11-25 04:15 CST</div><div class="issue-sub">Stories 10 · Full 8</div><div class="issue-sub">Sources: arxcloud.io, blog.mlc.ai, charlie.fish, cnbc.com, github.com, greynoise.io, ladybird.org, masondata.ai, news.ycombinator.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Ask HN: Anthropic is accusing my company of distilling. How can I prove I&#x27;m not?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    133 points ·
+    77 comments ·
+    weli
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #8 · Best #56
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50630809">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Basically the title.<br>Anthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models.<br>Our only usage which I think could get us flagged is automated regression benchmarks whenever we change some AI settings. But this is not against their policy?<br>Now I&#x27;ve got 24h to prove we didn&#x27;t.<br>Has anyone dealt with this too? How can you prove that you are not distilling Anthropic models without breaking your user&#x27;s privacy?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Nvidia Reinstates Jensen Huang as CEO
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2775 points ·
+    3645 comments ·
+    jaz
+  </div>
+
+  <div class="meta">
+    cnbc.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #34
+  </div>
+
+  <div class="links">
+    <a href="https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50611576">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Nvidia on Monday announced Jensen Huang has been reinstated as CEO, effective immediately, a dramatic twist in a scandal that hammered the chipmaker&#x27;s stock price and rocked the tech and artificial intelligence industries.<br>The board of directors said it unanimously voted to reinstate Huang following &quot;a series of discussions and meetings&quot; with him. The board added that it &quot;received input from senior levels of the United States government&quot; and that it is confident Huang&#x27;s reinstatement &quot;poses no national security risk.&quot;<br>President Donald Trump told CNBC on Monday that he had been speaking to Nvidia&#x27;s board &quot;directly and indirectly,&quot; and that Huang &quot;did nothing wrong.&quot; Trump said he talked to Huang on Sunday and asked him to promise to &quot;work hard.&quot;<br>Huang resigned from his role as chief executive earlier this month after a series of shocking reports about multiple extramarital affairs, including one with an alleged Chinese spy. The New York Times reported on Sunday that the woman, Alice Huang, was in contact with an officer of China&#x27;s Ministry of State Security during at least part of the time that she was engaging in a relationship with Huang.<br>Shares of Nvidia closed up 31% following Huang&#x27;s reinstatement. The stock had shed nearly 33% from the time Huang admitted to an extramarital affair on Nov. 8. The stock closed at $186.64 on Nov.6.<br>&quot;I am honored to return to NVIDIA and lead one of the most consequential technology companies in the world at the beginning of a new industrial revolution,&quot; Huang said in a statement. &quot;I take this responsibility with the greatest humility and renewed commitment. I want to thank the NVIDIA Board for its confidence and deliberation through this process.&quot;<br>Senior government officials briefed Nvidia&#x27;s board late last week and communicated that no national security laws were violated, according to sources familiar with the discussion who asked to remain anonymous because they were not authorized to speak publicly. That update prompted the board to reach out to Huang, the people said.<br>Huang and the board held their first conversations since his ouster on Saturday, and the group determined he would return as CEO during a second meeting on Sunday, the people said. Nvidia&#x27;s cratering stock price played a role in accelerating those conversations.<br>Trump celebrated Huang&#x27;s return to Nvidia on Monday, writing in a post on his social media site that the board made &quot;the correct and proper decision&quot; to reinstate him. Trump said the U.S. needs Huang&#x27;s leadership to &quot;ensure the Success and Prosperity of not only the Company, but the American Economy.&quot;<br>He reiterated that the U.S. government has &quot;no reason to believe&quot; Huang&#x27;s return poses a risk to national security, and that it &quot;does not possess evidence that he has engaged in any unlawful conduct.&quot;<br>&quot;On a personal note, I have gotten to know Jensen, and he is a Great Patriot and National Treasure,&quot; Trump wrote.<br>Several tech industry leaders, including Elon Musk, CEO of SpaceX, Gavin Baker, managing partner and chief investment officer at Atreides Management, and Brad Gerstner, Altimeter Capital CEO, had been actively lobbying for Huang&#x27;s return. Musk wrote in a post on X on Monday that the board&#x27;s &quot;mistake has been corrected.&quot;<br>Nvidia did not immediately respond to CNBC&#x27;s request for comment.<br>For weeks following Huang&#x27;s ouster, the company&#x27;s board maintained that it was not considering Huang&#x27;s reinstatement. It appointed Colette Kress, Nvidia&#x27;s chief financial officer, as the chipmaker&#x27;s interim CEO, who reiterated that position in an interview with CNBC following Huang&#x27;s exit. Kress will continue to serve as Nvidia&#x27;s CFO, according to a filing with the Securities and Exchange Commission.<br>Nvidia&#x27;s board formed an independent committee and hired the law firm Wachtell, Lipton, Rosen &amp; Katz to conduct an investigation into Huang and whether company secrets or national security were compromised. The board said Monday that &quot;the committee&#x27;s investigation will proceed to conclusion&quot; and that Huang is &quot;committed to cooperating with it.&quot;<br>&quot;The Board believes Jensen is the right person to lead NVIDIA, and that his reinstatement is in the best interests of our stockholders, employees, partners and customers,&quot; Nvidia&#x27;s board chair, Harvey Jones, said in a statement. &quot;We have every confidence in Jensen and look forward to working with him as he resumes his leadership of the Company.&quot;<br>Even with Huang back at the helm, Nvidia is facing increased scrutiny over its chip sales in Southeast Asia and China.<br>Lawmakers have been preparing for investigations into how Huang&#x27;s affair with the alleged spy may have damaged U.S. AI dominance, influenced his positions on export controls, and impacted his close relationships with Trump and his Cabinet. Huang has been one of the loudest voices opposing strict export controls on advanced chips.<br>&quot;The reckless decision to bring Jensen Huang back as CEO does not change the fact that Mr. Huang, NVIDIA executives, and the company&#x27;s board still owe Congress answers about the company&#x27;s compliance with U.S. export controls,&quot; Sen. Elizabeth Warren, D-Mass., said in a statement Monday.<br>Huang is due for a closed-door transcribed interview with the House Foreign Affairs panel and two other committees on Dec. 1. Nvidia&#x27;s general counsel, Tim Teter, is scheduled to appear before the panels on Dec. 2. Those dates were set before Huang&#x27;s return, and John Fisher, who represents Huang, did not comment on whether there are any changes in his plans to testify.<br>Senate Banking Committee Chairman Tim Scott, R-S.C., said Monday that Huang will publicly testify on Dec. 3 as the sole witness during a hearing titled, &quot;Protecting America&#x27;s AI Advantage: Oversight of U.S. Export Controls.&quot;<br>&quot;Americans deserve answers about what NVIDIA and the Trump administration knew, when they knew it, and whether sufficient steps were taken to prevent sensitive technology from falling into the wrong hands,&quot; Sen. Andy Kim, D-N.J., a member of the Banking Committee, wrote in a post on X on Monday.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: Mason – a lightweight Postgres read-replica, built on columnar storage
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    52 points ·
+    6 comments ·
+    tagspace
+  </div>
+
+  <div class="meta">
+    masondata.ai
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #11
+  </div>
+
+  <div class="links">
+    <a href="https://masondata.ai/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50630294">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A lightweight drop-in replacement for your Postgres read replica.<br>Same SQL, same answers. But extremely fast for analytical queries.<br>SELECT response_code, count(*)<br>FROM requests<br>GROUP BY response_code<br>Same SQL, same answer, 81× faster<br>| response_code | count |<br>|---|---|<br>|  | 7,412,604 |<br>|  | 1,502,931 |<br>|  | 846,118 |<br>|  | 238,347 |<br>AWS m7g.xlarge · 4 vCPU · 16 GiB RAM · EBS gp3<br>Why Mason<br>- Lightweight: Mason is a single Node.js process you can run anywhere. It keeps all its config and your synced data locally in the folder you run it in.<br>- Fast: Mason syncs your Postgres data into DuckDB&#x27;s columnar engine, and rewrites your Postgres queries on the fly into the form DuckDB runs fastest.<br>- Postgres: Mason is built from the ground up to match Postgres&#x27;s syntax and behavior (not DuckDB&#x27;s), so you can point your existing Postgres queries at it with confidence.<br>- Read replica: You choose which tables and columns to sync from your Postgres database, and how each stays in sync: on demand, by polling or by logical replication.<br>- Built for AI agents: Add a user per agent, with role-based access control (RBAC) that limits the tables, columns and rows each one can read. Every query is logged with who ran it, the SQL they sent, how long it took and, if it was refused, how to fix it. Mason also has MCP support built in.<br>Try it out in minutes, run it anywhere<br>$ npm i -g @mason-data/cli<br>$ cd my-app<br># tell Mason which Postgres database to sync from<br>$ mason init &#x27;postgres://me:secret@db.example.com:5432/my_db&#x27;<br># choose the tables to sync<br>$ mason add orders customers<br># start Mason locally and wait for the first sync to finish<br>$ mason start &amp;&amp; mason wait<br># get a connection URL for your favorite Postgres client<br>$ mason user add me<br># get results fast<br>$ psql &quot;postgres://me:&lt;password&gt;@localhost:5433/mason&quot; -c &quot;SELECT country, sum(amount) FROM orders JOIN customers ON customers.id = customer_id GROUP BY country&quot;<br># or give it to your coding agent<br>$ claude mcp add mason --env MASON_URL=&quot;postgres://me:&lt;password&gt;@localhost:5433/mason&quot; -- mason mcp<br># done? stop Mason and delete its synced copy of your data<br>$ mason stop &amp;&amp; mason destroy<br>Where Mason is fast, and where it isn&#x27;t<br>Fast<br>Queries that read lots of rows, like counts, sums and group-bys over big tables. The kind dashboards, reports and AI agents run.<br>Not fast<br>Queries that fetch a few rows and many columns, like looking up one order by its ID. Mason is fastest when you&#x27;re querying a lot of rows across a few columns.<br>| Query | Postgres (s) | Mason (s) | Mason is |<br>|---|---|---|---|<br>| Count by status10M rows, 10 clients | 21.721 | 0.2595 | 84× faster |<br>| Count by status, 100M rows, 1 client | 216.068 | 0.4624 | 467× faster |<br>| SELECT status, count(*) FROM orders GROUP BY status ORDER BY status |  |  |  |<br>| Revenue by month (a join)10M rows, 10 clients | 43.909 | 2.758 | 16× faster |<br>| Revenue by month (a join), 100M rows, 1 client | 335.059 | 6.685 | 50× faster |<br>| SELECT date_trunc(&#x27;month&#x27;, o.created_at) AS month,        date_trunc(&#x27;year&#x27;, c.created_at) AS signup_year,        sum(o.amount) AS revenue FROM orders o JOIN customers c ON c.id = o.customer_id GROUP BY 1, 2 ORDER BY 1, 2 |  |  |  |<br>| Lookup by primary key10M rows, 10 clients | 0.0388 | 0.2341 | 6.0× slower |<br>| Lookup by primary key, 100M rows, 1 client | 0.0366 | 0.1013 | 2.8× slower |<br>| SELECT * FROM orders WHERE id = &#x27;7c9e6679-7425-40de-944b-e07fc1f90ae7&#x27; |  |  |  |<br>From a cold start: each engine restarted and the page cache dropped before every run. 1 or 10 clients send the query at the same moment, and the time is until every client has its answer, the median of 3 runs. Actual results will vary, depending on the size and distribution of your data.<br>Features<br>- Role-based access control: Mason gives each tool, AI agent or customer its own login, and its role decides which tables and columns it can read. You can add, disable or remove a user at any time, and the change takes effect immediately.<br>- Row-level security: You can limit each user to its own rows, such as the rows for one customer. Mason applies the same limit to related tables by following their foreign keys.<br>- Generated tables: These are like materialized views, but Mason keeps them up to date for you. They put no extra load on your database.<br>- MCP: Mason has its own MCP server, so AI agents like Claude Code and ChatGPT can look at your tables and run queries. Each agent can only see what its role allows.<br>- Monitoring: Mason works with the monitoring tools you already use. Prometheus and Grafana can read its metrics at /metrics, and uptime checks, Kubernetes and ECS can check its health at /healthz. It writes its logs to stdout, so Datadog or CloudWatch can collect them. You can also look back at every query, every sync event and how busy Mason has been, with mason logs and mason usage.<br>- IP allowlists and TLS: You can limit each user to the IP addresses it connects from. Mason can also encrypt every connection, with your own certificate or with one it makes for you.<br>- Web UI: Run mason ui to open a web page where you can add tables and users. The page also shows you queries, usage and sync events as they happen.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    What Cloudflare Doesn&#x27;t Tell You
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    77 points ·
+    50 comments ·
+    fishcharlie
+  </div>
+
+  <div class="meta">
+    charlie.fish
+  </div>
+
+  <div class="meta ranks">
+    Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://charlie.fish/posts/2026/11/what-cloudflare-doesnt-tell-you/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50632883">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Cloudflare has arguably done more to push modern internet technologies than any other company. The work they have done to enable TLS, IPv6, post quantum encryption, and other modern standards for millions of websites deserves a tremendous amount of credit.<br>While this is great, Cloudflare also hides many of the shortcomings of the underlying infrastructure from both users and website owners. Yes, you can connect to a Cloudflare website and it&#x27;ll allow for IPv6, post quantum encryption, and TLS. But Cloudflare&#x27;s connection to the origin server might be entirely unencrypted and rely exclusively on IPv4. This creates a huge mismatch between what is being presented to users and the reality of the connection.<br>One of my biggest problems with this is the fact that Cloudflare doesn&#x27;t do enough to notify website administrators about these issues. While Cloudflare provides tools to inspect these, comprehensive visibility is lacking. The Cloudflare dashboard should notify you about each of these issues where Cloudflare is following better practices than your origin server, without website administrators having to dig through and specifically look for this information. Clear warnings and proactive alerts to administrators would help greatly.<br>Not only that, but according to Cloudflare&#x27;s own documentation, they actively prefer IPv4 over IPv6 when making origin server requests, which is particularly disappointing for a company that has done so much to advance IPv6 adoption:<br>For proxied DNS records that have both an IPv6 and IPv4 origin address, Cloudflare will prefer the IPv4 address when connecting to your origin server.<br>Even when website administrators invest in deploying IPv6 on their origin servers, Cloudflare still prioritizes IPv4.<br>I also believe the industry should consider adding functionality so CDNs and other intermediate networks can expose origin TLS connection information alongside their own. This would allow users and network researchers to better understand the encryption state of the entire path and hold website owners accountable for bad security practices. A similar mechanism could expose which IP version is being used to communicate with the origin server.<br>Cloudflare has an opportunity to not only make modern internet technologies accessible to users, but also encourage adoption of those technologies throughout the underlying infrastructure. Cloudflare should be a catalyst for modernizing the internet, not a mechanism that allows website owners to avoid modernization indefinitely. Improving transparency would be a meaningful step toward achieving that goal.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    TxVerify: Core/Assumption Split to Formally Verify GPU Kernels at the PTX Level
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    matt_d
+  </div>
+
+  <div class="meta">
+    blog.mlc.ai
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://blog.mlc.ai/2026/11/24/what-must-we-trust-verifying-production-gpu-kernels-with-a-core-assumption-split">Original article</a> · <a href="https://news.ycombinator.com/item?id=50634057">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">When we say we’ve verified a GPU kernel in Lean, what exactly have we proved?<br>TL;DR<br>- In this work, we pursue two goals for verifying production GPU kernels in Lean.</div>
+<div class="para">- Coverage. The proof should establish safety, progress, termination, and the specified result for the actual PTX, including the Blackwell features the kernel uses.<br>- Soundness. Any error the proof rules out must be impossible on the GPU. If a load can return a value our model rules out, the proof never checks what the kernel does with that value.<br>- We face two challenges. First, we lack a precise formal PTX model for these Blackwell kernels. Second, even with one, assumptions about undefined behavior, numerical approximations, and No Thin Air would still need human review.<br>- Without relying on a precise core model, we can identify conditions sufficient to prove all four properties for a particular kernel. TxVerify is an open-source framework that formally verifies these four properties of production GPU kernels in Lean. We split the conditions each proof relies on between a shared core that records our reading of the manual and kernel-specific assumptions listed in each theorem. Once reviewers have checked the core, their work for each kernel reduces to checking its specification and assumptions.<br>- We proved all four properties in Lean for 13 Blackwell kernels from compiler-emitted or hand-written PTX, including FlashAttention-4, FlashMLA, TIRx FP16 GEMM, and vLLM’s decode (Gluon) and forward (CuTeDSL) attention kernels for Inkling 2 Small. The proofs pinpointed 8 assumptions for FlashAttention-4 and 11 for FlashMLA, and led us to fix 2 synchronization bugs in Inkling 2 decode and 1 in the GEMM.<br>- TxVerify is open source at GitHub. Try it, break it, or prove your own kernel with it.<br>The Renaissance of Verification<br>Many years later, as Lean finished checking a 69,552-line proof of a GEMM kernel, one of us was to remember that distant afternoon in an operating systems class when the lecturer explained that seL4, 8,700 lines of C, had taken about twenty-five person-years to build and verify.<br>— with apologies to Gabriel García Márquez, One Hundred Years of Solitude.11 Of the original kernel’s 8,700 lines of C, 7,500 were verified. The 25 person-years include design, documentation, implementation and verification. seL4 project figures<br>Those twenty-five person-years still set the standard for what a verified system means. Most code has never received this kind of effort, because proving a program correct took an expert far longer than writing it. Two changes are now bringing about a renaissance of verification:<br>- Agents now write GPU kernels faster than anyone can review them, so we need a check that does not depend on a careful human reader.<br>- Agents can also write proofs. Lean checks every step, so nobody has to trust whoever wrote the proof.<br>GPU kernels are a good place to start, because their worst bugs are hard to see. In a warp-specialized Blackwell kernel, a copy engine, the Tensor Core, and several groups of warps hand data to each other, and a single misplaced barrier or wait breaks a hand-off. Such bugs get past careful people even in widely used code. In 2026, synchronization fixes landed in DeepGEMM, CUTLASS, FlashInfer and FlashMLA. A synchronization error can also leave a program with undefined behaviour even when every test returns the expected answer. Examples appear in FlashAttention-4, CUTLASS and FlashInfer.<br>Agents can write the proof, and Lean can check it. What remains for a person is to decide what the proof may rest on. This post is about keeping that part small and explicit.<br>Verification ABC<br>If you’re new to formal verification, what does it mean to prove a GPU kernel correct? Let’s follow one word through add_one. If this is familiar territory, feel free to skip ahead :)<br>The full kernel has nine instructions. It launches one block of threads. Thread i should add one to the 32-bit word A[i]. Here are the five instructions that compute the address and update the word. At the start of this excerpt, %rd2 holds the array’s base address and %r1 holds the thread index.<br>mul.wide.u32  %rd3, %r1, 4;<br>add.s64       %rd2, %rd2, %rd3;<br>ld.global.u32 %r2, [%rd2];<br>add.s32       %r3, %r2, 1;<br>st.global.u32 [%rd2], %r3;<br>Theorem (add one). Suppose we launch one valid block of N threads, where N ≤ 2³². The kernel parameter points to a four-byte-aligned array at address base, with base + 4N &lt; 2⁶⁴. For each i &lt; N, let x[i] be the 32-bit word at A[i] before launch. Then the kernel runs safely, can make progress whenever unfinished, and terminates under fair scheduling. In every completed execution, A[i] = x[i] + 1 modulo 2³² for every i &lt; N, and every byte outside the array retains its initial value.<br>Proof. Fix a launch and an initial array satisfying the precondition. To prove the claim about this kernel, we need to answer three questions.<br>1. What does an execution record? A candidate execution describes what each thread does in program order and where each load gets its value. For this kernel, we ask three questions about its memory effects.<br>- Which four bytes does each thread load, and which four does it store?<br>- For each byte it loads, does it read the initial value or a value supplied by a particular store?<br>- What value does the thread write back?<br>For example, if A[1] starts at 7, we can describe a run in which thread 1 loads those four initial bytes and stores 8 back to the same address. So far we have described one candidate.<br>2. Which candidates are allowed? The semantics gives us rules for what each instruction does and how threads can interact through memory. An execution is allowed if it satisfies those rules. Here the address instructions give thread i the address base + 4*i for both its load and its store. A store can supply a byte to a load only if it wrote to that byte’s address. Thread 0 writes bytes 0–3 and thread 1 reads bytes 4–7, so a candidate in which thread 1 reads from thread 0’s store is ruled out.For a video walkthrough, Edward Z. Yang works through what it takes to formalize a simple in-place kernel under PTX’s weak memory model.<br>3. Why does every allowed execution satisfy the theorem? Pick any such execution and any thread i. Its four bytes form an aligned, initialized word, and the address bound prevents wraparound. Every other thread accesses a disjoint word, so there is no race. The thread’s own store follows its load and cannot supply it either. The load must therefore read the initial word x[i]. The add produces x[i] + 1 modulo 2³², and the store writes it back. This holds for every thread. At completion every word has the specified value, and no store has touched any byte outside the array.<br>That proves the claim about memory at completion. What lets us say the kernel gets there safely? For that, the theorem also needs precise definitions of safety, progress, and termination. We give those in the next section. Here the address argument already shows why the accesses are safe. An unfinished thread can always take its next step: its operands are ready, its memory accesses are valid, and it never waits for a peer. Each step moves it one instruction closer to ret. There are only nine instructions per thread and finitely many threads, so the kernel makes progress and every fair run finishes. ∎<br>What does Lean check, and what do we check? We write the execution rules, the theorem, and the argument in a form Lean can check. Lean verifies each step from the rules to the conclusion. That leaves two questions for the reviewer.<br>First, did we state the theorem we meant to prove? For add_one, we check which launches and inputs the theorem covers, what it promises during execution, and what it says about memory at completion.In the illustration, Pre and Post stand for the precondition and postcondition. [] is the empty list of extra assumptions for this kernel.<br>Second, do the rules that define possible executions describe the GPU faithfully enough for this theorem? For the result claim, the rules must account for every outcome the code produced by ptxas can give on hardware. For the termination claim, a reviewer must also judge whether the scheduling and asynchronous progress assumptions hold on the device.<br>Coverage: What We Talk About When We Talk About Correctness<br>We wanted a tool for kernels that ship today. That gave us four requirements.<br>- Every property in one theorem. Many verifiers prove one property, most often the absence of data races, or prove the answer while assuming the synchronization is right. We want safety, no deadlock, termination, and the right answer together.<br>- No rewriting. We prove the PTX that comes out of the compiler. A cleaned-up version would be a different program, and possibly a slower one.<br>- Every input and launch satisfying the precondition is covered. For FlashAttention-4, the batch size, head count, and sequence lengths are symbolic. For the GEMM compiled for 8192³, the theorem covers every input and buffer placement allowed by its precondition.<br>- Every feature a production kernel uses, including TMA, mbarriers, Tensor Memory, and Blackwell tensor cores.<br>The four promises of a theorem<br>Each promise holds for every valid launch of the kernel and every input that meets its precondition.<br>- Safety. No execution does anything the model treats as an error: an invalid or uninitialized operand, a misaligned or unallocated access, a data race, inconsistent barrier use, divergence where lanes must agree, misuse of TMA, MMA or Tensor Memory, or a CTA exiting while its shared memory is still in use.<br>- Progress. Every execution that cannot be extended by a counted event is complete. Every thread has either exited or belongs to a canceled cluster, and all outstanding asynchronous work and paired Tensor Memory requests have drained.<br>- Termination. One bound limits the counted events of each launch; failed polls do not count. With progress, every fair run finishes.22 Consider while (true) { a = a + 1; }. Each iteration adds counted events. For any proposed bound, the loop can run one iteration further, so it cannot satisfy the termination theorem.<br>- Result. At completion, memory satisfies the postcondition. For floating-point kernels, the theorem names the operations it reads as exact; how far hardware results differ from exact ones is a separate question.<br>Soundness: The Unbearable Weight of Proof<br>In trying to prove safety, progress, termination, and the specified result for production GPU kernels, we ran into two difficulties.<br>- We lack a precise formal model of PTX covering the Blackwell features these kernels use. A proof needs to know which executions PTX permits when those features interact. The manual sometimes leaves room for more than one reading.<br>- Even with such a model, some conditions would still need human review. A kernel may rely on hardware behaviour that PTX leaves undefined, or use a numerical approximation whose acceptable error depends on the application. When a principle such as No Thin Air is difficult to formalize, a reviewer must also judge the specific assumption the proof makes in its place.<br>Case 1: One Manual, Two Readings<br>There are only two kinds of languages: the ones people complain about and the ones nobody uses.<br>— Bjarne Stroustrup, creator of C++<br>The GPU does not run PTX. The ptxas compiles it to SASS, so the manual is the description of PTX that a verifier can read. On some questions, the manual gives no clear answer, and teams that write kernels answer them differently. Here are two examples.<br>Lane numbers in Tensor Memory addresses. For tcgen05.ld and tcgen05.st, a warp can access its own 32-lane partition. The question is how a load or store encodes that partition in its address. CUTLASS’s debug assertion checks that the address selects the issuing warp’s partition. The verified TIRx GEMM uses a lane field of 0 for its epilogue loads.<br>Reading an MMA result after an mbarrier wait. The manual’s example for this hand-off (§9.7.18.6.4.4), slightly simplified, is:<br>// thread 0                                    // thread 1<br>tcgen05.mma ...;<br>tcgen05.commit.mbarrier::arrive::one [mbar];<br>mbarrier.try_wait.relaxed.cluster [mbar];  // loop until success<br>tcgen05.fence::after_thread_sync;<br>tcgen05.ld ...;<br>The fence orders the load after the wait: a tcgen05 operation after tcgen05.fence::after_thread_sync “is ordered after all the prior tcgen05 and the execution ordering operations”, and mbarrier instructions are execution ordering operations. DeepGEMM writes the fence. CUTLASS’s C++ kernels and the TIRx Blackwell FP16 GEMM issue tcgen05.ld right after an acquiring wait and leave the fence out. The manual says the usual “synchronization mechanisms also apply to the tcgen05 family of instructions”, but never says that an acquiring wait can replace the fence. This problem can largely be solved with a formal core that specifies the PTX semantics, which TxVerify can also leverage as the core.<br>Case 2: One Execution Too Few, One Too Many<br>That is not only not right; it is not even wrong.<br>— attributed to Wolfgang Pauli<br>It may sound self-contradictory to ask whether a verification is sound, but in many cases we found ourselves producing a “not even wrong” proof when we were not careful.<br>Even where Chapter 8 of the manual gives explicit rules for memory consistency, what counts as a safe reading depends on the property: missing a hardware execution breaks the result proof (2.1), while adding one can hide a deadlock (2.2).<br>2.1 What can SC + happens-before miss?<br>If our model excludes an outcome the hardware can produce, our proof covers too few cases. Proving the result correct for every execution in the model then gives us no guarantee about the execution we left out. The PTX load-buffering test shows how this can happen.<br>A conventional way to reason about how threads share memory is to assume sequential consistency (SC). Under SC, all memory operations appear in one global order that respects each thread’s program order, and each load reads the latest store to its address in that order.<br>Both threads run on the same GPU. The global symbols x and y name distinct aligned 32-bit words, both initially zero. PTX classifies each conflicting pair as morally strong and race-free.33 For x, both threads access the same four bytes through the same proxy. Both instructions use GPU scope, which covers both threads. The same holds for y. PTX §8.7<br>// thread A                                // thread B<br>ld.relaxed.gpu.global.u32 %rA, [x];         ld.relaxed.gpu.global.u32 %rB, [y];<br>st.relaxed.gpu.global.u32 [y], 1;           st.relaxed.gpu.global.u32 [x], 1;<br>Can both loads return 1? The table lists every interleaving that preserves each thread’s program order, with each load reading the latest value on that timeline.<br>Under SC, (1, 1) is impossible. In every interleaving, the first operation is a load and it reads 0.<br>But PTX allows (1, 1). The manual lists this test and says: “This form of load buffering is deliberately permitted in the PTX memory consistency model.” PTX §8.10.4 The manual’s version uses plain accesses. With relaxed accesses, no axiom forbids (1, 1) either.<br>Our race checker in TIRx Harness uses vector clocks to track which accesses are ordered. Even a perfect vector clock on each of those six timelines would miss (1, 1). None of the six produces it.<br>Why? PTX distinguishes program order from reads-from (rf). Program order puts each thread’s load before its own store. An rf edge connects a store to the load that reads its value. Here A can read B’s store to x, and B can read A’s store to y. Both stores write 1 unconditionally.<br>You may wonder why we allow this at all. Thread A reads x, thread B writes it, and nothing orders the two. Isn’t that a data race? Under PTX’s rules, this pair is race-free because the accesses are morally strong. The same goes for y. So a program can be race-free under PTX and still produce (1, 1), which SC misses.<br>Suppose we rule out such programs anyway and require happens-before to order every conflicting pair before treating the program as sequential. This raises two problems.<br>- We exclude legal PTX programs. This restriction would reject the load-buffering example above and other programs that deliberately use relaxed accesses without ordering every conflict.<br>- It is still not sound. To show that a program meets this stronger requirement, we must prove that happens-before orders the conflicting accesses of every execution. But happens-before depends on the values loads return: a loaded value can pick a branch, an address, or whether a thread arrives on a barrier.<br>So, in practice, the order depends on the values loads are expected to return, such as the launch inputs. The axioms also admit executions where a load returns a value written by a racing store that exists only because of that value.<br>Such an execution has different addresses, branches, and order, and its race is never examined. The ordering rules alone admit these executions. PTX addresses them with its No Thin Air axiom, and no accepted precise version of it exists for PTX, C++, or Java4 (see Case 5).4 The C++ draft gives the same two-thread example: both words start at zero, and each thread copies what it reads. It recommends ruling out a value that could only have come from the other thread copying it. Java gives a formal causality test that commits actions in stages. C++ draft §[atomics.order] · Java §17.4.8<br>2.2 Can allowing too many executions hide a deadlock?<br>Suppose we allow more executions than the hardware can produce. For safety and the result, every extra execution is one more case the proof must cover. A single unsafe execution or wrong result still makes the proof fail.<br>For progress, however, suppose a kernel has deadlocked on the hardware, but our model still allows a step that would unblock it. We would wrongly conclude that the kernel can keep running when it is already stuck.<br>Consider a word x initially equal to 0 and a barrier M that expects one arrival. A waits before storing 1. B arrives only if it reads 1.<br>// thread A<br>wait:<br>mbarrier.try_wait.parity.relaxed.cta.shared::cta.b64  %p0, [M], 0;<br>@!%p0 bra wait;<br>st.relaxed.sys.global.u32  [x], 1;<br>exit;<br>// thread B<br>ld.relaxed.sys.global.u32  %r1, [x];<br>setp.eq.u32  %p1, %r1, 1;<br>@%p1 mbarrier.arrive.relaxed.cta.shared::cta.b64  %rd1, [M];<br>exit;<br>B reads 0, skips the arrival, and exits. A is now waiting for Godot. It can keep polling, but the only thread that could signal the barrier has gone home. Failed polls add no counted event, so this execution is stuck.<br>The core also admits a completed execution: B reads 1 from A’s store and signals the barrier, which lets A reach the very store that supplied the 1. (For why the core admits this execution, see No Thin Air in Case 5.)<br>Let be the execution where B reads 0 and exits, and the circular execution where B reads 1 and A finishes. The set of executions the core admits contains both:<br>Only the deadlock can happen on hardware: B signals only after reading 1, and A supplies that 1 only after B signals. Progress must hold for every admitted execution, and once B has read 0 and exited, no extension changes its read, so the deadlock still fails the progress check.<br>Extra executions would hide a deadlock only if the core admitted a continuation of every deadlocked execution. We have found no such kernel pattern, but we also have no proof that none exists.<br>That is why, on balance, we prefer to keep the extra possibilities when the manual leaves a behaviour open. Excluding a possible hardware outcome can already give a wrong answer, as the load-buffering example shows. In the progress examples we have been able to construct, the real deadlock still causes the proof to fail.<br>Case 3: Kernels on Thin Ice<br>something for nothing<br>— cheat code in StarCraft (1998)<br>Some kernels go beyond the vague parts of the manual and do things it leaves undefined, by accident or on purpose.<br>FlashAttention-4. Its correction warps read the accumulator O from Tensor Memory with tcgen05.ld, use the values, and then arrive on an mbarrier so that the MMA warp can accumulate into O again. They never execute tcgen05.wait::ld. PTX respects a true register dependency on the load. That dependency alone gives no memory ordering between the load and a later overwrite of its Tensor Memory cells (§9.7.18.6.4.5). The MMA’s write to O is unordered with the load, so the behaviour is undefined.<br>FlashMLA relies on an undocumented layout. Its 64-head sparse decode kernel uses tcgen05.mma.ws in the QK stage to compute two partial products at once. The QK configuration doubles the output-column count to B_TOPK*2. The Layout E figures show how the result is distributed for M = 64 in .ws mode. The extra detail FlashMLA relies on is which copy of operand A each group of output columns reads when the two halves contain different data. The decode source shows the split across eight 64-dimensional blocks of the QK dot product. One half handles blocks 0, 2, 4, and 6, and the other handles 1, 3, 5, and 7.<br>Our own GEMM has a milder case. It stages each output tile in shared memory for a TMA store, and before reusing the buffer it waits only until the copy has read it:55 A TMA store reads a shared-memory tile and writes it to global memory. Its source read can finish while the destination write is still pending. The .read wait distinguishes those two moments.<br>cp.async.bulk.wait_group.read 1;     // all but the newest bulk group must have finished reading<br>bar.sync %r389, 128;<br>st.shared.v4.u32 [%r527], {...};     // overwrite the buffer<br>TMA reads shared memory through a different proxy from ordinary stores. The manual orders the two after the copy has completed, because completion includes an implicit fence between the proxies, or after an explicit proxy fence. The .read wait gives neither. CUTLASS reuses its buffers the same way, and the pattern almost certainly works.<br>Case 4: The Almost-Exponential<br>This art of epsilon management, once mastered, is not terribly difficult.<br>— Terence Tao, Ultrafilters, nonstandard analysis, and epsilon management (2007)<br>FlashAttention-4’s softmax uses the FMA units to compute 2^x for a configurable fraction of its exponentials:<br>- Split. A round-down addition of 1.5·2²³ splits x into an integer n and a fraction f in [0, 1).66 Try x = 3.75. Near C = 1.5 × 2²³, adjacent FP32 numbers are one unit apart. Adding x to C and rounding down gives C + 3. Subtracting C recovers 3, leaving 0.75 for the polynomial.<br>- Approximate. Three FMAs evaluate 2^f ≈ 1 + 0.6951 f + 0.2276 f² + 0.0771 f³.<br>- Reassemble. A shift by 23 and an integer addition write n into the exponent bits.<br>The code clamps x from below at −127, and the upper bound lives only in a comment: “We assume x &lt;= 127.0”. Even with exact evaluation, the polynomial only approximates 2^f.<br>Treating each instruction as exact would erase the rounding on which the split depends.<br>Case 5: The No Thin Air Curse<br>No signal travels faster than light, so if one event can influence another, it precedes the other in every inertial frame.<br>— the causality principle of special relativity<br>Compilers and hardware want as few restrictions as possible, so that they can reorder instructions, buffer stores, and keep values in caches. The PTX memory model therefore promises little, and it is written declaratively, as a set of axioms.<br>It does not describe how the machine runs. It judges a whole execution at once: an execution is a set of events with relations between them, and the model checks those relations against its rules. The model records which write supplied each byte of a load. Its axioms constrain those choices across the execution.<br>The manual’s own example shows what this allows (§8.10.4). This version of the load-buffering test uses plain loads and stores, and each thread writes the value it just read. Both words still start at 0:<br>// thread 1                          // thread 2<br>ld.global.u32  %r0, [x];             ld.global.u32  %r1, [y];<br>st.global.u32  [y], %r0;             st.global.u32  [x], %r1;<br>Suppose both loads return 42. The table traces where each event gets its value, starting at thread 1’s load.<br>| Event | Value | Where does the value come from? |<br>|---|---|---|<br>| A. Thread 1 loads x | 42 | It reads the value stored by D. |<br>| D. Thread 2 stores to x | 42 | It copies the register set by C. |<br>| C. Thread 2 loads y | 42 | It reads the value stored by B. |<br>| B. Thread 1 stores to y | 42 | It copies the register set by A. |<br>Both threads have the answer. Neither can say where it came from. Follow the reads and writes from A to D to C to B, and we end up back at A. Each store copies its register correctly, and neither load reads from a store ordered after it. The ordering rules alone therefore admit this candidate, even though the only source for 42 is the cycle itself.<br>The manual forbids this with its No Thin Air axiom: &quot;an execution cannot speculatively produce a value in such a way that the speculation becomes self-satisfying through chains of instruction dependencies and inter-thread communication.&quot;<br>It does not define which dependencies count, and it lets the implementation “perform any chain of reasoning to determine that a store is not dependent on a prior load”. NVIDIA’s CUDA Tile IR memory model, which is derived from the PTX memory model, says: “It is not practical to specify a “no thin air” axiom without preventing useful compiler optimizations.”77 Java’s memory model gives a formal causality test. Ševčík and Aspinall showed that common subexpression elimination could produce an outcome the model forbids for the original program. Java §17.4.8 · ECOOP 2008 paper<br>The example looks artificial, but a production kernel runs into the same cycle. In vLLM’s Inkling 2 decode attention kernel, each CTA loads the start of its request from an input array and uses it to compute where its output goes:<br>q_start = gl.load(CuSeqlensQ + req)                   # load an input<br>...<br>out = (split * num_tokens + q_start + tok) * H + head<br>gl.store(LsePart + out, lse, mask=row_valid)          # the store address depends on the loaded value<br>Could one CTA’s output store overwrite the q_start that another CTA reads? The CTAs do not synchronize, so we have to reason about where the store lands. Suppose some store touched the input array, and take the first such store in time. Every load before it returned the launch value, so every output address computed before it is correct, and the store goes to the output arrays. So no store ever touches the input array.<br>That argument follows the order of time, and the model cannot state it. The model admits this cycle between two CTAs A and B:<br>A: load q_start  ──(address)──►  A: store output<br>▲                               │<br>(read by)                       (read by)<br>│                               ▼<br>B: store output  ◄──(address)──  B: load q_start<br>Each load returns a wrong value that the other CTA’s store wrote, and each store lands on the other CTA’s input because its address came from a wrong load. In the manual’s example, the stored value depends on the load. Here the store address does, and the cycle is the same. The ordering rules alone admit both reads, even though the resulting stores land on input bytes. To establish that the kernel preserves its inputs, the proof must rule out that cycle.<br>Insight: Two Kinds of Sufficient Conditions<br>Young man, you don’t understand PTX. You just get used to it.<br>— with apologies to John von Neumann, who said this about mathematics<br>So, are we doomed?<br>As we worked through these cases, one simple fact stood out. Engineers have shipped production GPU kernels for years without a complete formal model of PTX.<br>They reason about a kernel by identifying conditions sufficient to make each part work. At a hand-off, for instance, the author checks which barrier the producer signals and which phase the consumer waits for before reading the tile.<br>Instead of only relying on a full core model, we ask: what do we need to trust to establish that a production kernel is safe, makes progress, terminates, and produces its specified result? Can we state those conditions clearly and concisely enough for a person to review them?<br>Looking at the conditions engineers rely on, we found two kinds.<br>The first group covers conditions shared across kernels. The PTX manual gives two examples.<br>- TMA load. cp.async.bulk.tensor signals an mbarrier when the copy is done. A thread whose acquire wait observes completion of that phase can read the tile with ld.shared.<br>- TMA store. A thread writes the tile with st.shared, then executes fence.proxy.async.shared::cta and bar.sync. The cp.async.bulk.tensor store that follows reads the written values.<br>Where the manual leaves a behaviour open, a shared condition keeps the extra executions (Case 2). Missing one the hardware can produce makes the result proof unsound. Adding one could in principle hide a deadlock, and we cannot prove it never does, but we have found no kernel where every deadlocked execution has a continuation the model lets run.<br>The second group covers conditions a particular kernel relies on. Each case above raises a question that no single answer settles for every kernel. A kernel’s authors do not settle it in general. They state what their kernel relies on.<br>- The manual leaves a question open (Case 1). The TIRx GEMM relies on an acquiring mbarrier wait ordering a later tcgen05.ld without tcgen05.fence::after_thread_sync. TxVerify records this assumption in the shared core as EXT-TCACQUIRE.<br>- The manual leaves a pattern undefined (Case 3). FlashAttention-4 relies on each tcgen05.ld completing before its cells can be overwritten, as if a tcgen05.wait::ld followed it.<br>- The code computes an approximation (Case 4). To prove the exact attention result, we assume that FlashAttention-4’s software exponential computes 2x exactly.<br>- Correctness needs a rule no one can state precisely (Case 5). For Inkling decode, we assume that the load of q_start returns its launch value. Lean then proves that the store whose address depends on q_start writes to the output array.<br>The Core/Assumption Split<br>Simplicity favors regularity<br>— David A. Patterson and John L. Hennessy, Computer Organization and Design, Design Principle 1<br>TxVerify makes this distinction explicit in each correctness proof.<br>The core (trusted, under review) is a set of sufficient conditions that we believe hold for PTX in general. Almost every kernel shares these conditions, so the core states each of them once.<br>- Where the manual is clear, the core keeps the rule as written.<br>- Where the manual is vague, the core takes a conservative reading. Each such reading is marked as an interpretation.<br>An assumption is a condition of one kernel. We list each such condition explicitly as an assumption of that kernel and prove the kernel on that basis. The assumptions are left for a person to review. A kernel’s own condition stays out of the core.<br>Our claim, which the experiments below support, is that reviewing a modest number of assumptions is enough to establish a kernel’s correctness statement. The FlashAttention-4 theorem lists eight assumptions, the FlashMLA theorem lists eleven, and the GEMM theorem lists three kinds.<br>Core<br>One principle runs through the core: no order is free.<br>Two events are ordered only when the manual or a named interpretation says so. Within a thread, loads and stores follow program order, but every other order needs a rule, including the order of the asynchronous operations the thread issues.<br>The core has a layer for a single thread and three kinds of order:<br>- A thread executes its instructions in program order, given the values its reads return.<br>- Causality, the memory model, orders memory accesses through program order, barriers, release and acquire, and proxy fences.<br>- Each barrier, mbarrier and Tensor Memory allocator has an object order, in which its operations take effect one by one.<br>- A dependency order says that a wait returns after the completion it waits for, and that an asynchronous operation completes after its issue.<br>The correctness layer combines them: it defines the possible executions, what counts as going wrong, and when an execution has finished. Together, progress and the bound on counted events imply that every fair run in the model finishes.<br>The core covers the TMA, mbarrier, tcgen05 and Tensor Memory instructions, among others. An instruction form without a rule is rejected. The core leaves out wgmma, wmma, the texture, surface and video instructions, and function calls and stack allocation.<br>Assumption<br>When a proof gets stuck on an ordering obligation, we check whether the kernel establishes the required order. If the kernel relies on an order the core does not guarantee, we state that reliance as an assumption.<br>An assumption can give this one kernel an order or a value that the core does not give, or it can exempt a case from one of the core’s safety checks. It names the instructions it covers, cites the passage of the manual or the practice it rests on, and says why the kernel needs it. The theorem lists every assumption, and at all other instructions the core applies unchanged.<br>The agent that writes the proof also proposes its assumptions. When the proof needs an order that the core does not give, the agent reads the kernel’s PTX, its source and the comments in the source. It then either reports a bug or states the order that the authors intended, as narrowly as the proof allows, and every assumption is left for a person to review.<br>One assumption of FlashAttention-4. A production kernel also relies on conditions that the core does not contain. The FlashAttention-4 theorem lists eight assumptions, and the evaluation shows all of them. pollAgree shows how narrow such an assumption is. The store warp waits like this:<br>LAB_WAIT:<br>mbarrier.try_wait.parity.shared.b64 P1, [%r635], %r3594, 10000000;<br>@P1 bra.uni DONE;<br>bra.uni     LAB_WAIT;<br>bra.uni promises that all lanes executing it together have the same predicate (§9.7.14.3). Each lane runs its own try_wait, so two lanes can hold different results. At the 37 selected branches, the assumption exempts the lanes from the branch-uniformity check when their polls read the same mbarrier. The kernel could drop the assumption by using a plain bra.<br>A fundamental assumption about scheduling (EXT-FAIR): What, in the end, are progress and termination?<br>You may have noticed a problem while reading Cases 2 and 5. The PTX memory model takes an execution as input: each thread’s events in program order and the write each load reads from. It then judges whether that execution is consistent.<br>This brings us back to a fundamental question: how does PTX define what it means to execute a program? Put simply, does the manual have a notion of a step, of time, or of a clock?<br>The most conservative answer we can give is no. This raises two problems.<br>- If we cannot say what an execution is or what its next step is, how do we define that a program makes progress, or that it terminates?<br>- How should we understand instructions that block, such as bar.sync and an mbarrier wait, and instructions that complete asynchronously, such as a TMA copy?<br>We order executions by extension. An execution can grow while preserving what has already happened. A thread can take its next instruction, and a pending copy can complete. A load that already read 0 must still have read 0 from the same write, and a barrier keeps the arrivals it has already recorded.<br>With this order, the four notions are defined as follows.<br>- Progress. Every execution that cannot grow by a counted event is complete. Every thread has either exited or belongs to a canceled cluster, and all outstanding asynchronous work and paired Tensor Memory requests have drained. A deadlock is an incomplete execution with no extension that adds a counted event.<br>- Termination. One bound limits the counted events of every possible execution. Failed polls are not counted.<br>- Blocking instructions. Their events can join an execution only after what they wait for: a bar.sync after the other warps arrive or exit, a successful try_wait after its phase completes. A failed poll can always join but is not counted, so spinning is not progress.<br>- Asynchronous instructions. A TMA copy or an MMA adds an issue event to its thread, and its reads, writes and completion as separate events that later extensions may add. An execution is complete only when every issued operation has finished.<br>Our assumption EXT-FAIR bridges this model of extensions with hardware. We believe that whenever an execution can grow by a counted event, such as a copy completing or a poll succeeding, the hardware eventually adds one. This belief comes from the forward-progress guarantees of the CUDA programming guide. To carry the termination result over to hardware, we must also trust that whenever the model admits a counted step from an unfinished hardware execution, the hardware can actually make progress. Section 2.2 explains why this matters. Safety holds independently of fairness.<br>What must a reviewer read?<br>Lean checks that each proof derives its theorem from the trusted base: the core, the kernel’s specification and the assumptions its theorem lists. A reviewer reads only these.<br>- The core (trusted, under review) is about 47,000 lines of Lean, about 14,000 of them generated from a table of PTX instruction syntax. It holds the rules and the 61 interpretations, each next to the passage of the manual it rests on. It is shared by every kernel.<br>- The specification and assumptions (trusted, for a person to review) say what the kernel must compute and what it relies on beyond the core. For FlashAttention-4, Spec.lean and Assumptions.lean have 235 and 198 lines, and the software exp2 assumption reads an 89-line template.<br>- The shared library (checked by Lean), about 152,000 lines, holds lemmas proved from the core, such as facts about rings of mbarriers.<br>- The proof of each kernel (checked by Lean). Separate checks confirm that the proofs use only Lean’s three standard axioms, and that the theorem statements refer only to the core, the kernel’s assumptions, its specification, its PTX, and the libraries they use.88 Lean reports three foundational axioms here. Where do FlashAttention-4’s eight assumptions appear? In the theorem statement itself, which says exactly what follows when those assumptions hold.<br>Evaluation<br>Can production kernels be proved on this core/assumption split?<br>All thirteen kernels target Blackwell (sm_100a). The first four rows are prototype kernels. They are small, hand-written or compiled from a few lines of CUDA, and each exercises one part of the core. The last six rows are production kernels, and their proofs take the frozen compiler output as input.<br>| Kernel | PTX instructions | What it exercises | Assumptions in the theorem | Proof (lines) |<br>|---|---|---|---|---|<br>| Add one (hand-written) | 9 | one load, one add, one store per thread | none | 1,071 |<br>| Two copies, row sum, block sum | 16–31 | loads and stores, a loop, a CTA barrier | one copy: read-only ld.global.nc at one site; other copy: none; sums: exact add.f32 | 1,054–2,821 each |<br>| TMA copy | 18 | asynchronous copy completing on an mbarrier | none | 2,545 |<br>| Tensor Core GEMM (int8) | 60 | Tensor Memory, one tcgen05 MMA | none | 9,339 |<br>| TIRx RMSNorm | 295 | persistent loop, warp shuffles, approximate math | exact reals for its listed forms; approximate division and reciprocal square root read as exact | 11,557 |<br>| TIRx Blackwell FP16 GEMM | 1,097 | 2-CTA MMA, four-stage TMA ring, run-time tile scheduling, TMA stores | exact reals for its listed forms; cluster-scope mbarrier at its 37 sites; branch-uniformity exemption at two poll branches | 69,552 |<br>| FlashMLA sparse decode, head64 | 3,612 | six warp roles, a paged e4m3 KV cache dequantized with ue8m0 scales, a top-k sparse index gather, tcgen05.mma.ws | 11, including exact reals, approximate ex2, div and lg2, read-only ld.global.nc loads, pointer arithmetic, and the order and lifetime of its last commits and output stores | 137,315 |<br>| FlashAttention-4 forward | 4,897 | six warp roles across 16 warps per CTA, 2-CTA MMA, softmax and correction pipelines in Tensor Memory, persistent scheduling, symbolic shapes | 8, including exact reals, approximate and software exp2, the missing tcgen05.wait::ld and cluster-scope hand-offs | 98,288 |<br>| Inkling 2 Small relative-attention decode (Gluon) | 2,856 | symbolic batch and split count, paged KV, per-split partial attention and log2 normalizer | 11, covering numerics, read-only inputs, commit order, branch-uniformity exemptions at poll branches and a repeated register-allocation request | 169,450 |<br>| Inkling 2 paged-attention forward (CuTeDSL, tml-fa4) | 9,206 | causal attention with relative bias, ragged query and key lengths, paged KV, output and log-sum-exp | 10, covering numerics, read-only inputs, branch-uniformity exemptions at poll branches, commit order and Tensor Memory load completion | 212,870 |<br>The two Inkling theorems cover different programs. For Inkling 2 decode (Gluon), each CTA handles one request, KV head and split, with up to ten query tokens per request. The verified source includes two synchronization fixes: the softmax warps wait for o_done on every iteration after the first, and the epilogue waits for o_final even when the split has no iterations. The theorem covers the PTX compiled with those fixes. The Inkling 2 forward theorem covers the Inkling specialization of tml-fa4 with head dimension 128, 16-token pages and one split. Its batch size, sequence lengths and page table vary within the precondition. Both theorems establish safety, progress, termination and the stated result under their listed assumptions. Inkling 2 decode source revision · Inkling 2 patch to tml-fa4<br>The GEMM source link points to the public revision before the input-barrier drain fix. The verified source includes that fix at 13f586f. The reproduction notes distinguish the checked source hashes from a fresh compilation and byte-for-byte comparison. Proof sizes count the lines in each kernel’s .lean files under Proof/ at the evaluated revision. The Inkling 2 decode count also includes 27,920 lines under Proof2/. The counts exclude generated files under Gen/. The shared lemma library is counted separately.<br>Every theorem also depends on interpretations of the core. A checker in the repository attributes interpretations to each theorem from the instruction forms and assumptions that its statement names, and it confirms that the theorem discloses all of them. The attribution is conservative, so a theorem may list an interpretation that its proof does not need.<br>What bugs did we fix, and where do kernels risk undefined behaviour?<br>Two failed proof obligations led us to synchronization bugs in the Inkling 2 decode kernel. We fixed both in the verified source.<br>A skipped wait. Each PV MMA of the MMA warp arrives on o_done when it completes. The softmax warps wait for o_done only in iterations where they rescale the accumulator:99 Suppose alpha is 1 for every row. The accumulator can stay exactly as it is. The barrier still advances to its next phase, and someone must observe the completed phase before the next arrival. That is why the fix moves the wait outside the rescaling condition.<br>if i &gt; 0 and gl.min(alpha, 0) &lt; 1.0:<br>_bw.mbarrier.wait(o_done, i - 1 &amp; 1)<br>o = o_tmem.load(o_layout)<br>o_tmem.store(o * gl.convert_layout(alpha, o_row_layout)[:, None])<br>When no warp rescales in an iteration, the next arrival lands in a phase whose completion no wait observed. PTX forbids this: “For each primary phase of the mbarrier object, at least one test_wait or try_wait operation must be performed which returns True for waitComplete before an arrive-on operation in the subsequent primary phase” (§9.7.15.16.5.1). The fix waits in every iteration after the first and rescales only when needed. In our B200 comparison of this first fix against the original kernel, the outputs were bit-identical across 15 runs on five shapes. The fixed kernel ran 0.3–1% slower in our timing tests.<br>Much Ado About Zero Iterations. After its loop, the MMA warp commits to o_final even when the split has no key block. The epilogue waits for o_final only when the split has iterations:<br>if num_iters &gt; 0:<br>_bw.mbarrier.wait(o_final, 0)<br>With num_iters = 0, the CTA can exit before the commit’s arrival reaches its mbarrier in shared memory. The fix moves the wait in front of the branch.<br>UBs. In other places, the kernels break a rule the manual states, and we did not change the source. Each such place is an assumption of its theorem, so the theorem says exactly what the kernel relies on:<br>- A Tensor Memory load without tcgen05.wait::ld. FlashAttention-4 at 40 load sites (tcLd, Case 3) and the Inkling 2 forward kernel, which derives from it, at 28 (tcLdDataflow, delayedTmem). The load is unordered with a later overwrite of its cells.1010 A site is one instruction in the frozen PTX. A loop can execute that instruction many times. The tcLd assumption lists 40 such instructions and applies each time one executes.<br>- Exiting before an asynchronous arrival lands. FlashAttention-4, FlashMLA and the Inkling 2 forward kernel each have one commit, and the Inkling 2 decode kernel two, whose arrival no wait observes before the CTA exits (commitOrder). This is the same pattern as the second decode bug above. FlashMLA’s output stores may also still be reading shared memory when the issuing thread exits (storeDrain).<br>- Cross-CTA hand-offs at CTA scope. FlashAttention-4 at 43 sites and the TIRx GEMM at 37 arrive on and wait for the peer CTA’s mbarrier with the default .cta scope (clusterMbar). Two threads in different CTAs do not synchronize at that scope.<br>- bra.uni on a per-lane poll result. FlashAttention-4 (37 branches), the TIRx GEMM (2), the Inkling 2 decode kernel (6) and the Inkling 2 forward kernel (44) branch with bra.uni on results that lanes compute separately (pollAgree). bra.uni promises that the predicate is the same for all lanes.<br>- A repeated setmaxnreg without synchronization. The Inkling 2 decode kernel requests 256 registers again at the head of its worker loop (setMaxNRegSync), while the manual says that “all warps in the warpgroup must synchronize explicitly before executing subsequent setmaxnreg instructions”.<br>Four more assumptions rely on encodings or values the manual does not define, rather than breaking a stated rule: peerBit and sharedBits (the bit layout of shared addresses), paramPointers (the address of a tensor map passed as a kernel parameter) and cvtUe8m0 (the value of a zero scale byte). The table below gives the change that would drop each assumption.<br>What assumptions do they need?<br>The table lists the assumptions that the thirteen kernels use. For FlashAttention-4, FlashMLA and both Inkling kernels, it names each assumption and gives the sites or instruction forms it covers.<br>| Kind | Assumption | Kernel and sites | What the proof may conclude there | How the kernel could drop it |<br>|---|---|---|---|---|<br>| Numerics | idealArith | FlashAttention-4, listed forms | The FP16 MMAs, the listed scalar and packed floating-point operations, the comparisons and the FP16 packing conversion are exact real arithmetic. | The theorem states exact attention, so it keeps this one. |<br>| Numerics | exact reals | TIRx GEMM and TIRx RMSNorm, listed forms; row sum and block sum, add.f32 | The listed floating-point forms are exact real arithmetic. | These theorems state exact real results, so they keep it. |<br>| Numerics | approx | FlashAttention-4, 211 | ex2.approx and rcp.approx give the exact 2^x and 1/x. | The theorem states exact attention, so it keeps this one. |<br>| Numerics | approximate operations | TIRx RMSNorm, two operations | Approximate division and reciprocal square root are read as exact. | The theorem states the exact result, so it keeps it. |<br>| Numerics | swExp2 | FlashAttention-4, 24 segments | The software exp2 of Case 4 gives the exact 2^x. | The theorem states exact attention, so it keeps this one. |<br>| Numerics | idealArith | FlashMLA, listed forms | The kind::f16 MMAs over bf16 operands and the listed f32 and f32x2 operations and comparisons are exact real arithmetic. | The theorem states exact attention, so it keeps this one. |<br>| Numerics | approx, lg2Exact | FlashMLA, its ex2.approx, div.approx and lg2.approx forms | ex2.approx gives the exact 2^x, and div.approx gives the exact quotient, which is 1/x at the kernel’s one division site. On a positive finite operand, lg2.approx gives the exact base-2 logarithm. | The theorem states exact attention, so it keeps this one. |<br>| Numerics | mulBf16x2, cvtBf16x2 | FlashMLA, these two forms | Each half of mul.bf16x2 is the exact real product of its two bf16 inputs. Each bf16 result of cvt.rn.bf16x2.f32 is the exact real value of its f32 source. | The theorem states exact attention, so it keeps this one. |<br>| Numerics | idealArith, approx, swExp2, lg2Exact, divFullExact, negExact, bf16Exact | Inkling 2 decode (Gluon) | The listed MMAs, scalar and packed arithmetic, approximate functions, 16 software exponential sequences and BF16 conversions have their stated exact values. | The theorem states exact partial attention. |<br>| Numerics | idealArith, approx, lg2, bf16Convert, swExp2 | Inkling 2 forward (CuTeDSL) | Exact arithmetic for the listed forms, including bias widening, probability packing and software exponentials. The software exponential maps the negative-infinity mask to zero. | The theorem states exact attention. |<br>| Undefined value | cvtUe8m0 | FlashMLA, cvt.rn.bf16x2.ue8m0x2 | A scale byte of 0 is read as 2^-127, as CUDA 13.2 computes it. PTX leaves that pattern without a value. | Decode the scale bytes with integer instructions. |<br>| Undefined behaviour | tcLd | FlashAttention-4, 40 | For ordering, each tcgen05.ld completes as if a tcgen05.wait::ld followed it (Case 3). | Add tcgen05.wait::ld before the hand-offs that let the cells be overwritten or deallocated. |<br>| Tensor Memory reuse | tcLdDataflow, delayedTmem | Inkling 2 forward (CuTeDSL), 20 load sites and 2 store sites covering 8 loads | Unbiased score and correction loads complete by register consumption. Biased score loads complete by the first probability store of the round. | Add tcgen05.wait::ld before the loaded registers are used. |<br>| Scope, order and lifetime | clusterMbar | FlashAttention-4, 43; TIRx GEMM, 37 | The selected arrives and acquire waits, which default to CTA scope, synchronize across the CTA pair. | Use .release.cluster and .acquire.cluster. |<br>| Scope, order and lifetime | commitOrder | FlashAttention-4, 1 | The last Q-empty commit notifies its mbarrier before the thread’s next commit does. | Make the odd CTA wait for the last Q-empty notification before it exits. |<br>| Scope, order and lifetime | commitOrder | FlashMLA, 1 | The penultimate PV commit notifies its mbarrier before the same MMA lane’s next commit does. | Wait for the penultimate PV commit’s notification before the next commit. |<br>| Scope, order and lifetime | commitOrder | Inkling 2 decode (Gluon), 2 sites; Inkling 2 forward (CuTeDSL), 1 site | At the listed sites, a commit signals its barrier before the next commit by the same lane signals its barrier. | Wait for each listed commit’s notification before the lane’s next commit. |<br>| Scope, order and lifetime | storeDrain | FlashMLA, 4 | At each output store site, the tensor store finishes reading its shared source before the issuing thread exits. | Add cp.async.bulk.wait_group.read 0 after the commit. |<br>| Address arithmetic | peerBit | FlashAttention-4, 6 | Clearing bit 24 of a shared address names the same offset in the even CTA of the pair. | Compute the peer address with mapa. |<br>| Address arithmetic | paramPointers | FlashMLA, 9 | At six add.s64 sites, a parameter-space pointer plus an offset is read as the numeric address of a tensor-map descriptor. At three prefetch.tensormap sites, the prefetched address is read as one of the published tensor maps. | Pass each tensor map as its own kernel parameter. |<br>| Address arithmetic | sharedBits | FlashMLA, the SW128 swizzle sites and the audited packing sites | The 64-bit representation of a generic shared pointer is read as its shared-window byte address. The audited pack and unpack instructions only move their lanes. | Convert the pointer with cvta.to.shared before the arithmetic. |<br>| Control flow | pollAgree | FlashAttention-4, 37; TIRx GEMM, 2 | At these bra.uni branches, lanes whose polls read the same mbarrier are exempt from the branch-uniformity check. | Use a plain bra. |<br>| Control flow | pollAgree | Inkling 2 decode (Gluon), 6 branches; Inkling 2 forward (CuTeDSL), 44 branches | At the listed branches, the branch-uniformity check exempts lanes whose preceding polls read the same mbarrier and supply the branch predicate. | Use a plain branch. |<br>| Register allocation | setMaxNRegSync | Inkling 2 decode (Gluon), 1 site | A repeated request for 256 registers at the worker loop head needs no intervening warpgroup synchronization. | Issue the request once, before the worker loop. |<br>| Read-only inputs | read-only ld.global.nc | one copy kernel, 1 | The data that the load reads at this site is read-only. | Read the data with a plain ld.global. |<br>| Read-only inputs | ncReadOnly | FlashMLA, 17 | The ld.global.nc loads of the top-k lengths, the sink and the sparse index rows return launch content, and no operation of the kernel writes those buffers. | Read the data with a plain ld.global. |<br>| Read-only inputs | inputReadOnly | Inkling 2 decode (Gluon), 203 global load sites; Inkling 2 forward (CuTeDSL), 37 | The listed loads return known launch bytes in the scope of each assumption. Writing the designated input arrays is an error the safety proof must exclude. | None: the core has no rule for No Thin Air (Case 5). |<br>The GEMM theorem lists exact reals, clusterMbar, and pollAgree for its own sites. Add one, the other copy kernel, the TMA copy, and the int8 Tensor Core GEMM need no assumptions. Case 5 shows why the Inkling 2 decode kernel needs its read-only input condition.<br>Future Directions<br>A better core. The core/assumption split is itself a proof framework. For this evaluation, we built a core that holds only the sufficient conditions the kernels need, stated as close to the manual as we could. It is still far from a standard, precise, and complete formalization of PTX in Lean. We can leverage future better formalization of PTX of core. A more precise model of PTX needs fewer interpretations, and kernels proved on it need fewer assumptions.<br>Cheaper proofs. We used Claude Opus 5.5 and Sol 6.2 at medium effort to develop the production kernel proofs. The three largest proofs range from about 137,000 to 213,000 lines. Part of the length comes from Lean itself, which lets the same argument be written in many different ways.1111 Levent Alpöge worked with Tristan Buckmaster on blow-up for the unforced Navier–Stokes equations. Of his Lean code for the Riemann hypothesis he wrote, “The Lean is full of garbage obviously, but compiles.” We could say much the same about parts of our own proofs. Alpöge’s post · Navier–Stokes paper and code Part of the remedy is the shared lemma library, which holds the proof framework that kernels have in common. FlashAttention-4 has four and a half times the GEMM’s instructions, and its proof is about 1.4 times as long, in part because it reused the protocol library built for the GEMM.<br>A large proof corpus. Every proved kernel adds worked proofs to the repository. With a large enough corpus, an agent proving a new kernel can learn directly from the proofs of kernels already proved.1212 In his account of working on the Riemann hypothesis with Claude, Levent Alpöge recalls recognizing Stepanov’s method in a Siegel argument from OpenAI’s collection of 722 manuscripts. The VP ≠ VNP paper cites another result from that collection, a cubic lower bound for the border determinantal complexity of the permanent. Collection · Alpöge, p. 2 · VP ≠ VNP, p. 3<br>Proofs at the TIRx level. Proof size grows with the length of the program. TIRx expresses the same kernels in far fewer lines than their PTX and keeps their structure visible. We already have an agent loop, TIRx Harness, that delivers TIRx kernels automatically with exceptional performance. We plan to try formalizing kernels at the TIRx level.<br>Floating-point numerics. Our theorems read floating-point operations as exact. Floating-point error can be formalized, but we find that bounding it raises several challenges. Numerical risks have no definition independent of context:<br>- It depends on the input distribution. Kimi Delta Attention, for example, inverts a triangular matrix in every chunk and loses precision as its gates grow stronger and its keys become more correlated. The distribution of real inputs cannot be written as a precondition, and a bound for every input is too loose to be useful.<br>- It depends on how the result is used. One kernel’s error says little about end-to-end model quality, and an error that does not matter for inference can matter when training and inference must agree.<br>- Different risks need different analyses. Overflow in a softmax that does not subtract the maximum needs a range analysis, while cancellation in the naive variance formula, which Welford’s algorithm avoids, needs a relative-error analysis. An analysis built for one does not see the other.<br>A potential way forward is to prove that an optimized kernel is bitwise identical to a much simpler one that performs the same floating-point operations in the same order, without software pipelining or warp specialization.1313 In FP32 with round-to-nearest-even, (2²⁴ + 1) − 2²⁴ gives 0, while 2²⁴ + (1 − 2²⁴) gives 1. A reference kernel that preserves the addition order gives us a meaningful bit-for-bit comparison.<br>Put It to the Test<br>“I won’t even look at it until there’s a 500-page version.”<br>— Yu Deng, 2026 Fields Medalist, on the AI-assisted Riemann hypothesis proof claim (translated from a reported chat remark)1414 The Chinese message reads “至少拿出500页版本前看都不看。” The report describes the attribution to Deng as tentative. 智东西（澎湃号）<br>We admire the seL4 team for the care they took to prove that their C code lived up to its specification. An agent can help us write proofs faster, but we still owe our readers a careful account of what our theorem assumes about the hardware.<br>Did we prove what we set out to prove?<br>We would like TxVerify to become a base for anyone who formalizes and verifies GPU kernels. It is still under active development and likely contains mistakes. If you are interested, you are more than welcome to<br>- Check the core. Read a rule next to the passage it quotes in the core reference, and tell us where our reading of the passage goes wrong.<br>- Break the core. Send us litmus tests: programs that do something on real hardware that the model forbids, or programs the model accepts but should not. A counterexample is the most valuable thing you can send us.<br>- Bring your kernel. Prove it with TxVerify, and propose the rules and assumptions it needs.<br>If the model is wrong somewhere, we would much rather hear it from you than from a kernel :)<br>Acknowledgements<br>This post was written by Bohan Hou and Tianqi Chen. We used ChatGPT to generate the cartoons illustrating our kernel examples.<br>We thank Daniel Lustig, Daniel Ricketts, Damien Zufferey, Jared Roesch for helpful discussions and feedback to the post. We also thank Yixin Dong and Qidong Su for the discussion that informed our postscript on the halting problem and Gödel’s theorem.<br>The Fourteenth Kernel, the Halting Problem, and Gödel<br>“… the consistency of P is unprovable in P, it being assumed that P is consistent …”<br>— Kurt Gödel, Proposition XI (1931), translated by B. Meltzer<br>Hand an agent a GPU kernel. Ask it to prove that a warp waiting at a barrier can get past it and that, eventually, the kernel will finish. This ought to remind anyone who took a theory class of the halting problem. Can one program decide whether an arbitrary program will halt on a given input? We remember writing “impossible” on the exam. What are we doing at the terminal, then?<br>The agent opens Bash, reads the PTX, writes a lemma, asks Lean to check it, gets an error, and tries again. Draw a box around the agent, its harness, and every tool it can call. The whole box is still a program.<br>Before we get to warps and barriers, how much could we ask of any program verifier? Fix the theory T in which the proof must be checked. Here is a program that terminates on every input, yet no agent can produce a proof of that fact in T.<br>Let the input p be a finite string of bytes.1515 This construction allows arbitrarily long finite inputs. On a fixed GPU, the available memory puts a bound on their length.<br>K(p):<br>if p is a valid proof of False in T:<br>loop forever<br>else:<br>return<br>Would you bet that K returns, whatever string we give it? If so, notice what you just trusted. Checking one candidate takes finitely many steps. What makes you confident about every candidate is your belief that T is consistent: nobody can hand you a valid T-proof of False. Now ask the agent to justify that same belief inside T.<br>Proposition. Fix a consistent, effectively axiomatized theory T extending Peano arithmetic, with its standard proof predicate. We can construct a program K that halts on every input, yet no agent can produce a proof in T of the statement “K halts on every input.”<br>Proof. Take K above. Since T is consistent, K returns on every input. Reasoning about the code of the proof checker gives T ⊢ (Total(K) ↔ Con(T)): saying that K returns for every p says exactly that no p is a T-proof of False. A T-proof of Total(K) would therefore yield a T-proof of Con(T), which Gödel’s second incompleteness theorem rules out. We could write down K without knowing a thing about the agent. We only needed to know which theory would check its answer. Gödel’s second incompleteness theorem, Theorem 4C.8<br>Gödel tells us why we cannot make that promise for arbitrary programs. But nobody hands us an arbitrary program and asks us to run attention with it. A kernel author has already chosen how to divide the work into tiles, which warp produces each tile, and which barrier tells the consumer it is ready. Can we turn that structure into a proof?<br>More precisely, can we find checkable conditions on a kernel’s loops and synchronization protocol that guarantee we can construct a proof of progress and termination? How many production kernels would meet them?<br>We’re no experts in computability theory, so we’ll leave that question open here :)</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Ladybird is now in alpha
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2363 points ·
+    585 comments ·
+    janvdberg
+  </div>
+
+  <div class="meta">
+    ladybird.org
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #38
+  </div>
+
+  <div class="links">
+    <a href="https://ladybird.org/posts/alpha/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50614249">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hello friends! Ladybird is now in alpha. You can download it for macOS and Linux.<br>I’ve been looking forward to writing this post for a long time. :^)<br>Ladybird is a browser with a new engine. The engine is our own, built from the ground up, and not a fork. The browser around it is modest, but functional.<br>This is an alpha, so some websites won’t work, and it will crash sometimes. When that happens, tell us! You can report a broken site from inside the browser. After a crash, you can read the crash report and decide whether to send it. Our privacy policy has the details.<br>We want security nerds to hack it! A new browser gets hacked, over and over, and that’s part of the process, so we make no promises about security today. When you pwn us, please tell us how so we can harden Ladybird!<br>The alpha is a rolling channel, and we’ll be pushing out automatic updates regularly. This is the part I’m most excited about. Ladybird improves quickly, and until now you had to build it from source to see that.<br>If you build websites, try yours in Ladybird and tell us what breaks. It supports WebDriver for automated testing, as well as the Firefox DevTools protocol.<br>Thank you to our sponsors and donors, and to everyone who has tested, reported bugs, and written code over the years. There’s still a mountain of work ahead of us, but I’m very happy that you can finally try Ladybird for yourself!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Active intrusion campaign against CheckPoint security management servers
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    207 points ·
+    73 comments ·
+    louiereederson
+  </div>
+
+  <div class="meta">
+    greynoise.io
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #39
+  </div>
+
+  <div class="links">
+    <a href="https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign">Original article</a> · <a href="https://news.ycombinator.com/item?id=50630594">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">GreyNoise tracks threat activity using our Global Observation Grid (GOG), a sensor network designed to attract adversarial scanning and exploitation attempts on our managed infrastructure. One might think of these sensors as conventional “honeypots,” but that doesn’t quite capture the variety, versatility, and scale at which we deploy and manage the complex fabric of the GOG. Unsolicited activity against our sensors is sketchy if not outright nefarious, and our approach allows us to capture end-to-end intrusions and analyze a broad swath of attacker infrastructure, tools, and tactics in near realtime, without waiting for lengthy incident response investigations. We fuse data from our sensor network with additional novel sources and methods to develop a comprehensive picture of adversaries.<br>Campaign Summary<br>- GreyNoise recently discovered an intrusion campaign targeting Check Point Security Management Servers, with confirmed attack activity between October 17th and November 2nd, 2026, impacting at least 22 distinct organizations globally.<br>- We are tracking this set of threat activity as GreyNoise Threat 13 (GT13) which represents adversary infrastructure, tools and post-exploitation action against the 22 victims.<br>- The campaign targeting does not appear to be focused on any specific geography or industry sector. The impacted orgs include victims with assets in the United Kingdom, Ireland, France, Netherlands, Greece, Germany, Austria, Bulgaria, Poland, India, Thailand, Vietnam, South Korea, Hong Kong, China, Australia, and the United States. The victim orgs sit in sectors including financial services, energy, government, transportation, mining, engineering, and manufacturing.<br>- We do not attribute GT13 to any known or publicly tracked threat group at this time. We do not currently have enough information to make assessments relating to the motivation of the actor or alignment to a nation-of-origin.<br>- The actor used 99 IP addresses, much of which were disposable network infrastructure to conduct scanning, exploitation, and control of its victims, including the use of a compromised server acting as an “operational relay box” (ORB) or more simply, a “hop,” for interacting with downstream victim assets. The actor used this relay box / hop to save command results and data stolen from 24 distinct Check Point Security Management Servers.<br>- The actor used Nmap, Chisel, Impacket, Paramiko and other Python tooling to perform intrusion activities against their victim assets, including attempts to perform internal reconnaissance, privilege escalation, and lateral movement.<br>- The threat actor used or attempted to exploit multiple CVEs, including, but not limited to: CVE-2026-61500 (Rejetto HFS), CVE-2025-5777 (Citrix NetScaler), CVE-2024-21893 (Ivanti), CVE-2026-41089 (Windows NetLogon), CVE-2026-16232 (Check Point SmartConsole auth bypass to Run Script), and CVE-2026-98432 (Linux IPv4 UAF).<br>- Though we observed hands-on-keyboard activity, we believe that like most modern attacks, the actor used LLMs and agentic systems to perform vulnerability scanning, exploitation, tool development, and automated interaction with compromised assets.<br>- Our visibility into this attack activity stopped around November 2nd, 2026, but given the actor’s persistent access to victim Check Point devices, we expect that this intrusion campaign is ongoing.<br>- We are working with international government partners and CERTs to share relevant intelligence and notify the victims.<br>Observed Attacker Activities<br>We witnessed the GT13 actor use 99 IP addresses, all of which were either egresses through ExpressVPN or compromised victim Check Point devices, including activity over 1400+ network sessions, 800+ command line artifacts, and 1200+ files downloaded, uploaded, or created. We cannot cite all of the details here, but we can highlight observed GT13 adversary activities to illustrate their tradecraft and tactics, techniques, and procedures (TTPs).<br>HFS Scanning and Exploitation<br>The GT13 threat actor used an automated scanning and exploitation pipeline to compromise an HFS server using CVE-2026-61500.<br>2026-10-02 13:17:45 UTC - The actor scanned and began exploitation against the HFS server. Each POST to the HFS loginSrp1 endpoint returns a new signed session cookie containing a “sid” value drawn from JavaScript’s Math.random() function. Through conducting several logins in succession, the actor collected enough output to reconstruct the internal state of the V8 PRNG algorithm, and thus recover an HFS session-cookie signing key, then forge a signed admin session cookie. This allows the attacker to login as admin without a password.<br>Example POST to loginSrp1 and response<br>Decoded hfs_http blob from 200 OK response showing the sid that is harvested<br>2026-10-02 13:19:37 UTC - Minutes later, we observed admin requests with forged session cookies, leading us to believe this exploitation was indeed CVE-2026-61500 for session forgery, which was not patched on this server. The actor now had control of the server.<br>Example HTTP POST request with forged cookie<br>Note that this forged cookie contains “allow_session_ip_change:true” which does exactly what it sounds like, letting the forged cookie work from any IP address. This is perfect for an adversary behind a VPN or operating from multiple exits.<br>2026-10-05 12:21:30 UTC - A few days later, the actor used this same flow to gain access to install HFS middleware hooks that would issue commands to the compromised server. This allowed the attacker to append an SSH key to /root/.ssh/authorized_keys.<br>On October 8th, we observed the actor’s automation check in to the compromised server using HFS command hook for “uname -a; df -h / | tail -1; whoami”. Then there was a lull in activity until October 19th.<br>Establishing the Operational Relay Box / Hop<br>2026-10-19 14:53:48 UTC - We don’t know why (possibly a problem with the multi-agent architecture), but the actor did not use the SSH access right away. Instead, the actor’s automated pipeline reused the HFS exploitation route to forge new session cookies and leverage the HFS server_code feature to attempt to download and install additional malware on the server. At this point, we can see that the actor intended to use the compromised server as a relay or “hop” for further intrusion operations.<br>Example of HFS command, which was preserved on the compromised server.<br>Example decoded base64 blob demonstrating that the actor was intending to download an apparent “ZULT” Linux implant to the compromised machine.<br>The malware download failed, and the adversary attempted to troubleshoot the download by checking running processes, invoking curl to access the resource, and viewing the network configuration.<br>Example of the actor following up, attempting to check on their implant<br>They couldn&#x27;t figure out why their implant did not download, and the actor returned the next day with a direct SSH connection to continue setting up their relay.<br>2026-10-20 07:22:08 UTC - The actor created a script (/root/exfil/srv_post2_&lt;redacted&gt;.py) which set up an unauthenticated HTTP server on the hop, after which the actor began to upload files. The first exfiltrated .tgz file contained results from scan of network routes from a compromised Check Point Security Management Server, demonstrating that the actor already had access to targeted victim assets.<br>The actor continued to set up their environment, uploaded and installed open-source tools like Nmap and Chisel, and then set up a Chisel server as a reverse proxy.<br>Intrusion Operations and Exfiltration<br>Once the actor had the compromised server set up as a relay, they began to use it to manage their interactions with their previously compromised victim Check Point devices. There’s a lot of commingled victimology here, so we’ll refer to two sets of victims. During our visibility, the actor was actively working towards deepening their intrusion against Victim A, and we later observed bulk actions on 21 other victim Check Point devices.<br>Between October 20th and 26th, the adversary had one of their Victim A compromised assets download the Chisel program and run it in client mode allowing them to further scan and interact with the Victim A environment. Over the Chisel tunnel, and by using a script for CVE-2026-16232 (Check Point SmartConsole auth bypass to Run Script), the actor launched over 100 management tasks on multiple Check Point Management Servers. This included copying the firewall database and the Internal CA, minting a new certificate (pivot.p12), and unloading security policies (which would disable the firewall). Further, the actor probed Citrix Netscaler, Ivanti Connect Secure, VMware vCenter, Microsoft Exchange, Oracle TNS assets and several domain controllers.<br>The bulk of the adversary commands and interaction is too voluminous to dig into here, but we can expose some of the adversary’s TTPs by taking a glimpse at their tooling. The actor used at least 30 Python scripts, many of which were helpers or launchers for other scripts, and several of them were probes for vulnerabilities or runners of exploits. Excerpts are provided below to illustrate the more specialized tooling and workflows.<br>2026-10-20 13:54:30 UTC - First use of exploit.py against a Victim A Check Point server.<br>Excerpt from exploit.py - This CVE-2026-16232 script is purportedly an adaptation of the Metasploit module for the same function. This appears to be how the actor was sending commands to the victim Check Point Security Management Servers.<br>2026-10-20 14:17:51 UTC - spray_portal.py used to scan another Check Point server in the Victim A environment.<br>Excerpt from spray_portal.py - note that this contained common/default/weak passwords, and those apparently tailored for the victim.<br>2026-10-21 00:34:51 UTC - The actor could not get the second compromised Check Point device to report back to the hop, so they created and launched pull_&lt;redacted_id&gt;.py to steal the data from the second Check Point server and save it on the first compromised server, which could help exfiltrate the data back to the hop server.<br>Excerpt from pull_&lt;redacted_id&gt;.py - The actor named this script after their targeted device. The script runs exploit_socks.py which runs exploit.py for CVE-2026-16232, enabling the actor to harvest data from the second compromised Check Point device through the first, to the hop box. Notice that this steals credentials, internal CA files, and firewall configuration.<br>2026-10-21 02:56:38 to 06:34:40 UTC - The actor runs broad port scanning using curl, telnet, nmap scripts, a domain controller probe and other tools for internal reconnaissance.<br>2026-10-21 06:39:24 to 11:28:04 UTC - The actor uses exploit scripts against multiple target servers in the Victim A environment.<br>- CVE-2020-1472 (Microsoft Netlogon),<br>- CVE-2023-4966 (Citrix Netscaler),<br>- CVE-2024-21893 (Ivanti Connect Secure),<br>- CVE-2021-26855/34473 (Microsoft Exchange) and<br>- CVE-2021-21972 / CVE-2023-34048 (VMware vCenter)<br>2026-10-21 11:41:21 UTC - The actor uses comb.py, ssh_comb.py and ssh_spray.py to scan a variety of targets in Victim A’s network. Note that these scripts contain usernames and passwords that were themed to the target victim. The actor either knew or was guessing names and passwords that the target might use.<br>Excerpt from comb.py<br>Excerpt from ssh_comb.py<br>Excerpt from ssh_spray.py<br>2026-10-26 02:17:30 UTC - The actor issued a bulk certificate managing task to 24 compromised Check Point Security Manager servers including those belonging to Victim A and 21 other victim assets. The results of this task were shipped back to the hop server in a text file. We did not observe the actor sending this command task to these devices, indicating that it was issued from another part of the adversary’s infrastructure.<br>Note that these text files contained the victim IP addresses and were in incrementing IP order, indicating an automation looped through them to run the commands on the compromised Check Point servers, and deliver them via scp to this exfil folder. Each file was delivered from victim infrastructure, showing that each of the compromised devices hold the SSH private key that matches the public key planted on the hop.<br>All of these files contain error messages which indicate that the certificate task failed. Though we did not see follow-on attempts, the task information and IP addresses from these outputs were enough for us to identify and notify many of the victim organizations either directly or through government partners.<br>Excerpt from sample /root/exfil/pc_XXX-XXX-XXX-XXX.txt<br>One of the error messages had a preload error for /usr/lib/.libproc.so registered in /etc/ld.so.preload, which may indicate an implant on the device.<br>After the certificate minting failures, the actor’s activity dropped again until November 2nd.<br>Protecting Their Access<br>2026-11-02 02:28:27 UTC - By early November, other threat actors had begun to scan and attempt to abuse the compromised server. We observed the GT13 actor use a script to perform a self-check for a Linux IPv4 use-after-free bug (CVE-2026-98432). After the check, the actor attempted to patch the system using Linux’s own command-line tool nftables to drop IPv4 packets with IP options that may trigger the bug. This allowed the actor to protect their hop from others engaging in future exploitation of the bug.<br>Excerpt from cve_2026_98432.py<br>Example commands of the actor testing a CVE-2026-98432 script on the hop box, and then attempting to patch the vulnerability with nftables, the built-in Linux firewall and packet-filtering framework. You’ll notice the patching commands happened quickly.<br>Notes on Attack Timeframe and Timeline<br>- The GT13 adversary had access to the victim Check Point Security Management Servers before they compromised the HFS server. We could not determine when or how the attacker gained access to those Check Point assets.<br>- We observed GT13 attack activity between 2026-10-02 13:17:45 and 2026-11-02 03:19:46 UTC. During our observation of the actor, we did not observe any adversary hands-on-keyboard activity between ~17:00 UTC and ~00:19 UTC, and nothing in the 05:00 UTC hour. We know the risks of time zone analysis and do not put much weight into the actor’s tendency to operate in what would be a convenient UTC+7- or UTC+8 workday.<br>- The attack infrastructure was long established before we first saw it, as we note the attempted malware domain newpayapp[.]com was first registered on 2026-03-13 12:46:28 UTC. It may be a UTC+7-friendly coincidence that the domain was originally created with the registrant state as “Hai Phong” with country code “VN” (see Cloudflare’s RDAP service).<br>- We suspect the GT13 actor has a mature AI-enabled offensive apparatus. We believe the actor has separate agentic harnesses and systems weaponizing vulnerabilities, scanning for vulnerable assets, and automatically exploiting them to gather sets of systems that can be later used for operational relays or true targets. We suspect some of the foibles in the timeline reflect agentic offensive operations.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: Brickie – deploy sandboxes in your own AWS account
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    8 points ·
+    0 comments ·
+    abelanger
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #16
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/hatchet-dev/brickie">Original article</a> · <a href="https://news.ycombinator.com/item?id=50629936">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Brickie lets you run durable sandboxes in your own cloud / k8s cluster.<br>Brickie sandboxes are built on top of agent-sandbox with custom snapshot/restore implemented on top of object storage. They are designed to be called from @hatchet-dev/sandbox and support the ability to take a coordinated snapshot of agent state. This means that every sandbox call is a retryable and observable Hatchet task.<br>Each sandbox session is a container with a shell and a workspace and runs in your Kubernetes cluster with flexible runtime support, including Kata, gVisor and AWS Nitro. Every call that changes the workspace produces a snapshot, which can be used to fork a new sandbox or resume an existing session.<br>Head over to the quickstart guide to get up and running your own Brickie sandboxes with a local Hatchet instance.<br>Brickie is in beta. Flags, chart values and the wire contract may change before 1.0. See the changelog.<br>Docs: here<br>- Hatchet-guaranteed safe retries: Hatchet&#x27;s durable execution guarantees mean no wasted compute on retries of succesful sandbox operations.<br>- Immutable and forkable snapshots: Every call that changes files in your sandbox workspace are saved and stored in object storage. They are immutable and forkable from other sandbox processes.<br>- Fast starts: A warm pool of pods maintained by the provider means small cold start times for new sandbox pods.<br>- Custom images: Any image with sh and tar can be used to run a sandbox.<br>- mTLS for all sandboxes: The provider and each sandbox talk to each other over mutual TLS with strict guarantees around certificate issuance, rotation, and usage.<br>- Resource limits: Each sandbox is backed by a pre-set network and resource limit to cap usage and to protect nodes from starvation.<br>- Any object storage: Metadata and snapshots can be stored in any S3-compatible store as well as in GCS and Azure.<br>- FIPS support: By default, the provider runs all of its workloads in FIPS 140-3 mode with signed and SBOM attested container images.<br>- Extensible interface: Backed by drivers, the provider can be extended to support more backends apart from Docker and Kubernetes.<br>pnpm add @hatchet-dev/sandbox @hatchet-dev/typescript-sdkimport &quot;@hatchet-dev/sandbox&quot;;<br>const session = hatchet.durableTask({<br>name: &quot;agent-session&quot;,<br>fn: async (input) =&gt; {<br>const sandbox = await hatchet.sandbox.create({<br>id: input.conversationId,<br>template: &quot;alpine:3&quot;,<br>});<br>await sandbox.files.write(&quot;haiku.txt&quot;, &quot;an old silent pond&quot;);<br>const haiku = await sandbox.exec(&quot;cat haiku.txt&quot;);<br>await sandbox.kill();<br>return { haiku: haiku.stdout };<br>},<br>});<br>// run the session for a conversation; its ID becomes the sandbox ID<br>const { haiku } = await session.run({ conversationId: &quot;conv-42&quot; });<br>// later, from anywhere with a Hatchet client<br>const again = await hatchet.sandbox.connect(&quot;conv-42&quot;);<br>Under the hood, brickie uses the agent-sandbox controller and warm pools to run sandbox pods. On top of this, the Brickie provider does a few different things:<br>- Every brickie sandbox turn produces an immutable snapshot in your object store, keyed by sandbox and Hatchet run ID. These snapshots can be forked into new sandboxes, or used to resume an existing session. On agent-sandbox, state is persisted through a PVC per sandbox, which forces a cold start, while the only point-in-time snapshot is GKE-specific.<br>- Every call is a Hatchet task, so it is retried, observable, and replayed from its own snapshot. A retried call finds the snapshot it already stored and does not run the command twice.<br>- The same code path runs on a Docker engine, so the Kubernetes cluster is not needed for development locally.<br>- Architecture, how turns, snapshots and the store fit together<br>- Security, trust boundaries, isolation and image verification<br>- Drivers and extending Brickie with your own<br>- Wire contract, what the SDK sends and gets back<br>- Hatchet docs, the task engine underneath<br>- Contributing and AGENTS.md, the working rules<br>Pull requests are welcome from vouched contributors, and the first ones should be small. CONTRIBUTING.md explains how to get vouched, what to work on first and how AI use is disclosed.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: Am I the only one whose AI hype is cooling down a lot?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    6 points ·
+    3 comments ·
+    redleathercouch
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · New #34
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50633601">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I am in the industry for 15+ years, studied CS, and actually, never really &quot;liked&quot; programming. It was a means to an end. I have written about programming (and published books), so don&#x27;t get me wrong: I like the craft and I miss the sense of accomplishment after hours and days of struggling and fixing a problem with 2 lines of code.<br>What I see in my personal spending and habits: I get free tokens from my company, and I spent between 3k-5k a month at the start of the year. Models got cheaper, but also: The usefullness ran its course a little bit for me.<br>I still don&#x27;t write code by hand, but when doing research, finding solutions, even some decisions (using Opus 5.5 and Astra 6.2 for example) are more and more questionable. I handed large research tasks to models, but even small questions like: &quot;What do you think about these PR comments pointing out issues&quot; (I need to be vague, working for a larger company), it didn&#x27;t find even basic facts I found via Google and reading the docs for 2mins.<br>I usually did higher level thinking, researched with the model, and then went to the implementation phase. But lately, I am not happy with both the research results (I continuesly have to narrow it down, go back, refine... I spend a day or 2 days refining, which in the end, I can do by myself now and actually feel a sense of accomplishment). Even the implementation isn&#x27;t all that great.<br>Maybe my bar for acceptable work is higher now, since these tools are not &quot;magic&quot; anymore. I think I gave them more leeway in the beginning because they wowed me. But now... not so much anymore. I even dread opening up Claude Code or Codex and I&#x27;d rather read and write code myself, and just give them smaller tasks, or once I nailed it down, I let a large chunk of code write by a model (because it &quot;types&quot; faster...).<br>Am I alone? I read a lot of think pieces, I have agents working on my private dedicated server to maintain my machine and set up my self-hosting services. But more and more, I&#x27;d rather.... do it myself again, be more precise, and use it as a workhorse instead of a thinking researcher.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Why running both a commercial VPN and Tailscale breaks on travel WiFi
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    justmedric
+  </div>
+
+  <div class="meta">
+    arxcloud.io
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://arxcloud.io/vs/tailscale-nordvpn/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50634042">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Arx Cloud vs. Tailscale &amp; NordVPN:<br>One App Instead of Two VPNs</div>
+<div class="para">If all you need is to connect your own computers together for free, Tailscale is great, so use it. NordVPN hides your location but can&#x27;t reach your home or office network. Arx Cloud does both in one app, and also blocks known bad websites and keeps video calls from lagging. It works on hotel and airport Wifi because it looks like normal web traffic.<br>Side-by-Side: Arx Cloud vs. Tailscale vs. NordVPN<br>Why juggle conflicting TUN adapters on your phone and laptop when one security cloud handles your home network access, global exit nodes, firewall steering, and DNS filtering?<br>| Arx Cloud vs. Tailscale and NordVPN Feature &amp; Architecture Comparison |  |  |  |<br>|---|---|---|---|<br>| Capability / Architecture | Arx Cloud (Basic / Pro / Prime) | Tailscale / ZeroTier (Mesh-Only) | NordVPN / Mullvad (Consumer Exit VPN) |<br>|---|---|---|---|<br>| Core Architecture | Personal &amp; SOHO SASE Cloud (Firewall + Mesh + Exit + DLP) | Flat L3 mesh pipe between devices | Shared public exit VPN tunnel |<br>| 12 Global Dual-Stack (IPv4/IPv6) Exit PoPs | Included on all plans ($4.99/mo+) | Paid Mullvad add-on ($5/mo per 5 devices) or BYO VPS | Included |<br>| Zero-Port Home LAN &amp; Proxmox Subnet Relay | Included in Arx Pro ($8.99/mo) &amp; up | Included (Subnet router) | Not supported (Cannot route into home RFC1918 LAN) |<br>| Single-Pass Cloud Firewall &amp; First-Match L7 Steering | Included (0ms Direct Breakout for Netflix/Zoom + BYO Proxy) | ACLs only (No L7 domain steering or proxy chaining) | All-or-nothing tunnel (App split-tunnel only on select OS) |<br>| Cloaked Port :443 Transport (Zero Non-443 Exposure) | Always-On QUIC UDP :443 + Stealth TLS 1.3 TCP :443 | Direct UDP or bandwidth-limited DERP relay | Often blocked or throttled on hotel &amp; airline Wifi |<br>| In-Line AI Prompt &amp; Web Secret Sanitizer (DLP) | Included (Blocks API keys &amp; secrets on ChatGPT / Claude) | Not supported | Not supported |<br>| Ed25519-Signed Threat Cloud DNS (278,000+ Domains) | Included (Hourly signed feeds + Custom allow/block lists) | Requires external NextDNS / Pi-hole setup | Basic blocklist (No custom per-tenant domain rules) |<br>| Stateless 1:1 CGNAT Overlap Translation ( 192.168.1.0/24) | Built-in (Maps colliding subnets into 100.64.x.0/24) | Manual 4via6 configuration required | Not supported |<br>| Bring-Your-Own (BYO) SOCKS5 / External Exit Chaining | Included (Route specific rules through NordVPN/Mullvad/VPS) | Not supported | Single provider only |<br>| Client-Side Private Key Ownership | Enforced (Browser WebCrypto / local keygen; server never sees key) | Client-generated | Often server-provisioned |<br>| Team Upgrade Path: Arx Private Access | Business Team ($10/seat/mo): Arx Private Access with app-by-app access, device checks &amp; private internal names | Peer/subnet ACLs only (No in-line DLP, SAML proxy, or vaulted MCP broker) | Separate NordLayer B2B product |<br>Already Have NordVPN or Mullvad? Chain It Inside Arx Cloud<br>You don&#x27;t even have to throw away an existing proxy subscription. Add your SOCKS5 or external exit credentials under BYO Proxies in the Arx Console and steer specific domains through it while keeping your home or office LAN relay and Threat Cloud DNS active.<br>Personal Security Cloud FAQ<br>Common questions from people switching from Tailscale, ZeroTier, NordVPN, or Mullvad.<br>Is Arx Cloud just another Tailscale or mesh VPN?<br>ArxShield0 tunnel is simply the on-ramp to a single-pass Cloud Firewall, 0ms direct video breakout, AI/web DLP, 278,000+ Ed25519 Threat Cloud DNS rules, 12 global exit nodes, and zero-port home LAN relays.</div>
+</div>
+
+</div>
+
+</body>
+</html>
