@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-25 PM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-25 PM · Generated 2026-11-25 12:26 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: buttons.joshwcomeau.com, cnbc.com, corgibytes.com, github.com, ladybird.org, news.lavx.hu, news.ycombinator.com, vcarl.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: Sliding-panes React UI library (inspired by WebOS Enyo)
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    8 points ·
+    1 comments ·
+    vcarl
+  </div>
+
+  <div class="meta">
+    vcarl.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #21 · New #36
+  </div>
+
+  <div class="links">
+    <a href="https://vcarl.com/sashay/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50637936">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Sashay<br>Drag the edge between two panes to resize them. The edge settles at a simple fraction of the width, and a pane with no room left slides under its neighbour. The layout can be saved in the URL.<br>Why panes?<br>Power users want to arrange their screen the way they work. Panes give them that without making the interface complicated: each pane is an ordinary view, and the only new control is the edge between them.<br>That makes them a good middle ground between a fully customisable UI, where any panel can go anywhere, and a simple responsive layout that decides everything for you.<br>Hang it in a frame.<br>// @vcarl/sashay/react<br>&lt;Sashay<br>onLayoutChange={save}&gt;<br>&lt;Pane id=&quot;list&quot;<br>title=&quot;List&quot;<br>focus={1/3}&gt;…&lt;/Pane&gt;<br>&lt;Pane id=&quot;detail&quot;<br>title=&quot;Detail&quot;<br>focus={1/2}&gt;…&lt;/Pane&gt;<br>&lt;/Sashay&gt;<br>Snaps to simple fractions.<br>Dividers rest on fractions with a denominator up to six, so a layout saved on a laptop still makes sense on a monitor. The grid gets finer as the frame gets wider.<br>Guide: Your first frame →<br>Throw it.<br>A quick throw carries the divider one or two snaps past where you let go. Release speed is read from the last 90 ms, so a slow drag still lands exactly where you put it.<br>Guide: Your first frame →<br>A bar for each pane.<br>Any pane can have a bar at its bottom for filters, settings or a table of contents. It expands over the pane and works the same on a phone.<br>Guide: Bottom bars →<br>Deep stacks fold into a spine.<br>Drill down as far as you like. Panes that no longer fit fold into a slim spine, with a tab for each. Drag cost stays flat at a thousand deep.<br>Guide: Navigation stacks →<br>Deep linked pane arrangements<br>Which panes are open, how wide they are, and which bars are open all fit in a short code you can keep in the URL. Share the link and the other person sees the same arrangement.<br>Guide: Layout in the URL →</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Nvidia Reinstates Jensen Huang as CEO
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2802 points ·
+    3744 comments ·
+    jaz
+  </div>
+
+  <div class="meta">
+    cnbc.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #43
+  </div>
+
+  <div class="links">
+    <a href="https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html">Original article</a> · <a href="https://news.ycombinator.com/item?id=50611576">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Nvidia on Monday announced Jensen Huang has been reinstated as CEO, effective immediately, a dramatic twist in a scandal that hammered the chipmaker&#x27;s stock price and rocked the tech and artificial intelligence industries.<br>The board of directors said it unanimously voted to reinstate Huang following &quot;a series of discussions and meetings&quot; with him. The board added that it &quot;received input from senior levels of the United States government&quot; and that it is confident Huang&#x27;s reinstatement &quot;poses no national security risk.&quot;<br>President Donald Trump told CNBC on Monday that he had been speaking to Nvidia&#x27;s board &quot;directly and indirectly,&quot; and that Huang &quot;did nothing wrong.&quot; Trump said he talked to Huang on Sunday and asked him to promise to &quot;work hard.&quot;<br>Huang resigned from his role as chief executive earlier this month after a series of shocking reports about multiple extramarital affairs, including one with an alleged Chinese spy. The New York Times reported on Sunday that the woman, Alice Huang, was in contact with an officer of China&#x27;s Ministry of State Security during at least part of the time that she was engaging in a relationship with Huang.<br>Shares of Nvidia closed up 31% following Huang&#x27;s reinstatement. The stock had shed nearly 33% from the time Huang admitted to an extramarital affair on Nov. 8. The stock closed at $186.64 on Nov.6.<br>&quot;I am honored to return to NVIDIA and lead one of the most consequential technology companies in the world at the beginning of a new industrial revolution,&quot; Huang said in a statement. &quot;I take this responsibility with the greatest humility and renewed commitment. I want to thank the NVIDIA Board for its confidence and deliberation through this process.&quot;<br>Senior government officials briefed Nvidia&#x27;s board late last week and communicated that no national security laws were violated, according to sources familiar with the discussion who asked to remain anonymous because they were not authorized to speak publicly. That update prompted the board to reach out to Huang, the people said.<br>Huang and the board held their first conversations since his ouster on Saturday, and the group determined he would return as CEO during a second meeting on Sunday, the people said. Nvidia&#x27;s cratering stock price played a role in accelerating those conversations.<br>Trump celebrated Huang&#x27;s return to Nvidia on Monday, writing in a post on his social media site that the board made &quot;the correct and proper decision&quot; to reinstate him. Trump said the U.S. needs Huang&#x27;s leadership to &quot;ensure the Success and Prosperity of not only the Company, but the American Economy.&quot;<br>He reiterated that the U.S. government has &quot;no reason to believe&quot; Huang&#x27;s return poses a risk to national security, and that it &quot;does not possess evidence that he has engaged in any unlawful conduct.&quot;<br>&quot;On a personal note, I have gotten to know Jensen, and he is a Great Patriot and National Treasure,&quot; Trump wrote.<br>Several tech industry leaders, including Elon Musk, CEO of SpaceX, Gavin Baker, managing partner and chief investment officer at Atreides Management, and Brad Gerstner, Altimeter Capital CEO, had been actively lobbying for Huang&#x27;s return. Musk wrote in a post on X on Monday that the board&#x27;s &quot;mistake has been corrected.&quot;<br>Nvidia did not immediately respond to CNBC&#x27;s request for comment.<br>For weeks following Huang&#x27;s ouster, the company&#x27;s board maintained that it was not considering Huang&#x27;s reinstatement. It appointed Colette Kress, Nvidia&#x27;s chief financial officer, as the chipmaker&#x27;s interim CEO, who reiterated that position in an interview with CNBC following Huang&#x27;s exit. Kress will continue to serve as Nvidia&#x27;s CFO, according to a filing with the Securities and Exchange Commission.<br>Nvidia&#x27;s board formed an independent committee and hired the law firm Wachtell, Lipton, Rosen &amp; Katz to conduct an investigation into Huang and whether company secrets or national security were compromised. The board said Monday that &quot;the committee&#x27;s investigation will proceed to conclusion&quot; and that Huang is &quot;committed to cooperating with it.&quot;<br>&quot;The Board believes Jensen is the right person to lead NVIDIA, and that his reinstatement is in the best interests of our stockholders, employees, partners and customers,&quot; Nvidia&#x27;s board chair, Harvey Jones, said in a statement. &quot;We have every confidence in Jensen and look forward to working with him as he resumes his leadership of the Company.&quot;<br>Even with Huang back at the helm, Nvidia is facing increased scrutiny over its chip sales in Southeast Asia and China.<br>Lawmakers have been preparing for investigations into how Huang&#x27;s affair with the alleged spy may have damaged U.S. AI dominance, influenced his positions on export controls, and impacted his close relationships with Trump and his Cabinet. Huang has been one of the loudest voices opposing strict export controls on advanced chips.<br>&quot;The reckless decision to bring Jensen Huang back as CEO does not change the fact that Mr. Huang, NVIDIA executives, and the company&#x27;s board still owe Congress answers about the company&#x27;s compliance with U.S. export controls,&quot; Sen. Elizabeth Warren, D-Mass., said in a statement Monday.<br>Huang is due for a closed-door transcribed interview with the House Foreign Affairs panel and two other committees on Dec. 1. Nvidia&#x27;s general counsel, Tim Teter, is scheduled to appear before the panels on Dec. 2. Those dates were set before Huang&#x27;s return, and John Fisher, who represents Huang, did not comment on whether there are any changes in his plans to testify.<br>Senate Banking Committee Chairman Tim Scott, R-S.C., said Monday that Huang will publicly testify on Dec. 3 as the sole witness during a hearing titled, &quot;Protecting America&#x27;s AI Advantage: Oversight of U.S. Export Controls.&quot;<br>&quot;Americans deserve answers about what NVIDIA and the Trump administration knew, when they knew it, and whether sufficient steps were taken to prevent sensitive technology from falling into the wrong hands,&quot; Sen. Andy Kim, D-N.J., a member of the Banking Committee, wrote in a post on X on Monday.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Matrix Multiplication is Θ(n^2.25) [pdf]
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    276 points ·
+    124 comments ·
+    E-Reverance
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · Best #29
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf">Original article</a> · <a href="https://news.ycombinator.com/item?id=50637220">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Ask HN: Anthropic is accusing my company of distilling. How can I prove I&#x27;m not?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    235 points ·
+    176 comments ·
+    weli
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #34
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50630809">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Basically the title.<br>Anthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models.<br>Our only usage which I think could get us flagged is automated regression benchmarks whenever we change some AI settings. But this is not against their policy?<br>Now I&#x27;ve got 24h to prove we didn&#x27;t.<br>Has anyone dealt with this too? How can you prove that you are not distilling Anthropic models without breaking your user&#x27;s privacy?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Quad9 shuts down DNS service in France after piracy-blocking order – LavX News
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    abdelhousni
+  </div>
+
+  <div class="meta">
+    news.lavx.hu
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://news.lavx.hu/article/quad9-shuts-down-dns-service-in-france-after-piracy-blocking-order">Original article</a> · <a href="https://news.ycombinator.com/item?id=50638460">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Quad9 disabled its recursive DNS resolver for users in France on Nov. 24, 2026, after French courts backed beIn&#x27;s demand to block domains linked to alleged piracy.<br>Quad9 disabled its recursive DNS service for users in France on Nov. 24, 2026, after French courts upheld demands from sports rightsholder beIn to block domains the company linked to alleged piracy streaming sites.<br>The nonprofit DNS provider said its servers will refuse queries from France reaching any Quad9 service address. Quad9 set the shutdown for 9 a.m. Central European Time, a window the organization chose to give affected users time to change their DNS settings during business hours, according to its blog post.<br>The dispute over DNS blocking<br>beIn asked Quad9 to stop resolving domains it identified as piracy streaming sites. French courts ruled in favor of beIn, and Quad9 faced fines for failing to comply. Quad9 said it opposes piracy. The organization argued that recursive DNS providers cannot stop piracy at its source.<br>&quot;Putting demands on recursive resolvers has no effect on the origin servers that deliver objectionable content,&quot; Quad9 said in the post.<br>Quad9 said users can switch to other resolvers or run their own in seconds, which limits the effect of any DNS-based block. The organization framed the case as a mismatch between French legal demands and its mission to provide DNS resolution with privacy and cybersecurity protections.<br>Why Quad9 withdrew instead of filtering<br>Quad9 said the court outcome conflicted with its service model. The organization runs 9.9.9.9, a resolver that blocks known cyber threats, and 9.9.9.10, a resolver with no blocking. Quad9 said it does not block content and reviews its threat intelligence feeds to remove domains it considers miscategorized.<br>The company said it could use geographic IP data to identify users in France, but it rejected that approach for selective domain blocking. Quad9 described IP geolocation as imprecise: IP records can contain errors, mobile operators span borders, corporate networks route traffic across countries, and IP addresses change hands. The organization also distinguished IP location from user location. A virtual private network, proxy or corporate DNS setup can make a query appear to come from France when the user sits elsewhere.<br>Those limits create overblocking and underblocking, Quad9 said. Overblocking denies service to users outside France. Underblocking allows queries from users inside France to slip through. Quad9 said accepting geoIP filtering for content demands would legitimize DNS blocking, invite an expanding list of restricted domains and open the door to demands based on moral, religious, social or political grounds.<br>Impact on users and the wider fight<br>Quad9 said the withdrawal will leave some French users without service until they change their DNS settings. Users who move to other resolvers may lose Quad9’s malware-blocking protections and may land on providers with weaker privacy practices.<br>The dispute marks the second legal challenge Quad9 has faced over DNS blocking. The organization said it prevailed in an earlier case in Germany. In its post, Quad9 warned that content-blocking demands could expand beyond piracy to social media and messaging services, a path the organization said would fragment the Domain Name System.<br>Quad9 asked supporters to donate or sponsor the organization through its website to support its legal defense. The organization said it hopes to restore service in France if legal conditions change.<br>Source:Quad9 | A public and free DNS service for a better security and privacy, Quad9</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Ladybird is now in alpha
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    2391 points ·
+    599 comments ·
+    janvdberg
+  </div>
+
+  <div class="meta">
+    ladybird.org
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #53
+  </div>
+
+  <div class="links">
+    <a href="https://ladybird.org/posts/alpha/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50614249">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hello friends! Ladybird is now in alpha. You can download it for macOS and Linux.<br>I’ve been looking forward to writing this post for a long time. :^)<br>Ladybird is a browser with a new engine. The engine is our own, built from the ground up, and not a fork. The browser around it is modest, but functional.<br>This is an alpha, so some websites won’t work, and it will crash sometimes. When that happens, tell us! You can report a broken site from inside the browser. After a crash, you can read the crash report and decide whether to send it. Our privacy policy has the details.<br>We want security nerds to hack it! A new browser gets hacked, over and over, and that’s part of the process, so we make no promises about security today. When you pwn us, please tell us how so we can harden Ladybird!<br>The alpha is a rolling channel, and we’ll be pushing out automatic updates regularly. This is the part I’m most excited about. Ladybird improves quickly, and until now you had to build it from source to see that.<br>If you build websites, try yours in Ladybird and tell us what breaks. It supports WebDriver for automated testing, as well as the Firefox DevTools protocol.<br>Thank you to our sponsors and donors, and to everyone who has tested, reported bugs, and written code over the years. There’s still a mountain of work ahead of us, but I’m very happy that you can finally try Ladybird for yourself!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Button Sounds – collection of professionally-recorded button clicks and presses
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    42 points ·
+    3 comments ·
+    gaurang_tandon
+  </div>
+
+  <div class="meta">
+    buttons.joshwcomeau.com
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · New #27
+  </div>
+
+  <div class="links">
+    <a href="https://buttons.joshwcomeau.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50638032">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: PQCrypta Proxy: Rust proxy with HTTP/3, QUIC, hybrid post-quantum TLS
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    39 points ·
+    17 comments ·
+    pqpdf
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #34
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/PQCrypta/pqcrypta-proxy">Original article</a> · <a href="https://news.ycombinator.com/item?id=50591024">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Ask HN: Am I the only one whose AI hype is cooling down a lot?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    21 points ·
+    14 comments ·
+    redleathercouch
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50633601">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I am in the industry for 15+ years, studied CS, and actually, never really &quot;liked&quot; programming. It was a means to an end. I have written about programming (and published books), so don&#x27;t get me wrong: I like the craft and I miss the sense of accomplishment after hours and days of struggling and fixing a problem with 2 lines of code.<br>What I see in my personal spending and habits: I get free tokens from my company, and I spent between 3k-5k a month at the start of the year. Models got cheaper, but also: The usefullness ran its course a little bit for me.<br>I still don&#x27;t write code by hand, but when doing research, finding solutions, even some decisions (using Opus 5.5 and Astra 6.2 for example) are more and more questionable. I handed large research tasks to models, but even small questions like: &quot;What do you think about these PR comments pointing out issues&quot; (I need to be vague, working for a larger company), it didn&#x27;t find even basic facts I found via Google and reading the docs for 2mins.<br>I usually did higher level thinking, researched with the model, and then went to the implementation phase. But lately, I am not happy with both the research results (I continuesly have to narrow it down, go back, refine... I spend a day or 2 days refining, which in the end, I can do by myself now and actually feel a sense of accomplishment). Even the implementation isn&#x27;t all that great.<br>Maybe my bar for acceptable work is higher now, since these tools are not &quot;magic&quot; anymore. I think I gave them more leeway in the beginning because they wowed me. But now... not so much anymore. I even dread opening up Claude Code or Codex and I&#x27;d rather read and write code myself, and just give them smaller tasks, or once I nailed it down, I let a large chunk of code write by a model (because it &quot;types&quot; faster...).<br>Am I alone? I read a lot of think pieces, I have agents working on my private dedicated server to maintain my machine and set up my self-hosting services. But more and more, I&#x27;d rather.... do it myself again, be more precise, and use it as a workhorse instead of a thinking researcher.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Getting Older in Tech (2016)
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    zenincognito
+  </div>
+
+  <div class="meta">
+    corgibytes.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://corgibytes.com/blog/2016/12/06/getting-old-er-in-tech/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50638432">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">After years of scoffing at talk of prejudice in the information technology field — as a white male with good hair —, I’m starting to call prejudice against my being old(er). It’s true: age discrimination is a real thing.<br>Since 2008, the number of age discrimination complaints has grown to around 25,000 a year. Some may argue that everywhere we turn these days, someone is complaining about something being unfair. Alright. Let’s not just take complaints into account. But rather, let’s look at the average age of IT workers at well-established companies. Facebook: 28. LinkedIn: 29. Google: 30. To put that into perspective, the average age of all U.S. workers is 42. Well above the average age at these companies. Even Mark Zuckerberg once publicly said, at an event held at Stanford: “I want to stress the importance of being young and technical. Young people are just smarter.”<br>By my clock, it’s 3 till 60, so, yeah, I’m starting to get touchy about this topic. Having the insight that white — mustache — hair brings, I’m in a good position to debunk the younger is smarter philosophy. Allow me to point out what I’ve done throughout my decades of work — yes, decades plural — to stay employable, and share with those of you who are getting older (which is everyone), what you can do to avoid being put out to pasture once you pass 30.<br>No Country for Old Men?<br>“Younger people are smarter.” Balderdash. So that means companies shouldn’t hire Sandi Metz, Kent Beck, or Uncle Bob Martin? All 30-year veterans. “They’re just anomalies.” Not in my experience.<br>Six years ago, with the help of John Staler, I developed kettlerusa.com. I did the Groovy and Grails front-end, and John did the RPG back-end. John is one of the best programmers I’ve ever worked with. Yet, John has been around for… quite a bit. Let me put John’s age into perspective with a quick story: I’d regularly test checkout by buying kettlerusa.com’s cheapest product: ping pong balls. I’d often forget to cancel my orders, which resulted in the delivery of numerous packets of ping pong balls to my house. Anyway, Captain Kangaroo was a popular children’s TV series from 1955 to the mid-’70s. The Captain regularly had ping pong balls dropped on him as a prank by his moose friend. One day, I made a Captain Kangaroo reference to my growing stock of ping pong balls. I assumed John had watched the show. But, when I saw that he was confused about the reference, I described the sight gag to him. John responded: “Don, I grew up without a TV. It was the early ‘50s.” That’s right, not only was John pre-Node.js, pre-Ruby, pre-Java, and pre-Internet, he was pre-television. Yet, you aren’t going to find a better programmer — RPG or otherwise. Not even including the self-proclaimed “smarter” 30-year-olds and younger.<br>Yeah. OK. So he’s RPG. Want an example where the programmer codes in something other than “antiquated” RPG? How about HTML5, JavaScript, and C#? Then, read my blog post on Jim Stanicki, the guy that got me into this field back in the early ‘80s.<br>20 Years of Experience Versus 1 Year 20 Times<br>When I hear someone say they have 20 years of experience, I wonder if that’s really true or if they merely had 1 year of experience 20 times. I’ve known too many developers that used the same techniques they learned in their first year of employment for the entire span of their career. I found this to be true in the IBM AS/400 RPG marketplace with 40- and 50-year-olds, but I’ve also found it to be true with 30-something Java developers. In the early 2000s, I traveled the country teaching Java seminars to RPG developers. I had expected that those RPG developers would be familiar with modern modular RPG programming techniques, but what I found was that most of them were still using old-school RPG. They had stopped enhancing their core skill set — much less acquiring new ones. Then, between 2008 and 2010, I was training Java developers at Circuit City on Groovy and Grails. These folk were mostly late 20s and early 30s, and they were just fine sticking with good-old, write-everything-yourself, don’t-bother-with-frameworks, Java.<br>My point is certainly not that these younger developers were smarter. It’s that many programmers let themselves grow stale. And the bigger problem is, after doing the same year’s worth of experience ten times, many programmers forget how to learn. Not only can it be extremely hard to catch up with ten years of technology, it can be next to impossible if you’ve forgotten how to learn.<br>If you plan on being in the IT field for more than 10 years, you need to be a lifelong learner. I’ve always been a lifelong learner. I’ve learned and developed with numerous programming languages, frameworks, and strategies. As a result, I’ve honed my learning skills. Case in point: I’ve been told that you can’t learn a second language when you’re in your 50s. I’m here to tell you: that is false. I started teaching myself Italian when I was 52. Now, I read and listen to novels written or spoken in Italian on a daily basis, and I’m way past “conversational” Italian. And so, for me, learning another programming language or framework is a piece of cake.<br>Only as Good as Your Last Two Years of Accomplishments<br>Kent Beck has suggested that, with consistent use of pair programming, the capabilities of programmers don’t differ much after two years of experience. Understand that this is in an environment where techniques and skills are seamlessly shared. An environment where the secrets of veterans become common knowledge. My take-away, when I first heard this decades ago, was 1) pair and otherwise compare myself to other developers as often as possible, and 2) don’t think that my decades of experience guarantees marketability or warrants higher salary.<br>I often say that I’m only as good as what I’ve accomplished in the last two years. I could tell you about all my accomplishments over three decades, such as replacing the use of a System/3 punch card system with the AS/400, writing a Cobol debugger, or…. Ah, I’m boring you. What you do care about are things I did in the last two years. Things like: learning and developing with ElasticSearch, configuring multiple applications on AWS OpsWorks, setting up Docker for multiple client applications, converting Rails 2.x applications to Rails 4.2, upgrading Ruby 1.9 to 2.2, and making more effective use of Git and, more specifically, GitHub.<br>Forget my age. I’d be willing to bet that my list of accomplishments in the last two years rivals any 20-to-30-year-old’s. The perennial question then is: what am I going to say are my accomplishments two years from now?<br>How Developers Can Make Those Two Years Count<br>Learn, adapt, and learn some more<br>Treat this year as if it were your first year as a developer and assimilate everything you can. Reclaim the energy you had in your first year of coding. Regain the drive you had to prove to yourself and to your employers that you were “all that” for this IT field. Resume reading about tech, playing with new techniques, and persuading others to teach you. Reacquire the excitement of collaborating on newfound knowledge with other developers. Be a lifelong learner and investigate all forms of learning, including:<br>- Podcasts<br>- I like Greater Than Code and The Bike Shed.<br>- Webcasts<br>- Ruby coders continue to love RailsCasts and, I’ve lately been enjoying Ruby Tapas.<br>- Magazines and newsletters<br>- I subscribe to: InfoQ, Ruby Weekly, DZone Daily Digest.<br>- I also subscribe to ThoughtWorks Radar to stay on top of what technologies are hot.<br>- Online interactive courses<br>- I was a Rails instructor for CareerFoundry, but there are hundreds of options available.<br>- Conferences and seminars<br>- Try to get to one conference a year. Understand that you often learn more in conference hallways than you do in the sessions.<br>- If you can’t get to conferences, take advantage of the fact that many sessions are available online. I recommend confreaks.tv/conferences as it lists sessions from dozens of conferences.<br>- Blogs<br>- Follow a few quality blogs — like the Corgibytes blog and Giant Robots Smashing into Other Giant Robots — where you’re notified of new posts.<br>- Have your own blog and post regularly. Everyone comes up with solutions to problems or has an opinion that others would benefit from. Plus, writing a blog post solidifies your knowledge.<br>Also take the time to discover and leverage what kind of learner you are. Do you learn best from books (that’s me) or do you need a classroom environment? Are you an audio learner? Whatever your learning style, try to learn something new every day.<br>No work is an opportunity to learn<br>Being between jobs is no excuse for not learning new technologies. You don’t have to be employed to get experience. Do your own internet startup. Platform As A Service (PAAS) hosts, like Heroku and AWS, can be free or almost free. Come up with some goofy idea and flesh it out. Put it on GitHub as a public repository so others will see it. Do the whole cycle from backend database and maybe some NoSQL and a simple front-end. Later move that front-end to a single-page app like Ember or React or Angular. Add checkout with credit card processing.<br>Here’s a bad idea for a startup, but one that would give you loads of real-world experience: Virtual Lemonade. Create a site where someone can use their phone’s current location to see what lemonade stands are available. That means you’ll need Global Information System (GIS) enablement and a database of stands. You’ll need server-side code and then client-side. And then, you’ll need to provide the ability for kids to register their stand with your service. Maybe give them notifications of a traveller looking for a stand so they can say they are open. You may not become the next Zuckerberg, but you certainly will pick up a full gamut of marketable skills.<br>Be and look fit, but don’t worry about looking younger<br>I don’t think, as some career counselors recommend, that you should try to look younger with hair dye or plastic surgery. What you should do is exude energy. To remain relevant in an industry that seems fixated on youth, it’s crucial to be spirited. And an overweight 50-something wheezing smoker does not suggest vitality.<br>A year or so ago, I was attending a two-week training session with about a dozen 20- or 30-something developers. The training was on the 22nd floor and, every day after we came back from group lunches, I’d always take the stairs. The first day or two, one or two of the kids would join me, but I got no repeats. It’s pretty hard to be considered a has-been when they can’t keep up with you.<br>Don’t go overboard just to prove a point. Be yourself. Only, your best self. Fitness can be as simple as a daily brisk walk. Maybe stuff in your earbuds and listen to a tech podcast on that walk. I watch webcasts while on the crosstrainer at the YMCA, and I listen to podcasts while unicycling. I prefer lunch workouts because it clears my head in the middle of the day, and I’m refreshed when I get back at it in the afternoon.<br>I don’t believe you should go to extremes to look younger. I could look younger simply by shaving my white mustache off (the hair on my head is full with only a few flecks of grey). But I earned those white hairs and wrinkles; they’re badges of experience. I once had someone say to me: “The eighties called, they want their mustache back.” “Well,” I quipped, “This mustache is from the eighties, so I’m keeping it.”<br>Be interesting<br>I don’t care what age you are, if you’re a couch potato, I guarantee that you will elicit boredom in an interview. Be interesting… to yourself. Everyone benefits from hobbies. It doesn’t matter if others think your hobby or passion is odd or a bit off. For example: I keep bees and ride a unicycle. I also know civil war reenactors — which you’d have to pay me to do —, but I find these people fascinating. I’m sure, if you don’t already have a hobby, you have interests that you just haven’t turned into hobbies. Having a hobby is essentially a fun form of lifelong learning.<br>Be upfront about your age<br>I feel that you should provide clear indication to potential employers what your general age is so you can weed out age-discriminatory employers. Do you want to work in an environment where they look at you as dead weight or one that values your energy and experience? Here are the first two sentences from my cover letter to Corgibytes: “Your team is looking for someone with ‘7+ years software development experience’ and a ‘Polyglot programmer with skills in 5+ programming languages and 2+ frameworks.’ How about 7+ years of C/C++, 7+ years of Java, 2+ years of PHP, and then 3+ years of Ruby (not to mention 7+ years of RPG and Cobol, otherwise, you could do the math and guess my age).” So I gave a tongue-in-cheek account of my age in the first paragraph.<br>Take a cut in salary for new opportunities<br>I have taken big cuts in salary three or four times in my career. I’m talking 10-20 thousand dollars a year. And not because I was out of work. I left existing jobs because I did not see myself growing technically in those positions. I’ve also turned down big salary jobs because I felt they’d stifle my technical growth. Some of my job changes ended up, arguably, being bad choices as they ended up being dead ends, but I make sure that I always walk away from a project with accumulated and marketable knowledge.<br>I’ve seen too many people lock themselves into technologies (like Lotus Notes and Domino) and find themselves unmarketable after spending 10 years in that industry. Even if you have a high-paying salary, don’t let the tech world pass you by. Be sure to be up on the latest technologies. And, if you can’t do that at your current position, maybe it’s time to move on.<br>Be Forever Young<br>As I mentioned earlier, yes, age discrimination is here and real. Our bodies get old and some — like Zuckerberg — will use that against us. But the biggest mistake would be to compound that by letting our minds and spirit get old as well. That is where we can stay “young.”<br>Bob Dylan said it best:<br>“May you build a ladder to the stars<br>And climb on every rung<br>May you stay forever young&quot;<br>&quot;May you grow up to be righteous<br>May you grow up to be true<br>May you always know the truth<br>And see the lights surrounding you<br>May you always be courageous<br>Stand upright and be strong<br>May you stay forever young&quot;<br>&quot;Forever young, forever young<br>May you stay forever young”<br>Note that when Bob Dylan released his 33rd album, Together Through Life (which climbed to number one in Britain), he was 68 years old.<br>Want to be alerted when we publish future blogs? Sign up for our newsletter!</div>
+</div>
+
+</div>
+
+</body>
+</html>
