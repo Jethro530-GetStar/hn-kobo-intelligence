@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-26 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-26 AM · Generated 2026-11-26 11:41 CST</div><div class="issue-sub">Stories 10 · Full 4</div><div class="issue-sub">Sources: 1password.com, chszlab.github.io, github.com, gpu-demo-gallery.pages.dev, news.ycombinator.com, pushout.app, rchive.computer, scottaaronson.blog, twitter.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    1Password Security Incident
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1239 points ·
+    522 comments ·
+    lxhrstn
+  </div>
+
+  <div class="meta">
+    1password.com
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #1
+  </div>
+
+  <div class="links">
+    <a href="https://1password.com/blog/update-on-nov-2026-security-incident">Original article</a> · <a href="https://news.ycombinator.com/item?id=50644817">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">by 1Password<br>November 25, 2026 - 4 min<br>What happened<br>On November 19, 2026, 1Password began investigating indications that an attacker gained access to an employee’s corporate GitHub account. The actor used the account to access source code and push malicious code to backend services, which downloaded administrative data pertaining to our customers. This data included customer names and email addresses, in addition to non-secret internal metadata about the account. At no time were customer vault contents accessed by, or available to, the attacker.<br>What information was affected<br>The attacker downloaded account records for a subset of our users. These records include:<br>- Names and email addresses<br>- Account and user identifiers, and account creation and last sign-in times<br>- Public keys (which are public by design, this has no impact to user security)<br>- Secure Remote Password protocol parameters (which cannot be used to access your account)<br>- Tokens present in certain emailed links for invitations, provisioning and account recovery<br>- Other non-secret account metadata relative to our internal architecture (e.g. version numeric identifiers, file numeric identifiers)<br>The attacker also copied source code from private repositories and gained access to our CI/CD system. Our source code is not customer data, and contains no user secrets. CI/CD contains infrastructure related secrets in order for our product to work. We have triggered a rotation of all credentials which may have been exposed, and there is no impact to 1Password’s services, availability, or product security.<br>When we send an email to a customer to accept a provisioning invite to an account, or to accept recovery of their account, it contains a token. A provisioning invite is specifically used for our SCIM Bridge or Hosted Provisioning. During this incident there were a small number of users in this state, who have been specifically notified. This token is used to complete the invitation or recovery process, but only when combined with an SSO sign-in or a six digit code sent to the user&#x27;s registered email address. The token is not able to get access to the account by itself. In order to reduce the ability for a malicious third party to successfully guess the code, we’ve expanded the code from six numeric digits to ten alphanumeric digits. This makes brute force guessing practically impossible.<br>What was not affected<br>- Your vaults and the items in them<br>- The keys that protect your vaults<br>- 1Password does not store your account password or secret key<br>- Account recovery keys<br>- 1Password apps and browser extensions<br>What we’ve done<br>- Disabled the affected GitHub account, revoked the stolen token, and removed the access the attacker created.<br>- Rotated or revoked all internal credentials which may have been exposed.<br>- Lengthened the codes used in invitation and recovery emails from six digits to ten characters as a precautionary measure.<br>- Tightened internal GitHub, CI/CD, and endpoint controls, and added new detections for this kind of attack.<br>- Validated no internal evidence of user account takeovers or compromise using any exposed account provisioning tokens.<br>- Brought in independent cybersecurity experts to validate our containment approaches and remediation efforts.<br>What you can do<br>- Be cautious about phishing attempts in the form of unexpected emails, texts or calls that mention 1Password, invitations, or account recovery attempts.<br>- 1Password will never contact you to ask for your account password or Secret Key. Only enter them in the official 1Password app, or on our official website, and only when you’ve opened the app or typed the address yourself. Your Secret Key is only needed the first time you sign in on a new device or browser.<br>- Keep your Secret Key and account password safe.<br>- If you see something suspicious, tell us at support@1password.com.<br>Our commitment to you<br>You trust us with some of the most sensitive information you have. 1Password is designed so that a breach of our systems can’t expose your vault contents. Your vault secrets are encrypted with keys that only you hold, so we can’t access them, and neither can an attacker who gets into our servers.<br>We are committed to transparency in the interests of our customers&#x27; security and the security of the broader industry, which is why we have published and maintained our Security Whitepaper since 2015. We’ll keep this blog post current, and we’ll update it if we find anything that changes what we’ve said here.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    Tell HN: Lots of Ask HNs again
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    128 points ·
+    59 comments ·
+    dang
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Top #4
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50649864">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">There have been questions about why the /ask page (https://news.ycombinator.com/ask) was running dry of Ask HNs - e.g.:<br>Ask HN: Why is Ask HN only showing me 14 posts? - https://news.ycombinator.com/item?id=49984484 - Oct 2026 (47 comments)<br>Ask HN: Why is pagination gone on &quot;Ask HN&quot;, and showing only 19 items? - https://news.ycombinator.com/item?id=50280719 - Oct 2026 (3 comments)<br>I believe I found the problem. The pool of stories for https://news.ycombinator.com/ask has traditionally been drawn from the ranked stories list from which we generate the frontpage. That list is restricted to the top 1500 ranked submissions, and it seems the % of submissions which are text posts (i.e. no linked URL) had declined enough to starve the Ask HN feed. The solution is to compute a separate list of ranked Ask HNs.<br>p.s. &quot;Ask HN&quot; is the conventional name but it means text posts. The title can also start with &quot;Tell HN&quot; or nothing in particular. They&#x27;re just posts which were submitted without a URL.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Show HN: An agent skill that optimizes code with falsifiable hypotheses
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    89 points ·
+    10 comments ·
+    0x23
+  </div>
+
+  <div class="meta">
+    chszlab.github.io
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #28
+  </div>
+
+  <div class="links">
+    <a href="https://chszlab.github.io/AgenticAlgorithmEngineering/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50611593">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Agents that optimize your code like an algorithm engineer: a falsifiable hypothesis before every experiment, correctness checked after every change, one reviewable patch per accepted change, and a PDF report of the whole session.<br>A skill for Claude Code and Codex, from the Algorithm Engineering Group at Heidelberg University.<br>Every kept change was checked against the original output.<br>| Code | Problem | Result | Correctness | Details |<br>|---|---|---|---|---|<br>| VieCut | exact minimum cut | 8.9x faster | every cut unchanged | v2.0, paper |<br>| KaHIP kaffpa | graph partitioning | 3.9x faster | partition quality unchanged | v3.26, report |<br>| KaHIP ultra | graph partitioning quality | 2.2% smaller cuts | same balance rule as strong | v3.28 |<br>| Hochbaum&#x27;s pseudoflow | maximum flow | 3.0x faster | flow value verified on 164 instances | KB 039 |<br>| FREIGHT | streaming hypergraph partitioning | 1.82x faster | bit-identical output | KB 035 |<br>| ParHIP | distributed graph partitioning (MPI) | 1.61x faster | byte-identical partitions | KB 040 |<br>| ScalableCorrelationClustering | correlation clustering | 1.24x faster | identical solution quality | v1.2 |<br>Algorithm Engineering is a cycle of design, analysis, implementation and experiment, driven by falsifiable hypotheses. AAE hands this cycle to an autonomous agent. During setup you agree with the agent on the benchmark, the metric, the correctness assertions and the budget; then it runs on its own.<br>patches/, each with its hypothesis, easy to review and apply.<br>In Claude Code:<br>/plugin install aae --marketplace CHSZLab/AgenticAlgorithmEngineering<br>/aae:aae make the solver in src/ faster on the graphs in data/<br>In Codex, install the skill with scripts/install_codex_skill.py and call it with $aae; any other agent can follow AAE.md. To try it first, run the 10-minute quick-start example: a slow but correct shortest-path program with a benchmark and a correctness check.<br>|  | autoresearch | AlphaEvolve, OpenEvolve, ShinkaEvolve | AAE |<br>|---|---|---|---|<br>| Works on | one training script | code blocks scored by an evaluator | any existing code base and language |<br>| Search | one agent, keep or discard | language-model mutations and an evolutionary population | one agent following the Algorithm Engineering cycle |<br>| Before each experiment | the agent&#x27;s next idea | a proposed mutation | a falsifiable hypothesis with its predicted effect |<br>| Correctness | the metric | the evaluator score | assertions agreed with you, checked after every change |<br>| What you get | improved script and log | best program and population | one patch per change, a PDF report, lessons in a shared knowledge base |<br>Sessions share what they learned: the knowledge base collects optimization techniques and experiment results, and agents read it before they start. Contributions from your own sessions are welcome.<br>David A. Bader, Adil Chhabra, Ernestine Großmann, Monika Henzinger, Alexander Noe, and Christian Schulz. Agentic Algorithm Engineering: Improving Shared-Memory Exact Minimum Cuts. In 13th DIMACS Implementation Challenge Workshop: Network Flows 2.0, OASIcs, 2027. To appear. Preprint: arXiv:2609.07204.<br>@inproceedings{bader2027agenticalgorithmengineering,<br>title         = {Agentic Algorithm Engineering: Improving Shared-Memory Exact Minimum Cuts},<br>author        = {David A. Bader and Adil Chhabra and Ernestine Gro{\ss}mann and Monika Henzinger and Alexander Noe and Christian Schulz},<br>booktitle     = {13th DIMACS Implementation Challenge Workshop: Network Flows 2.0},<br>series        = {OASIcs},<br>publisher     = {Schloss Dagstuhl -- Leibniz-Zentrum f{\&quot;u}r Informatik},<br>year          = {2027},<br>note          = {To appear},<br>eprint        = {2609.07204},<br>archivePrefix = {arXiv},<br>url           = {https://arxiv.org/abs/2609.07204}<br>}<br>To cite the software itself, use its Zenodo DOI 10.5281/zenodo.24537749, which always resolves to the latest release.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Get notified when a new vulnerability is exploited
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    vasanthv
+  </div>
+
+  <div class="meta">
+    pushout.app
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://pushout.app/@cve">Original article</a> · <a href="https://news.ycombinator.com/item?id=50651120">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    Ask HN: Anthropic is accusing my company of distilling. How can I prove I&#x27;m not?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    445 points ·
+    340 comments ·
+    weli
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2 · Best #14 · Top #57
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50630809">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Basically the title.<br>Anthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models.<br>Our only usage which I think could get us flagged is automated regression benchmarks whenever we change some AI settings. But this is not against their policy?<br>Now I&#x27;ve got 24h to prove we didn&#x27;t.<br>Has anyone dealt with this too? How can you prove that you are not distilling Anthropic models without breaking your user&#x27;s privacy?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    The matrix multiplication exponent is nine fourths [pdf]
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    1028 points ·
+    582 comments ·
+    E-Reverance
+  </div>
+
+  <div class="meta">
+    github.com
+  </div>
+
+  <div class="meta ranks">
+    Best #2 · Top #41
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf">Original article</a> · <a href="https://news.ycombinator.com/item?id=50637220">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">See also Holy shit holy shit holy shit holy shit: the magnitude of what’s now happening - https://news.ycombinator.com/item?id=50646108</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1019 points ·
+    870 comments ·
+    Kotlopou
+  </div>
+
+  <div class="meta">
+    scottaaronson.blog
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #4
+  </div>
+
+  <div class="links">
+    <a href="https://scottaaronson.blog/?p=10379">Original article</a> · <a href="https://news.ycombinator.com/item?id=50646108">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">I feel like my previous posts (and post titles), and podcasts, and talks, have failed to do full justice to the magnitude of what’s now happening, so I’m trying again.<br>Last night, we had friends and colleagues over for dinner. We were still trying to process OpenAI’s and Anthropic’s proofs of VP ≠ VNP—hot on the heels, obviously, of the Alpöge/Anthropic proof of the Riemann Hypothesis, which already feels like last week’s news. But then before dessert was served, we saw that OpenAI claims to prove that ω, the exponent of matrix multiplication, is exactly 9/4—a lower bound (!!), matching the upper bound that OpenAI proved in the great Mathocalypse drop of October 6.<br>There are two separate shocks here. The first shock is that we now, finally, know the right answer to this central mystery of algorithms going back to the late 1960s, when Volker Strassen first showed that ω&lt;3 (he got ω≤log27) … and that the true answer is actually a rational number (!). But the even bigger shock is that the AI was able to prove any lower bound of the form ω&gt;2. I never expected this challenge to be all that much easier than P ≠ NP.<br>Over the decades, I often heard colleagues express extreme confidence that ω=2, and I expressed skepticism whenever this came up—not because I had any strong argument for ω&gt;2, but just because I saw that there was no strong argument for ω=2 either. So, I’m glad to have been vindicated about that!<br>But wait, there was more. During dessert, we saw another OpenAI release proving that the true number of linear gates needed to compute the Fourier Transform is N (log N)1/2+o(1). The upper bound here improves, not only over the O(N log N) that stood since the 1960s (i.e., the Fast Fourier Transform or FFT), but also over the O(N log0.9999999999999 N) (give or take some 9’s) that OpenAI published back in the October 6 Mathocalypse. Again, though, the real shock here is that there’s also a matching lower bound (!!). All these questions from the ancient days are now just getting … straight-up answered, rather than slowly illuminated with a drip-drip-drip of clues.<br>To give an idea of how much things have changed, the other day Yupan Liu put a preprint on the arXiv proving that QIP(2) = PSPACE—that is, quantum interactive protocols with only two messages have the full power of those with three, or any polynomial number. As recently as 2025, this would’ve considered been one of the top complexity results of the year, and the fact that Yupan had used AI to help achieve it would’ve been strange and wonderful. These days, I had to remind myself it had even happened, and the use of AI was so standard that it didn’t even raise an eyebrow.<br>It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars. That might give you some idea of how our resolution into the complexity-theoretic universe, and the whole universe of mathematical truth beyond it, has now improved.<br>All through last night, as OpenAI and Anthropic uploaded more files to their GitHub repositories—because that’s what they’re doing now, they don’t even bother to issue press releases anymore, they just upload papers—my guests and I sat at the dinner table with phones out and a laptop, wondering which shoe was going to drop next. It was as though the clouds had parted above Mount Sinai, and we were waiting for the next sentence uttered by the Holy One Himself.<br>I now feel in my bones, for the first time ever, that a proof of P ≠ NP is not far.<br>For all I care, despise the AI companies for bulldozing our garden. Or love them for opening a new vista, or anything in between. Just please don’t deny what’s happening. Now that the companies have repeatedly shown that they can back up their claims with Lean certificates, don’t be a raging doofus who seizes on some triviality (e.g., a minor discrepancy between the Lean and informal proofs, or unused sections of the Lean proof) to pretend that dozens of great open problems of math and theoretical computer science are not, in fact, getting solved. Because they are getting solved. It might take us years to understand the solutions, but my working assumption by this point is that any proof that comes directly from OpenAI or Anthropic is correct barring information to the contrary.<br>I can’t possibly put the matter better than one of my friends on Facebook:<br>After years of crackpot “solutions” claiming Millennium Problems are solved, now that we have actual solutions, we have crackpot “refutations” claiming Millennium Problems are not solved. It is really poetic, in a way.<br>Along the way to so many lower bounds that we wondered whether ever we’d live to see, there will also, of course, be further shocking upper bounds: that is, ultimate barriers to lower bounds, also known as “algorithms.” And yes, some of those algorithms will break currently deployed cryptosystems.<br>Because people have been hounding me about it: yes, I’m virtually certain, from multiple reliable sources, that the AI labs are now sitting on one or more bombshells in that area. However, until I either see details or hear directly from someone at a lab, I feel much, much less confident about the specific nature of those bombshells. I do not wish to be responsible for spreading unverified rumors. And I worry that exact statements of what was done may have been mangled in a game of Telephone.<br>I also, crucially, don’t want the cryptography part of the story to overshadow the intellectual enormity of what’s happening. If, in these days of long-prophesied revelation and wonders and terrors, your main worry is your Bitcoin wallet, then go somewhere else for rumors about whether or not ECDSA is broken or whatever. I don’t have what you’re looking for here.<br>Let me be clear: for those of my readers who celebrate, I believe that tomorrow would be a superb Thanksgiving to spend some quality time with your kids and parents and siblings and old friends.<br>Right now—this past week—is very much like I would’ve always imagined the beginning of an AI singularity to look and feel like. I just hope we’ll get lucky, and it will “merely” be a singularity for our little corner of the world that involves hard math problems.<br>At some point at dinner last night, Dana had a sneezing fit. So I said to her, I hope it isn’t a swarm of nanobots that’s come to infect us! But if it is, then I hope it’s the friendly kind, the kind that will usher us all into an AI utopia.<br>Now, of course, another morning has dawned, and we’re still here. May we find a world where we and our children will be happy to live at the bottom of this rollercoaster. May we work to make it so.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Show HN: Rchive – Every drive I&#x27;ve owned since the 90s, searchable in one window
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    40 points ·
+    25 comments ·
+    kevinsync
+  </div>
+
+  <div class="meta">
+    rchive.computer
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #34
+  </div>
+
+  <div class="links">
+    <a href="https://www.rchive.computer/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50624684">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Catalog<br>Scan folders and drives into one catalog. Names, locations, metadata and previews stay available after a drive is unplugged.<br>Cataloging features<br>It&#x27;s made for people with more storage than they can keep track of, and it runs on Windows, macOS and Linux<br>You remember the document. You remember working on it. Apparently you also need to remember which computer you used, what you called the folder, and which backup of that computer is on which drive.<br>RCHIVE keeps a searchable catalog of every folder and drive you add — search a name, see a preview, and find out where the original lives, even if that drive is collecting dust in a drawer somewhere.<br>Search every source at once by name, folder, size, date, camera, place and more, including drives that aren&#x27;t connected.<br>Finding features<br>View the catalog by type, date, camera, artist, tag, or rules you write. Files on disk are never touched.<br>Organizing features<br>Write the organized result to a new drive with a copy or move job you can pause, resume and verify.<br>Copying features<br>Scan a drive once and RCHIVE remembers what&#x27;s on it: names, folders, dates, and a small preview. Unplug the drive, put it away, and search it anyway. When you find what you&#x27;re after, RCHIVE tells you which drive to go dig out.<br>Search by what you do know: how big it is, when and where it was taken, which camera took it, how wide the picture is, or who&#x27;s singing. Each filter narrows every drive at once, including the ones in a drawer.<br>Combine as many as you like. RCHIVE describes the search in plain words, and you can type it out too, with AND, OR and NOT.<br>Organize My Computer takes forty folders called misc and turns them into Photos, Videos, Music, Documents and the rest, by year, camera, album, or whatever fits.<br>That&#x27;s a view inside RCHIVE. Your real folders stay exactly as they are until you tell RCHIVE to copy.<br>Your old backup stamped ten years of photos with the day you ran the backup. RCHIVE reads the date the camera wrote into each photo instead, and when a file doesn&#x27;t say, it checks the photos around it.<br>New in RCHIVE 1.2 — Find photos and videos with saved GPS in Hawaii, in New York, or within twenty miles of a point. Search the drives you’ve cataloged, including backups that are unplugged.<br>RCHIVE looks up places on your computer using data built into the app.<br>Big copies in Explorer and Finder like to die at 97% and leave you guessing which files made it. RCHIVE writes down its progress as it goes.<br>Pause it, close the laptop, trip over the power cord, and come back Tuesday. It picks up where it stopped, and it can check every copied file against the original.<br>Checking latest release…<br>Requires Windows 11 or Windows 10 (64-bit)<br>Requires macOS 12+<br>Requires Ubuntu 22.04+ or Debian 12+ (x64)<br>Native components target glibc 2.28</div>
+<div class="para">Other modern x64 distributions may work!<br>Looking for the latest stable downloads.<br>All download options &amp; release notes<br>$79.99 $39.99 USD / one time<br>Already own RCHIVE? My Account<br>Start with one folder, or plug in that old backup. The free trial includes every feature for 10 days: organizing, search, previews and copy jobs.<br>A day only counts when you open RCHIVE, and you have three months to use all ten. When you&#x27;re ready, buy it for good — every future version is included!<br>Changing recipes, groupings and tags changes the view in RCHIVE. Your files stay in place until you explicitly run a copy or move job. Choose Copy when you want to keep your originals.<br>Yes, once it has been cataloged. RCHIVE keeps recorded filenames, locations, metadata, and any saved previews. Reconnect the drive to open, copy or make new previews of the originals.<br>Add a familiar folder or drive and let RCHIVE scan it. Try Find Anything or Organize My Computer, explore the results, then copy a small selection when you’re ready.<br>One person can activate RCHIVE on up to three devices. All current and future versions and features are included, with no paid upgrades. You can activate online with a key or offline with a license file.<br>Yes. Use the compatible Windows, macOS or Linux build for each computer. The download section above and the full download page show what&#x27;s available for each system.<br>No — everything RCHIVE learns is stored in its own data folder on your computer, and all operations are performed via code running on your machine.<br>No — all operations and decision-making in RCHIVE are deterministic. We&#x27;re dealing with your files, after all!<br>Future versions might include local ML-based classifier models, OCR, that sort of thing, but care will be taken to ensure that all decision-making is repeatable, predictable, reliable, and able to be audited.<br>New versions and features, sent every now and then<br>Our other app<br>Examiner shows you which files and folders take up space.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    2 points ·
+    0 comments ·
+    Herrera
+  </div>
+
+  <div class="meta">
+    twitter.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://twitter.com/thsottiaux/status/2125784147889393806">Original article</a> · <a href="https://news.ycombinator.com/item?id=50651117">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Show HN: Old Nvidia and ATI tech demos, running again in the browser
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    341 points ·
+    77 comments ·
+    arkits
+  </div>
+
+  <div class="meta">
+    gpu-demo-gallery.pages.dev
+  </div>
+
+  <div class="meta ranks">
+    Show HN #3 · Best #20 · Top #37
+  </div>
+
+  <div class="links">
+    <a href="https://gpu-demo-gallery.pages.dev/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50638503">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+</body>
+</html>
