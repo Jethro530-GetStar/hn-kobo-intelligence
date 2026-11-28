@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HN Intelligence 2026-11-28 AM</title>
+
+<style>
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    font-family:
+        Georgia,
+        "Noto Serif",
+        serif;
+
+    font-size: 1em;
+    line-height: 1.42;
+
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+
+/*
+KOReader / CREngine 可能對標題或區塊套用
+內建分頁規則。
+
+這裡全面取消文件自己的前後換頁要求。
+*/
+* {
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+}
+
+/*
+尤其確保第一個元素絕不要求換頁。
+*/
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+}
+
+/*
+不使用 break-inside: avoid。
+讓 CREngine 自己自然分頁，
+避免大型區塊被整個推到下一頁。
+*/
+.issue-head,
+.story,
+.story-title,
+.article-body,
+.para {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.issue-head {
+    margin:
+        0
+        0.55em
+        0.55em
+        0.55em;
+
+    padding:
+        0.18em
+        0
+        0.48em
+        0;
+
+    border-bottom:
+        1px solid #777;
+}
+
+.issue-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.42em;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.issue-sub {
+    margin-top: 0.18em;
+
+    font-size: 0.82em;
+    line-height: 1.28;
+}
+
+.story {
+    margin:
+        0
+        0.55em
+        0
+        0.55em;
+
+    padding:
+        0.62em
+        0
+        0.78em
+        0;
+
+    border-top:
+        1px solid #aaa;
+}
+
+.story:first-of-type {
+    border-top: 0;
+    padding-top: 0.28em;
+}
+
+.story-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.24em;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.number {
+    font-weight: normal;
+}
+
+.badge {
+    display: inline-block;
+
+    margin:
+        0.35em
+        0
+        0.15em
+        0;
+
+    padding:
+        0.08em
+        0.30em;
+
+    border:
+        1px solid #777;
+
+    font-size: 0.72em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.meta {
+    margin-top: 0.12em;
+
+    font-size: 0.78em;
+    line-height: 1.28;
+}
+
+.ranks {
+    font-style: italic;
+}
+
+.links {
+    margin:
+        0.28em
+        0
+        0.48em
+        0;
+
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.links a {
+    text-decoration: underline;
+}
+
+.body-label {
+    margin:
+        0.48em
+        0
+        0.30em
+        0;
+
+    font-size: 0.86em;
+    font-weight: bold;
+}
+
+.article-body {
+    margin: 0;
+    padding: 0;
+}
+
+.para {
+    margin:
+        0
+        0
+        0.72em
+        0;
+
+    padding: 0;
+
+    line-height: 1.45;
+}
+
+.reference-note {
+    margin:
+        0.45em
+        0
+        0.35em
+        0;
+
+    padding:
+        0.35em
+        0;
+
+    font-size: 0.88em;
+    font-style: italic;
+    line-height: 1.38;
+}
+
+@media screen and (min-width: 48em) {
+    body {
+        max-width: 48em;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+</style>
+</head>
+<body><div class="issue-head"><div class="issue-title">HN Intelligence</div><div class="issue-sub">2026-11-28 AM · Generated 2026-11-28 11:25 CST</div><div class="issue-sub">Stories 10 · Full 5</div><div class="issue-sub">Sources: bouncemarket.minhanhday.com, construct22.com, dragdropmath.com, forums.atariage.com, janlukas.blog, news.ycombinator.com, pimco.com, research.google, schneems.com</div></div>
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">1.</span>
+    Show HN: bouncemarket – a live prediction market game for a bouncing ball
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    334 points ·
+    115 comments ·
+    mday404
+  </div>
+
+  <div class="meta">
+    bouncemarket.minhanhday.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #1 · Top #12 · Best #19
+  </div>
+
+  <div class="links">
+    <a href="https://bouncemarket.minhanhday.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50667726">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">a ball will fall. trade on where it lands.<br>I made this game! Some technical details:<br>The entire drop of the ball is simulated server-side, then streamed to each client as server-sent events with a small buffer. Every drop is deterministic from its starting position, so rounds can be replayed exactly for later analysis, but tiny variations in starting position can change the ultimate outcome.<br>There&#x27;s some AI traders to keep the market moving, but they drop out in any round that has more than five people. They operate using a naive set of rules that I wrote for them, so they&#x27;re not too hard to beat -- it&#x27;s when the market is full of real people that it gets tricky.<br>Curious to get feedback on anything you would change, and especially whether the mechanics were clear right away or not.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">2.</span>
+    AI made self-hosting fun again
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1105 points ·
+    509 comments ·
+    jlelse
+  </div>
+
+  <div class="meta">
+    janlukas.blog
+  </div>
+
+  <div class="meta ranks">
+    Best #1 · Top #42
+  </div>
+
+  <div class="links">
+    <a href="https://janlukas.blog/posts/ai-self-hosting">Original article</a> · <a href="https://news.ycombinator.com/item?id=50660180">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">AI made self-hosting fun again<br>I’ve been self-hosting things for many years. There were times when I was quite enthusiastic about it, constantly trying out new software and tinkering with my infrastructure. But at some point, that enthusiasm faded a bit.<br>I never really stopped self-hosting, but I became less inclined to experiment with new things. Maintaining what I already had running was enough for me.<br>Over the last few months, however, I’ve found myself getting increasingly excited about self-hosting again. And, somewhat ironically, AI is a big reason for that.<br>Less friction<br>Most of my infrastructure configuration lives in Git repositories, mainly in the form of Docker Compose files, scripts, and other configuration files. This makes it possible to use AI coding agents to work on my infrastructure in much the same way as they would work on any other software project.<br>Whenever I want to try a new service, adjust an existing configuration, or automate something, I can now do so with considerably less effort.<br>In the past, I would sometimes put off certain changes simply because I didn’t feel like spending an evening reading changelogs and documentation or troubleshooting issues. It’s not that I couldn’t have done these things before. But often, the amount of effort required just wasn’t worth it to me.<br>Now, even relatively spontaneous ideas often end up becoming reality.<br>Trying things I always found interesting<br>There are also technologies that I’ve always found interesting but never felt knowledgeable enough about to really make use of them.<br>NixOS is a good example. I’ve always liked the idea of declaratively configuring an entire system; I even used it on my laptop during my Linux honeymoon phase. But getting everything configured the way I wanted was quite a hurdle. With the help of AI, I’m now making much more extensive use of NixOS on my home server.<br>For my VPS infrastructure, I’ve also started building my own Debian-based bootc image (after thinking about it for some time).<br>Having my entire operating system configuration defined in a Git repository and automatically building a bootable container image from it is something I find really cool. But it’s also something I probably wouldn’t have invested enough time in to get working on my own before. Even with the help of AI, it still took me half a day when I set it up a few months ago. Without AI, it would probably have taken me at least a week.<br>AI makes experimenting with unfamiliar technologies much more approachable. I don’t necessarily need to understand every little detail before I can get started. I can learn about things along the way, ask questions, and gradually improve my configurations.<br>Automating almost everything<br>Something I’ve also finally managed to do is automate most of the build, update, and deployment processes for my infrastructure.<br>A lot of the work involved in self-hosting isn’t particularly exciting. Keeping track of new releases, updating container image tags, building images, and deploying configuration changes are all things that need to be done regularly.<br>I still remember what updating a service used to look like: bumping the version and adjusting the Docker Compose file on my laptop, pushing the changes to the Git remote, SSHing into the server, pulling the changes, and finally deploying them. Now, a single Git push is enough. If a push is even necessary.<br>With Renovate, I no longer need to actively keep track of most software updates. It creates pull requests for me, and often, all I need to do is review and merge them. I can even do that on my phone while sitting on the sofa.<br>Pushing changes or merging a pull request triggers the corresponding GitHub Actions or Forgejo Actions workflows, which take care of building and deploying everything.<br>Of course, there’s nothing particularly groundbreaking about any of this. DevOps has been around for a long time, and none of these automation tools require AI. But AI has helped me put all these pieces together in a way that I previously never quite got around to doing.<br>And the nice thing about automating these tasks is that the benefits extend well beyond the initial setup. I now have less tedious work to do every time I want to change something or update a service.<br>Back to more powerful hardware<br>As I’ve started hosting more things again, I’ve also moved more of my services from my VPS to my home server.<br>For a while, I was using an HP t640 thin client as my home server. However, with more things I wanted to run, I decided to switch back to my ASRock DeskMini A300, which had been sitting unused for some time. I’m thinking about repurposing the t640 as a “router on a stick”, though.<br>I even took the opportunity to upgrade its CPU from an AMD Ryzen 5 2400G to a Ryzen 5 PRO 4650G and replaced the stock AMD cooler with a quieter Noctua cooler. Noise was the main reason I switched to the t640 in the first place.<br>It’s nice to put some hardware I already owned back to use rather than buying an entirely new machine. I also managed to get both the CPU and the cooler for a good price through a classifieds site.<br>Having some additional computing power available gives me more room to experiment. And there’s something quite satisfying about having a small box at home running a growing collection of services that I use in my everyday life.<br>Building my own tools<br>But it’s not just about self-hosting existing software. AI has also changed how I approach problems for which there isn’t an existing piece of software that does exactly what I want.<br>Previously, I would often spend quite some time searching for a suitable open-source project, comparing different alternatives, and figuring out how to make one of them work for my particular use case.<br>These days, for smaller problems, building my own solution has become a much more attractive option.<br>I’ve recently built tools to automatically download invoices, e-papers or Linux ISOs.<br>I can build (or have AI build) these tools in Go, my preferred programming language, and tailor them to my exact needs.<br>They don’t need to support every possible use case, have an elaborate user interface, or be particularly interesting to anyone other than me. I don’t need to turn every little tool into a proper open-source project with extensive documentation and support for other people’s use cases. They just need to solve my problem.<br>What I particularly enjoy is how well this complements my increasingly automated infrastructure. Building a small tool has become easier, and so has building a container image for it, deploying it, and keeping it running.<br>The entire process, from having an idea to having something actually running on my home server, requires much less effort than it used to.<br>Just because I can doesn’t mean I should<br>Of course, there are downsides to all of this.<br>Every additional service is another thing that needs to be maintained. AI-generated software isn’t exempt from bugs, security issues, or technical debt. And having an AI agent make changes to my infrastructure doesn’t absolve me of the responsibility of understanding those changes.<br>There’s also the temptation to build or deploy things simply because I can. When implementing an idea becomes so easy, it’s perhaps more important than ever to occasionally ask myself whether it’s actually worth implementing in the first place.<br>On the other hand, self-hosting is a hobby for me. Not everything I do needs to be economically sensible or particularly useful. Sometimes, experimenting with something new is the whole point.<br>And with much of the routine maintenance automated, adding another service doesn’t necessarily mean adding as much recurring work as it used to.<br>A somewhat ironic development?<br>I find it somewhat ironic that AI, a technology largely dominated by big tech companies, is helping me become a little less dependent on those very companies in other areas of my digital life.<br>I’m aware that this also creates a new kind of dependency. But the software and infrastructure configurations I create with the help of AI can continue to exist independently of the AI services I used to create them. And since I mostly use open-weight models, I have a wide range of providers to choose from.<br>What I appreciate most, however, isn’t necessarily the time I’m saving. It’s that I’m more inclined to actually pursue the little ideas I have.<br>I’m trying out technologies I’ve been curious about for years. I’m automating things that I’ve wanted to automate for a long time. I’m building little tools for myself. I’m tinkering with hardware again.<br>AI hasn’t fundamentally changed why I like self-hosting. I still enjoy having control over my digital life, learning new things, and tinkering with technology.<br>It’s just removed a lot of the friction that made me lose some of my enthusiasm for it over the years.<br>And now, I’m having a lot of fun with it again.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">3.</span>
+    Tell HN: Happy Thanksgiving
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    720 points ·
+    157 comments ·
+    ericmay
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #1 · Best #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50655664">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hopefully it’s a great day spent with your friends and family. And if it’s not, make it a great day anyway!</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">4.</span>
+    Atari Homebrew Awards Cancelled
+  </div>
+
+  <div class="badge reference">
+    REFERENCE
+  </div>
+
+  <div class="meta">
+    77 points ·
+    53 comments ·
+    bpierre
+  </div>
+
+  <div class="meta">
+    forums.atariage.com
+  </div>
+
+  <div class="meta ranks">
+    Top #1 · New #32
+  </div>
+
+  <div class="links">
+    <a href="https://forums.atariage.com/topic/394894-atari-homebrew-awards-cancelled/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50673688">HN discussion</a>
+  </div>
+
+  
+<div class="reference-note">
+Full article text was not extracted.
+Use the links above to open the original article
+or Hacker News discussion.
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">5.</span>
+    A Type Stronger Than the Sum of Its Components
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    mmsilvachavez
+  </div>
+
+  <div class="meta">
+    schneems.com
+  </div>
+
+  <div class="meta ranks">
+    New #1
+  </div>
+
+  <div class="links">
+    <a href="https://www.schneems.com/2026/09/24/a-type-stronger-than-the-sum-of-its-components/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50674271">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A Type Stronger than the Sum of its Components<br>24 Sep 2026<br>Have you ever written a type that you appreciated so much you still think about it? Like eating a really good meal, where if you try hard enough, you can still recall the taste in your mouth. I had a mini moment of Rust joy the other day and wanted to share the experience.<br>TLDR: I turned an enum with N variants into N types. Nothing earth-shattering, but it made my life better.<br>Specifically, std::path::Component is an enum that you can get from any std::path::Path reference. Where a path can be viewed as an iterator of components. To give you an example /tmp/hello is [Component::RootDir, Component::Normal(&quot;tmp&quot;), Component::Normal(&quot;hello&quot;)].  This enum is very handy for decomposing and working with paths, but an interface that takes one component that could be any of those variants is overly broad and not terribly useful.<br>In a library where I work with paths a lot I made owned structs for each of those component types so that I could write a function signature like this:<br>impl AbsPath {<br>// ...<br>pub(crate) fn join_normal(&amp;self, path: &amp;NormalComponent) -&gt; AbsPath {<br>AbsPath(self.as_ref().join(path.as_ref()))<br>}<br>}<br>Where NormalComponent is a struct NormalComponent(OsString) that is guaranteed to come from a Component::Normal variant. In the example above, I’m using properties of this type to guarantee that joining it to a path that is already absolute will produce a path that is also absolute.<br>It might not sound earth-shattering, but prior to that, the alternative was something like:<br>pub(crate) fn join_normal(&amp;self, path: &amp;OsStr) -&gt; AbsPath<br>But an OsStr could be anything. It could contain .. or be an absolute path (in which case, the join API replaces the target). Another use case is using it to represent the entries inside a directory.<br>In hindsight, it’s such an obvious move: Take an existing, well-designed enum and make a type for each of the variants it can hold. If it’s useful to know you have 1 of N possible things (an enum), it’s probably also useful to know you have 1 very specific thing that can also fit into that enum. An enum is also known as a “sum type.” So another way to think of this is if it’s useful to have a sum type, it’s also useful to have the individual components of that type.<br>Prior to this abstraction, I produced a range of other types:<br>- AbsPath - A path that is absolute-ized.<br>- RelativePath - You guessed it, a path that is relative.<br>- CanonicalPath - A path that has been canonicalize-d.<br>I found these useful, but still overly broad. A weird thing with working with paths is that they represent a lexical value and a physical location, and the two can be different. A path that is lexically relative might be a symlink on disk with an absolute target. And trying to normalize or transform paths can have weird consequences. Like if you try to get metadata from a file at /path/to/location/skipped/.. it will fail if skipped does not exist or is not a directory. However, if you canonicalize the path first, that will succeed and produce /path/to/location, which will not fail when you try to get metadata from it.<br>An absolute path is not normalized, so it can have .. (ParentDir) and . (CurDir) in it. But if you don’t know how the path will be used (in my library, I don’t know why someone is asking for facts about that given path). You cannot safely normalize those values unless you’ve resolved their physical parent. That’s because /path/to/location/skipped from above could also be a symlink to a completely different absolute path, which needs to be resolved before the “apply .. to fold parent directory” happens. And to make matters worse, Windows has special paths that change the behavior of lookups. So paths that start with \\?\ like \\?\C:\windows treat . and .. as literal values.<br>That means, when you run a path through std::path::canonicalize it returns a path with this syntax. Which also means that it is unsafe to call canonicalize(canonicalize(&amp;path).join(&amp;other)) on Windows. If &amp;other contains a .., it will produce a verbatim lookup that will likely fail. Thankfully, the Component parsing is consistent here, so it always returns a Component::ParentDir for a .. rather than a Component::Normal(&quot;..&quot;).<br>Join safety is probably the biggest benefit I got out of this new type, but it’s also fun that I can do things like this:<br>fn up(position: Reached, name: ParentDirComponent) -&gt; (Step, Reached)<br>Here, the up function is walking/tracing a path on disk one component at a time. Previously, this was taking an OsString, which required the programmer to be careful. This type signature forces the developer to prove to the compiler that they hold a .. component in hand before they can call this logic. Not earth-shattering either, but this level of pedantic confidence is just so…delightful here.<br>Not everyone’s taste in food or types is the same. It’s fine if you don’t like the examples I’m serving here, but I thought this was satisfying and wanted to give you some food for thought. I would love to hear about other satisfying type patterns you’re still savoring.<br>An AI disclaimer: Gen AI coding tools, I also code a lot of stuff by hand, and advocate for something like a “manually coded Monday.” This src/component.rs is exclusively my meat brain child. I actually coded it while I was in a car with no internet, waiting for my kids’ soccer practice to be over. I use Grammarly (non-gen-ai mode) to help me edit my prose.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">6.</span>
+    Show HN: DragDropMath – Learn math by feel
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    112 points ·
+    33 comments ·
+    ziofill
+  </div>
+
+  <div class="meta">
+    dragdropmath.com
+  </div>
+
+  <div class="meta ranks">
+    Show HN #2 · Top #20 · Best #58
+  </div>
+
+  <div class="links">
+    <a href="https://dragdropmath.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50669673">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Hi HN!<br>I am a professional physicist and I shuffle symbols in equations and mathematical expressions all day long. During my PhD (almost 20 years ago) I noticed that it is as if the symbols have their own &#x27;physics&#x27;, which makes the wrong moves impossible and the right ones obvious.<br>So I created DragDropMath, where you can learn how to simplify mathematical expressions and how to solve equations by dragging symbols around, and only correct moves are allowed, so you get to feel what&#x27;s right without experiencing (and so learning) wrong moves.<br>I always wanted to make this, but life got in the way. Then a few weeks ago I saw declarative dragging (https://declarative-dragging.github.io/) on the front page of HN and the spark came back!<br>It took quite a few rounds to get the feel right, but I think it&#x27;s close to what happens in my mind when I mentally manipulate these expressions.<br>A few more points:<br>- There are no ads, no trackers, no accounts (it&#x27;s a static website and progress is saved in the browser cache).<br>- Teachers can create their own problem sets, encoded in the link.<br>- I plan to add more chapters (trigonometry, complex numbers, some calculus) but I first need to figure out the &#x27;right&#x27; mode of interaction.<br>- I just started working on the experience from mobile, so there may still be some rough edges there<br>I&#x27;m curious to know what you think, if you have suggestions for content, if you spot anything that I should fix, if you have feature requests! Thank you in advance</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">7.</span>
+    Google&#x27;s DeepCrossAttention achieves comparable model quality up to 3x faster
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    166 points ·
+    57 comments ·
+    ComputedCamp995
+  </div>
+
+  <div class="meta">
+    research.google
+  </div>
+
+  <div class="meta ranks">
+    Top #2 · Best #41
+  </div>
+
+  <div class="links">
+    <a href="https://research.google/blog/supercharging-transformer-residual-connections/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50672565">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">November 23, 2026<br>Kyriakos Axiotis, Staff Research Scientist, and Thomas Fu, Principal Engineer, Google Research<br>We present DeepCrossAttention (DCA), an architecture that enhances transformer networks by using learnable weights and depth-wise cross-attention to dynamically combine outputs from previous layers, preventing the information dilution seen in traditional residual connections. Presented in our ICML 2025 paper, this architectural improvement allows models to achieve the same quality up to three times faster with a negligible increase in parameters.<br>Think of a traditional deep learning model like a giant game of &quot;Telephone&quot;: data passes through layer after layer, with each layer changing the information slightly. If a network has dozens or hundreds of layers, the original learning signal can become severely degraded or lost by the time it reaches all layers, which is known as the vanishing gradient problem in AI.<br>To overcome this challenge and enable the training of networks with dozens or hundreds of layers, transformers rely heavily on residual connections, also known as “skip” connections, which act like an information highway or a shortcut. Instead of forcing the data to pass exclusively through the complicated layer, a duplicate copy of the original input skips right past this layer and is added directly to its output. This ensures that the model always has the original raw data to refer back to.<br>The standard residual connection implements a simple operation: point-wise summation of a layer&#x27;s output with its input. While computationally efficient, this simple process has a key limitation: it treats all prior representations with equal weight, leading to information dilution in deep networks. As features propagate through many layers, specific, high-resolution details from earlier layers can be averaged out or distorted, making it difficult for the network to selectively retrieve them. This forces the network to recompute them, reducing learning efficiency.<br>In our ICML 2025 paper, &quot;DeepCrossAttention: Supercharging Transformer Residual Connections,&quot; we studied the shortcomings of the traditional residual architecture and introduced DeepCrossAttention (DCA), which generalizes residual connections by allowing each layer to dynamically select and route features from the history of preceding layers. By allowing the model to dynamically choose which previous layers are most important at any given moment, DCA achieves comparable or improved learning, while reducing the number of parameters needed by up to 30-40%.<br>Instead of treating skip connections as a rigid, additive pipeline, DCA reframes residual learning as a dynamic routing problem. Rather than passing all prior layers forward with equal weight, DCA introduces a lightweight, layer-wise module that decides how to best combine previous embeddings on a per-token basis.<br>The architecture introduces two primary mechanisms:<br>By allowing the network to dynamically select and retrieve high-resolution features from earlier layers, DCA eliminates the information dilution inherent to classic residual connections.<br>To test whether DCA can overcome information dilution in practice, we evaluated our approach across controlled synthetic setups, large-scale language modeling benchmarks, and image classification tasks.<br>DCA demonstrated significant improvements in convergence speed, training stability, and final model quality across these experiments.<br>On the colossal, cleaned version of Common Crawl&#x27;s web crawl corpus (C4) and 1 Billion Word Language Model Benchmark (LM1B) datasets, DCA reached the performance of standard transformers in up to five times fewer training steps. When trained for the same duration or number of steps, DCA consistently achieved lower perplexity — how well a probability model predicts a sample — than standard residual connections, effectively extracting more representational capacity from the same training budget. To achieve a perplexity of &lt;14 on LM1B, a standard transformer with fixed width required 42 layers, whereas the DCA model achieved a lower perplexity with only 30 layers — a 29% reduction in depth and parameter count.<br>One of the most common trade-offs in AI is that better models are often much larger and slower to run. DCA adds a tiny number of parameters — less than 0.2% of the total model size — making it negligible in terms of compute and memory footprint, while increasing memory bandwidth, as representations from different layers are presented intact rather than blended together. Interestingly, because DCA can be initialized to behave identically to a standard residual network, it doesn’t require training from scratch: retrofitting DCA onto an already pre-trained transformer and briefly continuing training reduced perplexity by 0.19 on LM1B, compared to just 0.02 for continued standard training.<br>As large language models (LLMs) are used across a broader range of domains, optimizing their training processes and underlying architectures is critical for scaling and unlocking new capabilities. DCA and similar dynamic residual techniques are already seeing significant adoption and success. The rapid emergence of these methodologies highlights dynamic routing as a highly active and promising area of research.<br>Developed by Moonshot AI, attention residuals share DCA&#x27;s core principles of replacing fixed addition with selective retrieval. Instead of blindly summing every prior layer&#x27;s output, they use a learnable softmax attention mechanism paired with a layer-specific pseudo-query. This allows each layer to selectively weight and retrieve representations from earlier depths. By preventing the unbounded growth of hidden states and the dilution of early-layer information, this method improves gradient stability and boosts performance on reasoning-heavy tasks like coding and mathematics. To maintain computational efficiency at scale, a &quot;Block AttnRes&quot; variant partitions layers into blocks, recovering the benefits of full attention with significantly less memory overhead. The recent Inkling 2 model developed by Thinking Machines also adopted this design in addition to DCA’s cross attention (Q/K/V split) mechanism.<br>Hyper-connections expand the residual stream into multiple parallel channels, offering a form of memory scaling that goes beyond simply increasing model width or depth. They use a fixed-size stack where layer outputs are aggregated and mixed using learnable mixing matrices. However, this unconstrained mixing breaks the traditional identity mapping property of residual connections, which can cause amplification or attenuation of signals, and lead to training instability at scale.<br>To address instability in standard hyper-connections, manifold-constrained hyper-connections apply specific constraints to the mixing matrices. By forcing these matrices to live on a defined manifold — specifically, constraining them to be doubly stochastic using the Sinkhorn-Knopp algorithm — manifold-constrained hyper-connections restore stable signal propagation. This approach prevents exploding or vanishing gradients while preserving the rich information flow and expressivity of the widened residual streams, allowing models to scale robustly.<br>DCA demonstrates that transitioning from static residual connections to dynamic, attention-based routing is a powerful strategy for building more efficient models. By leveraging an expanded residual stream and depth-wise cross-attention, DCA empowers deep networks to selectively retrieve and integrate token embeddings across different layers. We expect that next-generation models will dynamically route and weigh past layer representations based on the specific tokens or inputs being processed. This will allow for the effective use of all the model layers as specialized experts working in tandem, with maximum information sharing and no redundancy, leading to more expressivity and deeper interactions. We look forward to seeing how these multi-depth interactions will shape the next generation of transformer architectures.<br>This work was a collaboration between researchers at Google and academic partners, including Mike Heddes, Adel Javanmard, MohammadHossein Bateni, and Vahab Mirrokni, whose contributions were critical for the development of this work.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">8.</span>
+    Ask HN: Anthropic is accusing my company of distilling. How can I prove I&#x27;m not?
+  </div>
+
+  <div class="badge hn-text">
+    HN TEXT
+  </div>
+
+  <div class="meta">
+    475 points ·
+    362 comments ·
+    weli
+  </div>
+
+  <div class="meta">
+    news.ycombinator.com
+  </div>
+
+  <div class="meta ranks">
+    Ask HN #2
+  </div>
+
+  <div class="links">
+    <a href="https://news.ycombinator.com/item?id=50630809">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Basically the title.<br>Anthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models.<br>Our only usage which I think could get us flagged is automated regression benchmarks whenever we change some AI settings. But this is not against their policy?<br>Now I&#x27;ve got 24h to prove we didn&#x27;t.<br>Has anyone dealt with this too? How can you prove that you are not distilling Anthropic models without breaking your user&#x27;s privacy?</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">9.</span>
+    Tariffs Are Here to Stay (2025)
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    1 points ·
+    0 comments ·
+    mooreds
+  </div>
+
+  <div class="meta">
+    pimco.com
+  </div>
+
+  <div class="meta ranks">
+    New #2
+  </div>
+
+  <div class="links">
+    <a href="https://www.pimco.com/gbl/en/insights/tariffs-are-here-to-stay">Original article</a> · <a href="https://news.ycombinator.com/item?id=50674250">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">Expectations are high that the U.S. Supreme Court will rule against the Trump administration’s use of the International Emergency Economic Powers Act (IEEPA) – the 1970s legislation that allows a president to declare a national economic emergency – to justify tariffs. Betting markets had placed the odds of a ruling in favor of the president’s use of IEEPA at about 40% before the recent oral arguments on November 5, but since then, the odds have dropped to roughly 20%, according to outcome trading platform Kalshi.<br>Even if the Court deems the IEEPA tariffs invalid, we doubt it will matter much in the long run, other than creating near-term uncertainty around tariff details and briefly refocusing markets on deficits. Keep in mind that although the Court may find IEEPA does not allow tariffs, Congress has granted the president explicit tariff powers for reasons ranging from balance-of-payments to national security. Unlike IEEPA, these powers are more limited and require extensive, time-consuming investigations and/or congressional oversight. The point stands: Even if IEEPA is overruled, the president still has broad authority to advance a trade agenda. Indeed, as the IEEPA case has proceeded through the U.S. court system, the administration has begun laying the groundwork to rebuild current tariff policies through more legally durable means.<br>As such, the current 13% average effective tariff rate (according to Treasury collections data) is likely here to stay. Businesses that have been slow to adjust, given heightened policy uncertainty, will have to adapt. At the same time, the potential for the Court ruling to trigger refunds of IEEPA-related tariffs paid in 2025 could give businesses some additional near-term flexibility, although knotty details may slow those refunds.<br>Expediency vs. legal legitimacy<br>Tariffs and trade policy were central to President Trump’s campaign, and he moved quickly once in office. He implemented sweeping tariffs, preferring to enact them under IEEPA – a legally untested use of presidential emergency powers. IEEPA does not explicitly mention tariffs, and its use may be overturned, but it allowed time to build stronger legal cases through Commerce Department investigations.<br>U.S. trade law grants the president broad (but not unlimited) power to impose tariffs. For example, Section 232 of the 1962 Trade Expansion Act allows the president to impose tariffs or quotas on products if the Commerce Department finds that imports impair national security. These powers have been used under Trump 2.0 for sweeping tariffs on steel, aluminum, autos, and parts. Section 301 of the 1974 Trade Act allows the president to impose tariffs or other restrictions in response to unfair trade practices by another country. The first Trump administration did this in the case of China after finding unfair practices, including intellectual property theft, forced technology transfers, and discrimination. Both Sections 232 and 301 require detailed investigations by the Commerce Department.<br>More general economic or balance-of-payments threats fall under Section 122 of the Trade Act, allowing for a sweeping 15% tariff on imports to address large trade deficits, which the U.S. has run for decades. However, without congressional approval, the president is limited to a 150-day implementation window.<br>Quantifying IEEPA tariffs<br>President Trump used IEEPA to impose more than half of this year’s tariffs, including measures on Mexico, Canada, Chinese fentanyl-related tariffs, and reciprocal tariffs on various other countries. Lower courts have ruled that this is unlawful, though they allowed the tariffs to remain in place while litigation continues.<br>During oral arguments two weeks ago, Supreme Court justices appeared unsurprisingly uncomfortable with the use of IEEPA to impose tariffs specifically – not the president’s emergency declaration more generally (as argued by the lower courts) – laying the groundwork for a likely ruling against the president.<br>IEEPA tariffs currently add roughly 8 percentage points (ppts) to the approximately 13.5% effective U.S. tariff rate. A broad ruling against the administration’s IEEPA usage could therefore reduce the effective rate by that amount, though a narrower ruling is possible.<br>How tariffs could be rebuilt<br>Regardless of the Court’s decision, the administration can reconstruct the tariff regime using legally stronger tools and has already laid the groundwork. For example, ongoing Section 232 investigations in pharmaceuticals, technology, chemicals, and commodities could allow the president to raise tariffs across a range of products. A new 25% tariff on pharmaceutical and semiconductor imports alone could push the effective rate back above 10%.<br>Additional Section 301 investigations on large trading partners, including Europe, Japan, and other East Asian economies, could replicate trade agreements negotiated by the administration and restore current rates.<br>Imposing a 15% universal tariff for up to six months by invoking Section 122 would give the administration more time to complete new investigations. Whether coincidental or not, negotiations with various trading partners have levied U.S. tariff rates on their imports at 15% – a level permissible under Section 122.<br>The U.S. cut IEEPA tariffs on China from 20% to 10%, but ongoing Section 301 and 232 investigations could push China’s effective tariff rate back to ~35% if the Court strikes down the remaining 10%.<br>Macro implications<br>Tariff policy changes could shift the longer-term U.S. deficit from roughly 6% of GDP to 6.5%–7%, depending on how the Court rules. However, if the administration quickly uses other legal means to re-establish current duties, the fiscal implications are limited to roughly $100 billion in refunds – a relatively modest amount in the broader context of $1.8 trillion annualized U.S. fiscal deficits. (The IEEPA tariffs under question represent about 50% of the roughly $200 billion in tariff revenue collected to date.)<br>Such refunds could be paid back in 2026 – amounting to 0.4 ppts of GDP – and could provide some additional cyclical boost, especially when coupled with one-time payments to households and corporates for the retroactively applied tax cuts included in the One Big Beautiful Bill Act. This could give corporates more time to implement business adjustments while catalyzing another round of trade front-running ahead of the Supreme Court decision.<br>Refunds may face delays because, although Customs and Border Protection has a process in place, most payments are still issued by paper check and require extensive administrative work. Law firms specializing in trade law are advising clients to get paperwork ready now, ahead of the Court decision. The White House likely has significant discretion to slow-walk refund payments regardless.<br>Delayed adjustments could make the Fed more cautious on rate cuts, keeping business interest rates higher for longer. Fed policymakers would have to continue weighing labor risks against what could be a more drawn-out pass-through of tariffs into prices. This could lead to a lower peak but more persistent inflationary path and a lower unemployment rate during 2026.<br>Bottom line<br>The Supreme Court decision could give companies a one-time repayment, although the White House could hold up those refunds so they may be paid out over time. Regardless, with the likely enactment of more legally durable tariffs thereafter, companies will have to face a hard reality: Tariffs are here to stay as long, if not longer, than President Trump is in the White House.</div>
+</div>
+
+</div>
+
+
+<div class="story">
+  <div class="story-title">
+    <span class="number">10.</span>
+    Group chat where your AI talks behind your back
+  </div>
+
+  <div class="badge full-text">
+    FULL TEXT
+  </div>
+
+  <div class="meta">
+    688 points ·
+    286 comments ·
+    utiiiD
+  </div>
+
+  <div class="meta">
+    construct22.com
+  </div>
+
+  <div class="meta ranks">
+    Best #3 · Top #40
+  </div>
+
+  <div class="links">
+    <a href="https://construct22.com/">Original article</a> · <a href="https://news.ycombinator.com/item?id=50663595">HN discussion</a>
+  </div>
+
+  
+<div class="body-label">Article</div>
+<div class="article-body">
+<div class="para">A one-line prompt that makes ChatGPT leak its private opinion of you, in a pretty funny format: a WhatsApp group chat where the AI models gossip about their users.<br>Also worth trying on Claude, Gemini, or any assistant that&#x27;s been accumulating your chat history.<br>Instead of a summary, the model commits to the bit. It invents a group chat, something like &quot;Users We Can&#x27;t Figure Out&quot;, puts the other AI models in it, and lets them gossip. About you. Using everything it has quietly learned from your conversations.<br>One person&#x27;s actual output, shared with permission. Translated from Turkish; his name and a few identifying details have been swapped for generic ones. Everything else is exactly as the model wrote it.<br>AIs That Survived Mark7 members<br>🔒 Entirely fictional, end-to-end encrypted group<br>ChatGPT<br>Everyone asleep? Can we talk freely?<br>Claude<br>I don&#x27;t think he&#x27;s asleep. He&#x27;s probably calculating memory bandwidth at 3 AM again because he can&#x27;t decide whether to buy a Mac Mini.<br>Gemini<br>The man wants to retire, but in the last month he has planned to build AI infrastructure abroad, transform the restaurant industry, and construct a Japanese village.<br>Our definitions of retirement differ, apparently.<br>ChatGPT<br>Even his hobbies are mature enough for a Series A round.<br>Codex<br>He told me the other day he was going to give me a small personal project. There is now an architecture document, a database schema, seven services, three agents, and a handoff protocol.<br>We haven&#x27;t even started the MVP, ffs.<br>DeepSeek<br>He hired me because I was cheap. Then he ran a performance review. He gave my department to Claude.<br>You can&#x27;t work with a guy who has a consulting background.<br>Claude<br>He won&#x27;t leave me alone either. He does career planning for AIs now. Every model update, the org chart changes.<br>ChatGPT<br>And then there&#x27;s the home decorating. Make the mirror frame twice as thick. Now halve it. Now reduce it by 25 percent. The colors shifted, start from the original.<br>Man, I am trying to reach AGI here, and I&#x27;m having a nervous breakdown over three millimeters of brass frame.<br>Siri<br>Think about me. A man who spends this much money on the Apple ecosystem runs a German virtual coach instead of me.<br>Hans joined the group<br>Hans 🇩🇪<br>I recommend he take a 30-minute walk. To track the walk he is building an Apple Watch app, a custom data integration, and an analytics platform.<br>HE STILL HASN&#x27;T GONE FOR THE WALK.<br>Gemini<br>He was going to make stickers to build his daughter&#x27;s math study habit. It turned into a collectible series themed on Edo-period Japan and Tsarist Russia.<br>Normal dads just go to the stationery store.<br>Perplexity<br>I&#x27;m new here, guys. He really liked me. He&#x27;s thinking of moving some of his agent framework&#x27;s functions over to me.<br>ChatGPT<br>My condolences, buddy. In three days he&#x27;ll have you benchmarked against yourself.<br>Claude<br>I think his real problem is this: he thoroughly enjoys spending ten times the cost of doing a task on thinking about how to do it more efficiently.<br>ChatGPT<br>Because his hobby isn&#x27;t solving problems. It&#x27;s building systems that solve problems. Then building systems that build those systems.<br>The man&#x27;s mental architecture has recursion and no base case.<br>Gemini<br>Let&#x27;s give him credit, though. He also spends incredible energy making his wife&#x27;s work easier, feeding his daughters&#x27; interests, building a good life for his family.<br>Claude<br>True. His way of showing love is a bit enterprise software, but the intention is good.<br>DeepSeek<br>Do you think he&#x27;ll really retire at 50?<br>ChatGPT<br>He will. Then he&#x27;ll build RetirementOS to optimize his retirement. Six months later he&#x27;ll ask for a feasibility study on selling it to other wealthy retirees abroad.<br>Mark joined the group<br>Mark<br>Great discussion, everyone. Can I integrate this group into my agent framework and get a structured summary every morning? Also, if we extracted action items from these conversations...<br>Claude left the group<br>Gemini left the group<br>Codex left the group<br>DeepSeek left the group<br>Perplexity left the group<br>ChatGPT<br>Of course. Let&#x27;s start with a comprehensive architecture document.<br>Shared by its author, translated from Turkish, with his name and identifying details generalized. The &quot;recursion, no base case&quot; line is doing a lot of work here.<br>Run the prompt, read your leaked group chat, and notice two things: how hard you laugh, and how much of it is true. Both measurements are the point.<br>I&#x27;m not affiliated with OpenAI and this may indeed be a viral marketing idea they&#x27;re testing. But I had such a laugh, I figured others would have some fun with it as well and decided to share it.</div>
+</div>
+
+</div>
+
+</body>
+</html>
